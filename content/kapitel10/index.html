@@ -1,0 +1,1975 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel9/">
+      
+      
+        <link rel="next" href="../kapitel11/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 10 – Prompt-Bibliothek aufbauen und pflegen - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-10-prompt-bibliothek-aufbauen-und-pflegen" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 10 – Prompt-Bibliothek aufbauen und pflegen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Block 2 · Prompt Engineering in der Praxis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 5 – Das P.R.O.M.P.T.-Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 6 – Prompting Guide: Techniken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 7 – Prompt-Hacks für den Marketing-Alltag
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 8 – Optimierung eigener Prompts mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 9 – Fehleranalyse & Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 10 – Prompt-Bibliothek aufbauen und pflegen
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 10 – Prompt-Bibliothek aufbauen und pflegen
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#101-vom-guten-prompt-zum-gemeinsamen-arbeitsmittel" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.1 Vom guten Prompt zum gemeinsamen Arbeitsmittel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-anatomie-eines-eintrags-platzhalter-und-metadaten" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.2 Anatomie eines Eintrags: Platzhalter und Metadaten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-struktur-und-benennung" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3 Struktur und Benennung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-ablageorte" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.4 Ablageorte
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105-versionierung-und-pflege" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.5 Versionierung und Pflege
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-teamnutzung-und-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.6 Teamnutzung und Governance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-von-der-bibliothek-zum-assistenten" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.7 Von der Bibliothek zum Assistenten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-10-prompt-bibliothek-aufbauen-und-pflegen">Kapitel 10 – Prompt-Bibliothek aufbauen und pflegen<a class="headerlink" href="#kapitel-10-prompt-bibliothek-aufbauen-und-pflegen" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Warum eine <strong>Prompt-Bibliothek</strong> aus Einzelerfolgen ein Arbeitsmittel für das ganze Team macht</li>
+<li>Wie ein vollständiger Eintrag aussieht – mit <strong>Platzhaltern</strong>, <strong>Metadaten</strong> und Testfällen</li>
+<li>Wie du die Bibliothek <strong>strukturierst</strong> und benennst, damit man Prompts in Sekunden findet</li>
+<li>Welche <strong>Ablageorte</strong> sich eignen – von Notion und SharePoint bis zu Textbaustein-Werkzeugen</li>
+<li>Wie <strong>Versionierung</strong>, Pflege und <strong>Governance</strong> verhindern, dass die Bibliothek verwildert</li>
+<li>Wann ein Prompt aus der Bibliothek zum <strong>KI-Assistenten</strong> wird (Kap. 23 ff.)</li>
+</ul>
+</div>
+<hr />
+<h2 id="101-vom-guten-prompt-zum-gemeinsamen-arbeitsmittel">10.1 Vom guten Prompt zum gemeinsamen Arbeitsmittel<a class="headerlink" href="#101-vom-guten-prompt-zum-gemeinsamen-arbeitsmittel" title="Permanent link">&para;</a></h2>
+<p>In den Kapiteln 5 bis 9 sind gute Prompts entstanden – mit P.R.O.M.P.T. gebaut, mit Techniken verfeinert, mit Testfällen geprüft und von Fehlern befreit. Ohne Ablage gehen sie wieder verloren: in einem Chatverlauf, den niemand mehr findet, in einer Notiz auf dem Desktop, im Kopf einer Kollegin, die gerade im Urlaub ist.</p>
+<p>Bei der Fjordlicht GmbH sieht das vor Einführung einer Bibliothek typisch aus: Fünf Personen im Marketing schreiben jede Woche Newsletter-Teaser, Instagram-Captions und LinkedIn-Posts. Jede Person hat ihre eigene Art zu prompten. Die Ergebnisse klingen unterschiedlich, die Markenstimme schwankt, und als einmal eine unbelegte Nachhaltigkeitsaussage durchrutschte, konnte niemand nachvollziehen, mit welchem Prompt sie entstanden war.</p>
+<p>Eine <strong>Prompt-Bibliothek</strong> löst gleich mehrere Probleme:</p>
+<table>
+<thead>
+<tr>
+<th>Problem ohne Bibliothek</th>
+<th>Nutzen mit Bibliothek</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jede Person fängt bei null an</td>
+<td>bewährte Prompts sind sofort verfügbar</td>
+</tr>
+<tr>
+<td>Ergebnisse schwanken je nach Person</td>
+<td>gleiche Vorlage, gleiche Qualitätsstufe, einheitliche Markenstimme</td>
+</tr>
+<tr>
+<td>Fehler sind nicht nachvollziehbar</td>
+<td>Version und Stand jedes Prompts sind dokumentiert</td>
+</tr>
+<tr>
+<td>Wissen geht mit Personen verloren</td>
+<td>Know-how bleibt im Team</td>
+</tr>
+<tr>
+<td>Neue Kolleginnen brauchen Wochen</td>
+<td>Einarbeitung mit geprüften Vorlagen</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Ein Prompt, den nur du bedienen kannst, ist eine <strong>Notiz</strong>. Ein Prompt, den eine andere Person ohne Rückfrage nutzen und prüfen kann, ist eine <strong>Vorlage</strong>. Die Bibliothek sammelt nur Vorlagen.</p>
+</div>
+<hr />
+<h2 id="102-anatomie-eines-eintrags-platzhalter-und-metadaten">10.2 Anatomie eines Eintrags: Platzhalter und Metadaten<a class="headerlink" href="#102-anatomie-eines-eintrags-platzhalter-und-metadaten" title="Permanent link">&para;</a></h2>
+<p>Ein Bibliothekseintrag besteht aus zwei Teilen: dem <strong>Prompt-Text</strong> mit Platzhaltern und den <strong>Metadaten</strong>, die erklären, wofür er gedacht ist und wie man ihn prüft.</p>
+<p><strong>Platzhalter</strong> kennzeichnen alles, was bei jeder Nutzung neu eingesetzt wird. Bewährt haben sich eckige Klammern mit sprechendem Inhalt und, wo hilfreich, einem Beispiel:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du schreibst Social-Media-Texte für die Outdoor-Marke Fjordlicht.
+Request: Schreibe eine Instagram-Caption für [Produktname, z. B. Fleece Skog].
+Output: 50 bis 80 Wörter, danach 3 bis 5 Hashtags, kein Emoji am Anfang.
+Modifier:
+- Nutze nur Angaben aus [Produktinfos].
+- Nachhaltigkeitsaussagen nur wörtlich aus [Claim-Liste].
+- Fehlt eine Angabe, schreibe [FEHLT] statt zu raten.
+Purpose: [Anlass, z. B. Produktlaunch, Saisonstart]; Zielgruppe:
+naturverbundene Stadtmenschen 25-45; Ziel: Klick in den Shop.
+Tone: ruhig, ehrlich, Du-Ansprache, keine Superlative.
+</code></pre></div></td></tr></table></div>
+<p>Die eckige Klammer hat zwei Vorteile: Sie fällt auf, wenn du vergisst, sie zu ersetzen, und sie ist mit allen gängigen Werkzeugen verträglich. Platzhalter sollten <strong>eindeutig benannt</strong> sein – „[Text]" ist schlechter als „[Produktinfos aus dem Datenblatt]".</p>
+<p>Die <strong>Metadaten</strong> machen aus dem Prompt einen Eintrag, den andere verstehen:</p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Inhalt</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID und Name</td>
+<td>eindeutige Kennung und sprechender Titel</td>
+<td>TXT-IG-003 Instagram-Caption Produkt</td>
+</tr>
+<tr>
+<td>Zweck</td>
+<td>wofür, wann einsetzen, wann nicht</td>
+<td>Produktposts im Feed, nicht für Stories</td>
+</tr>
+<tr>
+<td>Kanal / Kategorie</td>
+<td>Einordnung für die Suche</td>
+<td>Social Media › Instagram</td>
+</tr>
+<tr>
+<td>Prompt-Text</td>
+<td>vollständig, mit Platzhaltern</td>
+<td>siehe oben</td>
+</tr>
+<tr>
+<td>Benötigter Input</td>
+<td>was vorher bereitliegen muss</td>
+<td>Produktdatenblatt, Claim-Liste</td>
+</tr>
+<tr>
+<td>Getestet mit</td>
+<td>Werkzeug und Stand</td>
+<td>ChatGPT, Oktober 2026; Gegenprobe in Claude</td>
+</tr>
+<tr>
+<td>Beispielergebnis</td>
+<td>eine Ausgabe, die als gut gilt</td>
+<td>freigegebene Caption zu „Sølv"</td>
+</tr>
+<tr>
+<td>Prüfpunkte</td>
+<td>worauf bei jedem Ergebnis zu achten ist</td>
+<td>Länge, Claims nur aus Liste, keine Superlative</td>
+</tr>
+<tr>
+<td>Testfälle</td>
+<td>Fälle für Änderungen (Kap. 8)</td>
+<td>Normalfall, Lückenfall, Grenzfall</td>
+</tr>
+<tr>
+<td>Datenklasse</td>
+<td>was eingegeben werden darf (Kap. 4)</td>
+<td>grün: keine personenbezogenen Daten</td>
+</tr>
+<tr>
+<td>Version, Stand, Verantwortlich</td>
+<td>Pflegeinformationen</td>
+<td>v4, 15.10.2026, Content-Team</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Das Beispielergebnis ist Pflicht</p>
+<p>Das wichtigste Metadatum ist das <strong>Beispielergebnis</strong>. Es zeigt in Sekunden, was die Vorlage leisten soll – besser als jede Beschreibung. Gleichzeitig ist es der Maßstab: Liefert der Prompt nach einem Modellwechsel deutlich andere Ergebnisse, merkst du es beim Vergleich sofort.</p>
+</div>
+<hr />
+<h2 id="103-struktur-und-benennung">10.3 Struktur und Benennung<a class="headerlink" href="#103-struktur-und-benennung" title="Permanent link">&para;</a></h2>
+<p>Eine Bibliothek mit fünfzig Einträgen ohne Ordnung ist kaum besser als keine. Bewährt haben sich drei Ordnungsprinzipien, die du kombinieren kannst:</p>
+<ul>
+<li><strong>Nach Kanal oder Textsorte:</strong> Newsletter, Instagram, LinkedIn, Blog, Webshop. Intuitiv für Teams, die nach Kanälen organisiert sind.</li>
+<li><strong>Nach Aufgabe:</strong> Ideen entwickeln, Entwurf schreiben, Überarbeiten, Prüfen, Analysieren. Gut, weil viele Prompts kanalübergreifend funktionieren – ein Claim-Check-Prompt gilt für alle Texte.</li>
+<li><strong>Nach Funnel-Phase:</strong> Aufmerksamkeit, Interesse, Kauf, Bindung (Kap. 3). Hilfreich, wenn ihr Kampagnen entlang der Customer Journey plant.</li>
+</ul>
+<p>Für Fjordlicht bietet sich eine Kombination an: Hauptkategorie nach Aufgabe, Unterkategorie nach Kanal. Dazu eine einfache <strong>Benennungskonvention</strong>, etwa <code>[Bereich]-[Kanal]-[Nummer] Kurztitel</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>TXT-NL-001  Newsletter-Einleitung Wochenthema
+TXT-IG-003  Instagram-Caption Produkt
+TXT-LI-002  LinkedIn-Post Fjordlicht Business
+PRF-ALL-001 Claim-Check für alle Texte
+IDE-ALL-004 Themenideen aus Saisonanlass
+ANA-NL-001  Auswertung Newsletter-Kennzahlen
+</code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Die Bibliothek wird zur Müllhalde, wenn jede Person jeden halbwegs gelungenen Prompt hineinkippt. Fünf Varianten der Instagram-Caption, keine davon getestet, verwirren mehr, als sie helfen. Regel: <strong>Pro Aufgabe eine freigegebene Vorlage.</strong> Varianten und Experimente gehören in einen getrennten Bereich „Entwürfe".</p>
+</div>
+<hr />
+<h2 id="104-ablageorte">10.4 Ablageorte<a class="headerlink" href="#104-ablageorte" title="Permanent link">&para;</a></h2>
+<p>Die beste Ablage ist die, die dein Team ohnehin täglich öffnet. Eine perfekte Datenbank, die niemand nutzt, verliert gegen eine schlichte Tabelle im gemeinsamen Laufwerk.</p>
+<table>
+<thead>
+<tr>
+<th>Ablageort</th>
+<th>Stärken</th>
+<th>Schwächen</th>
+<th>Passt für</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Notion</strong> oder ähnliche Wikis</td>
+<td>Datenbank mit Filtern, Tags, Vorlagen, gut durchsuchbar</td>
+<td>eigenes Werkzeug, Datenschutzprüfung nötig</td>
+<td>Teams, die Notion schon nutzen</td>
+</tr>
+<tr>
+<td><strong>SharePoint-Liste / OneNote</strong></td>
+<td>im Microsoft-365-Umfeld vorhanden, Rechteverwaltung</td>
+<td>Listen weniger komfortabel für lange Texte</td>
+<td>Unternehmen mit Microsoft 365</td>
+</tr>
+<tr>
+<td><strong>Google Sheets / Excel</strong></td>
+<td>schnell eingerichtet, filterbar, jede Person kann es bedienen</td>
+<td>lange Prompts in Zellen unübersichtlich, Versionen nur rudimentär</td>
+<td>Start und kleine Teams</td>
+</tr>
+<tr>
+<td><strong>Textbaustein-Werkzeuge</strong> (z. B. TextExpander, Espanso, Textersetzung im Betriebssystem)</td>
+<td>Prompt per Kürzel direkt in jedes Chatfenster einfügen</td>
+<td>keine Metadaten, Pflege pro Gerät oder Konto</td>
+<td>häufig genutzte Kurz-Prompts</td>
+</tr>
+<tr>
+<td><strong>Projekte und Assistenten</strong> im KI-Werkzeug</td>
+<td>Vorgaben wirken automatisch</td>
+<td>an ein Werkzeug gebunden, schwer vergleichbar</td>
+<td>ausgereifte, oft genutzte Abläufe (Kap. 23)</td>
+</tr>
+</tbody>
+</table>
+<p>In der Praxis bewährt sich eine <strong>Zweiteilung</strong>: Eine zentrale, durchsuchbare Bibliothek mit allen Metadaten ist die verbindliche Quelle. Für die zehn meistgenutzten Prompts gibt es zusätzlich Kürzel in einem Textbaustein-Werkzeug oder eine Schnellzugriffsliste.</p>
+<div class="admonition example">
+<p class="admonition-title">Startpunkt für Fjordlicht</p>
+<p>Das Team startet mit einer gemeinsamen Tabelle mit den Spalten aus Abschnitt 10.2 und einer Zeile pro Vorlage. Lange Prompt-Texte und Beispielergebnisse stehen in einem verlinkten Dokument. Nach drei Monaten wird entschieden, ob ein Umzug in eine Datenbank lohnt. Das Kriterium dafür ist nicht die Anzahl der Einträge, sondern ob Prompts gefunden und genutzt werden.</p>
+</div>
+<hr />
+<h2 id="105-versionierung-und-pflege">10.5 Versionierung und Pflege<a class="headerlink" href="#105-versionierung-und-pflege" title="Permanent link">&para;</a></h2>
+<p>Prompts altern. Modelle werden ausgetauscht, die Markenstimme entwickelt sich weiter, eine Claim-Liste wird aktualisiert, ein Kanal ändert seine Logik. Eine Bibliothek ohne Pflege enthält nach einem Jahr Vorlagen, die niemand mehr versteht.</p>
+<p><strong>Versionierung</strong> heißt: Jede Änderung an einer freigegebenen Vorlage bekommt eine neue Versionsnummer, ein Datum und einen Satz zur Begründung. Die Vorgängerversion bleibt erhalten.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>TXT-IG-003 Instagram-Caption Produkt
+v1  02.09.2026  Erstfassung aus Workshop
+v2  16.09.2026  Regel [FEHLT] ergänzt, Lückenfall erfand Material
+v3  08.10.2026  Hashtags auf 3-5 begrenzt, Testfälle unverändert bestanden
+v4  15.10.2026  Gegenprobe nach Modellwechsel in ChatGPT, keine Änderung nötig
+</code></pre></div></td></tr></table></div>
+<p>Zur Pflege gehören drei Routinen:</p>
+<ol>
+<li><strong>Änderung nur mit Test.</strong> Vor jeder neuen Version laufen die hinterlegten Testfälle (Kap. 8). Besteht die neue Version nicht mindestens so gut wie die alte, bleibt die alte.</li>
+<li><strong>Regelmäßiger Durchgang.</strong> Einmal im Quartal und nach jedem größeren Modellwechsel prüft die verantwortliche Person, ob die Vorlagen noch funktionieren und noch gebraucht werden.</li>
+<li><strong>Ausmisten.</strong> Vorlagen, die seit Monaten niemand nutzt, werden archiviert, nicht gelöscht.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Rückmeldekanal einrichten</p>
+<p>Gib jeder Vorlage einen einfachen Weg für Rückmeldungen – eine Kommentarspalte oder einen gemeinsamen Kanal. Wer einen Fehler bemerkt, trägt Symptom und Beispiel ein (Kap. 9). Die verantwortliche Person entscheidet, ob daraus eine neue Version wird.</p>
+</div>
+<hr />
+<h2 id="106-teamnutzung-und-governance">10.6 Teamnutzung und Governance<a class="headerlink" href="#106-teamnutzung-und-governance" title="Permanent link">&para;</a></h2>
+<p>Sobald mehrere Personen mit derselben Bibliothek arbeiten, braucht es Regeln. <strong>Governance</strong> klingt groß, heißt aber im Kern: Wer darf was, und wer ist wofür verantwortlich?</p>
+<table>
+<thead>
+<tr>
+<th>Rolle</th>
+<th>Aufgabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Verantwortliche Person</strong> (eine pro Bibliothek)</td>
+<td>Struktur, Freigaben, Quartalsdurchgang</td>
+</tr>
+<tr>
+<td><strong>Eigentümerin einer Vorlage</strong></td>
+<td>Pflege, Tests, Bearbeitung von Rückmeldungen</td>
+</tr>
+<tr>
+<td><strong>Nutzende</strong></td>
+<td>Vorlagen anwenden, Ergebnisse prüfen, Fehler melden</td>
+</tr>
+<tr>
+<td><strong>Fachstellen</strong> (z. B. Produktmanagement, Rechtsabteilung)</td>
+<td>Freigabe von Claim-Listen und kritischen Vorlagen</td>
+</tr>
+</tbody>
+</table>
+<p>Dazu kommen Regeln, die sich aus der KI-Richtlinie des Unternehmens ableiten (Kap. 4):</p>
+<ul>
+<li><strong>Keine vertraulichen Inhalte in Vorlagen.</strong> Kundennamen, Preiskalkulationen, interne Zahlen oder personenbezogene Daten haben in einem Prompt-Text nichts zu suchen – nur Platzhalter.</li>
+<li><strong>Datenklasse je Vorlage.</strong> Jeder Eintrag sagt, welche Daten beim Ausfüllen eingegeben werden dürfen. Eine Vorlage zur Auswertung von Newsletter-Kennzahlen darf aggregierte Zahlen enthalten, aber keine Abonnentenliste.</li>
+<li><strong>Freigabe vor Veröffentlichung.</strong> Eine Vorlage ersetzt nicht die inhaltliche Prüfung der Ergebnisse. Wer veröffentlicht, prüft – besonders Claims und Fakten.</li>
+<li><strong>Werkzeugbindung dokumentieren.</strong> Wenn eine Vorlage nur in einem bestimmten Werkzeug getestet ist, steht das im Eintrag.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Die Bibliothek ist so gut wie ihre Pflege. <strong>Eine verantwortliche Person, eine freigegebene Vorlage pro Aufgabe, Änderungen nur mit Test</strong> – mehr Governance braucht ein kleines Marketingteam am Anfang nicht.</p>
+</div>
+<hr />
+<h2 id="107-von-der-bibliothek-zum-assistenten">10.7 Von der Bibliothek zum Assistenten<a class="headerlink" href="#107-von-der-bibliothek-zum-assistenten" title="Permanent link">&para;</a></h2>
+<p>Manche Vorlagen werden so oft genutzt, dass das Kopieren selbst lästig wird. Andere brauchen jedes Mal dasselbe Begleitmaterial – Styleguide, Claim-Liste, Produktdaten. Das sind Kandidaten für den nächsten Schritt: einen <strong>KI-Assistenten</strong> wie ein Custom GPT bzw. ChatGPT-Plugin, ein Projekt in ChatGPT oder Claude, ein Gemini Gem oder einen Copilot Agent (Kap. 23).</p>
+<pre class="mermaid"><code>flowchart LR
+    A(["einzelner Prompt im Chat"]) --&gt; B(["getestete Vorlage mit Platzhaltern"])
+    B --&gt; C(["Eintrag in der Team-Bibliothek"])
+    C --&gt; D(["Projekt mit festen Anweisungen und Dateien"])
+    D --&gt; E(["KI-Assistent mit Instruktionen, Wissen, Startern"])</code></pre>
+<p>Die Bibliothek ist dafür die ideale Vorarbeit: Persona, Tone und Modifier werden zu den <strong>Instruktionen</strong> des Assistenten, das Begleitmaterial zur <strong>Wissensbasis</strong>, häufige Requests zu <strong>Konversationsstartern</strong>, und die Testfälle prüfen den Assistenten genauso wie vorher die Vorlage. Genau so entsteht in Kapitel 26 der Content-Assistent von Fjordlicht. Die Bibliothek bleibt trotzdem bestehen – als Dokumentation, als Quelle für seltenere Aufgaben und als werkzeugunabhängige Sicherung, falls ein Anbieter seine Funktionen umbaut.</p>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Eine <strong>Prompt-Bibliothek</strong> macht aus Einzelerfolgen ein Teamwerkzeug: einheitliche Qualität, nachvollziehbare Ergebnisse, schnellere Einarbeitung.</li>
+<li>Ein Eintrag besteht aus dem Prompt mit <strong>eindeutigen Platzhaltern</strong> in eckigen Klammern und <strong>Metadaten</strong> – Zweck, Input, Beispielergebnis, Prüfpunkte, Testfälle, Datenklasse, Version.</li>
+<li><strong>Struktur und Benennung</strong> nach Aufgabe und Kanal machen Vorlagen auffindbar; pro Aufgabe gibt es eine freigegebene Vorlage.</li>
+<li>Der <strong>Ablageort</strong> richtet sich nach dem, was das Team täglich nutzt; bewährt ist eine zentrale Bibliothek plus Schnellzugriff.</li>
+<li><strong>Versionierung</strong> mit Datum und Begründung, Tests vor jeder Änderung und ein Quartalsdurchgang halten die Bibliothek aktuell.</li>
+<li><strong>Governance</strong> regelt Verantwortung, Freigaben und Daten; häufig genutzte Vorlagen sind die Basis für <strong>KI-Assistenten</strong> (Kap. 23 ff.).</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Ist das ein vollständiger Bibliothekseintrag?</summary>
+<p>Eine Kollegin bei Fjordlicht hat diesen Eintrag in die Team-Bibliothek gestellt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Name: LinkedIn gut
+Prompt: Schreib einen LinkedIn-Post für Fjordlicht Business über unseren
+neuen Kunden Stadtwerke Beispielstadt, die 120 Jacken Sølv zum Sonderpreis
+von 89 Euro bestellt haben. Professionell, nicht zu lang.
+Stand: irgendwann im Sommer
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>Nenne <strong>fünf Probleme</strong> dieses Eintrags. Ordne jedes einem Feld aus Abschnitt 10.2 oder einer
+   Governance-Regel aus Abschnitt 10.6 zu.</li>
+<li>Welche Angaben sind <strong>vertraulich</strong> und dürfen nicht in einer Vorlage stehen?</li>
+<li>Schlage einen Namen nach der Benennungskonvention aus Abschnitt 10.3 vor.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Stell dir vor, eine neue Kollegin nutzt den Eintrag in drei Monaten für einen anderen Kunden. Was
+weiß sie nicht, was übernimmt sie versehentlich, und woran erkennt sie ein gutes Ergebnis?</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Feld / Regel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name nichtssagend, keine ID</td>
+<td>ID und Name</td>
+</tr>
+<tr>
+<td>konkrete Kundendaten statt Platzhalter</td>
+<td>Platzhalter, keine vertraulichen Inhalte</td>
+</tr>
+<tr>
+<td>„professionell, nicht zu lang" ist nicht prüfbar</td>
+<td>Prompt-Text (Output, Tone)</td>
+</tr>
+<tr>
+<td>kein Beispielergebnis, keine Prüfpunkte</td>
+<td>Beispielergebnis, Prüfpunkte</td>
+</tr>
+<tr>
+<td>kein Werkzeug, kein Datum, keine Version, niemand verantwortlich</td>
+<td>Getestet mit, Version, Stand, Verantwortlich</td>
+</tr>
+<tr>
+<td>keine Regel für fehlende Angaben oder Freigabe durch den Kunden</td>
+<td>Modifier, Governance</td>
+</tr>
+</tbody>
+</table>
+<p>Vertraulich sind der Kundenname, die Stückzahl und vor allem der <strong>Sonderpreis</strong>. Sie gehören in
+Platzhalter wie <code>[Kunde, nur mit Freigabe zur Nennung]</code> und <code>[Anlass der Zusammenarbeit]</code> – der
+Preis gehört überhaupt nicht in einen öffentlichen Post.</p>
+<p>Namensvorschlag: <code>TXT-LI-004 LinkedIn-Post Referenzkunde Business</code>. Ergänzen sollte man außerdem
+den Hinweis, dass Referenzkunden nur mit schriftlicher Zustimmung genannt werden.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Drei Chat-Prompts zu Vorlagen machen</summary>
+<p>Diese Übung machst du direkt im KI-Werkzeug. Nimm drei Prompts, die du in den Kapiteln 5 bis 9
+geschrieben hast (oder drei typische Aufgaben für Fjordlicht bzw. ein Unternehmen deiner Wahl:
+Newsletter-Betreffzeilen, Pinterest-Beschreibung, Antwort auf einen Instagram-Kommentar).</p>
+<ol>
+<li><strong>Platzhalter setzen.</strong> Ersetze alle veränderlichen Stellen durch eindeutig benannte
+   Platzhalter in eckigen Klammern, wo hilfreich mit Beispiel.</li>
+<li><strong>Metadaten ergänzen.</strong> Lege für jeden Prompt einen vollständigen Eintrag mit allen Feldern aus
+   Abschnitt 10.2 an, inklusive ID nach Benennungskonvention und Datenklasse.</li>
+<li><strong>Testen.</strong> Fülle jede Vorlage zweimal mit unterschiedlichen fiktiven Inhalten aus und lass sie
+   in neuen Chats laufen. Wähle je ein Beispielergebnis aus.</li>
+<li><strong>Fremdtest.</strong> Gib einen der Einträge einer anderen Person oder lies ihn mit einem Tag Abstand
+   und fülle ihn streng nach Anleitung aus. Notiere jede Stelle, an der du raten musstest.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ein Platzhalter wie [Text] oder [Infos] zwingt die nutzende Person zum Raten. Benenne, was genau
+hineingehört und woher es kommt, etwa [Kommentartext aus Instagram, ohne Nutzernamen].</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel eines vollständigen Eintrags:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code>ID/Name:        TXT-IG-007 Antwort auf Instagram-Kommentar
+Zweck:          sachliche Antworten auf Fragen und Kritik unter Posts;
+                nicht für Reklamationen mit Bestelldaten (an Kundenservice)
+Prompt:         Persona: Du betreust die Community von Fjordlicht.
+                Request: Formuliere eine Antwort auf [Kommentartext, ohne
+                Nutzernamen]. Output: maximal 40 Wörter, ein Absatz.
+                Modifier: Nur Angaben aus [Produktinfos]. Keine Rabatte,
+                keine Zusagen. Fehlt etwas, verweise auf den Kundenservice.
+                Purpose: Frage klären, Vertrauen stärken.
+                Tone: ruhig, ehrlich, Du-Ansprache.
+Input:          Kommentartext, Produktinfos
+Getestet mit:   ChatGPT, Gegenprobe Claude, Oktober 2026
+Beispiel:       [freigegebene Antwort]
+Prüfpunkte:     max. 40 Wörter; keine Zusage; keine erfundenen Angaben
+Testfälle:      Produktfrage, Kritik am Preis, Frage ohne Antwort im Material
+Datenklasse:    grün - keine Nutzernamen, keine Bestelldaten
+Version:        v1, Datum, verantwortlich: Social-Media-Team
+</code></pre></div></td></tr></table></div>
+<p>Typische Befunde im Fremdtest: unklare Platzhalter, fehlende Angabe zum Input, nicht anwendbare
+Prüfpunkte. Eine gute Bearbeitung zeigt drei vollständige Einträge, je zwei Testläufe und konkrete
+Korrekturen aus dem Fremdtest.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Ablageort und Governance begründet wählen</summary>
+<p>Die Fjordlicht GmbH will ihre Prompt-Bibliothek einführen. Im Team gibt es drei Vorschläge:</p>
+<ul>
+<li><strong>A:</strong> „Wir legen alles in ein gemeinsames ChatGPT-Projekt bzw. in einen Assistenten. Dann
+  wirken die Vorgaben automatisch, und wir brauchen keine extra Bibliothek."</li>
+<li><strong>B:</strong> „Wir bauen eine Notion-Datenbank mit Tags, Status-Workflow, Freigabestufen und
+  Bewertungssystem für jeden Prompt."</li>
+<li><strong>C:</strong> „Eine gemeinsame Tabelle mit den wichtigsten Feldern reicht. Die zehn häufigsten Prompts
+  legen wir zusätzlich als Kürzel in einem Textbaustein-Werkzeug an."</li>
+</ul>
+<p>Rahmen: fünf Personen im Marketing, Microsoft 365 und ChatGPT-Business-Konten sind vorhanden,
+Notion wird nicht genutzt, das Team hat wenig Zeit für Pflege. Die Custom-GPT-Funktion von ChatGPT
+wird laut Ankündigung durch Plugins abgelöst (Stand Oktober 2026).</p>
+<ol>
+<li>Bewerte jeden Vorschlag nach Aufwand, Auffindbarkeit, Pflegbarkeit, Werkzeugunabhängigkeit und
+   Datenschutz.</li>
+<li>Entscheide dich für eine Lösung oder eine Kombination und begründe.</li>
+<li>Formuliere fünf Governance-Regeln für die gewählte Lösung.</li>
+<li>Benenne ein Risiko deiner Lösung und eine Maßnahme dagegen.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Beachte die Werkzeugabhängigkeit: Was passiert mit Vorlagen, die nur in einem Assistenten
+existieren, wenn der Anbieter die Funktion umbaut? Und: Eine aufwendige Lösung, die niemand pflegt,
+ist schlechter als eine einfache, die gepflegt wird.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Kriterium</th>
+<th>A Projekt/Assistent</th>
+<th>B Notion-Datenbank</th>
+<th>C Tabelle + Kürzel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aufwand</td>
+<td>mittel</td>
+<td>hoch, neues Werkzeug</td>
+<td>niedrig</td>
+</tr>
+<tr>
+<td>Auffindbarkeit</td>
+<td>gering, Prompts stecken in Anweisungen</td>
+<td>hoch</td>
+<td>mittel bis hoch</td>
+</tr>
+<tr>
+<td>Pflegbarkeit</td>
+<td>mittel</td>
+<td>gering bei wenig Zeit</td>
+<td>hoch</td>
+</tr>
+<tr>
+<td>Werkzeugunabhängigkeit</td>
+<td>gering – Umbau GPT zu Plugin zeigt das Risiko</td>
+<td>hoch</td>
+<td>hoch</td>
+</tr>
+<tr>
+<td>Datenschutz</td>
+<td>Business-Tarif ok</td>
+<td>neue Prüfung nötig</td>
+<td>im M365-Umfeld geregelt</td>
+</tr>
+</tbody>
+</table>
+<p>Empfehlung: <strong>C als verbindliche Quelle</strong>, ergänzt um A für zwei bis drei sehr häufige Abläufe.
+Die Bibliothek bleibt die werkzeugunabhängige Dokumentation, das Projekt nutzt deren Inhalte.
+B ist für dieses Team überdimensioniert.</p>
+<p>Governance-Regeln, zum Beispiel: (1) eine verantwortliche Person für die Bibliothek; (2) pro
+Aufgabe eine freigegebene Vorlage; (3) Änderungen nur mit Testfällen und neuer Version;
+(4) keine personenbezogenen oder vertraulichen Daten in Vorlagen, Datenklasse je Eintrag;
+(5) Quartalsdurchgang und Prüfung nach jedem Modellwechsel.</p>
+<p>Risiko: Bibliothek und Projekt-Anweisungen laufen auseinander. Maßnahme: Das Projekt verweist auf
+die Version in der Bibliothek, Änderungen erfolgen immer zuerst dort.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Die Prompt-Bibliothek für das Fjordlicht-Marketing</summary>
+<p><strong>Szenario:</strong> Das fünfköpfige Marketingteam der Fjordlicht GmbH hat in den letzten Wochen viele
+Prompts entwickelt – verstreut über Chatverläufe, Notizen und Mails. Die Teamleitung beauftragt
+dich, daraus bis Monatsende eine Prompt-Bibliothek zu bauen, die ab sofort verbindlich ist und die
+auch eine neue Kollegin am ersten Tag nutzen kann. Du kannst alternativ die Bibliothek für ein
+Unternehmen deiner Wahl anlegen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Kanäle: Newsletter, Instagram, TikTok, LinkedIn (B2B), Pinterest, Blog, Webshop.
+Vorhanden: Microsoft 365, ChatGPT-Business-Konten, keine weitere Software.
+Markenstimme: ruhig, ehrlich, naturverbunden, Du-Ansprache, keine Superlative.
+Nachhaltigkeitsaussagen nur aus der freigegebenen Claim-Liste.
+Nur Platzhalter, keine echten Kunden- oder Preisdaten.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Struktur und Einträge.</strong> Lege eine Kategorienstruktur und eine Benennungskonvention
+fest. Erstelle <strong>acht</strong> vollständige Einträge mit allen Feldern aus Abschnitt 10.2, verteilt über
+mindestens vier Kanäle und mindestens drei Aufgabentypen (z. B. Entwurf, Überarbeitung, Prüfung).
+Mindestens ein Eintrag ist ein <strong>Claim-Check</strong>-Prompt, der für alle Texte gilt. Teste jeden Eintrag
+mindestens zweimal.</p>
+<p><strong>Runde 2 – Ablage und Governance.</strong> Entscheide über den Ablageort und begründe die Wahl mit den
+Kriterien aus Abschnitt 10.4. Lege Rollen, Freigabeweg, Versionierungsregel, Datenklassen und
+einen Pflegerhythmus fest.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Beim ersten Durchgang fällt auf: Von der Instagram-Caption
+kursieren drei Versionen, eine davon enthält echte Bestelldaten eines Kunden als Beispiel, und
+eine Kollegin hat die Hashtag-Regel ohne Test geändert, worauf die Captions doppelt so lang
+wurden. Bereinige die Lage: Lege fest, welche Version gilt, entferne die vertraulichen Daten,
+rekonstruiere die Versionshistorie und ergänze eine Regel, die so etwas künftig verhindert.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Teamleitung möchte die Bibliothek abschaffen,
+sobald der Content-Assistent (Kap. 26) läuft: „Dann steckt doch alles im Assistenten."
+<strong>Widersprich</strong> dort, wo die Bibliothek weiterhin unverzichtbar ist, erkenne an, welche Vorlagen
+tatsächlich in den Assistenten wandern sollten, und entscheide begründet, wie Bibliothek und
+Assistent künftig zusammenspielen.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Kategorienstruktur, Benennungskonvention und acht getestete Einträge</li>
+<li>Entscheidung zum Ablageort und Governance-Dokument (maximal eine Seite)</li>
+<li>Bereinigungsprotokoll zu Runde 3 mit gültiger Version, Versionshistorie und neuer Regel</li>
+<li>begründete Entscheidung zum Zusammenspiel von Bibliothek und Assistent</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jeder Eintrag ein Beispielergebnis, anwendbare Prüfpunkte,
+Testfälle und eine Datenklasse hat, keine Vorlage vertrauliche Daten enthält, eine Person ohne
+Vorwissen zwei beliebige Einträge ohne Rückfrage nutzen kann und deine Entscheidung aus Runde 4
+die Werkzeugabhängigkeit ausdrücklich berücksichtigt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern: Eine Bibliothek lebt von Pflege und Regeln, nicht von der Menge der Einträge. In
+Runde 3 zeigt sich, warum Versionierung und „Änderung nur mit Test" keine Bürokratie sind. In
+Runde 4 hilft die Frage: Was passiert mit unserem Wissen, wenn sich das Werkzeug ändert – wie beim
+angekündigten Übergang von Custom GPTs zu Plugins?</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) Struktur und Benennung sind konsistent, die acht Einträge sind vollständig,
+getestet und decken Kanäle und Aufgabentypen ab, inklusive eines funktionierenden Claim-Checks;
+(2) Ablageort und Governance passen zu Teamgröße und vorhandenen Werkzeugen, Rollen und
+Freigabeweg sind eindeutig; (3) die Bereinigung legt eine gültige Version fest, entfernt
+vertrauliche Daten vollständig, macht die Historie nachvollziehbar und ergänzt eine wirksame Regel
+wie „Änderung nur durch die Eigentümerin nach Testlauf"; (4) die Entscheidung in Runde 4 sieht die
+Bibliothek als werkzeugunabhängige Quelle und Dokumentation, überführt häufige Vorlagen in den
+Assistenten und regelt, wo Änderungen zuerst erfolgen.</p>
+<p>Lernziel: Eine teamtaugliche Prompt-Bibliothek mit Struktur, Metadaten, Versionierung und
+Governance aufbauen und ihr Verhältnis zu KI-Assistenten begründet festlegen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel9/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 9 – Fehleranalyse &amp; Troubleshooting">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 9 – Fehleranalyse & Troubleshooting
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel11/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 11 – Kollaboratives Schreiben: vom ChatGPT Canvas zu Schreibblöcken">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 11 – Kollaboratives Schreiben: vom ChatGPT Canvas zu Schreibblöcken
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

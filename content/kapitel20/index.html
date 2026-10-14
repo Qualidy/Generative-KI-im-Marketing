@@ -1,0 +1,1992 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel19/">
+      
+      
+        <link rel="next" href="../kapitel21/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 20 – Datenbasierte Optimierung von Textinhalten - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-20-datenbasierte-optimierung-von-textinhalten" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 20 – Datenbasierte Optimierung von Textinhalten
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Block 4 · Content-Optimierung mit KI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 17 – Zielgruppenanalyse mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Kundenavatar entwickeln und nutzen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Social Listening mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Datenbasierte Optimierung von Textinhalten
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Datenbasierte Optimierung von Textinhalten
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#201-vom-bauchgefuhl-zur-kennzahl" class="md-nav__link">
+    <span class="md-ellipsis">
+      20.1 Vom Bauchgefühl zur Kennzahl
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#202-kpis-je-kanal-was-misst-eigentlich-den-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      20.2 KPIs je Kanal: Was misst eigentlich den Text?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#203-daten-exportieren-und-vorbereiten" class="md-nav__link">
+    <span class="md-ellipsis">
+      20.3 Daten exportieren und vorbereiten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#204-analyse-mit-chatgpt-muster-finden-befunde-prufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      20.4 Analyse mit ChatGPT: Muster finden, Befunde prüfen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#205-lesbarkeit-und-verstandlichkeit-messen" class="md-nav__link">
+    <span class="md-ellipsis">
+      20.5 Lesbarkeit und Verständlichkeit messen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#206-die-optimierungsschleife-und-die-grenze-der-daten" class="md-nav__link">
+    <span class="md-ellipsis">
+      20.6 Die Optimierungsschleife – und die Grenze der Daten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-20-datenbasierte-optimierung-von-textinhalten">Kapitel 20 – Datenbasierte Optimierung von Textinhalten<a class="headerlink" href="#kapitel-20-datenbasierte-optimierung-von-textinhalten" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Welche <strong>KPIs</strong> pro Kanal wirklich etwas über die Qualität eines Textes aussagen – und welche nicht</li>
+<li>Wie du Daten aus Newsletter-Tool, Social-Media-Statistik und <strong>GA4</strong> so exportierst, dass KI damit arbeiten kann</li>
+<li>Wie du mit der <strong>Datenanalyse</strong> in ChatGPT Muster findest, ohne programmieren zu können</li>
+<li>Wie du <strong>Lesbarkeit und Verständlichkeit</strong> messbar machst und gezielt verbesserst</li>
+<li>Wie eine <strong>Optimierungsschleife</strong> aussieht, die aus Zahlen konkrete Textentscheidungen macht</li>
+<li>Warum <strong>Korrelation nicht Kausalität</strong> ist und wie du dich vor Scheinbefunden schützt</li>
+</ul>
+</div>
+<hr />
+<h2 id="201-vom-bauchgefuhl-zur-kennzahl">20.1 Vom Bauchgefühl zur Kennzahl<a class="headerlink" href="#201-vom-bauchgefuhl-zur-kennzahl" title="Permanent link">&para;</a></h2>
+<p>Im Marketingalltag wird über Texte meist nach Geschmack entschieden: „Die Betreffzeile klingt gut", „Der Post wirkt zu lang". Das ist nicht falsch, aber es lässt sich nicht überprüfen. Datenbasierte Optimierung heißt: Du schaust, wie Texte <strong>tatsächlich</strong> gewirkt haben, suchst Muster und leitest daraus Hypothesen für die nächsten Texte ab.</p>
+<p>KI hilft dabei an zwei Stellen. Erstens beim <strong>Auswerten</strong>: Die Datenanalyse in ChatGPT (ein eingebautes Python-Werkzeug, Kap. 6) rechnet mit hochgeladenen Tabellen, erstellt Diagramme und fasst Auffälligkeiten zusammen. Claude, Gemini und Microsoft Copilot bieten vergleichbare Funktionen. Zweitens beim <strong>Umsetzen</strong>: Aus einem Befund wie „Fragen im Betreff schneiden besser ab" werden neue Textvarianten – die du dann wieder testest (Kap. 16).</p>
+<p>Wichtig ist die Reihenfolge. Zuerst klärst du, <strong>welche Frage</strong> du beantworten willst, dann <strong>welche Kennzahl</strong> sie beantwortet, und erst dann holst du Daten. Wer umgekehrt einen großen Export hochlädt und „Was fällt dir auf?" fragt, bekommt eine Liste von Beobachtungen, von denen die Hälfte Zufall ist.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Daten beantworten nur Fragen, die du vorher gestellt hast. <strong>Erst Frage, dann Kennzahl, dann Export</strong> – nie umgekehrt.</p>
+</div>
+<hr />
+<h2 id="202-kpis-je-kanal-was-misst-eigentlich-den-text">20.2 KPIs je Kanal: Was misst eigentlich den Text?<a class="headerlink" href="#202-kpis-je-kanal-was-misst-eigentlich-den-text" title="Permanent link">&para;</a></h2>
+<p>Nicht jede Kennzahl sagt etwas über den Text. Die Öffnungsrate eines Newsletters hängt fast nur an Betreff, Preheader und Absender – über den Inhalt sagt sie nichts. Die Klickrate dagegen misst, ob der Text zum Weiterlesen bewegt. Die folgende Tabelle ordnet die wichtigsten Kennzahlen dem Textelement zu, das sie beeinflusst.</p>
+<table>
+<thead>
+<tr>
+<th>Kanal</th>
+<th>Kennzahl</th>
+<th>Was sie über den Text verrät</th>
+<th>Vorsicht</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Newsletter</td>
+<td>Öffnungsrate</td>
+<td>Wirkung von Betreff und Preheader</td>
+<td>durch Apple Mail Privacy Protection künstlich erhöht, nur als Trend nutzen</td>
+</tr>
+<tr>
+<td>Newsletter</td>
+<td>Klickrate (CTR), Klick-zu-Öffnungsrate</td>
+<td>Wirkung von Inhalt, Aufbau, Call-to-Action</td>
+<td>hängt auch am Angebot, nicht nur am Text</td>
+</tr>
+<tr>
+<td>Newsletter</td>
+<td>Abmelderate</td>
+<td>Passung von Ton und Frequenz</td>
+<td>einzelne Ausreißer nicht überbewerten</td>
+</tr>
+<tr>
+<td>Instagram/TikTok</td>
+<td>Verweildauer, Saves, Shares</td>
+<td>ob der Hook trägt und der Inhalt nützlich ist</td>
+<td>Reichweite hängt stark am Algorithmus</td>
+</tr>
+<tr>
+<td>LinkedIn</td>
+<td>Interaktionsrate, Kommentare</td>
+<td>ob der Beitrag eine Diskussion anstößt</td>
+<td>Netzwerk der Person zählt mit</td>
+</tr>
+<tr>
+<td>Blog (GA4)</td>
+<td>Engagement-Rate, durchschnittliche Engagement-Zeit</td>
+<td>ob der Text gelesen wird</td>
+<td>Engagement-Zeit ist ein Mittelwert, Ausreißer verzerren</td>
+</tr>
+<tr>
+<td>Blog (GA4)</td>
+<td>Conversions, z. B. Newsletter-Anmeldung</td>
+<td>ob der Text zum nächsten Schritt führt</td>
+<td>kleine Zahlen schwanken stark</td>
+</tr>
+<tr>
+<td>Webshop</td>
+<td>Conversion-Rate der Produktseite</td>
+<td>Überzeugungskraft der Produkttexte</td>
+<td>Preis, Bilder, Lieferzeit wirken mit</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p><strong>Eitelkeitskennzahlen</strong> wie Likes oder Seitenaufrufe sehen gut aus, sagen aber wenig darüber, ob ein Text sein Ziel erreicht. Ein Blogartikel mit 10.000 Aufrufen und zehn Sekunden Lesezeit hat schlechter funktioniert als einer mit 800 Aufrufen und 40 Newsletter-Anmeldungen. Leg pro Textsorte <strong>eine Hauptkennzahl</strong> fest, die zum Zweck passt.</p>
+</div>
+<hr />
+<h2 id="203-daten-exportieren-und-vorbereiten">20.3 Daten exportieren und vorbereiten<a class="headerlink" href="#203-daten-exportieren-und-vorbereiten" title="Permanent link">&para;</a></h2>
+<p>Die meisten Werkzeuge bieten einen CSV- oder Excel-Export: Newsletter-Tools (z. B. Brevo, CleverReach, Mailchimp) pro Kampagne, die Meta Business Suite und LinkedIn-Seitenstatistiken pro Beitrag, GA4 über „Berichte" oder „Explorative Datenanalysen" pro Seite. Für die Textanalyse brauchst du in jeder Zeile <strong>den Text selbst</strong> (oder zumindest Betreff, Hook, Überschrift) und die Kennzahlen. Fehlt der Text im Export, ergänzt du ihn per Hand oder über eine eindeutige ID.</p>
+<table>
+<thead>
+<tr>
+<th>Schritt</th>
+<th>Was du tust</th>
+<th>Warum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Zeitraum wählen</td>
+<td>z. B. die letzten 6–12 Monate</td>
+<td>genug Fälle, aber noch vergleichbare Bedingungen</td>
+</tr>
+<tr>
+<td>2. Spalten reduzieren</td>
+<td>Datum, Text, Merkmale, Kennzahlen</td>
+<td>weniger Rauschen, weniger Fehldeutungen</td>
+</tr>
+<tr>
+<td>3. Personenbezug entfernen</td>
+<td>keine E-Mail-Adressen, Namen, Kunden-IDs</td>
+<td>DSGVO (Kap. 4), aggregierte Daten genügen</td>
+</tr>
+<tr>
+<td>4. Merkmale ergänzen</td>
+<td>z. B. „Frage im Betreff: ja/nein", Länge, Thema</td>
+<td>damit die Analyse Muster überhaupt sehen kann</td>
+</tr>
+<tr>
+<td>5. Prüfen</td>
+<td>Stichprobe von zehn Zeilen gegen das Original</td>
+<td>Exportfehler früh erkennen</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Merkmale von der KI vorschlagen lassen</p>
+<p>Schritt 4 ist der eigentliche Hebel. Lade die Tabelle hoch und frage: „Welche Merkmale der Betreffzeilen könnten mit der Öffnungsrate zusammenhängen? Schlage maximal acht vor, die sich eindeutig mit ja/nein oder einer Zahl erfassen lassen." Die KI ergänzt diese Spalten dann selbst – du prüfst stichprobenartig, ob sie richtig zugeordnet hat.</p>
+</div>
+<p>Bei GA4 lohnt ein kurzer Blick auf die Begriffe, bevor du exportierst: Eine Sitzung gilt dort als „mit Interaktion", wenn sie länger als zehn Sekunden dauert, ein Conversion-Ereignis auslöst oder mindestens zwei Seitenaufrufe umfasst. Die <strong>Engagement-Rate</strong> ist der Anteil solcher Sitzungen. Für Blogartikel ist das aussagekräftiger als die alte Absprungrate, aber immer noch grob: Zehn Sekunden reichen nicht, um einen Ratgeber zu lesen. Wenn ihr Scrolltiefe oder Klicks auf interne Links als Ereignisse erfasst, kannst du genauer sehen, wo Leserinnen aussteigen – und genau diese Stelle im Text überarbeiten.</p>
+<p>Für Fjordlicht reichen für einen ersten Blick auf den Newsletter wenige Spalten: Versanddatum, Betreff, Thema, Öffnungsrate, Klickrate, Abmeldungen. Bei rund 38.000 Abonnenten und einem Versand pro Woche entstehen so etwa 50 Zeilen pro Jahr – genug für Tendenzen, zu wenig für harte Beweise.</p>
+<hr />
+<h2 id="204-analyse-mit-chatgpt-muster-finden-befunde-prufen">20.4 Analyse mit ChatGPT: Muster finden, Befunde prüfen<a class="headerlink" href="#204-analyse-mit-chatgpt-muster-finden-befunde-prufen" title="Permanent link">&para;</a></h2>
+<p>Ein guter Analyse-Prompt folgt dem P.R.O.M.P.T.-Framework (Kap. 5). Besonders wichtig sind hier <strong>Purpose</strong> (welche Entscheidung soll die Analyse stützen?) und <strong>Modifier</strong> (welche Regeln gelten für vorsichtige Aussagen?).</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist Datenanalystin im Content-Marketing und erklärst
+Ergebnisse so, dass ein Team ohne Statistikkenntnisse sie versteht.
+Request: Analysiere die angehängte Tabelle mit 52 Newsletter-Versänden.
+Prüfe, welche Merkmale der Betreffzeile mit Öffnungsrate und Klickrate
+zusammenhängen.
+Output: 1) Tabelle der Merkmale mit Mittelwert je Ausprägung und Anzahl
+Fälle, 2) ein Diagramm, 3) maximal fünf Befunde in Stichpunkten,
+4) drei Hypothesen für künftige A/B-Tests.
+Modifier: Nenne bei jedem Befund die Anzahl der Fälle. Kennzeichne
+Befunde mit weniger als 10 Fällen pro Gruppe als &quot;unsicher&quot;.
+Formuliere Zusammenhänge, keine Ursachen. Erfinde keine Werte.
+Purpose: Wir wollen entscheiden, welche Betreffzeilen-Muster wir im
+nächsten Quartal gezielt testen.
+Tone: sachlich, nüchtern, ohne Übertreibungen.
+</code></pre></div></td></tr></table></div>
+<p>Danach kommt der Teil, den viele auslassen: die <strong>Plausibilitätsprüfung</strong>. Lass dir den Rechenweg zeigen („Zeige mir den Code und die Zwischenergebnisse"), prüfe einen Mittelwert per Hand in Excel und frage gezielt nach Gegenerklärungen: „Welche anderen Faktoren könnten diesen Unterschied erklären?" Die Datenanalyse rechnet zuverlässig – aber sie interpretiert genauso selbstbewusst wie ein Sprachmodell formuliert, und gelegentlich liest sie eine Spalte falsch ein (Dezimalkomma, Prozentzeichen, Datumsformat).</p>
+<div class="admonition example">
+<p class="admonition-title">Fjordlicht: ein Befund und seine Prüfung</p>
+<p>Die Analyse meldet: „Betreffzeilen mit Produktnamen haben 4,1 Prozentpunkte niedrigere Öffnungsraten." Auf Nachfrage zeigt sich: Alle Produkt-Betreffzeilen wurden im Sommer verschickt, wenn die Öffnungsraten generell sinken. Vergleicht man nur Versände desselben Quartals, schrumpft der Unterschied auf 0,8 Punkte – kaum mehr als Zufall. Der Befund wird zur <strong>Hypothese</strong>, nicht zur Regel.</p>
+</div>
+<hr />
+<h2 id="205-lesbarkeit-und-verstandlichkeit-messen">20.5 Lesbarkeit und Verständlichkeit messen<a class="headerlink" href="#205-lesbarkeit-und-verstandlichkeit-messen" title="Permanent link">&para;</a></h2>
+<p>Neben Reaktionsdaten gibt es eine zweite Datenquelle: den Text selbst. Lesbarkeit lässt sich näherungsweise messen – über Satzlänge, Wortlänge und Fachwortdichte. Bekannt ist der <strong>Flesch-Lesbarkeitsindex</strong> in der deutschen Anpassung nach Amstad (höher = leichter lesbar) und die <strong>Wiener Sachtextformel</strong>. Online-Prüfer und Schreibwerkzeuge berechnen solche Werte; die KI kann sie in der Datenanalyse ebenfalls ausrechnen, wenn du sie ausdrücklich darum bittest. Schätzt sie den Wert nur „aus dem Bauch", ist er wertlos.</p>
+<table>
+<thead>
+<tr>
+<th>Merkmal</th>
+<th>Richtwert für Marketingtexte an Endkunden</th>
+<th>Wie KI hilft</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Satzlänge</td>
+<td>im Schnitt unter 15 Wörtern, Ausreißer über 25 vermeiden</td>
+<td>lange Sätze markieren und teilen lassen</td>
+</tr>
+<tr>
+<td>Fach- und Fremdwörter</td>
+<td>nur, wenn die Zielgruppe sie kennt</td>
+<td>Liste erstellen, Alternativen vorschlagen</td>
+</tr>
+<tr>
+<td>Nominalstil</td>
+<td>Verben statt „Durchführung der Prüfung"</td>
+<td>Passagen in Verbalstil umformulieren</td>
+</tr>
+<tr>
+<td>Aufbau</td>
+<td>Kernaussage zuerst, Zwischenüberschriften</td>
+<td>Gliederung prüfen und vorschlagen</td>
+</tr>
+<tr>
+<td>Aktiv statt Passiv</td>
+<td>„Wir nähen" statt „Es wird genäht"</td>
+<td>Passivsätze auflisten</td>
+</tr>
+</tbody>
+</table>
+<p>Formeln messen Oberfläche, nicht Verständnis. Ein Text kann kurze Sätze haben und trotzdem unklar sein. Ergänze deshalb einen <strong>Verständnistest</strong>: Gib der KI den Text und den Kundenavatar (Kap. 18) und lass sie die drei Fragen formulieren, die eine Leserin danach noch hätte. Für B2B-Texte von Fjordlicht Business gelten andere Richtwerte als für Instagram – Einkäufer erwarten Fachbegriffe wie „Arbeitsschutznorm" oder „Rahmenvertrag".</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Lesbarkeitswerte werden schnell zum Selbstzweck. Wer jeden Text auf maximalen Flesch-Wert trimmt, verliert die Markenstimme – bei Fjordlicht etwa den ruhigen, leicht nordisch-trockenen Ton. Nutze Werte als <strong>Warnsignal</strong> für Ausreißer, nicht als Ziel.</p>
+</div>
+<hr />
+<h2 id="206-die-optimierungsschleife-und-die-grenze-der-daten">20.6 Die Optimierungsschleife – und die Grenze der Daten<a class="headerlink" href="#206-die-optimierungsschleife-und-die-grenze-der-daten" title="Permanent link">&para;</a></h2>
+<p>Aus Daten wird erst dann Optimierung, wenn ein Befund eine Handlung auslöst und diese Handlung wieder gemessen wird. Diese Schleife läuft bei Fjordlicht einmal pro Quartal:</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Frage festlegen]) --&gt; B([Daten exportieren])
+    B --&gt; C([Analyse mit KI])
+    C --&gt; D([Befund prüfen])
+    D --&gt; E([Hypothese formulieren])
+    E --&gt; F([Varianten texten und testen])
+    F --&gt; G([Ergebnis dokumentieren])
+    G --&gt; A</code></pre>
+<p>Der entscheidende Schritt ist <strong>D</strong>: Befund prüfen. Hier steckt die wichtigste statistische Regel des Kapitels: <strong>Korrelation ist nicht Kausalität.</strong> Dass zwei Dinge gemeinsam auftreten, heißt nicht, dass das eine das andere verursacht. Typische Störfaktoren im Content-Marketing:</p>
+<table>
+<thead>
+<tr>
+<th>Scheinbarer Befund</th>
+<th>Mögliche andere Erklärung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>„Lange Blogartikel ranken besser."</td>
+<td>Lange Artikel behandeln wichtigere Themen und werden häufiger verlinkt.</td>
+</tr>
+<tr>
+<td>„Posts mit Emojis bekommen mehr Likes."</td>
+<td>Sie wurden vor allem zu Gewinnspielen veröffentlicht.</td>
+</tr>
+<tr>
+<td>„Dienstags-Newsletter werden öfter geöffnet."</td>
+<td>Dienstags lagen zufällig die Rabattaktionen.</td>
+</tr>
+<tr>
+<td>„Du-Ansprache bringt mehr Klicks."</td>
+<td>Die Du-Texte liefen nur an die junge, aktivere Zielgruppe.</td>
+</tr>
+</tbody>
+</table>
+<p>Kausalität belegt nur ein kontrollierter Test, bei dem sich genau <strong>eine</strong> Variable unterscheidet – dafür gibt es das A/B-Testing (Kap. 16). Die Datenanalyse liefert also keine Wahrheiten, sondern <strong>gute Kandidaten für Tests</strong>. Dokumentiere jede Hypothese mit Datum, Befund, Testergebnis und Konsequenz; nach einem Jahr hast du ein Lernarchiv, das mehr wert ist als jede einzelne Auswertung.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Die Analyse sagt dir, <strong>wo</strong> du hinschauen solltest. Ob eine Änderung wirkt, sagt dir erst der <strong>Test</strong>.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Datenbasierte Optimierung beginnt mit einer <strong>Frage</strong>, nicht mit einem Export; pro Textsorte gibt es eine passende Hauptkennzahl.</li>
+<li>Nicht jede Kennzahl misst den Text: Öffnungsrate misst Betreff und Preheader, Klickrate den Inhalt, <strong>Eitelkeitskennzahlen</strong> wenig.</li>
+<li>Exporte werden reduziert, <strong>ohne Personenbezug</strong> vorbereitet und um Merkmale wie Länge, Frage ja/nein oder Thema ergänzt.</li>
+<li>Die <strong>Datenanalyse</strong> in ChatGPT rechnet zuverlässig, interpretiert aber selbstbewusst – Rechenweg zeigen lassen, Stichproben prüfen, Gegenerklärungen einfordern.</li>
+<li><strong>Lesbarkeitswerte</strong> sind Warnsignale für Ausreißer, kein Selbstzweck; ein Verständnistest mit dem Kundenavatar ergänzt sie.</li>
+<li><strong>Korrelation ist nicht Kausalität</strong>: Analysen liefern Hypothesen, erst ein A/B-Test liefert Belege.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Welche Kennzahl misst welchen Text?</summary>
+<p>Das Fjordlicht-Team möchte wissen, ob seine Texte funktionieren. Ordne jeder Frage die
+<strong>passende Hauptkennzahl</strong> zu und begründe kurz, warum andere Kennzahlen hier weniger taugen.</p>
+<ol>
+<li>Funktionieren unsere neuen Newsletter-Betreffzeilen besser als die alten?</li>
+<li>Bringt der neue Aufbau des Newsletters (Kurzintro, drei Kacheln, ein Button) mehr Besuche
+   im Shop?</li>
+<li>Werden unsere Blogartikel in den „Draußen-Notizen" tatsächlich gelesen?</li>
+<li>Überzeugt der überarbeitete Produkttext der Regenjacke „Sølv"?</li>
+<li>Sind unsere Instagram-Reels nützlich genug, dass Leute sie aufheben?</li>
+</ol>
+<p>Zur Auswahl: Öffnungsrate · Klickrate · Engagement-Zeit (GA4) · Conversion-Rate der
+Produktseite · Saves · Likes · Seitenaufrufe</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Frage dich jeweils: Welches Textelement wird verändert – und welche Kennzahl reagiert <strong>nur</strong>
+oder <strong>vor allem</strong> auf dieses Element? Zwei der Kennzahlen in der Liste sind Eitelkeitskennzahlen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Hauptkennzahl</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Öffnungsrate</td>
+<td>misst Betreff und Preheader; als Trend nutzen, weil Apple Mail Privacy Protection Öffnungen künstlich erhöht</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Klickrate (bzw. Klick-zu-Öffnungsrate)</td>
+<td>misst, ob Inhalt und Aufbau zum Klick führen; die Öffnungsrate ist vom Aufbau unabhängig</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Engagement-Zeit in GA4</td>
+<td>zeigt, ob gelesen wird; Seitenaufrufe zeigen nur, dass jemand kam</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Conversion-Rate der Produktseite</td>
+<td>Ziel ist der Kauf; Vorsicht, Preis, Bilder und Lieferzeit wirken mit</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Saves</td>
+<td>Speichern ist das klarste Signal für Nützlichkeit; Likes sind schneller und unverbindlicher</td>
+</tr>
+</tbody>
+</table>
+<p>Nicht gewählt: <strong>Likes</strong> und <strong>Seitenaufrufe</strong> sind Eitelkeitskennzahlen. Sie zeigen
+Aufmerksamkeit, aber nicht, ob der Text seinen Zweck erreicht hat. Sie dürfen als
+Nebenkennzahl mitlaufen, sollten aber keine Textentscheidung allein begründen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Newsletter-Betreffzeilen mit der Datenanalyse auswerten</summary>
+<p>Diese Übung machst du direkt im KI-Werkzeug (ChatGPT mit Datenanalyse, alternativ Claude,
+Gemini oder Copilot). Kopiere den folgenden fiktiven Fjordlicht-Export in eine Textdatei
+<code>newsletter.csv</code> oder füge ihn direkt in den Chat ein.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>datum;betreff;thema;öffnungsrate;klickrate
+2026-01-08;Was dein Fleece im Winter wirklich braucht;Pflege;41,2;3,9
+2026-01-22;Neu: Skog Fleece in Moosgrün;Produkt;35,8;4,4
+2026-02-05;Wie viel Regen hält eine Regenjacke aus?;Wissen;43,5;3,1
+2026-02-19;Sølv – jetzt wieder da;Produkt;34,9;4,8
+2026-03-05;Drei Wanderwege rund um Münster;Touren;39,7;2,6
+2026-03-19;Warum wir keine Neuware verbrennen;Haltung;44,1;2,2
+2026-04-02;Frühjahrsputz für deine Wanderhose?;Pflege;42,0;3,7
+2026-04-16;Vidde: die Hose für lange Tage;Produkt;36,3;5,0
+2026-04-30;Packliste für dein erstes Mikroabenteuer;Touren;40,8;3,3
+2026-05-14;Tind Rucksack: 20 Prozent leichter;Produkt;35,1;4,6
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>Lass prüfen, ob <strong>Fragen im Betreff</strong> und das <strong>Thema</strong> mit Öffnungs- und Klickrate
+   zusammenhängen. Nutze einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5).</li>
+<li>Lass dir den <strong>Rechenweg</strong> zeigen und prüfe einen Mittelwert selbst nach.</li>
+<li>Formuliere zwei <strong>Hypothesen</strong> für einen A/B-Test – inklusive der Einschränkung, warum die
+   Daten allein nicht reichen.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achte auf das Dezimalkomma und das Semikolon als Trennzeichen – sag beides im Prompt dazu.
+Und schau genau hin, was mit der Klickrate passiert: Was öffnet, ist nicht unbedingt das,
+was klickt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispielprompt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist Datenanalystin im Content-Marketing.
+Request: Werte die Tabelle aus (Semikolon-getrennt, Dezimalkomma). Ergänze
+eine Spalte &quot;frage&quot; (ja, wenn der Betreff mit ? endet). Vergleiche Öffnungs-
+und Klickrate nach &quot;frage&quot; und nach &quot;thema&quot;.
+Output: Tabelle mit Mittelwert und Anzahl je Gruppe, danach drei Befunde.
+Modifier: Nenne immer die Fallzahl, kennzeichne Gruppen unter 10 Fällen als
+unsicher, formuliere Zusammenhänge, keine Ursachen.
+Purpose: Hypothesen für A/B-Tests im nächsten Quartal.
+Tone: sachlich.
+</code></pre></div></td></tr></table></div>
+<p>Erwartbares Ergebnis (gerundet):</p>
+<table>
+<thead>
+<tr>
+<th>Gruppe</th>
+<th>n</th>
+<th>Öffnungsrate</th>
+<th>Klickrate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frage im Betreff</td>
+<td>2</td>
+<td>42,8</td>
+<td>3,4</td>
+</tr>
+<tr>
+<td>keine Frage</td>
+<td>8</td>
+<td>38,5</td>
+<td>3,9</td>
+</tr>
+<tr>
+<td>Thema Produkt</td>
+<td>4</td>
+<td>35,5</td>
+<td>4,7</td>
+</tr>
+<tr>
+<td>übrige Themen</td>
+<td>6</td>
+<td>41,9</td>
+<td>3,1</td>
+</tr>
+</tbody>
+</table>
+<p>Befund: Produkt-Betreffzeilen werden seltener geöffnet, aber häufiger geklickt – wer öffnet,
+hat Kaufinteresse. Alle Gruppen haben unter 10 Fällen, also <strong>unsicher</strong>.</p>
+<p>Hypothesen: (1) „Ein Produkt-Newsletter mit Frage-Betreff erzielt eine höhere Öffnungsrate
+als mit Produktnamen-Betreff, ohne Klickrate zu verlieren." (2) „Ein Wissens-Newsletter mit
+einem Produkt-Kasten am Ende erzielt mehr Klicks als ohne." Die Daten reichen nicht als
+Beleg, weil Thema und Betreffform vermischt sind und die Fallzahl klein ist.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Scheinbefunde entlarven</summary>
+<p>Eine Kollegin hat mit der Datenanalyse die Blog- und Social-Daten von Fjordlicht ausgewertet
+und schlägt auf Basis der Ergebnisse vier neue Regeln für alle Texte vor:</p>
+<ol>
+<li>„Blogartikel über 2.000 Wörter haben 60 Prozent mehr Engagement-Zeit. Ab sofort schreiben
+   wir nur noch lange Artikel."</li>
+<li>„Instagram-Posts mit drei oder mehr Emojis bekommen doppelt so viele Likes. Jeder Post
+   bekommt künftig mindestens drei Emojis."</li>
+<li>„LinkedIn-Beiträge, die die Geschäftsführerin postet, bekommen viermal so viele Kommentare
+   wie Beiträge auf der Unternehmensseite. Der Text ist also besser."</li>
+<li>„Seit wir die Produkttexte mit KI überarbeitet haben, ist die Conversion-Rate im Oktober um
+   18 Prozent gestiegen. Die KI-Texte wirken."</li>
+</ol>
+<p>Bewerte jede Regel kritisch:</p>
+<ul>
+<li>Welche <strong>alternative Erklärung</strong> (Störfaktor) ist plausibel?</li>
+<li>Welche <strong>Zusatzdaten</strong> würdest du anfordern, um sie zu prüfen?</li>
+<li>Wie müsste ein <strong>Test</strong> aussehen, der die Frage klärt (Kap. 16)?</li>
+</ul>
+<p>Formuliere anschließend einen Prompt, mit dem die KI künftig solche Scheinbefunde selbst
+kennzeichnet, bevor sie Empfehlungen ausspricht.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Suche bei jeder Regel nach dem, was <strong>gleichzeitig</strong> mit dem Merkmal auftritt: Thema,
+Zeitraum, Absender, Saison, Zielgruppe. Und prüfe die Formulierung: Wo steckt ein „also"
+oder „wirken", das die Daten nicht hergeben?</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Alternative Erklärung</th>
+<th>Zusatzdaten</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Lange Artikel behandeln Kernthemen (Pflege, Kaufberatung) mit mehr Suchnachfrage und Links; Engagement-Zeit steigt mit Länge fast automatisch</td>
+<td>Thema, Traffic-Quelle, Scrolltiefe, Conversions je Artikel</td>
+<td>dasselbe Thema in kurzer und langer Fassung, Ziel: Newsletter-Anmeldungen statt Zeit</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Emoji-Posts waren Gewinnspiele oder Teaser für Rabatte</td>
+<td>Post-Typ, Anlass, Saves und Shares statt Likes</td>
+<td>identischer Post mit und ohne Emojis an vergleichbaren Tagen</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Persönliche Profile haben andere Netzwerke und Algorithmusvorteile; Texte waren gar nicht gleich</td>
+<td>Reichweite, Follower-Struktur, Textvergleich</td>
+<td>derselbe Text auf beiden Profilen, Interaktionsrate pro Impression</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Oktober ist Saisonstart für Regenjacken; parallel lief eventuell eine Kampagne</td>
+<td>Vorjahresvergleich, Kampagnenkalender, Traffic-Mix</td>
+<td>A/B-Test alter gegen neuer Produkttext im selben Zeitraum</td>
+</tr>
+</tbody>
+</table>
+<p>Gemeinsames Muster: Alle vier Regeln schließen von Korrelation auf Ursache. Regel 1 und 2
+optimieren zudem auf Eitelkeits- bzw. Nebenkennzahlen.</p>
+<p>Prompt-Baustein für künftige Analysen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Bevor du Empfehlungen aussprichst: Prüfe jeden Befund auf mögliche
+Störfaktoren (Thema, Zeitraum, Saison, Absender, Zielgruppe, Kampagnen).
+Nenne für jeden Befund mindestens eine alternative Erklärung und die
+Fallzahl. Formuliere Befunde als Hypothesen (&quot;könnte zusammenhängen&quot;) und
+schlage für jede Hypothese einen A/B-Test mit genau einer veränderten
+Variable vor. Gib keine allgemeinen Regeln aus.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: plausible, konkrete Störfaktoren statt allgemeiner Skepsis;
+Zusatzdaten, die die Frage tatsächlich entscheiden; Tests mit genau einer Variable.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Quartalsreview für den Fjordlicht-Newsletter</summary>
+<p><strong>Szenario:</strong> Die Marketingleitung von Fjordlicht will für das nächste Quartal wissen, wie
+der Newsletter (ca. 38.000 Abonnenten) besser werden kann. Bisher wurde nach Gefühl
+entschieden. Du sollst eine datenbasierte Empfehlung vorlegen, die auch einer kritischen
+Nachfrage standhält. Du kannst alternativ mit einem Unternehmen deiner Wahl und selbst
+erstellten fiktiven Daten arbeiten.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Daten: fiktiver Export, 12 Versände (unten), keine personenbezogenen Daten.
+Werkzeug: ChatGPT mit Datenanalyse oder vergleichbar.
+Ziel: höhere Klickrate in den Shop bei stabiler Abmelderate.
+Ergebnis: eine Seite für die Marketingleitung.
+
+datum;betreff;thema;wörter;öffnung;klick;abmeldung
+2026-04-02;Frühjahrsputz für deine Wanderhose?;Pflege;310;42,0;3,7;0,18
+2026-04-09;Vidde: die Hose für lange Tage;Produkt;180;36,3;5,0;0,22
+2026-04-16;Unser Lieferkettenbericht 2025;Haltung;720;38,9;1,4;0,31
+2026-04-23;Wie wasserdicht ist wasserdicht?;Wissen;450;43,8;3,2;0,15
+2026-04-30;Packliste für dein erstes Mikroabenteuer;Touren;380;40,8;3,3;0,16
+2026-05-07;Tind: 20 Prozent leichter;Produkt;160;35,1;4,6;0,24
+2026-05-14;Was tun, wenn die Jacke nicht mehr abperlt?;Pflege;290;44,6;4,1;0,14
+2026-05-21;Neue Farben für Skog;Produkt;150;34,7;4,9;0,27
+2026-05-28;Warum wir Reparaturen anbieten;Haltung;640;39,5;1,9;0,29
+2026-06-04;Drei Touren für laue Abende;Touren;400;37,2;2,8;0,19
+2026-06-11;Sommerregen: Sølv oder Poncho?;Produkt;260;41,3;5,6;0,17
+2026-06-18;Sommerpause? Nicht für deinen Rucksack;Pflege;300;36,0;3,0;0,20
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Analyse.</strong> Lass die Daten mit einem vollständigen P.R.O.M.P.T.-Prompt (Kap. 5)
+auswerten: Zusammenhänge von Thema, Frageform im Betreff und Textlänge mit Öffnungs-, Klick-
+und Abmelderate. Fordere Fallzahlen und mindestens ein Diagramm an.</p>
+<p><strong>Runde 2 – Prüfung.</strong> Prüfe zwei Mittelwerte selbst nach, lass dir den Rechenweg zeigen und
+fordere zu jedem Befund eine alternative Erklärung ein. Streiche Befunde, die der Prüfung
+nicht standhalten.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Die Geschäftsführung ergänzt: „Die Haltungs-Newsletter
+(Lieferkette, Reparatur) bleiben – sie sind Teil unserer Marke." Gleichzeitig zeigen deine
+Daten, dass genau diese Ausgaben die niedrigsten Klickraten und höchsten Abmelderaten haben.
+Entwickle mit der KI zwei Textvarianten für den nächsten Haltungs-Newsletter, die das Thema
+behalten, aber Länge, Einstieg oder Call-to-Action verändern.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die KI wird dir vermutlich empfehlen, mehr
+Produkt-Newsletter zu schicken, weil sie die höchste Klickrate haben. <strong>Widersprich</strong> dieser
+Empfehlung dort, wo sie zu kurz greift: Öffnungsraten, Abmeldungen, Markenstimme, Ermüdung
+durch zu viel Verkauf. Entscheide begründet, welche <strong>zwei</strong> Hypothesen du im nächsten
+Quartal testest.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Analyse-Prompt und Ergebnistabelle mit Fallzahlen</li>
+<li>Prüfprotokoll: zwei nachgerechnete Werte, gestrichene Befunde mit Begründung</li>
+<li>zwei Varianten des Haltungs-Newsletters (Betreff, Einstieg, Call-to-Action)</li>
+<li>eine Seite für die Marketingleitung: drei Befunde, zwei Testhypothesen, Grenzen der Daten</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jeder Befund eine Fallzahl und eine alternative Erklärung hat,
+keine Empfehlung als bewiesene Ursache formuliert ist, die Haltungs-Varianten genau eine
+klar benannte Veränderung enthalten und deine Seite ohne mündliche Erklärung verständlich ist.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Kern liegt in Runde 4: Eine Kennzahl zu maximieren ist leicht, die richtige Kennzahl im
+Zusammenspiel mit Marke und Abmeldungen zu sehen, ist die eigentliche Arbeit. Zwölf Versände
+sind zu wenig für Gewissheit – deine Empfehlung muss das offen sagen und genau deshalb auf
+Tests hinauslaufen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) vollständiger P.R.O.M.P.T.-Prompt mit Purpose und vorsichtigen
+Modifiern, Ergebnisse mit Fallzahlen (z. B. Produkt: n = 4, Klickrate um 5,0, Öffnungsrate um
+36,9; Haltung: n = 2, Klickrate um 1,7, Abmelderate um 0,30); (2) Prüfprotokoll mit echten
+Nachrechnungen und mindestens einer Streichung oder Abschwächung, etwa weil Länge und Thema
+vermischt sind (beide Haltungs-Newsletter sind die längsten); (3) Haltungs-Varianten, die das
+Thema respektieren und genau eine Variable ändern, z. B. 250 statt 700 Wörter oder ein
+konkreter Call-to-Action zum Reparaturservice; (4) eine Entscheidung, die die
+KI-Empfehlung begründet einschränkt und zwei testbare Hypothesen mit Hauptkennzahl nennt.</p>
+<p>Lernziel: Aus Kampagnendaten belastbare Hypothesen ableiten, Befunde kritisch prüfen und
+Zahlen mit Markenzielen abwägen, statt eine einzelne Kennzahl blind zu maximieren.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel19/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 19 – Social Listening mit KI">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 19 – Social Listening mit KI
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel21/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2041 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel29/">
+      
+      
+        <link rel="next" href="../kapitel31/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-30-prompting-fur-bild-ki-die-bildprompt-anatomie" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Block 6 · Bildgenerierung mit KI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – Wie Bild-KI funktioniert
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#301-ein-bild-hat-keine-lucken" class="md-nav__link">
+    <span class="md-ellipsis">
+      30.1 Ein Bild hat keine Lücken
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#302-die-acht-bausteine-der-bildprompt-anatomie" class="md-nav__link">
+    <span class="md-ellipsis">
+      30.2 Die acht Bausteine der Bildprompt-Anatomie
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#303-bildvokabular-licht-perspektive-objektiv" class="md-nav__link">
+    <span class="md-ellipsis">
+      30.3 Bildvokabular: Licht, Perspektive, Objektiv
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#304-vom-stichwort-zum-bildbriefing-ein-beispiel-in-drei-stufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      30.4 Vom Stichwort zum Bildbriefing: ein Beispiel in drei Stufen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#305-naturliche-sprache-oder-stichwortliste" class="md-nav__link">
+    <span class="md-ellipsis">
+      30.5 Natürliche Sprache oder Stichwortliste?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#306-negative-angaben-was-nicht-ins-bild-soll" class="md-nav__link">
+    <span class="md-ellipsis">
+      30.6 Negative Angaben: was nicht ins Bild soll
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#307-systematisch-iterieren-statt-wurfeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      30.7 Systematisch iterieren statt würfeln
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 31 – Werkzeuge in der Praxis: ChatGPT Images, Midjourney, Ideogram, Adobe Firefly
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel32/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 32 – Visuelle Wirkung: Bildsprache, Komposition und Markenkonsistenz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel33/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 33 – Bildserien und Kampagnenmotive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel34/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 34 – Anwendungsgrenzen der Bild-KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-30-prompting-fur-bild-ki-die-bildprompt-anatomie">Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie<a class="headerlink" href="#kapitel-30-prompting-fur-bild-ki-die-bildprompt-anatomie" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Warum ein Bildprompt <strong>mehr Entscheidungen</strong> treffen muss als ein Textprompt</li>
+<li>Die acht Bausteine der <strong>Bildprompt-Anatomie</strong>: Motiv, Umgebung, Stil, Licht, Komposition, Kamera, Farbstimmung, Format</li>
+<li>Das wichtigste <strong>Bildvokabular</strong> für Licht, Perspektive, Einstellungsgröße und Objektiv</li>
+<li>Wann du in <strong>natürlicher Sprache</strong> schreibst und wann eine <strong>Stichwortliste</strong> besser funktioniert</li>
+<li>Wie du mit <strong>negativen Angaben</strong> umgehst, ohne genau das Unerwünschte ins Bild zu holen</li>
+<li>Wie du <strong>systematisch iterierst</strong>, statt so lange neu zu würfeln, bis zufällig etwas passt</li>
+</ul>
+</div>
+<hr />
+<h2 id="301-ein-bild-hat-keine-lucken">30.1 Ein Bild hat keine Lücken<a class="headerlink" href="#301-ein-bild-hat-keine-lucken" title="Permanent link">&para;</a></h2>
+<p>Ein Text kann offenlassen, ob es regnet. Ein Bild nicht. Jedes Bild hat zwingend eine Tageszeit, eine Lichtrichtung, einen Blickwinkel, einen Bildausschnitt, eine Farbstimmung und ein Format. Was du davon nicht festlegst, entscheidet das Modell – und es entscheidet sich für das, was in seinen Trainingsdaten am häufigsten vorkam.</p>
+<p>Das Ergebnis kennst du: das <strong>Durchschnittsbild</strong>. Eine Person in Outdoorjacke, mittig im Bild, frontal fotografiert, Sonnenuntergang, gesättigte Farben, perfekte Haut. Technisch einwandfrei, inhaltlich austauschbar – und für eine Marke wie Fjordlicht, deren Bildsprache ruhig, ehrlich und leicht nordisch-trocken sein soll, genau falsch.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Ein Bildprompt ist eine <strong>Art-Direction-Anweisung</strong>, keine Suchanfrage. Je mehr der sichtbaren Entscheidungen du selbst triffst, desto weniger landet das Modell beim Durchschnitt.</p>
+</div>
+<p>Die Grundlogik aus dem P.R.O.M.P.T.-Framework (Kap. 5) gilt weiter: Wozu ist das Bild, für wen, in welchem Kanal? Nur die Bausteine, mit denen du das ausdrückst, sind andere. Eine Rolle („Du bist Fotograf") bringt bei Bildmodellen wenig; eine präzise Beschreibung von Licht und Bildausschnitt bringt viel.</p>
+<hr />
+<h2 id="302-die-acht-bausteine-der-bildprompt-anatomie">30.2 Die acht Bausteine der Bildprompt-Anatomie<a class="headerlink" href="#302-die-acht-bausteine-der-bildprompt-anatomie" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Baustein</th>
+<th>Frage, die er beantwortet</th>
+<th>Beispiel für Fjordlicht</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Motiv</strong></td>
+<td>Wer oder was ist zu sehen, was tut es?</td>
+<td>„eine Frau um die vierzig, die einen Thermobecher in beiden Händen hält"</td>
+</tr>
+<tr>
+<td><strong>Umgebung</strong></td>
+<td>Wo und wann?</td>
+<td>„auf einem Steg an einem norddeutschen See, früher Morgen im Oktober"</td>
+</tr>
+<tr>
+<td><strong>Stil / Medium</strong></td>
+<td>Foto, Illustration, Aquarell, 3D? Welche Anmutung?</td>
+<td>„dokumentarisches Reportagefoto, ungestellt"</td>
+</tr>
+<tr>
+<td><strong>Licht</strong></td>
+<td>Woher, wie hart, welche Tageszeit?</td>
+<td>„weiches, diffuses Licht durch Hochnebel"</td>
+</tr>
+<tr>
+<td><strong>Komposition / Perspektive</strong></td>
+<td>Wo steht das Motiv, aus welchem Blickwinkel?</td>
+<td>„Person im rechten Drittel, Blick auf Augenhöhe, viel freie Fläche links"</td>
+</tr>
+<tr>
+<td><strong>Kamera / Objektiv</strong></td>
+<td>Brennweite, Schärfentiefe, Einstellungsgröße?</td>
+<td>„Halbtotale, 50 mm, Hintergrund leicht unscharf"</td>
+</tr>
+<tr>
+<td><strong>Farbstimmung</strong></td>
+<td>Welche Palette, welche Sättigung?</td>
+<td>„gedeckte Grün- und Grautöne, entsättigt, kühle Weißbalance"</td>
+</tr>
+<tr>
+<td><strong>Format</strong></td>
+<td>Seitenverhältnis, Kanal, Platz für Text?</td>
+<td>„Querformat 3:1 für einen Newsletter-Header"</td>
+</tr>
+</tbody>
+</table>
+<p>Nicht jedes Bild braucht alle acht. Eine flache Illustration für einen Blogartikel braucht kein Objektiv, ein Muster für einen Pinterest-Hintergrund kein Motiv im engeren Sinn. Aber wenn ein Bild „irgendwie nicht passt", findest du die Ursache fast immer in einem Baustein, den du dem Modell überlassen hast.</p>
+<div class="admonition tip">
+<p class="admonition-title">Reihenfolge</p>
+<p>Beginne mit <strong>Motiv und Stil</strong> – das sind die Angaben, die am stärksten wirken. Viele Modelle gewichten den Anfang eines Prompts höher. Licht, Kamera und Farbe folgen, das Format steht am Ende oder wird über Werkzeugeinstellungen bzw. Parameter gesetzt (Kap. 31).</p>
+</div>
+<p>Bei Chat-Bildmodellen lohnt ein Satz zum <strong>Zweck</strong>: „Das Bild wird Header eines Newsletters, die Headline steht später links." Das Modell kann diese Information in Komposition und Format übersetzen. Bei reinen Diffusionswerkzeugen bringt der Zweck dagegen wenig – dort zählt nur, was sichtbar sein soll.</p>
+<hr />
+<h2 id="303-bildvokabular-licht-perspektive-objektiv">30.3 Bildvokabular: Licht, Perspektive, Objektiv<a class="headerlink" href="#303-bildvokabular-licht-perspektive-objektiv" title="Permanent link">&para;</a></h2>
+<p>Bildmodelle haben aus Bildunterschriften und Fotografie-Metadaten gelernt. Deshalb reagieren sie besonders gut auf <strong>Begriffe aus Fotografie und Film</strong>. Du musst keine Fotografin sein – aber ein Dutzend Begriffe macht einen großen Unterschied.</p>
+<table>
+<thead>
+<tr>
+<th>Bereich</th>
+<th>Begriff</th>
+<th>Wirkung im Bild</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Licht</td>
+<td>goldene Stunde</td>
+<td>warmes, flaches Licht kurz nach Sonnenauf- oder vor Sonnenuntergang</td>
+</tr>
+<tr>
+<td>Licht</td>
+<td>Gegenlicht</td>
+<td>Lichtsaum um Haare und Kanten, Stimmung, Gesichter dunkler</td>
+</tr>
+<tr>
+<td>Licht</td>
+<td>diffuses Licht, bedeckter Himmel</td>
+<td>weiche Schatten, ruhig, ehrlich, gut für Produkte</td>
+</tr>
+<tr>
+<td>Licht</td>
+<td>hartes Mittagslicht</td>
+<td>starke Kontraste, harte Schatten</td>
+</tr>
+<tr>
+<td>Perspektive</td>
+<td>Augenhöhe</td>
+<td>neutral, nahbar</td>
+</tr>
+<tr>
+<td>Perspektive</td>
+<td>Froschperspektive</td>
+<td>Motiv wirkt groß, heroisch</td>
+</tr>
+<tr>
+<td>Perspektive</td>
+<td>Vogelperspektive / Draufsicht</td>
+<td>Überblick, grafisch; Flatlays</td>
+</tr>
+<tr>
+<td>Einstellungsgröße</td>
+<td>Totale</td>
+<td>Mensch klein in großer Landschaft</td>
+</tr>
+<tr>
+<td>Einstellungsgröße</td>
+<td>Halbnah</td>
+<td>Person ab Hüfte, Gesicht und Kleidung erkennbar</td>
+</tr>
+<tr>
+<td>Einstellungsgröße</td>
+<td>Detail / Makro</td>
+<td>Stoffstruktur, Wassertropfen, Naht</td>
+</tr>
+<tr>
+<td>Objektiv</td>
+<td>Weitwinkel (z. B. 24 mm)</td>
+<td>viel Umgebung, Tiefe, Verzerrung am Rand</td>
+</tr>
+<tr>
+<td>Objektiv</td>
+<td>Tele (z. B. 85 mm)</td>
+<td>verdichteter Hintergrund, Porträtwirkung</td>
+</tr>
+<tr>
+<td>Schärfe</td>
+<td>geringe Schärfentiefe</td>
+<td>Motiv scharf, Hintergrund weich (Bokeh)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Stilbegriffe stapeln: „cinematic, epic, ultra-detailed, 8K, award-winning, hyperrealistic, masterpiece". Solche Füllwörter stammen aus frühen Prompt-Sammlungen. Bei aktuellen Modellen bringen sie wenig und schieben das Bild oft genau in den überglatten Hochglanz-Look, den eine ehrliche Marke vermeiden will. <strong>Ein präziser Lichtbegriff wirkt mehr als fünf Superlative.</strong></p>
+</div>
+<p>Vorsicht auch mit <strong>Künstlernamen</strong>. „Im Stil von [lebende Fotografin]" funktioniert technisch oft, ist aber rechtlich und ethisch heikel und für eine eigene Markenbildsprache ohnehin der falsche Weg. Beschreibe stattdessen die Merkmale, die dir gefallen: Licht, Farben, Ausschnitt, Stimmung. Mehr dazu in Kap. 34 und 39.</p>
+<hr />
+<h2 id="304-vom-stichwort-zum-bildbriefing-ein-beispiel-in-drei-stufen">30.4 Vom Stichwort zum Bildbriefing: ein Beispiel in drei Stufen<a class="headerlink" href="#304-vom-stichwort-zum-bildbriefing-ein-beispiel-in-drei-stufen" title="Permanent link">&para;</a></h2>
+<p>Die Aufgabe: ein Stimmungsbild für den Oktober-Newsletter von Fjordlicht, Thema „Draußen bleiben, wenn es ungemütlich wird".</p>
+<p><strong>Stufe 0 – der übliche Anfang</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Person in Regenjacke im Herbst
+</code></pre></div></td></tr></table></div>
+<p>Ergebnis: das Durchschnittsbild. Frontal, mittig, oft ein Model mit perfektem Lächeln, bunte Blätter, Sonne. Nichts davon ist „ungemütlich", nichts davon klingt nach Fjordlicht.</p>
+<p><strong>Stufe 1 – Motiv, Umgebung, Stil</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Dokumentarisches Foto: Ein Mann um die vierzig in einer olivgrünen
+Regenjacke geht bei Nieselregen einen schmalen Feldweg im Münsterland
+entlang. Die Kapuze ist auf, er wirkt zufrieden, nicht inszeniert.
+</code></pre></div></td></tr></table></div>
+<p>Besser: Die Situation stimmt, das Bild hat eine Geschichte. Aber Licht, Ausschnitt und Format sind noch Zufall – und der Header braucht Platz für Text.</p>
+<p><strong>Stufe 2 – Licht, Komposition, Kamera, Farbe, Format</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Dokumentarisches Foto: Ein Mann um die vierzig in einer olivgrünen
+Regenjacke geht bei Nieselregen einen schmalen Feldweg im Münsterland
+entlang. Die Kapuze ist auf, er wirkt zufrieden, nicht inszeniert.
+Licht: grauer Himmel, weiches diffuses Licht, leichter Nebel in der Ferne.
+Komposition: Person klein im rechten Drittel, von hinten schräg gesehen,
+Weg führt ins Bild hinein, linke Bildhälfte ruhig für späteren Text.
+Kamera: Totale, Augenhöhe, natürliche Schärfentiefe.
+Farben: gedeckte Grün-, Braun- und Grautöne, leicht entsättigt.
+Format: Querformat 3:1. Kein Text, keine Logos im Bild.
+</code></pre></div></td></tr></table></div>
+<p>Jetzt ist das Bild <strong>steuerbar</strong>: Es passt zum Kanal, zur Markenstimme und lässt Raum für die Headline, die später im Newsletter-Werkzeug gesetzt wird (Kap. 33).</p>
+<table>
+<thead>
+<tr>
+<th>Stufe</th>
+<th>Ergänzt</th>
+<th>Was besser wird</th>
+<th>Was noch fehlt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>–</td>
+<td>nichts, Durchschnittsbild</td>
+<td>fast alles</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Motiv, Umgebung, Stil</td>
+<td>Situation und Geschichte</td>
+<td>Licht, Ausschnitt, Format</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Licht, Komposition, Kamera, Farbe, Format</td>
+<td>kanaltauglich, markengerecht, textfreundlich</td>
+<td>Auswahl und Prüfung durch Menschen</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="305-naturliche-sprache-oder-stichwortliste">30.5 Natürliche Sprache oder Stichwortliste?<a class="headerlink" href="#305-naturliche-sprache-oder-stichwortliste" title="Permanent link">&para;</a></h2>
+<p>Lange galt: Bildprompts sind Stichwortketten, durch Kommas getrennt. Mit multimodalen Modellen wie ChatGPT Images oder Gemini (Kap. 29) hat sich das verschoben. Heute gilt grob:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Natürliche Sprache</th>
+<th>Stichwortliste</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Funktioniert gut bei</td>
+<td>ChatGPT Images, Gemini, Copilot, Firefly, Ideogram</td>
+<td>Midjourney, viele FLUX-Oberflächen, ältere Modelle</td>
+</tr>
+<tr>
+<td>Stärke</td>
+<td>Beziehungen und Bedingungen („links … rechts …", „während …")</td>
+<td>schnell variierbar, knapp, gut kombinierbar mit Parametern</td>
+</tr>
+<tr>
+<td>Schwäche</td>
+<td>lange Prompts verwässern, wenn sie Nebensächliches enthalten</td>
+<td>Beziehungen zwischen Bildteilen gehen leicht verloren</td>
+</tr>
+<tr>
+<td>Beispiel</td>
+<td>siehe Stufe 2 oben</td>
+<td>siehe unten</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>documentary photo, man in his forties, olive green rain jacket, hood up,
+walking on narrow field path, drizzle, overcast, soft diffuse light,
+distant fog, wide shot from behind, subject in right third, muted greens
+and browns, desaturated --ar 3:1
+</code></pre></div></td></tr></table></div>
+<p>Englische Prompts liefern bei manchen Werkzeugen etwas verlässlichere Ergebnisse, weil die Trainingsdaten überwiegend englisch beschriftet sind. Die großen Chat-Werkzeuge verstehen Deutsch inzwischen sehr gut. Teste es für dein Werkzeug, statt es pauschal anzunehmen.</p>
+<div class="admonition example">
+<p class="admonition-title">Den Chat als Übersetzer nutzen</p>
+<p>Du kannst dein deutsches Bildbriefing in ChatGPT, Claude oder Gemini in eine Stichwortfassung für Midjourney umwandeln lassen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Wandle das folgende Bildbriefing in einen knappen englischen
+Midjourney-Prompt um. Reihenfolge: Medium, Motiv, Umgebung, Licht,
+Komposition, Farben. Hänge --ar [Seitenverhältnis] an. Lass alles weg,
+was nicht sichtbar ist (Gefühle, Zielgruppe, Zweck).
+Briefing: [Briefing einfügen]
+</code></pre></div></td></tr></table></div>
+</div>
+<hr />
+<h2 id="306-negative-angaben-was-nicht-ins-bild-soll">30.6 Negative Angaben: was nicht ins Bild soll<a class="headerlink" href="#306-negative-angaben-was-nicht-ins-bild-soll" title="Permanent link">&para;</a></h2>
+<p>„Keine Menschen", „ohne Text", „kein Logo" – solche Angaben sind nötig, aber tückisch. Bei klassischen Diffusionsmodellen landet das Wort „Menschen" im Prompt und zieht das Bild <strong>in Richtung Menschen</strong>, die Verneinung wird schwächer verarbeitet. Multimodale Chat-Modelle verstehen Verneinungen deutlich besser, aber auch dort gilt:</p>
+<ul>
+<li><strong>Positiv beschreiben, was stattdessen da ist:</strong> statt „keine Menschen" lieber „menschenleerer Waldweg"; statt „nicht kitschig" lieber „nüchtern, dokumentarisch, gedeckte Farben".</li>
+<li><strong>Eigene Felder nutzen:</strong> Midjourney hat dafür den Parameter <code>--no</code> (etwa <code>--no text, logo</code>), manche Oberflächen ein eigenes Feld für einen „Negative Prompt". Dort wirken Ausschlüsse zuverlässiger als im Fließtext.</li>
+<li><strong>Kurz halten:</strong> Lange Verbotslisten verwässern den Prompt. Nimm nur auf, was in den Ergebnissen tatsächlich wiederholt auftaucht.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>„Das Bild darf auf keinen Fall eine rote Jacke zeigen" – und auf drei von vier Bildern ist eine rote Jacke. Die Lösung ist fast nie eine schärfere Verneinung, sondern eine <strong>positive Farbvorgabe</strong>: „Jacke in Olivgrün".</p>
+</div>
+<hr />
+<h2 id="307-systematisch-iterieren-statt-wurfeln">30.7 Systematisch iterieren statt würfeln<a class="headerlink" href="#307-systematisch-iterieren-statt-wurfeln" title="Permanent link">&para;</a></h2>
+<p>Bild-KI verführt zum Glücksspiel: noch einmal generieren, noch einmal, noch einmal. Das kostet Zeit und Credits und lehrt dich nichts. Besser ist dasselbe Vorgehen wie beim Text (Kap. 8, 9): <strong>Abweichung benennen, gezielt ändern, vergleichen.</strong></p>
+<ol>
+<li><strong>Vier Varianten erzeugen</strong> (viele Werkzeuge tun das automatisch) und die beste wählen.</li>
+<li><strong>Eine Abweichung benennen</strong>: „Licht zu warm", „Person zu zentral", „wirkt gestellt".</li>
+<li><strong>Genau einen Baustein ändern</strong> und neu erzeugen. Ändere nicht Licht und Perspektive gleichzeitig, sonst weißt du nicht, was gewirkt hat.</li>
+<li><strong>Funktionierende Prompts sichern</strong> – mit Werkzeug, Einstellungen und Beispielbild in eurer Prompt-Bibliothek (Kap. 10).</li>
+</ol>
+<p>Damit Schritt 2 und 3 schnell gehen, hilft eine kleine Zuordnung von typischen Abweichungen zum zuständigen Baustein:</p>
+<table>
+<thead>
+<tr>
+<th>Abweichung im Bild</th>
+<th>Zuständiger Baustein</th>
+<th>Mögliche Änderung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wirkt gestellt, „Stockfoto-Lächeln"</td>
+<td>Stil, Motiv</td>
+<td>„ungestellt, Reportage, Person beschäftigt mit [Tätigkeit]"</td>
+</tr>
+<tr>
+<td>zu bunt, zu glatt</td>
+<td>Farbstimmung, Stil</td>
+<td>„gedeckte Farben, leicht entsättigt, natürliche Hauttöne"</td>
+</tr>
+<tr>
+<td>Motiv klebt in der Mitte</td>
+<td>Komposition</td>
+<td>„Person im linken Drittel, viel Raum rechts"</td>
+</tr>
+<tr>
+<td>zu wenig Umgebung</td>
+<td>Kamera</td>
+<td>„Totale, Weitwinkel" statt Halbnah</td>
+</tr>
+<tr>
+<td>falsche Tageszeit oder Stimmung</td>
+<td>Licht, Umgebung</td>
+<td>„bedeckter Vormittag, diffuses Licht"</td>
+</tr>
+<tr>
+<td>kein Platz für Text</td>
+<td>Format, Komposition</td>
+<td>Seitenverhältnis festlegen, ruhige Fläche benennen</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart LR
+    A([Bildbriefing]) --&gt; B([4 Varianten erzeugen])
+    B --&gt; C([beste wählen und Abweichung benennen])
+    C --&gt; D([einen Baustein ändern])
+    D --&gt; B
+    C --&gt; E([Prompt und Einstellungen sichern])</code></pre>
+<p>Ein nützlicher Zwischenschritt in Chat-Werkzeugen: Lade ein Bild hoch, das der gewünschten Wirkung nahekommt – ein eigenes Foto oder ein freigegebenes Kampagnenbild – und lass es beschreiben: „Beschreibe Licht, Perspektive, Bildausschnitt und Farbstimmung dieses Fotos in Stichworten." Diese Beschreibung ist ein hervorragender Baustein für deinen nächsten Prompt und der erste Schritt zu einem Bildsprache-Guide (Kap. 32).</p>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ein Bild hat <strong>keine Lücken</strong>: Was du nicht festlegst, entscheidet das Modell – meist zugunsten des austauschbaren Durchschnittsbilds.</li>
+<li>Die acht Bausteine sind <strong>Motiv, Umgebung, Stil, Licht, Komposition, Kamera, Farbstimmung, Format</strong>; Motiv und Stil gehören nach vorn.</li>
+<li><strong>Fotografie-Vokabular</strong> (Licht, Perspektive, Einstellungsgröße, Brennweite) wirkt stärker als Superlative wie „ultra-detailed, masterpiece".</li>
+<li>Multimodale Chat-Modelle verstehen <strong>natürliche Sprache</strong> gut; bei Midjourney und ähnlichen Werkzeugen funktionieren <strong>Stichwortlisten mit Parametern</strong> oft besser.</li>
+<li><strong>Negative Angaben</strong> positiv umformulieren oder in eigene Felder bzw. <code>--no</code> auslagern; kurz halten.</li>
+<li><strong>Iterieren</strong> heißt: eine Abweichung benennen, einen Baustein ändern, vergleichen – und Funktionierendes in der Prompt-Bibliothek sichern.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Bausteine eines Bildprompts erkennen</summary>
+<p>Untersuche den folgenden Bildprompt für einen Instagram-Post von Fjordlicht.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Foto von einer Familie mit zwei Kindern beim Picknick im Wald, Herbst,
+goldene Stunde, Gegenlicht, gedeckte warme Farben, keine Handys,
+ultra-detailed, masterpiece, 8K
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>Welche der acht Bausteine (Motiv, Umgebung, Stil, Licht, Komposition, Kamera,
+   Farbstimmung, Format) sind enthalten, welche fehlen?</li>
+<li>Welche Angaben sind <strong>Füllwörter</strong>, die kaum etwas beitragen?</li>
+<li>Formuliere die negative Angabe „keine Handys" positiv um.</li>
+<li>Ergänze die beiden fehlenden Bausteine, die für einen Instagram-Post am wichtigsten sind.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Überlege bei Frage 4, was ein Instagram-Post technisch zwingend braucht und was bei einem
+Familienbild am häufigsten „irgendwie falsch" wirkt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Baustein</th>
+<th>enthalten?</th>
+<th>Fundstelle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motiv</td>
+<td>ja</td>
+<td>Familie mit zwei Kindern beim Picknick</td>
+</tr>
+<tr>
+<td>Umgebung</td>
+<td>ja</td>
+<td>Wald, Herbst</td>
+</tr>
+<tr>
+<td>Stil</td>
+<td>teilweise</td>
+<td>„Foto" – ohne Anmutung (dokumentarisch? inszeniert?)</td>
+</tr>
+<tr>
+<td>Licht</td>
+<td>ja</td>
+<td>goldene Stunde, Gegenlicht</td>
+</tr>
+<tr>
+<td>Komposition</td>
+<td>nein</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Kamera</td>
+<td>nein</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Farbstimmung</td>
+<td>ja</td>
+<td>gedeckte warme Farben</td>
+</tr>
+<tr>
+<td>Format</td>
+<td>nein</td>
+<td>–</td>
+</tr>
+</tbody>
+</table>
+<p>Füllwörter: „ultra-detailed, masterpiece, 8K" – sie bringen bei aktuellen Modellen wenig und
+schieben das Bild eher in einen überglatten Hochglanz-Look.</p>
+<p>Positive Umformulierung: „Die Familie ist ins Gespräch vertieft, die Hände halten Becher und
+Brot" – so ist klar, was stattdessen zu sehen ist.</p>
+<p>Wichtigste Ergänzungen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Format: Hochformat 4:5 für Instagram.
+Komposition: Familie im unteren Bilddrittel, aus leichter Distanz,
+ungestellt, nicht in die Kamera blickend.
+</code></pre></div></td></tr></table></div>
+<p>Das Format ist zwingend für den Kanal, die Komposition verhindert das typische frontale
+„Werbefamilien"-Bild.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Ein Baustein nach dem anderen</summary>
+<p>Diese Übung machst du direkt in einem Bildwerkzeug (ChatGPT Images, Gemini, Copilot oder
+Firefly). Ziel ist ein Pinterest-Pin für den Blogartikel „Herbstwanderung mit Kindern: 7 Tipps"
+im Blog „Draußen-Notizen" von Fjordlicht – oder für ein Thema deiner Wahl.</p>
+<ol>
+<li><strong>Stufe 0:</strong> Schreibe den Prompt so knapp, wie du ihn spontan tippen würdest.</li>
+<li><strong>Stufe 1:</strong> Ergänze Motiv, Umgebung und Stil.</li>
+<li><strong>Stufe 2:</strong> Ergänze Licht, Komposition, Kamera, Farbstimmung und Format (Pinterest:
+   Hochformat 2:3, oben Platz für den Titel).</li>
+<li><strong>Variablentest:</strong> Ändere in Stufe 2 nur <strong>einen</strong> Baustein – zuerst das Licht (z. B. von
+   „diffus, bedeckt" zu „goldene Stunde"), danach in einem zweiten Durchgang nur die
+   Perspektive.</li>
+</ol>
+<p>Halte in einer Tabelle fest, was sich bei jeder Stufe und jeder Variation am Bild geändert hat.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Starte jede Stufe in einem neuen Chat oder mit leerem Verlauf. Sonst übernimmt das Werkzeug
+Informationen aus den vorherigen Bildern, und du misst nicht mehr die Wirkung deines Prompts.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel für Stufe 2:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Dokumentarisches Foto: Ein Vater und zwei Kinder (etwa 6 und 9 Jahre) in
+Regenjacken wandern auf einem Waldweg, das jüngere Kind trägt einen
+Stock. Licht: bedeckter Herbsttag, weiches diffuses Licht. Komposition:
+Familie in der unteren Bildhälfte, von schräg hinten, obere Bildhälfte
+ruhiges Blätterdach für einen Titel. Kamera: Totale, Augenhöhe.
+Farben: gedeckte Orange-, Braun- und Grüntöne. Format: Hochformat 2:3.
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Variante</th>
+<th>Typische Beobachtung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stufe 0</td>
+<td>Durchschnittsbild, oft frontal und gestellt, kein Platz für Text</td>
+</tr>
+<tr>
+<td>Stufe 1</td>
+<td>Situation stimmt, Ausschnitt und Format zufällig</td>
+</tr>
+<tr>
+<td>Stufe 2</td>
+<td>kanaltauglich, oben ruhige Fläche, markengerechte Farben</td>
+</tr>
+<tr>
+<td>Licht geändert</td>
+<td>Stimmung deutlich wärmer, oft auch kontrastreicher; Gesichter teils im Schatten</td>
+</tr>
+<tr>
+<td>Perspektive geändert</td>
+<td>Wirkung verschiebt sich stark (z. B. Froschperspektive: Kinder wirken größer, abenteuerlicher)</td>
+</tr>
+</tbody>
+</table>
+<p>Eine gute Bearbeitung zeigt, dass <strong>ein</strong> geänderter Baustein sichtbar wirkt – und dass Licht
+und Perspektive die Stimmung oft stärker verändern als zusätzliche Adjektive.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Satz oder Stichwortkette – ein kritischer Vergleich</summary>
+<p>Diese Übung machst du in zwei Werkzeugen: einem Chat-Bildmodell (ChatGPT Images, Gemini oder
+Copilot) und einem zweiten Werkzeug deiner Wahl (Midjourney, Firefly, Ideogram oder ein
+FLUX-Angebot).</p>
+<ol>
+<li>Schreibe für einen LinkedIn-Beitrag von „Fjordlicht Business" (Firmenbekleidung) ein
+   Bildbriefing in <strong>natürlicher Sprache</strong>: ein Team aus einem Handwerksbetrieb in
+   einheitlichen Softshelljacken bei der Arbeit draußen.</li>
+<li>Lass das Briefing von einem Chat-Werkzeug in eine <strong>englische Stichwortfassung</strong> umwandeln
+   (Prompt aus 30.5).</li>
+<li>Erzeuge in beiden Werkzeugen je ein Bild mit <strong>beiden</strong> Fassungen (vier Bilder).</li>
+<li>Bewerte: Welche Fassung hat in welchem Werkzeug Beziehungen und Details besser umgesetzt?
+   Wo zeigen sich Stereotype (Alter, Geschlecht, Körper, Herkunft)?</li>
+<li>Eine Kollegin schlägt vor, „im Stil von [bekannte lebende Werbefotografin]" zu ergänzen.
+   Nimm begründet Stellung.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achte bei Schritt 4 auf Bildlogik: Tragen wirklich <strong>alle</strong> Personen die einheitliche Jacke?
+Stimmen Werkzeuge und Tätigkeit? Genau solche Beziehungen gehen in Stichwortketten am ehesten
+verloren.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Typisches Ergebnis:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Chat-Bildmodell</th>
+<th>Diffusionswerkzeug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>natürliche Sprache</td>
+<td>Beziehungen gut umgesetzt (alle in Jacken, passende Tätigkeit), Look eher neutral</td>
+<td>teils gut, lange Sätze werden aber verkürzt verarbeitet</td>
+</tr>
+<tr>
+<td>Stichwortfassung</td>
+<td>funktioniert, verliert aber Details zur Szene</td>
+<td>stärkerer Look, Beziehungen gehen eher verloren</td>
+</tr>
+</tbody>
+</table>
+<p>Häufige Stereotype: ausschließlich junge, männliche, schlanke Handwerker; Frauen, wenn
+überhaupt, im Büro. Gegenmittel ist eine <strong>konkrete Beschreibung</strong> der Teamzusammensetzung
+(„drei Personen zwischen 25 und 55, darunter eine Frau, die eine Leiter hält"), nicht ein
+pauschales „divers".</p>
+<p>Zur Stilfrage: Technisch funktioniert der Name oft. Dagegen spricht: (1) Es übernimmt eine
+fremde Handschrift statt eine eigene Bildsprache aufzubauen; (2) Stilimitation ist zwar nicht
+per se verboten, die Nähe zu konkreten Werken aber riskant, und die Persönlichkeitsrechte und
+der Ruf der Fotografin sind betroffen (Kap. 34, 39); (3) für Fjordlicht passt ein fremder
+Signature-Look nicht zur ruhigen, ehrlichen Markenstimme. Besser: die Merkmale beschreiben,
+die gefallen – Licht, Farbstimmung, Ausschnitt.</p>
+<p>Bewertungskriterien: vier Bilder verglichen, Stereotype konkret benannt und mit einer
+präziseren Beschreibung beantwortet, Stellungnahme mit mindestens zwei Argumenten und einer
+Alternative.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Bildprompt-Vorlagen für die Markenbildsprache</summary>
+<p><strong>Szenario:</strong> Fjordlicht nutzt Bild-KI für Stimmungsbilder, aber jedes Teammitglied promptet
+anders. Das Ergebnis: mal Hochglanz, mal Aquarell, mal Stockfoto-Lächeln. Du entwickelst
+<strong>Prompt-Vorlagen</strong>, mit denen auch Neue im Team Bilder in der Markenbildsprache erzeugen.
+Alternativ arbeitest du mit <strong>einem Unternehmen deiner Wahl</strong>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Markenstimme: ruhig, ehrlich, naturverbunden, leicht nordisch-trocken.
+Keine Superlative, kein Greenwashing.
+Kanäle: Newsletter-Header (3:1), Instagram (4:5), Pinterest (2:3).
+Keine echten Produkte generieren - nur Stimmungs- und Umfeldbilder.
+Werkzeug: das im Team freigegebene Bildwerkzeug.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Bildsprache in Bausteine übersetzen.</strong> Beschreibe die Markenbildsprache für jeden
+der acht Bausteine aus 30.2 in ein bis zwei Stichworten (z. B. Licht: „diffus, bedeckt, nie
+grell"). Nutze dafür, wenn möglich, zwei bis drei passende eigene Fotos und lass sie von einem
+Chat-Werkzeug nach Licht, Perspektive, Ausschnitt und Farbe beschreiben.</p>
+<p><strong>Runde 2 – Drei Vorlagen bauen.</strong> Erstelle je eine Vorlage für die drei Kanäle. Feste
+Bausteine stehen ausformuliert drin, variable als Platzhalter in eckigen Klammern (mindestens
+<code>[Motiv]</code>, <code>[Umgebung]</code>, <code>[Jahreszeit]</code>). Teste jede Vorlage mit <strong>zwei</strong> unterschiedlichen
+Motiven.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Bei den Tests fällt auf: Die erzeugten Menschen sind fast
+immer jung, schlank, hellhäutig und sportlich – Familien und ältere Menschen aus der
+Zielgruppe tauchen nicht auf. Passe die Vorlagen so an, dass Vielfalt <strong>beschrieben</strong> statt
+beschworen wird, ohne dass jedes Bild nach Quote aussieht. Teste erneut.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Lass ein Chat-Werkzeug eine deiner Vorlagen
+„für maximale Bildqualität optimieren". Du bekommst vermutlich eine längere Fassung mit
+Begriffen wie „cinematic", „hyperrealistic", „award-winning". Teste beide Fassungen mit
+denselben zwei Motiven und entscheide. <strong>Widersprich</strong> dem Vorschlag dort, wo er gegen die
+Markenbildsprache arbeitet, und begründe jede Streichung einzeln.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Bildsprache-Übersicht mit acht Bausteinen</li>
+<li>drei getestete Vorlagen mit Platzhaltern und je zwei Beispielbildern</li>
+<li>überarbeitete Vorlagen nach Runde 3 mit Vorher/Nachher-Vergleich</li>
+<li>Vergleich und begründete Entscheidung aus Runde 4</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jede Vorlage von einer anderen Person ohne Erklärung genutzt
+werden kann, alle Kanalformate korrekt gesetzt sind, keine Vorlage echte Produkte
+generieren lässt und deine Entscheidung aus Runde 4 mindestens drei Streichungen begründet.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 1 und 3. Eine Bildsprache, die nur als Gefühl existiert („so
+nordisch halt"), lässt sich nicht prompten. Erst wenn Licht, Farbe und Ausschnitt in Worte
+gefasst sind, werden Ergebnisse reproduzierbar. Und Vielfalt entsteht durch konkrete
+Beschreibung einzelner Personen und Situationen, nicht durch Schlagworte.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) die Bildsprache ist für alle acht Bausteine konkret und sichtbar
+beschrieben, nicht mit Gefühlswörtern; (2) die Vorlagen trennen feste und variable Bausteine
+sauber, setzen das Kanalformat und lassen Platz für Text, wo nötig; (3) die Überarbeitung in
+Runde 3 beschreibt Personen konkret (Alter, Situation, Konstellation) und zeigt im
+Vorher/Nachher eine sichtbare Veränderung; (4) die Entscheidung in Runde 4 beruht auf
+denselben Testmotiven und begründet Streichungen mit der Markenbildsprache (z. B.
+„hyperrealistic" erzeugt Hochglanz, widerspricht „ehrlich, ruhig").</p>
+<p>Lernziel: eine Markenbildsprache in prüfbare Bildprompt-Bausteine übersetzen und daraus
+wiederverwendbare Vorlagen machen, die im Team konsistente Ergebnisse liefern.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel29/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 29 – Wie Bild-KI funktioniert">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 29 – Wie Bild-KI funktioniert
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel31/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 31 – Werkzeuge in der Praxis: ChatGPT Images, Midjourney, Ideogram, Adobe Firefly">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 31 – Werkzeuge in der Praxis: ChatGPT Images, Midjourney, Ideogram, Adobe Firefly
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

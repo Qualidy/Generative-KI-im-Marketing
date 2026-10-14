@@ -1,0 +1,1993 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel8/">
+      
+      
+        <link rel="next" href="../kapitel10/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 9 – Fehleranalyse & Troubleshooting - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-9-fehleranalyse-troubleshooting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 9 – Fehleranalyse & Troubleshooting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Block 2 · Prompt Engineering in der Praxis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 5 – Das P.R.O.M.P.T.-Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 6 – Prompting Guide: Techniken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 7 – Prompt-Hacks für den Marketing-Alltag
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 8 – Optimierung eigener Prompts mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 9 – Fehleranalyse & Troubleshooting
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 9 – Fehleranalyse & Troubleshooting
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#91-fehler-sind-hinweise" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 Fehler sind Hinweise
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#92-die-typischen-fehlerbilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 Die typischen Fehlerbilder
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#93-die-diagnose-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 Die Diagnose-Matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#94-systematisch-eingrenzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4 Systematisch eingrenzen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#95-lange-chats-kontextverlust-und-lost-in-the-middle" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5 Lange Chats: Kontextverlust und „Lost in the middle"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#96-faktencheck-bevor-der-text-das-haus-verlasst" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.6 Faktencheck: bevor der Text das Haus verlässt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 10 – Prompt-Bibliothek aufbauen und pflegen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-9-fehleranalyse-troubleshooting">Kapitel 9 – Fehleranalyse &amp; Troubleshooting<a class="headerlink" href="#kapitel-9-fehleranalyse-troubleshooting" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Die <strong>typischen Fehlerbilder</strong> bei KI-Texten erkennen und benennen</li>
+<li>Mit einer <strong>Diagnose-Matrix</strong> vom Symptom über die Ursache zum passenden Gegenmittel kommen</li>
+<li>Fehler <strong>systematisch eingrenzen</strong>, statt den Prompt auf gut Glück umzuschreiben</li>
+<li>Verstehen, warum lange Chats an Qualität verlieren – <strong>Kontextverlust</strong> und <strong>„Lost in the middle"</strong></li>
+<li>Begründet entscheiden: <strong>neuer Chat oder weiterchatten</strong></li>
+<li>Einen <strong>Faktencheck</strong> durchführen, bevor ein KI-Text das Haus verlässt</li>
+</ul>
+</div>
+<hr />
+<h2 id="91-fehler-sind-hinweise">9.1 Fehler sind Hinweise<a class="headerlink" href="#91-fehler-sind-hinweise" title="Permanent link">&para;</a></h2>
+<p>Wenn ein KI-Ergebnis nicht passt, reagieren die meisten auf eine von zwei Arten: Sie klicken auf „Neu generieren" und hoffen, oder sie schreiben den ganzen Prompt neu. Beides ist Raten. Manchmal klappt es – aber du lernst nichts daraus, und beim nächsten Mal stehst du wieder am selben Punkt.</p>
+<p>Besser ist die Haltung aus der IT-Fehlersuche: Ein schlechtes Ergebnis ist ein <strong>Symptom</strong>. Dahinter steckt fast immer eine von wenigen <strong>Ursachen</strong> – ein fehlender Baustein im Prompt, zu viel oder widersprüchlicher Kontext, ein zu langer Chatverlauf oder eine Aufgabe, die das Modell grundsätzlich nicht leisten kann (Kap. 2). Wer die Ursache findet, kann gezielt gegensteuern.</p>
+<p>Dabei hilft dir das P.R.O.M.P.T.-Framework aus Kapitel 5 als Suchraster: Viele Fehlerbilder lassen sich direkt einem Baustein zuordnen. Ein Text, der nach Werbeagentur klingt, deutet auf Tone. Ein Text, der für die falschen Leute geschrieben ist, deutet auf Purpose. Ein Text, der zu lang ist, deutet auf Output.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Erst <strong>benennen</strong>, dann <strong>zuordnen</strong>, dann <strong>ändern</strong>. Wer nicht sagen kann, was genau am Ergebnis falsch ist, kann den Prompt auch nicht gezielt verbessern.</p>
+</div>
+<hr />
+<h2 id="92-die-typischen-fehlerbilder">9.2 Die typischen Fehlerbilder<a class="headerlink" href="#92-die-typischen-fehlerbilder" title="Permanent link">&para;</a></h2>
+<p>Im Marketing-Alltag tauchen immer wieder dieselben Muster auf. Am Beispiel eines Newsletter-Teasers der Fjordlicht GmbH für die Regenjacke „Sølv":</p>
+<table>
+<thead>
+<tr>
+<th>Fehlerbild</th>
+<th>So sieht es aus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Generisch</strong></td>
+<td>„Entdecke unsere neue Jacke – perfekt für jedes Abenteuer!" – könnte von jeder Marke stammen</td>
+</tr>
+<tr>
+<td><strong>Zu lang</strong></td>
+<td>Gewünscht waren 60 Wörter, geliefert werden 180 mit drei Absätzen</td>
+</tr>
+<tr>
+<td><strong>Falsche Fakten</strong></td>
+<td>„Wassersäule 30.000 mm" oder „klimaneutral produziert", obwohl das nirgends stand</td>
+</tr>
+<tr>
+<td><strong>Ton daneben</strong></td>
+<td>„Mega-Deal! Nur heute!" statt ruhig und ehrlich</td>
+</tr>
+<tr>
+<td><strong>Ignoriert Anweisungen</strong></td>
+<td>trotz „keine Superlative" steht „die beste Regenjacke" im Text</td>
+</tr>
+<tr>
+<td><strong>Kontextverlust</strong></td>
+<td>nach 40 Nachrichten wechselt der Text plötzlich zur Sie-Ansprache</td>
+</tr>
+<tr>
+<td><strong>„Lost in the middle"</strong></td>
+<td>eine Vorgabe aus der Mitte eines langen Briefings fehlt im Ergebnis</td>
+</tr>
+<tr>
+<td><strong>Wiederholungen</strong></td>
+<td>jeder Entwurf beginnt mit „Wenn der Himmel grau wird …"</td>
+</tr>
+</tbody>
+</table>
+<p>Diese Fehlerbilder treten oft gemeinsam auf. Ein generischer Text ist meist auch zu lang, weil das Modell ohne klares Ziel „sicherheitshalber" alles sagt. Trotzdem lohnt es sich, sie einzeln zu benennen: Jedes hat eigene Ursachen.</p>
+<p>Nicht jedes Fehlerbild lässt sich mit einem besseren Prompt beheben. Manche Aufgaben liegen grundsätzlich außerhalb dessen, was ein Sprachmodell verlässlich kann: exakt Zeichen zählen, aktuelle Preise oder Lagerbestände kennen, Suchvolumina nennen (Kap. 21) oder wissen, was in eurem Haus beschlossen wurde. Hier hilft kein Feinschliff, sondern ein anderer Weg – Daten mitliefern, ein Werkzeug mit Websuche oder Datenanalyse nutzen oder die Aufgabe außerhalb der KI erledigen. Bevor du also eine Stunde in Prompt-Varianten investierst, stell dir kurz die Frage: Kann das Modell das überhaupt wissen?</p>
+<hr />
+<h2 id="93-die-diagnose-matrix">9.3 Die Diagnose-Matrix<a class="headerlink" href="#93-die-diagnose-matrix" title="Permanent link">&para;</a></h2>
+<p>Die folgende Matrix ist dein Werkzeug für die Fehlersuche. Lies sie von links nach rechts: Symptom erkennen, wahrscheinliche Ursache prüfen, Gegenmittel anwenden.</p>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Wahrscheinliche Ursache</th>
+<th>Baustein</th>
+<th>Gegenmittel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generisch, austauschbar</td>
+<td>Ziel und Zielgruppe fehlen, keine Beispiele</td>
+<td>Purpose, Modifier</td>
+<td>Zielgruppe und Zweck nennen, zwei Beispieltexte mitgeben (Kap. 6)</td>
+</tr>
+<tr>
+<td>Zu lang</td>
+<td>keine Längenvorgabe oder nur „kurz"</td>
+<td>Output</td>
+<td>Wortzahl oder Zeichenzahl nennen, Struktur vorgeben</td>
+</tr>
+<tr>
+<td>Falsche Fakten</td>
+<td>Wissenslücke wird mit Wahrscheinlichem gefüllt</td>
+<td>Modifier</td>
+<td>Fakten mitliefern, „nur Angaben aus dem Material", Regel für Lücken, Faktencheck</td>
+</tr>
+<tr>
+<td>Ton daneben</td>
+<td>Tonvorgabe zu abstrakt („modern", „locker")</td>
+<td>Tone</td>
+<td>Markenstimme konkret beschreiben, Beispiele, Verbotsliste mit Alternativen</td>
+</tr>
+<tr>
+<td>Ignoriert Anweisungen</td>
+<td>Anweisung widerspricht einer anderen oder geht unter</td>
+<td>Modifier</td>
+<td>Widersprüche auflösen, Regel nach oben, positiv formulieren</td>
+</tr>
+<tr>
+<td>Kontextverlust</td>
+<td>Chat zu lang, frühe Vorgaben verlieren Gewicht</td>
+<td>–</td>
+<td>Zusammenfassung erstellen, neuer Chat, Vorgaben in Projekt-Anweisungen</td>
+</tr>
+<tr>
+<td>„Lost in the middle"</td>
+<td>wichtige Information in der Mitte langer Eingaben</td>
+<td>Request, Output</td>
+<td>Wichtiges an Anfang und Ende, klare Abschnitte, Material kürzen</td>
+</tr>
+<tr>
+<td>Wiederholungen</td>
+<td>gleicher Einstieg im Verlauf, Muster verfestigt sich</td>
+<td>Modifier</td>
+<td>neuer Chat, Varianten-Fächer anfordern (Kap. 7), Einstiege verbieten</td>
+</tr>
+<tr>
+<td>Falsche Aufgabe erledigt</td>
+<td>mehrere Aufträge in einem Prompt</td>
+<td>Request</td>
+<td>Aufgabe zerlegen, Prompt-Kette (Kap. 6)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Vorher/Nachher: Anweisung wird ignoriert</p>
+<p>Der ursprüngliche Prompt enthielt ganz am Ende die Zeile „Keine Superlative". Davor stand: „Mach die Jacke richtig begehrenswert und hebe hervor, was sie besonders macht." Beide Anweisungen ziehen in entgegengesetzte Richtungen – das Modell löst den Konflikt zugunsten der ausführlicheren. Die Korrektur:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Tone: ruhig und ehrlich. Beschreibe, was die Jacke kann, statt sie
+zu bewerten. Statt &quot;die beste Regenjacke&quot; schreibst du, wofür sie
+gemacht ist, z. B. &quot;für lange Tage im Regen auf dem Rad&quot;.
+</code></pre></div></td></tr></table></div>
+<p>Die Regel steht jetzt beim Ton, ist positiv formuliert und enthält ein Beispiel für die erwünschte Alternative.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Bei hartnäckigen Fehlern wird gern die Anweisung verstärkt: „WICHTIG!!! KEINE SUPERLATIVE!!!" Das hilft selten und macht Prompts unübersichtlich. Fast immer liegt die Ursache in einem Widerspruch, in einer fehlenden Alternative oder darin, dass die Regel im Material untergeht. Großbuchstaben ersetzen keine Diagnose – sie gehören zu den Mythen aus Kapitel 7.</p>
+</div>
+<hr />
+<h2 id="94-systematisch-eingrenzen">9.4 Systematisch eingrenzen<a class="headerlink" href="#94-systematisch-eingrenzen" title="Permanent link">&para;</a></h2>
+<p>Wenn die Ursache nicht offensichtlich ist, gehst du vor wie bei jeder Fehlersuche: <strong>eine Variable nach der anderen</strong>.</p>
+<pre class="mermaid"><code>flowchart TD
+    A(["Symptom benennen"]) --&gt; B(["Fehler reproduzieren: neuer Chat, gleicher Prompt"])
+    B --&gt; C{"tritt wieder auf?"}
+    C -- "nein" --&gt; D(["Zufall oder Chatverlauf als Ursache"])
+    C -- "ja" --&gt; E(["Prompt auf Minimum reduzieren"])
+    E --&gt; F(["Bausteine einzeln wieder hinzufügen"])
+    F --&gt; G(["Baustein finden, mit dem der Fehler auftaucht"])
+    G --&gt; H(["gezielt ändern und mit Testfällen prüfen"])</code></pre>
+<ol>
+<li><strong>Reproduzieren.</strong> Lass denselben Prompt in einem <strong>neuen Chat</strong> zwei- bis dreimal laufen. Tritt der Fehler nicht wieder auf, lag es am bisherigen Chatverlauf oder am Zufall.</li>
+<li><strong>Reduzieren.</strong> Kürze den Prompt auf Request und Output. Ist der Fehler weg, steckt die Ursache in einem der entfernten Teile.</li>
+<li><strong>Schrittweise ergänzen.</strong> Füge die Bausteine einzeln wieder hinzu – erst Purpose, dann Tone, dann Modifier, dann das Material. Mit welchem Baustein taucht der Fehler auf?</li>
+<li><strong>Gezielt ändern.</strong> Ändere nur diesen Baustein und prüfe mit deinen Testfällen (Kap. 8), ob das Problem behoben ist, ohne neue zu erzeugen.</li>
+</ol>
+<p>Ein nützlicher Zwischenschritt ist die <strong>Selbstauskunft</strong>. Du fragst das Modell, wie es deinen Auftrag verstanden hat, bevor es schreibt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Bevor du schreibst: Fasse in fünf Stichpunkten zusammen, wie du meinen
+Auftrag verstehst - Zielgruppe, Ziel, Länge, Ton und die drei wichtigsten
+Regeln. Schreibe den Text erst, wenn ich bestätige.
+</code></pre></div></td></tr></table></div>
+<p>Weicht die Zusammenfassung von deiner Absicht ab, hast du die Ursache gefunden, ohne einen einzigen Entwurf zu lesen. Vorsicht bei der Frage „Warum hast du das so gemacht?" nach einem Fehler: Die Antwort ist eine plausible Erklärung, keine verlässliche Auskunft über die tatsächliche Verarbeitung. Sie liefert Hinweise, aber keinen Beweis.</p>
+<hr />
+<h2 id="95-lange-chats-kontextverlust-und-lost-in-the-middle">9.5 Lange Chats: Kontextverlust und „Lost in the middle"<a class="headerlink" href="#95-lange-chats-kontextverlust-und-lost-in-the-middle" title="Permanent link">&para;</a></h2>
+<p>Jedes Modell arbeitet mit einem begrenzten <strong>Kontextfenster</strong> (Kap. 1). Bei aktuellen Modellen ist es groß – trotzdem werden lange Chats schlechter. Zwei Effekte sind dafür verantwortlich.</p>
+<p><strong>Kontextverlust.</strong> Je länger ein Verlauf, desto mehr konkurrieren frühe Vorgaben mit späteren Nachrichten. Die Tonvorgabe aus Nachricht 1 hat in Nachricht 45 weniger Gewicht als die drei Korrekturwünsche dazwischen. Wird das Kontextfenster überschritten, fallen frühe Teile ganz heraus oder werden vom Werkzeug automatisch zusammengefasst.</p>
+<p><strong>„Lost in the middle".</strong> Studien haben gezeigt, dass Sprachmodelle Informationen am <strong>Anfang</strong> und am <strong>Ende</strong> einer langen Eingabe besser berücksichtigen als in der <strong>Mitte</strong>. Neuere Modelle sind darin deutlich besser geworden, aber das Muster tritt weiterhin auf. Steckt deine wichtigste Vorgabe in Absatz 7 eines zehnseitigen Briefings, kann sie übersehen werden.</p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Weiterchatten</th>
+<th>Neuer Chat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kleine Korrekturen am selben Text</td>
+<td>ja</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Text wird über viele Runden „weichgespült"</td>
+<td>–</td>
+<td>ja, mit bestem Zwischenstand</td>
+</tr>
+<tr>
+<td>Vorgaben werden zunehmend ignoriert</td>
+<td>–</td>
+<td>ja, mit Zusammenfassung</td>
+</tr>
+<tr>
+<td>Neues Thema, neue Aufgabe</td>
+<td>–</td>
+<td>ja</td>
+</tr>
+<tr>
+<td>Wiederholungen trotz Bitte um Abwechslung</td>
+<td>–</td>
+<td>ja</td>
+</tr>
+<tr>
+<td>Aufbauende Prompt-Kette (Kap. 6)</td>
+<td>ja, solange Zwischenstände geprüft werden</td>
+<td>ab spürbarem Qualitätsverlust</td>
+</tr>
+<tr>
+<td>Prompt-Test und A/B-Vergleich (Kap. 8)</td>
+<td>–</td>
+<td>immer</td>
+</tr>
+</tbody>
+</table>
+<p>Beim Wechsel nimmst du das Wichtige mit. Dafür eignet sich ein <strong>Übergabe-Prompt</strong> am Ende des alten Chats:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Fasse für einen neuen Chat zusammen, was wir festgelegt haben:
+Ziel, Zielgruppe, verbindliche Regeln, Tonvorgaben, die beste bisherige
+Fassung des Textes und offene Punkte. Formuliere es so, dass ich es als
+ersten Prompt in einen neuen Chat kopieren kann.
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Dauerhafte Vorgaben gehören nicht in den Chat</p>
+<p>Wenn du dieselben Vorgaben in jeden neuen Chat kopierst, gehören sie eine Ebene höher: in die benutzerdefinierten Anweisungen, in die Anweisungen eines <strong>Projekts</strong> in ChatGPT oder in vergleichbare Funktionen wie Claude Projects (Kap. 7). Dort wirken sie in jedem Chat, ohne im Verlauf unterzugehen. Prüfe aber auch das <strong>Memory</strong>: Eine dort gespeicherte, veraltete Vorgabe kann Fehler verursachen, die du im Prompt vergeblich suchst.</p>
+</div>
+<hr />
+<h2 id="96-faktencheck-bevor-der-text-das-haus-verlasst">9.6 Faktencheck: bevor der Text das Haus verlässt<a class="headerlink" href="#96-faktencheck-bevor-der-text-das-haus-verlasst" title="Permanent link">&para;</a></h2>
+<p>Falsche Fakten sind das gefährlichste Fehlerbild, weil man sie dem Text nicht ansieht. Ein Modell formuliert eine erfundene Wassersäule genauso selbstbewusst wie eine richtige (Kap. 2). Bei Fjordlicht kommt hinzu: Eine unbelegte Nachhaltigkeitsaussage ist nicht nur peinlich, sondern kann als Irreführung abgemahnt werden.</p>
+<p>Der Faktencheck folgt drei Schritten:</p>
+<ol>
+<li><strong>Prüfbare Aussagen markieren.</strong> Lass dir alle überprüfbaren Behauptungen im Text auflisten – Zahlen, Materialien, Zertifikate, Vergleiche, Daten.</li>
+<li><strong>Gegen Quellen prüfen.</strong> Jede Aussage wird gegen eine verlässliche Quelle abgeglichen: Produktdatenblatt, Claim-Liste, Zertifikat, offizielle Statistik. Nicht gegen eine zweite KI-Antwort.</li>
+<li><strong>Entscheiden.</strong> Belegt – bleibt. Nicht belegt – raus oder umformulieren. Unklar – an die Fachabteilung.</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Liste alle überprüfbaren Aussagen im folgenden Text als Tabelle auf:
+Aussage | Art (Zahl, Material, Zertifikat, Vergleich, Sonstiges) |
+im Material belegt (ja/nein/teilweise) | Fundstelle im Material.
+Bewerte nicht, ob die Aussage stimmt - prüfe nur, ob sie im
+mitgelieferten Material steht.
+Material: [Produktdatenblatt und Claim-Liste]
+Text: [KI-Entwurf]
+</code></pre></div></td></tr></table></div>
+<p>Mit Websuche (in ChatGPT, Perplexity, Gemini oder Copilot) kann die KI Quellen nennen. Das beschleunigt die Recherche, ersetzt aber nicht den Klick auf die Quelle: Auch mit Websuche werden Fundstellen falsch zusammengefasst oder Zahlen aus dem Zusammenhang gerissen. Prüfe, ob die Quelle existiert, ob sie die Aussage tatsächlich enthält und ob sie aktuell ist.</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Die Liste prüfbarer Aussagen stammt selbst von der KI – und ist nicht immer vollständig. Lies den Text deshalb trotzdem selbst Satz für Satz. Besonders tückisch sind <strong>weiche Behauptungen</strong> wie „besonders langlebig" oder „umweltschonend hergestellt", die nach Meinung klingen, aber als Tatsachenbehauptung verstanden werden.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Die KI kann dir zeigen, <strong>was</strong> zu prüfen ist. <strong>Ob</strong> es stimmt, prüfst du an einer Quelle, die nicht von der KI stammt.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ein schlechtes Ergebnis ist ein <strong>Symptom</strong>: erst benennen, dann einer Ursache und einem P.R.O.M.P.T.-Baustein zuordnen, dann gezielt ändern.</li>
+<li>Typische Fehlerbilder sind <strong>generisch, zu lang, falsche Fakten, Ton daneben, ignorierte Anweisungen, Kontextverlust, „Lost in the middle" und Wiederholungen</strong>.</li>
+<li>Die <strong>Diagnose-Matrix</strong> führt vom Symptom zum Gegenmittel; Großbuchstaben und Ausrufezeichen ersetzen keine Diagnose.</li>
+<li><strong>Systematisch eingrenzen</strong> heißt: reproduzieren im neuen Chat, Prompt reduzieren, Bausteine einzeln ergänzen.</li>
+<li>Lange Chats verlieren Qualität; ein <strong>Übergabe-Prompt</strong> und ein <strong>neuer Chat</strong> helfen, dauerhafte Vorgaben gehören in Projekte oder Anweisungen.</li>
+<li>Der <strong>Faktencheck</strong> markiert prüfbare Aussagen und gleicht sie mit Quellen ab, die nicht von der KI stammen.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Symptom, Ursache, Gegenmittel</summary>
+<p>Das Fjordlicht-Team schildert dir fünf Probleme mit KI-Texten. Bestimme für jedes Problem das
+<strong>Fehlerbild</strong>, die <strong>wahrscheinliche Ursache</strong>, den betroffenen <strong>P.R.O.M.P.T.-Baustein</strong> und ein
+passendes <strong>Gegenmittel</strong>.</p>
+<ol>
+<li>Ein LinkedIn-Post für Fjordlicht Business liest sich wie ein Instagram-Post für Privatkunden.</li>
+<li>Im Blog-Entwurf steht „mit dem Grünen Knopf zertifiziert", obwohl das Zertifikat nirgends
+   erwähnt wurde.</li>
+<li>Nach einer langen Überarbeitungsrunde enthält der Text wieder Ausrufezeichen, die am Anfang
+   ausdrücklich ausgeschlossen wurden.</li>
+<li>Im zwölfseitigen Kampagnenbriefing stand auf Seite 6, dass der Rucksack „Tind" nicht erwähnt
+   werden darf. Er taucht trotzdem auf.</li>
+<li>Alle fünf angeforderten Betreffzeilen beginnen mit „Draußen ist …".</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Nutze die Diagnose-Matrix aus Abschnitt 9.3. Bei manchen Problemen ist nicht der Prompt die
+Ursache, sondern der Chatverlauf oder die Position einer Information.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Fehlerbild</th>
+<th>Ursache</th>
+<th>Baustein</th>
+<th>Gegenmittel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>generisch / Ton daneben</td>
+<td>Zielgruppe B2B nicht genannt</td>
+<td>Purpose, Tone</td>
+<td>Zielgruppe und Kanal nennen, B2B-Beispiel mitgeben</td>
+</tr>
+<tr>
+<td>2</td>
+<td>falsche Fakten</td>
+<td>Modell füllt Lücke mit Wahrscheinlichem</td>
+<td>Modifier</td>
+<td>„nur Angaben aus dem Material", Faktencheck gegen Claim-Liste</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Kontextverlust</td>
+<td>frühe Vorgabe verliert im langen Chat Gewicht</td>
+<td>–</td>
+<td>Übergabe-Prompt, neuer Chat, Regel in Projekt-Anweisungen</td>
+</tr>
+<tr>
+<td>4</td>
+<td>„Lost in the middle"</td>
+<td>Ausschluss steht mitten im langen Material</td>
+<td>Modifier, Output</td>
+<td>Ausschluss an den Anfang des Prompts und am Ende wiederholen</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Wiederholungen</td>
+<td>Muster verfestigt sich</td>
+<td>Modifier</td>
+<td>ausdrücklich unterschiedliche Einstiege verlangen, Varianten-Fächer mit Vorgaben je Variante</td>
+</tr>
+</tbody>
+</table>
+<p>Fall 2 ist der kritischste: Eine erfundene Zertifizierung ist eine irreführende Werbeaussage und
+darf nie unbemerkt veröffentlicht werden.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Einen fehlerhaften Prompt eingrenzen</summary>
+<p>Diese Übung machst du direkt im KI-Werkzeug. Der folgende Prompt liefert für Fjordlicht
+regelmäßig zu lange, zu werbliche Texte mit Superlativen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist ein kreativer Top-Texter. Schreib einen packenden Text über
+unsere Wanderhose Vidde für den Newsletter, der richtig Lust aufs Kaufen
+macht und alle Vorteile zeigt. Er soll kurz sein. Ruhiger Ton.
+Keine Superlative.
+Infos: Stretchmaterial, vier Taschen, abnehmbare Hosenbeine,
+in fünf Größen, 119 Euro.
+</code></pre></div></td></tr></table></div>
+<ol>
+<li><strong>Reproduzieren.</strong> Lass den Prompt dreimal in je einem neuen Chat laufen. Notiere Länge,
+   Superlative und erfundene Angaben.</li>
+<li><strong>Reduzieren.</strong> Kürze auf Request, Output und Infos. Was ändert sich?</li>
+<li><strong>Ergänzen.</strong> Füge die übrigen Bausteine einzeln wieder hinzu. Bei welchem Baustein tauchen
+   Superlative und Länge wieder auf?</li>
+<li><strong>Selbstauskunft.</strong> Lass das Modell vor dem Schreiben zusammenfassen, wie es den Auftrag
+   versteht.</li>
+<li><strong>Korrektur.</strong> Schreibe eine korrigierte Fassung nach P.R.O.M.P.T. und teste sie dreimal.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achte auf Widersprüche: „packend", „richtig Lust aufs Kaufen" und „alle Vorteile" ziehen in eine
+andere Richtung als „kurz", „ruhig" und „keine Superlative". Das Modell löst solche Konflikte meist
+zugunsten der ausführlicheren, bildhafteren Anweisung.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Typische Befunde:</p>
+<table>
+<thead>
+<tr>
+<th>Schritt</th>
+<th>Beobachtung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reproduzieren</td>
+<td>120–200 Wörter, Superlative wie „die perfekte Hose", teils erfundene Eigenschaften (wasserabweisend, atmungsaktiv)</td>
+</tr>
+<tr>
+<td>Reduzieren</td>
+<td>kürzer und sachlicher, aber ohne Markenstimme</td>
+</tr>
+<tr>
+<td>Ergänzen</td>
+<td>Superlative und Länge kehren mit Persona („Top-Texter") und Request („packend", „alle Vorteile") zurück</td>
+</tr>
+<tr>
+<td>Selbstauskunft</td>
+<td>Modell versteht „verkaufsstarker Werbetext" – „kurz" wird als Nebensache gelesen</td>
+</tr>
+</tbody>
+</table>
+<p>Korrigierte Fassung:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du schreibst für die Outdoor-Marke Fjordlicht.
+Request: Schreibe einen Newsletter-Absatz zur Wanderhose Vidde.
+Output: 50 bis 70 Wörter, ein Absatz, danach ein Link-Text mit maximal 4 Wörtern.
+Modifier: Nutze nur die Infos unten. Beschreibe, wofür die Hose gemacht ist,
+statt sie zu bewerten. Fehlt eine Angabe, erfinde sie nicht.
+Purpose: Abonnentinnen und Abonnenten 25-45 sollen die Hose im Shop ansehen.
+Tone: ruhig, ehrlich, Du-Ansprache, leicht nordisch-trocken.
+Infos: [wie oben]
+</code></pre></div></td></tr></table></div>
+<p>Die Lehre: Die Ursache war nicht die fehlende Strenge der Regel „Keine Superlative", sondern
+der Widerspruch zu Persona und Request.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Faktencheck eines KI-Blogabschnitts</summary>
+<p>Ein Werkstudent hat für den Fjordlicht-Blog „Draußen-Notizen" mit KI einen Abschnitt erstellt.
+Prüfe ihn gegen das mitgelieferte Material.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>Material (Produktdatenblatt und Claim-Liste Regenjacke Sølv):
+- Obermaterial: 100 Prozent recyceltes Polyamid (Zertifikat liegt vor)
+- Wassersäule: 20.000 mm
+- PFAS-freie Imprägnierung (Herstellernachweis liegt vor)
+- Gewicht: 390 g
+- Reparaturservice: kostenlos in den ersten zwei Jahren
+
+KI-Abschnitt:
+Die Sølv ist unsere nachhaltigste Jacke aller Zeiten: komplett aus recyceltem
+Material, PFAS-frei und mit einer Wassersäule von 30.000 mm. Mit nur 350 g
+ist sie federleicht, und dank unseres lebenslangen Reparaturservice begleitet
+sie dich ein Leben lang. Klimaneutral produziert in Europa.
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>Lass dir von der KI in einem neuen Chat alle prüfbaren Aussagen als Tabelle auflisten
+   (Prompt aus Abschnitt 9.6).</li>
+<li>Prüfe die Tabelle selbst gegen das Material. Hat die KI Aussagen übersehen?</li>
+<li>Ordne jede Aussage ein: belegt, falsch, nicht belegt, weiche Behauptung.</li>
+<li>Formuliere den Abschnitt so um, dass er nur belegte Aussagen enthält und zur Markenstimme passt.</li>
+<li>Begründe in drei Sätzen, warum ein zweiter KI-Durchlauf „Prüfe auf Fehler" hier nicht genügt.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achte neben Zahlen auch auf Steigerungen und Absolutheiten: „nachhaltigste", „komplett",
+„lebenslang", „federleicht". Und auf Aussagen, für die im Material gar nichts steht.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Aussage</th>
+<th>Einordnung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>„nachhaltigste Jacke aller Zeiten"</td>
+<td>weiche Behauptung, Superlativ, nicht belegbar</td>
+</tr>
+<tr>
+<td>„komplett aus recyceltem Material"</td>
+<td>nicht belegt – belegt ist nur das Obermaterial (100 Prozent recyceltes Polyamid), nicht die ganze Jacke</td>
+</tr>
+<tr>
+<td>„PFAS-frei"</td>
+<td>belegt</td>
+</tr>
+<tr>
+<td>„Wassersäule 30.000 mm"</td>
+<td>falsch – 20.000 mm</td>
+</tr>
+<tr>
+<td>„nur 350 g"</td>
+<td>falsch – 390 g</td>
+</tr>
+<tr>
+<td>„federleicht"</td>
+<td>weiche Behauptung</td>
+</tr>
+<tr>
+<td>„lebenslanger Reparaturservice"</td>
+<td>falsch – zwei Jahre kostenlos</td>
+</tr>
+<tr>
+<td>„klimaneutral produziert in Europa"</td>
+<td>nicht belegt, zwei Aussagen auf einmal</td>
+</tr>
+</tbody>
+</table>
+<p>KI-Listen übersehen häufig weiche Behauptungen und zusammengesetzte Aussagen wie
+„klimaneutral produziert in Europa".</p>
+<p>Korrigierte Fassung:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Das Obermaterial der Sølv besteht zu 100 Prozent aus recyceltem Polyamid,
+die Imprägnierung ist PFAS-frei. Mit 20.000 mm Wassersäule hält sie auch
+langem Regen stand, und sie wiegt 390 g. Geht doch einmal etwas kaputt, reparieren wir
+sie in den ersten zwei Jahren kostenlos.
+</code></pre></div></td></tr></table></div>
+<p>Begründung: Ein zweiter Durchlauf prüft mit demselben Wissen und denselben Neigungen, die den
+Fehler erzeugt haben. Er kennt das Material nur, wenn es mitgeliefert wird, und übersieht weiche
+Behauptungen. Entscheidend ist der Abgleich mit einer Quelle, die nicht von der KI stammt.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Troubleshooting-Sprechstunde im Marketingteam</summary>
+<p><strong>Szenario:</strong> Bei der Fjordlicht GmbH hat sich herumgesprochen, dass du KI-Probleme lösen kannst.
+Die Teamleitung richtet eine wöchentliche „Prompt-Sprechstunde" ein. Heute liegen vier Fälle auf
+dem Tisch. Du sollst nicht nur reparieren, sondern so dokumentieren, dass das Team beim nächsten
+Mal selbst diagnostizieren kann. Du kannst die Fälle alternativ auf ein Unternehmen deiner Wahl
+übertragen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Fall A: Instagram-Captions klingen seit Wochen gleich, immer mit
+        &quot;Wenn der Wind ...&quot; am Anfang. Alles läuft im selben Chat.
+Fall B: Produkttexte für den Webshop enthalten gelegentlich
+        Materialangaben, die nicht stimmen.
+Fall C: Ein 15-seitiges Kampagnenbriefing wird hochgeladen, die Pflicht-
+        Hinweise zur Rücksendung fehlen in den Ergebnissen.
+Fall D: LinkedIn-Posts für Fjordlicht Business sind zu lang und
+        zu locker, obwohl &quot;kurz und professionell&quot; im Prompt steht.
+Werkzeug: ChatGPT oder Alternative. Nur fiktive Daten.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Diagnose.</strong> Formuliere für jeden Fall Symptom, wahrscheinliche Ursache und betroffenen
+P.R.O.M.P.T.-Baustein. Lege für jeden Fall einen fiktiven Ausgangsprompt an, der den Fehler
+plausibel erzeugt, und <strong>reproduziere</strong> den Fehler im Werkzeug.</p>
+<p><strong>Runde 2 – Eingrenzen und beheben.</strong> Grenze jeden Fehler mit dem Vorgehen aus Abschnitt 9.4 ein
+(reproduzieren, reduzieren, schrittweise ergänzen). Behebe ihn mit einem gezielten Gegenmittel
+und weise mit mindestens zwei Durchläufen in neuen Chats nach, dass er nicht mehr auftritt.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Bei Fall B stellt sich heraus: Nicht der Prompt ist das Problem,
+sondern ein veraltetes Produktdatenblatt in den Projektdateien und eine Memory-Notiz („Vidde ist
+wasserdicht"), die eine Kollegin vor Monaten angelegt hat. Passe deine Diagnose an, beschreibe,
+wie man solche Ursachen außerhalb des Prompts findet, und ergänze einen Faktencheck-Schritt, der
+falsche Materialangaben abfängt, bevor sie live gehen.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Teamleitung schlägt vor, alle Texte künftig von
+einer zweiten KI „auf Fehler prüfen" zu lassen und auf die menschliche Prüfung zu verzichten, um
+Zeit zu sparen. <strong>Widersprich</strong> dem Vorschlag dort, wo er nicht trägt, erkenne an, wo eine
+KI-Vorprüfung Zeit spart, und entscheide begründet, welche Prüfschritte bei welchen Textarten
+menschlich bleiben müssen.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Diagnose-Tabelle der vier Fälle mit Symptom, Ursache, Baustein und Gegenmittel</li>
+<li>Vorher/Nachher-Prompts mit Nachweis aus mindestens zwei Durchläufen je Fall</li>
+<li>überarbeitete Diagnose zu Fall B mit Prüfschritt für Ursachen außerhalb des Prompts</li>
+<li>einseitige Prüfregel für das Team: was die KI vorprüft, was ein Mensch prüft, mit Begründung</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jeder Fall reproduziert und nach der Korrektur in neuen Chats nicht
+mehr aufgetreten ist, Fall B Projektdateien und Memory als Fehlerquelle berücksichtigt, und deine
+Prüfregel für Produktangaben und Nachhaltigkeitsaussagen einen menschlichen Abgleich mit einer
+Quelle vorsieht.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 3: Nicht jeder Fehler steckt im Prompt. Projektdateien, Memory,
+benutzerdefinierte Anweisungen und der Chatverlauf gehören zum Kontext, den das Modell sieht – und
+damit zu den möglichen Ursachen. Prüfe sie, bevor du einen funktionierenden Prompt umbaust.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) jeder Fall ist korrekt einem Fehlerbild und einer Ursache zugeordnet –
+A Wiederholung und Kontextverlust im Dauerchat, B falsche Fakten, C „Lost in the middle",
+D Widerspruch oder zu abstrakte Vorgaben bei Output und Tone; (2) Korrekturen sind gezielt und
+durch wiederholte Durchläufe in neuen Chats belegt, nicht durch einen einzelnen Glückstreffer;
+(3) die überarbeitete Diagnose zu Fall B prüft Projektdateien, Memory und Anweisungen und ergänzt
+einen Abgleich mit dem aktuellen Datenblatt; (4) die Prüfregel trennt sinnvoll zwischen formaler
+KI-Vorprüfung und menschlicher Prüfung von Fakten, Claims und Markenstimme und begründet das mit
+den Grenzen der Selbstprüfung.</p>
+<p>Lernziel: KI-Fehler systematisch diagnostizieren, Ursachen auch außerhalb des Prompts finden und
+eine teamtaugliche Prüfroutine begründen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel8/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 8 – Optimierung eigener Prompts mit KI">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 8 – Optimierung eigener Prompts mit KI
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel10/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 10 – Prompt-Bibliothek aufbauen und pflegen">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 10 – Prompt-Bibliothek aufbauen und pflegen
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

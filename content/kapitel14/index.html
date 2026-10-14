@@ -1,0 +1,2038 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel13/">
+      
+      
+        <link rel="next" href="../kapitel15/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 14 – Social-Media-Texte mit KI - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-14-social-media-texte-mit-ki" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 14 – Social-Media-Texte mit KI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Block 3 · KI-Copywriting & Content-Erstellung
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 11 – Kollaboratives Schreiben: vom ChatGPT Canvas zu Schreibblöcken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 12 – Redaktionsplanung & Brainstorming mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 13 – E-Mail-Marketing mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 14 – Social-Media-Texte mit KI
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 14 – Social-Media-Texte mit KI
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141-jede-plattform-hat-ihre-eigene-logik" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.1 Jede Plattform hat ihre eigene Logik
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#142-hooks-die-ersten-zwei-sekunden" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.2 Hooks: die ersten zwei Sekunden
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#143-captions-mit-dem-prompt-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3 Captions mit dem P.R.O.M.P.T.-Framework
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#144-hashtags-und-auffindbarkeit" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.4 Hashtags und Auffindbarkeit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#145-ein-thema-viele-kanale-content-adaption" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.5 Ein Thema, viele Kanäle: Content-Adaption
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#146-community-antworten-mit-ki-vorbereiten" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.6 Community-Antworten mit KI vorbereiten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 15 – Blogartikel & Leadmagnete
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 16 – ChatGPT für A/B-Tests von Textvarianten
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-14-social-media-texte-mit-ki">Kapitel 14 – Social-Media-Texte mit KI<a class="headerlink" href="#kapitel-14-social-media-texte-mit-ki" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Wie sich die <strong>Plattformlogiken</strong> von Instagram, TikTok, LinkedIn und Pinterest unterscheiden – und was das für den Text bedeutet</li>
+<li>Wie du mit KI <strong>Hooks</strong> entwickelst und die Formeln <strong>AIDA</strong> und <strong>PAS</strong> gezielt einsetzt</li>
+<li>Wie du <strong>Captions</strong> mit dem P.R.O.M.P.T.-Framework so beauftragst, dass sie nach deiner Marke klingen</li>
+<li>Warum KI bei <strong>Hashtags</strong> hilft, aber keine Reichweitendaten kennt</li>
+<li>Wie du <strong>ein Thema auf mehrere Kanäle</strong> adaptierst, statt denselben Text überall zu posten</li>
+<li>Wie du <strong>Community-Antworten</strong> mit KI vorbereitest, ohne die Verantwortung abzugeben</li>
+</ul>
+</div>
+<hr />
+<h2 id="141-jede-plattform-hat-ihre-eigene-logik">14.1 Jede Plattform hat ihre eigene Logik<a class="headerlink" href="#141-jede-plattform-hat-ihre-eigene-logik" title="Permanent link">&para;</a></h2>
+<p>Social-Media-Texte scheitern selten an der Grammatik, sondern am falschen Ort. Ein Text, der auf LinkedIn funktioniert, wirkt auf TikTok wie eine Pressemitteilung; eine Pinterest-Beschreibung, die für die Suche geschrieben ist, langweilt auf Instagram. Bevor du einen Prompt schreibst, musst du deshalb wissen, <strong>welche Rolle der Text auf der Plattform spielt</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Plattform</th>
+<th>Nutzungssituation</th>
+<th>Rolle des Textes</th>
+<th>Typische Länge</th>
+<th>Fjordlicht-Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Instagram</strong></td>
+<td>Feed und Reels durchscrollen, Bild zuerst</td>
+<td>Caption ergänzt das Bild, erste Zeile entscheidet über „mehr"</td>
+<td>1–3 Sätze bis ca. 150 Wörter</td>
+<td>Stimmungsbild Regenjacke „Sølv" im Herbstwald</td>
+</tr>
+<tr>
+<td><strong>TikTok</strong></td>
+<td>Video im Vollbild, Ton an</td>
+<td>Gesprochener Hook und Bildschirmtext tragen, Caption ist Nebensache und Suchsignal</td>
+<td>Caption kurz, Skript 15–60 Sekunden</td>
+<td>„3 Fehler beim Waschen deiner Regenjacke"</td>
+</tr>
+<tr>
+<td><strong>LinkedIn</strong></td>
+<td>Berufliche Feeds, eher Lesemodus</td>
+<td>Text ist das Hauptmedium, Fachlichkeit und Haltung zählen</td>
+<td>100–250 Wörter, kurze Absätze</td>
+<td>Fjordlicht Business: Firmenbekleidung ohne Greenwashing</td>
+</tr>
+<tr>
+<td><strong>Pinterest</strong></td>
+<td>Ideen suchen und sammeln, oft mit Planungsabsicht</td>
+<td>Titel und Beschreibung sind <strong>Suchtext</strong></td>
+<td>Titel kurz, Beschreibung 1–3 Sätze mit Suchbegriffen</td>
+<td>„Packliste Herbstwanderung mit Kindern"</td>
+</tr>
+</tbody>
+</table>
+<p>Die Längenangaben sind Erfahrungswerte, keine Plattformregeln. Zeichengrenzen und Darstellung ändern die Plattformen regelmäßig – prüfe sie vor einer Kampagne direkt in der App (Stand: Oktober 2026).</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Frag nicht „Was soll der Post sagen?", sondern „<strong>Was tut die Person gerade</strong>, wenn sie den Post sieht?". Scrollen, suchen, lesen oder sammeln – daraus folgen Länge, Einstieg und Tonlage.</p>
+</div>
+<p>Diese Plattformlogik gehört in deinen Prompt. Im P.R.O.M.P.T.-Framework (Kap. 5) landet sie im <strong>Purpose</strong> (Wozu und für wen?) und im <strong>Output</strong> (Format, Länge, Struktur). Fehlt sie, schreibt die KI einen plattformneutralen Allzwecktext – und der passt nirgends richtig.</p>
+<hr />
+<h2 id="142-hooks-die-ersten-zwei-sekunden">14.2 Hooks: die ersten zwei Sekunden<a class="headerlink" href="#142-hooks-die-ersten-zwei-sekunden" title="Permanent link">&para;</a></h2>
+<p>Der <strong>Hook</strong> ist der Einstieg, der jemanden beim Scrollen anhalten lässt: die erste Zeile der Caption, der erste gesprochene Satz im Video, der Bildschirmtext im ersten Frame. KI ist hier ein sehr guter Sparringspartner, weil sie in Sekunden zwanzig Varianten liefert, aus denen du die drei besten auswählst (Varianten-Fächer, Kap. 7).</p>
+<table>
+<thead>
+<tr>
+<th>Hook-Typ</th>
+<th>Prinzip</th>
+<th>Beispiel für Fjordlicht</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frage</td>
+<td>Spricht eine konkrete Situation an</td>
+<td>„Wann hast du deine Regenjacke zuletzt gewaschen?"</td>
+</tr>
+<tr>
+<td>Fehler/Irrtum</td>
+<td>Benennt einen verbreiteten Fehler</td>
+<td>„Weichspüler ruiniert deine Regenjacke. Leise, aber sicher."</td>
+</tr>
+<tr>
+<td>Zahl/Liste</td>
+<td>Verspricht überschaubaren Nutzen</td>
+<td>„3 Dinge, die in jeden Herbstrucksack gehören."</td>
+</tr>
+<tr>
+<td>Kontrast</td>
+<td>Bricht eine Erwartung</td>
+<td>„Unsere beste Jacke ist die, die du nicht neu kaufen musst."</td>
+</tr>
+<tr>
+<td>Szene</td>
+<td>Versetzt in einen Moment</td>
+<td>„6:40 Uhr, Nebel über dem Aasee, 8 Grad."</td>
+</tr>
+<tr>
+<td>Ehrliches Eingeständnis</td>
+<td>Baut Vertrauen auf</td>
+<td>„Unser Fleece ist nicht klimaneutral. Hier ist, was es stattdessen ist."</td>
+</tr>
+</tbody>
+</table>
+<p>Für den ganzen Text helfen zwei klassische Formeln, die jedes Sprachmodell kennt und die du ausdrücklich anfordern kannst:</p>
+<ul>
+<li><strong>AIDA</strong> – Attention (Aufmerksamkeit), Interest (Interesse), Desire (Wunsch), Action (Handlung). Passt zu Produktposts und Launches.</li>
+<li><strong>PAS</strong> – Problem, Agitate (Problem zuspitzen), Solution (Lösung). Passt zu Ratgeber-Inhalten, bei denen ein konkretes Ärgernis im Mittelpunkt steht.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Formuliere 15 Hooks für ein Instagram-Reel über die Pflege von
+Regenjacken. Je 3 Hooks pro Typ: Frage, Fehler, Zahl, Szene, Kontrast.
+Maximal 10 Wörter pro Hook. Keine Superlative, keine Ausrufezeichen.
+Markiere danach die 3 Hooks, die am konkretesten sind, und begründe
+in je einem Satz.
+</code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>KI-Hooks neigen zu <strong>Übertreibung und Clickbait</strong>: „Das ändert ALLES", „Niemand spricht darüber", „Du machst es seit Jahren falsch!". Das ist nicht nur stilistisch billig, sondern kollidiert mit einer ruhigen Markenstimme wie der von Fjordlicht – und ein Hook, der mehr verspricht, als der Post hält, kostet Vertrauen. Schreib deshalb in den <strong>Modifier</strong> ausdrücklich, was ausgeschlossen ist: keine Superlative, keine Großbuchstaben-Betonung, kein „Geheimtipp".</p>
+</div>
+<p>AIDA und PAS sind Gerüste, keine Pflicht. Eine Formel, die man im fertigen Text erkennt, wirkt mechanisch. Lass die KI ruhig mit Formel schreiben – und streich danach die Übergänge, die nach Lehrbuch klingen.</p>
+<hr />
+<h2 id="143-captions-mit-dem-prompt-framework">14.3 Captions mit dem P.R.O.M.P.T.-Framework<a class="headerlink" href="#143-captions-mit-dem-prompt-framework" title="Permanent link">&para;</a></h2>
+<p>Der häufigste Social-Media-Prompt lautet sinngemäß „Schreib einen Instagram-Post über unsere neue Regenjacke". Das Ergebnis ist vorhersehbar: drei Absätze Begeisterung, fünf Emojis, zwölf Hashtags, „nachhaltig" und „perfekt für jedes Abenteuer". Der Unterschied entsteht, wenn du die sechs Bausteine aus Kapitel 5 füllst.</p>
+<p><strong>Vorher</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Schreib einen Instagram-Post über unsere neue Regenjacke Sølv.
+</code></pre></div></td></tr></table></div>
+<p><strong>Nachher</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist Social-Media-Texterin für Fjordlicht, eine Marke für
+nachhaltige Outdoor-Bekleidung aus Münster.
+Request: Schreibe eine Instagram-Caption zum Launch der Regenjacke Sølv.
+Output: Erste Zeile als Hook (max. 10 Wörter), danach 2 kurze Absätze,
+insgesamt max. 80 Wörter. Am Ende eine Frage an die Community.
+Maximal 1 Emoji. Hashtags separat darunter, 5 Stück.
+Modifier: Nutze nur diese Fakten: Obermaterial aus 100 % recyceltem
+Polyamid, PFAS-freie Imprägnierung, Wassersäule 20.000 mm,
+kostenloser Reparaturservice in den ersten zwei Jahren. Keine Superlative, keine Wörter wie
+&quot;klimaneutral&quot; oder &quot;umweltfreundlich&quot;. Fehlt dir etwas, schreibe [FEHLT].
+Purpose: Ziel ist Aufmerksamkeit für den Launch bei naturverbundenen
+Stadtmenschen 25-45, die Herbstwetter nicht vom Rausgehen abhält.
+Tone: ruhig, ehrlich, leicht nordisch-trocken, Du-Ansprache.
+</code></pre></div></td></tr></table></div>
+<p>Die Produktdaten in diesem Beispiel sind für den Kurs erfunden; in der Praxis kommen sie aus dem Produktdatenblatt. Entscheidend ist der Satz „Nutze nur diese Fakten": Er verhindert, dass die KI Nachhaltigkeitsaussagen ergänzt, die Fjordlicht nicht belegen kann. Bei Umweltaussagen ist das kein Stilthema, sondern ein rechtliches Risiko (Irreführung nach UWG, Kap. 4).</p>
+<table>
+<thead>
+<tr>
+<th>Baustein</th>
+<th>Was er bei Social Media leistet</th>
+<th>Häufig vergessen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Persona</td>
+<td>Perspektive und Fachwissen</td>
+<td>„Texterin für <strong>diese</strong> Marke", nicht „Social-Media-Experte"</td>
+</tr>
+<tr>
+<td>Request</td>
+<td>genau ein Post, ein Kanal</td>
+<td>mehrere Kanäle in einem Auftrag</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Länge, Hook, Emojis, Hashtags, Call-to-Action</td>
+<td>Emoji-Grenze, Position der Hashtags</td>
+</tr>
+<tr>
+<td>Modifier</td>
+<td>Faktenbasis, No-Gos, Beispiele</td>
+<td>„nur diese Fakten", verbotene Begriffe</td>
+</tr>
+<tr>
+<td>Purpose</td>
+<td>Ziel und Zielgruppe</td>
+<td>ob Reichweite, Klick oder Gespräch das Ziel ist</td>
+</tr>
+<tr>
+<td>Tone</td>
+<td>Markenstimme</td>
+<td>konkrete Merkmale statt „locker"</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Markenstimme einmal extrahieren, dann wiederverwenden</p>
+<p>Statt „ruhig und ehrlich" jedes Mal neu zu beschreiben, lass die KI aus fünf echten, gut gelaufenen Posts eine <strong>Stilbeschreibung</strong> ableiten (Stil-Extraktion, Kap. 7). Diese Beschreibung plus zwei Beispielposts als Few-Shot (Kap. 6) gehört dann als fester Baustein in deine Prompt-Bibliothek (Kap. 10).</p>
+</div>
+<hr />
+<h2 id="144-hashtags-und-auffindbarkeit">14.4 Hashtags und Auffindbarkeit<a class="headerlink" href="#144-hashtags-und-auffindbarkeit" title="Permanent link">&para;</a></h2>
+<p>KI kann Hashtags vorschlagen, sortieren und nach Themen bündeln. Was sie <strong>nicht</strong> kann: dir sagen, wie viele Beiträge ein Hashtag hat, ob er gerade wächst oder ob er von Spam-Accounts besetzt ist. Das Modell kennt keine Live-Daten der Plattformen; auch mit Websuche sieht es nur, was zufällig öffentlich darüber geschrieben wurde.</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>KI geeignet?</th>
+<th>Besser so</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hashtag-Ideen zu einem Thema sammeln</td>
+<td>ja</td>
+<td>als Rohliste nutzen</td>
+</tr>
+<tr>
+<td>In breit / Nische / Marke gruppieren</td>
+<td>ja</td>
+<td>Gruppierung prüfen</td>
+</tr>
+<tr>
+<td>Reichweite oder Trend beurteilen</td>
+<td>nein</td>
+<td>in der App suchen, Plattform-Statistiken</td>
+</tr>
+<tr>
+<td>Pinterest-Suchbegriffe finden</td>
+<td>eingeschränkt</td>
+<td>Pinterest-Suchvorschläge, Pinterest Trends</td>
+</tr>
+<tr>
+<td>Markenhashtag prüfen (frei? belegt?)</td>
+<td>nein</td>
+<td>selbst in jeder Plattform nachsehen</td>
+</tr>
+</tbody>
+</table>
+<p>Auf TikTok, Instagram und Pinterest wird zunehmend über die <strong>Suche</strong> entdeckt. Dafür zählen die Wörter in Caption, Bildschirmtext und gesprochenem Text oft mehr als ein Block aus dreißig Hashtags. Ein guter Auftrag lautet deshalb nicht „Füge Hashtags hinzu", sondern: „Nenne die drei Suchbegriffe, mit denen jemand diesen Inhalt finden würde, und baue sie natürlich in die ersten beiden Sätze ein."</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Die KI erfindet Hashtags, die plausibel klingen, aber kaum genutzt werden („#Regenjackenliebe"), oder empfiehlt Trend-Hashtags, die mit dem Inhalt nichts zu tun haben. Beides schadet: Ersteres bringt nichts, Letzteres wirkt wie Spam. <strong>Jeden Hashtag vor dem Posten einmal in der App aufrufen</strong> – das kostet zwei Minuten.</p>
+</div>
+<hr />
+<h2 id="145-ein-thema-viele-kanale-content-adaption">14.5 Ein Thema, viele Kanäle: Content-Adaption<a class="headerlink" href="#145-ein-thema-viele-kanale-content-adaption" title="Permanent link">&para;</a></h2>
+<p>Fjordlicht veröffentlicht einen Blogartikel „Regenjacke richtig pflegen" (Kap. 15). Daraus sollen Posts für vier Kanäle werden. Der schlechteste Weg ist ein Prompt „Mach daraus Posts für Instagram, TikTok, LinkedIn und Pinterest" – das Ergebnis sind vier Varianten desselben Textes mit unterschiedlicher Länge. Besser ist eine <strong>Prompt-Kette</strong> (Kap. 6): erst den Kern klären, dann je Kanal adaptieren.</p>
+<pre class="mermaid"><code>flowchart LR
+    A(["Quelle: Blogartikel"]) --&gt; B(["Kernbotschaft und 3 Fakten"])
+    B --&gt; C(["Instagram: Karussell-Text"])
+    B --&gt; D(["TikTok: Skript 30 Sek."])
+    B --&gt; E(["LinkedIn: Business-Perspektive"])
+    B --&gt; F(["Pinterest: Suchtitel und Beschreibung"])
+    C --&gt; G(["Prüfung: Fakten, Ton, Claims"])
+    D --&gt; G
+    E --&gt; G
+    F --&gt; G</code></pre>
+<p><strong>Schritt 1 – Kern extrahieren</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Lies den folgenden Blogartikel. Gib mir:
+1. die Kernbotschaft in einem Satz,
+2. die 3 wichtigsten Fakten oder Tipps, wörtlich belegt durch den Text,
+3. eine Aussage, die NICHT in Social-Media-Posts verkürzt werden darf,
+   weil sie sonst falsch wird.
+Artikel: [Text einfügen]
+</code></pre></div></td></tr></table></div>
+<p><strong>Schritt 2 – je Kanal adaptieren</strong>, jeweils in einem eigenen Auftrag mit Kanal-Purpose und Kanal-Output. Für LinkedIn wechselt sogar die Zielgruppe: Dort spricht Fjordlicht Business Einkäufer von Firmenbekleidung an, also geht es um Lebensdauer und Pflegekosten, nicht um Morgennebel am Aasee.</p>
+<p>Punkt 3 aus Schritt 1 ist der eigentliche Gewinn. Beim Kürzen entstehen die meisten Fehler: Aus „PFAS-frei imprägniert" wird „chemiefrei", aus „recyceltes Polyamid" wird „nachhaltig produziert". Wenn die KI dir vorher sagt, was nicht verkürzt werden darf, kannst du genau das in die Kanal-Prompts als Modifier übernehmen. Wie du solche Inhalte über Wochen planst und recycelst, steht in Kapitel 12.</p>
+<div class="admonition example">
+<p class="admonition-title">Woran du gute Adaption erkennst</p>
+<p>Lies die vier Texte nebeneinander. Wenn du sie untereinander austauschen könntest, ohne dass es auffällt, ist es keine Adaption, sondern Kürzung. Gute Adaption ändert <strong>Einstieg, Perspektive und Handlungsaufforderung</strong> – nicht nur die Länge.</p>
+</div>
+<hr />
+<h2 id="146-community-antworten-mit-ki-vorbereiten">14.6 Community-Antworten mit KI vorbereiten<a class="headerlink" href="#146-community-antworten-mit-ki-vorbereiten" title="Permanent link">&para;</a></h2>
+<p>Kommentare und Direktnachrichten sind der Teil von Social Media, der am meisten Zeit frisst und am meisten über eine Marke verrät. KI kann hier entlasten – als <strong>Entwurfsgeber</strong>, nicht als Autopilot.</p>
+<table>
+<thead>
+<tr>
+<th>Kommentartyp</th>
+<th>KI-Unterstützung</th>
+<th>Regel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lob, Dank</td>
+<td>kurze Antwortvarianten, damit nicht jede gleich klingt</td>
+<td>Variieren, nicht kopieren</td>
+</tr>
+<tr>
+<td>Produktfrage</td>
+<td>Entwurf auf Basis hinterlegter FAQ und Produktdaten</td>
+<td>Nur mit geprüften Fakten antworten</td>
+</tr>
+<tr>
+<td>Beschwerde</td>
+<td>Entwurf mit Entschuldigung und Wechsel in DM</td>
+<td>Kein Kulanzversprechen ohne Freigabe</td>
+</tr>
+<tr>
+<td>Kritik an Nachhaltigkeit</td>
+<td>Strukturierung der Fakten, sachlicher Entwurf</td>
+<td>Immer von Menschen freigeben lassen</td>
+</tr>
+<tr>
+<td>Provokation, Troll</td>
+<td>Einschätzung: antworten, ausblenden, ignorieren?</td>
+<td>Netiquette des Hauses entscheidet</td>
+</tr>
+<tr>
+<td>Persönliche Daten im Kommentar</td>
+<td>keine – nicht in die KI kopieren</td>
+<td>Direkt in DM, Daten nicht weiterverarbeiten</td>
+</tr>
+</tbody>
+</table>
+<p>Ein bewährter Ansatz ist ein <strong>Antwort-Prompt mit festen Leitplanken</strong>, den das Team in der Bibliothek ablegt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist Community-Managerin bei Fjordlicht. Entwirf eine Antwort auf den
+folgenden Kommentar. Max. 3 Sätze, Du-Ansprache, ruhig und ehrlich.
+Nutze ausschließlich diese Fakten: [FAQ-Auszug].
+Versprich keine Erstattung, keinen Rabatt, keinen Liefertermin.
+Wenn die Frage mit den Fakten nicht beantwortbar ist, schlage vor,
+in die Direktnachricht zu wechseln.
+Gib zusätzlich eine Einschätzung: Sollte ein Mensch hier vor dem
+Antworten Rücksprache halten? Ja/Nein mit Begründung.
+Kommentar (anonymisiert): [Kommentartext]
+</code></pre></div></td></tr></table></div>
+<p>Kopiere keine Namen, Bestellnummern oder Adressen aus Kommentaren in ein Consumer-KI-Werkzeug (Ampel für Daten im Prompt, Kap. 4). Für den Inhalt des Kommentars reicht die anonymisierte Fassung.</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Automatische Antworten ohne menschliche Freigabe klingen nach kurzer Zeit gleich – und Nutzer merken das. Gefährlicher ist der Fall, in dem ein Bot eigenständig antwortet: Dann muss erkennbar sein, dass man mit einer KI kommuniziert (Transparenzpflicht nach Art. 50 Abs. 1 AI Act, Kap. 27). Für Kommentarspalten gilt im Kurs deshalb: <strong>KI entwirft, Mensch postet.</strong></p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Jede Plattform hat eine eigene <strong>Nutzungssituation</strong>; Länge, Einstieg und Ton folgen daraus und gehören als Purpose und Output in den Prompt.</li>
+<li><strong>Hooks</strong> entscheiden über die Aufmerksamkeit; KI liefert schnell viele Varianten, die Auswahl und das Streichen von Clickbait bleiben deine Aufgabe.</li>
+<li><strong>AIDA</strong> und <strong>PAS</strong> sind nützliche Gerüste, die man im fertigen Text nicht mehr sehen sollte.</li>
+<li>Gute Captions entstehen mit vollständigem <strong>P.R.O.M.P.T.</strong>: vor allem mit einer festen Faktenbasis und klaren No-Gos im Modifier.</li>
+<li>KI kennt <strong>keine Reichweitendaten</strong> für Hashtags; Suchbegriffe im Text sind oft wichtiger als viele Hashtags.</li>
+<li><strong>Content-Adaption</strong> ist eine Prompt-Kette: erst Kernbotschaft und unverkürzbare Aussagen, dann je Kanal ein eigener Auftrag.</li>
+<li>Bei <strong>Community-Antworten</strong> entwirft die KI, ein Mensch prüft und postet – besonders bei Kritik und Nachhaltigkeitsfragen.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Welche Plattform, welcher Hook?</summary>
+<p>Fjordlicht hat fünf Textentwürfe vorliegen. Ordne jeden der passenden Plattform zu
+(Instagram, TikTok, LinkedIn, Pinterest) und bestimme den <strong>Hook-Typ</strong> der ersten Zeile
+(Frage, Fehler/Irrtum, Zahl/Liste, Kontrast, Szene, ehrliches Eingeständnis).</p>
+<ol>
+<li><code>Packliste Herbstwanderung mit Kindern: 12 Dinge, die du wirklich brauchst</code></li>
+<li><code>Weichspüler ruiniert deine Regenjacke. Ich zeig dir in 20 Sekunden, warum.</code></li>
+<li><code>Firmenbekleidung hält im Schnitt kürzer, als Einkäufer glauben. Drei Zahlen
+   aus unserem Reparaturservice.</code></li>
+<li><code>6:40 Uhr, Nebel über dem Aasee, 8 Grad. Und du?</code></li>
+<li><code>Unser Fleece Skog ist nicht klimaneutral. Hier steht, was es stattdessen ist.</code></li>
+</ol>
+<p>Nenne außerdem für Entwurf 2 die passende Textformel – <strong>AIDA</strong> oder <strong>PAS</strong> – und begründe
+in einem Satz.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Frage dich bei der Zuordnung zuerst, was die Person gerade tut: scrollen, suchen, lesen oder
+sammeln. Mehrere Lösungen sind vertretbar, wenn du sie mit der Nutzungssituation begründest.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Plattform</th>
+<th>Hook-Typ</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Pinterest</td>
+<td>Zahl/Liste</td>
+<td>Suchbegriffe („Packliste Herbstwanderung") vorn, Planungsabsicht</td>
+</tr>
+<tr>
+<td>2</td>
+<td>TikTok</td>
+<td>Fehler/Irrtum</td>
+<td>gesprochener Einstieg mit Zeitversprechen, Video im Vollbild</td>
+</tr>
+<tr>
+<td>3</td>
+<td>LinkedIn</td>
+<td>Kontrast</td>
+<td>Fachpublikum, Zahlen und Haltung, Business-Perspektive</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Instagram</td>
+<td>Szene</td>
+<td>Stimmungsbild, Frage an die Community am Ende</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Instagram oder LinkedIn</td>
+<td>ehrliches Eingeständnis</td>
+<td>baut Vertrauen auf, passt zur Markenstimme</td>
+</tr>
+</tbody>
+</table>
+<p>Entwurf 2 folgt <strong>PAS</strong>: Ein konkretes Problem (Weichspüler) wird zugespitzt („ruiniert"),
+das Video liefert anschließend die Lösung. AIDA würde eher bei einem Produktlaunch passen.</p>
+<p>Entwurf 5 ist der heikelste: Er funktioniert nur, wenn der folgende Text belegbare Aussagen
+enthält. Ein ehrlicher Hook mit anschließend vagen Nachhaltigkeitsversprechen wäre schlechter
+als gar keiner.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Vom Allzweck-Post zur Caption in Markenstimme</summary>
+<p>Diese Übung machst du direkt im KI-Werkzeug (ChatGPT oder eine Alternative).</p>
+<ol>
+<li><strong>Vorher.</strong> Gib ein: <code>Schreib einen Instagram-Post über unseren neuen Rucksack Tind.</code>
+   Speichere das Ergebnis.</li>
+<li><strong>Nachher.</strong> Baue in einem <strong>neuen Chat</strong> einen vollständigen Prompt nach dem
+   P.R.O.M.P.T.-Framework (Kap. 5). Nutze diese (fiktiven) Produktfakten und keine weiteren:</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Rucksack Tind, 28 Liter
+Material: 70 % recyceltes Polyamid, Rest Polyester (neu)
+Rückenteil verstellbar, Regenhülle integriert
+Gewicht 980 g
+5 Jahre Garantie, Reparaturservice
+</code></pre></div></td></tr></table></div>
+<ol>
+<li><strong>Vergleich.</strong> Markiere in beiden Ergebnissen jede Aussage, die <strong>nicht</strong> aus den Fakten
+   stammt, sowie jeden Superlativ.</li>
+<li>Notiere, welcher Baustein des Prompts die größte Verbesserung bewirkt hat.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achte besonders auf das Material: „70 % recycelt" wird von KI gern zu „aus recyceltem
+Material" oder „nachhaltig" verkürzt. Genau solche Verkürzungen sind bei Umweltaussagen das
+eigentliche Risiko – schreib deshalb in den Modifier, dass Prozentangaben unverändert bleiben.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel für einen vollständigen Prompt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist Social-Media-Texterin für Fjordlicht (nachhaltige
+Outdoor-Bekleidung, Münster).
+Request: Schreibe eine Instagram-Caption zum Rucksack Tind.
+Output: Hook max. 10 Wörter, dann 2 kurze Absätze, max. 70 Wörter,
+Abschluss mit Frage. Max. 1 Emoji. 4 Hashtags separat darunter.
+Modifier: Nutze nur diese Fakten: [Fakten]. Prozentangaben unverändert
+übernehmen. Keine Superlative, nicht &quot;nachhaltig&quot; oder &quot;umweltfreundlich&quot;.
+Fehlt etwas, schreibe [FEHLT].
+Purpose: Tagesausflüge von Stadtmenschen 25-45; Ziel: Interesse wecken.
+Tone: ruhig, ehrlich, nordisch-trocken, Du-Ansprache.
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Merkmal</th>
+<th>Vorher (typisch)</th>
+<th>Nachher (typisch)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Erfundene Aussagen</td>
+<td>2–4 („perfekt für jedes Abenteuer", „umweltfreundlich")</td>
+<td>0–1</td>
+</tr>
+<tr>
+<td>Superlative</td>
+<td>mehrere</td>
+<td>keine</td>
+</tr>
+<tr>
+<td>Emojis/Hashtags</td>
+<td>viele</td>
+<td>wie vorgegeben</td>
+</tr>
+<tr>
+<td>Länge</td>
+<td>120–200 Wörter</td>
+<td>im Rahmen</td>
+</tr>
+</tbody>
+</table>
+<p>Den größten Effekt hat meist der <strong>Modifier</strong> („nur diese Fakten", verbotene Begriffe),
+gefolgt vom <strong>Tone</strong> mit konkreten Merkmalen. Wer im Nachher-Text noch „nachhaltig" findet,
+sollte den Modifier schärfen und den Ton mit zwei Beispielposts (Few-Shot) zeigen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Kritischer Kommentar unter dem Launch-Post</summary>
+<p>Unter dem Launch-Post der Regenjacke „Sølv" steht folgender (fiktiver) Kommentar mit
+bereits 140 Likes:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&quot;Recyceltes Polyamid&quot; klingt super, aber eure Jacken werden in Asien
+genäht und per Schiff hergekarrt. Ist das jetzt nachhaltig oder nur
+Marketing?
+</code></pre></div></td></tr></table></div>
+<p>Fjordlicht weiß: Produktion in Portugal und Vietnam, Transport überwiegend per Seefracht,
+Lieferkette nach einem anerkannten Sozialstandard geprüft, eine Klimabilanz der Jacke gibt
+es <strong>nicht</strong>.</p>
+<ol>
+<li>Schreibe einen Prompt, der einen Antwortentwurf erzeugt. Er muss verhindern, dass die KI
+   Aussagen ergänzt, die Fjordlicht nicht belegen kann.</li>
+<li>Teste den Prompt und bewerte den Entwurf: Was würdest du übernehmen, was streichen?</li>
+<li>Begründe, warum diese Antwort vor dem Posten von einem Menschen freigegeben werden muss,
+   und wer im Team das sein sollte.</li>
+<li>Bewerte die Alternative „Kommentar ausblenden" – wann wäre das vertretbar?</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Die Stärke einer guten Antwort liegt hier im Eingeständnis dessen, was man nicht weiß.
+KI-Entwürfe tendieren dazu, Kritik „wegzumoderieren" und Lücken mit freundlichen Allgemeinplätzen
+zu füllen. Prüfe den Entwurf deshalb Satz für Satz gegen die Faktenliste.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispielprompt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist Community-Managerin bei Fjordlicht. Entwirf eine Antwort auf den
+Kommentar unten. Max. 4 Sätze, Du-Ansprache, ruhig, ehrlich, nicht
+defensiv. Nutze ausschließlich diese Fakten:
+- Produktion in Portugal und Vietnam
+- Transport überwiegend per Seefracht
+- Lieferkette nach anerkanntem Sozialstandard geprüft
+- Es gibt KEINE Klimabilanz der Jacke.
+Erwähne, was wir nicht wissen. Verwende nicht die Wörter nachhaltig,
+klimaneutral, umweltfreundlich. Kein Werbeversprechen.
+Kommentar: [Kommentartext]
+</code></pre></div></td></tr></table></div>
+<p>Typischer Befund: Der Entwurf ist brauchbar, enthält aber oft einen Satz wie „Nachhaltigkeit ist
+uns ein Herzensanliegen" oder eine Aussage über „kurze Transportwege". Beides streichen – das
+Erste ist Floskel, das Zweite falsch.</p>
+<p>Freigabe: Die Antwort ist eine öffentliche Umweltaussage unter einem viel gelesenen Post. Sie
+sollte von der Person freigegeben werden, die die Claim-Liste verantwortet (bei Fjordlicht die
+Marketingleitung bzw. die Nachhaltigkeitsverantwortliche), weil eine missverständliche Antwort
+irreführend sein kann (UWG) und sich als Screenshot verbreitet.</p>
+<p>Ausblenden ist nur vertretbar bei Beleidigungen, Spam oder Verstößen gegen die Netiquette. Eine
+sachliche Kritik auszublenden wirkt wie ein Eingeständnis und verschärft die Lage meist.</p>
+<p>Bewertungskriterien: Faktenliste vollständig im Prompt, ausdrückliche Wissenslücke, mindestens
+eine gestrichene KI-Formulierung mit Begründung, konkrete Freigaberolle.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Ein Launch, vier Kanäle</summary>
+<p><strong>Szenario:</strong> Fjordlicht bringt im November die Regenjacke „Sølv" auf den Markt. Das
+Marketingteam hat einen Blogartikel und ein Produktdatenblatt, aber noch keinen einzigen
+Social-Media-Text. Du sollst aus diesem Material einen Launch-Satz für vier Kanäle
+entwickeln, der in der Markenstimme bleibt und keine unbelegten Aussagen enthält. Du kannst
+alternativ ein Unternehmen deiner Wahl mit einem eigenen Produkt nutzen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Kanäle: Instagram, TikTok, LinkedIn (Fjordlicht Business), Pinterest
+Fakten (fiktiv): Obermaterial 100 % recyceltes Polyamid, PFAS-freie
+Imprägnierung, Wassersäule 20.000 mm, kostenloser Reparaturservice
+in den ersten zwei Jahren, Preis 249 Euro
+Markenstimme: ruhig, ehrlich, nordisch-trocken, Du-Ansprache,
+keine Superlative, kein Greenwashing
+Keine echten Kundendaten, keine Namen
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Kern und Hooks.</strong> Lass die KI aus dem Material die Kernbotschaft, drei belegte
+Fakten und mindestens eine „unverkürzbare" Aussage herausarbeiten (Abschnitt 14.5). Erzeuge
+anschließend 15 Hooks in mindestens vier Hook-Typen und wähle je Kanal einen begründet aus.</p>
+<p><strong>Runde 2 – Kanaltexte.</strong> Erstelle je Kanal einen eigenen P.R.O.M.P.T.-Auftrag (Kap. 5) und
+erzeuge: Instagram-Caption, TikTok-Skript (30 Sekunden mit Bildschirmtext), LinkedIn-Post für
+Firmenkunden, Pinterest-Titel und -Beschreibung. Prüfe jeden Text gegen die Faktenliste und
+gegen diese Kriterien: Hook in der ersten Zeile, Länge im Rahmen, Handlungsaufforderung passend
+zum Kanal, keine Superlative.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Die Produktmanagerin meldet sich: Die PFAS-freie Imprägnierung
+ist korrekt, aber der Lieferant hat das Prüfzertifikat noch nicht nachgereicht. Bis dahin darf
+„PFAS-frei" nicht öffentlich verwendet werden. Überarbeite alle vier Texte. Achte darauf, dass
+die Texte ohne dieses Argument nicht schwächer, sondern anders werden – und dass sich keine
+Ersatzbehauptung einschleicht.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Bitte die KI, deine Texte „für maximale Reichweite
+zu optimieren". Sie wird vermutlich emotionalere Hooks, Trend-Hashtags und mehr Emojis
+vorschlagen. Entscheide je Vorschlag, ob du ihn übernimmst. <strong>Widersprich</strong> der KI dort, wo
+Reichweite gegen Markenstimme oder Glaubwürdigkeit steht, und begründe jede Ablehnung.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Kernbotschaft, drei Fakten, unverkürzbare Aussage, Hook-Liste mit Auswahl</li>
+<li>vier Kanaltexte mit den zugehörigen Prompts</li>
+<li>überarbeitete Fassungen nach Runde 3 mit Liste der Änderungen</li>
+<li>Tabelle der Optimierungsvorschläge aus Runde 4 mit Entscheidung und Begründung</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jeder Text ausschließlich belegte Fakten enthält, sich die vier
+Kanaltexte in Einstieg und Perspektive klar unterscheiden, nach Runde 3 „PFAS" in keinem Text
+mehr vorkommt und keine Ersatzbehauptung entstanden ist, und du in Runde 4 mindestens zwei
+Vorschläge begründet abgelehnt hast.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 3: Ein starkes Argument fällt weg, und die KI füllt die Lücke gern
+mit etwas Ähnlichem („schadstoffarm", „umweltschonend imprägniert"). Wer das bemerkt, hat
+verstanden, warum Faktenbasis und Modifier wichtiger sind als jede Hook-Formel. In Runde 4 gilt:
+Reichweite ist ein Ziel, aber nicht das einzige – eine Marke, die ruhig klingen will, verliert
+durch Clickbait mehr, als sie gewinnt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) Kernbotschaft und Fakten sind belegt, die unverkürzbare Aussage ist
+sinnvoll gewählt (z. B. „100 % recyceltes Polyamid – nur das Obermaterial"), Hooks decken mehrere Typen ab;
+(2) vier eigenständige Prompts mit vollständigem P.R.O.M.P.T., Texte unterscheiden sich in
+Einstieg, Perspektive und Handlungsaufforderung, LinkedIn spricht Firmenkunden an; (3) nach
+Runde 3 ist „PFAS" vollständig entfernt, keine Ersatzbehauptung, die Texte stützen sich auf
+andere belegte Argumente (Reparaturservice, Wassersäule); (4) Optimierungsvorschläge werden
+einzeln bewertet, Ablehnungen mit Markenstimme, Glaubwürdigkeit oder Plattformlogik begründet,
+sinnvolle Vorschläge (z. B. Suchbegriff im ersten Satz) werden übernommen.</p>
+<p>Lernziel: Ein Thema plattformgerecht adaptieren und dabei Faktenbasis und Markenstimme als
+feste Grenzen behandeln – auch dann, wenn die KI oder der Wunsch nach Reichweite in eine andere
+Richtung ziehen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel13/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 13 – E-Mail-Marketing mit KI">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 13 – E-Mail-Marketing mit KI
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel15/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 15 – Blogartikel &amp; Leadmagnete">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 15 – Blogartikel & Leadmagnete
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

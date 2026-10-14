@@ -1,0 +1,2072 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel16/">
+      
+      
+        <link rel="next" href="../kapitel18/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 17 – Zielgruppenanalyse mit KI - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-17-zielgruppenanalyse-mit-ki" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 17 – Zielgruppenanalyse mit KI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Block 4 · Content-Optimierung mit KI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 17 – Zielgruppenanalyse mit KI
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 17 – Zielgruppenanalyse mit KI
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#171-ohne-zielgruppe-kein-guter-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.1 Ohne Zielgruppe kein guter Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#172-datenquellen-was-du-schon-hast-und-was-du-findest" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.2 Datenquellen: Was du schon hast und was du findest
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#173-segmentierung-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.3 Segmentierung mit KI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#174-jobs-to-be-done-pain-points-und-gains" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.4 Jobs-to-be-done, Pain Points und Gains
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#175-desk-research-mit-websuche-und-deep-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.5 Desk Research mit Websuche und Deep Research
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#176-validierung-von-der-hypothese-zur-erkenntnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.6 Validierung: Von der Hypothese zur Erkenntnis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Kundenavatar entwickeln und nutzen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Social Listening mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Datenbasierte Optimierung von Textinhalten
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-17-zielgruppenanalyse-mit-ki">Kapitel 17 – Zielgruppenanalyse mit KI<a class="headerlink" href="#kapitel-17-zielgruppenanalyse-mit-ki" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Warum die <strong>Zielgruppe</strong> der Baustein ist, an dem die meisten Marketing-Prompts scheitern – und wie er mit dem <strong>Purpose</strong> im P.R.O.M.P.T.-Framework zusammenhängt</li>
+<li>Welche <strong>Datenquellen</strong> du nutzen kannst – eigene Daten, Bewertungen, Umfragen, Foren, Statistiken – und was jede davon taugt</li>
+<li>Wie du mit KI Zielgruppen <strong>segmentierst</strong>, ohne in Klischees zu landen</li>
+<li>Wie du <strong>Jobs-to-be-done</strong>, <strong>Pain Points</strong> und <strong>Gains</strong> aus Rohtexten herausarbeitest</li>
+<li>Wie du <strong>Desk Research</strong> mit Websuche und Deep Research betreibst und Quellen prüfst</li>
+<li>Warum jede KI-gestützte Zielgruppenanalyse eine <strong>Validierung</strong> braucht – und wie die aussieht</li>
+</ul>
+</div>
+<hr />
+<h2 id="171-ohne-zielgruppe-kein-guter-prompt">17.1 Ohne Zielgruppe kein guter Prompt<a class="headerlink" href="#171-ohne-zielgruppe-kein-guter-prompt" title="Permanent link">&para;</a></h2>
+<p>Im P.R.O.M.P.T.-Framework (Kap. 5) beantwortet der Baustein <strong>Purpose</strong> die Frage „wozu und für wen". In der Praxis ist genau dieser Baustein am häufigsten leer oder mit einer Floskel gefüllt: „für unsere Zielgruppe", „für junge Leute", „für B2B-Kunden". Das Modell füllt die Lücke dann mit dem statistischen Durchschnitt – und der Text spricht niemanden an (Kap. 9).</p>
+<p>Eine <strong>Zielgruppenanalyse</strong> liefert das Material, mit dem du den Purpose konkret füllst: Wer kauft, in welcher Situation, mit welchem Problem, mit welchen Worten und mit welchen Einwänden? KI hilft dabei an drei Stellen: beim <strong>Auswerten</strong> großer Textmengen (Bewertungen, Umfragefreitexte, Forenbeiträge), beim <strong>Recherchieren</strong> öffentlicher Quellen und beim <strong>Strukturieren</strong> der Ergebnisse. Was sie nicht kann: deine Kundschaft kennen. Ohne Daten erzeugt sie plausible Vermutungen – mehr nicht.</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>KI ist stark</th>
+<th>KI ist schwach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>500 Bewertungen nach Themen ordnen</td>
+<td>schnell, konsistent mit Kategorienschema</td>
+<td>Ironie, Einzelfälle, Mengenangaben ohne Prüfung</td>
+</tr>
+<tr>
+<td>Öffentliche Statistiken finden</td>
+<td>mit Websuche/Deep Research gute Vorauswahl</td>
+<td>erfundene oder veraltete Zahlen ohne Quellenprüfung</td>
+</tr>
+<tr>
+<td>Segmente vorschlagen</td>
+<td>strukturiert Kriterien und Hypothesen</td>
+<td>erfindet Segmente, die gut klingen, aber nicht existieren</td>
+</tr>
+<tr>
+<td>Kundensprache herausarbeiten</td>
+<td>findet wiederkehrende Formulierungen</td>
+<td>ohne echte Texte nur Werbesprache</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>KI ersetzt keine Zielgruppenkenntnis, sie <strong>verdichtet</strong> sie. Was du ihr an echten Daten gibst, kommt strukturiert zurück. Was du ihr nicht gibst, wird <strong>erfunden</strong> – überzeugend formuliert.</p>
+</div>
+<hr />
+<h2 id="172-datenquellen-was-du-schon-hast-und-was-du-findest">17.2 Datenquellen: Was du schon hast und was du findest<a class="headerlink" href="#172-datenquellen-was-du-schon-hast-und-was-du-findest" title="Permanent link">&para;</a></h2>
+<p>Die beste Quelle ist fast immer die, die im eigenen Haus liegt und selten ausgewertet wird. Bei der Fjordlicht GmbH sind das zum Beispiel Produktbewertungen im Webshop, Rücksendegründe, Kundenservice-Mails, Newsletter-Antworten und Kommentare auf Instagram.</p>
+<table>
+<thead>
+<tr>
+<th>Quelle</th>
+<th>Was sie zeigt</th>
+<th>Stärke</th>
+<th>Vorsicht</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Eigene Daten</strong> (Shop, CRM, Newsletter-Statistik)</td>
+<td>wer tatsächlich kauft und klickt</td>
+<td>echt, spezifisch</td>
+<td>personenbezogen – nur aggregiert oder pseudonymisiert in die KI (Kap. 4)</td>
+</tr>
+<tr>
+<td><strong>Bewertungen</strong> (Shop, Vergleichsportale, Konkurrenz)</td>
+<td>Erwartungen, Enttäuschungen, Wortwahl</td>
+<td>Kundensprache im Original</td>
+<td>Extremmeinungen überwiegen</td>
+</tr>
+<tr>
+<td><strong>Umfragen</strong> (eigene, Freitextfelder)</td>
+<td>Motive, Prioritäten</td>
+<td>gezielte Fragen möglich</td>
+<td>Fragen lenken Antworten; geringe Rücklaufquote</td>
+</tr>
+<tr>
+<td><strong>Foren und Communities</strong> (Reddit, Fachforen, Facebook-Gruppen)</td>
+<td>Probleme vor dem Kauf, Vergleiche</td>
+<td>ungefiltert, detailreich</td>
+<td>nicht repräsentativ, Nutzungsbedingungen beachten</td>
+</tr>
+<tr>
+<td><strong>Statistiken und Studien</strong> (Statistisches Bundesamt, Verbände, Marktforschung)</td>
+<td>Marktgröße, Trends</td>
+<td>belastbar, wenn Quelle seriös</td>
+<td>oft veraltet oder zu grob für dein Segment</td>
+</tr>
+<tr>
+<td><strong>Suchdaten</strong> (Search Console, Keyword-Tools)</td>
+<td>was Menschen wirklich fragen</td>
+<td>Bedarf in eigenen Worten</td>
+<td>Suchvolumen kennt die KI nicht (Kap. 21)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Der CRM-Export wird „mal eben" komplett in ChatGPT geladen. Namen, E-Mail-Adressen und Bestellhistorien sind personenbezogene Daten. Entferne vor der Analyse alles, was eine Person identifiziert, und nutze nur freigegebene Werkzeuge mit Auftragsverarbeitungsvertrag (Kap. 4). Für eine Zielgruppenanalyse brauchst du <strong>Muster</strong>, keine Namen.</p>
+</div>
+<hr />
+<h2 id="173-segmentierung-mit-ki">17.3 Segmentierung mit KI<a class="headerlink" href="#173-segmentierung-mit-ki" title="Permanent link">&para;</a></h2>
+<p><strong>Segmentierung</strong> heißt: den Markt in Gruppen teilen, die sich in ihrem Bedarf so unterscheiden, dass sie unterschiedlich angesprochen werden sollten. Die klassischen Kriterien:</p>
+<table>
+<thead>
+<tr>
+<th>Kriterium</th>
+<th>Beispiele</th>
+<th>Beispiel Fjordlicht</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>demografisch</td>
+<td>Alter, Lebensphase, Einkommen</td>
+<td>Familien mit Kindern unter 10</td>
+</tr>
+<tr>
+<td>geografisch</td>
+<td>Region, Stadt/Land, Klima</td>
+<td>Großstadt mit Mittelgebirge in Reichweite</td>
+</tr>
+<tr>
+<td>psychografisch</td>
+<td>Werte, Lebensstil, Einstellungen</td>
+<td>Nachhaltigkeit wichtig, aber skeptisch gegenüber Öko-Werbung</td>
+</tr>
+<tr>
+<td>verhaltensbezogen</td>
+<td>Kaufhäufigkeit, Anlass, Nutzung</td>
+<td>kauft vor dem Urlaub, nutzt Jacke auch im Alltag</td>
+</tr>
+<tr>
+<td>firmografisch (B2B)</td>
+<td>Branche, Größe, Entscheidungswege</td>
+<td>Handwerksbetriebe mit 20–100 Beschäftigten für „Fjordlicht Business"</td>
+</tr>
+</tbody>
+</table>
+<p>Demografie allein trägt selten. Zwei 35-Jährige aus Münster können völlig verschiedene Gründe haben, eine Regenjacke zu kaufen. Verhaltens- und Bedarfskriterien trennen meist schärfer. Genau hier ist KI nützlich: Sie kann in Freitexten Muster finden, die in keiner Spalte stehen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist Marktforscherin mit Erfahrung im Outdoor-Handel.
+Aufgabe: Schlage auf Basis der folgenden 60 Produktbewertungen
+3 bis 5 Kundensegmente vor.
+Format: Tabelle mit den Spalten Segment, Kaufanlass, Hauptbedarf,
+typische Formulierung (wörtliches Zitat), Anzahl Bewertungen.
+Regeln:
+- Bilde Segmente nach Bedarf und Kaufanlass, nicht nach Alter.
+- Jedes Segment muss durch mindestens 5 Bewertungen belegt sein.
+- Zitate nur wörtlich aus den Bewertungen, nichts umformulieren.
+- Wenn ein Muster nur schwach belegt ist, markiere es als [HYPOTHESE].
+Zweck: Die Segmente sind Grundlage für Kundenavatare (Kap. 18).
+Bewertungen:
+&quot;&quot;&quot;
+[Bewertungen einfügen, ohne Namen]
+&quot;&quot;&quot;
+</code></pre></div></td></tr></table></div>
+<p>Der Prompt folgt P.R.O.M.P.T.: Persona, Request, Output (Tabelle), Modifier (Belegpflicht, wörtliche Zitate, Hypothesen-Markierung), Purpose. Der Ton spielt bei einer Analyse keine Rolle und fehlt deshalb bewusst. Die Belegpflicht ist der entscheidende Modifier: Sie zwingt das Modell, sich an den Daten festzuhalten, statt plausible Segmente zu erfinden. Die Anzahl prüfst du stichprobenartig nach – beim Zählen ist ein Sprachmodell unzuverlässig, die Datenanalyse-Funktion (Kap. 20) zählt verlässlicher.</p>
+<hr />
+<h2 id="174-jobs-to-be-done-pain-points-und-gains">17.4 Jobs-to-be-done, Pain Points und Gains<a class="headerlink" href="#174-jobs-to-be-done-pain-points-und-gains" title="Permanent link">&para;</a></h2>
+<p>Der Ansatz <strong>Jobs-to-be-done</strong> (JTBD) fragt nicht „Wer ist die Kundin?", sondern „Welche Aufgabe will sie mit dem Produkt erledigen?". Niemand will eine Regenjacke – man will trocken zur Arbeit radeln, ohne verschwitzt anzukommen. Die übliche Formulierung:</p>
+<blockquote>
+<p><strong>Wenn</strong> [Situation], <strong>will ich</strong> [Motivation], <strong>damit</strong> [erwartetes Ergebnis].</p>
+</blockquote>
+<p>Ergänzend unterscheidest du <strong>Pain Points</strong> (Ärgernisse, Risiken, Hindernisse) und <strong>Gains</strong> (erhoffte Vorteile, auch emotionale). Beides steckt in Rohtexten oft zwischen den Zeilen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>Analysiere die folgenden Kundenservice-Mails und Bewertungen
+(anonymisiert). Arbeite heraus:
+1. Jobs-to-be-done im Format &quot;Wenn ..., will ich ..., damit ...&quot;
+2. Pain Points (was ärgert, verunsichert, hält vom Kauf ab)
+3. Gains (was sich Kundinnen und Kunden erhoffen)
+Ordne jedem Punkt die Nummern der Texte zu, aus denen er stammt.
+Erfinde keine Punkte, die nicht in den Texten stehen.
+Texte:
+&quot;&quot;&quot;
+[1] ...
+[2] ...
+&quot;&quot;&quot;
+</code></pre></div></td></tr></table></div>
+<div class="admonition example">
+<p class="admonition-title">Ergebnis aus Fjordlicht-Bewertungen (Auszug)</p>
+<table>
+<thead>
+<tr>
+<th>Typ</th>
+<th>Ergebnis</th>
+<th>Belegt in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Job</td>
+<td>Wenn ich morgens bei Nieselregen zur Arbeit radle, will ich eine Jacke, die nicht nach Expedition aussieht, damit ich sie im Büro anlassen kann.</td>
+<td>4, 11, 23</td>
+</tr>
+<tr>
+<td>Pain Point</td>
+<td>Unsicherheit, ob „recycelt" mehr ist als Werbung</td>
+<td>7, 15, 31, 40</td>
+</tr>
+<tr>
+<td>Pain Point</td>
+<td>Größentabelle passt nicht zu Schichten darunter</td>
+<td>9, 18, 22</td>
+</tr>
+<tr>
+<td>Gain</td>
+<td>eine Jacke für Alltag und Wanderurlaub statt zwei</td>
+<td>4, 12, 26</td>
+</tr>
+</tbody>
+</table>
+<p>Der zweite Pain Point ist für das Marketing Gold: Er zeigt, dass Nachhaltigkeitsaussagen <strong>belegt</strong> sein müssen – genau das, was die Markenstimme von Fjordlicht ohnehin verlangt.</p>
+</div>
+<p>Ein Nebenprodukt dieser Analyse wird oft unterschätzt: die <strong>Kundensprache</strong>. Wenn Kundinnen von „nicht nach Expedition aussehen" sprechen, ist das eine bessere Formulierung als jede Werbezeile über „urbane Funktionalität". Lass dir deshalb zusätzlich eine Liste wörtlicher Formulierungen ausgeben, sortiert nach Häufigkeit, und lege sie neben den Styleguide. Diese Liste nutzt du später als Modifier („Verwende Formulierungen aus dieser Liste, keine Fachbegriffe") oder als Few-Shot-Material (Kap. 6).</p>
+<p>Auch Bewertungen der <strong>Konkurrenz</strong> sind eine ergiebige Quelle: Was dort bemängelt wird, ist ein offener Bedarf, den du adressieren kannst – sofern dein Produkt ihn tatsächlich besser löst. Vergleichende Werbung, die Wettbewerber herabsetzt, ist dagegen tabu (UWG).</p>
+<hr />
+<h2 id="175-desk-research-mit-websuche-und-deep-research">17.5 Desk Research mit Websuche und Deep Research<a class="headerlink" href="#175-desk-research-mit-websuche-und-deep-research" title="Permanent link">&para;</a></h2>
+<p><strong>Desk Research</strong> ist die Auswertung bereits vorhandener, öffentlicher Informationen: Marktstudien, Verbandszahlen, Fachartikel, Diskussionen. Ohne Websuche greift das Modell nur auf seinen Trainingsstand zurück (Kap. 2) – für Zahlen und Trends ungeeignet. Mit <strong>Websuche</strong> (ChatGPT, Copilot, Gemini, Claude) oder einer Antwortmaschine wie <strong>Perplexity</strong> bekommst du aktuelle Treffer mit Quellen. <strong>Deep Research</strong> geht weiter: Das Werkzeug recherchiert mehrere Minuten selbstständig, liest viele Quellen und liefert einen Bericht.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Recherchiere mit Websuche: Wie hat sich in Deutschland seit 2023
+die Nachfrage nach nachhaltiger Outdoor-Bekleidung entwickelt?
+Format: maximal 8 Kernaussagen. Zu jeder Aussage: Quelle (Herausgeber,
+Titel, Jahr), Link, und ob es sich um eigene Erhebung, Hochrechnung
+oder Meinung handelt.
+Regeln: Nur Quellen ab 2023. Keine Zahl ohne Quelle. Wenn sich Quellen
+widersprechen, nenne beide. Kennzeichne Herstellerstudien als solche.
+Zweck: Einleitung für ein internes Zielgruppenbriefing.
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Prüfschritt</th>
+<th>Worauf du achtest</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Link öffnen</td>
+<td>Existiert die Seite? Steht die Zahl wirklich dort?</td>
+</tr>
+<tr>
+<td>Herausgeber</td>
+<td>Statistikamt, Verband, Institut – oder ein Anbieter mit Eigeninteresse?</td>
+</tr>
+<tr>
+<td>Datum und Bezug</td>
+<td>Von wann sind die Daten, für welches Land, welche Grundgesamtheit?</td>
+</tr>
+<tr>
+<td>Methode</td>
+<td>Befragung, Hochrechnung, Schätzung – wie viele Befragte?</td>
+</tr>
+<tr>
+<td>Übertragbarkeit</td>
+<td>Passt die Aussage zu deinem Segment oder nur zum Gesamtmarkt?</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Deep-Research-Berichte wirken durch Umfang und Fußnoten verlässlich. Trotzdem kommen falsch zugeordnete Zahlen, veraltete Studien und Quellen vor, die etwas anderes sagen als behauptet. <strong>Jede Zahl, die in ein Briefing oder eine Präsentation geht, prüfst du an der Originalquelle</strong> (Kap. 9).</p>
+</div>
+<hr />
+<h2 id="176-validierung-von-der-hypothese-zur-erkenntnis">17.6 Validierung: Von der Hypothese zur Erkenntnis<a class="headerlink" href="#176-validierung-von-der-hypothese-zur-erkenntnis" title="Permanent link">&para;</a></h2>
+<p>Alles, was KI dir über deine Zielgruppe liefert, ist zunächst eine <strong>Hypothese</strong>. Erst wenn sie durch eine zweite, unabhängige Quelle gestützt wird, wird daraus eine belastbare Erkenntnis. Dieses Prinzip heißt <strong>Triangulation</strong>.</p>
+<pre class="mermaid"><code>flowchart LR
+    A(["Rohdaten: Bewertungen, Mails, Umfrage"]) --&gt; B([KI verdichtet zu Hypothesen])
+    C([Desk Research mit Quellen]) --&gt; B
+    B --&gt; D(["Prüfen: zweite Quelle, Gespräch, Test"])
+    D --&gt; E([Erkenntnis im Zielgruppenbriefing])
+    D --&gt; F([verworfen oder offen markiert])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Evidenzstufe</th>
+<th>Beispiel</th>
+<th>Verwendung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vermutung</strong></td>
+<td>KI-Vorschlag ohne Datenbasis</td>
+<td>nur als Ausgangsfrage</td>
+</tr>
+<tr>
+<td><strong>Hypothese</strong></td>
+<td>Muster in 8 von 60 Bewertungen</td>
+<td>als „zu prüfen" kennzeichnen</td>
+</tr>
+<tr>
+<td><strong>gestützt</strong></td>
+<td>Muster in Bewertungen <strong>und</strong> Kundenservice-Mails</td>
+<td>darf ins Briefing</td>
+</tr>
+<tr>
+<td><strong>bestätigt</strong></td>
+<td>zusätzlich durch Gespräche oder A/B-Test (Kap. 16)</td>
+<td>Grundlage für Kampagnen</td>
+</tr>
+</tbody>
+</table>
+<p>Praktische Validierungswege ohne großes Budget: fünf kurze Telefonate mit Bestandskunden, eine Frage im Newsletter, eine Umfrage-Story auf Instagram, ein Gespräch mit dem Kundenservice, der täglich mit echten Menschen spricht. Wie du Rückmeldungen aus sozialen Netzwerken systematisch auswertest, zeigt Kap. 19.</p>
+<div class="admonition tip">
+<p class="admonition-title">Das Zielgruppenbriefing</p>
+<p>Fasse die Ergebnisse auf einer Seite zusammen: Segmente, Jobs, Pain Points, Gains, typische Formulierungen – und zu jedem Punkt die Evidenzstufe. Diese Seite ist die Grundlage für deinen Kundenavatar (Kap. 18) und wandert später als Wissensdatei in einen Assistenten (Kap. 24).</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Der <strong>Purpose</strong> im P.R.O.M.P.T.-Framework braucht eine konkrete Zielgruppe; ohne sie schreibt die KI für den Durchschnitt.</li>
+<li>KI <strong>verdichtet</strong> echte Daten, ersetzt sie aber nicht. Ohne Datengrundlage entstehen plausible Erfindungen.</li>
+<li>Die wertvollsten Quellen liegen oft im eigenen Haus: Bewertungen, Kundenservice-Mails, Rücksendegründe – immer <strong>ohne Personenbezug</strong> in die KI.</li>
+<li><strong>Segmentiere</strong> nach Bedarf und Verhalten, nicht nur nach Demografie, und verlange Belege für jedes Segment.</li>
+<li><strong>Jobs-to-be-done</strong>, Pain Points und Gains übersetzen Rohtexte in Ansatzpunkte für Botschaften.</li>
+<li>Desk Research mit Websuche oder Deep Research spart Zeit, aber <strong>jede Zahl</strong> wird an der Originalquelle geprüft.</li>
+<li>Jede KI-Aussage ist eine Hypothese, bis sie durch eine <strong>zweite Quelle</strong> gestützt ist.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Hypothese oder Erkenntnis?</summary>
+<p>Das Marketingteam von Fjordlicht hat mit KI eine erste Zielgruppenanalyse für die Regenjacke
+„Sølv" gemacht. Ordne jede Aussage einer <strong>Evidenzstufe</strong> aus Abschnitt 17.6 zu – Vermutung,
+Hypothese, gestützt, bestätigt – und begründe kurz.</p>
+<ol>
+<li>„Unsere Kundinnen sind überwiegend umweltbewusste Akademikerinnen." (ChatGPT ohne Daten
+   auf die Frage „Wer kauft nachhaltige Outdoor-Jacken?")</li>
+<li>„Pendeln mit dem Rad ist ein häufiger Kaufanlass." (in 9 von 70 Shop-Bewertungen genannt)</li>
+<li>„Kundschaft zweifelt an Recycling-Aussagen." (in Bewertungen <strong>und</strong> in 14 Kundenservice-Mails
+   des letzten Quartals)</li>
+<li>„Eine Betreffzeile mit dem Wort ‚Pendeln' erzielt mehr Öffnungen als eine mit ‚Wandern'."
+   (A/B-Test im Newsletter, deutlicher Unterschied, ausreichend große Gruppen)</li>
+<li>„Der Markt für nachhaltige Outdoor-Bekleidung wächst jährlich um 12 Prozent." (Deep-Research-
+   Bericht, Quelle nicht geöffnet)</li>
+</ol>
+<p>Nenne anschließend für Aussage 2 einen Weg, wie das Team sie mit wenig Aufwand auf die nächste
+Stufe bringt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Entscheidend ist nicht, wie überzeugend eine Aussage klingt, sondern <strong>wie viele unabhängige
+Quellen</strong> sie tragen und ob jemand die Quelle tatsächlich geprüft hat.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Stufe</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Vermutung</td>
+<td>keine Datenbasis, das Modell gibt den statistischen Durchschnitt wieder – zudem klischeehaft</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Hypothese</td>
+<td>Muster in einer Quelle, aber nur in einem Teil der Bewertungen</td>
+</tr>
+<tr>
+<td>3</td>
+<td>gestützt</td>
+<td>zwei unabhängige Quellen zeigen dasselbe Muster</td>
+</tr>
+<tr>
+<td>4</td>
+<td>bestätigt</td>
+<td>Verhaltensdaten aus einem sauberen Test (Kap. 16)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Vermutung</td>
+<td>ungeprüfte Zahl; erst nach Prüfung der Originalquelle verwendbar</td>
+</tr>
+</tbody>
+</table>
+<p>Aussage 5 ist die gefährlichste: Sie wirkt durch die präzise Zahl belastbar, obwohl niemand
+weiß, ob sie stimmt, woher sie stammt und worauf sie sich bezieht.</p>
+<p>Weg für Aussage 2: Den Kundenservice fragen, ob Pendeln in Gesprächen vorkommt, oder eine
+Story-Umfrage auf Instagram („Wofür trägst du deine Regenjacke am häufigsten?"). Bestätigt
+eine zweite Quelle das Muster, wird es „gestützt" und darf ins Zielgruppenbriefing.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Jobs, Pain Points und Gains aus Bewertungen</summary>
+<p>Diese Übung machst du direkt im KI-Werkzeug. Die folgenden fiktiven Bewertungen stammen aus dem
+Webshop von Fjordlicht (Wanderhose „Vidde"), bereits ohne Namen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>Nr;Sterne;Text
+1;5;Endlich eine Hose, mit der ich vom Büro direkt in den Teutoburger Wald kann.
+2;3;Material top, aber die Längen sind zu kurz für große Menschen.
+3;4;Trocknet schnell. Ob das Material wirklich recycelt ist, steht nirgends genau.
+4;5;Mit zwei Kindern draußen brauche ich Taschen, die zugehen. Hat sie.
+5;2;Nach drei Wäschen ausgeblichen. Für den Preis enttäuschend.
+6;5;Sieht nicht nach Outdoor-Katalog aus. Trage ich auch in der Stadt.
+7;4;Gute Hose, aber ich musste zweimal bestellen, die Größentabelle passt nicht.
+8;5;Knie verstärkt, hält Spielplatz und Klettersteig aus.
+9;3;Nachhaltig ist schön, aber wo ist das Zertifikat?
+10;4;Für Tagestouren ideal, im Hochsommer zu warm.
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>Schreibe einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5), der daraus <strong>Jobs-to-be-done</strong>
+   („Wenn …, will ich …, damit …"), <strong>Pain Points</strong> und <strong>Gains</strong> erzeugt – jeweils mit den
+   Nummern der belegenden Bewertungen.</li>
+<li>Führe ihn aus und prüfe jede Zuordnung gegen die Bewertungen. Markiere alles, was <strong>nicht</strong>
+   belegt ist.</li>
+<li>Leite zwei Botschaften für den Newsletter ab, die direkt an einem Pain Point ansetzen.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der wichtigste Modifier ist die Belegpflicht mit Nummern. Ohne ihn ergänzt das Modell gern
+typische Outdoor-Themen wie „Wetterschutz" oder „Atmungsaktivität", die hier niemand erwähnt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispielprompt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist Marktforscherin im Outdoor-Handel.
+Aufgabe: Werte die Bewertungen unten aus.
+Format: drei Abschnitte - Jobs-to-be-done (&quot;Wenn ..., will ich ..., damit ...&quot;),
+Pain Points, Gains. Hinter jedem Punkt die Nummern der Bewertungen in Klammern.
+Regeln: Nur, was in den Bewertungen steht. Kein Punkt ohne Nummer.
+Zweck: Ansatzpunkte für Newsletter-Botschaften zur Wanderhose Vidde.
+Bewertungen: &quot;&quot;&quot; [Daten] &quot;&quot;&quot;
+</code></pre></div></td></tr></table></div>
+<p>Erwartbares Ergebnis:</p>
+<table>
+<thead>
+<tr>
+<th>Typ</th>
+<th>Punkt</th>
+<th>Belege</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Job</td>
+<td>Wenn ich nach der Arbeit spontan raus will, will ich eine Hose für Büro und Wald, damit ich mich nicht umziehen muss.</td>
+<td>1, 6</td>
+</tr>
+<tr>
+<td>Job</td>
+<td>Wenn ich mit Kindern unterwegs bin, will ich robuste Hosen mit sicheren Taschen, damit nichts verloren geht.</td>
+<td>4, 8</td>
+</tr>
+<tr>
+<td>Pain Point</td>
+<td>Nachhaltigkeit nicht belegt</td>
+<td>3, 9</td>
+</tr>
+<tr>
+<td>Pain Point</td>
+<td>Größen und Längen passen nicht</td>
+<td>2, 7</td>
+</tr>
+<tr>
+<td>Pain Point</td>
+<td>Farbe bleicht aus, Preis-Leistung</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Gain</td>
+<td>eine Hose für Stadt und Natur</td>
+<td>1, 6, 10</td>
+</tr>
+</tbody>
+</table>
+<p>Botschaften, zum Beispiel: „Woraus Vidde besteht – mit Zertifikat zum Nachlesen" (nur, wenn ein
+Beleg existiert!) und „Die richtige Länge finden: unsere neue Größenhilfe". Typischer Fund bei
+der Prüfung: ein ergänzter Punkt wie „wasserabweisend", der in keiner Bewertung steht.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Ein Zielgruppenprofil auf dem Prüfstand</summary>
+<p>Eine Kollegin hat für „Fjordlicht Business" (Firmenbekleidung) in fünf Minuten folgendes Profil
+mit ChatGPT erstellt – ohne Daten, nur mit dem Prompt „Beschreibe die Zielgruppe für nachhaltige
+Firmenbekleidung":</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Zielgruppe: Entscheiderinnen und Entscheider in modernen, nachhaltigkeits-
+orientierten Unternehmen (50-500 MA), meist HR- oder Marketingleitung,
+35-55 Jahre. 78 % der deutschen Unternehmen planen, ihre Arbeitskleidung
+bis 2027 auf nachhaltige Materialien umzustellen. Wichtigste Kriterien:
+Nachhaltigkeit, Corporate Design, Preis. Sie informieren sich vor allem
+auf LinkedIn und erwarten innovative Lösungen.
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>Bewerte das Profil Satz für Satz: Was ist Vermutung, was eine ungeprüfte Zahl, was ist zu
+   allgemein, um nutzbar zu sein?</li>
+<li>Erkläre, welche Bausteine des P.R.O.M.P.T.-Frameworks im Ausgangsprompt fehlten und warum das
+   zu genau diesem Ergebnis führt.</li>
+<li>Entwirf einen <strong>Analyseplan</strong>: Welche drei Quellen nutzt Fjordlicht, welche KI-Schritte setzt
+   ihr ein, und wie validiert ihr die Ergebnisse?</li>
+<li>Schreibe den Prompt für den ersten KI-Schritt deines Plans.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achte besonders auf die Zahl. Sie ist präzise, hat keine Quelle und passt verdächtig gut zur
+Botschaft, die man gern hören möchte. Genau so sehen Halluzinationen in Zielgruppenprofilen aus.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<ol>
+<li>Bewertung:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Aussage</th>
+<th>Problem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entscheider in „modernen, nachhaltigkeitsorientierten" Firmen</td>
+<td>Zirkelschluss: beschreibt die gewünschte, nicht die tatsächliche Kundschaft</td>
+</tr>
+<tr>
+<td>HR- oder Marketingleitung, 35–55</td>
+<td>Vermutung; im Handwerk entscheidet oft Inhaber oder Einkauf</td>
+</tr>
+<tr>
+<td>„78 % … bis 2027"</td>
+<td>ungeprüfte, vermutlich erfundene Zahl – nicht verwenden</td>
+</tr>
+<tr>
+<td>Kriterien Nachhaltigkeit, Design, Preis</td>
+<td>plausibel, aber zu allgemein; Haltbarkeit, Nachbestellbarkeit, Größenspektrum fehlen</td>
+</tr>
+<tr>
+<td>LinkedIn, „innovative Lösungen"</td>
+<td>Floskel ohne Handlungswert</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p>Es fehlten <strong>Persona</strong> (Analyst statt Werbetexter), <strong>Modifier</strong> (keine Zahl ohne Quelle,
+Hypothesen markieren, Daten nutzen) und vor allem Material: Ohne Daten bleibt dem Modell nur der
+Durchschnitt. <strong>Purpose</strong> war nur angedeutet – wofür wird das Profil gebraucht?</p>
+</li>
+<li>
+<p>Analyseplan, zum Beispiel: (a) Anfragen und Angebote der letzten zwölf Monate aus dem CRM,
+pseudonymisiert, mit Branche, Größe, Anfrageanlass; (b) Gesprächsnotizen des Vertriebs;
+(c) Desk Research zu Firmenbekleidung mit Websuche, jede Zahl an der Quelle geprüft. KI-Schritte:
+Clustern der Anfragen, JTBD aus Gesprächsnotizen, Rechercheauftrag. Validierung: fünf Gespräche
+mit Bestandskunden, Abgleich mit dem Vertrieb.</p>
+</li>
+<li>
+<p>Erster Prompt:</p>
+</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist B2B-Marktanalyst. Gruppiere die folgenden 40 pseudonymisierten
+Anfragen nach Branche, Unternehmensgröße und Anlass der Anfrage.
+Format: Tabelle Cluster | Anzahl | typischer Anlass | wörtliches Zitat.
+Regeln: Nur Daten unten, keine externen Annahmen; unklare Fälle als
+[UNKLAR]. Zweck: Grundlage für ein Zielgruppenbriefing Fjordlicht Business.
+Anfragen: &quot;&quot;&quot; [Daten] &quot;&quot;&quot;
+</code></pre></div></td></tr></table></div>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Zielgruppenbriefing für eine Produktlinie</summary>
+<p><strong>Szenario:</strong> Fjordlicht bringt im Frühjahr eine Kinderkollektion heraus. Das Marketingteam soll
+in einer Woche ein <strong>Zielgruppenbriefing</strong> liefern, auf dem Kampagne, Newsletter und Social-Media-
+Texte aufbauen. Die Geschäftsführung warnt: „Ich will keine Persona-Poesie, sondern Aussagen, die
+wir belegen können." Du kannst alternativ eine Produktlinie eines Unternehmens deiner Wahl nehmen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Produkt: Kinder-Regenjacke und Matschhose, 3-10 Jahre.
+Vorhandene Daten (fiktiv, selbst anlegen): 25 Bewertungen zu bestehenden
+Erwachsenenprodukten von Eltern, 10 Kundenservice-Mails zu Kindergrößen,
+Ergebnisse einer Newsletter-Umfrage (3 Fragen, Freitext).
+Werkzeuge: ChatGPT oder ein anderes Chat-Werkzeug mit Websuche.
+Keine echten Kundendaten, nur selbst erstellte fiktive Daten.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Daten und Analyse.</strong> Lege die fiktiven Daten an (realistisch, mit Widersprüchen und
+Ausreißern). Werte sie mit mindestens zwei Prompts nach dem P.R.O.M.P.T.-Framework aus:
+einen für <strong>Segmente</strong> und einen für <strong>Jobs-to-be-done, Pain Points und Gains</strong>. Jeder Punkt
+braucht Belegnummern.</p>
+<p><strong>Runde 2 – Desk Research.</strong> Recherchiere mit Websuche oder Deep Research drei Rahmenfakten,
+etwa zu Ausgaben für Kinderbekleidung, Wachstumsrhythmus/Größenwechsel oder Second-Hand-Nutzung.
+Prüfe jede Quelle mit der Tabelle aus Abschnitt 17.5 und dokumentiere das Ergebnis.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Die KI liefert dir ein Segment „Eco-Premium-Eltern", das
+hervorragend zur Markenstimme passt. Bei der Prüfung stellt sich heraus, dass es nur in zwei
+Bewertungen vorkommt, während das häufigste Thema „Jacke passt nach einem Jahr nicht mehr" ist –
+ein Problem, für das Fjordlicht bisher keine Antwort hat. Entscheide, wie du beides im Briefing
+darstellst, und formuliere eine Empfehlung an die Produktentwicklung.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Kollegin aus dem Social-Media-Team schlägt vor,
+das Briefing durch zehn „synthetische Interviews" mit KI-Eltern zu ergänzen – das gehe schneller
+als echte Gespräche. <strong>Widersprich</strong> dort, wo synthetische Antworten echte Validierung ersetzen
+sollen, und zeige, wofür sie trotzdem taugen (Kap. 18). Lege fest, welche zwei Aussagen deines
+Briefings du mit echten Menschen prüfst und wie.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>fiktiver Datensatz und die verwendeten Prompts</li>
+<li>Segmenttabelle und JTBD-/Pain-/Gain-Übersicht mit Belegnummern</li>
+<li>Quellenprotokoll der Desk Research mit Prüfergebnis</li>
+<li>einseitiges Zielgruppenbriefing mit Evidenzstufe je Aussage</li>
+<li>Validierungsplan für zwei Aussagen und Stellungnahme zu Runde 4</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jede Aussage im Briefing eine Evidenzstufe trägt, keine Zahl ohne
+geprüfte Quelle vorkommt, das unbequeme Thema aus Runde 3 sichtbar im Briefing steht und dein
+Validierungsplan sagt, wer wann wie gefragt wird.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernwert liegt in Runde 3. KI-Analysen und Teams neigen gleichermaßen dazu, das Ergebnis zu
+finden, das man sich wünscht. Ein gutes Briefing zeigt auch, was unbequem ist – gerade daraus
+entstehen oft die besten Botschaften („Mitwachsende Ärmel" statt „nachhaltig und hochwertig").
+Und: Synthetische Interviews erzeugen Fragen, keine Belege.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) die fiktiven Daten sind realistisch und enthalten Widersprüche, die
+Prompts folgen dem P.R.O.M.P.T.-Framework und verlangen Belege; (2) Segmente und JTBD sind mit
+Nummern belegt, schwach belegte Punkte als Hypothese markiert; (3) die Desk Research prüft
+Herausgeber, Datum, Methode und Übertragbarkeit, ungeprüfte Zahlen fehlen im Briefing; (4) das
+Briefing gewichtet nach Evidenz, nicht nach Wunschbild – „Eco-Premium-Eltern" erscheint als
+Hypothese, das Größenproblem als gestützter Pain Point mit Empfehlung; (5) der Validierungsplan
+ist konkret (zum Beispiel fünf Telefonate mit Eltern aus dem Newsletter, Story-Umfrage) und die
+Stellungnahme zu Runde 4 grenzt Ideenfindung von Validierung klar ab.</p>
+<p>Lernziel: Eine Zielgruppenanalyse mit KI so aufbauen, dass sie auf Daten beruht, Belege
+ausweist und ehrlich zwischen Hypothese und Erkenntnis unterscheidet.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel16/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 16 – ChatGPT für A/B-Tests von Textvarianten">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 16 – ChatGPT für A/B-Tests von Textvarianten
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel18/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 18 – Kundenavatar entwickeln und nutzen">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 18 – Kundenavatar entwickeln und nutzen
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

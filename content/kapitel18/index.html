@@ -1,0 +1,1987 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel17/">
+      
+      
+        <link rel="next" href="../kapitel19/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 18 – Kundenavatar entwickeln und nutzen - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-18-kundenavatar-entwickeln-und-nutzen" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 18 – Kundenavatar entwickeln und nutzen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Block 4 · Content-Optimierung mit KI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 17 – Zielgruppenanalyse mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Kundenavatar entwickeln und nutzen
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Kundenavatar entwickeln und nutzen
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#181-persona-oder-avatar" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.1 Persona oder Avatar?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#182-der-avatar-steckbrief" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.2 Der Avatar-Steckbrief
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#183-der-avatar-als-prompt-baustein" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.3 Der Avatar als Prompt-Baustein
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#184-simulierte-interviews-und-synthetische-personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.4 Simulierte Interviews und synthetische Personas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#185-der-avatar-check-fur-texte" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.5 Der Avatar-Check für Texte
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#186-avatare-pflegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.6 Avatare pflegen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Social Listening mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Datenbasierte Optimierung von Textinhalten
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-18-kundenavatar-entwickeln-und-nutzen">Kapitel 18 – Kundenavatar entwickeln und nutzen<a class="headerlink" href="#kapitel-18-kundenavatar-entwickeln-und-nutzen" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Worin sich <strong>Persona</strong> und <strong>Kundenavatar</strong> unterscheiden – und warum die Begriffe in der Praxis durcheinandergehen</li>
+<li>Wie du aus deiner Zielgruppenanalyse einen belastbaren <strong>Avatar-Steckbrief</strong> baust</li>
+<li>Wie du den Avatar als festen <strong>Prompt-Baustein</strong> im P.R.O.M.P.T.-Framework einsetzt</li>
+<li>Was <strong>simulierte Interviews</strong> und <strong>synthetische Personas</strong> leisten – und wo sie gefährlich werden</li>
+<li>Wie du Texte mit einem <strong>Avatar-Check</strong> aus Sicht der Zielperson prüfst</li>
+<li>Wie du Avatare <strong>pflegst</strong>, damit sie nicht zur Fiktion werden</li>
+</ul>
+</div>
+<hr />
+<h2 id="181-persona-oder-avatar">18.1 Persona oder Avatar?<a class="headerlink" href="#181-persona-oder-avatar" title="Permanent link">&para;</a></h2>
+<p>Die Begriffe werden in Agenturen, Büchern und Online-Kursen unterschiedlich verwendet, oft sogar synonym. Für diesen Kurs gilt eine einfache Arbeitsunterscheidung:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Persona</th>
+<th>Kundenavatar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zweck</td>
+<td>gemeinsames Bild eines Segments im Team und in der Strategie</td>
+<td>Arbeitsmittel beim Schreiben und Prüfen konkreter Texte</td>
+</tr>
+<tr>
+<td>Detailgrad</td>
+<td>eher breit: Ziele, Verhalten, Kanäle</td>
+<td>sehr konkret: Situation, Worte, Einwände, Entscheidungsmoment</td>
+</tr>
+<tr>
+<td>Herkunft</td>
+<td>UX-Design und Marktforschung</td>
+<td>Direktmarketing und Copywriting</td>
+</tr>
+<tr>
+<td>typische Frage</td>
+<td>„Wen wollen wir erreichen?"</td>
+<td>„Was denkt diese Person, wenn sie genau diesen Text liest?"</td>
+</tr>
+<tr>
+<td>Lebensdauer</td>
+<td>länger, strategisch</td>
+<td>wird mit jeder Kampagne geschärft</td>
+</tr>
+</tbody>
+</table>
+<p>Beide beruhen auf derselben Grundlage: der Zielgruppenanalyse aus Kap. 17. Ein Avatar ohne Datenbasis ist ein Fantasieprodukt, das nur die Vorurteile des Teams bestätigt. Pro Segment genügt in der Regel <strong>ein</strong> Avatar; Fjordlicht arbeitet mit drei: Stadtmensch, Familie, B2B-Einkauf.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Eine Persona sagt, <strong>wen</strong> du ansprichst. Ein Avatar sagt, <strong>wie</strong> diese Person deinen Text liest. Beide sind nur so gut wie die Daten, aus denen sie entstehen.</p>
+</div>
+<hr />
+<h2 id="182-der-avatar-steckbrief">18.2 Der Avatar-Steckbrief<a class="headerlink" href="#182-der-avatar-steckbrief" title="Permanent link">&para;</a></h2>
+<p>Ein guter Steckbrief beschreibt nicht das Leben einer Person, sondern genau die Merkmale, die für eure Kommunikation einen Unterschied machen. Lieblingsfarbe und Sternzeichen gehören nicht hinein – Kaufauslöser und Einwände schon.</p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Inhalt</th>
+<th>Beispiel „Jana" (Segment Stadtmensch)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name und Kurzbild</td>
+<td>ein Satz, damit das Team den Avatar erinnert</td>
+<td>Jana, 34, Projektmanagerin, wohnt in Münster</td>
+</tr>
+<tr>
+<td>Situation</td>
+<td>Lebens- und Nutzungssituation</td>
+<td>radelt täglich ins Büro, am Wochenende Tagestouren im Münsterland und Sauerland</td>
+</tr>
+<tr>
+<td>Job-to-be-done</td>
+<td>Aufgabe, die das Produkt erledigt</td>
+<td>trocken und ordentlich ankommen, eine Jacke für Alltag und Ausflug</td>
+</tr>
+<tr>
+<td>Pain Points</td>
+<td>Ärger, Risiken, Zweifel</td>
+<td>misstraut Öko-Versprechen, hat schon zwei Jacken gekauft, die nach einem Winter durch waren</td>
+</tr>
+<tr>
+<td>Gains</td>
+<td>erhoffte Vorteile</td>
+<td>weniger, aber bessere Kleidung; kein „Funktionslook" im Büro</td>
+</tr>
+<tr>
+<td>Kundensprache</td>
+<td>wörtliche Formulierungen</td>
+<td>„nicht nach Expedition aussehen", „hält, was draufsteht"</td>
+</tr>
+<tr>
+<td>Einwände vor dem Kauf</td>
+<td>was sie zögern lässt</td>
+<td>Preis, Passform bei Bestellung online</td>
+</tr>
+<tr>
+<td>Informationsverhalten</td>
+<td>Kanäle und Momente</td>
+<td>Instagram abends, Newsletter am Wochenende, liest Bewertungen gründlich</td>
+</tr>
+<tr>
+<td>Was sie abschreckt</td>
+<td>No-Gos in der Ansprache</td>
+<td>Superlative, „klimaneutral" ohne Beleg, Influencer-Ton</td>
+</tr>
+<tr>
+<td>Evidenz</td>
+<td>Quellen und Stufe je Feld</td>
+<td>Bewertungen (gestützt), 4 Kundengespräche (bestätigt), Informationsverhalten (Hypothese)</td>
+</tr>
+</tbody>
+</table>
+<p>Die letzte Zeile ist die wichtigste. Sie macht sichtbar, welche Teile des Avatars auf Daten beruhen und welche auf Annahmen (Kap. 17.6). Wer später einen Text mit dem Avatar prüft, weiß damit, wie viel Gewicht ein Urteil hat.</p>
+<p><strong>Besonderheit im B2B:</strong> Bei „Fjordlicht Business" entscheidet selten eine einzelne Person. Die Geschäftsführung achtet auf Außenwirkung und Budget, der Einkauf auf Lieferzeit und Nachbestellbarkeit, die Mitarbeitenden, die die Kleidung tragen, auf Passform und Bequemlichkeit. Man spricht vom <strong>Buying Center</strong>. Für den Avatar heißt das: Lege fest, wen dein Text in erster Linie erreichen soll, und ergänze ein Feld „Wer entscheidet mit?" mit den Einwänden der anderen Beteiligten. Eine Angebotsmail an den Einkauf, die nur über Markenwirkung spricht, verfehlt ihr Ziel, auch wenn sie sprachlich gelungen ist.</p>
+<div class="admonition tip">
+<p class="admonition-title">Steckbrief mit KI entwerfen</p>
+<p>Gib der KI dein Zielgruppenbriefing und lass einen ersten Entwurf in genau dieser Feldstruktur erstellen – mit der Regel, dass jedes Feld eine Quellenangabe trägt und Unbelegtes als <code>[HYPOTHESE]</code> markiert wird. Das Ergebnis ist ein Entwurf, den das Team diskutiert und korrigiert, nicht das fertige Produkt.</p>
+</div>
+<hr />
+<h2 id="183-der-avatar-als-prompt-baustein">18.3 Der Avatar als Prompt-Baustein<a class="headerlink" href="#183-der-avatar-als-prompt-baustein" title="Permanent link">&para;</a></h2>
+<p>Im P.R.O.M.P.T.-Framework (Kap. 5) gehört der Avatar in den Baustein <strong>Purpose</strong>: Er beantwortet „für wen" so konkret, dass das Modell nicht auf den Durchschnitt ausweicht. Den vollständigen Steckbrief brauchst du dafür nicht. Eine <strong>Kurzfassung</strong> von 80 bis 120 Wörtern reicht und lässt sich in jeden Prompt kopieren.</p>
+<p><strong>Vorher – Purpose als Floskel</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Schreibe einen Instagram-Post zur Regenjacke Sølv für unsere
+Zielgruppe. Ton: locker.
+</code></pre></div></td></tr></table></div>
+<p>Ergebnis: „Egal ob Stadtdschungel oder Bergabenteuer – mit Sølv bist du für jedes Wetter gewappnet!" Austauschbar, mit Superlativ-Tendenz, ohne Bezug zu echten Situationen.</p>
+<p><strong>Nachher – Avatar im Purpose</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist Social-Media-Texterin von Fjordlicht.
+Request: Schreibe einen Instagram-Post zur Regenjacke Sølv.
+Output: Caption mit max. 80 Wörtern, erste Zeile als Hook, 3 Hashtags.
+Modifier: Keine Superlative, keine Nachhaltigkeitsaussage ohne Beleg.
+Nutze Formulierungen aus der Kundensprache, wo es passt.
+Purpose: Ziel ist ein Klick auf die Produktseite. Der Post richtet sich an:
+&quot;&quot;&quot;
+Jana, 34, radelt täglich ins Büro in Münster, am Wochenende Tagestouren.
+Will trocken und ordentlich ankommen und eine Jacke für Alltag und
+Ausflug. Misstraut Öko-Versprechen, hatte schon Jacken, die nach einem
+Winter durch waren. Sagt Sätze wie &quot;nicht nach Expedition aussehen&quot;.
+Zögert wegen Preis und Passform beim Onlinekauf.
+&quot;&quot;&quot;
+Tone: ruhig, ehrlich, leicht nordisch-trocken, Du-Ansprache.
+</code></pre></div></td></tr></table></div>
+<p>Das Ergebnis setzt an einer echten Situation an („Montag, 7:40 Uhr, Nieselregen auf der Promenade"), greift den Einwand auf und verzichtet auf Pathos. Der Unterschied entsteht nicht durch geschicktere Formulierungen, sondern durch <strong>besseres Material</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Avatar dauerhaft hinterlegen</p>
+<p>Statt die Kurzfassung jedes Mal einzufügen, legst du sie als Datei in einem <strong>Projekt</strong> ab oder in den benutzerdefinierten Anweisungen (Kap. 7). Für mehrere Avatare eignet sich eine Datei pro Avatar mit klarer Benennung. In einem eigenen Assistenten wie dem Content-Assistenten von Fjordlicht werden Avatare zur Wissensdatei (Kap. 24, Kap. 26).</p>
+</div>
+<hr />
+<h2 id="184-simulierte-interviews-und-synthetische-personas">18.4 Simulierte Interviews und synthetische Personas<a class="headerlink" href="#184-simulierte-interviews-und-synthetische-personas" title="Permanent link">&para;</a></h2>
+<p>Ein naheliegender Gedanke: Wenn das Modell den Avatar kennt, kann es ihn auch <strong>spielen</strong>. Du lässt dich von „Jana" interviewen, stellst ihr Fragen zu einer Kampagnenidee oder lässt zehn KI-Personen eine Umfrage beantworten. Man spricht dann von <strong>synthetischen Personas</strong> oder synthetischen Nutzern.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Du spielst Jana (Steckbrief unten). Bleib in der Rolle und antworte so,
+wie sie es vermutlich tun würde - knapp, skeptisch, ohne Marketingsprache.
+Wenn eine Frage etwas betrifft, wozu der Steckbrief nichts sagt,
+antworte mit &quot;Dazu kann ich aus dem Steckbrief nichts ableiten.&quot;
+Ich stelle dir gleich Fragen zu einer Kampagnenidee.
+Steckbrief: &quot;&quot;&quot; [Steckbrief einfügen] &quot;&quot;&quot;
+</code></pre></div></td></tr></table></div>
+<p>Die Rückfall-Regel am Ende ist wichtig: Ohne sie erfindet das Modell bereitwillig Vorlieben, Erlebnisse und Meinungen, die durch nichts gedeckt sind.</p>
+<table>
+<thead>
+<tr>
+<th>Gut geeignet für</th>
+<th>Ungeeignet für</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Einwände sammeln, an die das Team nicht gedacht hat</td>
+<td>Belegen, dass eine Idee ankommt</td>
+</tr>
+<tr>
+<td>Interviewleitfäden testen, bevor echte Gespräche stattfinden</td>
+<td>Kaufbereitschaft, Preisakzeptanz, Prozentwerte</td>
+</tr>
+<tr>
+<td>unverständliche Formulierungen in einem Text aufspüren</td>
+<td>Ersatz für echte Kundengespräche</td>
+</tr>
+<tr>
+<td>Perspektivwechsel im Brainstorming (Kap. 7, Kap. 12)</td>
+<td>Gruppen, über die wenig Daten vorliegen – dort wird fast alles erfunden</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Synthetische Personas sind <strong>gefällig</strong>. Sie antworten plausibel, zeigen kaum Widersprüche, neigen zu Zustimmung und spiegeln Stereotype aus den Trainingsdaten (Kap. 2). Zehn KI-Interviews sind keine Stichprobe, sondern <strong>zehnmal derselbe Durchschnitt</strong> mit leicht verändertem Wortlaut. Wer daraus „80 Prozent der Befragten finden die Idee gut" macht, betreibt Selbsttäuschung.</p>
+</div>
+<p>Nutze simulierte Interviews daher als <strong>Vorbereitung</strong>: Sie liefern Fragen, Hypothesen und Formulierungen, die du anschließend mit echten Menschen prüfst.</p>
+<hr />
+<h2 id="185-der-avatar-check-fur-texte">18.5 Der Avatar-Check für Texte<a class="headerlink" href="#185-der-avatar-check-fur-texte" title="Permanent link">&para;</a></h2>
+<p>Die zweite starke Anwendung ist die <strong>Prüfung</strong> fertiger Entwürfe. Statt „Ist der Text gut?" fragst du: „Wie liest Jana diesen Text – und wo steigt sie aus?" Das schärft das Feedback, weil es an einer konkreten Person gemessen wird statt an allgemeinem Geschmack.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>Lies den folgenden Newsletter-Entwurf aus Sicht von Jana (Steckbrief unten).
+Bewerte in einer Tabelle:
+1. Hook: Würde Jana nach der ersten Zeile weiterlesen? Warum (nicht)?
+2. Relevanz: Welche Stelle trifft ihre Situation, welche nicht?
+3. Einwände: Welcher ihrer Einwände bleibt unbeantwortet?
+4. Abschreckung: Wo stößt sie auf etwas, das sie nicht mag?
+5. Handlung: Ist klar, was sie als Nächstes tun soll?
+Begründe jeden Punkt mit einem Bezug zum Steckbrief.
+Schlage zum Schluss die drei wirksamsten Änderungen vor.
+Steckbrief: &quot;&quot;&quot; [Kurzfassung] &quot;&quot;&quot;
+Entwurf: &quot;&quot;&quot; [Text] &quot;&quot;&quot;
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Prüfpunkt</th>
+<th>Gutes Zeichen</th>
+<th>Warnsignal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hook</td>
+<td>knüpft an eine Alltagssituation an</td>
+<td>allgemeine Wetter- oder Abenteuerfloskel</td>
+</tr>
+<tr>
+<td>Einwände</td>
+<td>Preis und Passform werden aufgegriffen</td>
+<td>nur Produkteigenschaften</td>
+</tr>
+<tr>
+<td>Sprache</td>
+<td>Formulierungen aus der Kundensprache</td>
+<td>Fachbegriffe, Superlative</td>
+</tr>
+<tr>
+<td>Belege</td>
+<td>Nachhaltigkeit mit konkretem Nachweis</td>
+<td>„umweltfreundlich" ohne Angabe</td>
+</tr>
+</tbody>
+</table>
+<p>Der Avatar-Check ersetzt keinen A/B-Test (Kap. 16) und keine Freigabe. Er ist ein schneller Filter <strong>vor</strong> dem Test: Varianten, die schon am Avatar scheitern, musst du nicht ins Feld schicken.</p>
+<div class="admonition example">
+<p class="admonition-title">Zwei Avatare, ein Text</p>
+<p>Prüfe denselben Text nacheinander mit zwei Avataren, etwa Jana und dem Familien-Avatar „Tobias, 41, zwei Kinder". Wenn beide ihn gut finden, ist er oft zu allgemein. Wenn beide ihn schlecht finden, fehlt meist der Bezug zu einer konkreten Situation. Das Ergebnis zeigt dir, ob du <strong>einen</strong> Text für beide brauchst oder zwei Varianten.</p>
+</div>
+<hr />
+<h2 id="186-avatare-pflegen">18.6 Avatare pflegen<a class="headerlink" href="#186-avatare-pflegen" title="Permanent link">&para;</a></h2>
+<p>Avatare altern. Märkte verändern sich, neue Produkte ziehen neue Kundschaft an, und was vor zwei Jahren ein Einwand war, ist heute vielleicht gelöst. Ein nie überarbeiteter Avatar wird schleichend zur Fiktion – und weil er im Prompt steckt, wirkt er weiter, ohne dass es jemand bemerkt.</p>
+<table>
+<thead>
+<tr>
+<th>Anlass</th>
+<th>Was du prüfst</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>halbjährlich</td>
+<td>neue Bewertungen, Kundenservice-Themen, Kanalnutzung – passt der Steckbrief noch?</td>
+</tr>
+<tr>
+<td>nach jedem A/B-Test</td>
+<td>bestätigt oder widerlegt das Ergebnis eine Annahme im Avatar?</td>
+</tr>
+<tr>
+<td>neues Produkt oder neuer Kanal</td>
+<td>braucht es einen neuen Avatar oder nur ein ergänztes Feld?</td>
+</tr>
+<tr>
+<td>Social-Listening-Auffälligkeiten (Kap. 19)</td>
+<td>tauchen neue Themen, Begriffe oder Kritikpunkte auf?</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Der Avatar wird zum <strong>Wunschkunden</strong>. Mit jeder Überarbeitung rutschen Eigenschaften hinein, die das Team gern hätte – mehr Budget, mehr Begeisterung für Nachhaltigkeit, weniger Preissensibilität. Prüfe deshalb bei jeder Änderung: Welche Quelle stützt das? Ein unbequemer Einwand im Steckbrief ist wertvoller als ein sympathisches Detail.</p>
+</div>
+<p>Führe zu jedem Avatar eine <strong>Versionsangabe</strong> und ein Änderungsprotokoll, so wie bei Prompts in der Bibliothek (Kap. 10). Wenn ein Feld von „Hypothese" auf „bestätigt" springt oder gestrichen wird, gehört das mit Datum und Quelle dazu.</p>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Persona</strong> beschreibt ein Segment für das Team, der <strong>Kundenavatar</strong> ist ein konkretes Arbeitsmittel zum Schreiben und Prüfen – beide brauchen Daten aus der Zielgruppenanalyse.</li>
+<li>Ein guter <strong>Steckbrief</strong> enthält nur kommunikationsrelevante Felder und weist für jedes Feld die <strong>Evidenz</strong> aus.</li>
+<li>Als Kurzfassung gehört der Avatar in den <strong>Purpose</strong> des P.R.O.M.P.T.-Frameworks; dauerhaft hinterlegt in Projekten oder Assistenten.</li>
+<li><strong>Synthetische Personas</strong> helfen beim Sammeln von Einwänden und Fragen, ersetzen aber keine echten Gespräche und liefern keine Zahlen.</li>
+<li>Der <strong>Avatar-Check</strong> prüft Entwürfe gezielt auf Hook, Relevanz, Einwände, Abschreckung und Handlung.</li>
+<li>Avatare werden regelmäßig <strong>überprüft und versioniert</strong>, sonst wirken veraltete Annahmen unbemerkt in jedem Prompt weiter.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Was gehört in den Steckbrief?</summary>
+<p>Ein Teammitglied hat für den Fjordlicht-Avatar „Tobias" (Familien-Segment) folgende Angaben
+gesammelt. Entscheide für jede, ob sie in den <strong>Avatar-Steckbrief</strong> gehört, und begründe in
+einem Halbsatz. Ordne die übernommenen Angaben einem Feld aus Abschnitt 18.2 zu.</p>
+<ol>
+<li>Tobias, 41, Lehrer, zwei Kinder (5 und 8)</li>
+<li>Lieblingsband: Element of Crime</li>
+<li>„Die Kinder wachsen schneller aus den Sachen raus, als ich nachkaufen kann." (aus Kundenmail)</li>
+<li>Sternzeichen Skorpion</li>
+<li>Kauft lieber einmal ordentlich als dreimal billig, verkauft gut erhaltene Kindersachen weiter</li>
+<li>Liest Newsletter meist sonntags, abends kaum Zeit für Social Media</li>
+<li>Fährt einen Kombi</li>
+<li>Hält „klimaneutral" für eine Werbelüge</li>
+</ol>
+<p>Entscheide außerdem: Ist „Tobias" eher eine Persona oder ein Avatar, wenn das Team ihn nutzt,
+um Newsletter-Entwürfe zu prüfen?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Prüffrage für jedes Feld: Würde sich ein Text an Tobias <strong>anders</strong> schreiben, wenn diese Angabe
+anders wäre? Wenn nein, gehört sie nicht hinein.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Aufnehmen?</th>
+<th>Feld / Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ja</td>
+<td>Name und Kurzbild – damit das Team ihn erinnert</td>
+</tr>
+<tr>
+<td>2</td>
+<td>nein</td>
+<td>ohne Bezug zur Kommunikation</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ja</td>
+<td>Pain Point und Kundensprache – wörtlich übernehmen</td>
+</tr>
+<tr>
+<td>4</td>
+<td>nein</td>
+<td>irrelevant und lädt zu Klischees ein</td>
+</tr>
+<tr>
+<td>5</td>
+<td>ja</td>
+<td>Gains/Einstellung – Ansatz für Haltbarkeit und Wiederverkaufswert</td>
+</tr>
+<tr>
+<td>6</td>
+<td>ja</td>
+<td>Informationsverhalten – bestimmt Kanal und Versandzeit</td>
+</tr>
+<tr>
+<td>7</td>
+<td>eher nein</td>
+<td>nur relevant, wenn Kofferraum oder Packmaß ein Kaufthema wären</td>
+</tr>
+<tr>
+<td>8</td>
+<td>ja</td>
+<td>Was abschreckt – zentral für Nachhaltigkeitsaussagen</td>
+</tr>
+</tbody>
+</table>
+<p>Fehlt noch: die <strong>Evidenz</strong> zu jedem Feld. Angabe 3 ist belegt (Kundenmail), Angabe 6 vermutlich
+Hypothese, bis Newsletter-Daten sie stützen.</p>
+<p>Da das Team Tobias nutzt, um konkrete Texte zu prüfen, ist er im Sinne dieses Kurses ein
+<strong>Avatar</strong>. Als Persona würde er breiter das Familien-Segment für die Strategie beschreiben.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Der Avatar im Purpose – Vorher und Nachher</summary>
+<p>Diese Übung machst du direkt im KI-Werkzeug.</p>
+<ol>
+<li>Schreibe für den Fjordlicht-Avatar „Jana" (Abschnitt 18.2) oder einen Avatar aus deinem
+   eigenen Arbeitsumfeld eine <strong>Kurzfassung</strong> von 80 bis 120 Wörtern.</li>
+<li>Lass in einem neuen Chat einen Newsletter-Teaser (max. 60 Wörter) für den Fleece „Skog"
+   schreiben – nur mit „für unsere Zielgruppe" als Purpose.</li>
+<li>Lass in einem weiteren neuen Chat denselben Teaser mit einem vollständigen P.R.O.M.P.T.-Prompt
+   schreiben, in dessen Purpose die Kurzfassung steht.</li>
+<li>Vergleiche beide Ergebnisse anhand der Prüfpunkte aus Abschnitt 18.5 (Hook, Einwände,
+   Sprache, Belege) in einer Tabelle.</li>
+<li>Notiere, welcher Satz deiner Kurzfassung die größte Wirkung hatte.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Die Kurzfassung wirkt am stärksten, wenn sie eine konkrete <strong>Situation</strong>, einen <strong>Einwand</strong> und
+ein, zwei <strong>wörtliche Formulierungen</strong> enthält. Reine Eigenschaften („umweltbewusst, aktiv")
+verändern das Ergebnis kaum.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel für eine Kurzfassung:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Jana, 34, Projektmanagerin in Münster, radelt täglich ins Büro, am
+Wochenende Tagestouren. Will eine Schicht, die im Büro nicht nach
+Funktionskleidung aussieht und abends am Lagerfeuer wärmt. Misstraut
+Öko-Versprechen ohne Nachweis, hatte schon Fleece, das nach wenigen
+Wäschen pillte. Sagt Sätze wie &quot;hält, was draufsteht&quot;. Zögert wegen
+Preis und Passform beim Onlinekauf. Liest den Newsletter am Wochenende.
+</code></pre></div></td></tr></table></div>
+<p>Typischer Vergleich:</p>
+<table>
+<thead>
+<tr>
+<th>Prüfpunkt</th>
+<th>ohne Avatar</th>
+<th>mit Avatar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hook</td>
+<td>„Kuschelig durch den Herbst!"</td>
+<td>„Pillt nach drei Wäschen? Skog nicht – hier steht, warum."</td>
+</tr>
+<tr>
+<td>Einwände</td>
+<td>keine</td>
+<td>Haltbarkeit, Passform (Größenhilfe)</td>
+</tr>
+<tr>
+<td>Sprache</td>
+<td>Superlative, Werbefloskeln</td>
+<td>ruhig, Kundensprache</td>
+</tr>
+<tr>
+<td>Belege</td>
+<td>„nachhaltig" ohne Angabe</td>
+<td>nur, wenn im Prompt ein Beleg steht – sonst <code>[BELEG FEHLT]</code></td>
+</tr>
+</tbody>
+</table>
+<p>Wirkungsvollster Satz ist meist der Pain Point mit konkreter Erfahrung („pillte nach wenigen
+Wäschen"). Achtung: Die Aussage „Skog pillt nicht" darf nur verwendet werden, wenn Fjordlicht sie
+belegen kann – der Avatar liefert die Frage, nicht die Antwort.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Synthetische Interviews kritisch prüfen</summary>
+<p>Ein Kollege präsentiert im Teammeeting: „Ich habe zehn synthetische Personas aus unserem
+Familien-Avatar erzeugt und sie zur neuen Mietoption für Kinderjacken befragt. <strong>8 von 10 würden
+sie nutzen.</strong> Wir können das Angebot starten."</p>
+<ol>
+<li>Führe selbst ein simuliertes Interview im KI-Werkzeug durch: Lass das Modell den Avatar
+   „Tobias" (aus k18_01 oder selbst erstellt) spielen, mit der Rückfall-Regel aus Abschnitt 18.4,
+   und stelle fünf Fragen zur Mietoption.</li>
+<li>Wiederhole dasselbe Interview in einem neuen Chat. Vergleiche: Wie stark unterscheiden sich die
+   Antworten, wo antwortet das Modell über den Steckbrief hinaus?</li>
+<li>Bewerte die Aussage des Kollegen. Nenne mindestens <strong>drei</strong> methodische Probleme.</li>
+<li>Formuliere, wofür die Interviews trotzdem nützlich waren, und schlage einen Weg vor, die
+   Nachfrage mit echten Menschen zu prüfen.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achte im zweiten Durchlauf darauf, ob sich die <strong>Haltung</strong> ändert oder nur der Wortlaut. Und
+zähle, wie oft das Modell zustimmt, abwägt oder ablehnt. Die Neigung zur Zustimmung ist eines
+der stabilsten Muster synthetischer Befragungen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Typische Beobachtungen: Beide Durchläufe ähneln sich in der Haltung (vorsichtig positiv, „klingt
+interessant, wenn der Preis stimmt"), unterscheiden sich im Wortlaut. Ohne Rückfall-Regel erfindet
+das Modell Details wie konkrete Preisgrenzen oder Erfahrungen mit anderen Mietangeboten.</p>
+<p>Methodische Probleme der Aussage „8 von 10":</p>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Erklärung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>keine unabhängige Stichprobe</td>
+<td>zehn Personas aus einem Avatar sind Variationen desselben Musters</td>
+</tr>
+<tr>
+<td>Gefälligkeit</td>
+<td>Modelle neigen zu Zustimmung, besonders bei positiv formulierten Fragen</td>
+</tr>
+<tr>
+<td>Absicht ist nicht Verhalten</td>
+<td>selbst echte Befragte überschätzen ihre Nutzung; synthetische erst recht</td>
+</tr>
+<tr>
+<td>fehlende Datenbasis</td>
+<td>der Avatar enthält nichts zu Mieten – die Antworten sind Erfindung</td>
+</tr>
+<tr>
+<td>Scheinpräzision</td>
+<td>eine Prozentzahl suggeriert Messung, wo keine stattfand</td>
+</tr>
+</tbody>
+</table>
+<p>Nützlich waren die Interviews für: Einwände (Hygiene, Schäden durch Kinder, Rückgabeaufwand),
+Fragen für echte Gespräche und Formulierungen für eine Landingpage.</p>
+<p>Echte Prüfung: fünf bis acht Gespräche mit Eltern aus dem Newsletter-Verteiler, eine kurze Umfrage
+mit Verhaltensfrage („Hast du schon einmal Kinderkleidung gemietet oder gebraucht gekauft?") und
+ein <strong>Fake-Door-Test</strong>: eine Landingpage mit Vormerk-Button, die echtes Interesse misst, bevor das
+Angebot existiert (transparent kommunizieren, dass es sich um eine Vormerkung handelt).</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Avatar-Set für Fjordlicht Business</summary>
+<p><strong>Szenario:</strong> „Fjordlicht Business" verkauft nachhaltige Firmenbekleidung an Unternehmen. Bisher
+schreibt jeder im Team LinkedIn-Posts und Angebotsmails aus dem Bauch heraus. Du sollst einen
+<strong>Avatar</strong> entwickeln, den das ganze Team als Prompt-Baustein und zum Prüfen von Texten nutzt.
+Alternativ arbeitest du mit einem B2B-Angebot eines Unternehmens deiner Wahl.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Kundschaft: Handwerksbetriebe, Agenturen, Hotels, 20-200 Beschäftigte.
+Datenlage (fiktiv, selbst anlegen): 15 pseudonymisierte Anfragen, Notizen
+aus 5 Vertriebsgesprächen, 8 Rückmeldungen nach Erstbestellung.
+Kanäle: LinkedIn, Angebotsmail, Landingpage.
+Keine echten Kunden- oder Personendaten.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Steckbrief.</strong> Lege die fiktiven Daten an und lass die KI daraus einen Steckbrief-
+Entwurf mit allen Feldern aus Abschnitt 18.2 erstellen – mit Quellenangabe je Feld und
+<code>[HYPOTHESE]</code> für Unbelegtes. Überarbeite den Entwurf selbst. Beachte: Im B2B gibt es oft mehrere
+Beteiligte (Geschäftsführung, Einkauf, Mitarbeitende, die die Kleidung tragen).</p>
+<p><strong>Runde 2 – Prompt-Baustein und Einsatz.</strong> Schreibe eine Kurzfassung (80–120 Wörter) und
+verwende sie im Purpose eines P.R.O.M.P.T.-Prompts für einen LinkedIn-Post und eine Angebotsmail.
+Prüfe beide Texte mit dem Avatar-Check aus Abschnitt 18.5 und überarbeite sie.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Der Vertriebsleiter liest deinen Avatar und widerspricht: „Unsere
+Entscheider interessieren sich null für Nachhaltigkeit. Die wollen Logo drauf, Lieferung in zwei
+Wochen, Nachbestellung ohne Theater." Deine Daten zeigen ein gemischtes Bild. Kläre, wie du mit
+dem Widerspruch umgehst: Welche Felder änderst du, welche markierst du als strittig, und welche
+zusätzlichen Daten würden die Frage entscheiden?</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Ein Kollege möchte statt eines Avatars gleich fünf
+bauen – für jede Branche einen. Ein anderer meint, ein Avatar reiche für alles. Lass dir von der
+KI Pro und Contra liefern, <strong>widersprich</strong> dort, wo sie Aufwand und Pflege unterschätzt, und
+entscheide begründet, mit wie vielen Avataren das Team startet.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>fiktive Datengrundlage und Steckbrief mit Evidenz je Feld</li>
+<li>Kurzfassung als kopierbarer Prompt-Baustein</li>
+<li>LinkedIn-Post und Angebotsmail, jeweils mit Avatar-Check vorher/nachher</li>
+<li>Stellungnahme zu Runde 3 mit Änderungsprotokoll des Avatars (Version 1.0 → 1.1)</li>
+<li>Entscheidung zu Runde 4 mit Pflegeplan</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jedes Feld des Steckbriefs eine Evidenzangabe trägt, die Kurzfassung
+ohne Erklärung in einem fremden Prompt funktioniert, der Widerspruch des Vertriebs dokumentiert
+und mit einem Prüfweg versehen ist und dein Pflegeplan sagt, wer den Avatar wann überprüft.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernwert liegt in Runde 3. Erfahrungswissen aus dem Vertrieb ist eine wertvolle Quelle, aber
+ebenfalls eine Hypothese – genau wie die KI-Auswertung. Ein guter Avatar entscheidet solche
+Konflikte nicht per Bauchgefühl oder Hierarchie, sondern macht sie sichtbar und benennt, welche
+Daten sie klären. Oft lösen sie sich auf: Nachhaltigkeit ist dann kein Kaufgrund, aber ein
+Ausschlusskriterium bei Ausschreibungen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) der Steckbrief nutzt die Feldstruktur, berücksichtigt die B2B-Rollen
+und weist Evidenz je Feld aus; (2) die Kurzfassung enthält Situation, Einwände und Kundensprache
+und verändert die Texte nachweisbar; (3) der Avatar-Check führt zu konkreten Überarbeitungen statt
+zu allgemeinem Lob; (4) der Widerspruch aus Runde 3 wird weder ignoriert noch blind übernommen,
+sondern als strittiges Feld mit Prüfweg (zum Beispiel Auswertung der Anfrageanlässe, drei
+Kundengespräche) und Versionsvermerk dokumentiert; (5) die Entscheidung in Runde 4 wägt
+Genauigkeit gegen Pflegeaufwand ab – typischerweise Start mit einem bis zwei Avataren, Ausbau
+nur, wenn Daten deutliche Unterschiede zeigen.</p>
+<p>Lernziel: Einen Kundenavatar als datenbasiertes, gepflegtes Arbeitsmittel aufbauen, ihn als
+Prompt-Baustein einsetzen und Widersprüche zwischen Erfahrung und Daten produktiv auflösen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel17/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 17 – Zielgruppenanalyse mit KI">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 17 – Zielgruppenanalyse mit KI
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel19/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 19 – Social Listening mit KI">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 19 – Social Listening mit KI
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
