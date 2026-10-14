@@ -1,0 +1,42 @@
+title: Das Agenturangebot kritisch prüfen
+difficulty: 3
+question: |
+  Eine Agentur schlägt Fjordlicht vor, die Frühjahrskampagne für die Regenjacke „Sølv"
+  **vollständig mit KI-Video** umzusetzen:
+
+  ```text
+  - 45-Sekunden-Spot, komplett per Text-zu-Video, ohne Dreh
+  - wiederkehrende Hauptfigur in sechs Einstellungen
+  - Jacke im Detail: Reißverschluss, Kapuzenverstellung, Logo auf der Brust
+  - Schluss: drei "Kundinnen" sagen in die Kamera, wie dicht die Jacke ist
+  - Claim im Bild: "Die nachhaltigste Regenjacke Deutschlands"
+  - Kosten: 40 Prozent unter einem klassischen Dreh
+  ```
+
+  1. Bewerte jeden Punkt: realistisch umsetzbar, nur mit Einschränkungen oder nicht vertretbar.
+  2. Begründe technisch (Abschnitt 35.6), markenbezogen (Markenstimme Fjordlicht) und rechtlich
+     (Verweise auf Kap. 34 und 39 genügen).
+  3. Formuliere einen **Gegenvorschlag**, der KI-Video sinnvoll einsetzt.
+tip: |
+  Trenne zwei Fragen: „Geht das technisch?" und „Dürfen und wollen wir das?". Manche Punkte
+  scheitern an der Technik, andere an Täuschung oder an der Markenstimme – und einer an beidem.
+solution: |
+  | Punkt | Bewertung | Begründung |
+  |---|---|---|
+  | 45 s ohne Dreh | nur mit Einschränkungen | Clips sind kurz, 45 s heißt viele Einzelclips und viel Schnitt |
+  | wiederkehrende Hauptfigur | nur mit Einschränkungen | Gesicht und Kleidung driften zwischen Einstellungen; Referenzbilder helfen nur teilweise |
+  | Jacke im Detail per Text-zu-Video | nicht vertretbar | Modell kennt die Jacke nicht; Details und Logo werden erfunden – irreführende Produktdarstellung (Kap. 34) |
+  | KI-„Kundinnen" mit Aussagen | nicht vertretbar | erfundene Testimonials täuschen, realistisch wirkende Personen erfordern Plattformlabels; Vertrauensschaden |
+  | Superlativ-Claim | nicht vertretbar | widerspricht Markenstimme (keine Superlative, kein Greenwashing), nicht belegbar, UWG-Risiko |
+  | 40 % günstiger | offen | Iterationen, Credits, Prüfaufwand und Nachbearbeitung fehlen in der Rechnung |
+
+  Gegenvorschlag:
+
+  - echter, kurzer Produktdreh (Details, Handgriffe, echte Menschen)
+  - KI-Video für Stimmung: Nordsee-Wetter, Regen, Landschaft als Intros und Übergänge
+  - Bild-zu-Video aus freigegebenen Produktfotos für Social-Varianten (9:16, 4:5)
+  - Kundenstimmen nur echt und mit Einwilligung, Claim aus der Claim-Liste
+  - Plattformlabels, wo realistische KI-Szenen enthalten sind; Einzelbildprüfung vor Freigabe
+
+  Bewertungskriterien: Jeder Punkt wird bewertet, technische und rechtliche Gründe werden
+  getrennt, der Gegenvorschlag nutzt KI dort, wo Konsistenz und Produkttreue unkritisch sind.

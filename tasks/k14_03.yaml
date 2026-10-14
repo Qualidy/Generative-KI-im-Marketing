@@ -1,0 +1,56 @@
+title: Kritischer Kommentar unter dem Launch-Post
+difficulty: 3
+question: |
+  Unter dem Launch-Post der Regenjacke „Sølv" steht folgender (fiktiver) Kommentar mit
+  bereits 140 Likes:
+
+  ```text
+  "Recyceltes Polyamid" klingt super, aber eure Jacken werden in Asien
+  genäht und per Schiff hergekarrt. Ist das jetzt nachhaltig oder nur
+  Marketing?
+  ```
+
+  Fjordlicht weiß: Produktion in Portugal und Vietnam, Transport überwiegend per Seefracht,
+  Lieferkette nach einem anerkannten Sozialstandard geprüft, eine Klimabilanz der Jacke gibt
+  es **nicht**.
+
+  1. Schreibe einen Prompt, der einen Antwortentwurf erzeugt. Er muss verhindern, dass die KI
+     Aussagen ergänzt, die Fjordlicht nicht belegen kann.
+  2. Teste den Prompt und bewerte den Entwurf: Was würdest du übernehmen, was streichen?
+  3. Begründe, warum diese Antwort vor dem Posten von einem Menschen freigegeben werden muss,
+     und wer im Team das sein sollte.
+  4. Bewerte die Alternative „Kommentar ausblenden" – wann wäre das vertretbar?
+tip: |
+  Die Stärke einer guten Antwort liegt hier im Eingeständnis dessen, was man nicht weiß.
+  KI-Entwürfe tendieren dazu, Kritik „wegzumoderieren" und Lücken mit freundlichen Allgemeinplätzen
+  zu füllen. Prüfe den Entwurf deshalb Satz für Satz gegen die Faktenliste.
+solution: |
+  Beispielprompt:
+
+  ```text
+  Du bist Community-Managerin bei Fjordlicht. Entwirf eine Antwort auf den
+  Kommentar unten. Max. 4 Sätze, Du-Ansprache, ruhig, ehrlich, nicht
+  defensiv. Nutze ausschließlich diese Fakten:
+  - Produktion in Portugal und Vietnam
+  - Transport überwiegend per Seefracht
+  - Lieferkette nach anerkanntem Sozialstandard geprüft
+  - Es gibt KEINE Klimabilanz der Jacke.
+  Erwähne, was wir nicht wissen. Verwende nicht die Wörter nachhaltig,
+  klimaneutral, umweltfreundlich. Kein Werbeversprechen.
+  Kommentar: [Kommentartext]
+  ```
+
+  Typischer Befund: Der Entwurf ist brauchbar, enthält aber oft einen Satz wie „Nachhaltigkeit ist
+  uns ein Herzensanliegen" oder eine Aussage über „kurze Transportwege". Beides streichen – das
+  Erste ist Floskel, das Zweite falsch.
+
+  Freigabe: Die Antwort ist eine öffentliche Umweltaussage unter einem viel gelesenen Post. Sie
+  sollte von der Person freigegeben werden, die die Claim-Liste verantwortet (bei Fjordlicht die
+  Marketingleitung bzw. die Nachhaltigkeitsverantwortliche), weil eine missverständliche Antwort
+  irreführend sein kann (UWG) und sich als Screenshot verbreitet.
+
+  Ausblenden ist nur vertretbar bei Beleidigungen, Spam oder Verstößen gegen die Netiquette. Eine
+  sachliche Kritik auszublenden wirkt wie ein Eingeständnis und verschärft die Lage meist.
+
+  Bewertungskriterien: Faktenliste vollständig im Prompt, ausdrückliche Wissenslücke, mindestens
+  eine gestrichene KI-Formulierung mit Begründung, konkrete Freigaberolle.

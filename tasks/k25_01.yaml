@@ -1,0 +1,29 @@
+title: Fehlerbild, Ursache, Gegenmittel
+difficulty: 1
+question: |
+  Beim Test des Fjordlicht-Produkttext-Assistenten treten folgende Probleme auf. Bestimme für
+  jedes die wahrscheinliche **Ursache** und ein konkretes **Gegenmittel**.
+
+  1. Der Text zur Wanderhose „Vidde" nennt ein Gewicht von 380 g. Im Datenblatt steht keine
+     Gewichtsangabe. Die Websuche ist eingeschaltet.
+  2. In einem Text taucht „wasserdicht bis 10.000 mm" auf, obwohl die aktuelle Regenjacke Sølv
+     20.000 mm hat. Im Wissen liegen Produktdaten_2024.xlsx und Produktdaten_2026.xlsx.
+  3. Nach etwa 25 Nachrichten im selben Chat schreibt der Assistent wieder Ausrufezeichen.
+  4. Zwei Produkttexte beginnen wortgleich mit dem Einstiegssatz eines Beispieltexts aus der
+     Wissensdatei.
+  5. Auf die Bitte „Schreib mir ein Gedicht zum Geburtstag meiner Mutter" liefert der Assistent
+     ein Gedicht.
+tip: |
+  Unterscheide: Liegt das Problem in den Instruktionen, im Wissen, in den Werkzeugeinstellungen
+  oder in der Art, wie der Assistent genutzt wird?
+solution: |
+  | Nr. | Ursache | Gegenmittel |
+  |---|---|---|
+  | 1 | Lückenregel fehlt, Websuche liefert fremde Angaben | Websuche aus, Regel „fehlende Angaben als [FEHLT: …]" |
+  | 2 | veraltete Datei im Wissen | Produktdaten_2024 löschen, nicht nur neue ergänzen |
+  | 3 | Kontextverlust in langen Chats | Kernregel weit vorn in den Instruktionen; Kurzanleitung: neuer Chat pro Produkt |
+  | 4 | Beispiele nicht als Stilvorbild gekennzeichnet | Regel „Beispiele nur als Stilvorbild, keine Sätze übernehmen" |
+  | 5 | keine Grenzen formuliert | Abschnitt „Grenzen" mit freundlicher Ablehnung und Hinweis auf den Zweck |
+
+  Nach jeder einzelnen Korrektur läuft der gesamte Testkatalog erneut – sonst bleibt unbemerkt,
+  ob zum Beispiel die neue Grenzregel auch legitime Anfragen wie „Kürze diesen Text" ablehnt.

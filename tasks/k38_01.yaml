@@ -1,0 +1,28 @@
+title: TTS, Klon oder Deepfake?
+difficulty: 1
+question: |
+  Ordne jeden Fall ein: Handelt es sich um **Standard-TTS** (Katalogstimme) oder um **Voice
+  Cloning**? Ist der Inhalt voraussichtlich ein **Deepfake** im Sinne von Art. 50 Abs. 4 AI Act,
+  der offengelegt werden muss?
+
+  1. Eine Katalogstimme von ElevenLabs liest die Pflegehinweise zum Fleece „Skog" vor.
+  2. Die langjährige Fjordlicht-Sprecherin hat einem Klon zugestimmt; dieser vertont ein
+     Produkt-FAQ-Video zur Regenjacke „Sølv".
+  3. Ein Social-Media-Manager lässt die Stimme der Geschäftsführerin klonen, um ein
+     LinkedIn-Statement zu vertonen, das diese schriftlich freigegeben hat.
+  4. Ein erkennbar satirischer Clip, in dem eine Klonstimme eines bekannten Bergsteigers
+     über „zu warme Jacken" schimpft – ohne dessen Wissen.
+tip: |
+  Entscheidend für Art. 50 Abs. 4 ist, ob eine **reale Person** nachgebildet wird und der Inhalt
+  fälschlich als echt erscheinen würde. Die Freigabe des Textes ändert nichts daran, dass die
+  Stimme synthetisch ist.
+solution: |
+  | Nr. | Verfahren | Deepfake nach Art. 50 Abs. 4? | Bemerkung |
+  |---|---|---|---|
+  | 1 | Standard-TTS | i. d. R. nein | keine reale Person; freiwilliger Hinweis möglich |
+  | 2 | Voice Cloning | wahrscheinlich ja | Einwilligung vorhanden, trotzdem offenlegen |
+  | 3 | Voice Cloning | ja | Textfreigabe ersetzt keine Kennzeichnung; zudem Missbrauchsvorlage für CEO-Fraud |
+  | 4 | Voice Cloning | ja, in eingeschränkter Form wegen Satire | ohne Einwilligung Verletzung des Persönlichkeitsrechts – so nicht veröffentlichen |
+
+  Fall 4 zeigt: Die eingeschränkte Kennzeichnung bei Satire löst nur die AI-Act-Frage. Das
+  Persönlichkeitsrecht des Bergsteigers ist davon unabhängig verletzt.

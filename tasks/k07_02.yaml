@@ -1,0 +1,41 @@
+title: Markenstimme extrahieren und anwenden
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Nutze drei bis fünf Texte einer Marke, deren Ton du
+  magst – öffentlich zugängliche Newsletter, Produkttexte oder Posts eines Unternehmens deiner Wahl.
+  Alternativ schreibst du drei kurze Fjordlicht-Texte selbst.
+
+  1. **Extraktion:** Lass den Stil mit dem Prompt aus Abschnitt 7.3 beschreiben (Gegensatzpaare,
+     Satzbau, Wortwahl, Ansprache, Umgang mit Produktvorteilen, Belege).
+  2. **Prüfung:** Kontrolliere jeden Beleg: Steht das Zitat wirklich so in den Beispielen?
+     Streiche oder korrigiere, was nicht stimmt, und kürze auf höchstens 150 Wörter.
+  3. **Anwendung:** Lass in einem **neuen Chat** mit deiner Beschreibung als Tone-Baustein einen
+     neuen Text schreiben (z. B. Produkttext zum Fleece Skog). Lass denselben Text zum Vergleich
+     ohne Stilbeschreibung schreiben.
+  4. Halte fest, woran man den Unterschied erkennt.
+tip: |
+  Gerade die Belegzitate sind aufschlussreich: Modelle „zitieren" gern Sätze, die so nicht im Text
+  stehen, aber gut passen würden. Jede nicht auffindbare Fundstelle ist ein Hinweis, dass die
+  zugehörige Stilbehauptung hineingelesen sein könnte.
+solution: |
+  Beispiel für eine geprüfte, gekürzte Stilbeschreibung (Fjordlicht):
+
+  ```text
+  Ton: ruhig statt aufgeregt, ehrlich statt euphorisch, trocken statt
+  witzig-bemüht, konkret statt blumig.
+  Satzbau: kurze Hauptsätze, gelegentlich ein Satz mit nur zwei Wörtern.
+  Wortwahl: draußen, Wetter, Weg, halten, reparieren.
+  Nie: perfekt, ultimativ, revolutionär, nachhaltig ohne Beleg.
+  Ansprache: Du, ohne Ausrufezeichen.
+  Produktvorteile: als Situation beschreiben, nicht als Eigenschaftsliste.
+  ```
+
+  Typische Beobachtungen:
+
+  - In Schritt 2 erweist sich meist mindestens ein „Beleg" als nicht wörtlich vorhanden.
+  - Der Text mit Stilbeschreibung ist kürzer, enthält weniger Adjektive und keine Superlative.
+  - Ohne Beschreibung klingt der Text nach „Werbung allgemein": Ausrufezeichen, „perfekt für".
+
+  Eine gute Bearbeitung enthält die Rohfassung der Extraktion, die korrigierte Kurzfassung mit
+  Begründung der Streichungen und den Vergleich beider Texte mit mindestens drei konkreten
+  Unterschieden.

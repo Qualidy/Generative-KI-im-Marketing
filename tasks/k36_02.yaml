@@ -1,0 +1,50 @@
+title: Vom Produkttext zum Sprechskript
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT, Claude, Gemini oder Copilot). Wenn du
+  Zugang zu einem TTS-Werkzeug oder einer Avatar-Plattform mit Testkontingent hast, nutze es in
+  Schritt 4.
+
+  Ausgangstext (fiktiv, Produktseite Wanderhose „Vidde"):
+
+  ```text
+  Die Wanderhose "Vidde" (Material: 64 % rec. Polyamid, 36 % Elasthan; Gewicht ca. 380 g)
+  überzeugt durch 4-Wege-Stretch, eine PFC-freie DWR-Ausrüstung sowie 2 seitl.
+  Reißverschlusstaschen u. 1 Oberschenkeltasche. Pflege: 30 Grad, nicht in den Trockner.
+  ```
+
+  1. Lass mit dem Prompt aus Abschnitt 36.3 ein **30-Sekunden-Sprechskript** erstellen
+     (höchstens 70 Wörter).
+  2. Prüfe das Ergebnis gegen die Tabelle „Lesetext – Sprechtext": Sind Abkürzungen, Zahlen und
+     Prozentangaben ausgeschrieben? Steht die Kernbotschaft vorn und hinten?
+  3. Lies das Skript laut mit Stoppuhr und überarbeite die Stellen, an denen du stolperst.
+  4. Lass das Skript von einer KI-Stimme sprechen und erstelle eine **Ausspracheliste** für alle
+     Wörter, die falsch klingen.
+tip: |
+  Achte darauf, dass das Modell aus „PFC-frei" keine stärkere Nachhaltigkeitsaussage macht, als
+  im Ausgangstext steht. Umformulieren heißt nicht, Aussagen zu steigern.
+solution: |
+  Beispiel für ein gelungenes Sprechskript (rund 65 Wörter):
+
+  ```text
+  Das ist die Vidde. Eine Wanderhose, die mitgeht. [Pause]
+  Sie dehnt sich in alle Richtungen - bergauf, bergab, über Zäune.
+  Regen perlt ab, und zwar ohne PFC. [Pause]
+  Zwei Taschen mit Reißverschluss an der Seite, eine am Oberschenkel.
+  Waschen bei dreißig Grad, nicht in den Trockner.
+  Die Vidde: gemacht für lange Tage draußen.
+  ```
+
+  Prüfpunkte: Abkürzungen („rec.", „u.", „DWR") sind aufgelöst oder weggelassen,
+  Materialprozente stehen nicht im Sprechtext (gehören in die Einblendung), die Kernbotschaft
+  steht vorn und am Schluss, kein Superlativ.
+
+  Typische Ausspracheliste:
+
+  | Wort | Problem | Lösung |
+  |---|---|---|
+  | Vidde | englisch ausgesprochen | Ersatzschreibung „Widde" oder Aussprache-Wörterbuch |
+  | PFC | als Wort gesprochen | „P-F-C" schreiben |
+  | Fjordlicht | falsche Betonung | „Fjord-licht" mit Bindestrich testen |
+
+  Wer nach dem lauten Lesen nichts ändert, hat meist nicht laut gelesen.

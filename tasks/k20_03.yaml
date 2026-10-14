@@ -1,0 +1,51 @@
+title: Scheinbefunde entlarven
+difficulty: 3
+question: |
+  Eine Kollegin hat mit der Datenanalyse die Blog- und Social-Daten von Fjordlicht ausgewertet
+  und schlägt auf Basis der Ergebnisse vier neue Regeln für alle Texte vor:
+
+  1. „Blogartikel über 2.000 Wörter haben 60 Prozent mehr Engagement-Zeit. Ab sofort schreiben
+     wir nur noch lange Artikel."
+  2. „Instagram-Posts mit drei oder mehr Emojis bekommen doppelt so viele Likes. Jeder Post
+     bekommt künftig mindestens drei Emojis."
+  3. „LinkedIn-Beiträge, die die Geschäftsführerin postet, bekommen viermal so viele Kommentare
+     wie Beiträge auf der Unternehmensseite. Der Text ist also besser."
+  4. „Seit wir die Produkttexte mit KI überarbeitet haben, ist die Conversion-Rate im Oktober um
+     18 Prozent gestiegen. Die KI-Texte wirken."
+
+  Bewerte jede Regel kritisch:
+
+  - Welche **alternative Erklärung** (Störfaktor) ist plausibel?
+  - Welche **Zusatzdaten** würdest du anfordern, um sie zu prüfen?
+  - Wie müsste ein **Test** aussehen, der die Frage klärt (Kap. 16)?
+
+  Formuliere anschließend einen Prompt, mit dem die KI künftig solche Scheinbefunde selbst
+  kennzeichnet, bevor sie Empfehlungen ausspricht.
+tip: |
+  Suche bei jeder Regel nach dem, was **gleichzeitig** mit dem Merkmal auftritt: Thema,
+  Zeitraum, Absender, Saison, Zielgruppe. Und prüfe die Formulierung: Wo steckt ein „also"
+  oder „wirken", das die Daten nicht hergeben?
+solution: |
+  | Nr. | Alternative Erklärung | Zusatzdaten | Test |
+  |---|---|---|---|
+  | 1 | Lange Artikel behandeln Kernthemen (Pflege, Kaufberatung) mit mehr Suchnachfrage und Links; Engagement-Zeit steigt mit Länge fast automatisch | Thema, Traffic-Quelle, Scrolltiefe, Conversions je Artikel | dasselbe Thema in kurzer und langer Fassung, Ziel: Newsletter-Anmeldungen statt Zeit |
+  | 2 | Emoji-Posts waren Gewinnspiele oder Teaser für Rabatte | Post-Typ, Anlass, Saves und Shares statt Likes | identischer Post mit und ohne Emojis an vergleichbaren Tagen |
+  | 3 | Persönliche Profile haben andere Netzwerke und Algorithmusvorteile; Texte waren gar nicht gleich | Reichweite, Follower-Struktur, Textvergleich | derselbe Text auf beiden Profilen, Interaktionsrate pro Impression |
+  | 4 | Oktober ist Saisonstart für Regenjacken; parallel lief eventuell eine Kampagne | Vorjahresvergleich, Kampagnenkalender, Traffic-Mix | A/B-Test alter gegen neuer Produkttext im selben Zeitraum |
+
+  Gemeinsames Muster: Alle vier Regeln schließen von Korrelation auf Ursache. Regel 1 und 2
+  optimieren zudem auf Eitelkeits- bzw. Nebenkennzahlen.
+
+  Prompt-Baustein für künftige Analysen:
+
+  ```text
+  Bevor du Empfehlungen aussprichst: Prüfe jeden Befund auf mögliche
+  Störfaktoren (Thema, Zeitraum, Saison, Absender, Zielgruppe, Kampagnen).
+  Nenne für jeden Befund mindestens eine alternative Erklärung und die
+  Fallzahl. Formuliere Befunde als Hypothesen ("könnte zusammenhängen") und
+  schlage für jede Hypothese einen A/B-Test mit genau einer veränderten
+  Variable vor. Gib keine allgemeinen Regeln aus.
+  ```
+
+  Bewertungskriterien: plausible, konkrete Störfaktoren statt allgemeiner Skepsis;
+  Zusatzdaten, die die Frage tatsächlich entscheiden; Tests mit genau einer Variable.

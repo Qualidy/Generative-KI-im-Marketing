@@ -1,0 +1,80 @@
+title: KI-Richtlinie und Freigabeprozess für ein Marketingteam
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht will KI im Marketing offiziell einführen. Die Geschäftsführung hat
+  gehört, dass der AI Act „Schulungspflichten" und seit August 2026 „Kennzeichnungspflichten"
+  enthält, und ist verunsichert. Sie bittet dich um eine KI-Richtlinie für das Marketingteam
+  und einen Freigabeprozess, der im Alltag funktioniert. Du kannst alternativ ein Unternehmen
+  deiner Wahl verwenden.
+
+  ```text
+  Rahmen:
+  Unternehmen: Fjordlicht GmbH oder ein Unternehmen deiner Wahl
+  Team: 5 Personen Marketing, dazu eine externe Social-Media-Agentur
+  Werkzeuge: ChatGPT Business mit AVV, Adobe Firefly; einzelne nutzen privat
+  weitere Werkzeuge
+  Umfang der Richtlinie: höchstens zwei Seiten
+  Keine echten Kundendaten in der Bearbeitung
+  ```
+
+  ---
+
+  **Runde 1 – Richtlinie entwerfen.** Erstelle eine KI-Richtlinie mit allen acht Bausteinen aus
+  Abschnitt 4.5. Lass dir von deinem KI-Werkzeug einen ersten Entwurf erstellen, prüfe aber
+  jede Aussage zum AI Act gegen Abschnitt 4.2 und 4.3 und korrigiere veraltete oder falsche
+  Angaben. Jede Regel ist als Handlungsanweisung mit Beispiel formuliert.
+
+  **Runde 2 – Freigabeprozess und Ampel.** Lege den Freigabeprozess für öffentliche Inhalte
+  fest: Prüfschritte, Verantwortliche, Dokumentation. Übertrage die Ampel aus Abschnitt 4.4 auf
+  eure Datenarten – mit mindestens drei konkreten Beispielen pro Farbe.
+
+  **Runde 3 – Die Komplikation.** Die Agentur liefert für die Kampagne zur Regenjacke „Sølv"
+  ein fotorealistisches KI-Video: Ein Paar wandert im Regen über einen bekannten
+  Aussichtspunkt in Norwegen, im Abspann steht „Echte Momente mit Fjordlicht". Außerdem stellt
+  sich heraus, dass die Agentur Kundenbewertungen samt Namen in ein privates KI-Konto geladen
+  hat. Prüfe beide Vorgänge gegen deine Richtlinie: Welche Regeln greifen, welche fehlen?
+  Ergänze die Richtlinie und formuliere eine kurze Anweisung an die Agentur.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Eine Kollegin schlägt vor, „zur Sicherheit"
+  jeden Inhalt mit dem Hinweis „mit KI erstellt" zu versehen, auch Newsletter-Texte und
+  Produktbeschreibungen. Lass dir von deinem KI-Werkzeug Argumente dafür und dagegen nennen.
+  **Widersprich** den Argumenten, die rechtlich oder praktisch nicht tragen, und entscheide
+  begründet, welche Kennzeichnungsregel in die Richtlinie kommt.
+
+  **Deliverable:**
+
+  1. KI-Richtlinie mit acht Bausteinen, höchstens zwei Seiten
+  2. Freigabeprozess als Schrittfolge oder Diagramm mit Verantwortlichen
+  3. Daten-Ampel mit mindestens neun konkreten Beispielen
+  4. Bewertung der beiden Vorgänge aus Runde 3, Ergänzungen der Richtlinie und Anweisung an
+     die Agentur
+  5. Begründete Kennzeichnungsregel aus Runde 4
+
+  **Fertig bist du erst, wenn** jede Aussage zum AI Act mit dem Stand aus Kapitel 4
+  übereinstimmt, jede Regel ein Beispiel hat, der Freigabeprozess namentlich Verantwortliche
+  nennt, die Agentur ausdrücklich in den Geltungsbereich einbezogen ist und deine
+  Kennzeichnungsregel zwischen gesetzlicher Pflicht, Plattformregel und freiwilliger
+  Transparenz unterscheidet.
+tip: |
+  Der Lernkern liegt in Runde 3 und 4. Eine Richtlinie zeigt ihren Wert erst am konkreten
+  Fall – fast immer fehlt am Anfang der Geltungsbereich für Externe und eine Regel zu
+  realistischen Darstellungen. In Runde 4 gilt: Pauschale Kennzeichnung klingt sicher, verwässert
+  aber die Aussage des Labels dort, wo es wirklich zählt. Prüfe die KI-Entwürfe streng: Sie
+  enthalten häufig veraltete Fristen oder behaupten eine allgemeine Kennzeichnungspflicht für
+  alle KI-Texte.
+solution: |
+  Bewertungskriterien: (1) Die Richtlinie enthält alle acht Bausteine als konkrete
+  Handlungsanweisungen mit Beispielen; Aussagen zum AI Act sind korrekt, insbesondere Art. 4
+  als Pflicht zu Maßnahmen zur Förderung der KI-Kompetenz (nach Digital Omnibus abgeschwächt)
+  und Art. 50 seit 02.08.2026; (2) der Freigabeprozess prüft Fakten, Claims, Rechte Dritter und
+  Ton und benennt Verantwortliche; (3) die Ampel ist auf eigene Datenarten übertragen;
+  (4) Runde 3 erkennt das Video als Deepfake im Sinne von Art. 50 Abs. 4 mit
+  Offenlegungspflicht, zusätzlich als irreführend wegen „Echte Momente" (UWG) und als
+  labelpflichtig auf Plattformen; der Upload der Bewertungen ist ein Datenschutzverstoß, die
+  Richtlinie wird um Geltung für Dienstleister, Verbot privater Konten und eine Meldepflicht
+  ergänzt; (5) die Kennzeichnungsregel trennt Pflicht (Deepfakes, Chatbot), Plattformlabels
+  (realistische KI-Bilder und -Videos) und freiwillige Transparenz und begründet, warum normale
+  Werbetexte nicht pauschal gekennzeichnet werden müssen.
+
+  Lernziel: Den regulatorischen Rahmen in alltagstaugliche Regeln übersetzen – und erkennen,
+  dass eine gute Richtlinie am konkreten Fall geprüft und nachgeschärft wird.

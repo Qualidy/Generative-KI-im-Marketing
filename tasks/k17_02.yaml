@@ -1,0 +1,56 @@
+title: Jobs, Pain Points und Gains aus Bewertungen
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Die folgenden fiktiven Bewertungen stammen aus dem
+  Webshop von Fjordlicht (Wanderhose „Vidde"), bereits ohne Namen.
+
+  ```text
+  Nr;Sterne;Text
+  1;5;Endlich eine Hose, mit der ich vom Büro direkt in den Teutoburger Wald kann.
+  2;3;Material top, aber die Längen sind zu kurz für große Menschen.
+  3;4;Trocknet schnell. Ob das Material wirklich recycelt ist, steht nirgends genau.
+  4;5;Mit zwei Kindern draußen brauche ich Taschen, die zugehen. Hat sie.
+  5;2;Nach drei Wäschen ausgeblichen. Für den Preis enttäuschend.
+  6;5;Sieht nicht nach Outdoor-Katalog aus. Trage ich auch in der Stadt.
+  7;4;Gute Hose, aber ich musste zweimal bestellen, die Größentabelle passt nicht.
+  8;5;Knie verstärkt, hält Spielplatz und Klettersteig aus.
+  9;3;Nachhaltig ist schön, aber wo ist das Zertifikat?
+  10;4;Für Tagestouren ideal, im Hochsommer zu warm.
+  ```
+
+  1. Schreibe einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5), der daraus **Jobs-to-be-done**
+     („Wenn …, will ich …, damit …"), **Pain Points** und **Gains** erzeugt – jeweils mit den
+     Nummern der belegenden Bewertungen.
+  2. Führe ihn aus und prüfe jede Zuordnung gegen die Bewertungen. Markiere alles, was **nicht**
+     belegt ist.
+  3. Leite zwei Botschaften für den Newsletter ab, die direkt an einem Pain Point ansetzen.
+tip: |
+  Der wichtigste Modifier ist die Belegpflicht mit Nummern. Ohne ihn ergänzt das Modell gern
+  typische Outdoor-Themen wie „Wetterschutz" oder „Atmungsaktivität", die hier niemand erwähnt.
+solution: |
+  Beispielprompt:
+
+  ```text
+  Du bist Marktforscherin im Outdoor-Handel.
+  Aufgabe: Werte die Bewertungen unten aus.
+  Format: drei Abschnitte - Jobs-to-be-done ("Wenn ..., will ich ..., damit ..."),
+  Pain Points, Gains. Hinter jedem Punkt die Nummern der Bewertungen in Klammern.
+  Regeln: Nur, was in den Bewertungen steht. Kein Punkt ohne Nummer.
+  Zweck: Ansatzpunkte für Newsletter-Botschaften zur Wanderhose Vidde.
+  Bewertungen: """ [Daten] """
+  ```
+
+  Erwartbares Ergebnis:
+
+  | Typ | Punkt | Belege |
+  |---|---|---|
+  | Job | Wenn ich nach der Arbeit spontan raus will, will ich eine Hose für Büro und Wald, damit ich mich nicht umziehen muss. | 1, 6 |
+  | Job | Wenn ich mit Kindern unterwegs bin, will ich robuste Hosen mit sicheren Taschen, damit nichts verloren geht. | 4, 8 |
+  | Pain Point | Nachhaltigkeit nicht belegt | 3, 9 |
+  | Pain Point | Größen und Längen passen nicht | 2, 7 |
+  | Pain Point | Farbe bleicht aus, Preis-Leistung | 5 |
+  | Gain | eine Hose für Stadt und Natur | 1, 6, 10 |
+
+  Botschaften, zum Beispiel: „Woraus Vidde besteht – mit Zertifikat zum Nachlesen" (nur, wenn ein
+  Beleg existiert!) und „Die richtige Länge finden: unsere neue Größenhilfe". Typischer Fund bei
+  der Prüfung: ein ergänzter Punkt wie „wasserabweisend", der in keiner Bewertung steht.

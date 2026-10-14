@@ -1,0 +1,42 @@
+title: Der Avatar im Purpose – Vorher und Nachher
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug.
+
+  1. Schreibe für den Fjordlicht-Avatar „Jana" (Abschnitt 18.2) oder einen Avatar aus deinem
+     eigenen Arbeitsumfeld eine **Kurzfassung** von 80 bis 120 Wörtern.
+  2. Lass in einem neuen Chat einen Newsletter-Teaser (max. 60 Wörter) für den Fleece „Skog"
+     schreiben – nur mit „für unsere Zielgruppe" als Purpose.
+  3. Lass in einem weiteren neuen Chat denselben Teaser mit einem vollständigen P.R.O.M.P.T.-Prompt
+     schreiben, in dessen Purpose die Kurzfassung steht.
+  4. Vergleiche beide Ergebnisse anhand der Prüfpunkte aus Abschnitt 18.5 (Hook, Einwände,
+     Sprache, Belege) in einer Tabelle.
+  5. Notiere, welcher Satz deiner Kurzfassung die größte Wirkung hatte.
+tip: |
+  Die Kurzfassung wirkt am stärksten, wenn sie eine konkrete **Situation**, einen **Einwand** und
+  ein, zwei **wörtliche Formulierungen** enthält. Reine Eigenschaften („umweltbewusst, aktiv")
+  verändern das Ergebnis kaum.
+solution: |
+  Beispiel für eine Kurzfassung:
+
+  ```text
+  Jana, 34, Projektmanagerin in Münster, radelt täglich ins Büro, am
+  Wochenende Tagestouren. Will eine Schicht, die im Büro nicht nach
+  Funktionskleidung aussieht und abends am Lagerfeuer wärmt. Misstraut
+  Öko-Versprechen ohne Nachweis, hatte schon Fleece, das nach wenigen
+  Wäschen pillte. Sagt Sätze wie "hält, was draufsteht". Zögert wegen
+  Preis und Passform beim Onlinekauf. Liest den Newsletter am Wochenende.
+  ```
+
+  Typischer Vergleich:
+
+  | Prüfpunkt | ohne Avatar | mit Avatar |
+  |---|---|---|
+  | Hook | „Kuschelig durch den Herbst!" | „Pillt nach drei Wäschen? Skog nicht – hier steht, warum." |
+  | Einwände | keine | Haltbarkeit, Passform (Größenhilfe) |
+  | Sprache | Superlative, Werbefloskeln | ruhig, Kundensprache |
+  | Belege | „nachhaltig" ohne Angabe | nur, wenn im Prompt ein Beleg steht – sonst `[BELEG FEHLT]` |
+
+  Wirkungsvollster Satz ist meist der Pain Point mit konkreter Erfahrung („pillte nach wenigen
+  Wäschen"). Achtung: Die Aussage „Skog pillt nicht" darf nur verwendet werden, wenn Fjordlicht sie
+  belegen kann – der Avatar liefert die Frage, nicht die Antwort.

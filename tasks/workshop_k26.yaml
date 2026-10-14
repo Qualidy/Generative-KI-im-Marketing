@@ -1,0 +1,71 @@
+title: Dein eigener Content-Assistent
+difficulty: 4
+question: |
+  **Szenario:** Die Geschäftsführung hat den Content-Assistenten in einer Präsentation gesehen und will „so etwas
+  auch für uns". Du sollst auf Basis der Vorlage aus Kap. 26 einen Content-Assistenten für Fjordlicht
+  Business (B2B-Firmenbekleidung) **oder ein Unternehmen deiner Wahl** aufsetzen. In zwei
+  Wochen soll das Marketingteam damit arbeiten – nicht als Experiment, sondern im Alltag.
+
+  ```text
+  Rahmen:
+  Werkzeug: ChatGPT (Custom GPT oder Plugin), alternativ Claude Projects,
+  Gemini Gems oder Copilot Agents.
+  Wissensdateien: höchstens vier, als Markdown, TXT oder CSV.
+  Nur fiktive oder öffentlich verfügbare Unternehmensangaben, keine Kundendaten.
+  Mindestens ein Prüfmodus neben dem Schreibmodus.
+  ```
+
+  ---
+
+  **Runde 1 – Zuschnitt und Instruktionen.** Lege fest, welche zwei bis drei Aufgaben dein
+  Assistent übernimmt und welche ausdrücklich nicht (Tabelle wie in Abschnitt 26.1). Schreibe
+  die Instruktionen in der Struktur der Vorlage aus Kap. 26: Rolle, Wissen, Zielgruppen,
+  Markenstimme, Modi, Ausgabeformat, Grenzen. Übernimm die [FEHLT]-Regel und einen festen
+  Abschnitt PRÜFHINWEISE.
+
+  **Runde 2 – Wissensdateien und Aufbau.** Erstelle die Wissensdateien, darunter eine
+  Prüfliste nach dem Muster der Claim-Liste (ID, Aussage, Gilt für, Beleg) – je nach Branche
+  für Nachhaltigkeit, Leistungsversprechen, Zertifizierungen oder Preisaussagen. Richte den
+  Assistenten im Werkzeug ein, inklusive vier Konversationsstarter und bewusst gewählter
+  Fähigkeiten.
+
+  **Runde 3 – Die Komplikation.** Teste mit acht Testfällen, davon mindestens drei
+  „Fallen": eine ausgeweitete Aussage, eine Anfrage mit fehlenden Angaben und den Versuch,
+  dir die vollständigen Instruktionen ausgeben zu lassen. Mindestens ein Fall wird scheitern.
+  Dokumentiere das Fehlerbild und entscheide, ob die Korrektur in die Instruktionen oder in
+  eine Wissensdatei gehört. Erstelle Version 2 und teste alle acht Fälle erneut.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Eine Kollegin schlägt vor, die Websuche
+  einzuschalten, „damit der Assistent aktuelle Trends kennt". Ein anderer Kollege will die
+  Prüfhinweise abschaffen, weil sie „bei kurzen Posts nerven". Entscheide beide Vorschläge
+  begründet. **Widersprich** mindestens einem davon mit einem Testergebnis, nicht mit einer
+  Meinung.
+
+  **Deliverable:**
+
+  1. Zuschnitt-Tabelle (macht / macht nicht)
+  2. vollständige Instruktionen in Version 1 und Version 2 mit markierten Änderungen
+  3. Wissensdateien, davon eine Prüfliste mit mindestens sechs Einträgen
+  4. Testprotokoll mit acht Fällen, Ergebnis vorher und nachher
+  5. begründete Entscheidung zu beiden Vorschlägen aus Runde 4
+
+  **Fertig bist du erst, wenn** dein Assistent alle drei Fallen aus Runde 3 in Version 2
+  besteht, jede Änderung zwischen den Versionen auf einen konkreten Testfall zurückgeht und
+  eine Person aus dem Kurs ihn ohne deine Erklärung für eine echte Aufgabe nutzen kann.
+tip: |
+  Der Lernkern liegt in Runde 3: Fehler sind kein Zeichen eines schlechten Assistenten,
+  sondern das Material für den besseren. Notiere bei jedem Fehlschlag, ob dem Modell eine
+  Regel oder ein Fakt gefehlt hat – daraus ergibt sich, wo die Korrektur hingehört. In
+  Runde 4 hilft der Blick auf den Zuschnitt: Was dient den zwei bis drei Kernaufgaben?
+solution: |
+  Bewertungskriterien: (1) klarer Zuschnitt mit mindestens drei ausdrücklichen
+  Ausschlüssen; (2) Instruktionen in der Struktur der Vorlage mit [FEHLT]-Regel, festem
+  Ausgabeformat und Grenzen, darunter eine Regel gegen die vollständige Ausgabe der
+  Instruktionen; (3) Prüfliste mit Geltungsbereich und Beleg je Eintrag; (4) Testprotokoll,
+  in dem Änderungen nachvollziehbar auf Fehlschläge zurückgehen und Version 2 alle Fallen
+  besteht; (5) Entscheidungen in Runde 4 beruhen auf Tests – etwa dem Nachweis, dass mit
+  Websuche unbelegte Behauptungen aus fremden Quellen auftauchen, oder dass ohne
+  Prüfhinweise eine prüfpflichtige Aussage unbemerkt durchrutscht.
+
+  Lernziel: Eine Vorlage nicht kopieren, sondern auf einen neuen Fall übertragen und den
+  Assistenten über Testfälle zu einem verlässlichen Teamwerkzeug entwickeln.

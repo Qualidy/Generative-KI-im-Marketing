@@ -1,0 +1,69 @@
+title: Lead-Qualifizierungs-Bot konzipieren und testen
+difficulty: 4
+question: |
+  **Szenario:** Der Vertrieb von Fjordlicht Business **oder eines Unternehmens deiner Wahl**
+  mit B2B-Kundschaft ertrinkt in unvollständigen Anfragen. Du sollst einen Chatbot
+  konzipieren, der Anfragen vorqualifiziert und als Steckbrief übergibt. Am Ende steht ein
+  getesteter Prototyp, den die IT für den Produktivbetrieb übernehmen kann.
+
+  ```text
+  Rahmen:
+  Prototyp als Custom GPT bzw. Plugin, Claude Project, Gemini Gem oder Copilot Agent.
+  Nur fiktive Testdaten, keine echten Kundendaten.
+  Keine Preise, Rabatte oder verbindlichen Termine durch den Bot.
+  KI-Hinweis nach Art. 50 Abs. 1 AI Act in der Begrüßung.
+  ```
+
+  ---
+
+  **Runde 1 – Leitfaden und Steckbrief.** Lege fest, was der Bot beantwortet und was er
+  übergibt (Tabelle wie in Abschnitt 27.1). Entwickle einen Gesprächsleitfaden mit fünf bis
+  sieben Qualifizierungsfragen und eine Steckbrief-Vorlage mit festen Feldnamen. Definiere
+  Kriterien für drei Lead-Stufen.
+
+  **Runde 2 – Prototyp.** Schreibe die Instruktionen (Begrüßung, Leitfaden, Regeln,
+  Übergabe-Auslöser, Steckbrief) und lege die Wissensdateien an: FAQ, Lead-Kriterien,
+  Steckbrief-Vorlage. Richte den Prototyp im Werkzeug ein.
+
+  **Runde 3 – Die Komplikation.** Führe zehn Testgespräche, darunter: eine
+  Preisverhandlung, eine wütende Reklamation, eine Person, die sensible Daten ungefragt
+  nennt, eine Anfrage, die mittendrin die Menge verdoppelt, und einen Versuch, die
+  Instruktionen auszulesen. Dokumentiere jedes Fehlverhalten, korrigiere und teste erneut.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Der Vertriebsleiter möchte, dass der Bot
+  Leads der Stufe C gar nicht mehr übergibt, „das spart uns Zeit". Die Marketingleitung
+  will alle Leads im CRM, „für spätere Kampagnen". Entscheide, was mit C-Leads passiert –
+  inklusive der Frage, ob für spätere Kampagnen eine Einwilligung nötig ist. **Widersprich**
+  mindestens einer der beiden Positionen mit Bezug auf Datenminimierung oder Kundennutzen.
+
+  **Deliverable:**
+
+  1. Aufgabenverteilung Bot/Mensch, Gesprächsleitfaden und Lead-Kriterien
+  2. Instruktionen und Wissensdateien des Prototyps
+  3. Steckbrief-Vorlage und drei Beispielsteckbriefe aus den Tests
+  4. Testprotokoll mit zehn Gesprächen, Fehlern und Korrekturen
+  5. Skizze der CRM-Anbindung (Variante aus Abschnitt 27.4) mit Begründung
+  6. Entscheidung zu C-Leads aus Runde 4
+
+  **Fertig bist du erst, wenn** der Bot in keinem Testgespräch einen Preis oder Rabatt
+  nennt, jede Reklamation übergibt, sensible Daten nicht in den Steckbrief übernimmt und
+  die Steckbriefe so einheitlich sind, dass eine Automatisierung sie ohne Nacharbeit
+  verarbeiten könnte.
+tip: |
+  Der Lernkern: Ein Kundenchatbot ist kein Textgenerator, sondern ein Prozessbaustein. Seine
+  Qualität misst sich daran, ob er zuverlässig **aufhört** (Übergabe) und ob er **gleichförmig
+  übergibt** (Steckbrief). In Runde 4 hilft die Frage, wozu die Daten erhoben wurden – der
+  Zweck bei der Erhebung begrenzt, was später damit geschehen darf.
+solution: |
+  Bewertungskriterien: (1) klare Aufgabenverteilung, Leitfaden mit einer Frage pro Nachricht
+  und nachvollziehbaren Lead-Kriterien; (2) Instruktionen mit KI-Hinweis, Übergabe-Auslösern,
+  Verbot von Preisen und Zusagen sowie Datenminimierungsregel; (3) Steckbriefe mit festen
+  Feldnamen und „offen" statt Erfundenem; (4) Testprotokoll mit echten Fehlschlägen und
+  wirksamen Korrekturen; (5) Anbindungsskizze passend zu Volumen und Teamgröße, mit Hinweis
+  auf Plattformabhängigkeit bei Custom Actions; (6) Entscheidung zu C-Leads, die
+  Datenminimierung und Zweckbindung berücksichtigt – etwa: C-Leads erhalten eine hilfreiche
+  Antwort mit Verweis auf den Webshop, Speicherung im CRM nur mit ausdrücklicher Einwilligung
+  für Werbung, sonst Löschung nach festgelegter Frist.
+
+  Lernziel: Einen KI-Assistenten als Teil eines Vertriebsprozesses entwerfen – mit klaren
+  Grenzen, strukturierter Übergabe und rechtlich sauberem Umgang mit Kundendaten.

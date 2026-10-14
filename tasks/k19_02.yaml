@@ -1,0 +1,57 @@
+title: Kommentare klassifizieren und Stichprobe prüfen
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Die folgenden fiktiven Kommentare stammen aus
+  Fjordlichts Instagram und TikTok, Nutzernamen sind bereits durch IDs ersetzt.
+
+  ```text
+  ID;Kanal;Text
+  01;IG;Seit zwei Wintern im Einsatz, die Sølv hält wie am ersten Tag.
+  02;TT;Recycelt, ja klar. Und ich bin der Weihnachtsmann.
+  03;IG;Wann kommt die Vidde wieder in 34 kurz?
+  04;IG;Bestellt am Montag, immer noch nicht da. Toll.
+  05;TT;Endlich mal eine Marke, die nicht rumschreit.
+  06;IG;Farbe ist im echten Leben viel blasser als auf dem Foto.
+  07;TT;Gibt es die Skog auch für Kinder?
+  08;IG;Super Service, Umtausch lief problemlos!
+  09;TT;Ist das Futter auch recycelt oder nur außen?
+  10;IG;Die Jacke von [Wettbewerber] war billiger, aber nach einem Jahr hin.
+  11;TT;Schon wieder Werbung für Funktionsjacken, toll, genau was ich brauche.
+  12;IG;Passt perfekt über den Fleece, danke für die Größenhilfe.
+  ```
+
+  1. Klassifiziere die Kommentare mit dem Prompt aus Abschnitt 19.3 und dem Fjordlicht-Schema
+     (Sentiment, Thema, Bezug, Handlungsbedarf).
+  2. Prüfe **alle zwölf** Einstufungen von Hand und notiere die Übereinstimmungsquote.
+  3. Benenne die Fehlertypen und ergänze den Prompt um zwei Few-Shot-Beispiele, die genau diese
+     Fehler verhindern. Teste erneut.
+tip: |
+  Kommentar 02, 04 und 11 sind die Prüfsteine: Ironie und Sarkasmus. Achte außerdem auf 10 – der
+  Kommentar handelt vom Wettbewerber, ist für Fjordlicht aber eher positiv.
+solution: |
+  Erwartete Einstufung (Auszug der schwierigen Fälle):
+
+  | ID | Sentiment | Thema | Bezug | Handlungsbedarf |
+  |---|---|---|---|---|
+  | 02 | negativ | Nachhaltigkeit | Fjordlicht | Antwort mit Beleg, Teamleitung informieren |
+  | 04 | negativ | Lieferung | Fjordlicht | Weiterleitung Kundenservice |
+  | 09 | neutral | Nachhaltigkeit | Fjordlicht | Antwort mit Fakten |
+  | 10 | gemischt | Qualität | Wettbewerber | keiner (nicht öffentlich kommentieren) |
+  | 11 | negativ oder unklar | Sonstiges | Kategorie allgemein | keiner |
+
+  Typische Fehler im ersten Durchlauf: 04 und 11 werden wegen „Toll"/„toll" als positiv
+  eingestuft, 10 wird dem Bezug Fjordlicht zugeordnet. Übereinstimmung meist 9 bis 10 von 12 –
+  bei zwölf Beiträgen gut, bei 3.000 wären das Hunderte Fehleinstufungen.
+
+  Ergänzung im Prompt:
+
+  ```text
+  Beispiele:
+  "Bestellt am Montag, immer noch nicht da. Super." -> negativ, Lieferung
+  (Ironie: positives Wort, negativer Inhalt)
+  "Die Jacke von X ist nach einem Jahr hin." -> Bezug: Wettbewerber
+  ```
+
+  Wichtig sind außerdem die Kommentare 02 und 09: Beide betreffen die Recycling-Frage. Zwei Treffer in
+  zwölf Kommentaren sind noch kein Trend, aber ein Thema, das das Team im Blick behält (Abschnitt
+  19.5).

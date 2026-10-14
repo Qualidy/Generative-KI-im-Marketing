@@ -1,0 +1,45 @@
+title: Die Geschäftsführerin als digitaler Zwilling
+difficulty: 3
+question: |
+  Die Geschäftsführerin von Fjordlicht, Frau Brink (fiktiv), ist von einer HeyGen-Demo
+  begeistert. Sie schlägt vor:
+
+  ```text
+  - eigener Avatar und geklonte Stimme von ihr
+  - jede Woche ein 60-Sekunden-Video "Neues aus Münster" für Instagram und LinkedIn
+  - Skripte schreibt der Content-Assistent, das Marketing gibt frei, sie selbst schaut nur gelegentlich rein
+  - Übersetzung ins Niederländische per Ein-Klick-Funktion
+  - Kennzeichnung "nicht nötig, ich bin es ja selbst"
+  ```
+
+  1. Nenne die **Chancen** des Vorschlags.
+  2. Prüfe die **Risiken** in vier Dimensionen: Recht (Einwilligung, Art. 50 AI Act,
+     Plattformregeln), Sicherheit (Missbrauch der Stimme, Verweis Kap. 38), Qualität/Freigabe,
+     Markenwirkung.
+  3. Formuliere eine **Empfehlung** mit mindestens fünf konkreten Regeln, unter denen das Vorhaben
+     vertretbar ist – oder begründe, warum du abrätst.
+tip: |
+  Der Kern liegt im letzten Punkt: Dass die Geschäftsführerin selbst zustimmt, klärt die
+  Einwilligung – nicht die Frage, ob das Publikum weiß, dass sie gar nicht gesprochen hat.
+solution: |
+  **Chancen:** sichtbares Gesicht der Marke, regelmäßige Präsenz ohne Drehtermine,
+  mehrsprachige Varianten, konsistente Qualität.
+
+  | Dimension | Risiko |
+  |---|---|
+  | Recht | Einwilligung liegt vor, sollte aber schriftlich Zweck, Dauer, Widerruf regeln. Ein realistischer Avatar einer realen Person, der fälschlich echt wirkt, ist ein Deepfake im Sinne von Art. 50 Abs. 4 AI Act – offenlegen. Plattformen verlangen Labels für realistische KI-Inhalte. |
+  | Sicherheit | Geklonte Stimme der Chefin ist ein Einfallstor für CEO-Fraud; Zugang zum Stimmprofil muss streng geregelt sein (Kap. 38). |
+  | Qualität/Freigabe | Die Person spricht Aussagen, die sie nie gesehen hat. Fehler oder überzogene Claims werden ihr persönlich zugeschrieben. Ein-Klick-Übersetzung ohne Abnahme ist für die Außenkommunikation zu riskant. |
+  | Markenwirkung | Wöchentliche Avatar-Videos können steril wirken (Uncanny Valley) und widersprechen „ehrlich", wenn das Publikum sich getäuscht fühlt. |
+
+  **Empfehlung** (vertretbar unter Regeln):
+
+  1. schriftliche Einwilligung mit Zweck, Kanälen, Laufzeit, Widerruf und Regelung beim Ausscheiden
+  2. jedes Video sichtbar gekennzeichnet („mit KI-Avatar erstellt") plus Plattformlabel
+  3. die Geschäftsführerin gibt jedes Skript selbst frei
+  4. Übersetzungen: Skript prüfen lassen, Video muttersprachlich abnehmen
+  5. Stimmprofil nur für zwei benannte Personen zugänglich, Zwei-Faktor-Anmeldung, keine Nutzung für Telefon oder Sprachnachrichten
+  6. regelmäßig echte Videos dazwischen, damit die Person greifbar bleibt
+
+  Bewertungskriterien: Die Antwort trennt Einwilligung und Transparenz, benennt die
+  Deepfake-Konstellation korrekt und macht prüfbare Regeln statt allgemeiner Mahnungen.

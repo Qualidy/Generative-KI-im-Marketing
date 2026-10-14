@@ -1,0 +1,34 @@
+title: Interview-Prompt und abschnittsweises Schreiben
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Thema: ein Blogartikel für Fjordlicht oder für
+  ein Unternehmen deiner Wahl, zu einem Thema, bei dem du selbst Erfahrung hast (z. B. ein Hobby
+  oder ein Produkt, das du gut kennst).
+
+  1. **Interview.** Lass dich mit dem Interview-Prompt aus Abschnitt 15.4 interviewen.
+     Beantworte die Fragen ehrlich und konkret. Lass dir die Antworten als Zitate zusammenfassen.
+  2. **Gliederung.** Lass eine Gliederung mit fünf Zwischenüberschriften erstellen und
+     überarbeite sie selbst (mindestens eine Änderung).
+  3. **Ein Abschnitt.** Lass genau **einen** Abschnitt schreiben (max. 250 Wörter) und zwar
+     mit dem Platzhalter `[ERFAHRUNG EINFÜGEN]`. Setze danach eines deiner Zitate an dieser
+     Stelle ein.
+  4. **Vergleich.** Lass denselben Abschnitt in einem neuen Chat **ohne** Interview und ohne
+     Platzhalter schreiben. Markiere im Vergleich alle Sätze, die erfundene Erfahrung enthalten.
+tip: |
+  Prüfe in Schritt 1, ob die Zusammenfassung wirklich nur deine Aussagen enthält. Modelle
+  „glätten" gern und fügen kleine Details hinzu. Das ist bereits die erste Faktencheck-Übung.
+solution: |
+  Typische Beobachtungen:
+
+  | Fassung | Merkmal |
+  |---|---|
+  | ohne Interview | allgemeine Tipps, oft Formulierungen wie „viele Menschen" oder „Erfahrungen zeigen", gelegentlich erfundene Anekdoten („Ein Kunde erzählte uns …") |
+  | mit Interview | konkrete Details, eigene Formulierungen, erkennbar aus einer Quelle |
+
+  Häufig enthält schon die Zitat-Zusammenfassung ein kleines Detail, das du nicht gesagt hast,
+  etwa eine Zahl oder eine Verallgemeinerung. Wer das bemerkt und korrigiert, hat den Kern der
+  Übung erfasst.
+
+  Gute Bearbeitung: fünf überarbeitete Gliederungspunkte mit mindestens einer eigenen Änderung,
+  ein Abschnitt mit eingesetztem echtem Zitat, im Vergleichstext mindestens eine markierte
+  erfundene Erfahrung und ein Satz, warum der Abschnitt mit Interview für E-E-A-T stärker ist.

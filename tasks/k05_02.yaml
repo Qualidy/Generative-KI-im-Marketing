@@ -1,0 +1,47 @@
+title: Ein Prompt in drei Stufen
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT oder eine Alternative). Aufgabe: ein
+  LinkedIn-Post für **Fjordlicht Business**, der Personalverantwortliche auf Firmenbekleidung aus
+  recycelten Materialien aufmerksam macht – oder ein vergleichbarer Post für ein Unternehmen deiner
+  Wahl.
+
+  1. **Stufe 0:** Formuliere den Auftrag in einem Satz, so wie du ihn im Alltag tippen würdest.
+  2. **Stufe 1:** Ergänze Request und Purpose.
+  3. **Stufe 2:** Ergänze Output und Tone.
+  4. **Stufe 3:** Ergänze Persona und mindestens drei Modifier, darunter die erlaubten Fakten und
+     die Regel, dass fehlende Angaben mit `[FEHLT]` markiert werden.
+
+  Speichere jede Ausgabe. Halte zu jeder Stufe in einem Satz fest, was sich verbessert hat, und
+  markiere in den Ausgaben der Stufen 0 bis 2 jede erfundene Angabe.
+tip: |
+  Starte jede Stufe in einem **neuen Chat**. Im selben Gespräch sieht das Werkzeug deine vorherigen
+  Ergänzungen, und du misst nicht mehr die Wirkung des einzelnen Bausteins. Erfundenes versteckt
+  sich gern in Zahlen, Zertifikaten und Formulierungen wie „klimaneutral".
+solution: |
+  Typisches Muster:
+
+  | Stufe | Beobachtung |
+  |---|---|
+  | 0 | generischer Post mit Emojis und Hashtag-Block, oft erfundene Zahlen („spart 40 % CO₂") |
+  | 1 | spricht HR-Verantwortliche an, hat einen Handlungsimpuls, Länge schwankt |
+  | 2 | LinkedIn-tauglich in Länge und Aufbau, Ton passt zur Marke |
+  | 3 | keine erfundenen Nachhaltigkeitsaussagen mehr; Lücken wie Mindestbestellmenge als [FEHLT] markiert |
+
+  Beispiel für Stufe 3 (gekürzt):
+
+  ```text
+  Du bist B2B-Texterin für eine nachhaltige Outdoor-Marke.
+  Schreibe einen LinkedIn-Post für Fjordlicht Business.
+  Ziel: Personalverantwortliche in Unternehmen mit 50 bis 500
+  Beschäftigten fordern ein Musterpaket an.
+  Output: 120 bis 160 Wörter, kurzer erster Satz als Hook,
+  drei Absätze, am Ende eine Handlungsaufforderung, max. 3 Hashtags.
+  Ton: sachlich, ruhig, ehrlich, kein Werbesprech, Du-Ansprache.
+  Fakten: [Liste der belegten Produktfakten]
+  Keine Nachhaltigkeitsaussagen außer den genannten Fakten.
+  Fehlt eine Angabe, schreibe [FEHLT].
+  ```
+
+  Eine gute Bearbeitung enthält vier gespeicherte Ausgaben, vier Sätze zur Verbesserung und
+  mindestens eine markierte Erfindung aus den frühen Stufen.

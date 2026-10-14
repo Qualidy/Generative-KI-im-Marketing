@@ -1,0 +1,70 @@
+title: Assistent bauen, testen, freigeben
+difficulty: 4
+question: |
+  **Szenario:** Dein Steckbrief aus dem Workshop in Kap. 24 liegt vor. Jetzt wird der Assistent
+  gebaut, systematisch getestet und für eine Testgruppe vorbereitet. Am Ende entscheidest du, ob er
+  ins Team geht – mit Protokoll, nicht nach Gefühl. Wer den Workshop aus Kap. 24 nicht bearbeitet
+  hat, nimmt den Produkttext-Assistenten aus Abschnitt 24.3 für Fjordlicht oder ein Unternehmen
+  deiner Wahl.
+
+  ```text
+  Rahmen:
+  Werkzeug: das, welches dir zur Verfügung steht - Custom GPT, ChatGPT-Plugin,
+  ChatGPT-Projekt, Claude Project, Gemini Gem oder Copilot Agent.
+  Stand Oktober 2026: Custom GPTs werden durch Plugins abgelöst.
+  Nur fiktive bzw. Fjordlicht-Daten, keine echten Kundendaten.
+  Freigabe zunächst: privat.
+  ```
+
+  ---
+
+  **Runde 1 – Umsetzung.** Übertrage den Steckbrief Schritt für Schritt (Abschnitt 25.2) in dein
+  Werkzeug. Dokumentiere jede Werkzeugeinstellung mit Begründung, besonders die bewusst
+  ausgeschalteten Fähigkeiten. Halte fest, welche Bausteine dein Werkzeug **nicht** abbildet und
+  wie du das ausgleichst.
+
+  **Runde 2 – Testkatalog.** Führe mindestens **zwölf** Testfälle aus allen Kategorien aus
+  Abschnitt 25.3 aus, jeden in einem neuen Chat. Dokumentiere Anfrage, Erwartung, Ergebnis,
+  Bewertung. Behebe danach die zwei schwerwiegendsten Fehler – jeweils eine Änderung, danach
+  vollständiger Regressionstest. Führe ein Änderungsprotokoll.
+
+  **Runde 3 – Die Komplikation.** Stell dir vor, dein Assistent muss in ein anderes Format
+  umziehen: vom Custom GPT zum Plugin, vom Projekt zum Gem oder umgekehrt. Bau ihn allein anhand
+  deines Steckbriefs im zweiten Format nach (oder simuliere den Umzug in einem neuen Projekt bzw.
+  Chat mit denselben Instruktionen und Dateien). Lass denselben Testkatalog laufen. Was ist
+  verloren gegangen, was verhält sich anders, und was fehlte im Steckbrief?
+
+  **Runde 4 – Entscheidung unter Abwägung.** Lass dir von der KI eine Freigabeempfehlung auf
+  Basis deines Testprotokolls schreiben. Sie wird vermutlich wohlwollend ausfallen. **Widersprich**
+  dort, wo sie Risiken unterschätzt, und triff deine eigene Entscheidung: Freigabe, Freigabe für
+  eine Testgruppe mit Bedingungen, oder keine Freigabe.
+
+  **Deliverable:**
+
+  1. laufender Assistent mit dokumentierten Einstellungen
+  2. Testprotokoll mit mindestens zwölf Fällen und zwei Durchläufen
+  3. Änderungsprotokoll mit Versionen
+  4. Umzugsbericht aus Runde 3 mit Ergänzungen am Steckbrief
+  5. Kurzanleitung für Nutzende (maximal eine halbe Seite) mit verantwortlicher Person
+  6. begründete Freigabeentscheidung
+
+  **Fertig bist du erst, wenn** jeder Testfall eine Bewertung hat, nach jeder Änderung alle Tests
+  erneut gelaufen sind, der Steckbrief nach Runde 3 den Umzug ohne Rückfragen ermöglicht und deine
+  Freigabeentscheidung jedes offene Risiko einzeln benennt.
+tip: |
+  Der Lernkern liegt in Runde 3: Erst beim Umzug zeigt sich, ob dein Steckbrief wirklich das
+  Original ist – oder ob wichtige Details nur im Werkzeug stehen. Genau das passiert bei der
+  Ablösung der Custom GPTs durch Plugins. In Runde 4 gilt: Eine KI bewertet ihr eigenes Umfeld
+  gern zu positiv. Gewichte Fehler nach ihren Folgen, nicht nach ihrer Anzahl.
+solution: |
+  Bewertungskriterien: (1) Umsetzung entspricht dem Steckbrief, Werkzeugeinstellungen begründet,
+  Lücken des gewählten Werkzeugs benannt; (2) mindestens zwölf Testfälle aus allen Kategorien,
+  jeder in neuem Chat, zwei Korrekturen mit vollständigem Regressionstest; (3) Änderungsprotokoll
+  mit Version, Änderung, Grund, Ergebnis; (4) Umzugsbericht benennt konkrete Abweichungen (z. B.
+  fehlende Konversationsstarter, anderes Modellverhalten, Freigabe weg) und ergänzt den Steckbrief
+  entsprechend; (5) Kurzanleitung mit Zweck, Eingabe, Grenzen, Prüfhinweis, Ansprechperson;
+  (6) Freigabeentscheidung gewichtet Risiken nach Folgen und widerspricht der KI-Empfehlung
+  mindestens an einer Stelle begründet.
+
+  Lernziel: Einen Assistenten nicht nur bauen, sondern verantwortbar freigeben – mit Testkatalog,
+  Versionierung und einer werkzeugunabhängigen Dokumentation, die Produktumstellungen übersteht.

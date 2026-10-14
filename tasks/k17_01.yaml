@@ -1,0 +1,37 @@
+title: Hypothese oder Erkenntnis?
+difficulty: 1
+question: |
+  Das Marketingteam von Fjordlicht hat mit KI eine erste Zielgruppenanalyse für die Regenjacke
+  „Sølv" gemacht. Ordne jede Aussage einer **Evidenzstufe** aus Abschnitt 17.6 zu – Vermutung,
+  Hypothese, gestützt, bestätigt – und begründe kurz.
+
+  1. „Unsere Kundinnen sind überwiegend umweltbewusste Akademikerinnen." (ChatGPT ohne Daten
+     auf die Frage „Wer kauft nachhaltige Outdoor-Jacken?")
+  2. „Pendeln mit dem Rad ist ein häufiger Kaufanlass." (in 9 von 70 Shop-Bewertungen genannt)
+  3. „Kundschaft zweifelt an Recycling-Aussagen." (in Bewertungen **und** in 14 Kundenservice-Mails
+     des letzten Quartals)
+  4. „Eine Betreffzeile mit dem Wort ‚Pendeln' erzielt mehr Öffnungen als eine mit ‚Wandern'."
+     (A/B-Test im Newsletter, deutlicher Unterschied, ausreichend große Gruppen)
+  5. „Der Markt für nachhaltige Outdoor-Bekleidung wächst jährlich um 12 Prozent." (Deep-Research-
+     Bericht, Quelle nicht geöffnet)
+
+  Nenne anschließend für Aussage 2 einen Weg, wie das Team sie mit wenig Aufwand auf die nächste
+  Stufe bringt.
+tip: |
+  Entscheidend ist nicht, wie überzeugend eine Aussage klingt, sondern **wie viele unabhängige
+  Quellen** sie tragen und ob jemand die Quelle tatsächlich geprüft hat.
+solution: |
+  | Nr. | Stufe | Begründung |
+  |---|---|---|
+  | 1 | Vermutung | keine Datenbasis, das Modell gibt den statistischen Durchschnitt wieder – zudem klischeehaft |
+  | 2 | Hypothese | Muster in einer Quelle, aber nur in einem Teil der Bewertungen |
+  | 3 | gestützt | zwei unabhängige Quellen zeigen dasselbe Muster |
+  | 4 | bestätigt | Verhaltensdaten aus einem sauberen Test (Kap. 16) |
+  | 5 | Vermutung | ungeprüfte Zahl; erst nach Prüfung der Originalquelle verwendbar |
+
+  Aussage 5 ist die gefährlichste: Sie wirkt durch die präzise Zahl belastbar, obwohl niemand
+  weiß, ob sie stimmt, woher sie stammt und worauf sie sich bezieht.
+
+  Weg für Aussage 2: Den Kundenservice fragen, ob Pendeln in Gesprächen vorkommt, oder eine
+  Story-Umfrage auf Instagram („Wofür trägst du deine Regenjacke am häufigsten?"). Bestätigt
+  eine zweite Quelle das Muster, wird es „gestützt" und darf ins Zielgruppenbriefing.

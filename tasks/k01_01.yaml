@@ -1,0 +1,31 @@
+title: KI oder klassische Software?
+difficulty: 1
+question: |
+  Ordne die folgenden Systeme aus dem Marketing-Alltag zu: Handelt es sich um **klassische
+  Software** (feste Regeln) oder um ein **KI-System** (lernt aus Daten)? Nenne bei KI-Systemen
+  zusätzlich das passende **Teilgebiet** aus Abschnitt 1.2.
+
+  1. Der Newsletter wird jeden Dienstag um 9 Uhr an alle Abonnenten verschickt.
+  2. Der Webshop zeigt „Das könnte dir auch gefallen" auf Basis des bisherigen Kaufverhaltens.
+  3. Ab 100 € Warenwert wird automatisch ein Rabatt von 10 % abgezogen.
+  4. ChatGPT schreibt drei Varianten einer Instagram-Caption.
+  5. Ein Tool wertet 2.000 Produktbewertungen aus und markiert sie als positiv, neutral oder negativ.
+  6. Der Shop schlagwortet hochgeladene Produktfotos automatisch („Jacke", „blau", „Kapuze").
+  7. Wer sich für den Newsletter anmeldet, bekommt sofort eine Bestätigungsmail.
+tip: |
+  Frage dich bei jedem Fall: Hat jemand jeden Fall vorher festgelegt – oder erkennt das System
+  selbst Muster in Daten? Automatisierung ist nicht automatisch KI.
+solution: |
+  | Nr. | Einordnung | Teilgebiet | Begründung |
+  |---|---|---|---|
+  | 1 | klassische Software | – | fester Zeitplan, kein Lernen |
+  | 2 | KI-System | Machine Learning | Empfehlungen werden aus Kaufmustern gelernt |
+  | 3 | klassische Software | – | reine Wenn-dann-Regel |
+  | 4 | KI-System | generative KI (Sprachmodell) | erzeugt neuen Text, Ergebnis variiert |
+  | 5 | KI-System | Sprachverarbeitung (NLP) | Einordnung von Texten nach gelernten Mustern |
+  | 6 | KI-System | Computer Vision | Bildinhalte werden erkannt, nicht nach Regeln abgefragt |
+  | 7 | klassische Software | – | Auslöser und Reaktion sind fest verdrahtet |
+
+  Die Fälle 1, 3 und 7 sind die wichtigsten für dieses Kapitel: Viele Marketing-Tools
+  automatisieren, ohne KI zu sein. Fall 1 kann allerdings zu KI werden, wenn das Tool den
+  Versandzeitpunkt pro Person aus dem Öffnungsverhalten lernt („Send-Time-Optimierung").

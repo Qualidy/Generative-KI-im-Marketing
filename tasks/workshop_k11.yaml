@@ -1,0 +1,72 @@
+title: Ein Blogartikel im Dreischritt
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht möchte im Blog „Draußen-Notizen" einen Beitrag zum Thema „Mit Kindern
+  im Herbst wandern – was wirklich in den Rucksack gehört" veröffentlichen. Bisher entstanden
+  solche Texte im Chat: viele Runden, verstreute Versionen, am Ende stand im Text eine
+  Nachhaltigkeitsaussage, die niemand belegen konnte. Diesmal soll der Beitrag nachvollziehbar
+  im Dokument entstehen. Du kannst statt Fjordlicht auch **ein Unternehmen deiner Wahl** nutzen
+  und ein passendes Blogthema wählen.
+
+  ```text
+  Rahmen:
+  Zielgruppe: Familien, naturverbunden, wenig Outdoor-Erfahrung.
+  Länge: 900 bis 1.100 Wörter.
+  Produkte dürfen genannt werden: Rucksack Tind, Fleece Skog, Regenjacke Sølv.
+  Belegte Aussage: Obermaterial der Sølv zu 100 Prozent recyceltes Polyamid.
+  Keine weiteren Nachhaltigkeitsaussagen, keine Superlative.
+  Werkzeug: ChatGPT mit Schreibblöcken oder Claude, Gemini, Copilot.
+  ```
+
+  ---
+
+  **Runde 1 – Briefing und Rohfassung.** Schreibe ein vollständiges Briefing nach dem
+  P.R.O.M.P.T.-Framework (Kap. 5) und lass eine Rohfassung als Dokument erstellen. Verlange, dass
+  fehlende Angaben als `[FEHLT]` markiert werden. Sichere die Rohfassung.
+
+  **Runde 2 – Struktur.** Lass zuerst nur eine Strukturanalyse erstellen (Gliederung, Dopplungen,
+  Lücken), ohne den Text zu ändern. Entscheide selbst, welche Vorschläge du umsetzt, und lass
+  danach gezielt umbauen. Halte fest, welche zwei Vorschläge du **abgelehnt** hast und warum.
+
+  **Runde 3 – Die Komplikation.** Die Produktmanagerin meldet sich: Der Rucksack „Tind" ist im
+  Herbst nur in einer Größe lieferbar, und die Kinderversion wird nicht erwähnt, weil es sie noch
+  nicht gibt. Außerdem soll der Text 20 Prozent kürzer werden. Setze beides **gezielt** um, ohne
+  den Rest des Textes neu schreiben zu lassen. Verlange nach jeder Änderung eine Änderungsliste
+  und gleiche sie mit dem Text ab.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Bitte die KI zum Schluss, den gesamten Text „noch
+  einmal stilistisch zu verbessern". Vergleiche die Fassung vorher und nachher Absatz für Absatz.
+  **Widersprich** der Überarbeitung überall dort, wo sie die Markenstimme verwässert, Fakten
+  verändert oder Formulierungen austauschbarer macht. Entscheide begründet, welche Fassung du
+  zur Freigabe gibst – oder welche Mischung.
+
+  **Deliverable:**
+
+  1. Briefing nach P.R.O.M.P.T. und gesicherte Rohfassung
+  2. Strukturanalyse mit zwei begründet abgelehnten Vorschlägen
+  3. Fassung nach Runde 3 mit den Änderungslisten
+  4. Vergleich aus Runde 4 mit mindestens drei kommentierten Stellen und deiner Entscheidung
+  5. eine kurze Prüfliste für die Freigabe (Fakten, Produktnamen, Claims, Länge)
+
+  **Fertig bist du erst, wenn** der Text keine unbelegte Nachhaltigkeitsaussage und keinen
+  Superlativ enthält, die Informationen der Produktmanagerin korrekt umgesetzt sind, keine
+  `[FEHLT]`-Markierung offen ist und du für Runde 4 mindestens drei Stellen konkret begründet hast.
+tip: |
+  Der Lernkern liegt in Runde 3 und 4. In Runde 3 zeigt sich, ob deine Anweisungen eng genug sind:
+  Eine Korrektur an einer Stelle darf nicht den halben Text verändern. In Runde 4 erlebst du, was
+  eine pauschale Verbesserungsanweisung anrichtet – flüssigere, aber austauschbarere Sätze. Gutes
+  kollaboratives Schreiben heißt: Du führst, die KI liefert Vorschläge an markierten Stellen.
+solution: |
+  Bewertungskriterien: (1) das Briefing enthält alle sechs P.R.O.M.P.T.-Bausteine, insbesondere
+  Modifier mit Claim-Regel und `[FEHLT]`-Regel; (2) Struktur wurde vor dem Feinschliff
+  bearbeitet, und die Ablehnung von Vorschlägen ist inhaltlich begründet (z. B. „Abschnitt zur
+  Ausrüstungsliste bleibt vorn, weil Familien ihn suchen"); (3) die Änderungen aus Runde 3 sind
+  gezielt umgesetzt, die Änderungslisten wurden tatsächlich mit dem Text abgeglichen, und die
+  Kürzung hat keine Kerninformation entfernt; (4) der Vergleich in Runde 4 benennt konkrete
+  Verluste (z. B. nordisch-trockener Ton ersetzt durch Allerweltsformulierungen, „robust"
+  wird zu „unverwüstlich") und trifft eine nachvollziehbare Entscheidung; (5) die Prüfliste ist
+  so formuliert, dass eine Kollegin sie ohne Rückfrage anwenden kann.
+
+  Lernziel: Das Arbeitsprinzip „gemeinsames Dokument, gezielte Überarbeitung" unabhängig von
+  einer bestimmten Funktion sicher anwenden – und die Steuerung über Inhalt, Struktur und
+  Markenstimme beim Menschen behalten.

@@ -1,0 +1,70 @@
+title: Listening-Konzept mit Krisenprobe
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht hat bisher nur auf Kommentare reagiert, wenn jemand sie zufällig gesehen
+  hat. Die Marketingleitung möchte ein schlankes **Social-Listening-Konzept**: ohne Enterprise-
+  Budget, mit KI-Auswertung, Monatsbericht und klarer Eskalation. Du kannst alternativ ein
+  Unternehmen deiner Wahl nehmen.
+
+  ```text
+  Rahmen:
+  Budget: kleines Tool oder Bordmittel, kein Enterprise-Vertrag.
+  Team: 5 Personen Marketing, 1 Person Social Media hauptverantwortlich.
+  Kanäle: Instagram, TikTok, LinkedIn, Pinterest, Shop-Bewertungen.
+  Daten: nur fiktive Beiträge, selbst erstellt, ohne echte Nutzernamen.
+  ```
+
+  ---
+
+  **Runde 1 – Konzept.** Lege fest: Ziele (drei Fragen, die Listening beantworten soll), Quellen,
+  Suchbegriffe und Ausschlüsse (mit KI erstellt, von dir geprüft), Werkzeugtyp, Kategorienschema
+  und Rhythmus. Halte Datenschutzregeln für das Team in höchstens fünf Punkten fest.
+
+  **Runde 2 – Testauswertung.** Erstelle 30 fiktive Beiträge mit realistischer Mischung, darunter
+  Ironie, Wettbewerbsbezüge und mindestens ein Sicherheitsthema. Klassifiziere sie mit einem Prompt
+  nach dem P.R.O.M.P.T.-Framework, lass die Auszählung mit der Datenanalyse rechnen, prüfe eine
+  Stichprobe von zehn Beiträgen von Hand und erstelle einen Monatsbericht nach der Gliederung aus
+  Abschnitt 19.4.
+
+  **Runde 3 – Die Komplikation.** Freitagabend, 18 Uhr: Ein Video mit 200.000 Aufrufen behauptet,
+  Fjordlichts Rucksack „Tind" werde unter schlechten Arbeitsbedingungen gefertigt. Die Fakten sind
+  unklar, die zuständige Kollegin aus dem Einkauf ist bis Montag nicht erreichbar, die Kommentare
+  nehmen stündlich zu. Spiele den Fall mit deiner Eskalationslogik durch: Stufe, Zuständige, erste
+  Reaktion in den nächsten zwei Stunden, was gesagt wird und was ausdrücklich nicht.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung fragt, ob die KI kritische
+  Kommentare künftig automatisch beantworten könne, „damit am Wochenende niemand arbeiten muss".
+  Lass dir von der KI ein Konzept dafür vorschlagen, **widersprich** dort, wo Automatisierung
+  Risiken erzeugt, und entscheide, was automatisiert werden darf und was nicht.
+
+  **Deliverable:**
+
+  1. Listening-Konzept mit Zielen, Quellen, Suchbegriffen, Schema, Rhythmus und Datenschutzregeln
+  2. Testdatensatz, Klassifizierungsprompt, Stichprobenprüfung mit Übereinstimmungsquote
+  3. Monatsbericht mit Datenbasis und Handlungsempfehlungen
+  4. Krisenablauf zu Runde 3 inklusive Entwurf einer ersten öffentlichen Reaktion
+  5. Entscheidungsvorlage zu Runde 4
+
+  **Fertig bist du erst, wenn** jeder Bericht seine Datenbasis nennt, die Stichprobenprüfung
+  dokumentiert ist, deine erste Reaktion in Runde 3 nichts behauptet, was du nicht weißt, und die
+  Entscheidung in Runde 4 eine klare Grenze zwischen automatisierbaren und menschlichen Aufgaben
+  zieht.
+tip: |
+  Der Lernwert liegt in Runde 3. In der Krise ist die Versuchung groß, schnell etwas zu
+  dementieren. Eine gute erste Reaktion bestätigt, dass man den Vorwurf ernst nimmt, sagt, was man
+  prüft und wann man sich meldet – und behauptet nichts, was noch nicht geprüft ist. KI kann
+  Kommentare sortieren und Entwürfe liefern, aber keine Fakten über Lieferketten herbeischreiben.
+solution: |
+  Bewertungskriterien: (1) das Konzept ist mit dem Rahmen umsetzbar, Suchbegriffe enthalten
+  Schreibvarianten und Ausschlüsse, die Datenschutzregeln sind konkret (IDs statt Namen,
+  freigegebene Werkzeuge, keine Personenprofile, Löschfristen); (2) die Testauswertung trennt
+  Klassifizierung (Sprachmodell) und Zählung (Python) und dokumentiert die Stichprobe ehrlich,
+  inklusive Fehlertypen; (3) der Bericht nennt Datenbasis und Fallzahlen und behauptet keine
+  Ursachen; (4) der Krisenablauf ordnet den Fall mindestens Stufe Orange zu, benennt Zuständige
+  und Erreichbarkeit, und die erste Reaktion ist faktisch zurückhaltend mit Zusage einer Prüfung
+  und eines Zeitpunkts; (5) die Entscheidung in Runde 4 erlaubt etwa Vorsortierung, Alarmierung
+  und Antwortentwürfe, schließt aber automatische Antworten auf Kritik, Vorwürfe und
+  Sicherheitsthemen aus und berücksichtigt die Transparenzpflicht bei KI-Interaktion (Kap. 27).
+
+  Lernziel: Social Listening als datenschutzkonformen, überprüfbaren Prozess aufsetzen und KI dort
+  einsetzen, wo sie Menschen entlastet, ohne Verantwortung und Urteil an sie abzugeben.

@@ -1,0 +1,38 @@
+title: Daten-Ampel anwenden
+difficulty: 1
+question: |
+  Ordne die folgenden Eingaben der Daten-Ampel aus Abschnitt 4.4 zu – Grün, Gelb oder Rot – und
+  nenne, was vor der Nutzung im KI-Werkzeug zu tun ist.
+
+  1. Der veröffentlichte Produkttext zur Wanderhose „Vidde", der umformuliert werden soll
+  2. Ein CSV-Export aus dem Newsletter-Tool mit E-Mail-Adresse, Vorname und Öffnungsrate
+  3. Der unveröffentlichte Kampagnenplan für das Frühjahr
+  4. Eine Beschwerde-Mail eines Kunden mit Name, Anschrift und Bestellnummer
+  5. Fiktive Testdaten für eine Übung zur Zielgruppenanalyse
+  6. Die Zugangsdaten zum Instagram-Account, damit die KI „direkt posten kann"
+
+  Formuliere anschließend für Nr. 4 eine bereinigte Fassung, die ins Werkzeug darf.
+tip: |
+  Frage dich bei jeder Eingabe zuerst: Lässt sich daraus eine Person identifizieren? Danach:
+  Wäre es schlimm, wenn die Information öffentlich würde?
+solution: |
+  | Nr. | Ampel | Vorgehen |
+  |---|---|---|
+  | 1 | Grün | ohne Weiteres in freigegebenen Werkzeugen nutzbar |
+  | 2 | Rot | E-Mail und Vorname löschen; für eine Auswertung genügen Kennzahlen pro Versand |
+  | 3 | Gelb | nur im freigegebenen Business-Werkzeug mit AVV |
+  | 4 | Rot | Name, Anschrift, Bestellnummer entfernen, dann Gelb |
+  | 5 | Grün | unkritisch, sofern wirklich fiktiv |
+  | 6 | Rot | niemals in einen Prompt; Zugangsdaten gehören in keinen Chat |
+
+  Bereinigte Fassung von Nr. 4:
+
+  ```text
+  Kundenbeschwerde (anonymisiert):
+  „Meine Regenjacke ist nach drei Wochen an der Naht undicht. Ich bin
+  enttäuscht, weil ich bewusst nachhaltig kaufen wollte."
+  Bitte formuliere einen Antwortentwurf in der Markenstimme von Fjordlicht.
+  ```
+
+  Achte darauf, dass auch im Fließtext keine identifizierenden Details verbleiben, etwa
+  Ortsangaben oder ein Name in der Grußformel.

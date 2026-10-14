@@ -1,0 +1,53 @@
+title: Ein Werkzeug für das Team bewerten
+difficulty: 3
+question: |
+  Das Fjordlicht-Team möchte ein zusätzliches Bildwerkzeug lizenzieren. Zur Wahl stehen zwei
+  fiktive Angebote:
+
+  ```text
+  Werkzeug A: sehr gute Bildästhetik, Nutzung über ein privates Konto pro
+  Person, Nutzungsbedingungen erlauben kommerzielle Nutzung in Bezahlplänen,
+  kein AVV, Eingaben können zum Training verwendet werden, 30 € pro Monat
+  und Person.
+
+  Werkzeug B: gute, etwas weniger markante Bildqualität, Teamverwaltung,
+  AVV verfügbar, kein Training auf Eingaben, Bilder erhalten
+  Herkunftsnachweise (Content Credentials), Integration in das vorhandene
+  Grafikprogramm, 45 € pro Monat und Person.
+  ```
+
+  1. Bewerte beide Angebote anhand der sechs Kriterien aus Abschnitt 4.6.
+  2. Entscheide, welches Werkzeug du empfiehlst, und begründe in höchstens fünf Sätzen.
+  3. Nenne eine Bedingung, unter der Werkzeug A trotzdem eingesetzt werden könnte, und eine
+     Regel, die dann in die KI-Richtlinie gehört.
+tip: |
+  Die Bildqualität ist das Kriterium, das im Test am meisten beeindruckt – aber nicht das, das
+  im Ernstfall am teuersten wird. Frage dich, was passiert, wenn ein Prompt versehentlich
+  Gelb- oder Rot-Daten enthält.
+solution: |
+  | Kriterium | Werkzeug A | Werkzeug B |
+  |---|---|---|
+  | Datenschutz | schwach: kein AVV, Training auf Eingaben | gut: AVV, kein Training |
+  | Nutzungsrechte | kommerziell in Bezahlplänen erlaubt | prüfen, aber Herkunftsnachweis hilft |
+  | Qualität | sehr gut | gut |
+  | Integration | keine, Einzelkonten | im Grafikprogramm, Teamverwaltung |
+  | Kosten | günstiger | teurer |
+  | Zukunftssicherheit | Privatkonten erschweren Kontrolle und Wechsel | zentral verwaltet |
+
+  Empfehlung: Werkzeug B. Die Mehrkosten von 15 € pro Person und Monat sind gering im Vergleich
+  zum Risiko, dass Kampagnenpläne oder Produktfotos vor Veröffentlichung in Trainingsdaten
+  landen. Teamverwaltung und Integration senken außerdem den Aufwand im Alltag. Der Unterschied
+  in der Bildqualität ist für Social-Media-Motive meist verkraftbar.
+
+  Bedingung für Werkzeug A: ausschließlich für Grün-Daten, etwa Moodboards aus allgemeinen
+  Beschreibungen ohne unveröffentlichte Produkte, über ein Firmenkonto statt Privatkonten.
+  Richtlinien-Regel zum Beispiel:
+
+  ```text
+  Werkzeug A darf nur mit allgemeinen Bildbeschreibungen genutzt werden.
+  Keine unveröffentlichten Produkte, keine Kampagnenpläne, keine
+  hochgeladenen Fotos von Personen.
+  ```
+
+  Bewertungskriterien: alle sechs Kriterien bewertet, Entscheidung gewichtet Datenschutz
+  sichtbar höher als Ästhetik, Bedingung für A ist konkret und überprüfbar.

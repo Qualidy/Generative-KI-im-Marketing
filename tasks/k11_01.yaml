@@ -1,0 +1,31 @@
+title: Chat oder Dokument?
+difficulty: 1
+question: |
+  Ordne die folgenden Aufgaben aus dem Fjordlicht-Marketing zu: Reicht der **normale Chat**, oder
+  lohnt sich die Arbeit im **Dokument** (Schreibblock in ChatGPT, Artifact in Claude, Canvas in
+  Gemini, Page in Copilot)? Begründe jeweils in einem Satz.
+
+  1. Fünf Varianten für eine Betreffzeile zum Herbst-Newsletter
+  2. Ein Blogbeitrag „Zwiebelprinzip beim Wandern" mit ca. 1.000 Wörtern
+  3. Eine kurze Antwort auf einen Instagram-Kommentar
+  4. Die Produktseite für den Rucksack „Tind" mit sechs Abschnitten, die mehrfach abgestimmt wird
+  5. Der B2B-Onepager für „Fjordlicht Business", den du in eine einfache und eine fachliche Fassung bringen willst
+
+  Nenne zum Schluss in zwei Sätzen, was sich am 28.05.2026 bei ChatGPT geändert hat und was davon
+  für deine Arbeitsweise **nicht** gilt.
+tip: |
+  Entscheidend ist nicht die Länge allein, sondern ob du denselben Text **mehrfach gezielt
+  überarbeiten** willst. Ein einmaliger Kurztext braucht kein Dokument.
+solution: |
+  | Nr. | Ort | Begründung |
+  |---|---|---|
+  | 1 | Chat | kurze Varianten, du wählst aus, keine Überarbeitung einzelner Stellen nötig |
+  | 2 | Dokument | langer Text, mehrere Durchgänge (Rohfassung, Struktur, Feinschliff) |
+  | 3 | Chat | einmaliger Kurztext |
+  | 4 | Dokument | mehrere Abschnitte, mehrere Abstimmungsrunden, Änderungen sollen gezielt bleiben |
+  | 5 | Dokument | Lesestufe anpassen ist ein typischer Dokument-Arbeitsschritt; beide Fassungen bleiben vergleichbar |
+
+  Zur Änderung: Am 28.05.2026 wurde Canvas aus den aktuellen ChatGPT-Modellen entfernt; Ersatz
+  sind Schreibblöcke direkt in der Antwort (markieren und überarbeiten, Vollbild-Editor,
+  Gliederung, Download). Unverändert bleibt das Arbeitsprinzip: ein gemeinsames Dokument statt
+  verstreuter Chatversionen und gezielte Überarbeitung markierter Stellen.

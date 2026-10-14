@@ -1,0 +1,46 @@
+title: Ein Motiv – vier Formate
+difficulty: 3
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug und in einem Layout-Werkzeug (zum Beispiel Canva,
+  Adobe Express oder Figma).
+
+  Das Schlüsselmotiv der Fjordlicht-Herbstkampagne soll in vier Formaten erscheinen:
+  Instagram-Post 4:5, Story 9:16, Newsletter-Header ca. 3:1 und Webshop-Banner 16:9. Alle
+  Formate tragen die Headline „Der Herbst kann kommen." und das Fjordlicht-Logo als Platzhalter.
+
+  1. **Weg A:** Generiere das Motiv mit demselben Prompt-Gerüst je Format neu.
+  2. **Weg B:** Erzeuge einen Master mit großzügigem Rand und leite die vier Formate per
+     Zuschnitt und Outpainting ab.
+  3. **Overlay.** Setze Headline und Logo-Platzhalter im Layout-Werkzeug auf beide Varianten.
+  4. **Vergleich.** Bewerte beide Wege nach Motivgleichheit, Komposition je Format, Aufwand
+     und Fehlern in erweiterten Bereichen.
+  5. **Empfehlung.** Formuliere eine Regel für das Team: Wann welcher Weg?
+tip: |
+  Schau dir bei Weg B die erweiterten Ränder in voller Auflösung an. Outpainting erzeugt dort
+  gern Wiederholungen, unlogische Perspektiven oder Gegenstände, die im Original nicht
+  angelegt waren.
+solution: |
+  Typischer Vergleich:
+
+  | Kriterium | Weg A: je Format neu | Weg B: Master erweitern |
+  |---|---|---|
+  | Motivgleichheit | gering – Figur, Ort, Licht weichen ab | hoch – Kern identisch |
+  | Komposition je Format | gut, jedes Format eigens angelegt | Kompromiss, vor allem 3:1 und 9:16 |
+  | Aufwand | mehr Generierungen, mehr Auswahl | weniger Generierung, mehr Prüfung |
+  | Fehlerquellen | Inkonsistenz zwischen Formaten | Artefakte in erweiterten Rändern |
+
+  Eine begründete Teamregel könnte lauten:
+
+  ```text
+  Für Kampagnen mit wiedererkennbarem Schlüsselmotiv: Weg B. Master mit
+  Motiv in der Mitte und mindestens 25 Prozent Rand anlegen, Ränder
+  nach Erweiterung in voller Auflösung prüfen.
+  Für lose Serien ohne festes Motiv (z. B. Pinterest-Inspiration): Weg A
+  mit festem Prompt-Gerüst.
+  Text und Logo immer im Layout-Werkzeug, nie im Bildprompt.
+  ```
+
+  Bewertungskriterien: beide Wege tatsächlich umgesetzt, Vergleich mit mindestens vier
+  Kriterien, mindestens ein konkret benannter Fehler aus Outpainting oder Neugenerierung,
+  Headline in allen Formaten lesbar und außerhalb der Story-Bedienbereiche platziert,
+  Empfehlung als anwendbare Regel formuliert.

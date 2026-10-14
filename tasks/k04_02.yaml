@@ -1,0 +1,35 @@
+title: Kennzeichnen oder nicht? Fälle nach Art. 50 einordnen
+difficulty: 2
+question: |
+  Prüfe für die folgenden geplanten Inhalte von Fjordlicht, ob nach dem Überblick in Abschnitt
+  4.3 eine **Pflicht nach Art. 50 AI Act** besteht, ob **Plattformregeln** ein Label verlangen
+  könnten und was du empfiehlst.
+
+  1. Ein Newsletter-Text, den ChatGPT entworfen und das Team geprüft hat
+  2. Ein fotorealistisches KI-Video, in dem eine bekannte Bergsteigerin scheinbar die Jacke
+     „Sølv" empfiehlt – sie hat nie mitgewirkt
+  3. Ein Chatbot auf der Website, der Fragen zu Größen beantwortet
+  4. Eine erkennbar gezeichnete, comicartige KI-Illustration eines Fuchses mit Rucksack
+  5. Ein realistisch wirkendes KI-Foto eines Wanderers in Norwegen für Instagram
+
+  Nutze anschließend dein KI-Werkzeug als Gegenprüfung: Lass die fünf Fälle bewerten und
+  vergleiche mit deiner Einordnung. Wo weicht es ab, und wer hat recht?
+tip: |
+  Unterscheide drei Ebenen: gesetzliche Pflicht nach dem AI Act, Pflicht nach den Regeln der
+  Plattform, freiwillige Transparenz aus Markenhaltung. Und prüfe die KI-Antwort kritisch – sie
+  kennt den Rechtsstand von 2026 möglicherweise nicht.
+solution: |
+  | Nr. | Art. 50 | Plattform | Empfehlung |
+  |---|---|---|---|
+  | 1 | i. d. R. nein – Werbetext, menschlich geprüft | nein | keine Pflicht; Prüfung und Freigabe dokumentieren |
+  | 2 | ja, Deepfake (Abs. 4) | ja | **nicht veröffentlichen**: zusätzlich Persönlichkeitsrecht und Irreführung (UWG) |
+  | 3 | ja, Abs. 1: KI-Interaktion erkennbar machen | – | Hinweis zu Beginn des Chats (Kap. 27) |
+  | 4 | nein, kein realistischer Eindruck | meist nein | freiwilliger Hinweis möglich |
+  | 5 | Deepfake nur, wenn der Inhalt realen Personen, Orten oder Ereignissen ähnelt und fälschlich echt wirkt – bei einer realen Landschaft möglich | Meta verlangt Labels für realistische KI-Inhalte | KI-Label setzen, Bildunterschrift ehrlich formulieren |
+
+  Fall 2 zeigt, dass Kennzeichnung allein nicht genügt: Ein Label macht eine unerlaubte
+  Nutzung von Person und Ruf nicht zulässig.
+
+  Typische Abweichungen der KI: Sie hält jeden KI-Text für kennzeichnungspflichtig, kennt die
+  Fristen nicht oder nennt veraltete Termine. Maßgeblich ist der Stand aus dem Kapitel und im
+  Zweifel die Rechtsabteilung. Details mit Entscheidungsbaum folgen in Kapitel 39.

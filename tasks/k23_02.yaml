@@ -1,0 +1,44 @@
+title: Ein Mini-Assistent in fünf Minuten
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Ziel ist, den Unterschied zwischen „jedes Mal
+  alles mitgeben" und „einmal hinterlegen" selbst zu erleben – mit dem Werkzeug, das dir zur
+  Verfügung steht: ChatGPT-Projekt, Custom GPT bzw. Plugin, Claude Project, Gemini Gem oder
+  Copilot Agent.
+
+  1. **Ohne Assistent:** Öffne einen normalen Chat und bitte um eine Instagram-Caption für den
+     Fleece „Skog" – ohne weitere Angaben. Speichere das Ergebnis.
+  2. **Hinterlegen:** Lege einen Assistenten bzw. ein Projekt an und hinterlege diese
+     Instruktionen:
+
+     ```text
+     Du schreibst Social-Media-Entwürfe für Fjordlicht, eine Marke für
+     nachhaltige Outdoor-Bekleidung aus Münster.
+     Markenstimme: ruhig, ehrlich, naturverbunden, leicht nordisch-trocken,
+     Du-Ansprache. Keine Superlative, keine Ausrufezeichen-Ketten.
+     Nachhaltigkeit nur mit konkretem, belegbarem Fakt aus der Anfrage.
+     Fehlt ein Fakt, schreibe [FEHLT: ...] statt zu raten.
+     Ausgabe: Caption mit maximal 60 Wörtern, danach 3 bis 5 Hashtags.
+     ```
+
+  3. **Mit Assistent:** Stelle dieselbe Anfrage wie in Schritt 1 im neuen Assistenten.
+  4. **Vergleich:** Halte in einer Tabelle fest, worin sich die beiden Ergebnisse unterscheiden
+     (Ton, Länge, Behauptungen, Hashtags).
+tip: |
+  Achte besonders auf Nachhaltigkeitsaussagen. Ohne Regel schreibt das Modell gern „umweltfreundlich"
+  oder „nachhaltig produziert" – Aussagen, die Fjordlicht nicht belegen kann und die als
+  Greenwashing gelten würden.
+solution: |
+  Typische Beobachtungen:
+
+  | Aspekt | Ohne Assistent | Mit Assistent |
+  |---|---|---|
+  | Ton | begeistert, Superlative („der perfekte Begleiter") | ruhig, sachlich, Du-Ansprache |
+  | Länge | schwankt, oft zu lang | innerhalb der Vorgabe |
+  | Behauptungen | pauschal „nachhaltig", „umweltfreundlich" | [FEHLT: Materialangabe] statt Behauptung |
+  | Hashtags | viele, generisch, Emojis | 3 bis 5, passend |
+
+  Entscheidend ist die dritte Zeile: Der Assistent hat nicht „besser geschrieben", sondern eine
+  Regel befolgt, die im normalen Chat niemand formuliert hatte. Genau das ist der Nutzen –
+  dauerhaft hinterlegte Regeln, die niemand vergessen kann. Wer im Ergebnis mit Assistent noch
+  einen Superlativ findet, hat einen ersten Testfall für Kap. 25 gefunden.

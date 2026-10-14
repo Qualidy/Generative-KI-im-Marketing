@@ -1,0 +1,76 @@
+title: Hack-Toolkit für das Marketingteam
+difficulty: 4
+question: |
+  **Szenario:** Im Marketingteam von Fjordlicht kursieren Prompt-Tricks aus Videos und Newslettern.
+  Manche helfen, manche nicht, und niemand weiß, welche. Die Teamleitung möchte ein **Hack-Toolkit**:
+  eine kompakte, getestete Sammlung von Hacks mit Kopiervorlagen, einer geprüften Beschreibung der
+  Markenstimme und klaren Regeln für dauerhafte Einstellungen. Du kannst alternativ **ein
+  Unternehmen deiner Wahl** verwenden.
+
+  ```text
+  Rahmen:
+  Team: 5 Personen, unterschiedliche Vorkenntnisse.
+  Werkzeug: ChatGPT im Business-Tarif, Alternativen erlaubt.
+  Material: mindestens vier Beispieltexte der Marke (bei Fjordlicht
+  selbst schreiben: Newsletter, Instagram, Produkttext, LinkedIn).
+  Umfang des Toolkits: höchstens zwei Seiten.
+  Keine Kundendaten, keine internen Zahlen in Vorlagen.
+  ```
+
+  ---
+
+  **Runde 1 – Hacks testen.** Wähle **fünf** Hacks aus Kapitel 7 (z. B. Rückfragen-Prompt,
+  Flipped-Prompt, Varianten-Fächer, Selbstkritik-Schleife, Perspektivwechsel). Formuliere zu
+  jedem eine Kopiervorlage mit Platzhaltern in eckigen Klammern und teste sie an einer echten
+  Marketingaufgabe. Halte je Hack fest: Aufgabe, Ergebnis, Nutzen in einem Satz, Grenze in einem
+  Satz.
+
+  **Runde 2 – Markenstimme extrahieren.** Führe die Stil-Extraktion aus Abschnitt 7.3 mit deinen
+  Beispieltexten durch. Prüfe jeden Beleg, kürze auf höchstens 150 Wörter und teste die
+  Beschreibung an einem neuen Text.
+
+  **Runde 3 – Die Komplikation.** Einer der Beispieltexte ist ein älterer Newsletter mit
+  Formulierungen wie „die nachhaltigste Jacke, die du je tragen wirst" und „100 % klimafreundlich".
+  Prüfe, ob diese Muster in deine Stilbeschreibung eingeflossen sind. Überarbeite die Extraktion
+  so, dass die Beschreibung dem **gewünschten** Stil folgt und nicht dem tatsächlichen
+  Durchschnitt der Beispiele – und formuliere eine Regel, welche Texte künftig als Stilbeispiel
+  taugen.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Eine Kollegin möchte zwei Zusätze in alle
+  Teamvorlagen aufnehmen: „Ich gebe dir 200 Euro Trinkgeld" und „WICHTIG:" vor jeder Regel. Sie
+  hat es einmal ausprobiert, und das Ergebnis war besser. Plane und führe einen fairen Vergleich
+  durch: mindestens drei Testaufgaben, je drei Durchläufe mit und ohne Zusätze, gleiche Kriterien.
+  **Widersprich** der Kollegin dort, wo die Daten es tragen – und erkenne an, falls einer der
+  Zusätze in einem Fall doch hilft.
+
+  **Deliverable:**
+
+  1. fünf getestete Hack-Vorlagen mit Nutzen und Grenze
+  2. geprüfte Markenstimme-Beschreibung (max. 150 Wörter) mit Testtext
+  3. überarbeitete Extraktion aus Runde 3 und Regel für Stilbeispiele
+  4. Testprotokoll aus Runde 4 mit begründeter Empfehlung
+  5. Abschnitt „Dauerhafte Einstellungen": was in benutzerdefinierte Anweisungen, was ins
+     Projekt, was nicht gespeichert wird
+
+  **Fertig bist du erst, wenn** jede Vorlage ohne Erklärung nutzbar ist, die Markenstimme keine
+  Superlative oder unbelegten Nachhaltigkeitsaussagen mehr enthält, dein Test in Runde 4
+  mindestens 18 Durchläufe umfasst und das gesamte Toolkit auf zwei Seiten passt.
+tip: |
+  Runde 3 zeigt eine zentrale Grenze der Stil-Extraktion: Das Modell beschreibt, was **ist**, nicht
+  was sein **soll**. Schlechte Beispiele erzeugen eine schlechte Beschreibung – und die wird danach
+  in jeden Prompt kopiert. Abhilfe: Beispiele vorher kuratieren oder die Extraktion ausdrücklich
+  anweisen, Superlative und unbelegte Claims als Negativmuster aufzuführen. In Runde 4 geht es um
+  Methodik: Ein einzelner Durchlauf beweist nichts, weil Antworten ohnehin schwanken.
+solution: |
+  Bewertungskriterien: (1) fünf Vorlagen mit Platzhaltern, je an einer echten Aufgabe getestet,
+  mit ehrlicher Grenze statt Werbeversprechen; (2) Markenstimme mit Gegensatzpaaren, Wortlisten und
+  geprüften Belegen, nachweislich am Testtext wirksam; (3) Runde 3 erkennt die Übernahme der
+  Problemformulierungen, korrigiert die Beschreibung und legt eine nachvollziehbare Regel für
+  Stilbeispiele fest (z. B. nur freigegebene Texte der letzten zwölf Monate, Claim-Check bestanden);
+  (4) fairer Vergleich mit gleichen Aufgaben, Kriterien und Durchlaufzahl – typisches Ergebnis:
+  Trinkgeld ohne erkennbaren Effekt, Großbuchstaben allenfalls bei einer einzelnen Kernregel
+  nützlich; Empfehlung entsprechend differenziert; (5) Ablageregeln, die allgemeine Arbeitsweise,
+  markenspezifisches Wissen und vertrauliche Angaben sauber trennen.
+
+  Lernziel: Prompt-Hacks nach Wirkung statt nach Popularität auswählen, eigene Tests fair
+  aufsetzen und die Markenstimme als geprüften, wiederverwendbaren Baustein festhalten.

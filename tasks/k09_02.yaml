@@ -1,0 +1,52 @@
+title: Einen fehlerhaften Prompt eingrenzen
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Der folgende Prompt liefert für Fjordlicht
+  regelmäßig zu lange, zu werbliche Texte mit Superlativen.
+
+  ```text
+  Du bist ein kreativer Top-Texter. Schreib einen packenden Text über
+  unsere Wanderhose Vidde für den Newsletter, der richtig Lust aufs Kaufen
+  macht und alle Vorteile zeigt. Er soll kurz sein. Ruhiger Ton.
+  Keine Superlative.
+  Infos: Stretchmaterial, vier Taschen, abnehmbare Hosenbeine,
+  in fünf Größen, 119 Euro.
+  ```
+
+  1. **Reproduzieren.** Lass den Prompt dreimal in je einem neuen Chat laufen. Notiere Länge,
+     Superlative und erfundene Angaben.
+  2. **Reduzieren.** Kürze auf Request, Output und Infos. Was ändert sich?
+  3. **Ergänzen.** Füge die übrigen Bausteine einzeln wieder hinzu. Bei welchem Baustein tauchen
+     Superlative und Länge wieder auf?
+  4. **Selbstauskunft.** Lass das Modell vor dem Schreiben zusammenfassen, wie es den Auftrag
+     versteht.
+  5. **Korrektur.** Schreibe eine korrigierte Fassung nach P.R.O.M.P.T. und teste sie dreimal.
+tip: |
+  Achte auf Widersprüche: „packend", „richtig Lust aufs Kaufen" und „alle Vorteile" ziehen in eine
+  andere Richtung als „kurz", „ruhig" und „keine Superlative". Das Modell löst solche Konflikte meist
+  zugunsten der ausführlicheren, bildhafteren Anweisung.
+solution: |
+  Typische Befunde:
+
+  | Schritt | Beobachtung |
+  |---|---|
+  | Reproduzieren | 120–200 Wörter, Superlative wie „die perfekte Hose", teils erfundene Eigenschaften (wasserabweisend, atmungsaktiv) |
+  | Reduzieren | kürzer und sachlicher, aber ohne Markenstimme |
+  | Ergänzen | Superlative und Länge kehren mit Persona („Top-Texter") und Request („packend", „alle Vorteile") zurück |
+  | Selbstauskunft | Modell versteht „verkaufsstarker Werbetext" – „kurz" wird als Nebensache gelesen |
+
+  Korrigierte Fassung:
+
+  ```text
+  Persona: Du schreibst für die Outdoor-Marke Fjordlicht.
+  Request: Schreibe einen Newsletter-Absatz zur Wanderhose Vidde.
+  Output: 50 bis 70 Wörter, ein Absatz, danach ein Link-Text mit maximal 4 Wörtern.
+  Modifier: Nutze nur die Infos unten. Beschreibe, wofür die Hose gemacht ist,
+  statt sie zu bewerten. Fehlt eine Angabe, erfinde sie nicht.
+  Purpose: Abonnentinnen und Abonnenten 25-45 sollen die Hose im Shop ansehen.
+  Tone: ruhig, ehrlich, Du-Ansprache, leicht nordisch-trocken.
+  Infos: [wie oben]
+  ```
+
+  Die Lehre: Die Ursache war nicht die fehlende Strenge der Regel „Keine Superlative", sondern
+  der Widerspruch zu Persona und Request.

@@ -1,0 +1,46 @@
+title: Einen Einführungsplan kritisch bewerten
+difficulty: 3
+question: |
+  Die Geschäftsführung von Fjordlicht hat von einer Agentur folgenden Plan zur KI-Einführung im
+  Marketing erhalten und bittet dich um eine kritische Einschätzung:
+
+  ```text
+  Woche 1: Alle fünf Teammitglieder erhalten Zugang zu fünf verschiedenen KI-Tools
+           (kostenlose Versionen, um Kosten zu sparen).
+  Woche 2: Upload des kompletten CRM-Exports in ChatGPT zur Zielgruppenanalyse.
+  Woche 3: Start der Avatar-Videoreihe mit KI-Klon der Geschäftsführerin für TikTok.
+  Woche 4: Verzehnfachung der Blogartikel von 4 auf 40 pro Monat.
+  Ziel: 50 Prozent Zeitersparnis im Marketing.
+  Messung: Zufriedenheitsumfrage im Team nach drei Monaten.
+  ```
+
+  1. Benenne mindestens **sechs Probleme** des Plans und ordne sie Kapiteln des Kurses zu.
+  2. Lass ein KI-Werkzeug denselben Plan bewerten. Vergleiche: Welche Probleme findet es, welche
+     übersieht es, wo ist es zu nachsichtig?
+  3. Formuliere einen **Gegenvorschlag** nach den fünf Schritten aus Abschnitt 40.3 auf einer
+     halben Seite.
+tip: |
+  Gehe den Plan Zeile für Zeile mit drei Brillen durch: Daten und Recht, Qualität und Marke,
+  Messbarkeit. Fast jede Zeile hat mindestens ein Problem.
+solution: |
+  | Problem | Warum | Kapitel |
+  |---|---|---|
+  | fünf Tools ohne Auswahl | keine Werkzeugliste, kein einheitlicher Standard | 4, 40 |
+  | kostenlose Versionen | ggf. Training auf Eingaben, kein AVV | 4 |
+  | CRM-Export in Consumer-Tool | personenbezogene Daten, DSGVO-Verstoß | 4, 17 |
+  | Avatar-Klon als erster Schritt | hohes Risiko, Einwilligung, Kennzeichnungspflicht als Deepfake | 36, 38, 39 |
+  | 40 Blogartikel pro Monat | massenhafter Content, Qualitäts- und SEO-Risiko | 15, 22 |
+  | Ziel ohne Ausgangswert | 50 Prozent wovon? keine Baseline | 20, 40 |
+  | Messung nur per Zufriedenheit | misst Gefühl, nicht Wirkung | 16, 20 |
+  | keine Richtlinie, keine Freigabe | Verantwortung ungeklärt | 4, 39 |
+
+  KI-Werkzeuge erkennen meist den Datenschutzverstoß, bewerten aber Ziel und Messung oft zu
+  nachsichtig und schlagen selten vor, den Avatar-Schritt zu streichen.
+
+  Gegenvorschlag in Kurzform: Bestandsaufnahme der Aufgaben mit Zeitmessung; Pilot mit einem
+  Business-Werkzeug und dem Content-Assistenten für Newsletter-Entwürfe; einseitige Richtlinie mit Datenampel und
+  Kennzeichnungslinie; Messung von Zeit, Korrekturschleifen und Kanal-KPIs gegen die Baseline;
+  Entscheidung nach vier Wochen über Ausweitung.
+
+  Bewertungskriterien: mindestens sechs Probleme mit Begründung, Vergleich mit der KI-Bewertung
+  konkret, Gegenvorschlag enthält alle fünf Schritte und eine Baseline.

@@ -1,0 +1,54 @@
+title: Einen missratenen Midjourney-Auftrag reparieren
+difficulty: 3
+question: |
+  Ein Praktikant hat für die Fjordlicht-Frühjahrskampagne in Midjourney gearbeitet. Ziel waren
+  **vier zusammengehörige**, ruhige, dokumentarische Motive für Instagram. Er hat diesen Prompt
+  viermal mit jeweils anderem Motiv verwendet:
+
+  ```text
+  epic cinematic hyperrealistic masterpiece, happy hiker on mountain top,
+  sunset, vibrant colors, in the style of [bekannte lebende Fotografin],
+  8K, award-winning --ar 16:9 --s 1000 --chaos 100
+  ```
+
+  Das Ergebnis: vier Bilder, die nicht zusammenpassen, bonbonbunt, im falschen Format. Außerdem
+  stellt sich heraus, dass er mit seinem privaten Basis-Abo gearbeitet hat.
+
+  1. Benenne **jede** Ursache für die Probleme – Prompttext und Parameter.
+  2. Schreibe einen verbesserten Prompt inklusive Parametern.
+  3. Was schlägst du vor, damit die vier Motive zusammengehören?
+  4. Welche organisatorischen Probleme entstehen durch das private Basis-Abo?
+tip: |
+  Gehe die Parameter einzeln durch und frage dich bei jedem: Wirkt er für das Ziel „ruhig,
+  dokumentarisch, zusammengehörig" in die richtige oder in die falsche Richtung?
+solution: |
+  | Element | Problem |
+  |---|---|
+  | „epic, cinematic, hyperrealistic, masterpiece, 8K, award-winning" | Füllwörter, schieben in Hochglanz statt dokumentarisch |
+  | „vibrant colors", „sunset" | widerspricht gedeckter, ruhiger Bildsprache |
+  | „in the style of [Fotografin]" | fremde Handschrift, rechtlich und ethisch heikel |
+  | `--ar 16:9` | falsches Format für Instagram, besser 4:5 |
+  | `--s 1000` | maximale Midjourney-Eigenästhetik statt Nähe zum Prompt |
+  | `--chaos 100` | maximale Streuung, Gift für eine Serie |
+
+  Verbesserter Prompt:
+
+  ```text
+  documentary photo, woman in her thirties pausing on a forest trail in
+  early spring, light rain jacket, looking at the path ahead, overcast
+  soft light, subject in lower third, muted greens and greys,
+  desaturated --ar 4:5 --s 75 --chaos 0 --style raw --no text, logo
+  ```
+
+  Für Zusammengehörigkeit: dieselbe Basisformulierung für Licht, Farbe, Kamera und Parameter;
+  ein freigegebenes erstes Motiv per `--sref` als Stilreferenz für die übrigen drei nutzen;
+  Version notieren (Kap. 33 vertieft das).
+
+  Organisatorisch: Bilder aus kleineren Plänen können in der öffentlichen Galerie sichtbar
+  sein – unveröffentlichte Kampagne ist damit potenziell öffentlich; die Nutzungsbedingungen
+  des privaten Kontos und die Frage, wem die Ergebnisse gehören, sind ungeklärt; kein
+  Teamzugriff, keine Nachvollziehbarkeit. Konsequenz: Arbeit nur in freigegebenen Teamkonten
+  mit geprüfter Sichtbarkeit.
+
+  Bewertungskriterien: alle sechs Ursachen erkannt, Parameter begründet gewählt, Seriensicherung
+  über Stilreferenz statt nur über Wortwiederholung, organisatorisches Risiko konkret benannt.

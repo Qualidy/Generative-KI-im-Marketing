@@ -1,0 +1,50 @@
+title: Framework-Vergleich und Grenzen der Persona
+difficulty: 3
+question: |
+  Im Netz findest du viele Prompt-Formeln. Eine Kollegin schwört auf **RTF** (Role, Task, Format),
+  ein Kollege auf **CO-STAR** (Context, Objective, Style, Tone, Audience, Response).
+
+  1. **Abgleich.** Ordne die Bausteine beider Formeln den sechs Bausteinen von P.R.O.M.P.T. zu.
+     Welche Lücken hat RTF, welche Bausteine von CO-STAR stecken bei uns in Modifier oder Purpose?
+  2. **Persona-Test im Werkzeug.** Lass denselben Auftrag – „Erkläre in 100 Wörtern, ob Fjordlicht
+     ein Fleece als klimaneutral bewerben darf" – zweimal bearbeiten: einmal ohne Persona, einmal
+     mit „Du bist Fachanwalt für Wettbewerbsrecht mit 20 Jahren Erfahrung". Vergleiche Inhalt,
+     Sicherheit des Tons und Belege.
+  3. **Bewertung.** Formuliere drei Sätze für eure Team-Richtlinie: Wann ist eine Persona
+     nützlich, wann irreführend, und welches Framework soll das Team verwenden?
+tip: |
+  Achte in Schritt 2 darauf, ob die Persona-Fassung **mehr belegte Inhalte** liefert oder nur
+  **sicherer klingt**. Genau hier liegt das Risiko: Ein selbstbewusster Ton verleitet dazu, auf
+  Prüfung zu verzichten.
+solution: |
+  | P.R.O.M.P.T. | RTF | CO-STAR |
+  |---|---|---|
+  | Persona | Role | – (teils Style) |
+  | Request | Task | Objective |
+  | Output | Format | Response |
+  | Modifier | – | Context (teilweise) |
+  | Purpose | – | Objective, Audience, Context |
+  | Tone | – | Style, Tone |
+
+  RTF ist schnell, lässt aber Ziel, Zielgruppe, Regeln und Ton offen – für Marketingtexte zu
+  dünn. CO-STAR ist ähnlich vollständig wie P.R.O.M.P.T., hat aber keinen eigenen Platz für
+  No-Gos und Faktengrenzen.
+
+  Typisches Ergebnis des Persona-Tests: Beide Antworten nennen ähnliche Punkte (Irreführungsverbot,
+  Belegpflicht, strenge Rechtsprechung zu „klimaneutral"). Die Persona-Fassung klingt bestimmter,
+  enthält aber nicht mehr geprüfte Inhalte und oft erfundene Details wie konkrete Aktenzeichen.
+  Die Rolle ändert Ton und Perspektive, nicht den Wissensstand.
+
+  Mögliche Richtlinie:
+
+  ```text
+  1. Wir nutzen P.R.O.M.P.T. als gemeinsame Checkliste; kürzere Prompts
+     sind erlaubt, wenn der Purpose klar ist.
+  2. Eine Persona setzen wir für Perspektive und Fachsprache ein, nie
+     als Ersatz für Prüfung.
+  3. Rechtliche oder fachliche Aussagen aus KI-Texten werden vor
+     Veröffentlichung von einer zuständigen Person geprüft.
+  ```
+
+  Bewertungskriterien: korrekte Zuordnung, nachvollziehbar dokumentierter Vergleich, Richtlinie,
+  die zwischen Wirkung auf Ton und Wirkung auf Wahrheitsgehalt unterscheidet.

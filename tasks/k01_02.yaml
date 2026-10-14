@@ -1,0 +1,43 @@
+title: Wahrscheinlichkeit sichtbar machen
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT, Claude, Gemini oder Copilot).
+
+  1. Öffne **drei neue Chats** nacheinander und gib jeweils exakt denselben Prompt ein:
+
+     ```text
+     Schreibe einen Slogan für eine Regenjacke. Nur den Slogan, sonst nichts.
+     ```
+
+  2. Notiere die drei Slogans. Markiere Wörter, die mehrfach vorkommen.
+  3. Wiederhole das Ganze in drei weiteren neuen Chats mit diesem Prompt:
+
+     ```text
+     Schreibe einen Slogan für die Regenjacke „Sølv" der Marke Fjordlicht.
+     Markenstimme: ruhig, ehrlich, leicht nordisch-trocken, keine Superlative,
+     keine Ausrufezeichen. Maximal sechs Wörter. Nur den Slogan, sonst nichts.
+     ```
+
+  4. Vergleiche beide Reihen: Wie stark unterscheiden sich die Slogans **innerhalb** einer Reihe?
+     Wie stark **zwischen** den Reihen? Erkläre die Beobachtung mit den Begriffen
+     **Wahrscheinlichkeit**, **Variation** und **Kontext** aus Abschnitt 1.4.
+tip: |
+  Nutze wirklich jedes Mal einen neuen Chat. Im selben Chat sieht das Modell seine vorherigen
+  Slogans im Kontextfenster und vermeidet Wiederholungen bewusst – dann misst du etwas anderes.
+solution: |
+  Typische Beobachtungen:
+
+  | Reihe | Innerhalb der Reihe | Merkmale |
+  |---|---|---|
+  | 1 (ohne Kontext) | deutlich unterschiedlich, aber ähnliche Wörter („trocken", „Wetter", „Abenteuer") | glatt, austauschbar, oft mit Ausrufezeichen oder Superlativ |
+  | 2 (mit Kontext) | weiterhin verschieden, aber in einem engeren Korridor | ruhiger, kürzer, näher an der Markenstimme |
+
+  Erklärung: Das Modell wählt Token nach Wahrscheinlichkeit und mit etwas Zufall – deshalb
+  **variiert** das Ergebnis bei identischem Prompt. Ohne Kontext gewinnt das statistisch Übliche,
+  also die typische Werbesprache für Regenjacken. Der zusätzliche **Kontext** (Marke, Stimme,
+  Verbote, Länge) verschiebt die Wahrscheinlichkeiten: Bestimmte Formulierungen werden
+  unwahrscheinlich, andere wahrscheinlicher.
+
+  Praktische Lehre: Variation ist beim Ideensammeln ein Vorteil – lass dir bewusst mehrere
+  Varianten geben. Für konsistente Markentexte reicht sie nicht aus; dafür brauchst du feste
+  Vorgaben und Beispiele (Kap. 5 und 7).

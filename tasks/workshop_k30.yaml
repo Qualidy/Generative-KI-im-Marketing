@@ -1,0 +1,66 @@
+title: Bildprompt-Vorlagen für die Markenbildsprache
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht nutzt Bild-KI für Stimmungsbilder, aber jedes Teammitglied promptet
+  anders. Das Ergebnis: mal Hochglanz, mal Aquarell, mal Stockfoto-Lächeln. Du entwickelst
+  **Prompt-Vorlagen**, mit denen auch Neue im Team Bilder in der Markenbildsprache erzeugen.
+  Alternativ arbeitest du mit **einem Unternehmen deiner Wahl**.
+
+  ```text
+  Rahmen:
+  Markenstimme: ruhig, ehrlich, naturverbunden, leicht nordisch-trocken.
+  Keine Superlative, kein Greenwashing.
+  Kanäle: Newsletter-Header (3:1), Instagram (4:5), Pinterest (2:3).
+  Keine echten Produkte generieren - nur Stimmungs- und Umfeldbilder.
+  Werkzeug: das im Team freigegebene Bildwerkzeug.
+  ```
+
+  ---
+
+  **Runde 1 – Bildsprache in Bausteine übersetzen.** Beschreibe die Markenbildsprache für jeden
+  der acht Bausteine aus 30.2 in ein bis zwei Stichworten (z. B. Licht: „diffus, bedeckt, nie
+  grell"). Nutze dafür, wenn möglich, zwei bis drei passende eigene Fotos und lass sie von einem
+  Chat-Werkzeug nach Licht, Perspektive, Ausschnitt und Farbe beschreiben.
+
+  **Runde 2 – Drei Vorlagen bauen.** Erstelle je eine Vorlage für die drei Kanäle. Feste
+  Bausteine stehen ausformuliert drin, variable als Platzhalter in eckigen Klammern (mindestens
+  `[Motiv]`, `[Umgebung]`, `[Jahreszeit]`). Teste jede Vorlage mit **zwei** unterschiedlichen
+  Motiven.
+
+  **Runde 3 – Die Komplikation.** Bei den Tests fällt auf: Die erzeugten Menschen sind fast
+  immer jung, schlank, hellhäutig und sportlich – Familien und ältere Menschen aus der
+  Zielgruppe tauchen nicht auf. Passe die Vorlagen so an, dass Vielfalt **beschrieben** statt
+  beschworen wird, ohne dass jedes Bild nach Quote aussieht. Teste erneut.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Lass ein Chat-Werkzeug eine deiner Vorlagen
+  „für maximale Bildqualität optimieren". Du bekommst vermutlich eine längere Fassung mit
+  Begriffen wie „cinematic", „hyperrealistic", „award-winning". Teste beide Fassungen mit
+  denselben zwei Motiven und entscheide. **Widersprich** dem Vorschlag dort, wo er gegen die
+  Markenbildsprache arbeitet, und begründe jede Streichung einzeln.
+
+  **Deliverable:**
+
+  1. Bildsprache-Übersicht mit acht Bausteinen
+  2. drei getestete Vorlagen mit Platzhaltern und je zwei Beispielbildern
+  3. überarbeitete Vorlagen nach Runde 3 mit Vorher/Nachher-Vergleich
+  4. Vergleich und begründete Entscheidung aus Runde 4
+
+  **Fertig bist du erst, wenn** jede Vorlage von einer anderen Person ohne Erklärung genutzt
+  werden kann, alle Kanalformate korrekt gesetzt sind, keine Vorlage echte Produkte
+  generieren lässt und deine Entscheidung aus Runde 4 mindestens drei Streichungen begründet.
+tip: |
+  Der Lernkern liegt in Runde 1 und 3. Eine Bildsprache, die nur als Gefühl existiert („so
+  nordisch halt"), lässt sich nicht prompten. Erst wenn Licht, Farbe und Ausschnitt in Worte
+  gefasst sind, werden Ergebnisse reproduzierbar. Und Vielfalt entsteht durch konkrete
+  Beschreibung einzelner Personen und Situationen, nicht durch Schlagworte.
+solution: |
+  Bewertungskriterien: (1) die Bildsprache ist für alle acht Bausteine konkret und sichtbar
+  beschrieben, nicht mit Gefühlswörtern; (2) die Vorlagen trennen feste und variable Bausteine
+  sauber, setzen das Kanalformat und lassen Platz für Text, wo nötig; (3) die Überarbeitung in
+  Runde 3 beschreibt Personen konkret (Alter, Situation, Konstellation) und zeigt im
+  Vorher/Nachher eine sichtbare Veränderung; (4) die Entscheidung in Runde 4 beruht auf
+  denselben Testmotiven und begründet Streichungen mit der Markenbildsprache (z. B.
+  „hyperrealistic" erzeugt Hochglanz, widerspricht „ehrlich, ruhig").
+
+  Lernziel: eine Markenbildsprache in prüfbare Bildprompt-Bausteine übersetzen und daraus
+  wiederverwendbare Vorlagen machen, die im Team konsistente Ergebnisse liefern.

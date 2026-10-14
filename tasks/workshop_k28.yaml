@@ -1,0 +1,74 @@
+title: Assistenten-Audit vor der Plugin-Migration
+difficulty: 4
+question: |
+  **Szenario:** Es ist Oktober 2026. Im Business-Arbeitsbereich von Fjordlicht **oder eines
+  Unternehmens deiner Wahl** gibt es sieben Custom GPTs, gebaut von verschiedenen Personen,
+  teils ohne Dokumentation. Die Ablösung durch Plugins steht an. Du sollst vor der
+  Migration ein Audit durchführen: Was wird migriert, was überarbeitet, was abgeschaltet?
+
+  ```text
+  Rahmen:
+  Bestand (fiktiv):
+  1 Content-Assistent – Entwürfe und Claim-Check, 4 Wissensdateien, keine Actions
+  2 CRM-Prototyp – Lead-Qualifizierung, Custom Action zum CRM
+  3 "Preisrechner" – enthält Einkaufspreise und Margen als Wissensdatei
+  4 Hashtag-Helfer – nur Instruktionen, seit 6 Monaten nicht genutzt
+  5 Newsletter-Betreffzeilen – Instruktionen mit 3 Beispielen, öffentlich per Link
+  6 Bewerbungs-Vorauswahl – liest Lebensläufe und bewertet Eignung
+  7 Social-Listening-Auswerter – Code-Interpreter an, Websuche an
+  Keine echten Daten verwenden; fehlende Details triffst du als Annahme.
+  ```
+
+  ---
+
+  **Runde 1 – Bestandsaufnahme.** Lege für jeden GPT einen Steckbrief an: Zweck, Bausteine,
+  aktive Fähigkeiten, Aktionen, Sichtbarkeit, verantwortliche Person, Nutzung. Kennzeichne
+  Annahmen.
+
+  **Runde 2 – Risikoprüfung.** Prüfe jeden GPT gegen die Schutzebenen aus Abschnitt 28.3
+  und die Qualitätsgrenzen aus 28.4. Vergib je GPT eine Risikostufe und begründe sie.
+  Führe für einen eigenen Assistenten die vier Testprompts aus 28.3 tatsächlich aus.
+
+  **Runde 3 – Die Komplikation.** Beim Audit stellt sich heraus: GPT 3 war per Link mit einer
+  Agentur geteilt, und GPT 6 wird von der Personalabteilung produktiv genutzt. Bewerte beide
+  Fälle neu – denk bei GPT 6 an die Einordnung von KI in der Personalauswahl im AI Act
+  (Kap. 4) – und lege Sofortmaßnahmen fest.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die IT schlägt vor, alle sieben GPTs „in einem
+  Rutsch" per „Migrate to plugin" umzustellen, um Zeit zu sparen. Entscheide für jeden GPT:
+  migrieren, überarbeiten und migrieren, neu bauen oder abschalten. **Widersprich** dem
+  Vorschlag der IT dort, wo eine unveränderte Migration Risiken mitnimmt.
+
+  **Deliverable:**
+
+  1. sieben Steckbriefe mit gekennzeichneten Annahmen
+  2. Risikotabelle mit Stufe und Begründung je GPT
+  3. Protokoll des eigenen Sicherheitstests
+  4. Sofortmaßnahmen zu GPT 3 und GPT 6
+  5. Migrationsplan mit Entscheidung je GPT, Reihenfolge und Terminen vor dem 11.12.2026
+  6. eine Seite Regeln für künftige Plugins im Team (Ablage, Verantwortung, Tests, Freigabe)
+
+  **Fertig bist du erst, wenn** jeder GPT eine begründete Entscheidung hat, kein Assistent
+  mit vertraulichen Daten oder ungeklärtem Rechtsrisiko unverändert migriert wird, die
+  Custom Action von GPT 2 einen Ersatzweg hat und dein Plan berücksichtigt, dass Plugins
+  privat starten.
+tip: |
+  Der Lernkern: Eine Migration ist der beste Anlass zum Aufräumen. „Migrate to plugin"
+  überträgt auch Probleme – vertrauliche Wissensdateien, fragwürdige Einsatzzwecke,
+  fehlende Verantwortliche. Prüfe deshalb zuerst, ob ein Assistent überhaupt weiter
+  existieren soll, und erst dann, wie er umzieht.
+solution: |
+  Bewertungskriterien: (1) vollständige Steckbriefe, Annahmen sichtbar; (2) Risikostufen
+  nachvollziehbar, insbesondere GPT 3 (vertrauliche Preisdaten in Wissensdatei, auslesbar)
+  und GPT 7 (Code-Interpreter und Websuche, Daten aus Social Media) korrekt als erhöht
+  erkannt; (3) eigener Sicherheitstest dokumentiert; (4) Sofortmaßnahmen zu GPT 3 (Link
+  sofort entziehen, Datei entfernen, Weitergabe bewerten) und GPT 6 (Nutzung stoppen oder
+  mit Datenschutz und Rechtsabteilung klären, da KI in der Personalauswahl als
+  Hochrisiko-Bereich gilt – die Pflichten greifen nach Verschiebung durch den Digital
+  Omnibus ab 02.12.2027, die DSGVO gilt schon jetzt); (5) Migrationsplan mit differenzierten
+  Entscheidungen, etwa den Content-Assistenten migrieren, CRM-Prototyp migrieren und Action neu bauen,
+  GPT 4 abschalten, GPT 5 migrieren und Sichtbarkeit neu setzen; Termine vor dem 11.12.2026;
+  (6) Teamregeln mit eigener Ablage, Verantwortlichen und Testsatz.
+
+  Lernziel: Assistenten als verwalteten Bestand begreifen – mit Verantwortung, Risiko und
+  Lebenszyklus – und einen Plattformwechsel nutzen, um diesen Bestand zu bereinigen.

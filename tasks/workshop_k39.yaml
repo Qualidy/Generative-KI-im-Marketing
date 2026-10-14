@@ -1,0 +1,77 @@
+title: Kennzeichnungs- und Rechteleitfaden für eine Kampagne
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht startet die Winterkampagne „Draußen bleiben" für die Regenjacke „Sølv".
+  Das Marketingteam hat viel mit KI produziert und will die Inhalte in zwei Wochen ausspielen. Die
+  Geschäftsführung möchte vorher einen **Leitfaden**, der für jeden Inhalt klärt: Dürfen wir das
+  veröffentlichen, und müssen wir es kennzeichnen? Du kannst alternativ ein Unternehmen deiner Wahl
+  mit einer vergleichbaren Kampagne nutzen.
+
+  ```text
+  Inhalte der Kampagne:
+  A  Newsletter-Text, mit ChatGPT entworfen, redigiert
+  B  Key Visual: fotorealistische Wanderin im Regen, KI-Hintergrund, echte Jacke montiert
+  C  TikTok-Clip, KI-Video: Regen über Münsters Prinzipalmarkt, Jacke im Vordergrund
+  D  Erklärvideo mit Avatar und Stimme des Produktmanagers (mit Vertrag)
+  E  Blogbeitrag zur neuen EU-Textilstrategie, KI-Entwurf
+  F  Hintergrundmusik aus einer Musik-KI, Free-Plan
+  G  Chatbot "Frag Fjordlicht" im Webshop
+  Kanäle: Webshop, Newsletter, Instagram, TikTok, Blog
+  ```
+
+  ---
+
+  **Runde 1 – Bestandsaufnahme.** Erstelle eine Tabelle mit allen sieben Inhalten: Medium,
+  verwendetes Werkzeug, Kanal, beteiligte reale Personen, Orte oder Marken. Nutze ein KI-Werkzeug
+  für den ersten Entwurf und prüfe ihn selbst.
+
+  **Runde 2 – Prüfung.** Prüfe jeden Inhalt in zwei getrennten Schritten:
+
+  1. **Zulässigkeit:** Urheberrecht, Marken, Persönlichkeitsrechte, Nutzungsbedingungen, UWG
+  2. **Kennzeichnung:** Entscheidungsbaum aus Abschnitt 39.5, Ergebnis mit Begründung
+
+  **Runde 3 – Die Komplikation.** Drei Tage vor dem Start meldet sich der Produktmanager aus
+  Inhalt D: Er verlässt das Unternehmen zum Monatsende und möchte nicht, dass seine Stimme danach
+  weiter genutzt wird. Gleichzeitig stellt sich heraus, dass die Musik in F im Free-Plan erzeugt
+  wurde. Kläre für beide Fälle: Was bedeutet das für die Kampagne, was muss sofort passieren, und
+  welche Regel nehmt ihr in den Leitfaden auf, damit es nicht wieder vorkommt?
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung schlägt vor, einfach **alle**
+  Inhalte mit „KI-generiert" zu kennzeichnen – „dann sind wir auf der sicheren Seite". Das
+  Social-Media-Team möchte dagegen **gar nichts** kennzeichnen, wo es nicht Pflicht ist. Lass dir
+  von einem KI-Werkzeug eine Empfehlung geben. **Widersprich** der Empfehlung dort, wo sie Pflicht und
+  Freiwilligkeit vermischt oder die Markenstimme von Fjordlicht ignoriert, und entscheide begründet.
+
+  **Deliverable:**
+
+  1. Prüftabelle für alle sieben Inhalte mit Zulässigkeit und Kennzeichnungsentscheidung
+  2. Maßnahmen zu Runde 3 mit neuer Leitfadenregel
+  3. begründete Kennzeichnungslinie aus Runde 4, inklusive Formulierung des Hinweises
+  4. einseitiger Leitfaden für das Team mit Entscheidungsbaum, Dokumentationsfeldern und
+     Ansprechperson für Rechtsfragen
+
+  **Fertig bist du erst, wenn** jeder Inhalt eine dokumentierte Entscheidung mit Begründung hat,
+  Zulässigkeit und Kennzeichnung getrennt geprüft sind, beide Probleme aus Runde 3 eine konkrete
+  Sofortmaßnahme und eine Regel haben und deine Linie aus Runde 4 Pflicht und freiwillige
+  Transparenz klar unterscheidet.
+tip: |
+  Der Kern liegt in der Trennung zweier Fragen: **Dürfen wir das?** und **Müssen wir es
+  kennzeichnen?** Ein Label heilt keinen Rechtsverstoß. Und eine Pauschalkennzeichnung ist nicht
+  automatisch die sichere Seite: Sie entwertet den Hinweis dort, wo er wirklich zählt, etwa bei C
+  oder D.
+solution: |
+  Erwartbare Einordnung: A keine Pflicht; B Zulässigkeit hängt an echtem Produktfoto, Plattformlabel
+  bei realistischer Darstellung; C ähnelt einem realen Ort, wirkt echt – offenlegen; D Deepfake einer
+  realen Person mit Einwilligung – offenlegen; E ohne Prüfung offenlegungspflichtig, mit fachlicher
+  Prüfung und benannter Verantwortung nicht; F im Free-Plan meist nicht kommerziell nutzbar –
+  ersetzen; G Hinweis auf KI-Interaktion nach Art. 50 Abs. 1.
+
+  Bewertungskriterien: (1) alle sieben Inhalte vollständig und in getrennten Schritten geprüft;
+  (2) Runde 3 erkennt, dass Einwilligung und Lizenz Voraussetzungen der Nutzung sind, und führt zu
+  Regeln wie Vertragsklauseln zur Nutzungsdauer und Tarifprüfung vor Produktion; (3) Runde 4
+  unterscheidet Pflichtkennzeichnung von freiwilliger Transparenz und begründet die Linie mit der
+  Markenstimme; (4) der Leitfaden ist so konkret, dass ein neues Teammitglied ihn ohne Rückfrage
+  anwenden kann, und enthält den Hinweis, dass er keine Rechtsberatung ersetzt.
+
+  Lernziel: Rechtliche Prüfung und Kennzeichnung als zwei getrennte, dokumentierte Schritte in den
+  Freigabeprozess einbauen – und Transparenz bewusst als Markenentscheidung gestalten.

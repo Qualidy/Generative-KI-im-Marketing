@@ -1,0 +1,51 @@
+title: Newsletter nach Raster erstellen
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug.
+
+  Erstelle einen Newsletter-Entwurf für Fjordlicht (oder ein Unternehmen deiner Wahl) zum Thema
+  „Erster Frost". Nutze dieses Material:
+
+  ```text
+  Blogbeitrag-Kernaussagen: Schichtenprinzip (Basisschicht, Isolation,
+  Wetterschutz); Baumwolle trocknet langsam; Füße und Kopf zuerst warm halten.
+  Produkt: Fleece Skog, 80 Prozent recyceltes Polyester, 3 Farben, Größen XS-XXL.
+  Service: Reparaturservice für Fjordlicht-Produkte, Anmeldung im Webshop.
+  Hauptziel der Mail: Blogbeitrag lesen.
+  ```
+
+  1. Schreibe einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5) mit dem festen Raster aus
+     Abschnitt 13.3.
+  2. Lass zusätzlich drei Paare aus Betreff und Preheader mit unterschiedlichen Ansätzen
+     erstellen.
+  3. Prüfe den Entwurf: Wurden Fakten erfunden (Preise, Termine, weitere Materialangaben)?
+     Gibt es mehr als ein Hauptziel? Sind die Längenvorgaben eingehalten?
+tip: |
+  Gib das Hauptziel ausdrücklich im Purpose an. Ohne diese Angabe stellt die KI das Produktmodul
+  gern in den Vordergrund, weil Newsletter in ihren Trainingsdaten oft verkaufsorientiert sind.
+solution: |
+  Beispielprompt (Auszug):
+
+  ```text
+  Persona: Du bist E-Mail-Marketing-Spezialistin bei Fjordlicht.
+  Request: Erstelle einen Newsletter-Entwurf zum Thema "Erster Frost".
+  Output: festes Raster mit 5 Modulen [Raster aus 13.3], je Zwischenüberschrift
+  und CTA-Text, plus 3 Paare Betreff/Preheader (Nutzen, Frage, Konkretheit).
+  Modifier: Nur Fakten aus dem Material. Keine Preise, keine Termine.
+  Keine Superlative. Fehlende Angaben als [FEHLT].
+  Purpose: Hauptziel ist, dass Abonnenten den Blogbeitrag lesen. Produkt und
+  Service sind Nebenmodule. Zielgruppe: naturverbundene Stadtmenschen 25-45.
+  Tone: ruhig, ehrlich, nordisch-trocken, Du-Ansprache.
+  Material: [Material einfügen]
+  ```
+
+  Typische Prüfbefunde:
+
+  | Prüfpunkt | Häufiger Befund |
+  |---|---|
+  | Erfundene Fakten | „atmungsaktiv" oder „besonders leicht" beim Fleece, obwohl nicht im Material |
+  | Hauptziel | Produktmodul hat den stärksten CTA („Jetzt kaufen") |
+  | Länge | Hauptthema überschreitet 120 Wörter |
+  | Markenstimme | „kuschelig warm durch den Winter" – eher Allerweltston |
+
+  Eine gute Bearbeitung benennt mindestens zwei Befunde und korrigiert sie gezielt.

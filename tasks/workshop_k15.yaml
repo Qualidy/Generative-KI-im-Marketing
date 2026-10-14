@@ -1,0 +1,71 @@
+title: Vom Blogartikel zur ersten Anmeldung
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht will im Herbst mehr Newsletter-Anmeldungen über den Blog gewinnen.
+  Die Marketingleitung gibt dir ein Thema und zwei Wochen Zeit. Erwartet wird ein
+  veröffentlichungsreifes Paket: Artikel, Leadmagnet, Landingpage-Text und die erste Mail. Du
+  kannst alternativ ein Unternehmen deiner Wahl und ein eigenes Thema nutzen.
+
+  ```text
+  Rahmen:
+  Thema: "Regenjacke waschen und imprägnieren"
+  Zielgruppe: Besitzer:innen einer Funktionsjacke, 25-45, wenig Pflegewissen
+  Faktenbasis: Pflegeetikett (30 Grad, kein Weichspüler, Trockner schonend),
+  kostenloser Reparaturservice (erste zwei Jahre), Claim-Liste (nur belegte Aussagen)
+  Erfahrung: aus dir selbst oder aus einem Interview mit einer Person aus
+  deinem Umfeld, die das Thema kennt
+  Keine echten Kundendaten, keine erfundenen Studien
+  ```
+
+  ---
+
+  **Runde 1 – Briefing und Gliederung.** Erstelle ein Briefing mit allen Feldern aus
+  Abschnitt 15.2 und lass es von der KI mit dem Rückfragen-Prompt prüfen. Ergänze die Lücken.
+  Lass eine Gliederung erstellen und überarbeite sie.
+
+  **Runde 2 – Artikel und Leadmagnet.** Erstelle den Artikel (ca. 1.000–1.200 Wörter)
+  abschnittsweise, mit mindestens zwei echten Erfahrungsstellen aus dem Interview. Entwickle
+  einen passenden Leadmagneten (Format aus der Tabelle in Abschnitt 15.6, Inhalt als Entwurf),
+  den Landingpage-Text mit drei Überschriftvarianten und die erste Mail der Strecke.
+
+  **Runde 3 – Die Komplikation.** Der Faktencheck ergibt: Zwei Aussagen im Artikel lassen sich
+  nicht belegen, darunter eine Zahl, die die KI geliefert hat und die dir plausibel vorkam.
+  Außerdem verspricht die Landingpage „alle Pflegetipps für jede Outdoor-Jacke" – der
+  Leadmagnet deckt aber nur Regenjacken ab. Erstelle die Behauptungstabelle aus Abschnitt 15.5
+  für den ganzen Artikel, korrigiere alle Stellen und prüfe die Versprechenskette erneut.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die KI schlägt vor, den Artikel „für SEO" auf
+  2.500 Wörter zu erweitern und zusätzlich zehn ähnliche Artikel zu verwandten Begriffen
+  („Softshell waschen", „Daunenjacke waschen" …) automatisch zu erzeugen. Entscheide, was du
+  davon übernimmst. **Widersprich** dem Vorschlag dort, wo Länge oder Masse keinen Nutzen für die
+  Lesenden bringt, und begründe mit E-E-A-T und Googles Haltung zu massenhaft erzeugten Inhalten.
+
+  **Deliverable:**
+
+  1. Briefing (vor und nach der Rückfragenrunde) und finale Gliederung
+  2. Artikel mit markierten Erfahrungsstellen
+  3. Leadmagnet-Entwurf, Landingpage-Text, erste Mail
+  4. Behauptungstabelle mit Entscheidungen und korrigierten Textstellen
+  5. begründete Entscheidung zu Runde 4
+
+  **Fertig bist du erst, wenn** jede Zahl im Artikel eine geöffnete Quelle oder einen
+  internen Beleg hat, mindestens zwei echte Erfahrungsstellen enthalten sind, Artikel-Hinweis,
+  Landingpage, Leadmagnet und Mail dasselbe versprechen und deine Entscheidung in Runde 4 mit
+  mindestens zwei konkreten Gründen gestützt ist.
+tip: |
+  Der Lernkern liegt in Runde 3: Gerade plausible Zahlen rutschen durch, weil sie niemand
+  anzweifelt. Eine Behauptungstabelle über den ganzen Text ist mühsam, aber sie ist der einzige
+  verlässliche Weg. In Runde 4 lohnt der Blick auf die Lesenden: Würde jemand, der seine Jacke
+  waschen will, 2.500 Wörter lesen wollen? Mehr Text ist kein Qualitätsmerkmal.
+solution: |
+  Bewertungskriterien: (1) Briefing deckt alle Felder ab, die Rückfragenrunde führt zu
+  sichtbaren Ergänzungen, die Gliederung ist eigenständig überarbeitet; (2) Artikel ist
+  abschnittsweise entstanden, enthält mindestens zwei echte Erfahrungsstellen, Leadmagnet passt
+  thematisch genau zum Artikel, Landingpage hat ein Ziel und drei Überschriftvarianten;
+  (3) Behauptungstabelle ist vollständig, unbelegte Aussagen sind gestrichen oder belegt, das
+  Landingpage-Versprechen ist auf Regenjacken eingegrenzt; (4) Runde 4 lehnt die Massenerzeugung
+  begründet ab (Scaled Content Abuse, fehlende Erfahrung, Wartungsaufwand), übernimmt aber
+  sinnvolle Einzelideen, etwa einen weiteren Artikel mit echter Erfahrung oder einen FAQ-Abschnitt.
+
+  Lernziel: Lange Inhalte mit KI effizient erstellen und dabei die Teile, die nur Menschen
+  liefern können – Erfahrung, Faktenprüfung, Verantwortung für Versprechen – bewusst einplanen.

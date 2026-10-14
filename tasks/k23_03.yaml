@@ -1,0 +1,53 @@
+title: Die Migration bewerten
+difficulty: 3
+question: |
+  Das Fjordlicht-Team nutzt seit einem Jahr den Custom GPT „Produkttext-Helfer". Er hat:
+
+  ```text
+  - ausführliche Instruktionen (Rolle, Ablauf, Regeln, Ausgabeformat)
+  - 4 Wissensdateien: Styleguide.pdf, Produktdaten_2025.xlsx,
+    Claim-Liste.docx, Beispieltexte.docx
+  - eine Custom Action, die Lagerbestände aus dem Shopsystem abruft
+  - Konversationsstarter
+  - Freigabe: im gesamten Arbeitsbereich sichtbar
+  - eingestelltes Modell: ein schnelles Standardmodell
+  - viele gespeicherte Gespräche mit gelungenen Formulierungen
+  ```
+
+  Die Teamleitung fragt: „Wir klicken einfach auf ‚Migrate to plugin', dann läuft alles weiter wie
+  bisher, oder?"
+
+  1. Erstelle eine Tabelle: Bestandteil – wird übertragen ja/nein – was ist zu tun.
+  2. Nenne zwei Dinge, die bei dieser Gelegenheit **ohnehin** überarbeitet werden sollten,
+     unabhängig von der Migration.
+  3. Formuliere eine Antwort an die Teamleitung in maximal 120 Wörtern.
+tip: |
+  Halte dich an die Fakten aus Abschnitt 23.4. Und schau genau auf die Dateinamen: Eine
+  Migration ist ein guter Anlass für einen Frühjahrsputz.
+solution: |
+  | Bestandteil | Übertragen? | Zu tun |
+  |---|---|---|
+  | Instruktionen | ja, als Skill | gegenlesen, ob alles korrekt übernommen ist |
+  | Wissensdateien | ja, als Referenzdateien | auf Aktualität prüfen |
+  | Custom Action Lagerbestand | nein | Bedarf klären, ggf. Neubau als App bzw. MCP-Server |
+  | Konversationsstarter | nicht sicher | im Plugin prüfen, sonst Kurzanleitung |
+  | Freigabe Arbeitsbereich | nein, Plugin startet privat | Freigabe bewusst neu setzen |
+  | Modell | nein | im Plugin prüfen und testen |
+  | Gesprächsverläufe | nein | gelungene Formulierungen vorher sichern, als Beispieltexte aufnehmen |
+
+  Ohnehin überarbeiten: (1) **Produktdaten_2025.xlsx** ist veraltet – neue Kollektion fehlt.
+  (2) Die Instruktionen werkzeugunabhängig in einem Steckbrief ablegen, damit die nächste
+  Umstellung einfacher wird. Sinnvoll auch: Testfälle definieren und vor und nach der Migration
+  laufen lassen (Kap. 25).
+
+  Antwort an die Teamleitung:
+
+  „Nicht ganz. Instruktionen und Wissensdateien werden übernommen, aber die Lagerbestand-Abfrage,
+  das eingestellte Modell, die Freigabe und alle bisherigen Gespräche nicht. Das Plugin ist nach
+  der Migration nur für die Erstellerin sichtbar. Ich schlage vor: Gute Formulierungen aus alten
+  Chats sichern, Produktdaten aktualisieren, migrieren, mit zehn Testfällen vergleichen, dann
+  freigeben. Ob wir die Lagerabfrage wirklich brauchen, klären wir separat. Aufwand: etwa einen
+  halben Tag."
+
+  Bewertungskriterien: Fakten korrekt, keine Annahme „läuft weiter wie bisher", Migration als
+  Anlass zur Qualitätsprüfung genutzt.

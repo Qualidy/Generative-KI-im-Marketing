@@ -1,0 +1,69 @@
+title: KI-Einführungsplan für ein Marketingteam
+difficulty: 4
+question: |
+  **Szenario:** Das Marketingteam von Fjordlicht hat im Kurs viel ausprobiert. Jetzt soll daraus
+  ein geordneter Einsatz werden. Die Geschäftsführung bittet dich, einen **Einführungsplan für die
+  nächsten drei Monate** vorzulegen, der Nutzen, Risiken und Kosten nachvollziehbar macht. Du kannst
+  alternativ das Marketingteam eines Unternehmens deiner Wahl nehmen.
+
+  ```text
+  Rahmen:
+  Team: 5 Personen (Leitung, Content, Social Media, Grafik, CRM/Newsletter)
+  Vorhanden: Content-Assistent (Kap. 26), ChatGPT im Business-Tarif für 2 Personen
+  Budget: begrenzt, Erweiterung nur mit Nachweis des Nutzens
+  Kanäle: Webshop, Blog, Newsletter, Instagram, TikTok, LinkedIn, Pinterest
+  Keine echten Kundendaten im Workshop, nur Platzhalter oder fiktive Daten
+  ```
+
+  ---
+
+  **Runde 1 – Bestandsaufnahme.** Liste mindestens zwölf wiederkehrende Aufgaben des Teams mit
+  geschätztem Zeitaufwand pro Monat. Bewerte sie mit dem Prompt aus Abschnitt 40.3 nach
+  Zeitersparnis, Risiko, Datenart und Messbarkeit. Prüfe die KI-Bewertung und korrigiere mindestens
+  zwei Einschätzungen begründet.
+
+  **Runde 2 – Plan erstellen.** Erstelle den Dreimonatsplan nach den fünf Schritten aus Abschnitt
+  40.3. Er muss enthalten:
+
+  1. zwei Pilot-Use-Cases mit Verantwortlichen und Kennzahl samt Ausgangswert
+  2. eine einseitige Richtlinie: Werkzeuge, Datenampel, Freigabe, Kennzeichnung
+  3. eine Maßnahme zur KI-Kompetenz nach Art. 4 AI Act
+  4. einen Entscheidungstermin mit Kriterien für Ausweiten oder Stoppen
+
+  **Runde 3 – Die Komplikation.** Nach Vorstellung des Plans fragt die Geschäftsführung: „Wenn KI so
+  viel Zeit spart, können wir dann die freiwerdende Stelle im Grafikbereich nicht nachbesetzen?"
+  Gleichzeitig äußert die Grafikerin im Team die Sorge, dass ihre Arbeit „von der KI ersetzt" wird.
+  Erarbeite eine Antwort an die Geschäftsführung und eine an das Team. Beide müssen mit deinen
+  Daten aus Runde 1 argumentieren, nicht mit Schlagworten.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Lass dir von einem KI-Werkzeug eine Rollenbeschreibung
+  für eine neue Funktion „KI-Verantwortliche:r Marketing" erstellen. Du bekommst wahrscheinlich ein
+  umfangreiches Profil. **Widersprich** dort, wo es für ein Fünf-Personen-Team überdimensioniert
+  ist, und entscheide begründet: eigene Stelle, Teilaufgabe einer bestehenden Rolle oder geteilte
+  Verantwortung?
+
+  **Deliverable:**
+
+  1. bewertete Aufgabenliste mit begründeten Korrekturen
+  2. Dreimonatsplan mit allen vier Pflichtbestandteilen
+  3. zwei Antworten aus Runde 3, je höchstens eine halbe Seite
+  4. Entscheidung zur KI-Verantwortung mit gestrichenen Punkten und Begründung
+
+  **Fertig bist du erst, wenn** jeder Pilot eine Kennzahl mit Ausgangswert hat, die Richtlinie auf
+  eine Seite passt, deine Antworten in Runde 3 mit konkreten Aufgaben und Zeiten argumentieren und
+  die Entscheidung in Runde 4 mindestens drei Streichungen einzeln begründet.
+tip: |
+  Der Kern liegt in Runde 3. Zeitersparnis bei Entwürfen bedeutet nicht automatisch weniger Bedarf
+  an Menschen: Prüfung, Art Direction, Rechte-Check und Nachbearbeitung wachsen mit. Wer ehrlich
+  rechnet, kann beiden Seiten eine belastbare Antwort geben – ohne Panik und ohne Schönfärberei.
+solution: |
+  Bewertungskriterien: (1) mindestens zwölf Aufgaben mit Zeitaufwand und nachvollziehbaren
+  Korrekturen der KI-Bewertung; (2) der Plan enthält zwei messbare Pilots mit Baseline, eine
+  einseitige Richtlinie mit Datenampel und Kennzeichnung (Kap. 4, 39), eine Kompetenzmaßnahme und
+  klare Kriterien für die Entscheidung; (3) die Antworten in Runde 3 rechnen mit realen Aufgaben,
+  benennen, welche Tätigkeiten wegfallen und welche hinzukommen, und vermeiden sowohl
+  Beschwichtigung als auch Übertreibung; (4) die Rollenentscheidung passt zur Teamgröße und
+  begründet Streichungen einzeln.
+
+  Lernziel: Den Einsatz generativer KI als gestaltbare Veränderung von Arbeit planen – messbar,
+  regelkonform und so, dass Geschäftsführung und Team die Entscheidung nachvollziehen können.

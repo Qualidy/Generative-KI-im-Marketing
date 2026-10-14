@@ -1,0 +1,44 @@
+title: Zufall, Nachbessern und Bearbeiten im Selbstversuch
+difficulty: 2
+question: |
+  Diese Übung machst du direkt in ChatGPT Images (alternativ Gemini oder Microsoft Copilot).
+
+  1. **Basisbild.** Erzeuge mit diesem Prompt ein Bild:
+
+     ```text
+     Erzeuge ein Foto im Querformat: Eine Person Mitte dreißig in einer
+     dunkelgrünen Regenjacke steht an einem nebligen Herbstmorgen am Ufer
+     eines Sees. Ruhige Stimmung, natürliches Licht, viel Himmel links im Bild.
+     ```
+
+  2. **Zufallstest.** Starte zwei **neue** Chats und verwende denselben Prompt. Halte fest, was
+     gleich bleibt und was sich ändert (Person, Komposition, Farben, Licht).
+  3. **Nachbessern im Gespräch.** Gehe zurück in den ersten Chat und gib drei Änderungen
+     nacheinander: Himmel dunkler und bewölkt; Person blickt auf den See statt in die Kamera;
+     Format 4:5 für Instagram.
+  4. **Bewerten.** Notiere bei jeder Änderung, ob nur das Gewünschte geändert wurde oder ob sich
+     auch anderes verschoben hat (Gesicht, Jacke, Hintergrund).
+tip: |
+  Achte in Schritt 4 besonders auf die Jacke. Genau dort zeigt sich, warum echte Produkte nicht
+  zuverlässig über mehrere Bearbeitungsschritte stabil bleiben.
+solution: |
+  Typische Beobachtungen:
+
+  | Schritt | Beobachtung |
+  |---|---|
+  | Zufallstest | Grundidee bleibt (Person, See, Nebel), aber Gesicht, Jackenschnitt, Bildaufteilung und Farbtöne variieren deutlich. |
+  | Himmel dunkler | gelingt meist sauber; manchmal wird das ganze Bild dunkler oder kühler. |
+  | Blickrichtung | Pose ändert sich, oft auch Gesicht oder Haltung – die Person wirkt wie eine andere. |
+  | Format 4:5 | Bild wird neu aufgebaut oder beschnitten; Details der Jacke ändern sich häufig mit. |
+
+  Lehren daraus:
+
+  - Jeder neue Chat ist ein neuer Zufallsstart. Wer Serien braucht, muss mit Referenzen arbeiten
+    (Kap. 33).
+  - Bearbeitung im Gespräch ist bequem, aber nicht verlustfrei: Mit jeder Runde kann sich
+    Ungewolltes verschieben. Ändere deshalb **eine Sache pro Schritt** und vergleiche.
+  - Kleidungsdetails (Kragen, Reißverschluss, Taschen) wandern. Für Produktdarstellungen ist das
+    ein Ausschlusskriterium.
+
+  Eine gute Bearbeitung enthält drei Bilder aus dem Zufallstest, die drei Bearbeitungsschritte
+  und je eine Notiz zu unerwünschten Nebenwirkungen.

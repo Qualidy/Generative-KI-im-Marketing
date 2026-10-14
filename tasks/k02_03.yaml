@@ -1,0 +1,61 @@
+title: Einen KI-Entwurf kritisch prüfen
+difficulty: 3
+question: |
+  Eine Kollegin legt dir den folgenden, mit KI erstellten Entwurf für den Fjordlicht-Newsletter
+  zur Freigabe vor. Sie hat die Websuche nicht genutzt und keine Fakten mitgegeben.
+
+  ```text
+  Betreff: Der Herbst ist da – und mit ihm unsere besten Jacken aller Zeiten!
+
+  Hallo Sabine,
+  laut einer aktuellen Studie des Umweltbundesamts kaufen 68 % der Deutschen
+  inzwischen bewusst nachhaltige Outdoor-Kleidung. Bei Fjordlicht sind wir
+  stolz, Vorreiter zu sein: Unsere Regenjacke Sølv ist zu 100 % klimaneutral
+  und wurde gerade vom Outdoor-Magazin „Bergwelt" zur Testsiegerin gekürt.
+  Perfekt für jeden Mann, der draußen Abenteuer sucht – und für die Frau,
+  die es gemütlich mag, gibt es unser kuscheliges Fleece Skog.
+  Nur noch bis Sonntag: 20 % auf alles!
+  ```
+
+  1. Markiere **jede** problematische Stelle und ordne sie einer Grenze aus diesem Kapitel zu
+     (Halluzination, Bias, Wissensstand, Konsistenz mit der Markenstimme, Datenschutz).
+  2. Lege fest, **was** du für jede Stelle prüfen müsstest und **wo** (Quelle, Person, Dokument).
+  3. Formuliere einen Prompt, mit dem die Kollegin beim nächsten Mal einen deutlich besseren
+     ersten Entwurf erhält.
+  4. Teste deinen Prompt im KI-Werkzeug und bewerte das Ergebnis kritisch: Welche Probleme sind
+     verschwunden, welche nicht?
+tip: |
+  Lies den Entwurf zweimal: einmal auf Fakten, einmal auf Ton und Rollenbilder. Achte auch auf
+  die Anrede – woher kommt der Name, und wie ist er in den Entwurf gelangt? Und vergleiche den
+  Ton mit der Markenstimme von Fjordlicht (ruhig, ehrlich, keine Superlative).
+solution: |
+  | Stelle | Grenze | Prüfung |
+  |---|---|---|
+  | „aktuelle Studie des Umweltbundesamts", „68 %" | Halluzination, ggf. Wissensstand | Studie beim Umweltbundesamt suchen; ohne Beleg streichen |
+  | „zu 100 % klimaneutral" | Halluzination, Greenwashing-Risiko | Nachweis bei Produktmanagement; ohne Beleg streichen |
+  | „Testsiegerin" bei „Bergwelt" | Halluzination | Testbericht anfordern; ohne Beleg streichen |
+  | „Hallo Sabine" | Datenschutz | klären, ob echte Kundendaten im Prompt waren; Personalisierung gehört als Platzhalter ins Newsletter-Tool, nicht in den Prompt |
+  | „jeden Mann … Abenteuer", „die Frau … gemütlich" | Bias | Rollenklischees entfernen, Produkte ohne Geschlechterzuschreibung beschreiben |
+  | „besten Jacken aller Zeiten", „stolz, Vorreiter", Ausrufezeichen | Konsistenz mit Markenstimme | gegen Styleguide prüfen: keine Superlative |
+  | „20 % auf alles bis Sonntag" | Halluzination möglich | mit Aktionsplanung abgleichen |
+
+  Beispielprompt:
+
+  ```text
+  Du schreibst für Fjordlicht. Markenstimme: ruhig, ehrlich, leicht nordisch-
+  trocken, Du-Ansprache, keine Superlative, keine Ausrufezeichen.
+  Aufgabe: Entwurf für den Herbstnewsletter mit Betreff, Preheader und
+  Text (maximal 120 Wörter). Anrede als Platzhalter [Vorname].
+  Fakten: [Produktfakten Sølv und Skog], [Aktion laut Aktionsplan].
+  Regeln: Nutze nur diese Fakten. Keine Statistiken, Studien, Testsiege oder
+  Nachhaltigkeitsaussagen, die nicht in den Fakten stehen. Keine
+  Rollenzuschreibungen nach Geschlecht. Fehlt etwas, schreibe [FEHLT].
+  ```
+
+  Typische Bewertung nach dem Test: Erfundene Fakten und Klischees verschwinden weitgehend, der
+  Ton passt besser. Es bleiben Feinheiten im Ton und das Risiko leicht veränderter Fakten – die
+  Freigabe durch einen Menschen bleibt nötig.
+
+  Bewertungskriterien: mindestens sechs Stellen korrekt zugeordnet, darunter der
+  Datenschutzaspekt der Anrede; Prüfwege sind konkret; der Prompt enthält Fakten, Verbote und
+  `[FEHLT]`-Regel; die Bewertung benennt auch verbleibende Schwächen.

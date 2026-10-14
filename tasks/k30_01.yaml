@@ -1,0 +1,47 @@
+title: Bausteine eines Bildprompts erkennen
+difficulty: 1
+question: |
+  Untersuche den folgenden Bildprompt für einen Instagram-Post von Fjordlicht.
+
+  ```text
+  Foto von einer Familie mit zwei Kindern beim Picknick im Wald, Herbst,
+  goldene Stunde, Gegenlicht, gedeckte warme Farben, keine Handys,
+  ultra-detailed, masterpiece, 8K
+  ```
+
+  1. Welche der acht Bausteine (Motiv, Umgebung, Stil, Licht, Komposition, Kamera,
+     Farbstimmung, Format) sind enthalten, welche fehlen?
+  2. Welche Angaben sind **Füllwörter**, die kaum etwas beitragen?
+  3. Formuliere die negative Angabe „keine Handys" positiv um.
+  4. Ergänze die beiden fehlenden Bausteine, die für einen Instagram-Post am wichtigsten sind.
+tip: |
+  Überlege bei Frage 4, was ein Instagram-Post technisch zwingend braucht und was bei einem
+  Familienbild am häufigsten „irgendwie falsch" wirkt.
+solution: |
+  | Baustein | enthalten? | Fundstelle |
+  |---|---|---|
+  | Motiv | ja | Familie mit zwei Kindern beim Picknick |
+  | Umgebung | ja | Wald, Herbst |
+  | Stil | teilweise | „Foto" – ohne Anmutung (dokumentarisch? inszeniert?) |
+  | Licht | ja | goldene Stunde, Gegenlicht |
+  | Komposition | nein | – |
+  | Kamera | nein | – |
+  | Farbstimmung | ja | gedeckte warme Farben |
+  | Format | nein | – |
+
+  Füllwörter: „ultra-detailed, masterpiece, 8K" – sie bringen bei aktuellen Modellen wenig und
+  schieben das Bild eher in einen überglatten Hochglanz-Look.
+
+  Positive Umformulierung: „Die Familie ist ins Gespräch vertieft, die Hände halten Becher und
+  Brot" – so ist klar, was stattdessen zu sehen ist.
+
+  Wichtigste Ergänzungen:
+
+  ```text
+  Format: Hochformat 4:5 für Instagram.
+  Komposition: Familie im unteren Bilddrittel, aus leichter Distanz,
+  ungestellt, nicht in die Kamera blickend.
+  ```
+
+  Das Format ist zwingend für den Kanal, die Komposition verhindert das typische frontale
+  „Werbefamilien"-Bild.

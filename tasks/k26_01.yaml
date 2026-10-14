@@ -1,0 +1,35 @@
+title: Was gehört wohin beim Content-Assistenten?
+difficulty: 1
+question: |
+  Ordne die folgenden Inhalte dem richtigen Baustein des Content-Assistenten zu – **Instruktionen**,
+  **Wissensdatei**, **Fähigkeit/Werkzeug** oder **Konversationsstarter** – und begründe
+  jeweils in einem Halbsatz.
+
+  1. „Die Skog besteht zu 80 % aus recyceltem Polyester (Materialzertifikat 2025)."
+  2. „Wenn eine Angabe nicht in den Dateien steht, schreibe [FEHLT: was fehlt]."
+  3. „Claim-Check: Prüfe diesen Text"
+  4. Websuche ausgeschaltet
+  5. Liste aller Produktnamen mit Materialien und Farben
+  6. „Keine Superlative, keine Ausrufezeichen-Ketten."
+  7. Drei freigegebene Newsletter als Stilvorbild
+
+  Welche dieser Inhalte würdest du ändern müssen, wenn Fjordlicht ein neues Produkt einführt?
+tip: |
+  Faustregel: **Regeln und Verhalten** gehören in die Instruktionen, **Fakten und Beispiele**
+  in Wissensdateien. Was sich häufig ändert, sollte nicht in den Instruktionen stehen.
+solution: |
+  | Nr. | Baustein | Begründung |
+  |---|---|---|
+  | 1 | Wissensdatei (`claim-liste.md`) | belegte Faktenaussage mit Quelle |
+  | 2 | Instruktionen | Verhaltensregel für alle Modi |
+  | 3 | Konversationsstarter | Einstieg in einen Modus per Klick |
+  | 4 | Fähigkeit/Werkzeug | verhindert Übernahme fremder Behauptungen |
+  | 5 | Wissensdatei (`produktdaten.csv`) | Stammdaten, ändern sich regelmäßig |
+  | 6 | Instruktionen | Teil der Markenstimme |
+  | 7 | Wissensdatei (`beispieltexte.md`) | Stilvorbilder, Few-Shot-Material |
+
+  Bei einem neuen Produkt ändern sich nur **Wissensdateien**: `produktdaten.csv`, eventuell
+  `claim-liste.md` (neue belegte Aussagen) und später `beispieltexte.md`. Einzige Ausnahme in
+  den Instruktionen ist die Zeile mit den exakten Produktnamen – ein Hinweis, dass man sie
+  besser ebenfalls in die Produktdatei verlagert. Genau das ist der Vorteil der Trennung: Das
+  Verhalten bleibt stabil, die Fakten werden gepflegt.

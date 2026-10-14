@@ -1,0 +1,52 @@
+title: Gezielte Überarbeitung mit Änderungsliste
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT mit Schreibblöcken oder eine Alternative
+  wie Claude, Gemini oder Copilot).
+
+  Ausgangstext für einen Newsletter-Teaser:
+
+  ```text
+  Unser neues Fleece Skog ist einfach das beste Fleece, das es gibt!!!
+  Es ist super warm, mega nachhaltig und rettet quasi den Planeten.
+  Jetzt zuschlagen, bevor es weg ist! Das Material besteht zu 80 Prozent
+  aus recyceltem Polyester. Erhältlich in drei Farben.
+  ```
+
+  1. Lass den Text als Schreibblock (bzw. Dokument) ausgeben, ohne ihn zu verändern.
+  2. Überarbeite **nur den ersten Satz** gezielt in Fjordlicht-Markenstimme (ruhig, ehrlich,
+     keine Superlative).
+  3. Überarbeite danach **nur den zweiten Satz** so, dass keine unbelegte Nachhaltigkeitsaussage
+     übrig bleibt.
+  4. Verlange nach jedem Schritt eine Änderungsliste.
+  5. Prüfe am Ende selbst: Sind „80 Prozent", „recyceltes Polyester" und „drei Farben" unverändert?
+tip: |
+  Formuliere jede Anweisung mit einer Grenze („Ändere ausschließlich …") und einem Schutz für
+  Zahlen und Produktnamen. Ohne diese Grenze schreibt das Werkzeug oft den ganzen Text neu.
+solution: |
+  Beispielanweisung für Schritt 2:
+
+  ```text
+  Überarbeite ausschließlich den ersten Satz in dieser Markenstimme:
+  ruhig, ehrlich, leicht nordisch-trocken, Du-Ansprache, keine Superlative,
+  keine Ausrufezeichen. Alles andere bleibt wortgleich.
+  Liste danach auf, was du geändert hast.
+  ```
+
+  Mögliches Ergebnis nach Schritt 2 und 3:
+
+  ```text
+  Das neue Fleece Skog hält warm, ohne aufzutragen.
+  Sein Material besteht zu 80 Prozent aus recyceltem Polyester.
+  Jetzt zuschlagen, bevor es weg ist! Das Material besteht zu 80 Prozent
+  aus recyceltem Polyester. Erhältlich in drei Farben.
+  ```
+
+  Beobachtung: Der zweite Satz wiederholt jetzt die Materialangabe – ein typischer Effekt, wenn
+  man eine unbelegte Aussage durch die einzige belegte ersetzt. Das ist kein Fehler der
+  Anweisung, sondern ein Strukturproblem, das du erst beim Lesen des Ganzen erkennst (Phase 2).
+  Der dritte Satz („Jetzt zuschlagen …") wurde korrekt **nicht** angefasst, passt aber auch nicht
+  zur Marke – ein Kandidat für den nächsten gezielten Schritt.
+
+  Eine gute Bearbeitung zeigt: Zahlen und Produktname unverändert, Änderungslisten vorhanden,
+  und mindestens eine Stelle, an der du die Änderungsliste mit dem Text abgeglichen hast.

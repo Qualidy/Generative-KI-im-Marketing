@@ -1,0 +1,43 @@
+title: Dein 90-Tage-Plan
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug.
+
+  1. Nutze den Prompt aus Abschnitt 40.4 und fülle alle Platzhalter mit deiner realen Ausgangslage:
+     angestrebte oder aktuelle Rolle, verfügbare Werkzeuge, Zeit pro Woche, Stärken und
+     Unsicherheiten aus dem Kurs.
+  2. Prüfe den Vorschlag mit diesen vier Fragen:
+     - Ist jede Phase mit der angegebenen Zeit realistisch?
+     - Setzt der Plan Werkzeuge oder Daten voraus, die du nicht hast?
+     - Ist jedes Ergebnis prüfbar, also ja oder nein beantwortbar?
+     - Enthält der Plan mindestens einen Schritt zu Datenschutz, Recht oder Kennzeichnung?
+  3. Überarbeite den Plan im Dialog, bis alle vier Fragen mit Ja beantwortet sind.
+  4. Trage die drei Phasenziele in deinen Kalender ein – mit einem Termin für den Rückblick nach
+     30 Tagen.
+tip: |
+  KI-Pläne sind fast immer zu voll. Ein guter Plan hat lieber drei Aufgaben pro Phase, die du
+  wirklich erledigst, als acht, von denen du zwei schaffst. „Mehr mit KI arbeiten" ist kein Ergebnis,
+  „10 getestete Prompts in der Bibliothek" schon.
+solution: |
+  Typische Schwächen des ersten KI-Vorschlags und passende Korrekturen:
+
+  | Schwäche | Korrektur |
+  |---|---|
+  | 10–15 Aufgaben pro Phase | auf drei konzentrieren |
+  | Ergebnis „Kenntnisse vertiefen" | messbar machen: „ein Assistent mit fünf Testfällen" |
+  | empfiehlt Werkzeuge ohne Zugang | auf verfügbare Werkzeuge beschränken oder Beschaffung als Aufgabe |
+  | kein Bezug zu Recht oder Datenschutz | eine Aufgabe ergänzen, etwa Datenampel für die eigene Arbeit |
+  | Phase 3 ohne Vergleich | Vorher/Nachher-Messung einer Aufgabe einplanen |
+
+  Beispiel einer guten Phase 2:
+
+  ```text
+  Tage 31-60 – Ziel: eine wiederkehrende Aufgabe an einen Assistenten übergeben
+  1. Aufgabe auswählen und Zeitaufwand heute messen
+  2. Assistent mit Instruktionen und zwei Wissensdateien anlegen
+  3. fünf Testfälle durchlaufen und dokumentieren
+  Ergebnis: Assistent besteht vier von fünf Testfällen
+  ```
+
+  Bewertungskriterien: alle Platzhalter real gefüllt, alle vier Prüffragen mit Ja beantwortet,
+  Rückblicktermin gesetzt.

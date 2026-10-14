@@ -1,0 +1,50 @@
+title: Arbeitsumgebung einrichten – Anweisungen, Projekte, Memory
+difficulty: 3
+question: |
+  Du arbeitest im Marketingteam von Fjordlicht und betreust nebenher einen privaten Blog über
+  Fotografie. Beides machst du mit ChatGPT (oder einer Alternative mit vergleichbaren Funktionen).
+
+  1. **Aufteilung:** Entscheide, welche Vorgaben in die **benutzerdefinierten Anweisungen**, welche
+     in ein **Projekt „Fjordlicht"** und welche **nirgends dauerhaft** gespeichert werden sollen.
+     Ordne mindestens acht Vorgaben zu, z. B. Markenstimme, Antwortlänge, Produktdaten, Namen von
+     Großkunden, Fotografie-Vorlieben, „markiere Unsicherheiten", Newsletter-Abonnentenzahl,
+     Kampagnenbudget.
+  2. **Formulierung:** Schreibe die benutzerdefinierten Anweisungen (höchstens 80 Wörter) und die
+     Projektanweisung (höchstens 120 Wörter).
+  3. **Risikobewertung:** Beschreibe zwei Situationen, in denen Memory oder dauerhafte Anweisungen
+     zu schlechteren Ergebnissen oder einem Datenschutzproblem führen können, und je eine
+     Gegenmaßnahme.
+tip: |
+  Faustregel: Was für **alle** Chats gilt, ist allgemeine Arbeitsweise. Was nur für eine Marke
+  gilt, gehört ins Projekt. Was vertraulich ist oder sich schnell ändert, gehört gar nicht in einen
+  dauerhaften Speicher – sondern bei Bedarf in den einzelnen Prompt, sofern das Werkzeug dafür
+  freigegeben ist.
+solution: |
+  | Vorgabe | Ablage | Grund |
+  |---|---|---|
+  | Antworte knapp, frage nach bei fehlenden Angaben | Anweisungen | gilt überall |
+  | Markiere Unsicherheiten | Anweisungen | gilt überall |
+  | Markenstimme Fjordlicht | Projekt | nur für diese Marke |
+  | Produktdaten (Produktblätter) | Projekt (Dateien) | markenspezifisch, regelmäßig aktualisieren |
+  | Newsletter rund 38.000 Abonnenten | Projekt | nützlicher Kontext, nicht vertraulich |
+  | Fotografie-Vorlieben | eigenes Projekt oder privat | gehört nicht in die Arbeitsumgebung |
+  | Namen von Großkunden | nirgends dauerhaft | vertraulich, nur in freigegebenen Tarifen und nur bei Bedarf |
+  | Kampagnenbudget | nirgends dauerhaft | intern, ändert sich, kann Antworten unbemerkt verzerren |
+
+  Beispiel für benutzerdefinierte Anweisungen:
+
+  ```text
+  Ich arbeite im Marketing. Antworte knapp und strukturiert.
+  Wenn Angaben fehlen, stelle Rückfragen, statt zu raten.
+  Markiere unsichere Aussagen mit [PRÜFEN]. Keine Emojis,
+  außer ich bitte darum.
+  ```
+
+  Risiken und Gegenmaßnahmen: (1) Memory merkt sich eine veraltete Angabe, etwa einen alten Preis,
+  und baut sie unbemerkt in Texte ein – Gegenmaßnahme: Memory monatlich prüfen, Preise nur aus
+  aktuellen Produktblättern. (2) Persönliche oder vertrauliche Daten landen über Memory in einem
+  Consumer-Konto – Gegenmaßnahme: nur freigegebene Business-Tarife nutzen, sensible Themen im
+  temporären Chat, Memory für das Arbeitskonto gegebenenfalls abschalten.
+
+  Bewertungskriterien: begründete Zuordnung aller Vorgaben, kurze und allgemeine Anweisungen,
+  Risiken mit konkreter und umsetzbarer Gegenmaßnahme.

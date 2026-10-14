@@ -1,0 +1,43 @@
+title: Eine Prompt-Kette mit Prüfpunkten
+difficulty: 3
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Für Fjordlicht (oder ein Unternehmen deiner Wahl)
+  soll aus **einer** Kernbotschaft Content für drei Kanäle entstehen: Newsletter, LinkedIn und
+  Instagram. Thema: „Reparieren statt neu kaufen – unser Reparaturservice für Outdoor-Jacken".
+
+  1. **Ein-Prompt-Variante:** Lass alles in einem einzigen Prompt erzeugen und speichere das
+     Ergebnis.
+  2. **Kette:** Baue eine Kette aus mindestens vier Schritten (z. B. Kernbotschaft und Belege
+     festlegen → Kanalziele definieren → Texte je Kanal → Prüfung durch eine kritische Rolle im
+     neuen Chat). Lege für jeden Übergang einen **Prüfpunkt** fest: Was kontrollierst du, bevor du
+     weitergehst?
+  3. **Vergleich und Bewertung:** Vergleiche beide Varianten. Wo ist die Kette klar besser, wo
+     lohnt sich der Mehraufwand nicht? Formuliere eine Faustregel für dein Team.
+tip: |
+  Der wichtigste Prüfpunkt liegt am Anfang: Stimmen die **Belege** für die Kernbotschaft? Ein
+  falscher Fakt in Schritt 1 wird in jedem Kanal korrekt formuliert wiederholt – dreimal statt
+  einmal.
+solution: |
+  Beispielkette:
+
+  | Schritt | Prompt-Auftrag | Prüfpunkt |
+  |---|---|---|
+  | 1 | Kernbotschaft in einem Satz und drei belegbare Fakten zum Reparaturservice | Fakten mit interner Quelle abgeglichen, nichts erfunden |
+  | 2 | Ziel und Zielgruppe je Kanal | Ziele unterscheiden sich, passen zur Kanallogik |
+  | 3 | Texte je Kanal mit Kernbotschaft und Fakten als Material | Länge, Format, Markenstimme |
+  | 4 | Kritische Prüfung als Compliance-Rolle im neuen Chat | keine unbelegten Umweltaussagen, keine Übertreibung |
+
+  Typische Beobachtung: Die Ein-Prompt-Variante liefert drei Texte, die sich stark ähneln, oft mit
+  erfundenen Details („über 5.000 Jacken repariert"). Die Kette liefert kanalgerechtere Texte, und
+  Fehler fallen in Schritt 1 statt nach der Veröffentlichung auf.
+
+  Mögliche Faustregel:
+
+  ```text
+  Ein Prompt reicht, wenn das Ergebnis kurz ist und in einem Blick
+  prüfbar. Eine Kette lohnt sich, sobald Fakten, mehrere Kanäle
+  oder mehr als etwa 300 Wörter im Spiel sind.
+  ```
+
+  Bewertungskriterien: mindestens vier Schritte mit je einem konkreten Prüfpunkt, ein Vergleich
+  mit Beobachtungen statt Eindrücken, eine Faustregel mit nachvollziehbarer Grenze.

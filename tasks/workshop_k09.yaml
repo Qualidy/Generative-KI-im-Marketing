@@ -1,0 +1,70 @@
+title: Troubleshooting-Sprechstunde im Marketingteam
+difficulty: 4
+question: |
+  **Szenario:** Bei der Fjordlicht GmbH hat sich herumgesprochen, dass du KI-Probleme lösen kannst.
+  Die Teamleitung richtet eine wöchentliche „Prompt-Sprechstunde" ein. Heute liegen vier Fälle auf
+  dem Tisch. Du sollst nicht nur reparieren, sondern so dokumentieren, dass das Team beim nächsten
+  Mal selbst diagnostizieren kann. Du kannst die Fälle alternativ auf ein Unternehmen deiner Wahl
+  übertragen.
+
+  ```text
+  Fall A: Instagram-Captions klingen seit Wochen gleich, immer mit
+          "Wenn der Wind ..." am Anfang. Alles läuft im selben Chat.
+  Fall B: Produkttexte für den Webshop enthalten gelegentlich
+          Materialangaben, die nicht stimmen.
+  Fall C: Ein 15-seitiges Kampagnenbriefing wird hochgeladen, die Pflicht-
+          Hinweise zur Rücksendung fehlen in den Ergebnissen.
+  Fall D: LinkedIn-Posts für Fjordlicht Business sind zu lang und
+          zu locker, obwohl "kurz und professionell" im Prompt steht.
+  Werkzeug: ChatGPT oder Alternative. Nur fiktive Daten.
+  ```
+
+  ---
+
+  **Runde 1 – Diagnose.** Formuliere für jeden Fall Symptom, wahrscheinliche Ursache und betroffenen
+  P.R.O.M.P.T.-Baustein. Lege für jeden Fall einen fiktiven Ausgangsprompt an, der den Fehler
+  plausibel erzeugt, und **reproduziere** den Fehler im Werkzeug.
+
+  **Runde 2 – Eingrenzen und beheben.** Grenze jeden Fehler mit dem Vorgehen aus Abschnitt 9.4 ein
+  (reproduzieren, reduzieren, schrittweise ergänzen). Behebe ihn mit einem gezielten Gegenmittel
+  und weise mit mindestens zwei Durchläufen in neuen Chats nach, dass er nicht mehr auftritt.
+
+  **Runde 3 – Die Komplikation.** Bei Fall B stellt sich heraus: Nicht der Prompt ist das Problem,
+  sondern ein veraltetes Produktdatenblatt in den Projektdateien und eine Memory-Notiz („Vidde ist
+  wasserdicht"), die eine Kollegin vor Monaten angelegt hat. Passe deine Diagnose an, beschreibe,
+  wie man solche Ursachen außerhalb des Prompts findet, und ergänze einen Faktencheck-Schritt, der
+  falsche Materialangaben abfängt, bevor sie live gehen.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Teamleitung schlägt vor, alle Texte künftig von
+  einer zweiten KI „auf Fehler prüfen" zu lassen und auf die menschliche Prüfung zu verzichten, um
+  Zeit zu sparen. **Widersprich** dem Vorschlag dort, wo er nicht trägt, erkenne an, wo eine
+  KI-Vorprüfung Zeit spart, und entscheide begründet, welche Prüfschritte bei welchen Textarten
+  menschlich bleiben müssen.
+
+  **Deliverable:**
+
+  1. Diagnose-Tabelle der vier Fälle mit Symptom, Ursache, Baustein und Gegenmittel
+  2. Vorher/Nachher-Prompts mit Nachweis aus mindestens zwei Durchläufen je Fall
+  3. überarbeitete Diagnose zu Fall B mit Prüfschritt für Ursachen außerhalb des Prompts
+  4. einseitige Prüfregel für das Team: was die KI vorprüft, was ein Mensch prüft, mit Begründung
+
+  **Fertig bist du erst, wenn** jeder Fall reproduziert und nach der Korrektur in neuen Chats nicht
+  mehr aufgetreten ist, Fall B Projektdateien und Memory als Fehlerquelle berücksichtigt, und deine
+  Prüfregel für Produktangaben und Nachhaltigkeitsaussagen einen menschlichen Abgleich mit einer
+  Quelle vorsieht.
+tip: |
+  Der Lernkern liegt in Runde 3: Nicht jeder Fehler steckt im Prompt. Projektdateien, Memory,
+  benutzerdefinierte Anweisungen und der Chatverlauf gehören zum Kontext, den das Modell sieht – und
+  damit zu den möglichen Ursachen. Prüfe sie, bevor du einen funktionierenden Prompt umbaust.
+solution: |
+  Bewertungskriterien: (1) jeder Fall ist korrekt einem Fehlerbild und einer Ursache zugeordnet –
+  A Wiederholung und Kontextverlust im Dauerchat, B falsche Fakten, C „Lost in the middle",
+  D Widerspruch oder zu abstrakte Vorgaben bei Output und Tone; (2) Korrekturen sind gezielt und
+  durch wiederholte Durchläufe in neuen Chats belegt, nicht durch einen einzelnen Glückstreffer;
+  (3) die überarbeitete Diagnose zu Fall B prüft Projektdateien, Memory und Anweisungen und ergänzt
+  einen Abgleich mit dem aktuellen Datenblatt; (4) die Prüfregel trennt sinnvoll zwischen formaler
+  KI-Vorprüfung und menschlicher Prüfung von Fakten, Claims und Markenstimme und begründet das mit
+  den Grenzen der Selbstprüfung.
+
+  Lernziel: KI-Fehler systematisch diagnostizieren, Ursachen auch außerhalb des Prompts finden und
+  eine teamtaugliche Prüfroutine begründen.

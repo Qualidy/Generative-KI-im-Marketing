@@ -1,0 +1,31 @@
+title: Review-Vorschläge bewerten
+difficulty: 1
+question: |
+  Ein Teammitglied von Fjordlicht hat seinen Prompt für Newsletter-Einleitungen von der KI
+  reviewen lassen. Das Modell macht sechs Vorschläge:
+
+  1. „Ergänze die Zielgruppe: Newsletter-Abonnentinnen und -Abonnenten, überwiegend 25–45."
+  2. „Füge hinzu: Sei kreativ, emotional und überraschend."
+  3. „Lege eine Länge fest, z. B. 60–80 Wörter."
+  4. „Hebe die Umweltvorteile der Produkte konkret mit Zahlen hervor."
+  5. „Ergänze: Wenn eine Angabe fehlt, schreibe [FEHLT] statt zu raten."
+  6. „Beschreibe die Persona ausführlicher: preisgekrönte Texterin mit 20 Jahren Erfahrung."
+
+  Ordne jedem Vorschlag den betroffenen P.R.O.M.P.T.-Baustein zu und entscheide: **übernehmen**,
+  **verwerfen** oder **nur mit Bedingung übernehmen**. Begründe jeweils in einem Satz.
+tip: |
+  Frage bei jedem Vorschlag: Legt er etwas fest, das ich am Ergebnis prüfen kann? Und: Verleitet er
+  das Modell zu Aussagen, die ich nicht belegen kann?
+solution: |
+  | Nr. | Baustein | Entscheidung | Begründung |
+  |---|---|---|---|
+  | 1 | Purpose | übernehmen | ohne Zielgruppe schreibt das Modell für „alle" und damit beliebig |
+  | 2 | Tone | verwerfen | legt nichts Prüfbares fest und widerspricht der ruhigen Markenstimme |
+  | 3 | Output | übernehmen | macht die Länge verlässlich und prüfbar |
+  | 4 | Request | nur mit Bedingung | nur wenn eine Claim-Liste mitgegeben wird und das Modell ausschließlich daraus zitiert – sonst Greenwashing-Risiko |
+  | 5 | Modifier | übernehmen | macht Lücken sichtbar, statt sie zu füllen |
+  | 6 | Persona | verwerfen | eine aufgeblähte Persona verbessert das Ergebnis kaum und kostet nur Länge |
+
+  Die gefährlichste Stelle ist Vorschlag 4: Er klingt nach Verbesserung, lädt aber ohne belegte
+  Daten dazu ein, Zahlen zu erfinden. Ein Review-Vorschlag ist erst gut, wenn er das Ergebnis
+  prüfbarer oder sicherer macht.

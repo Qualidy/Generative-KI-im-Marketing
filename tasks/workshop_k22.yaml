@@ -1,0 +1,72 @@
+title: Produktseite für Suche und KI-Suche optimieren
+difficulty: 4
+question: |
+  **Szenario:** Die Produktseite der Regenjacke „Sølv" ist die umsatzstärkste Seite im
+  Fjordlicht-Shop, rankt aber für „nachhaltige Regenjacke" nur auf Seite zwei und taucht in
+  KI-Antworten kaum auf. Du sollst die Seite überarbeiten – für klassische Suche und für
+  Antwortmaschinen. Du kannst alternativ eine Produkt- oder Leistungsseite eines Unternehmens
+  deiner Wahl verwenden.
+
+  ```text
+  Rahmen (fiktiv):
+  Aktueller Title: Sølv | Fjordlicht
+  Aktuelle Description: Unsere Regenjacke Sølv. Jetzt kaufen!
+  Produkttext: 90 Wörter, Werbesprache, keine Materialangaben.
+  Belegte Fakten: 3-Lagen-Membran, Wassersäule 20.000 mm, PFAS-freie
+  Imprägnierung, Obermaterial aus 100 Prozent recyceltem Polyamid, Gewicht 390 g,
+  Größen XS-XXL, Preis 249 Euro, kostenloser Reparaturservice in den ersten
+  zwei Jahren nach Kauf.
+  Nicht belegt: "klimaneutral", "die nachhaltigste Jacke".
+  Bewertungen im Shop: 27, Durchschnitt 4,6.
+  ```
+
+  ---
+
+  **Runde 1 – Diagnose.** Lass die KI die Ausgangslage anhand der On-Page-Elemente aus
+  Abschnitt 22.1 bewerten. Ergänze eine kleine Recherche: Was zeigen die Suchergebnisse und
+  mindestens zwei Antwortmaschinen auf „nachhaltige Regenjacke"?
+
+  **Runde 2 – Überarbeitung.** Erstelle mit P.R.O.M.P.T.-Prompts (Kap. 5): neuen Title und
+  Description (Zeichen gezählt), einen Produkttext mit zitierfähiger Kurzbeschreibung, eine
+  Faktentabelle, einen FAQ-Abschnitt mit fünf realistischen Fragen und ein Schema.org-Product-
+  Markup in JSON-LD, das ausschließlich belegte Werte enthält.
+
+  **Runde 3 – Die Komplikation.** Die KI hat in deinen Entwürfen vermutlich mindestens eine
+  Formulierung wie „besonders umweltfreundlich" oder „klimafreundlich" eingebaut, und im
+  Markup steht womöglich ein Wert, den es im Shop nicht gibt. Prüfe alle Aussagen Zeile für
+  Zeile gegen die belegten Fakten und korrigiere sie. Dokumentiere jede Korrektur.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Das Team diskutiert: Soll die Seite für bessere
+  Sichtbarkeit in KI-Antworten um einen langen Ratgeberteil (1.500 Wörter) ergänzt werden?
+  Die KI wird das vermutlich befürworten. **Widersprich**, wo es die Produktseite für
+  kaufbereite Besucher verschlechtert, und entscheide: Ratgeber auf der Produktseite, eigener
+  verlinkter Artikel oder beides in kurzer Form?
+
+  **Deliverable:**
+
+  1. Diagnose mit Recherchebefunden aus Suche und Antwortmaschinen
+  2. überarbeitete Seitenelemente: Title, Description, Produkttext, Faktentabelle, FAQ
+  3. JSON-LD-Markup und Prüfprotokoll aller Aussagen gegen die belegten Fakten
+  4. begründete Entscheidung zu Runde 4 mit Vorschlag für interne Links
+
+  **Fertig bist du erst, wenn** jede Nachhaltigkeitsaussage durch die Faktenliste gedeckt ist,
+  das Markup nur Werte enthält, die auch sichtbar auf der Seite stehen, die Kurzbeschreibung in
+  zwei Sätzen erklärt, für wen die Jacke ist, und deine Entscheidung zu Runde 4 die Intention
+  der Seite berücksichtigt.
+tip: |
+  Die Produktseite bedient eine transaktionale Intention. Was Antwortmaschinen zitieren, sind
+  klare Fakten – genau die fehlen der Ausgangsseite. Gute Optimierung heißt hier vor allem:
+  belegte Fakten sichtbar machen, nicht mehr Text. Runde 3 zeigt, warum jede KI-Aussage über
+  Nachhaltigkeit gegen eine Claim-Liste geprüft werden muss.
+solution: |
+  Bewertungskriterien: (1) Diagnose benennt konkrete Mängel (nichtssagender Title, fehlende
+  Fakten, Werbesprache, keine strukturierten Daten) und vergleicht mit tatsächlich sichtbaren
+  Ergebnissen; (2) Title mit höchstens 60 Zeichen, etwa „Regenjacke Sølv: PFAS-frei, recyceltes
+  Polyamid | Fjordlicht", Faktentabelle mit allen belegten Werten, FAQ mit realistischen Fragen wie
+  „Wie lange hält die Imprägnierung?"; (3) Prüfprotokoll entfernt unbelegte Aussagen wie
+  „klimaneutral" und Superlative, Markup enthält 27 Bewertungen mit 4,6 und keine erfundenen
+  Werte; (4) Entscheidung trennt sinnvoll: kurze Pflege- und Material-FAQ auf der Produktseite,
+  ausführlicher Ratgeber als eigener Artikel mit gegenseitiger Verlinkung.
+
+  Lernziel: On-Page-Optimierung, strukturierte Daten und GEO an einer echten Seite umsetzen,
+  dabei jede KI-Aussage gegen belegte Fakten prüfen und die Suchintention der Seite schützen.

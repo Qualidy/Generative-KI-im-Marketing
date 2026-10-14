@@ -1,0 +1,46 @@
+title: Bildauswahl mit Raster – und mit KI als Zweitmeinung
+difficulty: 3
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug.
+
+  1. **Kandidaten erzeugen.** Generiere für eine Instagram-Anzeige (4:5) der Regenjacke „Sølv"
+     mit der Aufgabe „Aufmerksamkeit im Herbstfeed" mindestens sechs Varianten, gern mit zwei
+     Werkzeugen.
+  2. **Selbst bewerten.** Bewerte alle Varianten mit dem Raster aus Abschnitt 32.7 (0–2 Punkte
+     je Kriterium). Schau sie dir dafür auf dem Smartphone in Originalgröße an.
+  3. **KI bewerten lassen.** Lade die Varianten in ChatGPT, Claude oder Gemini hoch, gib Raster
+     und Bildsprache-Guide mit und lass begründet bewerten.
+  4. **Abgleich.** Wo weichen die Urteile ab? Welche Abweichungen sind berechtigte Hinweise,
+     welche zeigen Grenzen der KI-Bewertung?
+  5. **Entscheidung.** Wähle eine Variante und begründe die Wahl in drei Sätzen – so, dass sie
+     eine Kollegin ohne die anderen Bilder nachvollziehen kann.
+tip: |
+  Achte darauf, ob die KI technische Fehler wirklich findet. Bildmodelle beim Prüfen übersehen
+  oft genau die Fehler, die Bildmodelle beim Erzeugen machen: sechs Finger, verdrehte
+  Reißverschlüsse, unlesbare Etiketten.
+solution: |
+  Ein brauchbarer KI-Bewertungsprompt:
+
+  ```text
+  Du bist Art Director für Fjordlicht. Bewerte die sechs Bilder mit diesem Raster,
+  je Kriterium 0 bis 2 Punkte, mit einem Satz Begründung:
+  [Raster einfügen]
+  Bildsprache-Guide: [Guide einfügen]
+  Bildaufgabe: Aufmerksamkeit im Instagram-Herbstfeed, Format 4:5, Smartphone.
+  Ein Bild mit 0 Punkten bei Ehrlichkeit oder technischer Sauberkeit scheidet aus.
+  Gib am Ende eine Rangfolge und nenne, was du nicht sicher beurteilen kannst.
+  ```
+
+  Typische Ergebnisse des Abgleichs:
+
+  - **Berechtigte Hinweise:** Die KI benennt oft präzise, warum die Blickführung nicht stimmt
+    oder ein Bild vom Guide abweicht (Farbe zu gesättigt, Siegerpose).
+  - **Grenzen:** Kleine technische Fehler werden übersehen; die Wirkung im schnellen Scrollen
+    auf dem Smartphone kann die KI nicht simulieren; sie bewertet gern das ästhetischste Bild
+    am höchsten.
+  - **Ehrlichkeit:** Ob die gezeigte Jacke dem echten Produkt entspricht, kann nur jemand
+    beurteilen, der das Produkt kennt.
+
+  Bewertungskriterien: alle Varianten mit Raster bewertet, mindestens zwei begründete
+  Abweichungen zwischen eigenem und KI-Urteil, Entscheidung in drei nachvollziehbaren Sätzen,
+  ausdrücklicher Hinweis, dass erst ein Test mit Publikum (Kap. 16) über die Wirkung entscheidet.

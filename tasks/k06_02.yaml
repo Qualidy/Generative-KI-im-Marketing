@@ -1,0 +1,45 @@
+title: Few-Shot gegen Beschreibung
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Ziel: Instagram-Hooks im Stil von Fjordlicht – oder
+  im Stil eines Unternehmens deiner Wahl.
+
+  1. **Zero-Shot:** Beschreibe den gewünschten Stil nur mit Worten (ruhig, ehrlich, leicht
+     trocken, keine Superlative) und lass fünf Hooks zum Thema „Regenjacke im Alltag" erzeugen.
+  2. **Few-Shot:** Gib zusätzlich diese drei Beispiele mit und wiederhole:
+
+     ```text
+     Regen ist kein Grund. Nur ein Wetter.
+     Der Weg ist nass. Du nicht.
+     Graue Wolken, grüne Wände. Raus trotzdem.
+     ```
+
+  3. **Strukturtest:** Packe die Beispiele in Marken `<beispiele>…</beispiele>` und ergänze
+     „Übernimm Rhythmus und Ton, nicht die Wörter."
+  4. Vergleiche die drei Runden in einer Tabelle: Stiltreue, Abwechslung, wörtliche Übernahmen.
+tip: |
+  Achte in Runde 2 auf **Kopien**: Wie oft tauchen „nass", „Wolken" oder die Zweisatz-Struktur
+  wieder auf? Genau das soll der Zusatz in Runde 3 reduzieren.
+solution: |
+  Typisches Ergebnis:
+
+  | Runde | Stiltreue | Abwechslung | Wörtliche Übernahmen |
+  |---|---|---|---|
+  | Zero-Shot | gering – oft „Bereit für jedes Wetter?" | hoch, aber beliebig | keine |
+  | Few-Shot | hoch | gering, alle Hooks im gleichen Zweisatz-Muster | häufig („nass", „trotzdem") |
+  | Few-Shot mit Marken und Zusatz | hoch | mittel | selten |
+
+  Ein guter Prompt für Runde 3:
+
+  ```text
+  Schreibe fünf Instagram-Hooks zum Thema Regenjacke im Alltag.
+  Maximal acht Wörter je Hook, keine Superlative, keine Emojis.
+  Übernimm Rhythmus und Ton aus <beispiele>, nicht die Wörter
+  und nicht immer dieselbe Satzstruktur.
+  <beispiele>
+  [drei Beispiele]
+  </beispiele>
+  ```
+
+  Erkenntnis: Beispiele sind das stärkste Steuerungsmittel für Stil – und genau deshalb muss man
+  ihre Nebenwirkungen (Kopieren, Monotonie) aktiv begrenzen.

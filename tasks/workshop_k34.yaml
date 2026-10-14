@@ -1,0 +1,83 @@
+title: Freigabeprozess für KI-Bilder
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht hat in den letzten Wochen viele KI-Bilder veröffentlicht. Nun häufen
+  sich Probleme: Eine Kundin hat die Jacke „Sølv" retourniert, weil die Kapuze anders aussieht
+  als auf dem Instagram-Bild. Ein Follower fragt öffentlich, ob die „Wandergruppe" im letzten
+  Post echt sei. Und Meta hat einen Post automatisch mit einem KI-Hinweis versehen, den das Team
+  nicht erwartet hatte. Die Geschäftsführung beauftragt dich mit einem **Freigabeprozess für
+  KI-Bilder**, der Fehler, Rechtsrisiken und Vertrauensverluste verhindert, ohne die Arbeit zu
+  lähmen. Du kannst stattdessen auch ein Unternehmen deiner Wahl verwenden.
+
+  ```text
+  Rahmen:
+  Team: 5 Personen im Marketing, 1 Person Produktmanagement, keine eigene Rechtsabteilung
+  (externe Kanzlei bei Bedarf).
+  Bildvolumen: ca. 40 KI-Bilder pro Monat über alle Kanäle.
+  Werkzeuge: ChatGPT Images, Adobe Firefly, Midjourney.
+  Markenwert: Ehrlichkeit, kein Greenwashing.
+  Freigabe soll pro Bild höchstens 10 Minuten dauern.
+  ```
+
+  ---
+
+  **Runde 1 – Checkliste entwerfen.** Erstelle eine Freigabe-Checkliste mit den Bereichen
+  technische Fehler, Bias, Rechte Dritter, Nutzungsbedingungen, Kennzeichnung und
+  Produktwahrheit. Jeder Punkt ist als Ja/Nein-Frage formuliert. Lege fest, welche Punkte
+  K.-o.-Kriterien sind und wer welchen Punkt prüft.
+
+  **Runde 2 – Checkliste testen.** Erzeuge oder sammle sechs Bilder, darunter mindestens ein
+  Produktbild, ein Bild mit Menschen, eines mit einem realen Ort und eine Illustration. Prüfe
+  alle sechs mit deiner Checkliste und stoppe die Zeit. Pflichtkriterien:
+
+  1. Jede Prüfung ist dokumentiert, mit Ergebnis je Punkt.
+  2. Mindestens ein Bild wird abgelehnt oder geändert – mit Begründung.
+  3. Die Kennzeichnungsentscheidung ist für jedes Bild festgehalten.
+  4. Die durchschnittliche Prüfdauer liegt bei höchstens 10 Minuten.
+
+  **Runde 3 – Die Komplikation.** Die Social-Media-Managerin hält die Checkliste für zu
+  aufwendig: Bei 40 Bildern im Monat gehe ein ganzer Arbeitstag nur für Prüfungen drauf. Sie
+  schlägt vor, Illustrationen und reine Hintergründe von der Prüfung auszunehmen. Entwickle
+  eine **risikobasierte Abstufung** (zum Beispiel drei Prüfstufen nach Bildtyp), die den
+  Aufwand senkt, ohne die K.-o.-Kriterien aufzuweichen.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung fragt, ob Fjordlicht nicht
+  einfach **alle** KI-Bilder pauschal kennzeichnen sollte – „dann sind wir auf der sicheren
+  Seite". Wäge ab: Vertrauen und Markenwert, Aufwand, Wirkung eines Labels auf die Wahrnehmung,
+  Plattformregeln, Unterschied zwischen Composing und vollständig generierten Bildern.
+  **Widersprich** dem Vorschlag dort, wo er zu kurz greift, oder begründe, warum du ihm folgst,
+  und formuliere eine einheitliche Kennzeichnungsregel für Fjordlicht.
+
+  **Deliverable:**
+
+  1. Freigabe-Checkliste mit K.-o.-Kriterien und Zuständigkeiten
+  2. Prüfprotokoll der sechs Bilder mit Zeitmessung
+  3. risikobasierte Abstufung mit Begründung
+  4. Kennzeichnungsregel mit Abwägung aus Runde 4
+  5. kurze Antwort an den Follower aus dem Szenario in Fjordlicht-Markenstimme
+
+  **Fertig bist du erst, wenn** die Checkliste die drei Vorfälle aus dem Szenario nachweislich
+  verhindert hätte, die Abstufung keine K.-o.-Prüfung streicht, deine Kennzeichnungsregel in
+  einem Satz erklärbar ist und der Prozess einen Punkt enthält, wann die externe Kanzlei
+  eingebunden wird.
+tip: |
+  Der Lernkern liegt im Zusammenspiel von Runde 3 und 4: Ein Prozess, der zu aufwendig ist, wird
+  umgangen – einer, der zu lax ist, schützt nicht. Risikobasiert heißt: Produktbilder, Bilder mit
+  Menschen und realistische Bilder realer Orte prüfst du gründlich, Illustrationen schlanker. Bei
+  der Kennzeichnung gilt: Die rechtliche Mindestpflicht ist schmal, der Markenwert Ehrlichkeit
+  kann mehr verlangen. Diese Entscheidung ist Markenführung, nicht nur Recht.
+solution: |
+  Bewertungskriterien: (1) die Checkliste deckt alle sechs Bereiche mit Ja/Nein-Fragen ab,
+  Produktwahrheit und reale Personen sind K.-o.-Kriterien, Zuständigkeiten sind benannt, die
+  Produktprüfung liegt beim Produktmanagement; (2) das Prüfprotokoll ist vollständig, mindestens
+  eine begründete Ablehnung oder Änderung, Kennzeichnung je Bild entschieden, Zeit gemessen;
+  (3) die Abstufung senkt den Aufwand nachvollziehbar und lässt K.-o.-Kriterien unangetastet;
+  (4) die Kennzeichnungsregel trennt rechtliche Pflicht (Art. 50 Abs. 4, Plattformregeln) von
+  freiwilliger Transparenz und berücksichtigt den Unterschied zwischen Composing und
+  vollständig generierten Bildern; (5) die Antwort an den Follower ist ehrlich, ruhig und ohne
+  Ausflüchte; (6) der Prozess benennt Auslöser für die Einbindung der Kanzlei, etwa reale
+  Personen, fremde Marken oder Zweifel an Deepfake-Einstufung.
+
+  Lernziel: Die Grenzen der Bild-KI in einen alltagstauglichen Freigabeprozess übersetzen, der
+  Qualität, Recht und Markenvertrauen sichert – und Kennzeichnung als bewusste Entscheidung der
+  Marke verstehen, nicht nur als Pflichtübung. Die Vertiefung der Rechtsfragen folgt in Kap. 39.

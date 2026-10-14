@@ -1,0 +1,69 @@
+title: Vergleichstest mit demselben Briefing
+difficulty: 4
+question: |
+  **Szenario:** Die Marketingleitung von Fjordlicht will vor der Herbstkampagne wissen, welches
+  Bildwerkzeug das Team künftig nutzt. Statt Meinungen soll ein **dokumentierter
+  Vergleichstest** entscheiden. Du führst ihn durch. Alternativ testest du für **ein Unternehmen
+  deiner Wahl**.
+
+  ```text
+  Rahmen:
+  Kampagne: "Draußen bleiben" (Herbst), Kanäle Instagram (4:5) und Newsletter (3:1).
+  Aufgabe 1: Stimmungsbild, Mensch in herbstlicher Natur, ruhig, dokumentarisch.
+  Aufgabe 2: Infografik für Pinterest (2:3) mit Überschrift und drei Listenpunkten.
+  Mindestens drei Werkzeuge, z. B. ChatGPT Images, Midjourney, Ideogram, Firefly.
+  Pro Werkzeug: 2 Durchläufe, höchstens 3 Nachbesserungsrunden je Aufgabe.
+  Keine echten Produkte generieren.
+  ```
+
+  ---
+
+  **Runde 1 – Briefing und Kriterien.** Formuliere für beide Aufgaben ein Bildbriefing mit den
+  acht Bausteinen aus Kap. 30. Lege **vor** dem Test die Bewertungskriterien und ihre Gewichtung
+  fest (Vorlage in 31.6) und begründe sie in je einem Satz.
+
+  **Runde 2 – Testen.** Passe das Briefing an den Prompt-Stil jedes Werkzeugs an (Satz oder
+  Stichworte, Parameter). Führe die Durchläufe aus, notiere Zeitaufwand und Nachbesserungen und
+  bewerte jedes Ergebnis in der Matrix.
+
+  **Runde 3 – Die Komplikation.** Das beste Stimmungsbild stammt aus einem Werkzeug, bei dem sich
+  herausstellt: Es wurde in einem Plan erzeugt, dessen Bilder öffentlich sichtbar sind, und auf
+  der Jacke der Person ist ein Emblem zu sehen, das dem Logo eines bekannten Outdoor-Herstellers
+  ähnelt. Bewerte das Ergebnis neu. Ändert sich deine Matrix? Was muss passieren, bevor ein
+  solches Bild genutzt werden kann?
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Art Direktorin will Midjourney wegen des Looks.
+  Die Datenschutzbeauftragte will ausschließlich Werkzeuge, die bereits über bestehende Verträge
+  laufen (ChatGPT Business, Adobe). Triff eine Entscheidung auf Basis deiner Matrix.
+  **Widersprich** mindestens einer der beiden Positionen ausdrücklich und benenne, unter welchen
+  Bedingungen du deine Entscheidung ändern würdest.
+
+  **Deliverable:**
+
+  1. zwei Bildbriefings und angepasste Prompts je Werkzeug
+  2. gewichtete Bewertungsmatrix mit allen Ergebnissen und Zeitaufwand
+  3. Neubewertung aus Runde 3 mit konkreten Maßnahmen
+  4. Empfehlung an die Leitung (höchstens eine Seite) mit Begründung und Bedingungen
+
+  **Fertig bist du erst, wenn** jedes Werkzeug mit identischem Briefing und gleichem Aufwand
+  getestet wurde, die Gewichtung vor dem Test feststand, Runde 3 zu einer nachvollziehbaren
+  Konsequenz in der Matrix oder im Prozess führt und die Empfehlung beide Aufgaben
+  berücksichtigt statt nur das schönste Bild.
+tip: |
+  Der Lernkern liegt in Runde 1 und 3. Wer die Kriterien erst nach dem Test festlegt, gewichtet
+  unbewusst so, dass der Favorit gewinnt. Und Runde 3 zeigt: Das schönste Bild ist wertlos, wenn
+  es rechtlich oder organisatorisch nicht nutzbar ist – Logo-Ähnlichkeiten und Sichtbarkeit
+  gehören deshalb in die Bewertung, nicht in die Nachbetrachtung.
+solution: |
+  Bewertungskriterien: (1) die Briefings decken die acht Bausteine ab, und die Gewichtung ist vor
+  dem Test dokumentiert und begründet; (2) die Tests sind fair (identisches Briefing, gleiche
+  Anzahl Durchläufe und Nachbesserungen, Zeit notiert) und die Matrix ist vollständig;
+  (3) Runde 3 führt zu konkreten Maßnahmen, etwa Emblem per Inpainting entfernen oder Motiv neu
+  erzeugen, Bild nicht aus öffentlicher Galerie verwenden, Werkzeug nur mit privater
+  Sichtbarkeit zulassen, Markenrechtsprüfung (Kap. 34); (4) die Empfehlung unterscheidet nach
+  Aufgaben, widerspricht einer Position mit Argumenten aus der Matrix und nennt Bedingungen
+  für eine Revision (z. B. Midjourney nur mit Teamkonto und privater Sichtbarkeit).
+
+  Lernziel: Bildwerkzeuge mit einem fairen, dokumentierten Test vergleichen und eine
+  Entscheidung treffen, die Bildqualität, Rechte, Datenschutz und Arbeitsablauf gemeinsam
+  abwägt.

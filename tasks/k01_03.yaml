@@ -1,0 +1,39 @@
+title: Vier Mythen im Teammeeting
+difficulty: 3
+question: |
+  Im Marketingteam von Fjordlicht fallen in einer Besprechung die folgenden Aussagen. Bewerte
+  jede Aussage mit den Begriffen aus diesem Kapitel (Training, Wissensstand, Token,
+  Wahrscheinlichkeit, Kontextfenster): **Was stimmt, was stimmt nicht, und was folgt daraus für
+  die Arbeit?**
+
+  1. „ChatGPT schlägt die Antwort in einer riesigen Datenbank nach, deshalb stimmt sie meistens."
+  2. „Ich habe dem Tool letzte Woche unseren Styleguide gegeben – das weiß es jetzt für immer."
+  3. „Wenn ich zweimal denselben Prompt eingebe, muss doch dasselbe herauskommen. Sonst ist das Tool kaputt."
+  4. „Das Tool schreibt so gut, das versteht unsere Marke offensichtlich."
+
+  Prüfe anschließend **zwei** der Aussagen im KI-Werkzeug mit einem kleinen Test, den du selbst
+  entwirfst. Beschreibe den Test, das Ergebnis und ob er deine Bewertung bestätigt.
+tip: |
+  Bei Aussage 2 kommt es auf das Werkzeug und die Einstellungen an: Ein normaler neuer Chat hat
+  kein Gedächtnis, Projekte oder Memory können Informationen aber gezielt wieder einspielen.
+  Eine gute Bewertung unterscheidet diese Fälle, statt pauschal „falsch" zu sagen.
+solution: |
+  | Nr. | Bewertung | Folge für die Arbeit |
+  |---|---|---|
+  | 1 | falsch. Das Modell erzeugt Text nach Wahrscheinlichkeit aus trainierten Mustern, es schlägt nichts nach. Ausnahme: Mit aktivierter Websuche werden Quellen ins Kontextfenster geladen – aber auch dann formuliert das Modell selbst. | Fakten, Zahlen und Quellen immer prüfen |
+  | 2 | meist falsch. Eingaben verändern das Modell nicht. Ein neuer Chat kennt den Styleguide nicht, es sei denn, er liegt in einem Projekt, in benutzerdefinierten Anweisungen oder im Memory. | Styleguide dauerhaft in Projekt oder Assistent hinterlegen (Kap. 7, 23) oder jedes Mal mitgeben |
+  | 3 | falsch. Variation ist eingebaut, weil Token mit etwas Zufall gewählt werden. | für Konsistenz feste Vorgaben und Beispiele nutzen, Varianten bewusst fürs Brainstorming einsetzen |
+  | 4 | teilweise. Sprachliche Gewandtheit kommt aus dem Training, Markenkenntnis nicht. Ohne Kontext entsteht Durchschnittsstil. | Markenstimme mit Beispielen beschreiben und Ergebnisse gegen den Styleguide prüfen |
+
+  Beispielhafte Tests:
+
+  - **Zu Aussage 2:** In einem Chat eine Stilregel festlegen („Verwende nie das Wort ‚perfekt‘"),
+    dann einen **neuen** Chat öffnen und einen Produkttext anfordern. Ohne Memory oder Projekt
+    taucht die Regel nicht auf – Bewertung bestätigt.
+  - **Zu Aussage 4:** Nach der Markenstimme von Fjordlicht fragen, ohne Kontext zu liefern. Das
+    Werkzeug beschreibt plausibel klingende, aber erfundene Merkmale oder räumt ein, die Marke
+    nicht zu kennen – beides zeigt, dass kein echtes Markenwissen vorliegt.
+
+  Bewertungskriterien: Jede Aussage wird mit einem konkreten Mechanismus begründet, nicht mit
+  „KI ist halt unzuverlässig"; die Tests sind so angelegt, dass sie die Aussage tatsächlich
+  widerlegen oder bestätigen können (neuer Chat, gleiche Bedingungen).

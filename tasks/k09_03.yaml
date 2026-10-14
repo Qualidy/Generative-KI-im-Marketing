@@ -1,0 +1,57 @@
+title: Faktencheck eines KI-Blogabschnitts
+difficulty: 3
+question: |
+  Ein Werkstudent hat für den Fjordlicht-Blog „Draußen-Notizen" mit KI einen Abschnitt erstellt.
+  Prüfe ihn gegen das mitgelieferte Material.
+
+  ```text
+  Material (Produktdatenblatt und Claim-Liste Regenjacke Sølv):
+  - Obermaterial: 100 Prozent recyceltes Polyamid (Zertifikat liegt vor)
+  - Wassersäule: 20.000 mm
+  - PFAS-freie Imprägnierung (Herstellernachweis liegt vor)
+  - Gewicht: 390 g
+  - Reparaturservice: kostenlos in den ersten zwei Jahren
+
+  KI-Abschnitt:
+  Die Sølv ist unsere nachhaltigste Jacke aller Zeiten: komplett aus recyceltem
+  Material, PFAS-frei und mit einer Wassersäule von 30.000 mm. Mit nur 350 g
+  ist sie federleicht, und dank unseres lebenslangen Reparaturservice begleitet
+  sie dich ein Leben lang. Klimaneutral produziert in Europa.
+  ```
+
+  1. Lass dir von der KI in einem neuen Chat alle prüfbaren Aussagen als Tabelle auflisten
+     (Prompt aus Abschnitt 9.6).
+  2. Prüfe die Tabelle selbst gegen das Material. Hat die KI Aussagen übersehen?
+  3. Ordne jede Aussage ein: belegt, falsch, nicht belegt, weiche Behauptung.
+  4. Formuliere den Abschnitt so um, dass er nur belegte Aussagen enthält und zur Markenstimme passt.
+  5. Begründe in drei Sätzen, warum ein zweiter KI-Durchlauf „Prüfe auf Fehler" hier nicht genügt.
+tip: |
+  Achte neben Zahlen auch auf Steigerungen und Absolutheiten: „nachhaltigste", „komplett",
+  „lebenslang", „federleicht". Und auf Aussagen, für die im Material gar nichts steht.
+solution: |
+  | Aussage | Einordnung |
+  |---|---|
+  | „nachhaltigste Jacke aller Zeiten" | weiche Behauptung, Superlativ, nicht belegbar |
+  | „komplett aus recyceltem Material" | nicht belegt – belegt ist nur das Obermaterial (100 Prozent recyceltes Polyamid), nicht die ganze Jacke |
+  | „PFAS-frei" | belegt |
+  | „Wassersäule 30.000 mm" | falsch – 20.000 mm |
+  | „nur 350 g" | falsch – 390 g |
+  | „federleicht" | weiche Behauptung |
+  | „lebenslanger Reparaturservice" | falsch – zwei Jahre kostenlos |
+  | „klimaneutral produziert in Europa" | nicht belegt, zwei Aussagen auf einmal |
+
+  KI-Listen übersehen häufig weiche Behauptungen und zusammengesetzte Aussagen wie
+  „klimaneutral produziert in Europa".
+
+  Korrigierte Fassung:
+
+  ```text
+  Das Obermaterial der Sølv besteht zu 100 Prozent aus recyceltem Polyamid,
+  die Imprägnierung ist PFAS-frei. Mit 20.000 mm Wassersäule hält sie auch
+  langem Regen stand, und sie wiegt 390 g. Geht doch einmal etwas kaputt, reparieren wir
+  sie in den ersten zwei Jahren kostenlos.
+  ```
+
+  Begründung: Ein zweiter Durchlauf prüft mit demselben Wissen und denselben Neigungen, die den
+  Fehler erzeugt haben. Er kennt das Material nur, wenn es mitgeliefert wird, und übersieht weiche
+  Behauptungen. Entscheidend ist der Abgleich mit einer Quelle, die nicht von der KI stammt.

@@ -1,0 +1,54 @@
+title: Einen Listening-Bericht kritisch lesen
+difficulty: 3
+question: |
+  Eine Agentur legt Fjordlicht folgenden KI-erstellten Kurzbericht vor:
+
+  ```text
+  Social Listening Q3 - Management Summary
+  Sentiment gesamt: 64,7 % positiv (+8,3 Prozentpunkte zum Vorquartal)
+  Ursache: Die neue Herbstkampagne hat die Markenwahrnehmung deutlich verbessert.
+  Top-Thema: Nachhaltigkeit (41 %), überwiegend positiv.
+  Auffällig: Nutzerin @wanderherz_ms (12 Beiträge) äußert sich wiederholt
+  kritisch; wir empfehlen, ihr Profil und ihr Umfeld genauer zu beobachten.
+  Empfehlung: Budget für TikTok verdoppeln, dort ist die Stimmung am besten.
+  ```
+
+  Im Anhang steht: Datenbasis 212 Beiträge, davon 180 von Instagram, 32 von TikTok; Stichprobe
+  zur Prüfung der KI-Einstufung: keine.
+
+  1. Benenne alle Schwächen des Berichts – methodisch, inhaltlich und rechtlich.
+  2. Formuliere die Management Summary so um, dass sie nur aussagt, was die Daten tragen.
+  3. Schreibe drei Rückfragen an die Agentur, bevor der Bericht in die Geschäftsführung geht.
+tip: |
+  Lies jeden Satz mit der Frage: Welche Daten würden diese Aussage stützen – und liegen sie vor?
+  Achte besonders auf Nachkommastellen, auf Ursachenbehauptungen und auf den Umgang mit einzelnen
+  Personen.
+solution: |
+  | Aussage | Schwäche |
+  |---|---|
+  | 64,7 %, +8,3 Punkte | Scheingenauigkeit; ohne Stichprobenprüfung ist unklar, ob die Einstufung stimmt |
+  | Ursache Herbstkampagne | Kausalbehauptung ohne Beleg; Korrelation ist keine Kausalität |
+  | Nachhaltigkeit 41 %, positiv | keine Beispiele, keine Fallzahl; gerade hier ist Ironie häufig |
+  | Beobachtung von @wanderherz_ms | datenschutzrechtlich problematisch: Profilbildung über eine Einzelperson, Nutzername ungeschwärzt |
+  | TikTok-Budget verdoppeln | 32 Beiträge sind keine Grundlage; Stimmung im Listening sagt nichts über Werbewirkung |
+  | Datenbasis | stark verzerrt Richtung Instagram; Quellenauswahl nicht begründet |
+
+  Überarbeitete Summary:
+
+  ```text
+  Datenbasis: 212 öffentliche Beiträge Q3 (180 Instagram, 32 TikTok).
+  Stimmung: überwiegend positiv, Tendenz besser als Q2 - Einstufung noch
+  nicht stichprobenartig geprüft, Werte daher vorläufig.
+  Häufigstes Thema: Nachhaltigkeit; darunter wiederkehrende kritische
+  Nachfragen zu Recycling-Anteilen (Beispiele: IDs ...).
+  Ursachen für die Veränderung sind aus den Daten nicht ableitbar.
+  TikTok: Fallzahl zu gering für eigene Aussagen.
+  ```
+
+  Rückfragen: (1) Wie wurde die KI-Einstufung geprüft, und wie hoch war die Übereinstimmung?
+  (2) Welche Suchbegriffe und Quellen wurden genutzt, warum fehlen Bewertungsportale und Foren?
+  (3) Werden Nutzernamen vor der KI-Verarbeitung entfernt, und auf welcher Rechtsgrundlage und mit
+  welchem Werkzeug (AVV) werden die Daten verarbeitet?
+
+  Die Empfehlung zur Beobachtung einer Einzelperson gehört ersatzlos gestrichen; kritische Beiträge
+  werden inhaltlich beantwortet, nicht personenbezogen ausgewertet.

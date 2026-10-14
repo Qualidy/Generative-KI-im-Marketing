@@ -1,0 +1,82 @@
+title: Einführung einer Markenstimme per Voice Cloning
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht will seine Audio- und Videoproduktion beschleunigen. Die Idee: Die
+  vertraute Sprecherin der Erklärvideos wird geklont, und ihre Stimme vertont künftig
+  Produkt-FAQ, Webshop-Audio und Blog-Hörfassungen – auf Deutsch, später auch auf Englisch für
+  Fjordlicht Business. Du sollst ein **Einführungskonzept** vorlegen, das Nutzen, Recht und
+  Sicherheit zusammenbringt. Du kannst alternativ mit einem Unternehmen deiner Wahl arbeiten.
+
+  ```text
+  Rahmen:
+  Sprecherin: freiberuflich, arbeitet seit drei Jahren für Fjordlicht.
+  Werkzeug: ElevenLabs (Professional Voice Cloning) im Unternehmenskonto.
+  Kanäle: Webshop, Instagram, TikTok, YouTube, LinkedIn.
+  Volumen: ca. 20 kurze Clips pro Monat.
+  Marketingteam: 5 Personen.
+  Keine echten Personen- oder Kundendaten in Prompts und Dokumenten.
+  ```
+
+  ---
+
+  **Runde 1 – Einsatz und Vertrag.** Lege fest, wofür die Klonstimme genutzt wird und wofür
+  **nicht** (mindestens drei Ausschlüsse). Erstelle mit KI-Unterstützung eine
+  Vertragscheckliste, die alle acht Bausteine aus Abschnitt 38.3 abdeckt, und formuliere die
+  drei Fragen, die die Sprecherin am wahrscheinlichsten stellen wird – samt Antworten.
+
+  **Runde 2 – Prüfung gegen Pflichtkriterien.** Das Konzept muss **alle vier** Kriterien
+  erfüllen:
+
+  1. Es gibt einen **Freigabeprozess**, der festlegt, wer jeden Text prüft, bevor er vertont wird.
+  2. Für jeden Kanal ist entschieden, **wie gekennzeichnet** wird (Art. 50 Abs. 4 AI Act,
+     Plattformlabels).
+  3. **Zugriff, Protokoll und Löschung** sind geregelt (wer, wo, wie lange).
+  4. Es gibt einen **Notfallplan** für den Fall, dass eine Fälschung mit der Markenstimme
+     auftaucht.
+
+  **Runde 3 – Die Komplikation.** Drei Monate nach dem Start meldet sich die Sprecherin: Sie
+  hat einen TikTok-Clip gefunden, in dem „ihre" Stimme einen Wettbewerber lobt – Fjordlicht
+  hat den Clip nicht erstellt. Gleichzeitig überlegt sie, ihre Einwilligung zu widerrufen.
+  Beschreibe Schritt für Schritt, was Fjordlicht in den ersten 48 Stunden tut, und was der
+  Widerruf für bereits veröffentlichte Clips und das Stimmmodell bedeutet.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung schlägt vor, „zur Sicherheit"
+  zusätzlich ihre eigene Stimme klonen zu lassen, damit Fjordlicht „nicht von einer
+  Freiberuflerin abhängig ist" und sie selbst LinkedIn-Videos nicht mehr einsprechen muss. Lass
+  dir von ChatGPT Vor- und Nachteile aufstellen. **Widersprich** dort, wo Missbrauchsrisiko
+  (CEO-Fraud), Glaubwürdigkeit und Kennzeichnungspflicht unterschätzt werden, und gib eine
+  begründete Empfehlung.
+
+  **Deliverable:**
+
+  1. Einsatzbeschreibung mit Ausschlüssen und Vertragscheckliste
+  2. Freigabe-, Kennzeichnungs- und Sicherheitsregeln (eine Seite)
+  3. 48-Stunden-Plan für Runde 3 inklusive Umgang mit dem Widerruf
+  4. Entscheidungsnotiz zu Runde 4
+
+  **Fertig bist du erst, wenn** jeder Kanal eine Kennzeichnungsregel hat, der Freigabeprozess
+  ohne mündliche Erklärung funktioniert, der Widerruf mit konkreten Löschschritten behandelt
+  ist und deine Empfehlung in Runde 4 mindestens ein Sicherheits- und ein
+  Glaubwürdigkeitsargument enthält.
+tip: |
+  Der Lernkern liegt in Runde 3: Eine Klonstimme ist nur so vertrauenswürdig wie die Regeln drum
+  herum. Wer Widerruf und Fälschung nicht vorab durchdacht hat, verhandelt im Ernstfall unter
+  Zeitdruck. In Runde 4 geht es um die Einsicht, dass eine zweite Klonstimme die Abhängigkeit
+  nicht löst, sondern ein neues, größeres Risiko schafft.
+solution: |
+  Bewertungskriterien: (1) klare Einsatzbeschreibung mit sinnvollen Ausschlüssen (z. B. keine
+  Aussagen über Personen, keine Politik, keine Werbung für Dritte) und vollständige
+  Vertragscheckliste inklusive Widerruf und Löschung; (2) alle vier Pflichtkriterien erfüllt,
+  insbesondere eine kanalbezogene Kennzeichnung auf Basis von Art. 50 Abs. 4 und den
+  Plattformregeln; (3) der 48-Stunden-Plan umfasst Sicherung von Belegen, Meldung an die
+  Plattform, Information der Sprecherin, Richtigstellung auf eigenen Kanälen und Einbindung der
+  Rechtsabteilung; beim Widerruf werden Stimmmodell und Rohaufnahmen gelöscht, neue Clips
+  gestoppt und der Umgang mit bereits veröffentlichten Clips rechtlich geklärt statt
+  stillschweigend entschieden; (4) die Empfehlung zu Runde 4 benennt das erhöhte
+  CEO-Fraud-Risiko, die Kennzeichnungspflicht und den Glaubwürdigkeitsverlust und schlägt
+  Alternativen vor, etwa selbst eingesprochene Kurzvideos oder eine zweite vertraglich
+  gebundene Sprecherin.
+
+  Lernziel: Voice Cloning als verantwortbares Werkzeug einführen – mit Einwilligung, Vertrag,
+  Kennzeichnung und Sicherheitsregeln – und erkennen, wann eine geklonte Stimme mehr Risiko als
+  Nutzen bringt.

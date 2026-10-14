@@ -1,0 +1,48 @@
+title: Einen Bestandsartikel optimieren
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Der Fjordlicht-Artikel „Fleece richtig waschen"
+  bekommt laut Search Console viele Impressionen, aber wenige Klicks. Hier der fiktive Export:
+
+  ```text
+  suchanfrage;impressionen;klicks;position
+  fleece waschen;4200;38;9,4
+  fleece waschen temperatur;1900;12;11,2
+  fleecejacke waschen trockner;1300;4;14,8
+  fleece fusselt was tun;880;2;17,1
+  fleece weichspüler;610;9;8,7
+  ```
+
+  Aktueller Title: `Pflegetipps | Fjordlicht Blog`
+  Aktuelle Description: `Hier findest du Tipps zur Pflege.`
+
+  1. Lass die KI mit einem P.R.O.M.P.T.-Prompt (Kap. 5) **fünf neue Title-/Description-
+     Varianten** erstellen, Zeichen per Datenanalyse gezählt.
+  2. Lass prüfen, welche Suchanfragen der Artikel vermutlich **nicht** beantwortet, und
+     erstelle einen Vorschlag für zwei neue H2-Abschnitte mit je einer zitierfähigen
+     Kurzantwort.
+  3. Wähle die beste Variante aus und begründe die Wahl.
+tip: |
+  Schau auf die Suchanfragen mit hoher Position-Zahl: Sie zeigen, wonach Menschen suchen, was
+  der Artikel offenbar nur am Rand behandelt. Und: Die beste Variante greift die wichtigste
+  Suchanfrage auf, ohne alle Begriffe in den Title zu pressen.
+solution: |
+  Beispielvarianten (Zeichenzahlen gerundet):
+
+  | Title | Zeichen | Description (Auszug) |
+  |---|---|---|
+  | Fleece waschen: Temperatur, Trockner, Fusseln \| Fjordlicht | 58 | Bei wie viel Grad, ob Trockner erlaubt ist und was gegen Fusseln hilft … |
+  | Fleece richtig waschen – so bleibt es weich \| Fjordlicht | 56 | Temperatur, Waschmittel, Trockner: Was dein Fleece braucht … |
+
+  Wahrscheinliche Lücken: Trockner (Position 14,8) und Fusseln/Pilling (17,1). Neue
+  Abschnitte:
+
+  - **„Darf Fleece in den Trockner?"** Kurzantwort: „Besser nicht. Wärme und Reibung lassen die
+    Fasern verfilzen; lass Fleece liegend an der Luft trocknen." (Aussage gegen Pflegeetikett
+    prüfen.)
+  - **„Was tun, wenn Fleece fusselt?"** Kurzantwort mit Hinweis auf Fusselrasierer und
+    Waschen auf links, ergänzt um Erfahrungen aus der Fjordlicht-Werkstatt.
+
+  Begründung der Wahl: Variante 1 greift die drei Teilfragen mit den meisten Impressionen auf,
+  bleibt unter 60 Zeichen und verspricht nichts, was der Artikel nicht hält. Weichspüler wird
+  im Artikel behandelt, muss aber nicht in den Title.

@@ -1,0 +1,73 @@
+title: Assistenten-Landkarte für ein Marketingteam
+difficulty: 4
+question: |
+  **Szenario:** Das Marketingteam von Fjordlicht (oder ein Unternehmen deiner Wahl) nutzt
+  KI-Werkzeuge seit einem Jahr – aber jede Person auf ihre Weise. Die Teamleitung will nun
+  „ein paar KI-Assistenten" einführen und bittet dich um eine Entscheidungsgrundlage: Welche
+  Aufgaben bekommen einen Assistenten, welche bleiben bei Prompt-Vorlagen, welche laufen in
+  Projekten? Und in welchem Werkzeug?
+
+  ```text
+  Rahmen:
+  Team: 5 Personen (Content, Social Media, Newsletter, B2B/LinkedIn, Teamleitung).
+  Kanäle: Webshop, Blog, Newsletter, Instagram, TikTok, LinkedIn, Pinterest.
+  Werkzeuge: ChatGPT Business für alle; Microsoft 365 mit Copilot im Unternehmen.
+  Stand: Oktober 2026 - Custom GPTs werden durch Plugins abgelöst.
+  Keine Kundendaten in Assistenten.
+  ```
+
+  ---
+
+  **Runde 1 – Aufgaben sammeln.** Liste mindestens **zehn** wiederkehrende Aufgaben des Teams
+  auf. Bewerte jede nach den fünf Kriterien aus Abschnitt 23.5 (Häufigkeit, Gleichartigkeit,
+  Nutzerkreis, Wissen, Qualitätsrisiko) mit je 0 bis 2 Punkten. Lass dir dabei von der KI helfen,
+  Aufgaben zu finden – aber bewerte selbst.
+
+  **Runde 2 – Zuordnen.** Ordne jede Aufgabe einer Lösung zu: Prompt-Vorlage, Projekt oder
+  Assistent. Für jeden geplanten Assistenten (mindestens zwei, höchstens vier) skizzierst du die
+  vier Bausteine in Stichpunkten: Instruktionen, Wissen, Werkzeuge, Gesprächseinstieg.
+
+  **Runde 3 – Die Komplikation.** Die IT meldet: Für ChatGPT besteht zwar ein Business-Vertrag,
+  aber wegen der Plugin-Umstellung sollen bis Jahresende keine neuen Custom GPTs mehr gebaut werden.
+  Gleichzeitig weist die Datenschutzbeauftragte darauf hin, dass Produktdaten unkritisch sind,
+  B2B-Ansprechpartner aus LinkedIn-Recherchen aber personenbezogen. Passe deine Planung an:
+  Welche Assistenten baust du in welchem Format? Was ändert sich an den Wissensdateien?
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Teamleitung schlägt vor, statt mehrerer
+  Assistenten einen einzigen „Fjordlicht-Marketing-Assistenten für alles" zu bauen – das sei
+  übersichtlicher. Lass dir von der KI die Vorteile dieser Lösung zusammenstellen. **Widersprich**
+  begründet oder stimme begründet zu – mit mindestens drei konkreten Folgen für Instruktionen,
+  Wissensbasis und Testaufwand.
+
+  **Deliverable:**
+
+  1. Bewertungstabelle der mindestens zehn Aufgaben mit Punkten und Zuordnung
+  2. Bausteinskizze für jeden geplanten Assistenten
+  3. angepasste Planung nach Runde 3 mit Werkzeugwahl und Datenschutzhinweis
+  4. Stellungnahme zu Runde 4 (maximal eine halbe Seite)
+
+  **Fertig bist du erst, wenn** jede Aufgabe eine begründete Zuordnung hat, jeder Assistent alle
+  vier Bausteine enthält, deine Werkzeugwahl die Plugin-Umstellung und den Datenschutz
+  berücksichtigt und deine Stellungnahme aus Runde 4 mindestens drei konkrete Folgen benennt.
+tip: |
+  Der Lernkern liegt in der Unterscheidung „sammeln oder standardisieren". In Runde 3 lernst du,
+  dass Konzepte werkzeugunabhängig sind: Ein Assistent, der nicht als GPT gebaut werden darf, kann
+  als Projekt, Plugin oder Copilot Agent entstehen – die vier Bausteine bleiben. In Runde 4 gilt:
+  Breite kostet Präzision. Jede zusätzliche Aufgabe verlängert die Instruktionen und vergrößert
+  die Wissensbasis, aus der der Assistent die richtige Stelle finden muss.
+solution: |
+  Bewertungskriterien: (1) mindestens zehn realistische Aufgaben, nachvollziehbar nach den fünf
+  Kriterien bewertet; (2) zwei bis vier Assistenten mit vollständiger Bausteinskizze, Werkzeuge
+  bewusst begrenzt; (3) Runde 3 führt zu einer begründeten Werkzeugwahl (z. B. ChatGPT-Projekt
+  oder Plugin, alternativ Copilot Agent im Microsoft-365-Umfeld) und entfernt personenbezogene
+  Daten aus der geplanten Wissensbasis; (4) die Stellungnahme benennt konkrete Folgen, etwa
+  widersprüchliche Tonregeln für LinkedIn und TikTok, falsche Wissensdatei bei der Antwort,
+  vervielfachter Testaufwand bei jeder Änderung.
+
+  Ein mögliches Ergebnis: Assistent „Produkttexte", Assistent „Social-Captions", Assistent
+  „Newsletter-Entwürfe"; Kampagnenplanung als Projekt; Pressearbeit über Prompt-Vorlagen. Ein
+  einziger Assistent für alles wird abgelehnt, mit dem Kompromiss eines gemeinsamen Styleguides
+  als Wissensdatei in allen Assistenten.
+
+  Lernziel: Assistenten-Bedarf systematisch begründen, Werkzeuge nach Rahmenbedingungen statt nach
+  Gewohnheit wählen und erkennen, dass schmale Assistenten verlässlicher sind als breite.

@@ -1,0 +1,41 @@
+title: Midjourney-Parameter und Werkzeugwahl
+difficulty: 1
+question: |
+  **Teil A:** Ordne jedem Ziel den passenden Midjourney-Parameter zu: `--ar`, `--stylize`,
+  `--chaos`, `--no`, `--seed`, `--sref`.
+
+  1. Das Bild soll im Hochformat für Instagram (4:5) erscheinen.
+  2. Die vier Varianten eines Durchlaufs sollen sich für ein Moodboard stark unterscheiden.
+  3. Es soll kein Text im Bild auftauchen.
+  4. Der Look soll sich an einem freigegebenen Kampagnenbild orientieren.
+  5. Das Bild soll sachlicher und näher am Prompt sein, weniger „künstlerisch".
+  6. Du willst möglichst nah an ein früheres Ergebnis herankommen.
+
+  **Teil B:** Welches Werkzeug aus Kapitel 31 würdest du zuerst einsetzen – und warum?
+
+  - (a) Hintergrund eines echten Produktfotos für ein Banner verbreitern
+  - (b) Plakatentwurf mit Überschrift, Unterzeile und Datum
+  - (c) schnelles Stimmungsbild, das du danach im Gespräch mehrfach anpasst
+  - (d) stimmungsvolles Kampagnenmotiv mit starkem eigenem Look
+tip: |
+  Bei Teil B gibt es manchmal zwei vertretbare Antworten. Entscheidend ist die Begründung über
+  die Stärke des Werkzeugs.
+solution: |
+  | Nr. | Parameter | Hinweis |
+  |---|---|---|
+  | 1 | `--ar 4:5` | Seitenverhältnis |
+  | 2 | `--chaos` (z. B. 30 bis 50) | mehr Unterschied zwischen den Varianten |
+  | 3 | `--no text` | Ausschluss im eigenen Parameter wirkt verlässlicher als im Fließtext |
+  | 4 | `--sref` | Stilreferenz per Bild oder Stilcode |
+  | 5 | `--stylize` niedrig (z. B. `--s 50`), ggf. `--style raw` | weniger Midjourney-Eigenästhetik |
+  | 6 | `--seed` | gleicher Startwert, gleicher Prompt, ähnliches Ergebnis |
+
+  | Aufgabe | Werkzeug | Begründung |
+  |---|---|---|
+  | (a) | Firefly in Photoshop (Generatives Erweitern) | bearbeitet das echte Foto, Produkt bleibt unverändert |
+  | (b) | Ideogram (Entwurf), finale Texte im Layout-Tool | Stärke bei Typografie und Textlayout |
+  | (c) | ChatGPT Images | Bearbeitung auf Zuruf im Gespräch |
+  | (d) | Midjourney | starke Ästhetik und Art Direction |
+
+  Parameternamen können sich zwischen Midjourney-Versionen ändern – im Zweifel die aktuelle
+  Dokumentation prüfen.

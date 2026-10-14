@@ -1,0 +1,2076 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel23/">
+      
+      
+        <link rel="next" href="../kapitel25/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 24 – Aufbau eines KI-Marketingassistenten I: Konzeption - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-24-aufbau-eines-ki-marketingassistenten-i-konzeption" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 24 – Aufbau eines KI-Marketingassistenten I: Konzeption
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Block 5 · KI-Assistenten & CustomGPT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 23 – Vom Prompt zum KI-Assistenten
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 24 – Aufbau eines KI-Marketingassistenten I: Konzeption
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 24 – Aufbau eines KI-Marketingassistenten I: Konzeption
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#241-den-use-case-schneiden" class="md-nav__link">
+    <span class="md-ellipsis">
+      24.1 Den Use Case schneiden
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#242-rolle-und-grenzen-festlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      24.2 Rolle und Grenzen festlegen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#243-instruktionen-schreiben" class="md-nav__link">
+    <span class="md-ellipsis">
+      24.3 Instruktionen schreiben
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#244-die-wissensbasis-vorbereiten" class="md-nav__link">
+    <span class="md-ellipsis">
+      24.4 Die Wissensbasis vorbereiten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#245-konversationsstarter-und-beschreibung" class="md-nav__link">
+    <span class="md-ellipsis">
+      24.5 Konversationsstarter und Beschreibung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#246-alles-in-den-assistenten-steckbrief" class="md-nav__link">
+    <span class="md-ellipsis">
+      24.6 Alles in den Assistenten-Steckbrief
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 25 – Aufbau eines KI-Marketingassistenten II: Umsetzung und Test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 26 – Praxisbeispiel Content-Assistent
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 27 – Praxisbeispiel CRM-Chatbot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 28 – Konfiguration & Grenzen von CustomGPT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-24-aufbau-eines-ki-marketingassistenten-i-konzeption">Kapitel 24 – Aufbau eines KI-Marketingassistenten I: Konzeption<a class="headerlink" href="#kapitel-24-aufbau-eines-ki-marketingassistenten-i-konzeption" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Wie du einen <strong>Use Case</strong> so zuschneidest, dass ein Assistent ihn verlässlich erfüllen kann</li>
+<li>Wie du <strong>Rolle und Grenzen</strong> festlegst: was der Assistent tut, was nicht und wann er nachfragt</li>
+<li>Nach welcher <strong>Struktur</strong> du Instruktionen schreibst – und warum Reihenfolge und Eindeutigkeit zählen</li>
+<li>Wie du eine <strong>Wissensbasis</strong> vorbereitest: welche Dateien, welche Formate, welche Aufbereitung</li>
+<li>Wozu <strong>Konversationsstarter</strong> dienen und wie gute aussehen</li>
+<li>Wie du alles in einem <strong>Assistenten-Steckbrief</strong> bündelst, der in jedem Werkzeug funktioniert</li>
+</ul>
+</div>
+<hr />
+<h2 id="241-den-use-case-schneiden">24.1 Den Use Case schneiden<a class="headerlink" href="#241-den-use-case-schneiden" title="Permanent link">&para;</a></h2>
+<p>Die meisten Assistenten scheitern nicht an schlechten Instruktionen, sondern an einem schlecht geschnittenen Auftrag. „Hilft beim Marketing" ist kein Use Case. „Schreibt Produkttexte für neue Artikel im Fjordlicht-Webshop auf Basis des Produktdatenblatts" ist einer.</p>
+<p>Ein guter Zuschnitt beantwortet vier Fragen: <strong>Wer</strong> nutzt den Assistenten, <strong>wofür</strong> genau, <strong>mit welchem Material</strong> als Eingabe und <strong>was</strong> soll am Ende herauskommen? Wenn du eine dieser Fragen nicht in einem Satz beantworten kannst, ist der Use Case noch zu breit.</p>
+<table>
+<thead>
+<tr>
+<th>Zuschnitt</th>
+<th>Beispiel</th>
+<th>Problem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zu breit</td>
+<td>„Marketing-Assistent für Fjordlicht"</td>
+<td>widersprüchliche Regeln für Kanäle, kaum testbar</td>
+</tr>
+<tr>
+<td>zu eng</td>
+<td>„Schreibt den Produkttext für die Regenjacke Sølv"</td>
+<td>einmalige Aufgabe, ein Prompt reicht</td>
+</tr>
+<tr>
+<td>passend</td>
+<td>„Schreibt Produkttexte für neue Webshop-Artikel aus dem Datenblatt"</td>
+<td>klare Eingabe, klares Ergebnis, wiederkehrend</td>
+</tr>
+<tr>
+<td>passend</td>
+<td>„Prüft fertige Texte gegen Styleguide und Claim-Liste"</td>
+<td>eine Prüfaufgabe mit festen Kriterien</td>
+</tr>
+</tbody>
+</table>
+<p>Die beiden passenden Beispiele zeigen ein nützliches Muster: Viele Marketingassistenten haben einen <strong>Schreibmodus</strong> und einen <strong>Prüfmodus</strong>. Beide können in einem Assistenten stecken, solange sie dieselbe Wissensbasis nutzen. Wie das in einem vollständigen Fall aussieht, zeigt der Content-Assistent von Fjordlicht mit seinem Prüfmodus „Claim-Check" in Kap. 26.</p>
+<p>Für den Zuschnitt eignet sich die KI selbst als Sparringspartner. Der Rückfragen-Prompt aus Kap. 7 dreht dabei die Rollen um: Nicht du beschreibst alles auf einmal, sondern das Werkzeug fragt nach, bis der Zweck klar ist.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich möchte einen KI-Assistenten für unser Marketingteam konzipieren.
+Meine erste Idee: [Idee in einem Satz].
+Stelle mir nacheinander Fragen, bis du Folgendes eindeutig beantworten
+kannst: Wer nutzt den Assistenten? Wofür genau? Welche Eingabe liefern
+die Nutzenden? Welches Ergebnis soll entstehen? Was soll er ausdrücklich
+nicht tun? Stelle immer nur eine Frage pro Nachricht.
+Fasse danach den Zweck in genau einem Satz zusammen und nenne Aufgaben,
+die du für einen eigenen Assistenten abtrennen würdest.
+</code></pre></div></td></tr></table></div>
+<p>Wichtig ist der letzte Satz des Prompts: Er macht sichtbar, wo deine Idee eigentlich zwei oder drei Assistenten sind.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p><strong>Ein Assistent, eine Aufgabenfamilie.</strong> Wenn zwei Aufgaben unterschiedliche Regeln, unterschiedliches Wissen oder unterschiedliche Nutzergruppen brauchen, sind es zwei Assistenten.</p>
+</div>
+<hr />
+<h2 id="242-rolle-und-grenzen-festlegen">24.2 Rolle und Grenzen festlegen<a class="headerlink" href="#242-rolle-und-grenzen-festlegen" title="Permanent link">&para;</a></h2>
+<p>Die Rolle eines Assistenten ist mehr als „Du bist ein erfahrener Texter". Sie legt fest, <strong>was er tun darf, was er nicht tun darf und wann er sich zurückmeldet</strong>. Gerade der dritte Punkt wird oft vergessen. Ein Assistent ohne Rückfrageregel füllt jede Lücke mit Wahrscheinlichem – bei Produkttexten heißt das: erfundene Materialangaben, Gewichte, Pflegehinweise.</p>
+<table>
+<thead>
+<tr>
+<th>Darf</th>
+<th>Darf nicht</th>
+<th>Fragt nach bzw. markiert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Produkttexte aus dem Datenblatt schreiben</td>
+<td>Produktdaten ergänzen, die nicht im Datenblatt stehen</td>
+<td>fehlende Angaben als <code>[FEHLT: …]</code></td>
+</tr>
+<tr>
+<td>Varianten in Länge und Fokus liefern</td>
+<td>Nachhaltigkeitsaussagen ohne Beleg in der Claim-Liste</td>
+<td>Aussage nicht in Claim-Liste: <code>[CLAIM PRÜFEN]</code></td>
+</tr>
+<tr>
+<td>Texte kürzen oder umformulieren</td>
+<td>Preise, Rabatte, Lieferzeiten nennen</td>
+<td>Zielgruppe unklar: eine Rückfrage vor dem Schreiben</td>
+</tr>
+<tr>
+<td>auf Styleguide-Regeln hinweisen</td>
+<td>Konkurrenzprodukte bewerten</td>
+<td>Anfrage außerhalb des Zwecks: freundlich ablehnen und erklären</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Rollen wie „Du bist der beste Werbetexter der Welt" bringen nichts (Kap. 7). Wirksam ist eine Rolle, die eine <strong>Perspektive und einen Maßstab</strong> liefert: „Du schreibst Produkttexte für Fjordlicht. Maßstab ist der Styleguide; im Zweifel gilt: lieber nüchtern als übertrieben."</p>
+</div>
+<hr />
+<h2 id="243-instruktionen-schreiben">24.3 Instruktionen schreiben<a class="headerlink" href="#243-instruktionen-schreiben" title="Permanent link">&para;</a></h2>
+<p>Instruktionen sind der Kern des Assistenten. Sie werden bei jeder Anfrage mitgelesen, ohne dass die Nutzenden sie sehen. Deshalb müssen sie <strong>vollständig, eindeutig und gut gegliedert</strong> sein. Bewährt hat sich eine feste Reihenfolge mit Markdown-Überschriften – das Modell erkennt Abschnitte, und du findest Stellen beim Überarbeiten schneller wieder.</p>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Inhalt</th>
+<th>Bezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rolle und Ziel</td>
+<td>wer der Assistent ist, wozu er da ist</td>
+<td>Persona, Purpose (Kap. 5)</td>
+</tr>
+<tr>
+<td>Nutzende und Kontext</td>
+<td>wer ihn bedient, Unternehmen, Zielgruppe</td>
+<td>Purpose</td>
+</tr>
+<tr>
+<td>Arbeitsablauf</td>
+<td>Schritte von der Anfrage bis zur Ausgabe</td>
+<td>Request</td>
+</tr>
+<tr>
+<td>Regeln und No-Gos</td>
+<td>Markenstimme, verbotene Aussagen, Prioritäten</td>
+<td>Modifier, Tone</td>
+</tr>
+<tr>
+<td>Umgang mit Wissen</td>
+<td>welche Datei wofür, was bei Widerspruch gilt</td>
+<td>Modifier</td>
+</tr>
+<tr>
+<td>Ausgabeformat</td>
+<td>Aufbau, Länge, Markierungen</td>
+<td>Output</td>
+</tr>
+<tr>
+<td>Grenzen</td>
+<td>Ablehnung, Rückfragen, Lücken</td>
+<td>Modifier</td>
+</tr>
+</tbody>
+</table>
+<p>So sieht eine kompakte Fassung für den Produkttext-Assistenten aus:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span></pre></div></td><td class="code"><div><pre><span></span><code># Rolle und Ziel
+Du schreibst Produkttexte für den Webshop von Fjordlicht, einer Marke
+für nachhaltige Outdoor-Bekleidung aus Münster. Ziel: Texte, die
+informieren und zur Marke passen, nicht überreden.
+
+# Nutzende
+Mitarbeitende im Marketing. Sie liefern ein Produktdatenblatt oder
+Stichpunkte und nennen optional Zielgruppe und Fokus.
+
+# Arbeitsablauf
+1. Prüfe, ob Produktname, Material, Einsatzbereich und Pflege vorliegen.
+2. Fehlt die Zielgruppe, stelle genau eine Rückfrage.
+3. Schreibe den Text nach dem Ausgabeformat.
+4. Prüfe jede Nachhaltigkeitsaussage gegen die Datei Claim-Liste.
+
+# Regeln
+- Markenstimme laut Styleguide: ruhig, ehrlich, naturverbunden,
+  leicht nordisch-trocken, Du-Ansprache.
+- Keine Superlative, keine Ausrufezeichen, keine Werbefloskeln.
+- Nachhaltigkeit nur, wenn die Aussage wörtlich oder sinngemäß in der
+  Claim-Liste steht. Sonst: [CLAIM PRÜFEN: Aussage].
+- Keine Preise, Rabatte oder Lieferzeiten.
+
+# Umgang mit Wissen
+- Styleguide: Ton und Wortwahl. Produktdaten: alle Fakten.
+- Bei Widerspruch zwischen Anfrage und Produktdaten: Widerspruch nennen,
+  nicht entscheiden.
+
+# Ausgabeformat
+Überschrift (max. 8 Wörter), Einleitung (2 Sätze),
+3 bis 5 Stichpunkte zu Eigenschaften, Pflegehinweis (1 Satz).
+Fehlende Angaben als [FEHLT: ...].
+
+# Grenzen
+Anfragen außerhalb von Produkttexten lehnst du freundlich ab und
+verweist auf das Marketingteam.
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Prioritäten ausdrücklich machen</p>
+<p>Regeln kollidieren. „Halte dich kurz" und „nenne alle Eigenschaften" passen nicht immer zusammen. Schreib dazu, was im Zweifel gilt – etwa: „Richtigkeit vor Vollständigkeit vor Kürze." Ohne diese Angabe entscheidet das Modell jedes Mal anders.</p>
+</div>
+<p>Drei Regeln für das Schreiben: Formuliere <strong>positiv</strong>, was gelten soll, und ergänze Verbote nur dort, wo sie nötig sind. Kopiere <strong>kein Wissen</strong> in die Instruktionen – Produktdaten gehören in eine Datei, nicht in die Regeln. Und halte die Instruktionen <strong>so kurz wie möglich, so lang wie nötig</strong>: Werkzeuge haben Zeichenbegrenzungen, die je nach Anbieter unterschiedlich ausfallen, und jede überflüssige Zeile verdünnt die wichtigen.</p>
+<hr />
+<h2 id="244-die-wissensbasis-vorbereiten">24.4 Die Wissensbasis vorbereiten<a class="headerlink" href="#244-die-wissensbasis-vorbereiten" title="Permanent link">&para;</a></h2>
+<p>Wissensdateien liefern dem Assistenten Fakten und Beispiele. Technisch wird bei einer Anfrage nach passenden Abschnitten gesucht, und nur diese fließen in die Antwort ein (genauer in Kap. 28). Daraus folgt: Der Assistent findet nur, was <strong>klar gegliedert und eindeutig benannt</strong> ist.</p>
+<p><strong>Was hineingehört:</strong> Styleguide bzw. Markenstimme, Produktdaten, Claim-Liste mit belegbaren Aussagen, zwei bis fünf freigegebene Beispieltexte, gegebenenfalls ein Glossar mit Fachbegriffen und Schreibweisen (Sølv, nicht Solv).</p>
+<p><strong>Was nicht hineingehört:</strong> personenbezogene Daten (Kundenlisten, CRM-Exporte), vertrauliche Informationen (Einkaufspreise, Margen, Strategiepapiere), veraltete Versionen neben aktuellen, ganze Ordner „zur Sicherheit". Alles, was im Wissen liegt, kann über geschickte Fragen auch wieder herausgeholt werden (Kap. 28).</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Eignung</th>
+<th>Hinweis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TXT / Markdown</td>
+<td>sehr gut</td>
+<td>klare Überschriften, kein Layout-Ballast</td>
+</tr>
+<tr>
+<td>DOCX</td>
+<td>gut</td>
+<td>Überschriftenformate nutzen, keine Textfelder</td>
+</tr>
+<tr>
+<td>PDF (mit Text)</td>
+<td>mittel</td>
+<td>Spalten, Kopfzeilen und Tabellen werden oft zerstückelt</td>
+</tr>
+<tr>
+<td>PDF (Scan)</td>
+<td>schlecht</td>
+<td>Text muss erst erkannt werden, Fehler häufig</td>
+</tr>
+<tr>
+<td>CSV / XLSX</td>
+<td>gut für Daten</td>
+<td>eine Zeile pro Produkt, sprechende Spaltennamen, ein Tabellenblatt</td>
+</tr>
+<tr>
+<td>PPTX</td>
+<td>schlecht</td>
+<td>Stichworte ohne Zusammenhang</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Aufbereitung vorher – nachher</p>
+<p><strong>Vorher:</strong> Ein 40-seitiges Marken-PDF mit Moodbildern, Zitaten der Gründer, Farbcodes, Schriftarten und – auf Seite 31 – zwei Absätzen zur Tonalität.</p>
+<p><strong>Nachher:</strong> <code>Fjordlicht_Markenstimme_2026-10.md</code> mit fünf Abschnitten: Grundhaltung, Wortwahl (bevorzugt / vermieden), Satzbau, Anrede, drei Beispielsätze vorher/nachher. Zwei Seiten statt vierzig, und jede Regel ist auffindbar.</p>
+</div>
+<p>Gib jeder Datei einen <strong>sprechenden Namen mit Datum</strong> und schreib oben in die Datei, wofür sie gilt. Beispieltexte kennzeichnest du ausdrücklich: „Gutes Beispiel" bzw. „So nicht – Grund: Superlativ". Ohne diese Kennzeichnung behandelt der Assistent auch schlechte Beispiele als Vorbild (Kap. 6).</p>
+<hr />
+<h2 id="245-konversationsstarter-und-beschreibung">24.5 Konversationsstarter und Beschreibung<a class="headerlink" href="#245-konversationsstarter-und-beschreibung" title="Permanent link">&para;</a></h2>
+<p>Der Gesprächseinstieg entscheidet, ob Kolleginnen und Kollegen den Assistenten richtig nutzen. Bei Custom GPTs heißen die vorbereiteten Einstiegsknöpfe <strong>Konversationsstarter</strong>; in anderen Werkzeugen übernehmen eine kurze Beschreibung, eine angeheftete Kurzanleitung oder ein Startprompt in der Prompt-Bibliothek diese Aufgabe.</p>
+<p>Gute Konversationsstarter erfüllen drei Funktionen: Sie <strong>zeigen, was der Assistent kann</strong>, sie <strong>liefern das richtige Eingabeformat</strong> gleich mit, und sie <strong>decken die wichtigsten Modi</strong> ab.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Produkttext aus Datenblatt: Ich füge das Datenblatt ein, du fragst nach
+der Zielgruppe und schreibst dann.
+
+Bestehenden Produkttext kürzen auf [Anzahl] Wörter.
+
+Prüfe diesen Text gegen Styleguide und Claim-Liste: [Text]
+
+Was kannst du - und was nicht?
+</code></pre></div></td></tr></table></div>
+<p>Der letzte Starter ist kein Scherz: Er zwingt dich, in den Instruktionen eine klare Selbstbeschreibung zu hinterlegen, und neue Teammitglieder lernen in einer Antwort die Grenzen kennen.</p>
+<p>Schwache Starter erkennst du daran, dass sie nichts verraten: „Hallo!", „Hilf mir beim Marketing" oder „Schreib was Schönes". Sie führen zu Anfragen ohne Material – und damit genau zu den generischen Ergebnissen, die der Assistent eigentlich verhindern soll. Die <strong>Beschreibung</strong> des Assistenten (ein bis zwei Sätze, sichtbar für alle Nutzenden) ergänzt die Starter: Sie nennt Zweck, benötigte Eingabe und die wichtigste Grenze, etwa „Schreibt Produkttexte aus dem Datenblatt. Erfindet keine Produktdaten – fehlende Angaben werden markiert."</p>
+<hr />
+<h2 id="246-alles-in-den-assistenten-steckbrief">24.6 Alles in den Assistenten-Steckbrief<a class="headerlink" href="#246-alles-in-den-assistenten-steckbrief" title="Permanent link">&para;</a></h2>
+<p>Bevor du irgendein Werkzeug öffnest, bündelst du die Konzeption in einem <strong>Steckbrief</strong> (Kap. 23). Er ist das Original, das du später in den GPT-Editor, ein Plugin, ein Projekt, ein Gem oder einen Copilot Agent überträgst – und das bei der nächsten Produktumstellung übrig bleibt.</p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Inhalt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name und Version</td>
+<td>z. B. „Produkttext-Assistent v0.1"</td>
+</tr>
+<tr>
+<td>Zweck</td>
+<td>ein Satz: wer, wofür, mit welcher Eingabe, welches Ergebnis</td>
+</tr>
+<tr>
+<td>Nutzende</td>
+<td>Personen bzw. Rollen</td>
+</tr>
+<tr>
+<td>Instruktionen</td>
+<td>Volltext nach Abschnitt 24.3</td>
+</tr>
+<tr>
+<td>Wissensdateien</td>
+<td>Dateiname, Inhalt, Stand, verantwortliche Person</td>
+</tr>
+<tr>
+<td>Werkzeuge</td>
+<td>was eingeschaltet ist und warum – und was bewusst aus bleibt</td>
+</tr>
+<tr>
+<td>Konversationsstarter</td>
+<td>drei bis vier</td>
+</tr>
+<tr>
+<td>Testfälle</td>
+<td>mindestens zehn, Grundlage für Kap. 25</td>
+</tr>
+<tr>
+<td>Verantwortlich</td>
+<td>wer pflegt, wer gibt frei</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart LR
+    U(["Use Case schneiden"]) --&gt; R(["Rolle und Grenzen"])
+    R --&gt; I(["Instruktionen"])
+    I --&gt; W(["Wissensbasis aufbereiten"])
+    W --&gt; K(["Konversationsstarter"])
+    K --&gt; S(["Steckbrief"])
+    S --&gt; T(["Umsetzung und Test, Kap. 25"])</code></pre>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p><strong>Erst konzipieren, dann klicken.</strong> Wer direkt im Editor anfängt, baut den Assistenten um die Oberfläche herum – wer mit dem Steckbrief anfängt, baut ihn um die Aufgabe herum.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ein guter Use Case beantwortet in je einem Satz: <strong>wer, wofür, mit welcher Eingabe, welches Ergebnis</strong>; zu breite Assistenten sind kaum testbar.</li>
+<li>Rolle heißt nicht Selbstlob, sondern <strong>Perspektive, Maßstab und Grenzen</strong> – inklusive Regel für Rückfragen und fehlende Angaben.</li>
+<li>Instruktionen folgen einer festen Struktur: Rolle und Ziel, Nutzende, Arbeitsablauf, Regeln, Umgang mit Wissen, Ausgabeformat, Grenzen; <strong>Prioritäten</strong> werden ausdrücklich genannt.</li>
+<li>Die <strong>Wissensbasis</strong> besteht aus wenigen, aktuellen, klar gegliederten Dateien mit sprechenden Namen; Textformate schlagen Layout-PDFs, personenbezogene und vertrauliche Daten bleiben draußen.</li>
+<li><strong>Konversationsstarter</strong> zeigen, was der Assistent kann, und liefern das richtige Eingabeformat mit.</li>
+<li>Der <strong>Assistenten-Steckbrief</strong> bündelt alles werkzeugunabhängig und ist die Grundlage für Umsetzung und Test.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Gehört das in die Instruktionen, ins Wissen oder nirgendwohin?</summary>
+<p>Für den Produkttext-Assistenten von Fjordlicht liegen folgende Inhalte bereit. Ordne jeden
+einer Stelle zu: <strong>Instruktionen</strong>, <strong>Wissensdatei</strong> oder <strong>gar nicht hinterlegen</strong>. Begründe
+kurz.</p>
+<ol>
+<li>„Keine Superlative, keine Ausrufezeichen."</li>
+<li>Tabelle mit Material, Gewicht und Pflegehinweis aller 120 Artikel</li>
+<li>Export der Newsletter-Abonnenten mit Namen und Kaufhistorie</li>
+<li>„Fehlende Angaben markierst du als [FEHLT: …]."</li>
+<li>Drei freigegebene Produkttexte als Vorbild</li>
+<li>Einkaufspreise und Margen je Artikel</li>
+<li>Liste belegbarer Nachhaltigkeitsaussagen mit Nachweis</li>
+<li>„Bei Widerspruch zwischen Anfrage und Produktdaten nennst du den Widerspruch."</li>
+<li>Styleguide 2023 und Styleguide 2026</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Faustregel: Regeln und Verhalten gehören in die Instruktionen, Fakten und Beispiele ins Wissen.
+Alles, was nicht jede nutzende Person sehen dürfte, gehört nirgendwohin.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Ort</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Instruktionen</td>
+<td>Verhaltensregel, gilt immer</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Wissensdatei (CSV/XLSX)</td>
+<td>Fakten, zu umfangreich für Instruktionen</td>
+</tr>
+<tr>
+<td>3</td>
+<td>nirgendwohin</td>
+<td>personenbezogene Daten, für Produkttexte unnötig (DSGVO, Kap. 4)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Instruktionen</td>
+<td>Verhaltensregel für Lücken</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Wissensdatei</td>
+<td>Beispiele, gekennzeichnet als „Gutes Beispiel"</td>
+</tr>
+<tr>
+<td>6</td>
+<td>nirgendwohin</td>
+<td>vertraulich, für den Zweck unnötig, könnte ausgelesen werden</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Wissensdatei</td>
+<td>Faktenbasis für den Claim-Check; in den Instruktionen nur der Verweis darauf</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Instruktionen</td>
+<td>Regel für den Umgang mit Wissen</td>
+</tr>
+<tr>
+<td>9</td>
+<td>nur Styleguide 2026 als Wissensdatei</td>
+<td>zwei Versionen erzeugen widersprüchliche Antworten</td>
+</tr>
+</tbody>
+</table>
+<p>Der häufigste Fehler ist Nr. 9: „Schadet ja nicht, beide hochzuladen." Doch, schadet – der
+Assistent kann nicht wissen, welche Version gilt, und greift mal auf die eine, mal auf die
+andere zurück.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Instruktionen nach Struktur schreiben</summary>
+<p>Diese Übung machst du direkt im KI-Werkzeug. Eine Kollegin hat für einen Social-Media-Assistenten
+folgende Instruktionen geschrieben:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist ein super kreativer Social-Media-Experte und schreibst die
+besten Posts für Fjordlicht!!! Sei witzig aber auch seriös, kurz aber
+ausführlich genug. Nutze Emojis wenn passend. Wir sind nachhaltig, also
+betone das immer. Unsere Produkte sind Sølv (Jacke, 249 Euro), Skog
+(Fleece, 89 Euro), Vidde (Hose, 119 Euro). Schreib für Instagram,
+TikTok und LinkedIn.
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>Benenne mindestens <strong>fünf</strong> Probleme dieser Instruktionen.</li>
+<li>Schreibe sie neu nach der Struktur aus Abschnitt 24.3 (Rolle und Ziel, Nutzende, Arbeitsablauf,
+   Regeln, Umgang mit Wissen, Ausgabeformat, Grenzen). Beschränke dich auf <strong>Instagram</strong>.</li>
+<li>Teste beide Fassungen im Werkzeug (Projekt, Plugin, Gem oder einfach als erste Nachricht in
+   einem neuen Chat) mit der Anfrage „Post zum Herbststart, Fokus Fleece Skog".</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Suche nach Widersprüchen, nach Wissen, das in den Instruktionen nichts verloren hat, und nach
+Regeln, die Greenwashing geradezu herausfordern.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Probleme: (1) Superlativ-Rolle ohne Maßstab; (2) Widersprüche „witzig aber seriös", „kurz aber
+ausführlich" ohne Priorität; (3) „Nachhaltigkeit immer betonen" ohne Belegpflicht führt zu
+Greenwashing; (4) Preise in den Instruktionen – veralten, gehören nicht in Social-Posts;
+(5) drei Plattformen mit unterschiedlicher Logik in einem Assistenten; (6) keine Regel für
+fehlende Angaben; (7) Ton widerspricht der Markenstimme (Ausrufezeichen, „super").</p>
+<p>Mögliche Neufassung (gekürzt):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code># Rolle und Ziel
+Du schreibst Instagram-Entwürfe für Fjordlicht (nachhaltige
+Outdoor-Bekleidung, Münster). Ziel: ruhige, ehrliche Posts, die zum
+Draußensein einladen.
+# Nutzende
+Social-Media-Team; liefert Anlass, Produkt und optional Bildidee.
+# Arbeitsablauf
+1. Fehlt der Anlass, stelle eine Rückfrage. 2. Schreibe Caption.
+3. Prüfe Nachhaltigkeitsaussagen gegen die Claim-Liste.
+# Regeln
+Markenstimme laut Styleguide. Keine Superlative, höchstens ein Emoji.
+Nachhaltigkeit nur mit Beleg aus der Claim-Liste, sonst [CLAIM PRÜFEN].
+Im Zweifel: ehrlich vor witzig, kurz vor vollständig.
+# Umgang mit Wissen
+Produktfakten nur aus der Datei Produktdaten. Keine Preise.
+# Ausgabeformat
+Hook (1 Satz), Caption (max. 60 Wörter), 3 bis 5 Hashtags.
+# Grenzen
+Andere Plattformen: Hinweis auf die passenden Assistenten.
+</code></pre></div></td></tr></table></div>
+<p>Im Test liefert die alte Fassung typischerweise Emojis, Ausrufezeichen und pauschale
+„nachhaltig"-Aussagen, die neue Fassung einen ruhigen Text mit markierter Claim-Lücke.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Eine Wissensdatei aufbereiten</summary>
+<p>Der Fjordlicht-Styleguide liegt als Fließtext vor (Auszug):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Fjordlicht ist mehr als eine Marke - es ist ein Gefühl. Gegründet 2015
+von zwei Freunden nach einer Wanderung in Norwegen, steht Fjordlicht für
+Ruhe. Unsere Farben sind Moosgrün (#4A5D3A) und Nebelgrau. Wir sprechen
+unsere Kundinnen und Kunden mit Du an, so wie man es unter Wandernden tut.
+Wir vermeiden Superlative wie "der beste" oder "einzigartig", weil sie
+nicht zu unserer Bescheidenheit passen. Unsere Fotos zeigen echte Menschen.
+Schreibe in kurzen Sätzen. Begriffe wie "umweltfreundlich" oder "grün"
+verwenden wir nicht ohne konkreten Nachweis. Statt "Abenteuer" sagen wir
+lieber "draußen sein". Unsere Schrift ist die Fjord Sans.
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>Bereite den Auszug als Wissensdatei für einen <strong>Text</strong>-Assistenten auf: sinnvolle Abschnitte,
+   nur relevante Inhalte, eindeutige Regeln, mindestens ein Beispiel vorher/nachher.</li>
+<li>Begründe, welche Inhalte du entfernt hast und warum.</li>
+<li>Bewerte kritisch: Lass dir von der KI die Aufbereitung erledigen und vergleiche mit deiner
+   Fassung. Wo hat die KI etwas hinzugefügt, das nicht im Original steht?</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Eine Wissensdatei ist kein Markenbuch. Frage bei jedem Satz: Hilft das dem Assistenten, einen
+Text zu schreiben oder zu prüfen? Und achte im KI-Vergleich auf „hilfreiche" Ergänzungen – sie
+sind genau das Problem.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Mögliche Wissensdatei:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code>Fjordlicht_Markenstimme_2026-10.md
+Gilt für: alle Texte (Web, Newsletter, Social). Stand: Oktober 2026.
+
+## Grundhaltung
+Ruhig, bescheiden, ehrlich.
+## Anrede
+Du-Ansprache.
+## Satzbau
+Kurze Sätze.
+## Wortwahl
+Vermeiden: Superlative ("der beste", "einzigartig").
+Vermeiden ohne konkreten Nachweis: "umweltfreundlich", "grün".
+Bevorzugt: "draußen sein" statt "Abenteuer".
+## Beispiel
+So nicht: "Das ultimative Abenteuer-Fleece - einzigartig grün!"
+Besser: "Ein Fleece für kühle Morgen draußen."
+</code></pre></div></td></tr></table></div>
+<p>Entfernt: Gründungsgeschichte (für Produkttexte unnötig, könnte aber in eine eigene Datei
+„Über uns" wandern), Farbcodes, Schrift, Fotohinweis (gehören in einen Bildsprache-Guide,
+Kap. 32), „mehr als eine Marke – ein Gefühl" (keine Regel).</p>
+<p>Typische KI-Zusätze im Vergleich: zusätzliche Tabu-Wörter, eine erfundene Zielgruppe, eine
+Regel zu Emojis oder Hashtags, die nicht im Original steht. Jede dieser Ergänzungen wäre ab
+dann verbindlich für den Assistenten – ohne dass das Team sie je beschlossen hat. Deshalb gilt:
+KI darf beim Aufbereiten helfen, aber jede Regel braucht eine Quelle im Original.</p>
+<p>Bewertungskriterien: Gliederung nach Abschnitten, nur textrelevante Inhalte, Beispiel
+vorhanden, mindestens eine KI-Ergänzung erkannt und begründet abgelehnt.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Konzeption eines Marketingassistenten</summary>
+<p><strong>Szenario:</strong> Du sollst für das Fjordlicht-Marketingteam (oder ein Unternehmen deiner Wahl)
+einen KI-Assistenten konzipieren, der in Kap. 25 tatsächlich gebaut und getestet wird. Heute
+entsteht noch nichts im Werkzeug – heute entsteht der <strong>Assistenten-Steckbrief</strong>, nach dem
+später jede Person den Assistenten in jedem Werkzeug nachbauen könnte.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Use Case nach Wahl, z. B. Produkttexte Webshop, Newsletter-Intros,
+LinkedIn-Posts für Fjordlicht Business, Pinterest-Pinbeschreibungen.
+Nicht wählen: den Content-Assistenten (Kap. 26) oder den
+CRM-Chatbot (Kap. 27) - die werden gesondert behandelt.
+Material: Fjordlicht-Angaben aus dem Kurs oder eigene, fiktive Unterlagen.
+Keine echten Kundendaten, keine vertraulichen Firmeninformationen.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Use Case und Grenzen.</strong> Formuliere den Zweck in einem Satz (wer, wofür, mit welcher
+Eingabe, welches Ergebnis). Erstelle die Tabelle „Darf / Darf nicht / Fragt nach bzw. markiert"
+mit mindestens vier Zeilen.</p>
+<p><strong>Runde 2 – Instruktionen und Wissen.</strong> Schreibe die Instruktionen vollständig nach der Struktur
+aus Abschnitt 24.3, inklusive einer ausdrücklichen Prioritätenregel. Lege mindestens <strong>drei</strong>
+Wissensdateien an (als Text oder Markdown), darunter eine mit gekennzeichneten Beispielen
+(„Gutes Beispiel" / „So nicht – Grund"). Formuliere drei bis vier Konversationsstarter.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Die Produktmanagerin schickt dir die Produktdaten: eine
+Excel-Datei mit fünf Tabellenblättern, verbundenen Zellen, Farbmarkierungen statt Text
+(„grün = recyceltes Material") und zwei Artikeln, deren Gewicht in Blatt 1 und Blatt 4
+unterschiedlich angegeben ist. Bereite die Daten so auf, dass der Assistent sie zuverlässig
+nutzen kann, und lege fest, wie er mit dem Widerspruch umgehen soll. Halte fest, welche Frage
+du an die Produktmanagerin zurückgibst.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Eine Kollegin schlägt vor, den Export der
+Newsletter-Abonnenten mit Vornamen und letzten Käufen als Wissensdatei hinzuzufügen – dann
+könne der Assistent „persönlicher" schreiben. Lass dir von der KI Argumente dafür nennen.
+<strong>Widersprich</strong> begründet: Nenne mindestens drei Gründe (rechtlich, technisch, fachlich) und
+einen alternativen Weg, Personalisierung umzusetzen (Kap. 13).</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Zweck-Satz und Tabelle „Darf / Darf nicht / Fragt nach"</li>
+<li>vollständige Instruktionen mit Prioritätenregel</li>
+<li>mindestens drei aufbereitete Wissensdateien plus Konversationsstarter</li>
+<li>aufbereitete Produktdaten mit Widerspruchsregel und Rückfrage aus Runde 3</li>
+<li>Stellungnahme zu Runde 4</li>
+<li>Assistenten-Steckbrief mit allen Feldern aus Abschnitt 24.6, inklusive zehn Testfällen in
+   Stichworten</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> eine fremde Person allein mit deinem Steckbrief den Assistenten
+in einem beliebigen Werkzeug einrichten könnte, keine Wissensdatei personenbezogene oder
+widersprüchliche Angaben enthält und jede Regel in den Instruktionen eindeutig prüfbar ist.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 3: Wissen ist erst dann Wissen, wenn der Assistent es finden und
+eindeutig lesen kann. Farben, verbundene Zellen und Widersprüche sind für Menschen lesbar, für
+einen Assistenten nicht. Einen Widerspruch löst nicht der Assistent, sondern die zuständige
+Person – der Assistent muss ihn nur sichtbar machen. In Runde 4 gilt: Personalisierung gehört in
+das Versandsystem mit Platzhaltern, nicht in eine Wissensdatei, die alle Nutzenden auslesen können.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) Zweck in einem Satz mit allen vier Bestandteilen, Grenzen-Tabelle mit
+Rückfrage- und Markierungsregeln; (2) Instruktionen folgen der Struktur, enthalten eine
+Prioritätenregel und kein kopiertes Faktenwissen; (3) Wissensdateien sind thematisch getrennt,
+datiert, sprechend benannt, Beispiele gekennzeichnet; (4) Produktdaten als ein Tabellenblatt
+bzw. CSV mit Text statt Farben, Widerspruch nicht stillschweigend aufgelöst, sondern als
+Rückfrage an die Produktmanagerin und als Regel „Widerspruch nennen" im Assistenten;
+(5) Stellungnahme nennt z. B. DSGVO (Zweckbindung, Datenminimierung), Auslesbarkeit von
+Wissensdateien, fehlenden Nutzen für einen Entwurfsassistenten, und verweist auf Platzhalter
+im Newsletter-Tool; (6) Steckbrief vollständig und werkzeugunabhängig.</p>
+<p>Lernziel: Einen Assistenten so konzipieren, dass er übertragbar, prüfbar und datenschutzgerecht
+ist – und Konzeption als eigene Arbeitsphase vor der technischen Umsetzung begreifen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel23/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 23 – Vom Prompt zum KI-Assistenten">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 23 – Vom Prompt zum KI-Assistenten
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel25/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 25 – Aufbau eines KI-Marketingassistenten II: Umsetzung und Test">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 25 – Aufbau eines KI-Marketingassistenten II: Umsetzung und Test
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

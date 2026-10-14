@@ -1,0 +1,35 @@
+title: Einen Bildsprache-Baustein ableiten und testen
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT Images, Gemini, Firefly oder Midjourney).
+
+  1. **Ableiten.** Wähle drei Bilder, die eine einheitliche Bildsprache haben – eigene Fotos,
+     freigegebene Bilder deines Unternehmens oder drei Bilder, die du für Fjordlicht generierst.
+     Lass sie mit dem Analyse-Prompt aus Abschnitt 32.5 beschreiben.
+  2. **Schärfen.** Prüfe den Baustein gegen die sieben Dimensionen aus Abschnitt 32.2. Ersetze
+     jedes Adjektiv, das man im Bild nicht sehen kann, durch eine sichtbare Beschreibung.
+  3. **Testen.** Generiere zwei verschiedene Motive (zum Beispiel „Familie beim Picknick im
+     Nieselregen" und „Rucksack Tind auf einem Steg") – einmal **ohne** und einmal **mit**
+     Bildsprache-Baustein.
+  4. **Vergleichen.** Lege die vier Bilder nebeneinander und notiere, in welchen Dimensionen
+     der Baustein wirkt und wo nicht.
+tip: |
+  Ein guter Baustein macht zwei inhaltlich verschiedene Motive erkennbar „verwandt". Wenn beide
+  Bilder mit Baustein immer noch wie aus zwei verschiedenen Kampagnen aussehen, ist er zu vage –
+  meist fehlen Licht und Bearbeitung.
+solution: |
+  Typische Beobachtungen:
+
+  | Dimension | ohne Baustein | mit Baustein |
+  |---|---|---|
+  | Licht | strahlender Sonnenschein, Goldene Stunde | diffus, Nebel, gedämpft |
+  | Farbe | gesättigt, viel Grün und Blau | entsättigt, ein Farbakzent |
+  | Menschen | lächeln in die Kamera | unbeobachtet, seitlich |
+  | Bearbeitung | Hochglanz, HDR-ähnlich | natürlicher Kontrast, Körnung |
+
+  Beispiel für eine Schärfung: Aus „natürliche, authentische Stimmung" wird „unbeobachteter
+  Moment, Personen schauen nicht in die Kamera, Alltagskleidung, leicht unperfekte Haltung".
+
+  Meist wirkt der Baustein stark auf Licht und Farbe, schwächer auf Perspektive. Hilfe: die
+  Perspektive in jedem Prompt einzeln angeben. Eine gute Bearbeitung enthält den geschärften
+  Baustein, vier Bilder und mindestens drei konkrete Beobachtungen zum Unterschied.

@@ -1,0 +1,76 @@
+title: Kampagnenmotive von Briefing bis Freigabe
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht bringt im November die Regenjacke „Sølv" in einer neuen Farbe
+  „Moorbraun" heraus. Das Fotoshooting ist gestrichen worden, das Budget reicht nur für einen
+  halben Tag Produktfotografie im Studio. Die Marketingleitung möchte die Kampagnenmotive mit
+  Bild-KI erstellen und erwartet ein freigabefähiges Motivpaket. Du kannst stattdessen auch
+  ein Produkt eines Unternehmens deiner Wahl verwenden.
+
+  ```text
+  Rahmen:
+  Produkt: Regenjacke Sølv in Moorbraun (Produktfotos freigestellt vorhanden,
+  für die Übung genügt ein eigenes Foto einer beliebigen Jacke als Platzhalter).
+  Kanäle: Instagram-Post 4:5, Story 9:16, Newsletter-Header ca. 3:1, Pinterest 2:3.
+  Kernbotschaft: "Neue Farbe, gleiche Jacke. Gemacht für graue Tage."
+  Bildsprache: Bildsprache-Guide aus Kap. 32.
+  Keine echten Personen, keine fremden Marken, keine Superlative.
+  ```
+
+  ---
+
+  **Runde 1 – Briefing und Moodboard.** Schreibe ein Bildbriefing mit Kampagnenziel,
+  Bildaufgabe je Kanal, Zielgruppe, Kernbotschaft, Produkt, Tabus und Formaten. Stelle ein
+  Moodboard mit mindestens acht Referenzen zusammen (eigene oder generierte Bilder, keine
+  fremden Kampagnenbilder als Vorlage).
+
+  **Runde 2 – Serie erzeugen.** Lass dir aus dem Briefing mit dem Prompt aus Abschnitt 33.6
+  eine Prompt-Serie ableiten. Erzeuge die Motive für alle vier Kanäle. Pflichtkriterien:
+
+  1. Alle Motive nutzen dasselbe Prompt-Gerüst mit wortgleichem Bildsprache-Baustein.
+  2. Die Jacke stammt in jedem veröffentlichungsfähigen Motiv aus dem echten Produktfoto.
+  3. Headline und Logo-Platzhalter sind im Layout-Werkzeug gesetzt, nicht im Bildprompt.
+  4. Jedes Motiv ist im Zielformat geprüft, die Story-Ränder sind frei.
+
+  **Runde 3 – Die Komplikation.** Die Produktmanagerin sieht die Entwürfe und stoppt: Das
+  Braun der Jacke sei auf zwei Motiven „eher Rostrot", und auf einem Bild habe die Jacke
+  einen Unterarm-Reißverschluss, den das Modell gar nicht hat. Außerdem fragt sie, ob man
+  „das mit der KI" irgendwo angeben müsse. Behebe die Produktfehler mit Bearbeitung oder
+  Composing und halte fest, welcher Arbeitsschritt den Fehler hätte verhindern müssen.
+  Notiere die Kennzeichnungsfrage als offenen Punkt für Kap. 34.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Ein Agenturkontakt bietet an, die Jacke per
+  Referenzbild „direkt mitzugenerieren" – das spare das Composing und sehe „zu 95 Prozent echt"
+  aus. Prüfe den Vorschlag mit einem Testmotiv. **Widersprich** dort, wo er Risiken für Kundschaft
+  und Marke erzeugt, und benenne, für welche Einsatzzwecke (zum Beispiel interne Entwürfe,
+  Moodboard) er trotzdem sinnvoll ist.
+
+  **Deliverable:**
+
+  1. Bildbriefing und Moodboard
+  2. Motivpaket mit vier Kanalmotiven inklusive Overlay und Prüfprotokoll der vier Pflichtkriterien
+  3. Korrekturprotokoll zu Runde 3 mit Ursache und vorbeugendem Arbeitsschritt
+  4. Dokumentation je Motiv: Werkzeug, Prompt, Referenzen, Bearbeitungsschritte, Datum
+  5. begründete Stellungnahme zum Vorschlag aus Runde 4
+
+  **Fertig bist du erst, wenn** jedes Motiv dem echten Produkt in Farbe und Details entspricht,
+  die vier Formate erkennbar eine Kampagne bilden, jede Bearbeitung dokumentiert ist und deine
+  Stellungnahme aus Runde 4 zwischen Entwurf und Veröffentlichung klar unterscheidet.
+tip: |
+  Der Lernkern liegt in Runde 3: Fehler am Produkt fallen nicht beim Generieren auf, sondern
+  erst bei jemandem, der das Produkt kennt. Baue diese Prüfung deshalb fest in den Workflow ein,
+  bevor Layout und Formate entstehen. In Runde 4 gilt: „95 Prozent echt" heißt bei einem
+  Produktbild, dass 5 Prozent eine falsche Produktaussage sind.
+solution: |
+  Bewertungskriterien: (1) das Briefing enthält Bildaufgabe je Kanal, Tabus und Formate, das
+  Moodboard stützt die Bildsprache ohne fremde Kampagnen zu kopieren; (2) alle vier
+  Pflichtkriterien sind belegt erfüllt, insbesondere echtes Produkt und Text im Layout;
+  (3) das Korrekturprotokoll benennt die Ursache (Produkt generiert oder nicht gegen das
+  Original geprüft) und verankert eine Produktprüfung vor dem Layout-Schritt; (4) die
+  Dokumentation erlaubt, jedes Motiv nachzuvollziehen; (5) die Stellungnahme zu Runde 4
+  beruht auf einem Test, benennt Täuschungs- und Retourenrisiko und grenzt sinnvolle
+  interne Einsatzzwecke ab.
+
+  Lernziel: Den Kampagnen-Workflow mit Bild-KI so steuern, dass Konsistenz, Produktwahrheit
+  und Nachvollziehbarkeit gesichert sind – und Bild-KI dort einsetzen, wo sie Zeit spart, ohne
+  die Aussage über das Produkt zu verfälschen.

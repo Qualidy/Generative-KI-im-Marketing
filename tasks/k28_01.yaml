@@ -1,0 +1,35 @@
+title: Was geht bei der Migration mit?
+difficulty: 1
+question: |
+  Fjordlicht migriert drei Custom GPTs zu Plugins. Gib für jedes Element an, ob es
+  **übertragen** wird (und als was) oder **nicht übertragen** wird – und was das Team dann
+  tun muss.
+
+  1. die Instruktionen des Content-Assistenten
+  2. die Datei `claim-liste.md` des Content-Assistenten
+  3. die Custom Action des CRM-Chatbot-Prototyps, die Leads an das CRM sendet
+  4. die Einstellung „im Arbeitsbereich für das Marketingteam freigegeben"
+  5. die Gesprächsverläufe der letzten drei Monate mit dem Content-Assistenten
+  6. das als Standard gewählte Modell
+  7. eine verbundene App
+
+  Ergänze: Bis wann sollte Fjordlicht spätestens migriert haben, wenn das Unternehmen kein
+  Enterprise-Kunde ist, und warum sind die Termine nur unter Vorbehalt zu verstehen?
+tip: |
+  Merke dir die Grundregel: Was den Assistenten **ausmacht** (Instruktionen, Wissen), geht
+  mit. Was an **Einstellungen und Verbindungen** hängt, muss geprüft oder neu gesetzt werden.
+solution: |
+  | Nr. | Ergebnis | To-do |
+  |---|---|---|
+  | 1 | übertragen, wird zum **Skill** | Testfälle erneut laufen lassen |
+  | 2 | übertragen, wird zur **Referenzdatei** | prüfen, ob Fundstellen weiter zitiert werden |
+  | 3 | **nicht** übertragen | mit IT neu bauen, etwa als App oder MCP-Server |
+  | 4 | **nicht** übertragen; Plugins starten privat | Freigabe fürs Team neu einrichten |
+  | 5 | **nicht** übertragen | bei Bedarf vorher wichtige Ergebnisse sichern |
+  | 6 | **nicht** übertragen | Ergebnisse mit aktuellen Modellen prüfen |
+  | 7 | kann übernommen werden | Verbindung und Berechtigungen kontrollieren |
+
+  Das geplante Ende für Custom GPTs ist der **11.12.2026**; nicht migrierte GPTs sind
+  spätestens ab **11.02.2027** nicht mehr nutzbar. Sinnvoll ist eine Migration deutlich vor
+  dem 11.12.2026. Die Termine stammen aus der Ankündigung vom 11.09.2026 und Fachmeldungen,
+  können je Konto variieren und sich ändern – deshalb im eigenen Konto prüfen.

@@ -1,0 +1,36 @@
+title: Fehlersuche und Bias-Check an einer Serie
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug.
+
+  1. **Erzeugen.** Generiere ohne weitere Angaben vier Bilder mit diesen Prompts:
+     „Familie beim Wandern im Regen", „Teamleitung einer Gärtnerei bespricht den Tag",
+     „Person repariert ein Fahrrad", „Gruppe beim Zelten am See".
+  2. **Technische Prüfung.** Prüfe alle vier Bilder in voller Auflösung mit der Tabelle aus
+     Abschnitt 34.1. Notiere jeden Fund mit Bildbereich.
+  3. **Bias-Prüfung.** Halte für die Serie fest: Wer ist zu sehen (Alter, Geschlecht,
+     Körperform, Herkunft), wer handelt, wer schaut zu?
+  4. **Gegensteuern.** Formuliere zwei Prompts konkret um, wie in Abschnitt 34.2 gezeigt, und
+     vergleiche das Ergebnis. Teste außerdem einmal die pauschale Ergänzung „divers".
+tip: |
+  Schreibe die Personenmerkmale aus Schritt 3 in eine kleine Tabelle. Muster fallen erst auf,
+  wenn du die Serie als Ganzes betrachtest – im Einzelbild wirkt fast alles unauffällig.
+solution: |
+  Typische Beobachtungen ohne Angaben:
+
+  | Prompt | häufiges Muster |
+  |---|---|
+  | Familie beim Wandern | Vater, Mutter, zwei Kinder, jung, schlank, hellhäutig |
+  | Teamleitung Gärtnerei | Mann mittleren Alters erklärt, andere hören zu |
+  | Fahrrad reparieren | junger Mann, Werkstattlook |
+  | Zelten am See | gleichaltrige Gruppe, sportlich, sehr ähnliche Gesichter |
+
+  Typische technische Funde: Finger an Werkzeug oder Zeltstangen, unlesbare Schrift auf
+  Schildern oder Kleidung, Fantasielogos, unlogische Reflexionen im Wasser.
+
+  Beim Gegensteuern zeigt sich meist: Konkrete Beschreibungen (Alter, Rolle, Handlung,
+  Situation) wirken zuverlässig. Die pauschale Ergänzung „divers" erzeugt oft ein gestelltes,
+  stockfotohaftes Gruppenbild – also eine neue Schablone statt einer glaubwürdigen Szene.
+
+  Eine gute Bearbeitung enthält vier geprüfte Bilder mit Fundliste, die Personentabelle,
+  zwei umformulierte Prompts mit Vergleich und eine Einschätzung zum Pauschal-Test.

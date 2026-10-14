@@ -1,0 +1,77 @@
+title: Herbst-Reel für den Fleece Skog
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht bringt die neue Farbe des Fleece „Skog" heraus. Das Marketingteam
+  hat kein Budget für einen Dreh, aber gute Produktfotos aus dem Studio und einem
+  Outdoor-Shooting. Du sollst ein **15-Sekunden-Reel** für Instagram und TikTok sowie eine
+  ruhigere Variante für LinkedIn (Fjordlicht Business) planen und – soweit Zugang besteht –
+  umsetzen. Du kannst alternativ ein Produkt aus einem Unternehmen deiner Wahl verwenden.
+
+  ```text
+  Rahmen:
+  Kanäle: Instagram/TikTok (9:16, 15 s), LinkedIn (1:1 oder 4:5, 15-20 s)
+  Material: 3 freigegebene Produktfotos, Markenschrift, Logo
+  Werkzeuge: ChatGPT (oder Alternative), ein Videowerkzeug mit Testkontingent,
+  ein Schnittwerkzeug (CapCut, Premiere, Descript o. Ä.)
+  Markenstimme: ruhig, ehrlich, leicht nordisch-trocken, keine Superlative
+  Nachhaltigkeit: nur Aussagen aus der Claim-Liste, sonst keine
+  Budget: maximal 30 Generierungen
+  ```
+
+  ---
+
+  **Runde 1 – Storyboard.** Erstelle mit ChatGPT ein Storyboard für die 9:16-Fassung
+  (4–5 Einstellungen, Spalten wie in Abschnitt 35.5). Lege für jede Einstellung fest, ob sie
+  per Text-zu-Video, Bild-zu-Video oder als Standbild mit Bewegung im Schnitt entsteht, und
+  begründe das.
+
+  **Runde 2 – Prompts und Generierung.** Schreibe für jede KI-Einstellung einen vollständigen
+  Videoprompt. Generiere, wähle aus und führe ein Protokoll: Einstellung, Versuch,
+  Prompt-Änderung, Ergebnis, verworfen weil … Halte das Budget von 30 Generierungen ein.
+  Ohne Zugang zu einem Videowerkzeug schreibst du die Prompts und lässt sie von der KI gegen
+  die Bausteine aus Abschnitt 35.3 prüfen.
+
+  **Runde 3 – Die Komplikation.** Bei der Einzelbildprüfung fällt auf: In der besten
+  Einstellung verändert sich der Reißverschluss des Fleece für etwa eine halbe Sekunde, und
+  die Farbe kippt ins Graue – also genau die neue Farbe, um die es geht. Neu generieren kostet
+  Budget, das fast aufgebraucht ist. Entscheide, wie du vorgehst (kürzen, ersetzen,
+  Standbild, neu generieren mit anderem Prompt), und begründe.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Teamleitung möchte am Ende eine
+  KI-generierte Person einbauen, die realistisch wirkt und sagt: „Ich trage ihn jeden Tag."
+  Außerdem soll das Reel ohne KI-Hinweis laufen, „weil das die Reichweite drückt".
+  **Widersprich** begründet, wo es nötig ist, und mache einen Vorschlag, der das Ziel der
+  Teamleitung trotzdem ernst nimmt.
+
+  **Deliverable:**
+
+  1. Storyboard für 9:16 und eine angepasste Fassung für LinkedIn
+  2. Videoprompts je KI-Einstellung und das Generierungsprotokoll
+  3. Entscheidung aus Runde 3 mit Begründung
+  4. Stellungnahme zu Runde 4 inklusive Kennzeichnungsentscheidung je Kanal
+  5. (falls umgesetzt) das geschnittene Reel mit Untertiteln
+
+  **Fertig bist du erst, wenn** jede Einstellung genau eine Handlung hat, die
+  Produktdarstellung der Wirklichkeit entspricht, das Budget eingehalten ist und deine
+  Kennzeichnungsentscheidung Plattformregeln und Art. 50 AI Act ausdrücklich berücksichtigt.
+tip: |
+  Der Lernkern liegt in Runde 3 und 4: Ein Clip, der fast perfekt ist, aber das Produkt falsch
+  zeigt, ist unbrauchbar – gerade wenn die Farbe das Thema ist. Und eine erfundene Person mit
+  erfundener Erfahrung ist kein Gestaltungsmittel, sondern ein Testimonial, das es nicht gibt.
+  KI-Video spart Drehzeit, nicht die Verantwortung für das, was es zeigt.
+solution: |
+  Bewertungskriterien: (1) Das Storyboard hat einen Hook in den ersten zwei Sekunden, je
+  Einstellung eine Handlung und eine begründete Wahl der Arbeitsweise; Produktdetails kommen aus
+  Bild-zu-Video oder Standbild, nicht aus Text-zu-Video. (2) Die Prompts enthalten Szene,
+  Handlung, Kamera, Licht/Stil, Ton, Format und Ausschlüsse; das Protokoll zeigt gezielte
+  Änderungen statt Zufallsversuchen. (3) In Runde 3 wird die fehlerhafte Passage nicht
+  veröffentlicht; gute Lösungen kürzen den Clip vor der Verformung, ersetzen die Einstellung
+  durch das echte Produktfoto mit Bewegung im Schnitt oder nutzen das Restbudget mit einem
+  Prompt, der Produkt und Farbe ausdrücklich fixiert. (4) Runde 4 lehnt die erfundene
+  Kundenaussage ab (Täuschung, UWG-Risiko, Markenstimme), bietet eine Alternative an (echte
+  Mitarbeitende oder Kundin mit Einwilligung, oder Produkt ohne Person mit ehrlichem Text) und
+  entscheidet die Kennzeichnung nach Plattformregeln für realistische KI-Inhalte; bei realistisch
+  wirkenden Personen wird zusätzlich Art. 50 Abs. 4 AI Act geprüft.
+
+  Lernziel: KI-Video als Werkzeug für einzelne Einstellungen einsetzen, den Produktions- und
+  Prüfaufwand realistisch planen und Täuschung auch unter Reichweitendruck vermeiden.

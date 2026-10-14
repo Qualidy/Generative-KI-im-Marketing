@@ -1,0 +1,28 @@
+title: Konsistenzproblem erkennen und Mittel zuordnen
+difficulty: 1
+question: |
+  Das Fjordlicht-Team hat für die Herbstkampagne fünf Bilder erzeugt und meldet diese Probleme.
+  Ordne jedem Problem die **Konsistenzebene** aus Abschnitt 33.1 zu und nenne das passende
+  **Mittel** – generieren, bearbeiten, Referenz, Layout oder echtes Foto.
+
+  1. Die Wanderin hat auf Bild 3 plötzlich blonde statt dunkle Haare.
+  2. Der Rucksack „Tind" hat auf zwei Bildern unterschiedlich viele Seitentaschen.
+  3. Bild 4 ist sonnig und farbsatt, alle anderen sind neblig und gedämpft.
+  4. Auf dem Story-Bild steht die Headline „Herbst draussen" mit „ss" statt „ß" und
+     in einer Schrift, die nicht zur Marke gehört.
+  5. Auf Bild 2 ist alles gut, nur ein Ast ragt der Person vor das Gesicht.
+tip: |
+  Frage dich bei jedem Problem: Lässt es sich durch eine bessere Generierung überhaupt lösen –
+  oder gehört es in einen anderen Arbeitsschritt?
+solution: |
+  | Nr. | Ebene | Mittel |
+  |---|---|---|
+  | 1 | Figur | Steckbrief wortgleich im Prompt, Charakterreferenz aus dem ersten gelungenen Bild, ggf. Haare per Inpainting angleichen |
+  | 2 | Produkt | echtes Produktfoto verwenden; generierte Produkte sind nie zuverlässig |
+  | 3 | Stil | Bildsprache-Baustein wortgleich verwenden, Stilreferenz, ggf. Himmel und Farbe per Bearbeitung anpassen |
+  | 4 | Layout | Text aus dem Bild entfernen, Headline im Layout-Werkzeug in Hausschrift setzen |
+  | 5 | Szene (lokaler Fehler) | Inpainting: nur den Ast entfernen, Rest bleibt gleich |
+
+  Kern der Übung: Nur Nr. 1 und 3 sind echte Generierungsprobleme. Nr. 2 und 4 lassen sich mit
+  Bild-KI grundsätzlich nicht verlässlich lösen, Nr. 5 wäre durch Neugenerierung sogar
+  verschlimmert worden, weil das gute Bild verloren ginge.

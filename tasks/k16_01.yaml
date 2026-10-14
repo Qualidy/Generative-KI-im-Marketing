@@ -1,0 +1,33 @@
+title: Hypothese, Variable, Zielmetrik
+difficulty: 1
+question: |
+  Das Fjordlicht-Team hat vier Testideen gesammelt. Beurteile jede: Ist eine Hypothese
+  erkennbar? Unterscheiden sich die Varianten in **genau einer** Variable? Ist die Zielmetrik
+  sinnvoll? Formuliere anschließend die schwächste Idee zu einer guten Hypothese im Format
+  „Wenn …, dann …, weil …" um.
+
+  1. Betreff A: `Neu: Fleece Skog` – Betreff B: `Endlich da: Unser neues Fleece Skog für
+     kalte Tage` – Ziel: Öffnungsrate.
+  2. Button A: `Jetzt anmelden` – Button B: `Kalender holen` – Ziel: Anmelderate auf der
+     Landingpage. Hypothese: Nutzen im Button erhöht die Anmelderate.
+  3. Instagram-Caption A mit 1 Emoji, B mit 5 Emojis und anderem Hook – Ziel: Likes.
+  4. Produkttext Wanderhose „Vidde": A beginnt mit Material, B mit Anwendungsfall, sonst
+     identisch – Ziel: Warenkorbrate. Keine Hypothese notiert.
+tip: |
+  Prüfe zuerst die Variablen: Zähle, wie viele Dinge sich zwischen A und B unterscheiden. Dann
+  die Metrik: Misst sie wirklich das, was das Marketing erreichen will?
+solution: |
+  | Nr. | Hypothese | Eine Variable? | Zielmetrik | Urteil |
+  |---|---|---|---|---|
+  | 1 | fehlt | nein (Länge, „Endlich", Nutzenhinweis, Ansprache) | Öffnungsrate nur eingeschränkt verlässlich | schwach |
+  | 2 | ja, Begründung knapp | ja | passend | gut |
+  | 3 | fehlt | nein (Emojis und Hook) | Likes sind ein schwaches Ziel | schwach |
+  | 4 | fehlt | ja | passend | Setup gut, Hypothese ergänzen |
+
+  Umformulierung von Idee 1 (Beispiel): „Wenn der Betreff einen konkreten Einsatzzweck nennt
+  (‚für kalte Tage') statt nur die Neuheit, steigt die **Klickrate**, weil unsere Leser:innen
+  Produkte nach Situation auswählen." Dazu Variante A: `Neu: Fleece Skog`, Variante B:
+  `Neu: Fleece Skog für kalte Tage` – nur der Zusatz unterscheidet sich.
+
+  Idee 3 lässt sich retten, indem nur die Emoji-Anzahl variiert wird. Likes als Ziel bleiben
+  aber fragwürdig; besser sind Speicherungen oder Profilklicks, wenn es um Interesse geht.

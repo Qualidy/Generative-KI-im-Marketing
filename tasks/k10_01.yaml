@@ -1,0 +1,36 @@
+title: Ist das ein vollständiger Bibliothekseintrag?
+difficulty: 1
+question: |
+  Eine Kollegin bei Fjordlicht hat diesen Eintrag in die Team-Bibliothek gestellt:
+
+  ```text
+  Name: LinkedIn gut
+  Prompt: Schreib einen LinkedIn-Post für Fjordlicht Business über unseren
+  neuen Kunden Stadtwerke Beispielstadt, die 120 Jacken Sølv zum Sonderpreis
+  von 89 Euro bestellt haben. Professionell, nicht zu lang.
+  Stand: irgendwann im Sommer
+  ```
+
+  1. Nenne **fünf Probleme** dieses Eintrags. Ordne jedes einem Feld aus Abschnitt 10.2 oder einer
+     Governance-Regel aus Abschnitt 10.6 zu.
+  2. Welche Angaben sind **vertraulich** und dürfen nicht in einer Vorlage stehen?
+  3. Schlage einen Namen nach der Benennungskonvention aus Abschnitt 10.3 vor.
+tip: |
+  Stell dir vor, eine neue Kollegin nutzt den Eintrag in drei Monaten für einen anderen Kunden. Was
+  weiß sie nicht, was übernimmt sie versehentlich, und woran erkennt sie ein gutes Ergebnis?
+solution: |
+  | Problem | Feld / Regel |
+  |---|---|
+  | Name nichtssagend, keine ID | ID und Name |
+  | konkrete Kundendaten statt Platzhalter | Platzhalter, keine vertraulichen Inhalte |
+  | „professionell, nicht zu lang" ist nicht prüfbar | Prompt-Text (Output, Tone) |
+  | kein Beispielergebnis, keine Prüfpunkte | Beispielergebnis, Prüfpunkte |
+  | kein Werkzeug, kein Datum, keine Version, niemand verantwortlich | Getestet mit, Version, Stand, Verantwortlich |
+  | keine Regel für fehlende Angaben oder Freigabe durch den Kunden | Modifier, Governance |
+
+  Vertraulich sind der Kundenname, die Stückzahl und vor allem der **Sonderpreis**. Sie gehören in
+  Platzhalter wie `[Kunde, nur mit Freigabe zur Nennung]` und `[Anlass der Zusammenarbeit]` – der
+  Preis gehört überhaupt nicht in einen öffentlichen Post.
+
+  Namensvorschlag: `TXT-LI-004 LinkedIn-Post Referenzkunde Business`. Ergänzen sollte man außerdem
+  den Hinweis, dass Referenzkunden nur mit schriftlicher Zustimmung genannt werden.

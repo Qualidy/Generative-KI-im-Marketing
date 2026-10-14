@@ -1,0 +1,41 @@
+title: Nurture-Sequenz für Fjordlicht Business
+difficulty: 3
+question: |
+  Fjordlicht Business bietet Firmenbekleidung für Unternehmen an. Wer auf der Website die
+  Checkliste „Teamausstattung für Außeneinsätze" herunterlädt, soll eine Nurture-Sequenz erhalten.
+
+  1. Lass per Prompt-Kette zuerst einen **Plan** für vier Mails erstellen (Abstand, Ziel,
+     Kernbotschaft, CTA), danach **eine** Mail vollständig ausformulieren.
+  2. Bewerte den Plan kritisch: Wird zu früh verkauft? Wiederholen sich Kernbotschaften? Passt der
+     Ton zu B2B-Entscheidern (Einkauf, Arbeitssicherheit, Geschäftsführung)?
+  3. Prüfe die Personalisierung: Welche Platzhalter sind sinnvoll (z. B. [Firmenname],
+     [Branche]), welche Fallbacks brauchst du, und welche Daten dürfen **nicht** in den Prompt?
+  4. Nenne die rechtliche Voraussetzung, damit die Sequenz überhaupt verschickt werden darf.
+tip: |
+  B2B-Nurturing hat einen längeren Atem als B2C. Die erste Mail liefert, was versprochen wurde
+  (die Checkliste), die letzte lädt zu einem Gespräch ein – dazwischen liegt Nutzen, nicht Werbung.
+solution: |
+  Möglicher Plan:
+
+  | Mail | Abstand | Ziel | Kernbotschaft | CTA |
+  |---|---|---|---|---|
+  | 1 | sofort | Versprechen einlösen | hier ist die Checkliste, so nutzt du sie | Checkliste öffnen |
+  | 2 | 3 Tage | Kompetenz | worauf es bei Wetterschutz im Arbeitsalltag ankommt | Ratgeber lesen |
+  | 3 | 7 Tage | Vertrauen | wie ein Handwerksbetrieb seine Teamausstattung umgestellt hat (nur mit Freigabe des Kunden) | Fallbeispiel lesen |
+  | 4 | 12 Tage | Gespräch | individuelle Beratung zu Größen, Logo, Nachbestellung | Termin vereinbaren |
+
+  Kritische Punkte, die häufig auftauchen: Die KI setzt schon in Mail 2 einen Kauf-CTA, erfindet
+  ein Kundenbeispiel mit Firmennamen oder verspricht Mengenrabatte. Ein Fallbeispiel darf nur mit
+  echtem, freigegebenem Kunden verwendet werden.
+
+  Personalisierung: [Firmenname] und [Branche] sind sinnvoll, Fallback jeweils eine neutrale
+  Formulierung („dein Team"). Nicht in den Prompt gehören echte Firmen- und Personennamen,
+  E-Mail-Adressen oder CRM-Exporte; die KI schreibt die Vorlage, das Tool setzt die Daten ein.
+
+  Rechtlich: Eine vorherige ausdrückliche Einwilligung in den Erhalt der Mails ist nötig,
+  üblicherweise per Double-Opt-in beim Download – auch im B2B-Bereich. Der Download allein ist
+  keine Einwilligung in Werbung, wenn das nicht klar erkennbar abgefragt wurde. Im Zweifel klärt
+  das die Rechtsabteilung.
+
+  Bewertungskriterien: Plan und Mail getrennt erstellt, mindestens zwei kritische Befunde
+  benannt, Platzhalter mit Fallbacks, Einwilligung korrekt beschrieben.

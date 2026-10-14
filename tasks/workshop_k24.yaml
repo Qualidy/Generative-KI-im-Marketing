@@ -1,0 +1,74 @@
+title: Konzeption eines Marketingassistenten
+difficulty: 4
+question: |
+  **Szenario:** Du sollst für das Fjordlicht-Marketingteam (oder ein Unternehmen deiner Wahl)
+  einen KI-Assistenten konzipieren, der in Kap. 25 tatsächlich gebaut und getestet wird. Heute
+  entsteht noch nichts im Werkzeug – heute entsteht der **Assistenten-Steckbrief**, nach dem
+  später jede Person den Assistenten in jedem Werkzeug nachbauen könnte.
+
+  ```text
+  Rahmen:
+  Use Case nach Wahl, z. B. Produkttexte Webshop, Newsletter-Intros,
+  LinkedIn-Posts für Fjordlicht Business, Pinterest-Pinbeschreibungen.
+  Nicht wählen: den Content-Assistenten (Kap. 26) oder den
+  CRM-Chatbot (Kap. 27) - die werden gesondert behandelt.
+  Material: Fjordlicht-Angaben aus dem Kurs oder eigene, fiktive Unterlagen.
+  Keine echten Kundendaten, keine vertraulichen Firmeninformationen.
+  ```
+
+  ---
+
+  **Runde 1 – Use Case und Grenzen.** Formuliere den Zweck in einem Satz (wer, wofür, mit welcher
+  Eingabe, welches Ergebnis). Erstelle die Tabelle „Darf / Darf nicht / Fragt nach bzw. markiert"
+  mit mindestens vier Zeilen.
+
+  **Runde 2 – Instruktionen und Wissen.** Schreibe die Instruktionen vollständig nach der Struktur
+  aus Abschnitt 24.3, inklusive einer ausdrücklichen Prioritätenregel. Lege mindestens **drei**
+  Wissensdateien an (als Text oder Markdown), darunter eine mit gekennzeichneten Beispielen
+  („Gutes Beispiel" / „So nicht – Grund"). Formuliere drei bis vier Konversationsstarter.
+
+  **Runde 3 – Die Komplikation.** Die Produktmanagerin schickt dir die Produktdaten: eine
+  Excel-Datei mit fünf Tabellenblättern, verbundenen Zellen, Farbmarkierungen statt Text
+  („grün = recyceltes Material") und zwei Artikeln, deren Gewicht in Blatt 1 und Blatt 4
+  unterschiedlich angegeben ist. Bereite die Daten so auf, dass der Assistent sie zuverlässig
+  nutzen kann, und lege fest, wie er mit dem Widerspruch umgehen soll. Halte fest, welche Frage
+  du an die Produktmanagerin zurückgibst.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Eine Kollegin schlägt vor, den Export der
+  Newsletter-Abonnenten mit Vornamen und letzten Käufen als Wissensdatei hinzuzufügen – dann
+  könne der Assistent „persönlicher" schreiben. Lass dir von der KI Argumente dafür nennen.
+  **Widersprich** begründet: Nenne mindestens drei Gründe (rechtlich, technisch, fachlich) und
+  einen alternativen Weg, Personalisierung umzusetzen (Kap. 13).
+
+  **Deliverable:**
+
+  1. Zweck-Satz und Tabelle „Darf / Darf nicht / Fragt nach"
+  2. vollständige Instruktionen mit Prioritätenregel
+  3. mindestens drei aufbereitete Wissensdateien plus Konversationsstarter
+  4. aufbereitete Produktdaten mit Widerspruchsregel und Rückfrage aus Runde 3
+  5. Stellungnahme zu Runde 4
+  6. Assistenten-Steckbrief mit allen Feldern aus Abschnitt 24.6, inklusive zehn Testfällen in
+     Stichworten
+
+  **Fertig bist du erst, wenn** eine fremde Person allein mit deinem Steckbrief den Assistenten
+  in einem beliebigen Werkzeug einrichten könnte, keine Wissensdatei personenbezogene oder
+  widersprüchliche Angaben enthält und jede Regel in den Instruktionen eindeutig prüfbar ist.
+tip: |
+  Der Lernkern liegt in Runde 3: Wissen ist erst dann Wissen, wenn der Assistent es finden und
+  eindeutig lesen kann. Farben, verbundene Zellen und Widersprüche sind für Menschen lesbar, für
+  einen Assistenten nicht. Einen Widerspruch löst nicht der Assistent, sondern die zuständige
+  Person – der Assistent muss ihn nur sichtbar machen. In Runde 4 gilt: Personalisierung gehört in
+  das Versandsystem mit Platzhaltern, nicht in eine Wissensdatei, die alle Nutzenden auslesen können.
+solution: |
+  Bewertungskriterien: (1) Zweck in einem Satz mit allen vier Bestandteilen, Grenzen-Tabelle mit
+  Rückfrage- und Markierungsregeln; (2) Instruktionen folgen der Struktur, enthalten eine
+  Prioritätenregel und kein kopiertes Faktenwissen; (3) Wissensdateien sind thematisch getrennt,
+  datiert, sprechend benannt, Beispiele gekennzeichnet; (4) Produktdaten als ein Tabellenblatt
+  bzw. CSV mit Text statt Farben, Widerspruch nicht stillschweigend aufgelöst, sondern als
+  Rückfrage an die Produktmanagerin und als Regel „Widerspruch nennen" im Assistenten;
+  (5) Stellungnahme nennt z. B. DSGVO (Zweckbindung, Datenminimierung), Auslesbarkeit von
+  Wissensdateien, fehlenden Nutzen für einen Entwurfsassistenten, und verweist auf Platzhalter
+  im Newsletter-Tool; (6) Steckbrief vollständig und werkzeugunabhängig.
+
+  Lernziel: Einen Assistenten so konzipieren, dass er übertragbar, prüfbar und datenschutzgerecht
+  ist – und Konzeption als eigene Arbeitsphase vor der technischen Umsetzung begreifen.

@@ -1,0 +1,69 @@
+title: Themencluster und Briefing für den Herbst
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht will im Blog „Draußen-Notizen" ein neues Themencluster für die
+  Herbst- und Wintersaison aufbauen. Die Marketingleitung erwartet einen Plan mit Pillar Page,
+  Detailartikeln und einem fertigen SEO-Briefing für den ersten Artikel. Du kannst alternativ
+  ein Unternehmen deiner Wahl nehmen.
+
+  ```text
+  Rahmen:
+  Thema: Draußen unterwegs bei Kälte und Nässe (Fleece Skog, Regenjacke Sølv).
+  Zielgruppen: naturverbundene Stadtmenschen 25 bis 45, Familien.
+  Werkzeuge: ChatGPT oder vergleichbar, Websuche erlaubt; für Zahlen
+  Google Keyword Planner, Google Trends oder ein vorhandenes SEO-Tool.
+  Ohne Tool-Zugang: Zahlenfelder mit [Tool-Wert] kennzeichnen.
+  Markenstimme: ruhig, ehrlich, keine Superlative, kein Greenwashing.
+  ```
+
+  ---
+
+  **Runde 1 – Ideen und Cluster.** Erstelle mit einem P.R.O.M.P.T.-Prompt (Kap. 5) eine
+  Keyword-Sammlung mit mindestens 50 Begriffen, geordnet in Cluster mit Intention und
+  Seitentyp. Ergänze mindestens zehn Begriffe aus „echten" Fragen – etwa aus den Fragen unter
+  „Ähnliche Fragen" in der Google-Suche oder aus selbst ausgedachten Kundenservice-Mails.
+
+  **Runde 2 – Zahlen und Auswahl.** Ergänze für die 15 vielversprechendsten Begriffe Werte aus
+  einem Tool (oder Platzhalter) und lege fest: eine Pillar Page und vier Detailartikel. Begründe
+  die Auswahl mit Intention, Saison und Fjordlichts Alleinstellung.
+
+  **Runde 3 – Die Komplikation.** Die SERP-Analyse für deinen ersten Detailartikel zeigt: Die
+  vorderen Plätze belegen große Outdoor-Händler mit umfangreichen Ratgebern, und Google zeigt
+  eine AI Overview, die die Kernfrage bereits beantwortet. Analysiere mit der KI die Gliederungen
+  der Top-Ergebnisse, finde die Lücke und passe Thema oder Zuschnitt des Artikels so an, dass
+  Fjordlicht etwas Eigenes bieten kann.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Lass die KI das SEO-Briefing für den angepassten
+  Artikel entwerfen. Sie wird wahrscheinlich viele Nebenkeywords, eine lange Gliederung und
+  eine hohe Wortzahl vorschlagen. **Widersprich** überall dort, wo das Briefing auf
+  Keyword-Abdeckung statt auf Nutzen für die Leserin zielt, und entscheide, was drinbleibt.
+
+  **Deliverable:**
+
+  1. Keyword-Tabelle mit Clustern, Intention, Seitentyp und markierter Herkunft der Zahlen
+  2. Cluster-Plan: Pillar Page plus vier Detailartikel mit Begründung
+  3. SERP-Analyse des ersten Artikels mit identifizierter Lücke
+  4. finales SEO-Briefing mit allen Feldern aus Abschnitt 21.6 und Liste deiner Streichungen
+
+  **Fertig bist du erst, wenn** keine Zahl ohne Quellenangabe in deinen Unterlagen steht, jede
+  Seite genau eine Hauptintention hat, das Briefing ein Alleinstellungsmerkmal enthält, das nur
+  Fjordlicht bieten kann, und eine fremde Person den Artikel allein mit dem Briefing schreiben
+  könnte.
+tip: |
+  Runde 3 ist die realistische Lage 2026: Einfache Wissensfragen beantwortet die Suche oft
+  selbst. Wer dort mitspielen will, braucht Erfahrung, eigene Daten oder einen spitzeren
+  Zuschnitt – nicht mehr Wörter. Das gute Briefing ist deshalb oft kürzer als der erste
+  KI-Entwurf.
+solution: |
+  Bewertungskriterien: (1) Keyword-Tabelle mit sinnvollen Clustern, korrekter Intention und
+  sauber gekennzeichneter Herkunft aller Zahlen, ergänzt um echte Fragen; (2) Cluster-Plan, in
+  dem Pillar Page und Detailartikel inhaltlich zusammenhängen und intern verlinkt werden
+  können, begründet mit Saison (Google Trends) und Alleinstellung; (3) SERP-Analyse, die eine
+  konkrete Lücke benennt, etwa „Fleece richtig schichten bei Nässe – Erfahrungen aus Tests in
+  Nordeuropa" statt eines allgemeinen „Was ist Fleece"; (4) Briefing mit allen Feldern,
+  begründeten Streichungen überflüssiger Nebenkeywords und Umfangsvorgaben sowie einer
+  Markenstimme ohne Superlative.
+
+  Lernziel: KI für Ideen und Struktur, Tools für Zahlen und eigene Erfahrung für die
+  Alleinstellung kombinieren – und ein Briefing erstellen, das auf Nutzen statt auf
+  Keyword-Dichte zielt.

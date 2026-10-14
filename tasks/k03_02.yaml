@@ -1,0 +1,40 @@
+title: Zeitrechnung für eine echte Aufgabe
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Wähle eine Aufgabe für Fjordlicht oder ein
+  Unternehmen deiner Wahl, zum Beispiel: fünf Instagram-Captions zur Wanderhose „Vidde" oder
+  einen Newsletter-Teaser zum Herbstsortiment.
+
+  1. **Schätzen.** Notiere, wie lange du ohne KI bräuchtest.
+  2. **Faktenliste.** Schreibe zuerst die Fakten auf, die im Text vorkommen dürfen (bei
+     Fjordlicht fiktive Angaben, z. B. Material, Gewicht, Preis). Stoppe die Zeit.
+  3. **Erstellen.** Lass die Texte mit einem Prompt nach dem Muster aus Abschnitt 3.4 erzeugen.
+     Stoppe die Zeit.
+  4. **Prüfen.** Prüfe jeden Text auf erfundene Angaben, Markenstimme und Länge, und korrigiere.
+     Stoppe die Zeit.
+  5. **Bilanz.** Vergleiche die Summe aus Schritt 2 bis 4 mit deiner Schätzung aus Schritt 1.
+
+  Halte fest: Wie viel Prozent der Zeit mit KI entfielen auf Vorbereitung und Prüfung?
+tip: |
+  Die Faktenliste fühlt sich wie Zusatzaufwand an. Sie ist aber der Grund, warum die Prüfung
+  schnell geht: Du vergleichst nur noch mit der Liste, statt jede Aussage einzeln zu recherchieren.
+solution: |
+  Typisches Ergebnis bei kurzen Social-Media-Texten:
+
+  | Schritt | Zeit |
+  |---|---|
+  | Schätzung ohne KI | 30–40 Min. |
+  | Faktenliste | 5–8 Min. |
+  | Erstellung mit KI | 2–5 Min. |
+  | Prüfung und Korrektur | 8–12 Min. |
+  | Summe mit KI | 15–25 Min. |
+
+  Meist entfallen **mehr als die Hälfte** der Zeit mit KI auf Vorbereitung und Prüfung. Das ist
+  kein Fehler, sondern der Normalfall – und genau der Teil, den Werbeversprechen weglassen.
+
+  Häufige Prüffunde: ein erfundenes Material- oder Nachhaltigkeitsdetail, Superlative gegen die
+  Markenstimme, zu viele Hashtags, ein Hook, der in allen Varianten fast gleich ist. Wer keinen
+  einzigen Fund hat, sollte die Texte noch einmal Satz für Satz gegen die Faktenliste lesen.
+
+  Eine gute Bearbeitung enthält alle fünf Zeitwerte, die Prozentangabe und mindestens einen
+  konkreten Prüffund.

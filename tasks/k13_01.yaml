@@ -1,0 +1,35 @@
+title: Betreff und Preheader beurteilen
+difficulty: 1
+question: |
+  Beurteile die folgenden Paare aus Betreffzeile und Preheader für den Fjordlicht-Newsletter.
+  Nenne jeweils das Hauptproblem (oder „passt") und ob ein Spam-Signal oder ein Verstoß gegen die
+  Markenstimme (ruhig, ehrlich, keine Superlative) vorliegt.
+
+  1. Betreff: `MEGA-DEAL!!! Nur heute!` – Preheader: `Nur heute!`
+  2. Betreff: `Re: Deine Bestellung` – Preheader: `Neue Herbstkollektion entdecken`
+  3. Betreff: `Perlt der Regen noch ab?` – Preheader: `Wenn nicht, liegt es selten an der Jacke.`
+  4. Betreff: `Die nachhaltigste Jacke der Welt` – Preheader: `Mail im Browser ansehen`
+  5. Betreff: `Hallo [Vorname], dein Pflegeplan` – Preheader: (leer)
+
+  Formuliere für Paar 4 eine bessere Fassung.
+tip: |
+  Prüfe drei Dinge: Ergänzt der Preheader den Betreff? Ist der Betreff ehrlich zum Inhalt? Gibt
+  es Platzhalter, die ohne Fallback zu einem Fehler führen können?
+solution: |
+  | Nr. | Hauptproblem | Spam-Signal / Markenstimme |
+  |---|---|---|
+  | 1 | Großbuchstaben, Ausrufezeichen, Preheader wiederholt Betreff | beides: Spam-Signal und gegen die Markenstimme |
+  | 2 | irreführender Betreff, es gibt keine Bestellung | Spam-Signal und rechtlich riskant (Irreführung) |
+  | 3 | passt | keins; Preheader ergänzt den Betreff |
+  | 4 | Superlativ und unbelegte Nachhaltigkeitsaussage; Preheader nicht gesetzt | gegen Markenstimme, Greenwashing-Risiko |
+  | 5 | Platzhalter ohne Fallback, leerer Preheader zeigt beliebigen Text | Datenrisiko („Hallo ,") |
+
+  Bessere Fassung für Paar 4 (vorausgesetzt, die Materialangabe ist belegt):
+
+  ```text
+  Betreff: Die Sølv: Regenjacke aus recyceltem Polyamid
+  Preheader: Was das Material kann und wie du es lange nutzt.
+  ```
+
+  Merke: Der Preheader ist ein eigener Baustein. Bleibt er leer, entscheidet das Postfach, was
+  angezeigt wird.

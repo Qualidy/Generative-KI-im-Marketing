@@ -1,0 +1,29 @@
+title: Symptom, Ursache, Gegenmittel
+difficulty: 1
+question: |
+  Das Fjordlicht-Team schildert dir fünf Probleme mit KI-Texten. Bestimme für jedes Problem das
+  **Fehlerbild**, die **wahrscheinliche Ursache**, den betroffenen **P.R.O.M.P.T.-Baustein** und ein
+  passendes **Gegenmittel**.
+
+  1. Ein LinkedIn-Post für Fjordlicht Business liest sich wie ein Instagram-Post für Privatkunden.
+  2. Im Blog-Entwurf steht „mit dem Grünen Knopf zertifiziert", obwohl das Zertifikat nirgends
+     erwähnt wurde.
+  3. Nach einer langen Überarbeitungsrunde enthält der Text wieder Ausrufezeichen, die am Anfang
+     ausdrücklich ausgeschlossen wurden.
+  4. Im zwölfseitigen Kampagnenbriefing stand auf Seite 6, dass der Rucksack „Tind" nicht erwähnt
+     werden darf. Er taucht trotzdem auf.
+  5. Alle fünf angeforderten Betreffzeilen beginnen mit „Draußen ist …".
+tip: |
+  Nutze die Diagnose-Matrix aus Abschnitt 9.3. Bei manchen Problemen ist nicht der Prompt die
+  Ursache, sondern der Chatverlauf oder die Position einer Information.
+solution: |
+  | Nr. | Fehlerbild | Ursache | Baustein | Gegenmittel |
+  |---|---|---|---|---|
+  | 1 | generisch / Ton daneben | Zielgruppe B2B nicht genannt | Purpose, Tone | Zielgruppe und Kanal nennen, B2B-Beispiel mitgeben |
+  | 2 | falsche Fakten | Modell füllt Lücke mit Wahrscheinlichem | Modifier | „nur Angaben aus dem Material", Faktencheck gegen Claim-Liste |
+  | 3 | Kontextverlust | frühe Vorgabe verliert im langen Chat Gewicht | – | Übergabe-Prompt, neuer Chat, Regel in Projekt-Anweisungen |
+  | 4 | „Lost in the middle" | Ausschluss steht mitten im langen Material | Modifier, Output | Ausschluss an den Anfang des Prompts und am Ende wiederholen |
+  | 5 | Wiederholungen | Muster verfestigt sich | Modifier | ausdrücklich unterschiedliche Einstiege verlangen, Varianten-Fächer mit Vorgaben je Variante |
+
+  Fall 2 ist der kritischste: Eine erfundene Zertifizierung ist eine irreführende Werbeaussage und
+  darf nie unbemerkt veröffentlicht werden.

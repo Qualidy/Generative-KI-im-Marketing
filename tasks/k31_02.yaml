@@ -1,0 +1,51 @@
+title: Text im Bild – zwei Werkzeuge im Test
+difficulty: 2
+question: |
+  Diese Übung machst du in **Ideogram** und **ChatGPT Images** (alternativ Gemini, Firefly oder
+  Adobe Express, wenn du keinen Ideogram-Zugang hast).
+
+  Erzeuge in beiden Werkzeugen eine Pinterest-Grafik (Hochformat 2:3) für den Fjordlicht-Blog
+  „Draußen-Notizen" mit genau diesen Texten:
+
+  ```text
+  Überschrift: "5 Dinge für die erste Herbstwanderung"
+  Liste: "Regenjacke", "Warme Schicht", "Thermobecher", "Stirnlampe", "Pflaster"
+  Fußzeile: "Draußen-Notizen"
+  ```
+
+  1. Schreibe den Prompt nach den Regeln aus 31.4: Text in Anführungszeichen, Rolle, Typografie,
+     Position.
+  2. Erzeuge pro Werkzeug **zwei** Durchläufe.
+  3. Prüfe jedes Bild Zeichen für Zeichen: Rechtschreibung, Umlaute, fehlende oder doppelte
+     Einträge, Reihenfolge, Lesbarkeit.
+  4. Entscheide: Welcher Entwurf eignet sich als Layoutvorlage, und was müsste für die
+     Veröffentlichung im Layout-Werkzeug neu gesetzt werden?
+tip: |
+  Gib die Umlaute im Prompt so an, wie sie im Bild erscheinen sollen (also „für", „Draußen"),
+  und beobachte, ob das Werkzeug sie korrekt übernimmt. Umlaute und ß sind ein guter
+  Härtetest.
+solution: |
+  Beispielprompt:
+
+  ```text
+  Pinterest-Grafik im Hochformat 2:3, schlichte Infografik.
+  Hintergrund: helles Sandbeige. Oben die Überschrift
+  "5 Dinge für die erste Herbstwanderung" in fetter serifenloser Schrift,
+  dunkelgrün. Darunter eine nummerierte Liste mit kleinen Linien-Icons:
+  "Regenjacke", "Warme Schicht", "Thermobecher", "Stirnlampe", "Pflaster".
+  Unten mittig klein: "Draußen-Notizen". Viel Weißraum, keine Fotos.
+  ```
+
+  | Prüfpunkt | Typische Beobachtung |
+  |---|---|
+  | Überschrift | in beiden Werkzeugen meist korrekt |
+  | Umlaute, ß | gelegentlich vertauscht oder durch ähnliche Zeichen ersetzt |
+  | Liste | Einträge fehlen, doppeln sich oder werden um eigene Ideen ergänzt |
+  | Icons | passen nicht immer zum Begriff (z. B. Taschenlampe statt Stirnlampe) |
+  | Layout | Ideogram oft geordneter bei Hierarchie und Abständen |
+
+  Entscheidung: Der beste Entwurf dient als **Layoutidee** (Anordnung, Farben, Icon-Stil). Für
+  die Veröffentlichung werden alle Texte im Layout-Werkzeug (Canva, Express, InDesign) neu
+  gesetzt, weil Pixeltext nicht korrigierbar ist und die Hausschrift fehlt. Eine gute
+  Bearbeitung dokumentiert mindestens einen konkreten Textfehler oder begründet, warum keiner
+  auftrat.

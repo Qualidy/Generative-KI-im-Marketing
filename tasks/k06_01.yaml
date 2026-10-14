@@ -1,0 +1,29 @@
+title: Welche Technik passt?
+difficulty: 1
+question: |
+  Ordne jeder Situation die passende Technik aus Kapitel 6 zu – Zero-Shot, Few-Shot, Prompt-Kette,
+  Trennzeichen, festes Ausgabeformat, Rollenwechsel oder Reasoning-Modell – und begründe in einem
+  Satz.
+
+  1. Du willst 40 Kundenbewertungen zum Rucksack Tind zusammenfassen lassen und hast sie in den
+     Prompt kopiert.
+  2. Der Redaktionsplan für November soll direkt in eure Tabelle übernommen werden.
+  3. Neue Produktnamen sollen klingen wie die bisherigen (Sølv, Skog, Vidde, Tind).
+  4. Du möchtest einen fertigen Newsletter-Entwurf kritisch prüfen lassen.
+  5. Du brauchst eine begründete Empfehlung, welche von drei Kampagnenideen ihr mit 8.000 Euro
+     Budget umsetzt.
+  6. Ein 1.500-Wörter-Ratgeber für den Blog soll entstehen.
+tip: |
+  Manche Situationen profitieren von zwei Techniken. Nenne die wichtigste zuerst.
+solution: |
+  | Nr. | Technik | Begründung |
+  |---|---|---|
+  | 1 | Trennzeichen (+ Zero-Shot) | Die Bewertungen sind Material, keine Anweisung; ohne Grenze werden Sätze darin womöglich als Auftrag gelesen. |
+  | 2 | festes Ausgabeformat | Spalten und Wertelisten verhindern Nacharbeit beim Übertragen. |
+  | 3 | Few-Shot | Klang und Muster lassen sich schwer beschreiben, aber leicht zeigen. |
+  | 4 | Rollenwechsel | Eine kritische Rolle im neuen Chat prüft schärfer als die Selbstprüfung im Entstehungsverlauf. |
+  | 5 | Reasoning-Modell | Abwägung mit Budget und Kriterien; Ziel und Rahmen vorgeben statt Mikroanleitung. |
+  | 6 | Prompt-Kette | Sammeln, gliedern, abschnittsweise schreiben, prüfen – jedes Zwischenergebnis wird kontrolliert. |
+
+  Zu Nr. 3: Ergänze den Hinweis, nur Klang und Länge zu übernehmen, sonst entstehen Abwandlungen
+  der vorhandenen Namen. Und prüfe die Vorschläge vor der Nutzung auf bestehende Marken.

@@ -1,0 +1,34 @@
+title: SCAMPER zuordnen
+difficulty: 1
+question: |
+  Ordne die folgenden Ideen für den Fjordlicht-Instagram-Kanal dem passenden SCAMPER-Buchstaben
+  zu (Substitute, Combine, Adapt, Modify, Put to other uses, Eliminate, Reverse) und begründe
+  kurz.
+
+  1. Statt Produktfotos im Studio zeigen wir die Jacken nur noch in echtem Regen.
+  2. Wir übernehmen das Format „Vorher/Nachher" aus Renovierungskanälen für Reparaturen.
+  3. Follower stellen die Fragen, das Team antwortet im Video.
+  4. Pflegetipp und Wetterprognose werden zu einem Wochen-Post verbunden.
+  5. Wir verzichten im Herbst komplett auf Rabattaktionen.
+  6. Alte Kampagnenfotos werden als Puzzle-Motiv für Familien genutzt.
+  7. Reels werden auf 7 Sekunden verkürzt.
+
+  Nenne zum Schluss einen Grund, warum du SCAMPER der KI ausdrücklich vorgibst, statt nur nach
+  „kreativen Ideen" zu fragen.
+tip: |
+  Manche Ideen lassen sich zwei Buchstaben zuordnen. Entscheidend ist, welche Denkbewegung im
+  Vordergrund steht: austauschen, verbinden, übernehmen, verändern, umnutzen, weglassen, umkehren.
+solution: |
+  | Nr. | Buchstabe | Begründung |
+  |---|---|---|
+  | 1 | Substitute | Studiosetting wird durch echte Umgebung ersetzt |
+  | 2 | Adapt | Format aus einem anderen Bereich wird übernommen |
+  | 3 | Reverse | die übliche Richtung (Marke spricht, Kunde hört) wird umgekehrt |
+  | 4 | Combine | zwei Inhalte werden zu einem verbunden |
+  | 5 | Eliminate | ein gewohntes Element fällt weg |
+  | 6 | Put to other uses | vorhandenes Material bekommt einen neuen Zweck |
+  | 7 | Modify | Länge wird verändert (verkleinert) |
+
+  Grund für die Vorgabe: Ohne Methode liefert das Modell die wahrscheinlichsten, also die
+  branchenüblichen Ideen. SCAMPER zwingt es in sieben verschiedene Denkrichtungen und erzeugt so
+  mehr Vielfalt – außerdem werden die Ideen nachvollziehbar sortiert.

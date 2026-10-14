@@ -1,0 +1,48 @@
+title: KI-Rechtsauskunft kritisch prüfen
+difficulty: 3
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Ein Kollege hat ChatGPT gefragt, was Fjordlicht
+  beim KI-Einsatz rechtlich beachten muss, und will die Antwort als Teamrichtlinie verschicken.
+  Auszug:
+
+  ```text
+  1. Ab 2026 muss jeder KI-generierte Inhalt mit "KI-generiert" gekennzeichnet werden.
+  2. KI-Bilder gehören dem Nutzer, der den Prompt geschrieben hat, und sind urheberrechtlich
+     geschützt.
+  3. Das Training von KI mit fremden Werken ist in Deutschland seit dem GEMA-Urteil endgültig
+     verboten.
+  4. Wenn das Tool die kommerzielle Nutzung erlaubt, kann nichts passieren.
+  5. Chatbots müssen nicht als KI gekennzeichnet werden, wenn sie freundlich formulieren.
+  ```
+
+  1. Bewerte jede Aussage: **richtig**, **teilweise richtig** oder **falsch** – mit Begründung und
+     Verweis auf den Abschnitt in diesem Kapitel.
+  2. Stelle dieselbe Frage selbst an ein KI-Werkzeug **mit** und **ohne** eingeschaltete Websuche.
+     Vergleiche: Welche Fehler tauchen wieder auf, welche verschwinden?
+  3. Formuliere drei Regeln, wie euer Team KI-Antworten zu Rechtsfragen künftig behandelt.
+tip: |
+  Solche Fehler entstehen selten aus dem Nichts. Meist wird eine richtige Teilaussage
+  übergeneralisiert oder ein Urteil ohne seinen Status wiedergegeben. Achte bei Urteilen immer auf
+  Gericht, Datum und Rechtskraft.
+solution: |
+  | Nr. | Bewertung | Begründung |
+  |---|---|---|
+  | 1 | falsch | Art. 50 verlangt Offenlegung bei Deepfakes und Texten zu öffentlichem Interesse ohne redaktionelle Verantwortung; normale Werbetexte meist nicht (39.4) |
+  | 2 | falsch | ohne menschliche schöpferische Leistung i. d. R. kein Schutz nach § 2 Abs. 2 UrhG (39.1) |
+  | 3 | falsch | TDM nach § 44b UrhG mit Opt-out; GEMA ./. OpenAI betrifft Memorisierung und ist nicht rechtskräftig (39.2) |
+  | 4 | teilweise richtig | Bedingungen klären die Nutzung, nicht die Rechte Dritter im Output (39.3) |
+  | 5 | falsch | Art. 50 Abs. 1: Hinweis, sofern KI-Interaktion nicht offensichtlich ist (39.4) |
+
+  Im Vergleich liefert die Websuche meist aktuellere Fristen und Urteile, übernimmt aber manchmal
+  Fehler aus schwachen Quellen. Ohne Websuche sind Daten und der Status von Verfahren besonders
+  oft veraltet.
+
+  Mögliche Teamregeln:
+
+  1. KI-Antworten zu Rechtsfragen sind Recherche-Einstieg, keine Richtlinie.
+  2. Jede genannte Norm, Frist und jedes Urteil wird an einer Primärquelle (z. B. EUR-Lex) oder
+     durch die Rechtsabteilung geprüft – inklusive Rechtskraft.
+  3. Interne Richtlinien zu Recht gibt nur frei, wer dafür benannt ist.
+
+  Bewertungskriterien: alle fünf Aussagen korrekt eingeordnet, Aussage 4 als teilweise richtig
+  differenziert, die Teamregeln sind konkret anwendbar.

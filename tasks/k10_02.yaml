@@ -1,0 +1,44 @@
+title: Drei Chat-Prompts zu Vorlagen machen
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Nimm drei Prompts, die du in den Kapiteln 5 bis 9
+  geschrieben hast (oder drei typische Aufgaben für Fjordlicht bzw. ein Unternehmen deiner Wahl:
+  Newsletter-Betreffzeilen, Pinterest-Beschreibung, Antwort auf einen Instagram-Kommentar).
+
+  1. **Platzhalter setzen.** Ersetze alle veränderlichen Stellen durch eindeutig benannte
+     Platzhalter in eckigen Klammern, wo hilfreich mit Beispiel.
+  2. **Metadaten ergänzen.** Lege für jeden Prompt einen vollständigen Eintrag mit allen Feldern aus
+     Abschnitt 10.2 an, inklusive ID nach Benennungskonvention und Datenklasse.
+  3. **Testen.** Fülle jede Vorlage zweimal mit unterschiedlichen fiktiven Inhalten aus und lass sie
+     in neuen Chats laufen. Wähle je ein Beispielergebnis aus.
+  4. **Fremdtest.** Gib einen der Einträge einer anderen Person oder lies ihn mit einem Tag Abstand
+     und fülle ihn streng nach Anleitung aus. Notiere jede Stelle, an der du raten musstest.
+tip: |
+  Ein Platzhalter wie [Text] oder [Infos] zwingt die nutzende Person zum Raten. Benenne, was genau
+  hineingehört und woher es kommt, etwa [Kommentartext aus Instagram, ohne Nutzernamen].
+solution: |
+  Beispiel eines vollständigen Eintrags:
+
+  ```text
+  ID/Name:        TXT-IG-007 Antwort auf Instagram-Kommentar
+  Zweck:          sachliche Antworten auf Fragen und Kritik unter Posts;
+                  nicht für Reklamationen mit Bestelldaten (an Kundenservice)
+  Prompt:         Persona: Du betreust die Community von Fjordlicht.
+                  Request: Formuliere eine Antwort auf [Kommentartext, ohne
+                  Nutzernamen]. Output: maximal 40 Wörter, ein Absatz.
+                  Modifier: Nur Angaben aus [Produktinfos]. Keine Rabatte,
+                  keine Zusagen. Fehlt etwas, verweise auf den Kundenservice.
+                  Purpose: Frage klären, Vertrauen stärken.
+                  Tone: ruhig, ehrlich, Du-Ansprache.
+  Input:          Kommentartext, Produktinfos
+  Getestet mit:   ChatGPT, Gegenprobe Claude, Oktober 2026
+  Beispiel:       [freigegebene Antwort]
+  Prüfpunkte:     max. 40 Wörter; keine Zusage; keine erfundenen Angaben
+  Testfälle:      Produktfrage, Kritik am Preis, Frage ohne Antwort im Material
+  Datenklasse:    grün - keine Nutzernamen, keine Bestelldaten
+  Version:        v1, Datum, verantwortlich: Social-Media-Team
+  ```
+
+  Typische Befunde im Fremdtest: unklare Platzhalter, fehlende Angabe zum Input, nicht anwendbare
+  Prüfpunkte. Eine gute Bearbeitung zeigt drei vollständige Einträge, je zwei Testläufe und konkrete
+  Korrekturen aus dem Fremdtest.

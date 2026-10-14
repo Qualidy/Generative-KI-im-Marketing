@@ -1,0 +1,37 @@
+title: Gesprächsleitfaden für die Sprecherin
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Fjordlicht möchte mit seiner Sprecherin, die
+  seit drei Jahren Erklärvideos einspricht, über einen Stimmklon sprechen. Einsatz: kurze
+  Produkt-FAQ-Videos und Audioversionen von Blogartikeln, auf Deutsch und Englisch.
+
+  1. Nutze den Prompt aus Abschnitt 38.3, um eine Checkliste für das Gespräch zu erstellen.
+  2. Prüfe die Checkliste gegen die acht Vertragsbausteine der Tabelle in 38.3. Ergänze, was
+     fehlt.
+  3. Lass ChatGPT die Fragen formulieren, die die **Sprecherin** wahrscheinlich stellen wird
+     (Perspektivwechsel). Beantworte jede Frage in einem Satz aus Fjordlicht-Sicht.
+  4. Markiere die drei Punkte, die du auf keinen Fall ohne Rechtsabteilung oder Anwältin
+     festlegen würdest.
+tip: |
+  Der Perspektivwechsel in Schritt 3 ist der Kern. Eine Sprecherin lebt von ihrer Stimme – ihre
+  wichtigsten Fragen betreffen Kontrolle („Was sagt meine Stimme ohne mich?") und Zukunft („Was
+  passiert, wenn wir uns trennen?"). Kannst du die nicht klar beantworten, ist das Angebot nicht
+  reif.
+solution: |
+  Typische Fragen der Sprecherin und gute Antworten:
+
+  | Frage | Antwort aus Fjordlicht-Sicht |
+  |---|---|
+  | Sehe ich jeden Text vorher? | Ja, oder eine definierte Rahmenfreigabe für FAQ-Texte mit Vetorecht. |
+  | Wofür wird meine Stimme nie benutzt? | Keine Politik, keine Werbung für Dritte, keine Aussagen über Personen. |
+  | Wer hat Zugriff auf das Modell? | Zwei benannte Personen, Unternehmenskonto mit Zwei-Faktor-Anmeldung. |
+  | Was passiert bei Trennung oder Widerruf? | Modell und Rohaufnahmen werden gelöscht, Löschung wird bestätigt. |
+  | Wie werde ich bezahlt? | Pauschale pro Jahr plus Honorar für neue Studioaufnahmen. |
+  | Wird erkennbar, dass es KI ist? | Ja, Kennzeichnung in Video und Beschreibung. |
+  | Darf meine Stimme Englisch sprechen? | Nur wenn ausdrücklich vereinbart; Übersetzungen prüft ein Mensch. |
+
+  Punkte für die juristische Prüfung: Formulierung von Einwilligung und Widerruf, Datenschutz
+  (Stimmprofil, Auftragsverarbeitung mit dem Anbieter) und Vergütungs- sowie Haftungsregelung.
+
+  Eine gute Bearbeitung deckt alle acht Bausteine ab und enthält mindestens fünf Fragen aus
+  Sprecherinnensicht mit konkreten, nicht ausweichenden Antworten.

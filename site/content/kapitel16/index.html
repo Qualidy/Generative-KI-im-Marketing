@@ -1,0 +1,2059 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel15/">
+      
+      
+        <link rel="next" href="../kapitel17/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 16 – ChatGPT für A/B-Tests von Textvarianten - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-16-chatgpt-fur-ab-tests-von-textvarianten" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 16 – ChatGPT für A/B-Tests von Textvarianten
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Block 3 · KI-Copywriting & Content-Erstellung
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 11 – Kollaboratives Schreiben: vom ChatGPT Canvas zu Schreibblöcken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 12 – Redaktionsplanung & Brainstorming mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 13 – E-Mail-Marketing mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 14 – Social-Media-Texte mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 15 – Blogartikel & Leadmagnete
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 16 – ChatGPT für A/B-Tests von Textvarianten
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 16 – ChatGPT für A/B-Tests von Textvarianten
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#161-was-ein-ab-test-leistet" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.1 Was ein A/B-Test leistet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162-erst-die-hypothese-dann-die-varianten" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.2 Erst die Hypothese, dann die Varianten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#163-varianten-gezielt-erzeugen-eine-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.3 Varianten gezielt erzeugen: eine Variable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#164-test-setup-stichprobe-und-signifikanz-verstandlich" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.4 Test-Setup: Stichprobe und Signifikanz verständlich
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#165-auswertung-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.5 Auswertung mit KI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#166-lernen-dokumentieren-und-grenzen-kennen" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.6 Lernen dokumentieren und Grenzen kennen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-16-chatgpt-fur-ab-tests-von-textvarianten">Kapitel 16 – ChatGPT für A/B-Tests von Textvarianten<a class="headerlink" href="#kapitel-16-chatgpt-fur-ab-tests-von-textvarianten" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was ein <strong>A/B-Test</strong> leistet – und warum KI das Ergebnis <strong>nicht vorhersagen</strong> kann</li>
+<li>Wie du eine prüfbare <strong>Hypothese</strong> formulierst, bevor du Varianten schreibst</li>
+<li>Wie du mit KI Varianten erzeugst, die sich in <strong>genau einer Variable</strong> unterscheiden</li>
+<li>Was <strong>Stichprobengröße</strong> und <strong>Signifikanz</strong> bedeuten – ohne Formeln, aber mit Zahlen</li>
+<li>Wie du Testergebnisse mit der <strong>Datenanalyse</strong> in ChatGPT auswertest und das Ergebnis prüfst</li>
+<li>Wie du Erkenntnisse in einem <strong>Testlog</strong> dokumentierst, damit das Team daraus lernt</li>
+</ul>
+</div>
+<hr />
+<h2 id="161-was-ein-ab-test-leistet">16.1 Was ein A/B-Test leistet<a class="headerlink" href="#161-was-ein-ab-test-leistet" title="Permanent link">&para;</a></h2>
+<p>Bei einem <strong>A/B-Test</strong> zeigst du zwei Varianten eines Textes zufällig verteilt an zwei vergleichbare Gruppen und misst, welche Variante ein vorher festgelegtes Ziel besser erreicht. Klassische Einsatzfelder im Textmarketing:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Gemessen an</th>
+<th>Typisches Werkzeug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Newsletter-Betreffzeile</td>
+<td>Klickrate (Öffnungsrate nur eingeschränkt)</td>
+<td>E-Mail-Software mit A/B-Funktion</td>
+</tr>
+<tr>
+<td>Call-to-Action-Button</td>
+<td>Klickrate auf den Button</td>
+<td>Webshop, Landingpage-Tool</td>
+</tr>
+<tr>
+<td>Landingpage-Überschrift</td>
+<td>Anmelderate</td>
+<td>Landingpage-Tool, Testing-Werkzeug</td>
+</tr>
+<tr>
+<td>Anzeigentext</td>
+<td>Klickrate, Kosten pro Conversion</td>
+<td>Werbeplattformen (Meta, Google, LinkedIn)</td>
+</tr>
+<tr>
+<td>Produktbeschreibung</td>
+<td>Warenkorbrate</td>
+<td>Shop-System mit Testfunktion</td>
+</tr>
+</tbody>
+</table>
+<p>Die Öffnungsrate ist seit Jahren nur noch eingeschränkt aussagekräftig, weil manche E-Mail-Programme Mails automatisch vorladen und damit „Öffnungen" erzeugen, die kein Mensch ausgelöst hat. Für Betreffzeilen-Tests ist die <strong>Klickrate</strong> deshalb meist das verlässlichere Ziel.</p>
+<p>KI hilft an drei Stellen: beim Formulieren der Hypothese, beim Erzeugen sauberer Varianten und bei der Auswertung. An einer Stelle hilft sie nicht: bei der Vorhersage, welche Variante gewinnt.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Die KI kann dir sagen, welche Betreffzeile <strong>nach Lehrbuch</strong> besser sein müsste. Ob sie bei <strong>deinen</strong> 38.000 Abonnenten besser ist, sagt dir nur der Test. Genau deshalb testet man.</p>
+</div>
+<p>Auch „synthetische Personas", die du als simulierte Zielgruppe befragst (Kap. 18), ersetzen keinen Test. Sie eignen sich, um offensichtlich schwache Varianten vorab auszusortieren – nicht, um einen Gewinner zu bestimmen.</p>
+<hr />
+<h2 id="162-erst-die-hypothese-dann-die-varianten">16.2 Erst die Hypothese, dann die Varianten<a class="headerlink" href="#162-erst-die-hypothese-dann-die-varianten" title="Permanent link">&para;</a></h2>
+<p>Der häufigste Fehler ist, zwei Texte zu schreiben und „mal zu schauen, was besser läuft". Selbst wenn eine Variante gewinnt, weißt du danach nicht, <strong>warum</strong> – und kannst das Ergebnis auf nichts übertragen. Eine <strong>Hypothese</strong> legt vorher fest, was du lernen willst.</p>
+<p>Bewährte Form: <strong>Wenn wir [Änderung], dann [messbare Wirkung], weil [Begründung].</strong></p>
+<table>
+<thead>
+<tr>
+<th>Schwach</th>
+<th>Stark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>„Mal sehen, ob ein anderer Betreff besser ist."</td>
+<td>„Wenn der Betreff den konkreten Nutzen nennt statt eine Stimmung, steigt die Klickrate, weil unsere Leser:innen den Newsletter vor allem für Pflegetipps abonniert haben."</td>
+</tr>
+<tr>
+<td>„Wir testen einen emotionaleren Button."</td>
+<td>„Wenn der Button ‚Kalender holen' statt ‚Jetzt anmelden' lautet, steigt die Anmelderate, weil der Nutzen sichtbar wird und das Wort ‚anmelden' nach Verpflichtung klingt."</td>
+</tr>
+<tr>
+<td>„Kurz gegen lang."</td>
+<td>„Wenn die Produktbeschreibung mit einem Anwendungsfall beginnt statt mit Materialangaben, steigt die Warenkorbrate auf Mobilgeräten, weil dort nur der erste Absatz sichtbar ist."</td>
+</tr>
+</tbody>
+</table>
+<p>Hier lohnt sich KI als Sparringspartner:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich plane einen A/B-Test für den Fjordlicht-Newsletter (ca. 38.000
+Abonnenten, Outdoor-Bekleidung). Ziel: höhere Klickrate.
+Schlage 5 Hypothesen im Format "Wenn wir ..., dann ..., weil ..." vor.
+Jede Hypothese ändert genau ein Element der Betreffzeile.
+Bewerte je Hypothese: Wie gut ist das Ergebnis auf künftige
+Newsletter übertragbar (hoch/mittel/niedrig)?
+</code></pre></div></td></tr></table></div>
+<p>Die Bewertung der Übertragbarkeit ist entscheidend: Ein Test „Emoji ja oder nein" bringt ein Ergebnis, das du in jedem künftigen Newsletter anwenden kannst. Ein Test zwischen zwei völlig verschiedenen Betreffzeilen bringt einen Gewinner für genau diese eine Mail.</p>
+<hr />
+<h2 id="163-varianten-gezielt-erzeugen-eine-variable">16.3 Varianten gezielt erzeugen: eine Variable<a class="headerlink" href="#163-varianten-gezielt-erzeugen-eine-variable" title="Permanent link">&para;</a></h2>
+<p>Wenn sich Variante A und B in Länge, Ton, Ansprache und Emoji unterscheiden, kannst du nach dem Test nicht sagen, welche Änderung gewirkt hat. Deshalb gilt: <strong>Pro Test eine Variable.</strong> Alles andere bleibt gleich.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Variante A</th>
+<th>Variante B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nutzen vs. Stimmung</td>
+<td>„Regenjacke waschen: 3 Fehler, die sie undicht machen"</td>
+<td>„Herbst ist, wenn die Jacke wieder dran ist"</td>
+</tr>
+<tr>
+<td>Frage vs. Aussage</td>
+<td>„Wäschst du deine Regenjacke richtig?"</td>
+<td>„So wäschst du deine Regenjacke richtig"</td>
+</tr>
+<tr>
+<td>Personalisierung</td>
+<td>„Anna, deine Jacke braucht Pflege"</td>
+<td>„Deine Jacke braucht Pflege"</td>
+</tr>
+<tr>
+<td>Zahl vs. keine Zahl</td>
+<td>„3 Pflegetipps für den Herbst"</td>
+<td>„Pflegetipps für den Herbst"</td>
+</tr>
+</tbody>
+</table>
+<p>KI neigt dazu, bei „Erstelle eine Variante B" gleich mehrere Dinge zu ändern. Gib deshalb ausdrücklich vor, was konstant bleibt – das ist der <strong>Modifier</strong> im P.R.O.M.P.T.-Framework (Kap. 5):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier ist Betreffzeile A: "So wäschst du deine Regenjacke richtig"
+Erstelle Variante B, die sich NUR in einem Punkt unterscheidet:
+B formuliert als Frage statt als Aussage.
+Gleich bleiben müssen: Kernaussage, Wortschatz soweit möglich,
+Länge (+/- 5 Zeichen), Du-Ansprache, kein Emoji.
+Liefere 3 Kandidaten für B und nenne bei jedem, ob sich außer
+der Satzform noch etwas verändert hat.
+</code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Die Selbstauskunft der KI („Es hat sich nur die Satzform geändert") ist nicht verlässlich. Prüfe selbst: Zähl die Zeichen, vergleiche Wort für Wort. Eine Variante, die zusätzlich ein starkes Wort wie „endlich" enthält, testet zwei Dinge auf einmal.</p>
+</div>
+<p>Mehr als zwei Varianten (A/B/C/D) sind möglich, brauchen aber entsprechend mehr Empfänger pro Variante. Bei Listen in der Größe von Fjordlicht ist A/B fast immer die bessere Wahl.</p>
+<hr />
+<h2 id="164-test-setup-stichprobe-und-signifikanz-verstandlich">16.4 Test-Setup: Stichprobe und Signifikanz verständlich<a class="headerlink" href="#164-test-setup-stichprobe-und-signifikanz-verstandlich" title="Permanent link">&para;</a></h2>
+<p>Zwei Fragen musst du vor dem Start beantworten: <strong>Wie viele Menschen brauche ich?</strong> und <strong>Ab wann glaube ich einem Unterschied?</strong></p>
+<p><strong>Signifikanz</strong> beschreibt, wie unwahrscheinlich ein beobachteter Unterschied wäre, wenn es in Wahrheit keinen gäbe. Im Marketing üblich ist ein <strong>Signifikanzniveau von 5 Prozent</strong>: Du akzeptierst ein Ergebnis als Unterschied, wenn ein so großer Abstand bei zwei gleich guten Varianten in weniger als 5 von 100 Fällen zufällig zustande käme. Der zugehörige Wert, den Auswertungen ausgeben, heißt <strong>p-Wert</strong>; liegt er unter 0,05, gilt der Unterschied als signifikant.</p>
+<p>Wie viele Empfänger du brauchst, hängt vor allem davon ab, <strong>wie klein der Unterschied ist, den du erkennen willst</strong>. Für den Fjordlicht-Newsletter mit einer üblichen Klickrate von 3 Prozent (Planungswerte, gerundet, Signifikanz 5 %, Teststärke 80 %):</p>
+<table>
+<thead>
+<tr>
+<th>Erwarteter Effekt</th>
+<th>Klickrate B</th>
+<th>nötige Empfänger <strong>pro Variante</strong></th>
+<th>machbar bei 38.000?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+30 % relativ</td>
+<td>3,9 %</td>
+<td>ca. 6.500</td>
+<td>ja, mit Teilgruppe</td>
+</tr>
+<tr>
+<td>+20 % relativ</td>
+<td>3,6 %</td>
+<td>ca. 14.000</td>
+<td>ja, fast ganze Liste</td>
+</tr>
+<tr>
+<td>+10 % relativ</td>
+<td>3,3 %</td>
+<td>ca. 53.000</td>
+<td>nein</td>
+</tr>
+</tbody>
+</table>
+<p>Die Botschaft: <strong>Kleine Unterschiede brauchen sehr große Gruppen.</strong> Wer mit 2.000 Empfängern pro Variante testet, kann nur große Effekte sicher erkennen. Lass dir die Rechnung von der KI mit der Datenanalyse-Funktion durchführen, statt sie zu schätzen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Berechne mit Python die nötige Stichprobengröße pro Variante für
+einen A/B-Test: Basis-Klickrate 3 %, erwartete Klickrate 3,6 %,
+Signifikanzniveau 5 % (zweiseitig), Teststärke 80 %.
+Zeige den Rechenweg in drei Sätzen für Nicht-Statistiker.
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Testdauer vorher festlegen</p>
+<p>Lege vor dem Start fest, wann du auswertest – etwa „7 Tage nach Versand" oder „nach 2.000 Besuchen pro Variante". Wer täglich nachschaut und bei der ersten signifikanten Zahl abbricht („Peeking"), findet häufig Unterschiede, die keine sind. Frühe Klicks kommen oft von einer besonders aktiven Teilgruppe und gleichen sich später aus.</p>
+</div>
+<hr />
+<h2 id="165-auswertung-mit-ki">16.5 Auswertung mit KI<a class="headerlink" href="#165-auswertung-mit-ki" title="Permanent link">&para;</a></h2>
+<p>Mit der <strong>Datenanalyse</strong> in ChatGPT (Python im Hintergrund) kannst du eine exportierte Ergebnistabelle hochladen oder einfügen und auswerten lassen. Vergleichbare Funktionen bieten Claude und Gemini; Copilot in Excel eignet sich, wenn die Daten ohnehin in Excel liegen. Wichtig: Nur aggregierte Zahlen hochladen, <strong>keine</strong> Empfängerlisten mit E-Mail-Adressen (Datenschutz, Kap. 4).</p>
+<div class="admonition example">
+<p class="admonition-title">Auswertung eines Betreffzeilen-Tests</p>
+<p>Fjordlicht hat den Newsletter an zwei zufällige Gruppen von je 19.000 Abonnenten verschickt (fiktive Zahlen):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Variante;Empfänger;Klicks
+A_Aussage;19000;570
+B_Frage;19000;684
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Werte diesen A/B-Test aus. Berechne Klickrate je Variante, den
+relativen Unterschied und prüfe mit einem Chi-Quadrat-Test, ob der
+Unterschied bei 5 % Signifikanzniveau signifikant ist.
+Erkläre das Ergebnis in 4 Sätzen für das Marketingteam.
+Nenne ausdrücklich, was wir aus diesem Test NICHT schließen können.
+</code></pre></div></td></tr></table></div>
+<p>Erwartbares Ergebnis: A 3,0 %, B 3,6 %, relativ +20 %, p-Wert etwa 0,001 – also signifikant. Was der Test nicht zeigt: ob Fragen generell besser funktionieren, ob mehr Klicks zu mehr Käufen führen und ob der Effekt bei anderen Themen hält.</p>
+</div>
+<p>Prüfe die Auswertung trotzdem. Zwei einfache Kontrollen genügen meist: Rechne die Klickraten selbst nach (Klicks geteilt durch Empfänger), und lass dir den verwendeten Python-Code anzeigen. Stimmen die Ausgangszahlen im Code mit deinen Daten überein?</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Wenn das Gesamtergebnis nicht signifikant ist, schlägt die KI gern vor, nach Segmenten zu suchen: „Bei mobilen Nutzern ist B signifikant besser!" Wer lange genug in Teilgruppen sucht, findet fast immer irgendwo einen „signifikanten" Unterschied – rein zufällig. Ein Segmentbefund aus einem Test ist eine <strong>neue Hypothese</strong> für den nächsten Test, kein Ergebnis.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Auswertungsschritt</th>
+<th>KI kann</th>
+<th>Du prüfst</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raten berechnen</td>
+<td>zuverlässig mit Python</td>
+<td>Ausgangszahlen im Code</td>
+</tr>
+<tr>
+<td>Signifikanz testen</td>
+<td>passenden Test wählen und rechnen</td>
+<td>ob die Fragestellung vorher festgelegt war</td>
+</tr>
+<tr>
+<td>Ergebnis erklären</td>
+<td>verständlich formulieren</td>
+<td>ob die Erklärung über die Daten hinausgeht</td>
+</tr>
+<tr>
+<td>Ursachen deuten</td>
+<td>Vermutungen liefern</td>
+<td>dass Vermutungen als solche markiert sind</td>
+</tr>
+<tr>
+<td>Empfehlung ableiten</td>
+<td>Vorschläge machen</td>
+<td>ob Aufwand und Effekt in einem sinnvollen Verhältnis stehen</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="166-lernen-dokumentieren-und-grenzen-kennen">16.6 Lernen dokumentieren und Grenzen kennen<a class="headerlink" href="#166-lernen-dokumentieren-und-grenzen-kennen" title="Permanent link">&para;</a></h2>
+<p>Ein Test, dessen Ergebnis nur im Kopf einer Person steckt, ist nach drei Monaten vergessen. Ein <strong>Testlog</strong> – eine einfache Tabelle in Sheets, Excel oder Notion – macht aus Einzeltests Teamwissen.</p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Datum, Kanal</td>
+<td>06.10.2026, Newsletter</td>
+</tr>
+<tr>
+<td>Hypothese</td>
+<td>Frage statt Aussage erhöht Klickrate, weil …</td>
+</tr>
+<tr>
+<td>Varianten</td>
+<td>A: „So wäschst du …" / B: „Wäschst du …?"</td>
+</tr>
+<tr>
+<td>Zielmetrik, Dauer</td>
+<td>Klickrate, 7 Tage</td>
+</tr>
+<tr>
+<td>Stichprobe</td>
+<td>je 19.000</td>
+</tr>
+<tr>
+<td>Ergebnis</td>
+<td>A 3,0 %, B 3,6 %, p ≈ 0,001</td>
+</tr>
+<tr>
+<td>Erkenntnis</td>
+<td>Frage-Betreff bei Ratgeber-Themen wirksam – bei Produkt-Themen noch nicht getestet</td>
+</tr>
+<tr>
+<td>Nächster Schritt</td>
+<td>Wiederholung mit Produkt-Newsletter</td>
+</tr>
+</tbody>
+</table>
+<p>KI kann das Testlog regelmäßig auswerten: „Fasse die letzten zwölf Tests zusammen. Welche Muster sind mehrfach bestätigt, welche nur einmal beobachtet?" So entstehen Regeln für eure Prompt-Bibliothek (Kap. 10) und den Styleguide – etwa „Bei Ratgeber-Newslettern Betreff als Frage". Wie du über A/B-Tests hinaus Kennzahlen auswertest, zeigt Kapitel 20.</p>
+<p>Die Grenzen im Überblick:</p>
+<ul>
+<li>KI kann <strong>keine Testergebnisse vorhersagen</strong> – auch nicht mit Personas oder Benchmarks.</li>
+<li>Ein Gewinner gilt für <strong>diese Zielgruppe, diesen Zeitpunkt, diesen Kanal</strong>. Wiederhole wichtige Erkenntnisse.</li>
+<li>Mehr Klicks sind nicht automatisch mehr Umsatz. Sieh dir, wo möglich, auch nachgelagerte Kennzahlen an.</li>
+<li>Kleine Listen erlauben nur das Erkennen großer Unterschiede. Dann lieber seltener und mutiger testen.</li>
+</ul>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ein <strong>A/B-Test</strong> misst, welche Variante bei <strong>deiner</strong> Zielgruppe besser wirkt; KI kann das Ergebnis nicht vorhersagen.</li>
+<li>Vor den Varianten steht eine <strong>Hypothese</strong> im Format „Wenn …, dann …, weil …" – sonst lernst du nichts Übertragbares.</li>
+<li>Varianten unterscheiden sich in <strong>genau einer Variable</strong>; das gehört als Modifier in den Prompt und wird selbst geprüft.</li>
+<li><strong>Kleine Effekte brauchen große Stichproben</strong>; Testdauer und Auswertungszeitpunkt werden vorher festgelegt.</li>
+<li>Die <strong>Datenanalyse</strong> rechnet zuverlässig, aber du prüfst Ausgangszahlen, Fragestellung und Deutung – und nimmst Segmentfunde nur als neue Hypothese.</li>
+<li>Ein <strong>Testlog</strong> macht aus Einzeltests Teamwissen und liefert Regeln für Bibliothek und Styleguide.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Hypothese, Variable, Zielmetrik</summary>
+<p>Das Fjordlicht-Team hat vier Testideen gesammelt. Beurteile jede: Ist eine Hypothese
+erkennbar? Unterscheiden sich die Varianten in <strong>genau einer</strong> Variable? Ist die Zielmetrik
+sinnvoll? Formuliere anschließend die schwächste Idee zu einer guten Hypothese im Format
+„Wenn …, dann …, weil …" um.</p>
+<ol>
+<li>Betreff A: <code>Neu: Fleece Skog</code> – Betreff B: <code>Endlich da: Unser neues Fleece Skog für
+   kalte Tage</code> – Ziel: Öffnungsrate.</li>
+<li>Button A: <code>Jetzt anmelden</code> – Button B: <code>Kalender holen</code> – Ziel: Anmelderate auf der
+   Landingpage. Hypothese: Nutzen im Button erhöht die Anmelderate.</li>
+<li>Instagram-Caption A mit 1 Emoji, B mit 5 Emojis und anderem Hook – Ziel: Likes.</li>
+<li>Produkttext Wanderhose „Vidde": A beginnt mit Material, B mit Anwendungsfall, sonst
+   identisch – Ziel: Warenkorbrate. Keine Hypothese notiert.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Prüfe zuerst die Variablen: Zähle, wie viele Dinge sich zwischen A und B unterscheiden. Dann
+die Metrik: Misst sie wirklich das, was das Marketing erreichen will?</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Hypothese</th>
+<th>Eine Variable?</th>
+<th>Zielmetrik</th>
+<th>Urteil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>fehlt</td>
+<td>nein (Länge, „Endlich", Nutzenhinweis, Ansprache)</td>
+<td>Öffnungsrate nur eingeschränkt verlässlich</td>
+<td>schwach</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ja, Begründung knapp</td>
+<td>ja</td>
+<td>passend</td>
+<td>gut</td>
+</tr>
+<tr>
+<td>3</td>
+<td>fehlt</td>
+<td>nein (Emojis und Hook)</td>
+<td>Likes sind ein schwaches Ziel</td>
+<td>schwach</td>
+</tr>
+<tr>
+<td>4</td>
+<td>fehlt</td>
+<td>ja</td>
+<td>passend</td>
+<td>Setup gut, Hypothese ergänzen</td>
+</tr>
+</tbody>
+</table>
+<p>Umformulierung von Idee 1 (Beispiel): „Wenn der Betreff einen konkreten Einsatzzweck nennt
+(‚für kalte Tage') statt nur die Neuheit, steigt die <strong>Klickrate</strong>, weil unsere Leser:innen
+Produkte nach Situation auswählen." Dazu Variante A: <code>Neu: Fleece Skog</code>, Variante B:
+<code>Neu: Fleece Skog für kalte Tage</code> – nur der Zusatz unterscheidet sich.</p>
+<p>Idee 3 lässt sich retten, indem nur die Emoji-Anzahl variiert wird. Likes als Ziel bleiben
+aber fragwürdig; besser sind Speicherungen oder Profilklicks, wenn es um Interesse geht.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Landingpage-Test mit der Datenanalyse auswerten</summary>
+<p>Diese Übung machst du direkt im KI-Werkzeug mit Datenanalyse-Funktion (ChatGPT, alternativ
+Claude oder Gemini). Fjordlicht hat auf der Landingpage für den Pflege-Kalender zwei
+Button-Texte getestet. Die Testdauer (14 Tage) war vorher festgelegt. Fiktive Daten:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Variante;Button;Besuche;Anmeldungen
+A;Jetzt anmelden;3200;224
+B;Kalender holen;3180;270
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>Lass die KI Anmelderate je Variante, relativen Unterschied und einen Chi-Quadrat-Test
+   berechnen. Fordere eine Erklärung in vier Sätzen für das Team.</li>
+<li>Rechne die Anmelderaten selbst nach und lass dir den Python-Code zeigen. Stimmen die
+   Ausgangszahlen?</li>
+<li>Frage die KI, wie viele Besuche pro Variante nötig gewesen wären, um einen Unterschied von
+   7,0 % zu 8,4 % sicher zu erkennen (5 % Signifikanz, 80 % Teststärke).</li>
+<li>Trage das Ergebnis in ein Testlog mit den Feldern aus Abschnitt 16.6 ein.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achte darauf, ob die KI den Unterschied als „Beweis" bezeichnet oder Ursachen behauptet
+(„weil Nutzer konkrete Vorteile bevorzugen"). Signifikanz sagt nur, dass der Unterschied
+wahrscheinlich nicht zufällig ist – nicht, warum er entsteht.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartbare Werte:</p>
+<table>
+<thead>
+<tr>
+<th>Kennzahl</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anmelderate A</td>
+<td>7,0 %</td>
+</tr>
+<tr>
+<td>Anmelderate B</td>
+<td>ca. 8,5 %</td>
+</tr>
+<tr>
+<td>relativer Unterschied</td>
+<td>ca. +21 %</td>
+</tr>
+<tr>
+<td>p-Wert (Chi-Quadrat, ohne Korrektur)</td>
+<td>ca. 0,026</td>
+</tr>
+<tr>
+<td>Ergebnis</td>
+<td>signifikant bei 5 %</td>
+</tr>
+<tr>
+<td>nötige Besuche für 7,0 % → 8,4 %</td>
+<td>ca. 5.700 pro Variante</td>
+</tr>
+</tbody>
+</table>
+<p>Je nach Einstellung (z. B. Yates-Korrektur) weicht der p-Wert leicht ab; das ist kein Fehler.
+Bemerkenswert ist Punkt 3: Der Test war für diesen Effekt eigentlich zu klein geplant. Dass er
+trotzdem signifikant wurde, liegt daran, dass der beobachtete Unterschied etwas größer war. Eine
+Wiederholung oder Weiterführung stärkt das Ergebnis.</p>
+<p>Testlog-Eintrag (Kurzform): Hypothese „Nutzen im Button erhöht Anmelderate"; Ergebnis A 7,0 %,
+B 8,5 %, p ≈ 0,03; Erkenntnis: Nutzenformulierung bei diesem Leadmagneten wirksam; nächster
+Schritt: Prinzip bei der nächsten Landingpage erneut testen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Der Segment-Fund</summary>
+<p>Ein Test mit zwei Überschriften auf einer Fjordlicht-Landingpage ist abgeschlossen (fiktive
+Daten, Testdauer vorher festgelegt):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Variante;Gerät;Besuche;Anmeldungen
+A;mobil;2400;168
+A;desktop;1100;99
+B;mobil;2380;212
+B;desktop;1120;90
+</code></pre></div></td></tr></table></div>
+<p>Eine Kollegin hat die Daten in ChatGPT ausgewertet und präsentiert: „Gesamt kein
+signifikanter Unterschied, aber auf Mobilgeräten ist B signifikant besser (p = 0,015). Wir
+stellen mobil auf B um."</p>
+<ol>
+<li>Überprüfe die Zahlen mit der Datenanalyse: Gesamtergebnis und beide Segmente.</li>
+<li>Bewerte die Schlussfolgerung der Kollegin. Was spricht dafür, was dagegen?</li>
+<li>Formuliere eine Empfehlung an die Marketingleitung (max. 120 Wörter).</li>
+<li>Schreibe einen Prompt, mit dem die KI künftig Segmentauswertungen korrekt einordnet.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Frage dich: War die Analyse nach Gerät <strong>vorher</strong> geplant? Und wie viele Segmente hätte man
+noch prüfen können (Gerät, Uhrzeit, Neukunde/Bestandskunde, Quelle …)? Je mehr man prüft,
+desto wahrscheinlicher findet man zufällig einen „Treffer".</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Gruppe</th>
+<th>A</th>
+<th>B</th>
+<th>p-Wert (ca.)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gesamt</td>
+<td>7,6 %</td>
+<td>8,6 %</td>
+<td>0,13</td>
+</tr>
+<tr>
+<td>mobil</td>
+<td>7,0 %</td>
+<td>8,9 %</td>
+<td>0,015</td>
+</tr>
+<tr>
+<td>desktop</td>
+<td>9,0 %</td>
+<td>8,0 %</td>
+<td>0,42</td>
+</tr>
+</tbody>
+</table>
+<p>Dafür spricht: Der Mobil-Unterschied ist deutlich, und es gibt eine plausible Begründung
+(Überschrift B ist kürzer und auf kleinen Bildschirmen vollständig sichtbar).</p>
+<p>Dagegen spricht: Die Segmentierung war nicht vorab geplant. Bei mehreren möglichen Segmenten
+steigt die Wahrscheinlichkeit eines Zufallsfunds deutlich. Auf Desktop zeigt sich sogar die
+umgekehrte Richtung, wenn auch nicht signifikant. Das Gesamtergebnis ist nicht signifikant.</p>
+<p>Empfehlung (Beispiel): „Der Test zeigt insgesamt keinen belastbaren Unterschied. Auf
+Mobilgeräten schneidet B besser ab; dieser Befund wurde aber erst nachträglich gesucht und kann
+Zufall sein. Wir empfehlen einen neuen Test nur für mobile Besuche mit vorab festgelegter
+Hypothese und ca. 3.200 Besuchen pro Variante. Bis dahin bleibt A aktiv, weil eine Umstellung
+ohne belastbares Ergebnis keinen sicheren Vorteil bringt."</p>
+<p>Prompt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Werte den Test zuerst nur für die vorab festgelegte Zielmetrik
+insgesamt aus. Segmentauswertungen nur, wenn ich sie anfordere; kennzeichne
+sie als explorativ und nenne, wie viele Segmente geprüft wurden.
+Leite aus Segmentfunden keine Empfehlung ab, sondern eine neue Hypothese.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: Zahlen korrekt nachgerechnet, Problem der nachträglichen Segmentsuche
+benannt, Empfehlung trennt Ergebnis und Hypothese, Prompt verhindert Segmentfischen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Ein Newsletter-Test von der Hypothese bis zum Testlog</summary>
+<p><strong>Szenario:</strong> Das Fjordlicht-Marketingteam testet seit Monaten Betreffzeilen „nach Gefühl".
+Die Leitung möchte künftig belastbare Ergebnisse und ein Testlog, aus dem das Team lernt. Du
+planst einen Test, wertest einen bereits gelaufenen Test aus und entwickelst daraus eine
+Arbeitsweise. Du kannst die Planung alternativ für ein Unternehmen deiner Wahl machen; die
+Auswertung in Runde 3 nutzt die Daten unten.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Newsletter: ca. 38.000 Abonnenten, Klickrate typischerweise 3 %
+Werkzeug: ChatGPT mit Datenanalyse (oder Alternative)
+Nur aggregierte Zahlen, keine E-Mail-Adressen
+Testdaten (fiktiv), je 19.000 Empfänger, kumulierte Klicks:
+Tag;Klicks_A;Klicks_B
+1;210;262
+2;390;450
+3;470;515
+4;520;555
+5;545;575
+6;560;588
+7;568;596
+Bestellungen nach 7 Tagen: A 61 (5.490 Euro), B 58 (4.930 Euro)
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Hypothesen und Varianten.</strong> Lass dir fünf Hypothesen vorschlagen, wähle die mit
+der höchsten Übertragbarkeit und begründe. Erzeuge dazu Variante A und B, die sich in genau
+einer Variable unterscheiden, und prüfe das selbst.</p>
+<p><strong>Runde 2 – Setup.</strong> Lege Zielmetrik, Testdauer, Auswertungszeitpunkt und Signifikanzniveau
+fest. Lass die nötige Stichprobengröße berechnen und entscheide, ob der Test mit der ganzen
+Liste oder einer Teilgruppe laufen soll.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Für den bereits gelaufenen Test (Daten oben) hat die
+Teamleitung nach Tag 1 auf das Ergebnis geschaut und will B sofort zum Standard machen:
+„B liegt 25 % vorn, das ist doch eindeutig." Werte die Daten mit der Datenanalyse Tag für Tag
+aus (Klickrate, p-Wert je Tag) und erkläre, was zwischen Tag 1 und Tag 7 passiert. Beziehe die
+Bestellungen in deine Einschätzung ein.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die KI empfiehlt nach deiner Auswertung: „Variante B
+hat die höhere Klickrate, daher B als Standard verwenden." Entscheide begründet, welche
+Variante künftig gilt oder ob ein weiterer Test nötig ist. <strong>Widersprich</strong> der KI dort, wo ihre
+Empfehlung die Daten verkürzt.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Hypothese, Varianten A/B und Begründung der Auswahl</li>
+<li>Test-Setup mit Stichprobenberechnung</li>
+<li>Tagesauswertung als Tabelle mit Erklärung für die Teamleitung (max. 150 Wörter)</li>
+<li>begründete Entscheidung zu Runde 4</li>
+<li>Testlog-Vorlage mit beiden Tests als ersten Einträgen</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> sich deine Varianten nachweislich nur in einer Variable
+unterscheiden, Auswertungszeitpunkt und Signifikanzniveau vor der Auswertung festgelegt sind,
+die Tagesauswertung zeigt, ab welchem Tag der Unterschied nicht mehr signifikant ist, und
+deine Entscheidung Klicks und Bestellungen gemeinsam berücksichtigt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 3: Am ersten Tag klicken die aktivsten Leser:innen, und kleine
+Gruppen erzeugen große Schwankungen. Wer früh schaut und abbricht, entscheidet auf Zufall. In
+Runde 4 zählt, dass eine höhere Klickrate ohne Signifikanz und ohne mehr Bestellungen kein
+Argument für eine Umstellung ist.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartbare Tagesauswertung (ca.):</p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Rate A</th>
+<th>Rate B</th>
+<th>p-Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1,11 %</td>
+<td>1,38 %</td>
+<td>0,016</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2,05 %</td>
+<td>2,37 %</td>
+<td>0,036</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2,47 %</td>
+<td>2,71 %</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2,99 %</td>
+<td>3,14 %</td>
+<td>0,40</td>
+</tr>
+</tbody>
+</table>
+<p>Nach Tag 2 ist der Unterschied nicht mehr signifikant; zum festgelegten Zeitpunkt (Tag 7)
+liegt B nur noch ca. 5 % relativ vorn. Bei den Bestellungen liegt A leicht vorn (61 zu 58);
+auch das ist bei diesen Fallzahlen kein belastbarer Unterschied.</p>
+<p>Bewertungskriterien: (1) Hypothese im Format „Wenn …, dann …, weil …", Varianten mit nur einer
+Variable, Übertragbarkeit begründet; (2) Setup vor der Auswertung festgelegt, Stichprobe
+berechnet (bei 3 % auf 3,6 % ca. 14.000 pro Variante), Entscheidung zur Gruppengröße
+nachvollziehbar; (3) Tagesauswertung korrekt, Peeking-Effekt verständlich erklärt, Bestellungen
+einbezogen; (4) Entscheidung: kein belastbarer Gewinner, keine Umstellung allein aufgrund des
+Testergebnisses, ggf. Wiederholung mit größerem erwarteten Effekt; KI-Empfehlung wird begründet
+zurückgewiesen; (5) Testlog enthält alle Felder aus Abschnitt 16.6.</p>
+<p>Lernziel: A/B-Tests so planen, auswerten und dokumentieren, dass Entscheidungen auf belastbaren
+Daten beruhen – und KI als Rechen- und Formulierungshilfe nutzen, ohne ihr die Deutung zu
+überlassen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel15/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 15 – Blogartikel &amp; Leadmagnete">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 15 – Blogartikel & Leadmagnete
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel17/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 17 – Zielgruppenanalyse mit KI">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 17 – Zielgruppenanalyse mit KI
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

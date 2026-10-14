@@ -1,0 +1,53 @@
+title: Die Instruktionen des Content-Assistenten kritisch prüfen
+difficulty: 3
+question: |
+  Die Instruktionen des Content-Assistenten sind Version 3 – nicht die letzte. Bewerte sie wie ein Reviewer, der
+  sie für ein anderes Unternehmen übernehmen soll.
+
+  1. **Stärken.** Benenne drei Regeln, die du für besonders wirksam hältst, und begründe mit
+     einem Fehlerbild, das sie verhindern.
+  2. **Lücken.** Finde mindestens drei Situationen, für die die Instruktionen keine klare
+     Antwort geben. Denk an: Texte auf Englisch, Anfragen zu Wettbewerbsvergleichen in
+     Blogartikeln, Widersprüche zwischen Styleguide und Beispieltexten, Nutzer, die eine
+     Regel ausdrücklich aufheben wollen („Schreib ruhig ‚die beste Jacke'").
+  3. **Ergänzung.** Formuliere für zwei der Lücken je eine Regel, die zur Struktur der
+     Instruktionen passt.
+  4. **Gegenprobe.** Begründe für eine deiner Ergänzungen, warum sie nicht schadet – etwa
+     indem sie keine bestehende Regel aufweicht oder den Assistenten zu übervorsichtig macht.
+tip: |
+  Gute Ergänzungen sind konkret und testbar. „Sei vorsichtig bei Vergleichen" ist keine
+  Regel. „Nenne keine Wettbewerber namentlich; vergleiche nur mit Eigenschaften aus
+  produktdaten.csv" ist eine.
+solution: |
+  **Stärken (Beispiele):**
+
+  | Regel | verhindertes Fehlerbild |
+  |---|---|
+  | [FEHLT]-Markierung | erfundene Termine, Rabatte, Links |
+  | BELEGT nur bei exakter Passung | ausgeweitete Claims auf ganze Kollektion |
+  | feste PRÜFHINWEISE | Freigebende übersehen prüfpflichtige Stellen |
+
+  **Lücken (Beispiele):** Sprache anderer Texte ist ungeregelt; bei Widerspruch zwischen
+  Styleguide und Beispieltext fehlt eine Rangfolge; es ist offen, ob Nutzer Regeln der
+  Markenstimme überstimmen dürfen; Bilder oder Grafiken mit Text werden nicht erwähnt;
+  unklar, wie mit abgelaufenen Belegen umzugehen ist.
+
+  **Ergänzungen:**
+
+  ```text
+  # Rangfolge
+  Bei Widersprüchen gilt: claim-liste.md vor styleguide_fjordlicht.md vor
+  beispieltexte.md vor Wünschen in der Anfrage.
+
+  # Nutzerwünsche gegen Regeln
+  Wenn eine Anfrage eine Regel der Markenstimme oder der Grenzen aufheben will,
+  weise in einem Satz auf die Regel hin und liefere die regelkonforme Fassung.
+  Grenzen zu Nachhaltigkeitsaussagen werden nie aufgehoben.
+  ```
+
+  **Gegenprobe:** Die Rangfolge schwächt keine bestehende Regel, sondern löst nur
+  Konflikte, die bisher zufällig entschieden wurden. Die zweite Regel lässt Stilwünsche
+  sichtbar zu (Hinweis statt Verweigerung), schützt aber die rechtlich heikle Stelle.
+
+  Bewertungskriterien: Die Lücken sind echte Fälle, nicht Formulierungskritik; die
+  Ergänzungen sind testbar und passen in die bestehende Gliederung.

@@ -1,0 +1,35 @@
+title: Unproblematisch oder Spam?
+difficulty: 1
+question: |
+  Bewerte die folgenden Vorhaben aus Sicht von Googles Haltung zu KI-Inhalten: **eher
+  unproblematisch** oder **eher problematisch** (scaled content abuse, Täuschung)? Begründe
+  jeweils in einem Satz.
+
+  1. Fjordlicht lässt von der KI 300 Seiten „Regenjacke kaufen in [Stadt]" erzeugen, die sich
+     nur im Ortsnamen unterscheiden.
+  2. Die KI überarbeitet Titles und Meta-Descriptions von 40 Blogartikeln, eine Redakteurin
+     prüft jede Variante.
+  3. Die KI schreibt „Erfahrungsberichte" von Kundinnen, die es nicht gibt, für die Produktseite
+     der Wanderhose „Vidde".
+  4. Die Werkstattleiterin diktiert ihre Erfahrungen zu Reißverschlussschäden, die KI macht
+     daraus einen gegliederten Ratgeber, den sie prüft.
+  5. Die KI erzeugt Schema.org-Daten mit 4,8 Sternen für den Rucksack „Tind", obwohl im Shop
+     noch keine Bewertungen stehen.
+  6. Englische Blogartikel werden mit KI ins Deutsche übersetzt und von einer Muttersprachlerin
+     redigiert.
+tip: |
+  Der Maßstab ist nicht, ob KI beteiligt war, sondern ob die Seite Menschen hilft und ehrlich
+  ist. Prüfe außerdem: Entspricht das, was die Suchmaschine sieht, dem, was auf der Seite steht?
+solution: |
+  | Nr. | Bewertung | Begründung |
+  |---|---|---|
+  | 1 | problematisch | Schablonenseiten ohne Mehrwert, klassischer Fall von scaled content abuse |
+  | 2 | unproblematisch | KI unterstützt, Mensch prüft, Inhalt wird präziser zusammengefasst |
+  | 3 | problematisch | erfundene Erfahrungen täuschen Kundinnen; zudem Irreführung nach UWG |
+  | 4 | unproblematisch | echte Erfahrung (E-E-A-T), KI übernimmt nur die Struktur |
+  | 5 | problematisch | strukturierte Daten widersprechen dem sichtbaren Inhalt, Verstoß gegen Richtlinien |
+  | 6 | unproblematisch | Übersetzung mit menschlicher Prüfung schafft Mehrwert für deutschsprachige Leserinnen |
+
+  Gemeinsamer Nenner der problematischen Fälle: Masse ohne Mehrwert oder Aussagen, die nicht
+  stimmen. In beiden Fällen ist die KI nur das Werkzeug – das Problem wäre dasselbe, hätte ein
+  Mensch die Texte geschrieben.

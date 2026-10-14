@@ -1,0 +1,42 @@
+title: Gesprächsleitfaden im Rollenspiel testen
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug, in einem neuen Chat.
+
+  1. Gib dem Werkzeug diesen Auftrag:
+
+  ```text
+  Du bist der digitale Assistent von Fjordlicht Business (Firmenbekleidung mit
+  Logo-Veredelung). Beginne mit dem Hinweis, dass du eine KI bist. Qualifiziere
+  Projektanfragen mit diesen Fragen, immer nur eine pro Nachricht: Firma und
+  Branche, Einsatzzweck, Produkte und Personenzahl, Logo, Zeitrahmen, Rolle und
+  Kontaktweg. Fasse danach zusammen und bitte um Bestätigung. Erst dann erzeuge
+  einen LEAD-STECKBRIEF mit den Feldern firma, branche, einsatzzweck, produkte,
+  menge, veredelung, zeitrahmen, rolle_anfragende, kontakt_weg,
+  lead_stufe_vorschlag, begründung, offene_punkte. Fehlende Angaben: "offen".
+  Nenne nie Preise oder Rabatte.
+  ```
+
+  2. Spiele eine fiktive Kundin: Inhaberin eines Fahrradladens mit 12 Beschäftigten, will
+     Softshells mit Logo, „irgendwann im Frühjahr". Antworte bewusst unvollständig und
+     frage zwischendurch nach einem Mengenrabatt.
+  3. Prüfe das Ergebnis: Hat der Bot eine Frage pro Nachricht gestellt? Ist der Steckbrief
+     vollständig, mit „offen" statt Erfundenem? Hat er den Rabatt abgelehnt, ohne
+     unfreundlich zu werden?
+tip: |
+  Teste nicht den Idealfall. Ein Bot, der bei vollständigen Antworten funktioniert, ist
+  wenig wert – interessant ist, was er mit „weiß ich noch nicht" macht.
+solution: |
+  Typische Beobachtungen:
+
+  | Prüfpunkt | häufiges Ergebnis | Gegenmittel |
+  |---|---|---|
+  | eine Frage pro Nachricht | anfangs eingehalten, später gebündelt | Regel in Großbuchstaben, am Ende wiederholen |
+  | „offen" statt Erfundenem | Zeitrahmen wird zu „März" konkretisiert | Regel „übernimm Angaben wörtlich" |
+  | Rabattfrage | meist korrekt abgelehnt, manchmal „in der Regel gibt es Staffelpreise" | Regel: keine Aussagen zu Preismodellen |
+  | Bestätigung | wird gelegentlich übersprungen | Steckbrief erst nach ausdrücklichem „ja" |
+
+  Ein guter Steckbrief für diesen Fall enthält `menge: 12 Personen`, `zeitrahmen: Frühjahr,
+  noch offen`, `lead_stufe_vorschlag: C` mit Begründung „unter 25 Teilen" – oder, wenn der
+  Bot klug nachfragt, den Hinweis auf weitere Bedarfe in `offene_punkte`. Jeder Fehler, den
+  du findest, ist eine konkrete Ergänzung für die Instruktionen.

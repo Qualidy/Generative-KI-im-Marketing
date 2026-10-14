@@ -1,0 +1,81 @@
+title: Stärken-Grenzen-Profil und Prüfregeln fürs Team
+difficulty: 4
+question: |
+  **Szenario:** Bei Fjordlicht nutzt das Marketingteam seit zwei Monaten ChatGPT. Die Bilanz ist
+  gemischt: Brainstormings sind schneller geworden, aber es gab Pannen. Die Marketingleitung
+  möchte „verbindliche Spielregeln", die auf echten Tests beruhen, nicht auf Bauchgefühl. Du
+  erstellst ein Stärken-Grenzen-Profil für die wichtigsten Aufgabentypen und leitest daraus
+  Prüfregeln ab. Du kannst statt Fjordlicht auch ein Unternehmen deiner Wahl nutzen.
+
+  ```text
+  Rahmen:
+  Marketingteam mit 5 Personen, ChatGPT im Team-Tarif (Alternative: Claude,
+  Gemini oder Copilot).
+  Newsletter an ca. 38.000 Abonnenten, Social Media, Blog, Webshop.
+  Markenstimme: ruhig, ehrlich, keine Superlative, kein Greenwashing.
+  Nur fiktive oder öffentliche Daten verwenden.
+  ```
+
+  ---
+
+  **Runde 1 – Testen statt vermuten.** Teste das Werkzeug an **fünf Aufgabentypen** mit je einem
+  konkreten Fjordlicht-Auftrag: (a) Ideen sammeln, (b) Text umformen oder kürzen, (c) Produkttext
+  mit Fakten, (d) Frage zu einem aktuellen Thema (einmal ohne, einmal mit Websuche),
+  (e) Zielgruppenbeschreibung oder Persona. Halte je Test fest: Prompt, Ergebnis in Stichworten,
+  beobachtete Stärken, beobachtete Grenze (Halluzination, Bias, Wissensstand, Konsistenz).
+
+  **Runde 2 – Prüfung gegen Pflichtkriterien.** Dein Profil muss **alle vier** Kriterien erfüllen:
+
+  1. Jeder Aufgabentyp ist einer Kategorie aus Abschnitt 2.7 zugeordnet (gut delegierbar,
+     mit Prüfung, nur mit Expertise, nicht delegieren) – begründet mit deinem Testergebnis.
+  2. Mindestens **eine** Halluzination und **ein** Bias-Fall sind konkret dokumentiert.
+  3. Für jeden Aufgabentyp gibt es mindestens **eine Prüfregel**, die eine andere Person ohne
+     Rückfrage anwenden kann.
+  4. Die Regeln enthalten eine klare Aussage, welche Daten **nicht** in Prompts gehören.
+
+  **Runde 3 – Die Komplikation.** In derselben Woche passieren zwei Dinge: Eine Werkstudentin hat
+  einen Export von Kundenbewertungen inklusive Namen und E-Mail-Adressen in ihr privates
+  ChatGPT-Konto kopiert, um eine Auswertung zu machen. Und ein Newsletter mit der Aussage
+  „unsere Kollektion spart 40 % CO₂" wäre fast verschickt worden – die Zahl stammte aus einem
+  KI-Entwurf. Analysiere beide Fälle: Welche Grenze, welche Lücke in den Regeln? Überarbeite deine
+  Prüfregeln so, dass beide Fälle künftig abgefangen werden – ohne die Arbeit unpraktikabel zu
+  machen.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Nach den Vorfällen schlägt die Geschäftsführung vor,
+  KI im Marketing „bis auf Weiteres komplett zu verbieten". Das Team möchte dagegen „freie
+  Nutzung, wir passen schon auf". Lass dir von deinem KI-Werkzeug Argumente für beide Positionen
+  geben. Entwickle dann eine eigene, begründete Empfehlung. **Widersprich** beiden Extrempositionen
+  dort, wo sie nicht zu deinen Testergebnissen passen, und benenne, was ein Verbot kosten würde und
+  was freie Nutzung riskiert.
+
+  **Deliverable:**
+
+  1. Testprotokoll der fünf Aufgabentypen
+  2. Stärken-Grenzen-Profil als Tabelle mit Kategorie und Begründung
+  3. Prüfregeln (maximal eine Seite), überarbeitet nach Runde 3
+  4. begründete Empfehlung zu Runde 4 mit Abwägung beider Positionen
+
+  **Fertig bist du erst, wenn** jede Einordnung auf einem dokumentierten Test beruht, die
+  Prüfregeln beide Vorfälle aus Runde 3 nachweislich abfangen, eine fachfremde Person die Regeln
+  ohne Erklärung anwenden kann und deine Empfehlung weder ein pauschales Verbot noch eine
+  pauschale Freigabe ist – oder begründet, warum doch.
+tip: |
+  Der Kern liegt in Runde 1: Regeln, die auf eigenen Tests beruhen, sind überzeugender als jede
+  Liste aus dem Internet. In Runde 3 zeigt sich, ob deine Regeln konkret genug sind – „Daten
+  sensibel behandeln" hätte keinen der beiden Fälle verhindert, „keine Namen, E-Mail-Adressen
+  oder Bestelldaten in Prompts; Auswertungen nur mit anonymisierten Texten im Team-Tarif" schon.
+  In Runde 4 gilt: Ein Verbot verlagert die Nutzung oft nur in private Konten und verschärft
+  damit genau das Datenschutzproblem.
+solution: |
+  Bewertungskriterien: (1) fünf dokumentierte Tests mit Prompt und Beobachtung, darunter der
+  direkte Vergleich mit und ohne Websuche; (2) ein Stärken-Grenzen-Profil, dessen Kategorien
+  sich aus den Tests ergeben – typischerweise Ideen und Umformen „gut delegierbar",
+  Produkttext und Recherche „mit Prüfung", Nachhaltigkeitsaussagen „nur mit Expertise",
+  Freigabe „nicht delegieren"; (3) Prüfregeln, die beide Vorfälle konkret abfangen, etwa
+  Faktencheck aller Zahlen und Umweltaussagen gegen eine Claim-Liste vor jedem Versand und ein
+  klares Verbot personenbezogener Daten in privaten Konten; (4) eine Empfehlung, die Nutzen und
+  Risiken abwägt, etwa „Nutzung im Team-Tarif mit Prüfregeln und Vier-Augen-Freigabe für
+  Außenkommunikation", und die Nebenwirkungen eines Verbots benennt.
+
+  Lernziel: Chancen und Grenzen generativer KI aus eigener Erfahrung einschätzen und in
+  praktikable, überprüfbare Regeln für ein Team übersetzen.

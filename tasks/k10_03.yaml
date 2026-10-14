@@ -1,0 +1,45 @@
+title: Ablageort und Governance begründet wählen
+difficulty: 3
+question: |
+  Die Fjordlicht GmbH will ihre Prompt-Bibliothek einführen. Im Team gibt es drei Vorschläge:
+
+  - **A:** „Wir legen alles in ein gemeinsames ChatGPT-Projekt bzw. in einen Assistenten. Dann
+    wirken die Vorgaben automatisch, und wir brauchen keine extra Bibliothek."
+  - **B:** „Wir bauen eine Notion-Datenbank mit Tags, Status-Workflow, Freigabestufen und
+    Bewertungssystem für jeden Prompt."
+  - **C:** „Eine gemeinsame Tabelle mit den wichtigsten Feldern reicht. Die zehn häufigsten Prompts
+    legen wir zusätzlich als Kürzel in einem Textbaustein-Werkzeug an."
+
+  Rahmen: fünf Personen im Marketing, Microsoft 365 und ChatGPT-Business-Konten sind vorhanden,
+  Notion wird nicht genutzt, das Team hat wenig Zeit für Pflege. Die Custom-GPT-Funktion von ChatGPT
+  wird laut Ankündigung durch Plugins abgelöst (Stand Oktober 2026).
+
+  1. Bewerte jeden Vorschlag nach Aufwand, Auffindbarkeit, Pflegbarkeit, Werkzeugunabhängigkeit und
+     Datenschutz.
+  2. Entscheide dich für eine Lösung oder eine Kombination und begründe.
+  3. Formuliere fünf Governance-Regeln für die gewählte Lösung.
+  4. Benenne ein Risiko deiner Lösung und eine Maßnahme dagegen.
+tip: |
+  Beachte die Werkzeugabhängigkeit: Was passiert mit Vorlagen, die nur in einem Assistenten
+  existieren, wenn der Anbieter die Funktion umbaut? Und: Eine aufwendige Lösung, die niemand pflegt,
+  ist schlechter als eine einfache, die gepflegt wird.
+solution: |
+  | Kriterium | A Projekt/Assistent | B Notion-Datenbank | C Tabelle + Kürzel |
+  |---|---|---|---|
+  | Aufwand | mittel | hoch, neues Werkzeug | niedrig |
+  | Auffindbarkeit | gering, Prompts stecken in Anweisungen | hoch | mittel bis hoch |
+  | Pflegbarkeit | mittel | gering bei wenig Zeit | hoch |
+  | Werkzeugunabhängigkeit | gering – Umbau GPT zu Plugin zeigt das Risiko | hoch | hoch |
+  | Datenschutz | Business-Tarif ok | neue Prüfung nötig | im M365-Umfeld geregelt |
+
+  Empfehlung: **C als verbindliche Quelle**, ergänzt um A für zwei bis drei sehr häufige Abläufe.
+  Die Bibliothek bleibt die werkzeugunabhängige Dokumentation, das Projekt nutzt deren Inhalte.
+  B ist für dieses Team überdimensioniert.
+
+  Governance-Regeln, zum Beispiel: (1) eine verantwortliche Person für die Bibliothek; (2) pro
+  Aufgabe eine freigegebene Vorlage; (3) Änderungen nur mit Testfällen und neuer Version;
+  (4) keine personenbezogenen oder vertraulichen Daten in Vorlagen, Datenklasse je Eintrag;
+  (5) Quartalsdurchgang und Prüfung nach jedem Modellwechsel.
+
+  Risiko: Bibliothek und Projekt-Anweisungen laufen auseinander. Maßnahme: Das Projekt verweist auf
+  die Version in der Bibliothek, Änderungen erfolgen immer zuerst dort.

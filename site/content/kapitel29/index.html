@@ -1,0 +1,1954 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel28/">
+      
+      
+        <link rel="next" href="../kapitel30/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 29 – Wie Bild-KI funktioniert - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-29-wie-bild-ki-funktioniert" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 29 – Wie Bild-KI funktioniert
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Block 6 · Bildgenerierung mit KI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – Wie Bild-KI funktioniert
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – Wie Bild-KI funktioniert
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#291-was-bild-ki-eigentlich-tut" class="md-nav__link">
+    <span class="md-ellipsis">
+      29.1 Was Bild-KI eigentlich tut
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#292-diffusionsmodelle-aus-rauschen-wird-ein-bild" class="md-nav__link">
+    <span class="md-ellipsis">
+      29.2 Diffusionsmodelle: aus Rauschen wird ein Bild
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#293-autoregressive-und-multimodale-bildmodelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      29.3 Autoregressive und multimodale Bildmodelle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#294-drei-arbeitsmodi-text-zu-bild-bild-zu-bild-bearbeitung" class="md-nav__link">
+    <span class="md-ellipsis">
+      29.4 Drei Arbeitsmodi: Text-zu-Bild, Bild-zu-Bild, Bearbeitung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#295-die-werkzeuglandschaft-im-herbst-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      29.5 Die Werkzeuglandschaft im Herbst 2026
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#296-auswahlkriterien-welches-werkzeug-fur-welchen-zweck" class="md-nav__link">
+    <span class="md-ellipsis">
+      29.6 Auswahlkriterien: welches Werkzeug für welchen Zweck
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 31 – Werkzeuge in der Praxis: ChatGPT Images, Midjourney, Ideogram, Adobe Firefly
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel32/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 32 – Visuelle Wirkung: Bildsprache, Komposition und Markenkonsistenz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel33/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 33 – Bildserien und Kampagnenmotive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel34/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 34 – Anwendungsgrenzen der Bild-KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-29-wie-bild-ki-funktioniert">Kapitel 29 – Wie Bild-KI funktioniert<a class="headerlink" href="#kapitel-29-wie-bild-ki-funktioniert" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was eine Bild-KI tatsächlich tut – und warum sie <strong>keine Bilddatenbank</strong> ist, aus der etwas herausgesucht wird</li>
+<li>Wie <strong>Diffusionsmodelle</strong> aus Rauschen ein Bild formen und was das für deine Prompts bedeutet</li>
+<li>Was <strong>autoregressive</strong> und <strong>multimodale Bildmodelle</strong> anders machen und warum ChatGPT Images im Gespräch so gut nachbessert</li>
+<li>Die drei Arbeitsmodi <strong>Text-zu-Bild, Bild-zu-Bild und Bearbeitung</strong> und ihre typischen Marketing-Einsätze</li>
+<li>Die <strong>Werkzeuglandschaft</strong> im Herbst 2026: ChatGPT Images, Midjourney, Ideogram, Adobe Firefly, Google und FLUX</li>
+<li>Nach welchen <strong>Kriterien</strong> du ein Bildwerkzeug für dein Team auswählst – jenseits von „sieht schön aus"</li>
+</ul>
+</div>
+<hr />
+<h2 id="291-was-bild-ki-eigentlich-tut">29.1 Was Bild-KI eigentlich tut<a class="headerlink" href="#291-was-bild-ki-eigentlich-tut" title="Permanent link">&para;</a></h2>
+<p>Mit Block 6 wechselst du vom Text zum Bild. Das Grundprinzip kennst du schon aus Kap. 1: Ein Modell lernt aus sehr vielen Beispielen statistische Muster und erzeugt daraus etwas Neues. Bei Sprachmodellen sind die Beispiele Texte, bei Bildmodellen sind es <strong>Bild-Text-Paare</strong> – Milliarden von Bildern mit Beschreibungen, Alt-Texten oder Bildunterschriften.</p>
+<p>Daraus lernt das Modell, welche visuellen Merkmale mit welchen Wörtern zusammenhängen: wie „Regen" aussieht, wie „Gegenlicht" wirkt, was ein „Weitwinkel" mit einem Raum macht, wie „Aquarell" sich von „Studiofoto" unterscheidet. Ein fertiges Bild ist deshalb <strong>keine Collage</strong> aus gespeicherten Fotos und kein Treffer aus einer Datenbank, sondern eine Neuberechnung, die zu deiner Beschreibung statistisch passt.</p>
+<table>
+<thead>
+<tr>
+<th>Verbreitete Annahme</th>
+<th>Was tatsächlich passiert</th>
+<th>Folge für die Praxis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>„Die KI sucht passende Bilder im Netz."</td>
+<td>Das Modell berechnet ein neues Bild aus gelernten Mustern.</td>
+<td>Es gibt kein „Original", das du nachschlagen kannst.</td>
+</tr>
+<tr>
+<td>„Die KI kennt unsere Regenjacke."</td>
+<td>Sie kennt nur, wie Regenjacken <strong>im Allgemeinen</strong> aussehen.</td>
+<td>Echte Produkte werden nicht detailgetreu dargestellt (Kap. 33, 34).</td>
+</tr>
+<tr>
+<td>„Mehr Wörter ergeben ein besseres Bild."</td>
+<td>Wörter wirken unterschiedlich stark, manche werden ignoriert.</td>
+<td>Wichtiges zuerst und eindeutig benennen (Kap. 30).</td>
+</tr>
+<tr>
+<td>„Gleicher Prompt, gleiches Bild."</td>
+<td>Jede Generierung startet mit neuem Zufall.</td>
+<td>Ergebnisse schwanken, Serien brauchen Referenzen (Kap. 33).</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Bild-KI <strong>erfindet plausibel</strong>, sie bildet nicht ab. Alles, was im Bild real stimmen muss – Produktdetails, Logos, Gesichter echter Menschen, Orte – ist genau das, was sie am wenigsten zuverlässig liefert.</p>
+</div>
+<p>Weil die Muster aus Trainingsdaten stammen, erbt das Modell auch deren Schlagseite. Fragst du nach „Wanderer", bekommst du ohne weitere Angaben häufig sehr ähnliche Typen – jung, schlank, hell. Das ist <strong>Bias</strong> (Kap. 2), und im Bild ist er sofort sichtbar. Für Fjordlicht, deren Zielgruppen Familien und Stadtmenschen zwischen 25 und 45 sind, heißt das: Vielfalt muss man beschreiben, sie entsteht nicht von selbst. Ausführlich dazu Kap. 34.</p>
+<hr />
+<h2 id="292-diffusionsmodelle-aus-rauschen-wird-ein-bild">29.2 Diffusionsmodelle: aus Rauschen wird ein Bild<a class="headerlink" href="#292-diffusionsmodelle-aus-rauschen-wird-ein-bild" title="Permanent link">&para;</a></h2>
+<p>Die meisten bekannten Bildgeneratoren der letzten Jahre basieren auf <strong>Diffusionsmodellen</strong> oder deren Weiterentwicklungen. Das Prinzip lässt sich ohne Mathematik verstehen.</p>
+<p><strong>Training:</strong> Man nimmt ein echtes Foto und fügt schrittweise Bildrauschen hinzu – so lange, bis nur noch grauer „Schnee" übrig ist. Das Modell lernt die Umkehrung: Es bekommt ein verrauschtes Bild plus die Beschreibung und soll vorhersagen, welches Rauschen entfernt werden muss, damit das Bild wieder ein Stück klarer wird.</p>
+<p><strong>Generierung:</strong> Beim Erzeugen startet das Modell mit reinem Zufallsrauschen und entfernt dieses in vielen kleinen Schritten. Bei jedem Schritt fragt es sinngemäß: „Wie müsste dieses Rauschen aussehen, wenn darin eine Regenjacke im Herbstwald steckt?" Dein Prompt wird dafür zuvor von einem <strong>Text-Encoder</strong> in eine Zahlenrepräsentation übersetzt, die jeden Schritt in die passende Richtung lenkt.</p>
+<pre class="mermaid"><code>flowchart LR
+    A(["Prompt: Regenjacke im Herbstwald"]) --&gt; B([Text-Encoder])
+    C([Zufallsrauschen]) --&gt; D([Schritt für Schritt entrauschen])
+    B --&gt; D
+    D --&gt; E([grobe Formen und Farben])
+    E --&gt; F([Details und Texturen])
+    F --&gt; G([fertiges Bild])</code></pre>
+<p>Damit das nicht unendlich viel Rechenleistung frisst, arbeiten moderne Verfahren in einem komprimierten Zwischenraum (<strong>latenter Raum</strong>) und rechnen erst am Ende in Pixel um. Varianten wie <strong>Flow-Modelle</strong>, die etwa bei FLUX zum Einsatz kommen, folgen demselben Grundgedanken: vom Zufall zum Bild, gesteuert durch den Text.</p>
+<p>Drei Eigenschaften dieses Verfahrens begegnen dir im Alltag ständig:</p>
+<ul>
+<li><strong>Der Zufallsstart bestimmt viel.</strong> Derselbe Prompt mit anderem Startrauschen ergibt ein anderes Bild. Manche Werkzeuge zeigen diese Startzahl als <strong>Seed</strong> an; mit gleichem Seed und gleichem Prompt kommst du nah an ein früheres Ergebnis heran.</li>
+<li><strong>Grobes entsteht vor Feinem.</strong> Komposition und Farbverteilung stehen früh fest, Details kommen zuletzt. Deshalb sind kleine Details – Finger, Reißverschlüsse, Schrift – historisch die Schwachstellen.</li>
+<li><strong>Der Text lenkt, er befiehlt nicht.</strong> Klassische Diffusionsmodelle verstehen Sprache nur so gut wie ihr Text-Encoder. Komplexe Satzlogik („links der Hund, rechts die Katze, die Katze trägt einen roten Schal") ging früher oft daneben.</li>
+</ul>
+<p><strong>Bild-zu-Bild im Diffusionsprinzip:</strong> Statt mit reinem Rauschen kann das Modell auch mit einem <strong>teilweise verrauschten Vorlagebild</strong> starten. Je weniger Rauschen hinzukommt, desto näher bleibt das Ergebnis an der Vorlage. Viele Werkzeuge bieten dafür einen Regler mit Namen wie „Stärke", „Ähnlichkeit" oder „Image Weight". So entsteht aus einer Bleistiftskizze für einen Kampagnenaufbau ein ausgearbeitetes Motiv mit derselben Komposition.</p>
+<hr />
+<h2 id="293-autoregressive-und-multimodale-bildmodelle">29.3 Autoregressive und multimodale Bildmodelle<a class="headerlink" href="#293-autoregressive-und-multimodale-bildmodelle" title="Permanent link">&para;</a></h2>
+<p>Seit 2025 hat sich ein zweiter Ansatz durchgesetzt, vor allem bei den großen Chat-Anbietern. <strong>Autoregressive</strong> Modelle erzeugen ein Bild nicht durch Entrauschen, sondern <strong>Stück für Stück</strong>, ähnlich wie ein Sprachmodell Token für Token einen Text schreibt (Kap. 1). Das Bild wird dafür in kleine Bildbausteine zerlegt, die das Modell nacheinander vorhersagt.</p>
+<p>Entscheidend für dich ist weniger das Verfahren als die Folge: Wenn Bilderzeugung <strong>direkt im multimodalen Sprachmodell</strong> steckt, versteht das Modell deinen Auftrag mit seiner vollen Sprachkompetenz und kennt den gesamten Gesprächsverlauf. OpenAI beschreibt <strong>ChatGPT Images</strong> (Modellfamilie „GPT Image") als eine solche nativ in das Modell integrierte Bildgenerierung; Googles Gemini-Bildmodelle, bekannt unter dem Namen „Nano Banana", gehen in eine ähnliche Richtung. In der Praxis arbeiten viele Systeme mit <strong>Mischformen</strong> – welche genau, legen die Anbieter nicht immer offen.</p>
+<table>
+<thead>
+<tr>
+<th>Merkmal</th>
+<th>Klassisches Diffusionsmodell</th>
+<th>Multimodales Modell im Chat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verständnis komplexer Anweisungen</td>
+<td>begrenzt, Stichworte wirken oft besser</td>
+<td>gut, auch lange Sätze und Bedingungen</td>
+</tr>
+<tr>
+<td>Text im Bild</td>
+<td>lange eine Schwäche</td>
+<td>kurze Texte meist korrekt</td>
+</tr>
+<tr>
+<td>Nachbessern</td>
+<td>neuer Prompt, neues Bild</td>
+<td>im Gespräch: „Mach den Himmel dunkler"</td>
+</tr>
+<tr>
+<td>Bezug auf hochgeladene Bilder</td>
+<td>über eigene Funktionen</td>
+<td>direkt im Gespräch</td>
+</tr>
+<tr>
+<td>Ästhetische Eigenständigkeit</td>
+<td>oft hoch, starker „Look"</td>
+<td>eher neutral, folgt dem Prompt</td>
+</tr>
+<tr>
+<td>Geschwindigkeit</td>
+<td>meist schnell</td>
+<td>teils spürbar langsamer</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Was das für dein Prompting heißt</p>
+<p>Bei Chat-Bildmodellen schreibst du in <strong>ganzen Sätzen</strong> und darfst Zusammenhänge erklären („Das Bild ist für einen Newsletter-Header, der Text kommt später links daneben, lass dort Ruhe im Bild"). Bei stark ästhetisch trainierten Diffusionswerkzeugen wie Midjourney funktionieren <strong>knappe, präzise Beschreibungen plus Parameter</strong> oft besser. Kap. 30 zeigt beide Schreibweisen.</p>
+</div>
+<p>Der Unterschied verschwimmt zunehmend: Auch Midjourney, Ideogram und Firefly verstehen 2026 deutlich mehr natürliche Sprache als noch vor zwei Jahren. Kurze Texte im Bild schreiben inzwischen alle großen Modelle meist korrekt – die Unterschiede zeigen sich bei <strong>Layout und viel Text</strong>.</p>
+<hr />
+<h2 id="294-drei-arbeitsmodi-text-zu-bild-bild-zu-bild-bearbeitung">29.4 Drei Arbeitsmodi: Text-zu-Bild, Bild-zu-Bild, Bearbeitung<a class="headerlink" href="#294-drei-arbeitsmodi-text-zu-bild-bild-zu-bild-bearbeitung" title="Permanent link">&para;</a></h2>
+<p>Unabhängig vom Verfahren arbeitest du mit Bild-KI in drei Modi. Für Marketing ist der dritte oft der wertvollste – und der am meisten unterschätzte.</p>
+<table>
+<thead>
+<tr>
+<th>Modus</th>
+<th>Was du hineingibst</th>
+<th>Was herauskommt</th>
+<th>Typischer Marketing-Einsatz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Text-zu-Bild</strong></td>
+<td>nur einen Prompt</td>
+<td>ein neues Bild</td>
+<td>Moodboards, Stimmungsbilder, Illustrationen für den Blog</td>
+</tr>
+<tr>
+<td><strong>Bild-zu-Bild</strong></td>
+<td>Vorlage + Prompt</td>
+<td>Variation mit übernommener Komposition oder übernommenem Stil</td>
+<td>Skizze ausarbeiten, Stilreferenz übertragen, Variationen</td>
+</tr>
+<tr>
+<td><strong>Bearbeitung</strong></td>
+<td>vorhandenes Bild + Anweisung oder Markierung</td>
+<td>verändertes Originalbild</td>
+<td>Hintergrund erweitern, Störendes entfernen, Format anpassen</td>
+</tr>
+</tbody>
+</table>
+<p>Bei der Bearbeitung unterscheidest du drei Techniken, die in Kap. 33 vertieft werden:</p>
+<ul>
+<li><strong>Inpainting:</strong> Du markierst einen Bereich und lässt nur diesen neu erzeugen – etwa ein Schild im Hintergrund entfernen.</li>
+<li><strong>Outpainting:</strong> Das Bild wird über seinen Rand hinaus erweitert – etwa ein Hochformat für eine 16:9-Kopfgrafik verbreitern. In Photoshop heißt das „Generatives Erweitern", die Bereichsbearbeitung „Generative Fill" (deutsch „Generatives Füllen").</li>
+<li><strong>Anweisungsbasierte Bearbeitung:</strong> Du beschreibst die Änderung in Worten, ohne zu markieren – „Ersetze den Sommerhimmel durch tief hängende Herbstwolken". Das ist die Stärke der Chat-Bildmodelle.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Ein echtes Produktfoto wird per KI „verschönert": mehr Glanz auf dem Stoff, eine andere Farbe, eine Kapuze, die es so nicht gibt. Das Bild wirkt besser – und zeigt nicht mehr das Produkt, das Kundinnen und Kunden geliefert bekommen. Bearbeitung echter Produktbilder ist erlaubt, solange das <strong>Produkt selbst unverändert</strong> bleibt. Alles andere ist ein Irreführungsrisiko (UWG, Kap. 34).</p>
+</div>
+<hr />
+<h2 id="295-die-werkzeuglandschaft-im-herbst-2026">29.5 Die Werkzeuglandschaft im Herbst 2026<a class="headerlink" href="#295-die-werkzeuglandschaft-im-herbst-2026" title="Permanent link">&para;</a></h2>
+<p>Der Markt bewegt sich schnell. Versionsnummern veralten innerhalb weniger Monate; die folgende Übersicht gibt den <strong>Stand Oktober 2026</strong> wieder und beschreibt Stärken, die über Versionssprünge hinweg erstaunlich stabil geblieben sind.</p>
+<table>
+<thead>
+<tr>
+<th>Werkzeug</th>
+<th>Anbieter</th>
+<th>Stärken</th>
+<th>Zu beachten</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ChatGPT Images</strong> (ehem. DALL·E)</td>
+<td>OpenAI</td>
+<td>Anweisungen präzise umsetzen, Bearbeitung im Gespräch, kurze Texte, für alle Nutzer verfügbar</td>
+<td>eher neutraler Look; Kontotyp und Datenschutz wie beim Chat prüfen</td>
+</tr>
+<tr>
+<td><strong>Midjourney</strong></td>
+<td>Midjourney</td>
+<td>starke Ästhetik und Art Direction, Stil- und Charakterreferenzen, viele Parameter</td>
+<td>Bedienung über Web und Discord, keine offizielle API; Sichtbarkeit der Bilder je nach Plan</td>
+</tr>
+<tr>
+<td><strong>Ideogram</strong></td>
+<td>Ideogram</td>
+<td>Typografie und Text im Bild, Plakat- und Grafiklayouts</td>
+<td>für fotorealistische Szenen nicht immer erste Wahl</td>
+</tr>
+<tr>
+<td><strong>Adobe Firefly</strong></td>
+<td>Adobe</td>
+<td>trainiert auf lizenzierten bzw. gemeinfreien Inhalten, als kommerziell abgesichert beworben, Content Credentials, in Photoshop und Express integriert</td>
+<td>ästhetisch teils vorsichtiger; Partnermodelle in der Firefly-App gesondert prüfen</td>
+</tr>
+<tr>
+<td><strong>Nano Banana / Gemini-Bildmodelle</strong></td>
+<td>Google</td>
+<td>Fotorealismus, Bearbeitung bestehender Bilder, in Gemini integriert</td>
+<td>Bildherkunft wird über Wasserzeichen (SynthID) markiert</td>
+</tr>
+<tr>
+<td><strong>FLUX</strong></td>
+<td>Black Forest Labs (Freiburg)</td>
+<td>hohe Bildqualität, in vielen Plattformen und Werkzeugen eingebaut, teils auch selbst betreibbar</td>
+<td>Bedienung meist über Drittanbieter; deren Bedingungen gelten</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">DALL·E heißt heute ChatGPT Images</p>
+<p>In vielen Kursunterlagen, Blogartikeln und Stellenanzeigen steht noch „DALL·E". Der offizielle DALL·E-GPT in ChatGPT wurde am <strong>30.08.2026</strong> eingestellt, auch über die API sind die DALL·E-Modelle nicht mehr verfügbar. Die Bildgenerierung in ChatGPT heißt <strong>ChatGPT Images</strong> und basiert auf der Modellfamilie <strong>GPT Image</strong>; aktuell ist Images 2.5 (seit 08.09.2026), verfügbar für alle Nutzer. In diesem Kurs schreiben wir deshalb „DALL·E (heute: ChatGPT Images)".</p>
+</div>
+<p>Daneben gibt es Bildfunktionen in Microsoft Copilot und Designer, in Canva, in Social-Media-Planungstools und in Shop-Systemen. Oft steckt dahinter eines der oben genannten Modelle. Für die Bewertung hilft deshalb die Frage: <strong>Welches Modell läuft eigentlich im Hintergrund, und wessen Nutzungsbedingungen gelten?</strong></p>
+<hr />
+<h2 id="296-auswahlkriterien-welches-werkzeug-fur-welchen-zweck">29.6 Auswahlkriterien: welches Werkzeug für welchen Zweck<a class="headerlink" href="#296-auswahlkriterien-welches-werkzeug-fur-welchen-zweck" title="Permanent link">&para;</a></h2>
+<p>„Welche Bild-KI ist die beste?" ist die falsche Frage. Die richtige lautet: <strong>Welche ist für diesen Zweck, dieses Team und diese Rechtslage geeignet?</strong> Die folgenden Kriterien helfen bei der Entscheidung.</p>
+<table>
+<thead>
+<tr>
+<th>Kriterium</th>
+<th>Prüffrage</th>
+<th>Warum es zählt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bildqualität und Look</strong></td>
+<td>Passt der typische Stil zu unserer Bildsprache?</td>
+<td>Ein starker Eigen-Look kann Markenbilder überlagern (Kap. 32).</td>
+</tr>
+<tr>
+<td><strong>Steuerbarkeit</strong></td>
+<td>Setzt es Komposition, Perspektive und Details um, die wir vorgeben?</td>
+<td>Für Kampagnen zählt Präzision mehr als Zufallstreffer.</td>
+</tr>
+<tr>
+<td><strong>Text im Bild</strong></td>
+<td>Braucht das Motiv Schrift, und wie viel?</td>
+<td>Bei Plakaten und Grafiken entscheidend; sonst Text besser im Layout-Tool (Kap. 33).</td>
+</tr>
+<tr>
+<td><strong>Bearbeitung</strong></td>
+<td>Kann es bestehende Bilder verändern und erweitern?</td>
+<td>Formatvarianten und Retusche sind Alltagsarbeit.</td>
+</tr>
+<tr>
+<td><strong>Rechte und Nutzung</strong></td>
+<td>Was sagen die Nutzungsbedingungen zur kommerziellen Nutzung? Gibt es Zusagen zur Haftung?</td>
+<td>Grundlage für jede Veröffentlichung (Kap. 34, 39).</td>
+</tr>
+<tr>
+<td><strong>Datenschutz und Vertraulichkeit</strong></td>
+<td>Werden Uploads zum Training genutzt? Sind Bilder öffentlich sichtbar?</td>
+<td>Unveröffentlichte Produkte gehören nicht in eine öffentliche Galerie.</td>
+</tr>
+<tr>
+<td><strong>Integration</strong></td>
+<td>Passt es in unsere Werkzeuge (Adobe, Canva, Chat-Lizenz)?</td>
+<td>Was umständlich ist, wird nicht genutzt.</td>
+</tr>
+<tr>
+<td><strong>Kosten und Lizenzmodell</strong></td>
+<td>Abo, Credits, Team-Lizenz? Was kostet ein brauchbares Motiv realistisch?</td>
+<td>Viele Versuche pro gutem Bild sind normal.</td>
+</tr>
+<tr>
+<td><strong>Herkunftskennzeichnung</strong></td>
+<td>Werden Content Credentials (C2PA) oder Wasserzeichen gesetzt?</td>
+<td>Relevant für Transparenz und Plattformlabels (Kap. 34).</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Fjordlicht entscheidet</p>
+<p>Das Marketingteam von Fjordlicht hat bereits ChatGPT-Lizenzen (Business-Tarif) und Adobe Creative Cloud. Für schnelle Ideen und Moodboards nutzt es ChatGPT Images, für Retusche und Formaterweiterung Firefly in Photoshop. Midjourney wird für eine Herbstkampagne getestet, weil die Art Direktorin den Look schätzt – aber erst, nachdem geklärt ist, dass die Bilder im gewählten Plan nicht öffentlich sichtbar sind. Ideogram kommt für Infografiken im Blog „Draußen-Notizen" in Frage. <strong>Produktfotos bleiben echte Fotos.</strong></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Ein Team wählt sein Werkzeug nach einem einzigen beeindruckenden Beispielbild aus einem Social-Media-Post. Solche Bilder sind ausgesucht, oft nachbearbeitet und selten mit dem Prompt nachvollziehbar. Teste Werkzeuge immer <strong>mit deinem eigenen Briefing</strong>, mehreren Durchläufen und den Kriterien oben – wie das geht, zeigt der Vergleichstest in Kap. 31.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Bild-KI lernt aus Bild-Text-Paaren und <strong>berechnet neue Bilder</strong> – sie sucht nichts heraus und kennt eure echten Produkte nicht.</li>
+<li><strong>Diffusionsmodelle</strong> formen ein Bild in vielen Schritten aus Zufallsrauschen; der Prompt lenkt, Grobes entsteht vor Feinem, der Zufallsstart (Seed) prägt das Ergebnis.</li>
+<li><strong>Autoregressive bzw. multimodale Modelle</strong> wie ChatGPT Images erzeugen Bilder im Sprachmodell selbst: gutes Anweisungsverständnis, Bearbeitung im Gespräch, kurze Texte meist korrekt.</li>
+<li>Du arbeitest in drei Modi: <strong>Text-zu-Bild, Bild-zu-Bild, Bearbeitung</strong> (Inpainting, Outpainting, anweisungsbasiert) – echte Produkte dürfen dabei nicht verfälscht werden.</li>
+<li>Die Landschaft im Herbst 2026: <strong>ChatGPT Images (ehem. DALL·E), Midjourney, Ideogram, Adobe Firefly, Google Nano Banana, FLUX</strong> – mit jeweils eigenen Stärken.</li>
+<li>Werkzeuge wählst du nach <strong>Zweck, Steuerbarkeit, Rechten, Datenschutz, Integration und Kosten</strong>, nicht nach dem schönsten Beispielbild.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Wie Bild-KI arbeitet – Aussagen prüfen</summary>
+<p>Entscheide für jede Aussage, ob sie <strong>stimmt</strong> oder <strong>nicht stimmt</strong>, und begründe in einem Satz.</p>
+<ol>
+<li>Wenn du „Regenjacke im Wald" eingibst, sucht die Bild-KI ein passendes Foto aus ihrem
+   Trainingsbestand heraus.</li>
+<li>Ein Diffusionsmodell beginnt mit Zufallsrauschen und entfernt es schrittweise.</li>
+<li>Derselbe Prompt liefert ohne weitere Einstellungen jedes Mal dasselbe Bild.</li>
+<li>Multimodale Chat-Bildmodelle können ein Bild auf Zuruf im Gespräch ändern.</li>
+<li>Die Bild-KI kennt die Fjordlicht-Regenjacke „Sølv" und kann sie detailgetreu zeigen.</li>
+<li>Outpainting erweitert ein Bild über seinen ursprünglichen Rand hinaus.</li>
+</ol>
+<p>Ordne anschließend zu, welcher <strong>Arbeitsmodus</strong> (Text-zu-Bild, Bild-zu-Bild, Bearbeitung) zu
+diesen Aufgaben passt: (a) Moodboard für eine neue Kampagne, (b) Hochformat-Foto für einen
+16:9-Newsletter-Header verbreitern, (c) eine Bleistiftskizze in ein ausgearbeitetes Motiv
+übertragen.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Denk an den Kernsatz aus 29.1: Bild-KI erfindet plausibel, sie bildet nicht ab. Damit lassen
+sich die meisten Aussagen schon entscheiden.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Bewertung</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>stimmt nicht</td>
+<td>Das Modell berechnet ein neues Bild aus gelernten Mustern, es gibt keinen Abruf.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>stimmt</td>
+<td>Das ist das Grundprinzip der Diffusion: vom Rauschen zum Bild, gelenkt durch den Text.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>stimmt nicht</td>
+<td>Jede Generierung startet mit neuem Zufall; nur ein fester Seed bringt Nähe.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>stimmt</td>
+<td>Anweisungsbasierte Bearbeitung ist die Stärke von Modellen wie ChatGPT Images.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>stimmt nicht</td>
+<td>Sie kennt Regenjacken allgemein, nicht euer konkretes Produkt.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>stimmt</td>
+<td>Outpainting bzw. „Generatives Erweitern" ergänzt Bildbereiche außerhalb des Rands.</td>
+</tr>
+</tbody>
+</table>
+<p>Zuordnung: (a) Text-zu-Bild, (b) Bearbeitung (Outpainting), (c) Bild-zu-Bild.</p>
+<p>Aussage 5 ist die wichtigste für den Marketing-Alltag: Wer echte Produkte zeigen will,
+braucht echte Fotos oder bearbeitet echte Fotos, ohne das Produkt zu verändern.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Zufall, Nachbessern und Bearbeiten im Selbstversuch</summary>
+<p>Diese Übung machst du direkt in ChatGPT Images (alternativ Gemini oder Microsoft Copilot).</p>
+<ol>
+<li><strong>Basisbild.</strong> Erzeuge mit diesem Prompt ein Bild:</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erzeuge ein Foto im Querformat: Eine Person Mitte dreißig in einer
+dunkelgrünen Regenjacke steht an einem nebligen Herbstmorgen am Ufer
+eines Sees. Ruhige Stimmung, natürliches Licht, viel Himmel links im Bild.
+</code></pre></div></td></tr></table></div>
+<ol>
+<li><strong>Zufallstest.</strong> Starte zwei <strong>neue</strong> Chats und verwende denselben Prompt. Halte fest, was
+   gleich bleibt und was sich ändert (Person, Komposition, Farben, Licht).</li>
+<li><strong>Nachbessern im Gespräch.</strong> Gehe zurück in den ersten Chat und gib drei Änderungen
+   nacheinander: Himmel dunkler und bewölkt; Person blickt auf den See statt in die Kamera;
+   Format 4:5 für Instagram.</li>
+<li><strong>Bewerten.</strong> Notiere bei jeder Änderung, ob nur das Gewünschte geändert wurde oder ob sich
+   auch anderes verschoben hat (Gesicht, Jacke, Hintergrund).</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achte in Schritt 4 besonders auf die Jacke. Genau dort zeigt sich, warum echte Produkte nicht
+zuverlässig über mehrere Bearbeitungsschritte stabil bleiben.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Typische Beobachtungen:</p>
+<table>
+<thead>
+<tr>
+<th>Schritt</th>
+<th>Beobachtung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zufallstest</td>
+<td>Grundidee bleibt (Person, See, Nebel), aber Gesicht, Jackenschnitt, Bildaufteilung und Farbtöne variieren deutlich.</td>
+</tr>
+<tr>
+<td>Himmel dunkler</td>
+<td>gelingt meist sauber; manchmal wird das ganze Bild dunkler oder kühler.</td>
+</tr>
+<tr>
+<td>Blickrichtung</td>
+<td>Pose ändert sich, oft auch Gesicht oder Haltung – die Person wirkt wie eine andere.</td>
+</tr>
+<tr>
+<td>Format 4:5</td>
+<td>Bild wird neu aufgebaut oder beschnitten; Details der Jacke ändern sich häufig mit.</td>
+</tr>
+</tbody>
+</table>
+<p>Lehren daraus:</p>
+<ul>
+<li>Jeder neue Chat ist ein neuer Zufallsstart. Wer Serien braucht, muss mit Referenzen arbeiten
+  (Kap. 33).</li>
+<li>Bearbeitung im Gespräch ist bequem, aber nicht verlustfrei: Mit jeder Runde kann sich
+  Ungewolltes verschieben. Ändere deshalb <strong>eine Sache pro Schritt</strong> und vergleiche.</li>
+<li>Kleidungsdetails (Kragen, Reißverschluss, Taschen) wandern. Für Produktdarstellungen ist das
+  ein Ausschlusskriterium.</li>
+</ul>
+<p>Eine gute Bearbeitung enthält drei Bilder aus dem Zufallstest, die drei Bearbeitungsschritte
+und je eine Notiz zu unerwünschten Nebenwirkungen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Welches Werkzeug für welchen Zweck?</summary>
+<p>Das Marketingteam von Fjordlicht hat drei anstehende Bildaufgaben:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>A) Moodboard mit 12 Stimmungsbildern für die Frühjahrskampagne "Erste Schritte draußen"
+B) Infografik für den Blog "Draußen-Notizen": "So pflegst du deine Regenjacke"
+   mit 5 beschrifteten Schritten
+C) Ein Produktbild der neuen Wanderhose "Vidde" vor Fjordkulisse für den Webshop
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>Bewerte für jede Aufgabe, welches Werkzeug aus Abschnitt 29.5 am besten geeignet ist, und
+   nutze dafür mindestens <strong>vier</strong> Kriterien aus 29.6.</li>
+<li>Benenne für jede Aufgabe das <strong>größte Risiko</strong> und wie du es absicherst.</li>
+<li>Eine Kollegin schlägt vor: „Wir nehmen einfach für alles ChatGPT Images, das haben wir
+   sowieso." Nimm Stellung: Wo hat sie recht, wo nicht?</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Aufgabe C ist eine Falle. Frage dich zuerst, ob sie überhaupt eine Aufgabe für Bild-KI ist –
+und welcher Teil davon vielleicht doch.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Geeignet</th>
+<th>Kriterien</th>
+<th>Größtes Risiko</th>
+<th>Absicherung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A Moodboard</td>
+<td>ChatGPT Images oder Midjourney</td>
+<td>Look, Steuerbarkeit, Kosten, Datenschutz</td>
+<td>einseitige Bildwelten (Bias), Midjourney-Bilder öffentlich sichtbar</td>
+<td>Vielfalt explizit beschreiben; Plan mit privater Sichtbarkeit wählen</td>
+</tr>
+<tr>
+<td>B Infografik</td>
+<td>Ideogram, alternativ ChatGPT Images; Text final im Layout-Tool</td>
+<td>Text im Bild, Steuerbarkeit, Integration</td>
+<td>Schreibfehler, falsche Pflegehinweise</td>
+<td>Texte aus geprüfter Vorlage, Schrift im Layout-Tool setzen</td>
+</tr>
+<tr>
+<td>C Produktbild</td>
+<td>keine reine Generierung; echtes Foto, Hintergrund ggf. per Firefly erweitern</td>
+<td>Rechte, Bearbeitung, Herkunftskennzeichnung</td>
+<td>Produkt sieht anders aus als geliefert (UWG)</td>
+<td>echtes Produktfoto, nur Umgebung bearbeiten, Produkt unverändert lassen</td>
+</tr>
+</tbody>
+</table>
+<p>Zur Kollegin:</p>
+<ul>
+<li><strong>Sie hat recht</strong>, dass ein vorhandenes, datenschutzrechtlich geklärtes Werkzeug ein
+  starker Grund ist. Für A und als Entwurfswerkzeug für B reicht ChatGPT Images oft aus, und
+  das Team muss nichts Neues lernen.</li>
+<li><strong>Sie hat nicht recht</strong>, wenn „für alles" auch C meint. Kein Generator zeigt die echte Hose
+  „Vidde" korrekt. Bei viel Text (B) und bei starker Art Direction (A) können Spezialwerkzeuge
+  besser sein; das sollte ein Vergleichstest klären (Kap. 31), nicht ein Bauchgefühl.</li>
+</ul>
+<p>Bewertungskriterien: mindestens vier Kriterien je Aufgabe genutzt, C als Fall für echte Fotos
+erkannt, und die Stellungnahme würdigt das Argument „vorhanden und geklärt", statt es pauschal
+abzulehnen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Bild-KI-Werkzeugauswahl für ein Marketingteam</summary>
+<p><strong>Szenario:</strong> Im Marketingteam von Fjordlicht nutzt jede Person ein anderes Bildwerkzeug –
+teils mit privaten Konten. Die Leitung will Ordnung: eine begründete Empfehlung, welche
+Bild-KI-Werkzeuge das Team für welche Zwecke einsetzt und welche nicht. Du kannst alternativ
+<strong>ein Unternehmen deiner Wahl</strong> verwenden.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Team: 5 Personen, davon eine Grafikerin mit Adobe Creative Cloud.
+Vorhanden: ChatGPT Business-Lizenzen für alle.
+Budget für neue Bildwerkzeuge: überschaubar, monatlich kündbar bevorzugt.
+Kanäle: Webshop, Blog, Newsletter, Instagram, TikTok, LinkedIn, Pinterest.
+Grundsatz: Produkte werden echt gezeigt, keine Greenwashing-Bilder.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Bedarf erheben.</strong> Liste mindestens <strong>acht</strong> wiederkehrende Bildaufgaben des Teams
+über alle Kanäle auf (z. B. Newsletter-Header, Blog-Illustration, Pinterest-Pin, Social-Post,
+Infografik). Ordne jeder Aufgabe den Arbeitsmodus aus 29.4 zu und markiere die, bei denen
+Bild-KI <strong>nicht</strong> eingesetzt werden soll.</p>
+<p><strong>Runde 2 – Kriterien gewichten und testen.</strong> Wähle <strong>sechs</strong> Kriterien aus 29.6, gewichte sie
+(Summe 100 Prozent) und begründe die Gewichtung. Teste mindestens <strong>zwei</strong> Werkzeuge mit
+demselben Prompt für zwei deiner Aufgaben und bewerte sie in einer Matrix (Punkte 1 bis 5).</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Ein Teammitglied hat Entwürfe der noch unveröffentlichten
+Herbstkollektion in ein Bildwerkzeug mit privatem Konto hochgeladen, um „schnell Variationen zu
+testen". Kläre: Welche Risiken entstehen (Vertraulichkeit, Training auf Uploads, öffentliche
+Sichtbarkeit)? Was folgt daraus für deine Empfehlung? Formuliere <strong>drei</strong> verbindliche Regeln
+für den Umgang mit Uploads.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Leitung möchte aus Kostengründen nur <strong>ein</strong>
+Werkzeug. Die Grafikerin möchte drei. Entscheide, wie viele Werkzeuge ihr einsetzt, und
+begründe mit deiner Matrix. <strong>Widersprich</strong> dabei mindestens einer der beiden Positionen
+ausdrücklich und benenne, was im Alltag schiefgeht, wenn man ihr folgt.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Bedarfsliste mit acht Aufgaben, Arbeitsmodus und Markierung „keine Bild-KI"</li>
+<li>gewichtete Kriterienmatrix mit Testergebnissen von mindestens zwei Werkzeugen</li>
+<li>drei Upload-Regeln aus Runde 3</li>
+<li>Empfehlung auf einer Seite: Werkzeuge, Zwecke, Ausschlüsse, Begründung</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jede Bewertung in der Matrix auf einem eigenen Test beruht, die
+Upload-Regeln ohne Erklärung anwendbar sind, Produktdarstellungen ausdrücklich geregelt sind
+und deine Empfehlung die Gegenposition aus Runde 4 benennt und begründet zurückweist.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 2 und 3: Werkzeugauswahl ist keine Geschmacksfrage. Ein
+Werkzeug mit dem schönsten Look kann für ein Unternehmen ungeeignet sein, wenn Uploads zum
+Training verwendet oder Bilder öffentlich angezeigt werden. Und „ein Werkzeug für alles" ist
+nur dann falsch, wenn der Test zeigt, dass zentrale Aufgaben damit nicht gelingen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) die Bedarfsliste deckt mehrere Kanäle ab und schließt
+Produktdarstellungen begründet von der reinen Generierung aus; (2) die Gewichtung ist
+nachvollziehbar begründet, und die Punkte beruhen auf echten Tests mit identischem Prompt;
+(3) die Upload-Regeln adressieren Vertraulichkeit, Kontotyp und Sichtbarkeit konkret (etwa:
+„unveröffentlichte Produkte nur in freigegebenen Business-Werkzeugen", „keine privaten
+Konten", „vor Nutzung Sichtbarkeit und Trainingseinstellungen prüfen"); (4) die Entscheidung
+in Runde 4 verbindet Kosten und Zweck und widerspricht einer Position mit einem konkreten
+Alltagsbeispiel.</p>
+<p>Lernziel: Bild-KI-Werkzeuge nach Zweck, Rechten, Datenschutz und Integration auswählen – und
+eine Empfehlung so begründen, dass sie im Team trägt.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel28/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 28 – Konfiguration &amp; Grenzen von CustomGPT">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 28 – Konfiguration & Grenzen von CustomGPT
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel30/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,76 @@
+title: Prompt-Canvas-Set für eine Produkteinführung
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht bringt im Frühjahr die Wanderhose **Vidde** in einer überarbeiteten
+  Version heraus. Das Marketingteam (5 Personen) soll Texte für Newsletter, Instagram, LinkedIn
+  (Fjordlicht Business) und die Produktseite liefern. Bisher tippt jede Person ihre eigenen Prompts,
+  die Ergebnisse klingen nach fünf verschiedenen Marken, und zweimal stand schon eine
+  Nachhaltigkeitsaussage im Entwurf, die niemand belegen konnte. Du sollst ein Set aus
+  ausgefüllten Prompt-Canvases liefern, das jede Person im Team ohne Erklärung nutzen kann. Du
+  kannst alternativ **ein Unternehmen deiner Wahl** und ein eigenes Produkt verwenden.
+
+  ```text
+  Rahmen:
+  Produktfakten (fiktiv): Wanderhose Vidde, Material laut Produktblatt
+  zu 64 % aus recyceltem Polyamid, 4 Taschen, abnehmbare Beine,
+  Preis 119 Euro, Größen 36 bis 56.
+  Markenstimme: ruhig, ehrlich, naturverbunden, leicht nordisch-trocken,
+  Du-Ansprache, keine Superlative, kein Greenwashing.
+  Werkzeug: ChatGPT oder eine Alternative. Keine Kundendaten im Prompt.
+  ```
+
+  ---
+
+  **Runde 1 – Canvases ausfüllen.** Erstelle für **vier** Kanäle (Newsletter-Teaser, Instagram-
+  Caption, LinkedIn-Post, Produktseiten-Text) je einen vollständigen Prompt-Canvas nach Abschnitt
+  5.6. Jeder Canvas enthält alle sechs Bausteine, mindestens zwei Platzhalter in eckigen Klammern
+  und mindestens drei Modifier, darunter die erlaubten Fakten und die [FEHLT]-Regel. Teste jeden
+  Canvas einmal im Werkzeug.
+
+  **Runde 2 – Prüfung gegen Pflichtkriterien.** Das Set muss **alle vier** Kriterien erfüllen:
+
+  1. Der **Purpose** unterscheidet sich je Kanal erkennbar (Ziel und Zielgruppe).
+  2. Der **Tone** ist in allen vier Canvases identisch beschrieben – mit Gegensatzpaaren.
+  3. Kein Ergebnis enthält eine Nachhaltigkeitsaussage, die über die Produktfakten hinausgeht.
+  4. Jeder Canvas hat einen Output mit konkreter Länge und Bestandteilen.
+
+  **Runde 3 – Die Komplikation.** Die Produktentwicklung meldet kurz vor dem Start: Der Anteil
+  recycelten Materials ist noch nicht final bestätigt. Bis zur Freigabe darf **keine**
+  Recycling-Aussage veröffentlicht werden – die Texte sollen aber schon heute fertig sein. Passe
+  alle vier Canvases so an, dass die Aussage als Platzhalter vorbereitet ist und sich ohne
+  Neuschreiben ergänzen oder streichen lässt. Teste, ob das Modell die Aussage trotzdem „von
+  selbst" einbaut.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Teamleitung schlägt vor, statt vier Canvases nur
+  **einen Universal-Prompt** zu nutzen („Schreibe für [Kanal] …"). Teste den Universal-Prompt gegen
+  zwei deiner Kanal-Canvases und entscheide begründet. **Widersprich** dem Vorschlag dort, wo er
+  Qualität kostet – oder stimme zu, wo er Pflegeaufwand spart, ohne zu schaden.
+
+  **Deliverable:**
+
+  1. vier ausgefüllte und getestete Prompt-Canvases
+  2. Checkliste der vier Pflichtkriterien mit Ergebnis je Canvas
+  3. angepasste Fassung aus Runde 3 mit Testergebnis
+  4. Vergleich Universal-Prompt gegen Kanal-Canvas mit begründeter Entscheidung
+
+  **Fertig bist du erst, wenn** alle vier Canvases ohne mündliche Erklärung nutzbar sind, kein
+  Testergebnis eine unbelegte Nachhaltigkeitsaussage enthält und deine Entscheidung aus Runde 4
+  mindestens zwei konkrete Beobachtungen aus dem Test nennt.
+tip: |
+  Der Lernkern liegt in Runde 3: Ein Modifier, der eine Aussage **verbietet**, reicht oft nicht –
+  Modelle ergänzen „recycelt" oder „nachhaltig" gern aus Gewohnheit, weil es zur Marke passt.
+  Wirksamer ist, die Aussage als eigenes Feld zu führen (`Recycling-Aussage: [FREIGABE AUSSTEHEND –
+  nicht erwähnen]`) und im Modifier ausdrücklich zu sagen, was stattdessen betont werden soll.
+  In Runde 4 gilt: Ein gemeinsamer Tone-Block ist sinnvoll, ein gemeinsamer Purpose fast nie.
+solution: |
+  Bewertungskriterien: (1) vier vollständige Canvases mit allen sechs Bausteinen, Platzhaltern und
+  mindestens drei Modifiern, getestet; (2) Purpose je Kanal klar unterschieden, Tone einheitlich
+  mit Gegensatzpaaren beschrieben, Output konkret; (3) Runde 3 löst das Freigabeproblem über ein
+  eigenes Platzhalterfeld und positive Anweisung, und der Test zeigt, dass keine Recycling-Aussage
+  mehr erscheint; (4) der Vergleich in Runde 4 nutzt dieselben Fakten für beide Varianten und
+  begründet die Entscheidung mit Beobachtungen – typischerweise: gemeinsamer Tone- und
+  Modifier-Block als Baustein, kanalspezifischer Purpose und Output.
+
+  Lernziel: Das P.R.O.M.P.T.-Framework als Teamwerkzeug einsetzen, das Markenstimme und
+  Faktentreue über Kanäle hinweg sichert – und erkennen, dass Verbote allein schwächer wirken als
+  klar geführte Fakten und positive Anweisungen.

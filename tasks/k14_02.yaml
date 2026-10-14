@@ -1,0 +1,51 @@
+title: Vom Allzweck-Post zur Caption in Markenstimme
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT oder eine Alternative).
+
+  1. **Vorher.** Gib ein: `Schreib einen Instagram-Post über unseren neuen Rucksack Tind.`
+     Speichere das Ergebnis.
+  2. **Nachher.** Baue in einem **neuen Chat** einen vollständigen Prompt nach dem
+     P.R.O.M.P.T.-Framework (Kap. 5). Nutze diese (fiktiven) Produktfakten und keine weiteren:
+
+     ```text
+     Rucksack Tind, 28 Liter
+     Material: 70 % recyceltes Polyamid, Rest Polyester (neu)
+     Rückenteil verstellbar, Regenhülle integriert
+     Gewicht 980 g
+     5 Jahre Garantie, Reparaturservice
+     ```
+
+  3. **Vergleich.** Markiere in beiden Ergebnissen jede Aussage, die **nicht** aus den Fakten
+     stammt, sowie jeden Superlativ.
+  4. Notiere, welcher Baustein des Prompts die größte Verbesserung bewirkt hat.
+tip: |
+  Achte besonders auf das Material: „70 % recycelt" wird von KI gern zu „aus recyceltem
+  Material" oder „nachhaltig" verkürzt. Genau solche Verkürzungen sind bei Umweltaussagen das
+  eigentliche Risiko – schreib deshalb in den Modifier, dass Prozentangaben unverändert bleiben.
+solution: |
+  Beispiel für einen vollständigen Prompt:
+
+  ```text
+  Persona: Du bist Social-Media-Texterin für Fjordlicht (nachhaltige
+  Outdoor-Bekleidung, Münster).
+  Request: Schreibe eine Instagram-Caption zum Rucksack Tind.
+  Output: Hook max. 10 Wörter, dann 2 kurze Absätze, max. 70 Wörter,
+  Abschluss mit Frage. Max. 1 Emoji. 4 Hashtags separat darunter.
+  Modifier: Nutze nur diese Fakten: [Fakten]. Prozentangaben unverändert
+  übernehmen. Keine Superlative, nicht "nachhaltig" oder "umweltfreundlich".
+  Fehlt etwas, schreibe [FEHLT].
+  Purpose: Tagesausflüge von Stadtmenschen 25-45; Ziel: Interesse wecken.
+  Tone: ruhig, ehrlich, nordisch-trocken, Du-Ansprache.
+  ```
+
+  | Merkmal | Vorher (typisch) | Nachher (typisch) |
+  |---|---|---|
+  | Erfundene Aussagen | 2–4 („perfekt für jedes Abenteuer", „umweltfreundlich") | 0–1 |
+  | Superlative | mehrere | keine |
+  | Emojis/Hashtags | viele | wie vorgegeben |
+  | Länge | 120–200 Wörter | im Rahmen |
+
+  Den größten Effekt hat meist der **Modifier** („nur diese Fakten", verbotene Begriffe),
+  gefolgt vom **Tone** mit konkreten Merkmalen. Wer im Nachher-Text noch „nachhaltig" findet,
+  sollte den Modifier schärfen und den Ton mit zwei Beispielposts (Few-Shot) zeigen.

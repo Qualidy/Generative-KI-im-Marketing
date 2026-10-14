@@ -1,0 +1,57 @@
+title: Der Segment-Fund
+difficulty: 3
+question: |
+  Ein Test mit zwei Überschriften auf einer Fjordlicht-Landingpage ist abgeschlossen (fiktive
+  Daten, Testdauer vorher festgelegt):
+
+  ```text
+  Variante;Gerät;Besuche;Anmeldungen
+  A;mobil;2400;168
+  A;desktop;1100;99
+  B;mobil;2380;212
+  B;desktop;1120;90
+  ```
+
+  Eine Kollegin hat die Daten in ChatGPT ausgewertet und präsentiert: „Gesamt kein
+  signifikanter Unterschied, aber auf Mobilgeräten ist B signifikant besser (p = 0,015). Wir
+  stellen mobil auf B um."
+
+  1. Überprüfe die Zahlen mit der Datenanalyse: Gesamtergebnis und beide Segmente.
+  2. Bewerte die Schlussfolgerung der Kollegin. Was spricht dafür, was dagegen?
+  3. Formuliere eine Empfehlung an die Marketingleitung (max. 120 Wörter).
+  4. Schreibe einen Prompt, mit dem die KI künftig Segmentauswertungen korrekt einordnet.
+tip: |
+  Frage dich: War die Analyse nach Gerät **vorher** geplant? Und wie viele Segmente hätte man
+  noch prüfen können (Gerät, Uhrzeit, Neukunde/Bestandskunde, Quelle …)? Je mehr man prüft,
+  desto wahrscheinlicher findet man zufällig einen „Treffer".
+solution: |
+  | Gruppe | A | B | p-Wert (ca.) |
+  |---|---|---|---|
+  | gesamt | 7,6 % | 8,6 % | 0,13 |
+  | mobil | 7,0 % | 8,9 % | 0,015 |
+  | desktop | 9,0 % | 8,0 % | 0,42 |
+
+  Dafür spricht: Der Mobil-Unterschied ist deutlich, und es gibt eine plausible Begründung
+  (Überschrift B ist kürzer und auf kleinen Bildschirmen vollständig sichtbar).
+
+  Dagegen spricht: Die Segmentierung war nicht vorab geplant. Bei mehreren möglichen Segmenten
+  steigt die Wahrscheinlichkeit eines Zufallsfunds deutlich. Auf Desktop zeigt sich sogar die
+  umgekehrte Richtung, wenn auch nicht signifikant. Das Gesamtergebnis ist nicht signifikant.
+
+  Empfehlung (Beispiel): „Der Test zeigt insgesamt keinen belastbaren Unterschied. Auf
+  Mobilgeräten schneidet B besser ab; dieser Befund wurde aber erst nachträglich gesucht und kann
+  Zufall sein. Wir empfehlen einen neuen Test nur für mobile Besuche mit vorab festgelegter
+  Hypothese und ca. 3.200 Besuchen pro Variante. Bis dahin bleibt A aktiv, weil eine Umstellung
+  ohne belastbares Ergebnis keinen sicheren Vorteil bringt."
+
+  Prompt:
+
+  ```text
+  Werte den Test zuerst nur für die vorab festgelegte Zielmetrik
+  insgesamt aus. Segmentauswertungen nur, wenn ich sie anfordere; kennzeichne
+  sie als explorativ und nenne, wie viele Segmente geprüft wurden.
+  Leite aus Segmentfunden keine Empfehlung ab, sondern eine neue Hypothese.
+  ```
+
+  Bewertungskriterien: Zahlen korrekt nachgerechnet, Problem der nachträglichen Segmentsuche
+  benannt, Empfehlung trennt Ergebnis und Hypothese, Prompt verhindert Segmentfischen.

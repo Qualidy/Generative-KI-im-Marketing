@@ -1,0 +1,68 @@
+title: Avatar-Set für Fjordlicht Business
+difficulty: 4
+question: |
+  **Szenario:** „Fjordlicht Business" verkauft nachhaltige Firmenbekleidung an Unternehmen. Bisher
+  schreibt jeder im Team LinkedIn-Posts und Angebotsmails aus dem Bauch heraus. Du sollst einen
+  **Avatar** entwickeln, den das ganze Team als Prompt-Baustein und zum Prüfen von Texten nutzt.
+  Alternativ arbeitest du mit einem B2B-Angebot eines Unternehmens deiner Wahl.
+
+  ```text
+  Rahmen:
+  Kundschaft: Handwerksbetriebe, Agenturen, Hotels, 20-200 Beschäftigte.
+  Datenlage (fiktiv, selbst anlegen): 15 pseudonymisierte Anfragen, Notizen
+  aus 5 Vertriebsgesprächen, 8 Rückmeldungen nach Erstbestellung.
+  Kanäle: LinkedIn, Angebotsmail, Landingpage.
+  Keine echten Kunden- oder Personendaten.
+  ```
+
+  ---
+
+  **Runde 1 – Steckbrief.** Lege die fiktiven Daten an und lass die KI daraus einen Steckbrief-
+  Entwurf mit allen Feldern aus Abschnitt 18.2 erstellen – mit Quellenangabe je Feld und
+  `[HYPOTHESE]` für Unbelegtes. Überarbeite den Entwurf selbst. Beachte: Im B2B gibt es oft mehrere
+  Beteiligte (Geschäftsführung, Einkauf, Mitarbeitende, die die Kleidung tragen).
+
+  **Runde 2 – Prompt-Baustein und Einsatz.** Schreibe eine Kurzfassung (80–120 Wörter) und
+  verwende sie im Purpose eines P.R.O.M.P.T.-Prompts für einen LinkedIn-Post und eine Angebotsmail.
+  Prüfe beide Texte mit dem Avatar-Check aus Abschnitt 18.5 und überarbeite sie.
+
+  **Runde 3 – Die Komplikation.** Der Vertriebsleiter liest deinen Avatar und widerspricht: „Unsere
+  Entscheider interessieren sich null für Nachhaltigkeit. Die wollen Logo drauf, Lieferung in zwei
+  Wochen, Nachbestellung ohne Theater." Deine Daten zeigen ein gemischtes Bild. Kläre, wie du mit
+  dem Widerspruch umgehst: Welche Felder änderst du, welche markierst du als strittig, und welche
+  zusätzlichen Daten würden die Frage entscheiden?
+
+  **Runde 4 – Entscheidung unter Abwägung.** Ein Kollege möchte statt eines Avatars gleich fünf
+  bauen – für jede Branche einen. Ein anderer meint, ein Avatar reiche für alles. Lass dir von der
+  KI Pro und Contra liefern, **widersprich** dort, wo sie Aufwand und Pflege unterschätzt, und
+  entscheide begründet, mit wie vielen Avataren das Team startet.
+
+  **Deliverable:**
+
+  1. fiktive Datengrundlage und Steckbrief mit Evidenz je Feld
+  2. Kurzfassung als kopierbarer Prompt-Baustein
+  3. LinkedIn-Post und Angebotsmail, jeweils mit Avatar-Check vorher/nachher
+  4. Stellungnahme zu Runde 3 mit Änderungsprotokoll des Avatars (Version 1.0 → 1.1)
+  5. Entscheidung zu Runde 4 mit Pflegeplan
+
+  **Fertig bist du erst, wenn** jedes Feld des Steckbriefs eine Evidenzangabe trägt, die Kurzfassung
+  ohne Erklärung in einem fremden Prompt funktioniert, der Widerspruch des Vertriebs dokumentiert
+  und mit einem Prüfweg versehen ist und dein Pflegeplan sagt, wer den Avatar wann überprüft.
+tip: |
+  Der Lernwert liegt in Runde 3. Erfahrungswissen aus dem Vertrieb ist eine wertvolle Quelle, aber
+  ebenfalls eine Hypothese – genau wie die KI-Auswertung. Ein guter Avatar entscheidet solche
+  Konflikte nicht per Bauchgefühl oder Hierarchie, sondern macht sie sichtbar und benennt, welche
+  Daten sie klären. Oft lösen sie sich auf: Nachhaltigkeit ist dann kein Kaufgrund, aber ein
+  Ausschlusskriterium bei Ausschreibungen.
+solution: |
+  Bewertungskriterien: (1) der Steckbrief nutzt die Feldstruktur, berücksichtigt die B2B-Rollen
+  und weist Evidenz je Feld aus; (2) die Kurzfassung enthält Situation, Einwände und Kundensprache
+  und verändert die Texte nachweisbar; (3) der Avatar-Check führt zu konkreten Überarbeitungen statt
+  zu allgemeinem Lob; (4) der Widerspruch aus Runde 3 wird weder ignoriert noch blind übernommen,
+  sondern als strittiges Feld mit Prüfweg (zum Beispiel Auswertung der Anfrageanlässe, drei
+  Kundengespräche) und Versionsvermerk dokumentiert; (5) die Entscheidung in Runde 4 wägt
+  Genauigkeit gegen Pflegeaufwand ab – typischerweise Start mit einem bis zwei Avataren, Ausbau
+  nur, wenn Daten deutliche Unterschiede zeigen.
+
+  Lernziel: Einen Kundenavatar als datenbasiertes, gepflegtes Arbeitsmittel aufbauen, ihn als
+  Prompt-Baustein einsetzen und Widersprüche zwischen Erfahrung und Daten produktiv auflösen.

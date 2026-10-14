@@ -1,0 +1,46 @@
+title: Vom Storyboard zum Videoprompt
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT, Claude, Gemini oder Copilot) und – wenn
+  du Zugang hast – in einem Videowerkzeug mit Testkontingent.
+
+  1. **Storyboard.** Nutze den Storyboard-Prompt aus Abschnitt 35.5 und passe ihn auf ein
+     10-Sekunden-Reel für den Rucksack „Tind" an (Ziel: Herbstwanderung am Wochenende).
+     Nutze für Nachhaltigkeit nur die Platzhalterzeile, keine eigene Aussage.
+  2. **Prüfen.** Kontrolliere das Storyboard: Hat jede Einstellung genau eine Handlung? Sind
+     die ersten zwei Sekunden ohne Ton verständlich? Überarbeite, wo nötig.
+  3. **Videoprompt.** Wähle die stärkste Einstellung und schreibe dafür einen vollständigen
+     Videoprompt mit allen sieben Bausteinen aus der Tabelle in Abschnitt 35.3.
+  4. **Generieren (optional).** Erzeuge den Clip zweimal: einmal mit deinem Prompt, einmal mit
+     einer verkürzten Fassung von höchstens 15 Wörtern. Vergleiche.
+
+  Ohne Zugang zu einem Videowerkzeug lässt du Schritt 4 weg und lässt stattdessen die KI deinen
+  Prompt gegen die sieben Bausteine prüfen.
+tip: |
+  Der häufigste Fehler im Storyboard ist eine Einstellung mit zwei oder drei Handlungen. Streiche
+  lieber, als zu verdichten – zehn Sekunden sind kürzer, als sie sich beim Planen anfühlen.
+solution: |
+  Ein brauchbares Storyboard hat drei bis vier Einstellungen, zum Beispiel:
+
+  | Nr. | Dauer | Bild/Handlung | Kamera | Text |
+  |---|---|---|---|---|
+  | 1 | 2 s | Nebel über Waldweg, Morgenlicht | static shot | „Samstag, 7:40 Uhr" |
+  | 2 | 3 s | Hand schließt Deckel des Rucksacks | dolly in | – |
+  | 3 | 3 s | Person geht mit Rucksack den Weg hinauf | tracking shot | – |
+  | 4 | 2 s | Rucksack am Gipfelkreuz, Weite | slow pan | „Tind. Für den Weg nach oben." |
+
+  Beispiel-Videoprompt für Einstellung 3:
+
+  ```text
+  Szene: schmaler Waldweg im Herbst, Morgennebel, feuchtes Laub.
+  Motiv und Handlung: eine Person von hinten mit einem schlichten dunkelgrünen
+  Wanderrucksack geht ruhig den Weg hinauf.
+  Kamera: Tracking Shot von hinten auf Hüftenhöhe, gleichmäßig.
+  Licht und Stil: weiches Morgenlicht, natürliche Farben, dokumentarisch.
+  Ton: Schritte auf Laub, Vögel, keine Musik.
+  Format: 9:16, 3 Sekunden. Kein Text, keine Logos.
+  ```
+
+  Typische Beobachtung im Vergleich: Die Kurzfassung liefert oft eine schöne, aber beliebige
+  Szene (falsche Kamerabewegung, Hochglanz-Look, mitunter Text im Bild). Die vollständige
+  Fassung trifft Stimmung und Bewegung deutlich zuverlässiger.

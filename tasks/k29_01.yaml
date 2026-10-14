@@ -1,0 +1,34 @@
+title: Wie Bild-KI arbeitet – Aussagen prüfen
+difficulty: 1
+question: |
+  Entscheide für jede Aussage, ob sie **stimmt** oder **nicht stimmt**, und begründe in einem Satz.
+
+  1. Wenn du „Regenjacke im Wald" eingibst, sucht die Bild-KI ein passendes Foto aus ihrem
+     Trainingsbestand heraus.
+  2. Ein Diffusionsmodell beginnt mit Zufallsrauschen und entfernt es schrittweise.
+  3. Derselbe Prompt liefert ohne weitere Einstellungen jedes Mal dasselbe Bild.
+  4. Multimodale Chat-Bildmodelle können ein Bild auf Zuruf im Gespräch ändern.
+  5. Die Bild-KI kennt die Fjordlicht-Regenjacke „Sølv" und kann sie detailgetreu zeigen.
+  6. Outpainting erweitert ein Bild über seinen ursprünglichen Rand hinaus.
+
+  Ordne anschließend zu, welcher **Arbeitsmodus** (Text-zu-Bild, Bild-zu-Bild, Bearbeitung) zu
+  diesen Aufgaben passt: (a) Moodboard für eine neue Kampagne, (b) Hochformat-Foto für einen
+  16:9-Newsletter-Header verbreitern, (c) eine Bleistiftskizze in ein ausgearbeitetes Motiv
+  übertragen.
+tip: |
+  Denk an den Kernsatz aus 29.1: Bild-KI erfindet plausibel, sie bildet nicht ab. Damit lassen
+  sich die meisten Aussagen schon entscheiden.
+solution: |
+  | Nr. | Bewertung | Begründung |
+  |---|---|---|
+  | 1 | stimmt nicht | Das Modell berechnet ein neues Bild aus gelernten Mustern, es gibt keinen Abruf. |
+  | 2 | stimmt | Das ist das Grundprinzip der Diffusion: vom Rauschen zum Bild, gelenkt durch den Text. |
+  | 3 | stimmt nicht | Jede Generierung startet mit neuem Zufall; nur ein fester Seed bringt Nähe. |
+  | 4 | stimmt | Anweisungsbasierte Bearbeitung ist die Stärke von Modellen wie ChatGPT Images. |
+  | 5 | stimmt nicht | Sie kennt Regenjacken allgemein, nicht euer konkretes Produkt. |
+  | 6 | stimmt | Outpainting bzw. „Generatives Erweitern" ergänzt Bildbereiche außerhalb des Rands. |
+
+  Zuordnung: (a) Text-zu-Bild, (b) Bearbeitung (Outpainting), (c) Bild-zu-Bild.
+
+  Aussage 5 ist die wichtigste für den Marketing-Alltag: Wer echte Produkte zeigen will,
+  braucht echte Fotos oder bearbeitet echte Fotos, ohne das Produkt zu verändern.

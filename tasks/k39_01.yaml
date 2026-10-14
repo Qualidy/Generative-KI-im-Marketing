@@ -1,0 +1,33 @@
+title: Kennzeichnen – ja, nein oder freiwillig?
+difficulty: 1
+question: |
+  Ordne die folgenden Inhalte von Fjordlicht ein. Gib jeweils an, ob nach **Art. 50 AI Act** eine
+  Offenlegung **Pflicht**, **eingeschränkte Pflicht**, **keine Pflicht** oder eine **Grauzone** ist, und
+  ob zusätzlich **Plattformregeln** oder das **UWG** eine Rolle spielen.
+
+  1. Instagram-Caption zum Fleece „Skog", mit ChatGPT entworfen und redigiert
+  2. Realistisches Video: Ein bekannter Bergsteiger lobt die Regenjacke „Sølv" – er hat nie
+     zugestimmt, Stimme und Gesicht sind generiert
+  3. Comic-artige Illustration eines Fuchses mit Rucksack „Tind" für Pinterest
+  4. Blogbeitrag zu neuen EU-Vorgaben für Textilrecycling, vollständig KI-generiert und ohne
+     Prüfung veröffentlicht
+  5. Fotorealistisches TikTok-Bild: fiktive Familie beim Zelten an einem namenlosen See
+  6. Chatbot im Webshop, der Größenfragen beantwortet
+tip: |
+  Frage zuerst: Ist es Bild, Audio oder Video, das fälschlich echt wirkt? Dann: Ist es Text zu einem
+  Thema von öffentlichem Interesse? Und erst danach: Was verlangen Plattform und UWG?
+solution: |
+  | Nr. | AI Act | Weitere Regeln |
+  |---|---|---|
+  | 1 | keine Pflicht – normaler Werbetext | keine |
+  | 2 | Pflicht (Deepfake einer realen Person, Art. 50 Abs. 4) | darf so gar nicht erscheinen: Persönlichkeitsrecht, KUG, UWG |
+  | 3 | keine Pflicht – wirkt nicht fälschlich echt | keine |
+  | 4 | Pflicht – Text zu öffentlichem Interesse ohne redaktionelle Verantwortung | Faktencheck fehlt, Reputationsrisiko |
+  | 5 | Grauzone – keine reale Person, aber realistisch | TikTok-Label für realistische KI-Inhalte setzen |
+  | 6 | Pflicht – Hinweis auf KI-Interaktion (Art. 50 Abs. 1) | Datenschutzhinweis |
+
+  Der wichtigste Punkt steckt in Nr. 2: Eine Kennzeichnung macht den Inhalt **nicht** zulässig.
+  Ohne Einwilligung des Bergsteigers verletzt das Video sein Persönlichkeitsrecht und ist als
+  erfundene Empfehlung irreführend. Kennzeichnungspflicht und Zulässigkeit sind zwei getrennte
+  Fragen. Bei Nr. 4 würde eine fachliche Prüfung mit benannter Verantwortung die Pflicht entfallen
+  lassen – und den Beitrag nebenbei besser machen.

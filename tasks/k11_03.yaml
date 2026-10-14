@@ -1,0 +1,40 @@
+title: Werkzeugvergleich für das Team
+difficulty: 3
+question: |
+  Das Fjordlicht-Marketingteam (fünf Personen) schreibt bisher alle längeren Texte im normalen
+  ChatGPT-Chat. Nach der Entfernung von Canvas fragt die Teamleitung, ob man auf ein anderes
+  Werkzeug wechseln sollte.
+
+  1. Teste dieselbe Aufgabe in **zwei** Werkzeugen mit Dokumentfunktion (z. B. ChatGPT
+     Schreibblöcke und Claude Artifacts, Gemini Canvas oder Copilot Pages): Rohfassung eines
+     Blog-Absatzes zur Wanderhose „Vidde" (ca. 200 Wörter), danach eine gezielte Überarbeitung
+     des Einstiegs und eine Kürzung um ein Drittel.
+  2. Bewerte beide Werkzeuge in einer Tabelle nach mindestens fünf Kriterien, darunter
+     **Kontrolle über Änderungen**, **Versionen** und **Freigabe/Datenschutz im Team**.
+  3. Formuliere eine Empfehlung in höchstens fünf Sätzen – und begründe, warum die Empfehlung
+     **nicht** an einer einzelnen Funktion hängen sollte.
+tip: |
+  Komfort ist schnell beurteilt, Kontrolle nicht. Achte bei der Kürzung darauf, ob das Werkzeug
+  Inhalte stillschweigend streicht, die du behalten wolltest. Und: Ein Werkzeug, das im Team nicht
+  freigegeben ist, scheidet aus, egal wie gut es schreibt (Kap. 4).
+solution: |
+  Beispielhafte Bewertung (Ergebnisse variieren je nach Stand und Test):
+
+  | Kriterium | Werkzeug A | Werkzeug B |
+  |---|---|---|
+  | Gezielte Überarbeitung markierter Stellen | zuverlässig, Rest bleibt stabil | teils Änderungen außerhalb der Markierung |
+  | Kürzung ohne Inhaltsverlust | Kerninhalte erhalten | Pflegehinweis gestrichen |
+  | Versionen / Zurückspringen | vorhanden | eingeschränkt |
+  | Export und Weitergabe | Download | Kopieren, Teilen im Werkzeug |
+  | Freigabe und Datenschutz | Business-Tarif mit AVV im Haus | kein freigegebener Tarif |
+
+  Mögliche Empfehlung: „Wir bleiben bei dem Werkzeug, für das ein freigegebener Business-Tarif
+  besteht, und arbeiten dort mit Schreibblöcken. Verbindlich für alle wird der Dreischritt
+  Rohfassung, Struktur, Feinschliff und die Regel, jede Überarbeitung auf markierte Stellen zu
+  begrenzen und eine Änderungsliste zu verlangen. Funktionen ändern sich – Canvas wurde nach weniger
+  als zwei Jahren entfernt. Deshalb verankern wir das Vorgehen in unserer Prompt-Bibliothek (Kap. 10),
+  nicht in einer Bedienanleitung."
+
+  Bewertungskriterien: echte Tests mit derselben Aufgabe in beiden Werkzeugen, mindestens fünf
+  Kriterien inklusive Datenschutz, eine Empfehlung, die Freigabe vor Komfort stellt und das
+  Arbeitsprinzip statt einer Funktion festschreibt.

@@ -1,0 +1,80 @@
+title: Quartalsreview für den Fjordlicht-Newsletter
+difficulty: 4
+question: |
+  **Szenario:** Die Marketingleitung von Fjordlicht will für das nächste Quartal wissen, wie
+  der Newsletter (ca. 38.000 Abonnenten) besser werden kann. Bisher wurde nach Gefühl
+  entschieden. Du sollst eine datenbasierte Empfehlung vorlegen, die auch einer kritischen
+  Nachfrage standhält. Du kannst alternativ mit einem Unternehmen deiner Wahl und selbst
+  erstellten fiktiven Daten arbeiten.
+
+  ```text
+  Rahmen:
+  Daten: fiktiver Export, 12 Versände (unten), keine personenbezogenen Daten.
+  Werkzeug: ChatGPT mit Datenanalyse oder vergleichbar.
+  Ziel: höhere Klickrate in den Shop bei stabiler Abmelderate.
+  Ergebnis: eine Seite für die Marketingleitung.
+
+  datum;betreff;thema;wörter;öffnung;klick;abmeldung
+  2026-04-02;Frühjahrsputz für deine Wanderhose?;Pflege;310;42,0;3,7;0,18
+  2026-04-09;Vidde: die Hose für lange Tage;Produkt;180;36,3;5,0;0,22
+  2026-04-16;Unser Lieferkettenbericht 2025;Haltung;720;38,9;1,4;0,31
+  2026-04-23;Wie wasserdicht ist wasserdicht?;Wissen;450;43,8;3,2;0,15
+  2026-04-30;Packliste für dein erstes Mikroabenteuer;Touren;380;40,8;3,3;0,16
+  2026-05-07;Tind: 20 Prozent leichter;Produkt;160;35,1;4,6;0,24
+  2026-05-14;Was tun, wenn die Jacke nicht mehr abperlt?;Pflege;290;44,6;4,1;0,14
+  2026-05-21;Neue Farben für Skog;Produkt;150;34,7;4,9;0,27
+  2026-05-28;Warum wir Reparaturen anbieten;Haltung;640;39,5;1,9;0,29
+  2026-06-04;Drei Touren für laue Abende;Touren;400;37,2;2,8;0,19
+  2026-06-11;Sommerregen: Sølv oder Poncho?;Produkt;260;41,3;5,6;0,17
+  2026-06-18;Sommerpause? Nicht für deinen Rucksack;Pflege;300;36,0;3,0;0,20
+  ```
+
+  ---
+
+  **Runde 1 – Analyse.** Lass die Daten mit einem vollständigen P.R.O.M.P.T.-Prompt (Kap. 5)
+  auswerten: Zusammenhänge von Thema, Frageform im Betreff und Textlänge mit Öffnungs-, Klick-
+  und Abmelderate. Fordere Fallzahlen und mindestens ein Diagramm an.
+
+  **Runde 2 – Prüfung.** Prüfe zwei Mittelwerte selbst nach, lass dir den Rechenweg zeigen und
+  fordere zu jedem Befund eine alternative Erklärung ein. Streiche Befunde, die der Prüfung
+  nicht standhalten.
+
+  **Runde 3 – Die Komplikation.** Die Geschäftsführung ergänzt: „Die Haltungs-Newsletter
+  (Lieferkette, Reparatur) bleiben – sie sind Teil unserer Marke." Gleichzeitig zeigen deine
+  Daten, dass genau diese Ausgaben die niedrigsten Klickraten und höchsten Abmelderaten haben.
+  Entwickle mit der KI zwei Textvarianten für den nächsten Haltungs-Newsletter, die das Thema
+  behalten, aber Länge, Einstieg oder Call-to-Action verändern.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die KI wird dir vermutlich empfehlen, mehr
+  Produkt-Newsletter zu schicken, weil sie die höchste Klickrate haben. **Widersprich** dieser
+  Empfehlung dort, wo sie zu kurz greift: Öffnungsraten, Abmeldungen, Markenstimme, Ermüdung
+  durch zu viel Verkauf. Entscheide begründet, welche **zwei** Hypothesen du im nächsten
+  Quartal testest.
+
+  **Deliverable:**
+
+  1. Analyse-Prompt und Ergebnistabelle mit Fallzahlen
+  2. Prüfprotokoll: zwei nachgerechnete Werte, gestrichene Befunde mit Begründung
+  3. zwei Varianten des Haltungs-Newsletters (Betreff, Einstieg, Call-to-Action)
+  4. eine Seite für die Marketingleitung: drei Befunde, zwei Testhypothesen, Grenzen der Daten
+
+  **Fertig bist du erst, wenn** jeder Befund eine Fallzahl und eine alternative Erklärung hat,
+  keine Empfehlung als bewiesene Ursache formuliert ist, die Haltungs-Varianten genau eine
+  klar benannte Veränderung enthalten und deine Seite ohne mündliche Erklärung verständlich ist.
+tip: |
+  Der Kern liegt in Runde 4: Eine Kennzahl zu maximieren ist leicht, die richtige Kennzahl im
+  Zusammenspiel mit Marke und Abmeldungen zu sehen, ist die eigentliche Arbeit. Zwölf Versände
+  sind zu wenig für Gewissheit – deine Empfehlung muss das offen sagen und genau deshalb auf
+  Tests hinauslaufen.
+solution: |
+  Bewertungskriterien: (1) vollständiger P.R.O.M.P.T.-Prompt mit Purpose und vorsichtigen
+  Modifiern, Ergebnisse mit Fallzahlen (z. B. Produkt: n = 4, Klickrate um 5,0, Öffnungsrate um
+  36,9; Haltung: n = 2, Klickrate um 1,7, Abmelderate um 0,30); (2) Prüfprotokoll mit echten
+  Nachrechnungen und mindestens einer Streichung oder Abschwächung, etwa weil Länge und Thema
+  vermischt sind (beide Haltungs-Newsletter sind die längsten); (3) Haltungs-Varianten, die das
+  Thema respektieren und genau eine Variable ändern, z. B. 250 statt 700 Wörter oder ein
+  konkreter Call-to-Action zum Reparaturservice; (4) eine Entscheidung, die die
+  KI-Empfehlung begründet einschränkt und zwei testbare Hypothesen mit Hauptkennzahl nennt.
+
+  Lernziel: Aus Kampagnendaten belastbare Hypothesen ableiten, Befunde kritisch prüfen und
+  Zahlen mit Markenzielen abwägen, statt eine einzelne Kennzahl blind zu maximieren.

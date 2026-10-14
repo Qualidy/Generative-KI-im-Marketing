@@ -1,0 +1,39 @@
+title: Welches Werkzeug für welchen Zweck?
+difficulty: 3
+question: |
+  Das Marketingteam von Fjordlicht hat drei anstehende Bildaufgaben:
+
+  ```text
+  A) Moodboard mit 12 Stimmungsbildern für die Frühjahrskampagne "Erste Schritte draußen"
+  B) Infografik für den Blog "Draußen-Notizen": "So pflegst du deine Regenjacke"
+     mit 5 beschrifteten Schritten
+  C) Ein Produktbild der neuen Wanderhose "Vidde" vor Fjordkulisse für den Webshop
+  ```
+
+  1. Bewerte für jede Aufgabe, welches Werkzeug aus Abschnitt 29.5 am besten geeignet ist, und
+     nutze dafür mindestens **vier** Kriterien aus 29.6.
+  2. Benenne für jede Aufgabe das **größte Risiko** und wie du es absicherst.
+  3. Eine Kollegin schlägt vor: „Wir nehmen einfach für alles ChatGPT Images, das haben wir
+     sowieso." Nimm Stellung: Wo hat sie recht, wo nicht?
+tip: |
+  Aufgabe C ist eine Falle. Frage dich zuerst, ob sie überhaupt eine Aufgabe für Bild-KI ist –
+  und welcher Teil davon vielleicht doch.
+solution: |
+  | Aufgabe | Geeignet | Kriterien | Größtes Risiko | Absicherung |
+  |---|---|---|---|---|
+  | A Moodboard | ChatGPT Images oder Midjourney | Look, Steuerbarkeit, Kosten, Datenschutz | einseitige Bildwelten (Bias), Midjourney-Bilder öffentlich sichtbar | Vielfalt explizit beschreiben; Plan mit privater Sichtbarkeit wählen |
+  | B Infografik | Ideogram, alternativ ChatGPT Images; Text final im Layout-Tool | Text im Bild, Steuerbarkeit, Integration | Schreibfehler, falsche Pflegehinweise | Texte aus geprüfter Vorlage, Schrift im Layout-Tool setzen |
+  | C Produktbild | keine reine Generierung; echtes Foto, Hintergrund ggf. per Firefly erweitern | Rechte, Bearbeitung, Herkunftskennzeichnung | Produkt sieht anders aus als geliefert (UWG) | echtes Produktfoto, nur Umgebung bearbeiten, Produkt unverändert lassen |
+
+  Zur Kollegin:
+
+  - **Sie hat recht**, dass ein vorhandenes, datenschutzrechtlich geklärtes Werkzeug ein
+    starker Grund ist. Für A und als Entwurfswerkzeug für B reicht ChatGPT Images oft aus, und
+    das Team muss nichts Neues lernen.
+  - **Sie hat nicht recht**, wenn „für alles" auch C meint. Kein Generator zeigt die echte Hose
+    „Vidde" korrekt. Bei viel Text (B) und bei starker Art Direction (A) können Spezialwerkzeuge
+    besser sein; das sollte ein Vergleichstest klären (Kap. 31), nicht ein Bauchgefühl.
+
+  Bewertungskriterien: mindestens vier Kriterien je Aufgabe genutzt, C als Fall für echte Fotos
+  erkannt, und die Stellungnahme würdigt das Argument „vorhanden und geklärt", statt es pauschal
+  abzulehnen.

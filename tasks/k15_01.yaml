@@ -1,0 +1,38 @@
+title: Was gehört ins Briefing?
+difficulty: 1
+question: |
+  Ein Kollege bei Fjordlicht hat folgendes „Briefing" für einen Blogartikel geschrieben:
+
+  ```text
+  Blogartikel über Wandern mit Kindern. Soll gut ranken und
+  unsere Produkte zeigen. So 2.000 Wörter. Locker schreiben.
+  ```
+
+  1. Ordne jede Angabe einem Baustein des P.R.O.M.P.T.-Frameworks (Kap. 5) zu.
+  2. Benenne die **drei** wichtigsten fehlenden Angaben und was ohne sie im Text passieren würde.
+  3. Welche der folgenden Leadmagnete passt am besten zu diesem Artikel – und warum?
+     (a) E-Book „Nachhaltigkeit bei Fjordlicht", (b) Checkliste „Packliste Tageswanderung mit
+     Kindern", (c) Gewinnspiel „Gewinne eine Regenjacke"
+tip: |
+  Frage bei jeder fehlenden Angabe: Was wird die KI an dieser Stelle selbst entscheiden – und
+  wäre das in deinem Sinn?
+solution: |
+  | Angabe | Baustein |
+  |---|---|
+  | Blogartikel über Wandern mit Kindern | Request (sehr vage) |
+  | gut ranken, Produkte zeigen | Purpose (unscharf, zwei Ziele) |
+  | 2.000 Wörter | Output |
+  | locker schreiben | Tone (unkonkret) |
+
+  Fehlend (wichtigste drei):
+
+  1. **Zielgruppe und Kernfrage** (Purpose/Request): Ohne sie wird der Text ein allgemeiner
+     Überblick ohne klaren Nutzen – Kleinkind oder Teenager, Tagestour oder Hüttenwanderung?
+  2. **Faktenbasis und No-Gos** (Modifier): Ohne sie erfindet die KI Produkteigenschaften,
+     Sicherheitsangaben und vielleicht Nachhaltigkeitsaussagen.
+  3. **Erfahrung und Autor:in** (Persona/Modifier): Ohne sie entsteht austauschbarer Text,
+     der E-E-A-T nicht erfüllt.
+
+  Leadmagnet: **(b)**. Er löst das konkrete Problem der Lesenden direkt im Anschluss an den
+  Artikel. (a) passt thematisch nicht, (c) sammelt Kontakte, die an einem Gewinn interessiert
+  sind, nicht am Thema – und Gewinnspiele bringen zusätzliche rechtliche Anforderungen mit.

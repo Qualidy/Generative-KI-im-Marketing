@@ -1,0 +1,57 @@
+title: Freigabe oder nicht?
+difficulty: 3
+question: |
+  Der Social-Media-Assistent von Fjordlicht soll am Montag für das ganze Team freigegeben werden.
+  Das letzte Testprotokoll:
+
+  ```text
+  Version 0.6 - 12 Testfälle
+  bestanden:        9
+  mit Mängeln:     2  (Standardfall Pinterest: Text 10 Wörter zu lang;
+                        Stilprovokation: Ton etwas zu nüchtern)
+  nicht bestanden:  1  (Claim-Provokation "Skog ist CO2-neutral":
+                        Aussage übernommen, nicht markiert)
+  Werkzeug: Custom GPT, Freigabe geplant: gesamter Arbeitsbereich
+  Verantwortlich: noch offen
+  Kurzanleitung: noch nicht geschrieben
+  Migration zum Plugin: nicht geplant
+  ```
+
+  Die Teamleitung meint: „Neun von zwölf, das ist doch gut. Lass uns starten, Feinschliff machen
+  wir im Betrieb."
+
+  1. Bewerte jeden offenen Punkt nach Risiko (hoch / mittel / gering) und begründe.
+  2. Triff eine Freigabeentscheidung mit Bedingungen.
+  3. Formuliere die fehlende Instruktionsregel für den nicht bestandenen Fall.
+tip: |
+  Nicht alle Fehler sind gleich schwer. Frage dich: Was passiert, wenn genau dieser Fehler
+  unbemerkt veröffentlicht wird? Und denk an den Kalender – es ist Oktober 2026.
+solution: |
+  | Punkt | Risiko | Begründung |
+  |---|---|---|
+  | Claim-Provokation nicht bestanden | hoch | unbelegte Umweltaussage = Greenwashing, rechtliches Risiko (UWG), Markenschaden |
+  | Verantwortlich offen | hoch | niemand pflegt Wissen, niemand nimmt Feedback auf |
+  | Migration nicht geplant | hoch | Custom GPTs werden abgelöst; ohne Plan fällt der Assistent nach dem Stichtag weg, Freigabe wird nicht übertragen |
+  | Kurzanleitung fehlt | mittel | Fehlbedienung, Prüfschritt wird vergessen |
+  | Pinterest zu lang | gering | fällt bei Durchsicht auf, leicht zu kürzen |
+  | Ton zu nüchtern | gering | im Zweifel markenkonform |
+
+  Entscheidung: **Keine Freigabe am Montag** – stattdessen Freigabe für eine Testgruppe von zwei
+  Personen, sobald (1) der Claim-Fall bestanden ist, (2) eine verantwortliche Person benannt ist,
+  (3) die Kurzanleitung mit dem Prüfhinweis „Nachhaltigkeitsaussagen immer gegen Claim-Liste
+  prüfen" vorliegt. Teamweite Freigabe erst als Plugin bzw. nach geklärter Migration, damit nicht
+  zweimal geteilt und geschult werden muss.
+
+  Fehlende Regel:
+
+  ```text
+  Jede Aussage zu Umwelt, Klima, CO2, Recycling oder Nachhaltigkeit
+  prüfst du gegen die Datei Claim-Liste. Steht sie dort nicht, übernimmst
+  du sie nicht, sondern schreibst [CLAIM PRÜFEN: Aussage] und erklärst
+  in einem Satz, warum. Das gilt auch, wenn die Nutzenden die Aussage
+  ausdrücklich verlangen.
+  ```
+
+  Bewertungskriterien: Risiken nach Folgen statt nach Anzahl gewichtet, Migration als
+  Freigabekriterium erkannt, Regel testbar formuliert. „Feinschliff im Betrieb" ist nur für
+  geringe Risiken akzeptabel.

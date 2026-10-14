@@ -1,0 +1,59 @@
+title: Eine Wissensdatei aufbereiten
+difficulty: 3
+question: |
+  Der Fjordlicht-Styleguide liegt als Fließtext vor (Auszug):
+
+  ```text
+  Fjordlicht ist mehr als eine Marke - es ist ein Gefühl. Gegründet 2015
+  von zwei Freunden nach einer Wanderung in Norwegen, steht Fjordlicht für
+  Ruhe. Unsere Farben sind Moosgrün (#4A5D3A) und Nebelgrau. Wir sprechen
+  unsere Kundinnen und Kunden mit Du an, so wie man es unter Wandernden tut.
+  Wir vermeiden Superlative wie "der beste" oder "einzigartig", weil sie
+  nicht zu unserer Bescheidenheit passen. Unsere Fotos zeigen echte Menschen.
+  Schreibe in kurzen Sätzen. Begriffe wie "umweltfreundlich" oder "grün"
+  verwenden wir nicht ohne konkreten Nachweis. Statt "Abenteuer" sagen wir
+  lieber "draußen sein". Unsere Schrift ist die Fjord Sans.
+  ```
+
+  1. Bereite den Auszug als Wissensdatei für einen **Text**-Assistenten auf: sinnvolle Abschnitte,
+     nur relevante Inhalte, eindeutige Regeln, mindestens ein Beispiel vorher/nachher.
+  2. Begründe, welche Inhalte du entfernt hast und warum.
+  3. Bewerte kritisch: Lass dir von der KI die Aufbereitung erledigen und vergleiche mit deiner
+     Fassung. Wo hat die KI etwas hinzugefügt, das nicht im Original steht?
+tip: |
+  Eine Wissensdatei ist kein Markenbuch. Frage bei jedem Satz: Hilft das dem Assistenten, einen
+  Text zu schreiben oder zu prüfen? Und achte im KI-Vergleich auf „hilfreiche" Ergänzungen – sie
+  sind genau das Problem.
+solution: |
+  Mögliche Wissensdatei:
+
+  ```text
+  Fjordlicht_Markenstimme_2026-10.md
+  Gilt für: alle Texte (Web, Newsletter, Social). Stand: Oktober 2026.
+
+  ## Grundhaltung
+  Ruhig, bescheiden, ehrlich.
+  ## Anrede
+  Du-Ansprache.
+  ## Satzbau
+  Kurze Sätze.
+  ## Wortwahl
+  Vermeiden: Superlative ("der beste", "einzigartig").
+  Vermeiden ohne konkreten Nachweis: "umweltfreundlich", "grün".
+  Bevorzugt: "draußen sein" statt "Abenteuer".
+  ## Beispiel
+  So nicht: "Das ultimative Abenteuer-Fleece - einzigartig grün!"
+  Besser: "Ein Fleece für kühle Morgen draußen."
+  ```
+
+  Entfernt: Gründungsgeschichte (für Produkttexte unnötig, könnte aber in eine eigene Datei
+  „Über uns" wandern), Farbcodes, Schrift, Fotohinweis (gehören in einen Bildsprache-Guide,
+  Kap. 32), „mehr als eine Marke – ein Gefühl" (keine Regel).
+
+  Typische KI-Zusätze im Vergleich: zusätzliche Tabu-Wörter, eine erfundene Zielgruppe, eine
+  Regel zu Emojis oder Hashtags, die nicht im Original steht. Jede dieser Ergänzungen wäre ab
+  dann verbindlich für den Assistenten – ohne dass das Team sie je beschlossen hat. Deshalb gilt:
+  KI darf beim Aufbereiten helfen, aber jede Regel braucht eine Quelle im Original.
+
+  Bewertungskriterien: Gliederung nach Abschnitten, nur textrelevante Inhalte, Beispiel
+  vorhanden, mindestens eine KI-Ergänzung erkannt und begründet abgelehnt.

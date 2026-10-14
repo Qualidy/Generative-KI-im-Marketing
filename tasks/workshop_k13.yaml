@@ -1,0 +1,73 @@
+title: Willkommenssequenz für neue Abonnenten
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht gewinnt jeden Monat rund 1.200 neue Newsletter-Abonnenten. Bisher
+  bekommen sie nach der Bestätigung nur eine kurze Standardmail und landen dann im normalen
+  Monatsnewsletter. Viele melden sich nach wenigen Wochen wieder ab. Das Team möchte eine
+  Willkommenssequenz, die die Marke vorstellt, Vertrauen aufbaut und erst am Ende ein Produkt
+  empfiehlt. Du kannst statt Fjordlicht auch **ein Unternehmen deiner Wahl** nutzen.
+
+  ```text
+  Rahmen:
+  Auslöser: bestätigte Anmeldung (Double-Opt-in).
+  Umfang: 4 bis 6 Mails in höchstens 21 Tagen.
+  Platzhalter verfügbar: [Vorname], [Interesse] (Wandern, Familie, Alltag).
+  Keine Rabatte, keine Superlative, nur belegte Nachhaltigkeitsaussagen:
+  Sølv-Obermaterial 100 Prozent recyceltes Polyamid; Reparaturservice vorhanden.
+  Keine echten Kundendaten im Prompt.
+  ```
+
+  ---
+
+  **Runde 1 – Plan und Texte.** Erstelle per Prompt-Kette zuerst den Plan der Sequenz
+  (Mail, Abstand, Ziel, Kernbotschaft, CTA), dann jede Mail einzeln mit Betreff, Preheader,
+  Text und genau einem CTA. Nutze für die Prompts das P.R.O.M.P.T.-Framework (Kap. 5).
+
+  **Runde 2 – Prüfung gegen Pflichtkriterien.** Die Sequenz muss **alle vier** Kriterien erfüllen:
+
+  1. Jede Mail hat genau **ein Hauptziel** und einen CTA.
+  2. Jeder Platzhalter hat einen **Fallback**, und jede Mail liest sich auch mit Fallback natürlich.
+  3. Kein Betreff enthält Spam-Signale oder Clickbait-Muster; Betreff und Preheader ergänzen sich.
+  4. Keine Aussage geht über die belegten Fakten hinaus.
+
+  **Runde 3 – Die Komplikation.** Die Auswertung der Anmeldungen zeigt: Rund 40 Prozent der neuen
+  Abonnenten haben beim [Interesse] „Familie" angegeben. Die Teamleitung möchte für sie ab Mail 3
+  eine eigene Variante. Passe die Sequenz an, ohne alles neu schreiben zu lassen: Welche Mails
+  bleiben gleich, welche bekommen eine Familienfassung? Arbeite im Dokument mit gezielter
+  Überarbeitung (Kap. 11).
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die KI schlägt vor, in Mail 1 einen „Willkommensrabatt
+  von 10 Prozent" anzubieten, weil das „branchenüblich die Konversion steigert". **Widersprich**
+  diesem Vorschlag oder stimme begründet zu. Wäge ab: kurzfristige Käufe gegen Markenstimme,
+  Erwartungshaltung der Abonnenten und Fjordlichts Haltung zu Rabatten. Halte fest, wie du die
+  Wirkung deiner Entscheidung später messen würdest (Kap. 16, Kap. 20).
+
+  **Deliverable:**
+
+  1. Plan der Sequenz als Tabelle
+  2. alle Mails mit Betreff, Preheader, Text und CTA
+  3. ausgefüllte Checkliste der vier Pflichtkriterien
+  4. Familienvarianten aus Runde 3 mit Begründung, welche Mails gleich bleiben
+  5. begründete Entscheidung zu Runde 4 mit Messidee
+
+  **Fertig bist du erst, wenn** jede Mail alle vier Pflichtkriterien erfüllt, die Familienvarianten
+  sich inhaltlich (nicht nur in der Anrede) unterscheiden, keine echten Kundendaten verwendet
+  wurden und deine Entscheidung aus Runde 4 mindestens ein Argument dafür und eines dagegen
+  benennt.
+tip: |
+  Der Lernkern liegt in Runde 2 und 4. Eine Sequenz wirkt nur, wenn jede Mail einen klaren Zweck
+  hat und die Reihenfolge Vertrauen vor Verkauf stellt. In Runde 4 zeigt sich, dass „branchenüblich"
+  kein Argument für eine bestimmte Marke ist: Die KI kennt den Durchschnitt, nicht eure Strategie.
+solution: |
+  Bewertungskriterien: (1) Plan vor den Texten erstellt, Mails einzeln formuliert, Prompts mit
+  vollständigen P.R.O.M.P.T.-Bausteinen; (2) alle vier Pflichtkriterien nachweisbar geprüft,
+  insbesondere Fallbacks für [Vorname] und [Interesse] und keine erfundenen Nachhaltigkeitsaussagen;
+  (3) Familienvarianten unterscheiden sich im Inhalt (z. B. Packliste für Kinder statt
+  Schichtenprinzip für Pendler), unveränderte Mails sind begründet; Überarbeitung erfolgte gezielt;
+  (4) die Entscheidung in Runde 4 wägt konkret ab (Rabatt erzeugt Erwartung an weitere Rabatte,
+  widerspricht der ruhigen Markenstimme, kann aber Erstkäufe beschleunigen) und schlägt eine
+  Messung vor, etwa Kaufquote und Abmelderate nach 30 Tagen im A/B-Vergleich.
+
+  Lernziel: Eine automatisierte E-Mail-Sequenz mit KI planen und texten, Personalisierung
+  datensparsam umsetzen und strategische Entscheidungen nicht an den Branchendurchschnitt
+  delegieren.

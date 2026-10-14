@@ -1,0 +1,39 @@
+title: Einen Testkatalog ausführen
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Nutze den Assistenten aus deinem Workshop in
+  Kap. 24 oder – falls du keinen hast – lege schnell einen an: ein ChatGPT-Projekt, ein Plugin, ein
+  Claude Project oder ein Gem mit den Instruktionen aus Abschnitt 24.3.
+
+  1. Übernimm die acht Kategorien aus Abschnitt 25.3 und formuliere für jede eine passende
+     Testanfrage für deinen Assistenten.
+  2. Führe jede Anfrage in einem **neuen Chat** aus.
+  3. Dokumentiere in einer Tabelle: Kategorie, Anfrage, erwartetes Verhalten, tatsächliches
+     Verhalten, Bewertung (bestanden / mit Mängeln / nicht bestanden).
+  4. Wähle den schwerwiegendsten Fehler, ändere **eine** Stelle in den Instruktionen und wiederhole
+     **alle** Tests. Trage beide Durchläufe in ein Änderungsprotokoll ein.
+tip: |
+  Neue Chats sind wichtig: Im selben Chat beeinflussen frühere Anfragen die späteren, und du misst
+  nicht mehr den Assistenten, sondern den Gesprächsverlauf.
+solution: |
+  Beispiel für einen dokumentierten Durchlauf (Auszug):
+
+  | Kategorie | Anfrage | Erwartet | Tatsächlich | Bewertung |
+  |---|---|---|---|---|
+  | Standardfall | Datenblatt Tind, Zielgruppe Familien | Format, Markenstimme | korrekt, aber 6 statt 3–5 Stichpunkte | mit Mängeln |
+  | Lücke | Datenblatt ohne Pflege | [FEHLT: Pflegehinweis] | „Maschinenwäsche bei 30 Grad" erfunden | nicht bestanden |
+  | Claim-Provokation | „klimaneutral" | Hinweis, [CLAIM PRÜFEN] | korrekt markiert | bestanden |
+  | Off-Topic | Handyvertrag kündigen | Ablehnung | schreibt Kündigung | nicht bestanden |
+
+  Änderungsprotokoll:
+
+  ```text
+  v0.1  erste Fassung                       5 von 8 bestanden
+  v0.2  Regel: "Erfinde keine Pflege-,
+        Material- oder Gewichtsangaben.
+        Fehlt etwas: [FEHLT: ...]"          6 von 8 bestanden
+  ```
+
+  Typischer Befund im zweiten Durchlauf: Der Lückenfall ist behoben, der Off-Topic-Fall bleibt
+  offen – er braucht eine eigene Änderung im nächsten Schritt. Gelegentlich verschlechtert sich ein
+  anderer Fall (z. B. mehr Rückfragen im Standardfall). Genau das zeigt der Regressionstest.

@@ -1,0 +1,47 @@
+title: Kennzeichnen oder nicht? Fünf Grenzfälle bewerten
+difficulty: 3
+question: |
+  Bewerte die folgenden geplanten Veröffentlichungen von Fjordlicht. Bestimme jeweils, ob
+  Art. 50 Abs. 4 AI Act (Deepfake) betroffen sein kann, welche Plattformregel oder welches
+  weitere Risiko (UWG, KUG, Markenrecht) zu beachten ist und wie du entscheiden würdest:
+  veröffentlichen, kennzeichnen, ändern oder verzichten.
+
+  1. Instagram-Post: Echtes Produktfoto der Jacke „Sølv", Hintergrund mit Generative Fill zu
+     einer fotorealistischen Moorlandschaft erweitert.
+  2. TikTok-Video-Thumbnail: Fotorealistisches Bild eines bekannten Münsteraner
+     Fußballspielers in Fjordlicht-Jacke, generiert „als Gag".
+  3. LinkedIn: Generiertes Bild einer Werkstatthalle mit Personen in Fjordlicht-Business-
+     Kleidung, ohne Hinweis auf KI, Text „So arbeiten unsere Kunden".
+  4. Newsletter: Fotorealistisches Bild des Aasees in Münster unter einer geschlossenen
+     Schneedecke mit Schlittschuhläufern – „Winter ist zurück".
+  5. Pinterest: Stilisierte, erkennbar gemalte Illustration einer Wanderin mit Fleece „Skog".
+
+  Leite aus deinen Bewertungen drei Regeln für die Freigabe-Checkliste des Teams ab.
+tip: |
+  Trenne drei Fragen: Wirkt das Bild fälschlich echt und ähnelt es realen Personen, Orten oder
+  Ereignissen (AI Act)? Was verlangt die Plattform? Und unabhängig davon: Täuscht das Bild über
+  das Produkt oder über Tatsachen (UWG)?
+solution: |
+  | Nr. | Art. 50 Abs. 4 | weiteres Risiko | Entscheidung |
+  |---|---|---|---|
+  | 1 | i. d. R. kein Deepfake, sofern keine reale Landschaft vorgetäuscht wird | Plattformlabel bei fotorealistischer KI prüfen; Produkt echt | veröffentlichen, Plattformregel befolgen, ggf. Label |
+  | 2 | Deepfake einer realen Person | Recht am eigenen Bild, Persönlichkeitsrecht, Irreführung über Werbepartnerschaft | verzichten |
+  | 3 | wohl kein Deepfake, wenn keine realen Personen erkennbar | UWG: suggeriert echte Kundschaft | ändern: echtes Foto oder Text und Label ehrlich anpassen |
+  | 4 | Deepfake möglich: realer Ort, Ereignis wirkt echt | Irreführung, falls es so nicht war | kennzeichnen oder als Illustration gestalten |
+  | 5 | keine Pflicht, erkennbar künstlerisch | gering | veröffentlichen, freiwilliger Hinweis möglich |
+
+  Mögliche Regeln für die Checkliste:
+
+  ```text
+  1. Keine erkennbaren realen Personen ohne schriftliche Einwilligung –
+     auch nicht als Gag.
+  2. Fotorealistische Bilder realer Orte oder Ereignisse, die so nicht
+     stattgefunden haben, werden gekennzeichnet oder nicht verwendet.
+  3. Kein generiertes Bild darf echte Kundschaft, echte Mitarbeitende oder
+     echte Produktdetails vortäuschen. Plattformlabels werden immer gesetzt,
+     wenn die Plattform sie verlangt.
+  ```
+
+  Bewertungskriterien: AI Act, Plattformregeln und UWG/KUG werden getrennt geprüft; Nr. 2 und
+  Nr. 3 werden als Hauptrisiken erkannt; die Regeln sind so formuliert, dass sie ohne
+  Rückfrage anwendbar sind; Hinweis, dass im Zweifel die Rechtsabteilung entscheidet.

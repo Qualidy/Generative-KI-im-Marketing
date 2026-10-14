@@ -1,0 +1,73 @@
+title: Ein Launch, vier Kanäle
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht bringt im November die Regenjacke „Sølv" auf den Markt. Das
+  Marketingteam hat einen Blogartikel und ein Produktdatenblatt, aber noch keinen einzigen
+  Social-Media-Text. Du sollst aus diesem Material einen Launch-Satz für vier Kanäle
+  entwickeln, der in der Markenstimme bleibt und keine unbelegten Aussagen enthält. Du kannst
+  alternativ ein Unternehmen deiner Wahl mit einem eigenen Produkt nutzen.
+
+  ```text
+  Rahmen:
+  Kanäle: Instagram, TikTok, LinkedIn (Fjordlicht Business), Pinterest
+  Fakten (fiktiv): Obermaterial 100 % recyceltes Polyamid, PFAS-freie
+  Imprägnierung, Wassersäule 20.000 mm, kostenloser Reparaturservice
+  in den ersten zwei Jahren, Preis 249 Euro
+  Markenstimme: ruhig, ehrlich, nordisch-trocken, Du-Ansprache,
+  keine Superlative, kein Greenwashing
+  Keine echten Kundendaten, keine Namen
+  ```
+
+  ---
+
+  **Runde 1 – Kern und Hooks.** Lass die KI aus dem Material die Kernbotschaft, drei belegte
+  Fakten und mindestens eine „unverkürzbare" Aussage herausarbeiten (Abschnitt 14.5). Erzeuge
+  anschließend 15 Hooks in mindestens vier Hook-Typen und wähle je Kanal einen begründet aus.
+
+  **Runde 2 – Kanaltexte.** Erstelle je Kanal einen eigenen P.R.O.M.P.T.-Auftrag (Kap. 5) und
+  erzeuge: Instagram-Caption, TikTok-Skript (30 Sekunden mit Bildschirmtext), LinkedIn-Post für
+  Firmenkunden, Pinterest-Titel und -Beschreibung. Prüfe jeden Text gegen die Faktenliste und
+  gegen diese Kriterien: Hook in der ersten Zeile, Länge im Rahmen, Handlungsaufforderung passend
+  zum Kanal, keine Superlative.
+
+  **Runde 3 – Die Komplikation.** Die Produktmanagerin meldet sich: Die PFAS-freie Imprägnierung
+  ist korrekt, aber der Lieferant hat das Prüfzertifikat noch nicht nachgereicht. Bis dahin darf
+  „PFAS-frei" nicht öffentlich verwendet werden. Überarbeite alle vier Texte. Achte darauf, dass
+  die Texte ohne dieses Argument nicht schwächer, sondern anders werden – und dass sich keine
+  Ersatzbehauptung einschleicht.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Bitte die KI, deine Texte „für maximale Reichweite
+  zu optimieren". Sie wird vermutlich emotionalere Hooks, Trend-Hashtags und mehr Emojis
+  vorschlagen. Entscheide je Vorschlag, ob du ihn übernimmst. **Widersprich** der KI dort, wo
+  Reichweite gegen Markenstimme oder Glaubwürdigkeit steht, und begründe jede Ablehnung.
+
+  **Deliverable:**
+
+  1. Kernbotschaft, drei Fakten, unverkürzbare Aussage, Hook-Liste mit Auswahl
+  2. vier Kanaltexte mit den zugehörigen Prompts
+  3. überarbeitete Fassungen nach Runde 3 mit Liste der Änderungen
+  4. Tabelle der Optimierungsvorschläge aus Runde 4 mit Entscheidung und Begründung
+
+  **Fertig bist du erst, wenn** jeder Text ausschließlich belegte Fakten enthält, sich die vier
+  Kanaltexte in Einstieg und Perspektive klar unterscheiden, nach Runde 3 „PFAS" in keinem Text
+  mehr vorkommt und keine Ersatzbehauptung entstanden ist, und du in Runde 4 mindestens zwei
+  Vorschläge begründet abgelehnt hast.
+tip: |
+  Der Lernkern liegt in Runde 3: Ein starkes Argument fällt weg, und die KI füllt die Lücke gern
+  mit etwas Ähnlichem („schadstoffarm", „umweltschonend imprägniert"). Wer das bemerkt, hat
+  verstanden, warum Faktenbasis und Modifier wichtiger sind als jede Hook-Formel. In Runde 4 gilt:
+  Reichweite ist ein Ziel, aber nicht das einzige – eine Marke, die ruhig klingen will, verliert
+  durch Clickbait mehr, als sie gewinnt.
+solution: |
+  Bewertungskriterien: (1) Kernbotschaft und Fakten sind belegt, die unverkürzbare Aussage ist
+  sinnvoll gewählt (z. B. „100 % recyceltes Polyamid – nur das Obermaterial"), Hooks decken mehrere Typen ab;
+  (2) vier eigenständige Prompts mit vollständigem P.R.O.M.P.T., Texte unterscheiden sich in
+  Einstieg, Perspektive und Handlungsaufforderung, LinkedIn spricht Firmenkunden an; (3) nach
+  Runde 3 ist „PFAS" vollständig entfernt, keine Ersatzbehauptung, die Texte stützen sich auf
+  andere belegte Argumente (Reparaturservice, Wassersäule); (4) Optimierungsvorschläge werden
+  einzeln bewertet, Ablehnungen mit Markenstimme, Glaubwürdigkeit oder Plattformlogik begründet,
+  sinnvolle Vorschläge (z. B. Suchbegriff im ersten Satz) werden übernommen.
+
+  Lernziel: Ein Thema plattformgerecht adaptieren und dabei Faktenbasis und Markenstimme als
+  feste Grenzen behandeln – auch dann, wenn die KI oder der Wunsch nach Reichweite in eine andere
+  Richtung ziehen.

@@ -1,0 +1,71 @@
+title: KI-Landkarte für ein Marketingteam
+difficulty: 4
+question: |
+  **Szenario:** Das fünfköpfige Marketingteam von Fjordlicht nutzt KI bisher unkoordiniert:
+  Eine Person schreibt Captions mit ChatGPT, eine andere testet Midjourney privat, der Rest
+  wartet ab. Die Marketingleitung möchte bis zum Monatsende wissen, wo KI im Team sinnvoll
+  eingesetzt wird, womit ihr anfangt und was ausdrücklich nicht passieren soll. Du kannst
+  alternativ ein Unternehmen deiner Wahl verwenden.
+
+  ```text
+  Rahmen:
+  Unternehmen: Fjordlicht GmbH oder ein Unternehmen deiner Wahl
+  Team: 5 Personen, sehr unterschiedliche KI-Erfahrung
+  Kanäle: Webshop, Blog, Newsletter, Instagram, TikTok, LinkedIn, Pinterest
+  Budget für Werkzeuge: begrenzt, maximal zwei neue Lizenzen
+  Keine echten Kundendaten in den Übungen, nur fiktive Angaben
+  ```
+
+  ---
+
+  **Runde 1 – Landkarte erstellen.** Sammle mindestens zwölf wiederkehrende Marketingaufgaben
+  und ordne sie den Phasen der Customer Journey aus Abschnitt 3.2 zu. Notiere zu jeder Aufgabe,
+  welche Werkzeugkategorie aus Abschnitt 3.3 passen würde. Nutze dein KI-Werkzeug als
+  Ideengeber, aber streiche Aufgaben, die es bei euch gar nicht gibt.
+
+  **Runde 2 – Bewerten und auswählen.** Bewerte alle Aufgaben mit dem Raster aus Abschnitt 3.6
+  (Häufigkeit, Zeitersparnis, Risiko, Datenlage). Wähle die **drei** Aufgaben, mit denen das
+  Team startet, und lege für jede die Rollenverteilung nach Abschnitt 3.4 fest: Was macht der
+  Mensch, was die KI, wer gibt frei?
+
+  **Runde 3 – Die Komplikation.** Die Social-Media-Verantwortliche hat einen KI-Post zur
+  Regenjacke „Sølv" veröffentlicht, in dem „100 Prozent klimaneutral produziert" steht. Das ist
+  nicht belegbar, eine Kundin fragt öffentlich nach. Überprüfe deine Auswahl aus Runde 2:
+  Welche Prüfschritte fehlten? Ergänze für jede deiner drei Aufgaben einen verbindlichen
+  Prüfpunkt und formuliere eine kurze, ehrliche Antwort an die Kundin.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung schlägt vor, statt drei
+  Aufgaben sofort alle zwölf mit KI umzustellen und die Posting-Frequenz zu verdreifachen, „weil
+  es ja jetzt schnell geht". Lass dir von deinem KI-Werkzeug Argumente für diesen Vorschlag
+  liefern. **Widersprich** den Argumenten, die nicht tragen, und entscheide begründet, ob und
+  wie weit du dem Vorschlag folgst.
+
+  **Deliverable:**
+
+  1. Landkarte mit mindestens zwölf Aufgaben, Journey-Phase und Werkzeugkategorie
+  2. Bewertungstabelle nach dem Raster mit den drei ausgewählten Startaufgaben
+  3. Rollenverteilung und Prüfpunkte für die drei Startaufgaben, ergänzt nach Runde 3
+  4. Antwort an die Kundin aus Runde 3
+  5. Stellungnahme zu Runde 4 mit begründeter Entscheidung
+
+  **Fertig bist du erst, wenn** jede der drei Startaufgaben einen benannten Menschen für die
+  Freigabe und mindestens einen überprüfbaren Prüfpunkt hat, die Antwort an die Kundin keine
+  neue unbelegte Aussage enthält und deine Entscheidung in Runde 4 mindestens zwei Argumente
+  einzeln widerlegt oder bestätigt.
+tip: |
+  Der Lernkern liegt in Runde 3 und 4: Der Nutzen von KI im Marketing hängt weniger an der
+  Generierung als an Prüfung und Auswahl. Eine Landkarte ohne Prüfpunkte ist ein Wunschzettel.
+  Und mehr Output ist nur dann ein Gewinn, wenn Qualität und Markenstimme mitwachsen.
+solution: |
+  Bewertungskriterien: (1) Die Landkarte enthält realistische, wiederkehrende Aufgaben und
+  ordnet sie plausibel Phasen und Werkzeugkategorien zu; (2) die Bewertung nutzt alle vier
+  Kriterien und die Auswahl folgt nachvollziehbar daraus, bevorzugt häufige Aufgaben mit
+  bekannten Fakten und geringem Risiko; (3) die Rollenverteilung legt Briefing, Prüfung und
+  Freigabe eindeutig beim Menschen fest, und die Prüfpunkte nach Runde 3 sind konkret (etwa
+  Abgleich mit einer Claim-Liste belegbarer Nachhaltigkeitsaussagen); (4) die Antwort an die
+  Kundin korrigiert ehrlich, ohne neue Behauptungen; (5) die Stellungnahme zu Runde 4 trennt
+  Zeitersparnis von Wirkung, berücksichtigt Prüfaufwand, Markenwirkung und Spam-Risiko und
+  kommt zu einer abgestuften Entscheidung statt zu einem pauschalen Ja oder Nein.
+
+  Lernziel: KI-Einsatz im Marketing an Aufgaben, Risiken und Verantwortlichkeiten festmachen –
+  und verstehen, dass Prüfung und Freigabe den realistischen Nutzen bestimmen.

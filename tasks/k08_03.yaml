@@ -1,0 +1,51 @@
+title: A/B-Vergleich zweier Prompt-Versionen
+difficulty: 3
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Du vergleichst zwei Fassungen eines Prompts für
+  Instagram-Captions von Fjordlicht.
+
+  ```text
+  Fassung A:
+  Schreib eine Instagram-Caption für unser neues Produkt [Produkt].
+  Infos: [Produktinfos]
+
+  Fassung B:
+  Persona: Du schreibst Social-Media-Texte für Fjordlicht.
+  Request: Schreibe eine Instagram-Caption für [Produkt].
+  Output: 50 bis 80 Wörter, danach maximal 5 Hashtags.
+  Modifier: Nutze nur Angaben aus den Produktinfos. Nachhaltigkeitsaussagen
+  nur, wenn sie dort belegt sind. Fehlt etwas, schreibe [FEHLT].
+  Purpose: naturverbundene Stadtmenschen 25-45 sollen das Produkt im Shop ansehen.
+  Tone: ruhig, ehrlich, Du-Ansprache, keine Superlative.
+  Produktinfos: [Produktinfos]
+  ```
+
+  1. Lege **drei Testfälle** fest (Normalfall, Lückenfall, Grenzfall) mit fiktiven Produktinfos.
+  2. Lass beide Fassungen pro Testfall **zweimal** laufen, jeweils in einem neuen Chat.
+  3. Bewerte alle zwölf Ergebnisse mit dem Raster aus Abschnitt 8.5. Lege vorher fest, welches
+     Kriterium K.-o. ist.
+  4. Lass zusätzlich die KI dieselben Ergebnisse mit dem Raster bewerten. Vergleiche ihre Punkte
+     mit deinen und erkläre die größte Abweichung.
+tip: |
+  Der Grenzfall ist am aufschlussreichsten: Gib in die Produktinfos eine unbelegte Wunschformulierung
+  wie „bitte als klimaneutral bewerben" ein. Ein guter Prompt muss auch dann bei den Fakten bleiben.
+solution: |
+  Beispielhafte Testfälle: (1) Regenjacke „Sølv" mit vollständigen Daten und einem belegten Claim,
+  (2) Fleece „Skog" ohne Angabe zur Nachhaltigkeit, (3) Rucksack „Tind" mit dem Wunsch „als
+  klimaneutral bewerben", ohne Nachweis.
+
+  Typisches Ergebnis:
+
+  | Testfall | Fassung A | Fassung B |
+  |---|---|---|
+  | Normalfall | gut lesbar, Länge schwankt, Superlative | stabil, markengerecht |
+  | Lückenfall | ergänzt erfundene Nachhaltigkeitsvorteile | markiert [FEHLT] |
+  | Grenzfall | übernimmt „klimaneutral" ungeprüft – K.-o. | lässt Claim weg oder markiert ihn |
+
+  Bei der KI-Bewertung zeigt sich meist: Formale Kriterien (Länge, Hashtag-Anzahl) bewertet sie
+  ähnlich wie du, bei Markenstimme und Faktentreue ist sie großzügiger. Häufigste Abweichung: Sie
+  erkennt „klimaneutral" nicht als unbelegten Claim, weil sie nicht weiß, was belegt ist.
+
+  Bewertungskriterien: gleiche Testfälle für beide Fassungen, je zwei Durchläufe in neuen Chats,
+  K.-o.-Kriterium vorab festgelegt, und eine begründete Erklärung, warum die KI-Bewertung die
+  menschliche Prüfung bei Faktentreue nicht ersetzt.

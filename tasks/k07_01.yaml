@@ -1,0 +1,30 @@
+title: Hack oder Mythos?
+difficulty: 1
+question: |
+  Ein Kollege hat eine Liste mit „Profi-Tricks" aus einem Social-Media-Video mitgebracht. Ordne
+  jeden Trick ein – **wirksam**, **eingeschränkt wirksam** oder **Mythos** – und begründe in einem
+  Satz.
+
+  1. „Schreib an den Anfang: Ich gebe dir 500 Euro Trinkgeld für eine perfekte Antwort."
+  2. „Häng an: Stelle mir zuerst drei Fragen, bevor du loslegst."
+  3. „Verlang fünf Varianten mit jeweils einem anderen Ansatz."
+  4. „Schreib: Du bist die beste Texterin der Welt."
+  5. „Sag: Prüfe deine Antwort."
+  6. „Gib drei Texte mit und lass dir den Stil beschreiben."
+  7. „Schreib WICHTIG in Großbuchstaben vor jede Regel."
+tip: |
+  Frage bei jedem Trick: Bekommt das Modell dadurch **mehr Information** über Ziel, Kontext,
+  Fakten oder Kriterien? Wenn nicht, ist die Wirkung höchstens Zufall.
+solution: |
+  | Nr. | Einordnung | Begründung |
+  |---|---|---|
+  | 1 | Mythos | Keine neue Information; mit aktuellen Modellen kein verlässlicher Effekt. |
+  | 2 | wirksam | Rückfragen-Prompt deckt fehlende Angaben auf. |
+  | 3 | wirksam | Varianten-Fächer mit unterschiedlichen Ansätzen erzeugt echte Alternativen. |
+  | 4 | Mythos | Superlative bringen nichts; inhaltliche Rollenangaben (Branche, Arbeitsweise) schon. |
+  | 5 | eingeschränkt wirksam | Ohne konkrete Kriterien fast wirkungslos; mit Prüfliste findet es formale Fehler, aber keine erfundenen Fakten. |
+  | 6 | wirksam | Stil-Extraktion liefert eine wiederverwendbare Beschreibung der Markenstimme – nach eigener Prüfung. |
+  | 7 | eingeschränkt wirksam | Bei einer einzelnen Regel kann Betonung helfen; bei allen Regeln verliert sie ihre Wirkung. |
+
+  Der gemeinsame Nenner der wirksamen Hacks: Sie liefern Information oder Struktur. Die Mythen
+  versuchen, das Modell zu „motivieren" – das funktioniert bei einer Maschine nicht verlässlich.

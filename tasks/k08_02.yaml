@@ -1,0 +1,46 @@
+title: Meta-Prompting im Praxistest
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT, Claude, Gemini oder Copilot).
+
+  1. **Meta-Prompt.** Lass dir per Meta-Prompting einen wiederverwendbaren Prompt für
+     **Pinterest-Pin-Beschreibungen** von Fjordlicht bauen (oder für eine wiederkehrende Textsorte
+     eines Unternehmens deiner Wahl). Verlange, dass die KI dir zuerst Rückfragen stellt, den Prompt
+     nach P.R.O.M.P.T. gliedert, Platzhalter in eckigen Klammern setzt und am Ende drei Annahmen
+     nennt.
+  2. **Rückfragen beantworten.** Beantworte die Rückfragen knapp. Nutze die Markenstimme aus dem
+     Fallunternehmen: ruhig, ehrlich, naturverbunden, keine Superlative, kein Greenwashing.
+  3. **Annahmen prüfen.** Bewerte die drei genannten Annahmen: stimmt, stimmt nicht, muss geklärt
+     werden.
+  4. **Test.** Lass den erzeugten Prompt in einem **neuen Chat** mit zwei Produkten laufen
+     (z. B. Wanderhose „Vidde" und Rucksack „Tind"; Produktdaten darfst du fiktiv ergänzen).
+  5. **Nachschärfen.** Notiere zwei Stellen, an denen du den generierten Prompt ändern musst, und
+     begründe, warum.
+tip: |
+  Achte im erzeugten Prompt auf Allgemeinplätze wie „ansprechend" oder „kreativ" und auf Regeln, die
+  du nie verlangt hast. Das Modell füllt Lücken in deinen Antworten genauso wie in jedem anderen
+  Auftrag.
+solution: |
+  Ein brauchbarer Meta-Prompt:
+
+  ```text
+  Ich möchte einen wiederverwendbaren Prompt für Pinterest-Pin-Beschreibungen
+  der Fjordlicht GmbH (nachhaltige Outdoor-Bekleidung) bauen.
+  1. Stelle mir zuerst bis zu acht Rückfragen und warte auf meine Antworten.
+  2. Schreibe dann den Prompt mit den Abschnitten Persona, Request, Output,
+     Modifier, Purpose, Tone.
+  3. Setze alle variablen Stellen als [Platzhalter].
+  4. Nenne am Ende drei Annahmen, die ich prüfen sollte.
+  ```
+
+  Typische Beobachtungen:
+
+  | Schritt | Häufiger Befund |
+  |---|---|
+  | Rückfragen | Zielgruppe, Länge, Keywords, Call-to-Action, Claims – gute Checkliste |
+  | Annahmen | oft falsch: Hashtag-Anzahl, Emojis, Preisangaben im Text |
+  | Test | Struktur stimmt, Ton teilweise zu werblich („perfekt für jedes Abenteuer") |
+  | Nachschärfen | Superlative ausdrücklich ausschließen; Regel für fehlende Claims ergänzen |
+
+  Eine gute Bearbeitung zeigt, dass der generierte Prompt ein solider Startpunkt war, aber erst durch
+  deine Prüfung der Annahmen und den Test im neuen Chat brauchbar wurde.

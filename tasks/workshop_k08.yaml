@@ -1,0 +1,72 @@
+title: Einen Team-Prompt systematisch optimieren
+difficulty: 4
+question: |
+  **Szenario:** Das Marketingteam der Fjordlicht GmbH nutzt seit Wochen einen Prompt für die
+  Einleitung des wöchentlichen Newsletters (ca. 38.000 Abonnentinnen und Abonnenten). Die Ergebnisse
+  schwanken: mal zu werblich, mal zu lang, einmal stand eine Nachhaltigkeitsaussage im Entwurf, die
+  niemand belegen konnte. Die Teamleitung möchte bis Freitag eine geprüfte, bessere Fassung – und
+  einen Nachweis, dass sie besser ist. Du kannst alternativ mit einem Unternehmen deiner Wahl und
+  einem dort wiederkehrenden Prompt arbeiten.
+
+  ```text
+  Ausgangsprompt:
+  Schreib eine Einleitung für unseren Newsletter. Thema diese Woche: [Thema].
+  Mach es ansprechend und erwähne unsere Produkte.
+
+  Rahmen:
+  Werkzeug: ChatGPT oder eine Alternative, die im Team verfügbar ist.
+  Markenstimme: ruhig, ehrlich, naturverbunden, Du-Ansprache, keine Superlative.
+  Nachhaltigkeitsaussagen nur aus der Claim-Liste (fiktiv anlegen, 3 bis 5 Claims).
+  Keine echten Kundendaten.
+  ```
+
+  ---
+
+  **Runde 1 – Ausgangslage messen.** Lege vier Testfälle fest (Normalfall, Lückenfall, Sonderfall,
+  Grenzfall) und ein Bewertungsraster mit fünf bis sechs Kriterien, davon mindestens ein
+  K.-o.-Kriterium. Lass den Ausgangsprompt pro Testfall zweimal laufen und bewerte. Lege außerdem
+  **vorab** fest, ab welcher Punktzahl du aufhörst zu optimieren.
+
+  **Runde 2 – Review und Überarbeitung.** Lass den Ausgangsprompt per Prompt-Review gegen das
+  P.R.O.M.P.T.-Schema prüfen, ohne dass die KI ihn neu schreibt. Übernimm Vorschläge **einzeln** und
+  teste nach jeder Übernahme mit denselben Testfällen. Dokumentiere jede Version mit einem Satz zur
+  Änderung.
+
+  **Runde 3 – Die Komplikation.** Die Produktverantwortliche meldet sich: Ab sofort soll in jeder
+  Einleitung ein Produkt „mit seinen Umweltvorteilen" vorgestellt werden. Gleichzeitig liegen nur
+  für zwei Produkte belegte Claims vor. Passe den Prompt so an, dass er die neue Anforderung erfüllt,
+  ohne dass im Lückenfall erfundene Umweltaussagen entstehen. Teste erneut alle vier Fälle.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Bitte die KI abschließend, deinen besten Prompt
+  „maximal zu optimieren". Du erhältst sehr wahrscheinlich eine deutlich längere Fassung. Lass sie
+  gegen dieselben Testfälle laufen und vergleiche mit deinem Raster. **Widersprich** dem Vorschlag
+  überall dort, wo zusätzliche Regeln keine Punkte bringen, Einzelfälle überanpassen oder die Länge
+  verdoppeln, und entscheide begründet, welche Fassung ins Team geht.
+
+  **Deliverable:**
+
+  1. Testfälle und Bewertungsraster mit K.-o.-Kriterium und vorab festgelegtem Abbruchkriterium
+  2. Versionsliste des Prompts mit je einem Satz zur Änderung und den Punktwerten pro Version
+  3. angepasster Prompt aus Runde 3 mit Testergebnissen aller vier Fälle
+  4. Vergleich und begründete Entscheidung aus Runde 4, inklusive Liste der abgelehnten Zusätze
+
+  **Fertig bist du erst, wenn** jede Version gegen dieselben Testfälle gemessen wurde, der finale
+  Prompt im Lückenfall keine Umweltaussage erfindet, das Abbruchkriterium erreicht oder begründet
+  verfehlt ist und deine Entscheidung aus Runde 4 mindestens drei abgelehnte Zusätze einzeln
+  begründet.
+tip: |
+  Der Lernkern: Ein Prompt ist nicht besser, weil er besser aussieht, sondern weil er bei denselben
+  Testfällen besser abschneidet. Ändere nur eine Sache pro Schritt. In Runde 3 hilft eine klare
+  Fallunterscheidung im Modifier: Gibt es einen belegten Claim, wird er wörtlich genutzt; gibt es
+  keinen, wird das Produkt über Funktion und Einsatz vorgestellt und [CLAIM FEHLT] markiert.
+solution: |
+  Bewertungskriterien: (1) Testfälle decken Normal-, Lücken-, Sonder- und Grenzfall ab, das Raster
+  enthält ein K.-o.-Kriterium zur Faktentreue und das Abbruchkriterium steht vor der Optimierung
+  fest; (2) die Versionsliste zeigt Einzeländerungen mit Messwerten statt eines Sprungs von v1 zu
+  einer komplett neuen Fassung; (3) der Prompt aus Runde 3 trennt belegte und fehlende Claims
+  ausdrücklich und besteht den Lückenfall in allen Durchläufen; (4) die Entscheidung in Runde 4
+  beruht auf Messwerten, benennt abgelehnte Zusätze einzeln und berücksichtigt Teamtauglichkeit und
+  Länge.
+
+  Lernziel: Prompts mit KI-Unterstützung nachvollziehbar verbessern – mit Testfällen, Raster und
+  Abbruchkriterium – und die Grenze zur Überoptimierung bewusst ziehen.

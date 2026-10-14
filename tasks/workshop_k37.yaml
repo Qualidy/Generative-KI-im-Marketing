@@ -1,0 +1,81 @@
+title: Klangkonzept für eine Reel-Serie
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht startet im November eine Reel-Serie „Draußen bei jedem Wetter" mit
+  sechs Clips zur Regenjacke „Sølv", zum Fleece „Skog" und zur Wanderhose „Vidde". Bisher wurde
+  Musik für jedes Reel spontan in der App ausgesucht – die Clips klingen jedes Mal anders. Du
+  sollst ein **Klangkonzept** liefern, das die Serie hörbar zusammenhält und rechtlich sauber
+  ist. Du kannst alternativ mit einem Unternehmen deiner Wahl arbeiten.
+
+  ```text
+  Rahmen:
+  6 Reels, je 15 bis 20 Sekunden, Instagram und TikTok (Unternehmensaccounts).
+  Zwei Clips laufen zusätzlich als bezahlte Anzeige und im Webshop.
+  Budget für Musik: max. 300 Euro für die gesamte Serie.
+  Markenstimme: ruhig, ehrlich, naturverbunden, nordisch-trocken.
+  Werkzeuge: ChatGPT plus ein KI-Musikwerkzeug oder ein Stock-Katalog.
+  ```
+
+  ---
+
+  **Runde 1 – Audio-Leitbild und Prompts.** Erstelle ein Audio-Leitbild nach dem Muster aus
+  Abschnitt 37.4 (Klangcharakter, Instrumente, Tempo, Vermeiden). Leite daraus **sechs**
+  Musik-Prompts ab – einen pro Reel – mit allen sechs Bausteinen aus Abschnitt 37.3 und
+  Sekundenangaben für Sprechstellen. Erzeuge mindestens zwei Tracks zur Probe oder suche zwei
+  passende Stock-Titel.
+
+  **Runde 2 – Prüfung gegen Pflichtkriterien.** Das Konzept muss **alle vier** Kriterien
+  erfüllen:
+
+  1. Für jeden Track ist der **Bezugsweg** festgelegt und für den geplanten Kanal lizenziert –
+     einschließlich Anzeige und Webshop.
+  2. Für jeden KI-Track sind **Tool, Tarif, Konto, Datum und Prompt** dokumentiert.
+  3. Kein Prompt enthält **Künstler- oder Songnamen**.
+  4. Die sechs Tracks sind beim Hintereinanderhören **erkennbar eine Serie**.
+
+  **Runde 3 – Die Komplikation.** Zwei Tage vor Start schlägt das Social-Media-Team vor, in
+  zwei Reels doch einen gerade trendenden TikTok-Sound zu nutzen – „sonst gehen wir im Feed
+  unter". Gleichzeitig fällt dir auf, dass einer deiner KI-Tracks im Refrain stark an einen
+  bekannten Song erinnert. Kläre beide Punkte: Was ist auf dem Unternehmensaccount zulässig,
+  was nicht? Ersetze oder überarbeite, wo nötig, und halte fest, wie du die Reichweitensorge
+  anders adressierst.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung fragt, ob ihr aus einem der
+  Tracks gleich das neue **Sound-Logo** machen könnt. Lass dir von ChatGPT Pro und Contra
+  aufstellen. Die Antwort wird wahrscheinlich Kosten und Geschwindigkeit stark betonen.
+  **Widersprich** dort, wo Schutzfähigkeit, Rechtslage (GEMA-Urteile nicht rechtskräftig) und
+  Langlebigkeit eines Markenzeichens zu kurz kommen, und triff eine begründete Empfehlung.
+
+  **Deliverable:**
+
+  1. Audio-Leitbild und sechs vollständige Musik-Prompts
+  2. Lizenztabelle mit Bezugsweg, Kanälen und Dokumentation je Track
+  3. Entscheidungsnotiz zu Runde 3 (Trend-Sound und auffälliger Track)
+  4. Empfehlung zum Sound-Logo mit Abwägung aus Runde 4
+
+  **Fertig bist du erst, wenn** jeder Track für jeden geplanten Kanal einen nachvollziehbaren
+  Lizenzweg hat, kein Prompt einen Künstlernamen enthält, der auffällige Track ersetzt ist und
+  deine Sound-Logo-Empfehlung mindestens ein rechtliches und ein markenstrategisches Argument
+  enthält.
+tip: |
+  Der Lernkern liegt in Runde 2 und 3: Gute Musik ist schnell gefunden, eine Lizenz, die für
+  Reel, Anzeige **und** Webshop gilt, nicht. Beim Sound-Logo verschiebt sich die Frage von „klingt
+  es gut?" zu „gehört es uns dauerhaft?". Rein KI-erzeugte Musik ist in der Regel nicht geschützt –
+  für ein Markenzeichen ist das ein Ausschlusskriterium oder zumindest ein Grund für menschliche
+  Ausarbeitung.
+solution: |
+  Bewertungskriterien: (1) Audio-Leitbild ist konkret genug, um sechs zueinander passende
+  Prompts zu erzeugen; alle Prompts enthalten die sechs Bausteine und berücksichtigen
+  Sprechstellen; (2) die Lizenztabelle unterscheidet Plattformbibliothek, Stock und KI korrekt
+  und deckt Anzeige und Webshop ausdrücklich ab; KI-Tracks sind mit Tool, Tarif, Konto, Datum und
+  Prompt dokumentiert; (3) Runde 3 erkennt, dass Trend-Sounds auf Unternehmensaccounts meist
+  nicht nutzbar sind, bietet eine Alternative aus der Commercial Music Library oder eine
+  inhaltliche Lösung für Reichweite an und verwirft den auffälligen Track konsequent;
+  (4) die Sound-Logo-Empfehlung nennt fehlende Schutzfähigkeit nach § 2 Abs. 2 UrhG, die nicht
+  rechtskräftigen GEMA-Urteile als Unsicherheitsfaktor und die Langlebigkeit eines
+  Markenzeichens – typischerweise: KI für Ideen, finale Fassung durch einen Menschen mit
+  vertraglicher Rechteübertragung.
+
+  Lernziel: KI-Musik gezielt für Konsistenz und Tempo nutzen, ohne Lizenzfragen zu übersehen –
+  und unterscheiden können, wann ein KI-Track reicht und wann eine Marke mehr Rechtssicherheit
+  braucht.

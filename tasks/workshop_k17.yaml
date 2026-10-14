@@ -1,0 +1,69 @@
+title: Zielgruppenbriefing für eine Produktlinie
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht bringt im Frühjahr eine Kinderkollektion heraus. Das Marketingteam soll
+  in einer Woche ein **Zielgruppenbriefing** liefern, auf dem Kampagne, Newsletter und Social-Media-
+  Texte aufbauen. Die Geschäftsführung warnt: „Ich will keine Persona-Poesie, sondern Aussagen, die
+  wir belegen können." Du kannst alternativ eine Produktlinie eines Unternehmens deiner Wahl nehmen.
+
+  ```text
+  Rahmen:
+  Produkt: Kinder-Regenjacke und Matschhose, 3-10 Jahre.
+  Vorhandene Daten (fiktiv, selbst anlegen): 25 Bewertungen zu bestehenden
+  Erwachsenenprodukten von Eltern, 10 Kundenservice-Mails zu Kindergrößen,
+  Ergebnisse einer Newsletter-Umfrage (3 Fragen, Freitext).
+  Werkzeuge: ChatGPT oder ein anderes Chat-Werkzeug mit Websuche.
+  Keine echten Kundendaten, nur selbst erstellte fiktive Daten.
+  ```
+
+  ---
+
+  **Runde 1 – Daten und Analyse.** Lege die fiktiven Daten an (realistisch, mit Widersprüchen und
+  Ausreißern). Werte sie mit mindestens zwei Prompts nach dem P.R.O.M.P.T.-Framework aus:
+  einen für **Segmente** und einen für **Jobs-to-be-done, Pain Points und Gains**. Jeder Punkt
+  braucht Belegnummern.
+
+  **Runde 2 – Desk Research.** Recherchiere mit Websuche oder Deep Research drei Rahmenfakten,
+  etwa zu Ausgaben für Kinderbekleidung, Wachstumsrhythmus/Größenwechsel oder Second-Hand-Nutzung.
+  Prüfe jede Quelle mit der Tabelle aus Abschnitt 17.5 und dokumentiere das Ergebnis.
+
+  **Runde 3 – Die Komplikation.** Die KI liefert dir ein Segment „Eco-Premium-Eltern", das
+  hervorragend zur Markenstimme passt. Bei der Prüfung stellt sich heraus, dass es nur in zwei
+  Bewertungen vorkommt, während das häufigste Thema „Jacke passt nach einem Jahr nicht mehr" ist –
+  ein Problem, für das Fjordlicht bisher keine Antwort hat. Entscheide, wie du beides im Briefing
+  darstellst, und formuliere eine Empfehlung an die Produktentwicklung.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Kollegin aus dem Social-Media-Team schlägt vor,
+  das Briefing durch zehn „synthetische Interviews" mit KI-Eltern zu ergänzen – das gehe schneller
+  als echte Gespräche. **Widersprich** dort, wo synthetische Antworten echte Validierung ersetzen
+  sollen, und zeige, wofür sie trotzdem taugen (Kap. 18). Lege fest, welche zwei Aussagen deines
+  Briefings du mit echten Menschen prüfst und wie.
+
+  **Deliverable:**
+
+  1. fiktiver Datensatz und die verwendeten Prompts
+  2. Segmenttabelle und JTBD-/Pain-/Gain-Übersicht mit Belegnummern
+  3. Quellenprotokoll der Desk Research mit Prüfergebnis
+  4. einseitiges Zielgruppenbriefing mit Evidenzstufe je Aussage
+  5. Validierungsplan für zwei Aussagen und Stellungnahme zu Runde 4
+
+  **Fertig bist du erst, wenn** jede Aussage im Briefing eine Evidenzstufe trägt, keine Zahl ohne
+  geprüfte Quelle vorkommt, das unbequeme Thema aus Runde 3 sichtbar im Briefing steht und dein
+  Validierungsplan sagt, wer wann wie gefragt wird.
+tip: |
+  Der Lernwert liegt in Runde 3. KI-Analysen und Teams neigen gleichermaßen dazu, das Ergebnis zu
+  finden, das man sich wünscht. Ein gutes Briefing zeigt auch, was unbequem ist – gerade daraus
+  entstehen oft die besten Botschaften („Mitwachsende Ärmel" statt „nachhaltig und hochwertig").
+  Und: Synthetische Interviews erzeugen Fragen, keine Belege.
+solution: |
+  Bewertungskriterien: (1) die fiktiven Daten sind realistisch und enthalten Widersprüche, die
+  Prompts folgen dem P.R.O.M.P.T.-Framework und verlangen Belege; (2) Segmente und JTBD sind mit
+  Nummern belegt, schwach belegte Punkte als Hypothese markiert; (3) die Desk Research prüft
+  Herausgeber, Datum, Methode und Übertragbarkeit, ungeprüfte Zahlen fehlen im Briefing; (4) das
+  Briefing gewichtet nach Evidenz, nicht nach Wunschbild – „Eco-Premium-Eltern" erscheint als
+  Hypothese, das Größenproblem als gestützter Pain Point mit Empfehlung; (5) der Validierungsplan
+  ist konkret (zum Beispiel fünf Telefonate mit Eltern aus dem Newsletter, Story-Umfrage) und die
+  Stellungnahme zu Runde 4 grenzt Ideenfindung von Validierung klar ab.
+
+  Lernziel: Eine Zielgruppenanalyse mit KI so aufbauen, dass sie auf Daten beruht, Belege
+  ausweist und ehrlich zwischen Hypothese und Erkenntnis unterscheidet.

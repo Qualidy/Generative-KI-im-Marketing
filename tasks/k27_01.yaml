@@ -1,0 +1,34 @@
+title: Bot oder Mensch?
+difficulty: 1
+question: |
+  Entscheide für jede Nachricht an den CRM-Chatbot von Fjordlicht Business, ob der Bot
+  **selbst antwortet**, **qualifiziert** oder **an den Vertrieb übergibt** – und begründe kurz.
+
+  1. „Ab wie vielen Teilen macht ihr Logo-Stick?"
+  2. „Wir sind ein Kita-Träger mit vier Standorten und brauchen Regenjacken für das Team."
+  3. „Was kostet die Sølv bei 60 Stück mit Logo?"
+  4. „Die gelieferten Jacken haben den falschen Logo-Farbton. Das ist echt ärgerlich."
+  5. „Kann ich bitte mit jemandem sprechen?"
+  6. „Habt ihr auch Arbeitsschuhe?" (steht nicht in den Wissensdateien)
+
+  Welche Angabe muss der Bot in jedem Gespräch ganz am Anfang machen, und warum?
+tip: |
+  Der Bot darf alles, was in den Wissensdateien steht und nichts zusagt. Sobald es um
+  Geld, Ärger oder Unbekanntes geht, gehört der Fall zu einem Menschen.
+solution: |
+  | Nr. | Reaktion | Begründung |
+  |---|---|---|
+  | 1 | selbst antworten | Standardfrage, Antwort steht in der FAQ-Datei |
+  | 2 | qualifizieren | Projektanfrage, Leitfaden ab Schritt 2 |
+  | 3 | übergeben (nach Qualifizierung) | Preis = Angebot, nur Vertrieb |
+  | 4 | übergeben | Reklamation, keine Lösungsversprechen |
+  | 5 | übergeben, sofort | ausdrücklicher Wunsch nach Mensch |
+  | 6 | ehrlich sagen, Übergabe anbieten | nicht in Wissensdateien, nicht raten |
+
+  Bei Nr. 3 ist beides richtig: Der Bot kann zuerst Menge, Veredelung und Zeitrahmen
+  erfragen, damit der Vertrieb direkt ein Angebot erstellen kann – er nennt aber keinen
+  Preis.
+
+  Am Anfang jedes Gesprächs steht der **Hinweis, dass es sich um eine KI handelt**
+  (Art. 50 Abs. 1 AI Act, seit 02.08.2026), plus der Hinweis, wie man einen Menschen
+  erreicht, und ein Verweis auf die Datenschutzerklärung.

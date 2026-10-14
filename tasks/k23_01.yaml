@@ -1,0 +1,42 @@
+title: Prompt, Projekt oder Assistent?
+difficulty: 1
+question: |
+  Ordne jede der folgenden Aufgaben aus dem Fjordlicht-Marketingteam einer Lösung zu:
+  **Prompt-Vorlage**, **Projekt** oder **Assistent**. Begründe jede Zuordnung mit mindestens
+  zwei der fünf Kriterien aus Abschnitt 23.5 (Häufigkeit, Gleichartigkeit, Nutzerkreis, Wissen,
+  Qualitätsrisiko).
+
+  1. Jede Woche drei bis fünf Produkttexte für neue Artikel im Webshop, geschrieben von wechselnden
+     Personen im Team.
+  2. Eine einmalige Rede der Geschäftsführung zum zehnjährigen Firmenjubiläum.
+  3. Die Planung der Frühjahrskampagne über sechs Wochen mit Briefings, Moodboards, Texten und
+     Abstimmungsnotizen.
+  4. Täglich Antworten auf Instagram-Kommentare in Markenstimme, erledigt von zwei Community-
+     Managerinnen im Schichtwechsel.
+  5. Eine interne Notiz an dich selbst, welche Blogthemen du nächste Woche angehen willst.
+
+  Benenne anschließend die vier Bausteine, die der Assistent aus Fall 1 braucht, mit je einem
+  konkreten Inhalt.
+tip: |
+  Ein Projekt sammelt Material für ein Vorhaben, ein Assistent standardisiert eine wiederkehrende
+  Aufgabe. Frage dich: Wächst hier etwas über Wochen, oder wiederholt sich dieselbe Tätigkeit?
+solution: |
+  | Nr. | Lösung | Begründung |
+  |---|---|---|
+  | 1 | Assistent | wöchentlich, gleiches Schema, mehrere Personen, stabile Produktdaten, Außenwirkung |
+  | 2 | Prompt-Vorlage | einmalig, eine Person, Spezialwissen |
+  | 3 | Projekt | viele unterschiedliche Aufgaben, wachsende Unterlagen, begrenzte Laufzeit |
+  | 4 | Assistent | täglich, gleichartig, zwei Nutzerinnen, Markenstimme mit hohem Risiko |
+  | 5 | Prompt (oder gar keine KI) | einmalig, nur du, keine Außenwirkung |
+
+  Bausteine für Fall 1:
+
+  - **Instruktionen:** Rolle „Produkttexter:in in Fjordlicht-Markenstimme", Aufbau des Produkttexts,
+    keine Superlative, nur belegbare Nachhaltigkeitsaussagen, fehlende Daten als [FEHLT] markieren.
+  - **Wissen:** Styleguide, Produktdatenblatt (Material, Gewicht, Pflege), Claim-Liste,
+    zwei bis drei freigegebene Beispieltexte.
+  - **Werkzeuge:** keine Websuche (Gefahr fremder Produktangaben), keine Bildgenerierung.
+  - **Gesprächseinstieg:** „Produkttext aus Datenblatt erstellen", „Bestehenden Text kürzen".
+
+  Fall 4 ist ein Grenzfall: Sobald der Assistent selbst antwortet statt Entwürfe zu liefern,
+  gelten zusätzlich Transparenzpflichten (Kap. 27).

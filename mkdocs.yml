@@ -1,17 +1,55 @@
-site_name: "M1.1 WISO: Berufsbildung, Arbeits- u. Tarifrecht"
+site_name: "Prompt Engineering: Generative KI im Marketing"
 
 nav:
   - Übersicht: index.md
-  - "Kapitel 1 – Berufsbildung und Umschulung": content/kapitel1.md
-  - "Kapitel 2 – Ausbildungsvertrag": content/kapitel2.md
-  - "Kapitel 3 – Ausbildungsplan und Ausbildungsordnung": content/kapitel3.md
-  - "Kapitel 4 – Arbeitsrecht Grundlagen": content/kapitel4.md
-  - "Kapitel 5 – Sozialversicherung und Sozialrecht": content/kapitel5.md
-  - "Kapitel 6 – Mitbestimmungsrecht": content/kapitel6.md
-  - "Kapitel 7 – Tarifrecht und Arbeitszeit": content/kapitel7.md
-  - "Kapitel 8 – Entgeltabrechnung": content/kapitel8.md
-  - "Kapitel 9 – Lern- und Arbeitstechniken": content/kapitel9.md
-  - "Kapitel 10 – Lebenslanges Lernen und IT-Karriere": content/kapitel10.md
+  - "Block 1 · Einführung in KI und Marketing":
+      - "Kapitel 1 – Was ist Künstliche Intelligenz?": content/kapitel1.md
+      - "Kapitel 2 – Generative KI: Chancen und Grenzen": content/kapitel2.md
+      - "Kapitel 3 – Generative KI im Marketing": content/kapitel3.md
+      - "Kapitel 4 – Regulatorischer Rahmen und Best Practices": content/kapitel4.md
+  - "Block 2 · Prompt Engineering in der Praxis":
+      - "Kapitel 5 – Das P.R.O.M.P.T.-Framework": content/kapitel5.md
+      - "Kapitel 6 – Prompting Guide: Techniken": content/kapitel6.md
+      - "Kapitel 7 – Prompt-Hacks für den Marketing-Alltag": content/kapitel7.md
+      - "Kapitel 8 – Optimierung eigener Prompts mit KI": content/kapitel8.md
+      - "Kapitel 9 – Fehleranalyse & Troubleshooting": content/kapitel9.md
+      - "Kapitel 10 – Prompt-Bibliothek aufbauen und pflegen": content/kapitel10.md
+  - "Block 3 · KI-Copywriting & Content-Erstellung":
+      - "Kapitel 11 – Kollaboratives Schreiben: vom ChatGPT Canvas zu Schreibblöcken": content/kapitel11.md
+      - "Kapitel 12 – Redaktionsplanung & Brainstorming mit KI": content/kapitel12.md
+      - "Kapitel 13 – E-Mail-Marketing mit KI": content/kapitel13.md
+      - "Kapitel 14 – Social-Media-Texte mit KI": content/kapitel14.md
+      - "Kapitel 15 – Blogartikel & Leadmagnete": content/kapitel15.md
+      - "Kapitel 16 – ChatGPT für A/B-Tests von Textvarianten": content/kapitel16.md
+  - "Block 4 · Content-Optimierung mit KI":
+      - "Kapitel 17 – Zielgruppenanalyse mit KI": content/kapitel17.md
+      - "Kapitel 18 – Kundenavatar entwickeln und nutzen": content/kapitel18.md
+      - "Kapitel 19 – Social Listening mit KI": content/kapitel19.md
+      - "Kapitel 20 – Datenbasierte Optimierung von Textinhalten": content/kapitel20.md
+      - "Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing": content/kapitel21.md
+      - "Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche": content/kapitel22.md
+  - "Block 5 · KI-Assistenten & CustomGPT":
+      - "Kapitel 23 – Vom Prompt zum KI-Assistenten": content/kapitel23.md
+      - "Kapitel 24 – Aufbau eines KI-Marketingassistenten I: Konzeption": content/kapitel24.md
+      - "Kapitel 25 – Aufbau eines KI-Marketingassistenten II: Umsetzung und Test": content/kapitel25.md
+      - "Kapitel 26 – Praxisbeispiel Content-Assistent": content/kapitel26.md
+      - "Kapitel 27 – Praxisbeispiel CRM-Chatbot": content/kapitel27.md
+      - "Kapitel 28 – Konfiguration & Grenzen von CustomGPT": content/kapitel28.md
+  - "Block 6 · Bildgenerierung mit KI":
+      - "Kapitel 29 – Wie Bild-KI funktioniert": content/kapitel29.md
+      - "Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie": content/kapitel30.md
+      - "Kapitel 31 – Werkzeuge in der Praxis: ChatGPT Images, Midjourney, Ideogram, Adobe Firefly": content/kapitel31.md
+      - "Kapitel 32 – Visuelle Wirkung: Bildsprache, Komposition und Markenkonsistenz": content/kapitel32.md
+      - "Kapitel 33 – Bildserien und Kampagnenmotive": content/kapitel33.md
+      - "Kapitel 34 – Anwendungsgrenzen der Bild-KI": content/kapitel34.md
+  - "Block 7 · Multimediale Content Creation":
+      - "Kapitel 35 – KI-Videos: Text-to-Video und Animation": content/kapitel35.md
+      - "Kapitel 36 – Avatar-Videos und KI-Sprecher": content/kapitel36.md
+      - "Kapitel 37 – KI-Musik & Audio für Social Media": content/kapitel37.md
+      - "Kapitel 38 – Voice Cloning": content/kapitel38.md
+  - "Block 8 · Recht, Ethik & Ausblick":
+      - "Kapitel 39 – Urheberrecht, Transparenzpflichten und Ethik": content/kapitel39.md
+      - "Kapitel 40 – Marketingberufe im Wandel und KI im Arbeitsalltag": content/kapitel40.md
 
 theme:
   name: material
@@ -32,6 +70,7 @@ theme:
     - navigation.top
     - navigation.footer
     - navigation.prune
+    - navigation.indexes
     - toc.follow
     - toc.integrate
     - content.code.copy

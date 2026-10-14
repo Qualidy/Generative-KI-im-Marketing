@@ -1,0 +1,41 @@
+title: Bausteine erkennen und zuordnen
+difficulty: 1
+question: |
+  Ordne die Satzteile des folgenden Prompts den sechs Bausteinen des P.R.O.M.P.T.-Frameworks zu –
+  Persona, Request, Output, Modifier, Purpose, Tone. Bestimme anschließend, welcher Baustein
+  **fehlt** und was das für das Ergebnis bedeutet.
+
+  ```text
+  (a) Du bist Social-Media-Redakteur für eine Outdoor-Marke.
+  (b) Schreibe eine Instagram-Caption zum Rucksack Tind.
+  (c) Maximal 60 Wörter, danach höchstens fünf Hashtags.
+  (d) Keine Superlative, keine Preisangabe, keine Emojis.
+  (e) Ruhig und ehrlich, Du-Ansprache, trocken statt witzig-bemüht.
+  ```
+tip: |
+  Frage dich bei jedem Satzteil: Beantwortet er „wer", „was", „in welcher Form", „unter welchen
+  Regeln", „wozu und für wen" oder „wie klingt es"? Der fehlende Baustein ist derjenige, den
+  Marketingleute am häufigsten nur im Kopf haben.
+solution: |
+  | Satzteil | Baustein |
+  |---|---|
+  | (a) Social-Media-Redakteur | Persona |
+  | (b) Instagram-Caption zum Rucksack Tind | Request |
+  | (c) 60 Wörter, fünf Hashtags | Output |
+  | (d) keine Superlative, kein Preis, keine Emojis | Modifier |
+  | (e) ruhig, ehrlich, Du-Ansprache | Tone |
+
+  **Es fehlt der Purpose.** Das Modell weiß nicht, ob der Post Reichweite bringen, Bestandskunden
+  zum Kauf bewegen oder auf eine Veranstaltung hinweisen soll, und nicht, wer ihn liest
+  (Tagesausflügler, Familien, Mehrtageswanderer). Folge: eine sprachlich saubere, aber beliebige
+  Caption ohne klaren Handlungsimpuls. Eine mögliche Ergänzung:
+
+  ```text
+  Ziel: Follower sollen den Rucksack für Tagestouren mit Kindern
+  in Betracht ziehen und auf den Link in der Bio klicken.
+  Zielgruppe: Familien aus der Stadt, die am Wochenende wandern.
+  ```
+
+  Auch im Modifier fehlt etwas: Ohne Produktfakten wird das Modell Volumen, Gewicht oder Material
+  erfinden. Eine Zeile mit den belegten Fakten und die Regel „fehlende Angaben als [FEHLT]" würden
+  das verhindern.

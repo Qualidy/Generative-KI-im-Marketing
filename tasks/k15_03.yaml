@@ -1,0 +1,54 @@
+title: Faktencheck eines KI-Entwurfs
+difficulty: 3
+question: |
+  Ein KI-Entwurf für den Blog „Draußen-Notizen" enthält folgenden Absatz:
+
+  ```text
+  Laut einer Studie des Outdoor-Instituts München aus 2024 waschen
+  73 % der Deutschen ihre Regenjacke falsch. Dabei ist es ganz einfach:
+  Bei 60 Grad mit normalem Waschmittel waschen, danach in den Trockner -
+  die Wärme aktiviert die Imprägnierung. Fjordlicht-Jacken sind
+  ohnehin zu 100 % klimaneutral produziert, sodass du bei jeder Wäsche
+  ein gutes Gewissen haben kannst.
+  ```
+
+  1. Liste alle prüfbaren Behauptungen in einer Tabelle auf: Behauptung, Risiko, Prüfweg,
+     Entscheidung (behalten / ändern / streichen).
+  2. Formuliere den Absatz neu, sodass er nur noch belegbare oder deutlich als Empfehlung
+     gekennzeichnete Aussagen enthält. Nutze als Faktenbasis: Pflegeetikett „30 Grad
+     Feinwäsche, kein Weichspüler, Trockner schonend erlaubt"; Claim-Liste: „klimaneutral"
+     ist **nicht** freigegeben.
+  3. Schreibe einen Prompt, mit dem du künftig solche Absätze schon beim Schreiben verhinderst.
+tip: |
+  Unterscheide zwischen Aussagen, die falsch sein **können** (Studie), und Aussagen, die
+  nachweislich gegen deine Faktenbasis verstoßen (60 Grad, klimaneutral). Beide sind ein
+  Problem, aber das zweite ist ein sicherer Fehler mit Folgen für Produkt und Recht.
+solution: |
+  | Behauptung | Risiko | Prüfweg | Entscheidung |
+  |---|---|---|---|
+  | Studie Outdoor-Institut München 2024 | vermutlich erfunden | Institut und Studie suchen | streichen, solange nicht auffindbar |
+  | 73 % waschen falsch | Zahl ohne Beleg | Originalquelle | streichen |
+  | 60 Grad, normales Waschmittel | widerspricht dem Etikett, kann Jacke schädigen | Pflegeetikett | ändern |
+  | Trockner aktiviert Imprägnierung | teilweise richtig, aber verallgemeinert | Produktmanagement, Etikett | ändern, auf „schonend" begrenzen |
+  | 100 % klimaneutral produziert | nicht freigegeben, Greenwashing, UWG-Risiko | Claim-Liste | streichen |
+
+  Neufassung (Beispiel):
+
+  ```text
+  Viele Regenjackenprobleme entstehen beim Waschen. Für Fjordlicht-Jacken
+  gilt: 30 Grad im Feinwaschgang, ohne Weichspüler. Danach darf die Jacke
+  schonend in den Trockner - laut Etikett ist das erlaubt, und bei vielen
+  Imprägnierungen hilft die Wärme, den Abperleffekt aufzufrischen.
+  ```
+
+  Präventiver Prompt:
+
+  ```text
+  Nutze für Pflegehinweise ausschließlich dieses Etikett: [Etikett].
+  Nenne keine Studien und keine Prozentzahlen, die nicht im Briefing stehen.
+  Verwende nur Nachhaltigkeitsaussagen aus dieser Claim-Liste: [Liste].
+  Wo du eine Zahl oder Quelle brauchst, schreibe [QUELLE FEHLT].
+  ```
+
+  Bewertungskriterien: alle fünf Behauptungen erkannt, Etikett und Claim-Liste als Prüfmaßstab
+  genutzt, Neufassung ohne neue Behauptungen, Prompt mit Platzhalter für fehlende Quellen.

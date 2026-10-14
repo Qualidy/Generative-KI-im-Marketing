@@ -1,0 +1,50 @@
+title: Der Anruf um 16:40 Uhr
+difficulty: 3
+question: |
+  Freitag, 16:40 Uhr. Die Marketing-Assistenz bei Fjordlicht erhält diesen Anruf, die Stimme
+  klingt eindeutig nach der Geschäftsführerin, die gerade auf einer Messe ist:
+
+  ```text
+  "Hallo, ich bin's. Hier ist es laut, ich mach's kurz. Die Agentur
+  für die Herbstkampagne braucht heute noch die Anzahlung, sonst
+  verlieren wir den Slot. 18.500 Euro, die neue Kontonummer schicke
+  ich dir per WhatsApp. Bitte nicht über die Buchhaltung, die sind
+  schon im Wochenende. Ich verlass mich auf dich."
+  ```
+
+  Die Geschäftsführerin spricht regelmäßig in einem Branchenpodcast und veröffentlicht
+  LinkedIn-Videos.
+
+  1. Benenne **alle** Warnsignale im Anruf.
+  2. Beschreibe, wie die Assistenz in den nächsten zehn Minuten richtig reagiert.
+  3. Bewerte: Welche Rolle spielen die öffentlichen Auftritte der Geschäftsführerin? Sollte sie
+     deshalb auf Podcasts und Videos verzichten?
+  4. Entwirf drei verbindliche Regeln für Fjordlicht, die diesen Fall künftig verhindern, und
+     begründe, warum eine reine Schulung nicht reicht.
+tip: |
+  Gute Betrugsanrufe arbeiten mit **Zeitdruck, Autorität und Umgehung des normalen Wegs**. Die
+  Stimme selbst ist kein Beweis mehr. Schutz entsteht nicht durch besseres Hinhören, sondern
+  durch Prozesse, die unabhängig von der Stimme greifen.
+solution: |
+  Warnsignale: Zeitdruck („heute noch"), neue Kontonummer, Wechsel auf einen anderen Kanal
+  (WhatsApp), ausdrückliche Umgehung der Buchhaltung, Appell an Loyalität, Erklärung für
+  schlechte Erreichbarkeit („hier ist es laut"), Uhrzeit kurz vor Wochenende.
+
+  Richtige Reaktion: nichts zusagen, auflegen, Rückruf über die im System hinterlegte Nummer
+  der Geschäftsführerin, parallel Buchhaltung oder Stellvertretung informieren, keine
+  Überweisung ohne Vier-Augen-Prinzip, Vorfall an IT-Sicherheit melden und Rufnummer sowie
+  Uhrzeit notieren.
+
+  Zu den öffentlichen Auftritten: Sie liefern das Trainingsmaterial, sind aber für Marke und
+  Vertrieb wertvoll. Verzicht ist unverhältnismäßig und schützt wenig, weil oft schon genug
+  Material im Netz ist. Wirksamer ist, Prozesse so zu gestalten, dass eine Stimme allein nichts
+  auslösen kann.
+
+  | Regel | Begründung |
+  |---|---|
+  | Keine Zahlung und keine Kontoänderung auf telefonische oder Sprachnachricht-Anweisung | entzieht dem Klon die Wirkung |
+  | Neue Bankverbindungen nur nach Rückruf über hinterlegte Nummer und Freigabe durch Buchhaltung | zweiter, unabhängiger Kanal |
+  | Ausdrückliche Rückendeckung: Wer nachprüft, handelt richtig – auch gegenüber der Geschäftsführung | nimmt den Autoritätsdruck |
+
+  Schulung allein reicht nicht, weil Menschen unter Zeitdruck und bei vertrauter Stimme
+  zuverlässig Fehler machen. Regeln, die unabhängig vom Gefühl gelten, wirken auch dann.

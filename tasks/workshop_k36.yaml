@@ -1,0 +1,75 @@
+title: Erklärvideo-Serie für Fjordlicht Business
+difficulty: 4
+question: |
+  **Szenario:** Fjordlicht Business verkauft Firmenbekleidung an Handwerksbetriebe,
+  Outdoor-Schulen und Agenturen. Der Vertrieb beantwortet immer wieder dieselben Fragen. Du
+  sollst eine Serie aus **drei kurzen Erklärvideos** (je 45–60 Sekunden) mit Avatar und
+  KI-Sprecher konzipieren und – soweit Zugang besteht – ein Video umsetzen. Du kannst alternativ
+  ein Unternehmen deiner Wahl verwenden.
+
+  ```text
+  Rahmen:
+  Themen: 1) Wie bestelle ich mit Firmenlogo? 2) Wie läuft die Größenberatung?
+  3) Wie pflege ich die Kleidung, damit sie lange hält?
+  Sprachen: Deutsch, später Niederländisch
+  Kanäle: Website Fjordlicht Business, LinkedIn, Mail an Neukunden
+  Werkzeuge: ChatGPT (oder Alternative), eine Avatar-Plattform oder ein TTS-Werkzeug
+  mit Testkontingent
+  Markenstimme: ruhig, ehrlich, leicht nordisch-trocken, Du-Ansprache, keine Superlative
+  Fakten: nur aus [Produkt- und Prozessinfos], fehlende Angaben als [FEHLT]
+  ```
+
+  ---
+
+  **Runde 1 – Konzept.** Lege für die Serie fest: Avatar-Typ (Stock, eigener, Foto) mit
+  Begründung, Stimme, Aufbau eines Videos (Einstieg, Kern, Abschluss mit nächstem Schritt),
+  Einblendungen und eine Ausspracheliste der Produkt- und Markennamen.
+
+  **Runde 2 – Skripte.** Erstelle mit KI die drei Sprechskripte nach den Regeln aus
+  Abschnitt 36.3. Lies jedes laut mit Stoppuhr und überarbeite. Markiere alle Stellen, an denen
+  Fakten fehlen. Setze – wenn möglich – ein Video in einem Werkzeug um.
+
+  **Runde 3 – Die Komplikation.** Die niederländische Ein-Klick-Übersetzung von Video 2 liegt
+  vor. Eine niederländische Kollegin meldet: Die Ansprache wirkt zu förmlich, „Wassersäule"
+  wurde unverständlich übersetzt, und das Sprechtempo ist deutlich höher als im Original. Lege
+  einen Ablauf fest, mit dem solche Fehler künftig vor der Veröffentlichung auffallen, und
+  korrigiere das Skript.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Der Vertriebsleiter möchte statt eines
+  Stock-Avatars einen digitalen Zwilling von sich selbst – und schlägt vor, die Videos
+  zusätzlich auf Messen als „persönliche Begrüßung" laufen zu lassen, ohne Hinweis auf KI.
+  Wäge Nutzen und Risiken ab. **Widersprich**, wo es nötig ist, und formuliere eine Lösung, die
+  den Wunsch nach persönlicher Wirkung aufgreift.
+
+  **Deliverable:**
+
+  1. Serienkonzept mit Avatar-Entscheidung und Ausspracheliste
+  2. drei Sprechskripte (deutsch) mit gemessener Sprechdauer und markierten Lücken
+  3. Übersetzungs- und Abnahmeablauf sowie das korrigierte niederländische Skript zu Video 2
+  4. Entscheidungsvorlage zu Runde 4 inklusive Kennzeichnung je Kanal und Einwilligungspunkten
+  5. (falls umgesetzt) ein fertiges Video
+
+  **Fertig bist du erst, wenn** jedes Skript laut getestet ist und in die Zielzeit passt,
+  keine erfundenen Fakten enthalten sind, der Übersetzungsablauf eine menschliche Abnahme vorsieht
+  und deine Entscheidung in Runde 4 Einwilligung und Transparenz getrennt behandelt.
+tip: |
+  Die Technik ist der kleinere Teil. Der Lernkern liegt im Skript (Sprechen ist nicht Lesen),
+  in der Abnahme fremdsprachiger Fassungen und in Runde 4: Persönliche Wirkung durch eine Person,
+  die gar nicht spricht, ohne es zu sagen, untergräbt genau das Vertrauen, das sie erzeugen soll.
+solution: |
+  Bewertungskriterien: (1) Die Avatar-Wahl ist begründet (z. B. Stock-Avatar für einen schnellen,
+  einwilligungsfreien Start oder eigener Avatar mit Einwilligung), die Ausspracheliste enthält alle
+  Marken- und Produktnamen. (2) Die Skripte haben kurze Sätze, ausgeschriebene Zahlen, 90–150
+  Wörter je nach Länge, einen klaren nächsten Schritt am Ende und keine erfundenen Angaben;
+  Lücken sind mit [FEHLT] markiert. (3) Der Übersetzungsablauf lautet sinngemäß: Glossar und
+  Ansprache je Sprache festlegen → Skript übersetzen → Skript muttersprachlich prüfen → in der
+  Zielsprache kürzen statt beschleunigen → Video erzeugen → Video abnehmen. (4) Runde 4 trennt
+  Einwilligung (schriftlich, mit Widerruf und Regelung bei Ausscheiden) und Transparenz: Ein
+  realistischer Avatar einer realen Person, der fälschlich echt wirkt, ist nach Art. 50 Abs. 4
+  AI Act offenzulegen; auf der Messe ohne Hinweis ist das nicht vertretbar. Gute Lösungen
+  schlagen eine sichtbare Kennzeichnung vor, eine echte kurze Videobotschaft des
+  Vertriebsleiters als Ergänzung und klare Regeln für den Zugriff auf Avatar und Stimme
+  (Verweis Kap. 38).
+
+  Lernziel: Avatar-Videos und KI-Sprecher als effizientes Format für wiederkehrende Information
+  einsetzen – mit sprechgerechtem Skript, geprüften Sprachfassungen und ehrlicher Transparenz.

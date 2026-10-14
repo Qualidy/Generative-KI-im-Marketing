@@ -1,0 +1,39 @@
+title: Einen Werbeversprechen-Check durchführen
+difficulty: 3
+question: |
+  Die Geschäftsführung von Fjordlicht hat auf einer Messe folgende Aussagen eines Anbieters
+  gehört und möchte sie als Grundlage für die KI-Einführung übernehmen:
+
+  ```text
+  1. „Mit unserer Plattform erstellt ein Marketingteam zehnmal so viel Content."
+  2. „Die KI kennt eure Marke nach dem ersten Prompt."
+  3. „Prüfung ist nicht mehr nötig – unser Modell halluziniert nicht."
+  4. „KI-Texte ranken bei Google genauso gut wie menschliche."
+  5. „Ihr spart 70 Prozent eurer Marketingkosten."
+  ```
+
+  Bewerte jede Aussage kritisch: Was ist daran richtig, was irreführend, und welche Frage
+  würdest du dem Anbieter stellen? Formuliere zum Schluss in höchstens fünf Sätzen eine
+  realistische Erwartung, die du der Geschäftsführung stattdessen vorschlägst.
+tip: |
+  Fast jede Aussage hat einen wahren Kern. Die Kunst ist, die fehlende Bedingung zu finden:
+  unter welchen Voraussetzungen, für welche Aufgabe, inklusive welcher Kosten?
+solution: |
+  | Nr. | Wahrer Kern | Problem | Frage an den Anbieter |
+  |---|---|---|---|
+  | 1 | Entwürfe entstehen viel schneller | Menge ist kein Ziel; Prüfung skaliert nicht mit | Mehr Wirkung oder nur mehr Output? |
+  | 2 | Mit Styleguide im Kontext wird die Stimme besser | Ohne Beispiele und Regeln kennt das Modell die Marke nicht | Wie wird Markenwissen hinterlegt und gepflegt? |
+  | 3 | Mit Quellenbindung sinkt das Risiko | Kein Sprachmodell ist frei von Halluzinationen (Kap. 2) | Welche Fehlerquote wurde wie gemessen? |
+  | 4 | Google bewertet Qualität, nicht Entstehungsweise | Massenhaft erzeugter Inhalt zur Rankingmanipulation gilt als Spam (Kap. 22) | Wie sichert ihr Qualität und eigene Erfahrung? |
+  | 5 | Einzelne Aufgaben werden deutlich günstiger | Pauschalwert ohne Aufgabenbezug, Lizenz- und Prüfkosten fehlen | Für welche Aufgaben, inklusive welcher Kosten? |
+
+  Beispiel für eine realistische Erwartung:
+
+  „Wir erwarten deutliche Zeitersparnis bei wiederkehrenden Texten mit bekannten Fakten, etwa
+  Betreffzeilen, Varianten und Kanaladaptionen. Strategie, Prüfung und Freigabe bleiben beim
+  Team. Wir starten mit drei Einsatzfeldern und messen die Zeit inklusive Prüfung. Nach acht
+  Wochen entscheiden wir auf Basis dieser Zahlen über den Ausbau. Mehr Inhalt ist kein Ziel,
+  bessere Inhalte schon."
+
+  Bewertungskriterien: Jede Aussage wird differenziert statt pauschal verworfen, die
+  Prüfkosten werden mitgedacht, und die Erwartung ist messbar formuliert.

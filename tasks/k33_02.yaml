@@ -1,0 +1,42 @@
+title: Eine Dreierserie mit festem Prompt-Gerüst
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug.
+
+  Fjordlicht braucht für Instagram (4:5) eine Serie aus drei Posts zum Fleece „Skog" unter dem
+  Motto „Die ersten kalten Morgen". Eine fiktive, wiederkehrende Figur soll alle drei Bilder
+  tragen. Du kannst auch ein Produkt und eine Figur für ein Unternehmen deiner Wahl verwenden.
+
+  1. **Steckbrief.** Lege einen Figuren-Steckbrief mit mindestens fünf sichtbaren Merkmalen an.
+  2. **Gerüst.** Schreibe ein Prompt-Gerüst nach dem Muster aus Abschnitt 33.2 mit festen
+     Teilen und höchstens drei variablen Platzhaltern in eckigen Klammern.
+  3. **Serie.** Erzeuge drei Motive (zum Beispiel Kaffee am Zelt, Radweg zur Arbeit, Hund
+     ausführen). Nutze ab Bild 2 das erste gelungene Bild als Referenz.
+  4. **Prüfen.** Bewerte die Serie: Wo hält die Konsistenz, wo nicht? Korrigiere mindestens
+     eine Abweichung durch Bearbeitung statt durch Neugenerierung.
+tip: |
+  Je mehr variable Teile dein Gerüst hat, desto mehr driftet die Serie auseinander. Wenn die
+  Figur trotz Referenz wechselt, prüfe zuerst, ob der Steckbrief wirklich wortgleich in jedem
+  Prompt steht.
+solution: |
+  Beispiel-Steckbrief und Gerüst:
+
+  ```text
+  Figur: Mann, Anfang 40, kurzer dunkelgrauer Vollbart, Brille mit dünnem
+  Metallrahmen, schlank, trägt ein flaschengrünes Fleece mit Stehkragen und
+  eine dunkle Mütze.
+
+  [Figur] [Handlung] in [Ort] an einem kalten Oktobermorgen, Atem sichtbar,
+  weiches diffuses Licht, leichter Bodennebel. Person auf der linken
+  Drittellinie, nicht in die Kamera blickend, obere 30 Prozent ruhige Fläche.
+  Format 4:5. Gedämpfte, entsättigte Naturtöne, dokumentarischer Fotolook,
+  leichte Filmkörnung. Vermeide: Hochglanz, Posen, Siegergesten.
+  ```
+
+  Typische Beobachtungen: Stil und Licht bleiben mit Gerüst sehr stabil; die Figur weicht
+  in Details ab (Bartlänge, Brillenform, Mütze), auch mit Referenz. Das Fleece verändert
+  Kragen und Reißverschluss – ein Hinweis, dass für die Veröffentlichung ein echtes
+  Produktfoto oder eine Prüfung gegen das Produkt nötig ist.
+
+  Eine gute Bearbeitung enthält Steckbrief, Gerüst, drei Bilder, eine Liste der Abweichungen
+  und eine dokumentierte Korrektur per Bearbeitung mit der Anweisung, was gleich bleiben soll.

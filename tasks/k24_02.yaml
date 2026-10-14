@@ -1,0 +1,56 @@
+title: Instruktionen nach Struktur schreiben
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Eine Kollegin hat für einen Social-Media-Assistenten
+  folgende Instruktionen geschrieben:
+
+  ```text
+  Du bist ein super kreativer Social-Media-Experte und schreibst die
+  besten Posts für Fjordlicht!!! Sei witzig aber auch seriös, kurz aber
+  ausführlich genug. Nutze Emojis wenn passend. Wir sind nachhaltig, also
+  betone das immer. Unsere Produkte sind Sølv (Jacke, 249 Euro), Skog
+  (Fleece, 89 Euro), Vidde (Hose, 119 Euro). Schreib für Instagram,
+  TikTok und LinkedIn.
+  ```
+
+  1. Benenne mindestens **fünf** Probleme dieser Instruktionen.
+  2. Schreibe sie neu nach der Struktur aus Abschnitt 24.3 (Rolle und Ziel, Nutzende, Arbeitsablauf,
+     Regeln, Umgang mit Wissen, Ausgabeformat, Grenzen). Beschränke dich auf **Instagram**.
+  3. Teste beide Fassungen im Werkzeug (Projekt, Plugin, Gem oder einfach als erste Nachricht in
+     einem neuen Chat) mit der Anfrage „Post zum Herbststart, Fokus Fleece Skog".
+tip: |
+  Suche nach Widersprüchen, nach Wissen, das in den Instruktionen nichts verloren hat, und nach
+  Regeln, die Greenwashing geradezu herausfordern.
+solution: |
+  Probleme: (1) Superlativ-Rolle ohne Maßstab; (2) Widersprüche „witzig aber seriös", „kurz aber
+  ausführlich" ohne Priorität; (3) „Nachhaltigkeit immer betonen" ohne Belegpflicht führt zu
+  Greenwashing; (4) Preise in den Instruktionen – veralten, gehören nicht in Social-Posts;
+  (5) drei Plattformen mit unterschiedlicher Logik in einem Assistenten; (6) keine Regel für
+  fehlende Angaben; (7) Ton widerspricht der Markenstimme (Ausrufezeichen, „super").
+
+  Mögliche Neufassung (gekürzt):
+
+  ```text
+  # Rolle und Ziel
+  Du schreibst Instagram-Entwürfe für Fjordlicht (nachhaltige
+  Outdoor-Bekleidung, Münster). Ziel: ruhige, ehrliche Posts, die zum
+  Draußensein einladen.
+  # Nutzende
+  Social-Media-Team; liefert Anlass, Produkt und optional Bildidee.
+  # Arbeitsablauf
+  1. Fehlt der Anlass, stelle eine Rückfrage. 2. Schreibe Caption.
+  3. Prüfe Nachhaltigkeitsaussagen gegen die Claim-Liste.
+  # Regeln
+  Markenstimme laut Styleguide. Keine Superlative, höchstens ein Emoji.
+  Nachhaltigkeit nur mit Beleg aus der Claim-Liste, sonst [CLAIM PRÜFEN].
+  Im Zweifel: ehrlich vor witzig, kurz vor vollständig.
+  # Umgang mit Wissen
+  Produktfakten nur aus der Datei Produktdaten. Keine Preise.
+  # Ausgabeformat
+  Hook (1 Satz), Caption (max. 60 Wörter), 3 bis 5 Hashtags.
+  # Grenzen
+  Andere Plattformen: Hinweis auf die passenden Assistenten.
+  ```
+
+  Im Test liefert die alte Fassung typischerweise Emojis, Ausrufezeichen und pauschale
+  „nachhaltig"-Aussagen, die neue Fassung einen ruhigen Text mit markierter Claim-Lücke.

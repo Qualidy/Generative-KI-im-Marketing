@@ -1,0 +1,46 @@
+title: Plattformstrategie für die Assistenten
+difficulty: 3
+question: |
+  Die Geschäftsführung von Fjordlicht ist nach der Ankündigung vom 11.09.2026 verunsichert:
+  „Wenn OpenAI jetzt GPTs abschafft, sollten wir dann überhaupt noch Assistenten in ChatGPT
+  bauen?" Drei Positionen stehen im Raum:
+
+  - **A:** Alles sofort zu Plugins migrieren und weiter ausschließlich auf ChatGPT setzen.
+  - **B:** Zu einem anderen Anbieter wechseln, etwa Claude Projects oder Copilot Agents,
+    weil dort „mehr Stabilität" herrsche.
+  - **C:** Keine Assistenten mehr bauen, nur noch Prompt-Bibliothek (Kap. 10).
+
+  Bewerte die drei Positionen nach **Aufwand**, **Risiko** und **Nutzen für das Team**.
+  Entwickle eine eigene Empfehlung in höchstens zehn Sätzen, die konkrete Maßnahmen gegen
+  Plattformabhängigkeit enthält. Begründe, warum ein Wechsel des Anbieters das Grundproblem
+  nicht löst.
+tip: |
+  Die Frage ist nicht, welcher Anbieter stabil bleibt – das weiß niemand. Die Frage ist,
+  wie teuer der nächste Umzug wird. Denk an das, was du selbst in der Hand hast.
+solution: |
+  | Position | Aufwand | Risiko | Nutzen |
+  |---|---|---|---|
+  | A | gering bis mittel (Actions neu) | Abhängigkeit bleibt unverändert | hoch, Team arbeitet weiter |
+  | B | hoch: Neuaufbau, Schulung, Verträge | gleiches Grundrisiko bei anderem Anbieter | unklar, Umstellungsverluste |
+  | C | gering | Qualitätsverlust, Wildwuchs zurück | gering bis mittel |
+
+  Beispielempfehlung:
+
+  ```text
+  Wir migrieren den Content-Assistenten und den CRM-Prototyp bis Ende November zu Plugins und
+  testen beide mit dem bestehenden Testsatz. Instruktionen, Wissensdateien und
+  Testfälle pflegen wir ab sofort versioniert in unserer eigenen Ablage; die
+  Plattform ist nur der Ort, an dem sie laufen. Neue Schnittstellen bauen wir
+  bevorzugt über offene Standards wie MCP oder über eine Automatisierungsplattform,
+  nicht als plattformspezifische Custom Action. Einmal im Jahr prüfen wir mit
+  einem Testlauf, ob ein Assistent in einem zweiten Werkzeug (z. B. Claude
+  Projects) mit vertretbarem Aufwand lauffähig wäre. Für jeden Assistenten gibt
+  es eine verantwortliche Person.
+  ```
+
+  Ein Anbieterwechsel löst das Problem nicht, weil jede Plattform ihre Funktionen ändern
+  kann; er tauscht nur eine Abhängigkeit gegen eine andere und kostet dabei den
+  Umstellungsaufwand. Unabhängigkeit entsteht durch **eigene, portable Bausteine**.
+
+  Bewertungskriterien: alle drei Positionen in drei Dimensionen bewertet, Empfehlung mit
+  mindestens drei konkreten Maßnahmen, korrekte Bezugnahme auf die Migrationsfakten.

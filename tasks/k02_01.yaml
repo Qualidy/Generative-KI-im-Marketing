@@ -1,0 +1,27 @@
+title: Welche Grenze steckt dahinter?
+difficulty: 1
+question: |
+  Ordne jede Situation einer Grenze aus diesem Kapitel zu – **Halluzination**, **Bias**,
+  **Wissensstand**, **Konsistenz** oder **Datenschutz** – und nenne ein passendes Gegenmittel.
+
+  1. ChatGPT empfiehlt für den Blog eine „aktuelle Studie der Universität Lund von 2025" mit Link. Der Link führt ins Leere.
+  2. Drei Kolleginnen lassen Instagram-Texte „im Fjordlicht-Stil" schreiben – einer klingt verspielt, einer werblich, einer nüchtern.
+  3. Auf die Frage nach dem neuen Instagram-Format der letzten Woche beschreibt das Tool eine Funktion, die es seit Jahren gibt.
+  4. Ein Praktikant kopiert einen CRM-Export mit Namen und Bestellhistorie in sein privates ChatGPT-Konto.
+  5. Fünf generierte Personas für „Familien, die wandern" zeigen ausschließlich Vater, Mutter, zwei Kinder, alle sportlich.
+  6. Ein Produkttext für den Rucksack „Tind" nennt „Bergsteiger-geprüft am Mont Blanc".
+tip: |
+  Manche Situationen berühren zwei Grenzen. Entscheide dich für die Hauptursache und nenne die
+  zweite, wenn sie wichtig ist.
+solution: |
+  | Nr. | Grenze | Gegenmittel |
+  |---|---|---|
+  | 1 | Halluzination (Quelle erfunden) | jede Quelle öffnen und prüfen; Websuche nutzen und Aussage auf der Quellseite gegenlesen |
+  | 2 | Konsistenz | gemeinsame Beschreibung der Markenstimme mit Beispielen in Prompt-Bibliothek oder Projekt |
+  | 3 | Wissensstand | Websuche aktivieren oder aktuelle Information selbst mitliefern |
+  | 4 | Datenschutz | keine personenbezogenen Daten in private Konten; nur freigegebener Tarif mit AVV, Daten minimieren |
+  | 5 | Bias | Zielgruppe konkret und vielfältig beschreiben, Ergebnis auf fehlende Gruppen prüfen |
+  | 6 | Halluzination (Produkteigenschaft) | nur gelieferte Fakten verwenden lassen, `[FEHLT]`-Regel, Faktencheck vor Veröffentlichung |
+
+  Fall 1 berührt zusätzlich den Wissensstand, Fall 6 ist besonders riskant, weil eine erfundene
+  Produkteigenschaft als irreführende Werbung gelten kann.

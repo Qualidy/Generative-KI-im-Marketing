@@ -1,0 +1,45 @@
+title: Vom vagen zum präzisen Musik-Prompt
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Du brauchst ChatGPT (oder Claude, Gemini) und –
+  falls verfügbar – ein KI-Musikwerkzeug wie Suno, ElevenLabs Music oder Google Flow Music. Ohne
+  Musikwerkzeug bearbeitest du die Schritte 1 bis 3 und bewertest die Prompts nur schriftlich.
+
+  Ausgangslage: Fjordlicht zeigt in einem 20-Sekunden-Reel, wie das Fleece „Skog" an einem
+  kalten Morgen am See angezogen wird. Ab Sekunde 12 spricht eine Stimme einen kurzen Satz.
+
+  1. Schreibe den Prompt, den du spontan tippen würdest.
+  2. Lass dir von ChatGPT mit dem Music-Supervisor-Prompt aus Abschnitt 37.3 **drei** Prompts in
+     unterschiedliche Richtungen formulieren.
+  3. Prüfe alle drei gegen die sechs Bausteine (Genre, Stimmung, Tempo, Instrumente, Gesang,
+     Struktur und Länge). Ergänze, was fehlt, insbesondere: Was passiert ab Sekunde 12?
+  4. Erzeuge mit deinem spontanen und dem besten überarbeiteten Prompt je einen Track und
+     vergleiche.
+tip: |
+  Die Sprechstelle ab Sekunde 12 ist der Prüfstein. Ein Track, der genau dort lauter wird oder
+  Gesang einsetzt, ist unbrauchbar, auch wenn er schön klingt. Schreib so etwas ausdrücklich in
+  den Prompt.
+solution: |
+  Beispiel für einen überarbeiteten Prompt:
+
+  ```text
+  Instrumental, keine Stimme.
+  Genre: akustischer Nordic Folk, minimalistisch.
+  Stimmung: kühl, klar, still; langsam wärmer werdend.
+  Tempo: ca. 70 BPM.
+  Instrumente: Akustikgitarre, Klavier gedämpft, leise Streicher.
+  Kein Schlagzeug, keine Synthesizer, kein Gesang.
+  Struktur: 0-12 s Thema mit Gitarre; ab 12 s deutlich leiser,
+  nur noch Streicherfläche unter gesprochenem Text; Ende bei 20 s,
+  letzter Ton klingt kurz aus.
+  ```
+
+  | Baustein | Spontaner Prompt | Überarbeitet |
+  |---|---|---|
+  | Genre, Stimmung | meist vage („ruhig") | konkret, mit Entwicklung |
+  | Tempo, Instrumente | fehlen | BPM, Besetzung, Ausschlüsse |
+  | Struktur | fehlt | Sprechstelle berücksichtigt |
+
+  Typische Beobachtung: Der spontane Prompt liefert Gesang oder eine Steigerung genau unter der
+  Sprechstelle. Eine gute Bearbeitung benennt das und zeigt, dass der Strukturbaustein das
+  behebt.

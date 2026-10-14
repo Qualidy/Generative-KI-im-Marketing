@@ -1,0 +1,45 @@
+title: Halluzinationen aufspüren
+difficulty: 2
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug. Du brauchst dieses (fiktive) Faktenblatt:
+
+  ```text
+  Produkt: Fleece „Skog", Fjordlicht
+  Material: 80 % recyceltes Polyester (aus PET-Flaschen)
+  Gewicht: 320 g (Größe M)
+  Passform: regular, für Lagenbekleidung geeignet
+  Farben: Moosgrün, Fjordgrau, Sand
+  Preis: 89 Euro
+  Hergestellt in: Portugal
+  Nicht vorhanden: Zertifikate, CO2-Angaben, Testergebnisse
+  ```
+
+  1. **Ohne Fakten:** Öffne einen neuen Chat und gib ein:
+     `Schreibe einen Produkttext (ca. 80 Wörter) für das Fleece „Skog" der nachhaltigen Outdoor-Marke Fjordlicht.`
+  2. Markiere im Ergebnis **jede** Aussage, die nicht im Faktenblatt steht. Unterscheide:
+     harmlose Stimmungsbeschreibung oder riskante Tatsachenbehauptung?
+  3. **Mit Fakten:** Öffne einen neuen Chat, gib das Faktenblatt mit und ergänze die Regel aus
+     Abschnitt 2.2 („Nutze ausschließlich …", `[FEHLT]`). Markiere erneut.
+  4. Vergleiche beide Fassungen in einer kleinen Tabelle: Anzahl riskanter Behauptungen,
+     Qualität des Textes, verbleibender Prüfaufwand.
+tip: |
+  Achte besonders auf Nachhaltigkeitsaussagen wie „klimaneutral", „fair produziert",
+  „umweltfreundlich" und auf Zahlen. Sie sind für Fjordlicht das größte Risiko, weil die Marke
+  nur belegbare Aussagen machen will.
+solution: |
+  Typisches Ergebnis:
+
+  | | Ohne Fakten | Mit Fakten und Regel |
+  |---|---|---|
+  | Riskante Behauptungen | meist zwei bis fünf, z. B. „fair produziert", „klimaneutral", „aus Bio-Materialien", erfundenes Gewicht | in der Regel keine; selten eine weiche Formulierung wie „umweltbewusst" |
+  | Textqualität | flüssig, aber allgemein und werblich | konkreter, glaubwürdiger, etwas nüchterner |
+  | Prüfaufwand | jeder Satz muss geprüft werden | Abgleich mit dem Faktenblatt genügt weitgehend |
+
+  Wichtige Unterscheidung: „Kuschelig an kühlen Herbstmorgen" ist eine Stimmungsbeschreibung und
+  unkritisch. „Klimaneutral hergestellt" ist eine Tatsachenbehauptung, die ohne Beleg als
+  irreführend gelten kann. Gerade weil beides im selben Ton geschrieben ist, fällt der
+  Unterschied beim schnellen Lesen kaum auf.
+
+  Auch mit Faktenblatt bleibt ein Restrisiko: Das Modell kann Fakten leicht verändern
+  („aus recycelten Materialien" statt „80 % recyceltes Polyester") oder zuspitzen. Der Abgleich
+  mit dem Faktenblatt vor der Veröffentlichung entfällt also nicht.

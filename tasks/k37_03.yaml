@@ -1,0 +1,47 @@
+title: Lizenz-Check für einen KI-Track
+difficulty: 3
+question: |
+  Eine Werkstudentin hat für Fjordlicht einen KI-Track erzeugt und unter ein Reel gelegt, das
+  morgen auch als bezahlte Anzeige laufen soll. Sie schickt dir diese Notiz:
+
+  ```text
+  Track: "Morgennebel", erzeugt mit Suno
+  Prompt: "Indie Folk wie [bekannte Band], ruhig, männliche Stimme,
+  Text über Wandern im Regen"
+  Konto: mein privates Konto, Free-Plan; habe aber gestern
+  ein Abo abgeschlossen
+  Verwendung: Reel + Paid Ad auf Instagram, später Webshop
+  Sie meint: "Ist ja KI, gehört also niemandem."
+  ```
+
+  1. Benenne **alle** Probleme, die du in der Notiz erkennst, und ordne sie nach Gewicht.
+  2. Bewerte die Aussage „Ist ja KI, gehört also niemandem" – was daran stimmt, was nicht?
+  3. Ordne die Urteile des LG München I (GEMA ./. OpenAI, GEMA ./. Suno) ein: Was bedeuten sie
+     für diesen Fall, was nicht?
+  4. Formuliere eine Entscheidung: Darf der Track morgen laufen? Wenn nein, was ist der
+     schnellste saubere Ersatz?
+tip: |
+  Achte auf den Zeitpunkt: Bei Suno zählt der Tarif zum Zeitpunkt der **Erzeugung**, nicht zum
+  Zeitpunkt der Veröffentlichung. Und „gehört niemandem" ist halb richtig – genau die falsche
+  Hälfte macht den Fehler aus.
+solution: |
+  | Problem | Gewicht | Begründung |
+  |---|---|---|
+  | Erzeugt im Free-Plan | hoch | kommerzielle Nutzung nur für Songs, die während eines Bezahl-Abos erzeugt wurden; nachträgliches Abo heilt das nicht |
+  | Privates Konto | hoch | Nutzungsrechte liegen bei der Person, nicht beim Unternehmen; nicht dokumentiert |
+  | Künstlername im Prompt | mittel bis hoch | Risiko, einem geschützten Werk zu nahe zu kommen |
+  | Paid Ad und Webshop | mittel | breiter, bezahlter Einsatz erhöht das Risiko |
+  | KI-Stimme mit Gesang | gering bis mittel | prüfen, ob sie einer realen Person ähnelt |
+
+  Zur Aussage: Richtig ist, dass rein KI-erzeugte Musik in Deutschland in der Regel **nicht
+  urheberrechtlich geschützt** ist (§ 2 Abs. 2 UrhG) – Fjordlicht könnte sie also nicht gegen
+  Nachahmer verteidigen. Falsch ist der Schluss, sie sei frei nutzbar: Die Nutzungsbedingungen
+  des Tools gelten, und der Output kann Rechte Dritter verletzen.
+
+  Zu den Urteilen: Beide sind **nicht rechtskräftig** und richten sich gegen die Anbieter.
+  Sie machen die Werkstudentin nicht haftbar, zeigen aber, dass die Grundlage solcher Modelle
+  rechtlich umstritten ist – ein Grund mehr, bei bezahlten Anzeigen vorsichtig zu sein.
+
+  Entscheidung: Der Track läuft morgen nicht. Schnellster Ersatz: ein Stock-Track mit
+  kanalübergreifender Lizenz oder ein neu erzeugter Track im Unternehmenskonto mit Bezahlplan,
+  ohne Künstlernamen, mit dokumentiertem Prompt, Datum und Tarif.

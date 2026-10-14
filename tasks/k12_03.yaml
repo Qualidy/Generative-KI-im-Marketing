@@ -1,0 +1,44 @@
+title: KI-Bewertung von Ideen kritisch prüfen
+difficulty: 3
+question: |
+  Diese Übung machst du direkt im KI-Werkzeug.
+
+  1. Lass dir mit einem Ideen-Fächer (Zielgruppe × Format × Anlass) **15 Content-Ideen** für
+     Fjordlicht im Januar erzeugen.
+  2. Lass die KI die Ideen nach dem gewichteten Bewertungsraster aus Abschnitt 12.6 bewerten
+     (Zielgruppenrelevanz 3, Markenpassung 3, Aufwand 2, Wiederverwertbarkeit 1, Ziel-Beitrag 2;
+     Skala 1–5).
+  3. Bewerte **dieselben** 15 Ideen unabhängig selbst, ohne die KI-Bewertung anzusehen.
+  4. Vergleiche beide Rangfolgen: Wo weichen sie am stärksten ab, und woran liegt es?
+  5. Verbessere den Bewertungsprompt so, dass die Schwächen, die du gefunden hast, kleiner werden.
+tip: |
+  Typische Abweichungen entstehen bei Aufwand und Markenpassung, weil die KI eure Ressourcen und
+  eure Geschichte nicht kennt. Prüfe auch, ob die KI-Punktzahlen auffällig eng beieinander liegen.
+solution: |
+  Typische Beobachtungen:
+
+  - Die KI vergibt **wenig Spreizung** (viele Ideen zwischen 3,5 und 4,2) und bewertet eigene
+    Ideen eher wohlwollend.
+  - **Aufwand** wird unterschätzt, etwa bei Videoformaten, weil Drehaufwand und Freigaben nicht
+    bekannt sind.
+  - **Markenpassung** wird überschätzt, wenn eine Idee formal zu „nachhaltig" passt, aber
+    Greenwashing-Risiko hat (z. B. „Wie Fjordlicht das Klima schützt").
+  - Bei **Zielgruppenrelevanz** liegt die KI oft nah am Team.
+
+  Verbesserter Bewertungsprompt (Auszug):
+
+  ```text
+  Bewerte die Ideen nach dem Raster unten. Regeln:
+  - Erzwinge eine Rangfolge: keine zwei Ideen mit gleicher Gesamtpunktzahl.
+  - Nutze die volle Skala von 1 bis 5.
+  - Aufwand: Unser Team hat 5 Personen, keine eigene Videoproduktion,
+    Freigaben dauern 3 Tage.
+  - Markenpassung: Vergib höchstens 2 Punkte, wenn die Idee eine
+    Nachhaltigkeitsaussage braucht, die nicht in dieser Liste steht: [Claim-Liste].
+  - Nenne für die Top 3 jeweils das stärkste Gegenargument.
+  ```
+
+  Bewertungskriterien: eigene Bewertung unabhängig erstellt, mindestens drei konkrete
+  Abweichungen mit Ursache benannt, verbesserter Prompt enthält Kontext zu Ressourcen und
+  Claims sowie eine Regel gegen eng beieinanderliegende Punktzahlen. Lernziel: KI-Bewertungen
+  sind Vorsortierung, keine Entscheidung.

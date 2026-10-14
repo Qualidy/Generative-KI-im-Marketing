@@ -1,0 +1,30 @@
+title: Welche Kennzahl misst welchen Text?
+difficulty: 1
+question: |
+  Das Fjordlicht-Team möchte wissen, ob seine Texte funktionieren. Ordne jeder Frage die
+  **passende Hauptkennzahl** zu und begründe kurz, warum andere Kennzahlen hier weniger taugen.
+
+  1. Funktionieren unsere neuen Newsletter-Betreffzeilen besser als die alten?
+  2. Bringt der neue Aufbau des Newsletters (Kurzintro, drei Kacheln, ein Button) mehr Besuche
+     im Shop?
+  3. Werden unsere Blogartikel in den „Draußen-Notizen" tatsächlich gelesen?
+  4. Überzeugt der überarbeitete Produkttext der Regenjacke „Sølv"?
+  5. Sind unsere Instagram-Reels nützlich genug, dass Leute sie aufheben?
+
+  Zur Auswahl: Öffnungsrate · Klickrate · Engagement-Zeit (GA4) · Conversion-Rate der
+  Produktseite · Saves · Likes · Seitenaufrufe
+tip: |
+  Frage dich jeweils: Welches Textelement wird verändert – und welche Kennzahl reagiert **nur**
+  oder **vor allem** auf dieses Element? Zwei der Kennzahlen in der Liste sind Eitelkeitskennzahlen.
+solution: |
+  | Nr. | Hauptkennzahl | Begründung |
+  |---|---|---|
+  | 1 | Öffnungsrate | misst Betreff und Preheader; als Trend nutzen, weil Apple Mail Privacy Protection Öffnungen künstlich erhöht |
+  | 2 | Klickrate (bzw. Klick-zu-Öffnungsrate) | misst, ob Inhalt und Aufbau zum Klick führen; die Öffnungsrate ist vom Aufbau unabhängig |
+  | 3 | Engagement-Zeit in GA4 | zeigt, ob gelesen wird; Seitenaufrufe zeigen nur, dass jemand kam |
+  | 4 | Conversion-Rate der Produktseite | Ziel ist der Kauf; Vorsicht, Preis, Bilder und Lieferzeit wirken mit |
+  | 5 | Saves | Speichern ist das klarste Signal für Nützlichkeit; Likes sind schneller und unverbindlicher |
+
+  Nicht gewählt: **Likes** und **Seitenaufrufe** sind Eitelkeitskennzahlen. Sie zeigen
+  Aufmerksamkeit, aber nicht, ob der Text seinen Zweck erreicht hat. Sie dürfen als
+  Nebenkennzahl mitlaufen, sollten aber keine Textentscheidung allein begründen.

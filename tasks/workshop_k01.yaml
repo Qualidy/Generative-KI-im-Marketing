@@ -1,0 +1,82 @@
+title: KI-Landkarte für ein Marketingteam
+difficulty: 4
+question: |
+  **Szenario:** Die Marketingleitung von Fjordlicht hat beschlossen, „KI ab sofort systematisch
+  zu nutzen". Im Team herrscht ein Mix aus Begeisterung, Skepsis und Unwissen: Eine Kollegin
+  nutzt ChatGPT täglich, ein Kollege hält es für eine Spielerei, die Werkstudentin glaubt, das
+  Tool kenne alle Fjordlicht-Produkte. Du sollst die Grundlagenarbeit leisten: eine Landkarte,
+  welche Aufgaben im Team von KI profitieren – und eine verständliche Erklärung, wie die
+  Werkzeuge funktionieren. Du kannst statt Fjordlicht auch ein Unternehmen deiner Wahl nutzen.
+
+  ```text
+  Rahmen:
+  Marketingteam mit 5 Personen.
+  Kanäle: Webshop, Blog, Newsletter, Instagram, TikTok, LinkedIn, Pinterest.
+  Werkzeug: ChatGPT im Team-Tarif, alternativ Claude, Gemini oder Copilot.
+  Keine Programmierkenntnisse im Team, kein Entwicklungsbudget.
+  Keine echten Kundendaten verwenden.
+  ```
+
+  ---
+
+  **Runde 1 – Aufgaben erfassen und einordnen.** Liste **mindestens zehn konkrete Aufgaben** des
+  Teams auf, formuliert als Tätigkeit („Betreffzeilen für den Monatsnewsletter formulieren",
+  nicht „Newsletter"). Ordne jeder Aufgabe zu: Häufigkeit, eher regelbasiert oder eher
+  urteilsbasiert, passendes KI-Teilgebiet (generative KI, Sprachverarbeitung, Computer Vision,
+  Machine Learning) **oder** „klassische Automatisierung genügt". Lass dir beim Sammeln von deinem
+  KI-Werkzeug helfen, aber entscheide die Einordnung selbst.
+
+  **Runde 2 – Prüfung gegen Pflichtkriterien.** Die Landkarte muss **alle vier** Kriterien erfüllen:
+
+  1. Mindestens **zwei** Aufgaben sind als „braucht keine KI" markiert, mit Begründung.
+  2. Für jede KI-geeignete Aufgabe ist benannt, **welcher Kontext** ins Kontextfenster muss
+     (z. B. Styleguide, Produktdaten, Zielgruppe), damit das Ergebnis brauchbar wird.
+  3. Für jede KI-geeignete Aufgabe ist benannt, **wer das Ergebnis prüft** und worauf.
+  4. Keine Aufgabe ist doppelt oder so vage, dass man sie nicht bewerten kann.
+
+  **Runde 3 – Die Komplikation.** Die Werkstudentin hat für den Webshop einen Produkttext zur
+  Wanderhose „Vidde" von ChatGPT schreiben lassen – ohne Produktdaten. Der Text nennt eine
+  „bluesign-zertifizierte Membran" und „50 % weniger CO₂ als herkömmliche Hosen". Beides ist
+  nirgends belegt. Erkläre in maximal 150 Wörtern für das Team, **warum** das passiert ist –
+  mit den Begriffen Training, Wahrscheinlichkeit und Kontextfenster, ohne Fachjargon. Passe danach
+  die Landkarte an: Bei welchen Aufgaben ist das Risiko erfundener Fakten besonders hoch, und
+  welche Prüfregel ergänzt du?
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Marketingleitung möchte als ersten Schritt den
+  kompletten Monatsnewsletter (ca. 38.000 Abonnenten) von KI schreiben lassen, „weil das am meisten
+  Zeit spart". Lass dir von deinem KI-Werkzeug Pro und Contra geben. Entscheide dann begründet für
+  **eine** Startaufgabe aus deiner Landkarte. **Widersprich** der Vorgabe oder dem KI-Vorschlag,
+  wenn die zeitsparendste Aufgabe zugleich die riskanteste ist – begründet mit Nutzen, Aufwand,
+  Fehlerfolgen und Prüfaufwand.
+
+  **Deliverable:**
+
+  1. KI-Landkarte als Tabelle (mindestens zehn Aufgaben, alle Spalten gefüllt)
+  2. ausgefüllte Checkliste der vier Pflichtkriterien
+  3. Team-Erklärung aus Runde 3 und die angepasste Landkarte mit ergänzter Prüfregel
+  4. begründete Empfehlung für **eine** Startaufgabe inklusive der abgelehnten Alternative
+
+  **Fertig bist du erst, wenn** die Landkarte sowohl KI-taugliche als auch bewusst KI-freie
+  Aufgaben enthält, zu jeder KI-Aufgabe Kontext und Prüfer benannt sind, deine Team-Erklärung
+  ohne Fachbegriffe verständlich ist und deine Startempfehlung erklärt, warum du den Newsletter
+  (nicht) als Erstes gewählt hast.
+tip: |
+  Der Lernwert steckt in Runde 2 und 3. Eine Liste dessen, was KI „auch könnte", ist schnell
+  geschrieben. Wertvoll wird sie erst durch die Gegenprobe: Welcher Kontext fehlt dem Modell,
+  und wer fängt die plausiblen Fehler ab? Runde 3 zeigt, dass erfundene Fakten keine Panne sind,
+  sondern direkt aus der Funktionsweise folgen. In Runde 4 gilt: Größter Zeitgewinn und bester
+  Start sind selten dasselbe – ein Fehler vor 38.000 Empfängern beschädigt das Vertrauen im Team
+  mehr als jeder Zeitgewinn.
+solution: |
+  Bewertungskriterien: (1) mindestens zehn als Tätigkeit formulierte Aufgaben mit plausibler
+  Einordnung nach Häufigkeit, Regelhaftigkeit und Teilgebiet, darunter bewusst KI-freie
+  Aufgaben wie Versandplanung oder Rabattregeln; (2) alle vier Pflichtkriterien nachweislich
+  erfüllt, insbesondere konkreter Kontext und benannte Prüfer je KI-Aufgabe; (3) die
+  Team-Erklärung führt die erfundenen Aussagen korrekt auf Wahrscheinlichkeit und fehlenden
+  Kontext zurück, und die neue Prüfregel betrifft gezielt Nachhaltigkeitsaussagen und Zahlen
+  (Greenwashing-Risiko); (4) die Startempfehlung wägt Nutzen, Aufwand, Fehlerfolgen und
+  Prüfaufwand ab und übernimmt „Newsletter zuerst" nicht ungeprüft – eine gute Wahl ist etwa
+  Ideensammlung oder Betreffzeilen-Varianten mit klarer Freigabe.
+
+  Lernziel: Die Funktionsweise von Sprachmodellen verstehen und daraus ableiten, wo KI im
+  Marketing hilft, welchen Kontext sie braucht und wo menschliche Prüfung unverzichtbar ist.

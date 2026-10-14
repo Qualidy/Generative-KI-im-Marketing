@@ -1,0 +1,33 @@
+title: Suchintention erkennen
+difficulty: 1
+question: |
+  Ordne jeder Suchanfrage die **Suchintention** zu (informational, navigational, kommerziell,
+  transaktional) und nenne den **Seitentyp**, mit dem Fjordlicht sie am besten bedient.
+
+  1. `fleece pilling entfernen`
+  2. `fjordlicht gutschein einlösen`
+  3. `wanderhose damen kaufen`
+  4. `softshell oder hardshell unterschied`
+  5. `beste nachhaltige outdoormarken`
+  6. `rucksack 30 liter tagestour`
+
+  Bei einer der Anfragen ist die Intention nicht eindeutig. Welche ist es, und wie würdest du
+  es klären?
+tip: |
+  Achte auf Signalwörter: „kaufen" und „bestellen" deuten auf Transaktion, „beste", „Test"
+  oder „Vergleich" auf kommerzielle Recherche, Markennamen auf Navigation, „wie" oder
+  „Unterschied" auf Information.
+solution: |
+  | Nr. | Intention | Seitentyp |
+  |---|---|---|
+  | 1 | informational | Pflegeratgeber im Blog „Draußen-Notizen" |
+  | 2 | navigational | Hilfeseite/FAQ zum Gutschein |
+  | 3 | transaktional | Kategorieseite „Wanderhosen Damen" |
+  | 4 | informational (mit kommerziellem Anteil) | Ratgeber mit Verlinkung auf passende Jacken |
+  | 5 | kommerziell | Haltungs- oder Über-uns-Seite, eher schwer zu gewinnen, weil die Ergebnisse meist unabhängige Listen sind |
+  | 6 | uneindeutig: kommerziell oder transaktional | Kaufberatung oder Kategorieseite mit Filter |
+
+  Nr. 6 ist uneindeutig: Die Person kann schon kaufen wollen oder erst Orientierung suchen.
+  Klären lässt es sich nur an der aktuellen **Suchergebnisseite**: Erscheinen dort vor allem
+  Shops, ist die Intention transaktional; erscheinen Ratgeber und Tests, kommerziell. Die KI
+  kann das nur beurteilen, wenn du die Websuche aktivierst oder die Ergebnisse einfügst.

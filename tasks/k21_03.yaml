@@ -1,0 +1,58 @@
+title: Ein KI-Briefing kritisch prüfen
+difficulty: 3
+question: |
+  Eine Kollegin hat ChatGPT ohne weitere Vorarbeit gebeten: „Erstelle ein SEO-Briefing für
+  einen Blogartikel über nachhaltige Regenjacken." Das Ergebnis enthält unter anderem:
+
+  ```text
+  Hauptkeyword: nachhaltige Regenjacke (Suchvolumen: 6.600/Monat, KD 34)
+  Nebenkeywords: ökologische Regenjacke (2.900), PFC-freie Regenjacke (1.300),
+  beste nachhaltige Regenjacke 2026 (880)
+  Suchintention: informational
+  Ziel: Leser über nachhaltige Materialien informieren
+  Gliederung: 1. Was ist eine nachhaltige Regenjacke? 2. Die 10 besten
+  nachhaltigen Regenjacken 2026 3. Fazit
+  Umfang: mindestens 3.000 Wörter für bestes Ranking
+  Tonalität: begeisternd, überzeugend
+  Kernaussage: Fjordlicht ist die nachhaltigste Marke am Markt.
+  ```
+
+  1. Finde mindestens **sechs Probleme** und ordne sie ein: erfundene Daten, falsche Intention,
+     fehlende Felder, Konflikt mit der Markenstimme, rechtliches Risiko.
+  2. Beschreibe den Ablauf, wie das Briefing **richtig** entstanden wäre (Kap. 21.3–21.6).
+  3. Formuliere einen verbesserten Prompt, mit dem die KI aus vorhandenen Rechercheergebnissen
+     ein Briefing erstellt.
+tip: |
+  Lies jede Zeile mit der Frage: „Woher weiß die KI das?" – und gleiche Tonalität und
+  Kernaussage mit der Markenstimme von Fjordlicht ab (ruhig, keine Superlative, kein
+  Greenwashing).
+solution: |
+  | Problem | Einordnung |
+  |---|---|
+  | Suchvolumina und KD-Werte ohne Quelle | erfundene Daten, KI hat keinen Zugriff auf Suchdaten |
+  | „beste … 2026" plus Top-10-Liste, aber Intention „informational" | Widerspruch: kommerzielle Intention |
+  | Top-10-Liste würde Wettbewerber empfehlen und bewerten | passt nicht zum Ziel der Seite, Vergleichsaussagen rechtlich heikel |
+  | „mindestens 3.000 Wörter für bestes Ranking" | Mythos, Umfang folgt der Frage, nicht umgekehrt |
+  | „begeisternd, überzeugend" | widerspricht der ruhigen, nordisch-trockenen Markenstimme |
+  | „nachhaltigste Marke am Markt" | unbelegter Superlativ, Greenwashing-Risiko (UWG) |
+  | fehlende Felder: Zielgruppe, Alleinstellung, interne Links, No-Gos | Briefing nicht umsetzbar |
+
+  Richtiger Ablauf: Seed-Keywords → KI-Cluster ohne Zahlen → Volumina aus Keyword Planner/
+  Sistrix → SERP-Analyse mit Intention und Lücken → Alleinstellung aus eigener Erfahrung
+  (z. B. belegbare Materialangaben, Reparaturservice) → Briefing mit allen Feldern.
+
+  Verbesserter Prompt:
+
+  ```text
+  Persona: Du bist SEO-Redakteurin.
+  Request: Erstelle aus den angehängten Unterlagen ein SEO-Briefing.
+  Output: Felder Hauptkeyword, Nebenkeywords, Intention, Zielgruppe, Ziel,
+  Kernfragen, Alleinstellung, Gliederung (H2), interne Links, No-Gos.
+  Modifier: Nutze nur Zahlen aus der Keyword-Tabelle. Felder ohne Grundlage
+  markierst du mit [OFFEN]. Keine Superlative, keine Nachhaltigkeitsaussage,
+  die nicht in der Claim-Liste steht.
+  Purpose: Briefing für einen Ratgeber im Blog "Draußen-Notizen".
+  Tone: sachlich.
+  Unterlagen: [Keyword-Tabelle mit Tool-Daten], [SERP-Analyse],
+  [Styleguide], [Claim-Liste]
+  ```

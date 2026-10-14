@@ -1,0 +1,41 @@
+title: Anbindungsweg und Risiken bewerten
+difficulty: 3
+question: |
+  Die Geschäftsführung von Fjordlicht will den CRM-Chatbot ausbauen. Drei Vorschläge liegen
+  auf dem Tisch:
+
+  - **A:** Der Bot soll bei Lead-Stufe A automatisch einen Termin im Kalender des Vertriebs
+    buchen und eine Auftragsbestätigung mit Richtpreis per Mail senden.
+  - **B:** Der Bot soll zusätzlich Name, Geburtsdatum und Konfektionsgröße jeder einzelnen
+    Mitarbeiterin der anfragenden Firma erfassen, „damit wir schneller liefern können".
+  - **C:** Der KI-Hinweis am Anfang soll entfallen, „weil er Leute abschreckt".
+
+  Bewerte jeden Vorschlag in drei Dimensionen: **Nutzen**, **rechtliches bzw.
+  Datenschutzrisiko**, **Haftungs- oder Reputationsrisiko**. Formuliere dann für jeden
+  Vorschlag eine Empfehlung: umsetzen, abgewandelt umsetzen oder ablehnen. Beschreibe bei
+  „abgewandelt" die konkrete Abwandlung.
+tip: |
+  Trenne, was automatisiert werden **kann**, von dem, was automatisiert werden **sollte**.
+  Ein Termin ist eine Einladung, ein Richtpreis kann eine Zusage sein.
+solution: |
+  | Vorschlag | Nutzen | Recht/Datenschutz | Haftung/Reputation | Empfehlung |
+  |---|---|---|---|---|
+  | A Termin | hoch, schnellere Reaktion | gering | gering | abgewandelt: Terminvorschlag über Buchungslink |
+  | A Richtpreis | mittel | gering | hoch: Preis kann als Zusage gelten | ablehnen |
+  | B Mitarbeiterdaten | gering im Erstkontakt | hoch: Datenminimierung verletzt, Daten Dritter | hoch | ablehnen; Größenliste später über Vertrieb |
+  | C kein KI-Hinweis | fraglich | Verstoß gegen Art. 50 Abs. 1, sofern nicht offensichtlich | hoch bei Bekanntwerden | ablehnen |
+
+  Begründungen im Kern:
+
+  - **A:** Die Terminbuchung ist sinnvoll, sollte aber als Angebot an die Kundin laufen
+    (Buchungslink), nicht als automatische Belegung. Ein Richtpreis ist eine Aussage im
+    Namen des Unternehmens; bei Fehlern haftet Fjordlicht. Preise bleiben im Angebot.
+  - **B:** Geburtsdaten sind für ein Angebot nicht nötig, die Daten betreffen Dritte, die
+    nicht eingewilligt haben. Größenverteilungen ohne Namen kann der Vertrieb später
+    abfragen.
+  - **C:** Der Hinweis ist seit 02.08.2026 Pflicht, wenn nicht offensichtlich ist, dass eine
+    KI antwortet. Statt ihn zu streichen, kann man ihn freundlicher formulieren.
+
+  Bewertungskriterien: alle drei Dimensionen pro Vorschlag bewertet, mindestens eine
+  sinnvolle Abwandlung statt reiner Ablehnung, korrekter Bezug zu Art. 50 Abs. 1 und zur
+  Datenminimierung.
