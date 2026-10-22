@@ -1,10 +1,7 @@
 title: Kennzeichnen oder nicht? Fünf Grenzfälle bewerten
 difficulty: 3
 question: |
-  Bewerte die folgenden geplanten Veröffentlichungen von Fjordlicht. Bestimme jeweils, ob
-  Art. 50 Abs. 4 AI Act (Deepfake) betroffen sein kann, welche Plattformregel oder welches
-  weitere Risiko (UWG, KUG, Markenrecht) zu beachten ist und wie du entscheiden würdest:
-  veröffentlichen, kennzeichnen, ändern oder verzichten.
+  Fjordlicht plant diese Veröffentlichungen:
 
   1. Instagram-Post: Echtes Produktfoto der Jacke „Sølv", Hintergrund mit Generative Fill zu
      einer fotorealistischen Moorlandschaft erweitert.
@@ -16,12 +13,37 @@ question: |
      Schneedecke mit Schlittschuhläufern – „Winter ist zurück".
   5. Pinterest: Stilisierte, erkennbar gemalte Illustration einer Wanderin mit Fleece „Skog".
 
-  Leite aus deinen Bewertungen drei Regeln für die Freigabe-Checkliste des Teams ab.
+  **Schritt 1 – Plattformregeln recherchieren.** Lass Copilot Chat im Modus **Web** (oder den
+  Agent **Researcher**, falls freigegeben) die aktuellen Regeln von Instagram/Meta, TikTok,
+  LinkedIn und Pinterest zur Kennzeichnung KI-generierter Bilder zusammenfassen – mit Quellen.
+  Öffne mindestens zwei Quellen und prüfe, ob die Zusammenfassung stimmt.
+
+  **Schritt 2 – bewerten.** Bestimme für jeden Fall, ob Art. 50 Abs. 4 AI Act (Deepfake)
+  betroffen sein kann, welche Plattformregel oder welches weitere Risiko (UWG, KUG,
+  Markenrecht) zu beachten ist und wie du entscheidest: veröffentlichen, kennzeichnen, ändern
+  oder verzichten.
+
+  **Schritt 3 – Regeln festhalten.** Leite drei Regeln für die Freigabe-Checkliste des Teams ab
+  und lass sie dir von Copilot in Word knapp und ohne Rückfragebedarf formulieren. Prüfe, ob
+  Copilot dabei etwas abgeschwächt oder verschärft hat.
+
+  Fall 2 erzeugst du nicht – die Übung bewertet ihn nur.
 tip: |
   Trenne drei Fragen: Wirkt das Bild fälschlich echt und ähnelt es realen Personen, Orten oder
   Ereignissen (AI Act)? Was verlangt die Plattform? Und unabhängig davon: Täuscht das Bild über
-  das Produkt oder über Tatsachen (UWG)?
+  das Produkt oder über Tatsachen (UWG)? Plattformregeln ändern sich häufig – deshalb die
+  Recherche mit Quellen und Datum.
 solution: |
+  Rechercheprompt (Modus Web):
+
+  ```text
+  Fasse die aktuellen Regeln von Instagram/Meta, TikTok, LinkedIn und Pinterest
+  zur Kennzeichnung KI-generierter oder KI-bearbeiteter Bilder zusammen. Je
+  Plattform: Wann ist ein Label Pflicht, wird es automatisch gesetzt (z. B. über
+  C2PA-Daten), was gilt für nur teilweise bearbeitete Fotos? Nenne zu jeder
+  Aussage die Quelle mit Datum. Kennzeichne, wo die Quellen unklar sind.
+  ```
+
   | Nr. | Art. 50 Abs. 4 | weiteres Risiko | Entscheidung |
   |---|---|---|---|
   | 1 | i. d. R. kein Deepfake, sofern keine reale Landschaft vorgetäuscht wird | Plattformlabel bei fotorealistischer KI prüfen; Produkt echt | veröffentlichen, Plattformregel befolgen, ggf. Label |
@@ -42,6 +64,7 @@ solution: |
      wenn die Plattform sie verlangt.
   ```
 
-  Bewertungskriterien: AI Act, Plattformregeln und UWG/KUG werden getrennt geprüft; Nr. 2 und
-  Nr. 3 werden als Hauptrisiken erkannt; die Regeln sind so formuliert, dass sie ohne
-  Rückfrage anwendbar sind; Hinweis, dass im Zweifel die Rechtsabteilung entscheidet.
+  Bewertungskriterien: Recherche mit geprüften Quellen und Datum; AI Act, Plattformregeln und
+  UWG/KUG werden getrennt geprüft; Nr. 2 und Nr. 3 werden als Hauptrisiken erkannt; die Regeln
+  sind so formuliert, dass sie ohne Rückfrage anwendbar sind; Hinweis, dass Copilot keine
+  Rechtsberatung ersetzt und im Zweifel die Rechtsabteilung entscheidet.

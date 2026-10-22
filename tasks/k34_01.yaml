@@ -1,8 +1,7 @@
 title: Generieren, fotografieren oder Stock?
 difficulty: 1
 question: |
-  Entscheide für jeden Bildbedarf von Fjordlicht mit dem Raster aus Abschnitt 34.7, ob
-  generiert, fotografiert oder Stock verwendet werden sollte, und nenne den entscheidenden Grund.
+  Fjordlicht hat sechs Bildbedarfe:
 
   1. Hauptbild der Produktseite für den Rucksack „Tind"
   2. Abstrakter Hintergrund für eine Webinar-Einladung von Fjordlicht Business
@@ -11,11 +10,31 @@ question: |
   5. Neues Maskottchen „Fjordfuchs", das langfristig auf allen Kanälen erscheinen soll
   6. Bild einer Kundin, die die Regenjacke „Sølv" lobt, für ein Testimonial
 
-  Markiere zusätzlich, bei welchem Fall eine Kennzeichnung zu prüfen ist.
+  **Schritt 1 – Copilot entscheiden lassen.** Gib in Copilot Chat die sechs Fälle und das
+  Entscheidungsraster aus Abschnitt 34.7 ein. Lass für jeden Fall entscheiden: generieren,
+  fotografieren oder Stock – mit Grund und Hinweis, ob eine Kennzeichnung zu prüfen ist.
+
+  **Schritt 2 – einordnen.** Gehe den Entscheidungsbaum aus 34.7 selbst durch und vergleiche.
+  Wo stimmst du Copilot zu, wo nicht?
+
+  **Schritt 3 – ausprobieren.** Erzeuge Fall 2 oder Fall 4 in Copilot. Hätte das Bild die
+  Aufgabe erfüllt – und welche Kennzeichnungsentscheidung triffst du dafür?
 tip: |
-  Gehe den Entscheidungsbaum aus Abschnitt 34.7 der Reihe nach durch. Bei Nr. 5 hilft die Frage,
-  was passiert, wenn die Konkurrenz das Maskottchen übernimmt.
+  Bei Nr. 5 hilft die Frage, was passiert, wenn die Konkurrenz das Maskottchen übernimmt. Bei
+  Nr. 6 achte darauf, ob Copilot ein generiertes Bild „mit Kennzeichnung" für vertretbar hält –
+  das ist der häufigste Denkfehler.
 solution: |
+  Beispielprompt:
+
+  ```text
+  Entscheide für diese sechs Bildbedarfe von Fjordlicht, ob das Bild generiert,
+  fotografiert oder aus Stock genommen werden sollte. Nutze dieses Raster:
+  [Entscheidungsbaum aus 34.7 einfügen]. Antworte als Tabelle mit Entscheidung,
+  entscheidendem Grund und ob eine Kennzeichnung zu prüfen ist.
+  Keine Rechtsberatung, nur Einordnung.
+  [Liste der sechs Fälle]
+  ```
+
   | Nr. | Entscheidung | Grund |
   |---|---|---|
   | 1 | fotografieren | konkretes Produkt – jede Abweichung ist eine falsche Produktaussage |
@@ -24,6 +43,9 @@ solution: |
   | 4 | generieren | Illustration, erkennbar künstlerisch, kein Täuschungsrisiko |
   | 5 | menschlich gestalten (Illustrator:in), KI höchstens für Entwürfe | reiner KI-Output ist in der Regel nicht urheberrechtlich geschützt, das Maskottchen soll exklusiv sein |
   | 6 | fotografieren mit echter Kundin und Einwilligung | ein generiertes Testimonial ist irreführend (UWG) |
+
+  Copilot trifft Nr. 1 bis 4 meist richtig. Bei Nr. 5 fehlt oft der Schutzaspekt (Urheberrecht),
+  bei Nr. 6 wird manchmal ein generiertes Bild mit Hinweis vorgeschlagen – beides korrigierst du.
 
   Kennzeichnung prüfen: Bei Nr. 2, falls fotorealistisch und auf Plattformen mit Labelpflicht
   veröffentlicht. Bei Nr. 4 ist keine Pflicht gegeben, ein freiwilliger Hinweis aber möglich.

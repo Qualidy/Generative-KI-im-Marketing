@@ -1,9 +1,8 @@
-title: KI-Rechtsauskunft kritisch prüfen
+title: KI-Rechtsauskunft mit Quellen prüfen
 difficulty: 3
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug. Ein Kollege hat ChatGPT gefragt, was Fjordlicht
-  beim KI-Einsatz rechtlich beachten muss, und will die Antwort als Teamrichtlinie verschicken.
-  Auszug:
+  Ein Kollege hat einen KI-Chat gefragt, was Fjordlicht beim KI-Einsatz rechtlich beachten muss,
+  und will die Antwort als Teamrichtlinie verschicken. Auszug:
 
   ```text
   1. Ab 2026 muss jeder KI-generierte Inhalt mit "KI-generiert" gekennzeichnet werden.
@@ -15,15 +14,22 @@ question: |
   5. Chatbots müssen nicht als KI gekennzeichnet werden, wenn sie freundlich formulieren.
   ```
 
-  1. Bewerte jede Aussage: **richtig**, **teilweise richtig** oder **falsch** – mit Begründung und
-     Verweis auf den Abschnitt in diesem Kapitel.
-  2. Stelle dieselbe Frage selbst an ein KI-Werkzeug **mit** und **ohne** eingeschaltete Websuche.
-     Vergleiche: Welche Fehler tauchen wieder auf, welche verschwinden?
-  3. Formuliere drei Regeln, wie euer Team KI-Antworten zu Rechtsfragen künftig behandelt.
+  1. Bewerte jede Aussage **selbst**: **richtig**, **teilweise richtig** oder **falsch** – mit
+     Begründung und Verweis auf den Abschnitt in diesem Kapitel.
+  2. Stelle in **Copilot Chat** die Frage „Was muss ein deutsches Marketingteam beim KI-Einsatz
+     rechtlich beachten?" zweimal: einmal im Modus **Arbeit** ohne Websuche, einmal im Modus
+     **Web**. Vergleiche: Welche Fehler tauchen wieder auf, welche verschwinden?
+  3. Lass den **Researcher**-Agent (falls in eurer Umgebung freigegeben) die Aussagen 1 und 3
+     mit Quellen prüfen. Kontrolliere jede genannte Quelle: Ist es eine Primärquelle (z. B.
+     EUR-Lex, Gerichtsmitteilung) oder eine Sekundärquelle? Werden Gericht, Datum und
+     **Rechtskraft** korrekt genannt?
+  4. Formuliere drei Regeln, wie euer Team KI-Antworten zu Rechtsfragen künftig behandelt, und
+     speichere einen Prüf-Prompt dazu in der **Prompt Gallery**.
 tip: |
   Solche Fehler entstehen selten aus dem Nichts. Meist wird eine richtige Teilaussage
   übergeneralisiert oder ein Urteil ohne seinen Status wiedergegeben. Achte bei Urteilen immer auf
-  Gericht, Datum und Rechtskraft.
+  Gericht, Datum und Rechtskraft. Quellenangaben machen eine Antwort überprüfbar, nicht
+  automatisch richtig – öffne die Quelle und lies nach, ob sie die Aussage wirklich trägt.
 solution: |
   | Nr. | Bewertung | Begründung |
   |---|---|---|
@@ -33,9 +39,26 @@ solution: |
   | 4 | teilweise richtig | Bedingungen klären die Nutzung, nicht die Rechte Dritter im Output (39.3) |
   | 5 | falsch | Art. 50 Abs. 1: Hinweis, sofern KI-Interaktion nicht offensichtlich ist (39.4) |
 
-  Im Vergleich liefert die Websuche meist aktuellere Fristen und Urteile, übernimmt aber manchmal
-  Fehler aus schwachen Quellen. Ohne Websuche sind Daten und der Status von Verfahren besonders
-  oft veraltet.
+  Im Vergleich liefert der Modus **Web** meist aktuellere Fristen und Urteile, übernimmt aber
+  manchmal Fehler aus schwachen Quellen. Im Modus **Arbeit** ohne Web stützt sich Copilot auf
+  das Modellwissen und eure Dateien; Daten und der Status von Verfahren sind dann besonders oft
+  veraltet.
+
+  Beispiel-Prompt für den Researcher:
+
+  ```text
+  Prüfe zwei Aussagen zum deutschen und europäischen Recht und belege jede
+  Einschätzung mit Quellen. Bevorzuge Primärquellen (EUR-Lex, Gesetzestexte,
+  Pressemitteilungen der Gerichte). Nenne bei Urteilen Gericht, Datum,
+  Aktenzeichen, soweit verfügbar, und ob das Urteil rechtskräftig ist.
+  Aussage A: [Aussage 1]
+  Aussage B: [Aussage 3]
+  Kennzeichne, wo Quellen sich widersprechen oder du unsicher bist.
+  ```
+
+  Typische Befunde: Der Researcher korrigiert Aussage 1 meist zutreffend, mischt aber teils
+  Sekundärquellen (Kanzlei-Blogs, News) mit Primärquellen. Bei Aussage 3 wird der Status
+  „nicht rechtskräftig" nicht immer genannt – genau hier lohnt die eigene Kontrolle.
 
   Mögliche Teamregeln:
 
@@ -45,4 +68,5 @@ solution: |
   3. Interne Richtlinien zu Recht gibt nur frei, wer dafür benannt ist.
 
   Bewertungskriterien: alle fünf Aussagen korrekt eingeordnet, Aussage 4 als teilweise richtig
-  differenziert, die Teamregeln sind konkret anwendbar.
+  differenziert, Vergleich Arbeit/Web konkret, mindestens zwei Researcher-Quellen selbst geprüft
+  und als Primär- oder Sekundärquelle eingeordnet, die Teamregeln sind konkret anwendbar.

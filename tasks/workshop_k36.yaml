@@ -4,8 +4,10 @@ question: |
   **Szenario:** Fjordlicht Business verkauft Firmenbekleidung an Handwerksbetriebe,
   Outdoor-Schulen und Agenturen. Der Vertrieb beantwortet immer wieder dieselben Fragen. Du
   sollst eine Serie aus **drei kurzen Erklärvideos** (je 45–60 Sekunden) mit Avatar und
-  KI-Sprecher konzipieren und – soweit Zugang besteht – ein Video umsetzen. Du kannst alternativ
-  ein Unternehmen deiner Wahl verwenden.
+  KI-Sprecher konzipieren und – soweit Zugang besteht – ein Video umsetzen. Konzept, Skripte,
+  Übersetzung und Abstimmung laufen in Microsoft 365 Copilot; die Avatar-Plattform bzw. das
+  TTS-Werkzeug nutzt du nur für die Erzeugung des Videos. Du kannst statt Fjordlicht auch ein
+  Unternehmen deiner Wahl nutzen.
 
   ```text
   Rahmen:
@@ -13,40 +15,57 @@ question: |
   3) Wie pflege ich die Kleidung, damit sie lange hält?
   Sprachen: Deutsch, später Niederländisch
   Kanäle: Website Fjordlicht Business, LinkedIn, Mail an Neukunden
-  Werkzeuge: ChatGPT (oder Alternative), eine Avatar-Plattform oder ein TTS-Werkzeug
-  mit Testkontingent
+  Planung: Copilot in Word, Excel, PowerPoint; Abstimmung in Teams/Outlook
+  Erzeugung: eine Avatar-Plattform (HeyGen, Synthesia, D-ID) oder ein
+  TTS-Werkzeug mit Testkontingent
   Markenstimme: ruhig, ehrlich, leicht nordisch-trocken, Du-Ansprache, keine Superlative
-  Fakten: nur aus [Produkt- und Prozessinfos], fehlende Angaben als [FEHLT]
+  Fakten: nur aus /Fjordlicht-Basisdaten und [Produkt- und Prozessinfos],
+  fehlende Angaben als [FEHLT]
   ```
 
   ---
 
-  **Runde 1 – Konzept.** Lege für die Serie fest: Avatar-Typ (Stock, eigener, Foto) mit
-  Begründung, Stimme, Aufbau eines Videos (Einstieg, Kern, Abschluss mit nächstem Schritt),
-  Einblendungen und eine Ausspracheliste der Produkt- und Markennamen.
+  **Runde 1 – Konzept in Word.** Lass Copilot in Word im Dokument „Erklaervideos-Business"
+  (Ordner „Fjordlicht-Kurs") ein Serienkonzept entwerfen, mit Verweis auf
+  `/Fjordlicht-Basisdaten` (falls nicht vorhanden: Kap. 11 bzw. Fakten einfügen). Lege fest:
+  Avatar-Typ (Stock, eigener, Foto) mit Begründung, Stimme, Aufbau eines Videos (Einstieg, Kern,
+  Abschluss mit nächstem Schritt) und Einblendungen. Führe die **Ausspracheliste** aus
+  Kurzübung 36.2 in einer Excel-Tabelle „Aussprache-Glossar" weiter: Spalten Wort, Aussprache
+  Deutsch, Übersetzung Niederländisch, Hinweis. Lass Copilot in Excel fehlende Produkt- und
+  Markennamen aus den Basisdaten ergänzen.
 
-  **Runde 2 – Skripte.** Erstelle mit KI die drei Sprechskripte nach den Regeln aus
-  Abschnitt 36.3. Lies jedes laut mit Stoppuhr und überarbeite. Markiere alle Stellen, an denen
-  Fakten fehlen. Setze – wenn möglich – ein Video in einem Werkzeug um.
+  **Runde 2 – Skripte.** Lass Copilot in Word die drei Sprechskripte nach den Regeln aus
+  Abschnitt 36.3 entwerfen – je Video ein eigener Abschnitt. Frag das Dokument: „Wie viele
+  Wörter hat jedes Skript, und passt das bei 130 Wörtern pro Minute in 45–60 Sekunden?" Lies
+  trotzdem jedes Skript laut mit Stoppuhr, überarbeite markierte Stellen gezielt und markiere
+  alle Stellen, an denen Fakten fehlen. Setze – wenn möglich – ein Video in der
+  Avatar-Plattform um.
 
   **Runde 3 – Die Komplikation.** Die niederländische Ein-Klick-Übersetzung von Video 2 liegt
-  vor. Eine niederländische Kollegin meldet: Die Ansprache wirkt zu förmlich, „Wassersäule"
-  wurde unverständlich übersetzt, und das Sprechtempo ist deutlich höher als im Original. Lege
-  einen Ablauf fest, mit dem solche Fehler künftig vor der Veröffentlichung auffallen, und
-  korrigiere das Skript.
+  vor. Eine niederländische Kollegin meldet in einem Teams-Chat: Die Ansprache wirkt zu
+  förmlich, „Wassersäule" wurde unverständlich übersetzt, und das Sprechtempo ist deutlich höher
+  als im Original. Lass Copilot den Chat zusammenfassen und daraus eine Mängelliste erstellen.
+  Lege einen Ablauf fest, mit dem solche Fehler künftig vor der Veröffentlichung auffallen.
+  Übersetze dann das **Skript** (nicht das Video) mit Copilot in Word neu – mit dem Glossar aus
+  Excel (die Spalten in den Prompt kopieren) und festgelegter Ansprache – und kürze es in der
+  Zielsprache. Schick es der Kollegin zur Prüfung mit „Änderungen nachverfolgen".
 
   **Runde 4 – Entscheidung unter Abwägung.** Der Vertriebsleiter möchte statt eines
   Stock-Avatars einen digitalen Zwilling von sich selbst – und schlägt vor, die Videos
   zusätzlich auf Messen als „persönliche Begrüßung" laufen zu lassen, ohne Hinweis auf KI.
   Wäge Nutzen und Risiken ab. **Widersprich**, wo es nötig ist, und formuliere eine Lösung, die
-  den Wunsch nach persönlicher Wirkung aufgreift.
+  den Wunsch nach persönlicher Wirkung aufgreift. Lass Copilot in PowerPoint aus deiner
+  Word-Notiz eine kurze Entscheidungsvorlage (höchstens fünf Folien) für das nächste
+  Vertriebsmeeting erstellen.
 
   **Deliverable:**
 
-  1. Serienkonzept mit Avatar-Entscheidung und Ausspracheliste
+  1. Serienkonzept (Word) mit Avatar-Entscheidung und Aussprache-Glossar (Excel)
   2. drei Sprechskripte (deutsch) mit gemessener Sprechdauer und markierten Lücken
   3. Übersetzungs- und Abnahmeablauf sowie das korrigierte niederländische Skript zu Video 2
-  4. Entscheidungsvorlage zu Runde 4 inklusive Kennzeichnung je Kanal und Einwilligungspunkten
+     mit den nachverfolgten Änderungen der Kollegin bzw. deiner Selbstprüfung
+  4. Entscheidungsvorlage zu Runde 4 (PowerPoint) inklusive Kennzeichnung je Kanal und
+     Einwilligungspunkten
   5. (falls umgesetzt) ein fertiges Video
 
   **Fertig bist du erst, wenn** jedes Skript laut getestet ist und in die Zielzeit passt,
@@ -56,20 +75,37 @@ tip: |
   Die Technik ist der kleinere Teil. Der Lernkern liegt im Skript (Sprechen ist nicht Lesen),
   in der Abnahme fremdsprachiger Fassungen und in Runde 4: Persönliche Wirkung durch eine Person,
   die gar nicht spricht, ohne es zu sagen, untergräbt genau das Vertrauen, das sie erzeugen soll.
+  Copilot zählt Wörter und übersetzt schnell – ob „Wassersäule" auf Niederländisch verstanden
+  wird, weiß nur jemand mit Muttersprache.
 solution: |
+  Beispiel-Prompt für die Neuübersetzung in Word:
+
+  ```text
+  Übersetze das Sprechskript von Video 2 ins Niederländische.
+  Ansprache: "je/jij", locker, aber nicht flapsig.
+  Nutze für Fachbegriffe ausschließlich das Glossar unten.
+  Halte die Länge des deutschen Skripts ein; kürze lieber, als längere Sätze
+  zu bilden. Zahlen ausschreiben, keine Abkürzungen.
+  Markiere unsichere Begriffe mit [PRÜFEN].
+  Glossar: [Spalten Wort und Übersetzung aus Aussprache-Glossar einfügen]
+  ```
+
   Bewertungskriterien: (1) Die Avatar-Wahl ist begründet (z. B. Stock-Avatar für einen schnellen,
-  einwilligungsfreien Start oder eigener Avatar mit Einwilligung), die Ausspracheliste enthält alle
-  Marken- und Produktnamen. (2) Die Skripte haben kurze Sätze, ausgeschriebene Zahlen, 90–150
-  Wörter je nach Länge, einen klaren nächsten Schritt am Ende und keine erfundenen Angaben;
-  Lücken sind mit [FEHLT] markiert. (3) Der Übersetzungsablauf lautet sinngemäß: Glossar und
-  Ansprache je Sprache festlegen → Skript übersetzen → Skript muttersprachlich prüfen → in der
-  Zielsprache kürzen statt beschleunigen → Video erzeugen → Video abnehmen. (4) Runde 4 trennt
-  Einwilligung (schriftlich, mit Widerruf und Regelung bei Ausscheiden) und Transparenz: Ein
-  realistischer Avatar einer realen Person, der fälschlich echt wirkt, ist nach Art. 50 Abs. 4
-  AI Act offenzulegen; auf der Messe ohne Hinweis ist das nicht vertretbar. Gute Lösungen
-  schlagen eine sichtbare Kennzeichnung vor, eine echte kurze Videobotschaft des
-  Vertriebsleiters als Ergänzung und klare Regeln für den Zugriff auf Avatar und Stimme
-  (Verweis Kap. 38).
+  einwilligungsfreien Start oder eigener Avatar mit Einwilligung), das Excel-Glossar enthält alle
+  Marken- und Produktnamen mit Aussprache und Übersetzung. (2) Die Skripte haben kurze Sätze,
+  ausgeschriebene Zahlen, 90–150 Wörter je nach Länge, einen klaren nächsten Schritt am Ende und
+  keine erfundenen Angaben; Lücken sind mit [FEHLT] markiert. Die Copilot-Wortzählung wurde durch
+  lautes Lesen bestätigt oder korrigiert. (3) Der Übersetzungsablauf lautet sinngemäß: Glossar
+  und Ansprache je Sprache festlegen → Skript übersetzen (Copilot) → Skript muttersprachlich
+  prüfen (Änderungen nachverfolgen) → in der Zielsprache kürzen statt beschleunigen → Video
+  erzeugen → Video abnehmen. (4) Runde 4 trennt Einwilligung (schriftlich, mit Widerruf und
+  Regelung bei Ausscheiden) und Transparenz: Ein realistischer Avatar einer realen Person, der
+  fälschlich echt wirkt, ist nach Art. 50 Abs. 4 AI Act offenzulegen; auf der Messe ohne Hinweis
+  ist das nicht vertretbar. Gute Lösungen schlagen eine sichtbare Kennzeichnung vor, eine echte
+  kurze Videobotschaft des Vertriebsleiters als Ergänzung und klare Regeln für den Zugriff auf
+  Avatar und Stimme (Verweis Kap. 38). Die PowerPoint-Vorlage enthält keine Aussagen, die nicht
+  in der Word-Notiz stehen.
 
   Lernziel: Avatar-Videos und KI-Sprecher als effizientes Format für wiederkehrende Information
-  einsetzen – mit sprechgerechtem Skript, geprüften Sprachfassungen und ehrlicher Transparenz.
+  einsetzen – mit Copilot für Konzept, Skript und Übersetzung, sprechgerechtem Skript, geprüften
+  Sprachfassungen und ehrlicher Transparenz.

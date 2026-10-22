@@ -1,8 +1,8 @@
-title: Jobs, Pain Points und Gains aus Bewertungen
+title: Jobs, Pain Points und Gains aus Bewertungen – mit Excel und Copilot Chat
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug. Die folgenden fiktiven Bewertungen stammen aus dem
-  Webshop von Fjordlicht (Wanderhose „Vidde"), bereits ohne Namen.
+  Diese Übung machst du in Microsoft 365 Copilot. Die folgenden fiktiven Bewertungen stammen aus
+  dem Webshop von Fjordlicht (Wanderhose „Vidde"), bereits ohne Namen.
 
   ```text
   Nr;Sterne;Text
@@ -18,26 +18,31 @@ question: |
   10;4;Für Tagestouren ideal, im Hochsommer zu warm.
   ```
 
-  1. Schreibe einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5), der daraus **Jobs-to-be-done**
-     („Wenn …, will ich …, damit …"), **Pain Points** und **Gains** erzeugt – jeweils mit den
-     Nummern der belegenden Bewertungen.
-  2. Führe ihn aus und prüfe jede Zuordnung gegen die Bewertungen. Markiere alles, was **nicht**
-     belegt ist.
-  3. Leite zwei Botschaften für den Newsletter ab, die direkt an einem Pain Point ansetzen.
+  1. **Daten ablegen.** Lege die Bewertungen als Tabelle in „Bewertungen-Vidde.xlsx" im Ordner
+     „Fjordlicht-Kurs" an.
+  2. **Analyse in Copilot Chat.** Schreibe einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5),
+     der aus der Datei (per `/`-Verweis) **Jobs-to-be-done** („Wenn …, will ich …, damit …"),
+     **Pain Points** und **Gains** erzeugt – jeweils mit den Nummern der belegenden Bewertungen.
+  3. **Prüfen in Excel.** Prüfe jede Zuordnung gegen die Bewertungen. Lass dir dazu von Copilot
+     in Excel die Zeilen hervorheben, die ein bestimmtes Thema enthalten (z. B. Größe oder
+     Nachhaltigkeit), und vergleiche mit den Belegnummern. Markiere alles, was **nicht** belegt ist.
+  4. **Botschaften.** Leite zwei Botschaften für den Newsletter ab, die direkt an einem Pain Point
+     ansetzen, und prüfe sie gegen `/Fjordlicht-Basisdaten`: Gibt es den nötigen Beleg?
 tip: |
   Der wichtigste Modifier ist die Belegpflicht mit Nummern. Ohne ihn ergänzt das Modell gern
   typische Outdoor-Themen wie „Wetterschutz" oder „Atmungsaktivität", die hier niemand erwähnt.
+  Copilot sieht nur Dateien, auf die du Zugriff hast, und die Daten bleiben im
+  Microsoft-365-Mandanten – anonymisieren musst du echte Bewertungen trotzdem vorher (Kap. 4).
 solution: |
   Beispielprompt:
 
   ```text
   Du bist Marktforscherin im Outdoor-Handel.
-  Aufgabe: Werte die Bewertungen unten aus.
+  Aufgabe: Werte die Bewertungen in /Bewertungen-Vidde aus.
   Format: drei Abschnitte - Jobs-to-be-done ("Wenn ..., will ich ..., damit ..."),
   Pain Points, Gains. Hinter jedem Punkt die Nummern der Bewertungen in Klammern.
   Regeln: Nur, was in den Bewertungen steht. Kein Punkt ohne Nummer.
   Zweck: Ansatzpunkte für Newsletter-Botschaften zur Wanderhose Vidde.
-  Bewertungen: """ [Daten] """
   ```
 
   Erwartbares Ergebnis:
@@ -52,5 +57,7 @@ solution: |
   | Gain | eine Hose für Stadt und Natur | 1, 6, 10 |
 
   Botschaften, zum Beispiel: „Woraus Vidde besteht – mit Zertifikat zum Nachlesen" (nur, wenn ein
-  Beleg existiert!) und „Die richtige Länge finden: unsere neue Größenhilfe". Typischer Fund bei
-  der Prüfung: ein ergänzter Punkt wie „wasserabweisend", der in keiner Bewertung steht.
+  Beleg in den Basisdaten existiert, sonst `[BELEG FEHLT]`) und „Die richtige Länge finden: unsere
+  neue Größenhilfe". Typischer Fund bei der Prüfung: ein ergänzter Punkt wie „wasserabweisend",
+  der in keiner Bewertung steht, oder eine falsche Belegnummer, die das Hervorheben in Excel
+  sichtbar macht.

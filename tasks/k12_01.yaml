@@ -1,9 +1,7 @@
-title: SCAMPER zuordnen
+title: SCAMPER zuordnen und mit Copilot gegenprüfen
 difficulty: 1
 question: |
-  Ordne die folgenden Ideen für den Fjordlicht-Instagram-Kanal dem passenden SCAMPER-Buchstaben
-  zu (Substitute, Combine, Adapt, Modify, Put to other uses, Eliminate, Reverse) und begründe
-  kurz.
+  Die folgenden Ideen für den Fjordlicht-Instagram-Kanal sind bereits entstanden:
 
   1. Statt Produktfotos im Studio zeigen wir die Jacken nur noch in echtem Regen.
   2. Wir übernehmen das Format „Vorher/Nachher" aus Renovierungskanälen für Reparaturen.
@@ -13,11 +11,20 @@ question: |
   6. Alte Kampagnenfotos werden als Puzzle-Motiv für Familien genutzt.
   7. Reels werden auf 7 Sekunden verkürzt.
 
-  Nenne zum Schluss einen Grund, warum du SCAMPER der KI ausdrücklich vorgibst, statt nur nach
-  „kreativen Ideen" zu fragen.
+  1. Ordne jede Idee **zuerst selbst** einem SCAMPER-Buchstaben zu (Substitute, Combine, Adapt,
+     Modify, Put to other uses, Eliminate, Reverse) und begründe kurz.
+  2. Gib dieselbe Liste in **Copilot Chat** ein und lass Copilot zuordnen und begründen. Notiere,
+     wo ihr abweicht.
+  3. Lass Copilot in zwei **neuen** Chats je sieben Ideen erzeugen:
+     - a) ohne Kontext: „Gib mir kreative Instagram-Ideen für eine Outdoor-Marke im Herbst."
+     - b) mit SCAMPER und Kontext: je Buchstabe eine Idee, mit Verweis auf `/Fjordlicht-Basisdaten`
+       (falls nicht vorhanden: Kap. 11, Kurzübung 1, oder Markenstimme und Produkte einfügen).
+  4. Vergleiche a) und b): Wie viele Ideen aus a) könnte jede andere Outdoor-Marke genauso posten?
+     Nenne daraus einen Grund, warum du SCAMPER ausdrücklich vorgibst.
 tip: |
   Manche Ideen lassen sich zwei Buchstaben zuordnen. Entscheidend ist, welche Denkbewegung im
   Vordergrund steht: austauschen, verbinden, übernehmen, verändern, umnutzen, weglassen, umkehren.
+  Abweichungen zu Copilot sind kein Fehler, solange beide Zuordnungen begründet sind.
 solution: |
   | Nr. | Buchstabe | Begründung |
   |---|---|---|
@@ -29,6 +36,21 @@ solution: |
   | 6 | Put to other uses | vorhandenes Material bekommt einen neuen Zweck |
   | 7 | Modify | Länge wird verändert (verkleinert) |
 
-  Grund für die Vorgabe: Ohne Methode liefert das Modell die wahrscheinlichsten, also die
-  branchenüblichen Ideen. SCAMPER zwingt es in sieben verschiedene Denkrichtungen und erzeugt so
-  mehr Vielfalt – außerdem werden die Ideen nachvollziehbar sortiert.
+  Typische Abweichung: Copilot ordnet Idee 1 gern „Modify" zu (die Fotos werden verändert) oder
+  Idee 3 „Substitute". Beides ist vertretbar, wenn die Begründung stimmt.
+
+  Beispielprompt für 3b:
+
+  ```text
+  Wende SCAMPER auf den Instagram-Kanal der Fjordlicht GmbH an.
+  Marke, Markenstimme und Produkte: /Fjordlicht-Basisdaten
+  Liefere je Buchstabe genau eine Idee als Tabelle mit den Spalten
+  Buchstabe, Idee, Warum sie nur zu Fjordlicht passt.
+  Keine Rabattaktionen, keine unbelegten Nachhaltigkeitsaussagen.
+  ```
+
+  Typischer Befund: In a) stehen Laub, Packliste, Herbstwanderweg und „Gewinnspiel" – die Ideen
+  der ganzen Branche. In b) tauchen Reparaturservice, Sølv im Münsterländer Regen oder die
+  nordisch-trockene Stimme auf. Grund für die Vorgabe: Ohne Methode und Kontext liefert das Modell
+  die wahrscheinlichsten Ideen. SCAMPER zwingt es in sieben Denkrichtungen und sortiert die
+  Ergebnisse nachvollziehbar.

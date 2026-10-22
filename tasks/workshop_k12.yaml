@@ -1,11 +1,12 @@
-title: Quartalsplanung mit Content-Pillars
+title: Quartalsplanung mit Content-Pillars in Copilot, Excel und PowerPoint
 difficulty: 4
 question: |
   **Szenario:** Das Fjordlicht-Marketingteam plant das erste Quartal 2027. Bisher entstanden
   Inhalte spontan: viel Inspiration, wenig zu Pflege und Reparatur, kaum etwas für Fjordlicht
   Business. Die Teamleitung möchte eine Planung, die auf Content-Pillars beruht, mit realistischer
-  Kapazität arbeitet und aus jedem großen Inhalt mehrere Ableitungen macht. Du kannst statt
-  Fjordlicht auch **ein Unternehmen deiner Wahl** nutzen.
+  Kapazität arbeitet und aus jedem großen Inhalt mehrere Ableitungen macht – und sie will die
+  Planung in fünf Folien vorgestellt bekommen. Du kannst statt Fjordlicht auch **ein Unternehmen
+  deiner Wahl** nutzen.
 
   ```text
   Rahmen:
@@ -14,18 +15,25 @@ question: |
   4 TikTok-Clips, 4 LinkedIn-Posts, 6 Pinterest-Pins.
   Feste Termine: Launch Wanderhose Vidde (Frühjahrskollektion) Mitte März.
   Keine Rabattaktionen, keine unbelegten Nachhaltigkeitsaussagen.
-  Werkzeug frei wählbar.
+  Faktenbasis: /Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11, Kurzübung 1).
+  Werkzeuge: Copilot Chat (optional im Copilot Notebook "Fjordlicht-Kurs"),
+  Copilot Pages, Copilot in Excel, Copilot in PowerPoint.
+  Ablage: OneDrive-Ordner "Fjordlicht-Kurs", Datei "Redaktionsplan-Q1-2027.xlsx".
   ```
 
   ---
 
-  **Runde 1 – Ideen erzeugen.** Erzeuge mit mindestens **zwei** Kreativtechniken aus Abschnitt
-  12.2 insgesamt mindestens 30 Ideen. Nutze für die Prompts das P.R.O.M.P.T.-Framework (Kap. 5)
-  und schließe die naheliegendsten Ideen ausdrücklich aus.
+  **Runde 1 – Ideen erzeugen.** Erzeuge in Copilot Chat mit mindestens **zwei** Kreativtechniken
+  aus Abschnitt 12.2 insgesamt mindestens 30 Ideen. Nutze für die Prompts das
+  P.R.O.M.P.T.-Framework (Kap. 5), verweise auf die Basisdaten und schließe die naheliegendsten
+  Ideen ausdrücklich aus. Lass die saisonalen Anlässe für Januar bis März im **Web**-Modus mit
+  Quellen recherchieren – oder mit dem Agent **Researcher**, falls in eurer Umgebung freigegeben.
+  Sammle Ideen und Anlässe in einer **Copilot Page**.
 
   **Runde 2 – Pillars und Auswahl.** Lege vier bis fünf Content-Pillars mit Zielanteilen fest.
   Lass die Ideen zuordnen und nach einem gewichteten Bewertungsraster vorbewerten. Wähle danach
-  selbst die Ideen für das Quartal aus. Prüfe gegen diese Pflichtkriterien:
+  selbst die Ideen für das Quartal aus und übertrage den Kalender in Excel (als Tabelle
+  formatiert). Prüfe mit **Copilot in Excel** gegen diese Pflichtkriterien:
 
   1. Jeder Pillar ist im Quartal vertreten, die Anteile weichen höchstens um 10 Prozentpunkte vom
      Ziel ab.
@@ -34,42 +42,66 @@ question: |
   4. Die Kapazität wird in keinem Monat überschritten.
 
   **Runde 3 – Die Komplikation.** Mitte Februar fällt eine von fünf Personen für sechs Wochen
-  aus. Gleichzeitig verschiebt sich der Launch der Vidde um zwei Wochen nach hinten. Passe den
-  Kalender an. Lass dir von der KI einen Anpassungsvorschlag machen, prüfe ihn aber gegen die
-  Pflichtkriterien und entscheide selbst, was entfällt.
+  aus. Gleichzeitig verschiebt sich der Launch der Vidde um zwei Wochen nach hinten. Lass dir von
+  Copilot in Excel oder Copilot Chat einen Anpassungsvorschlag machen, prüfe ihn gegen die
+  Pflichtkriterien und entscheide selbst, was entfällt. Lege die gestrichenen Inhalte auf einem
+  eigenen Tabellenblatt ab. Wenn ihr im Team arbeitet: Besprecht die Anpassung in einem
+  Teams-Meeting und lasst die Entscheidungen von Copilot in Teams zusammenfassen (falls
+  Transkription und Recap bei euch freigegeben sind) – prüft die Zusammenfassung gegen eure
+  Notizen.
 
-  **Runde 4 – Entscheidung unter Abwägung.** Die KI schlägt vor, die Lücke durch mehr
+  **Runde 4 – Entscheidung unter Abwägung.** Copilot schlägt vor, die Lücke durch mehr
   KI-generierte Kurzposts zu füllen, „damit die Frequenz gleich bleibt". **Widersprich** diesem
   Vorschlag oder stimme ihm begründet zu: Was spricht für gleichbleibende Frequenz, was für
   weniger, aber bessere Inhalte? Berücksichtige Markenstimme, Freigabeaufwand und Glaubwürdigkeit.
+  Fasse Planung und Entscheidung in einem kurzen Word-Dokument zusammen und lass daraus mit
+  **Copilot in PowerPoint** eine Präsentation mit höchstens fünf Folien erstellen. Überarbeite
+  die Folien selbst, bevor du sie zeigst.
 
   **Deliverable:**
 
-  1. Ideenliste mit Angabe der verwendeten Kreativtechniken
-  2. Pillar-Übersicht mit Zielanteilen und tatsächlichen Anteilen
-  3. Redaktionskalender Januar bis März (Tabelle mit Datum, Kanal, Pillar, Arbeitstitel, Anlass,
-     Verantwortlich, Status)
-  4. drei Recycling-Pläne
-  5. angepasster Kalender nach Runde 3 mit Liste der gestrichenen Inhalte
-  6. begründete Entscheidung zu Runde 4
+  1. Copilot Page mit Ideenliste, verwendeten Kreativtechniken und geprüften Anlässen (mit Quelle)
+  2. Excel-Datei mit Pillar-Übersicht (Ziel- und Ist-Anteile) und Redaktionskalender Januar bis
+     März (Datum, Kanal, Pillar, Arbeitstitel, Anlass, Verantwortlich, Status)
+  3. drei Recycling-Pläne
+  4. angepasster Kalender nach Runde 3 mit Blatt der gestrichenen Inhalte
+  5. begründete Entscheidung zu Runde 4
+  6. Präsentation mit höchstens fünf Folien für die Teamleitung
 
   **Fertig bist du erst, wenn** alle vier Pflichtkriterien auch nach der Anpassung aus Runde 3
-  erfüllt sind, kein ungeprüfter Anlass im Kalender steht und deine Entscheidung aus Runde 4 mindestens
-  ein Argument für und eines gegen die Frequenz-Lösung abwägt.
+  erfüllt sind, kein ungeprüfter Anlass im Kalender steht, deine Entscheidung aus Runde 4
+  mindestens ein Argument für und eines gegen die Frequenz-Lösung abwägt und die Präsentation
+  keine Zahl enthält, die nicht in der Excel-Datei steht.
 tip: |
-  Der Lernkern liegt in Runde 2 und 3. Ideen gibt es mit KI im Überfluss; die Arbeit liegt im
+  Der Lernkern liegt in Runde 2 und 3. Ideen gibt es mit Copilot im Überfluss; die Arbeit liegt im
   Auswählen und Weglassen. Ein Kalender, der bei einem Ausfall zusammenbricht, war von Anfang an zu
-  voll. Achte in Runde 4 darauf, dass „mehr Output" nicht automatisch „mehr Wirkung" bedeutet.
+  voll. Copilot in PowerPoint übernimmt gern Formulierungen, die du verworfen hattest, oder
+  rundet Zahlen – gleiche die Folien deshalb mit Excel ab. Achte in Runde 4 darauf, dass „mehr
+  Output" nicht automatisch „mehr Wirkung" bedeutet.
 solution: |
-  Bewertungskriterien: (1) mindestens zwei Kreativtechniken sichtbar eingesetzt, Prompts mit
-  vollständigen P.R.O.M.P.T.-Bausteinen und Ausschluss naheliegender Ideen; (2) Pillars mit
-  Zielanteilen, Auswahl begründet und nicht einfach die KI-Rangfolge übernommen; (3) Kalender
-  vollständig, Kapazität eingehalten, alle Anlässe mit Quelle geprüft; (4) Recycling-Pläne
-  übersetzen kanalgerecht statt zu kopieren; (5) Anpassung in Runde 3 streicht nachvollziehbar
-  (z. B. TikTok-Clips zuerst, weil aufwendig in Produktion und Freigabe) und hält die
-  Pflichtkriterien weiter ein; (6) die Abwägung in Runde 4 nennt konkrete Risiken der
-  Frequenz-Lösung (generische Inhalte, Freigabeengpass, Markenstimme) und mögliche Vorteile
-  (Sichtbarkeit im Algorithmus) und trifft eine klare Entscheidung.
+  Beispielprompt für die Pillar-Prüfung in Copilot in Excel:
 
-  Lernziel: KI als Ideen- und Planungswerkzeug nutzen, die strategische Auswahl und die Anpassung
-  an reale Ressourcen aber selbst verantworten.
+  ```text
+  Erstelle eine Übersicht: Anzahl und Anteil der Beiträge je Pillar im
+  gesamten Quartal und je Monat. Vergleiche mit diesen Zielanteilen:
+  Draußen sein 35 %, Ausrüstung verstehen 25 %, Länger nutzen 20 %,
+  Hinter den Kulissen 10 %, Fjordlicht Business 10 %. Hebe Abweichungen
+  über 10 Prozentpunkte hervor. Zähle außerdem je Monat und Kanal und
+  markiere jede Überschreitung der Kapazität.
+  ```
+
+  Bewertungskriterien: (1) mindestens zwei Kreativtechniken sichtbar eingesetzt, Prompts mit
+  vollständigen P.R.O.M.P.T.-Bausteinen, Verweis auf die Basisdaten und Ausschluss naheliegender
+  Ideen; Anlässe mit Quellen aus Web-Modus oder Researcher, stichprobenartig an der offiziellen
+  Quelle geprüft; (2) Pillars mit Zielanteilen, Auswahl begründet und nicht einfach die
+  Copilot-Rangfolge übernommen; Auswertung in Excel nachvollziehbar; (3) Kalender vollständig,
+  Kapazität eingehalten; (4) Recycling-Pläne übersetzen kanalgerecht statt zu kopieren;
+  (5) Anpassung in Runde 3 streicht nachvollziehbar (z. B. TikTok-Clips zuerst, weil aufwendig in
+  Produktion und Freigabe) und hält die Pflichtkriterien weiter ein; (6) die Abwägung in Runde 4
+  nennt konkrete Risiken der Frequenz-Lösung (generische Inhalte, Freigabeengpass, Markenstimme)
+  und mögliche Vorteile (Sichtbarkeit im Algorithmus) und trifft eine klare Entscheidung;
+  (7) die Präsentation ist knapp, zahlengleich mit Excel und von Hand nachbearbeitet.
+
+  Lernziel: Copilot als Ideen-, Planungs- und Auswertungswerkzeug über Chat, Excel und PowerPoint
+  hinweg nutzen, die strategische Auswahl und die Anpassung an reale Ressourcen aber selbst
+  verantworten.

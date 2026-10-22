@@ -1,9 +1,10 @@
 title: Ein Baustein nach dem anderen
 difficulty: 2
 question: |
-  Diese Übung machst du direkt in einem Bildwerkzeug (ChatGPT Images, Gemini, Copilot oder
-  Firefly). Ziel ist ein Pinterest-Pin für den Blogartikel „Herbstwanderung mit Kindern: 7 Tipps"
-  im Blog „Draußen-Notizen" von Fjordlicht – oder für ein Thema deiner Wahl.
+  Diese Übung machst du mit der **Bilderzeugung in Copilot Chat** (alternativ in der
+  Create-Funktion, falls in eurer Umgebung freigegeben, oder in ChatGPT Images, Gemini bzw.
+  Firefly). Ziel ist ein Pinterest-Pin für den Blogartikel „Herbstwanderung mit Kindern:
+  7 Tipps" im Blog „Draußen-Notizen" von Fjordlicht – oder für ein Thema deiner Wahl.
 
   1. **Stufe 0:** Schreibe den Prompt so knapp, wie du ihn spontan tippen würdest.
   2. **Stufe 1:** Ergänze Motiv, Umgebung und Stil.
@@ -12,11 +13,14 @@ question: |
   4. **Variablentest:** Ändere in Stufe 2 nur **einen** Baustein – zuerst das Licht (z. B. von
      „diffus, bedeckt" zu „goldene Stunde"), danach in einem zweiten Durchgang nur die
      Perspektive.
-
-  Halte in einer Tabelle fest, was sich bei jeder Stufe und jeder Variation am Bild geändert hat.
+  5. **Dokumentieren.** Sammle Prompts und Bilder in einer Tabelle (Word oder Copilot Page)
+     und halte fest, was sich bei jeder Stufe und jeder Variation geändert hat. Speichere den
+     besten Prompt in der **Prompt Gallery**, damit du ihn in Kap. 32 wiederfindest.
 tip: |
-  Starte jede Stufe in einem neuen Chat oder mit leerem Verlauf. Sonst übernimmt das Werkzeug
-  Informationen aus den vorherigen Bildern, und du misst nicht mehr die Wirkung deines Prompts.
+  Starte jede Stufe in einer neuen Unterhaltung. Sonst übernimmt Copilot Informationen aus
+  den vorherigen Bildern, und du misst nicht mehr die Wirkung deines Prompts. Wenn du dir
+  beim Unterschied unsicher bist, lade zwei Bilder hoch und lass Copilot Licht, Perspektive
+  und Farbstimmung beider Bilder vergleichen.
 solution: |
   Beispiel für Stufe 2:
 
@@ -27,15 +31,19 @@ solution: |
   Familie in der unteren Bildhälfte, von schräg hinten, obere Bildhälfte
   ruhiges Blätterdach für einen Titel. Kamera: Totale, Augenhöhe.
   Farben: gedeckte Orange-, Braun- und Grüntöne. Format: Hochformat 2:3.
+  Das Bild wird ein Pinterest-Pin, der Titel steht später oben.
   ```
 
   | Variante | Typische Beobachtung |
   |---|---|
   | Stufe 0 | Durchschnittsbild, oft frontal und gestellt, kein Platz für Text |
   | Stufe 1 | Situation stimmt, Ausschnitt und Format zufällig |
-  | Stufe 2 | kanaltauglich, oben ruhige Fläche, markengerechte Farben |
+  | Stufe 2 | kanaltauglich, oben ruhige Fläche, markengerechte Farben; Hochformat wird umgesetzt oder angenähert |
   | Licht geändert | Stimmung deutlich wärmer, oft auch kontrastreicher; Gesichter teils im Schatten |
   | Perspektive geändert | Wirkung verschiebt sich stark (z. B. Froschperspektive: Kinder wirken größer, abenteuerlicher) |
+
+  Der Satz zum Zweck am Ende hilft Chat-Bildmodellen wie Copilot, die ruhige Fläche wirklich
+  oben zu lassen (Abschnitt 30.2).
 
   Eine gute Bearbeitung zeigt, dass **ein** geänderter Baustein sichtbar wirkt – und dass Licht
   und Perspektive die Stimmung oft stärker verändern als zusätzliche Adjektive.

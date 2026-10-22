@@ -1,9 +1,8 @@
 title: Was gehört wohin beim Content-Assistenten?
 difficulty: 1
 question: |
-  Ordne die folgenden Inhalte dem richtigen Baustein des Content-Assistenten zu – **Instruktionen**,
-  **Wissensdatei**, **Fähigkeit/Werkzeug** oder **Konversationsstarter** – und begründe
-  jeweils in einem Halbsatz.
+  Der Content-Assistent aus Kap. 26 soll bei Fjordlicht als **Copilot Agent** nachgebaut werden.
+  Folgende Inhalte liegen vor:
 
   1. „Die Skog besteht zu 80 % aus recyceltem Polyester (Materialzertifikat 2025)."
   2. „Wenn eine Angabe nicht in den Dateien steht, schreibe [FEHLT: was fehlt]."
@@ -13,23 +12,38 @@ question: |
   6. „Keine Superlative, keine Ausrufezeichen-Ketten."
   7. Drei freigegebene Newsletter als Stilvorbild
 
-  Welche dieser Inhalte würdest du ändern müssen, wenn Fjordlicht ein neues Produkt einführt?
+  So gehst du vor:
+
+  1. **Erst Copilot:** Lass **Copilot Chat** jeden Inhalt einem Baustein zuordnen –
+     **Instruktionen**, **Wissensdatei**, **Fähigkeit/Werkzeug** oder **Konversationsstarter** –
+     mit Begründung in einem Halbsatz.
+  2. **Dann du:** Prüfe die Zuordnung und ergänze für jeden Inhalt, wo er im **Agent Builder**
+     landet (Anweisungen, Wissensquelle aus OneDrive/SharePoint, Websuche bzw. Funktionen,
+     Startprompt).
+  3. Welche dieser Inhalte müsstest du ändern, wenn Fjordlicht ein neues Produkt einführt – und
+     an welcher Stelle passiert das in Microsoft 365?
 tip: |
   Faustregel: **Regeln und Verhalten** gehören in die Instruktionen, **Fakten und Beispiele**
-  in Wissensdateien. Was sich häufig ändert, sollte nicht in den Instruktionen stehen.
+  in Wissensdateien. Was sich häufig ändert, sollte nicht in den Instruktionen stehen. Bei Frage 3
+  hilft der Gedanke: Eine Wissensdatei in OneDrive kannst du bearbeiten, ohne den Agent zu öffnen.
 solution: |
-  | Nr. | Baustein | Begründung |
-  |---|---|---|
-  | 1 | Wissensdatei (`claim-liste.md`) | belegte Faktenaussage mit Quelle |
-  | 2 | Instruktionen | Verhaltensregel für alle Modi |
-  | 3 | Konversationsstarter | Einstieg in einen Modus per Klick |
-  | 4 | Fähigkeit/Werkzeug | verhindert Übernahme fremder Behauptungen |
-  | 5 | Wissensdatei (`produktdaten.csv`) | Stammdaten, ändern sich regelmäßig |
-  | 6 | Instruktionen | Teil der Markenstimme |
-  | 7 | Wissensdatei (`beispieltexte.md`) | Stilvorbilder, Few-Shot-Material |
+  | Nr. | Baustein | Begründung | im Agent Builder |
+  |---|---|---|---|
+  | 1 | Wissensdatei (Claim-Liste) | belegte Faktenaussage mit Quelle | Wissensquelle: `Claim-Liste.docx` |
+  | 2 | Instruktionen | Verhaltensregel für alle Modi | Anweisungen |
+  | 3 | Konversationsstarter | Einstieg in einen Modus per Klick | Startprompt |
+  | 4 | Fähigkeit/Werkzeug | verhindert Übernahme fremder Behauptungen | Websuche bzw. Webinhalte aus |
+  | 5 | Wissensdatei (Produktdaten) | Stammdaten, ändern sich regelmäßig | Wissensquelle: `Produktdaten.xlsx` (ein Tabellenblatt) |
+  | 6 | Instruktionen | Teil der Markenstimme | Anweisungen |
+  | 7 | Wissensdatei (Beispieltexte) | Stilvorbilder, Few-Shot-Material | Wissensquelle: `Beispieltexte.docx` |
 
-  Bei einem neuen Produkt ändern sich nur **Wissensdateien**: `produktdaten.csv`, eventuell
-  `claim-liste.md` (neue belegte Aussagen) und später `beispieltexte.md`. Einzige Ausnahme in
-  den Instruktionen ist die Zeile mit den exakten Produktnamen – ein Hinweis, dass man sie
-  besser ebenfalls in die Produktdatei verlagert. Genau das ist der Vorteil der Trennung: Das
-  Verhalten bleibt stabil, die Fakten werden gepflegt.
+  Copilot ordnet Nr. 1 gelegentlich den Instruktionen zu („wichtige Regel") – dann wäre jede
+  Zertifikatsänderung eine Änderung am Agent.
+
+  Bei einem neuen Produkt ändern sich nur **Wissensdateien**: Produktdaten, eventuell die
+  Claim-Liste (neue belegte Aussagen) und später die Beispieltexte. In Microsoft 365 bearbeitest du
+  dafür die Dateien im Ordner; der Agent greift auf den aktuellen Stand zu, ohne dass du ihn neu
+  einrichten musst. Einzige Ausnahme in den Instruktionen ist die Zeile mit den exakten
+  Produktnamen – ein Hinweis, dass man sie besser ebenfalls in die Produktdatei verlagert. Genau
+  das ist der Vorteil der Trennung: Das Verhalten bleibt stabil, die Fakten werden gepflegt.
+  Nach jeder Änderung an einer Wissensdatei läuft trotzdem der Testkatalog (Kap. 25).

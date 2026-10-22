@@ -1,69 +1,105 @@
 title: Vergleichstest mit demselben Briefing
 difficulty: 4
 question: |
-  **Szenario:** Die Marketingleitung von Fjordlicht will vor der Herbstkampagne wissen, welches
-  Bildwerkzeug das Team künftig nutzt. Statt Meinungen soll ein **dokumentierter
-  Vergleichstest** entscheiden. Du führst ihn durch. Alternativ testest du für **ein Unternehmen
-  deiner Wahl**.
+  **Szenario:** Die Marketingleitung von Fjordlicht will vor der Herbstkampagne wissen, ob die
+  Bilderzeugung in **Microsoft 365 Copilot**, die das Team ohnehin lizenziert hat, für den
+  Alltag reicht – und für welche Aufgaben ein zusätzliches Bildwerkzeug nötig ist. Statt
+  Meinungen soll ein **dokumentierter Vergleichstest** entscheiden. Du führst ihn durch.
+  Alternativ testest du für **ein Unternehmen deiner Wahl**.
 
   ```text
   Rahmen:
   Kampagne: "Draußen bleiben" (Herbst), Kanäle Instagram (4:5) und Newsletter (3:1).
   Aufgabe 1: Stimmungsbild, Mensch in herbstlicher Natur, ruhig, dokumentarisch.
   Aufgabe 2: Infografik für Pinterest (2:3) mit Überschrift und drei Listenpunkten.
-  Mindestens drei Werkzeuge, z. B. ChatGPT Images, Midjourney, Ideogram, Firefly.
+  Ausgangswerkzeug: Copilot (Copilot Chat bzw. Create, falls freigegeben).
+  Vergleich mit mindestens zwei weiteren Werkzeugen, z. B. ChatGPT Images,
+  Midjourney, Ideogram, Firefly.
   Pro Werkzeug: 2 Durchläufe, höchstens 3 Nachbesserungsrunden je Aufgabe.
   Keine echten Produkte generieren.
+  Ablage: Ordner "Fjordlicht-Kurs" in OneDrive.
   ```
 
   ---
 
-  **Runde 1 – Briefing und Kriterien.** Formuliere für beide Aufgaben ein Bildbriefing mit den
-  acht Bausteinen aus Kap. 30. Lege **vor** dem Test die Bewertungskriterien und ihre Gewichtung
-  fest (Vorlage in 31.6) und begründe sie in je einem Satz.
+  **Runde 1 – Briefing und Kriterien.** Lass dir in **Word** mit Copilot einen Entwurf für zwei
+  Bildbriefings mit den acht Bausteinen aus Kap. 30 erstellen – auf Basis von
+  `/Fjordlicht-Basisdaten` (falls nicht vorhanden, Kap. 11 bzw. die Fakten aus dem Rahmen
+  einfügen). Prüfe und schärfe den Entwurf selbst. Lege **vor** dem Test die
+  Bewertungskriterien und ihre Gewichtung fest (Vorlage in 31.6) und begründe sie in je einem
+  Satz. Baue die Matrix in **Excel** als Tabelle an und lass dir von Copilot in Excel eine
+  Spalte mit der gewichteten Summe vorschlagen; prüfe die Formel.
 
-  **Runde 2 – Testen.** Passe das Briefing an den Prompt-Stil jedes Werkzeugs an (Satz oder
-  Stichworte, Parameter). Führe die Durchläufe aus, notiere Zeitaufwand und Nachbesserungen und
-  bewerte jedes Ergebnis in der Matrix.
+  **Runde 2 – Testen.** Passe das Briefing an den Prompt-Stil jedes Werkzeugs an (ausformulierter
+  Satz in Copilot und ChatGPT, Stichworte und Parameter in Midjourney). Führe die Durchläufe
+  aus, notiere Zeitaufwand und Nachbesserungen und trage jedes Ergebnis in die Excel-Matrix ein.
+  Halte bei Copilot zusätzlich fest, wie gut Format und Text im Bild umgesetzt wurden.
 
-  **Runde 3 – Die Komplikation.** Das beste Stimmungsbild stammt aus einem Werkzeug, bei dem sich
-  herausstellt: Es wurde in einem Plan erzeugt, dessen Bilder öffentlich sichtbar sind, und auf
-  der Jacke der Person ist ein Emblem zu sehen, das dem Logo eines bekannten Outdoor-Herstellers
-  ähnelt. Bewerte das Ergebnis neu. Ändert sich deine Matrix? Was muss passieren, bevor ein
-  solches Bild genutzt werden kann?
+  **Runde 3 – Die Komplikation.** Das beste Stimmungsbild stammt aus einem externen Werkzeug,
+  bei dem sich herausstellt: Es wurde in einem Plan erzeugt, dessen Bilder öffentlich sichtbar
+  sind, und auf der Jacke der Person ist ein Emblem zu sehen, das dem Logo eines bekannten
+  Outdoor-Herstellers ähnelt. Bewerte das Ergebnis neu. Ändert sich deine Matrix? Was muss
+  passieren, bevor ein solches Bild genutzt werden kann – und lässt sich das Motiv mit Copilot
+  ohne diese Probleme nachbauen?
 
   **Runde 4 – Entscheidung unter Abwägung.** Die Art Direktorin will Midjourney wegen des Looks.
   Die Datenschutzbeauftragte will ausschließlich Werkzeuge, die bereits über bestehende Verträge
-  laufen (ChatGPT Business, Adobe). Triff eine Entscheidung auf Basis deiner Matrix.
+  laufen (Microsoft 365 mit Copilot, Adobe). Triff eine Entscheidung auf Basis deiner Matrix.
   **Widersprich** mindestens einer der beiden Positionen ausdrücklich und benenne, unter welchen
-  Bedingungen du deine Entscheidung ändern würdest.
+  Bedingungen du deine Entscheidung ändern würdest. Lass dir die Empfehlung von Copilot in Word
+  aus Matrix und Notizen entwerfen (`/`-Verweis auf die Excel-Datei) und überarbeite sie selbst.
 
   **Deliverable:**
 
-  1. zwei Bildbriefings und angepasste Prompts je Werkzeug
-  2. gewichtete Bewertungsmatrix mit allen Ergebnissen und Zeitaufwand
+  1. zwei Bildbriefings (Word) und angepasste Prompts je Werkzeug
+  2. gewichtete Bewertungsmatrix (Excel) mit allen Ergebnissen und Zeitaufwand
   3. Neubewertung aus Runde 3 mit konkreten Maßnahmen
-  4. Empfehlung an die Leitung (höchstens eine Seite) mit Begründung und Bedingungen
+  4. Empfehlung an die Leitung (Word, höchstens eine Seite) mit Begründung und Bedingungen
 
-  **Fertig bist du erst, wenn** jedes Werkzeug mit identischem Briefing und gleichem Aufwand
-  getestet wurde, die Gewichtung vor dem Test feststand, Runde 3 zu einer nachvollziehbaren
-  Konsequenz in der Matrix oder im Prozess führt und die Empfehlung beide Aufgaben
-  berücksichtigt statt nur das schönste Bild.
+  **Fertig bist du erst, wenn** jedes Werkzeug – Copilot eingeschlossen – mit identischem
+  Briefing und gleichem Aufwand getestet wurde, die Gewichtung vor dem Test feststand, Runde 3
+  zu einer nachvollziehbaren Konsequenz in der Matrix oder im Prozess führt und die Empfehlung
+  beide Aufgaben berücksichtigt statt nur das schönste Bild.
 tip: |
   Der Lernkern liegt in Runde 1 und 3. Wer die Kriterien erst nach dem Test festlegt, gewichtet
   unbewusst so, dass der Favorit gewinnt. Und Runde 3 zeigt: Das schönste Bild ist wertlos, wenn
   es rechtlich oder organisatorisch nicht nutzbar ist – Logo-Ähnlichkeiten und Sichtbarkeit
-  gehören deshalb in die Bewertung, nicht in die Nachbetrachtung.
+  gehören deshalb in die Bewertung, nicht in die Nachbetrachtung. Copilot ist nicht automatisch
+  Sieger, weil es schon da ist: Integration und Datenschutz sind zwei Kriterien von sechs.
 solution: |
-  Bewertungskriterien: (1) die Briefings decken die acht Bausteine ab, und die Gewichtung ist vor
-  dem Test dokumentiert und begründet; (2) die Tests sind fair (identisches Briefing, gleiche
-  Anzahl Durchläufe und Nachbesserungen, Zeit notiert) und die Matrix ist vollständig;
-  (3) Runde 3 führt zu konkreten Maßnahmen, etwa Emblem per Inpainting entfernen oder Motiv neu
-  erzeugen, Bild nicht aus öffentlicher Galerie verwenden, Werkzeug nur mit privater
-  Sichtbarkeit zulassen, Markenrechtsprüfung (Kap. 34); (4) die Empfehlung unterscheidet nach
-  Aufgaben, widerspricht einer Position mit Argumenten aus der Matrix und nennt Bedingungen
-  für eine Revision (z. B. Midjourney nur mit Teamkonto und privater Sichtbarkeit).
+  Beispielprompt für den Briefing-Entwurf in Word:
+
+  ```text
+  Erstelle zwei Bildbriefings für die Fjordlicht-Herbstkampagne "Draußen bleiben"
+  auf Basis von /Fjordlicht-Basisdaten. Briefing 1: Stimmungsbild für Instagram
+  (4:5) und Newsletter (3:1). Briefing 2: Pinterest-Infografik (2:3) mit
+  Überschrift und drei Listenpunkten. Gliedere jedes Briefing nach Motiv, Stil,
+  Licht, Farbe, Perspektive, Komposition, Format und Ausschlüssen. Keine echten
+  Produkte im Bild. Markiere fehlende Angaben mit [FEHLT].
+  ```
+
+  Ausschnitt einer Matrix (Gewichtung vorab, Werte 1–5, Stimmungsbild):
+
+  | Kriterium | Gewicht | Copilot | Midjourney | Firefly |
+  |---|---|---|---|---|
+  | Briefingtreue | 25 % | 4 | 3 | 4 |
+  | Markenbildsprache | 25 % | 3 | 5 | 3 |
+  | Aufwand | 15 % | 4 | 3 | 3 |
+  | Rechte, Datenschutz, Sichtbarkeit | 15 % | 5 | 2 | 5 |
+  | Integration | 10 % | 5 | 2 | 4 |
+
+  Bewertungskriterien: (1) die Briefings decken die acht Bausteine ab, und die Gewichtung ist
+  vor dem Test dokumentiert und begründet; (2) die Tests sind fair (identisches Briefing,
+  gleiche Anzahl Durchläufe und Nachbesserungen, Zeit notiert), Copilot ist als
+  Ausgangswerkzeug vollständig in der Matrix, die Summenformel ist geprüft; (3) Runde 3 führt
+  zu konkreten Maßnahmen, etwa Emblem per Inpainting entfernen oder Motiv neu erzeugen, Bild
+  nicht aus öffentlicher Galerie verwenden, Werkzeug nur mit privater Sichtbarkeit zulassen,
+  Markenrechtsprüfung (Kap. 34); (4) die Empfehlung unterscheidet nach Aufgaben – etwa Copilot
+  für Alltag und Entwürfe, Firefly/Photoshop für die Bearbeitung echter Fotos, ein Spezialwerkzeug
+  nur, wo die Matrix einen klaren Vorsprung zeigt –, widerspricht einer Position mit Argumenten
+  aus der Matrix und nennt Bedingungen für eine Revision (z. B. Midjourney nur mit Teamkonto und
+  privater Sichtbarkeit).
 
   Lernziel: Bildwerkzeuge mit einem fairen, dokumentierten Test vergleichen und eine
   Entscheidung treffen, die Bildqualität, Rechte, Datenschutz und Arbeitsablauf gemeinsam
-  abwägt.
+  abwägt – ausgehend von dem Werkzeug, das im Unternehmen bereits verfügbar ist.

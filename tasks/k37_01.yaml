@@ -13,10 +13,32 @@ question: |
      laufen soll.
   5. Ein Kollege möchte einen aktuellen Charthit unter ein TikTok des Unternehmensaccounts legen,
      „weil der Song gerade trendet".
+
+  So gehst du vor:
+
+  1. Ordne zuerst selbst zu, in Stichworten.
+  2. Lass Copilot Chat (Modus **Arbeit**) dieselbe Zuordnung vornehmen. Gib die Tabelle der
+     Bezugswege aus Abschnitt 37.1 als Rahmen mit.
+  3. Wechsle für Fall 5 in den Modus **Web** und frag nach den aktuellen Regeln von TikTok und
+     Instagram für Musik auf Unternehmensaccounts – mit Quellen. Prüfe, ob die genannten Quellen
+     die Aussage wirklich tragen, und vergleiche mit deiner Zuordnung.
 tip: |
   Frage bei jedem Fall zuerst: Wie lange und wo läuft die Musik? Je länger und je breiter der
-  Einsatz, desto wichtiger ist eine eindeutige, dokumentierte Lizenz.
+  Einsatz, desto wichtiger ist eine eindeutige, dokumentierte Lizenz. Ohne Rahmen neigt Copilot
+  dazu, KI-Musik pauschal als „lizenzfrei" zu bezeichnen – genau das sollst du erkennen.
 solution: |
+  Beispiel-Prompt für Copilot Chat:
+
+  ```text
+  Ordne jedem der fünf Vorhaben einen Bezugsweg für Musik zu:
+  Plattformbibliothek, Stock-Musik, Auftragskomposition oder KI-Musik.
+  Fjordlicht postet über Unternehmensaccounts. Berücksichtige Laufzeit,
+  Kanäle (nur App oder auch Webshop/Newsletter) und ob das Ergebnis der
+  Marke dauerhaft gehören muss.
+  Ausgabe: Tabelle mit Nr., Bezugsweg, Begründung (1 Satz).
+  [Vorhaben 1 bis 5 einfügen]
+  ```
+
   | Nr. | Bezugsweg | Begründung |
   |---|---|---|
   | 1 | Plattformbibliothek (Commercial Music Library) | kurzlebig, nur auf Instagram, direkt in der App |
@@ -24,6 +46,12 @@ solution: |
   | 3 | KI-Musik im Bezahlplan, alternativ Stock | passgenaue Länge und Varianten sind die Stärke von KI; Tarif dokumentieren |
   | 4 | Stock-Musik mit kanalübergreifender Lizenz | Plattformsound gilt nur in der App, nicht im Webshop oder Newsletter |
   | 5 | nicht so umsetzbar | Charthits sind für Unternehmensaccounts meist nicht freigegeben; Alternative aus der Commercial Music Library wählen |
+
+  Typische Abweichungen bei Copilot: Fall 2 wird als KI-Musik vorgeschlagen („schnell und
+  günstig"), ohne die fehlende Schutzfähigkeit zu nennen; Fall 4 bleibt bei der
+  Plattformbibliothek, obwohl das Video den Kanal verlässt. Die Websuche zu Fall 5 bestätigt in
+  der Regel die Einschränkung auf die Commercial Music Library – prüfe aber Datum und Herkunft
+  der Quellen, die Regeln ändern sich.
 
   Fall 5 ist der wichtigste: Dass die App einen Song anbietet, heißt nicht, dass eine Marke ihn
   nutzen darf.

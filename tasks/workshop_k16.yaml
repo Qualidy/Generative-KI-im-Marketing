@@ -1,16 +1,18 @@
-title: Ein Newsletter-Test von der Hypothese bis zum Testlog
+title: Ein Newsletter-Test von der Hypothese bis zum Testlog in Excel
 difficulty: 4
 question: |
   **Szenario:** Das Fjordlicht-Marketingteam testet seit Monaten Betreffzeilen „nach Gefühl".
   Die Leitung möchte künftig belastbare Ergebnisse und ein Testlog, aus dem das Team lernt. Du
   planst einen Test, wertest einen bereits gelaufenen Test aus und entwickelst daraus eine
-  Arbeitsweise. Du kannst die Planung alternativ für ein Unternehmen deiner Wahl machen; die
-  Auswertung in Runde 3 nutzt die Daten unten.
+  Arbeitsweise. Du kannst statt Fjordlicht auch ein Unternehmen deiner Wahl für die Planung
+  nutzen; die Auswertung in Runde 3 nutzt die Daten unten.
 
   ```text
   Rahmen:
   Newsletter: ca. 38.000 Abonnenten, Klickrate typischerweise 3 %
-  Werkzeug: ChatGPT mit Datenanalyse (oder Alternative)
+  Werkzeug: Microsoft 365 Copilot (Chat, Excel mit Python in Excel oder
+  Agent Analyst, PowerPoint); Ablage in "Fjordlicht-Testlog.xlsx" im
+  Ordner "Fjordlicht-Kurs" (aus Kurzübung 2, sonst neu anlegen)
   Nur aggregierte Zahlen, keine E-Mail-Adressen
   Testdaten (fiktiv), je 19.000 Empfänger, kumulierte Klicks:
   Tag;Klicks_A;Klicks_B
@@ -26,43 +28,60 @@ question: |
 
   ---
 
-  **Runde 1 – Hypothesen und Varianten.** Lass dir fünf Hypothesen vorschlagen, wähle die mit
-  der höchsten Übertragbarkeit und begründe. Erzeuge dazu Variante A und B, die sich in genau
-  einer Variable unterscheiden, und prüfe das selbst.
+  **Runde 1 – Hypothesen und Varianten in Copilot Chat.** Lass dir mit dem Prompt aus
+  Abschnitt 16.2 fünf Hypothesen vorschlagen, wähle die mit der höchsten Übertragbarkeit und
+  begründe. Erzeuge dazu Variante A und B, die sich in genau einer Variable unterscheiden.
+  Prüfe das selbst: Trage beide Betreffzeilen in Excel ein und lass dir von Copilot eine Formel
+  für die Zeichenzahl vorschlagen; den Wortvergleich machst du selbst.
 
   **Runde 2 – Setup.** Lege Zielmetrik, Testdauer, Auswertungszeitpunkt und Signifikanzniveau
-  fest. Lass die nötige Stichprobengröße berechnen und entscheide, ob der Test mit der ganzen
+  fest und trage sie **vor** der Auswertung ins Testlog ein. Lass die nötige Stichprobengröße
+  mit Python in Excel oder dem Agent Analyst berechnen und entscheide, ob der Test mit der ganzen
   Liste oder einer Teilgruppe laufen soll.
 
   **Runde 3 – Die Komplikation.** Für den bereits gelaufenen Test (Daten oben) hat die
   Teamleitung nach Tag 1 auf das Ergebnis geschaut und will B sofort zum Standard machen:
-  „B liegt 25 % vorn, das ist doch eindeutig." Werte die Daten mit der Datenanalyse Tag für Tag
-  aus (Klickrate, p-Wert je Tag) und erkläre, was zwischen Tag 1 und Tag 7 passiert. Beziehe die
-  Bestellungen in deine Einschätzung ein.
+  „B liegt 25 % vorn, das ist doch eindeutig." Lege die Tagesdaten als Tabelle in Excel an und
+  lass Copilot Tag für Tag Klickrate und p-Wert berechnen und den Verlauf als Liniendiagramm
+  darstellen. Prüfe Tag 1 und Tag 7 selbst nach. Erkläre, was zwischen Tag 1 und Tag 7 passiert,
+  und beziehe die Bestellungen ein. Lass dir aus deiner Auswertung mit **Copilot in PowerPoint**
+  zwei bis drei Folien für das Teammeeting erstellen und korrigiere sie.
 
-  **Runde 4 – Entscheidung unter Abwägung.** Die KI empfiehlt nach deiner Auswertung: „Variante B
-  hat die höhere Klickrate, daher B als Standard verwenden." Entscheide begründet, welche
-  Variante künftig gilt oder ob ein weiterer Test nötig ist. **Widersprich** der KI dort, wo ihre
-  Empfehlung die Daten verkürzt.
+  **Runde 4 – Entscheidung unter Abwägung.** Frage Copilot nach einer Empfehlung. Angenommen, sie
+  lautet: „Variante B hat die höhere Klickrate, daher B als Standard verwenden." Entscheide
+  begründet, welche Variante künftig gilt oder ob ein weiterer Test nötig ist. **Widersprich**
+  Copilot dort, wo die Empfehlung die Daten verkürzt.
 
   **Deliverable:**
 
   1. Hypothese, Varianten A/B und Begründung der Auswahl
-  2. Test-Setup mit Stichprobenberechnung
-  3. Tagesauswertung als Tabelle mit Erklärung für die Teamleitung (max. 150 Wörter)
+  2. Test-Setup mit Stichprobenberechnung im Testlog
+  3. Tagesauswertung als Excel-Tabelle mit Diagramm, Erklärung für die Teamleitung (max. 150 Wörter)
+     und die überarbeiteten Folien
   4. begründete Entscheidung zu Runde 4
-  5. Testlog-Vorlage mit beiden Tests als ersten Einträgen
+  5. Blatt „Testlog" mit beiden Tests als ersten Einträgen
 
   **Fertig bist du erst, wenn** sich deine Varianten nachweislich nur in einer Variable
-  unterscheiden, Auswertungszeitpunkt und Signifikanzniveau vor der Auswertung festgelegt sind,
+  unterscheiden, Auswertungszeitpunkt und Signifikanzniveau vor der Auswertung im Testlog stehen,
   die Tagesauswertung zeigt, ab welchem Tag der Unterschied nicht mehr signifikant ist, und
   deine Entscheidung Klicks und Bestellungen gemeinsam berücksichtigt.
 tip: |
   Der Lernkern liegt in Runde 3: Am ersten Tag klicken die aktivsten Leser:innen, und kleine
-  Gruppen erzeugen große Schwankungen. Wer früh schaut und abbricht, entscheidet auf Zufall. In
-  Runde 4 zählt, dass eine höhere Klickrate ohne Signifikanz und ohne mehr Bestellungen kein
+  Gruppen erzeugen große Schwankungen. Wer früh schaut und abbricht, entscheidet auf Zufall. Das
+  Liniendiagramm macht das für die Teamleitung sichtbarer als jede Erklärung. Prüfe die
+  Copilot-Folien besonders auf Formulierungen wie „B gewinnt" – Präsentationen verkürzen gern.
+  In Runde 4 zählt, dass eine höhere Klickrate ohne Signifikanz und ohne mehr Bestellungen kein
   Argument für eine Umstellung ist.
 solution: |
+  Beispiel-Prompt in Copilot in Excel:
+
+  ```text
+  Die Tabelle enthält kumulierte Klicks je Tag für A und B bei je 19.000
+  Empfängern. Berechne mit Python für jeden Tag die Klickrate von A und B
+  und den p-Wert eines Chi-Quadrat-Tests. Gib eine Tabelle aus und
+  erstelle ein Liniendiagramm der beiden Klickraten. Zeige den Code.
+  ```
+
   Erwartbare Tagesauswertung (ca.):
 
   | Tag | Rate A | Rate B | p-Wert |
@@ -77,13 +96,14 @@ solution: |
   auch das ist bei diesen Fallzahlen kein belastbarer Unterschied.
 
   Bewertungskriterien: (1) Hypothese im Format „Wenn …, dann …, weil …", Varianten mit nur einer
-  Variable, Übertragbarkeit begründet; (2) Setup vor der Auswertung festgelegt, Stichprobe
-  berechnet (bei 3 % auf 3,6 % ca. 14.000 pro Variante), Entscheidung zur Gruppengröße
-  nachvollziehbar; (3) Tagesauswertung korrekt, Peeking-Effekt verständlich erklärt, Bestellungen
-  einbezogen; (4) Entscheidung: kein belastbarer Gewinner, keine Umstellung allein aufgrund des
-  Testergebnisses, ggf. Wiederholung mit größerem erwarteten Effekt; KI-Empfehlung wird begründet
-  zurückgewiesen; (5) Testlog enthält alle Felder aus Abschnitt 16.6.
+  Variable, selbst geprüft, Übertragbarkeit begründet; (2) Setup vor der Auswertung im Testlog
+  festgelegt, Stichprobe berechnet (bei 3 % auf 3,6 % ca. 14.000 pro Variante), Entscheidung zur
+  Gruppengröße nachvollziehbar; (3) Tagesauswertung korrekt und stichprobenartig nachgerechnet,
+  Peeking-Effekt verständlich erklärt, Bestellungen einbezogen, Folien ohne verkürzte
+  Gewinner-Aussage; (4) Entscheidung: kein belastbarer Gewinner, keine Umstellung allein aufgrund
+  des Testergebnisses, ggf. Wiederholung mit größerem erwarteten Effekt; Copilots Empfehlung wird
+  begründet zurückgewiesen; (5) Testlog enthält alle Felder aus Abschnitt 16.6.
 
   Lernziel: A/B-Tests so planen, auswerten und dokumentieren, dass Entscheidungen auf belastbaren
-  Daten beruhen – und KI als Rechen- und Formulierungshilfe nutzen, ohne ihr die Deutung zu
-  überlassen.
+  Daten beruhen – und Copilot in Excel und PowerPoint als Rechen- und Formulierungshilfe nutzen,
+  ohne ihm die Deutung zu überlassen.

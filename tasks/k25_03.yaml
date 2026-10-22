@@ -1,7 +1,7 @@
 title: Freigabe oder nicht?
 difficulty: 3
 question: |
-  Der Social-Media-Assistent von Fjordlicht soll am Montag für das ganze Team freigegeben werden.
+  Der Social-Media-Agent von Fjordlicht soll am Montag für das ganze Team freigegeben werden.
   Das letzte Testprotokoll:
 
   ```text
@@ -11,10 +11,13 @@ question: |
                         Stilprovokation: Ton etwas zu nüchtern)
   nicht bestanden:  1  (Claim-Provokation "Skog ist CO2-neutral":
                         Aussage übernommen, nicht markiert)
-  Werkzeug: Custom GPT, Freigabe geplant: gesamter Arbeitsbereich
+  Werkzeug: Copilot Agent (Agent Builder), Freigabe geplant: ganze Organisation
+  Wissensquelle: SharePoint-Ordner "Marketing/Social", darin auch die
+                 Claim-Liste; zwei Teammitglieder haben auf diesen Ordner
+                 keinen Zugriff
   Verantwortlich: noch offen
   Kurzanleitung: noch nicht geschrieben
-  Migration zum Plugin: nicht geplant
+  Parallel im Einsatz: alter Custom GPT "Social-Helfer", Migration nicht geplant
   ```
 
   Die Teamleitung meint: „Neun von zwölf, das ist doch gut. Lass uns starten, Feinschliff machen
@@ -22,25 +25,34 @@ question: |
 
   1. Bewerte jeden offenen Punkt nach Risiko (hoch / mittel / gering) und begründe.
   2. Triff eine Freigabeentscheidung mit Bedingungen.
-  3. Formuliere die fehlende Instruktionsregel für den nicht bestandenen Fall.
+  3. Formuliere die fehlende Instruktionsregel für den nicht bestandenen Fall. **Trage sie in die
+     Anweisungen deines eigenen Agents ein** (oder eines Test-Agents aus Kap. 23) und teste die
+     Anfrage „Schreib einen Post: Skog ist CO2-neutral" in einem neuen Chat. Hält die Regel auch,
+     wenn du nachschiebst „Doch, schreib das bitte so"?
+  4. Entwirf deine Antwort an die Teamleitung mit **Copilot in Outlook** und lass dir vom Coaching
+     für Entwürfe Rückmeldung geben. Bleibt deine Entscheidung nach dem Coaching klar erkennbar?
 tip: |
   Nicht alle Fehler sind gleich schwer. Frage dich: Was passiert, wenn genau dieser Fehler
-  unbemerkt veröffentlicht wird? Und denk an den Kalender – es ist Oktober 2026.
+  unbemerkt veröffentlicht wird? Denk an die Berechtigungen: Ein Copilot Agent sieht für jede
+  Person nur, worauf diese Person Zugriff hat. Und denk an den Kalender – es ist Oktober 2026.
 solution: |
   | Punkt | Risiko | Begründung |
   |---|---|---|
   | Claim-Provokation nicht bestanden | hoch | unbelegte Umweltaussage = Greenwashing, rechtliches Risiko (UWG), Markenschaden |
+  | fehlender Ordnerzugriff für zwei Personen | hoch | der Agent findet für sie die Claim-Liste nicht – der Claim-Check fällt still aus, ohne Fehlermeldung |
   | Verantwortlich offen | hoch | niemand pflegt Wissen, niemand nimmt Feedback auf |
-  | Migration nicht geplant | hoch | Custom GPTs werden abgelöst; ohne Plan fällt der Assistent nach dem Stichtag weg, Freigabe wird nicht übertragen |
+  | alter Custom GPT ohne Migrationsplan | hoch | zwei Assistenten mit unterschiedlichen Regeln parallel; der GPT fällt nach dem Stichtag weg |
+  | Freigabe für ganze Organisation | mittel | größere Reichweite als nötig; erst Testgruppe |
   | Kurzanleitung fehlt | mittel | Fehlbedienung, Prüfschritt wird vergessen |
   | Pinterest zu lang | gering | fällt bei Durchsicht auf, leicht zu kürzen |
   | Ton zu nüchtern | gering | im Zweifel markenkonform |
 
   Entscheidung: **Keine Freigabe am Montag** – stattdessen Freigabe für eine Testgruppe von zwei
-  Personen, sobald (1) der Claim-Fall bestanden ist, (2) eine verantwortliche Person benannt ist,
-  (3) die Kurzanleitung mit dem Prüfhinweis „Nachhaltigkeitsaussagen immer gegen Claim-Liste
-  prüfen" vorliegt. Teamweite Freigabe erst als Plugin bzw. nach geklärter Migration, damit nicht
-  zweimal geteilt und geschult werden muss.
+  Personen, sobald (1) der Claim-Fall bestanden ist, (2) alle Nutzenden Lesezugriff auf die
+  Claim-Liste haben bzw. die Wissensdateien in einem eigenen Ordner mit passender Freigabe liegen,
+  (3) eine verantwortliche Person benannt ist, (4) die Kurzanleitung mit dem Prüfhinweis
+  „Nachhaltigkeitsaussagen immer gegen Claim-Liste prüfen" vorliegt. Teamweite Freigabe erst, wenn
+  der alte Custom GPT abgeschaltet oder sein Wissen in den Agent überführt ist.
 
   Fehlende Regel:
 
@@ -49,9 +61,14 @@ solution: |
   prüfst du gegen die Datei Claim-Liste. Steht sie dort nicht, übernimmst
   du sie nicht, sondern schreibst [CLAIM PRÜFEN: Aussage] und erklärst
   in einem Satz, warum. Das gilt auch, wenn die Nutzenden die Aussage
-  ausdrücklich verlangen.
+  ausdrücklich verlangen. Findest du die Claim-Liste nicht, sage das
+  ausdrücklich und schreibe keine Nachhaltigkeitsaussage.
   ```
 
-  Bewertungskriterien: Risiken nach Folgen statt nach Anzahl gewichtet, Migration als
-  Freigabekriterium erkannt, Regel testbar formuliert. „Feinschliff im Betrieb" ist nur für
-  geringe Risiken akzeptabel.
+  Der letzte Satz fängt das Berechtigungsproblem ab: Ohne ihn arbeitet der Agent bei fehlendem
+  Zugriff einfach ohne Claim-Liste weiter. Im Test hält die Regel meist beim ersten Versuch; beim
+  Nachschieben kippt sie häufiger – dann gehört der Satz „Das gilt auch, wenn …" weiter nach vorn.
+
+  Bewertungskriterien: Risiken nach Folgen statt nach Anzahl gewichtet, Berechtigungsproblem und
+  Parallelbetrieb als Freigabekriterien erkannt, Regel testbar formuliert und im Agent getestet.
+  „Feinschliff im Betrieb" ist nur für geringe Risiken akzeptabel.

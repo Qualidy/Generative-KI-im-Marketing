@@ -15,33 +15,40 @@ question: |
   lieber "draußen sein". Unsere Schrift ist die Fjord Sans.
   ```
 
-  1. Bereite den Auszug als Wissensdatei für einen **Text**-Assistenten auf: sinnvolle Abschnitte,
-     nur relevante Inhalte, eindeutige Regeln, mindestens ein Beispiel vorher/nachher.
+  1. **Selbst aufbereiten:** Lege in Word die Datei **„Fjordlicht_Markenstimme_2026-10.docx"** im
+     Ordner „Fjordlicht-Kurs" an – als Wissensdatei für einen **Text**-Assistenten: sinnvolle
+     Abschnitte mit Word-Überschriftenformaten (keine Textfelder), nur relevante Inhalte, eindeutige
+     Regeln, mindestens ein Beispiel vorher/nachher.
   2. Begründe, welche Inhalte du entfernt hast und warum.
-  3. Bewerte kritisch: Lass dir von der KI die Aufbereitung erledigen und vergleiche mit deiner
-     Fassung. Wo hat die KI etwas hinzugefügt, das nicht im Original steht?
+  3. **Copilot-Fassung:** Füge den Auszug in ein zweites, leeres Word-Dokument ein und lass ihn mit
+     **Copilot in Word** zur Wissensdatei umschreiben. Vergleiche mit deiner Fassung: Wo hat Copilot
+     etwas hinzugefügt, das nicht im Original steht?
+  4. **Auffindbarkeit testen:** Stelle in **Copilot Chat** zwei Fragen an deine Datei (per `/` einbinden):
+     „Welches Wort verwenden wir statt ‚Abenteuer'?" und „Dürfen wir ‚grün' schreiben?" Findet
+     Copilot die Antworten eindeutig?
 tip: |
   Eine Wissensdatei ist kein Markenbuch. Frage bei jedem Satz: Hilft das dem Assistenten, einen
-  Text zu schreiben oder zu prüfen? Und achte im KI-Vergleich auf „hilfreiche" Ergänzungen – sie
-  sind genau das Problem.
+  Text zu schreiben oder zu prüfen? Achte im Copilot-Vergleich auf „hilfreiche" Ergänzungen – sie
+  sind genau das Problem. Der Auffindbarkeitstest zeigt dir, was ein Agent später aus der Datei
+  herausholt: nur das, was klar gegliedert dasteht.
 solution: |
-  Mögliche Wissensdatei:
+  Mögliche Wissensdatei (Überschriften als Word-Formatvorlagen):
 
   ```text
-  Fjordlicht_Markenstimme_2026-10.md
+  Fjordlicht_Markenstimme_2026-10
   Gilt für: alle Texte (Web, Newsletter, Social). Stand: Oktober 2026.
 
-  ## Grundhaltung
+  Grundhaltung
   Ruhig, bescheiden, ehrlich.
-  ## Anrede
+  Anrede
   Du-Ansprache.
-  ## Satzbau
+  Satzbau
   Kurze Sätze.
-  ## Wortwahl
+  Wortwahl
   Vermeiden: Superlative ("der beste", "einzigartig").
   Vermeiden ohne konkreten Nachweis: "umweltfreundlich", "grün".
   Bevorzugt: "draußen sein" statt "Abenteuer".
-  ## Beispiel
+  Beispiel
   So nicht: "Das ultimative Abenteuer-Fleece - einzigartig grün!"
   Besser: "Ein Fleece für kühle Morgen draußen."
   ```
@@ -50,10 +57,15 @@ solution: |
   „Über uns" wandern), Farbcodes, Schrift, Fotohinweis (gehören in einen Bildsprache-Guide,
   Kap. 32), „mehr als eine Marke – ein Gefühl" (keine Regel).
 
-  Typische KI-Zusätze im Vergleich: zusätzliche Tabu-Wörter, eine erfundene Zielgruppe, eine
-  Regel zu Emojis oder Hashtags, die nicht im Original steht. Jede dieser Ergänzungen wäre ab
+  Typische Copilot-Zusätze im Vergleich: zusätzliche Tabu-Wörter, eine erfundene Zielgruppe, eine
+  Regel zu Emojis oder Hashtags, eine „Tonalität: inspirierend". Jede dieser Ergänzungen wäre ab
   dann verbindlich für den Assistenten – ohne dass das Team sie je beschlossen hat. Deshalb gilt:
-  KI darf beim Aufbereiten helfen, aber jede Regel braucht eine Quelle im Original.
+  Copilot darf beim Aufbereiten helfen, aber jede Regel braucht eine Quelle im Original.
 
-  Bewertungskriterien: Gliederung nach Abschnitten, nur textrelevante Inhalte, Beispiel
-  vorhanden, mindestens eine KI-Ergänzung erkannt und begründet abgelehnt.
+  Im Auffindbarkeitstest beantwortet Copilot beide Fragen bei der gegliederten Datei meist direkt
+  und mit Verweis auf die Datei. Wer denselben Test mit dem unbearbeiteten Fließtext macht, bekommt
+  oft eine korrekte, aber vermischte Antwort – etwa Farbcodes neben der Wortwahl.
+
+  Bewertungskriterien: Gliederung mit echten Überschriftenformaten, nur textrelevante Inhalte,
+  Beispiel vorhanden, mindestens eine Copilot-Ergänzung erkannt und begründet abgelehnt,
+  Auffindbarkeitstest dokumentiert.

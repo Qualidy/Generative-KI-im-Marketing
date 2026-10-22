@@ -2,47 +2,58 @@ title: Bild-KI-Werkzeugauswahl für ein Marketingteam
 difficulty: 4
 question: |
   **Szenario:** Im Marketingteam von Fjordlicht nutzt jede Person ein anderes Bildwerkzeug –
-  teils mit privaten Konten. Die Leitung will Ordnung: eine begründete Empfehlung, welche
-  Bild-KI-Werkzeuge das Team für welche Zwecke einsetzt und welche nicht. Du kannst alternativ
-  **ein Unternehmen deiner Wahl** verwenden.
+  teils mit privaten Konten. Dabei hat das ganze Team Microsoft 365 Copilot. Die Leitung will
+  Ordnung: eine begründete Empfehlung, welche Bild-KI-Werkzeuge das Team für welche Zwecke
+  einsetzt und welche nicht. Du kannst alternativ **ein Unternehmen deiner Wahl** verwenden.
 
   ```text
   Rahmen:
   Team: 5 Personen, davon eine Grafikerin mit Adobe Creative Cloud.
-  Vorhanden: ChatGPT Business-Lizenzen für alle.
+  Vorhanden: Microsoft 365 Copilot für alle (Bilderzeugung in Copilot Chat bzw.
+  Create, falls in eurer Umgebung freigegeben).
   Budget für neue Bildwerkzeuge: überschaubar, monatlich kündbar bevorzugt.
   Kanäle: Webshop, Blog, Newsletter, Instagram, TikTok, LinkedIn, Pinterest.
   Grundsatz: Produkte werden echt gezeigt, keine Greenwashing-Bilder.
+  Ablage: OneDrive-Ordner "Fjordlicht-Kurs/Bildwerkzeuge".
   ```
 
   ---
 
   **Runde 1 – Bedarf erheben.** Liste mindestens **acht** wiederkehrende Bildaufgaben des Teams
   über alle Kanäle auf (z. B. Newsletter-Header, Blog-Illustration, Pinterest-Pin, Social-Post,
-  Infografik). Ordne jeder Aufgabe den Arbeitsmodus aus 29.4 zu und markiere die, bei denen
-  Bild-KI **nicht** eingesetzt werden soll.
+  Infografik). Lass dir von Copilot Chat einen ersten Vorschlag machen, gleiche ihn mit den
+  Kanälen ab und ergänze, was fehlt. Ordne jeder Aufgabe den Arbeitsmodus aus 29.4 zu und
+  markiere die, bei denen Bild-KI **nicht** eingesetzt werden soll.
 
-  **Runde 2 – Kriterien gewichten und testen.** Wähle **sechs** Kriterien aus 29.6, gewichte sie
-  (Summe 100 Prozent) und begründe die Gewichtung. Teste mindestens **zwei** Werkzeuge mit
-  demselben Prompt für zwei deiner Aufgaben und bewerte sie in einer Matrix (Punkte 1 bis 5).
+  **Runde 2 – Kriterien gewichten und testen (Excel).** Wähle **sechs** Kriterien aus 29.6,
+  gewichte sie (Summe 100 Prozent) und begründe die Gewichtung. Teste die **Bilderzeugung in
+  Copilot** und mindestens **ein** weiteres Werkzeug mit demselben Prompt für zwei deiner
+  Aufgaben – je drei Durchläufe pro Werkzeug. Trage die Punkte (1 bis 5) in eine
+  Excel-Matrix ein und lass **Copilot in Excel** eine Spalte mit dem gewichteten Gesamtwert
+  vorschlagen. Prüfe die Formel, bevor du ihr traust.
 
   **Runde 3 – Die Komplikation.** Ein Teammitglied hat Entwürfe der noch unveröffentlichten
-  Herbstkollektion in ein Bildwerkzeug mit privatem Konto hochgeladen, um „schnell Variationen zu
-  testen". Kläre: Welche Risiken entstehen (Vertraulichkeit, Training auf Uploads, öffentliche
-  Sichtbarkeit)? Was folgt daraus für deine Empfehlung? Formuliere **drei** verbindliche Regeln
-  für den Umgang mit Uploads.
+  Herbstkollektion in ein Bildwerkzeug mit privatem Konto hochgeladen, um „schnell Variationen
+  zu testen". Kläre: Welche Risiken entstehen (Vertraulichkeit, Training auf Uploads,
+  öffentliche Sichtbarkeit)? Was ändert sich, wenn dieselben Entwürfe stattdessen in Copilot
+  mit Arbeitskonto hochgeladen werden (Enterprise Data Protection, Daten im Mandanten) – und
+  was nicht (Produkt wird trotzdem nicht korrekt dargestellt)? Formuliere **drei** verbindliche
+  Regeln für den Umgang mit Uploads.
 
   **Runde 4 – Entscheidung unter Abwägung.** Die Leitung möchte aus Kostengründen nur **ein**
-  Werkzeug. Die Grafikerin möchte drei. Entscheide, wie viele Werkzeuge ihr einsetzt, und
-  begründe mit deiner Matrix. **Widersprich** dabei mindestens einer der beiden Positionen
-  ausdrücklich und benenne, was im Alltag schiefgeht, wenn man ihr folgt.
+  Werkzeug – Copilot, weil bezahlt. Die Grafikerin möchte drei. Entscheide, wie viele Werkzeuge
+  ihr einsetzt, und begründe mit deiner Matrix. **Widersprich** dabei mindestens einer der
+  beiden Positionen ausdrücklich und benenne, was im Alltag schiefgeht, wenn man ihr folgt.
+  Schreibe die Empfehlung mit **Copilot in Word**, auf Basis deiner Excel-Matrix (per
+  `/`-Verweis einbeziehen).
 
   **Deliverable:**
 
   1. Bedarfsliste mit acht Aufgaben, Arbeitsmodus und Markierung „keine Bild-KI"
-  2. gewichtete Kriterienmatrix mit Testergebnissen von mindestens zwei Werkzeugen
+  2. Excel-Matrix mit Gewichtung und Testergebnissen von Copilot und mindestens einem
+     weiteren Werkzeug, inklusive Beispielbildern
   3. drei Upload-Regeln aus Runde 3
-  4. Empfehlung auf einer Seite: Werkzeuge, Zwecke, Ausschlüsse, Begründung
+  4. Empfehlung auf einer Seite (Word): Werkzeuge, Zwecke, Ausschlüsse, Begründung
 
   **Fertig bist du erst, wenn** jede Bewertung in der Matrix auf einem eigenen Test beruht, die
   Upload-Regeln ohne Erklärung anwendbar sind, Produktdarstellungen ausdrücklich geregelt sind
@@ -50,17 +61,46 @@ question: |
 tip: |
   Der Lernkern liegt in Runde 2 und 3: Werkzeugauswahl ist keine Geschmacksfrage. Ein
   Werkzeug mit dem schönsten Look kann für ein Unternehmen ungeeignet sein, wenn Uploads zum
-  Training verwendet oder Bilder öffentlich angezeigt werden. Und „ein Werkzeug für alles" ist
-  nur dann falsch, wenn der Test zeigt, dass zentrale Aufgaben damit nicht gelingen.
+  Training verwendet oder Bilder öffentlich angezeigt werden. Umgekehrt ist „haben wir schon,
+  Daten bleiben im Mandanten" ein starkes Argument für Copilot – aber kein Beleg, dass es
+  jede Aufgabe löst. „Ein Werkzeug für alles" ist nur dann falsch, wenn der Test zeigt, dass
+  zentrale Aufgaben damit nicht gelingen.
 solution: |
+  Beispiel für einen Matrix-Ausschnitt (Punkte 1 bis 5, fiktive Testwerte):
+
+  | Kriterium | Gewicht | Copilot | Firefly | Ideogram |
+  |---|---|---|---|---|
+  | Steuerbarkeit | 25 % | 4 | 3 | 3 |
+  | Datenschutz und Vertraulichkeit | 20 % | 5 | 4 | 2 |
+  | Text im Bild | 15 % | 3 | 3 | 5 |
+  | Bearbeitung | 15 % | 3 | 5 | 2 |
+  | Integration | 15 % | 5 | 4 | 2 |
+  | Kosten | 10 % | 5 | 3 | 3 |
+
+  Beispiel für einen Excel-Prompt: „Füge eine Spalte hinzu, die für jedes Werkzeug die
+  Punkte mit der Gewichtung in Spalte B multipliziert und summiert." Prüfe, ob die Formel
+  wirklich alle sechs Zeilen erfasst und die Prozentwerte richtig verrechnet.
+
+  Beispiel für Upload-Regeln:
+
+  ```text
+  1. Unveröffentlichte Produkte und Entwürfe nur in freigegebenen Werkzeugen mit
+     Arbeitskonto (derzeit: Copilot, Adobe mit Firmenlizenz).
+  2. Keine privaten Konten für Firmenbilder – auch nicht "nur zum Testen".
+  3. Vor der ersten Nutzung eines Werkzeugs Sichtbarkeit und
+     Trainingseinstellungen prüfen und im Ordner "Bildwerkzeuge" dokumentieren.
+  ```
+
   Bewertungskriterien: (1) die Bedarfsliste deckt mehrere Kanäle ab und schließt
   Produktdarstellungen begründet von der reinen Generierung aus; (2) die Gewichtung ist
-  nachvollziehbar begründet, und die Punkte beruhen auf echten Tests mit identischem Prompt;
-  (3) die Upload-Regeln adressieren Vertraulichkeit, Kontotyp und Sichtbarkeit konkret (etwa:
-  „unveröffentlichte Produkte nur in freigegebenen Business-Werkzeugen", „keine privaten
-  Konten", „vor Nutzung Sichtbarkeit und Trainingseinstellungen prüfen"); (4) die Entscheidung
-  in Runde 4 verbindet Kosten und Zweck und widerspricht einer Position mit einem konkreten
-  Alltagsbeispiel.
+  nachvollziehbar begründet, die Punkte beruhen auf echten Tests mit identischem Prompt, und
+  die Formel aus Copilot in Excel wurde geprüft; (3) die Upload-Regeln adressieren
+  Vertraulichkeit, Kontotyp und Sichtbarkeit konkret und unterscheiden zwischen Datenschutz
+  (Copilot im Mandanten) und Produktwahrheit (gilt in jedem Werkzeug); (4) die Entscheidung in
+  Runde 4 verbindet Kosten und Zweck und widerspricht einer Position mit einem konkreten
+  Alltagsbeispiel – etwa: „Nur Copilot" scheitert an der Formaterweiterung echter
+  Produktfotos, die die Grafikerin ohnehin in Photoshop macht; „drei Werkzeuge" scheitert an
+  Pflege, Kosten und Regeln, wenn ein drittes Werkzeug nur eine Aufgabe abdeckt.
 
   Lernziel: Bild-KI-Werkzeuge nach Zweck, Rechten, Datenschutz und Integration auswählen – und
   eine Empfehlung so begründen, dass sie im Team trägt.

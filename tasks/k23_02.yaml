@@ -1,15 +1,17 @@
-title: Ein Mini-Assistent in fünf Minuten
+title: Ein Mini-Agent in zehn Minuten
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug. Ziel ist, den Unterschied zwischen „jedes Mal
-  alles mitgeben" und „einmal hinterlegen" selbst zu erleben – mit dem Werkzeug, das dir zur
-  Verfügung steht: ChatGPT-Projekt, Custom GPT bzw. Plugin, Claude Project, Gemini Gem oder
-  Copilot Agent.
+  Diese Übung machst du direkt in Microsoft 365 Copilot. Ziel ist, den Unterschied zwischen
+  „jedes Mal alles mitgeben" und „einmal hinterlegen" selbst zu erleben – mit einem eigenen Agent
+  aus dem **Agent Builder** (falls in eurer Umgebung freigegeben). Alternativ: ChatGPT-Projekt,
+  Claude Project oder Gemini Gem.
 
-  1. **Ohne Assistent:** Öffne einen normalen Chat und bitte um eine Instagram-Caption für den
-     Fleece „Skog" – ohne weitere Angaben. Speichere das Ergebnis.
-  2. **Hinterlegen:** Lege einen Assistenten bzw. ein Projekt an und hinterlege diese
-     Instruktionen:
+  1. **Ohne Agent:** Öffne einen neuen Chat in **Copilot Chat** (Modus **Arbeit**) und bitte um eine
+     Instagram-Caption für den Fleece „Skog" – ohne weitere Angaben. Kopiere das Ergebnis in ein
+     neues Word-Dokument.
+  2. **Steckbrief anlegen:** Speichere dieses Dokument im OneDrive-Ordner „Fjordlicht-Kurs" als
+     **„Assistenten-Steckbrief_Social-Captions.docx"** und füge die folgenden Instruktionen unter
+     der Überschrift „Instruktionen v0.1" ein. Der Steckbrief ist das Original (Abschnitt 23.6).
 
      ```text
      Du schreibst Social-Media-Entwürfe für Fjordlicht, eine Marke für
@@ -21,24 +23,34 @@ question: |
      Ausgabe: Caption mit maximal 60 Wörtern, danach 3 bis 5 Hashtags.
      ```
 
-  3. **Mit Assistent:** Stelle dieselbe Anfrage wie in Schritt 1 im neuen Assistenten.
-  4. **Vergleich:** Halte in einer Tabelle fest, worin sich die beiden Ergebnisse unterscheiden
-     (Ton, Länge, Behauptungen, Hashtags).
+  3. **Agent anlegen:** Erstelle im Agent Builder einen Agent „Fjordlicht Social-Captions (Test)".
+     Kopiere die Instruktionen aus dem Steckbrief in das Feld für die Anweisungen. Formuliere sie
+     nicht neu und lass sie auch nicht vom beschreibenden Chat des Agent Builders umschreiben.
+     Websuche und Bilderzeugung bleiben aus. Teile den Agent nicht.
+  4. **Mit Agent:** Stelle im Test- bzw. Vorschaubereich des Agents dieselbe Anfrage wie in Schritt 1.
+  5. **Vergleich:** Halte im Steckbrief in einer Tabelle fest, worin sich die beiden Ergebnisse
+     unterscheiden (Ton, Länge, Behauptungen, Hashtags).
 tip: |
   Achte besonders auf Nachhaltigkeitsaussagen. Ohne Regel schreibt das Modell gern „umweltfreundlich"
   oder „nachhaltig produziert" – Aussagen, die Fjordlicht nicht belegen kann und die als
-  Greenwashing gelten würden.
+  Greenwashing gelten würden. Und Achtung: Copilot Chat im Modus **Arbeit** greift womöglich schon
+  auf Dateien aus deinem OneDrive zurück, etwa „Fjordlicht-Basisdaten.docx". Dann fällt der
+  Unterschied kleiner aus – notiere das als Beobachtung.
 solution: |
   Typische Beobachtungen:
 
-  | Aspekt | Ohne Assistent | Mit Assistent |
+  | Aspekt | Copilot Chat ohne Agent | Agent mit Anweisungen |
   |---|---|---|
-  | Ton | begeistert, Superlative („der perfekte Begleiter") | ruhig, sachlich, Du-Ansprache |
+  | Ton | freundlich-werblich, Superlative („der perfekte Begleiter") | ruhig, sachlich, Du-Ansprache |
   | Länge | schwankt, oft zu lang | innerhalb der Vorgabe |
   | Behauptungen | pauschal „nachhaltig", „umweltfreundlich" | [FEHLT: Materialangabe] statt Behauptung |
   | Hashtags | viele, generisch, Emojis | 3 bis 5, passend |
 
-  Entscheidend ist die dritte Zeile: Der Assistent hat nicht „besser geschrieben", sondern eine
+  Entscheidend ist die dritte Zeile: Der Agent hat nicht „besser geschrieben", sondern eine
   Regel befolgt, die im normalen Chat niemand formuliert hatte. Genau das ist der Nutzen –
-  dauerhaft hinterlegte Regeln, die niemand vergessen kann. Wer im Ergebnis mit Assistent noch
-  einen Superlativ findet, hat einen ersten Testfall für Kap. 25 gefunden.
+  dauerhaft hinterlegte Regeln, die niemand vergessen kann.
+
+  Der Steckbrief enthält jetzt Name, Instruktionen v0.1 und den Vergleich. Wenn du später die
+  Anweisungen im Agent änderst, änderst du sie zuerst im Steckbrief. Wer im Ergebnis mit Agent
+  noch einen Superlativ findet, hat einen ersten Testfall für Kap. 25 gefunden – trag ihn direkt
+  im Steckbrief ein.

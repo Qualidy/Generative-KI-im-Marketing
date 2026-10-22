@@ -1,4 +1,4 @@
-title: Willkommenssequenz für neue Abonnenten
+title: Willkommenssequenz für neue Abonnenten mit Word und Outlook
 difficulty: 4
 question: |
   **Szenario:** Fjordlicht gewinnt jeden Monat rund 1.200 neue Newsletter-Abonnenten. Bisher
@@ -14,14 +14,19 @@ question: |
   Platzhalter verfügbar: [Vorname], [Interesse] (Wandern, Familie, Alltag).
   Keine Rabatte, keine Superlative, nur belegte Nachhaltigkeitsaussagen:
   Sølv-Obermaterial 100 Prozent recyceltes Polyamid; Reparaturservice vorhanden.
+  Faktenbasis: /Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11, Kurzübung 1).
   Keine echten Kundendaten im Prompt.
+  Werkzeuge: Copilot Chat, Copilot in Word, Copilot in Outlook.
+  Ablage: OneDrive-Ordner "Fjordlicht-Kurs", Datei "Willkommenssequenz.docx".
   ```
 
   ---
 
-  **Runde 1 – Plan und Texte.** Erstelle per Prompt-Kette zuerst den Plan der Sequenz
-  (Mail, Abstand, Ziel, Kernbotschaft, CTA), dann jede Mail einzeln mit Betreff, Preheader,
-  Text und genau einem CTA. Nutze für die Prompts das P.R.O.M.P.T.-Framework (Kap. 5).
+  **Runde 1 – Plan und Texte.** Erstelle per Prompt-Kette in Copilot Chat zuerst den Plan der
+  Sequenz (Mail, Abstand, Ziel, Kernbotschaft, CTA) und speichere ihn als Tabelle in
+  „Willkommenssequenz.docx". Lass dann in Word mit Copilot jede Mail **einzeln** entwerfen, mit
+  Betreff, Preheader, Text und genau einem CTA – jeweils mit Verweis auf die Basisdaten und den
+  Plan. Nutze für die Prompts das P.R.O.M.P.T.-Framework (Kap. 5).
 
   **Runde 2 – Prüfung gegen Pflichtkriterien.** Die Sequenz muss **alle vier** Kriterien erfüllen:
 
@@ -30,25 +35,32 @@ question: |
   3. Kein Betreff enthält Spam-Signale oder Clickbait-Muster; Betreff und Preheader ergänzen sich.
   4. Keine Aussage geht über die belegten Fakten hinaus.
 
+  Frag Copilot in Word, welche Aussagen im Dokument Nachhaltigkeit betreffen und wo CTAs stehen,
+  und prüfe die Antwort selbst. Lege für zwei Mails einen Testentwurf an dich selbst in **Outlook**
+  an – einmal mit Platzhaltern, einmal mit Fallback – und nutze das **Coaching durch Copilot** als
+  zweite Meinung zu Ton und Klarheit.
+
   **Runde 3 – Die Komplikation.** Die Auswertung der Anmeldungen zeigt: Rund 40 Prozent der neuen
   Abonnenten haben beim [Interesse] „Familie" angegeben. Die Teamleitung möchte für sie ab Mail 3
   eine eigene Variante. Passe die Sequenz an, ohne alles neu schreiben zu lassen: Welche Mails
-  bleiben gleich, welche bekommen eine Familienfassung? Arbeite im Dokument mit gezielter
-  Überarbeitung (Kap. 11).
+  bleiben gleich, welche bekommen eine Familienfassung? Arbeite in Word mit eingeschalteter
+  Änderungsverfolgung und gezielter Überarbeitung markierter Passagen (Kap. 11).
 
-  **Runde 4 – Entscheidung unter Abwägung.** Die KI schlägt vor, in Mail 1 einen „Willkommensrabatt
-  von 10 Prozent" anzubieten, weil das „branchenüblich die Konversion steigert". **Widersprich**
-  diesem Vorschlag oder stimme begründet zu. Wäge ab: kurzfristige Käufe gegen Markenstimme,
-  Erwartungshaltung der Abonnenten und Fjordlichts Haltung zu Rabatten. Halte fest, wie du die
-  Wirkung deiner Entscheidung später messen würdest (Kap. 16, Kap. 20).
+  **Runde 4 – Entscheidung unter Abwägung.** Copilot schlägt vor, in Mail 1 einen
+  „Willkommensrabatt von 10 Prozent" anzubieten, weil das „branchenüblich die Konversion
+  steigert". Lass dir diese Behauptung im **Web**-Modus mit Quellen belegen und prüfe die Quellen.
+  **Widersprich** dem Vorschlag oder stimme begründet zu. Wäge ab: kurzfristige Käufe gegen
+  Markenstimme, Erwartungshaltung der Abonnenten und Fjordlichts Haltung zu Rabatten. Halte fest,
+  wie du die Wirkung deiner Entscheidung später messen würdest (Kap. 16, Kap. 20).
 
   **Deliverable:**
 
-  1. Plan der Sequenz als Tabelle
-  2. alle Mails mit Betreff, Preheader, Text und CTA
-  3. ausgefüllte Checkliste der vier Pflichtkriterien
-  4. Familienvarianten aus Runde 3 mit Begründung, welche Mails gleich bleiben
-  5. begründete Entscheidung zu Runde 4 mit Messidee
+  1. Plan der Sequenz als Tabelle in „Willkommenssequenz.docx"
+  2. alle Mails mit Betreff, Preheader, Text und CTA im selben Dokument
+  3. ausgefüllte Checkliste der vier Pflichtkriterien, ergänzt um die Outlook-Tests
+  4. Familienvarianten aus Runde 3 mit nachverfolgten Änderungen und Begründung, welche Mails
+     gleich bleiben
+  5. begründete Entscheidung zu Runde 4 mit Bewertung der Quellen und Messidee
 
   **Fertig bist du erst, wenn** jede Mail alle vier Pflichtkriterien erfüllt, die Familienvarianten
   sich inhaltlich (nicht nur in der Anrede) unterscheiden, keine echten Kundendaten verwendet
@@ -57,17 +69,31 @@ question: |
 tip: |
   Der Lernkern liegt in Runde 2 und 4. Eine Sequenz wirkt nur, wenn jede Mail einen klaren Zweck
   hat und die Reihenfolge Vertrauen vor Verkauf stellt. In Runde 4 zeigt sich, dass „branchenüblich"
-  kein Argument für eine bestimmte Marke ist: Die KI kennt den Durchschnitt, nicht eure Strategie.
+  kein Argument für eine bestimmte Marke ist: Copilot kennt den Durchschnitt, nicht eure Strategie –
+  und Quellen zu Konversionsraten stammen oft von Anbietern, die Rabatt-Tools verkaufen.
 solution: |
-  Bewertungskriterien: (1) Plan vor den Texten erstellt, Mails einzeln formuliert, Prompts mit
-  vollständigen P.R.O.M.P.T.-Bausteinen; (2) alle vier Pflichtkriterien nachweisbar geprüft,
-  insbesondere Fallbacks für [Vorname] und [Interesse] und keine erfundenen Nachhaltigkeitsaussagen;
-  (3) Familienvarianten unterscheiden sich im Inhalt (z. B. Packliste für Kinder statt
-  Schichtenprinzip für Pendler), unveränderte Mails sind begründet; Überarbeitung erfolgte gezielt;
-  (4) die Entscheidung in Runde 4 wägt konkret ab (Rabatt erzeugt Erwartung an weitere Rabatte,
-  widerspricht der ruhigen Markenstimme, kann aber Erstkäufe beschleunigen) und schlägt eine
-  Messung vor, etwa Kaufquote und Abmelderate nach 30 Tagen im A/B-Vergleich.
+  Beispielprompt für eine einzelne Mail in Word:
 
-  Lernziel: Eine automatisierte E-Mail-Sequenz mit KI planen und texten, Personalisierung
+  ```text
+  Schreibe Mail 3 der Willkommenssequenz gemäß dem Plan in der Tabelle oben.
+  Betreff (max. 45 Zeichen), Preheader (max. 90 Zeichen), Text max. 150 Wörter,
+  genau ein CTA. Platzhalter: [Vorname] mit Fallback "Hallo,".
+  Fakten nur aus /Fjordlicht-Basisdaten. Greife höchstens einen Gedanken
+  aus Mail 2 auf. Keine Superlative, keine Rabatte.
+  Tone: ruhig, ehrlich, nordisch-trocken, Du-Ansprache.
+  ```
+
+  Bewertungskriterien: (1) Plan vor den Texten erstellt, Mails einzeln formuliert, Prompts mit
+  vollständigen P.R.O.M.P.T.-Bausteinen und Verweis auf die Basisdaten; (2) alle vier
+  Pflichtkriterien nachweisbar geprüft, insbesondere Fallbacks für [Vorname] und [Interesse] und
+  keine erfundenen Nachhaltigkeitsaussagen; Copilot-Antworten und Coaching-Hinweise wurden selbst
+  bewertet, nicht übernommen; (3) Familienvarianten unterscheiden sich im Inhalt (z. B. Packliste
+  für Kinder statt Schichtenprinzip für Pendler), unveränderte Mails sind begründet; Überarbeitung
+  erfolgte gezielt und ist nachverfolgbar; (4) die Entscheidung in Runde 4 wägt konkret ab (Rabatt
+  erzeugt Erwartung an weitere Rabatte, widerspricht der ruhigen Markenstimme, kann aber Erstkäufe
+  beschleunigen), bewertet die Quellen kritisch und schlägt eine Messung vor, etwa Kaufquote und
+  Abmelderate nach 30 Tagen im A/B-Vergleich.
+
+  Lernziel: Eine automatisierte E-Mail-Sequenz mit Copilot planen und texten, Personalisierung
   datensparsam umsetzen und strategische Entscheidungen nicht an den Branchendurchschnitt
   delegieren.

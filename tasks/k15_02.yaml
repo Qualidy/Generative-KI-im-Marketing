@@ -1,23 +1,43 @@
-title: Interview-Prompt und abschnittsweises Schreiben
+title: Interview in Copilot, Abschnitt in Word
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug. Thema: ein Blogartikel für Fjordlicht oder für
+  Diese Übung machst du in Microsoft 365 Copilot. Thema: ein Blogartikel für Fjordlicht oder für
   ein Unternehmen deiner Wahl, zu einem Thema, bei dem du selbst Erfahrung hast (z. B. ein Hobby
   oder ein Produkt, das du gut kennst).
 
-  1. **Interview.** Lass dich mit dem Interview-Prompt aus Abschnitt 15.4 interviewen.
-     Beantworte die Fragen ehrlich und konkret. Lass dir die Antworten als Zitate zusammenfassen.
-  2. **Gliederung.** Lass eine Gliederung mit fünf Zwischenüberschriften erstellen und
-     überarbeite sie selbst (mindestens eine Änderung).
-  3. **Ein Abschnitt.** Lass genau **einen** Abschnitt schreiben (max. 250 Wörter) und zwar
-     mit dem Platzhalter `[ERFAHRUNG EINFÜGEN]`. Setze danach eines deiner Zitate an dieser
-     Stelle ein.
-  4. **Vergleich.** Lass denselben Abschnitt in einem neuen Chat **ohne** Interview und ohne
-     Platzhalter schreiben. Markiere im Vergleich alle Sätze, die erfundene Erfahrung enthalten.
+  1. **Interview in Copilot Chat.** Lass dich mit dem Interview-Prompt aus Abschnitt 15.4
+     interviewen. Beantworte die Fragen ehrlich und konkret. Lass dir die Antworten als Zitate
+     zusammenfassen und übernimm die Zusammenfassung in eine **Copilot Page**
+     („Interview-Zitate"). Prüfe dort jedes Zitat gegen deine Antworten und korrigiere es.
+  2. **Gliederung.** Lass im selben Chat eine Gliederung mit fünf Zwischenüberschriften
+     erstellen, füge sie in die Page ein und überarbeite sie selbst (mindestens eine Änderung).
+  3. **Ein Abschnitt in Word.** Lege im Ordner „Fjordlicht-Kurs" ein neues Word-Dokument an und
+     lass mit **Entwurf mit Copilot** genau **einen** Abschnitt schreiben (max. 250 Wörter) – mit
+     dem Platzhalter `[ERFAHRUNG EINFÜGEN]`. Für Fjordlicht verweist du auf `/Fjordlicht-Basisdaten`
+     (falls nicht vorhanden: Kap. 11 bzw. die Fakten in den Prompt einfügen). Setze danach eines
+     deiner Zitate an der Platzhalterstelle ein.
+  4. **Vergleich.** Lass denselben Abschnitt in einem **neuen** Copilot-Chat **ohne** Interview
+     und ohne Platzhalter schreiben. Markiere im Vergleich alle Sätze, die erfundene Erfahrung
+     enthalten.
+
+  Alternativ funktioniert die Übung mit ChatGPT, Claude oder Gemini.
 tip: |
   Prüfe in Schritt 1, ob die Zusammenfassung wirklich nur deine Aussagen enthält. Modelle
   „glätten" gern und fügen kleine Details hinzu. Das ist bereits die erste Faktencheck-Übung.
+  Die Page hat den Vorteil, dass Zitate und Gliederung an einem Ort liegen und du sie später mit
+  dem Team teilen kannst.
 solution: |
+  Prompt für Schritt 3 in Word (Entwurf mit Copilot):
+
+  ```text
+  Schreibe Abschnitt 3 "Waschen in der Maschine" für den Blog
+  "Draußen-Notizen" nach dieser Gliederung: [Gliederung].
+  Nutze nur Fakten aus /Fjordlicht-Basisdaten. Max. 250 Wörter,
+  eine nummerierte Schritt-Liste. Ton laut Markenstimme in den
+  Basisdaten. Wo Erfahrung aus dem Reparaturservice passt, setze
+  [ERFAHRUNG EINFÜGEN] statt etwas zu erfinden.
+  ```
+
   Typische Beobachtungen:
 
   | Fassung | Merkmal |
@@ -26,9 +46,10 @@ solution: |
   | mit Interview | konkrete Details, eigene Formulierungen, erkennbar aus einer Quelle |
 
   Häufig enthält schon die Zitat-Zusammenfassung ein kleines Detail, das du nicht gesagt hast,
-  etwa eine Zahl oder eine Verallgemeinerung. Wer das bemerkt und korrigiert, hat den Kern der
-  Übung erfasst.
+  etwa eine Zahl oder eine Verallgemeinerung. Wer das bemerkt und in der Page korrigiert, hat den
+  Kern der Übung erfasst.
 
-  Gute Bearbeitung: fünf überarbeitete Gliederungspunkte mit mindestens einer eigenen Änderung,
-  ein Abschnitt mit eingesetztem echtem Zitat, im Vergleichstext mindestens eine markierte
-  erfundene Erfahrung und ein Satz, warum der Abschnitt mit Interview für E-E-A-T stärker ist.
+  Gute Bearbeitung: Page mit geprüften Zitaten, fünf überarbeitete Gliederungspunkte mit
+  mindestens einer eigenen Änderung, ein Word-Abschnitt mit eingesetztem echtem Zitat, im
+  Vergleichstext mindestens eine markierte erfundene Erfahrung und ein Satz, warum der Abschnitt
+  mit Interview für E-E-A-T stärker ist.

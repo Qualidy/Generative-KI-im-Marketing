@@ -1,23 +1,39 @@
-title: Einen Bildsprache-Baustein ableiten und testen
+title: Einen Bildsprache-Baustein in Copilot ableiten und testen
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT Images, Gemini, Firefly oder Midjourney).
+  Diese Übung machst du in **Copilot Chat** (Microsoft-365-Copilot-App). Alternativ geht sie
+  mit ChatGPT, Gemini oder Firefly.
 
-  1. **Ableiten.** Wähle drei Bilder, die eine einheitliche Bildsprache haben – eigene Fotos,
-     freigegebene Bilder deines Unternehmens oder drei Bilder, die du für Fjordlicht generierst.
-     Lass sie mit dem Analyse-Prompt aus Abschnitt 32.5 beschreiben.
+  1. **Ableiten.** Wähle drei Bilder mit einheitlicher Bildsprache – eigene Fotos, freigegebene
+     Bilder deines Unternehmens oder drei Bilder, die du in Copilot für Fjordlicht erzeugst.
+     Lade sie in Copilot Chat hoch und lass sie mit dem Analyse-Prompt aus Abschnitt 32.5
+     beschreiben.
   2. **Schärfen.** Prüfe den Baustein gegen die sieben Dimensionen aus Abschnitt 32.2. Ersetze
-     jedes Adjektiv, das man im Bild nicht sehen kann, durch eine sichtbare Beschreibung.
-  3. **Testen.** Generiere zwei verschiedene Motive (zum Beispiel „Familie beim Picknick im
-     Nieselregen" und „Rucksack Tind auf einem Steg") – einmal **ohne** und einmal **mit**
-     Bildsprache-Baustein.
-  4. **Vergleichen.** Lege die vier Bilder nebeneinander und notiere, in welchen Dimensionen
-     der Baustein wirkt und wo nicht.
+     jedes Adjektiv, das man im Bild nicht sehen kann, durch eine sichtbare Beschreibung. Bitte
+     Copilot dabei um Gegenvorschläge, entscheide aber selbst.
+  3. **Testen.** Erzeuge in Copilot zwei verschiedene Motive (zum Beispiel „Familie beim
+     Picknick im Nieselregen" und „Rucksack auf einem Steg") – einmal **ohne** und einmal
+     **mit** Bildsprache-Baustein. Starte für jede Fassung einen neuen Chat, damit der Verlauf
+     nicht mitwirkt.
+  4. **Vergleichen.** Lege die vier Bilder auf einer PowerPoint-Folie nebeneinander und notiere,
+     in welchen Dimensionen der Baustein wirkt und wo nicht.
+  5. **Ablegen.** Speichere den geschärften Baustein als **„Fjordlicht-Bildsprache.docx"** im
+     Ordner „Fjordlicht-Kurs" – die Kapitel 33 und 34 greifen per `/Fjordlicht-Bildsprache`
+     darauf zurück. Optional: als Prompt in der Prompt Gallery speichern.
 tip: |
   Ein guter Baustein macht zwei inhaltlich verschiedene Motive erkennbar „verwandt". Wenn beide
   Bilder mit Baustein immer noch wie aus zwei verschiedenen Kampagnen aussehen, ist er zu vage –
   meist fehlen Licht und Bearbeitung.
 solution: |
+  Beispielprompt zum Schärfen:
+
+  ```text
+  Hier ist mein Bildsprache-Baustein: [Baustein]. Prüfe ihn gegen diese
+  Dimensionen: Motivwelt, Menschen, Licht, Farbe, Perspektive, Bearbeitung,
+  Tabus. Markiere jedes Wort, das man im Bild nicht sehen kann, und schlage
+  eine sichtbare Beschreibung vor. Der Baustein darf höchstens 80 Wörter haben.
+  ```
+
   Typische Beobachtungen:
 
   | Dimension | ohne Baustein | mit Baustein |
@@ -32,4 +48,5 @@ solution: |
 
   Meist wirkt der Baustein stark auf Licht und Farbe, schwächer auf Perspektive. Hilfe: die
   Perspektive in jedem Prompt einzeln angeben. Eine gute Bearbeitung enthält den geschärften
-  Baustein, vier Bilder und mindestens drei konkrete Beobachtungen zum Unterschied.
+  Baustein (gespeichert als Word-Datei), die Vergleichsfolie mit vier Bildern und mindestens
+  drei konkrete Beobachtungen zum Unterschied.

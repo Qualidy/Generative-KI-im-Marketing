@@ -14,69 +14,103 @@ question: |
   Team: 5 Personen im Marketing, 1 Person Produktmanagement, keine eigene Rechtsabteilung
   (externe Kanzlei bei Bedarf).
   Bildvolumen: ca. 40 KI-Bilder pro Monat über alle Kanäle.
-  Werkzeuge: ChatGPT Images, Adobe Firefly, Midjourney.
+  Werkzeuge: Bilderzeugung in Microsoft 365 Copilot (Hauptwerkzeug), Adobe Firefly
+  für Bearbeitung echter Fotos, Midjourney für einzelne Kampagnenmotive.
   Markenwert: Ehrlichkeit, kein Greenwashing.
   Freigabe soll pro Bild höchstens 10 Minuten dauern.
   ```
 
   ---
 
-  **Runde 1 – Checkliste entwerfen.** Erstelle eine Freigabe-Checkliste mit den Bereichen
+  **Runde 1 – Checkliste entwerfen.** Lass dir von Copilot in **Word** einen Entwurf der
+  Freigabe-Checkliste erstellen – auf Basis der Kapitel-34-Inhalte, `/Fjordlicht-Basisdaten`
+  und `/Fjordlicht-Bildsprache` (falls nicht vorhanden, Kap. 11 bzw. 32 einfügen). Bereiche:
   technische Fehler, Bias, Rechte Dritter, Nutzungsbedingungen, Kennzeichnung und
-  Produktwahrheit. Jeder Punkt ist als Ja/Nein-Frage formuliert. Lege fest, welche Punkte
-  K.-o.-Kriterien sind und wer welchen Punkt prüft.
+  Produktwahrheit. Jeder Punkt ist eine Ja/Nein-Frage. Lege selbst fest, welche Punkte
+  K.-o.-Kriterien sind und wer welchen Punkt prüft. Für „Nutzungsbedingungen" recherchierst du
+  die aktuellen Bedingungen der drei Werkzeuge mit Copilot im Modus **Web** und prüfst die
+  Quellen – für Copilot auch, was Microsofts Zusagen zu Urheberrechtsansprüchen für
+  Unternehmenskunden abdecken und was nicht.
 
   **Runde 2 – Checkliste testen.** Erzeuge oder sammle sechs Bilder, darunter mindestens ein
-  Produktbild, ein Bild mit Menschen, eines mit einem realen Ort und eine Illustration. Prüfe
-  alle sechs mit deiner Checkliste und stoppe die Zeit. Pflichtkriterien:
+  Produktbild (Composing), ein Bild mit Menschen, eines mit einem realen Ort und eine
+  Illustration. Prüfe alle sechs mit deiner Checkliste, protokolliere in **Excel** und stoppe
+  die Zeit. Nutze Copilot Chat mit dem Prüfprompt aus 34.7 als Zweitmeinung – optional als
+  kleinen **Agent „Fjordlicht-Bildprüfung"** mit Checkliste und Bildsprache als Wissen (Agent
+  Builder, falls in eurer Umgebung freigegeben). Pflichtkriterien:
 
   1. Jede Prüfung ist dokumentiert, mit Ergebnis je Punkt.
   2. Mindestens ein Bild wird abgelehnt oder geändert – mit Begründung.
   3. Die Kennzeichnungsentscheidung ist für jedes Bild festgehalten.
-  4. Die durchschnittliche Prüfdauer liegt bei höchstens 10 Minuten.
+  4. Die durchschnittliche Prüfdauer liegt bei höchstens 10 Minuten (Copilot in Excel
+     berechnet sie dir).
 
   **Runde 3 – Die Komplikation.** Die Social-Media-Managerin hält die Checkliste für zu
   aufwendig: Bei 40 Bildern im Monat gehe ein ganzer Arbeitstag nur für Prüfungen drauf. Sie
-  schlägt vor, Illustrationen und reine Hintergründe von der Prüfung auszunehmen. Entwickle
-  eine **risikobasierte Abstufung** (zum Beispiel drei Prüfstufen nach Bildtyp), die den
-  Aufwand senkt, ohne die K.-o.-Kriterien aufzuweichen.
+  schlägt vor, Illustrationen und reine Hintergründe von der Prüfung auszunehmen – und die
+  Prüfung ansonsten ganz dem Copilot-Agent zu überlassen. Entwickle eine **risikobasierte
+  Abstufung** (zum Beispiel drei Prüfstufen nach Bildtyp), die den Aufwand senkt, ohne die
+  K.-o.-Kriterien aufzuweichen, und lege fest, welche Prüfungen ein Mensch machen muss.
 
   **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung fragt, ob Fjordlicht nicht
   einfach **alle** KI-Bilder pauschal kennzeichnen sollte – „dann sind wir auf der sicheren
   Seite". Wäge ab: Vertrauen und Markenwert, Aufwand, Wirkung eines Labels auf die Wahrnehmung,
   Plattformregeln, Unterschied zwischen Composing und vollständig generierten Bildern.
   **Widersprich** dem Vorschlag dort, wo er zu kurz greift, oder begründe, warum du ihm folgst,
-  und formuliere eine einheitliche Kennzeichnungsregel für Fjordlicht.
+  und formuliere eine einheitliche Kennzeichnungsregel für Fjordlicht. Schicke die Regel als
+  E-Mail an die Geschäftsführung – Entwurf mit Copilot in Outlook, Ton und Länge selbst geprüft.
 
   **Deliverable:**
 
-  1. Freigabe-Checkliste mit K.-o.-Kriterien und Zuständigkeiten
-  2. Prüfprotokoll der sechs Bilder mit Zeitmessung
+  1. Freigabe-Checkliste (Word) mit K.-o.-Kriterien und Zuständigkeiten
+  2. Prüfprotokoll der sechs Bilder (Excel) mit Zeitmessung und Abgleich mit der Copilot-Zweitmeinung
   3. risikobasierte Abstufung mit Begründung
-  4. Kennzeichnungsregel mit Abwägung aus Runde 4
+  4. Kennzeichnungsregel mit Abwägung aus Runde 4 (E-Mail-Entwurf)
   5. kurze Antwort an den Follower aus dem Szenario in Fjordlicht-Markenstimme
 
   **Fertig bist du erst, wenn** die Checkliste die drei Vorfälle aus dem Szenario nachweislich
-  verhindert hätte, die Abstufung keine K.-o.-Prüfung streicht, deine Kennzeichnungsregel in
-  einem Satz erklärbar ist und der Prozess einen Punkt enthält, wann die externe Kanzlei
-  eingebunden wird.
+  verhindert hätte, die Abstufung keine K.-o.-Prüfung streicht und keine K.-o.-Prüfung allein
+  der KI überlässt, deine Kennzeichnungsregel in einem Satz erklärbar ist und der Prozess einen
+  Punkt enthält, wann die externe Kanzlei eingebunden wird.
 tip: |
   Der Lernkern liegt im Zusammenspiel von Runde 3 und 4: Ein Prozess, der zu aufwendig ist, wird
   umgangen – einer, der zu lax ist, schützt nicht. Risikobasiert heißt: Produktbilder, Bilder mit
-  Menschen und realistische Bilder realer Orte prüfst du gründlich, Illustrationen schlanker. Bei
-  der Kennzeichnung gilt: Die rechtliche Mindestpflicht ist schmal, der Markenwert Ehrlichkeit
-  kann mehr verlangen. Diese Entscheidung ist Markenführung, nicht nur Recht.
+  Menschen und realistische Bilder realer Orte prüfst du gründlich, Illustrationen schlanker.
+  Copilot kann Vorarbeit leisten (Fehlerhinweise, Dokumentation), aber nicht beurteilen, ob die
+  Kapuze dem echten Produkt entspricht. Bei der Kennzeichnung gilt: Die rechtliche Mindestpflicht
+  ist schmal, der Markenwert Ehrlichkeit kann mehr verlangen. Diese Entscheidung ist
+  Markenführung, nicht nur Recht.
 solution: |
+  Beispielanweisungen für den Agent (falls freigegeben):
+
+  ```text
+  Du prüfst Werbebilder für Fjordlicht vor der Freigabe. Nutze die Checkliste
+  und den Bildsprache-Guide aus deinem Wissen. Gehe jeden Punkt der Checkliste
+  durch und antworte je Punkt mit Ja, Nein oder unsicher plus Bildbereich.
+  Produktwahrheit, reale Personen und fremde Marken markierst du immer als
+  "Prüfung durch Mensch nötig". Keine rechtliche Bewertung, nur Hinweise.
+  ```
+
+  Beispielantwort an den Follower:
+
+  ```text
+  Gute Frage – und eine ehrliche Antwort: Das Bild der Wandergruppe ist mit KI
+  erzeugt. Wir hätten das dazuschreiben sollen. Ab jetzt kennzeichnen wir solche
+  Bilder, und echte Menschen zeigen wir nur, wenn sie wirklich dabei waren.
+  ```
+
   Bewertungskriterien: (1) die Checkliste deckt alle sechs Bereiche mit Ja/Nein-Fragen ab,
   Produktwahrheit und reale Personen sind K.-o.-Kriterien, Zuständigkeiten sind benannt, die
-  Produktprüfung liegt beim Produktmanagement; (2) das Prüfprotokoll ist vollständig, mindestens
-  eine begründete Ablehnung oder Änderung, Kennzeichnung je Bild entschieden, Zeit gemessen;
-  (3) die Abstufung senkt den Aufwand nachvollziehbar und lässt K.-o.-Kriterien unangetastet;
-  (4) die Kennzeichnungsregel trennt rechtliche Pflicht (Art. 50 Abs. 4, Plattformregeln) von
-  freiwilliger Transparenz und berücksichtigt den Unterschied zwischen Composing und
-  vollständig generierten Bildern; (5) die Antwort an den Follower ist ehrlich, ruhig und ohne
-  Ausflüchte; (6) der Prozess benennt Auslöser für die Einbindung der Kanzlei, etwa reale
-  Personen, fremde Marken oder Zweifel an Deepfake-Einstufung.
+  Produktprüfung liegt beim Produktmanagement, die Nutzungsbedingungen sind mit Quelle und
+  Datum belegt; (2) das Prüfprotokoll ist vollständig, mindestens eine begründete Ablehnung oder
+  Änderung, Kennzeichnung je Bild entschieden, Zeit gemessen, Copilot-Zweitmeinung mit eigenem
+  Urteil abgeglichen; (3) die Abstufung senkt den Aufwand nachvollziehbar, lässt
+  K.-o.-Kriterien unangetastet und weist sie einem Menschen zu; (4) die Kennzeichnungsregel
+  trennt rechtliche Pflicht (Art. 50 Abs. 4, Plattformregeln) von freiwilliger Transparenz und
+  berücksichtigt den Unterschied zwischen Composing und vollständig generierten Bildern;
+  (5) die Antwort an den Follower ist ehrlich, ruhig und ohne Ausflüchte; (6) der Prozess
+  benennt Auslöser für die Einbindung der Kanzlei, etwa reale Personen, fremde Marken oder
+  Zweifel an Deepfake-Einstufung.
 
   Lernziel: Die Grenzen der Bild-KI in einen alltagstauglichen Freigabeprozess übersetzen, der
   Qualität, Recht und Markenvertrauen sichert – und Kennzeichnung als bewusste Entscheidung der

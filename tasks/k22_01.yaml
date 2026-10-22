@@ -17,9 +17,21 @@ question: |
      noch keine Bewertungen stehen.
   6. Englische Blogartikel werden mit KI ins Deutsche übersetzt und von einer Muttersprachlerin
      redigiert.
+
+  So gehst du vor:
+
+  1. Bewerte zuerst selbst.
+  2. Stelle in **Copilot Chat** mit dem Umschalter auf **Web** die Frage: „Was versteht Google
+     unter scaled content abuse, und wie steht Google zu KI-erzeugten Inhalten? Antworte mit
+     Quellen." Öffne mindestens eine genannte Quelle und prüfe, ob sie von Google Search Central
+     stammt.
+  3. Lass Copilot anschließend die sechs Fälle anhand dieser Quellen bewerten und vergleiche mit
+     deiner Einschätzung.
 tip: |
   Der Maßstab ist nicht, ob KI beteiligt war, sondern ob die Seite Menschen hilft und ehrlich
   ist. Prüfe außerdem: Entspricht das, was die Suchmaschine sieht, dem, was auf der Seite steht?
+  Bei der Quellenprüfung zählt die Primärquelle von Google, nicht ein SEO-Blog, der sie
+  zusammenfasst.
 solution: |
   | Nr. | Bewertung | Begründung |
   |---|---|---|
@@ -33,3 +45,9 @@ solution: |
   Gemeinsamer Nenner der problematischen Fälle: Masse ohne Mehrwert oder Aussagen, die nicht
   stimmen. In beiden Fällen ist die KI nur das Werkzeug – das Problem wäre dasselbe, hätte ein
   Mensch die Texte geschrieben.
+
+  Zum Copilot-Schritt: Eine gute Antwort verweist auf die Spam-Richtlinien und die Hinweise zu
+  KI-Inhalten in Google Search Central. Nennt Copilot nur Sekundärquellen, frag gezielt nach der
+  Originalseite. Bei Fall 4 und 6 bewertet Copilot manchmal vorsichtiger („kann problematisch
+  sein"), weil KI beteiligt ist – hier hilft die Rückfrage: „Was ist laut Google das
+  entscheidende Kriterium?"

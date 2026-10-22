@@ -1,23 +1,40 @@
 title: Gesprächsleitfaden für die Sprecherin
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug. Fjordlicht möchte mit seiner Sprecherin, die
-  seit drei Jahren Erklärvideos einspricht, über einen Stimmklon sprechen. Einsatz: kurze
-  Produkt-FAQ-Videos und Audioversionen von Blogartikeln, auf Deutsch und Englisch.
+  Diese Übung machst du in **Copilot in Word** und **Copilot Chat**. Fjordlicht möchte mit seiner
+  Sprecherin, die seit drei Jahren Erklärvideos einspricht, über einen Stimmklon sprechen.
+  Einsatz: kurze Produkt-FAQ-Videos und Audioversionen von Blogartikeln, auf Deutsch und
+  Englisch.
 
-  1. Nutze den Prompt aus Abschnitt 38.3, um eine Checkliste für das Gespräch zu erstellen.
-  2. Prüfe die Checkliste gegen die acht Vertragsbausteine der Tabelle in 38.3. Ergänze, was
-     fehlt.
-  3. Lass ChatGPT die Fragen formulieren, die die **Sprecherin** wahrscheinlich stellen wird
-     (Perspektivwechsel). Beantworte jede Frage in einem Satz aus Fjordlicht-Sicht.
+  1. Lege im Ordner „Fjordlicht-Kurs" ein neues Word-Dokument **„Sprecherin-Gesprächsleitfaden"**
+     an. Lass Copilot in Word mit dem Prompt aus Abschnitt 38.3 eine Checkliste für das Gespräch
+     entwerfen. Ergänze im Prompt `/Fjordlicht-Basisdaten`, damit Kanäle und Markenstimme passen
+     (falls die Datei fehlt: Kap. 11 bzw. Einsatzbeschreibung oben einfügen).
+  2. Prüfe die Checkliste gegen die acht Vertragsbausteine der Tabelle in 38.3. Ergänze fehlende
+     Punkte und lass Copilot die Checkliste in eine **Tabelle** umwandeln (Baustein | Frage an die
+     Sprecherin | unser Vorschlag).
+  3. Perspektivwechsel in Copilot Chat: Lass Copilot die Fragen formulieren, die die
+     **Sprecherin** wahrscheinlich stellen wird. Beantworte jede Frage in einem Satz aus
+     Fjordlicht-Sicht und übernimm Fragen und Antworten in das Word-Dokument.
   4. Markiere die drei Punkte, die du auf keinen Fall ohne Rechtsabteilung oder Anwältin
-     festlegen würdest.
+     festlegen würdest, mit einem Word-Kommentar.
 tip: |
   Der Perspektivwechsel in Schritt 3 ist der Kern. Eine Sprecherin lebt von ihrer Stimme – ihre
   wichtigsten Fragen betreffen Kontrolle („Was sagt meine Stimme ohne mich?") und Zukunft („Was
   passiert, wenn wir uns trennen?"). Kannst du die nicht klar beantworten, ist das Angebot nicht
-  reif.
+  reif. Lass Copilot keine fertigen Vertragsklauseln formulieren – das Dokument ist eine
+  Gesprächsvorbereitung.
 solution: |
+  Beispiel-Prompt für Schritt 3:
+
+  ```text
+  Du bist eine freiberufliche Sprecherin, die seit drei Jahren für Fjordlicht
+  Erklärvideos einspricht. Fjordlicht möchte deine Stimme klonen lassen
+  (Produkt-FAQ, Blog-Hörfassungen, Deutsch und Englisch). Welche zehn Fragen
+  stellst du im ersten Gespräch? Sortiere nach Wichtigkeit für dich und
+  begründe jede Frage in einem halben Satz.
+  ```
+
   Typische Fragen der Sprecherin und gute Antworten:
 
   | Frage | Antwort aus Fjordlicht-Sicht |
@@ -30,8 +47,11 @@ solution: |
   | Wird erkennbar, dass es KI ist? | Ja, Kennzeichnung in Video und Beschreibung. |
   | Darf meine Stimme Englisch sprechen? | Nur wenn ausdrücklich vereinbart; Übersetzungen prüft ein Mensch. |
 
-  Punkte für die juristische Prüfung: Formulierung von Einwilligung und Widerruf, Datenschutz
-  (Stimmprofil, Auftragsverarbeitung mit dem Anbieter) und Vergütungs- sowie Haftungsregelung.
+  Punkte für die juristische Prüfung (als Kommentar markiert): Formulierung von Einwilligung und
+  Widerruf, Datenschutz (Stimmprofil, Auftragsverarbeitung mit dem Anbieter) und Vergütungs-
+  sowie Haftungsregelung.
 
-  Eine gute Bearbeitung deckt alle acht Bausteine ab und enthält mindestens fünf Fragen aus
-  Sprecherinnensicht mit konkreten, nicht ausweichenden Antworten.
+  Bewertungskriterien: Das Word-Dokument deckt alle acht Bausteine ab, enthält mindestens fünf
+  Fragen aus Sprecherinnensicht mit konkreten, nicht ausweichenden Antworten und hat drei
+  Kommentare für die Rechtsprüfung. Ein häufiger Copilot-Fehler: Die Checkliste enthält bereits
+  ausformulierte Klauseln oder lässt Löschung und Widerruf weg.

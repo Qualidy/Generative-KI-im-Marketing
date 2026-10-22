@@ -1,4 +1,4 @@
-title: Faktencheck eines KI-Entwurfs
+title: Faktencheck eines KI-Entwurfs mit Copilot in Word
 difficulty: 3
 question: |
   Ein KI-Entwurf für den Blog „Draußen-Notizen" enthält folgenden Absatz:
@@ -12,25 +12,40 @@ question: |
   ein gutes Gewissen haben kannst.
   ```
 
-  1. Liste alle prüfbaren Behauptungen in einer Tabelle auf: Behauptung, Risiko, Prüfweg,
+  Faktenbasis: Pflegeetikett „30 Grad Feinwäsche, kein Weichspüler, Trockner schonend erlaubt";
+  Claim-Liste: „klimaneutral" ist **nicht** freigegeben (siehe auch `/Fjordlicht-Basisdaten`).
+
+  1. **Behauptungen auflisten lassen.** Füge den Absatz in ein Word-Dokument ein und lass
+     **Copilot in Word** mit dem Prompt aus Abschnitt 15.5 alle prüfbaren Behauptungen als
+     Tabelle auflisten. Ergänze die Tabelle selbst um die Spalten Risiko, Prüfweg und
      Entscheidung (behalten / ändern / streichen).
-  2. Formuliere den Absatz neu, sodass er nur noch belegbare oder deutlich als Empfehlung
-     gekennzeichnete Aussagen enthält. Nutze als Faktenbasis: Pflegeetikett „30 Grad
-     Feinwäsche, kein Weichspüler, Trockner schonend erlaubt"; Claim-Liste: „klimaneutral"
-     ist **nicht** freigegeben.
-  3. Schreibe einen Prompt, mit dem du künftig solche Absätze schon beim Schreiben verhinderst.
+  2. **Quelle suchen.** Prüfe in Copilot Chat im Modus **Web**, ob es die genannte Studie gibt.
+     Öffne jeden Link, den Copilot nennt, selbst. Notiere, was du gefunden hast.
+  3. **Neu formulieren.** Markiere den Absatz in Word und lass ihn von Copilot umschreiben – nur
+     mit belegbaren oder deutlich als Empfehlung gekennzeichneten Aussagen. Prüfe die Neufassung
+     erneut: Hat Copilot dabei **neue** Behauptungen eingeführt?
+  4. **Vorbeugen.** Schreibe einen Prompt, mit dem du solche Absätze schon beim Schreiben
+     verhinderst, und speichere ihn in der **Prompt Gallery** (falls in eurer Umgebung
+     freigegeben), damit das Team ihn wiederverwenden kann.
 tip: |
   Unterscheide zwischen Aussagen, die falsch sein **können** (Studie), und Aussagen, die
   nachweislich gegen deine Faktenbasis verstoßen (60 Grad, klimaneutral). Beide sind ein
-  Problem, aber das zweite ist ein sicherer Fehler mit Folgen für Produkt und Recht.
+  Problem, aber das zweite ist ein sicherer Fehler mit Folgen für Produkt und Recht. Dass Copilot
+  im Web-Modus nichts findet, beweist nicht, dass die Studie nicht existiert – aber ohne geöffnete
+  Quelle bleibt sie draußen.
 solution: |
   | Behauptung | Risiko | Prüfweg | Entscheidung |
   |---|---|---|---|
-  | Studie Outdoor-Institut München 2024 | vermutlich erfunden | Institut und Studie suchen | streichen, solange nicht auffindbar |
+  | Studie Outdoor-Institut München 2024 | vermutlich erfunden | Websuche, Institut und Studie aufrufen | streichen, solange nicht auffindbar |
   | 73 % waschen falsch | Zahl ohne Beleg | Originalquelle | streichen |
   | 60 Grad, normales Waschmittel | widerspricht dem Etikett, kann Jacke schädigen | Pflegeetikett | ändern |
   | Trockner aktiviert Imprägnierung | teilweise richtig, aber verallgemeinert | Produktmanagement, Etikett | ändern, auf „schonend" begrenzen |
   | 100 % klimaneutral produziert | nicht freigegeben, Greenwashing, UWG-Risiko | Claim-Liste | streichen |
+
+  Typisch bei Schritt 2: Copilot findet kein „Outdoor-Institut München" oder verweist auf
+  Seiten, die die Zahl nicht enthalten. Typisch bei Schritt 3: Die Umschreibung ersetzt
+  „klimaneutral" durch eine weichere, aber ebenfalls unbelegte Formulierung („umweltschonend
+  hergestellt") – auch die muss raus.
 
   Neufassung (Beispiel):
 
@@ -41,14 +56,16 @@ solution: |
   Imprägnierungen hilft die Wärme, den Abperleffekt aufzufrischen.
   ```
 
-  Präventiver Prompt:
+  Präventiver Prompt (für die Prompt Gallery):
 
   ```text
   Nutze für Pflegehinweise ausschließlich dieses Etikett: [Etikett].
-  Nenne keine Studien und keine Prozentzahlen, die nicht im Briefing stehen.
-  Verwende nur Nachhaltigkeitsaussagen aus dieser Claim-Liste: [Liste].
-  Wo du eine Zahl oder Quelle brauchst, schreibe [QUELLE FEHLT].
+  Nutze für Produktfakten und Nachhaltigkeitsaussagen nur
+  /Fjordlicht-Basisdaten. Nenne keine Studien und keine Prozentzahlen,
+  die dort nicht stehen. Wo du eine Zahl oder Quelle brauchst,
+  schreibe [QUELLE FEHLT].
   ```
 
   Bewertungskriterien: alle fünf Behauptungen erkannt, Etikett und Claim-Liste als Prüfmaßstab
-  genutzt, Neufassung ohne neue Behauptungen, Prompt mit Platzhalter für fehlende Quellen.
+  genutzt, Websuche mit selbst geöffneten Links dokumentiert, Neufassung ohne neue Behauptungen,
+  Prompt mit Platzhalter für fehlende Quellen.

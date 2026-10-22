@@ -1,4 +1,4 @@
-title: Ein Launch, vier Kanäle
+title: Ein Launch, vier Kanäle – mit Copilot Pages
 difficulty: 4
 question: |
   **Szenario:** Fjordlicht bringt im November die Regenjacke „Sølv" auf den Markt. Das
@@ -13,39 +13,51 @@ question: |
   Fakten (fiktiv): Obermaterial 100 % recyceltes Polyamid, PFAS-freie
   Imprägnierung, Wassersäule 20.000 mm, kostenloser Reparaturservice
   in den ersten zwei Jahren, Preis 249 Euro
+  Faktenbasis: /Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11, Kurzübung 1)
+  plus die PFAS-Angabe oben; als Blogartikel eine Word-Datei aus dem Ordner
+  "Fjordlicht-Kurs" (z. B. aus Kap. 11) oder ein kurzer eigener Text.
   Markenstimme: ruhig, ehrlich, nordisch-trocken, Du-Ansprache,
   keine Superlative, kein Greenwashing
   Keine echten Kundendaten, keine Namen
+  Werkzeuge: Copilot Chat, Copilot Pages, optional Copilot in Teams und Outlook
   ```
 
   ---
 
-  **Runde 1 – Kern und Hooks.** Lass die KI aus dem Material die Kernbotschaft, drei belegte
-  Fakten und mindestens eine „unverkürzbare" Aussage herausarbeiten (Abschnitt 14.5). Erzeuge
-  anschließend 15 Hooks in mindestens vier Hook-Typen und wähle je Kanal einen begründet aus.
+  **Runde 1 – Kern und Hooks.** Lass Copilot Chat aus dem Blogartikel (per `/`-Verweis) und den
+  Basisdaten die Kernbotschaft, drei belegte Fakten und mindestens eine „unverkürzbare" Aussage
+  herausarbeiten (Abschnitt 14.5). Erzeuge anschließend 15 Hooks in mindestens vier Hook-Typen und
+  wähle je Kanal einen begründet aus. Übernimm Kern und Hook-Auswahl in eine **Copilot Page**
+  „Launch Sølv" – sie ist ab jetzt dein Arbeitsdokument.
 
-  **Runde 2 – Kanaltexte.** Erstelle je Kanal einen eigenen P.R.O.M.P.T.-Auftrag (Kap. 5) und
-  erzeuge: Instagram-Caption, TikTok-Skript (30 Sekunden mit Bildschirmtext), LinkedIn-Post für
-  Firmenkunden, Pinterest-Titel und -Beschreibung. Prüfe jeden Text gegen die Faktenliste und
-  gegen diese Kriterien: Hook in der ersten Zeile, Länge im Rahmen, Handlungsaufforderung passend
-  zum Kanal, keine Superlative.
+  **Runde 2 – Kanaltexte.** Erstelle je Kanal einen **eigenen** P.R.O.M.P.T.-Auftrag (Kap. 5) in
+  Copilot Chat und erzeuge: Instagram-Caption, TikTok-Skript (30 Sekunden mit Bildschirmtext),
+  LinkedIn-Post für Firmenkunden, Pinterest-Titel und -Beschreibung. Füge jeden Text als eigenen
+  Abschnitt in die Page ein. Prüfe jeden Text gegen die Faktenliste und gegen diese Kriterien:
+  Hook in der ersten Zeile, Länge im Rahmen, Handlungsaufforderung passend zum Kanal, keine
+  Superlative. Optional: Lass für den Pinterest-Pin ein Bildmotiv mit der Bilderzeugung in
+  Copilot entwerfen (falls freigegeben) – nur als Moodboard, nicht zur Veröffentlichung.
 
   **Runde 3 – Die Komplikation.** Die Produktmanagerin meldet sich: Die PFAS-freie Imprägnierung
   ist korrekt, aber der Lieferant hat das Prüfzertifikat noch nicht nachgereicht. Bis dahin darf
-  „PFAS-frei" nicht öffentlich verwendet werden. Überarbeite alle vier Texte. Achte darauf, dass
-  die Texte ohne dieses Argument nicht schwächer, sondern anders werden – und dass sich keine
-  Ersatzbehauptung einschleicht.
+  „PFAS-frei" nicht öffentlich verwendet werden. Überarbeite alle vier Texte **in der Page**,
+  indem du nur die betroffenen Stellen markierst und gezielt ändern lässt. Achte darauf, dass die
+  Texte ohne dieses Argument nicht schwächer, sondern anders werden – und dass sich keine
+  Ersatzbehauptung einschleicht. Vermerke in „Fjordlicht-Basisdaten.docx" unter Verbote:
+  „PFAS-frei bis zur Vorlage des Zertifikats nicht verwenden".
 
-  **Runde 4 – Entscheidung unter Abwägung.** Bitte die KI, deine Texte „für maximale Reichweite
-  zu optimieren". Sie wird vermutlich emotionalere Hooks, Trend-Hashtags und mehr Emojis
-  vorschlagen. Entscheide je Vorschlag, ob du ihn übernimmst. **Widersprich** der KI dort, wo
-  Reichweite gegen Markenstimme oder Glaubwürdigkeit steht, und begründe jede Ablehnung.
+  **Runde 4 – Entscheidung unter Abwägung.** Bitte Copilot, deine Texte „für maximale Reichweite
+  zu optimieren". Es wird vermutlich emotionalere Hooks, Trend-Hashtags und mehr Emojis
+  vorschlagen. Entscheide je Vorschlag, ob du ihn übernimmst. **Widersprich** Copilot dort, wo
+  Reichweite gegen Markenstimme oder Glaubwürdigkeit steht, und begründe jede Ablehnung. Teile
+  die Page anschließend zur Freigabe (z. B. im Teams-Kanal des Marketings oder per Outlook-Mail
+  mit Copilot-Entwurf); veröffentlicht wird in dieser Übung nichts.
 
   **Deliverable:**
 
-  1. Kernbotschaft, drei Fakten, unverkürzbare Aussage, Hook-Liste mit Auswahl
-  2. vier Kanaltexte mit den zugehörigen Prompts
-  3. überarbeitete Fassungen nach Runde 3 mit Liste der Änderungen
+  1. Copilot Page mit Kernbotschaft, drei Fakten, unverkürzbarer Aussage, Hook-Liste und Auswahl
+  2. vier Kanaltexte mit den zugehörigen Prompts in der Page
+  3. überarbeitete Fassungen nach Runde 3 mit Liste der Änderungen und aktualisierten Basisdaten
   4. Tabelle der Optimierungsvorschläge aus Runde 4 mit Entscheidung und Begründung
 
   **Fertig bist du erst, wenn** jeder Text ausschließlich belegte Fakten enthält, sich die vier
@@ -53,21 +65,39 @@ question: |
   mehr vorkommt und keine Ersatzbehauptung entstanden ist, und du in Runde 4 mindestens zwei
   Vorschläge begründet abgelehnt hast.
 tip: |
-  Der Lernkern liegt in Runde 3: Ein starkes Argument fällt weg, und die KI füllt die Lücke gern
+  Der Lernkern liegt in Runde 3: Ein starkes Argument fällt weg, und Copilot füllt die Lücke gern
   mit etwas Ähnlichem („schadstoffarm", „umweltschonend imprägniert"). Wer das bemerkt, hat
-  verstanden, warum Faktenbasis und Modifier wichtiger sind als jede Hook-Formel. In Runde 4 gilt:
-  Reichweite ist ein Ziel, aber nicht das einzige – eine Marke, die ruhig klingen will, verliert
-  durch Clickbait mehr, als sie gewinnt.
+  verstanden, warum Faktenbasis und Modifier wichtiger sind als jede Hook-Formel. Eine Suche nach
+  „PFAS" in der Page ist schnell gemacht – nach Ersatzbehauptungen musst du selbst lesen. In
+  Runde 4 gilt: Reichweite ist ein Ziel, aber nicht das einzige – eine Marke, die ruhig klingen
+  will, verliert durch Clickbait mehr, als sie gewinnt.
 solution: |
-  Bewertungskriterien: (1) Kernbotschaft und Fakten sind belegt, die unverkürzbare Aussage ist
-  sinnvoll gewählt (z. B. „100 % recyceltes Polyamid – nur das Obermaterial"), Hooks decken mehrere Typen ab;
-  (2) vier eigenständige Prompts mit vollständigem P.R.O.M.P.T., Texte unterscheiden sich in
-  Einstieg, Perspektive und Handlungsaufforderung, LinkedIn spricht Firmenkunden an; (3) nach
-  Runde 3 ist „PFAS" vollständig entfernt, keine Ersatzbehauptung, die Texte stützen sich auf
-  andere belegte Argumente (Reparaturservice, Wassersäule); (4) Optimierungsvorschläge werden
-  einzeln bewertet, Ablehnungen mit Markenstimme, Glaubwürdigkeit oder Plattformlogik begründet,
-  sinnvolle Vorschläge (z. B. Suchbegriff im ersten Satz) werden übernommen.
+  Beispielprompt für den LinkedIn-Text (Runde 2):
 
-  Lernziel: Ein Thema plattformgerecht adaptieren und dabei Faktenbasis und Markenstimme als
-  feste Grenzen behandeln – auch dann, wenn die KI oder der Wunsch nach Reichweite in eine andere
-  Richtung ziehen.
+  ```text
+  Persona: Du schreibst für Fjordlicht Business, den B2B-Bereich der Fjordlicht GmbH.
+  Request: LinkedIn-Post zum Launch der Regenjacke Sølv.
+  Output: 120-180 Wörter, kurze Absätze, Hook in der ersten Zeile, eine
+  Handlungsaufforderung für Firmenkunden, max. 3 Hashtags.
+  Modifier: Nur Fakten aus /Fjordlicht-Basisdaten und der Faktenliste in
+  der Page. "Obermaterial" bei der Recycling-Angabe nie weglassen.
+  Keine Superlative.
+  Purpose: Einkäufer von Firmenbekleidung sollen die Sølv als langlebige
+  Option wahrnehmen; Fokus auf Reparaturservice und Nutzungsdauer.
+  Tone: sachlich, ruhig, ehrlich, Du-Ansprache.
+  ```
+
+  Bewertungskriterien: (1) Kernbotschaft und Fakten sind belegt, die unverkürzbare Aussage ist
+  sinnvoll gewählt (z. B. „100 % recyceltes Polyamid – nur das Obermaterial"), Hooks decken
+  mehrere Typen ab; (2) vier eigenständige Prompts mit vollständigem P.R.O.M.P.T., Texte
+  unterscheiden sich in Einstieg, Perspektive und Handlungsaufforderung, LinkedIn spricht
+  Firmenkunden an, alles liegt nachvollziehbar in einer Page; (3) nach Runde 3 ist „PFAS"
+  vollständig entfernt, keine Ersatzbehauptung, die Änderungen erfolgten gezielt an markierten
+  Stellen, die Texte stützen sich auf andere belegte Argumente (Reparaturservice, Wassersäule),
+  und die Basisdaten sind aktualisiert; (4) Optimierungsvorschläge werden einzeln bewertet,
+  Ablehnungen mit Markenstimme, Glaubwürdigkeit oder Plattformlogik begründet, sinnvolle
+  Vorschläge (z. B. Suchbegriff im ersten Satz) werden übernommen.
+
+  Lernziel: Ein Thema mit Copilot plattformgerecht adaptieren und dabei Faktenbasis und
+  Markenstimme als feste Grenzen behandeln – auch dann, wenn Copilot oder der Wunsch nach
+  Reichweite in eine andere Richtung ziehen.

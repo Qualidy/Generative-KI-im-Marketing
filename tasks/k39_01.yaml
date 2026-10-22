@@ -1,11 +1,13 @@
 title: Kennzeichnen – ja, nein oder freiwillig?
 difficulty: 1
 question: |
-  Ordne die folgenden Inhalte von Fjordlicht ein. Gib jeweils an, ob nach **Art. 50 AI Act** eine
-  Offenlegung **Pflicht**, **eingeschränkte Pflicht**, **keine Pflicht** oder eine **Grauzone** ist, und
-  ob zusätzlich **Plattformregeln** oder das **UWG** eine Rolle spielen.
+  Diese Übung machst du in **Copilot Chat** (Modus **Arbeit**). Ordne die folgenden Inhalte von
+  Fjordlicht ein: Ist nach **Art. 50 AI Act** eine Offenlegung **Pflicht**, **eingeschränkte
+  Pflicht**, **keine Pflicht** oder eine **Grauzone**? Spielen zusätzlich **Plattformregeln** oder
+  das **UWG** eine Rolle?
 
-  1. Instagram-Caption zum Fleece „Skog", mit ChatGPT entworfen und redigiert
+  ```text
+  1. Instagram-Caption zum Fleece „Skog", mit Copilot entworfen und redigiert
   2. Realistisches Video: Ein bekannter Bergsteiger lobt die Regenjacke „Sølv" – er hat nie
      zugestimmt, Stimme und Gesicht sind generiert
   3. Comic-artige Illustration eines Fuchses mit Rucksack „Tind" für Pinterest
@@ -13,9 +15,18 @@ question: |
      Prüfung veröffentlicht
   5. Fotorealistisches TikTok-Bild: fiktive Familie beim Zelten an einem namenlosen See
   6. Chatbot im Webshop, der Größenfragen beantwortet
+  ```
+
+  1. Ordne alle sechs Fälle **zuerst selbst** ein – mit dem Entscheidungsbaum aus Abschnitt 39.5.
+  2. Wähle die zwei Fälle, bei denen du am unsichersten bist. Lass Copilot sie mit dem Prompt
+     **„Kennzeichnungs-Vorprüfung"** aus Abschnitt 39.5 prüfen.
+  3. Vergleiche: Wo stimmt Copilot mit dir überein, wo nicht? Wo markiert Copilot zu Recht
+     [UNKLAR], wo ist die Antwort zu sicher?
 tip: |
   Frage zuerst: Ist es Bild, Audio oder Video, das fälschlich echt wirkt? Dann: Ist es Text zu einem
-  Thema von öffentlichem Interesse? Und erst danach: Was verlangen Plattform und UWG?
+  Thema von öffentlichem Interesse? Und erst danach: Was verlangen Plattform und UWG? Wenn du den
+  Prompt aus 39.5 in die **Prompt Gallery** speicherst, hast du ihn für den Workshop und den Alltag
+  griffbereit.
 solution: |
   | Nr. | AI Act | Weitere Regeln |
   |---|---|---|
@@ -31,3 +42,11 @@ solution: |
   erfundene Empfehlung irreführend. Kennzeichnungspflicht und Zulässigkeit sind zwei getrennte
   Fragen. Bei Nr. 4 würde eine fachliche Prüfung mit benannter Verantwortung die Pflicht entfallen
   lassen – und den Beitrag nebenbei besser machen.
+
+  Zum Vergleich mit Copilot: Häufig unsicher sind Nr. 4 und Nr. 5. Eine gute Copilot-Antwort
+  nennt bei Nr. 4 die Ausnahme der redaktionellen Verantwortung und markiert bei Nr. 5 die
+  AI-Act-Einordnung als [UNKLAR], verweist aber klar auf das Plattformlabel. Wenn Copilot bei
+  Nr. 5 pauschal „keine Pflicht" antwortet, fehlt der Blick auf die Plattformregeln.
+
+  Bewertungskriterien: alle sechs Fälle selbst richtig eingeordnet, Copilot-Vorprüfung für zwei
+  Fälle durchgeführt, mindestens eine Stärke oder Schwäche der Antwort konkret benannt.

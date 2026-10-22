@@ -12,18 +12,27 @@ question: |
   B;desktop;1120;90
   ```
 
-  Eine Kollegin hat die Daten in ChatGPT ausgewertet und präsentiert: „Gesamt kein
+  Eine Kollegin hat die Daten mit Copilot ausgewertet und präsentiert: „Gesamt kein
   signifikanter Unterschied, aber auf Mobilgeräten ist B signifikant besser (p = 0,015). Wir
   stellen mobil auf B um."
 
-  1. Überprüfe die Zahlen mit der Datenanalyse: Gesamtergebnis und beide Segmente.
-  2. Bewerte die Schlussfolgerung der Kollegin. Was spricht dafür, was dagegen?
-  3. Formuliere eine Empfehlung an die Marketingleitung (max. 120 Wörter).
-  4. Schreibe einen Prompt, mit dem die KI künftig Segmentauswertungen korrekt einordnet.
+  1. **Nachrechnen.** Trage die Daten als Tabelle in „Fjordlicht-Testlog.xlsx" ein (neues
+     Blatt) und lass Copilot in Excel mit Python in Excel – oder den Agent **Analyst** mit der
+     hochgeladenen Datei – das Gesamtergebnis und beide Segmente berechnen. Prüfe, ob Copilot
+     für „gesamt" die Segmente korrekt addiert.
+  2. **Bewerten.** Frage Copilot: „Ist die Schlussfolgerung der Kollegin belastbar?" Bewerte
+     danach selbst: Was spricht dafür, was dagegen – und hat Copilot das Problem der
+     nachträglichen Segmentsuche erkannt?
+  3. **Empfehlung.** Lass mit **Copilot in Outlook** eine Mail an die Marketingleitung
+     entwerfen (max. 120 Wörter, nicht senden). Überarbeite sie so, dass Ergebnis und Hypothese
+     klar getrennt sind.
+  4. **Prompt.** Schreibe einen Prompt, mit dem Copilot künftig Segmentauswertungen korrekt
+     einordnet, und speichere ihn in der Prompt Gallery (falls in eurer Umgebung freigegeben).
 tip: |
   Frage dich: War die Analyse nach Gerät **vorher** geplant? Und wie viele Segmente hätte man
   noch prüfen können (Gerät, Uhrzeit, Neukunde/Bestandskunde, Quelle …)? Je mehr man prüft,
-  desto wahrscheinlicher findet man zufällig einen „Treffer".
+  desto wahrscheinlicher findet man zufällig einen „Treffer". Copilot liefert gern eine
+  Handlungsempfehlung mit – prüfe, ob sie über die Daten hinausgeht.
 solution: |
   | Gruppe | A | B | p-Wert (ca.) |
   |---|---|---|---|
@@ -37,14 +46,16 @@ solution: |
   Dagegen spricht: Die Segmentierung war nicht vorab geplant. Bei mehreren möglichen Segmenten
   steigt die Wahrscheinlichkeit eines Zufallsfunds deutlich. Auf Desktop zeigt sich sogar die
   umgekehrte Richtung, wenn auch nicht signifikant. Das Gesamtergebnis ist nicht signifikant.
+  Typisch: Copilot bestätigt den Mobil-Befund zunächst und nennt das Problem der
+  Mehrfachprüfung erst auf Nachfrage.
 
-  Empfehlung (Beispiel): „Der Test zeigt insgesamt keinen belastbaren Unterschied. Auf
-  Mobilgeräten schneidet B besser ab; dieser Befund wurde aber erst nachträglich gesucht und kann
-  Zufall sein. Wir empfehlen einen neuen Test nur für mobile Besuche mit vorab festgelegter
-  Hypothese und ca. 3.200 Besuchen pro Variante. Bis dahin bleibt A aktiv, weil eine Umstellung
-  ohne belastbares Ergebnis keinen sicheren Vorteil bringt."
+  Empfehlung (Beispiel für den Mailentwurf): „Der Test zeigt insgesamt keinen belastbaren
+  Unterschied. Auf Mobilgeräten schneidet B besser ab; dieser Befund wurde aber erst nachträglich
+  gesucht und kann Zufall sein. Wir empfehlen einen neuen Test nur für mobile Besuche mit vorab
+  festgelegter Hypothese und ca. 3.200 Besuchen pro Variante. Bis dahin bleibt A aktiv, weil
+  eine Umstellung ohne belastbares Ergebnis keinen sicheren Vorteil bringt."
 
-  Prompt:
+  Prompt (für die Prompt Gallery):
 
   ```text
   Werte den Test zuerst nur für die vorab festgelegte Zielmetrik
@@ -53,5 +64,6 @@ solution: |
   Leite aus Segmentfunden keine Empfehlung ab, sondern eine neue Hypothese.
   ```
 
-  Bewertungskriterien: Zahlen korrekt nachgerechnet, Problem der nachträglichen Segmentsuche
-  benannt, Empfehlung trennt Ergebnis und Hypothese, Prompt verhindert Segmentfischen.
+  Bewertungskriterien: Zahlen mit Copilot berechnet und selbst nachgeprüft, Problem der
+  nachträglichen Segmentsuche benannt, Mailentwurf trennt Ergebnis und Hypothese, Prompt
+  verhindert Segmentfischen.

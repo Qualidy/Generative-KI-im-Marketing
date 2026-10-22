@@ -1,72 +1,109 @@
-title: Ein Blogartikel im Dreischritt
+title: Ein Blogartikel im Dreischritt mit Word und Copilot
 difficulty: 4
 question: |
   **Szenario:** Fjordlicht möchte im Blog „Draußen-Notizen" einen Beitrag zum Thema „Mit Kindern
   im Herbst wandern – was wirklich in den Rucksack gehört" veröffentlichen. Bisher entstanden
   solche Texte im Chat: viele Runden, verstreute Versionen, am Ende stand im Text eine
   Nachhaltigkeitsaussage, die niemand belegen konnte. Diesmal soll der Beitrag nachvollziehbar
-  im Dokument entstehen. Du kannst statt Fjordlicht auch **ein Unternehmen deiner Wahl** nutzen
-  und ein passendes Blogthema wählen.
+  in einem Word-Dokument mit Copilot entstehen. Du kannst statt Fjordlicht auch **ein Unternehmen
+  deiner Wahl** nutzen und ein passendes Blogthema wählen.
 
   ```text
   Rahmen:
   Zielgruppe: Familien, naturverbunden, wenig Outdoor-Erfahrung.
   Länge: 900 bis 1.100 Wörter.
   Produkte dürfen genannt werden: Rucksack Tind, Fleece Skog, Regenjacke Sølv.
+  Faktenbasis: /Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11, Kurzübung 1).
   Belegte Aussage: Obermaterial der Sølv zu 100 Prozent recyceltes Polyamid.
   Keine weiteren Nachhaltigkeitsaussagen, keine Superlative.
-  Werkzeug: ChatGPT mit Schreibblöcken oder Claude, Gemini, Copilot.
+  Werkzeuge: Copilot in Word (Hauptdokument), Copilot Chat und Copilot Pages.
+  Ablage: OneDrive-Ordner "Fjordlicht-Kurs", Datei "Blog-Herbstwandern-Kinder.docx".
   ```
 
   ---
 
   **Runde 1 – Briefing und Rohfassung.** Schreibe ein vollständiges Briefing nach dem
-  P.R.O.M.P.T.-Framework (Kap. 5) und lass eine Rohfassung als Dokument erstellen. Verlange, dass
-  fehlende Angaben als `[FEHLT]` markiert werden. Sichere die Rohfassung.
+  P.R.O.M.P.T.-Framework (Kap. 5) und lass damit in einem neuen Word-Dokument einen Entwurf mit
+  Copilot erstellen. Verweise im Prompt auf `/Fjordlicht-Basisdaten`. Verlange, dass fehlende
+  Angaben als `[FEHLT]` markiert werden. Speichere die Rohfassung; über den Versionsverlauf kannst
+  du später darauf zurückgreifen. Schalte ab jetzt „Änderungen nachverfolgen" ein.
 
-  **Runde 2 – Struktur.** Lass zuerst nur eine Strukturanalyse erstellen (Gliederung, Dopplungen,
-  Lücken), ohne den Text zu ändern. Entscheide selbst, welche Vorschläge du umsetzt, und lass
+  **Runde 2 – Struktur.** Frag Copilot in Word nach einer Strukturanalyse des Dokuments
+  (Gliederung mit einem Satz pro Abschnitt, Dopplungen, Lücken) – ohne den Text zu ändern.
+  Übernimm die Analyse in eine **Copilot Page** und teile sie (oder simuliere die Abstimmung),
+  falls in eurer Umgebung freigegeben. Entscheide selbst, welche Vorschläge du umsetzt, und lass
   danach gezielt umbauen. Halte fest, welche zwei Vorschläge du **abgelehnt** hast und warum.
 
   **Runde 3 – Die Komplikation.** Die Produktmanagerin meldet sich: Der Rucksack „Tind" ist im
   Herbst nur in einer Größe lieferbar, und die Kinderversion wird nicht erwähnt, weil es sie noch
-  nicht gibt. Außerdem soll der Text 20 Prozent kürzer werden. Setze beides **gezielt** um, ohne
-  den Rest des Textes neu schreiben zu lassen. Verlange nach jeder Änderung eine Änderungsliste
-  und gleiche sie mit dem Text ab.
+  nicht gibt. Außerdem soll der Text 20 Prozent kürzer werden. Setze beides **gezielt** um:
+  markiere die betroffenen Passagen in Word und lass nur diese von Copilot umschreiben oder
+  kürzen. Verlange nach jeder Änderung eine Änderungsliste und gleiche sie mit den nachverfolgten
+  Änderungen ab.
 
-  **Runde 4 – Entscheidung unter Abwägung.** Bitte die KI zum Schluss, den gesamten Text „noch
-  einmal stilistisch zu verbessern". Vergleiche die Fassung vorher und nachher Absatz für Absatz.
-  **Widersprich** der Überarbeitung überall dort, wo sie die Markenstimme verwässert, Fakten
-  verändert oder Formulierungen austauschbarer macht. Entscheide begründet, welche Fassung du
-  zur Freigabe gibst – oder welche Mischung.
+  **Runde 4 – Entscheidung unter Abwägung.** Speichere eine Kopie und bitte Copilot dort, den
+  gesamten Text „noch einmal stilistisch zu verbessern". Vergleiche die Fassung vorher und
+  nachher Absatz für Absatz (z. B. mit der Vergleichsfunktion von Word). **Widersprich** der
+  Überarbeitung überall dort, wo sie die Markenstimme verwässert, Fakten verändert oder
+  Formulierungen austauschbarer macht. Entscheide begründet, welche Fassung du zur Freigabe gibst
+  – oder welche Mischung.
 
   **Deliverable:**
 
-  1. Briefing nach P.R.O.M.P.T. und gesicherte Rohfassung
-  2. Strukturanalyse mit zwei begründet abgelehnten Vorschlägen
-  3. Fassung nach Runde 3 mit den Änderungslisten
-  4. Vergleich aus Runde 4 mit mindestens drei kommentierten Stellen und deiner Entscheidung
-  5. eine kurze Prüfliste für die Freigabe (Fakten, Produktnamen, Claims, Länge)
+  1. Briefing nach P.R.O.M.P.T. und gesicherte Rohfassung in Word
+  2. Strukturanalyse (als Page oder im Dokument) mit zwei begründet abgelehnten Vorschlägen
+  3. Fassung nach Runde 3 mit nachverfolgten Änderungen und Änderungslisten
+  4. Vergleich aus Runde 4 mit mindestens drei kommentierten Stellen (als Word-Kommentare) und
+     deiner Entscheidung
+  5. eine kurze Prüfliste für die Freigabe (Fakten, Produktnamen, Claims, Länge) am Ende des
+     Dokuments
 
   **Fertig bist du erst, wenn** der Text keine unbelegte Nachhaltigkeitsaussage und keinen
   Superlativ enthält, die Informationen der Produktmanagerin korrekt umgesetzt sind, keine
   `[FEHLT]`-Markierung offen ist und du für Runde 4 mindestens drei Stellen konkret begründet hast.
 tip: |
   Der Lernkern liegt in Runde 3 und 4. In Runde 3 zeigt sich, ob deine Anweisungen eng genug sind:
-  Eine Korrektur an einer Stelle darf nicht den halben Text verändern. In Runde 4 erlebst du, was
-  eine pauschale Verbesserungsanweisung anrichtet – flüssigere, aber austauschbarere Sätze. Gutes
-  kollaboratives Schreiben heißt: Du führst, die KI liefert Vorschläge an markierten Stellen.
+  Eine Korrektur an einer Stelle darf nicht den halben Text verändern – die nachverfolgten
+  Änderungen machen das sofort sichtbar. In Runde 4 erlebst du, was eine pauschale
+  Verbesserungsanweisung anrichtet: flüssigere, aber austauschbarere Sätze. Für Fragen zum Text
+  („Wo nenne ich Produkte?", „Welche Aussagen betreffen Nachhaltigkeit?") kannst du Copilot in
+  Word direkt zum Dokument befragen – das ersetzt nicht dein eigenes Lesen, beschleunigt es aber.
 solution: |
-  Bewertungskriterien: (1) das Briefing enthält alle sechs P.R.O.M.P.T.-Bausteine, insbesondere
-  Modifier mit Claim-Regel und `[FEHLT]`-Regel; (2) Struktur wurde vor dem Feinschliff
-  bearbeitet, und die Ablehnung von Vorschlägen ist inhaltlich begründet (z. B. „Abschnitt zur
-  Ausrüstungsliste bleibt vorn, weil Familien ihn suchen"); (3) die Änderungen aus Runde 3 sind
-  gezielt umgesetzt, die Änderungslisten wurden tatsächlich mit dem Text abgeglichen, und die
-  Kürzung hat keine Kerninformation entfernt; (4) der Vergleich in Runde 4 benennt konkrete
-  Verluste (z. B. nordisch-trockener Ton ersetzt durch Allerweltsformulierungen, „robust"
-  wird zu „unverwüstlich") und trifft eine nachvollziehbare Entscheidung; (5) die Prüfliste ist
-  so formuliert, dass eine Kollegin sie ohne Rückfrage anwenden kann.
+  Beispiel für den Entwurfs-Prompt in Word (Auszug):
 
-  Lernziel: Das Arbeitsprinzip „gemeinsames Dokument, gezielte Überarbeitung" unabhängig von
-  einer bestimmten Funktion sicher anwenden – und die Steuerung über Inhalt, Struktur und
-  Markenstimme beim Menschen behalten.
+  ```text
+  Persona: Du bist Texterin im Marketingteam der Fjordlicht GmbH.
+  Request: Schreibe die Rohfassung eines Blogbeitrags für "Draußen-Notizen":
+  "Mit Kindern im Herbst wandern - was wirklich in den Rucksack gehört".
+  Output: 900-1.100 Wörter, Zwischenüberschriften, eine Packliste als Aufzählung.
+  Modifier: Fakten nur aus /Fjordlicht-Basisdaten. Einzige Nachhaltigkeits-
+  aussage: Obermaterial der Sølv zu 100 % recyceltes Polyamid. Keine
+  Superlative. Fehlende Angaben als [FEHLT].
+  Purpose: Familien mit wenig Outdoor-Erfahrung sollen sich gut vorbereitet
+  fühlen; Produkte erscheinen nur, wo sie zur Packliste gehören.
+  Tone: ruhig, ehrlich, leicht nordisch-trocken, Du-Ansprache.
+  ```
+
+  Beispiel für eine gezielte Anweisung in Runde 3 (Passage markiert):
+
+  ```text
+  Passe nur die markierte Passage an: Der Rucksack Tind ist im Herbst nur in
+  einer Größe lieferbar; eine Kinderversion wird nicht erwähnt. Kürze die
+  Passage dabei um etwa 20 Prozent. Produktnamen und Zahlen bleiben
+  wortgleich. Liste danach auf, was du geändert hast.
+  ```
+
+  Bewertungskriterien: (1) das Briefing enthält alle sechs P.R.O.M.P.T.-Bausteine, insbesondere
+  Modifier mit Claim-Regel, Verweis auf die Basisdaten und `[FEHLT]`-Regel; (2) Struktur wurde
+  vor dem Feinschliff bearbeitet, und die Ablehnung von Vorschlägen ist inhaltlich begründet
+  (z. B. „Abschnitt zur Ausrüstungsliste bleibt vorn, weil Familien ihn suchen"); (3) die
+  Änderungen aus Runde 3 sind passagenweise umgesetzt, die Änderungslisten wurden mit den
+  nachverfolgten Änderungen abgeglichen, und die Kürzung hat keine Kerninformation entfernt;
+  (4) der Vergleich in Runde 4 benennt konkrete Verluste (z. B. nordisch-trockener Ton ersetzt
+  durch Allerweltsformulierungen, „robust" wird zu „unverwüstlich") und trifft eine
+  nachvollziehbare Entscheidung; (5) die Prüfliste ist so formuliert, dass eine Kollegin sie ohne
+  Rückfrage anwenden kann.
+
+  Lernziel: Das Arbeitsprinzip „gemeinsames Dokument, gezielte Überarbeitung" mit Copilot in Word
+  und Copilot Pages sicher anwenden – unabhängig von einer bestimmten Funktion – und die Steuerung
+  über Inhalt, Struktur und Markenstimme beim Menschen behalten.

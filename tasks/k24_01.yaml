@@ -1,9 +1,7 @@
 title: Gehört das in die Instruktionen, ins Wissen oder nirgendwohin?
 difficulty: 1
 question: |
-  Für den Produkttext-Assistenten von Fjordlicht liegen folgende Inhalte bereit. Ordne jeden
-  einer Stelle zu: **Instruktionen**, **Wissensdatei** oder **gar nicht hinterlegen**. Begründe
-  kurz.
+  Für den Produkttext-Assistenten von Fjordlicht liegen folgende Inhalte bereit:
 
   1. „Keine Superlative, keine Ausrufezeichen."
   2. Tabelle mit Material, Gewicht und Pflegehinweis aller 120 Artikel
@@ -14,14 +12,22 @@ question: |
   7. Liste belegbarer Nachhaltigkeitsaussagen mit Nachweis
   8. „Bei Widerspruch zwischen Anfrage und Produktdaten nennst du den Widerspruch."
   9. Styleguide 2023 und Styleguide 2026
+
+  **Erst Copilot, dann du:** Füge die Liste in **Copilot Chat** ein und lass Copilot jeden Punkt einer
+  Stelle zuordnen: **Instruktionen** (im Agent Builder: Anweisungen), **Wissensdatei** (Wissensquelle
+  aus OneDrive/SharePoint) oder **gar nicht hinterlegen**, mit kurzer Begründung. Prüfe die
+  Antwort anschließend Punkt für Punkt: Wo stimmst du nicht zu? Ergänze bei den Punkten 3 und 6,
+  warum es **nicht** reicht, dass im Unternehmen ohnehin nur Berechtigte Zugriff auf diese Dateien
+  haben.
 tip: |
   Faustregel: Regeln und Verhalten gehören in die Instruktionen, Fakten und Beispiele ins Wissen.
-  Alles, was nicht jede nutzende Person sehen dürfte, gehört nirgendwohin.
+  Alles, was nicht jede nutzende Person sehen dürfte, gehört nirgendwohin. Copilot ordnet gern
+  „pragmatisch" zu – etwa beide Styleguides „zur Sicherheit".
 solution: |
   | Nr. | Ort | Begründung |
   |---|---|---|
   | 1 | Instruktionen | Verhaltensregel, gilt immer |
-  | 2 | Wissensdatei (CSV/XLSX) | Fakten, zu umfangreich für Instruktionen |
+  | 2 | Wissensdatei (Excel, ein Tabellenblatt) | Fakten, zu umfangreich für Instruktionen |
   | 3 | nirgendwohin | personenbezogene Daten, für Produkttexte unnötig (DSGVO, Kap. 4) |
   | 4 | Instruktionen | Verhaltensregel für Lücken |
   | 5 | Wissensdatei | Beispiele, gekennzeichnet als „Gutes Beispiel" |
@@ -30,6 +36,12 @@ solution: |
   | 8 | Instruktionen | Regel für den Umgang mit Wissen |
   | 9 | nur Styleguide 2026 als Wissensdatei | zwei Versionen erzeugen widersprüchliche Antworten |
 
-  Der häufigste Fehler ist Nr. 9: „Schadet ja nicht, beide hochzuladen." Doch, schadet – der
-  Assistent kann nicht wissen, welche Version gilt, und greift mal auf die eine, mal auf die
-  andere zurück.
+  Zu 3 und 6: Microsoft 365 Copilot beachtet zwar Berechtigungen – der Agent sieht nur, worauf die
+  jeweilige Person Zugriff hat. Aber wer Zugriff auf die Datei hat, bekommt ihren Inhalt über den
+  Agent auch in Produkttext-Antworten eingemischt oder kann ihn gezielt abfragen. Berechtigungen
+  schützen vor Fremden, nicht vor unnötiger Verarbeitung (Zweckbindung, Datenminimierung).
+
+  Der häufigste Fehler ist Nr. 9: „Schadet ja nicht, beide als Wissen anzugeben." Doch, schadet –
+  der Agent kann nicht wissen, welche Version gilt, und greift mal auf die eine, mal auf die
+  andere zurück. Das passiert in Microsoft 365 auch unbeabsichtigt, wenn ein ganzer Ordner als
+  Wissensquelle dient und die alte Version noch darin liegt.

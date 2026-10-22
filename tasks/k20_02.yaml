@@ -1,9 +1,10 @@
-title: Newsletter-Betreffzeilen mit der Datenanalyse auswerten
+title: Newsletter-Betreffzeilen mit Copilot in Excel auswerten
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT mit Datenanalyse, alternativ Claude,
-  Gemini oder Copilot). Kopiere den folgenden fiktiven Fjordlicht-Export in eine Textdatei
-  `newsletter.csv` oder füge ihn direkt in den Chat ein.
+  Diese Übung machst du in **Excel mit Copilot**. Speichere den folgenden fiktiven
+  Fjordlicht-Export als Textdatei `newsletter.csv`, öffne sie in Excel und speichere sie als
+  „Newsletter-Analyse.xlsx" im OneDrive-Ordner „Fjordlicht-Kurs". Formatiere den Bereich als
+  Tabelle.
 
   ```text
   datum;betreff;thema;öffnungsrate;klickrate
@@ -19,24 +20,30 @@ question: |
   2026-05-14;Tind Rucksack: 20 Prozent leichter;Produkt;35,1;4,6
   ```
 
-  1. Lass prüfen, ob **Fragen im Betreff** und das **Thema** mit Öffnungs- und Klickrate
-     zusammenhängen. Nutze einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5).
-  2. Lass dir den **Rechenweg** zeigen und prüfe einen Mittelwert selbst nach.
-  3. Formuliere zwei **Hypothesen** für einen A/B-Test – inklusive der Einschränkung, warum die
+  1. Lass **Copilot in Excel** eine Spalte „frage" ergänzen (ja, wenn der Betreff mit „?" endet)
+     und prüfen, ob Frageform und **Thema** mit Öffnungs- und Klickrate zusammenhängen. Nutze
+     einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5) und fordere Fallzahlen an.
+  2. Lass dir die **Formeln** zeigen, mit denen Copilot gerechnet hat, und rechne einen
+     Mittelwert selbst mit `MITTELWERTWENN` nach.
+  3. Lass Copilot ein Diagramm zu Öffnungs- und Klickrate nach Thema erstellen.
+  4. Formuliere zwei **Hypothesen** für einen A/B-Test – inklusive der Einschränkung, warum die
      Daten allein nicht reichen.
 tip: |
-  Achte auf das Dezimalkomma und das Semikolon als Trennzeichen – sag beides im Prompt dazu.
-  Und schau genau hin, was mit der Klickrate passiert: Was öffnet, ist nicht unbedingt das,
-  was klickt.
+  Prüfe nach dem Öffnen, ob Excel die Zahlen als Zahlen erkannt hat (Dezimalkomma, Semikolon) –
+  eine falsch eingelesene Spalte ist die häufigste Fehlerquelle (Abschnitt 20.4). Alternativ kannst
+  du die Datei in Copilot Chat hochladen oder den Agenten **Analyst** nutzen, falls freigegeben;
+  dann lass dir den Rechenweg ebenfalls zeigen. Und schau genau hin, was mit der Klickrate
+  passiert: Was öffnet, ist nicht unbedingt das, was klickt.
 solution: |
-  Beispielprompt:
+  Beispiel-Prompt für Copilot in Excel:
 
   ```text
   Persona: Du bist Datenanalystin im Content-Marketing.
-  Request: Werte die Tabelle aus (Semikolon-getrennt, Dezimalkomma). Ergänze
-  eine Spalte "frage" (ja, wenn der Betreff mit ? endet). Vergleiche Öffnungs-
-  und Klickrate nach "frage" und nach "thema".
-  Output: Tabelle mit Mittelwert und Anzahl je Gruppe, danach drei Befunde.
+  Request: Ergänze eine Spalte "frage" (ja, wenn der Betreff mit ? endet).
+  Vergleiche Öffnungs- und Klickrate nach "frage" und nach "thema"
+  (Produkt gegen alle übrigen Themen).
+  Output: Übersichtstabelle mit Mittelwert und Anzahl je Gruppe, danach
+  drei Befunde in Stichpunkten.
   Modifier: Nenne immer die Fallzahl, kennzeichne Gruppen unter 10 Fällen als
   unsicher, formuliere Zusammenhänge, keine Ursachen.
   Purpose: Hypothesen für A/B-Tests im nächsten Quartal.
@@ -52,6 +59,9 @@ solution: |
   | Thema Produkt | 4 | 35,5 | 4,7 |
   | übrige Themen | 6 | 41,9 | 3,1 |
 
+  Nachrechnen, z. B.: `=MITTELWERTWENN(Tabelle1[frage];"ja";Tabelle1[öffnungsrate])` ergibt 42,75
+  (Tabellen- und Spaltennamen ggf. anpassen).
+
   Befund: Produkt-Betreffzeilen werden seltener geöffnet, aber häufiger geklickt – wer öffnet,
   hat Kaufinteresse. Alle Gruppen haben unter 10 Fällen, also **unsicher**.
 
@@ -59,3 +69,6 @@ solution: |
   als mit Produktnamen-Betreff, ohne Klickrate zu verlieren." (2) „Ein Wissens-Newsletter mit
   einem Produkt-Kasten am Ende erzielt mehr Klicks als ohne." Die Daten reichen nicht als
   Beleg, weil Thema und Betreffform vermischt sind und die Fallzahl klein ist.
+
+  Bewertungskriterien: Daten korrekt eingelesen, Fallzahlen in der Ergebnistabelle, ein selbst
+  nachgerechneter Wert, Hypothesen statt Regeln.

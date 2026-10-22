@@ -1,8 +1,10 @@
-title: Text im Bild – zwei Werkzeuge im Test
+title: Text im Bild – Copilot gegen ein Spezialwerkzeug
 difficulty: 2
 question: |
-  Diese Übung machst du in **Ideogram** und **ChatGPT Images** (alternativ Gemini, Firefly oder
-  Adobe Express, wenn du keinen Ideogram-Zugang hast).
+  Diese Übung machst du in der **Microsoft-365-Copilot-App** (Copilot Chat bzw. die
+  Create-Funktion, falls in eurer Umgebung freigegeben) und in **Ideogram** als Vergleich.
+  Ohne Ideogram-Zugang vergleichst du Copilot Chat mit Create – oder nimmst ChatGPT Images,
+  Gemini oder Adobe Express als Vergleichspartner.
 
   Erzeuge in beiden Werkzeugen eine Pinterest-Grafik (Hochformat 2:3) für den Fjordlicht-Blog
   „Draußen-Notizen" mit genau diesen Texten:
@@ -16,24 +18,37 @@ question: |
   1. Schreibe den Prompt nach den Regeln aus 31.4: Text in Anführungszeichen, Rolle, Typografie,
      Position.
   2. Erzeuge pro Werkzeug **zwei** Durchläufe.
-  3. Prüfe jedes Bild Zeichen für Zeichen: Rechtschreibung, Umlaute, fehlende oder doppelte
-     Einträge, Reihenfolge, Lesbarkeit.
-  4. Entscheide: Welcher Entwurf eignet sich als Layoutvorlage, und was müsste für die
-     Veröffentlichung im Layout-Werkzeug neu gesetzt werden?
+  3. Prüfe jedes Bild selbst Zeichen für Zeichen: Rechtschreibung, Umlaute, fehlende oder
+     doppelte Einträge, Reihenfolge, Lesbarkeit.
+  4. Lade danach das beste Bild in Copilot Chat hoch und lass den Text im Bild auslesen und mit
+     der Vorgabe abgleichen. Findet Copilot dieselben Fehler wie du?
+  5. Setze die Grafik mit dem besten Entwurf als Layoutidee in **PowerPoint** neu auf
+     (benutzerdefinierte Foliengröße im Hochformat, echte Textfelder). Entscheide: Was übernimmst
+     du aus dem Entwurf, was muss neu gesetzt werden?
 tip: |
   Gib die Umlaute im Prompt so an, wie sie im Bild erscheinen sollen (also „für", „Draußen"),
   und beobachte, ob das Werkzeug sie korrekt übernimmt. Umlaute und ß sind ein guter
-  Härtetest.
+  Härtetest. Verlass dich bei Schritt 4 nicht auf Copilot: Bildmodelle übersehen beim Prüfen
+  gern genau die Fehler, die sie beim Erzeugen machen.
 solution: |
-  Beispielprompt:
+  Beispielprompt für Copilot:
 
   ```text
-  Pinterest-Grafik im Hochformat 2:3, schlichte Infografik.
+  Erstelle ein Bild: Pinterest-Grafik im Hochformat 2:3, schlichte Infografik.
   Hintergrund: helles Sandbeige. Oben die Überschrift
   "5 Dinge für die erste Herbstwanderung" in fetter serifenloser Schrift,
   dunkelgrün. Darunter eine nummerierte Liste mit kleinen Linien-Icons:
   "Regenjacke", "Warme Schicht", "Thermobecher", "Stirnlampe", "Pflaster".
   Unten mittig klein: "Draußen-Notizen". Viel Weißraum, keine Fotos.
+  ```
+
+  Prüfprompt für Schritt 4:
+
+  ```text
+  Lies den gesamten Text in diesem Bild Zeichen für Zeichen aus und vergleiche
+  ihn mit dieser Vorgabe: [Texte einfügen]. Nenne jede Abweichung einzeln
+  (Rechtschreibung, Umlaute, fehlende, doppelte oder zusätzliche Einträge,
+  Reihenfolge). Schreibe "unsicher", wo du etwas nicht sicher lesen kannst.
   ```
 
   | Prüfpunkt | Typische Beobachtung |
@@ -42,10 +57,11 @@ solution: |
   | Umlaute, ß | gelegentlich vertauscht oder durch ähnliche Zeichen ersetzt |
   | Liste | Einträge fehlen, doppeln sich oder werden um eigene Ideen ergänzt |
   | Icons | passen nicht immer zum Begriff (z. B. Taschenlampe statt Stirnlampe) |
-  | Layout | Ideogram oft geordneter bei Hierarchie und Abständen |
+  | Layout | Ideogram oft geordneter bei Hierarchie und Abständen, Copilot gut bei kurzen Texten |
+  | Prüfung durch Copilot | findet grobe Fehler, übersieht kleine Buchstabendreher manchmal |
 
   Entscheidung: Der beste Entwurf dient als **Layoutidee** (Anordnung, Farben, Icon-Stil). Für
-  die Veröffentlichung werden alle Texte im Layout-Werkzeug (Canva, Express, InDesign) neu
-  gesetzt, weil Pixeltext nicht korrigierbar ist und die Hausschrift fehlt. Eine gute
-  Bearbeitung dokumentiert mindestens einen konkreten Textfehler oder begründet, warum keiner
-  auftrat.
+  die Veröffentlichung werden alle Texte im Layout neu gesetzt – in PowerPoint, Create, Canva
+  oder Express –, weil Pixeltext nicht korrigierbar ist und die Hausschrift fehlt. Eine gute
+  Bearbeitung dokumentiert mindestens einen konkreten Textfehler (oder begründet, warum keiner
+  auftrat), vergleicht die eigene Prüfung mit der von Copilot und zeigt die neu gesetzte Folie.

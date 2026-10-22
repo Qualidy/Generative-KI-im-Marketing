@@ -9,15 +9,24 @@ question: |
   ultra-detailed, masterpiece, 8K
   ```
 
-  1. Welche der acht Bausteine (Motiv, Umgebung, Stil, Licht, Komposition, Kamera,
+  1. **Ausprobieren.** Erzeuge mit genau diesem Prompt ein Bild in Copilot Chat. Notiere in
+     einem Satz, was dir am Ergebnis auffällt (Format, Bildaufbau, Look).
+  2. Welche der acht Bausteine (Motiv, Umgebung, Stil, Licht, Komposition, Kamera,
      Farbstimmung, Format) sind enthalten, welche fehlen?
-  2. Welche Angaben sind **Füllwörter**, die kaum etwas beitragen?
-  3. Formuliere die negative Angabe „keine Handys" positiv um.
-  4. Ergänze die beiden fehlenden Bausteine, die für einen Instagram-Post am wichtigsten sind.
+  3. Welche Angaben sind **Füllwörter**, die kaum etwas beitragen?
+  4. Formuliere die negative Angabe „keine Handys" positiv um.
+  5. Ergänze die beiden fehlenden Bausteine, die für einen Instagram-Post am wichtigsten sind,
+     streiche die Füllwörter und erzeuge das Bild in einer **neuen** Unterhaltung erneut.
+     Was hat sich sichtbar verändert?
 tip: |
-  Überlege bei Frage 4, was ein Instagram-Post technisch zwingend braucht und was bei einem
-  Familienbild am häufigsten „irgendwie falsch" wirkt.
+  Überlege bei Frage 5, was ein Instagram-Post technisch zwingend braucht und was bei einem
+  Familienbild am häufigsten „irgendwie falsch" wirkt. Ein Blick auf das erste Bild aus
+  Schritt 1 verrät es dir meist.
 solution: |
+  Typische Beobachtung in Schritt 1: Das Bild ist quadratisch oder im Querformat, die Familie
+  sitzt mittig und frontal, alle lächeln in die Kamera, der Look ist glatt und sehr gesättigt –
+  ein Werbefamilien-Bild.
+
   | Baustein | enthalten? | Fundstelle |
   |---|---|---|
   | Motiv | ja | Familie mit zwei Kindern beim Picknick |
@@ -44,4 +53,7 @@ solution: |
   ```
 
   Das Format ist zwingend für den Kanal, die Komposition verhindert das typische frontale
-  „Werbefamilien"-Bild.
+  „Werbefamilien"-Bild. Im zweiten Durchgang wirkt das Bild meist ruhiger und
+  dokumentarischer, die Familie ist kleiner im Bild, und es gibt Umgebung. Falls Copilot das
+  Hochformat nicht exakt umsetzt, ist das ein Hinweis, das Format später beim Zuschnitt zu
+  sichern – der Prompt bleibt trotzdem richtig.

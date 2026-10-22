@@ -1,4 +1,4 @@
-title: Plattformstrategie für die Assistenten
+title: Plattformstrategie mit Portabilitätstest
 difficulty: 3
 question: |
   Die Geschäftsführung von Fjordlicht ist nach der Ankündigung vom 11.09.2026 verunsichert:
@@ -6,41 +6,63 @@ question: |
   bauen?" Drei Positionen stehen im Raum:
 
   - **A:** Alles sofort zu Plugins migrieren und weiter ausschließlich auf ChatGPT setzen.
-  - **B:** Zu einem anderen Anbieter wechseln, etwa Claude Projects oder Copilot Agents,
-    weil dort „mehr Stabilität" herrsche.
-  - **C:** Keine Assistenten mehr bauen, nur noch Prompt-Bibliothek (Kap. 10).
+  - **B:** Alles als Copilot-Agents neu bauen, weil das Team Microsoft 365 Copilot ohnehin hat
+    und dort „mehr Stabilität" herrsche.
+  - **C:** Keine Assistenten mehr bauen, nur noch Prompt-Bibliothek (Kap. 10) – etwa
+    gespeicherte und geteilte Prompts in der Prompt Gallery von Copilot.
 
-  Bewerte die drei Positionen nach **Aufwand**, **Risiko** und **Nutzen für das Team**.
-  Entwickle eine eigene Empfehlung in höchstens zehn Sätzen, die konkrete Maßnahmen gegen
-  Plattformabhängigkeit enthält. Begründe, warum ein Wechsel des Anbieters das Grundproblem
-  nicht löst.
+  1. **Portabilitätstest (20 Minuten).** Nimm die Anweisungen und eine Wissensdatei eines
+     Assistenten, den du gebaut hast (Kap. 25 oder 26), und baue ihn als Copilot-Agent im
+     Agent Builder nach – bzw. umgekehrt, falls er schon ein Copilot-Agent ist, als Claude
+     Project oder Gemini Gem. Lass drei Testfälle aus deinem Testsatz in beiden Fassungen
+     laufen. Notiere: Was ließ sich 1:1 übernehmen, was musste angepasst werden, wie lange
+     hat es gedauert?
+  2. **Bewerten.** Bewerte die drei Positionen nach **Aufwand**, **Risiko** und **Nutzen für
+     das Team** – und nutze dabei deine Erfahrung aus Schritt 1.
+  3. **Empfehlung.** Entwirf in **Copilot in Word** eine Empfehlung in höchstens zehn Sätzen,
+     die konkrete Maßnahmen gegen Plattformabhängigkeit enthält. Begründe, warum ein Wechsel
+     des Anbieters das Grundproblem nicht löst – auch nicht zu Copilot.
 tip: |
   Die Frage ist nicht, welcher Anbieter stabil bleibt – das weiß niemand. Die Frage ist,
-  wie teuer der nächste Umzug wird. Denk an das, was du selbst in der Hand hast.
+  wie teuer der nächste Umzug wird. Der Portabilitätstest liefert dir dafür eine echte Zahl
+  statt einer Vermutung. Und: Das Argument „haben wir ohnehin, Daten bleiben im Mandanten"
+  ist ein gutes Argument für Copilot – nur kein Argument gegen Abhängigkeit.
 solution: |
+  Typisches Ergebnis des Portabilitätstests: Anweisungen und Wissensdatei sind in 10 bis 20
+  Minuten übertragen. Anpassungen betreffen Verweise auf Dateinamen, Formatregeln (Copilot
+  formatiert Tabellen und Überschriften etwas anders) und Funktionen, die es nicht gleich gibt.
+  Zwei von drei Testfällen laufen ohne Änderung, einer braucht eine Nachschärfung.
+  Wer keine eigene Kopie der Anweisungen hatte, musste sie erst aus der Plattform
+  heraussuchen – das ist der eigentliche Zeitfresser.
+
   | Position | Aufwand | Risiko | Nutzen |
   |---|---|---|---|
   | A | gering bis mittel (Actions neu) | Abhängigkeit bleibt unverändert | hoch, Team arbeitet weiter |
-  | B | hoch: Neuaufbau, Schulung, Verträge | gleiches Grundrisiko bei anderem Anbieter | unklar, Umstellungsverluste |
+  | B | mittel: Neuaufbau, Tests, Aktionen in Copilot Studio neu, Schulung | gleiches Grundrisiko bei anderem Anbieter; Vorteil: vorhandene Lizenz, Daten im Mandanten | mittel bis hoch, wenn das Team ohnehin in Microsoft 365 arbeitet |
   | C | gering | Qualitätsverlust, Wildwuchs zurück | gering bis mittel |
 
   Beispielempfehlung:
 
   ```text
-  Wir migrieren den Content-Assistenten und den CRM-Prototyp bis Ende November zu Plugins und
-  testen beide mit dem bestehenden Testsatz. Instruktionen, Wissensdateien und
-  Testfälle pflegen wir ab sofort versioniert in unserer eigenen Ablage; die
+  Wir migrieren den Content-Assistenten und den CRM-Prototyp bis Ende November zu
+  Plugins oder bauen sie als Copilot-Agents nach – entscheidend ist, wo das Team
+  arbeitet, nicht welcher Anbieter gerade sicherer wirkt. Beide testen wir mit
+  dem bestehenden Testsatz. Instruktionen, Wissensdateien und Testfälle pflegen
+  wir ab sofort versioniert im Ordner "Fjordlicht-Kurs/Assistenten"; die
   Plattform ist nur der Ort, an dem sie laufen. Neue Schnittstellen bauen wir
-  bevorzugt über offene Standards wie MCP oder über eine Automatisierungsplattform,
-  nicht als plattformspezifische Custom Action. Einmal im Jahr prüfen wir mit
-  einem Testlauf, ob ein Assistent in einem zweiten Werkzeug (z. B. Claude
-  Projects) mit vertretbarem Aufwand lauffähig wäre. Für jeden Assistenten gibt
-  es eine verantwortliche Person.
+  bevorzugt über offene Standards wie MCP oder über eine
+  Automatisierungsplattform, nicht als plattformspezifische Custom Action. Einmal
+  im Jahr wiederholen wir den Portabilitätstest mit einem zweiten Werkzeug. Für
+  jeden Assistenten gibt es eine verantwortliche Person.
   ```
 
   Ein Anbieterwechsel löst das Problem nicht, weil jede Plattform ihre Funktionen ändern
-  kann; er tauscht nur eine Abhängigkeit gegen eine andere und kostet dabei den
-  Umstellungsaufwand. Unabhängigkeit entsteht durch **eigene, portable Bausteine**.
+  kann – auch Microsoft benennt Funktionen um und verändert Oberflächen. Er tauscht nur eine
+  Abhängigkeit gegen eine andere und kostet dabei den Umstellungsaufwand. Unabhängigkeit
+  entsteht durch **eigene, portable Bausteine**.
 
-  Bewertungskriterien: alle drei Positionen in drei Dimensionen bewertet, Empfehlung mit
-  mindestens drei konkreten Maßnahmen, korrekte Bezugnahme auf die Migrationsfakten.
+  Bewertungskriterien: Portabilitätstest tatsächlich durchgeführt und mit Zeit und
+  Anpassungen dokumentiert; alle drei Positionen in drei Dimensionen bewertet; Position B
+  fair gewürdigt (vorhandene Lizenz, Datenschutz im Mandanten) und trotzdem vom Grundproblem
+  getrennt; Empfehlung mit mindestens drei konkreten Maßnahmen; korrekte Bezugnahme auf die
+  Migrationsfakten.

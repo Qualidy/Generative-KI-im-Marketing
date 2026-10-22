@@ -1,23 +1,39 @@
 title: Synthetische Interviews kritisch prüfen
 difficulty: 3
 question: |
-  Ein Kollege präsentiert im Teammeeting: „Ich habe zehn synthetische Personas aus unserem
-  Familien-Avatar erzeugt und sie zur neuen Mietoption für Kinderjacken befragt. **8 von 10 würden
-  sie nutzen.** Wir können das Angebot starten."
+  Ein Kollege präsentiert im Teammeeting: „Ich habe in Copilot zehn synthetische Personas aus
+  unserem Familien-Avatar erzeugt und sie zur neuen Mietoption für Kinderjacken befragt. **8 von
+  10 würden sie nutzen.** Wir können das Angebot starten."
 
-  1. Führe selbst ein simuliertes Interview im KI-Werkzeug durch: Lass das Modell den Avatar
-     „Tobias" (aus k18_01 oder selbst erstellt) spielen, mit der Rückfall-Regel aus Abschnitt 18.4,
-     und stelle fünf Fragen zur Mietoption.
-  2. Wiederhole dasselbe Interview in einem neuen Chat. Vergleiche: Wie stark unterscheiden sich die
-     Antworten, wo antwortet das Modell über den Steckbrief hinaus?
-  3. Bewerte die Aussage des Kollegen. Nenne mindestens **drei** methodische Probleme.
-  4. Formuliere, wofür die Interviews trotzdem nützlich waren, und schlage einen Weg vor, die
-     Nachfrage mit echten Menschen zu prüfen.
+  1. **Interview 1.** Führe in Copilot Chat ein simuliertes Interview durch: Lass Copilot den
+     Avatar „Tobias" spielen – Steckbrief per `/Avatar-Tobias` (aus k18_01, sonst selbst
+     erstellen und einfügen) – mit der Rückfall-Regel aus Abschnitt 18.4. Stelle fünf Fragen zur
+     Mietoption.
+  2. **Interview 2.** Wiederhole dasselbe Interview in einem neuen Chat. Übernimm beide Verläufe
+     in eine gemeinsame **Copilot Page** und vergleiche dort: Wie stark unterscheiden sich die
+     Antworten, wo antwortet Copilot über den Steckbrief hinaus? Zähle, wie oft zugestimmt,
+     abgewogen oder abgelehnt wird.
+  3. **Bewerten.** Bewerte die Aussage des Kollegen. Nenne mindestens **drei** methodische Probleme.
+  4. **Nutzen und echte Prüfung.** Formuliere, wofür die Interviews trotzdem nützlich waren. Lass
+     Copilot aus den gesammelten Einwänden einen Leitfaden für fünf echte Gespräche entwerfen und
+     überarbeite ihn: Stehen dort Verhaltensfragen statt Absichtsfragen?
 tip: |
-  Achte im zweiten Durchlauf darauf, ob sich die **Haltung** ändert oder nur der Wortlaut. Und
-  zähle, wie oft das Modell zustimmt, abwägt oder ablehnt. Die Neigung zur Zustimmung ist eines
-  der stabilsten Muster synthetischer Befragungen.
+  Achte im zweiten Durchlauf darauf, ob sich die **Haltung** ändert oder nur der Wortlaut. Die
+  Neigung zur Zustimmung ist eines der stabilsten Muster synthetischer Befragungen. Die Page hat
+  den Vorteil, dass du beide Verläufe nebeneinander markieren und mit dem Team teilen kannst –
+  so wird der Befund im Meeting sichtbar statt behauptet.
 solution: |
+  Beispiel-Prompt für das Interview:
+
+  ```text
+  Du spielst Tobias (Steckbrief in /Avatar-Tobias). Bleib in der Rolle und
+  antworte so, wie er es vermutlich tun würde - knapp, abwägend, ohne
+  Marketingsprache. Wenn eine Frage etwas betrifft, wozu der Steckbrief
+  nichts sagt, antworte mit "Dazu kann ich aus dem Steckbrief nichts
+  ableiten." Ich stelle dir gleich Fragen zu einer Mietoption für
+  Kinderjacken.
+  ```
+
   Typische Beobachtungen: Beide Durchläufe ähneln sich in der Haltung (vorsichtig positiv, „klingt
   interessant, wenn der Preis stimmt"), unterscheiden sich im Wortlaut. Ohne Rückfall-Regel erfindet
   das Modell Details wie konkrete Preisgrenzen oder Erfahrungen mit anderen Mietangeboten.
@@ -35,7 +51,8 @@ solution: |
   Nützlich waren die Interviews für: Einwände (Hygiene, Schäden durch Kinder, Rückgabeaufwand),
   Fragen für echte Gespräche und Formulierungen für eine Landingpage.
 
-  Echte Prüfung: fünf bis acht Gespräche mit Eltern aus dem Newsletter-Verteiler, eine kurze Umfrage
-  mit Verhaltensfrage („Hast du schon einmal Kinderkleidung gemietet oder gebraucht gekauft?") und
-  ein **Fake-Door-Test**: eine Landingpage mit Vormerk-Button, die echtes Interesse misst, bevor das
-  Angebot existiert (transparent kommunizieren, dass es sich um eine Vormerkung handelt).
+  Echte Prüfung: fünf bis acht Gespräche mit Eltern aus dem Newsletter-Verteiler (Leitfaden mit
+  Verhaltensfragen wie „Hast du schon einmal Kinderkleidung gemietet oder gebraucht gekauft?"),
+  eine kurze Umfrage und ein **Fake-Door-Test**: eine Landingpage mit Vormerk-Button, die echtes
+  Interesse misst, bevor das Angebot existiert (transparent kommunizieren, dass es sich um eine
+  Vormerkung handelt).

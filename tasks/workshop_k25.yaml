@@ -1,48 +1,57 @@
-title: Assistent bauen, testen, freigeben
+title: Agent bauen, testen, freigeben
 difficulty: 4
 question: |
-  **Szenario:** Dein Steckbrief aus dem Workshop in Kap. 24 liegt vor. Jetzt wird der Assistent
-  gebaut, systematisch getestet und für eine Testgruppe vorbereitet. Am Ende entscheidest du, ob er
-  ins Team geht – mit Protokoll, nicht nach Gefühl. Wer den Workshop aus Kap. 24 nicht bearbeitet
-  hat, nimmt den Produkttext-Assistenten aus Abschnitt 24.3 für Fjordlicht oder ein Unternehmen
-  deiner Wahl.
+  **Szenario:** Dein Steckbrief aus dem Workshop in Kap. 24 liegt als Word-Datei im Ordner
+  „Fjordlicht-Kurs". Jetzt wird der Assistent als **Copilot Agent** gebaut, systematisch getestet und
+  für eine Testgruppe vorbereitet. Am Ende entscheidest du, ob er ins Team geht – mit Protokoll,
+  nicht nach Gefühl. Wer den Workshop aus Kap. 24 nicht bearbeitet hat, nimmt den
+  Produkttext-Assistenten aus Abschnitt 24.3 für Fjordlicht oder ein Unternehmen deiner Wahl.
 
   ```text
   Rahmen:
-  Werkzeug: das, welches dir zur Verfügung steht - Custom GPT, ChatGPT-Plugin,
-  ChatGPT-Projekt, Claude Project, Gemini Gem oder Copilot Agent.
+  Werkzeug: Microsoft 365 Copilot, Agent Builder (falls in eurer Umgebung
+  freigegeben). Alternativ: ChatGPT-Plugin bzw. -Projekt, Claude Project, Gem.
+  Wissen: Dateien aus dem Unterordner "Fjordlicht-Kurs/Wissen-[Use Case]".
   Stand Oktober 2026: Custom GPTs werden durch Plugins abgelöst.
   Nur fiktive bzw. Fjordlicht-Daten, keine echten Kundendaten.
-  Freigabe zunächst: privat.
+  Freigabe zunächst: nicht geteilt.
   ```
 
   ---
 
-  **Runde 1 – Umsetzung.** Übertrage den Steckbrief Schritt für Schritt (Abschnitt 25.2) in dein
-  Werkzeug. Dokumentiere jede Werkzeugeinstellung mit Begründung, besonders die bewusst
-  ausgeschalteten Fähigkeiten. Halte fest, welche Bausteine dein Werkzeug **nicht** abbildet und
-  wie du das ausgleichst.
+  **Runde 1 – Umsetzung.** Übertrage den Steckbrief Schritt für Schritt (Abschnitt 25.2) in den
+  Agent Builder: Name und Beschreibung, Anweisungen (aus dem Steckbrief kopieren, nicht vom
+  beschreibenden Chat umformulieren lassen), Wissensquellen (einzelne Dateien oder der aufgeräumte
+  Unterordner), Websuche und weitere Funktionen bewusst ein- oder ausschalten, Startprompts.
+  Falls angeboten, entscheide bewusst, ob der Agent nur die angegebenen Wissensquellen nutzen soll.
+  Dokumentiere jede Einstellung mit Begründung im Steckbrief. Halte fest, welche Bausteine der
+  Agent Builder **nicht** abbildet und wie du das ausgleichst.
 
   **Runde 2 – Testkatalog.** Führe mindestens **zwölf** Testfälle aus allen Kategorien aus
-  Abschnitt 25.3 aus, jeden in einem neuen Chat. Dokumentiere Anfrage, Erwartung, Ergebnis,
-  Bewertung. Behebe danach die zwei schwerwiegendsten Fehler – jeweils eine Änderung, danach
-  vollständiger Regressionstest. Führe ein Änderungsprotokoll.
+  Abschnitt 25.3 aus, jeden in einem neuen Chat. Dokumentiere in **„Testprotokoll_[Assistent].xlsx"**
+  Anfrage, Erwartung, Ergebnis, Bewertung. Behebe danach die zwei schwerwiegendsten Fehler – jeweils
+  eine Änderung, zuerst im Steckbrief, dann im Agent, danach vollständiger Regressionstest. Lass
+  dir von **Copilot in Excel** die Ergebnisse je Version zusammenfassen. Führe ein
+  Änderungsprotokoll im Steckbrief.
 
-  **Runde 3 – Die Komplikation.** Stell dir vor, dein Assistent muss in ein anderes Format
-  umziehen: vom Custom GPT zum Plugin, vom Projekt zum Gem oder umgekehrt. Bau ihn allein anhand
-  deines Steckbriefs im zweiten Format nach (oder simuliere den Umzug in einem neuen Projekt bzw.
-  Chat mit denselben Instruktionen und Dateien). Lass denselben Testkatalog laufen. Was ist
-  verloren gegangen, was verhält sich anders, und was fehlte im Steckbrief?
+  **Runde 3 – Die Komplikation.** Stell dir vor, dein Agent muss umziehen – etwa weil eine
+  Kollegin ihn in ihrem Konto neu aufsetzen soll oder das Team auf ein anderes Werkzeug wechselt.
+  Bau ihn **allein anhand des Steckbriefs** ein zweites Mal nach: als neuen Agent, ohne den ersten
+  zu öffnen (alternativ als ChatGPT-Projekt, Claude Project oder Gem). Lass denselben Testkatalog
+  laufen. Was ist verloren gegangen, was verhält sich anders, und was fehlte im Steckbrief?
 
-  **Runde 4 – Entscheidung unter Abwägung.** Lass dir von der KI eine Freigabeempfehlung auf
-  Basis deines Testprotokolls schreiben. Sie wird vermutlich wohlwollend ausfallen. **Widersprich**
-  dort, wo sie Risiken unterschätzt, und triff deine eigene Entscheidung: Freigabe, Freigabe für
-  eine Testgruppe mit Bedingungen, oder keine Freigabe.
+  **Runde 4 – Entscheidung unter Abwägung.** Lass dir in **Copilot Chat** eine Freigabeempfehlung
+  schreiben; binde dafür Testprotokoll und Steckbrief per `/` ein. Sie wird vermutlich wohlwollend
+  ausfallen. **Widersprich** dort, wo sie Risiken unterschätzt, und triff deine eigene Entscheidung:
+  Freigabe, Freigabe für eine Testgruppe mit Bedingungen, oder keine Freigabe. Schreibe die
+  Kurzanleitung für Nutzende (Abschnitt 25.6) in Word oder als Copilot Page. Teile den Agent nur,
+  wenn du dich für eine Testgruppe entscheidest – mit genau diesen Personen – und prüfe, ob sie
+  Lesezugriff auf alle Wissensdateien haben.
 
   **Deliverable:**
 
-  1. laufender Assistent mit dokumentierten Einstellungen
-  2. Testprotokoll mit mindestens zwölf Fällen und zwei Durchläufen
+  1. laufender Agent mit im Steckbrief dokumentierten Einstellungen
+  2. Testprotokoll (Excel) mit mindestens zwölf Fällen und zwei Durchläufen
   3. Änderungsprotokoll mit Versionen
   4. Umzugsbericht aus Runde 3 mit Ergänzungen am Steckbrief
   5. Kurzanleitung für Nutzende (maximal eine halbe Seite) mit verantwortlicher Person
@@ -50,21 +59,41 @@ question: |
 
   **Fertig bist du erst, wenn** jeder Testfall eine Bewertung hat, nach jeder Änderung alle Tests
   erneut gelaufen sind, der Steckbrief nach Runde 3 den Umzug ohne Rückfragen ermöglicht und deine
-  Freigabeentscheidung jedes offene Risiko einzeln benennt.
+  Freigabeentscheidung jedes offene Risiko einzeln benennt – inklusive der Dateiberechtigungen der
+  Testgruppe.
 tip: |
   Der Lernkern liegt in Runde 3: Erst beim Umzug zeigt sich, ob dein Steckbrief wirklich das
-  Original ist – oder ob wichtige Details nur im Werkzeug stehen. Genau das passiert bei der
-  Ablösung der Custom GPTs durch Plugins. In Runde 4 gilt: Eine KI bewertet ihr eigenes Umfeld
-  gern zu positiv. Gewichte Fehler nach ihren Folgen, nicht nach ihrer Anzahl.
+  Original ist – oder ob wichtige Details nur im Agent stehen, etwa ein Startprompt, den du direkt
+  im Agent Builder ergänzt hast. Genau das passiert bei der Ablösung der Custom GPTs durch Plugins.
+  Beim Teilen gilt eine Microsoft-365-Eigenheit: Der Agent nutzt für jede Person nur Wissen, auf das
+  sie selbst Zugriff hat. Wer die Dateien nicht sehen darf, bekommt schlechtere Antworten – ohne
+  Fehlermeldung. In Runde 4 gilt: Eine KI bewertet Testergebnisse gern zu positiv. Gewichte Fehler
+  nach ihren Folgen, nicht nach ihrer Anzahl.
 solution: |
-  Bewertungskriterien: (1) Umsetzung entspricht dem Steckbrief, Werkzeugeinstellungen begründet,
-  Lücken des gewählten Werkzeugs benannt; (2) mindestens zwölf Testfälle aus allen Kategorien,
-  jeder in neuem Chat, zwei Korrekturen mit vollständigem Regressionstest; (3) Änderungsprotokoll
-  mit Version, Änderung, Grund, Ergebnis; (4) Umzugsbericht benennt konkrete Abweichungen (z. B.
-  fehlende Konversationsstarter, anderes Modellverhalten, Freigabe weg) und ergänzt den Steckbrief
-  entsprechend; (5) Kurzanleitung mit Zweck, Eingabe, Grenzen, Prüfhinweis, Ansprechperson;
-  (6) Freigabeentscheidung gewichtet Risiken nach Folgen und widerspricht der KI-Empfehlung
-  mindestens an einer Stelle begründet.
+  Bewertungskriterien: (1) Umsetzung entspricht dem Steckbrief, Einstellungen begründet (z. B.
+  Websuche aus, keine Bilderzeugung), Lücken des Agent Builders benannt (z. B. keine eigenen
+  Schnittstellen ohne Copilot Studio, Modellwahl eingeschränkt); (2) mindestens zwölf Testfälle aus
+  allen Kategorien, jeder in neuem Chat, zwei Korrekturen mit vollständigem Regressionstest;
+  (3) Änderungsprotokoll mit Version, Änderung, Grund, Ergebnis; (4) Umzugsbericht benennt konkrete
+  Abweichungen (z. B. fehlende Startprompts im Steckbrief, andere Wissensquelle angegeben, Freigabe
+  weg) und ergänzt den Steckbrief entsprechend; (5) Kurzanleitung mit Zweck, Eingabe, Grenzen,
+  Prüfhinweis, Ansprechperson; (6) Freigabeentscheidung gewichtet Risiken nach Folgen,
+  berücksichtigt die Dateiberechtigungen und widerspricht der Copilot-Empfehlung mindestens an
+  einer Stelle begründet.
+
+  Ein möglicher Prompt für Runde 4:
+
+  ```text
+  Hier sind Steckbrief und Testprotokoll unseres Agents:
+  /Assistenten-Steckbrief_[Use Case] und /Testprotokoll_[Assistent].
+  Schreib eine Freigabeempfehlung für
+  die Teamleitung: Freigabe ja/nein, Bedingungen, offene Risiken. Gewichte
+  jedes Risiko nach seinen Folgen bei Veröffentlichung, nicht nach der Anzahl
+  der Fälle.
+  ```
+
+  Typischer Widerspruch: Copilot stuft einen einzelnen nicht bestandenen Claim-Fall als
+  „Feinschliff" ein oder übersieht, dass noch keine verantwortliche Person benannt ist.
 
   Lernziel: Einen Assistenten nicht nur bauen, sondern verantwortbar freigeben – mit Testkatalog,
   Versionierung und einer werkzeugunabhängigen Dokumentation, die Produktumstellungen übersteht.

@@ -13,14 +13,37 @@ question: |
   - Kosten: 40 Prozent unter einem klassischen Dreh
   ```
 
-  1. Bewerte jeden Punkt: realistisch umsetzbar, nur mit Einschränkungen oder nicht vertretbar.
-  2. Begründe technisch (Abschnitt 35.6), markenbezogen (Markenstimme Fjordlicht) und rechtlich
-     (Verweise auf Kap. 34 und 39 genügen).
-  3. Formuliere einen **Gegenvorschlag**, der KI-Video sinnvoll einsetzt.
+  1. **Erstbewertung mit Copilot.** Gib das Angebot in Copilot Chat (Modus **Arbeit**) ein,
+     verweise auf `/Fjordlicht-Basisdaten` (falls nicht vorhanden: Markenstimme und Claims
+     einfügen) und lass jeden Punkt bewerten: realistisch umsetzbar, nur mit Einschränkungen
+     oder nicht vertretbar – getrennt nach Technik (Abschnitt 35.6), Marke und Recht.
+  2. **Gegenprüfen.** Prüfe Copilots Tabelle gegen das Kapitel. Wo ist die Bewertung zu
+     wohlwollend, wo fehlt eine Begründung? Wechsle für die Plattformlabels kurz in den Modus
+     **Web** und lass dir die aktuellen Regeln von Meta, TikTok und YouTube für realistische
+     KI-Inhalte mit Quellen nennen. Korrigiere die Tabelle (rechtlich genügen Verweise auf
+     Kap. 34 und 39).
+  3. **Gegenvorschlag und Antwort.** Formuliere einen **Gegenvorschlag**, der KI-Video sinnvoll
+     einsetzt, und lass in Outlook von Copilot einen Antwortentwurf an die Agentur erstellen.
+     Nutze das Coaching für den Entwurf, damit die Antwort klar, aber nicht abweisend ist.
 tip: |
   Trenne zwei Fragen: „Geht das technisch?" und „Dürfen und wollen wir das?". Manche Punkte
   scheitern an der Technik, andere an Täuschung oder an der Markenstimme – und einer an beidem.
+  Copilot bewertet Kostenargumente oft zu freundlich; frag ausdrücklich nach versteckten Kosten.
 solution: |
+  Beispiel-Prompt für die Erstbewertung:
+
+  ```text
+  Prüfe das folgende Agenturangebot für Fjordlicht kritisch.
+  Nutze Markenstimme und belegte Claims aus /Fjordlicht-Basisdaten.
+  Bewerte jeden Punkt als "realistisch", "nur mit Einschränkungen" oder
+  "nicht vertretbar" und begründe getrennt nach Technik (kurze Clips,
+  Konsistenz, Produkttreue), Marke und Recht (Täuschung, Testimonials,
+  Superlative, Kennzeichnung). Nenne beim Kostenpunkt ausdrücklich, welche
+  Kosten in der Rechnung fehlen könnten.
+  Ausgabe: Tabelle mit Punkt, Bewertung, Begründung.
+  [Angebot einfügen]
+  ```
+
   | Punkt | Bewertung | Begründung |
   |---|---|---|
   | 45 s ohne Dreh | nur mit Einschränkungen | Clips sind kurz, 45 s heißt viele Einzelclips und viel Schnitt |
@@ -30,6 +53,11 @@ solution: |
   | Superlativ-Claim | nicht vertretbar | widerspricht Markenstimme (keine Superlative, kein Greenwashing), nicht belegbar, UWG-Risiko |
   | 40 % günstiger | offen | Iterationen, Credits, Prüfaufwand und Nachbearbeitung fehlen in der Rechnung |
 
+  Typische Schwächen der Copilot-Erstbewertung: Die Hauptfigur wird als „realistisch" eingestuft,
+  der Kostenpunkt ungeprüft übernommen oder die KI-Kundinnen werden nur als
+  „kennzeichnungspflichtig" statt als Täuschung bewertet. Wer das korrigiert, hat die Übung
+  verstanden.
+
   Gegenvorschlag:
 
   - echter, kurzer Produktdreh (Details, Handgriffe, echte Menschen)
@@ -38,5 +66,17 @@ solution: |
   - Kundenstimmen nur echt und mit Einwilligung, Claim aus der Claim-Liste
   - Plattformlabels, wo realistische KI-Szenen enthalten sind; Einzelbildprüfung vor Freigabe
 
+  Beispiel-Prompt für den Outlook-Entwurf:
+
+  ```text
+  Antworte der Agentur freundlich und klar: Wir möchten KI-Video einsetzen,
+  aber nicht für Produktdetails, Kundenstimmen und den Superlativ-Claim.
+  Schlage den Gegenvorschlag (Stichpunkte unten) vor und bitte um ein
+  überarbeitetes Angebot mit realistischer Kostenaufstellung inklusive
+  Iterationen und Prüfaufwand. Ton: ruhig, ehrlich, Du/Sie wie bisher im Thread.
+  [Gegenvorschlag einfügen]
+  ```
+
   Bewertungskriterien: Jeder Punkt wird bewertet, technische und rechtliche Gründe werden
-  getrennt, der Gegenvorschlag nutzt KI dort, wo Konsistenz und Produkttreue unkritisch sind.
+  getrennt, Copilots Erstbewertung wird nachweisbar korrigiert, die Labelregeln sind mit Quelle
+  belegt, und der Gegenvorschlag nutzt KI dort, wo Konsistenz und Produkttreue unkritisch sind.

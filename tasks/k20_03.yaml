@@ -1,8 +1,8 @@
 title: Scheinbefunde entlarven
 difficulty: 3
 question: |
-  Eine Kollegin hat mit der Datenanalyse die Blog- und Social-Daten von Fjordlicht ausgewertet
-  und schlägt auf Basis der Ergebnisse vier neue Regeln für alle Texte vor:
+  Eine Kollegin hat die Blog- und Social-Daten von Fjordlicht mit Copilot ausgewertet und schlägt
+  auf Basis der Ergebnisse vier neue Regeln für alle Texte vor:
 
   1. „Blogartikel über 2.000 Wörter haben 60 Prozent mehr Engagement-Zeit. Ab sofort schreiben
      wir nur noch lange Artikel."
@@ -13,18 +13,26 @@ question: |
   4. „Seit wir die Produkttexte mit KI überarbeitet haben, ist die Conversion-Rate im Oktober um
      18 Prozent gestiegen. Die KI-Texte wirken."
 
-  Bewerte jede Regel kritisch:
+  Bewerte jede Regel zuerst selbst:
 
   - Welche **alternative Erklärung** (Störfaktor) ist plausibel?
   - Welche **Zusatzdaten** würdest du anfordern, um sie zu prüfen?
   - Wie müsste ein **Test** aussehen, der die Frage klärt (Kap. 16)?
 
-  Formuliere anschließend einen Prompt, mit dem die KI künftig solche Scheinbefunde selbst
-  kennzeichnet, bevor sie Empfehlungen ausspricht.
+  Dann in **Copilot Chat**:
+
+  1. Gib Copilot die vier Regeln mit der naiven Frage „Sollen wir diese Regeln einführen?" und
+     notiere, wie kritisch die Antwort ausfällt.
+  2. Formuliere einen Prompt-Baustein, mit dem Copilot solche Scheinbefunde selbst kennzeichnet,
+     bevor es Empfehlungen ausspricht. Teste ihn in einem neuen Chat mit denselben vier Regeln und
+     vergleiche beide Antworten.
+  3. Speichere den Baustein in der **Prompt Gallery**, damit das Team ihn an jede Analyse anhängen
+     kann (Kap. 10).
 tip: |
   Suche bei jeder Regel nach dem, was **gleichzeitig** mit dem Merkmal auftritt: Thema,
   Zeitraum, Absender, Saison, Zielgruppe. Und prüfe die Formulierung: Wo steckt ein „also"
-  oder „wirken", das die Daten nicht hergeben?
+  oder „wirken", das die Daten nicht hergeben? Auf die naive Frage antworten Sprachmodelle oft
+  zustimmend mit kleinen Vorbehalten – genau das ist der Unterschied, den du sichtbar machen sollst.
 solution: |
   | Nr. | Alternative Erklärung | Zusatzdaten | Test |
   |---|---|---|---|
@@ -36,7 +44,7 @@ solution: |
   Gemeinsames Muster: Alle vier Regeln schließen von Korrelation auf Ursache. Regel 1 und 2
   optimieren zudem auf Eitelkeits- bzw. Nebenkennzahlen.
 
-  Prompt-Baustein für künftige Analysen:
+  Prompt-Baustein für künftige Analysen (in der Prompt Gallery gespeichert):
 
   ```text
   Bevor du Empfehlungen aussprichst: Prüfe jeden Befund auf mögliche
@@ -47,5 +55,10 @@ solution: |
   Variable vor. Gib keine allgemeinen Regeln aus.
   ```
 
+  Typischer Vergleich: Auf die naive Frage nennt Copilot meist einzelne Vorbehalte, empfiehlt die
+  Regeln aber „mit Anpassungen". Mit dem Baustein entsteht pro Regel eine Gegenerklärung und ein
+  Testvorschlag.
+
   Bewertungskriterien: plausible, konkrete Störfaktoren statt allgemeiner Skepsis;
-  Zusatzdaten, die die Frage tatsächlich entscheiden; Tests mit genau einer Variable.
+  Zusatzdaten, die die Frage tatsächlich entscheiden; Tests mit genau einer Variable; ein
+  dokumentierter Vergleich der beiden Copilot-Antworten.

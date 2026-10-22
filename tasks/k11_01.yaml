@@ -1,31 +1,81 @@
-title: Chat oder Dokument?
+title: Die Fjordlicht-Basisdaten als Dokument anlegen
 difficulty: 1
 question: |
-  Ordne die folgenden Aufgaben aus dem Fjordlicht-Marketing zu: Reicht der **normale Chat**, oder
-  lohnt sich die Arbeit im **Dokument** (Schreibblock in ChatGPT, Artifact in Claude, Canvas in
-  Gemini, Page in Copilot)? Begründe jeweils in einem Satz.
+  In dieser Übung legst du in **Copilot in Word** das Dokument an, das dich durch den restlichen
+  Kurs begleitet – und erlebst dabei das Arbeitsprinzip dieses Kapitels: Der Text liegt in einem
+  Dokument, nicht im Chatverlauf.
 
-  1. Fünf Varianten für eine Betreffzeile zum Herbst-Newsletter
-  2. Ein Blogbeitrag „Zwiebelprinzip beim Wandern" mit ca. 1.000 Wörtern
-  3. Eine kurze Antwort auf einen Instagram-Kommentar
-  4. Die Produktseite für den Rucksack „Tind" mit sechs Abschnitten, die mehrfach abgestimmt wird
-  5. Der B2B-Onepager für „Fjordlicht Business", den du in eine einfache und eine fachliche Fassung bringen willst
+  1. Lege in OneDrive im Ordner **„Fjordlicht-Kurs"** ein neues Word-Dokument an und speichere es
+     als **„Fjordlicht-Basisdaten.docx"**.
+  2. Lass Copilot in Word mit dem Prompt aus dem Tipp einen Entwurf erstellen. Übernimm ihn erst,
+     wenn die vier Abschnitte **Markenstimme**, **Produkte**, **Belegte Claims** und **Verbote**
+     vorhanden sind.
+  3. Prüfe den Entwurf Zeile für Zeile gegen die Fakten im Prompt. Streiche alles, was Copilot
+     ergänzt hat (z. B. „atmungsaktiv", „langlebig", „klimafreundlich").
+  4. Markiere nur den Abschnitt **Produkte** und lass Copilot ihn in eine Tabelle umwandeln
+     (Produkt, Kategorie, Preis, belegte Fakten). Die übrigen Abschnitte bleiben unverändert.
+  5. Ordne danach die folgenden Aufgaben zu: Reicht **Copilot Chat**, oder lohnt sich die Arbeit
+     im **Dokument** (Copilot Page oder Word mit Copilot)? Begründe jeweils in einem Satz.
+     - Fünf Varianten für eine Betreffzeile zum Herbst-Newsletter
+     - Ein Blogbeitrag „Zwiebelprinzip beim Wandern" mit ca. 1.000 Wörtern
+     - Eine kurze Antwort auf einen Instagram-Kommentar
+     - Die Produktseite für den Rucksack „Tind" mit sechs Abschnitten, die mehrfach abgestimmt wird
+     - Die Fjordlicht-Basisdaten, die du gerade angelegt hast
 
   Nenne zum Schluss in zwei Sätzen, was sich am 28.05.2026 bei ChatGPT geändert hat und was davon
-  für deine Arbeitsweise **nicht** gilt.
+  für deine Arbeit in Copilot **nicht** gilt.
 tip: |
-  Entscheidend ist nicht die Länge allein, sondern ob du denselben Text **mehrfach gezielt
-  überarbeiten** willst. Ein einmaliger Kurztext braucht kein Dokument.
+  Prompt für den Entwurf in Word (Fakten nicht verändern):
+
+  ```text
+  Erstelle ein Stammdaten-Dokument für die Fjordlicht GmbH mit den
+  Abschnitten Unternehmen, Markenstimme, Produkte, Belegte Claims, Verbote.
+  Nutze ausschließlich diese Angaben, ergänze nichts. Fehlende Angaben
+  als [FEHLT] markieren.
+  Unternehmen: Fjordlicht GmbH, Münster, nachhaltige Outdoor-Bekleidung,
+  45 Beschäftigte, davon 5 im Marketing. Kanäle: Blog "Draußen-Notizen",
+  Newsletter (ca. 38.000 Abonnenten), Instagram, TikTok, LinkedIn,
+  Pinterest. Zielgruppe: naturverbundene Stadtmenschen 25-45;
+  B2B-Angebot "Fjordlicht Business" (Firmenbekleidung).
+  Markenstimme: ruhig, ehrlich, naturverbunden, leicht nordisch-trocken,
+  Du-Ansprache, keine Superlative.
+  Produkte: Regenjacke Sølv, 249 Euro, Obermaterial 100 % recyceltes
+  Polyamid, Wassersäule 20.000 mm. Fleece Skog, 89 Euro, 80 % recyceltes
+  Polyester, 3 Farben, Größen XS-XXL. Wanderhose Vidde, 119 Euro.
+  Rucksack Tind, 149 Euro.
+  Service: kostenloser Reparaturservice in den ersten zwei Jahren.
+  Belegte Claims: nur die Materialangaben zu Sølv und Skog und der
+  Reparaturservice, jeweils wörtlich und nur für das genannte Produkt.
+  Verbote: Superlative; "nachhaltig", "umweltfreundlich", "klimaneutral"
+  ohne Beleg; Ausweitung eines Claims auf andere Produkte; Rabattaktionen
+  als Kommunikationsthema.
+  ```
+
+  Für die Zuordnung zählt nicht die Länge allein, sondern ob du denselben Text **mehrfach gezielt
+  überarbeiten** oder **wiederverwenden** willst.
 solution: |
-  | Nr. | Ort | Begründung |
+  **Zum Dokument:** Typische Abweichungen im ersten Entwurf sind ergänzte Eigenschaften
+  („atmungsaktiv", „robust"), ein Satz wie „Fjordlicht steht für Nachhaltigkeit" im Abschnitt
+  Unternehmen oder ein Claim, der auf alle Produkte ausgeweitet wird („Unsere Kollektion besteht
+  aus recycelten Materialien"). Genau diese Stellen streichst du. Bei Vidde und Tind sollte
+  `[FEHLT]` beim Material stehen – das ist richtig so und wird später ergänzt.
+
+  Die Umwandlung in eine Tabelle zeigt das Arbeitsprinzip im Kleinen: Du markierst einen
+  Abschnitt, gibst eine enge Anweisung, der Rest bleibt stehen.
+
+  | Aufgabe | Ort | Begründung |
   |---|---|---|
-  | 1 | Chat | kurze Varianten, du wählst aus, keine Überarbeitung einzelner Stellen nötig |
-  | 2 | Dokument | langer Text, mehrere Durchgänge (Rohfassung, Struktur, Feinschliff) |
-  | 3 | Chat | einmaliger Kurztext |
-  | 4 | Dokument | mehrere Abschnitte, mehrere Abstimmungsrunden, Änderungen sollen gezielt bleiben |
-  | 5 | Dokument | Lesestufe anpassen ist ein typischer Dokument-Arbeitsschritt; beide Fassungen bleiben vergleichbar |
+  | Betreffzeilen | Copilot Chat | kurze Varianten, du wählst aus, nichts wird überarbeitet |
+  | Blogbeitrag | Dokument (Word) | langer Text, mehrere Durchgänge (Rohfassung, Struktur, Feinschliff) |
+  | Instagram-Antwort | Copilot Chat | einmaliger Kurztext |
+  | Produktseite Tind | Dokument (Page oder Word) | mehrere Abschnitte und Abstimmungsrunden; eine Page lässt sich direkt mit dem Team teilen |
+  | Basisdaten | Dokument (Word) | wird gepflegt, versioniert und in späteren Prompts per `/Fjordlicht-Basisdaten` wiederverwendet |
 
   Zur Änderung: Am 28.05.2026 wurde Canvas aus den aktuellen ChatGPT-Modellen entfernt; Ersatz
-  sind Schreibblöcke direkt in der Antwort (markieren und überarbeiten, Vollbild-Editor,
-  Gliederung, Download). Unverändert bleibt das Arbeitsprinzip: ein gemeinsames Dokument statt
-  verstreuter Chatversionen und gezielte Überarbeitung markierter Stellen.
+  sind Schreibblöcke direkt in der Antwort. Unverändert bleibt das Arbeitsprinzip, das du in
+  Copilot mit Pages und Word umsetzt: ein gemeinsames Dokument statt verstreuter Chatversionen
+  und gezielte Überarbeitung markierter Stellen.
+
+  Ab jetzt referenzierst du die Datei in Copilot mit `/Fjordlicht-Basisdaten`, statt die Fakten
+  jedes Mal einzufügen. Optional legst du ein Copilot Notebook „Fjordlicht-Kurs" an (falls in
+  eurer Umgebung freigegeben) und fügst die Datei dort hinzu.

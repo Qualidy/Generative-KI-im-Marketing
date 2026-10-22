@@ -1,7 +1,7 @@
-title: Redaktionskalender mit Prüfmarkierungen
+title: Redaktionskalender in Excel mit Prüfmarkierungen
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug.
+  Diese Übung machst du in **Copilot Chat** und **Copilot in Excel**.
 
   Erstelle für Fjordlicht (oder ein Unternehmen deiner Wahl) einen Redaktionskalender für den
   **Dezember 2026** mit folgenden Vorgaben:
@@ -15,28 +15,50 @@ question: |
   Keine Rabattaktionen. Keine Superlative.
   ```
 
-  1. Formuliere den Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5) und verlange die Spalten
-     Datum, Kanal, Pillar, Arbeitstitel, Anlass.
-  2. Verlange, dass jeder Anlass mit unsicherem Datum mit `[PRÜFEN]` markiert wird.
-  3. Prüfe selbst **mindestens drei** Anlässe aus dem Ergebnis mit einer verlässlichen Quelle.
-  4. Prüfe, ob Kapazität und Betriebsferien eingehalten wurden.
+  1. Formuliere den Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5), verweise auf
+     `/Fjordlicht-Basisdaten` und verlange die Spalten Datum, Kanal, Pillar, Arbeitstitel,
+     Anlass, Prüfstatus. Jeder Anlass mit unsicherem Datum bekommt `[PRÜFEN]`.
+  2. Lass Copilot Chat im **Web**-Modus die saisonalen Anlässe recherchieren und mit Quellen
+     belegen. Prüfe **mindestens drei** Anlässe selbst auf der offiziellen Seite.
+  3. Übernimm den Kalender in eine Excel-Datei im Ordner „Fjordlicht-Kurs"
+     („Redaktionskalender-Dezember-2026.xlsx") und formatiere die Daten als Tabelle.
+  4. Lass **Copilot in Excel** prüfen:
+     - Anzahl der Beiträge je Kanal im Vergleich zur Kapazität,
+     - Beiträge ab dem 23.12. hervorheben,
+     - Anteil je Pillar als Tabelle oder Diagramm.
+  5. Korrigiere alle Verstöße – per gezielter Nachbesserung oder von Hand.
 tip: |
-  Achte besonders auf Aktionstage mit plausiblen Namen und auf Termine, die in die Betriebsferien
-  fallen. Die KI hält Vorgaben zur Menge oft nicht exakt ein – zähle nach.
+  Copilot in Excel arbeitet am zuverlässigsten mit Daten, die als Tabelle formatiert und in
+  OneDrive oder SharePoint gespeichert sind. Achte besonders auf Aktionstage mit plausiblen Namen
+  und auf Termine in den Betriebsferien. Auch die Zählung durch Copilot in Excel prüfst du einmal
+  von Hand – etwa über einen Filter auf die Spalte Kanal.
 solution: |
-  Beispielprompt:
+  Beispielprompt für Copilot Chat:
 
   ```text
   Persona: Du bist Content-Plannerin im Marketingteam der Fjordlicht GmbH.
   Request: Erstelle einen Redaktionskalender für Dezember 2026.
-  Output: Tabelle mit den Spalten Datum, Kanal, Pillar, Arbeitstitel, Anlass.
+  Output: Tabelle mit den Spalten Datum, Kanal, Pillar, Arbeitstitel,
+  Anlass, Prüfstatus.
   Modifier: Kapazität und feste Termine wie unten, keine Beiträge ab 23.12.,
-  keine Rabatte, keine Superlative. Markiere jeden Anlass, dessen Datum du
-  nicht sicher kennst, mit [PRÜFEN].
+  keine Rabatte, keine Superlative. Markenstimme und Produkte aus
+  /Fjordlicht-Basisdaten. Markiere jeden Anlass, dessen Datum du nicht
+  sicher belegen kannst, mit [PRÜFEN] und nenne für belegte Anlässe die Quelle.
   Purpose: Ein ruhiger, hilfreicher Dezember, der die Reparatur-Aktionswoche
   trägt und B2B-Kunden zum Jahresende anspricht.
   Tone: Arbeitstitel in Fjordlicht-Stimme: ruhig, ehrlich, nordisch-trocken.
   [Vorgaben einfügen]
+  ```
+
+  Beispielprompts für Copilot in Excel:
+
+  ```text
+  Zähle die Beiträge je Kanal und vergleiche sie mit dieser Kapazität:
+  Newsletter 2, Blog 1, Instagram 8, LinkedIn 3. Zeige Abweichungen.
+  ```
+
+  ```text
+  Hebe alle Zeilen hervor, deren Datum am oder nach dem 23.12.2026 liegt.
   ```
 
   Typische Befunde:
@@ -45,8 +67,10 @@ solution: |
   |---|---|
   | Menge je Kanal | ein Instagram-Post zu viel oder zu wenig |
   | Betriebsferien | ein Post am 24. oder 31.12. trotz Vorgabe |
-  | Aktionstage | mindestens ein Tag, dessen Existenz oder Datum sich nicht bestätigen lässt |
+  | Aktionstage | mindestens ein Tag, dessen Existenz oder Datum sich auch mit Quelle nicht bestätigen lässt |
+  | Quellen im Web-Modus | Blogartikel oder Listen-Seiten statt offizieller Quelle |
   | Pillars | „Draußen sein" überrepräsentiert, „Fjordlicht Business" unterrepräsentiert |
 
-  Eine gute Bearbeitung dokumentiert drei geprüfte Anlässe mit Quelle und korrigiert alle
-  Verstöße gegen Kapazität und Termine – entweder per gezielter Nachbesserung oder von Hand.
+  Eine gute Bearbeitung dokumentiert drei geprüfte Anlässe mit offizieller Quelle, nutzt Copilot
+  in Excel für die Zählung und Hervorhebung und korrigiert alle Verstöße gegen Kapazität und
+  Termine. Die Datei wird im Workshop dieses Kapitels und später wiederverwendet.

@@ -4,8 +4,8 @@ question: |
   **Szenario:** Die Produktseite der Regenjacke „Sølv" ist die umsatzstärkste Seite im
   Fjordlicht-Shop, rankt aber für „nachhaltige Regenjacke" nur auf Seite zwei und taucht in
   KI-Antworten kaum auf. Du sollst die Seite überarbeiten – für klassische Suche und für
-  Antwortmaschinen. Du kannst alternativ eine Produkt- oder Leistungsseite eines Unternehmens
-  deiner Wahl verwenden.
+  Antwortmaschinen. Du kannst statt Fjordlicht auch ein Unternehmen deiner Wahl nutzen und
+  dessen Produkt- oder Leistungsseite verwenden.
 
   ```text
   Rahmen (fiktiv):
@@ -18,35 +18,47 @@ question: |
   zwei Jahren nach Kauf.
   Nicht belegt: "klimaneutral", "die nachhaltigste Jacke".
   Bewertungen im Shop: 27, Durchschnitt 4,6.
+  Werkzeug: Microsoft 365 Copilot (Word, Excel, Chat, Agent Researcher
+  falls freigegeben); Markenstimme und Claims per /Fjordlicht-Basisdaten
+  (falls nicht vorhanden: Kap. 11 bzw. die Fakten oben).
   ```
 
   ---
 
-  **Runde 1 – Diagnose.** Lass die KI die Ausgangslage anhand der On-Page-Elemente aus
-  Abschnitt 22.1 bewerten. Ergänze eine kleine Recherche: Was zeigen die Suchergebnisse und
-  mindestens zwei Antwortmaschinen auf „nachhaltige Regenjacke"?
+  **Runde 1 – Diagnose.** Lege „Produktseite-Soelv.docx" im Ordner „Fjordlicht-Kurs" an, füge
+  Title, Description und einen 90-Wörter-Werbetext ein und lass **Copilot in Word** die
+  Ausgangslage anhand der On-Page-Elemente aus Abschnitt 22.1 bewerten (Fragen ans Dokument).
+  Ergänze eine kleine Recherche: Was zeigen die Google-Suchergebnisse, und was antworten
+  mindestens zwei Antwortmaschinen auf „nachhaltige Regenjacke"? Eine davon kann der Agent
+  **Researcher** oder Copilot Chat mit **Web** sein.
 
-  **Runde 2 – Überarbeitung.** Erstelle mit P.R.O.M.P.T.-Prompts (Kap. 5): neuen Title und
-  Description (Zeichen gezählt), einen Produkttext mit zitierfähiger Kurzbeschreibung, eine
-  Faktentabelle, einen FAQ-Abschnitt mit fünf realistischen Fragen und ein Schema.org-Product-
-  Markup in JSON-LD, das ausschließlich belegte Werte enthält.
+  **Runde 2 – Überarbeitung in Word und Excel.** Erstelle mit P.R.O.M.P.T.-Prompts (Kap. 5) und
+  **Copilot in Word**: einen Produkttext mit zitierfähiger Kurzbeschreibung (Entwurf auf Basis von
+  `/Fjordlicht-Basisdaten`), eine Faktentabelle (Copilot kann die Faktenliste in eine Tabelle
+  umwandeln) und einen FAQ-Abschnitt mit fünf realistischen Fragen. Lass Title- und
+  Description-Varianten in Copilot Chat entwerfen und die Zeichen in Excel mit `LÄNGE` zählen.
+  Lass zum Schluss in Copilot Chat ein Schema.org-Product-Markup in JSON-LD erstellen, das
+  ausschließlich belegte Werte enthält.
 
-  **Runde 3 – Die Komplikation.** Die KI hat in deinen Entwürfen vermutlich mindestens eine
-  Formulierung wie „besonders umweltfreundlich" oder „klimafreundlich" eingebaut, und im
-  Markup steht womöglich ein Wert, den es im Shop nicht gibt. Prüfe alle Aussagen Zeile für
-  Zeile gegen die belegten Fakten und korrigiere sie. Dokumentiere jede Korrektur.
+  **Runde 3 – Die Komplikation.** Copilot hat in deinen Entwürfen vermutlich mindestens eine
+  Formulierung wie „besonders umweltfreundlich" oder „klimafreundlich" eingebaut, und im Markup
+  steht womöglich ein Wert, den es im Shop nicht gibt. Lass Copilot in Word alle
+  Nachhaltigkeits- und Faktenaussagen des Dokuments auflisten, übertrage sie in ein
+  Prüfprotokoll in Excel (Aussage, Fundstelle, belegt ja/nein, Korrektur) und prüfe Zeile für
+  Zeile selbst gegen die belegten Fakten. Verlass dich nicht darauf, dass Copilot jede Aussage
+  findet – lies den Text zusätzlich selbst.
 
   **Runde 4 – Entscheidung unter Abwägung.** Das Team diskutiert: Soll die Seite für bessere
   Sichtbarkeit in KI-Antworten um einen langen Ratgeberteil (1.500 Wörter) ergänzt werden?
-  Die KI wird das vermutlich befürworten. **Widersprich**, wo es die Produktseite für
+  Copilot wird das vermutlich befürworten. **Widersprich**, wo es die Produktseite für
   kaufbereite Besucher verschlechtert, und entscheide: Ratgeber auf der Produktseite, eigener
   verlinkter Artikel oder beides in kurzer Form?
 
   **Deliverable:**
 
-  1. Diagnose mit Recherchebefunden aus Suche und Antwortmaschinen
-  2. überarbeitete Seitenelemente: Title, Description, Produkttext, Faktentabelle, FAQ
-  3. JSON-LD-Markup und Prüfprotokoll aller Aussagen gegen die belegten Fakten
+  1. Diagnose mit Recherchebefunden aus Google-Suche und Antwortmaschinen (mit Datum)
+  2. überarbeitete Seitenelemente in Word: Title, Description, Produkttext, Faktentabelle, FAQ
+  3. JSON-LD-Markup und Prüfprotokoll in Excel mit allen Aussagen gegen die belegten Fakten
   4. begründete Entscheidung zu Runde 4 mit Vorschlag für interne Links
 
   **Fertig bist du erst, wenn** jede Nachhaltigkeitsaussage durch die Faktenliste gedeckt ist,
@@ -57,16 +69,32 @@ tip: |
   Die Produktseite bedient eine transaktionale Intention. Was Antwortmaschinen zitieren, sind
   klare Fakten – genau die fehlen der Ausgangsseite. Gute Optimierung heißt hier vor allem:
   belegte Fakten sichtbar machen, nicht mehr Text. Runde 3 zeigt, warum jede KI-Aussage über
-  Nachhaltigkeit gegen eine Claim-Liste geprüft werden muss.
+  Nachhaltigkeit gegen eine Claim-Liste geprüft werden muss – auch wenn Copilot die Basisdaten
+  als Quelle hatte. Das Markup prüfst du zusätzlich mit Googles Test für Rich-Suchergebnisse.
 solution: |
+  Beispiel-Prompt für den Produkttext (Copilot in Word, Entwurf):
+
+  ```text
+  Persona: Du bist Produkttexterin für eine ruhige, ehrliche Outdoor-Marke.
+  Request: Schreibe den Produkttext für die Regenjacke Sølv auf Basis von
+  /Fjordlicht-Basisdaten.
+  Output: 1. Kurzbeschreibung in zwei Sätzen (für wen, wofür),
+  2. Fließtext mit höchstens 150 Wörtern, 3. Faktentabelle.
+  Modifier: Nur Fakten aus den Basisdaten. Keine Superlative, keine
+  Umweltaussage, die dort nicht als belegt steht. Du-Ansprache.
+  Purpose: Produktseite, die in Suche und KI-Antworten klar zitierbar ist.
+  Tone: ruhig, konkret, leicht nordisch-trocken.
+  ```
+
   Bewertungskriterien: (1) Diagnose benennt konkrete Mängel (nichtssagender Title, fehlende
   Fakten, Werbesprache, keine strukturierten Daten) und vergleicht mit tatsächlich sichtbaren
-  Ergebnissen; (2) Title mit höchstens 60 Zeichen, etwa „Regenjacke Sølv: PFAS-frei, recyceltes
-  Polyamid | Fjordlicht", Faktentabelle mit allen belegten Werten, FAQ mit realistischen Fragen wie
-  „Wie lange hält die Imprägnierung?"; (3) Prüfprotokoll entfernt unbelegte Aussagen wie
-  „klimaneutral" und Superlative, Markup enthält 27 Bewertungen mit 4,6 und keine erfundenen
-  Werte; (4) Entscheidung trennt sinnvoll: kurze Pflege- und Material-FAQ auf der Produktseite,
-  ausführlicher Ratgeber als eigener Artikel mit gegenseitiger Verlinkung.
+  Ergebnissen; (2) Title mit höchstens 60 Zeichen, per Formel gezählt, etwa „Regenjacke Sølv:
+  PFAS-frei, recyceltes Polyamid | Fjordlicht" (60 Zeichen), Faktentabelle mit allen belegten
+  Werten, FAQ mit realistischen Fragen wie „Wie lange hält die Imprägnierung?"; (3)
+  Prüfprotokoll entfernt unbelegte Aussagen wie „klimaneutral" und Superlative, dokumentiert auch
+  Aussagen, die Copilot beim Auflisten übersehen hat, Markup enthält 27 Bewertungen mit 4,6 und
+  keine erfundenen Werte; (4) Entscheidung trennt sinnvoll: kurze Pflege- und Material-FAQ auf
+  der Produktseite, ausführlicher Ratgeber als eigener Artikel mit gegenseitiger Verlinkung.
 
   Lernziel: On-Page-Optimierung, strukturierte Daten und GEO an einer echten Seite umsetzen,
   dabei jede KI-Aussage gegen belegte Fakten prüfen und die Suchintention der Seite schützen.

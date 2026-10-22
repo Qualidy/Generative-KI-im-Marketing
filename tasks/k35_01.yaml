@@ -3,7 +3,6 @@ difficulty: 1
 question: |
   Ordne jeder Anforderung aus dem Fjordlicht-Marketing **eine Kamerabewegung** aus Abschnitt
   35.3 und **eine Arbeitsweise** zu (Text-zu-Video, Bild-zu-Video oder Video-zu-Video/Bearbeitung).
-  Begründe jede Zuordnung in einem Satz.
 
   1. Der Rucksack „Tind" soll von allen Seiten gezeigt werden – auf Basis eines vorhandenen
      Produktfotos.
@@ -12,10 +11,36 @@ question: |
      nicht hektisch.
   4. In einem selbst gedrehten Clip aus dem Fotoshooting stört ein Mülleimer im Hintergrund.
   5. Ein Detail der Regenjacke „Sølv" (abperlende Tropfen) soll langsam näher rücken.
+
+  So gehst du vor:
+
+  1. **Erst selbst.** Notiere deine Zuordnung in Stichworten, ohne KI (drei Minuten).
+  2. **Dann Copilot.** Öffne Copilot Chat (Modus **Arbeit**) und gib die fünf Anforderungen
+     zusammen mit den beiden Tabellen aus Abschnitt 35.1 und 35.3 ein. Bitte um eine Tabelle
+     mit Kamerabewegung, Arbeitsweise und einem Satz Begründung.
+  3. **Vergleichen.** Wo weicht Copilot von dir ab? Entscheide je Abweichung, wer recht hat,
+     und begründe in einem Satz. Achte besonders darauf, ob Copilot bei vorhandenem Material
+     trotzdem Text-zu-Video vorschlägt.
 tip: |
   Frage bei der Arbeitsweise zuerst: Gibt es schon echtes Material, das ich kontrollieren will?
-  Wenn ja, ist reines Text-zu-Video fast nie die erste Wahl.
+  Wenn ja, ist reines Text-zu-Video fast nie die erste Wahl. Gib Copilot die Tabellen aus dem
+  Kapitel mit – ohne diesen Rahmen mischt es gern eigene Begriffe hinein.
 solution: |
+  Beispiel-Prompt für Copilot Chat:
+
+  ```text
+  Du bist Videoproducer für kurze Social-Clips.
+  Ordne jeder der fünf Anforderungen unten genau eine Kamerabewegung und
+  genau eine Arbeitsweise zu. Nutze nur diese Begriffe:
+  Kamerabewegungen: Static shot, Pan, Tilt, Dolly in/out, Tracking shot,
+  Orbit, Drone/aerial shot, Handheld.
+  Arbeitsweisen: Text-zu-Video, Bild-zu-Video, Video-zu-Video/Bearbeitung.
+  Regel: Wenn echtes Material vorhanden ist, begründe ausdrücklich, warum
+  du es nutzt oder nicht nutzt.
+  Ausgabe: Tabelle mit Nr., Kamerabewegung, Arbeitsweise, Begründung (1 Satz).
+  [Anforderungen 1 bis 5 einfügen]
+  ```
+
   | Nr. | Kamerabewegung | Arbeitsweise | Begründung |
   |---|---|---|---|
   | 1 | Orbit | Bild-zu-Video | Das echte Produktfoto sichert die Details, der Orbit zeigt das Produkt rundum. |
@@ -23,6 +48,11 @@ solution: |
   | 3 | Tracking shot | Bild-zu-Video (Startbild aus Shooting) oder echter Dreh | Die Kamera geht mit; das Startbild hält Hose und Person konsistent. |
   | 4 | – (bleibt wie gedreht) | Video-zu-Video/Bearbeitung | Vorhandenes Material wird nur retuschiert, nicht neu erzeugt. |
   | 5 | Dolly in | Bild-zu-Video | Langsames Heranfahren an ein geprüftes Detailfoto ist kontrollierbar. |
+
+  Typische Abweichungen bei Copilot: Bei Nr. 3 schlägt es oft Text-zu-Video vor („eine
+  Wanderin in einer Wanderhose"), obwohl dann die Hose erfunden wird. Bei Nr. 4 nennt es mitunter
+  eine Kamerabewegung, obwohl nichts neu gefilmt wird. Beide Abweichungen solltest du
+  korrigieren – sie zeigen, dass die Frage „Welches Material habe ich schon?" bei dir bleibt.
 
   Achte bei Nr. 1 und 5 darauf, dass das Produkt im Ergebnis Bild für Bild geprüft wird:
   Auch beim Animieren können Nähte, Riemen oder Farben verändert werden. Bei Nr. 3 ist ein

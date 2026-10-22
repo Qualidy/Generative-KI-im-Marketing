@@ -4,13 +4,15 @@ question: |
   **Szenario:** Die Marketingleitung von Fjordlicht will für das nächste Quartal wissen, wie
   der Newsletter (ca. 38.000 Abonnenten) besser werden kann. Bisher wurde nach Gefühl
   entschieden. Du sollst eine datenbasierte Empfehlung vorlegen, die auch einer kritischen
-  Nachfrage standhält. Du kannst alternativ mit einem Unternehmen deiner Wahl und selbst
-  erstellten fiktiven Daten arbeiten.
+  Nachfrage standhält. Du kannst statt Fjordlicht auch ein Unternehmen deiner Wahl nutzen und
+  mit selbst erstellten fiktiven Daten arbeiten.
 
   ```text
   Rahmen:
   Daten: fiktiver Export, 12 Versände (unten), keine personenbezogenen Daten.
-  Werkzeug: ChatGPT mit Datenanalyse oder vergleichbar.
+  Werkzeug: Microsoft 365 Copilot - Excel mit Copilot für die Analyse,
+  Word mit Copilot für Varianten und Ergebnisseite; alternativ Agent Analyst.
+  Markenstimme: /Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11).
   Ziel: höhere Klickrate in den Shop bei stabiler Abmelderate.
   Ergebnis: eine Seite für die Marketingleitung.
 
@@ -31,31 +33,36 @@ question: |
 
   ---
 
-  **Runde 1 – Analyse.** Lass die Daten mit einem vollständigen P.R.O.M.P.T.-Prompt (Kap. 5)
-  auswerten: Zusammenhänge von Thema, Frageform im Betreff und Textlänge mit Öffnungs-, Klick-
-  und Abmelderate. Fordere Fallzahlen und mindestens ein Diagramm an.
+  **Runde 1 – Analyse in Excel.** Lege die Daten als Tabelle in „Newsletter-Q2.xlsx" im Ordner
+  „Fjordlicht-Kurs" an. Lass **Copilot in Excel** mit einem vollständigen P.R.O.M.P.T.-Prompt
+  (Kap. 5) auswerten: Zusammenhänge von Thema, Frageform im Betreff und Textlänge mit Öffnungs-,
+  Klick- und Abmelderate. Fordere Fallzahlen und mindestens ein Diagramm an. Wer möchte, lässt
+  dieselbe Frage parallel vom Agenten **Analyst** beantworten (falls freigegeben) und vergleicht.
 
-  **Runde 2 – Prüfung.** Prüfe zwei Mittelwerte selbst nach, lass dir den Rechenweg zeigen und
-  fordere zu jedem Befund eine alternative Erklärung ein. Streiche Befunde, die der Prüfung
-  nicht standhalten.
+  **Runde 2 – Prüfung.** Rechne zwei Mittelwerte selbst mit Excel-Formeln nach, lass dir die
+  Formeln bzw. den Rechenweg zeigen und fordere in Copilot zu jedem Befund eine alternative
+  Erklärung ein. Streiche Befunde, die der Prüfung nicht standhalten, und dokumentiere das in einem
+  eigenen Tabellenblatt „Prüfprotokoll".
 
   **Runde 3 – Die Komplikation.** Die Geschäftsführung ergänzt: „Die Haltungs-Newsletter
   (Lieferkette, Reparatur) bleiben – sie sind Teil unserer Marke." Gleichzeitig zeigen deine
   Daten, dass genau diese Ausgaben die niedrigsten Klickraten und höchsten Abmelderaten haben.
-  Entwickle mit der KI zwei Textvarianten für den nächsten Haltungs-Newsletter, die das Thema
-  behalten, aber Länge, Einstieg oder Call-to-Action verändern.
+  Entwickle mit **Copilot in Word** zwei Textvarianten für den nächsten Haltungs-Newsletter, die
+  das Thema behalten, aber Länge, Einstieg oder Call-to-Action verändern. Nutze
+  `/Fjordlicht-Basisdaten` für Markenstimme und belegte Fakten.
 
-  **Runde 4 – Entscheidung unter Abwägung.** Die KI wird dir vermutlich empfehlen, mehr
+  **Runde 4 – Entscheidung unter Abwägung.** Copilot wird dir vermutlich empfehlen, mehr
   Produkt-Newsletter zu schicken, weil sie die höchste Klickrate haben. **Widersprich** dieser
   Empfehlung dort, wo sie zu kurz greift: Öffnungsraten, Abmeldungen, Markenstimme, Ermüdung
   durch zu viel Verkauf. Entscheide begründet, welche **zwei** Hypothesen du im nächsten
-  Quartal testest.
+  Quartal testest, und lass Copilot in Word aus Excel-Datei und Notizen den Entwurf deiner Seite
+  für die Marketingleitung erstellen, den du dann selbst kürzt und prüfst.
 
   **Deliverable:**
 
-  1. Analyse-Prompt und Ergebnistabelle mit Fallzahlen
-  2. Prüfprotokoll: zwei nachgerechnete Werte, gestrichene Befunde mit Begründung
-  3. zwei Varianten des Haltungs-Newsletters (Betreff, Einstieg, Call-to-Action)
+  1. „Newsletter-Q2.xlsx" mit Analyse-Prompt, Ergebnistabelle mit Fallzahlen und Diagramm
+  2. Prüfprotokoll: zwei nachgerechnete Werte (mit Formel), gestrichene Befunde mit Begründung
+  3. zwei Varianten des Haltungs-Newsletters (Betreff, Einstieg, Call-to-Action) in Word
   4. eine Seite für die Marketingleitung: drei Befunde, zwei Testhypothesen, Grenzen der Daten
 
   **Fertig bist du erst, wenn** jeder Befund eine Fallzahl und eine alternative Erklärung hat,
@@ -65,16 +72,35 @@ tip: |
   Der Kern liegt in Runde 4: Eine Kennzahl zu maximieren ist leicht, die richtige Kennzahl im
   Zusammenspiel mit Marke und Abmeldungen zu sehen, ist die eigentliche Arbeit. Zwölf Versände
   sind zu wenig für Gewissheit – deine Empfehlung muss das offen sagen und genau deshalb auf
-  Tests hinauslaufen.
+  Tests hinauslaufen. Der Vorteil von Excel mit Copilot: Jede Zahl steht nachprüfbar in einer
+  Zelle, nicht nur im Chatverlauf.
 solution: |
+  Beispiel-Prompt für Copilot in Excel (Runde 1):
+
+  ```text
+  Persona: Du bist Datenanalystin im Content-Marketing.
+  Request: Ergänze die Spalten "frage" (Betreff endet mit ?) und
+  "länge_gruppe" (unter 300 Wörter / 300 und mehr). Vergleiche Öffnung,
+  Klick und Abmeldung nach thema, frage und länge_gruppe.
+  Output: Übersichtstabelle mit Mittelwert und Anzahl je Gruppe, ein
+  Diagramm der Klickrate nach Thema, höchstens fünf Befunde.
+  Modifier: Fallzahl zu jedem Befund, Gruppen unter 10 Fällen als
+  unsicher kennzeichnen, Zusammenhänge statt Ursachen, keine erfundenen Werte.
+  Purpose: Testhypothesen für das nächste Quartal.
+  Tone: sachlich.
+  ```
+
   Bewertungskriterien: (1) vollständiger P.R.O.M.P.T.-Prompt mit Purpose und vorsichtigen
   Modifiern, Ergebnisse mit Fallzahlen (z. B. Produkt: n = 4, Klickrate um 5,0, Öffnungsrate um
   36,9; Haltung: n = 2, Klickrate um 1,7, Abmelderate um 0,30); (2) Prüfprotokoll mit echten
-  Nachrechnungen und mindestens einer Streichung oder Abschwächung, etwa weil Länge und Thema
-  vermischt sind (beide Haltungs-Newsletter sind die längsten); (3) Haltungs-Varianten, die das
-  Thema respektieren und genau eine Variable ändern, z. B. 250 statt 700 Wörter oder ein
-  konkreter Call-to-Action zum Reparaturservice; (4) eine Entscheidung, die die
-  KI-Empfehlung begründet einschränkt und zwei testbare Hypothesen mit Hauptkennzahl nennt.
+  Nachrechnungen, etwa `=MITTELWERTWENN(...)` für die Klickrate der Produkt-Newsletter, und
+  mindestens einer Streichung oder Abschwächung, etwa weil Länge und Thema vermischt sind (beide
+  Haltungs-Newsletter sind die längsten); (3) Haltungs-Varianten, die das Thema respektieren und
+  genau eine Variable ändern, z. B. 250 statt 700 Wörter oder ein konkreter Call-to-Action zum
+  kostenlosen Reparaturservice, ohne unbelegte Nachhaltigkeitsaussagen; (4) eine Entscheidung,
+  die die Copilot-Empfehlung begründet einschränkt und zwei testbare Hypothesen mit Hauptkennzahl
+  nennt; die Seite für die Marketingleitung ist sichtbar von Hand nachgeschärft und nicht der
+  unveränderte Copilot-Entwurf.
 
   Lernziel: Aus Kampagnendaten belastbare Hypothesen ableiten, Befunde kritisch prüfen und
   Zahlen mit Markenzielen abwägen, statt eine einzelne Kennzahl blind zu maximieren.

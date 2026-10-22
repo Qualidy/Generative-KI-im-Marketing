@@ -1,9 +1,7 @@
-title: Betreff und Preheader beurteilen
+title: Betreff und Preheader beurteilen und verbessern
 difficulty: 1
 question: |
   Beurteile die folgenden Paare aus Betreffzeile und Preheader für den Fjordlicht-Newsletter.
-  Nenne jeweils das Hauptproblem (oder „passt") und ob ein Spam-Signal oder ein Verstoß gegen die
-  Markenstimme (ruhig, ehrlich, keine Superlative) vorliegt.
 
   1. Betreff: `MEGA-DEAL!!! Nur heute!` – Preheader: `Nur heute!`
   2. Betreff: `Re: Deine Bestellung` – Preheader: `Neue Herbstkollektion entdecken`
@@ -11,10 +9,18 @@ question: |
   4. Betreff: `Die nachhaltigste Jacke der Welt` – Preheader: `Mail im Browser ansehen`
   5. Betreff: `Hallo [Vorname], dein Pflegeplan` – Preheader: (leer)
 
-  Formuliere für Paar 4 eine bessere Fassung.
+  1. Nenne **zuerst selbst** für jedes Paar das Hauptproblem (oder „passt") und ob ein
+     Spam-Signal oder ein Verstoß gegen die Markenstimme (ruhig, ehrlich, keine Superlative)
+     vorliegt.
+  2. Gib die Paare in **Copilot Chat** ein und lass sie nach denselben Kriterien beurteilen.
+     Verweise für die Markenstimme auf `/Fjordlicht-Basisdaten` (falls nicht vorhanden: Kap. 11,
+     Kurzübung 1). Vergleiche: Was hat Copilot übersehen, was hast du übersehen?
+  3. Lass Copilot drei bessere Fassungen für Paar 4 vorschlagen – mit unterschiedlichen
+     Ansätzen (Nutzen, Frage, Konkretheit). Prüfe jede gegen die belegten Claims und wähle eine aus.
 tip: |
   Prüfe drei Dinge: Ergänzt der Preheader den Betreff? Ist der Betreff ehrlich zum Inhalt? Gibt
-  es Platzhalter, die ohne Fallback zu einem Fehler führen können?
+  es Platzhalter, die ohne Fallback zu einem Fehler führen können? Copilot übersieht gern das
+  Fallback-Problem in Paar 5 – frag notfalls ausdrücklich nach.
 solution: |
   | Nr. | Hauptproblem | Spam-Signal / Markenstimme |
   |---|---|---|
@@ -24,12 +30,23 @@ solution: |
   | 4 | Superlativ und unbelegte Nachhaltigkeitsaussage; Preheader nicht gesetzt | gegen Markenstimme, Greenwashing-Risiko |
   | 5 | Platzhalter ohne Fallback, leerer Preheader zeigt beliebigen Text | Datenrisiko („Hallo ,") |
 
-  Bessere Fassung für Paar 4 (vorausgesetzt, die Materialangabe ist belegt):
+  Beispielprompt für Schritt 3:
+
+  ```text
+  Formuliere 3 Paare aus Betreff (max. 45 Zeichen) und Preheader
+  (max. 90 Zeichen) für einen Newsletter zur Regenjacke Sølv.
+  Ansätze: Nutzen, Frage, Konkretheit. Nutze nur die belegten Claims aus
+  /Fjordlicht-Basisdaten. Keine Superlative, keine Ausrufezeichen.
+  Der Preheader wiederholt den Betreff nicht.
+  ```
+
+  Mögliche Auswahl:
 
   ```text
   Betreff: Die Sølv: Regenjacke aus recyceltem Polyamid
   Preheader: Was das Material kann und wie du es lange nutzt.
   ```
 
-  Merke: Der Preheader ist ein eigener Baustein. Bleibt er leer, entscheidet das Postfach, was
-  angezeigt wird.
+  Achte darauf, dass Copilot „Obermaterial zu 100 % aus recyceltem Polyamid" nicht zu „komplett
+  recycelt" oder „nachhaltig" verkürzt. Merke: Der Preheader ist ein eigener Baustein. Bleibt er
+  leer, entscheidet das Postfach, was angezeigt wird.

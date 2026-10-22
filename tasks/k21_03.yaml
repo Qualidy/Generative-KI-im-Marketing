@@ -1,7 +1,7 @@
-title: Ein KI-Briefing kritisch prüfen
+title: Ein KI-Briefing kritisch prüfen und neu aufsetzen
 difficulty: 3
 question: |
-  Eine Kollegin hat ChatGPT ohne weitere Vorarbeit gebeten: „Erstelle ein SEO-Briefing für
+  Eine Kollegin hat Copilot ohne weitere Vorarbeit gebeten: „Erstelle ein SEO-Briefing für
   einen Blogartikel über nachhaltige Regenjacken." Das Ergebnis enthält unter anderem:
 
   ```text
@@ -19,13 +19,19 @@ question: |
 
   1. Finde mindestens **sechs Probleme** und ordne sie ein: erfundene Daten, falsche Intention,
      fehlende Felder, Konflikt mit der Markenstimme, rechtliches Risiko.
-  2. Beschreibe den Ablauf, wie das Briefing **richtig** entstanden wäre (Kap. 21.3–21.6).
-  3. Formuliere einen verbesserten Prompt, mit dem die KI aus vorhandenen Rechercheergebnissen
-     ein Briefing erstellt.
+  2. Frag in **Copilot Chat** nach: „Woher stammen die Suchvolumina in diesem Briefing?" und
+     notiere, wie Copilot antwortet.
+  3. Beschreibe den Ablauf, wie das Briefing **richtig** entstanden wäre (Kap. 21.3–21.6).
+  4. Lege in **Word** ein neues Dokument „Briefing-Regenjacke.docx" an und lass **Copilot in Word**
+     ein Briefing entwerfen, das auf Dateien verweist: `/Fjordlicht-Basisdaten` (Markenstimme,
+     belegte Claims; falls nicht vorhanden, Kap. 11 bzw. die Fjordlicht-Fakten selbst einfügen) und,
+     falls du eine hast, eine Keyword-Tabelle mit Tool-Werten (Aufbau wie in Übung 2). Felder
+     ohne Grundlage müssen mit `[OFFEN]` markiert sein.
 tip: |
   Lies jede Zeile mit der Frage: „Woher weiß die KI das?" – und gleiche Tonalität und
   Kernaussage mit der Markenstimme von Fjordlicht ab (ruhig, keine Superlative, kein
-  Greenwashing).
+  Greenwashing). Copilot kann nur auf Dateien zugreifen, auf die du Zugriff hast, und nur die
+  Zahlen verwenden, die darin stehen – genau das nutzt du in Schritt 4.
 solution: |
   | Problem | Einordnung |
   |---|---|
@@ -37,22 +43,30 @@ solution: |
   | „nachhaltigste Marke am Markt" | unbelegter Superlativ, Greenwashing-Risiko (UWG) |
   | fehlende Felder: Zielgruppe, Alleinstellung, interne Links, No-Gos | Briefing nicht umsetzbar |
 
+  Auf die Nachfrage nach der Herkunft räumt Copilot meist ein, dass es sich um Schätzungen
+  handelt – oder verweist auf allgemeine Webquellen. Beides heißt: streichen.
+
   Richtiger Ablauf: Seed-Keywords → KI-Cluster ohne Zahlen → Volumina aus Keyword Planner/
   Sistrix → SERP-Analyse mit Intention und Lücken → Alleinstellung aus eigener Erfahrung
-  (z. B. belegbare Materialangaben, Reparaturservice) → Briefing mit allen Feldern.
+  (z. B. belegbare Materialangaben wie 100 % recyceltes Polyamid, kostenloser Reparaturservice in
+  den ersten zwei Jahren) → Briefing mit allen Feldern.
 
-  Verbesserter Prompt:
+  Beispiel-Prompt für Copilot in Word:
 
   ```text
   Persona: Du bist SEO-Redakteurin.
-  Request: Erstelle aus den angehängten Unterlagen ein SEO-Briefing.
+  Request: Erstelle ein SEO-Briefing für einen Ratgeber "Woran erkenne ich
+  eine nachhaltige Regenjacke?" auf Basis von /Fjordlicht-Basisdaten und
+  [/Keyword-Tabelle, falls vorhanden].
   Output: Felder Hauptkeyword, Nebenkeywords, Intention, Zielgruppe, Ziel,
   Kernfragen, Alleinstellung, Gliederung (H2), interne Links, No-Gos.
-  Modifier: Nutze nur Zahlen aus der Keyword-Tabelle. Felder ohne Grundlage
+  Modifier: Nutze nur Zahlen aus der Keyword-Datei. Felder ohne Grundlage
   markierst du mit [OFFEN]. Keine Superlative, keine Nachhaltigkeitsaussage,
-  die nicht in der Claim-Liste steht.
+  die nicht in den Basisdaten als belegt steht.
   Purpose: Briefing für einen Ratgeber im Blog "Draußen-Notizen".
   Tone: sachlich.
-  Unterlagen: [Keyword-Tabelle mit Tool-Daten], [SERP-Analyse],
-  [Styleguide], [Claim-Liste]
   ```
+
+  Bewertungskriterien: alle sieben Problemtypen erkannt; Herkunftsfrage gestellt und
+  dokumentiert; das neue Briefing enthält keine Zahl ohne Quelle, mindestens ein ehrliches
+  `[OFFEN]` und nur Claims aus den Basisdaten.

@@ -1,9 +1,10 @@
-title: Vom Produkttext zum Sprechskript
+title: Vom Produkttext zum Sprechskript in Word
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT, Claude, Gemini oder Copilot). Wenn du
-  Zugang zu einem TTS-Werkzeug oder einer Avatar-Plattform mit Testkontingent hast, nutze es in
-  Schritt 4.
+  Diese Übung machst du in **Copilot in Word**. Für den Stimmtest in Schritt 4 reicht die
+  Word-Funktion **Vorlesen**; besser ist ein TTS-Werkzeug (z. B. ElevenLabs), eine
+  Avatar-Plattform mit Testkontingent oder die Text-zu-Sprache-Funktion in Clipchamp, falls in
+  eurer Umgebung verfügbar. Alternativ: ChatGPT, Claude oder Gemini für die Schritte 1 bis 3.
 
   Ausgangstext (fiktiv, Produktseite Wanderhose „Vidde"):
 
@@ -13,17 +14,37 @@ question: |
   Reißverschlusstaschen u. 1 Oberschenkeltasche. Pflege: 30 Grad, nicht in den Trockner.
   ```
 
-  1. Lass mit dem Prompt aus Abschnitt 36.3 ein **30-Sekunden-Sprechskript** erstellen
-     (höchstens 70 Wörter).
-  2. Prüfe das Ergebnis gegen die Tabelle „Lesetext – Sprechtext": Sind Abkürzungen, Zahlen und
-     Prozentangaben ausgeschrieben? Steht die Kernbotschaft vorn und hinten?
-  3. Lies das Skript laut mit Stoppuhr und überarbeite die Stellen, an denen du stolperst.
-  4. Lass das Skript von einer KI-Stimme sprechen und erstelle eine **Ausspracheliste** für alle
-     Wörter, die falsch klingen.
+  1. **Umschreiben.** Füge den Ausgangstext in ein neues Word-Dokument „Sprechskript-Vidde" im
+     Ordner „Fjordlicht-Kurs" ein, markiere ihn und lass Copilot ihn mit dem Prompt aus
+     Abschnitt 36.3 in ein **30-Sekunden-Sprechskript** (höchstens 70 Wörter) umschreiben.
+     Verweise für Markenstimme und Fakten auf `/Fjordlicht-Basisdaten` (falls nicht vorhanden:
+     Kap. 11 bzw. Markenstimme einfügen).
+  2. **Prüfen.** Stelle Copilot eine Frage ans Dokument: „Vergleiche Ausgangstext und
+     Sprechskript: Welche Aussage ist im Skript stärker als im Original, welche Angabe fehlt?"
+     Prüfe zusätzlich selbst gegen die Tabelle „Lesetext – Sprechtext": Sind Abkürzungen, Zahlen
+     und Prozentangaben ausgeschrieben? Steht die Kernbotschaft vorn und hinten?
+  3. **Laut lesen.** Lies das Skript laut mit Stoppuhr. Markiere die Stellen, an denen du
+     stolperst, und lass nur diese von Copilot kürzer oder sprechbarer umschreiben.
+  4. **Hören und Ausspracheliste.** Lass das Skript vorlesen bzw. von einer KI-Stimme sprechen.
+     Lege unter dem Skript eine **Ausspracheliste** als Tabelle an (Wort, Problem, Lösung) für
+     alle Wörter, die falsch klingen. Du brauchst sie im Workshop wieder.
 tip: |
-  Achte darauf, dass das Modell aus „PFC-frei" keine stärkere Nachhaltigkeitsaussage macht, als
-  im Ausgangstext steht. Umformulieren heißt nicht, Aussagen zu steigern.
+  Achte darauf, dass Copilot aus „PFC-frei" keine stärkere Nachhaltigkeitsaussage macht, als
+  im Ausgangstext steht. Umformulieren heißt nicht, Aussagen zu steigern. Die Vorlesefunktion
+  in Word ist kein Ersatz für die spätere Werbestimme – aber sie zeigt schnell, wo Abkürzungen
+  und Markennamen stolpern.
 solution: |
+  Beispiel-Prompt für das Umschreiben der markierten Passage:
+
+  ```text
+  Schreibe den markierten Text in ein Sprechskript für ein Avatar-Video um.
+  Dauer: 30 Sekunden, höchstens 70 Wörter. Markenstimme aus
+  /Fjordlicht-Basisdaten. Kurze Sätze, eine Aussage pro Satz, Du-Ansprache.
+  Zahlen und Abkürzungen so ausschreiben, wie man sie spricht, keine
+  Klammern. Kernbotschaft im ersten und letzten Satz. Sprechpausen als [Pause].
+  Keine Superlative, keine Eigenschaften erfinden, Aussagen nicht steigern.
+  ```
+
   Beispiel für ein gelungenes Sprechskript (rund 65 Wörter):
 
   ```text
@@ -37,7 +58,8 @@ solution: |
 
   Prüfpunkte: Abkürzungen („rec.", „u.", „DWR") sind aufgelöst oder weggelassen,
   Materialprozente stehen nicht im Sprechtext (gehören in die Einblendung), die Kernbotschaft
-  steht vorn und am Schluss, kein Superlativ.
+  steht vorn und am Schluss, kein Superlativ. Typischer Copilot-Fehler im ersten Durchgang:
+  „umweltfreundlich imprägniert" statt „ohne PFC" – das ist eine Steigerung und muss zurück.
 
   Typische Ausspracheliste:
 

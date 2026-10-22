@@ -1,68 +1,95 @@
-title: Avatar-Set für Fjordlicht Business
+title: Avatar-Set für Fjordlicht Business – von Word bis Agent
 difficulty: 4
 question: |
   **Szenario:** „Fjordlicht Business" verkauft nachhaltige Firmenbekleidung an Unternehmen. Bisher
   schreibt jeder im Team LinkedIn-Posts und Angebotsmails aus dem Bauch heraus. Du sollst einen
   **Avatar** entwickeln, den das ganze Team als Prompt-Baustein und zum Prüfen von Texten nutzt.
-  Alternativ arbeitest du mit einem B2B-Angebot eines Unternehmens deiner Wahl.
+  Du kannst statt Fjordlicht auch ein Unternehmen deiner Wahl mit einem B2B-Angebot nutzen.
 
   ```text
   Rahmen:
   Kundschaft: Handwerksbetriebe, Agenturen, Hotels, 20-200 Beschäftigte.
-  Datenlage (fiktiv, selbst anlegen): 15 pseudonymisierte Anfragen, Notizen
-  aus 5 Vertriebsgesprächen, 8 Rückmeldungen nach Erstbestellung.
+  Datenlage (fiktiv, selbst anlegen): 15 pseudonymisierte Anfragen (Excel),
+  Notizen aus 5 Vertriebsgesprächen (Word), 8 Rückmeldungen nach
+  Erstbestellung (Excel oder Word).
   Kanäle: LinkedIn, Angebotsmail, Landingpage.
+  Werkzeug: Microsoft 365 Copilot (Word, Outlook, Chat, Excel; Agent
+  Builder falls in eurer Umgebung freigegeben); Ablage im Ordner
+  "Fjordlicht-Kurs"
   Keine echten Kunden- oder Personendaten.
   ```
 
   ---
 
-  **Runde 1 – Steckbrief.** Lege die fiktiven Daten an und lass die KI daraus einen Steckbrief-
-  Entwurf mit allen Feldern aus Abschnitt 18.2 erstellen – mit Quellenangabe je Feld und
-  `[HYPOTHESE]` für Unbelegtes. Überarbeite den Entwurf selbst. Beachte: Im B2B gibt es oft mehrere
-  Beteiligte (Geschäftsführung, Einkauf, Mitarbeitende, die die Kleidung tragen).
+  **Runde 1 – Steckbrief in Word.** Lege die fiktiven Daten an und erstelle „Avatar-Business.docx"
+  mit **Entwurf mit Copilot**: Verweise auf deine Datendateien und auf
+  `Zielgruppenbriefing-Kinder.docx` aus Kap. 17 als Muster für Evidenzangaben (falls vorhanden).
+  Verlange alle Felder aus Abschnitt 18.2, eine Quellenangabe je Feld und `[HYPOTHESE]` für
+  Unbelegtes. Überarbeite den Entwurf selbst. Beachte das Buying Center: Geschäftsführung,
+  Einkauf, Mitarbeitende, die die Kleidung tragen – ergänze das Feld „Wer entscheidet mit?".
 
-  **Runde 2 – Prompt-Baustein und Einsatz.** Schreibe eine Kurzfassung (80–120 Wörter) und
-  verwende sie im Purpose eines P.R.O.M.P.T.-Prompts für einen LinkedIn-Post und eine Angebotsmail.
-  Prüfe beide Texte mit dem Avatar-Check aus Abschnitt 18.5 und überarbeite sie.
+  **Runde 2 – Prompt-Baustein und Einsatz.** Schreibe eine Kurzfassung (80–120 Wörter) als eigene
+  Datei. Verwende sie per `/`-Verweis im Purpose eines P.R.O.M.P.T.-Prompts für einen
+  LinkedIn-Post (Copilot Chat) und eine Angebotsmail an den Einkauf (**Copilot in Outlook** als
+  Entwurf, nicht senden). Prüfe beide Texte mit dem Avatar-Check aus Abschnitt 18.5 in Copilot
+  Chat, nutze für die Mail zusätzlich das Coaching in Outlook, und überarbeite sie.
 
   **Runde 3 – Die Komplikation.** Der Vertriebsleiter liest deinen Avatar und widerspricht: „Unsere
   Entscheider interessieren sich null für Nachhaltigkeit. Die wollen Logo drauf, Lieferung in zwei
-  Wochen, Nachbestellung ohne Theater." Deine Daten zeigen ein gemischtes Bild. Kläre, wie du mit
-  dem Widerspruch umgehst: Welche Felder änderst du, welche markierst du als strittig, und welche
-  zusätzlichen Daten würden die Frage entscheiden?
+  Wochen, Nachbestellung ohne Theater." Deine Daten zeigen ein gemischtes Bild. Lass Copilot in
+  Excel zählen, wie oft Nachhaltigkeit, Lieferzeit und Logo in den Anfragen als Anlass vorkommen,
+  und prüfe die Zahlen nach. Kläre dann, wie du mit dem Widerspruch umgehst: Welche Felder änderst
+  du, welche markierst du als strittig, und welche zusätzlichen Daten würden die Frage
+  entscheiden? Dokumentiere die Änderungen in Word mit **Änderungen nachverfolgen** (Version
+  1.0 → 1.1).
 
   **Runde 4 – Entscheidung unter Abwägung.** Ein Kollege möchte statt eines Avatars gleich fünf
-  bauen – für jede Branche einen. Ein anderer meint, ein Avatar reiche für alles. Lass dir von der
-  KI Pro und Contra liefern, **widersprich** dort, wo sie Aufwand und Pflege unterschätzt, und
-  entscheide begründet, mit wie vielen Avataren das Team startet.
+  bauen – für jede Branche einen. Ein anderer meint, ein Avatar reiche für alles. Lass dir von
+  Copilot Pro und Contra liefern, **widersprich** dort, wo Aufwand und Pflege unterschätzt werden,
+  und entscheide begründet, mit wie vielen Avataren das Team startet. Lege fest, wie der Avatar
+  im Team verfügbar wird: als geteilte Datei, im Copilot Notebook oder als kleiner Agent
+  „Avatar-Check Business" mit dem **Agent Builder** (Anweisung: Avatar-Check aus 18.5, Wissen:
+  die Avatar-Datei; vertieft in Kap. 24).
 
-  **Deliverable:**
+  **Deliverable** (als Dateien im Ordner „Fjordlicht-Kurs"):
 
-  1. fiktive Datengrundlage und Steckbrief mit Evidenz je Feld
-  2. Kurzfassung als kopierbarer Prompt-Baustein
-  3. LinkedIn-Post und Angebotsmail, jeweils mit Avatar-Check vorher/nachher
-  4. Stellungnahme zu Runde 3 mit Änderungsprotokoll des Avatars (Version 1.0 → 1.1)
-  5. Entscheidung zu Runde 4 mit Pflegeplan
+  1. fiktive Datengrundlage und „Avatar-Business.docx" mit Evidenz je Feld
+  2. Kurzfassung als kopierbarer und per `/` referenzierbarer Prompt-Baustein
+  3. LinkedIn-Post und Angebotsmail (Outlook-Entwurf), jeweils mit Avatar-Check vorher/nachher
+  4. Stellungnahme zu Runde 3 mit nachverfolgten Änderungen (Version 1.0 → 1.1)
+  5. Entscheidung zu Runde 4 mit Pflegeplan und gewählter Ablage
 
   **Fertig bist du erst, wenn** jedes Feld des Steckbriefs eine Evidenzangabe trägt, die Kurzfassung
   ohne Erklärung in einem fremden Prompt funktioniert, der Widerspruch des Vertriebs dokumentiert
   und mit einem Prüfweg versehen ist und dein Pflegeplan sagt, wer den Avatar wann überprüft.
 tip: |
   Der Lernwert liegt in Runde 3. Erfahrungswissen aus dem Vertrieb ist eine wertvolle Quelle, aber
-  ebenfalls eine Hypothese – genau wie die KI-Auswertung. Ein guter Avatar entscheidet solche
+  ebenfalls eine Hypothese – genau wie die Copilot-Auswertung. Ein guter Avatar entscheidet solche
   Konflikte nicht per Bauchgefühl oder Hierarchie, sondern macht sie sichtbar und benennt, welche
   Daten sie klären. Oft lösen sie sich auf: Nachhaltigkeit ist dann kein Kaufgrund, aber ein
-  Ausschlusskriterium bei Ausschreibungen.
+  Ausschlusskriterium bei Ausschreibungen. Für Runde 4 gilt: Ein Agent macht den Avatar bequem
+  nutzbar, aber auch ein veralteter Avatar wirkt dann in jedem Teamtext weiter – Pflege zuerst.
 solution: |
-  Bewertungskriterien: (1) der Steckbrief nutzt die Feldstruktur, berücksichtigt die B2B-Rollen
-  und weist Evidenz je Feld aus; (2) die Kurzfassung enthält Situation, Einwände und Kundensprache
-  und verändert die Texte nachweisbar; (3) der Avatar-Check führt zu konkreten Überarbeitungen statt
-  zu allgemeinem Lob; (4) der Widerspruch aus Runde 3 wird weder ignoriert noch blind übernommen,
-  sondern als strittiges Feld mit Prüfweg (zum Beispiel Auswertung der Anfrageanlässe, drei
-  Kundengespräche) und Versionsvermerk dokumentiert; (5) die Entscheidung in Runde 4 wägt
-  Genauigkeit gegen Pflegeaufwand ab – typischerweise Start mit einem bis zwei Avataren, Ausbau
-  nur, wenn Daten deutliche Unterschiede zeigen.
+  Beispiel-Prompt für den Avatar-Check in Copilot Chat:
 
-  Lernziel: Einen Kundenavatar als datenbasiertes, gepflegtes Arbeitsmittel aufbauen, ihn als
-  Prompt-Baustein einsetzen und Widersprüche zwischen Erfahrung und Daten produktiv auflösen.
+  ```text
+  Lies den Mailentwurf unten aus Sicht des Avatars in /Avatar-Business-Kurzfassung
+  (Rolle: Einkauf). Bewerte in einer Tabelle Hook, Relevanz, Einwände,
+  Abschreckung und Handlung, jeweils mit Bezug zum Steckbrief. Berücksichtige
+  das Feld "Wer entscheidet mit?". Schlage die drei wirksamsten Änderungen vor.
+  Entwurf: [Text einfügen]
+  ```
+
+  Bewertungskriterien: (1) der Steckbrief in Word nutzt die Feldstruktur, berücksichtigt die
+  B2B-Rollen und weist Evidenz je Feld aus; (2) die Kurzfassung enthält Situation, Einwände und
+  Kundensprache und verändert Post und Mail nachweisbar; (3) Avatar-Check und Coaching führen zu
+  konkreten Überarbeitungen statt zu allgemeinem Lob; (4) der Widerspruch aus Runde 3 wird weder
+  ignoriert noch blind übernommen, sondern mit nachgezählten Anfrageanlässen als strittiges Feld
+  mit Prüfweg (zum Beispiel drei Kundengespräche) und nachverfolgter Versionsänderung
+  dokumentiert; (5) die Entscheidung in Runde 4 wägt Genauigkeit gegen Pflegeaufwand ab –
+  typischerweise Start mit einem bis zwei Avataren, Ausbau nur, wenn Daten deutliche Unterschiede
+  zeigen – und der Pflegeplan nennt, wer Datei bzw. Agent-Wissen wann aktualisiert.
+
+  Lernziel: Einen Kundenavatar als datenbasiertes, gepflegtes Arbeitsmittel aufbauen, ihn in
+  Copilot als Prompt-Baustein einsetzen und Widersprüche zwischen Erfahrung und Daten produktiv
+  auflösen.

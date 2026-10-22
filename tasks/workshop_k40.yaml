@@ -1,69 +1,112 @@
-title: KI-Einführungsplan für ein Marketingteam
+title: Copilot-Einführungsplan für ein Marketingteam
 difficulty: 4
 question: |
   **Szenario:** Das Marketingteam von Fjordlicht hat im Kurs viel ausprobiert. Jetzt soll daraus
   ein geordneter Einsatz werden. Die Geschäftsführung bittet dich, einen **Einführungsplan für die
-  nächsten drei Monate** vorzulegen, der Nutzen, Risiken und Kosten nachvollziehbar macht. Du kannst
-  alternativ das Marketingteam eines Unternehmens deiner Wahl nehmen.
+  nächsten drei Monate** vorzulegen, der Nutzen, Risiken und Kosten nachvollziehbar macht. Du
+  arbeitest dafür selbst in Microsoft 365 Copilot. Du kannst statt Fjordlicht auch das
+  Marketingteam eines Unternehmens deiner Wahl nehmen.
 
   ```text
   Rahmen:
   Team: 5 Personen (Leitung, Content, Social Media, Grafik, CRM/Newsletter)
-  Vorhanden: Content-Assistent (Kap. 26), ChatGPT im Business-Tarif für 2 Personen
-  Budget: begrenzt, Erweiterung nur mit Nachweis des Nutzens
+  Vorhanden: Microsoft 365 Copilot für alle fünf, Content-Assistent (Kap. 26)
+  Zusatzwerkzeuge (Bild, Video, Audio): Budget begrenzt, nur mit Nachweis des Nutzens
   Kanäle: Webshop, Blog, Newsletter, Instagram, TikTok, LinkedIn, Pinterest
+  Ablage: Ordner „Fjordlicht-Kurs", Unterordner „KI-Einführung"; optional Notebook
+  „KI-Einführung" für alle Dateien dieses Workshops
   Keine echten Kundendaten im Workshop, nur Platzhalter oder fiktive Daten
   ```
 
   ---
 
-  **Runde 1 – Bestandsaufnahme.** Liste mindestens zwölf wiederkehrende Aufgaben des Teams mit
-  geschätztem Zeitaufwand pro Monat. Bewerte sie mit dem Prompt aus Abschnitt 40.3 nach
-  Zeitersparnis, Risiko, Datenart und Messbarkeit. Prüfe die KI-Bewertung und korrigiere mindestens
-  zwei Einschätzungen begründet.
+  **Runde 1 – Bestandsaufnahme (Excel).** Lege die Excel-Tabelle **„Aufgabenliste-Marketing"**
+  mit mindestens zwölf wiederkehrenden Aufgaben des Teams und geschätztem Zeitaufwand pro Monat
+  an. Bewerte sie mit dem Prompt aus Abschnitt 40.3 nach Zeitersparnis, Risiko, Datenart und
+  Messbarkeit – ergänze im Prompt eine Spalte „passende Copilot-Funktion" (z. B. Outlook,
+  Teams-Recap, Excel, Word, Agent). Lass Copilot in Excel die Summen je Rolle berechnen und die
+  Aufgaben mit hoher Zeitersparnis und geringem Risiko hervorheben. Prüfe die KI-Bewertung und
+  korrigiere mindestens zwei Einschätzungen begründet.
 
-  **Runde 2 – Plan erstellen.** Erstelle den Dreimonatsplan nach den fünf Schritten aus Abschnitt
-  40.3. Er muss enthalten:
+  **Runde 2 – Plan erstellen (Word).** Lass Copilot in Word auf Basis von
+  `/Aufgabenliste-Marketing` den Entwurf des Dreimonatsplans nach den fünf Schritten aus
+  Abschnitt 40.3 erstellen und überarbeite ihn. Er muss enthalten:
 
-  1. zwei Pilot-Use-Cases mit Verantwortlichen und Kennzahl samt Ausgangswert
-  2. eine einseitige Richtlinie: Werkzeuge, Datenampel, Freigabe, Kennzeichnung
-  3. eine Maßnahme zur KI-Kompetenz nach Art. 4 AI Act
+  1. zwei Pilot-Use-Cases mit Verantwortlichen und Kennzahl samt Ausgangswert – mindestens
+     einer davon in einer Office-App (z. B. Newsletter-Entwürfe in Outlook,
+     Besprechungsnachbereitung mit Teams-Recap, Kampagnenauswertung in Excel)
+  2. eine einseitige Richtlinie: Werkzeuge, Datenampel, Freigabe, Kennzeichnung – mit Bezug auf
+     Enterprise Data Protection und darauf, was trotzdem nicht in Prompts gehört
+  3. eine Maßnahme zur KI-Kompetenz nach Art. 4 AI Act, z. B. eine geteilte Prompt-Sammlung in
+     der Prompt Gallery mit kurzer Einweisung
   4. einen Entscheidungstermin mit Kriterien für Ausweiten oder Stoppen
 
-  **Runde 3 – Die Komplikation.** Nach Vorstellung des Plans fragt die Geschäftsführung: „Wenn KI so
-  viel Zeit spart, können wir dann die freiwerdende Stelle im Grafikbereich nicht nachbesetzen?"
-  Gleichzeitig äußert die Grafikerin im Team die Sorge, dass ihre Arbeit „von der KI ersetzt" wird.
-  Erarbeite eine Antwort an die Geschäftsführung und eine an das Team. Beide müssen mit deinen
-  Daten aus Runde 1 argumentieren, nicht mit Schlagworten.
+  **Runde 3 – Die Komplikation (Outlook, Teams).** Nach Vorstellung des Plans fragt die
+  Geschäftsführung: „Wenn KI so viel Zeit spart, können wir dann die freiwerdende Stelle im
+  Grafikbereich nicht nachbesetzen?" Gleichzeitig äußert die Grafikerin im Team die Sorge, dass
+  ihre Arbeit „von der KI ersetzt" wird. Erarbeite eine Antwort an die Geschäftsführung (als
+  Entwurf in Outlook) und eine an das Team (als Beitrag für den Teams-Kanal). Beide müssen mit
+  deinen Daten aus Runde 1 argumentieren, nicht mit Schlagworten. Nutze Copilot für die
+  Formulierung, nicht für die Zahlen.
 
-  **Runde 4 – Entscheidung unter Abwägung.** Lass dir von einem KI-Werkzeug eine Rollenbeschreibung
-  für eine neue Funktion „KI-Verantwortliche:r Marketing" erstellen. Du bekommst wahrscheinlich ein
-  umfangreiches Profil. **Widersprich** dort, wo es für ein Fünf-Personen-Team überdimensioniert
-  ist, und entscheide begründet: eigene Stelle, Teilaufgabe einer bestehenden Rolle oder geteilte
-  Verantwortung?
+  **Runde 4 – Entscheidung unter Abwägung (Copilot Chat).** Lass dir von Copilot eine
+  Rollenbeschreibung für eine neue Funktion „KI-Verantwortliche:r Marketing" erstellen. Du
+  bekommst wahrscheinlich ein umfangreiches Profil. **Widersprich** dort, wo es für ein
+  Fünf-Personen-Team überdimensioniert ist, und entscheide begründet: eigene Stelle, Teilaufgabe
+  einer bestehenden Rolle oder geteilte Verantwortung? Berücksichtige Aufgaben, die mit Copilot
+  neu entstehen: Pflege der Prompt Gallery, Betreuung eigener Agents, Prüfung von Freigaben.
 
   **Deliverable:**
 
-  1. bewertete Aufgabenliste mit begründeten Korrekturen
-  2. Dreimonatsplan mit allen vier Pflichtbestandteilen
+  1. Excel-Tabelle „Aufgabenliste-Marketing" mit Bewertung, Copilot-Funktion und begründeten
+     Korrekturen
+  2. Dreimonatsplan in Word mit allen vier Pflichtbestandteilen
   3. zwei Antworten aus Runde 3, je höchstens eine halbe Seite
   4. Entscheidung zur KI-Verantwortung mit gestrichenen Punkten und Begründung
+  5. optional: fünf Folien für die Geschäftsführung, mit Copilot in PowerPoint aus dem
+     Word-Plan erstellt und überarbeitet
 
   **Fertig bist du erst, wenn** jeder Pilot eine Kennzahl mit Ausgangswert hat, die Richtlinie auf
-  eine Seite passt, deine Antworten in Runde 3 mit konkreten Aufgaben und Zeiten argumentieren und
-  die Entscheidung in Runde 4 mindestens drei Streichungen einzeln begründet.
+  eine Seite passt, deine Antworten in Runde 3 mit konkreten Aufgaben und Zeiten aus der
+  Excel-Tabelle argumentieren und die Entscheidung in Runde 4 mindestens drei Streichungen
+  einzeln begründet.
 tip: |
   Der Kern liegt in Runde 3. Zeitersparnis bei Entwürfen bedeutet nicht automatisch weniger Bedarf
   an Menschen: Prüfung, Art Direction, Rechte-Check und Nachbearbeitung wachsen mit. Wer ehrlich
   rechnet, kann beiden Seiten eine belastbare Antwort geben – ohne Panik und ohne Schönfärberei.
+
+  Gute Piloten sind unspektakulär: Teams-Recap nach jeder Redaktionssitzung oder
+  Newsletter-Entwürfe in Outlook kommen jede Woche vor und lassen sich leicht messen.
 solution: |
+  Beispiel-Prompt für Runde 1 (Copilot Chat, Ergebnis nach Excel übernehmen):
+
+  ```text
+  Du bist Beraterin für die Einführung von KI in Marketingteams.
+  Unser Team: 5 Personen (Leitung, Content, Social Media, Grafik, CRM),
+  Microsoft 365 Copilot für alle. Wiederkehrende Aufgaben mit Zeitaufwand
+  pro Monat: [Liste]. Bewerte jede Aufgabe in einer Tabelle nach Zeitersparnis,
+  Risiko bei Fehlern, benötigten Daten (öffentlich/intern/personenbezogen),
+  Messbarkeit und passender Copilot-Funktion. Empfiehl zwei Aufgaben für einen
+  vierwöchigen Pilot und je eine Kennzahl, die wir vor dem Start erheben.
+  Wenn dir Angaben fehlen, frage nach statt zu schätzen.
+  ```
+
+  Beispielhafte Pilots: (a) Besprechungsnachbereitung mit Teams-Recap – Kennzahl: Minuten pro
+  Protokoll, Ausgangswert vorher gemessen; (b) Newsletter-Entwürfe mit Copilot in Outlook und dem
+  Content-Assistenten – Kennzahl: Zeit pro Ausgabe und Korrekturschleifen.
+
   Bewertungskriterien: (1) mindestens zwölf Aufgaben mit Zeitaufwand und nachvollziehbaren
-  Korrekturen der KI-Bewertung; (2) der Plan enthält zwei messbare Pilots mit Baseline, eine
-  einseitige Richtlinie mit Datenampel und Kennzeichnung (Kap. 4, 39), eine Kompetenzmaßnahme und
-  klare Kriterien für die Entscheidung; (3) die Antworten in Runde 3 rechnen mit realen Aufgaben,
-  benennen, welche Tätigkeiten wegfallen und welche hinzukommen, und vermeiden sowohl
-  Beschwichtigung als auch Übertreibung; (4) die Rollenentscheidung passt zur Teamgröße und
-  begründet Streichungen einzeln.
+  Korrekturen der KI-Bewertung, Copilot-Funktionen sinnvoll zugeordnet; (2) der Plan enthält zwei
+  messbare Pilots mit Baseline, eine einseitige Richtlinie mit Datenampel und Kennzeichnung
+  (Kap. 4, 39), eine Kompetenzmaßnahme und klare Kriterien für die Entscheidung; (3) die
+  Antworten in Runde 3 rechnen mit realen Aufgaben, benennen, welche Tätigkeiten wegfallen und
+  welche hinzukommen, und vermeiden sowohl Beschwichtigung als auch Übertreibung; (4) die
+  Rollenentscheidung passt zur Teamgröße und begründet Streichungen einzeln.
+
+  Typische Copilot-Schwächen: In Runde 1 wird die Zeitersparnis bei Grafikaufgaben zu hoch
+  geschätzt, weil Rechte-Check und Nachbearbeitung fehlen; in Runde 4 enthält das Profil
+  Aufgaben wie „KI-Strategie für das Gesamtunternehmen" oder „Aufbau eigener Modelle", die für
+  ein Fünf-Personen-Marketingteam nicht passen.
 
   Lernziel: Den Einsatz generativer KI als gestaltbare Veränderung von Arbeit planen – messbar,
   regelkonform und so, dass Geschäftsführung und Team die Entscheidung nachvollziehen können.

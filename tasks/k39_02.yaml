@@ -1,8 +1,9 @@
 title: Rechte-Check für ein Kampagnenmotiv
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug. Fjordlicht plant für die Herbstkampagne der
-  Wanderhose „Vidde" ein Key Visual. Die Grafikerin schlägt folgende Prompt-Idee vor:
+  Diese Übung machst du in **Copilot Chat** mit Bilderzeugung. Fjordlicht plant für die
+  Herbstkampagne der Wanderhose „Vidde" ein Key Visual. Die Grafikerin schlägt folgende
+  Prompt-Idee vor:
 
   ```text
   Fotorealistische Wanderin in der Wanderhose Vidde auf einem Grat in den
@@ -11,17 +12,33 @@ question: |
   ähnlich wie [bekannte Schauspielerin].
   ```
 
-  1. Erstelle mit deinem KI-Werkzeug eine **Risikotabelle** zu diesem Prompt: Risiko,
-     Rechtsgrundlage, Gegenmittel. Nutze dazu den Prompt-Aufbau aus Abschnitt 39.5 sinngemäß.
+  1. Lass Copilot eine **Risikotabelle** zu diesem Prompt erstellen: Risiko, Rechtsgrundlage,
+     Gegenmittel. Nutze dazu den Prompt-Aufbau aus Abschnitt 39.5 sinngemäß. Erzeuge mit dem
+     Original-Prompt **kein** Bild.
   2. Prüfe die Tabelle **selbst** gegen Abschnitt 39.3: Was fehlt, was ist falsch oder zu pauschal?
   3. Formuliere einen **bereinigten Bildprompt**, der dieselbe Stimmung erzeugt, aber die Risiken
-     vermeidet.
-  4. Entscheide mit dem Entscheidungsbaum, ob das bereinigte Motiv gekennzeichnet werden muss.
+     vermeidet, und lass Copilot daraus ein Testbild erzeugen.
+  4. Prüfe das Testbild per Sichtprüfung auf Logos, Schriftzüge und Ähnlichkeit mit realen
+     Personen. Lade es dazu zusätzlich in Copilot Chat hoch und lass es beschreiben – findet
+     Copilot etwas, das du übersehen hast?
+  5. Entscheide mit dem Entscheidungsbaum, ob das bereinigte Motiv gekennzeichnet werden muss.
 tip: |
   Achte auf die Unterscheidung zwischen **Stil** und **konkretem Werk**. Viele KI-Antworten sind
   hier entweder zu vorsichtig („jede Stilangabe ist verboten") oder zu großzügig. Und: Die echte Hose
-  sollte am Ende als echtes Produktfoto im Motiv stehen.
+  sollte am Ende als echtes Produktfoto im Motiv stehen. Die Bildbeschreibung durch Copilot ist eine
+  zweite Meinung, ersetzt aber nicht deinen eigenen Blick.
 solution: |
+  Beispiel-Prompt für Schritt 1:
+
+  ```text
+  Du unterstützt eine Marketingabteilung bei einem Rechte-Check. Du gibst
+  keine Rechtsberatung. Prüfe den folgenden Bildprompt auf Risiken für Rechte
+  Dritter und Irreführung. Antworte als Tabelle (Risiko | Rechtsgrundlage |
+  Gegenmittel). Unterscheide ausdrücklich zwischen Stil und konkretem Werk.
+  Markiere Unsicherheiten mit [UNKLAR].
+  [Prompt der Grafikerin einfügen]
+  ```
+
   | Risiko | Rechtsgrundlage | Gegenmittel |
   |---|---|---|
   | Nachbildung eines konkreten Plakats | Urheberrecht | Stimmung beschreiben statt Werk nennen |
@@ -39,7 +56,16 @@ solution: |
   neutrales Zelt im Hintergrund ohne Schriftzüge, Format 4:5.
   ```
 
+  Sichtprüfung: Auch bei bereinigtem Prompt erzeugen Bildmodelle manchmal angedeutete Logos oder
+  Schriftzüge auf Zelt und Kleidung. Die Bildbeschreibung durch Copilot hilft, solche Details zu
+  benennen, übersieht aber kleine Elemente und kann Ähnlichkeit mit realen Personen nicht
+  verlässlich beurteilen.
+
   Kennzeichnung: keine reale Person und kein reales Ereignis, ein namenloser Fjord – nach AI Act
   eher Grauzone, auf Instagram und TikTok aber Plattformlabel für realistische KI-Inhalte. Die Hose
   wird per Compositing durch ein echtes Produktfoto ersetzt. Typischer Fehler der KI-Tabelle:
   „Stil ist geschützt" – Stil als solcher ist es nicht, die Nachbildung eines konkreten Werks schon.
+
+  Bewertungskriterien: Risikotabelle selbst geprüft und korrigiert, bereinigter Prompt ohne
+  Werk-, Marken- und Personenbezug, Testbild per Sichtprüfung kontrolliert, Kennzeichnung
+  begründet entschieden.

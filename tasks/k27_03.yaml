@@ -1,4 +1,4 @@
-title: Anbindungsweg und Risiken bewerten
+title: Ausbauvorschläge bewerten und beantworten
 difficulty: 3
 question: |
   Die Geschäftsführung von Fjordlicht will den CRM-Chatbot ausbauen. Drei Vorschläge liegen
@@ -10,13 +10,30 @@ question: |
     Mitarbeiterin der anfragenden Firma erfassen, „damit wir schneller liefern können".
   - **C:** Der KI-Hinweis am Anfang soll entfallen, „weil er Leute abschreckt".
 
-  Bewerte jeden Vorschlag in drei Dimensionen: **Nutzen**, **rechtliches bzw.
-  Datenschutzrisiko**, **Haftungs- oder Reputationsrisiko**. Formuliere dann für jeden
-  Vorschlag eine Empfehlung: umsetzen, abgewandelt umsetzen oder ablehnen. Beschreibe bei
-  „abgewandelt" die konkrete Abwandlung.
+  1. **Eigene Bewertung zuerst.** Bewerte jeden Vorschlag in drei Dimensionen: **Nutzen**,
+     **rechtliches bzw. Datenschutzrisiko**, **Haftungs- oder Reputationsrisiko**. Formuliere
+     eine Empfehlung: umsetzen, abgewandelt umsetzen oder ablehnen. Beschreibe bei
+     „abgewandelt" die konkrete Abwandlung.
+  2. **Gegenprobe in Copilot Chat.** Lass Copilot die Position der Geschäftsführung so stark
+     wie möglich vertreten:
+
+  ```text
+  Du bist Geschäftsführer eines Textilunternehmens und willst die drei folgenden
+  Ausbauvorschläge für unseren Vertriebs-Chatbot durchsetzen. Nenne für jeden
+  Vorschlag die zwei stärksten Argumente dafür, sachlich und ohne Übertreibung.
+  [Vorschläge A bis C einfügen]
+  ```
+
+     Prüfe: Welches Argument ändert deine Bewertung, welches hält deinem Bezug auf
+     Art. 50 Abs. 1 AI Act und die Datenminimierung (Kap. 4) nicht stand?
+  3. **Antwort schreiben.** Entwirf mit **Copilot in Outlook** eine kurze Antwortmail an die
+     Geschäftsführung (höchstens 150 Wörter) mit deinen drei Empfehlungen. Nutze das
+     Coaching für Entwürfe, um Ton und Klarheit zu prüfen. Nicht senden.
 tip: |
   Trenne, was automatisiert werden **kann**, von dem, was automatisiert werden **sollte**.
-  Ein Termin ist eine Einladung, ein Richtpreis kann eine Zusage sein.
+  Ein Termin ist eine Einladung, ein Richtpreis kann eine Zusage sein. Und: Eine Antwort an
+  die Geschäftsführung, die nur „nein" sagt, verliert – biete bei jedem Vorschlag einen Weg
+  an, den Nutzen ohne das Risiko zu bekommen.
 solution: |
   | Vorschlag | Nutzen | Recht/Datenschutz | Haftung/Reputation | Empfehlung |
   |---|---|---|---|---|
@@ -28,14 +45,34 @@ solution: |
   Begründungen im Kern:
 
   - **A:** Die Terminbuchung ist sinnvoll, sollte aber als Angebot an die Kundin laufen
-    (Buchungslink), nicht als automatische Belegung. Ein Richtpreis ist eine Aussage im
-    Namen des Unternehmens; bei Fehlern haftet Fjordlicht. Preise bleiben im Angebot.
+    (Buchungslink), nicht als automatische Belegung. Technisch bräuchte eine echte Buchung
+    eine Aktion bzw. einen Konnektor (etwa in Copilot Studio oder über eine
+    Automatisierungsplattform) – das ist ein IT-Projekt, kein Anweisungssatz. Ein Richtpreis
+    ist eine Aussage im Namen des Unternehmens; bei Fehlern haftet Fjordlicht. Preise
+    bleiben im Angebot.
   - **B:** Geburtsdaten sind für ein Angebot nicht nötig, die Daten betreffen Dritte, die
     nicht eingewilligt haben. Größenverteilungen ohne Namen kann der Vertrieb später
     abfragen.
   - **C:** Der Hinweis ist seit 02.08.2026 Pflicht, wenn nicht offensichtlich ist, dass eine
     KI antwortet. Statt ihn zu streichen, kann man ihn freundlicher formulieren.
 
+  Typisches Ergebnis der Gegenprobe: Copilot liefert brauchbare Argumente für A
+  („Reaktionszeit ist im B2B ein Wettbewerbsvorteil") und für C („Hinweis senkt die
+  Abschlussquote"). Das erste stützt die Abwandlung per Buchungslink, das zweite ändert
+  nichts an der Pflicht – es ist ein Argument für eine bessere Formulierung.
+
+  Beispiel für den Outlook-Entwurf (Kern):
+
+  ```text
+  A: Ja zu schnelleren Terminen – der Bot bietet bei Stufe A einen Buchungslink
+  an. Richtpreise nennt er nicht, weil sie als Zusage gelten können.
+  B: Größen und Namen erfassen wir nicht im Erstkontakt; der Vertrieb fragt die
+  Größenverteilung bei Auftrag ab, ohne Geburtsdaten.
+  C: Der KI-Hinweis bleibt, er ist seit 02.08.2026 Pflicht. Ich schlage eine
+  freundlichere Formulierung vor und teste sie zwei Wochen.
+  ```
+
   Bewertungskriterien: alle drei Dimensionen pro Vorschlag bewertet, mindestens eine
   sinnvolle Abwandlung statt reiner Ablehnung, korrekter Bezug zu Art. 50 Abs. 1 und zur
-  Datenminimierung.
+  Datenminimierung, Gegenargumente aus Copilot geprüft statt übernommen, Mail kurz und
+  entscheidungsfähig.

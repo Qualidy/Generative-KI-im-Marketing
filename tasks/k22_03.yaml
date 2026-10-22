@@ -5,33 +5,46 @@ question: |
   suchen", und fragt: „Werden wir dort überhaupt genannt – und was können wir tun?" Eine
   Agentur bietet außerdem ein Paket „Garantierte Platzierung in ChatGPT und AI Overviews" an.
 
-  1. Entwickle ein kleines **Monitoring**: zehn typische Fragen der Zielgruppe (z. B. „Welche
-     Regenjacke eignet sich zum Radfahren in der Stadt?"), mindestens drei Antwortmaschinen
-     (z. B. ChatGPT mit Websuche, Perplexity, Gemini oder die Google-Suche mit AI Overview) und
-     eine Tabelle, in der du festhältst, ob Fjordlicht genannt oder verlinkt wird und welche
-     Quellen stattdessen erscheinen.
-  2. Führe den Test mit mindestens drei Fragen durch – für Fjordlicht oder ein real existierendes
-     Unternehmen deiner Wahl.
-  3. Leite aus den genannten Quellen ab, **welche Art Inhalte** KI-Antworten offenbar bevorzugen.
-  4. Bewerte das Agenturangebot kritisch und formuliere eine kurze Antwort an die
-     Geschäftsführung (maximal 120 Wörter).
+  1. Entwickle ein kleines **Monitoring** als Excel-Datei „KI-Sichtbarkeit.xlsx" im Ordner
+     „Fjordlicht-Kurs": zehn typische Fragen der Zielgruppe (z. B. „Welche Regenjacke eignet sich
+     zum Radfahren in der Stadt?"), mindestens drei Antwortmaschinen und Spalten für Datum,
+     genannt ja/nein, verlinkt ja/nein und Quellen, die stattdessen erscheinen. Lass dir die
+     Fragen von Copilot Chat vorschlagen und prüfe, ob echte Menschen sie so stellen würden.
+  2. Führe den Test mit mindestens drei Fragen durch. Eine der Antwortmaschinen ist **Copilot Chat
+     mit Web**; dazu kommen z. B. die Google-Suche mit AI Overview, ChatGPT mit Websuche,
+     Perplexity oder Gemini. Teste für Fjordlicht oder ein real existierendes Unternehmen deiner
+     Wahl.
+  3. Lass **Copilot in Excel** zusammenfassen, welche Quellentypen am häufigsten erscheinen, und
+     leite daraus ab, **welche Art Inhalte** KI-Antworten offenbar bevorzugen.
+  4. Bewerte das Agenturangebot kritisch und lass **Copilot in Outlook** eine kurze Antwort an die
+     Geschäftsführung entwerfen (maximal 120 Wörter). Überarbeite den Entwurf selbst; nicht senden.
 tip: |
   KI-Antworten schwanken: Dieselbe Frage kann morgen andere Quellen liefern. Plane daher
-  Wiederholungen ein und werte Muster aus, keine Einzelergebnisse. Bei der Agentur hilft die
-  Frage: Wer könnte eine solche Garantie überhaupt geben?
+  Wiederholungen ein und werte Muster aus, keine Einzelergebnisse. Copilot Chat im Arbeitsmodus
+  ist für diesen Test ungeeignet – er antwortet aus deinen Unternehmensdaten, nicht aus dem Web.
+  Bei der Agentur hilft die Frage: Wer könnte eine solche Garantie überhaupt geben?
 solution: |
   Beispiel-Monitoring:
 
   | Frage | Werkzeug | Fjordlicht genannt? | Häufigste Quellen | Datum |
   |---|---|---|---|---|
   | Regenjacke für Radfahren in der Stadt? | Perplexity | nein | Testmagazine, Händler-Ratgeber, Foren | [Datum] |
+  | Regenjacke für Radfahren in der Stadt? | Copilot Chat (Web) | nein | Testmagazine, Herstellerseiten | [Datum] |
   | Fleece fusselt, was tun? | Google AI Overview | ja, Blogartikel verlinkt | Ratgeber, Herstellerseiten | [Datum] |
+
+  Beispiel-Prompt für Copilot in Excel:
+
+  ```text
+  Fasse die Spalte "Häufigste Quellen" zusammen: Welche Quellentypen kommen
+  wie oft vor, getrennt nach Werkzeug? Zeige außerdem, bei wie vielen Fragen
+  Fjordlicht genannt wurde. Keine Vermutungen über Gründe.
+  ```
 
   Typische Muster der zitierten Quellen: klare Antwort direkt unter einer Frage-Überschrift,
   Tabellen und Listen, eigene Testergebnisse oder Daten, unabhängige Vergleichsseiten und
   Foren mit echten Erfahrungen, aktuelle Datumsangaben.
 
-  Antwort an die Geschäftsführung:
+  Antwort an die Geschäftsführung (überarbeiteter Outlook-Entwurf):
 
   ```text
   Wir werden bei Pflegefragen bereits teilweise genannt, bei Kaufberatung kaum.
@@ -43,5 +56,6 @@ solution: |
   Monitoring monatlich. Das Agenturangebot lehnen wir ab.
   ```
 
-  Bewertungskriterien: wiederholbares Monitoring mit Datum, Ableitungen aus beobachteten
-  Mustern statt Vermutungen, nüchterne Einordnung der „Garantie".
+  Bewertungskriterien: wiederholbares Monitoring mit Datum in Excel, Copilot Chat im Web-Modus als
+  eine von mindestens drei Antwortmaschinen, Ableitungen aus beobachteten Mustern statt
+  Vermutungen, nüchterne Einordnung der „Garantie" und ein selbst geprüfter Mail-Entwurf.

@@ -1,7 +1,8 @@
-title: Eine Dreierserie mit festem Prompt-Gerüst
+title: Eine Dreierserie in Copilot mit festem Prompt-Gerüst
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug.
+  Diese Übung machst du in **Copilot Chat** bzw. in der Create-Funktion der
+  Microsoft-365-Copilot-App (falls freigegeben). Alternativ: ChatGPT Images oder Gemini.
 
   Fjordlicht braucht für Instagram (4:5) eine Serie aus drei Posts zum Fleece „Skog" unter dem
   Motto „Die ersten kalten Morgen". Eine fiktive, wiederkehrende Figur soll alle drei Bilder
@@ -9,15 +10,20 @@ question: |
 
   1. **Steckbrief.** Lege einen Figuren-Steckbrief mit mindestens fünf sichtbaren Merkmalen an.
   2. **Gerüst.** Schreibe ein Prompt-Gerüst nach dem Muster aus Abschnitt 33.2 mit festen
-     Teilen und höchstens drei variablen Platzhaltern in eckigen Klammern.
+     Teilen und höchstens drei variablen Platzhaltern in eckigen Klammern. Nutze den Baustein
+     aus `/Fjordlicht-Bildsprache` (falls nicht vorhanden, den Baustein aus 32.2).
   3. **Serie.** Erzeuge drei Motive (zum Beispiel Kaffee am Zelt, Radweg zur Arbeit, Hund
-     ausführen). Nutze ab Bild 2 das erste gelungene Bild als Referenz.
-  4. **Prüfen.** Bewerte die Serie: Wo hält die Konsistenz, wo nicht? Korrigiere mindestens
-     eine Abweichung durch Bearbeitung statt durch Neugenerierung.
+     ausführen). Lade ab Bild 2 das erste gelungene Bild als Referenz hoch.
+  4. **Prüfen.** Lege die drei Bilder in PowerPoint nebeneinander und bewerte die Serie: Wo hält
+     die Konsistenz, wo nicht? Korrigiere mindestens eine Abweichung in Copilot durch
+     Bearbeitung statt durch Neugenerierung.
+  5. **Sichern.** Speichere Steckbrief und Gerüst als Prompt in der Prompt Gallery oder in einer
+     Word-Datei im Ordner „Fjordlicht-Kurs", damit die Serie später fortgesetzt werden kann.
 tip: |
   Je mehr variable Teile dein Gerüst hat, desto mehr driftet die Serie auseinander. Wenn die
   Figur trotz Referenz wechselt, prüfe zuerst, ob der Steckbrief wirklich wortgleich in jedem
-  Prompt steht.
+  Prompt steht. Seeds lassen sich in Copilot nicht steuern – umso wichtiger sind Gerüst und
+  Referenzbild.
 solution: |
   Beispiel-Steckbrief und Gerüst:
 
@@ -26,11 +32,20 @@ solution: |
   Metallrahmen, schlank, trägt ein flaschengrünes Fleece mit Stehkragen und
   eine dunkle Mütze.
 
-  [Figur] [Handlung] in [Ort] an einem kalten Oktobermorgen, Atem sichtbar,
-  weiches diffuses Licht, leichter Bodennebel. Person auf der linken
-  Drittellinie, nicht in die Kamera blickend, obere 30 Prozent ruhige Fläche.
-  Format 4:5. Gedämpfte, entsättigte Naturtöne, dokumentarischer Fotolook,
-  leichte Filmkörnung. Vermeide: Hochglanz, Posen, Siegergesten.
+  Erstelle ein Bild: [Figur] [Handlung] in [Ort] an einem kalten Oktobermorgen,
+  Atem sichtbar, weiches diffuses Licht, leichter Bodennebel. Person auf der
+  linken Drittellinie, nicht in die Kamera blickend, obere 30 Prozent ruhige
+  Fläche. Hochformat 4:5. Gedämpfte, entsättigte Naturtöne, dokumentarischer
+  Fotolook, leichte Filmkörnung. Vermeide: Hochglanz, Posen, Siegergesten.
+  Kein Text, keine Logos.
+  ```
+
+  Referenzprompt ab Bild 2:
+
+  ```text
+  Das hochgeladene Bild zeigt unsere Kampagnenfigur. Erstelle ein neues Bild mit
+  derselben Person (Gesicht, Bart, Brille, Kleidung) und demselben Look (Licht,
+  Farbwelt, Körnung). Neu ist nur: [Handlung] in [Ort]. [Rest des Gerüsts]
   ```
 
   Typische Beobachtungen: Stil und Licht bleiben mit Gerüst sehr stabil; die Figur weicht
@@ -38,5 +53,6 @@ solution: |
   Kragen und Reißverschluss – ein Hinweis, dass für die Veröffentlichung ein echtes
   Produktfoto oder eine Prüfung gegen das Produkt nötig ist.
 
-  Eine gute Bearbeitung enthält Steckbrief, Gerüst, drei Bilder, eine Liste der Abweichungen
-  und eine dokumentierte Korrektur per Bearbeitung mit der Anweisung, was gleich bleiben soll.
+  Eine gute Bearbeitung enthält Steckbrief, Gerüst, drei Bilder auf einer Vergleichsfolie, eine
+  Liste der Abweichungen und eine dokumentierte Korrektur per Bearbeitung mit der Anweisung,
+  was gleich bleiben soll.

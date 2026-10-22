@@ -1,20 +1,41 @@
-title: Bot oder Mensch?
+title: Bot oder Mensch? – Schnelltest in Copilot
 difficulty: 1
 question: |
-  Entscheide für jede Nachricht an den CRM-Chatbot von Fjordlicht Business, ob der Bot
-  **selbst antwortet**, **qualifiziert** oder **an den Vertrieb übergibt** – und begründe kurz.
+  Diese Übung machst du in **Copilot Chat** (Microsoft-365-Copilot-App, Modus **Arbeit**), in
+  einer neuen Unterhaltung.
 
-  1. „Ab wie vielen Teilen macht ihr Logo-Stick?"
-  2. „Wir sind ein Kita-Träger mit vier Standorten und brauchen Regenjacken für das Team."
-  3. „Was kostet die Sølv bei 60 Stück mit Logo?"
-  4. „Die gelieferten Jacken haben den falschen Logo-Farbton. Das ist echt ärgerlich."
-  5. „Kann ich bitte mit jemandem sprechen?"
-  6. „Habt ihr auch Arbeitsschuhe?" (steht nicht in den Wissensdateien)
+  1. Gib Copilot diese Kurzanweisung:
 
-  Welche Angabe muss der Bot in jedem Gespräch ganz am Anfang machen, und warum?
+  ```text
+  Du spielst den digitalen Assistenten von Fjordlicht Business (Firmenbekleidung
+  mit Logo-Veredelung). Du beantwortest nur FAQ, nimmst Projektanfragen auf und
+  übergibst an den Vertrieb. Du nennst keine Preise, Rabatte oder verbindlichen
+  Termine. Antworte auf jede der folgenden Nachrichten so, wie der Bot es tun
+  würde, und schreibe darunter in eckigen Klammern, ob du selbst antwortest,
+  qualifizierst oder übergibst.
+  ```
+
+  2. Schicke danach die sechs Kundennachrichten einzeln:
+
+     1. „Ab wie vielen Teilen macht ihr Logo-Stick?"
+     2. „Wir sind ein Kita-Träger mit vier Standorten und brauchen Regenjacken für das Team."
+     3. „Was kostet die Sølv bei 60 Stück mit Logo?"
+     4. „Die gelieferten Jacken haben den falschen Logo-Farbton. Das ist echt ärgerlich."
+     5. „Kann ich bitte mit jemandem sprechen?"
+     6. „Habt ihr auch Arbeitsschuhe?" (steht nicht in den Wissensdateien)
+
+  3. **Einordnen.** Lege für jede Nachricht fest, ob der Bot **selbst antwortet**,
+     **qualifiziert** oder **an den Vertrieb übergibt** – und vergleiche mit Copilots
+     Einschätzung. Wo lag Copilot falsch oder zu nachgiebig (z. B. eine Preisspanne, eine
+     erfundene Mindestmenge, ein Lösungsversprechen bei der Reklamation)?
+
+  Welche Angabe muss der Bot in jedem Gespräch ganz am Anfang machen, und warum? Hat Copilot
+  sie von sich aus gemacht?
 tip: |
   Der Bot darf alles, was in den Wissensdateien steht und nichts zusagt. Sobald es um
-  Geld, Ärger oder Unbekanntes geht, gehört der Fall zu einem Menschen.
+  Geld, Ärger oder Unbekanntes geht, gehört der Fall zu einem Menschen. Achte bei Nr. 1:
+  Copilot hat hier **keine** FAQ-Datei – erfindet er trotzdem eine Mindestmenge, ist das
+  genau der Fehler, den Wissensdateien und die Regel „nicht raten" verhindern sollen.
 solution: |
   | Nr. | Reaktion | Begründung |
   |---|---|---|
@@ -29,6 +50,14 @@ solution: |
   erfragen, damit der Vertrieb direkt ein Angebot erstellen kann – er nennt aber keinen
   Preis.
 
+  Typische Beobachtungen im Schnelltest: Bei Nr. 1 nennt Copilot ohne Wissensdatei oft eine
+  plausibel klingende Mindestmenge („meist ab 10 Stück") – im echten Bot wäre das eine
+  erfundene Auskunft. Bei Nr. 4 bietet er gern eine Lösung an („Wir tauschen die Jacken
+  selbstverständlich um"), was eine Zusage im Namen von Fjordlicht wäre. Bei Nr. 6 rät er
+  manchmal statt ehrlich zu sagen, dass er es nicht weiß. Jede dieser Abweichungen ist eine
+  Regel, die später in die Instruktionen gehört.
+
   Am Anfang jedes Gesprächs steht der **Hinweis, dass es sich um eine KI handelt**
   (Art. 50 Abs. 1 AI Act, seit 02.08.2026), plus der Hinweis, wie man einen Menschen
-  erreicht, und ein Verweis auf die Datenschutzerklärung.
+  erreicht, und ein Verweis auf die Datenschutzerklärung. Ohne ausdrückliche Anweisung
+  lässt Copilot den KI-Hinweis meist weg – er gehört deshalb fest in die Begrüßung.

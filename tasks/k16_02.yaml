@@ -1,9 +1,9 @@
-title: Landingpage-Test mit der Datenanalyse auswerten
+title: Landingpage-Test mit Copilot in Excel auswerten
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug mit Datenanalyse-Funktion (ChatGPT, alternativ
-  Claude oder Gemini). Fjordlicht hat auf der Landingpage für den Pflege-Kalender zwei
-  Button-Texte getestet. Die Testdauer (14 Tage) war vorher festgelegt. Fiktive Daten:
+  Diese Übung machst du in **Excel mit Copilot**. Fjordlicht hat auf der Landingpage für den
+  Pflege-Kalender zwei Button-Texte getestet. Die Testdauer (14 Tage) war vorher festgelegt.
+  Fiktive Daten:
 
   ```text
   Variante;Button;Besuche;Anmeldungen
@@ -11,18 +11,38 @@ question: |
   B;Kalender holen;3180;270
   ```
 
-  1. Lass die KI Anmelderate je Variante, relativen Unterschied und einen Chi-Quadrat-Test
-     berechnen. Fordere eine Erklärung in vier Sätzen für das Team.
-  2. Rechne die Anmelderaten selbst nach und lass dir den Python-Code zeigen. Stimmen die
-     Ausgangszahlen?
-  3. Frage die KI, wie viele Besuche pro Variante nötig gewesen wären, um einen Unterschied von
-     7,0 % zu 8,4 % sicher zu erkennen (5 % Signifikanz, 80 % Teststärke).
-  4. Trage das Ergebnis in ein Testlog mit den Feldern aus Abschnitt 16.6 ein.
+  1. **Daten anlegen.** Lege im Ordner „Fjordlicht-Kurs" die Arbeitsmappe
+     „Fjordlicht-Testlog.xlsx" an, trage die Daten ein und formatiere den Bereich als Tabelle.
+  2. **Copilot in Excel.** Lass Copilot eine Spalte Anmelderate und den relativen Unterschied
+     ergänzen (Formelvorschlag prüfen, dann einfügen). Lass anschließend einen Chi-Quadrat-Test
+     rechnen – über die erweiterte Analyse mit **Python in Excel** oder den Agent **Analyst**
+     (falls in eurer Umgebung freigegeben) – und fordere eine Erklärung in vier Sätzen für das
+     Team.
+  3. **Selbst prüfen.** Rechne die Anmelderaten selbst nach (Anmeldungen geteilt durch Besuche)
+     und sieh dir den Python-Code bzw. die Formeln an. Stimmen die Ausgangszahlen?
+  4. **Stichprobe.** Frage Copilot (Analyst oder Python), wie viele Besuche pro Variante nötig
+     gewesen wären, um einen Unterschied von 7,0 % zu 8,4 % sicher zu erkennen (5 % Signifikanz,
+     80 % Teststärke).
+  5. **Testlog.** Lege in derselben Mappe ein Blatt „Testlog" mit den Feldern aus Abschnitt 16.6
+     an und trage das Ergebnis ein. Die Mappe brauchst du im Workshop und in Kap. 20 wieder.
+
+  Alternativ: Datenanalyse in ChatGPT, Claude oder Gemini.
 tip: |
-  Achte darauf, ob die KI den Unterschied als „Beweis" bezeichnet oder Ursachen behauptet
+  Achte darauf, ob Copilot den Unterschied als „Beweis" bezeichnet oder Ursachen behauptet
   („weil Nutzer konkrete Vorteile bevorzugen"). Signifikanz sagt nur, dass der Unterschied
-  wahrscheinlich nicht zufällig ist – nicht, warum er entsteht.
+  wahrscheinlich nicht zufällig ist – nicht, warum er entsteht. Auch mit Enterprise Data
+  Protection gilt: nur aggregierte Zahlen, keine Empfängerlisten (Kap. 4).
 solution: |
+  Beispiel-Prompt in Copilot in Excel:
+
+  ```text
+  Führe für die Tabelle einen Chi-Quadrat-Test durch: Unterscheiden sich
+  die Anmelderaten von A und B bei 5 % Signifikanzniveau? Nutze Python.
+  Gib Anmelderate je Variante, relativen Unterschied und p-Wert aus und
+  erkläre das Ergebnis in 4 Sätzen für das Marketingteam. Nenne, was
+  der Test NICHT zeigt.
+  ```
+
   Erwartbare Werte:
 
   | Kennzahl | Wert |
@@ -35,8 +55,9 @@ solution: |
   | nötige Besuche für 7,0 % → 8,4 % | ca. 5.700 pro Variante |
 
   Je nach Einstellung (z. B. Yates-Korrektur) weicht der p-Wert leicht ab; das ist kein Fehler.
-  Bemerkenswert ist Punkt 3: Der Test war für diesen Effekt eigentlich zu klein geplant. Dass er
-  trotzdem signifikant wurde, liegt daran, dass der beobachtete Unterschied etwas größer war. Eine
+  Prüfe im Python-Code, ob 3200/224 und 3180/270 korrekt übernommen wurden. Bemerkenswert ist
+  Punkt 4: Der Test war für diesen Effekt eigentlich zu klein geplant. Dass er trotzdem
+  signifikant wurde, liegt daran, dass der beobachtete Unterschied etwas größer war. Eine
   Wiederholung oder Weiterführung stärkt das Ergebnis.
 
   Testlog-Eintrag (Kurzform): Hypothese „Nutzen im Button erhöht Anmelderate"; Ergebnis A 7,0 %,

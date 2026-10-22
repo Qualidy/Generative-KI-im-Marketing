@@ -5,14 +5,19 @@ question: |
   hat kein Budget für einen Dreh, aber gute Produktfotos aus dem Studio und einem
   Outdoor-Shooting. Du sollst ein **15-Sekunden-Reel** für Instagram und TikTok sowie eine
   ruhigere Variante für LinkedIn (Fjordlicht Business) planen und – soweit Zugang besteht –
-  umsetzen. Du kannst alternativ ein Produkt aus einem Unternehmen deiner Wahl verwenden.
+  umsetzen. Planung, Prompts, Protokoll und Abstimmung laufen in Microsoft 365 Copilot; das
+  Videowerkzeug brauchst du nur für den eigentlichen Generierungsschritt. Du kannst statt
+  Fjordlicht auch ein Unternehmen deiner Wahl nutzen.
 
   ```text
   Rahmen:
   Kanäle: Instagram/TikTok (9:16, 15 s), LinkedIn (1:1 oder 4:5, 15-20 s)
-  Material: 3 freigegebene Produktfotos, Markenschrift, Logo
-  Werkzeuge: ChatGPT (oder Alternative), ein Videowerkzeug mit Testkontingent,
-  ein Schnittwerkzeug (CapCut, Premiere, Descript o. Ä.)
+  Material: 3 freigegebene Produktfotos, Markenschrift, Logo,
+  /Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11)
+  Planung: Copilot in Word, PowerPoint, Excel; Abstimmung in Teams/Outlook
+  Generierung: ein Videowerkzeug mit Testkontingent (Veo, Runway, Kling,
+  Luma, Firefly Video) oder die Create-Funktion, falls freigegeben
+  Schnitt: Clipchamp oder CapCut, Premiere, Descript o. Ä.
   Markenstimme: ruhig, ehrlich, leicht nordisch-trocken, keine Superlative
   Nachhaltigkeit: nur Aussagen aus der Claim-Liste, sonst keine
   Budget: maximal 30 Generierungen
@@ -20,58 +25,96 @@ question: |
 
   ---
 
-  **Runde 1 – Storyboard.** Erstelle mit ChatGPT ein Storyboard für die 9:16-Fassung
-  (4–5 Einstellungen, Spalten wie in Abschnitt 35.5). Lege für jede Einstellung fest, ob sie
-  per Text-zu-Video, Bild-zu-Video oder als Standbild mit Bewegung im Schnitt entsteht, und
-  begründe das.
+  **Runde 1 – Storyboard in Word und PowerPoint.** Lass Copilot in Word im Dokument
+  „Storyboard-Skog" (Ordner „Fjordlicht-Kurs") ein Storyboard für die 9:16-Fassung entwerfen
+  (4–5 Einstellungen, Spalten wie in Abschnitt 35.5, Basisdaten per `/Fjordlicht-Basisdaten`).
+  Lege für jede Einstellung fest, ob sie per Text-zu-Video, Bild-zu-Video oder als Standbild mit
+  Bewegung im Schnitt entsteht, und begründe das. Lass anschließend Copilot in PowerPoint aus
+  dem Word-Dokument eine Präsentation erstellen – eine Folie pro Einstellung – und füge auf den
+  Produktfolien das jeweilige echte Produktfoto ein. Leite daraus die LinkedIn-Fassung ab.
 
-  **Runde 2 – Prompts und Generierung.** Schreibe für jede KI-Einstellung einen vollständigen
-  Videoprompt. Generiere, wähle aus und führe ein Protokoll: Einstellung, Versuch,
-  Prompt-Änderung, Ergebnis, verworfen weil … Halte das Budget von 30 Generierungen ein.
-  Ohne Zugang zu einem Videowerkzeug schreibst du die Prompts und lässt sie von der KI gegen
-  die Bausteine aus Abschnitt 35.3 prüfen.
+  **Runde 2 – Prompts und Protokoll in Excel.** Schreibe für jede KI-Einstellung einen
+  vollständigen Videoprompt (im Word-Dokument, mit Copilot als Entwurfshilfe). Generiere im
+  Videowerkzeug, wähle aus und führe das Protokoll in einer Excel-Tabelle „Generierungsprotokoll-
+  Skog" mit den Spalten Einstellung, Versuch, Prompt-Änderung, Ergebnis, verworfen weil …
+  Lass Copilot in Excel eine Spalte bzw. Formel für das verbleibende Budget vorschlagen und alle
+  Versuche hervorheben, bei denen das Produkt verändert wurde. Halte das Budget von 30
+  Generierungen ein. Ohne Zugang zu einem Videowerkzeug lässt du die Prompts von Copilot gegen
+  die sieben Bausteine aus Abschnitt 35.3 prüfen und füllst das Protokoll mit der Prüfung.
 
   **Runde 3 – Die Komplikation.** Bei der Einzelbildprüfung fällt auf: In der besten
   Einstellung verändert sich der Reißverschluss des Fleece für etwa eine halbe Sekunde, und
   die Farbe kippt ins Graue – also genau die neue Farbe, um die es geht. Neu generieren kostet
-  Budget, das fast aufgebraucht ist. Entscheide, wie du vorgehst (kürzen, ersetzen,
-  Standbild, neu generieren mit anderem Prompt), und begründe.
+  Budget, das fast aufgebraucht ist. Lade ein Standbild der fehlerhaften Stelle und das
+  Produktfoto in Copilot Chat hoch und lass die Unterschiede beschreiben – prüfe aber selbst,
+  ob Copilot alles findet. Entscheide, wie du vorgehst (kürzen, ersetzen, Standbild, neu
+  generieren mit anderem Prompt), und begründe.
 
-  **Runde 4 – Entscheidung unter Abwägung.** Die Teamleitung möchte am Ende eine
-  KI-generierte Person einbauen, die realistisch wirkt und sagt: „Ich trage ihn jeden Tag."
-  Außerdem soll das Reel ohne KI-Hinweis laufen, „weil das die Reichweite drückt".
-  **Widersprich** begründet, wo es nötig ist, und mache einen Vorschlag, der das Ziel der
-  Teamleitung trotzdem ernst nimmt.
+  **Runde 4 – Entscheidung unter Abwägung.** Die Teamleitung schreibt dir in Teams: Am Ende
+  soll eine KI-generierte Person auftauchen, die realistisch wirkt und sagt: „Ich trage ihn jeden
+  Tag." Außerdem soll das Reel ohne KI-Hinweis laufen, „weil das die Reichweite drückt".
+  Lass dir von Copilot (Modus **Web**) die aktuellen Labelregeln von Meta, TikTok und LinkedIn
+  mit Quellen zusammenfassen. **Widersprich** begründet, wo es nötig ist, und mache einen
+  Vorschlag, der das Ziel der Teamleitung trotzdem ernst nimmt. Formuliere die Antwort mit
+  Copilot als Entwurf und überarbeite sie selbst, bevor du sie sendest.
 
   **Deliverable:**
 
-  1. Storyboard für 9:16 und eine angepasste Fassung für LinkedIn
-  2. Videoprompts je KI-Einstellung und das Generierungsprotokoll
+  1. Word-Storyboard für 9:16 und eine angepasste Fassung für LinkedIn, dazu die
+     PowerPoint-Storyboard-Präsentation
+  2. Videoprompts je KI-Einstellung und das Excel-Generierungsprotokoll mit Budgetstand
   3. Entscheidung aus Runde 3 mit Begründung
-  4. Stellungnahme zu Runde 4 inklusive Kennzeichnungsentscheidung je Kanal
-  5. (falls umgesetzt) das geschnittene Reel mit Untertiteln
+  4. Stellungnahme an die Teamleitung zu Runde 4 inklusive Kennzeichnungsentscheidung je Kanal
+  5. (falls umgesetzt) das geschnittene Reel mit Untertiteln, z. B. in Clipchamp mit
+     automatischen Untertiteln, die du korrigiert hast
 
   **Fertig bist du erst, wenn** jede Einstellung genau eine Handlung hat, die
-  Produktdarstellung der Wirklichkeit entspricht, das Budget eingehalten ist und deine
-  Kennzeichnungsentscheidung Plattformregeln und Art. 50 AI Act ausdrücklich berücksichtigt.
+  Produktdarstellung der Wirklichkeit entspricht, das Budget im Excel-Protokoll nachweisbar
+  eingehalten ist und deine Kennzeichnungsentscheidung Plattformregeln und Art. 50 AI Act
+  ausdrücklich berücksichtigt.
 tip: |
   Der Lernkern liegt in Runde 3 und 4: Ein Clip, der fast perfekt ist, aber das Produkt falsch
   zeigt, ist unbrauchbar – gerade wenn die Farbe das Thema ist. Und eine erfundene Person mit
   erfundener Erfahrung ist kein Gestaltungsmittel, sondern ein Testimonial, das es nicht gibt.
-  KI-Video spart Drehzeit, nicht die Verantwortung für das, was es zeigt.
+  Copilot entlastet bei Planung, Protokoll und Formulierung; die Einzelbildprüfung und die
+  Entscheidung über Kennzeichnung bleiben bei dir. KI-Video spart Drehzeit, nicht die
+  Verantwortung für das, was es zeigt.
 solution: |
+  Beispiel-Prompt für Copilot in PowerPoint (Präsentation aus dem Word-Storyboard):
+
+  ```text
+  Erstelle aus /Storyboard-Skog eine Präsentation mit einer Folie pro
+  Einstellung. Je Folie: Nummer und Dauer als Titel, Bildinhalt und Handlung
+  als ein Satz, Kamerabewegung, Arbeitsweise (Text-zu-Video, Bild-zu-Video
+  oder Standbild) und Texteinblendung. Keine zusätzlichen Inhalte erfinden.
+  ```
+
+  Beispiel-Prompt für Copilot in Excel:
+
+  ```text
+  Füge eine Spalte "Budget übrig" hinzu, die ausgehend von 30 Generierungen
+  nach jedem Versuch den Rest berechnet. Hebe alle Zeilen hervor, in denen in
+  der Spalte "verworfen weil" das Wort "Produkt", "Farbe" oder
+  "Reißverschluss" vorkommt.
+  ```
+
   Bewertungskriterien: (1) Das Storyboard hat einen Hook in den ersten zwei Sekunden, je
   Einstellung eine Handlung und eine begründete Wahl der Arbeitsweise; Produktdetails kommen aus
-  Bild-zu-Video oder Standbild, nicht aus Text-zu-Video. (2) Die Prompts enthalten Szene,
-  Handlung, Kamera, Licht/Stil, Ton, Format und Ausschlüsse; das Protokoll zeigt gezielte
-  Änderungen statt Zufallsversuchen. (3) In Runde 3 wird die fehlerhafte Passage nicht
-  veröffentlicht; gute Lösungen kürzen den Clip vor der Verformung, ersetzen die Einstellung
-  durch das echte Produktfoto mit Bewegung im Schnitt oder nutzen das Restbudget mit einem
-  Prompt, der Produkt und Farbe ausdrücklich fixiert. (4) Runde 4 lehnt die erfundene
-  Kundenaussage ab (Täuschung, UWG-Risiko, Markenstimme), bietet eine Alternative an (echte
-  Mitarbeitende oder Kundin mit Einwilligung, oder Produkt ohne Person mit ehrlichem Text) und
-  entscheidet die Kennzeichnung nach Plattformregeln für realistische KI-Inhalte; bei realistisch
-  wirkenden Personen wird zusätzlich Art. 50 Abs. 4 AI Act geprüft.
+  Bild-zu-Video oder Standbild, nicht aus Text-zu-Video. Die PowerPoint-Fassung zeigt auf den
+  Produktfolien echte Fotos, keine generierten Produktbilder. (2) Die Prompts enthalten Szene,
+  Handlung, Kamera, Licht/Stil, Ton, Format und Ausschlüsse; das Excel-Protokoll zeigt gezielte
+  Änderungen statt Zufallsversuchen und einen nachvollziehbaren Budgetstand. (3) In Runde 3 wird
+  die fehlerhafte Passage nicht veröffentlicht; gute Lösungen kürzen den Clip vor der
+  Verformung, ersetzen die Einstellung durch das echte Produktfoto mit Bewegung im Schnitt oder
+  nutzen das Restbudget mit einem Prompt, der Produkt und Farbe ausdrücklich fixiert. Gute
+  Bearbeitungen halten fest, ob Copilots Bildbeschreibung den Farbstich erkannt hat – und
+  verlassen sich nicht darauf. (4) Runde 4 lehnt die erfundene Kundenaussage ab (Täuschung,
+  UWG-Risiko, Markenstimme), bietet eine Alternative an (echte Mitarbeitende oder Kundin mit
+  Einwilligung, oder Produkt ohne Person mit ehrlichem Text) und entscheidet die Kennzeichnung
+  nach Plattformregeln für realistische KI-Inhalte mit Quellenangabe; bei realistisch wirkenden
+  Personen wird zusätzlich Art. 50 Abs. 4 AI Act geprüft. Die Antwort an die Teamleitung ist
+  sachlich und nimmt die Reichweitensorge ernst (z. B. stärkerer Hook statt Täuschung).
 
-  Lernziel: KI-Video als Werkzeug für einzelne Einstellungen einsetzen, den Produktions- und
-  Prüfaufwand realistisch planen und Täuschung auch unter Reichweitendruck vermeiden.
+  Lernziel: KI-Video als Werkzeug für einzelne Einstellungen einsetzen, Planung und Protokoll mit
+  Copilot in den Office-Apps organisieren, den Produktions- und Prüfaufwand realistisch planen
+  und Täuschung auch unter Reichweitendruck vermeiden.

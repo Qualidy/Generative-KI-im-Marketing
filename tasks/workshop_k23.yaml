@@ -4,70 +4,96 @@ question: |
   **Szenario:** Das Marketingteam von Fjordlicht (oder ein Unternehmen deiner Wahl) nutzt
   KI-Werkzeuge seit einem Jahr – aber jede Person auf ihre Weise. Die Teamleitung will nun
   „ein paar KI-Assistenten" einführen und bittet dich um eine Entscheidungsgrundlage: Welche
-  Aufgaben bekommen einen Assistenten, welche bleiben bei Prompt-Vorlagen, welche laufen in
-  Projekten? Und in welchem Werkzeug?
+  Aufgaben bekommen einen Agent, welche bleiben bei Prompt-Vorlagen, welche laufen in Notebooks
+  bzw. Projekten? Und in welchem Werkzeug? Du arbeitest durchgehend in Microsoft 365 Copilot.
 
   ```text
   Rahmen:
   Team: 5 Personen (Content, Social Media, Newsletter, B2B/LinkedIn, Teamleitung).
   Kanäle: Webshop, Blog, Newsletter, Instagram, TikTok, LinkedIn, Pinterest.
-  Werkzeuge: ChatGPT Business für alle; Microsoft 365 mit Copilot im Unternehmen.
+  Werkzeuge: Microsoft 365 Copilot (volle Lizenz) für alle, Agent Builder
+  freigegeben; zusätzlich ChatGPT Business mit einem bestehenden Custom GPT.
   Stand: Oktober 2026 - Custom GPTs werden durch Plugins abgelöst.
+  Ablage: OneDrive-Ordner "Fjordlicht-Kurs".
   Keine Kundendaten in Assistenten.
   ```
 
   ---
 
-  **Runde 1 – Aufgaben sammeln.** Liste mindestens **zehn** wiederkehrende Aufgaben des Teams
-  auf. Bewerte jede nach den fünf Kriterien aus Abschnitt 23.5 (Häufigkeit, Gleichartigkeit,
-  Nutzerkreis, Wissen, Qualitätsrisiko) mit je 0 bis 2 Punkten. Lass dir dabei von der KI helfen,
-  Aufgaben zu finden – aber bewerte selbst.
+  **Runde 1 – Aufgaben sammeln (Copilot in Excel).** Lass dir in Copilot Chat helfen, mindestens
+  **zehn** wiederkehrende Aufgaben des Teams zu finden – aber bewerte selbst. Lege die Aufgaben in
+  einer Excel-Datei **„Assistenten-Landkarte.xlsx"** im Ordner „Fjordlicht-Kurs" als Tabelle an,
+  mit je einer Spalte für die fünf Kriterien aus Abschnitt 23.5 (0 bis 2 Punkte). Lass **Copilot in
+  Excel** eine Summenspalte ergänzen und alle Aufgaben mit sechs oder mehr Punkten hervorheben.
 
-  **Runde 2 – Zuordnen.** Ordne jede Aufgabe einer Lösung zu: Prompt-Vorlage, Projekt oder
-  Assistent. Für jeden geplanten Assistenten (mindestens zwei, höchstens vier) skizzierst du die
-  vier Bausteine in Stichpunkten: Instruktionen, Wissen, Werkzeuge, Gesprächseinstieg.
+  **Runde 2 – Zuordnen und skizzieren (Copilot in Word).** Ordne jede Aufgabe einer Lösung zu:
+  Prompt-Vorlage (Prompt Gallery), Projekt (Copilot Notebook) oder Assistent (Agent). Für jeden
+  geplanten Agent (mindestens zwei, höchstens vier) legst du in Word einen
+  **Assistenten-Steckbrief** an, z. B. „Assistenten-Steckbrief_Produkttexte.docx", mit den vier
+  Bausteinen in Stichpunkten: Instruktionen, Wissen, Werkzeuge, Gesprächseinstieg. Den ersten
+  Entwurf darf Copilot in Word aus deiner Excel-Datei erstellen (Datei per `/` referenzieren);
+  Bausteine und Begründung prüfst du selbst.
 
-  **Runde 3 – Die Komplikation.** Die IT meldet: Für ChatGPT besteht zwar ein Business-Vertrag,
-  aber wegen der Plugin-Umstellung sollen bis Jahresende keine neuen Custom GPTs mehr gebaut werden.
-  Gleichzeitig weist die Datenschutzbeauftragte darauf hin, dass Produktdaten unkritisch sind,
-  B2B-Ansprechpartner aus LinkedIn-Recherchen aber personenbezogen. Passe deine Planung an:
-  Welche Assistenten baust du in welchem Format? Was ändert sich an den Wissensdateien?
+  **Runde 3 – Die Komplikation.** Die IT meldet: Wegen der Plugin-Umstellung sollen bis Jahresende
+  keine neuen Custom GPTs mehr gebaut werden; neue Assistenten entstehen als Copilot Agents.
+  Gleichzeitig weist die Datenschutzbeauftragte darauf hin: Produktdaten sind unkritisch, die
+  Excel-Liste mit B2B-Ansprechpartnern aus LinkedIn-Recherchen ist personenbezogen – und sie liegt
+  im selben SharePoint-Ordner wie der Styleguide, den du als Wissensquelle nutzen willst. Passe
+  deine Planung an: Welche Agents baust du, welche Wissensquellen verweisen auf welche Dateien,
+  und was passiert mit dem bestehenden Custom GPT?
 
-  **Runde 4 – Entscheidung unter Abwägung.** Die Teamleitung schlägt vor, statt mehrerer
-  Assistenten einen einzigen „Fjordlicht-Marketing-Assistenten für alles" zu bauen – das sei
-  übersichtlicher. Lass dir von der KI die Vorteile dieser Lösung zusammenstellen. **Widersprich**
-  begründet oder stimme begründet zu – mit mindestens drei konkreten Folgen für Instruktionen,
-  Wissensbasis und Testaufwand.
+  **Runde 4 – Entscheidung unter Abwägung.** Die Teamleitung schlägt vor, statt mehrerer Agents
+  einen einzigen „Fjordlicht-Marketing-Agent für alles" zu bauen – das sei übersichtlicher. Lass
+  dir von Copilot die Vorteile dieser Lösung zusammenstellen. **Widersprich** begründet oder stimme
+  begründet zu – mit mindestens drei konkreten Folgen für Instruktionen, Wissensbasis und
+  Testaufwand. Formuliere deine Stellungnahme als E-Mail an die Teamleitung mit **Copilot in
+  Outlook** und überarbeite den Entwurf selbst, bevor du ihn als fertig betrachtest.
 
   **Deliverable:**
 
-  1. Bewertungstabelle der mindestens zehn Aufgaben mit Punkten und Zuordnung
-  2. Bausteinskizze für jeden geplanten Assistenten
-  3. angepasste Planung nach Runde 3 mit Werkzeugwahl und Datenschutzhinweis
-  4. Stellungnahme zu Runde 4 (maximal eine halbe Seite)
+  1. „Assistenten-Landkarte.xlsx" mit mindestens zehn Aufgaben, Punkten, Summe und Zuordnung
+  2. ein Word-Steckbrief je geplantem Agent mit allen vier Bausteinen
+  3. angepasste Planung nach Runde 3 mit Werkzeugwahl, Wissensquellen und Datenschutzhinweis
+  4. Stellungnahme zu Runde 4 als E-Mail-Entwurf (maximal eine halbe Seite)
 
-  **Fertig bist du erst, wenn** jede Aufgabe eine begründete Zuordnung hat, jeder Assistent alle
+  **Fertig bist du erst, wenn** jede Aufgabe eine begründete Zuordnung hat, jeder Steckbrief alle
   vier Bausteine enthält, deine Werkzeugwahl die Plugin-Umstellung und den Datenschutz
-  berücksichtigt und deine Stellungnahme aus Runde 4 mindestens drei konkrete Folgen benennt.
+  berücksichtigt, keine Wissensquelle auf einen Ordner mit personenbezogenen Daten zeigt und deine
+  Stellungnahme aus Runde 4 mindestens drei konkrete Folgen benennt.
 tip: |
   Der Lernkern liegt in der Unterscheidung „sammeln oder standardisieren". In Runde 3 lernst du,
-  dass Konzepte werkzeugunabhängig sind: Ein Assistent, der nicht als GPT gebaut werden darf, kann
-  als Projekt, Plugin oder Copilot Agent entstehen – die vier Bausteine bleiben. In Runde 4 gilt:
-  Breite kostet Präzision. Jede zusätzliche Aufgabe verlängert die Instruktionen und vergrößert
-  die Wissensbasis, aus der der Assistent die richtige Stelle finden muss.
+  dass Konzepte werkzeugunabhängig sind: Ein Assistent, der nicht als GPT gebaut werden darf,
+  entsteht als Copilot Agent – die vier Bausteine bleiben, deshalb ist der Steckbrief in Word das
+  Original. Neu ist eine Microsoft-365-Eigenheit: Ein Agent darf nur auf Inhalte zugreifen, auf die
+  die jeweilige Person Zugriff hat – wer einen ganzen Ordner als Wissen angibt, holt alles hinein,
+  was darin liegt. Verweise deshalb auf einzelne Dateien oder einen eigenen, aufgeräumten Ordner.
+  In Runde 4 gilt: Breite kostet Präzision.
 solution: |
   Bewertungskriterien: (1) mindestens zehn realistische Aufgaben, nachvollziehbar nach den fünf
-  Kriterien bewertet; (2) zwei bis vier Assistenten mit vollständiger Bausteinskizze, Werkzeuge
-  bewusst begrenzt; (3) Runde 3 führt zu einer begründeten Werkzeugwahl (z. B. ChatGPT-Projekt
-  oder Plugin, alternativ Copilot Agent im Microsoft-365-Umfeld) und entfernt personenbezogene
-  Daten aus der geplanten Wissensbasis; (4) die Stellungnahme benennt konkrete Folgen, etwa
-  widersprüchliche Tonregeln für LinkedIn und TikTok, falsche Wissensdatei bei der Antwort,
-  vervielfachter Testaufwand bei jeder Änderung.
+  Kriterien bewertet, Summenspalte und Hervorhebung in Excel korrekt; (2) zwei bis vier Agents mit
+  vollständigem Word-Steckbrief, Werkzeuge bewusst begrenzt (z. B. Websuche aus beim
+  Produkttext-Agent); (3) Runde 3 führt zu einer begründeten Werkzeugwahl (Copilot Agents für neue
+  Assistenten, bestehender Custom GPT wird mit Steckbrief dokumentiert und entweder migriert oder
+  als Agent neu gebaut) und trennt die Wissensquellen sauber: eigener Ordner, z. B.
+  „Fjordlicht-Kurs/Wissen-Produkttexte", ohne die Ansprechpartner-Liste; (4) die Stellungnahme
+  benennt konkrete Folgen, etwa widersprüchliche Tonregeln für LinkedIn und TikTok, falsche
+  Wissensdatei bei der Antwort, vervielfachter Testaufwand bei jeder Änderung.
 
-  Ein mögliches Ergebnis: Assistent „Produkttexte", Assistent „Social-Captions", Assistent
-  „Newsletter-Entwürfe"; Kampagnenplanung als Projekt; Pressearbeit über Prompt-Vorlagen. Ein
-  einziger Assistent für alles wird abgelehnt, mit dem Kompromiss eines gemeinsamen Styleguides
-  als Wissensdatei in allen Assistenten.
+  Ein möglicher Prompt für Runde 1:
+
+  ```text
+  Du kennst das Marketingteam von Fjordlicht aus /Fjordlicht-Basisdaten
+  (falls nicht vorhanden: 5 Personen, Kanäle Blog, Newsletter, Instagram,
+  TikTok, LinkedIn, Pinterest, Webshop). Nenne 15 wiederkehrende Aufgaben,
+  die in so einem Team typischerweise anfallen, je mit einem Satz zur
+  Häufigkeit. Bewerte NICHT, ob ein Assistent sinnvoll ist.
+  ```
+
+  Ein mögliches Ergebnis: Agent „Produkttexte", Agent „Social-Captions", Agent
+  „Newsletter-Entwürfe"; Kampagnenplanung als Copilot Notebook; Pressearbeit über Prompt-Vorlagen
+  in der Prompt Gallery. Ein einziger Agent für alles wird abgelehnt, mit dem Kompromiss einer
+  gemeinsamen Styleguide-Datei, auf die alle Agents verweisen.
 
   Lernziel: Assistenten-Bedarf systematisch begründen, Werkzeuge nach Rahmenbedingungen statt nach
-  Gewohnheit wählen und erkennen, dass schmale Assistenten verlässlicher sind als breite.
+  Gewohnheit wählen, Wissensquellen datenschutzgerecht zuschneiden und erkennen, dass schmale
+  Assistenten verlässlicher sind als breite.

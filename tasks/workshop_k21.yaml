@@ -3,47 +3,57 @@ difficulty: 4
 question: |
   **Szenario:** Fjordlicht will im Blog „Draußen-Notizen" ein neues Themencluster für die
   Herbst- und Wintersaison aufbauen. Die Marketingleitung erwartet einen Plan mit Pillar Page,
-  Detailartikeln und einem fertigen SEO-Briefing für den ersten Artikel. Du kannst alternativ
-  ein Unternehmen deiner Wahl nehmen.
+  Detailartikeln und einem fertigen SEO-Briefing für den ersten Artikel. Du kannst statt
+  Fjordlicht auch ein Unternehmen deiner Wahl nutzen.
 
   ```text
   Rahmen:
   Thema: Draußen unterwegs bei Kälte und Nässe (Fleece Skog, Regenjacke Sølv).
   Zielgruppen: naturverbundene Stadtmenschen 25 bis 45, Familien.
-  Werkzeuge: ChatGPT oder vergleichbar, Websuche erlaubt; für Zahlen
-  Google Keyword Planner, Google Trends oder ein vorhandenes SEO-Tool.
+  Werkzeuge: Microsoft 365 Copilot (Chat mit Arbeit/Web, Excel, Word,
+  Agent Researcher falls freigegeben); für Zahlen Google Keyword Planner,
+  Google Trends oder ein vorhandenes SEO-Tool.
   Ohne Tool-Zugang: Zahlenfelder mit [Tool-Wert] kennzeichnen.
-  Markenstimme: ruhig, ehrlich, keine Superlative, kein Greenwashing.
+  Markenstimme und belegte Fakten: /Fjordlicht-Basisdaten
+  (falls nicht vorhanden: Kap. 11). Ablage: OneDrive "Fjordlicht-Kurs".
   ```
 
   ---
 
-  **Runde 1 – Ideen und Cluster.** Erstelle mit einem P.R.O.M.P.T.-Prompt (Kap. 5) eine
-  Keyword-Sammlung mit mindestens 50 Begriffen, geordnet in Cluster mit Intention und
-  Seitentyp. Ergänze mindestens zehn Begriffe aus „echten" Fragen – etwa aus den Fragen unter
-  „Ähnliche Fragen" in der Google-Suche oder aus selbst ausgedachten Kundenservice-Mails.
+  **Runde 1 – Ideen und Cluster.** Erstelle in Copilot Chat mit einem P.R.O.M.P.T.-Prompt
+  (Kap. 5) eine Keyword-Sammlung mit mindestens 50 Begriffen, geordnet in Cluster mit Intention
+  und Seitentyp. Ergänze mindestens zehn Begriffe aus „echten" Fragen – etwa aus den „Ähnlichen
+  Fragen" in der Google-Suche, aus deinem Listening-Test (Kap. 19) oder aus selbst ausgedachten
+  Kundenservice-Mails. Übernimm alles in „Keywords-Herbst.xlsx".
 
-  **Runde 2 – Zahlen und Auswahl.** Ergänze für die 15 vielversprechendsten Begriffe Werte aus
-  einem Tool (oder Platzhalter) und lege fest: eine Pillar Page und vier Detailartikel. Begründe
-  die Auswahl mit Intention, Saison und Fjordlichts Alleinstellung.
+  **Runde 2 – Zahlen und Auswahl.** Ergänze in Excel für die 15 vielversprechendsten Begriffe
+  Werte aus einem Tool (oder Platzhalter) mit Quellenspalte. Lass **Copilot in Excel** die Begriffe
+  nach Volumen und Saison sortieren und je Cluster zusammenfassen. Lege dann fest: eine Pillar
+  Page und vier Detailartikel. Begründe die Auswahl mit Intention, Saison und Fjordlichts
+  Alleinstellung.
 
   **Runde 3 – Die Komplikation.** Die SERP-Analyse für deinen ersten Detailartikel zeigt: Die
   vorderen Plätze belegen große Outdoor-Händler mit umfangreichen Ratgebern, und Google zeigt
-  eine AI Overview, die die Kernfrage bereits beantwortet. Analysiere mit der KI die Gliederungen
-  der Top-Ergebnisse, finde die Lücke und passe Thema oder Zuschnitt des Artikels so an, dass
-  Fjordlicht etwas Eigenes bieten kann.
+  eine AI Overview, die die Kernfrage bereits beantwortet. Lass den Agenten **Researcher**
+  (alternativ Copilot Chat mit **Web**) die führenden Ratgeber zum Thema zusammenfassen – mit
+  Quellen – und füge zusätzlich die Zwischenüberschriften der Google-Top-5 selbst ein. Finde mit
+  Copilot die Lücke und passe Thema oder Zuschnitt des Artikels so an, dass Fjordlicht etwas
+  Eigenes bieten kann. Öffne die zwei, drei wichtigsten Quellen selbst (Kap. 9).
 
-  **Runde 4 – Entscheidung unter Abwägung.** Lass die KI das SEO-Briefing für den angepassten
-  Artikel entwerfen. Sie wird wahrscheinlich viele Nebenkeywords, eine lange Gliederung und
-  eine hohe Wortzahl vorschlagen. **Widersprich** überall dort, wo das Briefing auf
-  Keyword-Abdeckung statt auf Nutzen für die Leserin zielt, und entscheide, was drinbleibt.
+  **Runde 4 – Entscheidung unter Abwägung.** Lass **Copilot in Word** das SEO-Briefing für den
+  angepassten Artikel entwerfen, mit Verweis auf `/Keywords-Herbst` und `/Fjordlicht-Basisdaten`.
+  Copilot wird wahrscheinlich viele Nebenkeywords, eine lange Gliederung und eine hohe Wortzahl
+  vorschlagen. **Widersprich** überall dort, wo das Briefing auf Keyword-Abdeckung statt auf
+  Nutzen für die Leserin zielt, und entscheide, was drinbleibt. Speichere die Briefing-Felder als
+  Prompt in der **Prompt Gallery** (Kap. 10).
 
   **Deliverable:**
 
-  1. Keyword-Tabelle mit Clustern, Intention, Seitentyp und markierter Herkunft der Zahlen
+  1. „Keywords-Herbst.xlsx" mit Clustern, Intention, Seitentyp und Quellenspalte für alle Zahlen
   2. Cluster-Plan: Pillar Page plus vier Detailartikel mit Begründung
-  3. SERP-Analyse des ersten Artikels mit identifizierter Lücke
-  4. finales SEO-Briefing mit allen Feldern aus Abschnitt 21.6 und Liste deiner Streichungen
+  3. SERP-Analyse des ersten Artikels mit identifizierter Lücke und geprüften Quellen
+  4. finales SEO-Briefing in Word mit allen Feldern aus Abschnitt 21.6 und Liste deiner
+     Streichungen; Briefing-Prompt in der Prompt Gallery
 
   **Fertig bist du erst, wenn** keine Zahl ohne Quellenangabe in deinen Unterlagen steht, jede
   Seite genau eine Hauptintention hat, das Briefing ein Alleinstellungsmerkmal enthält, das nur
@@ -53,17 +63,31 @@ tip: |
   Runde 3 ist die realistische Lage 2026: Einfache Wissensfragen beantwortet die Suche oft
   selbst. Wer dort mitspielen will, braucht Erfahrung, eigene Daten oder einen spitzeren
   Zuschnitt – nicht mehr Wörter. Das gute Briefing ist deshalb oft kürzer als der erste
-  KI-Entwurf.
+  KI-Entwurf. Denk daran: Researcher und Copilot-Websuche arbeiten mit Bing-Ergebnissen, nicht
+  mit Googles Ergebnisseite – deshalb ergänzt du die Google-Gliederungen selbst.
 solution: |
+  Beispiel-Prompt für Runde 3 (Researcher):
+
+  ```text
+  Recherchiere die führenden deutschsprachigen Ratgeber zum Thema
+  "Fleece bei Nässe richtig schichten". Fasse je Quelle die Unterthemen
+  zusammen und nenne die URL. Liste danach: 1. Unterthemen, die in mindestens
+  drei Quellen vorkommen, 2. Fragen, die keine Quelle beantwortet,
+  3. wo eine Marke mit Reparaturwerkstatt und eigenen Materialtests etwas
+  Eigenes beitragen könnte. Ergänze die Gliederungen unten (Google-Top-5).
+  [Gliederungen einfügen]
+  ```
+
   Bewertungskriterien: (1) Keyword-Tabelle mit sinnvollen Clustern, korrekter Intention und
   sauber gekennzeichneter Herkunft aller Zahlen, ergänzt um echte Fragen; (2) Cluster-Plan, in
   dem Pillar Page und Detailartikel inhaltlich zusammenhängen und intern verlinkt werden
   können, begründet mit Saison (Google Trends) und Alleinstellung; (3) SERP-Analyse, die eine
   konkrete Lücke benennt, etwa „Fleece richtig schichten bei Nässe – Erfahrungen aus Tests in
-  Nordeuropa" statt eines allgemeinen „Was ist Fleece"; (4) Briefing mit allen Feldern,
-  begründeten Streichungen überflüssiger Nebenkeywords und Umfangsvorgaben sowie einer
-  Markenstimme ohne Superlative.
+  Nordeuropa" statt eines allgemeinen „Was ist Fleece", mit selbst geöffneten Quellen; (4)
+  Briefing mit allen Feldern, begründeten Streichungen überflüssiger Nebenkeywords und
+  Umfangsvorgaben sowie einer Markenstimme ohne Superlative; keine Zahl, die Copilot ohne Quelle
+  ergänzt hat.
 
-  Lernziel: KI für Ideen und Struktur, Tools für Zahlen und eigene Erfahrung für die
+  Lernziel: Copilot für Ideen und Struktur, Tools für Zahlen und eigene Erfahrung für die
   Alleinstellung kombinieren – und ein Briefing erstellen, das auf Nutzen statt auf
   Keyword-Dichte zielt.

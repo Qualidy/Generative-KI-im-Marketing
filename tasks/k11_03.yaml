@@ -1,40 +1,54 @@
-title: Werkzeugvergleich für das Team
+title: Page oder Word? Ein Werkzeugvergleich für das Team
 difficulty: 3
 question: |
-  Das Fjordlicht-Marketingteam (fünf Personen) schreibt bisher alle längeren Texte im normalen
-  ChatGPT-Chat. Nach der Entfernung von Canvas fragt die Teamleitung, ob man auf ein anderes
-  Werkzeug wechseln sollte.
+  Das Fjordlicht-Marketingteam (fünf Personen) schreibt längere Texte bisher in Copilot Chat und
+  kopiert die Antworten dann irgendwohin. Die Teamleitung fragt, wo längere Texte künftig
+  entstehen sollen: in **Copilot Pages** oder in **Word mit Copilot**.
 
-  1. Teste dieselbe Aufgabe in **zwei** Werkzeugen mit Dokumentfunktion (z. B. ChatGPT
-     Schreibblöcke und Claude Artifacts, Gemini Canvas oder Copilot Pages): Rohfassung eines
-     Blog-Absatzes zur Wanderhose „Vidde" (ca. 200 Wörter), danach eine gezielte Überarbeitung
-     des Einstiegs und eine Kürzung um ein Drittel.
-  2. Bewerte beide Werkzeuge in einer Tabelle nach mindestens fünf Kriterien, darunter
-     **Kontrolle über Änderungen**, **Versionen** und **Freigabe/Datenschutz im Team**.
-  3. Formuliere eine Empfehlung in höchstens fünf Sätzen – und begründe, warum die Empfehlung
+  1. Teste dieselbe Aufgabe in **beiden** Werkzeugen: Rohfassung eines Blog-Absatzes zur
+     Wanderhose „Vidde" (ca. 200 Wörter) auf Basis von `/Fjordlicht-Basisdaten` (falls nicht
+     vorhanden: Kap. 11, Kurzübung 1), danach eine gezielte Überarbeitung des Einstiegs und eine
+     Kürzung um ein Drittel.
+     - **Page:** Entwurf in Copilot Chat erzeugen, in eine Page übernehmen, dort markieren und
+       überarbeiten.
+     - **Word:** Entwurf mit Copilot in einem neuen Dokument im Ordner „Fjordlicht-Kurs",
+       „Änderungen nachverfolgen" einschalten, Einstieg markieren und umschreiben lassen.
+  2. Teile beide Ergebnisse testweise mit einer Kollegin (oder dir selbst in einem zweiten
+     Browserfenster) und prüfe, wie Kommentieren und gemeinsames Bearbeiten funktionieren.
+  3. Bewerte beide Werkzeuge in einer Tabelle nach mindestens fünf Kriterien, darunter
+     **Kontrolle über Änderungen**, **Versionen**, **Zusammenarbeit** und **Freigabe/Datenschutz
+     im Team**.
+  4. Formuliere eine Empfehlung in höchstens fünf Sätzen – und begründe, warum die Empfehlung
      **nicht** an einer einzelnen Funktion hängen sollte.
+
+  Alternativ kannst du ein drittes Werkzeug (z. B. ChatGPT-Schreibblöcke oder Claude Artifacts)
+  einbeziehen, sofern es bei euch freigegeben ist.
 tip: |
-  Komfort ist schnell beurteilt, Kontrolle nicht. Achte bei der Kürzung darauf, ob das Werkzeug
-  Inhalte stillschweigend streicht, die du behalten wolltest. Und: Ein Werkzeug, das im Team nicht
-  freigegeben ist, scheidet aus, egal wie gut es schreibt (Kap. 4).
+  Komfort ist schnell beurteilt, Kontrolle nicht. Achte bei der Kürzung darauf, ob Copilot
+  Inhalte stillschweigend streicht, die du behalten wolltest. Beim Datenschutz unterscheiden sich
+  Page und Word kaum: Beide liegen im Microsoft-365-Mandanten, Copilot arbeitet mit Enterprise
+  Data Protection und sieht nur, worauf du Zugriff hast (Kap. 4). Der Unterschied liegt eher darin,
+  **wo** die Datei liegt und **wer** sie sieht, wenn du sie teilst.
 solution: |
   Beispielhafte Bewertung (Ergebnisse variieren je nach Stand und Test):
 
-  | Kriterium | Werkzeug A | Werkzeug B |
+  | Kriterium | Copilot Page | Word mit Copilot |
   |---|---|---|
-  | Gezielte Überarbeitung markierter Stellen | zuverlässig, Rest bleibt stabil | teils Änderungen außerhalb der Markierung |
-  | Kürzung ohne Inhaltsverlust | Kerninhalte erhalten | Pflegehinweis gestrichen |
-  | Versionen / Zurückspringen | vorhanden | eingeschränkt |
-  | Export und Weitergabe | Download | Kopieren, Teilen im Werkzeug |
-  | Freigabe und Datenschutz | Business-Tarif mit AVV im Haus | kein freigegebener Tarif |
+  | Gezielte Überarbeitung markierter Stellen | gut, Chat und Text nebeneinander | gut, Vorschlag wird vor der Übernahme angezeigt |
+  | Nachvollziehbarkeit von Änderungen | Versionsverlauf, keine Einzeländerungen | „Änderungen nachverfolgen" zeigt jede Ersetzung |
+  | Kürzung ohne Inhaltsverlust | Pflegehinweis gestrichen | Kerninhalte erhalten |
+  | Zusammenarbeit | schnell geteilt, gemeinsames Bearbeiten | Kommentare, Freigabe-Workflow vertraut |
+  | Weiterverwendung | Inhalt für Teams/Loop gedacht | Datei per `/` in späteren Prompts referenzierbar, Grundlage für PowerPoint |
+  | Freigabe und Datenschutz | im Mandanten, Teilen bewusst steuern | im Mandanten, Ordnerberechtigungen gelten |
 
-  Mögliche Empfehlung: „Wir bleiben bei dem Werkzeug, für das ein freigegebener Business-Tarif
-  besteht, und arbeiten dort mit Schreibblöcken. Verbindlich für alle wird der Dreischritt
-  Rohfassung, Struktur, Feinschliff und die Regel, jede Überarbeitung auf markierte Stellen zu
-  begrenzen und eine Änderungsliste zu verlangen. Funktionen ändern sich – Canvas wurde nach weniger
-  als zwei Jahren entfernt. Deshalb verankern wir das Vorgehen in unserer Prompt-Bibliothek (Kap. 10),
-  nicht in einer Bedienanleitung."
+  Mögliche Empfehlung: „Ideen, Gliederungen und frühe Entwürfe sammeln wir in Copilot Pages, weil
+  das Team dort schnell gemeinsam weiterarbeitet. Texte, die in die Freigabe gehen, landen in Word
+  mit eingeschalteter Änderungsverfolgung. Verbindlich für alle werden der Dreischritt Rohfassung,
+  Struktur, Feinschliff und die Regel, jede Überarbeitung auf markierte Stellen zu begrenzen und
+  eine Änderungsliste zu verlangen. Funktionen ändern sich – Canvas wurde nach weniger als zwei
+  Jahren entfernt. Deshalb verankern wir das Vorgehen in unserer Prompt-Bibliothek (Kap. 10), nicht
+  in einer Bedienanleitung."
 
   Bewertungskriterien: echte Tests mit derselben Aufgabe in beiden Werkzeugen, mindestens fünf
-  Kriterien inklusive Datenschutz, eine Empfehlung, die Freigabe vor Komfort stellt und das
-  Arbeitsprinzip statt einer Funktion festschreibt.
+  Kriterien inklusive Datenschutz und Zusammenarbeit, eine Empfehlung, die den Einsatzzweck
+  unterscheidet und das Arbeitsprinzip statt einer Funktion festschreibt.

@@ -1,8 +1,8 @@
 title: Instruktionen nach Struktur schreiben
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug. Eine Kollegin hat für einen Social-Media-Assistenten
-  folgende Instruktionen geschrieben:
+  Diese Übung machst du in **Copilot Chat** und **Word**. Eine Kollegin hat für einen
+  Social-Media-Assistenten folgende Instruktionen geschrieben:
 
   ```text
   Du bist ein super kreativer Social-Media-Experte und schreibst die
@@ -15,12 +15,21 @@ question: |
 
   1. Benenne mindestens **fünf** Probleme dieser Instruktionen.
   2. Schreibe sie neu nach der Struktur aus Abschnitt 24.3 (Rolle und Ziel, Nutzende, Arbeitsablauf,
-     Regeln, Umgang mit Wissen, Ausgabeformat, Grenzen). Beschränke dich auf **Instagram**.
-  3. Teste beide Fassungen im Werkzeug (Projekt, Plugin, Gem oder einfach als erste Nachricht in
-     einem neuen Chat) mit der Anfrage „Post zum Herbststart, Fokus Fleece Skog".
+     Regeln, Umgang mit Wissen, Ausgabeformat, Grenzen). Beschränke dich auf **Instagram**. Lege
+     dafür in Word die Datei **„Assistenten-Steckbrief_Instagram.docx"** im Ordner „Fjordlicht-Kurs"
+     an und nutze für jeden Abschnitt eine Überschrift.
+  3. **Gegenprobe mit Copilot in Word:** Stelle Copilot eine Frage zum Dokument, etwa: „Welche
+     Regeln in diesen Instruktionen widersprechen sich oder lassen Spielraum?" Übernimm nur, was
+     du selbst nachvollziehen kannst.
+  4. **Test in Copilot Chat:** Öffne zwei neue Chats. Füge im ersten die alte, im zweiten deine neue
+     Fassung als erste Nachricht ein, ergänze jeweils `/Fjordlicht-Basisdaten` als Faktenquelle
+     (falls nicht vorhanden, Kap. 11 bzw. die Produktfakten aus dem Kurs einfügen) und stelle die
+     Anfrage „Post zum Herbststart, Fokus Fleece Skog".
 tip: |
   Suche nach Widersprüchen, nach Wissen, das in den Instruktionen nichts verloren hat, und nach
-  Regeln, die Greenwashing geradezu herausfordern.
+  Regeln, die Greenwashing geradezu herausfordern. Die Basisdaten-Datei ersetzt hier die spätere
+  Wissensdatei – so testest du, ob deine Instruktionen Fakten aus dem Wissen holen statt sie selbst
+  zu enthalten.
 solution: |
   Probleme: (1) Superlativ-Rolle ohne Maßstab; (2) Widersprüche „witzig aber seriös", „kurz aber
   ausführlich" ohne Priorität; (3) „Nachhaltigkeit immer betonen" ohne Belegpflicht führt zu
@@ -45,12 +54,17 @@ solution: |
   Nachhaltigkeit nur mit Beleg aus der Claim-Liste, sonst [CLAIM PRÜFEN].
   Im Zweifel: ehrlich vor witzig, kurz vor vollständig.
   # Umgang mit Wissen
-  Produktfakten nur aus der Datei Produktdaten. Keine Preise.
+  Produktfakten nur aus der Datei mit den Produktdaten. Keine Preise.
   # Ausgabeformat
   Hook (1 Satz), Caption (max. 60 Wörter), 3 bis 5 Hashtags.
   # Grenzen
   Andere Plattformen: Hinweis auf die passenden Assistenten.
   ```
 
-  Im Test liefert die alte Fassung typischerweise Emojis, Ausrufezeichen und pauschale
-  „nachhaltig"-Aussagen, die neue Fassung einen ruhigen Text mit markierter Claim-Lücke.
+  Copilot in Word findet bei der alten Fassung meist die Widersprüche, übersieht aber häufig die
+  Preise als Problem – sie wirken „hilfreich". Im Test liefert die alte Fassung typischerweise
+  Emojis, Ausrufezeichen und pauschale „nachhaltig"-Aussagen, die neue Fassung einen ruhigen Text
+  mit belegtem Fakt aus den Basisdaten (z. B. Reparaturservice) oder einer markierten Claim-Lücke.
+
+  Bewertungskriterien: mindestens fünf echte Probleme, Neufassung in allen sieben Abschnitten,
+  Prioritätenregel vorhanden, kein Faktenwissen in den Instruktionen, Testergebnis dokumentiert.

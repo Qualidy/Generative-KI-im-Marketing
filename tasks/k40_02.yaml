@@ -1,43 +1,58 @@
-title: Dein 90-Tage-Plan
+title: Dein 90-Tage-Plan mit Copilot
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug.
+  Diese Übung machst du in **Copilot Chat**. Dein Plan soll Copilot dort einsetzen, wo es im
+  Arbeitsalltag am meisten bringt: Outlook, Teams-Recap, Excel, Notebooks und Prompt Gallery.
 
   1. Nutze den Prompt aus Abschnitt 40.4 und fülle alle Platzhalter mit deiner realen Ausgangslage:
-     angestrebte oder aktuelle Rolle, verfügbare Werkzeuge, Zeit pro Woche, Stärken und
-     Unsicherheiten aus dem Kurs.
-  2. Prüfe den Vorschlag mit diesen vier Fragen:
+     angestrebte oder aktuelle Rolle, Zeit pro Woche, Stärken und Unsicherheiten aus dem Kurs. Gib
+     als verfügbare Werkzeuge **Microsoft 365 Copilot** mit den Funktionen an, die bei dir
+     freigegeben sind.
+  2. Prüfe den Vorschlag mit diesen fünf Fragen:
      - Ist jede Phase mit der angegebenen Zeit realistisch?
-     - Setzt der Plan Werkzeuge oder Daten voraus, die du nicht hast?
+     - Setzt der Plan Werkzeuge, Funktionen oder Daten voraus, die du nicht hast?
      - Ist jedes Ergebnis prüfbar, also ja oder nein beantwortbar?
      - Enthält der Plan mindestens einen Schritt zu Datenschutz, Recht oder Kennzeichnung?
-  3. Überarbeite den Plan im Dialog, bis alle vier Fragen mit Ja beantwortet sind.
-  4. Trage die drei Phasenziele in deinen Kalender ein – mit einem Termin für den Rückblick nach
-     30 Tagen.
+     - Nutzt der Plan mindestens drei Alltagsfunktionen (z. B. Outlook-Entwürfe, Teams-Recap,
+       Excel-Auswertung, Notebook, Prompt Gallery)?
+  3. Überarbeite den Plan im Dialog, bis alle fünf Fragen mit Ja beantwortet sind.
+  4. Übernimm den fertigen Plan in eine **Copilot Page** und speichere den Prompt aus Schritt 1
+     in der **Prompt Gallery**, damit du ihn nach 30 Tagen wiederverwenden kannst.
+  5. Trage die drei Phasenziele in deinen Outlook-Kalender ein – mit einem Termin für den
+     Rückblick nach 30 Tagen.
 tip: |
   KI-Pläne sind fast immer zu voll. Ein guter Plan hat lieber drei Aufgaben pro Phase, die du
   wirklich erledigst, als acht, von denen du zwei schaffst. „Mehr mit KI arbeiten" ist kein Ergebnis,
-  „10 getestete Prompts in der Bibliothek" schon.
+  „10 getestete Prompts in der Prompt Gallery" schon. Wenn Copilot Funktionen vorschlägt, die bei
+  dir nicht freigegeben sind, streiche sie oder plane die Klärung mit der IT als eigene Aufgabe.
 solution: |
-  Typische Schwächen des ersten KI-Vorschlags und passende Korrekturen:
+  Typische Schwächen des ersten Copilot-Vorschlags und passende Korrekturen:
 
   | Schwäche | Korrektur |
   |---|---|
   | 10–15 Aufgaben pro Phase | auf drei konzentrieren |
-  | Ergebnis „Kenntnisse vertiefen" | messbar machen: „ein Assistent mit fünf Testfällen" |
-  | empfiehlt Werkzeuge ohne Zugang | auf verfügbare Werkzeuge beschränken oder Beschaffung als Aufgabe |
+  | Ergebnis „Kenntnisse vertiefen" | messbar machen: „ein Agent mit fünf Testfällen" |
+  | setzt Funktionen voraus, die nicht freigegeben sind (z. B. Copilot Studio) | auf verfügbare Funktionen beschränken oder Freigabe als Aufgabe |
+  | nur Copilot Chat, keine Office-Apps | Alltagsfunktionen einplanen: Outlook-Entwürfe, Teams-Recap, Excel |
   | kein Bezug zu Recht oder Datenschutz | eine Aufgabe ergänzen, etwa Datenampel für die eigene Arbeit |
   | Phase 3 ohne Vergleich | Vorher/Nachher-Messung einer Aufgabe einplanen |
 
-  Beispiel einer guten Phase 2:
+  Beispiel einer guten Phase 1 und 2:
 
   ```text
-  Tage 31-60 – Ziel: eine wiederkehrende Aufgabe an einen Assistenten übergeben
-  1. Aufgabe auswählen und Zeitaufwand heute messen
-  2. Assistent mit Instruktionen und zwei Wissensdateien anlegen
+  Tage 1-30 – Ziel: Copilot täglich in Routineaufgaben nutzen
+  1. jede Teams-Besprechung mit Recap nachbereiten, Aufgaben übernehmen
+  2. Newsletter- und Abstimmungsmails mit Copilot in Outlook entwerfen
+  3. 10 getestete Prompts in der Prompt Gallery speichern
+  Ergebnis: 10 Prompts gespeichert, 4 Wochen Recap-Nutzung im Kalender belegt
+
+  Tage 31-60 – Ziel: eine wiederkehrende Aufgabe an einen Agent übergeben
+  1. Aufgabe auswählen und Zeitaufwand heute messen (Excel-Liste)
+  2. Agent mit dem Agent Builder anlegen: Anweisungen, zwei Wissensdateien
+     aus dem Ordner „Fjordlicht-Kurs", Notebook als Arbeitsbereich
   3. fünf Testfälle durchlaufen und dokumentieren
-  Ergebnis: Assistent besteht vier von fünf Testfällen
+  Ergebnis: Agent besteht vier von fünf Testfällen
   ```
 
-  Bewertungskriterien: alle Platzhalter real gefüllt, alle vier Prüffragen mit Ja beantwortet,
-  Rückblicktermin gesetzt.
+  Bewertungskriterien: alle Platzhalter real gefüllt, alle fünf Prüffragen mit Ja beantwortet,
+  Plan als Page gespeichert, Prompt in der Prompt Gallery, Rückblicktermin gesetzt.

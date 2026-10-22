@@ -1,10 +1,11 @@
-title: Zielgruppenbriefing für eine Produktlinie
+title: Zielgruppenbriefing für eine Produktlinie – mit Excel, Researcher und Word
 difficulty: 4
 question: |
   **Szenario:** Fjordlicht bringt im Frühjahr eine Kinderkollektion heraus. Das Marketingteam soll
   in einer Woche ein **Zielgruppenbriefing** liefern, auf dem Kampagne, Newsletter und Social-Media-
   Texte aufbauen. Die Geschäftsführung warnt: „Ich will keine Persona-Poesie, sondern Aussagen, die
-  wir belegen können." Du kannst alternativ eine Produktlinie eines Unternehmens deiner Wahl nehmen.
+  wir belegen können." Du kannst statt Fjordlicht auch ein Unternehmen deiner Wahl nutzen und eine
+  seiner Produktlinien nehmen.
 
   ```text
   Rahmen:
@@ -12,39 +13,50 @@ question: |
   Vorhandene Daten (fiktiv, selbst anlegen): 25 Bewertungen zu bestehenden
   Erwachsenenprodukten von Eltern, 10 Kundenservice-Mails zu Kindergrößen,
   Ergebnisse einer Newsletter-Umfrage (3 Fragen, Freitext).
-  Werkzeuge: ChatGPT oder ein anderes Chat-Werkzeug mit Websuche.
+  Werkzeug: Microsoft 365 Copilot (Chat mit Modus Arbeit/Web, Excel, Word,
+  Agent Researcher falls freigegeben); Ablage im Ordner "Fjordlicht-Kurs",
+  optional gebündelt im Copilot Notebook "Fjordlicht-Kurs"
   Keine echten Kundendaten, nur selbst erstellte fiktive Daten.
   ```
 
   ---
 
-  **Runde 1 – Daten und Analyse.** Lege die fiktiven Daten an (realistisch, mit Widersprüchen und
-  Ausreißern). Werte sie mit mindestens zwei Prompts nach dem P.R.O.M.P.T.-Framework aus:
-  einen für **Segmente** und einen für **Jobs-to-be-done, Pain Points und Gains**. Jeder Punkt
-  braucht Belegnummern.
+  **Runde 1 – Daten und Analyse.** Lege die fiktiven Daten in „Kinderkollektion-Daten.xlsx" an
+  (je Quelle ein Blatt, jede Zeile mit Nummer). Copilot darf dir einen ersten Satz Beispieltexte
+  vorschlagen – realistisch wird er erst, wenn du selbst Widersprüche, Ausreißer und
+  unbequeme Rückmeldungen ergänzt. Werte die Daten in Copilot Chat per `/`-Verweis mit mindestens
+  zwei Prompts nach dem P.R.O.M.P.T.-Framework aus: einen für **Segmente** und einen für
+  **Jobs-to-be-done, Pain Points und Gains**. Jeder Punkt braucht Belegnummern. Prüfe die
+  Häufigkeiten mit Copilot in Excel nach.
 
-  **Runde 2 – Desk Research.** Recherchiere mit Websuche oder Deep Research drei Rahmenfakten,
-  etwa zu Ausgaben für Kinderbekleidung, Wachstumsrhythmus/Größenwechsel oder Second-Hand-Nutzung.
-  Prüfe jede Quelle mit der Tabelle aus Abschnitt 17.5 und dokumentiere das Ergebnis.
+  **Runde 2 – Desk Research.** Recherchiere mit dem Agent **Researcher** (falls in eurer Umgebung
+  freigegeben) oder Copilot Chat im Modus **Web** drei Rahmenfakten, etwa zu Ausgaben für
+  Kinderbekleidung, Wachstumsrhythmus/Größenwechsel oder Second-Hand-Nutzung. Öffne jede Quelle
+  selbst, prüfe sie mit der Tabelle aus Abschnitt 17.5 und dokumentiere das Ergebnis als
+  Quellenprotokoll (Excel-Blatt oder Tabelle in Word).
 
-  **Runde 3 – Die Komplikation.** Die KI liefert dir ein Segment „Eco-Premium-Eltern", das
+  **Runde 3 – Die Komplikation.** Copilot liefert dir ein Segment „Eco-Premium-Eltern", das
   hervorragend zur Markenstimme passt. Bei der Prüfung stellt sich heraus, dass es nur in zwei
   Bewertungen vorkommt, während das häufigste Thema „Jacke passt nach einem Jahr nicht mehr" ist –
-  ein Problem, für das Fjordlicht bisher keine Antwort hat. Entscheide, wie du beides im Briefing
-  darstellst, und formuliere eine Empfehlung an die Produktentwicklung.
+  ein Problem, für das Fjordlicht bisher keine Antwort hat. Erstelle das Briefing in Word mit
+  **Entwurf mit Copilot** auf Basis deiner Analyse und des Quellenprotokolls (per Verweis) und
+  überarbeite es: Entscheide, wie du beide Befunde darstellst, und formuliere eine Empfehlung an
+  die Produktentwicklung.
 
   **Runde 4 – Entscheidung unter Abwägung.** Die Kollegin aus dem Social-Media-Team schlägt vor,
-  das Briefing durch zehn „synthetische Interviews" mit KI-Eltern zu ergänzen – das gehe schneller
-  als echte Gespräche. **Widersprich** dort, wo synthetische Antworten echte Validierung ersetzen
-  sollen, und zeige, wofür sie trotzdem taugen (Kap. 18). Lege fest, welche zwei Aussagen deines
-  Briefings du mit echten Menschen prüfst und wie.
+  das Briefing durch zehn „synthetische Interviews" mit KI-Eltern in Copilot zu ergänzen – das
+  gehe schneller als echte Gespräche. **Widersprich** dort, wo synthetische Antworten echte
+  Validierung ersetzen sollen, und zeige, wofür sie trotzdem taugen (Kap. 18). Lege fest, welche
+  zwei Aussagen deines Briefings du mit echten Menschen prüfst und wie. Wenn du dafür ein
+  Gespräch in Teams führst, kann die Besprechungszusammenfassung von Copilot die Notizen
+  vorbereiten (falls freigegeben und nur mit Einverständnis aller Beteiligten).
 
-  **Deliverable:**
+  **Deliverable** (als Dateien im Ordner „Fjordlicht-Kurs"):
 
-  1. fiktiver Datensatz und die verwendeten Prompts
+  1. „Kinderkollektion-Daten.xlsx" und die verwendeten Prompts
   2. Segmenttabelle und JTBD-/Pain-/Gain-Übersicht mit Belegnummern
   3. Quellenprotokoll der Desk Research mit Prüfergebnis
-  4. einseitiges Zielgruppenbriefing mit Evidenzstufe je Aussage
+  4. „Zielgruppenbriefing-Kinder.docx": eine Seite, Evidenzstufe je Aussage
   5. Validierungsplan für zwei Aussagen und Stellungnahme zu Runde 4
 
   **Fertig bist du erst, wenn** jede Aussage im Briefing eine Evidenzstufe trägt, keine Zahl ohne
@@ -54,16 +66,31 @@ tip: |
   Der Lernwert liegt in Runde 3. KI-Analysen und Teams neigen gleichermaßen dazu, das Ergebnis zu
   finden, das man sich wünscht. Ein gutes Briefing zeigt auch, was unbequem ist – gerade daraus
   entstehen oft die besten Botschaften („Mitwachsende Ärmel" statt „nachhaltig und hochwertig").
-  Und: Synthetische Interviews erzeugen Fragen, keine Belege.
+  Researcher-Berichte wirken durch Umfang und Quellenliste verlässlich; geprüft ist trotzdem nur,
+  was du selbst geöffnet hast. Und: Synthetische Interviews erzeugen Fragen, keine Belege. Das
+  Briefing brauchst du in Kap. 18 für den Kundenavatar wieder.
 solution: |
+  Beispiel-Prompt für die Segmentanalyse in Copilot Chat:
+
+  ```text
+  Du bist Marktforscherin im Outdoor-Handel. Schlage auf Basis von
+  /Kinderkollektion-Daten (alle drei Blätter) 3 bis 5 Segmente vor.
+  Format: Tabelle Segment | Kaufanlass | Hauptbedarf | wörtliches Zitat |
+  Belegnummern (Blatt und Nr.). Regeln: Segmente nach Bedarf und Anlass,
+  nicht nach Alter. Jedes Segment braucht mindestens 4 Belege, sonst
+  [HYPOTHESE]. Zitate nur wörtlich. Zweck: Zielgruppenbriefing
+  Kinderkollektion und Kundenavatar (Kap. 18).
+  ```
+
   Bewertungskriterien: (1) die fiktiven Daten sind realistisch und enthalten Widersprüche, die
-  Prompts folgen dem P.R.O.M.P.T.-Framework und verlangen Belege; (2) Segmente und JTBD sind mit
-  Nummern belegt, schwach belegte Punkte als Hypothese markiert; (3) die Desk Research prüft
-  Herausgeber, Datum, Methode und Übertragbarkeit, ungeprüfte Zahlen fehlen im Briefing; (4) das
-  Briefing gewichtet nach Evidenz, nicht nach Wunschbild – „Eco-Premium-Eltern" erscheint als
-  Hypothese, das Größenproblem als gestützter Pain Point mit Empfehlung; (5) der Validierungsplan
-  ist konkret (zum Beispiel fünf Telefonate mit Eltern aus dem Newsletter, Story-Umfrage) und die
+  Prompts folgen dem P.R.O.M.P.T.-Framework, verweisen auf die Datei und verlangen Belege; die
+  Häufigkeiten sind in Excel nachgeprüft; (2) Segmente und JTBD sind mit Nummern belegt, schwach
+  belegte Punkte als Hypothese markiert; (3) die Desk Research prüft Herausgeber, Datum, Methode
+  und Übertragbarkeit, ungeprüfte Zahlen fehlen im Briefing; (4) das Briefing in Word gewichtet
+  nach Evidenz, nicht nach Wunschbild – „Eco-Premium-Eltern" erscheint als Hypothese, das
+  Größenproblem als gestützter Pain Point mit Empfehlung; (5) der Validierungsplan ist konkret
+  (zum Beispiel fünf Telefonate mit Eltern aus dem Newsletter, Story-Umfrage) und die
   Stellungnahme zu Runde 4 grenzt Ideenfindung von Validierung klar ab.
 
-  Lernziel: Eine Zielgruppenanalyse mit KI so aufbauen, dass sie auf Daten beruht, Belege
+  Lernziel: Eine Zielgruppenanalyse mit Copilot so aufbauen, dass sie auf Daten beruht, Belege
   ausweist und ehrlich zwischen Hypothese und Erkenntnis unterscheidet.

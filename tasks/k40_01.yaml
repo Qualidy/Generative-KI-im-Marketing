@@ -1,10 +1,9 @@
-title: Mensch, KI oder beides?
+title: Mensch, Copilot oder beides?
 difficulty: 1
 question: |
-  Im Marketingteam von Fjordlicht fallen die folgenden Aufgaben an. Ordne jede zu:
-  **KI übernimmt den Entwurf, Mensch prüft**, **Mensch und KI im Wechsel** oder **bleibt beim
-  Menschen**. Begründe jeweils in einem Satz.
+  Im Marketingteam von Fjordlicht fallen die folgenden Aufgaben an:
 
+  ```text
   1. 20 Betreffzeilen-Varianten für den Newsletter
   2. Entscheidung, ob die Winterkampagne verschoben wird
   3. Antwort auf einen öffentlichen Shitstorm-Kommentar auf Instagram
@@ -12,19 +11,45 @@ question: |
   5. Freigabe eines KI-Bildes für die Startseite
   6. Auswertung von 600 Kundenbewertungen nach Themen
   7. Festlegen der Markenstimme für die neue B2B-Linie
+  ```
+
+  1. Probiere zwei Aufgaben direkt aus: Lass **Copilot in Outlook** für einen
+     Newsletter-Entwurf 20 Betreffzeilen vorschlagen (Aufgabe 1) und **Copilot Chat** einen
+     kurzen Blogabschnitt in drei Captions umwandeln (Aufgabe 4). Wie viel musst du noch
+     nacharbeiten?
+  2. Ordne jede Aufgabe zu: **KI übernimmt den Entwurf, Mensch prüft**, **Mensch und KI im
+     Wechsel** oder **bleibt beim Menschen**. Begründe jeweils in einem Satz.
+  3. Nenne für jede Aufgabe, bei der KI beteiligt ist, die passende Copilot-Funktion – etwa
+     Outlook, Teams-Recap, Excel, Word oder Copilot Chat.
 tip: |
   Frage dich bei jeder Aufgabe: Wie teuer ist ein Fehler, und wer muss ihn verantworten? Je höher
   das Risiko und je stärker es um Urteil statt um Varianten geht, desto mehr bleibt beim Menschen.
+  Dein Eindruck aus Schritt 1 ist ein guter Prüfstein: Wo du viel nacharbeiten musstest, gehört
+  mehr Urteil dazu.
 solution: |
-  | Nr. | Zuordnung | Begründung |
-  |---|---|---|
-  | 1 | KI-Entwurf, Mensch prüft | Varianten sind die Stärke der KI, Auswahl und Test bleiben menschlich |
-  | 2 | bleibt beim Menschen | strategische Entscheidung mit Verantwortung; KI kann Argumente sammeln |
-  | 3 | Mensch und KI im Wechsel | KI kann Entwürfe liefern, Ton und Freigabe in der Krise entscheidet ein Mensch |
-  | 4 | KI-Entwurf, Mensch prüft | klassische Content-Adaption (Kap. 14) |
-  | 5 | bleibt beim Menschen | Rechte, Kennzeichnung, Markenwirkung (Kap. 34, 39) |
-  | 6 | KI-Entwurf, Mensch prüft | Themenanalyse geht schnell, Stichproben gegenlesen (Kap. 19) |
-  | 7 | Mensch und KI im Wechsel | KI hilft beim Extrahieren und Variieren, die Festlegung ist Markenarbeit |
+  Beispiel-Prompt für Aufgabe 4 in Copilot Chat:
+
+  ```text
+  Mache aus diesem Blogabschnitt drei Captions: LinkedIn (sachlich, 3 Sätze),
+  Instagram (ruhig, mit Frage an die Community, 2–3 Hashtags), Pinterest
+  (beschreibend, suchfreundlich). Halte dich an die Markenstimme aus
+  /Fjordlicht-Basisdaten. Keine Superlative.
+  [Abschnitt einfügen]
+  ```
+
+  | Nr. | Zuordnung | Begründung | Passende Copilot-Funktion |
+  |---|---|---|---|
+  | 1 | KI-Entwurf, Mensch prüft | Varianten sind die Stärke der KI, Auswahl und Test bleiben menschlich | Copilot in Outlook |
+  | 2 | bleibt beim Menschen | strategische Entscheidung mit Verantwortung; KI kann Argumente sammeln | ggf. Teams-Recap der Abstimmung, Copilot Chat für Pro und Contra |
+  | 3 | Mensch und KI im Wechsel | KI kann Entwürfe liefern, Ton und Freigabe in der Krise entscheidet ein Mensch | Copilot Chat |
+  | 4 | KI-Entwurf, Mensch prüft | klassische Content-Adaption (Kap. 14) | Copilot Chat oder Word |
+  | 5 | bleibt beim Menschen | Rechte, Kennzeichnung, Markenwirkung (Kap. 34, 39) | – (Copilot höchstens für die Bildbeschreibung als zweite Meinung) |
+  | 6 | KI-Entwurf, Mensch prüft | Themenanalyse geht schnell, Stichproben gegenlesen (Kap. 19) | Copilot in Excel oder Analyst |
+  | 7 | Mensch und KI im Wechsel | KI hilft beim Extrahieren und Variieren, die Festlegung ist Markenarbeit | Copilot in Word |
+
+  Typischer Befund aus Schritt 1: Die Betreffzeilen sind brauchbar, enthalten aber oft
+  Superlative oder Ausrufezeichen, die nicht zur Markenstimme passen; bei den Captions stimmen
+  Länge und Kanalton meist, Fakten müssen trotzdem gegengelesen werden.
 
   Das Muster: KI übernimmt Masse und Varianten, Menschen übernehmen Urteil, Freigabe und alles,
   wofür jemand geradestehen muss. Ganz ohne KI-Unterstützung bleibt fast nichts – ganz ohne Menschen

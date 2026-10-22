@@ -13,9 +13,19 @@ question: |
 
   Zur Auswahl: Öffnungsrate · Klickrate · Engagement-Zeit (GA4) · Conversion-Rate der
   Produktseite · Saves · Likes · Seitenaufrufe
+
+  So gehst du vor:
+
+  1. Ordne zuerst selbst zu.
+  2. Gib die Fragen und die Auswahlliste in **Copilot Chat** ein und bitte um eine Tabelle
+     „Frage | Hauptkennzahl | Begründung | Vorsicht bei der Deutung".
+  3. Vergleiche: Wo wählt Copilot anders? Nennt es von sich aus die Einschränkung der Öffnungsrate
+     durch Apple Mail Privacy Protection? Frag bei Abweichungen nach: „Welches Textelement
+     beeinflusst diese Kennzahl, und was beeinflusst sie außer dem Text?"
 tip: |
   Frage dich jeweils: Welches Textelement wird verändert – und welche Kennzahl reagiert **nur**
   oder **vor allem** auf dieses Element? Zwei der Kennzahlen in der Liste sind Eitelkeitskennzahlen.
+  Die Spalte „Vorsicht" im Prompt zwingt Copilot, auch die Grenzen jeder Kennzahl zu nennen.
 solution: |
   | Nr. | Hauptkennzahl | Begründung |
   |---|---|---|
@@ -28,3 +38,8 @@ solution: |
   Nicht gewählt: **Likes** und **Seitenaufrufe** sind Eitelkeitskennzahlen. Sie zeigen
   Aufmerksamkeit, aber nicht, ob der Text seinen Zweck erreicht hat. Sie dürfen als
   Nebenkennzahl mitlaufen, sollten aber keine Textentscheidung allein begründen.
+
+  Typisch für den Copilot-Abgleich: Die Zuordnung stimmt meist, bei Frage 2 wird aber gern die
+  Öffnungsrate mitgenannt, und die Einschränkung durch Apple Mail Privacy Protection fehlt, wenn du
+  nicht nach „Vorsicht" fragst. Die Übung zeigt: Die richtige Frage im Prompt entscheidet, ob du
+  eine brauchbare Einordnung bekommst.

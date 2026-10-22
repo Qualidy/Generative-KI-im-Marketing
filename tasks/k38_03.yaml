@@ -15,20 +15,28 @@ question: |
   Die Geschäftsführerin spricht regelmäßig in einem Branchenpodcast und veröffentlicht
   LinkedIn-Videos.
 
-  1. Benenne **alle** Warnsignale im Anruf.
+  1. Benenne **zuerst selbst** alle Warnsignale im Anruf. Gib danach das Transkript in
+     **Copilot Chat** und lass die Warnsignale auflisten. Vergleiche: Was hat Copilot gefunden,
+     was du übersehen hast – und umgekehrt?
   2. Beschreibe, wie die Assistenz in den nächsten zehn Minuten richtig reagiert.
   3. Bewerte: Welche Rolle spielen die öffentlichen Auftritte der Geschäftsführerin? Sollte sie
      deshalb auf Podcasts und Videos verzichten?
   4. Entwirf drei verbindliche Regeln für Fjordlicht, die diesen Fall künftig verhindern, und
      begründe, warum eine reine Schulung nicht reicht.
+  5. Lass **Copilot in Outlook** aus deinen Regeln eine kurze Info-Mail an das Marketingteam
+     entwerfen. Nutze das **Coaching** für Entwürfe, um Ton und Klarheit zu prüfen: ruhig,
+     ohne Alarmismus, mit klarer Handlungsanweisung. Nicht absenden – Entwurf speichern.
 tip: |
   Gute Betrugsanrufe arbeiten mit **Zeitdruck, Autorität und Umgehung des normalen Wegs**. Die
   Stimme selbst ist kein Beweis mehr. Schutz entsteht nicht durch besseres Hinhören, sondern
-  durch Prozesse, die unabhängig von der Stimme greifen.
+  durch Prozesse, die unabhängig von der Stimme greifen. Beim Vergleich in Schritt 1 lohnt sich
+  der Blick auf leise Signale wie die Begründung für schlechte Erreichbarkeit.
 solution: |
   Warnsignale: Zeitdruck („heute noch"), neue Kontonummer, Wechsel auf einen anderen Kanal
   (WhatsApp), ausdrückliche Umgehung der Buchhaltung, Appell an Loyalität, Erklärung für
-  schlechte Erreichbarkeit („hier ist es laut"), Uhrzeit kurz vor Wochenende.
+  schlechte Erreichbarkeit („hier ist es laut"), Uhrzeit kurz vor Wochenende. Copilot findet die
+  offensichtlichen Signale meist zuverlässig; Loyalitätsappell und „hier ist es laut" fehlen in
+  der ersten Antwort häufiger.
 
   Richtige Reaktion: nichts zusagen, auflegen, Rückruf über die im System hinterlegte Nummer
   der Geschäftsführerin, parallel Buchhaltung oder Stellvertretung informieren, keine
@@ -48,3 +56,16 @@ solution: |
 
   Schulung allein reicht nicht, weil Menschen unter Zeitdruck und bei vertrauter Stimme
   zuverlässig Fehler machen. Regeln, die unabhängig vom Gefühl gelten, wirken auch dann.
+
+  Beispiel-Prompt für Copilot in Outlook (Schritt 5):
+
+  ```text
+  Entwirf eine kurze interne Mail an das Marketingteam (5 Personen) mit
+  diesen drei Regeln: [Regeln einfügen]. Anlass: Betrugsversuche mit
+  geklonten Stimmen. Ton: ruhig, sachlich, Du-Ansprache, keine Panik.
+  Schließe mit einem Satz, dass Nachprüfen immer richtig ist – auch
+  gegenüber der Geschäftsführung. Höchstens 120 Wörter.
+  ```
+
+  Bewertungskriterien: mindestens sechs Warnsignale, Vergleich mit Copilot konkret, drei
+  prozessbasierte Regeln, Mail-Entwurf mit klarer Handlungsanweisung und ohne Alarmton.

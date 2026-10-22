@@ -1,7 +1,8 @@
 title: Welches Werkzeug für welchen Zweck?
 difficulty: 3
 question: |
-  Das Marketingteam von Fjordlicht hat drei anstehende Bildaufgaben:
+  Das Marketingteam von Fjordlicht hat Microsoft 365 Copilot für alle und drei anstehende
+  Bildaufgaben:
 
   ```text
   A) Moodboard mit 12 Stimmungsbildern für die Frühjahrskampagne "Erste Schritte draußen"
@@ -10,30 +11,43 @@ question: |
   C) Ein Produktbild der neuen Wanderhose "Vidde" vor Fjordkulisse für den Webshop
   ```
 
-  1. Bewerte für jede Aufgabe, welches Werkzeug aus Abschnitt 29.5 am besten geeignet ist, und
-     nutze dafür mindestens **vier** Kriterien aus 29.6.
-  2. Benenne für jede Aufgabe das **größte Risiko** und wie du es absicherst.
-  3. Eine Kollegin schlägt vor: „Wir nehmen einfach für alles ChatGPT Images, das haben wir
-     sowieso." Nimm Stellung: Wo hat sie recht, wo nicht?
+  1. **Kurztest in Copilot.** Erzeuge in Copilot Chat je einen ersten Entwurf für A (ein bis
+     zwei Stimmungsbilder) und für B (Infografik mit den fünf Schritten als Text im Bild).
+     Notiere: Wie gut sind Look, Steuerbarkeit und Text im Bild?
+  2. **Bewerten.** Bewerte für jede Aufgabe, welches Werkzeug aus Abschnitt 29.5 – oder die
+     Bilderzeugung in Copilot – am besten geeignet ist, und nutze dafür mindestens **vier**
+     Kriterien aus 29.6. Stütze dich bei A und B auf deinen Kurztest.
+  3. **Risiko.** Benenne für jede Aufgabe das **größte Risiko** und wie du es absicherst.
+  4. **Stellung nehmen.** Eine Kollegin schlägt vor: „Wir nehmen einfach für alles die
+     Bilderzeugung in Copilot, die haben wir sowieso." Nimm Stellung: Wo hat sie recht, wo
+     nicht?
 tip: |
   Aufgabe C ist eine Falle. Frage dich zuerst, ob sie überhaupt eine Aufgabe für Bild-KI ist –
-  und welcher Teil davon vielleicht doch.
+  und welcher Teil davon vielleicht doch. Bei B lohnt ein genauer Blick auf jedes Wort im Bild:
+  Kurze Texte gelingen meist, fünf beschriftete Schritte sind eine andere Liga.
 solution: |
+  Typisches Ergebnis des Kurztests: Die Stimmungsbilder für A sind brauchbar, eher neutral im
+  Look und folgen dem Prompt gut. Die Infografik für B hat eine ordentliche Struktur, aber
+  mindestens ein Schritt enthält Tippfehler, verdrehte Reihenfolge oder erfundene
+  Pflegehinweise.
+
   | Aufgabe | Geeignet | Kriterien | Größtes Risiko | Absicherung |
   |---|---|---|---|---|
-  | A Moodboard | ChatGPT Images oder Midjourney | Look, Steuerbarkeit, Kosten, Datenschutz | einseitige Bildwelten (Bias), Midjourney-Bilder öffentlich sichtbar | Vielfalt explizit beschreiben; Plan mit privater Sichtbarkeit wählen |
-  | B Infografik | Ideogram, alternativ ChatGPT Images; Text final im Layout-Tool | Text im Bild, Steuerbarkeit, Integration | Schreibfehler, falsche Pflegehinweise | Texte aus geprüfter Vorlage, Schrift im Layout-Tool setzen |
+  | A Moodboard | Bilderzeugung in Copilot; für starke Art Direction ggf. Midjourney | Look, Steuerbarkeit, Kosten, Datenschutz | einseitige Bildwelten (Bias); bei Midjourney Bilder je nach Plan öffentlich sichtbar | Vielfalt explizit beschreiben; Plan mit privater Sichtbarkeit wählen |
+  | B Infografik | Copilot oder Ideogram für den Entwurf; Text final im Layout-Tool (z. B. PowerPoint oder Designer) | Text im Bild, Steuerbarkeit, Integration | Schreibfehler, falsche Pflegehinweise | Texte aus geprüfter Vorlage, Schrift im Layout-Tool setzen |
   | C Produktbild | keine reine Generierung; echtes Foto, Hintergrund ggf. per Firefly erweitern | Rechte, Bearbeitung, Herkunftskennzeichnung | Produkt sieht anders aus als geliefert (UWG) | echtes Produktfoto, nur Umgebung bearbeiten, Produkt unverändert lassen |
 
   Zur Kollegin:
 
   - **Sie hat recht**, dass ein vorhandenes, datenschutzrechtlich geklärtes Werkzeug ein
-    starker Grund ist. Für A und als Entwurfswerkzeug für B reicht ChatGPT Images oft aus, und
-    das Team muss nichts Neues lernen.
+    starker Grund ist: Copilot läuft im Microsoft-365-Mandanten, die Lizenz ist bezahlt, das
+    Team muss nichts Neues lernen. Für A und als Entwurfswerkzeug für B reicht es oft aus.
   - **Sie hat nicht recht**, wenn „für alles" auch C meint. Kein Generator zeigt die echte Hose
-    „Vidde" korrekt. Bei viel Text (B) und bei starker Art Direction (A) können Spezialwerkzeuge
-    besser sein; das sollte ein Vergleichstest klären (Kap. 31), nicht ein Bauchgefühl.
+    „Vidde" korrekt. Bei viel Text (B) und bei starker Art Direction (A) können
+    Spezialwerkzeuge besser sein; das sollte ein Vergleichstest klären (Kap. 31), nicht ein
+    Bauchgefühl. Außerdem gilt die Frage aus 29.5: Welches Modell läuft im Hintergrund, und
+    welche Nutzungsbedingungen gelten?
 
-  Bewertungskriterien: mindestens vier Kriterien je Aufgabe genutzt, C als Fall für echte Fotos
-  erkannt, und die Stellungnahme würdigt das Argument „vorhanden und geklärt", statt es pauschal
-  abzulehnen.
+  Bewertungskriterien: Kurztest tatsächlich durchgeführt und in die Bewertung eingeflossen,
+  mindestens vier Kriterien je Aufgabe genutzt, C als Fall für echte Fotos erkannt, und die
+  Stellungnahme würdigt das Argument „vorhanden und geklärt", statt es pauschal abzulehnen.

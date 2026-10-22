@@ -15,13 +15,18 @@ question: |
   ```
 
   1. Benenne mindestens **sechs Probleme** des Plans und ordne sie Kapiteln des Kurses zu.
-  2. Lass ein KI-Werkzeug denselben Plan bewerten. Vergleiche: Welche Probleme findet es, welche
-     übersieht es, wo ist es zu nachsichtig?
-  3. Formuliere einen **Gegenvorschlag** nach den fünf Schritten aus Abschnitt 40.3 auf einer
-     halben Seite.
+  2. Lass **Copilot Chat** denselben Plan bewerten. Vergleiche: Welche Probleme findet Copilot,
+     welche übersieht es, wo ist es zu nachsichtig?
+  3. Stelle Copilot die Nachfrage: „Wäre Woche 2 in Ordnung, wenn wir den CRM-Export statt in
+     ChatGPT in Microsoft 365 Copilot hochladen?" Bewerte die Antwort mit Kap. 4.
+  4. Formuliere einen **Gegenvorschlag** nach den fünf Schritten aus Abschnitt 40.3 auf einer
+     halben Seite. Lass dir dabei von **Copilot in Word** einen Entwurf erstellen und überarbeite
+     ihn. Optional: Lass **Copilot in PowerPoint** aus dem Word-Dokument drei Folien für die
+     Geschäftsführung erstellen.
 tip: |
   Gehe den Plan Zeile für Zeile mit drei Brillen durch: Daten und Recht, Qualität und Marke,
-  Messbarkeit. Fast jede Zeile hat mindestens ein Problem.
+  Messbarkeit. Fast jede Zeile hat mindestens ein Problem. Bei Schritt 3 hilft die Frage: Was
+  löst Enterprise Data Protection – und was nicht?
 solution: |
   | Problem | Warum | Kapitel |
   |---|---|---|
@@ -34,13 +39,32 @@ solution: |
   | Messung nur per Zufriedenheit | misst Gefühl, nicht Wirkung | 16, 20 |
   | keine Richtlinie, keine Freigabe | Verantwortung ungeklärt | 4, 39 |
 
-  KI-Werkzeuge erkennen meist den Datenschutzverstoß, bewerten aber Ziel und Messung oft zu
-  nachsichtig und schlagen selten vor, den Avatar-Schritt zu streichen.
+  Copilot erkennt meist den Datenschutzverstoß, bewertet aber Ziel und Messung oft zu nachsichtig
+  und schlägt selten vor, den Avatar-Schritt zu streichen.
 
-  Gegenvorschlag in Kurzform: Bestandsaufnahme der Aufgaben mit Zeitmessung; Pilot mit einem
-  Business-Werkzeug und dem Content-Assistenten für Newsletter-Entwürfe; einseitige Richtlinie mit Datenampel und
-  Kennzeichnungslinie; Messung von Zeit, Korrekturschleifen und Kanal-KPIs gegen die Baseline;
-  Entscheidung nach vier Wochen über Ausweitung.
+  Zu Schritt 3: Mit Microsoft 365 Copilot bleiben die Daten im Mandanten, Enterprise Data
+  Protection gilt, und Berechtigungen werden beachtet – das löst das Problem des
+  Consumer-Werkzeugs. Es löst **nicht** die Fragen nach Zweckbindung und Datenminimierung: Für
+  eine Zielgruppenanalyse braucht es keinen vollständigen Export mit Namen und Kontaktdaten.
+  Besser ist ein anonymisierter oder aggregierter Auszug, abgestimmt mit Datenschutz (Kap. 4, 17).
+  Wenn Copilot die Frage pauschal mit „ja" beantwortet, ist die Antwort zu nachsichtig.
 
-  Bewertungskriterien: mindestens sechs Probleme mit Begründung, Vergleich mit der KI-Bewertung
-  konkret, Gegenvorschlag enthält alle fünf Schritte und eine Baseline.
+  Beispiel-Prompt für Copilot in Word:
+
+  ```text
+  Entwirf auf einer halben Seite einen Gegenvorschlag zur KI-Einführung im
+  Fjordlicht-Marketing (5 Personen, Microsoft 365 Copilot vorhanden).
+  Gliedere nach: 1. Bestandsaufnahme mit Zeitmessung, 2. Pilot (ein Use Case,
+  vier Wochen), 3. einseitige Richtlinie, 4. Messung gegen Ausgangswert,
+  5. Entscheidung über Ausweiten oder Stoppen. Keine personenbezogenen Daten,
+  keine Avatar- oder Klonprojekte im Pilot.
+  ```
+
+  Gegenvorschlag in Kurzform: Bestandsaufnahme der Aufgaben mit Zeitmessung; Pilot mit Microsoft
+  365 Copilot und dem Content-Assistenten für Newsletter-Entwürfe; einseitige Richtlinie mit
+  Datenampel und Kennzeichnungslinie; Messung von Zeit, Korrekturschleifen und Kanal-KPIs gegen
+  die Baseline; Entscheidung nach vier Wochen über Ausweitung.
+
+  Bewertungskriterien: mindestens sechs Probleme mit Begründung, Vergleich mit der
+  Copilot-Bewertung konkret, Nachfrage zu Woche 2 differenziert beantwortet (Mandant ja,
+  Datenminimierung trotzdem), Gegenvorschlag enthält alle fünf Schritte und eine Baseline.

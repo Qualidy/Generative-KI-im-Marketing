@@ -3,8 +3,8 @@ difficulty: 4
 question: |
   **Szenario:** Fjordlicht nutzt Bild-KI für Stimmungsbilder, aber jedes Teammitglied promptet
   anders. Das Ergebnis: mal Hochglanz, mal Aquarell, mal Stockfoto-Lächeln. Du entwickelst
-  **Prompt-Vorlagen**, mit denen auch Neue im Team Bilder in der Markenbildsprache erzeugen.
-  Alternativ arbeitest du mit **einem Unternehmen deiner Wahl**.
+  **Prompt-Vorlagen**, mit denen auch Neue im Team Bilder in der Markenbildsprache erzeugen –
+  direkt in Copilot. Alternativ arbeitest du mit **einem Unternehmen deiner Wahl**.
 
   ```text
   Rahmen:
@@ -12,54 +12,92 @@ question: |
   Keine Superlative, kein Greenwashing.
   Kanäle: Newsletter-Header (3:1), Instagram (4:5), Pinterest (2:3).
   Keine echten Produkte generieren - nur Stimmungs- und Umfeldbilder.
-  Werkzeug: das im Team freigegebene Bildwerkzeug.
+  Werkzeug: Bilderzeugung in Microsoft 365 Copilot (Copilot Chat bzw. Create,
+  falls in eurer Umgebung freigegeben).
+  Ablage: Word-Dokument "Bildprompt-Vorlagen" im Ordner "Fjordlicht-Kurs";
+  Basisdaten per /Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11 bzw.
+  Markenstimme aus dem Rahmen oben).
   ```
 
   ---
 
-  **Runde 1 – Bildsprache in Bausteine übersetzen.** Beschreibe die Markenbildsprache für jeden
-  der acht Bausteine aus 30.2 in ein bis zwei Stichworten (z. B. Licht: „diffus, bedeckt, nie
-  grell"). Nutze dafür, wenn möglich, zwei bis drei passende eigene Fotos und lass sie von einem
-  Chat-Werkzeug nach Licht, Perspektive, Ausschnitt und Farbe beschreiben.
+  **Runde 1 – Bildsprache in Bausteine übersetzen.** Lade zwei bis drei passende eigene oder
+  freigegebene Fotos in Copilot Chat hoch und lass sie beschreiben:
+
+  ```text
+  Beschreibe Licht, Perspektive, Bildausschnitt, Farbstimmung und Anmutung
+  dieser Fotos in Stichworten. Nenne danach, was alle Fotos gemeinsam haben.
+  Gleiche das mit der Markenstimme in /Fjordlicht-Basisdaten ab.
+  ```
+
+  Beschreibe daraus die Markenbildsprache für jeden der acht Bausteine aus 30.2 in ein bis zwei
+  Stichworten (z. B. Licht: „diffus, bedeckt, nie grell") und halte sie als Tabelle im
+  Word-Dokument fest.
 
   **Runde 2 – Drei Vorlagen bauen.** Erstelle je eine Vorlage für die drei Kanäle. Feste
   Bausteine stehen ausformuliert drin, variable als Platzhalter in eckigen Klammern (mindestens
-  `[Motiv]`, `[Umgebung]`, `[Jahreszeit]`). Teste jede Vorlage mit **zwei** unterschiedlichen
-  Motiven.
+  `[Motiv]`, `[Umgebung]`, `[Jahreszeit]`). Teste jede Vorlage in Copilot mit **zwei**
+  unterschiedlichen Motiven, jeweils in einer neuen Unterhaltung. Speichere die Vorlagen
+  zusätzlich in der **Prompt Gallery** und teile sie mit dem Team, falls in eurer Umgebung
+  möglich.
 
   **Runde 3 – Die Komplikation.** Bei den Tests fällt auf: Die erzeugten Menschen sind fast
   immer jung, schlank, hellhäutig und sportlich – Familien und ältere Menschen aus der
   Zielgruppe tauchen nicht auf. Passe die Vorlagen so an, dass Vielfalt **beschrieben** statt
-  beschworen wird, ohne dass jedes Bild nach Quote aussieht. Teste erneut.
+  beschworen wird, ohne dass jedes Bild nach Quote aussieht. Teste erneut und stelle
+  Vorher/Nachher in einer kurzen PowerPoint-Präsentation gegenüber (Bilder einfügen, Copilot in
+  PowerPoint für Folientitel und eine Zusammenfassungsfolie nutzen).
 
-  **Runde 4 – Entscheidung unter Abwägung.** Lass ein Chat-Werkzeug eine deiner Vorlagen
-  „für maximale Bildqualität optimieren". Du bekommst vermutlich eine längere Fassung mit
+  **Runde 4 – Entscheidung unter Abwägung.** Bitte Copilot Chat, eine deiner Vorlagen „für
+  maximale Bildqualität zu optimieren". Du bekommst vermutlich eine längere Fassung mit
   Begriffen wie „cinematic", „hyperrealistic", „award-winning". Teste beide Fassungen mit
   denselben zwei Motiven und entscheide. **Widersprich** dem Vorschlag dort, wo er gegen die
   Markenbildsprache arbeitet, und begründe jede Streichung einzeln.
 
   **Deliverable:**
 
-  1. Bildsprache-Übersicht mit acht Bausteinen
-  2. drei getestete Vorlagen mit Platzhaltern und je zwei Beispielbildern
-  3. überarbeitete Vorlagen nach Runde 3 mit Vorher/Nachher-Vergleich
+  1. Bildsprache-Übersicht mit acht Bausteinen (Word), abgeleitet aus den Bildbeschreibungen
+  2. drei getestete Vorlagen mit Platzhaltern und je zwei Beispielbildern, gespeichert im
+     Word-Dokument und in der Prompt Gallery
+  3. überarbeitete Vorlagen nach Runde 3 mit Vorher/Nachher-Vergleich (PowerPoint)
   4. Vergleich und begründete Entscheidung aus Runde 4
 
-  **Fertig bist du erst, wenn** jede Vorlage von einer anderen Person ohne Erklärung genutzt
-  werden kann, alle Kanalformate korrekt gesetzt sind, keine Vorlage echte Produkte
-  generieren lässt und deine Entscheidung aus Runde 4 mindestens drei Streichungen begründet.
+  **Fertig bist du erst, wenn** jede Vorlage von einer anderen Person ohne Erklärung in
+  Copilot genutzt werden kann, alle Kanalformate korrekt gesetzt sind, keine Vorlage echte
+  Produkte generieren lässt und deine Entscheidung aus Runde 4 mindestens drei Streichungen
+  begründet.
 tip: |
   Der Lernkern liegt in Runde 1 und 3. Eine Bildsprache, die nur als Gefühl existiert („so
   nordisch halt"), lässt sich nicht prompten. Erst wenn Licht, Farbe und Ausschnitt in Worte
-  gefasst sind, werden Ergebnisse reproduzierbar. Und Vielfalt entsteht durch konkrete
-  Beschreibung einzelner Personen und Situationen, nicht durch Schlagworte.
+  gefasst sind, werden Ergebnisse reproduzierbar – die Bildbeschreibung in Copilot liefert dir
+  dafür das Vokabular. Und Vielfalt entsteht durch konkrete Beschreibung einzelner Personen und
+  Situationen, nicht durch Schlagworte. Falls Copilot ein Seitenverhältnis nicht exakt
+  umsetzt, notiere in der Vorlage, wie das Bild danach zugeschnitten wird.
 solution: |
+  Beispiel für eine Vorlage (Instagram):
+
+  ```text
+  Dokumentarisches Foto, ungestellt: [Motiv: wer, Alter, was tut die Person]
+  in [Umgebung] im [Jahreszeit]. Licht: diffus, bedeckter Himmel oder früher
+  Morgen, keine harten Schatten. Komposition: Person im unteren oder seitlichen
+  Bilddrittel, viel Umgebung, Blick nicht in die Kamera. Kamera: Halbtotale
+  bis Totale, Augenhöhe, natürliche Schärfentiefe. Farben: gedeckte Grün-,
+  Grau- und Brauntöne, leicht entsättigt, natürliche Hauttöne.
+  Format: Hochformat 4:5 für Instagram. Kein Text, keine Logos, keine
+  erkennbaren Markenprodukte im Bild.
+  ```
+
+  Beispiel für einen ausgefüllten Motiv-Platzhalter nach Runde 3: „eine Frau um die sechzig
+  mit grauem Kurzhaarschnitt, die mit ihrem Enkel einen Thermobecher teilt" statt „diverse
+  Familie".
+
   Bewertungskriterien: (1) die Bildsprache ist für alle acht Bausteine konkret und sichtbar
-  beschrieben, nicht mit Gefühlswörtern; (2) die Vorlagen trennen feste und variable Bausteine
-  sauber, setzen das Kanalformat und lassen Platz für Text, wo nötig; (3) die Überarbeitung in
-  Runde 3 beschreibt Personen konkret (Alter, Situation, Konstellation) und zeigt im
-  Vorher/Nachher eine sichtbare Veränderung; (4) die Entscheidung in Runde 4 beruht auf
-  denselben Testmotiven und begründet Streichungen mit der Markenbildsprache (z. B.
+  beschrieben, nicht mit Gefühlswörtern, und erkennbar aus den Bildbeschreibungen abgeleitet;
+  (2) die Vorlagen trennen feste und variable Bausteine sauber, setzen das Kanalformat und
+  lassen Platz für Text, wo nötig; sie sind in der Prompt Gallery auffindbar; (3) die
+  Überarbeitung in Runde 3 beschreibt Personen konkret (Alter, Situation, Konstellation) und
+  zeigt im Vorher/Nachher eine sichtbare Veränderung; (4) die Entscheidung in Runde 4 beruht
+  auf denselben Testmotiven und begründet Streichungen mit der Markenbildsprache (z. B.
   „hyperrealistic" erzeugt Hochglanz, widerspricht „ehrlich, ruhig").
 
   Lernziel: eine Markenbildsprache in prüfbare Bildprompt-Bausteine übersetzen und daraus

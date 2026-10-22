@@ -4,12 +4,13 @@ question: |
   **Szenario:** Fjordlicht startet die Winterkampagne „Draußen bleiben" für die Regenjacke „Sølv".
   Das Marketingteam hat viel mit KI produziert und will die Inhalte in zwei Wochen ausspielen. Die
   Geschäftsführung möchte vorher einen **Leitfaden**, der für jeden Inhalt klärt: Dürfen wir das
-  veröffentlichen, und müssen wir es kennzeichnen? Du kannst alternativ ein Unternehmen deiner Wahl
-  mit einer vergleichbaren Kampagne nutzen.
+  veröffentlichen, und müssen wir es kennzeichnen? Du arbeitest in Microsoft 365 Copilot. Du
+  kannst statt Fjordlicht auch ein Unternehmen deiner Wahl mit einer vergleichbaren Kampagne
+  nutzen.
 
   ```text
   Inhalte der Kampagne:
-  A  Newsletter-Text, mit ChatGPT entworfen, redigiert
+  A  Newsletter-Text, mit Copilot in Outlook entworfen, redigiert
   B  Key Visual: fotorealistische Wanderin im Regen, KI-Hintergrund, echte Jacke montiert
   C  TikTok-Clip, KI-Video: Regen über Münsters Prinzipalmarkt, Jacke im Vordergrund
   D  Erklärvideo mit Avatar und Stimme des Produktmanagers (mit Vertrag)
@@ -17,41 +18,61 @@ question: |
   F  Hintergrundmusik aus einer Musik-KI, Free-Plan
   G  Chatbot "Frag Fjordlicht" im Webshop
   Kanäle: Webshop, Newsletter, Instagram, TikTok, Blog
+  Ablage: Ordner „Fjordlicht-Kurs", Unterordner „Winterkampagne"
   ```
 
   ---
 
-  **Runde 1 – Bestandsaufnahme.** Erstelle eine Tabelle mit allen sieben Inhalten: Medium,
-  verwendetes Werkzeug, Kanal, beteiligte reale Personen, Orte oder Marken. Nutze ein KI-Werkzeug
-  für den ersten Entwurf und prüfe ihn selbst.
+  **Runde 1 – Bestandsaufnahme (Excel).** Lege die Excel-Tabelle **„Kampagne-Prüfung"** an:
+  Inhalt | Medium | verwendetes Werkzeug | Kanal | beteiligte reale Personen, Orte oder Marken.
+  Lass Copilot Chat aus der Liste oben einen ersten Tabellenentwurf erstellen, übernimm ihn nach
+  Excel und prüfe ihn selbst. Lass Copilot in Excel anschließend Spalten für Zulässigkeit,
+  Kennzeichnung, Begründung, Freigabe durch und Datum ergänzen.
 
-  **Runde 2 – Prüfung.** Prüfe jeden Inhalt in zwei getrennten Schritten:
+  **Runde 2 – Prüfung (Copilot Chat, Researcher, Excel).** Prüfe jeden Inhalt in zwei getrennten
+  Schritten:
 
   1. **Zulässigkeit:** Urheberrecht, Marken, Persönlichkeitsrechte, Nutzungsbedingungen, UWG
   2. **Kennzeichnung:** Entscheidungsbaum aus Abschnitt 39.5, Ergebnis mit Begründung
 
-  **Runde 3 – Die Komplikation.** Drei Tage vor dem Start meldet sich der Produktmanager aus
-  Inhalt D: Er verlässt das Unternehmen zum Monatsende und möchte nicht, dass seine Stimme danach
-  weiter genutzt wird. Gleichzeitig stellt sich heraus, dass die Musik in F im Free-Plan erzeugt
-  wurde. Kläre für beide Fälle: Was bedeutet das für die Kampagne, was muss sofort passieren, und
-  welche Regel nehmt ihr in den Leitfaden auf, damit es nicht wieder vorkommt?
+  Nutze für die Kennzeichnung die **„Kennzeichnungs-Vorprüfung"** aus Abschnitt 39.5 (gern aus
+  der Prompt Gallery) und trage deine eigene Entscheidung in die Excel-Tabelle ein – nicht die
+  ungeprüfte Copilot-Antwort. Für die Rechtslage zu E (EU-Textilstrategie) und F
+  (Nutzungsbedingungen der Musik-KI) lässt du den **Researcher** (falls in eurer Umgebung
+  freigegeben) mit Quellen recherchieren und prüfst die Quellen selbst.
 
-  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung schlägt vor, einfach **alle**
-  Inhalte mit „KI-generiert" zu kennzeichnen – „dann sind wir auf der sicheren Seite". Das
-  Social-Media-Team möchte dagegen **gar nichts** kennzeichnen, wo es nicht Pflicht ist. Lass dir
-  von einem KI-Werkzeug eine Empfehlung geben. **Widersprich** der Empfehlung dort, wo sie Pflicht und
-  Freiwilligkeit vermischt oder die Markenstimme von Fjordlicht ignoriert, und entscheide begründet.
+  **Runde 3 – Die Komplikation (Outlook, Excel).** Drei Tage vor dem Start meldet sich der
+  Produktmanager aus Inhalt D: Er verlässt das Unternehmen zum Monatsende und möchte nicht, dass
+  seine Stimme danach weiter genutzt wird. Gleichzeitig stellt sich heraus, dass die Musik in F im
+  Free-Plan erzeugt wurde. Kläre für beide Fälle: Was bedeutet das für die Kampagne, was muss
+  sofort passieren, und welche Regel nehmt ihr in den Leitfaden auf, damit es nicht wieder
+  vorkommt? Lass Copilot in Outlook eine Antwort an den Produktmanager entwerfen (nicht absenden)
+  und aktualisiere die Excel-Tabelle.
+
+  **Runde 4 – Entscheidung unter Abwägung (Copilot Chat).** Die Geschäftsführung schlägt vor,
+  einfach **alle** Inhalte mit „KI-generiert" zu kennzeichnen – „dann sind wir auf der sicheren
+  Seite". Das Social-Media-Team möchte dagegen **gar nichts** kennzeichnen, wo es nicht Pflicht
+  ist. Lass dir von Copilot eine Empfehlung geben, mit `/Fjordlicht-Basisdaten` als Kontext für
+  die Markenstimme (falls nicht vorhanden: Kap. 11). **Widersprich** der Empfehlung dort, wo sie
+  Pflicht und Freiwilligkeit vermischt oder die Markenstimme von Fjordlicht ignoriert, und
+  entscheide begründet.
+
+  **Abschluss – Leitfaden (Word).** Lass Copilot in Word aus der Excel-Datei
+  `/Kampagne-Prüfung` und deiner Entscheidung aus Runde 4 den Entwurf einer einseitigen
+  **Kennzeichnungsrichtlinie** erstellen. Überarbeite ihn, bis er ohne Rückfrage anwendbar ist.
 
   **Deliverable:**
 
-  1. Prüftabelle für alle sieben Inhalte mit Zulässigkeit und Kennzeichnungsentscheidung
-  2. Maßnahmen zu Runde 3 mit neuer Leitfadenregel
+  1. Excel-Tabelle „Kampagne-Prüfung" für alle sieben Inhalte mit Zulässigkeit,
+     Kennzeichnungsentscheidung, Begründung und Freigabe
+  2. Maßnahmen zu Runde 3 mit neuer Leitfadenregel und Mail-Entwurf an den Produktmanager
   3. begründete Kennzeichnungslinie aus Runde 4, inklusive Formulierung des Hinweises
-  4. einseitiger Leitfaden für das Team mit Entscheidungsbaum, Dokumentationsfeldern und
-     Ansprechperson für Rechtsfragen
+  4. einseitige Kennzeichnungsrichtlinie in Word mit Entscheidungsbaum, Dokumentationsfeldern
+     und Ansprechperson für Rechtsfragen
 
   **Fertig bist du erst, wenn** jeder Inhalt eine dokumentierte Entscheidung mit Begründung hat,
-  Zulässigkeit und Kennzeichnung getrennt geprüft sind, beide Probleme aus Runde 3 eine konkrete
+  Zulässigkeit und Kennzeichnung getrennt geprüft sind, jede Researcher-Quelle, auf die du dich
+  stützt, von dir geöffnet und geprüft wurde, beide Probleme aus Runde 3 eine konkrete
   Sofortmaßnahme und eine Regel haben und deine Linie aus Runde 4 Pflicht und freiwillige
   Transparenz klar unterscheidet.
 tip: |
@@ -59,6 +80,9 @@ tip: |
   kennzeichnen?** Ein Label heilt keinen Rechtsverstoß. Und eine Pauschalkennzeichnung ist nicht
   automatisch die sichere Seite: Sie entwertet den Hinweis dort, wo er wirklich zählt, etwa bei C
   oder D.
+
+  Copilot bereitet Tabelle, Vorprüfung und Richtlinie vor – die Entscheidung in jeder Zeile
+  triffst und verantwortest du. Eine Spalte „Freigabe durch" macht das sichtbar.
 solution: |
   Erwartbare Einordnung: A keine Pflicht; B Zulässigkeit hängt an echtem Produktfoto, Plattformlabel
   bei realistischer Darstellung; C ähnelt einem realen Ort, wirkt echt – offenlegen; D Deepfake einer
@@ -66,12 +90,30 @@ solution: |
   Prüfung und benannter Verantwortung nicht; F im Free-Plan meist nicht kommerziell nutzbar –
   ersetzen; G Hinweis auf KI-Interaktion nach Art. 50 Abs. 1.
 
-  Bewertungskriterien: (1) alle sieben Inhalte vollständig und in getrennten Schritten geprüft;
-  (2) Runde 3 erkennt, dass Einwilligung und Lizenz Voraussetzungen der Nutzung sind, und führt zu
-  Regeln wie Vertragsklauseln zur Nutzungsdauer und Tarifprüfung vor Produktion; (3) Runde 4
-  unterscheidet Pflichtkennzeichnung von freiwilliger Transparenz und begründet die Linie mit der
-  Markenstimme; (4) der Leitfaden ist so konkret, dass ein neues Teammitglied ihn ohne Rückfrage
-  anwenden kann, und enthält den Hinweis, dass er keine Rechtsberatung ersetzt.
+  Beispiel-Prompt für den Richtlinienentwurf (Copilot in Word):
+
+  ```text
+  Erstelle auf Basis von /Kampagne-Prüfung eine einseitige Kennzeichnungsrichtlinie
+  für das Fjordlicht-Marketingteam. Inhalt: 1. Grundsatz (Zulässigkeit vor
+  Kennzeichnung), 2. Entscheidungsbaum in fünf Fragen, 3. Formulierung der
+  Hinweise je Kanal, 4. Dokumentationsfelder (Inhalt, Werkzeug, Ergebnis,
+  Freigabe durch, Datum), 5. Ansprechperson für Rechtsfragen.
+  Ton: sachlich, Du-Ansprache. Schließe mit dem Hinweis, dass die Richtlinie
+  keine Rechtsberatung ersetzt.
+  ```
+
+  Bewertungskriterien: (1) alle sieben Inhalte vollständig und in getrennten Schritten geprüft,
+  Entscheidungen in Excel dokumentiert; (2) Runde 3 erkennt, dass Einwilligung und Lizenz
+  Voraussetzungen der Nutzung sind, und führt zu Regeln wie Vertragsklauseln zur Nutzungsdauer
+  und Tarifprüfung vor Produktion; (3) Runde 4 unterscheidet Pflichtkennzeichnung von freiwilliger
+  Transparenz und begründet die Linie mit der Markenstimme; (4) die Richtlinie ist so konkret,
+  dass ein neues Teammitglied sie ohne Rückfrage anwenden kann, und enthält den Hinweis, dass sie
+  keine Rechtsberatung ersetzt; (5) Researcher-Ergebnisse sind mit geprüften Quellen belegt,
+  nicht nur übernommen.
+
+  Typische Copilot-Schwächen: Die Vorprüfung vermischt Zulässigkeit und Kennzeichnung (etwa „D
+  ist mit Label in Ordnung", obwohl die Einwilligung endet), und die Empfehlung in Runde 4 neigt
+  zur Pauschalkennzeichnung, weil sie „rechtlich sicher" klingt.
 
   Lernziel: Rechtliche Prüfung und Kennzeichnung als zwei getrennte, dokumentierte Schritte in den
   Freigabeprozess einbauen – und Transparenz bewusst als Markenentscheidung gestalten.

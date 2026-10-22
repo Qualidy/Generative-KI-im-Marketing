@@ -1,8 +1,9 @@
-title: Einen Bestandsartikel optimieren
+title: Einen Bestandsartikel mit Copilot optimieren
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug. Der Fjordlicht-Artikel „Fleece richtig waschen"
-  bekommt laut Search Console viele Impressionen, aber wenige Klicks. Hier der fiktive Export:
+  Diese Übung machst du in **Excel mit Copilot**, **Copilot Chat** und **Word mit Copilot**. Der
+  Fjordlicht-Artikel „Fleece richtig waschen" bekommt laut Search Console viele Impressionen,
+  aber wenige Klicks. Hier der fiktive Export:
 
   ```text
   suchanfrage;impressionen;klicks;position
@@ -16,26 +17,49 @@ question: |
   Aktueller Title: `Pflegetipps | Fjordlicht Blog`
   Aktuelle Description: `Hier findest du Tipps zur Pflege.`
 
-  1. Lass die KI mit einem P.R.O.M.P.T.-Prompt (Kap. 5) **fünf neue Title-/Description-
-     Varianten** erstellen, Zeichen per Datenanalyse gezählt.
-  2. Lass prüfen, welche Suchanfragen der Artikel vermutlich **nicht** beantwortet, und
-     erstelle einen Vorschlag für zwei neue H2-Abschnitte mit je einer zitierfähigen
-     Kurzantwort.
-  3. Wähle die beste Variante aus und begründe die Wahl.
+  1. Lege den Export als Tabelle in „Search-Console-Fleece.xlsx" an. Lass **Copilot in Excel** eine
+     Spalte Klickrate (Klicks ÷ Impressionen) ergänzen und die Anfragen hervorheben, die viele
+     Impressionen, aber eine niedrige Klickrate oder eine Position über 10 haben.
+  2. Lass in Copilot Chat mit einem P.R.O.M.P.T.-Prompt (Kap. 5) **fünf neue Title-/Description-
+     Varianten** erstellen. Übernimm sie in Excel und lass die Zeichen mit `LÄNGE` zählen – nicht
+     schätzen.
+  3. Füge einen kurzen Artikelentwurf (oder einen eigenen Pflegetext) in Word ein und frag
+     **Copilot in Word**, welche der Suchanfragen der Text nicht oder nur am Rand beantwortet.
+     Lass für zwei neue H2-Abschnitte je eine zitierfähige Kurzantwort entwerfen, ohne den
+     übrigen Text umzuschreiben.
+  4. Wähle die beste Title-Variante aus und begründe die Wahl.
 tip: |
   Schau auf die Suchanfragen mit hoher Position-Zahl: Sie zeigen, wonach Menschen suchen, was
-  der Artikel offenbar nur am Rand behandelt. Und: Die beste Variante greift die wichtigste
-  Suchanfrage auf, ohne alle Begriffe in den Title zu pressen.
+  der Artikel offenbar nur am Rand behandelt. Die beste Variante greift die wichtigste
+  Suchanfrage auf, ohne alle Begriffe in den Title zu pressen. Beim Zählen gilt: Copilot Chat
+  schätzt Zeichenzahlen oft, eine Excel-Formel zählt sie.
 solution: |
-  Beispielvarianten (Zeichenzahlen gerundet):
+  Ergebnis Schritt 1 (gerundet): Klickrate „fleece waschen" 0,9 %, „temperatur" 0,6 %,
+  „trockner" 0,3 %, „fusselt" 0,2 %, „weichspüler" 1,5 %. Hervorgehoben werden vor allem
+  Trockner (Position 14,8) und Fusseln (17,1).
+
+  Beispiel-Prompt (Copilot Chat):
+
+  ```text
+  Persona: Du bist SEO-Redakteurin im E-Commerce.
+  Request: Formuliere fünf Varianten für Title und Meta-Description eines
+  Ratgebers "Fleece richtig waschen".
+  Output: Tabelle Title | Description.
+  Modifier: Hauptkeyword "fleece waschen" im Title möglichst vorn, Title
+  höchstens 60 Zeichen, Description höchstens 155. Markenname am Ende des
+  Titles. Keine Superlative, keine Versprechen, die der Artikel nicht hält.
+  Purpose: mehr Klicks aus der Google-Suche; wichtigste Suchanfragen: [Export].
+  Tone: ruhig, konkret, Du-Ansprache.
+  ```
+
+  Beispielvarianten (Zeichen per `=LÄNGE(A2)` gezählt):
 
   | Title | Zeichen | Description (Auszug) |
   |---|---|---|
   | Fleece waschen: Temperatur, Trockner, Fusseln \| Fjordlicht | 58 | Bei wie viel Grad, ob Trockner erlaubt ist und was gegen Fusseln hilft … |
   | Fleece richtig waschen – so bleibt es weich \| Fjordlicht | 56 | Temperatur, Waschmittel, Trockner: Was dein Fleece braucht … |
 
-  Wahrscheinliche Lücken: Trockner (Position 14,8) und Fusseln/Pilling (17,1). Neue
-  Abschnitte:
+  Neue Abschnitte:
 
   - **„Darf Fleece in den Trockner?"** Kurzantwort: „Besser nicht. Wärme und Reibung lassen die
     Fasern verfilzen; lass Fleece liegend an der Luft trocknen." (Aussage gegen Pflegeetikett

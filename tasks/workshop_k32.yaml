@@ -2,77 +2,106 @@ title: Bildsprache-Guide für eine Marke
 difficulty: 4
 question: |
   **Szenario:** Bei Fjordlicht erzeugen inzwischen drei Personen Bilder mit KI – für Instagram,
-  Newsletter und LinkedIn. Jede Person arbeitet mit eigenen Prompts und eigenem Werkzeug. Das
-  Ergebnis: Der Feed wirkt wie von drei Marken, und ein Kunde hat gefragt, ob Fjordlicht
-  „jetzt auch Stockfotos benutzt". Die Marketingleitung will einen **Bildsprache-Guide für
-  Bild-KI**, mit dem alle drei ab nächster Woche arbeiten. Du kannst stattdessen auch ein
-  Unternehmen deiner Wahl verwenden.
+  Newsletter und LinkedIn. Alle haben Copilot, aber jede Person arbeitet mit eigenen Prompts,
+  eine zusätzlich mit Midjourney. Das Ergebnis: Der Feed wirkt wie von drei Marken, und ein Kunde
+  hat gefragt, ob Fjordlicht „jetzt auch Stockfotos benutzt". Die Marketingleitung will einen
+  **Bildsprache-Guide für Bild-KI**, mit dem alle drei ab nächster Woche arbeiten. Du kannst
+  stattdessen auch ein Unternehmen deiner Wahl verwenden.
 
   ```text
   Rahmen:
   Marke: Fjordlicht (Markenstimme ruhig, ehrlich, naturverbunden, nordisch-trocken)
   oder ein Unternehmen deiner Wahl.
   Kanäle: Instagram, Newsletter, LinkedIn (Fjordlicht Business).
-  Werkzeuge: mindestens zwei Bild-KI-Werkzeuge aus Kap. 31.
+  Werkzeuge: Bilderzeugung in Copilot (Chat bzw. Create, falls freigegeben),
+  optional ein weiteres Werkzeug aus Kap. 31.
   Keine echten Personen, keine fremden Marken, keine Kundendaten.
-  Umfang des Guides: höchstens zwei Seiten.
+  Umfang des Guides: höchstens zwei Seiten, als Word-Datei im Ordner "Fjordlicht-Kurs".
   ```
 
   ---
 
-  **Runde 1 – Guide entwerfen.** Erstelle die Dimensionstabelle aus Abschnitt 32.2 für deine
-  Marke mit allen sieben Dimensionen, einen Bildsprache-Baustein (höchstens 80 Wörter) und
-  eine Kanaltabelle für die drei Kanäle mit Format und Kompositionsregel.
+  **Runde 1 – Guide entwerfen.** Lass dir von Copilot in **Word** einen Entwurf des Guides
+  erstellen, auf Basis von `/Fjordlicht-Basisdaten` und – falls vorhanden –
+  `/Fjordlicht-Bildsprache` aus Kurzübung 2. Der Guide enthält die Dimensionstabelle aus
+  Abschnitt 32.2 mit allen sieben Dimensionen, einen Bildsprache-Baustein (höchstens 80 Wörter)
+  und eine Kanaltabelle für die drei Kanäle mit Format und Kompositionsregel. Überarbeite den
+  Entwurf so, dass jede Dimension sichtbar beschrieben ist – markierte Passagen kannst du mit
+  Copilot umschreiben lassen.
 
-  **Runde 2 – Guide testen.** Erzeuge mit dem Baustein sechs Bilder: je Kanal zwei
-  unterschiedliche Motive, verteilt auf mindestens zwei Werkzeuge. Lege alle sechs
-  nebeneinander. Prüfe gegen diese Pflichtkriterien:
+  **Runde 2 – Guide testen.** Erzeuge mit dem Baustein in Copilot sechs Bilder: je Kanal zwei
+  unterschiedliche Motive, verteilt auf Copilot Chat und Create oder ein zweites Werkzeug. Lege
+  alle sechs in **PowerPoint** auf eine Übersichtsfolie (lass dir dafür von Copilot in
+  PowerPoint eine Folie mit sechs Bildplätzen und Beschriftungen anlegen). Prüfe gegen diese
+  Pflichtkriterien:
 
   1. Die sechs Bilder sind ohne Logo als **eine** Marke erkennbar.
   2. Kein Bild verletzt ein Tabu aus dem Guide.
   3. Jedes Bild funktioniert im Zielformat auf dem Smartphone.
   4. Kein Bild enthält unbelegte Nachhaltigkeitssymbolik.
 
-  Schärfe den Baustein, bis alle vier Kriterien erfüllt sind, und dokumentiere jede Änderung.
+  Schärfe den Baustein, bis alle vier Kriterien erfüllt sind, und dokumentiere jede Änderung
+  (in Word mit „Änderungen nachverfolgen").
 
   **Runde 3 – Die Komplikation.** Die B2B-Kollegin meldet sich: Die Bilder seien für LinkedIn
   „zu romantisch". Einkaufsverantwortliche in Gärtnereien und Forstbetrieben wollen Arbeit
   sehen, nicht Nebel und Heide. Gleichzeitig soll Fjordlicht Business erkennbar zur Marke
   gehören. Entwickle eine **Variante** des Bausteins für B2B, die die Kerndimensionen beibehält
-  und nur festgelegte Dimensionen anpasst. Teste sie mit zwei Motiven.
+  und nur festgelegte Dimensionen anpasst. Teste sie in Copilot mit zwei Motiven und ergänze
+  sie auf der Übersichtsfolie.
 
   **Runde 4 – Entscheidung unter Abwägung.** Ein Teammitglied schlägt vor, statt eines Guides
-  einfach in Midjourney eine Stilreferenz festzulegen und nur noch damit zu arbeiten – „dann
-  ist alles automatisch konsistent". Prüfe den Vorschlag praktisch mit drei Motiven.
-  **Widersprich** dem Vorschlag dort, wo er zu kurz greift (zum Beispiel Werkzeugbindung,
-  Tabus, Produktdarstellung, Teamwissen), und benenne, wo eine Stilreferenz den Guide sinnvoll
-  ergänzt.
+  einfach ein freigegebenes Referenzbild festzulegen, das alle bei jeder Generierung hochladen
+  („übernimm den Look") – oder in Midjourney eine Stilreferenz – „dann ist alles automatisch
+  konsistent". Prüfe den Vorschlag praktisch in Copilot mit drei Motiven. **Widersprich** dem
+  Vorschlag dort, wo er zu kurz greift (zum Beispiel Werkzeugbindung, Tabus,
+  Produktdarstellung, Teamwissen), und benenne, wo eine Stilreferenz den Guide sinnvoll
+  ergänzt. Mach den Guide für das Team nutzbar: Baustein als geteilten Prompt in der Prompt
+  Gallery oder als Startprompt eines kleinen Agents mit dem Guide als Wissen (Agent Builder,
+  falls in eurer Umgebung freigegeben).
 
   **Deliverable:**
 
-  1. Bildsprache-Guide (Dimensionstabelle, Baustein, Kanaltabelle) in der finalen Fassung
-  2. sechs Testbilder mit Prüfprotokoll der vier Pflichtkriterien und Änderungsliste
+  1. Bildsprache-Guide (Word: Dimensionstabelle, Baustein, Kanaltabelle) in der finalen Fassung
+  2. Übersichtsfolie mit sechs Testbildern, Prüfprotokoll der vier Pflichtkriterien und
+     Änderungsliste
   3. B2B-Variante des Bausteins mit Begründung, welche Dimensionen sich ändern und welche nicht
-  4. begründete Stellungnahme zum Vorschlag aus Runde 4 mit Testergebnis
+  4. begründete Stellungnahme zum Vorschlag aus Runde 4 mit Testergebnis und Angabe, wie das
+     Team auf Guide und Baustein zugreift
 
-  **Fertig bist du erst, wenn** eine Person, die nicht beteiligt war, mit deinem Guide ein
-  Bild erzeugen kann, das zu deinen sechs Testbildern passt, die B2B-Variante als eigene Marke
-  erkennbar bleibt und deine Stellungnahme aus Runde 4 mindestens zwei Grenzen der
+  **Fertig bist du erst, wenn** eine Person, die nicht beteiligt war, mit deinem Guide in
+  Copilot ein Bild erzeugen kann, das zu deinen sechs Testbildern passt, die B2B-Variante als
+  eigene Marke erkennbar bleibt und deine Stellungnahme aus Runde 4 mindestens zwei Grenzen der
   Stilreferenz konkret benennt.
 tip: |
   Der Kern liegt in Runde 3: Ein Guide, der nur eine Stimmung beschreibt, kann nicht variieren,
   ohne die Marke zu verlieren. Trenne deshalb **feste** Dimensionen (Farbwelt, Bearbeitung,
   Haltung zu Menschen, Tabus) von **variablen** (Motivwelt, Licht, Ort). In Runde 4 gilt: Eine
   Stilreferenz überträgt Look, aber kein Urteil – sie weiß nichts über Tabus, Produktwahrheit
-  oder Greenwashing.
+  oder Greenwashing. Lass die „nicht beteiligte Person" aus dem Fertig-Kriterium wirklich
+  testen: Teile Guide oder Prompt mit einer Kollegin.
 solution: |
+  Beispielprompt für den Guide-Entwurf in Word:
+
+  ```text
+  Erstelle einen Bildsprache-Guide für Bild-KI auf Basis von /Fjordlicht-Basisdaten
+  und /Fjordlicht-Bildsprache. Gliederung: 1. Dimensionstabelle mit Motivwelt,
+  Menschen, Licht, Farbe, Perspektive, Bearbeitung, Tabus – jeweils sichtbar
+  beschrieben, keine Adjektive wie "authentisch". 2. Bildsprache-Baustein mit
+  höchstens 80 Wörtern. 3. Kanaltabelle für Instagram, Newsletter und LinkedIn
+  mit Format und Kompositionsregel. Höchstens zwei Seiten. Markiere offene
+  Entscheidungen mit [OFFEN].
+  ```
+
   Bewertungskriterien: (1) der Guide beschreibt alle sieben Dimensionen sichtbar statt mit
-  Adjektiven, der Baustein ist höchstens 80 Wörter lang und enthält Tabus; (2) die sechs
-  Testbilder sind dokumentiert geprüft, Änderungen am Baustein sind nachvollziehbar begründet;
-  (3) die B2B-Variante ändert gezielt Motivwelt und Situation, behält aber Farbwelt,
-  Bearbeitung und Haltung bei; (4) die Stellungnahme beruht auf einem eigenen Test und benennt
-  mindestens zwei Grenzen der Stilreferenz, etwa Bindung an ein Werkzeug, fehlende Tabus,
-  kein Schutz vor falscher Produktdarstellung, Wissen nur im Kopf einer Person.
+  Adjektiven, der Baustein ist höchstens 80 Wörter lang und enthält Tabus, der Copilot-Entwurf
+  wurde erkennbar überarbeitet; (2) die sechs Testbilder sind auf der Folie dokumentiert
+  geprüft, Änderungen am Baustein sind nachvollziehbar begründet; (3) die B2B-Variante ändert
+  gezielt Motivwelt und Situation, behält aber Farbwelt, Bearbeitung und Haltung bei;
+  (4) die Stellungnahme beruht auf einem eigenen Test und benennt mindestens zwei Grenzen der
+  Stilreferenz, etwa Bindung an ein Werkzeug oder Bild, fehlende Tabus, kein Schutz vor falscher
+  Produktdarstellung, Wissen nur im Kopf einer Person; der Zugriff des Teams (geteilter Prompt,
+  Word-Datei oder Agent) ist geregelt.
 
   Lernziel: Markenkonsistenz als beschreibbares, übertragbares System verstehen – und
   erkennen, dass Werkzeugfunktionen wie Stilreferenzen ein Hilfsmittel sind, aber keinen Guide

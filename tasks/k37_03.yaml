@@ -2,7 +2,7 @@ title: Lizenz-Check für einen KI-Track
 difficulty: 3
 question: |
   Eine Werkstudentin hat für Fjordlicht einen KI-Track erzeugt und unter ein Reel gelegt, das
-  morgen auch als bezahlte Anzeige laufen soll. Sie schickt dir diese Notiz:
+  morgen auch als bezahlte Anzeige laufen soll. Sie schickt dir diese Notiz per Teams:
 
   ```text
   Track: "Morgennebel", erzeugt mit Suno
@@ -14,17 +14,37 @@ question: |
   Sie meint: "Ist ja KI, gehört also niemandem."
   ```
 
-  1. Benenne **alle** Probleme, die du in der Notiz erkennst, und ordne sie nach Gewicht.
-  2. Bewerte die Aussage „Ist ja KI, gehört also niemandem" – was daran stimmt, was nicht?
-  3. Ordne die Urteile des LG München I (GEMA ./. OpenAI, GEMA ./. Suno) ein: Was bedeuten sie
-     für diesen Fall, was nicht?
-  4. Formuliere eine Entscheidung: Darf der Track morgen laufen? Wenn nein, was ist der
-     schnellste saubere Ersatz?
+  1. **Probleme finden.** Benenne zuerst selbst **alle** Probleme in der Notiz. Lass dann Copilot
+     Chat (Modus **Arbeit**) dieselbe Notiz prüfen und die Probleme nach Gewicht ordnen.
+     Vergleiche: Was hat Copilot übersehen, was hast du übersehen?
+  2. **Aktuelle Bedingungen prüfen.** Wechsle in den Modus **Web** (oder nutze den Agent
+     **Researcher**, falls freigegeben) und lass dir die aktuellen Suno-Bedingungen zur
+     kommerziellen Nutzung mit Quellen zusammenfassen. Prüfe Datum und Herkunft der Quellen.
+  3. **Einordnen.** Bewerte die Aussage „Ist ja KI, gehört also niemandem" – was daran stimmt,
+     was nicht? Ordne die Urteile des LG München I (GEMA ./. OpenAI, GEMA ./. Suno) ein: Was
+     bedeuten sie für diesen Fall, was nicht?
+  4. **Entscheiden und antworten.** Darf der Track morgen laufen? Wenn nein, was ist der
+     schnellste saubere Ersatz? Lass Copilot eine Antwort an die Werkstudentin entwerfen, die
+     klar entscheidet, kurz erklärt und nicht belehrend klingt. Überarbeite sie selbst.
 tip: |
   Achte auf den Zeitpunkt: Bei Suno zählt der Tarif zum Zeitpunkt der **Erzeugung**, nicht zum
   Zeitpunkt der Veröffentlichung. Und „gehört niemandem" ist halb richtig – genau die falsche
-  Hälfte macht den Fehler aus.
+  Hälfte macht den Fehler aus. Copilot übersieht das Zeitpunktproblem häufig, wenn du es nicht
+  ausdrücklich nach dem Tarif bei Erzeugung fragst.
 solution: |
+  Beispiel-Prompt für die Prüfung in Copilot Chat:
+
+  ```text
+  Prüfe die folgende Notiz zu einem KI-Musiktrack, der morgen als Reel und
+  bezahlte Instagram-Anzeige laufen und später im Webshop genutzt werden soll.
+  Benenne alle Probleme und ordne sie nach Gewicht (hoch, mittel, gering).
+  Berücksichtige: Tarif zum Zeitpunkt der Erzeugung, Konto (privat oder
+  Unternehmen), Künstlernamen im Prompt, Kanäle, KI-Gesang.
+  Ausgabe: Tabelle mit Problem, Gewicht, Begründung. Keine Rechtsberatung,
+  kennzeichne Unsicherheiten.
+  [Notiz einfügen]
+  ```
+
   | Problem | Gewicht | Begründung |
   |---|---|---|
   | Erzeugt im Free-Plan | hoch | kommerzielle Nutzung nur für Songs, die während eines Bezahl-Abos erzeugt wurden; nachträgliches Abo heilt das nicht |
@@ -45,3 +65,19 @@ solution: |
   Entscheidung: Der Track läuft morgen nicht. Schnellster Ersatz: ein Stock-Track mit
   kanalübergreifender Lizenz oder ein neu erzeugter Track im Unternehmenskonto mit Bezahlplan,
   ohne Künstlernamen, mit dokumentiertem Prompt, Datum und Tarif.
+
+  Beispiel für eine gute Antwort an die Werkstudentin (nach Überarbeitung):
+
+  ```text
+  Danke für den schnellen Track – klanglich passt er gut. Laufen lassen
+  können wir ihn morgen leider nicht: Er ist im Free-Plan auf deinem
+  privaten Konto entstanden, und das Abo gilt nicht rückwirkend. Dazu kommt
+  der Bandname im Prompt. Ich nehme für morgen einen Stock-Track. Wenn du
+  magst, bauen wir den Prompt nächste Woche ohne Bandnamen im Firmenkonto
+  neu und dokumentieren Tarif und Datum.
+  ```
+
+  Bewertungskriterien: Das Zeitpunktproblem und das private Konto sind als schwerwiegend
+  erkannt, Copilots Prüfung wird nachweisbar ergänzt oder korrigiert, die Websuche ist mit
+  Quellen und Datum belegt, und die Antwort entscheidet klar, ohne die Werkstudentin
+  bloßzustellen.

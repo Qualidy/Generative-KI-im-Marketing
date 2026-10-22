@@ -1,50 +1,65 @@
-title: Vom Blogartikel zur ersten Anmeldung
+title: Vom Blogartikel zur ersten Anmeldung – mit Word, Outlook und Copilot Chat
 difficulty: 4
 question: |
   **Szenario:** Fjordlicht will im Herbst mehr Newsletter-Anmeldungen über den Blog gewinnen.
   Die Marketingleitung gibt dir ein Thema und zwei Wochen Zeit. Erwartet wird ein
   veröffentlichungsreifes Paket: Artikel, Leadmagnet, Landingpage-Text und die erste Mail. Du
-  kannst alternativ ein Unternehmen deiner Wahl und ein eigenes Thema nutzen.
+  kannst statt Fjordlicht auch ein Unternehmen deiner Wahl und ein eigenes Thema nutzen.
 
   ```text
   Rahmen:
   Thema: "Regenjacke waschen und imprägnieren"
   Zielgruppe: Besitzer:innen einer Funktionsjacke, 25-45, wenig Pflegewissen
-  Faktenbasis: Pflegeetikett (30 Grad, kein Weichspüler, Trockner schonend),
+  Faktenbasis: /Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11),
+  Pflegeetikett (30 Grad, kein Weichspüler, Trockner schonend),
   kostenloser Reparaturservice (erste zwei Jahre), Claim-Liste (nur belegte Aussagen)
   Erfahrung: aus dir selbst oder aus einem Interview mit einer Person aus
   deinem Umfeld, die das Thema kennt
+  Werkzeug: Microsoft 365 Copilot (Chat, Word, Outlook); Ablage im Ordner
+  "Fjordlicht-Kurs"
   Keine echten Kundendaten, keine erfundenen Studien
   ```
 
   ---
 
-  **Runde 1 – Briefing und Gliederung.** Erstelle ein Briefing mit allen Feldern aus
-  Abschnitt 15.2 und lass es von der KI mit dem Rückfragen-Prompt prüfen. Ergänze die Lücken.
-  Lass eine Gliederung erstellen und überarbeite sie.
+  **Runde 1 – Briefing und Gliederung in Word.** Lege „Briefing-Regenjacke.docx" an und lass
+  mit **Entwurf mit Copilot** ein Briefing mit allen Feldern aus Abschnitt 15.2 erstellen –
+  Faktenbasis per `/Fjordlicht-Basisdaten`. Prüfe es anschließend in Copilot Chat mit dem
+  Rückfragen-Prompt (Briefing per `/`-Verweis einbinden) und ergänze die Lücken im Dokument.
+  Lass eine Gliederung erstellen und überarbeite sie selbst.
 
-  **Runde 2 – Artikel und Leadmagnet.** Erstelle den Artikel (ca. 1.000–1.200 Wörter)
-  abschnittsweise, mit mindestens zwei echten Erfahrungsstellen aus dem Interview. Entwickle
-  einen passenden Leadmagneten (Format aus der Tabelle in Abschnitt 15.6, Inhalt als Entwurf),
-  den Landingpage-Text mit drei Überschriftvarianten und die erste Mail der Strecke.
+  **Runde 2 – Artikel, Leadmagnet, Landingpage, Mail.** Führe das Erfahrungs-Interview in
+  Copilot Chat. Erstelle den Artikel (ca. 1.000–1.200 Wörter) in Word **abschnittsweise**: pro
+  Abschnitt ein eigener Copilot-Auftrag mit Verweis auf Briefing und Gliederung, Platzhalter
+  `[ERFAHRUNG EINFÜGEN]`, mindestens zwei echte Erfahrungsstellen. Überarbeite einzelne Absätze
+  gezielt (markieren, umschreiben lassen). Entwickle in Word einen passenden Leadmagneten (Format
+  aus Abschnitt 15.6; für einen Pflege-Kalender hilft „in Tabelle umwandeln"), den
+  Landingpage-Text mit drei Überschriftvarianten und schreibe die erste Mail der Strecke mit
+  **Copilot in Outlook** als Entwurf (nicht senden). Nutze das Coaching in Outlook für einen
+  Rückmeldungsdurchgang.
 
   **Runde 3 – Die Komplikation.** Der Faktencheck ergibt: Zwei Aussagen im Artikel lassen sich
-  nicht belegen, darunter eine Zahl, die die KI geliefert hat und die dir plausibel vorkam.
+  nicht belegen, darunter eine Zahl, die Copilot geliefert hat und die dir plausibel vorkam.
   Außerdem verspricht die Landingpage „alle Pflegetipps für jede Outdoor-Jacke" – der
-  Leadmagnet deckt aber nur Regenjacken ab. Erstelle die Behauptungstabelle aus Abschnitt 15.5
-  für den ganzen Artikel, korrigiere alle Stellen und prüfe die Versprechenskette erneut.
+  Leadmagnet deckt aber nur Regenjacken ab. Lass Copilot in Word die Behauptungstabelle aus
+  Abschnitt 15.5 für den ganzen Artikel erstellen und prüfe jede Zeile selbst; für externe
+  Quellen nutzt du Copilot Chat im Modus **Web** oder den Agent **Researcher** (falls in eurer
+  Umgebung freigegeben) – und öffnest jede Quelle selbst. Prüfe dann die Versprechenskette: Lass
+  Copilot Chat Artikel-Hinweis, Landingpage, Leadmagnet und Mail (alle per `/`-Verweis)
+  vergleichen und lies die vier Texte anschließend selbst hintereinander.
 
-  **Runde 4 – Entscheidung unter Abwägung.** Die KI schlägt vor, den Artikel „für SEO" auf
-  2.500 Wörter zu erweitern und zusätzlich zehn ähnliche Artikel zu verwandten Begriffen
-  („Softshell waschen", „Daunenjacke waschen" …) automatisch zu erzeugen. Entscheide, was du
-  davon übernimmst. **Widersprich** dem Vorschlag dort, wo Länge oder Masse keinen Nutzen für die
-  Lesenden bringt, und begründe mit E-E-A-T und Googles Haltung zu massenhaft erzeugten Inhalten.
+  **Runde 4 – Entscheidung unter Abwägung.** Bitte Copilot um Vorschläge für mehr Reichweite.
+  Angenommen, die Antwort lautet: den Artikel „für SEO" auf 2.500 Wörter erweitern und zusätzlich
+  zehn ähnliche Artikel zu verwandten Begriffen („Softshell waschen", „Daunenjacke waschen" …)
+  automatisch erzeugen. Entscheide, was du davon übernimmst. **Widersprich** dem Vorschlag dort,
+  wo Länge oder Masse keinen Nutzen für die Lesenden bringt, und begründe mit E-E-A-T und
+  Googles Haltung zu massenhaft erzeugten Inhalten.
 
-  **Deliverable:**
+  **Deliverable** (als Dateien im Ordner „Fjordlicht-Kurs"):
 
-  1. Briefing (vor und nach der Rückfragenrunde) und finale Gliederung
-  2. Artikel mit markierten Erfahrungsstellen
-  3. Leadmagnet-Entwurf, Landingpage-Text, erste Mail
+  1. Briefing (vor und nach der Rückfragenrunde, z. B. über den Versionsverlauf) und finale Gliederung
+  2. Artikel in Word mit markierten Erfahrungsstellen
+  3. Leadmagnet-Entwurf und Landingpage-Text in Word, erste Mail als Outlook-Entwurf
   4. Behauptungstabelle mit Entscheidungen und korrigierten Textstellen
   5. begründete Entscheidung zu Runde 4
 
@@ -55,17 +70,43 @@ question: |
 tip: |
   Der Lernkern liegt in Runde 3: Gerade plausible Zahlen rutschen durch, weil sie niemand
   anzweifelt. Eine Behauptungstabelle über den ganzen Text ist mühsam, aber sie ist der einzige
-  verlässliche Weg. In Runde 4 lohnt der Blick auf die Lesenden: Würde jemand, der seine Jacke
-  waschen will, 2.500 Wörter lesen wollen? Mehr Text ist kein Qualitätsmerkmal.
+  verlässliche Weg – Copilot listet auf, du prüfst. Der Vorteil der Arbeit in Word: Briefing,
+  Gliederung und Abschnitte liegen als Dateien vor, und Copilot kann sie per Verweis immer wieder
+  als Kontext nutzen, statt in einem langen Chat den Überblick zu verlieren (Kap. 9). In Runde 4
+  lohnt der Blick auf die Lesenden: Würde jemand, der seine Jacke waschen will, 2.500 Wörter
+  lesen wollen? Mehr Text ist kein Qualitätsmerkmal.
 solution: |
+  Beispiel-Prompt für einen Abschnitt in Word:
+
+  ```text
+  Schreibe nur Abschnitt 4 "Imprägnieren nach dem Waschen" nach
+  /Briefing-Regenjacke und der Gliederung dort. Fakten nur aus
+  /Fjordlicht-Basisdaten und dem Pflegeetikett im Briefing.
+  Max. 250 Wörter. Wiederhole nichts aus den Abschnitten 1-3.
+  Wo Erfahrung aus dem Reparaturservice passt, setze
+  [ERFAHRUNG EINFÜGEN]. Keine Zahl ohne Quelle, sonst [QUELLE FEHLT].
+  ```
+
+  Beispiel-Prompt für die Versprechenskette in Copilot Chat:
+
+  ```text
+  Vergleiche /Artikel-Regenjacke (letzter Absatz), /Landingpage-Pflegekalender,
+  /Pflegekalender und den Mailtext unten. Liste in einer Tabelle jedes
+  Versprechen und ob das nächste Element es einlöst (ja/nein/teilweise).
+  Bewerte nicht den Stil.
+  Mail: [Text einfügen]
+  ```
+
   Bewertungskriterien: (1) Briefing deckt alle Felder ab, die Rückfragenrunde führt zu
-  sichtbaren Ergänzungen, die Gliederung ist eigenständig überarbeitet; (2) Artikel ist
-  abschnittsweise entstanden, enthält mindestens zwei echte Erfahrungsstellen, Leadmagnet passt
-  thematisch genau zum Artikel, Landingpage hat ein Ziel und drei Überschriftvarianten;
-  (3) Behauptungstabelle ist vollständig, unbelegte Aussagen sind gestrichen oder belegt, das
+  sichtbaren Ergänzungen im Dokument, die Gliederung ist eigenständig überarbeitet; (2) Artikel
+  ist abschnittsweise in Word entstanden, enthält mindestens zwei echte Erfahrungsstellen,
+  Leadmagnet passt thematisch genau zum Artikel, Landingpage hat ein Ziel und drei
+  Überschriftvarianten, die Mail liegt als Entwurf vor; (3) Behauptungstabelle ist vollständig,
+  unbelegte Aussagen sind gestrichen oder mit selbst geöffneter Quelle belegt, das
   Landingpage-Versprechen ist auf Regenjacken eingegrenzt; (4) Runde 4 lehnt die Massenerzeugung
   begründet ab (Scaled Content Abuse, fehlende Erfahrung, Wartungsaufwand), übernimmt aber
   sinnvolle Einzelideen, etwa einen weiteren Artikel mit echter Erfahrung oder einen FAQ-Abschnitt.
 
-  Lernziel: Lange Inhalte mit KI effizient erstellen und dabei die Teile, die nur Menschen
-  liefern können – Erfahrung, Faktenprüfung, Verantwortung für Versprechen – bewusst einplanen.
+  Lernziel: Lange Inhalte mit Copilot in den Office-Apps effizient erstellen und dabei die Teile,
+  die nur Menschen liefern können – Erfahrung, Faktenprüfung, Verantwortung für Versprechen –
+  bewusst einplanen.

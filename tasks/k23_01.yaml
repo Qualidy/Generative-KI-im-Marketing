@@ -1,42 +1,63 @@
-title: Prompt, Projekt oder Assistent?
+title: Prompt-Vorlage, Notebook oder Agent?
 difficulty: 1
 question: |
-  Ordne jede der folgenden Aufgaben aus dem Fjordlicht-Marketingteam einer Lösung zu:
-  **Prompt-Vorlage**, **Projekt** oder **Assistent**. Begründe jede Zuordnung mit mindestens
-  zwei der fünf Kriterien aus Abschnitt 23.5 (Häufigkeit, Gleichartigkeit, Nutzerkreis, Wissen,
-  Qualitätsrisiko).
+  Diese Übung beginnst du in **Copilot Chat** (Microsoft-365-Copilot-App, Umschalter auf **Arbeit**).
+  In Microsoft 365 entsprechen die drei Lösungen aus Abschnitt 23.5 grob diesen Funktionen:
+  **Prompt-Vorlage** → gespeicherter Prompt in der Prompt Gallery, **Projekt** → Copilot Notebook,
+  **Assistent** → eigener Agent aus dem Agent Builder.
 
-  1. Jede Woche drei bis fünf Produkttexte für neue Artikel im Webshop, geschrieben von wechselnden
-     Personen im Team.
-  2. Eine einmalige Rede der Geschäftsführung zum zehnjährigen Firmenjubiläum.
-  3. Die Planung der Frühjahrskampagne über sechs Wochen mit Briefings, Moodboards, Texten und
-     Abstimmungsnotizen.
-  4. Täglich Antworten auf Instagram-Kommentare in Markenstimme, erledigt von zwei Community-
-     Managerinnen im Schichtwechsel.
-  5. Eine interne Notiz an dich selbst, welche Blogthemen du nächste Woche angehen willst.
+  1. Lass Copilot eine erste Zuordnung vorschlagen:
 
-  Benenne anschließend die vier Bausteine, die der Assistent aus Fall 1 braucht, mit je einem
-  konkreten Inhalt.
+     ```text
+     Ich arbeite im Marketing von Fjordlicht, einer Marke für nachhaltige
+     Outdoor-Bekleidung (5 Personen im Team). Ordne jede Aufgabe einer Lösung zu:
+     Prompt-Vorlage, Projekt oder Assistent. Erstelle eine Tabelle mit den Spalten
+     Aufgabe | Häufigkeit | Gleichartigkeit | Nutzerkreis | Wissen |
+     Qualitätsrisiko | Vorschlag. Bewerte jede Spalte mit 0, 1 oder 2.
+     Wenn dir für eine Bewertung Angaben fehlen, schreibe [FRAGE: ...] statt
+     zu schätzen.
+     1. Jede Woche drei bis fünf Produkttexte für neue Webshop-Artikel,
+        geschrieben von wechselnden Personen.
+     2. Eine einmalige Rede der Geschäftsführung zum zehnjährigen Jubiläum.
+     3. Die Planung der Frühjahrskampagne über sechs Wochen mit Briefings,
+        Moodboards, Texten und Abstimmungsnotizen.
+     4. Täglich Antworten auf Instagram-Kommentare in Markenstimme, erledigt
+        von zwei Community-Managerinnen im Schichtwechsel.
+     5. Eine interne Notiz an mich selbst, welche Blogthemen ich nächste
+        Woche angehen will.
+     ```
+
+  2. **Prüfe die Tabelle selbst.** Wo stimmst du nicht zu? Korrigiere mindestens eine Bewertung
+     und begründe mit den Kriterien aus Abschnitt 23.5. Welche `[FRAGE: …]`-Stellen müsste das
+     Team klären?
+  3. Benenne die vier Bausteine, die der Agent aus Fall 1 braucht, mit je einem konkreten Inhalt –
+     und ordne jedem Baustein zu, wo er im Agent Builder landen würde.
 tip: |
-  Ein Projekt sammelt Material für ein Vorhaben, ein Assistent standardisiert eine wiederkehrende
+  Ein Notebook sammelt Material für ein Vorhaben, ein Agent standardisiert eine wiederkehrende
   Aufgabe. Frage dich: Wächst hier etwas über Wochen, oder wiederholt sich dieselbe Tätigkeit?
+  Copilot kennt weder eure Häufigkeiten noch euer Risiko – genau deshalb bewertest du am Ende selbst.
 solution: |
-  | Nr. | Lösung | Begründung |
-  |---|---|---|
-  | 1 | Assistent | wöchentlich, gleiches Schema, mehrere Personen, stabile Produktdaten, Außenwirkung |
-  | 2 | Prompt-Vorlage | einmalig, eine Person, Spezialwissen |
-  | 3 | Projekt | viele unterschiedliche Aufgaben, wachsende Unterlagen, begrenzte Laufzeit |
-  | 4 | Assistent | täglich, gleichartig, zwei Nutzerinnen, Markenstimme mit hohem Risiko |
-  | 5 | Prompt (oder gar keine KI) | einmalig, nur du, keine Außenwirkung |
+  | Nr. | Lösung | in Microsoft 365 | Begründung |
+  |---|---|---|---|
+  | 1 | Assistent | Agent | wöchentlich, gleiches Schema, mehrere Personen, stabile Produktdaten, Außenwirkung |
+  | 2 | Prompt-Vorlage | Prompt Gallery | einmalig, eine Person, Spezialwissen |
+  | 3 | Projekt | Copilot Notebook | viele unterschiedliche Aufgaben, wachsende Unterlagen, begrenzte Laufzeit |
+  | 4 | Assistent | Agent | täglich, gleichartig, zwei Nutzerinnen, Markenstimme mit hohem Risiko |
+  | 5 | Prompt (oder gar keine KI) | normaler Chat | einmalig, nur du, keine Außenwirkung |
+
+  Typische Abweichungen bei Copilot: Fall 4 landet als „Prompt-Vorlage", weil Copilot den
+  Nutzerkreis unterschätzt, oder Fall 3 als „Assistent", weil „sechs Wochen" nach Wiederholung
+  klingt. Sinnvolle `[FRAGE: …]`-Stellen sind etwa: Wie oft ändern sich die Produktdaten? Wer gibt
+  Instagram-Antworten frei?
 
   Bausteine für Fall 1:
 
-  - **Instruktionen:** Rolle „Produkttexter:in in Fjordlicht-Markenstimme", Aufbau des Produkttexts,
-    keine Superlative, nur belegbare Nachhaltigkeitsaussagen, fehlende Daten als [FEHLT] markieren.
-  - **Wissen:** Styleguide, Produktdatenblatt (Material, Gewicht, Pflege), Claim-Liste,
-    zwei bis drei freigegebene Beispieltexte.
-  - **Werkzeuge:** keine Websuche (Gefahr fremder Produktangaben), keine Bildgenerierung.
-  - **Gesprächseinstieg:** „Produkttext aus Datenblatt erstellen", „Bestehenden Text kürzen".
+  | Baustein | Inhalt | im Agent Builder |
+  |---|---|---|
+  | Instruktionen | Rolle „Produkttexter:in in Fjordlicht-Markenstimme", Aufbau, keine Superlative, nur belegbare Nachhaltigkeitsaussagen, Lücken als [FEHLT] | Anweisungen |
+  | Wissen | Styleguide, Produktdaten, Claim-Liste, zwei bis drei freigegebene Beispieltexte | Wissensquellen aus OneDrive/SharePoint |
+  | Werkzeuge | keine Websuche (Gefahr fremder Produktangaben), keine Bilderzeugung | Funktionen bzw. Websuche bewusst aus |
+  | Gesprächseinstieg | „Produkttext aus Datenblatt erstellen", „Bestehenden Text kürzen" | Beschreibung und Startprompts |
 
   Fall 4 ist ein Grenzfall: Sobald der Assistent selbst antwortet statt Entwürfe zu liefern,
   gelten zusätzlich Transparenzpflichten (Kap. 27).

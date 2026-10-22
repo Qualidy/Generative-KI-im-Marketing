@@ -2,7 +2,7 @@ title: Die Geschäftsführerin als digitaler Zwilling
 difficulty: 3
 question: |
   Die Geschäftsführerin von Fjordlicht, Frau Brink (fiktiv), ist von einer HeyGen-Demo
-  begeistert. Sie schlägt vor:
+  begeistert. Sie schlägt per Mail vor:
 
   ```text
   - eigener Avatar und geklonte Stimme von ihr
@@ -12,16 +12,37 @@ question: |
   - Kennzeichnung "nicht nötig, ich bin es ja selbst"
   ```
 
-  1. Nenne die **Chancen** des Vorschlags.
-  2. Prüfe die **Risiken** in vier Dimensionen: Recht (Einwilligung, Art. 50 AI Act,
+  1. **Analyse mit Copilot.** Lass Copilot Chat (Modus **Arbeit**) die **Chancen** und die
+     **Risiken** in vier Dimensionen aufstellen: Recht (Einwilligung, Art. 50 AI Act,
      Plattformregeln), Sicherheit (Missbrauch der Stimme, Verweis Kap. 38), Qualität/Freigabe,
-     Markenwirkung.
-  3. Formuliere eine **Empfehlung** mit mindestens fünf konkreten Regeln, unter denen das Vorhaben
-     vertretbar ist – oder begründe, warum du abrätst.
+     Markenwirkung. Hake nach, wenn Copilot Einwilligung und Transparenz vermischt.
+  2. **Entscheidungsvorlage in Word.** Lass Copilot in Word aus dem Chat-Ergebnis eine
+     einseitige Entscheidungsvorlage entwerfen (Ausgangslage, Chancen, Risiken, Empfehlung) und
+     ergänze selbst eine **Empfehlung** mit mindestens fünf konkreten, prüfbaren Regeln, unter
+     denen das Vorhaben vertretbar ist – oder begründe, warum du abrätst.
+  3. **Antwort an die Geschäftsführerin.** Lass in Outlook von Copilot eine kurze Antwort auf
+     ihre Mail entwerfen, die die Vorlage anhängt und den Punkt Kennzeichnung klar, aber
+     respektvoll widerspricht. Nutze das Coaching für den Entwurf und passe den Ton selbst an.
 tip: |
   Der Kern liegt im letzten Punkt: Dass die Geschäftsführerin selbst zustimmt, klärt die
   Einwilligung – nicht die Frage, ob das Publikum weiß, dass sie gar nicht gesprochen hat.
+  Copilot formuliert Widerspruch gegenüber Vorgesetzten gern sehr weich; prüfe, ob deine
+  Kernaussage im Entwurf noch erkennbar ist.
 solution: |
+  Beispiel-Prompt für die Analyse in Copilot Chat:
+
+  ```text
+  Unsere Geschäftsführerin möchte einen KI-Avatar mit geklonter Stimme von
+  sich für wöchentliche Social-Videos (Vorschlag unten). Stelle Chancen und
+  Risiken in vier Dimensionen auf: Recht (Einwilligung, Art. 50 Abs. 4 AI Act,
+  Plattformlabels), Sicherheit (Missbrauch der Stimme), Qualität/Freigabe,
+  Markenwirkung. Trenne ausdrücklich Einwilligung (stimmt die Person zu?) und
+  Transparenz (weiß das Publikum, dass es ein Avatar ist?).
+  Ausgabe: Tabelle, danach fünf prüfbare Regeln. Keine Rechtsberatung,
+  kennzeichne unsichere Punkte.
+  [Vorschlag einfügen]
+  ```
+
   **Chancen:** sichtbares Gesicht der Marke, regelmäßige Präsenz ohne Drehtermine,
   mehrsprachige Varianten, konsistente Qualität.
 
@@ -41,5 +62,15 @@ solution: |
   5. Stimmprofil nur für zwei benannte Personen zugänglich, Zwei-Faktor-Anmeldung, keine Nutzung für Telefon oder Sprachnachrichten
   6. regelmäßig echte Videos dazwischen, damit die Person greifbar bleibt
 
+  Beispiel-Prompt für den Outlook-Entwurf:
+
+  ```text
+  Antworte Frau Brink kurz und respektvoll: Wir unterstützen die Idee unter
+  den Regeln in der angehängten Vorlage. Beim Punkt Kennzeichnung widersprechen
+  wir klar: Ihre Zustimmung klärt die Einwilligung, nicht die Transparenz
+  gegenüber dem Publikum. Schlage einen 20-minütigen Termin zur Abstimmung vor.
+  ```
+
   Bewertungskriterien: Die Antwort trennt Einwilligung und Transparenz, benennt die
-  Deepfake-Konstellation korrekt und macht prüfbare Regeln statt allgemeiner Mahnungen.
+  Deepfake-Konstellation korrekt, macht prüfbare Regeln statt allgemeiner Mahnungen und
+  enthält im Mail-Entwurf einen erkennbaren, begründeten Widerspruch zur fehlenden Kennzeichnung.

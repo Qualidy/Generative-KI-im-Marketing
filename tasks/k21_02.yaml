@@ -1,22 +1,27 @@
 title: Keyword-Cluster für die Wanderhose
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug. Fjordlicht will die Wanderhose „Vidde" und das
-  Thema Wandern im Blog besser sichtbar machen.
+  Diese Übung machst du in **Copilot Chat** und **Excel mit Copilot**. Fjordlicht will die
+  Wanderhose „Vidde" und das Thema Wandern im Blog besser sichtbar machen.
 
-  1. Formuliere einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5), der mindestens 40
-     Suchbegriffe rund um „Wanderhose" sammelt und in 5 bis 8 Cluster ordnet – mit Spalten für
-     Suchintention und passenden Seitentyp.
-  2. Prüfe das Ergebnis: Hat die KI trotz Verbot Suchvolumina oder Schwierigkeitswerte genannt?
-     Gibt es Dubletten, unrealistische Begriffe oder Wettbewerbermarken?
-  3. Wähle **ein** Cluster aus und bestimme dafür eine Pillar Page und drei Detailartikel.
-  4. Notiere, welche Werte du im nächsten Schritt in welchem Tool nachschlagen würdest.
+  1. Formuliere in Copilot Chat einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5), der
+     mindestens 40 Suchbegriffe rund um „Wanderhose" sammelt und in 5 bis 8 Cluster ordnet – mit
+     Spalten für Suchintention und passenden Seitentyp. Arbeite als **Prompt-Kette** (Kap. 6):
+     erst sammeln, dann Kunstbegriffe streichen lassen, dann clustern.
+  2. Übernimm die Tabelle in „Keywords-Wanderhose.xlsx" im Ordner „Fjordlicht-Kurs" und lass
+     **Copilot in Excel** Dubletten hervorheben und die Begriffe je Cluster und Intention zählen.
+  3. Prüfe das Ergebnis: Hat Copilot trotz Verbot Suchvolumina oder Schwierigkeitswerte genannt?
+     Gibt es unrealistische Begriffe oder Wettbewerbermarken?
+  4. Wähle **ein** Cluster aus und bestimme dafür eine Pillar Page und drei Detailartikel.
+  5. Ergänze in Excel eine leere Spalte „Suchvolumen (Quelle)" und notiere, welche Werte du im
+     nächsten Schritt in welchem Tool nachschlagen würdest.
 tip: |
   Gib im Purpose die Zielgruppen von Fjordlicht mit – Familien suchen anders als
   Stadtmenschen, die am Wochenende wandern. Und frag am Ende nach: „Welche dieser Begriffe
-  würde ein Mensch tatsächlich so eintippen?" Das sortiert Kunstbegriffe aus.
+  würde ein Mensch tatsächlich so eintippen?" Das sortiert Kunstbegriffe aus. Die leere
+  Volumen-Spalte erinnert daran, dass diese Zahlen aus einem SEO-Tool kommen, nicht aus Copilot.
 solution: |
-  Beispielprompt:
+  Beispiel-Prompt (Copilot Chat, erster Schritt der Kette):
 
   ```text
   Persona: Du bist SEO-Spezialistin für Outdoor-E-Commerce.
@@ -30,16 +35,26 @@ solution: |
   Tone: sachlich, ohne Einleitung.
   ```
 
+  Beispiel-Prompt für Copilot in Excel:
+
+  ```text
+  Hebe doppelte oder fast gleiche Suchbegriffe farbig hervor (z. B.
+  "wanderhose damen" und "damen wanderhose"). Zähle danach die Begriffe
+  je Cluster und je Intention in einer Übersicht.
+  ```
+
   Mögliche Cluster: Kaufberatung (Material, Passform), Wanderhose Damen/Herren/Kinder,
   Zip-Off und Funktion, Pflege, Wandern bei Regen/Kälte, Nachhaltigkeit.
 
   Typische Prüfbefunde: vereinzelt doch Zahlen („hohes Volumen") → streichen; Dubletten wie
   „wanderhose damen" und „damen wanderhose"; Kunstbegriffe wie „Wanderhose
-  Performance-Lösung".
+  Performance-Lösung"; ein Cluster mit fast nur transaktionalen Begriffen, der eher zur
+  Kategorieseite als zum Blog passt.
 
   Beispiel Cluster „Pflege": Pillar Page „Outdoor-Hosen richtig pflegen"; Detailartikel
   „Wanderhose waschen ohne Funktion zu verlieren", „Grasflecken aus Wanderhose entfernen",
   „Wanderhose reparieren statt neu kaufen".
 
   Nachschlagen: Suchvolumen und Saison im Keyword Planner bzw. Google Trends, bestehende
-  Sichtbarkeit in der Search Console, Wettbewerb in Sistrix oder Semrush.
+  Sichtbarkeit in der Search Console, Wettbewerb in Sistrix oder Semrush. Die Werte landen mit
+  Quellenangabe in der vorbereiteten Spalte.

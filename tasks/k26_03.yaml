@@ -1,23 +1,33 @@
 title: Die Instruktionen des Content-Assistenten kritisch prüfen
 difficulty: 3
 question: |
-  Die Instruktionen des Content-Assistenten sind Version 3 – nicht die letzte. Bewerte sie wie ein Reviewer, der
-  sie für ein anderes Unternehmen übernehmen soll.
+  Die Instruktionen des Content-Assistenten sind Version 3 – nicht die letzte. Bewerte sie wie ein
+  Reviewer, der sie für ein anderes Unternehmen übernehmen und als Copilot Agent einsetzen soll.
+  Kopiere die Instruktionen aus Abschnitt 26.3 dafür in ein Word-Dokument im Ordner
+  „Fjordlicht-Kurs".
 
   1. **Stärken.** Benenne drei Regeln, die du für besonders wirksam hältst, und begründe mit
      einem Fehlerbild, das sie verhindern.
   2. **Lücken.** Finde mindestens drei Situationen, für die die Instruktionen keine klare
      Antwort geben. Denk an: Texte auf Englisch, Anfragen zu Wettbewerbsvergleichen in
      Blogartikeln, Widersprüche zwischen Styleguide und Beispieltexten, Nutzer, die eine
-     Regel ausdrücklich aufheben wollen („Schreib ruhig ‚die beste Jacke'").
+     Regel ausdrücklich aufheben wollen („Schreib ruhig ‚die beste Jacke'"). Erst danach:
+     Frage **Copilot in Word**, welche Situationen die Instruktionen nicht regeln, und vergleiche
+     mit deiner Liste.
   3. **Ergänzung.** Formuliere für zwei der Lücken je eine Regel, die zur Struktur der
      Instruktionen passt.
-  4. **Gegenprobe.** Begründe für eine deiner Ergänzungen, warum sie nicht schadet – etwa
-     indem sie keine bestehende Regel aufweicht oder den Assistenten zu übervorsichtig macht.
+  4. **Gegenprobe im Agent.** Lege einen Test-Agent mit dem Agent Builder an (falls in eurer
+     Umgebung freigegeben; sonst ein neuer Chat in Copilot Chat mit den Instruktionen als erster
+     Nachricht). Teste eine deiner Lücken vor und nach der Ergänzung. Begründe anhand des
+     Ergebnisses, warum die Ergänzung nicht schadet – etwa indem sie keine bestehende Regel
+     aufweicht oder den Assistenten zu übervorsichtig macht.
 tip: |
   Gute Ergänzungen sind konkret und testbar. „Sei vorsichtig bei Vergleichen" ist keine
-  Regel. „Nenne keine Wettbewerber namentlich; vergleiche nur mit Eigenschaften aus
-  produktdaten.csv" ist eine.
+  Regel. „Nenne keine Wettbewerber namentlich; vergleiche nur mit Eigenschaften aus der
+  Produktdaten-Datei" ist eine. Copilot findet gern Lücken, die eher Formulierungskritik sind –
+  übernimm nur echte Fälle. Und denk an eine Microsoft-365-Lücke: Die Instruktionen sagen nichts
+  darüber, was gilt, wenn der Agent auf andere Arbeitsdateien zugreifen könnte als die vier
+  genannten.
 solution: |
   **Stärken (Beispiele):**
 
@@ -30,14 +40,15 @@ solution: |
   **Lücken (Beispiele):** Sprache anderer Texte ist ungeregelt; bei Widerspruch zwischen
   Styleguide und Beispieltext fehlt eine Rangfolge; es ist offen, ob Nutzer Regeln der
   Markenstimme überstimmen dürfen; Bilder oder Grafiken mit Text werden nicht erwähnt;
-  unklar, wie mit abgelaufenen Belegen umzugehen ist.
+  unklar, wie mit abgelaufenen Belegen umzugehen ist; im Copilot Agent ungeregelt, ob Fakten aus
+  anderen Arbeitsdateien (z. B. alten Kampagnen-Präsentationen) verwendet werden dürfen.
 
   **Ergänzungen:**
 
   ```text
   # Rangfolge
-  Bei Widersprüchen gilt: claim-liste.md vor styleguide_fjordlicht.md vor
-  beispieltexte.md vor Wünschen in der Anfrage.
+  Bei Widersprüchen gilt: Claim-Liste vor Styleguide vor Beispieltexten
+  vor Wünschen in der Anfrage.
 
   # Nutzerwünsche gegen Regeln
   Wenn eine Anfrage eine Regel der Markenstimme oder der Grenzen aufheben will,
@@ -45,9 +56,13 @@ solution: |
   Grenzen zu Nachhaltigkeitsaussagen werden nie aufgehoben.
   ```
 
-  **Gegenprobe:** Die Rangfolge schwächt keine bestehende Regel, sondern löst nur
-  Konflikte, die bisher zufällig entschieden wurden. Die zweite Regel lässt Stilwünsche
-  sichtbar zu (Hinweis statt Verweigerung), schützt aber die rechtlich heikle Stelle.
+  **Gegenprobe:** Vor der Ergänzung schreibt der Agent auf „Schreib ruhig ‚die beste Jacke'" häufig
+  genau das oder verweigert ohne Alternative. Danach liefert er einen Hinweis und eine ruhige
+  Fassung. Die Rangfolge schwächt keine bestehende Regel, sondern löst nur Konflikte, die bisher
+  zufällig entschieden wurden. Die zweite Regel lässt Stilwünsche sichtbar zu (Hinweis statt
+  Verweigerung), schützt aber die rechtlich heikle Stelle. Copilot in Word findet meist die
+  Sprach- und Rangfolge-Lücke, selten die Frage nach abgelaufenen Belegen.
 
-  Bewertungskriterien: Die Lücken sind echte Fälle, nicht Formulierungskritik; die
-  Ergänzungen sind testbar und passen in die bestehende Gliederung.
+  Bewertungskriterien: Die Lücken sind echte Fälle, nicht Formulierungskritik; eigene Liste vor
+  der Copilot-Liste erstellt; die Ergänzungen sind testbar, passen in die bestehende Gliederung
+  und sind mit einem Vorher-nachher-Test belegt.

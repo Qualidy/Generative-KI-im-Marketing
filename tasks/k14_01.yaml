@@ -1,9 +1,7 @@
 title: Welche Plattform, welcher Hook?
 difficulty: 1
 question: |
-  Fjordlicht hat fünf Textentwürfe vorliegen. Ordne jeden der passenden Plattform zu
-  (Instagram, TikTok, LinkedIn, Pinterest) und bestimme den **Hook-Typ** der ersten Zeile
-  (Frage, Fehler/Irrtum, Zahl/Liste, Kontrast, Szene, ehrliches Eingeständnis).
+  Fjordlicht hat fünf Textentwürfe vorliegen:
 
   1. `Packliste Herbstwanderung mit Kindern: 12 Dinge, die du wirklich brauchst`
   2. `Weichspüler ruiniert deine Regenjacke. Ich zeig dir in 20 Sekunden, warum.`
@@ -12,11 +10,21 @@ question: |
   4. `6:40 Uhr, Nebel über dem Aasee, 8 Grad. Und du?`
   5. `Unser Fleece Skog ist nicht klimaneutral. Hier steht, was es stattdessen ist.`
 
-  Nenne außerdem für Entwurf 2 die passende Textformel – **AIDA** oder **PAS** – und begründe
-  in einem Satz.
+  1. Ordne jeden Entwurf **selbst** der passenden Plattform zu (Instagram, TikTok, LinkedIn,
+     Pinterest) und bestimme den **Hook-Typ** der ersten Zeile (Frage, Fehler/Irrtum, Zahl/Liste,
+     Kontrast, Szene, ehrliches Eingeständnis). Nenne für Entwurf 2 die passende Textformel –
+     **AIDA** oder **PAS** – mit einem Satz Begründung.
+  2. Lass **Copilot Chat** dieselbe Zuordnung vornehmen und vergleiche. Wo Copilot abweicht:
+     Ist seine Begründung über die Nutzungssituation vertretbar?
+  3. Lass Copilot anschließend für das Fleece „Skog" je **einen** Hook pro Hook-Typ formulieren
+     (sechs Hooks, max. 10 Wörter), mit Verweis auf `/Fjordlicht-Basisdaten` (falls nicht
+     vorhanden: Kap. 11, Kurzübung 1). Prüfe, ob jeder Hook wirklich zu seinem Typ gehört und ob
+     einer gegen die Markenstimme verstößt.
 tip: |
   Frage dich bei der Zuordnung zuerst, was die Person gerade tut: scrollen, suchen, lesen oder
   sammeln. Mehrere Lösungen sind vertretbar, wenn du sie mit der Nutzungssituation begründest.
+  Bei den Skog-Hooks lohnt der Blick auf das „ehrliche Eingeständnis": Copilot formuliert es gern
+  so, dass am Ende doch ein Versprechen herauskommt.
 solution: |
   | Nr. | Plattform | Hook-Typ | Begründung |
   |---|---|---|---|
@@ -29,6 +37,16 @@ solution: |
   Entwurf 2 folgt **PAS**: Ein konkretes Problem (Weichspüler) wird zugespitzt („ruiniert"),
   das Video liefert anschließend die Lösung. AIDA würde eher bei einem Produktlaunch passen.
 
-  Entwurf 5 ist der heikelste: Er funktioniert nur, wenn der folgende Text belegbare Aussagen
-  enthält. Ein ehrlicher Hook mit anschließend vagen Nachhaltigkeitsversprechen wäre schlechter
-  als gar keiner.
+  Beispielprompt für Schritt 3:
+
+  ```text
+  Formuliere für das Fleece Skog je einen Hook pro Typ: Frage, Fehler/Irrtum,
+  Zahl/Liste, Kontrast, Szene, ehrliches Eingeständnis. Max. 10 Wörter.
+  Fakten und Markenstimme: /Fjordlicht-Basisdaten. Keine Superlative,
+  keine Ausrufezeichen. Nenne zu jedem Hook den Typ.
+  ```
+
+  Typische Befunde: Der Kontrast-Hook gerät zum Superlativ („Das wärmste Fleece, das du nie
+  wieder ausziehst"), oder der Zahl-Hook erfindet eine Zahl, die nicht in den Basisdaten steht.
+  Entwurf 5 bleibt der heikelste Typ: Er funktioniert nur, wenn der folgende Text belegbare
+  Aussagen enthält – etwa die 80 Prozent recyceltes Polyester.

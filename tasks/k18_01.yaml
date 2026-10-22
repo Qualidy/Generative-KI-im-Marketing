@@ -2,8 +2,7 @@ title: Was gehört in den Steckbrief?
 difficulty: 1
 question: |
   Ein Teammitglied hat für den Fjordlicht-Avatar „Tobias" (Familien-Segment) folgende Angaben
-  gesammelt. Entscheide für jede, ob sie in den **Avatar-Steckbrief** gehört, und begründe in
-  einem Halbsatz. Ordne die übernommenen Angaben einem Feld aus Abschnitt 18.2 zu.
+  gesammelt:
 
   1. Tobias, 41, Lehrer, zwei Kinder (5 und 8)
   2. Lieblingsband: Element of Crime
@@ -14,11 +13,21 @@ question: |
   7. Fährt einen Kombi
   8. Hält „klimaneutral" für eine Werbelüge
 
-  Entscheide außerdem: Ist „Tobias" eher eine Persona oder ein Avatar, wenn das Team ihn nutzt,
-  um Newsletter-Entwürfe zu prüfen?
+  1. **Selbst entscheiden.** Entscheide für jede Angabe, ob sie in den **Avatar-Steckbrief**
+     gehört, und begründe in einem Halbsatz.
+  2. **Copilot in Word.** Lege im Ordner „Fjordlicht-Kurs" das Dokument „Avatar-Tobias.docx" an.
+     Lass mit **Entwurf mit Copilot** aus den Angaben eine Steckbrief-Tabelle mit den Feldern aus
+     Abschnitt 18.2 erstellen – mit einer Spalte **Evidenz**, in der Unbelegtes als
+     `[HYPOTHESE]` markiert ist.
+  3. **Vergleichen.** Hat Copilot irrelevante Angaben (Band, Sternzeichen, Kombi) übernommen oder
+     Felder mit erfundenen Inhalten gefüllt? Korrigiere die Tabelle direkt im Dokument.
+  4. Entscheide außerdem: Ist „Tobias" eher eine Persona oder ein Avatar, wenn das Team ihn nutzt,
+     um Newsletter-Entwürfe zu prüfen?
 tip: |
   Prüffrage für jedes Feld: Würde sich ein Text an Tobias **anders** schreiben, wenn diese Angabe
-  anders wäre? Wenn nein, gehört sie nicht hinein.
+  anders wäre? Wenn nein, gehört sie nicht hinein. Copilot füllt leere Felder gern auf
+  („Informationsverhalten: nutzt Pinterest für Ausflugsideen") – solche Ergänzungen sind
+  Erfindungen, solange keine Quelle sie stützt.
 solution: |
   | Nr. | Aufnehmen? | Feld / Begründung |
   |---|---|---|
@@ -31,8 +40,20 @@ solution: |
   | 7 | eher nein | nur relevant, wenn Kofferraum oder Packmaß ein Kaufthema wären |
   | 8 | ja | Was abschreckt – zentral für Nachhaltigkeitsaussagen |
 
-  Fehlt noch: die **Evidenz** zu jedem Feld. Angabe 3 ist belegt (Kundenmail), Angabe 6 vermutlich
-  Hypothese, bis Newsletter-Daten sie stützen.
+  Beispiel-Prompt für Word:
+
+  ```text
+  Erstelle einen Avatar-Steckbrief als Tabelle mit den Feldern Name und
+  Kurzbild, Situation, Job-to-be-done, Pain Points, Gains, Kundensprache,
+  Einwände, Informationsverhalten, Was abschreckt, Evidenz.
+  Nutze nur diese Angaben: [Angaben]. Übernimm nur, was für Marketingtexte
+  relevant ist. Felder ohne Angabe bleiben leer mit [OFFEN].
+  Markiere in der Spalte Evidenz jede Angabe ohne Quelle als [HYPOTHESE].
+  ```
+
+  Typischer Fund beim Vergleich: Copilot füllt leere Felder wie „Einwände" mit plausiblen, aber
+  unbelegten Inhalten oder übernimmt den Kombi als „praktisch veranlagt". Angabe 3 ist belegt
+  (Kundenmail), Angabe 6 vermutlich Hypothese, bis Newsletter-Daten sie stützen.
 
   Da das Team Tobias nutzt, um konkrete Texte zu prüfen, ist er im Sinne dieses Kurses ein
   **Avatar**. Als Persona würde er breiter das Familien-Segment für die Strategie beschreiben.

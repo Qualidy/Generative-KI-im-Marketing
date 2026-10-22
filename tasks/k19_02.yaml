@@ -1,8 +1,9 @@
-title: Kommentare klassifizieren und Stichprobe prüfen
+title: Kommentare klassifizieren, zählen und Stichprobe prüfen
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug. Die folgenden fiktiven Kommentare stammen aus
-  Fjordlichts Instagram und TikTok, Nutzernamen sind bereits durch IDs ersetzt.
+  Diese Übung machst du in **Copilot Chat** und **Excel mit Copilot**. Die folgenden fiktiven
+  Kommentare stammen aus Fjordlichts Instagram und TikTok, Nutzernamen sind bereits durch IDs
+  ersetzt.
 
   ```text
   ID;Kanal;Text
@@ -20,14 +21,22 @@ question: |
   12;IG;Passt perfekt über den Fleece, danke für die Größenhilfe.
   ```
 
-  1. Klassifiziere die Kommentare mit dem Prompt aus Abschnitt 19.3 und dem Fjordlicht-Schema
-     (Sentiment, Thema, Bezug, Handlungsbedarf).
-  2. Prüfe **alle zwölf** Einstufungen von Hand und notiere die Übereinstimmungsquote.
-  3. Benenne die Fehlertypen und ergänze den Prompt um zwei Few-Shot-Beispiele, die genau diese
-     Fehler verhindern. Teste erneut.
+  1. **Klassifizieren in Copilot Chat:** Füge die Kommentare ein und nutze den Prompt aus
+     Abschnitt 19.3 mit dem Fjordlicht-Schema (Sentiment, Thema, Bezug, Handlungsbedarf). Lass
+     das Ergebnis als Tabelle ausgeben.
+  2. **Zählen in Excel:** Übernimm die Tabelle in eine Excel-Datei
+     „Listening-Test.xlsx" im OneDrive-Ordner „Fjordlicht-Kurs", formatiere sie als Tabelle und
+     lass **Copilot in Excel** die Beiträge nach Sentiment und nach Thema auszählen.
+  3. **Stichprobe:** Prüfe **alle zwölf** Einstufungen von Hand in einer zusätzlichen Spalte
+     „geprüft" und lass dir von Copilot in Excel die Übereinstimmungsquote berechnen.
+  4. Benenne die Fehlertypen, ergänze den Prompt um zwei Few-Shot-Beispiele, die genau diese
+     Fehler verhindern, und teste in einem neuen Chat erneut.
 tip: |
-  Kommentar 02, 04 und 11 sind die Prüfsteine: Ironie und Sarkasmus. Achte außerdem auf 10 – der
-  Kommentar handelt vom Wettbewerber, ist für Fjordlicht aber eher positiv.
+  Das ist die Arbeitsteilung aus Abschnitt 19.3: Das Sprachmodell klassifiziert, gezählt wird in
+  der Tabelle – nicht „im Kopf" des Chats. Kommentar 02, 04 und 11 sind die Prüfsteine: Ironie und
+  Sarkasmus. Achte außerdem auf 10 – der Kommentar handelt vom Wettbewerber, ist für Fjordlicht
+  aber eher positiv. Copilot in Excel arbeitet zuverlässiger, wenn die Daten als Tabelle formatiert
+  sind und die Datei in OneDrive liegt.
 solution: |
   Erwartete Einstufung (Auszug der schwierigen Fälle):
 
@@ -38,6 +47,14 @@ solution: |
   | 09 | neutral | Nachhaltigkeit | Fjordlicht | Antwort mit Fakten |
   | 10 | gemischt | Qualität | Wettbewerber | keiner (nicht öffentlich kommentieren) |
   | 11 | negativ oder unklar | Sonstiges | Kategorie allgemein | keiner |
+
+  Beispiel-Prompt für Copilot in Excel:
+
+  ```text
+  Zähle die Beiträge in dieser Tabelle nach Sentiment und nach Thema und
+  zeige das Ergebnis als zwei kleine Übersichtstabellen. Berechne außerdem
+  den Anteil der Zeilen, in denen die Spalte "geprüft" den Wert "ok" hat.
+  ```
 
   Typische Fehler im ersten Durchlauf: 04 und 11 werden wegen „Toll"/„toll" als positiv
   eingestuft, 10 wird dem Bezug Fjordlicht zugeordnet. Übereinstimmung meist 9 bis 10 von 12 –
@@ -54,4 +71,5 @@ solution: |
 
   Wichtig sind außerdem die Kommentare 02 und 09: Beide betreffen die Recycling-Frage. Zwei Treffer in
   zwölf Kommentaren sind noch kein Trend, aber ein Thema, das das Team im Blick behält (Abschnitt
-  19.5).
+  19.5). Den verbesserten Prompt kannst du in der **Prompt Gallery** speichern, damit das Team
+  jeden Monat mit demselben Schema arbeitet.

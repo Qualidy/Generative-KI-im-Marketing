@@ -11,10 +11,31 @@ question: |
   4. TikTok-Ad, in der eine „zufriedene Kundin" vom Fleece „Skog" schwärmt
   5. Monatliches internes Update des Marketingteams an alle 45 Beschäftigten
   6. Instagram-Reel zur neuen Wanderhose „Vidde"
+
+  So gehst du vor:
+
+  1. Entscheide zuerst selbst, in Stichworten.
+  2. Gib die sechs Vorhaben in Copilot Chat (Modus **Arbeit**) ein und lass Copilot dieselbe
+     Einordnung vornehmen – mit der Leitfrage „Information oder Vertrauen?" und der Tabelle
+     „Einsatzfeld – Eignung" aus Abschnitt 36.6 als Rahmen.
+  3. Vergleiche: Wo seid ihr euch einig, wo nicht? Prüfe vor allem Fall 4 und 6: Erkennt Copilot
+     das Fake-Testimonial als Täuschung oder nur als „Kennzeichnungsfrage"?
 tip: |
   Frage dich bei jedem Fall: Geht es um Information oder um Vertrauen? Und würde sich jemand
   getäuscht fühlen, wenn er später erfährt, dass die Person nicht echt war?
 solution: |
+  Beispiel-Prompt für Copilot Chat:
+
+  ```text
+  Bewerte für die Outdoor-Marke Fjordlicht, ob sich die folgenden Vorhaben
+  für ein KI-Avatar-Video eignen: "geeignet", "eingeschränkt geeignet" oder
+  "ungeeignet". Leitfrage: Geht es um Information oder um Vertrauen?
+  Würde sich jemand getäuscht fühlen, wenn er erfährt, dass die Person nicht
+  echt war? Nenne bei "eingeschränkt" die Bedingung.
+  Ausgabe: Tabelle mit Nr., Bewertung, Begründung (1 Satz).
+  [Vorhaben 1 bis 6 einfügen]
+  ```
+
   | Nr. | Bewertung | Begründung |
   |---|---|---|
   | 1 | geeignet | sachliche, wiederkehrende Information, leicht aktualisierbar |
@@ -23,6 +44,10 @@ solution: |
   | 4 | ungeeignet | erfundene Kundenerfahrung ist ein Fake-Testimonial (Täuschung, UWG-Risiko) |
   | 5 | eingeschränkt | funktioniert, wenn das Team zustimmt und es nicht das persönliche Gespräch ersetzt |
   | 6 | eingeschränkt | im Feed wirken Avatare oft austauschbar; besser Produkt in Bewegung (Kap. 35), Avatar höchstens als kurzer Erklärteil mit Kennzeichnung |
+
+  Typische Abweichung: Copilot stuft Fall 4 gelegentlich als „eingeschränkt – mit Kennzeichnung"
+  ein. Das greift zu kurz: Ein Label ändert nichts daran, dass die Erfahrung erfunden ist. Auch
+  Fall 5 wird oft ohne Bedingung als „geeignet" bewertet – die Zustimmung des Teams fehlt dann.
 
   Muster: Avatare überzeugen bei **Information**, scheitern bei **Vertrauen** und sind bei
   erfundenen Erfahrungen nie vertretbar.

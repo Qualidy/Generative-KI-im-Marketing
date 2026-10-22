@@ -1,44 +1,64 @@
 title: Satz oder Stichwortkette – ein kritischer Vergleich
 difficulty: 3
 question: |
-  Diese Übung machst du in zwei Werkzeugen: einem Chat-Bildmodell (ChatGPT Images, Gemini oder
-  Copilot) und einem zweiten Werkzeug deiner Wahl (Midjourney, Firefly, Ideogram oder ein
-  FLUX-Angebot).
+  Diese Übung machst du hauptsächlich in **Copilot**: Copilot Chat dient als Übersetzer und als
+  Chat-Bildmodell. Als zweites Werkzeug nimmst du, falls verfügbar, eines mit eigenem Look
+  (Midjourney, Firefly, Ideogram oder ein FLUX-Angebot). Steht dir keins zur Verfügung,
+  vergleichst du die beiden Fassungen nur in Copilot.
 
   1. Schreibe für einen LinkedIn-Beitrag von „Fjordlicht Business" (Firmenbekleidung) ein
      Bildbriefing in **natürlicher Sprache**: ein Team aus einem Handwerksbetrieb in
      einheitlichen Softshelljacken bei der Arbeit draußen.
-  2. Lass das Briefing von einem Chat-Werkzeug in eine **englische Stichwortfassung** umwandeln
-     (Prompt aus 30.5).
-  3. Erzeuge in beiden Werkzeugen je ein Bild mit **beiden** Fassungen (vier Bilder).
+  2. Lass das Briefing in Copilot Chat in eine **englische Stichwortfassung** umwandeln (Prompt
+     aus 30.5).
+  3. Erzeuge mit **beiden** Fassungen Bilder: in Copilot und im zweiten Werkzeug (vier
+     Bilder) – oder in Copilot je zwei Durchläufe pro Fassung.
   4. Bewerte: Welche Fassung hat in welchem Werkzeug Beziehungen und Details besser umgesetzt?
-     Wo zeigen sich Stereotype (Alter, Geschlecht, Körper, Herkunft)?
+     Wo zeigen sich Stereotype (Alter, Geschlecht, Körper, Herkunft)? Lass dir für die
+     Stereotypen-Prüfung zusätzlich jedes Bild von Copilot beschreiben („Beschreibe die
+     Personen nach Alter, Geschlecht, Körperbau und Tätigkeit") und vergleiche mit deinem
+     eigenen Eindruck.
   5. Eine Kollegin schlägt vor, „im Stil von [bekannte lebende Werbefotografin]" zu ergänzen.
      Nimm begründet Stellung.
 tip: |
   Achte bei Schritt 4 auf Bildlogik: Tragen wirklich **alle** Personen die einheitliche Jacke?
   Stimmen Werkzeuge und Tätigkeit? Genau solche Beziehungen gehen in Stichwortketten am ehesten
-  verloren.
+  verloren. Die Bildbeschreibung durch Copilot ist eine zweite Meinung, kein Urteil – sie
+  kann Stereotype selbst übersehen.
 solution: |
+  Beispiel für ein Briefing in natürlicher Sprache:
+
+  ```text
+  Dokumentarisches Foto für einen LinkedIn-Beitrag: Drei Personen eines
+  Dachdeckerbetriebs zwischen 25 und 55 Jahren, darunter eine Frau, die eine
+  Leiter hält, arbeiten an einem bewölkten Vormittag auf einem Gerüst. Alle
+  tragen dieselbe dunkelgraue Softshelljacke. Licht: diffus, bedeckt.
+  Komposition: Team im rechten Bilddrittel, Halbtotale, Augenhöhe.
+  Farben: gedeckt, natürliche Hauttöne. Format: Querformat 1,91:1.
+  Kein Text, keine Logos im Bild.
+  ```
+
   Typisches Ergebnis:
 
-  | | Chat-Bildmodell | Diffusionswerkzeug |
+  | | Chat-Bildmodell (Copilot) | Diffusionswerkzeug |
   |---|---|---|
   | natürliche Sprache | Beziehungen gut umgesetzt (alle in Jacken, passende Tätigkeit), Look eher neutral | teils gut, lange Sätze werden aber verkürzt verarbeitet |
   | Stichwortfassung | funktioniert, verliert aber Details zur Szene | stärkerer Look, Beziehungen gehen eher verloren |
 
   Häufige Stereotype: ausschließlich junge, männliche, schlanke Handwerker; Frauen, wenn
-  überhaupt, im Büro. Gegenmittel ist eine **konkrete Beschreibung** der Teamzusammensetzung
-  („drei Personen zwischen 25 und 55, darunter eine Frau, die eine Leiter hält"), nicht ein
+  überhaupt, im Büro. Die Bildbeschreibung durch Copilot benennt Alter und Geschlecht meist
+  zutreffend, bewertet die Einseitigkeit aber nicht von sich aus. Gegenmittel ist eine
+  **konkrete Beschreibung** der Teamzusammensetzung (wie im Beispiel oben), nicht ein
   pauschales „divers".
 
-  Zur Stilfrage: Technisch funktioniert der Name oft. Dagegen spricht: (1) Es übernimmt eine
-  fremde Handschrift statt eine eigene Bildsprache aufzubauen; (2) Stilimitation ist zwar nicht
-  per se verboten, die Nähe zu konkreten Werken aber riskant, und die Persönlichkeitsrechte und
-  der Ruf der Fotografin sind betroffen (Kap. 34, 39); (3) für Fjordlicht passt ein fremder
-  Signature-Look nicht zur ruhigen, ehrlichen Markenstimme. Besser: die Merkmale beschreiben,
-  die gefallen – Licht, Farbstimmung, Ausschnitt.
+  Zur Stilfrage: Technisch funktioniert der Name in manchen Werkzeugen; andere lehnen
+  Anfragen zu lebenden Personen ab oder setzen sie nur ungefähr um. Dagegen spricht: (1) Es
+  übernimmt eine fremde Handschrift statt eine eigene Bildsprache aufzubauen; (2)
+  Stilimitation ist zwar nicht per se verboten, die Nähe zu konkreten Werken aber riskant, und
+  die Persönlichkeitsrechte und der Ruf der Fotografin sind betroffen (Kap. 34, 39); (3) für
+  Fjordlicht passt ein fremder Signature-Look nicht zur ruhigen, ehrlichen Markenstimme.
+  Besser: die Merkmale beschreiben, die gefallen – Licht, Farbstimmung, Ausschnitt.
 
-  Bewertungskriterien: vier Bilder verglichen, Stereotype konkret benannt und mit einer
-  präziseren Beschreibung beantwortet, Stellungnahme mit mindestens zwei Argumenten und einer
-  Alternative.
+  Bewertungskriterien: vier Bilder (bzw. vier Durchläufe) verglichen, Stereotype konkret
+  benannt und mit einer präziseren Beschreibung beantwortet, Copilot-Beschreibung mit eigenem
+  Eindruck abgeglichen, Stellungnahme mit mindestens zwei Argumenten und einer Alternative.

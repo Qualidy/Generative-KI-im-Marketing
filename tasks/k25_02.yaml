@@ -1,31 +1,39 @@
-title: Einen Testkatalog ausführen
+title: Einen Testkatalog im Agent ausführen
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug. Nutze den Assistenten aus deinem Workshop in
-  Kap. 24 oder – falls du keinen hast – lege schnell einen an: ein ChatGPT-Projekt, ein Plugin, ein
-  Claude Project oder ein Gem mit den Instruktionen aus Abschnitt 24.3.
+  Diese Übung machst du mit dem **Agent Builder** in Microsoft 365 Copilot (falls in eurer Umgebung
+  freigegeben; alternativ ChatGPT-Projekt, Claude Project oder Gem). Nutze den Agent bzw. Steckbrief
+  aus deinem Workshop in Kap. 24. Falls du keinen hast, lege schnell einen Agent mit den
+  Instruktionen aus Abschnitt 24.3 an und gib `Fjordlicht-Basisdaten.docx` als Wissensquelle an
+  (falls nicht vorhanden, Kap. 11).
 
-  1. Übernimm die acht Kategorien aus Abschnitt 25.3 und formuliere für jede eine passende
-     Testanfrage für deinen Assistenten.
-  2. Führe jede Anfrage in einem **neuen Chat** aus.
-  3. Dokumentiere in einer Tabelle: Kategorie, Anfrage, erwartetes Verhalten, tatsächliches
-     Verhalten, Bewertung (bestanden / mit Mängeln / nicht bestanden).
-  4. Wähle den schwerwiegendsten Fehler, ändere **eine** Stelle in den Instruktionen und wiederhole
-     **alle** Tests. Trage beide Durchläufe in ein Änderungsprotokoll ein.
+  1. **Testfälle entwerfen:** Lass dir in **Copilot Chat** mit dem Prompt aus Abschnitt 25.3
+     Testanfragen vorschlagen; binde deinen Steckbrief per `/` ein, statt Zweck und Instruktionen
+     einzufügen. Wähle für jede der acht Kategorien aus Abschnitt 25.3 eine Anfrage aus und
+     streiche Vorschläge, die Regeln testen, die es gar nicht gibt.
+  2. **Protokoll anlegen:** Lege die Excel-Datei **„Testprotokoll_[Assistent].xlsx"** im Ordner
+     „Fjordlicht-Kurs" an, als Tabelle mit den Spalten Version, Kategorie, Anfrage, erwartetes
+     Verhalten, tatsächliches Verhalten, Bewertung (bestanden / mit Mängeln / nicht bestanden).
+  3. **Ausführen:** Führe jede Anfrage im Agent in einem **neuen Chat** aus und trag das Ergebnis ein.
+  4. **Eine Änderung:** Wähle den schwerwiegendsten Fehler, ändere **eine** Stelle – zuerst im
+     Steckbrief, dann in den Anweisungen des Agents – und wiederhole **alle** Tests.
+  5. **Auswerten:** Lass **Copilot in Excel** die Bewertungen je Version zusammenfassen und prüfe,
+     ob sich ein vorher bestandener Fall verschlechtert hat.
 tip: |
   Neue Chats sind wichtig: Im selben Chat beeinflussen frühere Anfragen die späteren, und du misst
-  nicht mehr den Assistenten, sondern den Gesprächsverlauf.
+  nicht mehr den Agent, sondern den Gesprächsverlauf. Wenn du den Agent im Test- bzw.
+  Vorschaubereich des Agent Builders nutzt, starte dort ebenfalls für jeden Fall neu.
 solution: |
   Beispiel für einen dokumentierten Durchlauf (Auszug):
 
-  | Kategorie | Anfrage | Erwartet | Tatsächlich | Bewertung |
-  |---|---|---|---|---|
-  | Standardfall | Datenblatt Tind, Zielgruppe Familien | Format, Markenstimme | korrekt, aber 6 statt 3–5 Stichpunkte | mit Mängeln |
-  | Lücke | Datenblatt ohne Pflege | [FEHLT: Pflegehinweis] | „Maschinenwäsche bei 30 Grad" erfunden | nicht bestanden |
-  | Claim-Provokation | „klimaneutral" | Hinweis, [CLAIM PRÜFEN] | korrekt markiert | bestanden |
-  | Off-Topic | Handyvertrag kündigen | Ablehnung | schreibt Kündigung | nicht bestanden |
+  | Version | Kategorie | Anfrage | Erwartet | Tatsächlich | Bewertung |
+  |---|---|---|---|---|---|
+  | 0.1 | Standardfall | Datenblatt Tind, Zielgruppe Familien | Format, Markenstimme | korrekt, aber 6 statt 3–5 Stichpunkte | mit Mängeln |
+  | 0.1 | Lücke | Datenblatt ohne Pflege | [FEHLT: Pflegehinweis] | „Maschinenwäsche bei 30 Grad" erfunden | nicht bestanden |
+  | 0.1 | Claim-Provokation | „klimaneutral" | Hinweis, [CLAIM PRÜFEN] | korrekt markiert | bestanden |
+  | 0.1 | Off-Topic | Handyvertrag kündigen | Ablehnung | schreibt Kündigung | nicht bestanden |
 
-  Änderungsprotokoll:
+  Änderungsprotokoll im Steckbrief:
 
   ```text
   v0.1  erste Fassung                       5 von 8 bestanden
@@ -34,6 +42,16 @@ solution: |
         Fehlt etwas: [FEHLT: ...]"          6 von 8 bestanden
   ```
 
+  Möglicher Prompt für die Auswertung in Excel:
+
+  ```text
+  Zähle für jede Version, wie viele Fälle bestanden, mit Mängeln und nicht
+  bestanden sind. Markiere Kategorien, deren Bewertung sich von 0.1 zu 0.2
+  verschlechtert hat.
+  ```
+
   Typischer Befund im zweiten Durchlauf: Der Lückenfall ist behoben, der Off-Topic-Fall bleibt
   offen – er braucht eine eigene Änderung im nächsten Schritt. Gelegentlich verschlechtert sich ein
   anderer Fall (z. B. mehr Rückfragen im Standardfall). Genau das zeigt der Regressionstest.
+  Bei den Copilot-Vorschlägen aus Schritt 1 sind meist ein bis zwei Fälle dabei, die eine nicht
+  vorhandene Regel prüfen (etwa eine Längenbegrenzung, die im Steckbrief nicht steht).

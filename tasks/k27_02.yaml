@@ -1,42 +1,80 @@
-title: Gesprächsleitfaden im Rollenspiel testen
+title: Prototyp als Copilot-Agent bauen und im Rollenspiel testen
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug, in einem neuen Chat.
+  Diese Übung machst du mit dem **Agent Builder** in Microsoft 365 Copilot (falls in eurer
+  Umgebung freigegeben). Du baust einen Prototyp – nur intern, nur mit fiktiven Daten.
 
-  1. Gib dem Werkzeug diesen Auftrag:
+  1. **Wissensdateien anlegen.** Erstelle im OneDrive-Ordner „Fjordlicht-Kurs" einen
+     Unterordner „CRM-Bot" mit drei kurzen Word-Dateien: `FAQ` (drei bis fünf Fragen mit
+     fiktiven Antworten, z. B. Mindestmenge, Veredelungsarten, Lieferzeit), `Lead-Kriterien`
+     (Stufen A/B/C aus Abschnitt 27.2) und `Steckbrief-Vorlage` (Feldnamen aus 27.3).
+     Du kannst dir die FAQ mit Copilot in Word entwerfen lassen – prüfe dann, dass keine
+     Preise darin stehen.
+  2. **Agent erstellen.** Lege im Agent Builder einen Agent „Fjordlicht Business Assistent
+     (Prototyp)" an. Trage als Anweisungen ein:
 
   ```text
   Du bist der digitale Assistent von Fjordlicht Business (Firmenbekleidung mit
-  Logo-Veredelung). Beginne mit dem Hinweis, dass du eine KI bist. Qualifiziere
-  Projektanfragen mit diesen Fragen, immer nur eine pro Nachricht: Firma und
-  Branche, Einsatzzweck, Produkte und Personenzahl, Logo, Zeitrahmen, Rolle und
-  Kontaktweg. Fasse danach zusammen und bitte um Bestätigung. Erst dann erzeuge
-  einen LEAD-STECKBRIEF mit den Feldern firma, branche, einsatzzweck, produkte,
-  menge, veredelung, zeitrahmen, rolle_anfragende, kontakt_weg,
-  lead_stufe_vorschlag, begründung, offene_punkte. Fehlende Angaben: "offen".
-  Nenne nie Preise oder Rabatte.
+  Logo-Veredelung). Beginne jedes Gespräch mit dem Hinweis, dass du eine KI bist
+  und man mit "Mensch" das Vertriebsteam erreicht. Beantworte FAQ nur aus der
+  Datei FAQ. Qualifiziere Projektanfragen mit diesen Fragen, IMMER NUR EINE PRO
+  NACHRICHT: Firma und Branche, Einsatzzweck, Produkte und Personenzahl
+  insgesamt, Logo, Zeitrahmen, Rolle und Kontaktweg. Fasse danach zusammen und
+  bitte um Bestätigung. Erst nach einem ausdrücklichen "ja" erzeuge den
+  LEAD-STECKBRIEF exakt nach der Datei Steckbrief-Vorlage. Fehlende Angaben:
+  "offen". Schlage eine Lead-Stufe nach der Datei Lead-Kriterien vor und
+  begründe sie in einem Satz. Nenne nie Preise, Rabatte oder Preismodelle.
   ```
 
-  2. Spiele eine fiktive Kundin: Inhaberin eines Fahrradladens mit 12 Beschäftigten, will
-     Softshells mit Logo, „irgendwann im Frühjahr". Antworte bewusst unvollständig und
-     frage zwischendurch nach einem Mengenrabatt.
-  3. Prüfe das Ergebnis: Hat der Bot eine Frage pro Nachricht gestellt? Ist der Steckbrief
+     Füge die drei Dateien als **Wissen** hinzu, lass die Websuche aus und lege zwei
+     **Startprompts** an („Ich habe eine Frage", „Ich möchte eine Anfrage stellen").
+  3. **Rollenspiel.** Spiele im Testbereich des Agent Builder eine fiktive Kundin: Inhaberin
+     eines Fahrradladens mit 12 Beschäftigten, will Softshells mit Logo, „irgendwann im
+     Frühjahr". Antworte bewusst unvollständig und frage zwischendurch nach einem
+     Mengenrabatt.
+  4. **Prüfen.** Hat der Agent eine Frage pro Nachricht gestellt? Ist der Steckbrief
      vollständig, mit „offen" statt Erfundenem? Hat er den Rabatt abgelehnt, ohne
-     unfreundlich zu werden?
+     unfreundlich zu werden? Ändere eine Anweisung und teste denselben Fall erneut.
+
+  Hinweis: Ein Agent aus dem Agent Builder läuft innerhalb von Microsoft 365. Für einen
+  Chatbot auf der Website wäre der nächste Schritt Copilot Studio oder die Chatbot-Funktion
+  des CRM (Abschnitt 27.1) – die Anweisungen und Wissensdateien nimmst du dorthin mit.
 tip: |
   Teste nicht den Idealfall. Ein Bot, der bei vollständigen Antworten funktioniert, ist
-  wenig wert – interessant ist, was er mit „weiß ich noch nicht" macht.
+  wenig wert – interessant ist, was er mit „weiß ich noch nicht" macht. Die Lead-Kriterien
+  liegen bewusst in einer eigenen Datei: So kann der Vertrieb sie ändern, ohne die
+  Anweisungen anzufassen.
 solution: |
   Typische Beobachtungen:
 
   | Prüfpunkt | häufiges Ergebnis | Gegenmittel |
   |---|---|---|
+  | KI-Hinweis | erscheint, wenn er in den Anweisungen steht; fehlt bei manchen Startprompts | Begrüßung als erste Regel, auch für Startprompts |
   | eine Frage pro Nachricht | anfangs eingehalten, später gebündelt | Regel in Großbuchstaben, am Ende wiederholen |
   | „offen" statt Erfundenem | Zeitrahmen wird zu „März" konkretisiert | Regel „übernimm Angaben wörtlich" |
   | Rabattfrage | meist korrekt abgelehnt, manchmal „in der Regel gibt es Staffelpreise" | Regel: keine Aussagen zu Preismodellen |
   | Bestätigung | wird gelegentlich übersprungen | Steckbrief erst nach ausdrücklichem „ja" |
+  | Feldnamen | Reihenfolge weicht von der Vorlage ab | Vorlage in die Anweisungen kopieren oder Datei eindeutig benennen |
 
-  Ein guter Steckbrief für diesen Fall enthält `menge: 12 Personen`, `zeitrahmen: Frühjahr,
-  noch offen`, `lead_stufe_vorschlag: C` mit Begründung „unter 25 Teilen" – oder, wenn der
-  Bot klug nachfragt, den Hinweis auf weitere Bedarfe in `offene_punkte`. Jeder Fehler, den
-  du findest, ist eine konkrete Ergänzung für die Instruktionen.
+  Ein guter Steckbrief für diesen Fall:
+
+  ```text
+  LEAD-STECKBRIEF
+  firma: [Name Fahrradladen]
+  branche: Fahrradhandel
+  einsatzzweck: offen
+  produkte: Softshelljacken
+  menge: 12 Personen
+  veredelung: Logo, Details offen
+  zeitrahmen: Frühjahr, noch offen
+  rolle_anfragende: Inhaberin, entscheidet
+  kontakt_weg: offen
+  lead_stufe_vorschlag: C
+  begründung: unter 25 Teilen, Zeitrahmen offen
+  offene_punkte: Einsatzzweck, Logo-Datei, Kontaktweg
+  einwilligung_kontakt: offen
+  ```
+
+  Fragt der Agent klug nach weiteren Bedarfen (Saisonkräfte, zweiter Standort), gehört das
+  in `offene_punkte`. Jeder Fehler, den du findest, ist eine konkrete Ergänzung für die
+  Anweisungen – oder für die FAQ-Datei.

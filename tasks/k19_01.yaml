@@ -1,9 +1,17 @@
 title: Monitoring, Listening oder Eskalation?
 difficulty: 1
 question: |
-  Ordne jede Situation bei Fjordlicht zu: Ist das **Monitoring** oder **Listening** (Abschnitt
-  19.1)? Und welche **Eskalationsstufe** aus Abschnitt 19.5 – Grün, Gelb, Orange, Rot – ist
-  angemessen?
+  Diese kurze Übung machst du in **Copilot Chat** (Microsoft-365-Copilot-App oder Teams, Umschalter
+  auf **Arbeit**). Die Fälle sind fiktiv.
+
+  1. Ordne zuerst selbst jede Situation zu: Ist das **Monitoring** oder **Listening** (Abschnitt
+     19.1)? Welche **Eskalationsstufe** aus Abschnitt 19.5 – Grün, Gelb, Orange, Rot – ist
+     angemessen? Notiere deine Einstufung, bevor du Copilot fragst.
+  2. Gib Copilot die sechs Fälle, die Tabelle mit den Eskalationsstufen aus Abschnitt 19.5 und
+     den Auftrag, beides in einer Tabelle mit Begründung zuzuordnen.
+  3. Vergleiche: Wo weicht Copilot von dir ab, und wer hat recht?
+
+  Die Fälle:
 
   1. Eine Kundin markiert Fjordlicht auf Instagram mit einem Foto ihrer neuen Wanderhose.
   2. Über drei Monate taucht in Kommentaren immer häufiger die Frage auf, ob Fjordlicht Reparaturen
@@ -19,8 +27,21 @@ question: |
 tip: |
   Monitoring reagiert auf den einzelnen Beitrag, Listening sucht Muster über Zeit oder Quellen.
   Bei der Eskalation entscheidet nicht die Zahl der Beiträge allein, sondern auch das **Thema**:
-  Sicherheit und Medienanfragen wiegen schwerer als Ärger über Lieferzeiten.
+  Sicherheit und Medienanfragen wiegen schwerer als Ärger über Lieferzeiten. Achte beim Vergleich
+  besonders auf Fall 4 – Modelle orientieren sich gern an Mengen („mehrere Eltern" = Gelb).
 solution: |
+  Beispiel-Prompt für Copilot Chat:
+
+  ```text
+  Ordne die sechs Fälle unten zu. Spalten: Nr. | Monitoring oder Listening |
+  Eskalationsstufe (Grün, Gelb, Orange, Rot) | Begründung in einem Satz.
+  Nutze ausschließlich diese Stufen-Definitionen: [Tabelle aus Abschnitt 19.5]
+  Wenn ein Fall zwischen zwei Stufen liegt, nenne beide und begründe.
+  Fälle: [1 bis 6 einfügen]
+  ```
+
+  Erwartete Zuordnung:
+
   | Nr. | Art | Stufe | Begründung |
   |---|---|---|---|
   | 1 | Monitoring | Grün | einzelne positive Erwähnung, Reaktion: Danke, ggf. teilen (mit Erlaubnis) |
@@ -30,6 +51,9 @@ solution: |
   | 5 | Listening | Gelb | deutlicher Ausschlag mit klarem Thema – Leitfaden-Antworten, Teamleitung informieren |
   | 6 | Listening | Grün | Wettbewerbsanalyse, keine akute Reaktion nötig |
 
-  Fall 4 zeigt, warum Schwellenwerte allein nicht genügen: Schon wenige Beiträge reichen für
+  Typische Abweichungen von Copilot: Fall 4 landet auf Gelb oder Orange, weil nur „mehrere"
+  Beiträge genannt sind; Fall 3 wird als Gelb eingestuft, weil die Stimmung nicht beziffert ist.
+  Beides zeigt, warum Schwellenwerte allein nicht genügen: Schon wenige Beiträge reichen für
   Stufe Rot, wenn es um Sicherheit geht. Die Eskalationslogik braucht deshalb neben Mengen auch
-  **Themen-Auslöser**.
+  **Themen-Auslöser** – und die Einstufung bleibt eine menschliche Entscheidung. Copilot ist hier
+  ein guter Sparringspartner, kein Schiedsrichter.

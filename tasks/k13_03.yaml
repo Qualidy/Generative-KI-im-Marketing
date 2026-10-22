@@ -1,20 +1,39 @@
-title: Nurture-Sequenz für Fjordlicht Business
+title: Nurture-Sequenz für Fjordlicht Business mit Page und Outlook
 difficulty: 3
 question: |
   Fjordlicht Business bietet Firmenbekleidung für Unternehmen an. Wer auf der Website die
   Checkliste „Teamausstattung für Außeneinsätze" herunterlädt, soll eine Nurture-Sequenz erhalten.
 
-  1. Lass per Prompt-Kette zuerst einen **Plan** für vier Mails erstellen (Abstand, Ziel,
-     Kernbotschaft, CTA), danach **eine** Mail vollständig ausformulieren.
-  2. Bewerte den Plan kritisch: Wird zu früh verkauft? Wiederholen sich Kernbotschaften? Passt der
-     Ton zu B2B-Entscheidern (Einkauf, Arbeitssicherheit, Geschäftsführung)?
-  3. Prüfe die Personalisierung: Welche Platzhalter sind sinnvoll (z. B. [Firmenname],
-     [Branche]), welche Fallbacks brauchst du, und welche Daten dürfen **nicht** in den Prompt?
-  4. Nenne die rechtliche Voraussetzung, damit die Sequenz überhaupt verschickt werden darf.
+  1. Lass in **Copilot Chat** per Prompt-Kette zuerst einen **Plan** für vier Mails erstellen
+     (Abstand, Ziel, Kernbotschaft, CTA), mit Verweis auf `/Fjordlicht-Basisdaten`. Übernimm den
+     Plan in eine **Copilot Page**, damit das Team ihn kommentieren kann.
+  2. Formuliere danach **eine** Mail vollständig aus: als neuen E-Mail-Entwurf in **Outlook** mit
+     Copilot. Passe Ton und Länge mit Copilot an (z. B. formeller, kürzer), bis die Mail zu
+     B2B-Entscheidern passt.
+  3. Bewerte den Plan kritisch: Wird zu früh verkauft? Wiederholen sich Kernbotschaften? Passt der
+     Ton zu Einkauf, Arbeitssicherheit und Geschäftsführung?
+  4. Prüfe die Personalisierung: Welche Platzhalter sind sinnvoll (z. B. [Firmenname],
+     [Branche]), welche Fallbacks brauchst du – und warum gehören echte Kundendaten auch dann
+     **nicht** in den Prompt, wenn Copilot im Arbeitsmodus mit Enterprise Data Protection läuft?
+  5. Nenne die rechtliche Voraussetzung, damit die Sequenz überhaupt verschickt werden darf.
 tip: |
   B2B-Nurturing hat einen längeren Atem als B2C. Die erste Mail liefert, was versprochen wurde
   (die Checkliste), die letzte lädt zu einem Gespräch ein – dazwischen liegt Nutzen, nicht Werbung.
+  Copilot in Outlook sieht im Arbeitsmodus dein Postfach. Das ist praktisch, aber ein Grund mehr,
+  bewusst zu steuern, welche Inhalte in einen Entwurf einfließen.
 solution: |
+  Beispielprompt für den Plan:
+
+  ```text
+  Entwirf den Plan einer Nurture-Sequenz mit 4 Mails für Fjordlicht Business.
+  Auslöser: Download der Checkliste "Teamausstattung für Außeneinsätze".
+  Zielgruppe: Einkauf, Arbeitssicherheit, Geschäftsführung kleiner und
+  mittlerer Betriebe. Fakten und Markenstimme: /Fjordlicht-Basisdaten.
+  Tabelle: Mail, Abstand in Tagen, Ziel, Kernbotschaft, CTA.
+  Jede Kernbotschaft nur einmal. Kauf-CTA frühestens in der letzten Mail.
+  Keine erfundenen Kundenbeispiele, keine Rabatte.
+  ```
+
   Möglicher Plan:
 
   | Mail | Abstand | Ziel | Kernbotschaft | CTA |
@@ -24,18 +43,24 @@ solution: |
   | 3 | 7 Tage | Vertrauen | wie ein Handwerksbetrieb seine Teamausstattung umgestellt hat (nur mit Freigabe des Kunden) | Fallbeispiel lesen |
   | 4 | 12 Tage | Gespräch | individuelle Beratung zu Größen, Logo, Nachbestellung | Termin vereinbaren |
 
-  Kritische Punkte, die häufig auftauchen: Die KI setzt schon in Mail 2 einen Kauf-CTA, erfindet
+  Kritische Punkte, die häufig auftauchen: Copilot setzt schon in Mail 2 einen Kauf-CTA, erfindet
   ein Kundenbeispiel mit Firmennamen oder verspricht Mengenrabatte. Ein Fallbeispiel darf nur mit
-  echtem, freigegebenem Kunden verwendet werden.
+  echtem, freigegebenem Kunden verwendet werden. Beim Anpassen des Tons in Outlook wird „formeller"
+  gern zu „steif" – hier hilft eine konkrete Anweisung wie „sachlich, Du-Ansprache beibehalten,
+  max. 120 Wörter".
 
   Personalisierung: [Firmenname] und [Branche] sind sinnvoll, Fallback jeweils eine neutrale
-  Formulierung („dein Team"). Nicht in den Prompt gehören echte Firmen- und Personennamen,
-  E-Mail-Adressen oder CRM-Exporte; die KI schreibt die Vorlage, das Tool setzt die Daten ein.
+  Formulierung („dein Team"). Enterprise Data Protection bedeutet, dass Eingaben im
+  Microsoft-365-Mandanten bleiben und nicht zum Training genutzt werden – es ändert nichts an
+  Datenminimierung und Zweckbindung (Kap. 4). Copilot schreibt die Vorlage, das Newsletter- oder
+  Marketing-Automation-Tool setzt die Daten ein. Echte Firmen- und Personennamen, E-Mail-Adressen
+  oder CRM-Exporte gehören nicht in den Prompt.
 
   Rechtlich: Eine vorherige ausdrückliche Einwilligung in den Erhalt der Mails ist nötig,
   üblicherweise per Double-Opt-in beim Download – auch im B2B-Bereich. Der Download allein ist
   keine Einwilligung in Werbung, wenn das nicht klar erkennbar abgefragt wurde. Im Zweifel klärt
   das die Rechtsabteilung.
 
-  Bewertungskriterien: Plan und Mail getrennt erstellt, mindestens zwei kritische Befunde
-  benannt, Platzhalter mit Fallbacks, Einwilligung korrekt beschrieben.
+  Bewertungskriterien: Plan und Mail getrennt erstellt, Plan in einer Page abgelegt, Ton in
+  Outlook gezielt angepasst, mindestens zwei kritische Befunde benannt, Platzhalter mit
+  Fallbacks, Einwilligung korrekt beschrieben.

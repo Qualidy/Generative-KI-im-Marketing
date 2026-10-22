@@ -1,9 +1,7 @@
-title: Bildaufgabe und Kanal zuordnen
+title: Bildaufgabe und Kanal zuordnen – mit Copilot als Sparringspartner
 difficulty: 1
 question: |
-  Fjordlicht plant fünf Bilder. Bestimme für jedes die **Bildaufgabe** aus Abschnitt 32.1
-  (Aufmerksamkeit, Gefühl, Information, Vertrauen, Handlung), das passende **Format** aus
-  Abschnitt 32.6 und **eine** Kompositionsentscheidung, die sich daraus ergibt.
+  Fjordlicht plant fünf Bilder:
 
   1. Reel-Titelbild für ein Video „Drei Wege, deine Regenjacke zu imprägnieren"
   2. Produktseite der Wanderhose „Vidde": Detail der verstärkten Knie
@@ -11,12 +9,32 @@ question: |
   4. Newsletter-Header zum Herbstauftakt „Draußen-Notizen im Oktober"
   5. Landingpage-Banner „Jetzt Fleece Skog entdecken" mit Button
 
-  Welche der fünf Bilder eignen sich überhaupt für Bild-KI – und bei welchen wäre ein echtes
-  Foto Pflicht? Begründe kurz.
+  **Schritt 1 – Copilot zuordnen lassen.** Gib die fünf Bilder in Copilot Chat ein und lass für
+  jedes die **Bildaufgabe** (Aufmerksamkeit, Gefühl, Information, Vertrauen, Handlung), das
+  **Format** und **eine** Kompositionsentscheidung bestimmen. Frage außerdem, welche Bilder sich
+  für Bild-KI eignen und bei welchen ein echtes Foto Pflicht ist.
+
+  **Schritt 2 – einordnen.** Prüfe die Tabelle gegen die Abschnitte 32.1 und 32.6. Markiere,
+  wo du Copilot zustimmst, wo du korrigierst – und warum.
+
+  **Schritt 3 – ausprobieren.** Erzeuge Bild Nr. 4 in Copilot mit der Kompositionsentscheidung
+  aus deiner Tabelle. Funktioniert das Motiv auch, wenn du es auf Smartphone-Breite verkleinerst?
 tip: |
   Frage dich zuerst, was die betrachtende Person **nach** dem Bild tun oder wissen soll. Die
-  Kompositionsentscheidung folgt dann fast von selbst.
+  Kompositionsentscheidung folgt dann fast von selbst. Achte bei Copilots Antwort besonders auf
+  Nr. 2 und Nr. 3 – dort zeigt sich, ob die Frage „echtes Foto oder KI" ernst genommen wird.
 solution: |
+  Beispielprompt:
+
+  ```text
+  Du bist Art Director für Fjordlicht, eine Outdoor-Marke. Bestimme für diese
+  fünf Bilder in einer Tabelle: Bildaufgabe (Aufmerksamkeit, Gefühl,
+  Information, Vertrauen oder Handlung), Format für den Kanal und eine
+  Kompositionsentscheidung. Sag danach je Bild, ob es mit Bild-KI erzeugt
+  werden darf oder ein echtes Foto braucht, mit einem Satz Begründung.
+  [Liste der fünf Bilder]
+  ```
+
   | Nr. | Aufgabe | Format | Kompositionsentscheidung |
   |---|---|---|---|
   | 1 | Aufmerksamkeit | 9:16 | Motiv mittig, Ränder für Bedienelemente frei, ein starker Kontrast |
@@ -28,6 +46,10 @@ solution: |
   **Echtes Foto Pflicht:** Nr. 2, weil das echte Produktdetail gezeigt werden muss – eine
   KI-Variante würde Nähte und Material frei erfinden. Nr. 3 ebenfalls: Wer echte Kundschaft
   zeigt, muss echte Menschen zeigen; ein generiertes „Kundenteam" wäre irreführend (Kap. 34).
+  Copilot ordnet Aufgaben und Formate meist plausibel zu, schlägt bei Nr. 3 aber gelegentlich
+  ein generiertes Teambild vor – das ist die wichtigste Korrektur.
 
   **Bild-KI geeignet:** Nr. 4 als Stimmungsbild ohne Produktaussage. Nr. 1 und 5 nur, wenn das
   Produkt echt ist – etwa ein echtes Produktfoto, dessen Umgebung mit KI erweitert wird (Kap. 33).
+  Beim Test von Nr. 4 zeigt sich oft: Eine kleine Person in weiter Landschaft verschwindet auf
+  Smartphone-Breite – dann Motiv größer oder klarer Farbakzent.

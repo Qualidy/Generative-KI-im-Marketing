@@ -1,10 +1,7 @@
-title: Hypothese, Variable, Zielmetrik
+title: Hypothese, Variable, Zielmetrik – Copilot urteilt, du prüfst
 difficulty: 1
 question: |
-  Das Fjordlicht-Team hat vier Testideen gesammelt. Beurteile jede: Ist eine Hypothese
-  erkennbar? Unterscheiden sich die Varianten in **genau einer** Variable? Ist die Zielmetrik
-  sinnvoll? Formuliere anschließend die schwächste Idee zu einer guten Hypothese im Format
-  „Wenn …, dann …, weil …" um.
+  Das Fjordlicht-Team hat vier Testideen gesammelt:
 
   1. Betreff A: `Neu: Fleece Skog` – Betreff B: `Endlich da: Unser neues Fleece Skog für
      kalte Tage` – Ziel: Öffnungsrate.
@@ -13,10 +10,30 @@ question: |
   3. Instagram-Caption A mit 1 Emoji, B mit 5 Emojis und anderem Hook – Ziel: Likes.
   4. Produkttext Wanderhose „Vidde": A beginnt mit Material, B mit Anwendungsfall, sonst
      identisch – Ziel: Warenkorbrate. Keine Hypothese notiert.
+
+  1. **Erst urteilen, dann Copilot.** Beurteile jede Idee selbst in Stichworten: Ist eine
+     Hypothese erkennbar? Unterscheiden sich die Varianten in **genau einer** Variable? Ist die
+     Zielmetrik sinnvoll?
+  2. **In Copilot Chat.** Gib Copilot die vier Ideen mit genau diesen drei Prüffragen und lass
+     das Ergebnis als Tabelle ausgeben. Vergleiche mit deinem Urteil: Wo weicht Copilot ab, und
+     wer hat recht?
+  3. **Umformulieren.** Formuliere die schwächste Idee zu einer Hypothese im Format
+     „Wenn …, dann …, weil …". Lass Copilot dazu Variante B erzeugen, die sich nur in **einem**
+     Punkt von A unterscheidet, und prüfe Wort für Wort selbst, ob das stimmt.
 tip: |
   Prüfe zuerst die Variablen: Zähle, wie viele Dinge sich zwischen A und B unterscheiden. Dann
-  die Metrik: Misst sie wirklich das, was das Marketing erreichen will?
+  die Metrik: Misst sie wirklich das, was das Marketing erreichen will? Achte bei Copilots Urteil
+  besonders auf die Öffnungsrate – Modelle akzeptieren sie oft unkritisch als Zielmetrik.
 solution: |
+  Beispiel-Prompt:
+
+  ```text
+  Prüfe die vier A/B-Testideen unten. Beantworte je Idee in einer Tabelle:
+  Hypothese erkennbar (ja/nein)? Wie viele Variablen unterscheiden A und B
+  (zähle sie einzeln auf)? Ist die Zielmetrik sinnvoll - und warum?
+  Ideen: [Ideen einfügen]
+  ```
+
   | Nr. | Hypothese | Eine Variable? | Zielmetrik | Urteil |
   |---|---|---|---|---|
   | 1 | fehlt | nein (Länge, „Endlich", Nutzenhinweis, Ansprache) | Öffnungsrate nur eingeschränkt verlässlich | schwach |
@@ -24,10 +41,14 @@ solution: |
   | 3 | fehlt | nein (Emojis und Hook) | Likes sind ein schwaches Ziel | schwach |
   | 4 | fehlt | ja | passend | Setup gut, Hypothese ergänzen |
 
+  Typische Abweichung: Copilot zählt bei Idee 1 nur zwei Unterschiede oder hält die
+  Öffnungsrate für unproblematisch. Hier hat die Prüfung aus Abschnitt 16.1 recht.
+
   Umformulierung von Idee 1 (Beispiel): „Wenn der Betreff einen konkreten Einsatzzweck nennt
   (‚für kalte Tage') statt nur die Neuheit, steigt die **Klickrate**, weil unsere Leser:innen
   Produkte nach Situation auswählen." Dazu Variante A: `Neu: Fleece Skog`, Variante B:
-  `Neu: Fleece Skog für kalte Tage` – nur der Zusatz unterscheidet sich.
+  `Neu: Fleece Skog für kalte Tage` – nur der Zusatz unterscheidet sich. Schlägt Copilot etwa
+  `Neu: Fleece Skog – endlich warm durch kalte Tage` vor, testet das wieder zwei Dinge.
 
   Idee 3 lässt sich retten, indem nur die Emoji-Anzahl variiert wird. Likes als Ziel bleiben
   aber fragwürdig; besser sind Speicherungen oder Profilklicks, wenn es um Interesse geht.

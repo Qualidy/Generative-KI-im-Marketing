@@ -1,25 +1,50 @@
-title: Vom Storyboard zum Videoprompt
+title: Vom Storyboard zum Videoprompt in Word
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT, Claude, Gemini oder Copilot) und – wenn
-  du Zugang hast – in einem Videowerkzeug mit Testkontingent.
+  Diese Übung machst du in **Copilot in Word**. Für den optionalen Generierungsschritt brauchst
+  du ein Videowerkzeug mit Testkontingent (Veo, Runway, Kling, Luma, Firefly Video) oder die
+  Videofunktion der Create-Funktion in der Microsoft-365-Copilot-App, falls in eurer Umgebung
+  freigegeben. Alternativ funktionieren die Schritte 1 bis 3 auch in ChatGPT, Claude oder Gemini.
 
-  1. **Storyboard.** Nutze den Storyboard-Prompt aus Abschnitt 35.5 und passe ihn auf ein
-     10-Sekunden-Reel für den Rucksack „Tind" an (Ziel: Herbstwanderung am Wochenende).
-     Nutze für Nachhaltigkeit nur die Platzhalterzeile, keine eigene Aussage.
-  2. **Prüfen.** Kontrolliere das Storyboard: Hat jede Einstellung genau eine Handlung? Sind
-     die ersten zwei Sekunden ohne Ton verständlich? Überarbeite, wo nötig.
-  3. **Videoprompt.** Wähle die stärkste Einstellung und schreibe dafür einen vollständigen
-     Videoprompt mit allen sieben Bausteinen aus der Tabelle in Abschnitt 35.3.
+  1. **Storyboard.** Lege im OneDrive-Ordner „Fjordlicht-Kurs" ein neues Word-Dokument
+     „Storyboard-Tind" an und lass Copilot einen Entwurf erstellen. Nutze den Storyboard-Prompt
+     aus Abschnitt 35.5, angepasst auf ein **10-Sekunden-Reel** für den Rucksack „Tind"
+     (Ziel: Herbstwanderung am Wochenende), und verweise auf `/Fjordlicht-Basisdaten`
+     (falls nicht vorhanden: Kap. 11 bzw. Markenstimme und Produktfakten einfügen). Nutze für
+     Nachhaltigkeit nur die Platzhalterzeile, keine eigene Aussage.
+  2. **Prüfen und gezielt überarbeiten.** Kontrolliere das Storyboard: Hat jede Einstellung genau
+     eine Handlung? Sind die ersten zwei Sekunden ohne Ton verständlich? Markiere jede
+     problematische Zeile und lass nur diese Stelle von Copilot umschreiben – nicht das ganze
+     Dokument neu erzeugen. Liegt das Storyboard noch als Fließtext vor, lass es in eine Tabelle
+     umwandeln.
+  3. **Videoprompt.** Wähle die stärkste Einstellung und lass Copilot im selben Dokument einen
+     vollständigen Videoprompt mit allen sieben Bausteinen aus Abschnitt 35.3 schreiben. Stelle
+     danach eine Frage ans Dokument: „Welcher der sieben Bausteine fehlt oder ist zu vage?"
   4. **Generieren (optional).** Erzeuge den Clip zweimal: einmal mit deinem Prompt, einmal mit
-     einer verkürzten Fassung von höchstens 15 Wörtern. Vergleiche.
-
-  Ohne Zugang zu einem Videowerkzeug lässt du Schritt 4 weg und lässt stattdessen die KI deinen
-  Prompt gegen die sieben Bausteine prüfen.
+     einer verkürzten Fassung von höchstens 15 Wörtern. Vergleiche und notiere das Ergebnis
+     unter dem Prompt im Word-Dokument.
 tip: |
   Der häufigste Fehler im Storyboard ist eine Einstellung mit zwei oder drei Handlungen. Streiche
-  lieber, als zu verdichten – zehn Sekunden sind kürzer, als sie sich beim Planen anfühlen.
+  lieber, als zu verdichten – zehn Sekunden sind kürzer, als sie sich beim Planen anfühlen. In
+  Word hilft das gezielte Umschreiben einer markierten Zeile: So bleiben die guten Einstellungen
+  unangetastet.
 solution: |
+  Beispiel-Prompt für den Entwurf mit Copilot in Word:
+
+  ```text
+  Du bist Art Director für kurze Social-Media-Videos.
+  Erstelle ein Storyboard für ein Instagram-Reel (9:16, 10 Sekunden) zum
+  Rucksack "Tind" von Fjordlicht. Nutze Markenstimme und Produktfakten aus
+  /Fjordlicht-Basisdaten.
+  Ziel: Lust auf eine Herbstwanderung am Wochenende.
+  Format: Tabelle mit den Spalten Nr., Dauer, Bildinhalt, Handlung,
+  Kamerabewegung, Ton, Texteinblendung.
+  Regeln: 3 bis 4 Einstellungen, jede mit genau einer Handlung.
+  Die ersten 2 Sekunden müssen ohne Ton verständlich sein.
+  Keine Nachhaltigkeitsaussagen außer: [belegte Aussage aus Claim-Liste].
+  Ton: ruhig, ehrlich, leicht nordisch-trocken, keine Superlative.
+  ```
+
   Ein brauchbares Storyboard hat drei bis vier Einstellungen, zum Beispiel:
 
   | Nr. | Dauer | Bild/Handlung | Kamera | Text |
@@ -40,6 +65,11 @@ solution: |
   Ton: Schritte auf Laub, Vögel, keine Musik.
   Format: 9:16, 3 Sekunden. Kein Text, keine Logos.
   ```
+
+  Typische Copilot-Fehler im ersten Entwurf: Einstellung 1 enthält zwei Handlungen („Nebel
+  lichtet sich, Person tritt ins Bild"), oder die Texteinblendung enthält einen Superlativ bzw.
+  eine Nachhaltigkeitsaussage, die nicht in den Basisdaten steht. Beides löst du über das
+  Umschreiben der markierten Zeile.
 
   Typische Beobachtung im Vergleich: Die Kurzfassung liefert oft eine schöne, aber beliebige
   Szene (falsche Kamerabewegung, Hochglanz-Look, mitunter Text im Bild). Die vollständige

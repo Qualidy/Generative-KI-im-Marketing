@@ -5,27 +5,39 @@ question: |
   vertraute Sprecherin der Erklärvideos wird geklont, und ihre Stimme vertont künftig
   Produkt-FAQ, Webshop-Audio und Blog-Hörfassungen – auf Deutsch, später auch auf Englisch für
   Fjordlicht Business. Du sollst ein **Einführungskonzept** vorlegen, das Nutzen, Recht und
-  Sicherheit zusammenbringt. Du kannst alternativ mit einem Unternehmen deiner Wahl arbeiten.
+  Sicherheit zusammenbringt. Du kannst statt Fjordlicht auch ein Unternehmen deiner Wahl nutzen.
+
+  Den Stimmklon selbst erzeugt ein Spezialwerkzeug – Microsoft 365 Copilot kann keine Stimmen
+  klonen. Alles drum herum erarbeitest du in Copilot: Einwilligungs-Eckpunkte, Risikoanalyse,
+  Skript, Prüflisten und Dokumentation.
 
   ```text
   Rahmen:
   Sprecherin: freiberuflich, arbeitet seit drei Jahren für Fjordlicht.
-  Werkzeug: ElevenLabs (Professional Voice Cloning) im Unternehmenskonto.
+  Werkzeug für den Klon: ElevenLabs (Professional Voice Cloning) im Unternehmenskonto.
+  Arbeitswerkzeug für Konzept und Dokumentation: Microsoft 365 Copilot.
   Kanäle: Webshop, Instagram, TikTok, YouTube, LinkedIn.
   Volumen: ca. 20 kurze Clips pro Monat.
   Marketingteam: 5 Personen.
+  Ablage: Ordner „Fjordlicht-Kurs", Unterordner „Markenstimme".
   Keine echten Personen- oder Kundendaten in Prompts und Dokumenten.
   ```
 
   ---
 
-  **Runde 1 – Einsatz und Vertrag.** Lege fest, wofür die Klonstimme genutzt wird und wofür
-  **nicht** (mindestens drei Ausschlüsse). Erstelle mit KI-Unterstützung eine
-  Vertragscheckliste, die alle acht Bausteine aus Abschnitt 38.3 abdeckt, und formuliere die
-  drei Fragen, die die Sprecherin am wahrscheinlichsten stellen wird – samt Antworten.
+  **Runde 1 – Einsatz, Vertrag und Einwilligung (Word).** Lege das Word-Dokument
+  **„Markenstimme-Konzept"** an und lass Copilot in Word einen Entwurf auf Basis von
+  `/Fjordlicht-Basisdaten` erstellen (falls nicht vorhanden: Kap. 11 bzw. Rahmen oben einfügen).
+  Lege fest, wofür die Klonstimme genutzt wird und wofür **nicht** (mindestens drei Ausschlüsse).
+  Ergänze eine Vertragscheckliste, die alle acht Bausteine aus Abschnitt 38.3 abdeckt, und lass
+  Copilot die **Eckpunkte einer Einwilligungserklärung** in verständlicher Sprache entwerfen –
+  als Gesprächsgrundlage für die Rechtsabteilung, nicht als fertigen Text. Formuliere die drei
+  Fragen, die die Sprecherin am wahrscheinlichsten stellt, samt Antworten.
 
-  **Runde 2 – Prüfung gegen Pflichtkriterien.** Das Konzept muss **alle vier** Kriterien
-  erfüllen:
+  **Runde 2 – Risikoanalyse und Pflichtkriterien (Excel, Word).** Erstelle eine Excel-Tabelle
+  **„Markenstimme-Kanäle"** (Kanal | Inhaltsart | Deepfake-Einordnung | Kennzeichnung im
+  Inhalt | Plattformlabel | Risiko). Lass Copilot in Excel Lücken und Widersprüche
+  hervorheben. Das Konzept muss danach **alle vier** Kriterien erfüllen:
 
   1. Es gibt einen **Freigabeprozess**, der festlegt, wer jeden Text prüft, bevor er vertont wird.
   2. Für jeden Kanal ist entschieden, **wie gekennzeichnet** wird (Art. 50 Abs. 4 AI Act,
@@ -34,48 +46,87 @@ question: |
   4. Es gibt einen **Notfallplan** für den Fall, dass eine Fälschung mit der Markenstimme
      auftaucht.
 
-  **Runde 3 – Die Komplikation.** Drei Monate nach dem Start meldet sich die Sprecherin: Sie
-  hat einen TikTok-Clip gefunden, in dem „ihre" Stimme einen Wettbewerber lobt – Fjordlicht
-  hat den Clip nicht erstellt. Gleichzeitig überlegt sie, ihre Einwilligung zu widerrufen.
-  Beschreibe Schritt für Schritt, was Fjordlicht in den ersten 48 Stunden tut, und was der
-  Widerruf für bereits veröffentlichte Clips und das Stimmmodell bedeutet.
+  Teste den Freigabeprozess an einem Beispiel: Lass Copilot in Word ein 30-Sekunden-Skript für
+  ein Produkt-FAQ zur Regenjacke „Sølv" schreiben, inklusive Kennzeichnungshinweis, und spiele
+  es einmal durch deine **Prüfliste** (Vertragszweck, Fakten, Kennzeichnung, Freigabe).
 
-  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung schlägt vor, „zur Sicherheit"
-  zusätzlich ihre eigene Stimme klonen zu lassen, damit Fjordlicht „nicht von einer
-  Freiberuflerin abhängig ist" und sie selbst LinkedIn-Videos nicht mehr einsprechen muss. Lass
-  dir von ChatGPT Vor- und Nachteile aufstellen. **Widersprich** dort, wo Missbrauchsrisiko
+  **Runde 3 – Die Komplikation (Outlook, Word).** Drei Monate nach dem Start meldet sich die
+  Sprecherin: Sie hat einen TikTok-Clip gefunden, in dem „ihre" Stimme einen Wettbewerber lobt –
+  Fjordlicht hat den Clip nicht erstellt. Gleichzeitig überlegt sie, ihre Einwilligung zu
+  widerrufen. Beschreibe Schritt für Schritt, was Fjordlicht in den ersten 48 Stunden tut, und
+  was der Widerruf für bereits veröffentlichte Clips und das Stimmmodell bedeutet. Lass Copilot
+  in Outlook eine Antwort an die Sprecherin entwerfen und prüfe sie mit dem Coaching auf Ton und
+  Verbindlichkeit. Nicht absenden.
+
+  **Runde 4 – Entscheidung unter Abwägung (Copilot Chat).** Die Geschäftsführung schlägt vor,
+  „zur Sicherheit" zusätzlich ihre eigene Stimme klonen zu lassen, damit Fjordlicht „nicht von
+  einer Freiberuflerin abhängig ist" und sie selbst LinkedIn-Videos nicht mehr einsprechen muss.
+  Lass dir von Copilot Vor- und Nachteile aufstellen. **Widersprich** dort, wo Missbrauchsrisiko
   (CEO-Fraud), Glaubwürdigkeit und Kennzeichnungspflicht unterschätzt werden, und gib eine
   begründete Empfehlung.
 
   **Deliverable:**
 
-  1. Einsatzbeschreibung mit Ausschlüssen und Vertragscheckliste
-  2. Freigabe-, Kennzeichnungs- und Sicherheitsregeln (eine Seite)
-  3. 48-Stunden-Plan für Runde 3 inklusive Umgang mit dem Widerruf
+  1. Word-Dokument „Markenstimme-Konzept" mit Einsatzbeschreibung, Ausschlüssen,
+     Vertragscheckliste und Einwilligungs-Eckpunkten (markiert für die Rechtsprüfung)
+  2. Excel-Tabelle „Markenstimme-Kanäle" sowie Freigabe-, Kennzeichnungs- und Sicherheitsregeln
+     (eine Seite) mit getestetem Beispielskript
+  3. 48-Stunden-Plan für Runde 3 inklusive Umgang mit dem Widerruf und Mail-Entwurf an die
+     Sprecherin
   4. Entscheidungsnotiz zu Runde 4
 
   **Fertig bist du erst, wenn** jeder Kanal eine Kennzeichnungsregel hat, der Freigabeprozess
-  ohne mündliche Erklärung funktioniert, der Widerruf mit konkreten Löschschritten behandelt
-  ist und deine Empfehlung in Runde 4 mindestens ein Sicherheits- und ein
-  Glaubwürdigkeitsargument enthält.
+  ohne mündliche Erklärung funktioniert und am Beispielskript erprobt ist, der Widerruf mit
+  konkreten Löschschritten behandelt ist und deine Empfehlung in Runde 4 mindestens ein
+  Sicherheits- und ein Glaubwürdigkeitsargument enthält.
 tip: |
   Der Lernkern liegt in Runde 3: Eine Klonstimme ist nur so vertrauenswürdig wie die Regeln drum
   herum. Wer Widerruf und Fälschung nicht vorab durchdacht hat, verhandelt im Ernstfall unter
   Zeitdruck. In Runde 4 geht es um die Einsicht, dass eine zweite Klonstimme die Abhängigkeit
   nicht löst, sondern ein neues, größeres Risiko schafft.
+
+  Copilot ist hier Werkzeug für Struktur und Formulierung, nicht für die rechtliche Bewertung.
+  Wenn Copilot Vertragsklauseln „fertig" formuliert, kürze sie auf Eckpunkte zurück.
 solution: |
+  Beispiel-Prompt für Runde 1 (Copilot in Word):
+
+  ```text
+  Erstelle auf Basis von /Fjordlicht-Basisdaten einen Konzeptentwurf für eine
+  Markenstimme per Voice Cloning. Gliederung: 1. Einsatzzwecke, 2. Ausschlüsse
+  (mindestens drei), 3. Vertragscheckliste nach Zweck, Umfang, Freigabe,
+  Werkzeug und Speicherort, Dauer und Ende, Löschung, Vergütung, Kennzeichnung,
+  4. Eckpunkte einer Einwilligungserklärung in einfacher Sprache.
+  Formuliere keine fertigen Vertragsklauseln. Markiere jeden Punkt, der
+  juristisch geprüft werden muss, mit [RECHT].
+  ```
+
+  Beispiel-Prompt für Runde 4 (Copilot Chat):
+
+  ```text
+  Die Geschäftsführerin möchte ihre eigene Stimme klonen lassen, um LinkedIn-Videos
+  nicht mehr selbst einzusprechen und von der Sprecherin unabhängig zu sein.
+  Stelle Vor- und Nachteile gegenüber. Berücksichtige ausdrücklich CEO-Fraud,
+  Kennzeichnungspflicht nach Art. 50 Abs. 4 AI Act und Glaubwürdigkeit.
+  Schließe mit einer Empfehlung und zwei Alternativen.
+  ```
+
   Bewertungskriterien: (1) klare Einsatzbeschreibung mit sinnvollen Ausschlüssen (z. B. keine
-  Aussagen über Personen, keine Politik, keine Werbung für Dritte) und vollständige
-  Vertragscheckliste inklusive Widerruf und Löschung; (2) alle vier Pflichtkriterien erfüllt,
-  insbesondere eine kanalbezogene Kennzeichnung auf Basis von Art. 50 Abs. 4 und den
-  Plattformregeln; (3) der 48-Stunden-Plan umfasst Sicherung von Belegen, Meldung an die
-  Plattform, Information der Sprecherin, Richtigstellung auf eigenen Kanälen und Einbindung der
-  Rechtsabteilung; beim Widerruf werden Stimmmodell und Rohaufnahmen gelöscht, neue Clips
-  gestoppt und der Umgang mit bereits veröffentlichten Clips rechtlich geklärt statt
-  stillschweigend entschieden; (4) die Empfehlung zu Runde 4 benennt das erhöhte
-  CEO-Fraud-Risiko, die Kennzeichnungspflicht und den Glaubwürdigkeitsverlust und schlägt
-  Alternativen vor, etwa selbst eingesprochene Kurzvideos oder eine zweite vertraglich
+  Aussagen über Personen, keine Politik, keine Werbung für Dritte), vollständige
+  Vertragscheckliste inklusive Widerruf und Löschung, Einwilligungs-Eckpunkte verständlich und
+  für die Rechtsprüfung markiert; (2) alle vier Pflichtkriterien erfüllt, insbesondere eine
+  kanalbezogene Kennzeichnung auf Basis von Art. 50 Abs. 4 und den Plattformregeln; das
+  Beispielskript hat die Prüfliste nachvollziehbar durchlaufen; (3) der 48-Stunden-Plan umfasst
+  Sicherung von Belegen, Meldung an die Plattform, Information der Sprecherin, Richtigstellung
+  auf eigenen Kanälen und Einbindung der Rechtsabteilung; beim Widerruf werden Stimmmodell und
+  Rohaufnahmen gelöscht, neue Clips gestoppt und der Umgang mit bereits veröffentlichten Clips
+  rechtlich geklärt statt stillschweigend entschieden; der Mail-Entwurf ist verbindlich, ohne
+  Zusagen zu machen, die noch nicht geklärt sind; (4) die Empfehlung zu Runde 4 benennt das
+  erhöhte CEO-Fraud-Risiko, die Kennzeichnungspflicht und den Glaubwürdigkeitsverlust und
+  schlägt Alternativen vor, etwa selbst eingesprochene Kurzvideos oder eine zweite vertraglich
   gebundene Sprecherin.
+
+  Typische Copilot-Schwäche in Runde 4: Die Abhängigkeit von der Freiberuflerin wird als
+  starkes Pro-Argument gewertet, das Betrugsrisiko nur in einem Nebensatz erwähnt.
 
   Lernziel: Voice Cloning als verantwortbares Werkzeug einführen – mit Einwilligung, Vertrag,
   Kennzeichnung und Sicherheitsregeln – und erkennen, wann eine geklonte Stimme mehr Risiko als

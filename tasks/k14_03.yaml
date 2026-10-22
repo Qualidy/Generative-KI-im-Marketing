@@ -14,43 +14,54 @@ question: |
   Lieferkette nach einem anerkannten Sozialstandard geprüft, eine Klimabilanz der Jacke gibt
   es **nicht**.
 
-  1. Schreibe einen Prompt, der einen Antwortentwurf erzeugt. Er muss verhindern, dass die KI
-     Aussagen ergänzt, die Fjordlicht nicht belegen kann.
-  2. Teste den Prompt und bewerte den Entwurf: Was würdest du übernehmen, was streichen?
-  3. Begründe, warum diese Antwort vor dem Posten von einem Menschen freigegeben werden muss,
-     und wer im Team das sein sollte.
-  4. Bewerte die Alternative „Kommentar ausblenden" – wann wäre das vertretbar?
+  1. Ergänze in „Fjordlicht-Basisdaten.docx" einen kurzen Abschnitt **Lieferkette** mit genau
+     diesen vier Fakten (falls die Datei nicht vorhanden ist: Kap. 11, Kurzübung 1).
+  2. Schreibe einen Antwort-Prompt mit festen Leitplanken, der verhindert, dass Copilot Aussagen
+     ergänzt, die Fjordlicht nicht belegen kann. Teste ihn in **Copilot Chat** mit Verweis auf
+     `/Fjordlicht-Basisdaten`.
+  3. Bewerte den Entwurf: Was würdest du übernehmen, was streichen?
+  4. Lege aus dem Prompt mit dem **Agent Builder** einen Agent „Fjordlicht Community-Entwürfe"
+     an (falls in eurer Umgebung freigegeben): Anweisungen aus deinem Prompt, Wissen aus der
+     Basisdaten-Datei. Teste ihn mit diesem und einem zweiten, harmlosen Kommentar.
+  5. Lass in **Outlook** mit Copilot eine kurze Freigabeanfrage an die zuständige Person
+     entwerfen (Entwurf, Kommentar, offene Punkte) – nicht senden. Begründe, wer das im Team sein
+     sollte.
+  6. Bewerte die Alternative „Kommentar ausblenden" – wann wäre das vertretbar?
 tip: |
   Die Stärke einer guten Antwort liegt hier im Eingeständnis dessen, was man nicht weiß.
   KI-Entwürfe tendieren dazu, Kritik „wegzumoderieren" und Lücken mit freundlichen Allgemeinplätzen
-  zu füllen. Prüfe den Entwurf deshalb Satz für Satz gegen die Faktenliste.
+  zu füllen. Prüfe den Entwurf deshalb Satz für Satz gegen die Faktenliste. Ein Agent spart das
+  Wiederholen der Leitplanken, ersetzt aber nicht die Freigabe: Er entwirft, ein Mensch postet.
 solution: |
-  Beispielprompt:
+  Beispielprompt (zugleich Anweisungen für den Agent):
 
   ```text
   Du bist Community-Managerin bei Fjordlicht. Entwirf eine Antwort auf den
   Kommentar unten. Max. 4 Sätze, Du-Ansprache, ruhig, ehrlich, nicht
-  defensiv. Nutze ausschließlich diese Fakten:
-  - Produktion in Portugal und Vietnam
-  - Transport überwiegend per Seefracht
-  - Lieferkette nach anerkanntem Sozialstandard geprüft
-  - Es gibt KEINE Klimabilanz der Jacke.
+  defensiv. Nutze ausschließlich die Abschnitte "Belegte Claims" und
+  "Lieferkette" aus /Fjordlicht-Basisdaten.
   Erwähne, was wir nicht wissen. Verwende nicht die Wörter nachhaltig,
-  klimaneutral, umweltfreundlich. Kein Werbeversprechen.
-  Kommentar: [Kommentartext]
+  klimaneutral, umweltfreundlich. Kein Werbeversprechen, keine Erstattung,
+  kein Rabatt. Gib zusätzlich an: Muss ein Mensch vor dem Posten
+  Rücksprache halten? Ja/Nein mit Begründung.
+  Kommentar (anonymisiert): [Kommentartext]
   ```
 
   Typischer Befund: Der Entwurf ist brauchbar, enthält aber oft einen Satz wie „Nachhaltigkeit ist
   uns ein Herzensanliegen" oder eine Aussage über „kurze Transportwege". Beides streichen – das
-  Erste ist Floskel, das Zweite falsch.
+  Erste ist Floskel, das Zweite falsch. Beim Agent zeigt sich oft: Ohne ausdrückliche Grenze
+  greift er auch auf andere Abschnitte der Datei zurück, etwa den Reparaturservice, und lenkt
+  damit vom Kern der Kritik ab.
 
   Freigabe: Die Antwort ist eine öffentliche Umweltaussage unter einem viel gelesenen Post. Sie
   sollte von der Person freigegeben werden, die die Claim-Liste verantwortet (bei Fjordlicht die
   Marketingleitung bzw. die Nachhaltigkeitsverantwortliche), weil eine missverständliche Antwort
-  irreführend sein kann (UWG) und sich als Screenshot verbreitet.
+  irreführend sein kann (UWG) und sich als Screenshot verbreitet. Den Outlook-Entwurf prüfst du
+  vor dem Senden selbst; Copilot ergänzt dort gern eine Dringlichkeit, die du nicht meinst.
 
   Ausblenden ist nur vertretbar bei Beleidigungen, Spam oder Verstößen gegen die Netiquette. Eine
   sachliche Kritik auszublenden wirkt wie ein Eingeständnis und verschärft die Lage meist.
 
-  Bewertungskriterien: Faktenliste vollständig im Prompt, ausdrückliche Wissenslücke, mindestens
-  eine gestrichene KI-Formulierung mit Begründung, konkrete Freigaberolle.
+  Bewertungskriterien: Faktenliste in den Basisdaten ergänzt und im Prompt begrenzt, ausdrückliche
+  Wissenslücke, mindestens eine gestrichene Copilot-Formulierung mit Begründung, Agent (oder
+  gespeicherter Prompt) getestet, konkrete Freigaberolle.

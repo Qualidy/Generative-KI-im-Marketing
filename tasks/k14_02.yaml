@@ -1,12 +1,14 @@
 title: Vom Allzweck-Post zur Caption in Markenstimme
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT oder eine Alternative).
+  Diese Übung machst du in **Copilot Chat** (Arbeitsmodus).
 
   1. **Vorher.** Gib ein: `Schreib einen Instagram-Post über unseren neuen Rucksack Tind.`
      Speichere das Ergebnis.
   2. **Nachher.** Baue in einem **neuen Chat** einen vollständigen Prompt nach dem
-     P.R.O.M.P.T.-Framework (Kap. 5). Nutze diese (fiktiven) Produktfakten und keine weiteren:
+     P.R.O.M.P.T.-Framework (Kap. 5). Verweise für Markenstimme und Verbote auf
+     `/Fjordlicht-Basisdaten` (falls nicht vorhanden: Kap. 11, Kurzübung 1) und nutze diese
+     (fiktiven) Produktfakten und keine weiteren:
 
      ```text
      Rucksack Tind, 28 Liter
@@ -19,10 +21,16 @@ question: |
   3. **Vergleich.** Markiere in beiden Ergebnissen jede Aussage, die **nicht** aus den Fakten
      stammt, sowie jeden Superlativ.
   4. Notiere, welcher Baustein des Prompts die größte Verbesserung bewirkt hat.
+  5. Ergänze die Tind-Fakten im Abschnitt Produkte von „Fjordlicht-Basisdaten.docx" (gezielt mit
+     Copilot in Word an der markierten Stelle oder von Hand) und speichere den Nachher-Prompt in
+     der **Prompt Gallery** (falls in eurer Umgebung freigegeben) bzw. in eurer Prompt-Bibliothek
+     (Kap. 10).
 tip: |
   Achte besonders auf das Material: „70 % recycelt" wird von KI gern zu „aus recyceltem
   Material" oder „nachhaltig" verkürzt. Genau solche Verkürzungen sind bei Umweltaussagen das
   eigentliche Risiko – schreib deshalb in den Modifier, dass Prozentangaben unverändert bleiben.
+  Im Vorher-Chat kennt Copilot die Basisdaten nicht, wenn du sie nicht referenzierst – genau das
+  macht den Vergleich aussagekräftig.
 solution: |
   Beispiel für einen vollständigen Prompt:
 
@@ -33,8 +41,8 @@ solution: |
   Output: Hook max. 10 Wörter, dann 2 kurze Absätze, max. 70 Wörter,
   Abschluss mit Frage. Max. 1 Emoji. 4 Hashtags separat darunter.
   Modifier: Nutze nur diese Fakten: [Fakten]. Prozentangaben unverändert
-  übernehmen. Keine Superlative, nicht "nachhaltig" oder "umweltfreundlich".
-  Fehlt etwas, schreibe [FEHLT].
+  übernehmen. Markenstimme und Verbote aus /Fjordlicht-Basisdaten.
+  Nicht "nachhaltig" oder "umweltfreundlich". Fehlt etwas, schreibe [FEHLT].
   Purpose: Tagesausflüge von Stadtmenschen 25-45; Ziel: Interesse wecken.
   Tone: ruhig, ehrlich, nordisch-trocken, Du-Ansprache.
   ```
@@ -49,3 +57,7 @@ solution: |
   Den größten Effekt hat meist der **Modifier** („nur diese Fakten", verbotene Begriffe),
   gefolgt vom **Tone** mit konkreten Merkmalen. Wer im Nachher-Text noch „nachhaltig" findet,
   sollte den Modifier schärfen und den Ton mit zwei Beispielposts (Few-Shot) zeigen.
+
+  Zu Schritt 5: Mit den Tind-Fakten in den Basisdaten reicht künftig der Verweis auf die Datei.
+  Ein gespeicherter Prompt in der Prompt Gallery macht den Nachher-Prompt für das Team
+  wiederverwendbar – mit Platzhaltern für Produkt und Fakten statt fester Werte.

@@ -1,7 +1,9 @@
 title: Zufall, Nachbessern und Bearbeiten im Selbstversuch
 difficulty: 2
 question: |
-  Diese Übung machst du direkt in ChatGPT Images (alternativ Gemini oder Microsoft Copilot).
+  Diese Übung machst du mit der **Bilderzeugung in Copilot Chat** (Microsoft-365-Copilot-App;
+  alternativ in der Create-Funktion, falls in eurer Umgebung freigegeben). Alternativ geht
+  sie auch in ChatGPT Images oder Gemini.
 
   1. **Basisbild.** Erzeuge mit diesem Prompt ein Bild:
 
@@ -11,16 +13,23 @@ question: |
      eines Sees. Ruhige Stimmung, natürliches Licht, viel Himmel links im Bild.
      ```
 
-  2. **Zufallstest.** Starte zwei **neue** Chats und verwende denselben Prompt. Halte fest, was
-     gleich bleibt und was sich ändert (Person, Komposition, Farben, Licht).
-  3. **Nachbessern im Gespräch.** Gehe zurück in den ersten Chat und gib drei Änderungen
-     nacheinander: Himmel dunkler und bewölkt; Person blickt auf den See statt in die Kamera;
-     Format 4:5 für Instagram.
-  4. **Bewerten.** Notiere bei jeder Änderung, ob nur das Gewünschte geändert wurde oder ob sich
-     auch anderes verschoben hat (Gesicht, Jacke, Hintergrund).
+  2. **Zufallstest.** Starte zwei **neue** Unterhaltungen und verwende denselben Prompt. Halte
+     fest, was gleich bleibt und was sich ändert (Person, Komposition, Farben, Licht).
+  3. **Nachbessern im Gespräch.** Gehe zurück in die erste Unterhaltung und gib drei
+     Änderungen nacheinander: Himmel dunkler und bewölkt; Person blickt auf den See statt in
+     die Kamera; Format 4:5 für Instagram.
+  4. **Bild beschreiben lassen.** Lade das letzte Bild in einer neuen Unterhaltung hoch und
+     frage: „Beschreibe Licht, Perspektive, Bildausschnitt, Farbstimmung und die Details der
+     Jacke in Stichworten." Vergleiche die Beschreibung mit dem Basisbild.
+  5. **Bewerten.** Notiere bei jeder Änderung, ob nur das Gewünschte geändert wurde oder ob sich
+     auch anderes verschoben hat (Gesicht, Jacke, Hintergrund). Sammle die Bilder mit deinen
+     Notizen in einer **Copilot Page** oder einem Word-Dokument im Ordner „Fjordlicht-Kurs".
 tip: |
-  Achte in Schritt 4 besonders auf die Jacke. Genau dort zeigt sich, warum echte Produkte nicht
-  zuverlässig über mehrere Bearbeitungsschritte stabil bleiben.
+  Achte in Schritt 5 besonders auf die Jacke. Genau dort zeigt sich, warum echte Produkte nicht
+  zuverlässig über mehrere Bearbeitungsschritte stabil bleiben. Die Bildbeschreibung aus
+  Schritt 4 hilft dir, Unterschiede in Worte zu fassen, die du sonst nur „irgendwie" siehst.
+  Falls Copilot das gewünschte Format nicht exakt erzeugt, notiere auch das – es ist ein
+  Kriterium für die Werkzeugauswahl (29.6).
 solution: |
   Typische Beobachtungen:
 
@@ -29,16 +38,19 @@ solution: |
   | Zufallstest | Grundidee bleibt (Person, See, Nebel), aber Gesicht, Jackenschnitt, Bildaufteilung und Farbtöne variieren deutlich. |
   | Himmel dunkler | gelingt meist sauber; manchmal wird das ganze Bild dunkler oder kühler. |
   | Blickrichtung | Pose ändert sich, oft auch Gesicht oder Haltung – die Person wirkt wie eine andere. |
-  | Format 4:5 | Bild wird neu aufgebaut oder beschnitten; Details der Jacke ändern sich häufig mit. |
+  | Format 4:5 | Bild wird neu aufgebaut oder beschnitten; Details der Jacke ändern sich häufig mit. Nicht jedes Seitenverhältnis wird exakt umgesetzt. |
+  | Bildbeschreibung | nennt z. B. „Stehkragen, zwei Brusttaschen" – beim Basisbild waren es Kapuze und Seitentaschen. |
 
   Lehren daraus:
 
-  - Jeder neue Chat ist ein neuer Zufallsstart. Wer Serien braucht, muss mit Referenzen arbeiten
-    (Kap. 33).
+  - Jede neue Unterhaltung ist ein neuer Zufallsstart. Wer Serien braucht, muss mit Referenzen
+    arbeiten (Kap. 33).
   - Bearbeitung im Gespräch ist bequem, aber nicht verlustfrei: Mit jeder Runde kann sich
     Ungewolltes verschieben. Ändere deshalb **eine Sache pro Schritt** und vergleiche.
   - Kleidungsdetails (Kragen, Reißverschluss, Taschen) wandern. Für Produktdarstellungen ist das
     ein Ausschlusskriterium.
+  - Die Bildbeschreibung im Chat ist ein nützliches Prüfwerkzeug – aber auch sie kann Details
+    übersehen. Der letzte Blick bleibt deiner.
 
-  Eine gute Bearbeitung enthält drei Bilder aus dem Zufallstest, die drei Bearbeitungsschritte
-  und je eine Notiz zu unerwünschten Nebenwirkungen.
+  Eine gute Bearbeitung enthält drei Bilder aus dem Zufallstest, die drei Bearbeitungsschritte,
+  die Bildbeschreibung und je eine Notiz zu unerwünschten Nebenwirkungen.

@@ -16,13 +16,20 @@ question: |
   Im Anhang steht: Datenbasis 212 Beiträge, davon 180 von Instagram, 32 von TikTok; Stichprobe
   zur Prüfung der KI-Einstufung: keine.
 
-  1. Benenne alle Schwächen des Berichts – methodisch, inhaltlich und rechtlich.
-  2. Formuliere die Management Summary so um, dass sie nur aussagt, was die Daten tragen.
-  3. Schreibe drei Rückfragen an die Agentur, bevor der Bericht in die Geschäftsführung geht.
+  1. Notiere zuerst selbst alle Schwächen des Berichts – methodisch, inhaltlich und rechtlich.
+  2. Lege den Bericht samt Anhang als Word-Datei „Agenturbericht-Q3.docx" im Ordner
+     „Fjordlicht-Kurs" an und stelle **Copilot in Word** Fragen ans Dokument, etwa: „Welche
+     Aussagen sind durch die genannte Datenbasis nicht gedeckt?" Vergleiche mit deiner Liste: Was
+     hat Copilot gefunden, was übersehen?
+  3. Markiere die Management Summary und lass sie von Copilot in Word so umschreiben, dass sie nur
+     aussagt, was die Daten tragen. Prüfe das Ergebnis Satz für Satz.
+  4. Lass **Copilot in Outlook** eine E-Mail an die Agentur mit drei Rückfragen entwerfen, bevor der
+     Bericht in die Geschäftsführung geht. Nicht senden – nur Entwurf und Prüfung.
 tip: |
   Lies jeden Satz mit der Frage: Welche Daten würden diese Aussage stützen – und liegen sie vor?
   Achte besonders auf Nachkommastellen, auf Ursachenbehauptungen und auf den Umgang mit einzelnen
-  Personen.
+  Personen. Copilot erkennt methodische Schwächen meist gut, den Datenschutzpunkt aber nicht
+  immer von selbst – frag gezielt nach (Kap. 4).
 solution: |
   | Aussage | Schwäche |
   |---|---|
@@ -33,7 +40,16 @@ solution: |
   | TikTok-Budget verdoppeln | 32 Beiträge sind keine Grundlage; Stimmung im Listening sagt nichts über Werbewirkung |
   | Datenbasis | stark verzerrt Richtung Instagram; Quellenauswahl nicht begründet |
 
-  Überarbeitete Summary:
+  Beispiel-Prompt für das Umschreiben in Word (Summary markiert):
+
+  ```text
+  Schreibe diese Zusammenfassung so um, dass sie nur Aussagen enthält, die
+  durch die Datenbasis im Anhang gedeckt sind. Nenne Fallzahlen, runde Werte,
+  kennzeichne vorläufige Ergebnisse, streiche Ursachenbehauptungen und jeden
+  Bezug auf einzelne Personen.
+  ```
+
+  Überarbeitete Summary (Zielbild):
 
   ```text
   Datenbasis: 212 öffentliche Beiträge Q3 (180 Instagram, 32 TikTok).
@@ -45,10 +61,12 @@ solution: |
   TikTok: Fallzahl zu gering für eigene Aussagen.
   ```
 
-  Rückfragen: (1) Wie wurde die KI-Einstufung geprüft, und wie hoch war die Übereinstimmung?
-  (2) Welche Suchbegriffe und Quellen wurden genutzt, warum fehlen Bewertungsportale und Foren?
-  (3) Werden Nutzernamen vor der KI-Verarbeitung entfernt, und auf welcher Rechtsgrundlage und mit
-  welchem Werkzeug (AVV) werden die Daten verarbeitet?
+  Rückfragen für den Outlook-Entwurf: (1) Wie wurde die KI-Einstufung geprüft, und wie hoch war
+  die Übereinstimmung? (2) Welche Suchbegriffe und Quellen wurden genutzt, warum fehlen
+  Bewertungsportale und Foren? (3) Werden Nutzernamen vor der KI-Verarbeitung entfernt, und auf
+  welcher Rechtsgrundlage und mit welchem Werkzeug (AVV) werden die Daten verarbeitet?
 
   Die Empfehlung zur Beobachtung einer Einzelperson gehört ersatzlos gestrichen; kritische Beiträge
-  werden inhaltlich beantwortet, nicht personenbezogen ausgewertet.
+  werden inhaltlich beantwortet, nicht personenbezogen ausgewertet. Bewertungskriterien: eigene
+  Liste vor dem Copilot-Abgleich, dokumentierte Lücken in Copilots Prüfung, eine Summary ohne
+  Kausalbehauptung und ohne Personenbezug, ein sachlicher Mail-Entwurf, der nicht versendet wurde.

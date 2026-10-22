@@ -11,12 +11,20 @@ question: |
   5. `beste nachhaltige outdoormarken`
   6. `rucksack 30 liter tagestour`
 
-  Bei einer der Anfragen ist die Intention nicht eindeutig. Welche ist es, und wie würdest du
-  es klären?
+  So gehst du vor:
+
+  1. Ordne zuerst selbst zu.
+  2. Lass **Copilot Chat** dieselbe Zuordnung machen, einmal mit dem Umschalter auf **Arbeit**
+     (ohne Websuche) und einmal auf **Web**. Bitte im Web-Modus darum, für Nr. 6 zu beschreiben,
+     welche Art von Ergebnissen aktuell erscheint, mit Quellen.
+  3. Gib Nr. 6 anschließend selbst in die Google-Suche ein und vergleiche.
+
+  Bei einer der Anfragen ist die Intention nicht eindeutig. Welche ist es, und wie klärst du es?
 tip: |
   Achte auf Signalwörter: „kaufen" und „bestellen" deuten auf Transaktion, „beste", „Test"
   oder „Vergleich" auf kommerzielle Recherche, Markennamen auf Navigation, „wie" oder
-  „Unterschied" auf Information.
+  „Unterschied" auf Information. Beachte beim Vergleich: Copilot sucht über Bing, nicht über
+  Google – die Ergebnisseite deiner Kundinnen kann anders aussehen.
 solution: |
   | Nr. | Intention | Seitentyp |
   |---|---|---|
@@ -29,5 +37,9 @@ solution: |
 
   Nr. 6 ist uneindeutig: Die Person kann schon kaufen wollen oder erst Orientierung suchen.
   Klären lässt es sich nur an der aktuellen **Suchergebnisseite**: Erscheinen dort vor allem
-  Shops, ist die Intention transaktional; erscheinen Ratgeber und Tests, kommerziell. Die KI
-  kann das nur beurteilen, wenn du die Websuche aktivierst oder die Ergebnisse einfügst.
+  Shops, ist die Intention transaktional; erscheinen Ratgeber und Tests, kommerziell.
+
+  Typische Beobachtung im Vergleich: Ohne Websuche schätzt Copilot die Intention aus dem
+  Wortlaut – meist plausibel, aber ohne Beleg. Mit **Web** beschreibt es tatsächliche Ergebnisse
+  und nennt Quellen, allerdings aus Bing. Für die Entscheidung über den Seitentyp zählt der eigene
+  Blick auf die Google-Ergebnisseite.

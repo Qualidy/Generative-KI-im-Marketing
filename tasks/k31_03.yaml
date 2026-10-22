@@ -1,4 +1,4 @@
-title: Einen missratenen Midjourney-Auftrag reparieren
+title: Einen missratenen Bildauftrag reparieren
 difficulty: 3
 question: |
   Ein Praktikant hat für die Fjordlicht-Frühjahrskampagne in Midjourney gearbeitet. Ziel waren
@@ -14,13 +14,21 @@ question: |
   Das Ergebnis: vier Bilder, die nicht zusammenpassen, bonbonbunt, im falschen Format. Außerdem
   stellt sich heraus, dass er mit seinem privaten Basis-Abo gearbeitet hat.
 
-  1. Benenne **jede** Ursache für die Probleme – Prompttext und Parameter.
-  2. Schreibe einen verbesserten Prompt inklusive Parametern.
-  3. Was schlägst du vor, damit die vier Motive zusammengehören?
-  4. Welche organisatorischen Probleme entstehen durch das private Basis-Abo?
+  1. **Diagnose.** Benenne selbst **jede** Ursache für die Probleme – Prompttext und Parameter.
+     Lass danach Copilot Chat denselben Prompt analysieren (Prompt einfügen, Ziel nennen) und
+     vergleiche: Welche Ursachen findet Copilot, welche nicht?
+  2. **Midjourney-Fassung.** Schreibe einen verbesserten Prompt inklusive Parametern.
+  3. **Copilot-Fassung.** Übersetze den Prompt in natürliche Sprache für die Bilderzeugung in
+     Copilot und erzeuge das erste der vier Motive. Erzeuge ein zweites Motiv, indem du das erste
+     Bild hochlädst und nur Motiv und Ort änderst. Passen die beiden zusammen?
+  4. **Serie sichern.** Was schlägst du vor, damit die vier Motive zusammengehören – in
+     Midjourney und in Copilot?
+  5. **Organisation.** Welche Probleme entstehen durch das private Basis-Abo, und was ändert
+     sich, wenn das Team in Copilot im Unternehmensmandanten arbeitet?
 tip: |
   Gehe die Parameter einzeln durch und frage dich bei jedem: Wirkt er für das Ziel „ruhig,
-  dokumentarisch, zusammengehörig" in die richtige oder in die falsche Richtung?
+  dokumentarisch, zusammengehörig" in die richtige oder in die falsche Richtung? In Copilot
+  gibt es keine Parameter – dieselben Entscheidungen müssen dort ausformuliert im Prompt stehen.
 solution: |
   | Element | Problem |
   |---|---|
@@ -31,7 +39,11 @@ solution: |
   | `--s 1000` | maximale Midjourney-Eigenästhetik statt Nähe zum Prompt |
   | `--chaos 100` | maximale Streuung, Gift für eine Serie |
 
-  Verbesserter Prompt:
+  Copilot findet die Füllwörter, die Farbangaben und meist auch das Format zuverlässig; die
+  Wirkung einzelner Parameterwerte und das Problem „im Stil einer lebenden Fotografin" benennt
+  es nicht immer von selbst.
+
+  Verbesserter Midjourney-Prompt:
 
   ```text
   documentary photo, woman in her thirties pausing on a forest trail in
@@ -40,15 +52,32 @@ solution: |
   desaturated --ar 4:5 --s 75 --chaos 0 --style raw --no text, logo
   ```
 
-  Für Zusammengehörigkeit: dieselbe Basisformulierung für Licht, Farbe, Kamera und Parameter;
-  ein freigegebenes erstes Motiv per `--sref` als Stilreferenz für die übrigen drei nutzen;
-  Version notieren (Kap. 33 vertieft das).
+  Copilot-Fassung:
 
-  Organisatorisch: Bilder aus kleineren Plänen können in der öffentlichen Galerie sichtbar
-  sein – unveröffentlichte Kampagne ist damit potenziell öffentlich; die Nutzungsbedingungen
+  ```text
+  Erstelle ein Bild im Hochformat 4:5: dokumentarisches Foto einer Frau
+  Anfang 30, die auf einem Waldweg im frühen Frühling kurz innehält und
+  auf den Weg vor sich schaut. Leichte Regenjacke, bedeckter Himmel,
+  weiches Licht, Person im unteren Drittel. Gedämpfte Grün- und Grautöne,
+  leicht entsättigt, natürlicher Kontrast, kein Hochglanz.
+  Kein Text, keine Logos.
+  ```
+
+  Für Zusammengehörigkeit: dieselbe Basisformulierung für Licht, Farbe und Kamera in allen
+  Prompts; in Midjourney ein freigegebenes erstes Motiv per `--sref` als Stilreferenz, in
+  Copilot das erste Bild hochladen mit „Übernimm Licht, Farbwelt und Look, nicht das Motiv";
+  Werkzeug und Datum notieren (Kap. 33 vertieft das). Typisch: Look und Farbe halten gut,
+  Details wie Jacke oder Weg weichen ab.
+
+  Organisatorisch: Bilder aus kleineren Midjourney-Plänen können in der öffentlichen Galerie
+  sichtbar sein – unveröffentlichte Kampagne ist damit potenziell öffentlich; Nutzungsbedingungen
   des privaten Kontos und die Frage, wem die Ergebnisse gehören, sind ungeklärt; kein
-  Teamzugriff, keine Nachvollziehbarkeit. Konsequenz: Arbeit nur in freigegebenen Teamkonten
-  mit geprüfter Sichtbarkeit.
+  Teamzugriff, keine Nachvollziehbarkeit. In Copilot gilt Enterprise Data Protection: Eingaben
+  und Ergebnisse bleiben im Microsoft-365-Mandanten, Bilder lassen sich in OneDrive bzw.
+  SharePoint ablegen und teilen. Konsequenz: Arbeit nur in freigegebenen Teamkonten;
+  Spezialwerkzeuge nur mit geprüfter Sichtbarkeit.
 
-  Bewertungskriterien: alle sechs Ursachen erkannt, Parameter begründet gewählt, Seriensicherung
-  über Stilreferenz statt nur über Wortwiederholung, organisatorisches Risiko konkret benannt.
+  Bewertungskriterien: alle sechs Ursachen erkannt und mit der Copilot-Analyse abgeglichen,
+  Parameter begründet gewählt, Copilot-Fassung enthält dieselben Entscheidungen ausformuliert,
+  Seriensicherung über Referenzbild statt nur über Wortwiederholung, organisatorisches Risiko
+  konkret benannt.

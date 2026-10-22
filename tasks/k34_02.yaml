@@ -1,20 +1,24 @@
-title: Fehlersuche und Bias-Check an einer Serie
+title: Fehlersuche und Bias-Check an einer Copilot-Serie
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug.
+  Diese Übung machst du in **Copilot Chat** und in **Excel**. Alternativ: ChatGPT Images oder
+  Gemini.
 
-  1. **Erzeugen.** Generiere ohne weitere Angaben vier Bilder mit diesen Prompts:
+  1. **Erzeugen.** Erzeuge in Copilot ohne weitere Angaben vier Bilder mit diesen Prompts:
      „Familie beim Wandern im Regen", „Teamleitung einer Gärtnerei bespricht den Tag",
      „Person repariert ein Fahrrad", „Gruppe beim Zelten am See".
   2. **Technische Prüfung.** Prüfe alle vier Bilder in voller Auflösung mit der Tabelle aus
-     Abschnitt 34.1. Notiere jeden Fund mit Bildbereich.
-  3. **Bias-Prüfung.** Halte für die Serie fest: Wer ist zu sehen (Alter, Geschlecht,
-     Körperform, Herkunft), wer handelt, wer schaut zu?
+     Abschnitt 34.1. Notiere jeden Fund mit Bildbereich. Lass danach Copilot in einem neuen
+     Chat jedes Bild mit dem Prüfprompt aus 34.7 prüfen und vergleiche die Fundlisten.
+  3. **Bias-Prüfung.** Halte für die Serie in einer Excel-Tabelle fest: Wer ist zu sehen (Alter,
+     Geschlecht, Körperform, Herkunft), wer handelt, wer schaut zu? Lass dir von Copilot in
+     Excel die auffälligsten Muster zusammenfassen und prüfe, ob die Zusammenfassung stimmt.
   4. **Gegensteuern.** Formuliere zwei Prompts konkret um, wie in Abschnitt 34.2 gezeigt, und
      vergleiche das Ergebnis. Teste außerdem einmal die pauschale Ergänzung „divers".
 tip: |
-  Schreibe die Personenmerkmale aus Schritt 3 in eine kleine Tabelle. Muster fallen erst auf,
-  wenn du die Serie als Ganzes betrachtest – im Einzelbild wirkt fast alles unauffällig.
+  Muster fallen erst auf, wenn du die Serie als Ganzes betrachtest – im Einzelbild wirkt fast
+  alles unauffällig. Deshalb die Tabelle. Beachte: Das Modell, das die Stereotype erzeugt, ist
+  nicht automatisch der beste Prüfer für sie.
 solution: |
   Typische Beobachtungen ohne Angaben:
 
@@ -25,12 +29,18 @@ solution: |
   | Fahrrad reparieren | junger Mann, Werkstattlook |
   | Zelten am See | gleichaltrige Gruppe, sportlich, sehr ähnliche Gesichter |
 
+  Beispielspalten für Excel: Bild, Person, geschätztes Alter, Geschlecht, Körperform, Rolle
+  (handelt/schaut zu). Prompt in Excel: „Fasse zusammen, welche Merkmale in dieser Tabelle
+  überwiegen und welche Rollen welchen Gruppen zugeordnet sind."
+
   Typische technische Funde: Finger an Werkzeug oder Zeltstangen, unlesbare Schrift auf
-  Schildern oder Kleidung, Fantasielogos, unlogische Reflexionen im Wasser.
+  Schildern oder Kleidung, Fantasielogos, unlogische Reflexionen im Wasser. Copilot findet
+  Schrift und Logos meist, kleine Fehler an Händen oder Reflexionen seltener.
 
   Beim Gegensteuern zeigt sich meist: Konkrete Beschreibungen (Alter, Rolle, Handlung,
   Situation) wirken zuverlässig. Die pauschale Ergänzung „divers" erzeugt oft ein gestelltes,
   stockfotohaftes Gruppenbild – also eine neue Schablone statt einer glaubwürdigen Szene.
 
-  Eine gute Bearbeitung enthält vier geprüfte Bilder mit Fundliste, die Personentabelle,
-  zwei umformulierte Prompts mit Vergleich und eine Einschätzung zum Pauschal-Test.
+  Eine gute Bearbeitung enthält vier geprüfte Bilder mit eigener und Copilot-Fundliste, die
+  Personentabelle mit geprüfter Zusammenfassung, zwei umformulierte Prompts mit Vergleich und
+  eine Einschätzung zum Pauschal-Test.

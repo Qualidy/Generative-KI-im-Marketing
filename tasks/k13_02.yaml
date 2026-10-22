@@ -1,7 +1,7 @@
-title: Newsletter nach Raster erstellen
+title: Newsletter nach Raster in Word erstellen
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug.
+  Diese Übung machst du in **Copilot in Word**, **Copilot Chat** und **Copilot in Outlook**.
 
   Erstelle einen Newsletter-Entwurf für Fjordlicht (oder ein Unternehmen deiner Wahl) zum Thema
   „Erster Frost". Nutze dieses Material:
@@ -15,24 +15,32 @@ question: |
   ```
 
   1. Schreibe einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5) mit dem festen Raster aus
-     Abschnitt 13.3.
-  2. Lass zusätzlich drei Paare aus Betreff und Preheader mit unterschiedlichen Ansätzen
-     erstellen.
+     Abschnitt 13.3 und lass damit in einem neuen Word-Dokument im Ordner „Fjordlicht-Kurs" einen
+     Entwurf mit Copilot erstellen. Verweise auf `/Fjordlicht-Basisdaten` (falls nicht vorhanden:
+     Kap. 11, Kurzübung 1).
+  2. Lass in Copilot Chat zusätzlich drei Paare aus Betreff und Preheader mit unterschiedlichen
+     Ansätzen erstellen.
   3. Prüfe den Entwurf: Wurden Fakten erfunden (Preise, Termine, weitere Materialangaben)?
-     Gibt es mehr als ein Hauptziel? Sind die Längenvorgaben eingehalten?
+     Gibt es mehr als ein Hauptziel? Sind die Längenvorgaben eingehalten? Frag Copilot in Word
+     ergänzend, welche Aussagen im Dokument **nicht** im Material stehen – und prüfe die Antwort.
+  4. Kopiere das Modul „Hauptthema" in einen E-Mail-Entwurf an dich selbst in Outlook und hol dir
+     mit dem **Coaching durch Copilot** Rückmeldung zu Ton und Klarheit. Übernimm nur Hinweise,
+     die zur Markenstimme passen.
 tip: |
-  Gib das Hauptziel ausdrücklich im Purpose an. Ohne diese Angabe stellt die KI das Produktmodul
-  gern in den Vordergrund, weil Newsletter in ihren Trainingsdaten oft verkaufsorientiert sind.
+  Gib das Hauptziel ausdrücklich im Purpose an. Ohne diese Angabe stellt Copilot das Produktmodul
+  gern in den Vordergrund, weil Newsletter in den Trainingsdaten oft verkaufsorientiert sind.
+  Outlook dient hier nur als Prüfumgebung: Versendet wird der Newsletter über euer
+  Newsletter-Tool mit Vorlage, Footer und Abmeldelink.
 solution: |
-  Beispielprompt (Auszug):
+  Beispielprompt für den Entwurf in Word (Auszug):
 
   ```text
   Persona: Du bist E-Mail-Marketing-Spezialistin bei Fjordlicht.
   Request: Erstelle einen Newsletter-Entwurf zum Thema "Erster Frost".
   Output: festes Raster mit 5 Modulen [Raster aus 13.3], je Zwischenüberschrift
-  und CTA-Text, plus 3 Paare Betreff/Preheader (Nutzen, Frage, Konkretheit).
-  Modifier: Nur Fakten aus dem Material. Keine Preise, keine Termine.
-  Keine Superlative. Fehlende Angaben als [FEHLT].
+  und CTA-Text (max. 4 Wörter).
+  Modifier: Nur Fakten aus dem Material unten und aus /Fjordlicht-Basisdaten.
+  Keine Preise, keine Termine. Keine Superlative. Fehlende Angaben als [FEHLT].
   Purpose: Hauptziel ist, dass Abonnenten den Blogbeitrag lesen. Produkt und
   Service sind Nebenmodule. Zielgruppe: naturverbundene Stadtmenschen 25-45.
   Tone: ruhig, ehrlich, nordisch-trocken, Du-Ansprache.
@@ -44,8 +52,13 @@ solution: |
   | Prüfpunkt | Häufiger Befund |
   |---|---|
   | Erfundene Fakten | „atmungsaktiv" oder „besonders leicht" beim Fleece, obwohl nicht im Material |
+  | Preis aus den Basisdaten | 89 € taucht im Produktmodul auf, obwohl „keine Preise" verlangt war |
   | Hauptziel | Produktmodul hat den stärksten CTA („Jetzt kaufen") |
   | Länge | Hauptthema überschreitet 120 Wörter |
   | Markenstimme | „kuschelig warm durch den Winter" – eher Allerweltston |
+  | Coaching | schlägt mehr Begeisterung oder Ausrufezeichen vor – nicht übernehmen |
 
-  Eine gute Bearbeitung benennt mindestens zwei Befunde und korrigiert sie gezielt.
+  Die Frage ans Dokument findet erfundene Aussagen oft, aber nicht immer: Copilot hält eigene
+  Ergänzungen manchmal für belegt. Eine gute Bearbeitung benennt mindestens zwei Befunde,
+  korrigiert sie gezielt an der markierten Stelle und begründet, welche Coaching-Hinweise
+  übernommen oder verworfen wurden.

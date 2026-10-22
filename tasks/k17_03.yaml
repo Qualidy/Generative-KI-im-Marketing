@@ -2,7 +2,7 @@ title: Ein Zielgruppenprofil auf dem Prüfstand
 difficulty: 3
 question: |
   Eine Kollegin hat für „Fjordlicht Business" (Firmenbekleidung) in fünf Minuten folgendes Profil
-  mit ChatGPT erstellt – ohne Daten, nur mit dem Prompt „Beschreibe die Zielgruppe für nachhaltige
+  mit Copilot erstellt – ohne Daten, nur mit dem Prompt „Beschreibe die Zielgruppe für nachhaltige
   Firmenbekleidung":
 
   ```text
@@ -14,44 +14,57 @@ question: |
   auf LinkedIn und erwarten innovative Lösungen.
   ```
 
-  1. Bewerte das Profil Satz für Satz: Was ist Vermutung, was eine ungeprüfte Zahl, was ist zu
-     allgemein, um nutzbar zu sein?
-  2. Erkläre, welche Bausteine des P.R.O.M.P.T.-Frameworks im Ausgangsprompt fehlten und warum das
-     zu genau diesem Ergebnis führt.
-  3. Entwirf einen **Analyseplan**: Welche drei Quellen nutzt Fjordlicht, welche KI-Schritte setzt
-     ihr ein, und wie validiert ihr die Ergebnisse?
-  4. Schreibe den Prompt für den ersten KI-Schritt deines Plans.
+  1. **Nachstellen.** Gib denselben Prompt in Copilot Chat ein (Modus **Arbeit**, ohne Dateien).
+     Vergleiche dein Ergebnis mit dem Profil oben: Welche Muster wiederholen sich?
+  2. **Bewerten.** Bewerte das Profil Satz für Satz: Was ist Vermutung, was eine ungeprüfte Zahl,
+     was ist zu allgemein, um nutzbar zu sein? Prüfe die 78-%-Zahl in Copilot Chat im Modus
+     **Web** und öffne jede genannte Quelle selbst.
+  3. **Ursache.** Erkläre, welche Bausteine des P.R.O.M.P.T.-Frameworks im Ausgangsprompt fehlten
+     und warum das zu genau diesem Ergebnis führt.
+  4. **Analyseplan.** Entwirf einen Plan: Welche drei Quellen nutzt Fjordlicht, mit welchen
+     Copilot-Funktionen wertet ihr sie aus (z. B. Copilot in Excel, Copilot Chat mit `/`-Verweis
+     auf Dateien, Agent **Researcher**), und wie validiert ihr die Ergebnisse?
+  5. **Erster Schritt.** Schreibe den Prompt für den ersten Copilot-Schritt deines Plans.
 tip: |
   Achte besonders auf die Zahl. Sie ist präzise, hat keine Quelle und passt verdächtig gut zur
   Botschaft, die man gern hören möchte. Genau so sehen Halluzinationen in Zielgruppenprofilen aus.
+  Im Modus Arbeit kann Copilot zudem auf interne Dateien und Mails zugreifen, für die du
+  berechtigt bist – im Plan solltest du festlegen, **welche** Dateien als Quelle gelten.
 solution: |
-  1. Bewertung:
+  1. Typisch beim Nachstellen: wieder „nachhaltigkeitsorientierte Unternehmen", HR/Marketing als
+  Entscheider, LinkedIn – das Modell liefert den Durchschnitt, nur anders formuliert.
+
+  2. Bewertung:
 
   | Aussage | Problem |
   |---|---|
   | Entscheider in „modernen, nachhaltigkeitsorientierten" Firmen | Zirkelschluss: beschreibt die gewünschte, nicht die tatsächliche Kundschaft |
   | HR- oder Marketingleitung, 35–55 | Vermutung; im Handwerk entscheidet oft Inhaber oder Einkauf |
-  | „78 % … bis 2027" | ungeprüfte, vermutlich erfundene Zahl – nicht verwenden |
+  | „78 % … bis 2027" | ungeprüfte, vermutlich erfundene Zahl – die Websuche findet keine passende Quelle oder eine mit anderem Bezug; nicht verwenden |
   | Kriterien Nachhaltigkeit, Design, Preis | plausibel, aber zu allgemein; Haltbarkeit, Nachbestellbarkeit, Größenspektrum fehlen |
   | LinkedIn, „innovative Lösungen" | Floskel ohne Handlungswert |
 
-  2. Es fehlten **Persona** (Analyst statt Werbetexter), **Modifier** (keine Zahl ohne Quelle,
+  3. Es fehlten **Persona** (Analyst statt Werbetexter), **Modifier** (keine Zahl ohne Quelle,
   Hypothesen markieren, Daten nutzen) und vor allem Material: Ohne Daten bleibt dem Modell nur der
   Durchschnitt. **Purpose** war nur angedeutet – wofür wird das Profil gebraucht?
 
-  3. Analyseplan, zum Beispiel: (a) Anfragen und Angebote der letzten zwölf Monate aus dem CRM,
-  pseudonymisiert, mit Branche, Größe, Anfrageanlass; (b) Gesprächsnotizen des Vertriebs;
-  (c) Desk Research zu Firmenbekleidung mit Websuche, jede Zahl an der Quelle geprüft. KI-Schritte:
-  Clustern der Anfragen, JTBD aus Gesprächsnotizen, Rechercheauftrag. Validierung: fünf Gespräche
-  mit Bestandskunden, Abgleich mit dem Vertrieb.
+  4. Analyseplan, zum Beispiel: (a) Anfragen und Angebote der letzten zwölf Monate aus dem CRM,
+  pseudonymisiert als Excel-Tabelle mit Branche, Größe, Anfrageanlass – Auswertung mit Copilot in
+  Excel (Gruppieren, Zählen, Diagramm); (b) Gesprächsnotizen des Vertriebs als Word-Datei –
+  Jobs-to-be-done mit Copilot Chat per `/`-Verweis; (c) Desk Research zu Firmenbekleidung mit
+  dem Agent Researcher (falls in eurer Umgebung freigegeben) oder dem Modus Web, jede Zahl an der
+  Quelle geprüft. Validierung: fünf Gespräche mit Bestandskunden, Abgleich mit dem Vertrieb.
 
-  4. Erster Prompt:
+  5. Erster Prompt:
 
   ```text
-  Du bist B2B-Marktanalyst. Gruppiere die folgenden 40 pseudonymisierten
-  Anfragen nach Branche, Unternehmensgröße und Anlass der Anfrage.
-  Format: Tabelle Cluster | Anzahl | typischer Anlass | wörtliches Zitat.
-  Regeln: Nur Daten unten, keine externen Annahmen; unklare Fälle als
-  [UNKLAR]. Zweck: Grundlage für ein Zielgruppenbriefing Fjordlicht Business.
-  Anfragen: """ [Daten] """
+  Du bist B2B-Marktanalyst. Gruppiere die 40 pseudonymisierten Anfragen
+  in /Anfragen-Business nach Branche, Unternehmensgröße und Anlass der
+  Anfrage. Format: Tabelle Cluster | Anzahl | typischer Anlass |
+  wörtliches Zitat. Regeln: Nur Daten aus der Datei, keine externen
+  Annahmen; unklare Fälle als [UNKLAR]. Zweck: Grundlage für ein
+  Zielgruppenbriefing Fjordlicht Business.
   ```
+
+  Die Anzahl je Cluster prüfst du anschließend in Excel nach – beim Zählen ist ein Sprachmodell
+  unzuverlässig.

@@ -1,70 +1,103 @@
-title: Listening-Konzept mit Krisenprobe
+title: Listening-Konzept mit Krisenprobe in Microsoft 365
 difficulty: 4
 question: |
   **Szenario:** Fjordlicht hat bisher nur auf Kommentare reagiert, wenn jemand sie zufällig gesehen
   hat. Die Marketingleitung möchte ein schlankes **Social-Listening-Konzept**: ohne Enterprise-
-  Budget, mit KI-Auswertung, Monatsbericht und klarer Eskalation. Du kannst alternativ ein
-  Unternehmen deiner Wahl nehmen.
+  Budget, mit KI-Auswertung in Microsoft 365 Copilot, Monatsbericht und klarer Eskalation. Du
+  kannst statt Fjordlicht auch ein Unternehmen deiner Wahl nutzen.
 
   ```text
   Rahmen:
-  Budget: kleines Tool oder Bordmittel, kein Enterprise-Vertrag.
+  Budget: kleines Listening-Tool oder Bordmittel, kein Enterprise-Vertrag.
   Team: 5 Personen Marketing, 1 Person Social Media hauptverantwortlich.
   Kanäle: Instagram, TikTok, LinkedIn, Pinterest, Shop-Bewertungen.
   Daten: nur fiktive Beiträge, selbst erstellt, ohne echte Nutzernamen.
+  Werkzeug: Microsoft 365 Copilot (Chat, Word, Excel, Outlook, Pages);
+  Markenstimme per /Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11).
+  Ablage: OneDrive-Ordner "Fjordlicht-Kurs".
   ```
 
   ---
 
-  **Runde 1 – Konzept.** Lege fest: Ziele (drei Fragen, die Listening beantworten soll), Quellen,
-  Suchbegriffe und Ausschlüsse (mit KI erstellt, von dir geprüft), Werkzeugtyp, Kategorienschema
-  und Rhythmus. Halte Datenschutzregeln für das Team in höchstens fünf Punkten fest.
+  **Runde 1 – Konzept in Word.** Lass dir in Copilot Chat eine Suchbegriffs- und Ausschlussliste
+  erstellen (Tippfehler, Produktnamen ohne „ø", Wettbewerber, Beschwerdeformulierungen) und prüfe
+  sie. Erstelle dann mit **Copilot in Word** einen Entwurf „Listening-Konzept.docx": Ziele (drei
+  Fragen, die Listening beantworten soll), Quellen, Suchbegriffe, Werkzeugtyp, Kategorienschema,
+  Rhythmus. Halte Datenschutzregeln für das Team in höchstens fünf Punkten fest – inklusive der
+  Frage, was es bedeutet, dass Copilot mit Enterprise Data Protection im eigenen Mandanten arbeitet,
+  und was das **nicht** ersetzt (Kap. 4).
 
-  **Runde 2 – Testauswertung.** Erstelle 30 fiktive Beiträge mit realistischer Mischung, darunter
-  Ironie, Wettbewerbsbezüge und mindestens ein Sicherheitsthema. Klassifiziere sie mit einem Prompt
-  nach dem P.R.O.M.P.T.-Framework, lass die Auszählung mit der Datenanalyse rechnen, prüfe eine
-  Stichprobe von zehn Beiträgen von Hand und erstelle einen Monatsbericht nach der Gliederung aus
-  Abschnitt 19.4.
+  **Runde 2 – Testauswertung in Excel.** Lass Copilot Chat 30 fiktive Beiträge mit realistischer
+  Mischung erzeugen, darunter Ironie, Wettbewerbsbezüge und mindestens ein Sicherheitsthema.
+  Klassifiziere sie mit einem Prompt nach dem P.R.O.M.P.T.-Framework, übernimm das Ergebnis in
+  „Listening-Test.xlsx" und lass **Copilot in Excel** auszählen und ein Diagramm erstellen
+  (alternativ der Agent **Analyst**, falls freigegeben). Prüfe eine Stichprobe von zehn Beiträgen
+  von Hand. Erstelle danach mit Copilot in Word den Monatsbericht nach der Gliederung aus Abschnitt
+  19.4 und verweise dabei auf die Excel-Datei.
 
   **Runde 3 – Die Komplikation.** Freitagabend, 18 Uhr: Ein Video mit 200.000 Aufrufen behauptet,
   Fjordlichts Rucksack „Tind" werde unter schlechten Arbeitsbedingungen gefertigt. Die Fakten sind
   unklar, die zuständige Kollegin aus dem Einkauf ist bis Montag nicht erreichbar, die Kommentare
-  nehmen stündlich zu. Spiele den Fall mit deiner Eskalationslogik durch: Stufe, Zuständige, erste
-  Reaktion in den nächsten zwei Stunden, was gesagt wird und was ausdrücklich nicht.
+  nehmen stündlich zu. Spiele den Fall mit deiner Eskalationslogik durch: Lass Copilot 20 fiktive
+  Kommentare sortieren (sachliche Frage, Vorwurf, Verteidigung), lege ein gemeinsames
+  Krisenprotokoll als **Copilot Page** an und lass **Copilot in Outlook** die interne Alarmierung an
+  Teamleitung und Geschäftsführung entwerfen. Halte fest: Stufe, Zuständige, erste Reaktion in den
+  nächsten zwei Stunden, was gesagt wird und was ausdrücklich nicht.
 
-  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung fragt, ob die KI kritische
-  Kommentare künftig automatisch beantworten könne, „damit am Wochenende niemand arbeiten muss".
-  Lass dir von der KI ein Konzept dafür vorschlagen, **widersprich** dort, wo Automatisierung
-  Risiken erzeugt, und entscheide, was automatisiert werden darf und was nicht.
+  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung fragt, ob ein Copilot-Agent
+  kritische Kommentare künftig automatisch beantworten könne, „damit am Wochenende niemand arbeiten
+  muss". Lass dir von Copilot ein Konzept dafür vorschlagen, etwa einen Agenten mit dem **Agent
+  Builder**, der auf freigegebene Antwortbausteine zugreift. **Widersprich** dort, wo
+  Automatisierung Risiken erzeugt, und entscheide, was automatisiert werden darf und was nicht.
 
   **Deliverable:**
 
-  1. Listening-Konzept mit Zielen, Quellen, Suchbegriffen, Schema, Rhythmus und Datenschutzregeln
-  2. Testdatensatz, Klassifizierungsprompt, Stichprobenprüfung mit Übereinstimmungsquote
-  3. Monatsbericht mit Datenbasis und Handlungsempfehlungen
-  4. Krisenablauf zu Runde 3 inklusive Entwurf einer ersten öffentlichen Reaktion
+  1. „Listening-Konzept.docx" mit Zielen, Quellen, Suchbegriffen, Schema, Rhythmus und
+     Datenschutzregeln
+  2. „Listening-Test.xlsx" mit Testdatensatz, Klassifizierung, Auszählung und Stichprobenprüfung
+     samt Übereinstimmungsquote; Klassifizierungsprompt in der Prompt Gallery gespeichert
+  3. Monatsbericht in Word mit Datenbasis und Handlungsempfehlungen
+  4. Krisenprotokoll (Page) zu Runde 3, Outlook-Entwurf der Alarmierung und Entwurf einer ersten
+     öffentlichen Reaktion
   5. Entscheidungsvorlage zu Runde 4
 
   **Fertig bist du erst, wenn** jeder Bericht seine Datenbasis nennt, die Stichprobenprüfung
-  dokumentiert ist, deine erste Reaktion in Runde 3 nichts behauptet, was du nicht weißt, und die
-  Entscheidung in Runde 4 eine klare Grenze zwischen automatisierbaren und menschlichen Aufgaben
-  zieht.
+  dokumentiert ist, die Zählung aus Excel stammt und nicht aus dem Chat, deine erste Reaktion in
+  Runde 3 nichts behauptet, was du nicht weißt, und die Entscheidung in Runde 4 eine klare Grenze
+  zwischen automatisierbaren und menschlichen Aufgaben zieht.
 tip: |
   Der Lernwert liegt in Runde 3. In der Krise ist die Versuchung groß, schnell etwas zu
   dementieren. Eine gute erste Reaktion bestätigt, dass man den Vorwurf ernst nimmt, sagt, was man
-  prüft und wann man sich meldet – und behauptet nichts, was noch nicht geprüft ist. KI kann
-  Kommentare sortieren und Entwürfe liefern, aber keine Fakten über Lieferketten herbeischreiben.
+  prüft und wann man sich meldet – und behauptet nichts, was noch nicht geprüft ist. Copilot kann
+  Kommentare sortieren und Entwürfe liefern, aber keine Fakten über Lieferketten herbeischreiben;
+  auch nicht aus Dateien im Mandanten, die es zu diesem Thema gar nicht gibt.
 solution: |
+  Beispiel-Prompt für Runde 3 (Copilot Chat, Arbeit):
+
+  ```text
+  Unten stehen 20 Kommentare unter einem kritischen TikTok-Video zu unserem
+  Rucksack Tind. Sortiere sie in drei Gruppen: sachliche Frage, Vorwurf,
+  Verteidigung der Marke. Nenne je Gruppe die Anzahl und zwei typische
+  Formulierungen. Entwirf danach eine erste öffentliche Reaktion in der
+  Markenstimme aus /Fjordlicht-Basisdaten, höchstens 60 Wörter.
+  Regeln: Behaupte nichts über Lieferkette oder Fertigung. Sag, dass wir
+  prüfen, und nenne einen Zeitpunkt für das nächste Update.
+  Kommentare: [einfügen]
+  ```
+
   Bewertungskriterien: (1) das Konzept ist mit dem Rahmen umsetzbar, Suchbegriffe enthalten
   Schreibvarianten und Ausschlüsse, die Datenschutzregeln sind konkret (IDs statt Namen,
-  freigegebene Werkzeuge, keine Personenprofile, Löschfristen); (2) die Testauswertung trennt
-  Klassifizierung (Sprachmodell) und Zählung (Python) und dokumentiert die Stichprobe ehrlich,
-  inklusive Fehlertypen; (3) der Bericht nennt Datenbasis und Fallzahlen und behauptet keine
-  Ursachen; (4) der Krisenablauf ordnet den Fall mindestens Stufe Orange zu, benennt Zuständige
-  und Erreichbarkeit, und die erste Reaktion ist faktisch zurückhaltend mit Zusage einer Prüfung
-  und eines Zeitpunkts; (5) die Entscheidung in Runde 4 erlaubt etwa Vorsortierung, Alarmierung
-  und Antwortentwürfe, schließt aber automatische Antworten auf Kritik, Vorwürfe und
-  Sicherheitsthemen aus und berücksichtigt die Transparenzpflicht bei KI-Interaktion (Kap. 27).
+  freigegebene Werkzeuge mit AVV für das Listening-Tool, keine Personenprofile, Löschfristen) und
+  trennen sauber: Enterprise Data Protection schützt die Verarbeitung in Copilot, ersetzt aber
+  weder die Rechtsgrundlage noch das Entfernen von Nutzernamen; (2) die Testauswertung trennt
+  Klassifizierung (Sprachmodell) und Zählung (Excel bzw. Analyst) und dokumentiert die Stichprobe
+  ehrlich, inklusive Fehlertypen; (3) der Bericht nennt Datenbasis und Fallzahlen und behauptet
+  keine Ursachen; (4) der Krisenablauf ordnet den Fall mindestens Stufe Orange zu, benennt
+  Zuständige und Erreichbarkeit, die Page hält Zeitpunkte und Entscheidungen fest, und die erste
+  Reaktion ist faktisch zurückhaltend mit Zusage einer Prüfung und eines Zeitpunkts; (5) die
+  Entscheidung in Runde 4 erlaubt etwa Vorsortierung, Alarmierung und Antwortentwürfe durch einen
+  Agenten, schließt aber automatische Antworten auf Kritik, Vorwürfe und Sicherheitsthemen aus und
+  berücksichtigt die Transparenzpflicht bei KI-Interaktion (Kap. 27).
 
-  Lernziel: Social Listening als datenschutzkonformen, überprüfbaren Prozess aufsetzen und KI dort
-  einsetzen, wo sie Menschen entlastet, ohne Verantwortung und Urteil an sie abzugeben.
+  Lernziel: Social Listening als datenschutzkonformen, überprüfbaren Prozess aufsetzen und Copilot
+  dort einsetzen, wo es Menschen entlastet, ohne Verantwortung und Urteil an die KI abzugeben.

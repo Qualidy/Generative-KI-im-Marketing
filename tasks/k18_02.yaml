@@ -1,21 +1,29 @@
-title: Der Avatar im Purpose – Vorher und Nachher
+title: Der Avatar im Purpose – Vorher und Nachher in Copilot
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug.
+  Diese Übung machst du in Microsoft 365 Copilot.
 
-  1. Schreibe für den Fjordlicht-Avatar „Jana" (Abschnitt 18.2) oder einen Avatar aus deinem
-     eigenen Arbeitsumfeld eine **Kurzfassung** von 80 bis 120 Wörtern.
-  2. Lass in einem neuen Chat einen Newsletter-Teaser (max. 60 Wörter) für den Fleece „Skog"
-     schreiben – nur mit „für unsere Zielgruppe" als Purpose.
-  3. Lass in einem weiteren neuen Chat denselben Teaser mit einem vollständigen P.R.O.M.P.T.-Prompt
-     schreiben, in dessen Purpose die Kurzfassung steht.
-  4. Vergleiche beide Ergebnisse anhand der Prüfpunkte aus Abschnitt 18.5 (Hook, Einwände,
-     Sprache, Belege) in einer Tabelle.
-  5. Notiere, welcher Satz deiner Kurzfassung die größte Wirkung hatte.
+  1. **Kurzfassung.** Schreibe für den Fjordlicht-Avatar „Jana" (Abschnitt 18.2) oder einen
+     Avatar aus deinem eigenen Arbeitsumfeld eine **Kurzfassung** von 80 bis 120 Wörtern und
+     speichere sie als „Avatar-Jana-Kurzfassung.docx" im Ordner „Fjordlicht-Kurs". Copilot in
+     Word kann dir helfen, einen längeren Entwurf auf die Zielgröße zu kürzen.
+  2. **Ohne Avatar.** Lass in einem neuen Copilot-Chat einen Newsletter-Teaser (max. 60 Wörter)
+     für den Fleece „Skog" schreiben – nur mit „für unsere Zielgruppe" als Purpose.
+  3. **Mit Avatar.** Lass in einem weiteren neuen Chat denselben Teaser mit einem vollständigen
+     P.R.O.M.P.T.-Prompt schreiben. Im Purpose verweist du per `/` auf die Kurzfassung, für
+     Produktfakten auf `/Fjordlicht-Basisdaten` (falls nicht vorhanden: Kap. 11 bzw. Fakten
+     einfügen).
+  4. **Vergleich.** Vergleiche beide Ergebnisse anhand der Prüfpunkte aus Abschnitt 18.5 (Hook,
+     Einwände, Sprache, Belege) in einer Tabelle.
+  5. **Wirkung und Ablage.** Notiere, welcher Satz deiner Kurzfassung die größte Wirkung hatte.
+     Entscheide, wo der Avatar dauerhaft liegen soll: als Datei mit `/`-Verweis, in einem Copilot
+     Notebook oder in den benutzerdefinierten Anweisungen (Kap. 7) – und begründe in einem Satz.
 tip: |
   Die Kurzfassung wirkt am stärksten, wenn sie eine konkrete **Situation**, einen **Einwand** und
   ein, zwei **wörtliche Formulierungen** enthält. Reine Eigenschaften („umweltbewusst, aktiv")
-  verändern das Ergebnis kaum.
+  verändern das Ergebnis kaum. Achtung beim Vergleich: Wenn Copilot-Memory oder
+  benutzerdefinierte Anweisungen aktiv sind, kann der Avatar auch in den „Ohne"-Chat einfließen.
+  Prüfe deine Personalisierungseinstellungen, damit der Vergleich fair bleibt.
 solution: |
   Beispiel für eine Kurzfassung:
 
@@ -28,15 +36,32 @@ solution: |
   Preis und Passform beim Onlinekauf. Liest den Newsletter am Wochenende.
   ```
 
+  Beispiel-Prompt für Schritt 3:
+
+  ```text
+  Persona: Du bist Newsletter-Texterin von Fjordlicht.
+  Request: Schreibe einen Teaser für den Fleece Skog.
+  Output: max. 60 Wörter, erste Zeile als Hook.
+  Modifier: Fakten nur aus /Fjordlicht-Basisdaten. Keine Superlative.
+  Fehlt ein Beleg, schreibe [BELEG FEHLT].
+  Purpose: Klick auf die Produktseite. Der Teaser richtet sich an den
+  Avatar in /Avatar-Jana-Kurzfassung.
+  Tone: laut Markenstimme in den Basisdaten.
+  ```
+
   Typischer Vergleich:
 
   | Prüfpunkt | ohne Avatar | mit Avatar |
   |---|---|---|
-  | Hook | „Kuschelig durch den Herbst!" | „Pillt nach drei Wäschen? Skog nicht – hier steht, warum." |
+  | Hook | „Kuschelig durch den Herbst!" | „Pillt nach drei Wäschen? Hier steht, woraus Skog besteht." |
   | Einwände | keine | Haltbarkeit, Passform (Größenhilfe) |
   | Sprache | Superlative, Werbefloskeln | ruhig, Kundensprache |
-  | Belege | „nachhaltig" ohne Angabe | nur, wenn im Prompt ein Beleg steht – sonst `[BELEG FEHLT]` |
+  | Belege | „nachhaltig" ohne Angabe | nur, wenn in den Basisdaten ein Beleg steht – sonst `[BELEG FEHLT]` |
 
   Wirkungsvollster Satz ist meist der Pain Point mit konkreter Erfahrung („pillte nach wenigen
-  Wäschen"). Achtung: Die Aussage „Skog pillt nicht" darf nur verwendet werden, wenn Fjordlicht sie
-  belegen kann – der Avatar liefert die Frage, nicht die Antwort.
+  Wäschen"). Achtung: Eine Aussage wie „Skog pillt nicht" darf nur verwendet werden, wenn
+  Fjordlicht sie belegen kann – der Avatar liefert die Frage, nicht die Antwort.
+
+  Ablage: Für mehrere Avatare ist eine Datei pro Avatar mit `/`-Verweis oder ein Notebook meist
+  besser als benutzerdefinierte Anweisungen, weil Letztere in **jeden** Chat einfließen – auch
+  dort, wo ein anderer Avatar gemeint ist.

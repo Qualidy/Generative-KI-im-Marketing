@@ -5,77 +5,113 @@ question: |
   sechs Clips zur Regenjacke „Sølv", zum Fleece „Skog" und zur Wanderhose „Vidde". Bisher wurde
   Musik für jedes Reel spontan in der App ausgesucht – die Clips klingen jedes Mal anders. Du
   sollst ein **Klangkonzept** liefern, das die Serie hörbar zusammenhält und rechtlich sauber
-  ist. Du kannst alternativ mit einem Unternehmen deiner Wahl arbeiten.
+  ist. Leitbild, Prompts, Lizenzdokumentation und Abstimmung laufen in Microsoft 365 Copilot; die
+  Musik selbst kommt aus einem KI-Musikwerkzeug oder einem Stock-Katalog, denn Copilot erzeugt
+  keine Musik. Du kannst statt Fjordlicht auch ein Unternehmen deiner Wahl nutzen.
 
   ```text
   Rahmen:
   6 Reels, je 15 bis 20 Sekunden, Instagram und TikTok (Unternehmensaccounts).
   Zwei Clips laufen zusätzlich als bezahlte Anzeige und im Webshop.
   Budget für Musik: max. 300 Euro für die gesamte Serie.
-  Markenstimme: ruhig, ehrlich, naturverbunden, nordisch-trocken.
-  Werkzeuge: ChatGPT plus ein KI-Musikwerkzeug oder ein Stock-Katalog.
+  Markenstimme: ruhig, ehrlich, naturverbunden, nordisch-trocken
+  (/Fjordlicht-Basisdaten, falls nicht vorhanden: Kap. 11).
+  Planung: Copilot in Word und Excel, Copilot Chat (Arbeit/Web), Teams/Outlook
+  Musik: ein KI-Musikwerkzeug (Suno, ElevenLabs Music, Google Flow Music)
+  oder ein Stock-Katalog
   ```
 
   ---
 
-  **Runde 1 – Audio-Leitbild und Prompts.** Erstelle ein Audio-Leitbild nach dem Muster aus
-  Abschnitt 37.4 (Klangcharakter, Instrumente, Tempo, Vermeiden). Leite daraus **sechs**
-  Musik-Prompts ab – einen pro Reel – mit allen sechs Bausteinen aus Abschnitt 37.3 und
-  Sekundenangaben für Sprechstellen. Erzeuge mindestens zwei Tracks zur Probe oder suche zwei
-  passende Stock-Titel.
+  **Runde 1 – Audio-Leitbild und Prompts in Word.** Lass Copilot in Word im Dokument
+  „Klangkonzept-Draussen" (Ordner „Fjordlicht-Kurs") ein Audio-Leitbild nach dem Muster aus
+  Abschnitt 37.4 entwerfen (Klangcharakter, Instrumente, Tempo, Vermeiden), mit Verweis auf
+  `/Fjordlicht-Basisdaten`. Leite daraus mit dem Music-Supervisor-Prompt aus Kurzübung 37.2
+  (Prompt Gallery) **sechs** Musik-Prompts ab – einen pro Reel – mit allen sechs Bausteinen aus
+  Abschnitt 37.3 und Sekundenangaben für Sprechstellen. Erzeuge mindestens zwei Tracks zur Probe
+  im Musikwerkzeug oder suche zwei passende Stock-Titel.
 
-  **Runde 2 – Prüfung gegen Pflichtkriterien.** Das Konzept muss **alle vier** Kriterien
-  erfüllen:
+  **Runde 2 – Lizenztabelle in Excel.** Lege die Excel-Tabelle „Lizenzen-Draussen" an: eine Zeile
+  je Track mit Reel, Bezugsweg, Kanälen, Tool, Tarif, Konto, Datum, Prompt und Ablageort der
+  Bedingungen. Lass Copilot in Excel eine Prüfspalte vorschlagen, die markiert, wo Angaben fehlen,
+  und alle Zeilen hervorheben, in denen „Anzeige" oder „Webshop" als Kanal steht. Das Konzept
+  muss **alle vier** Kriterien erfüllen:
 
   1. Für jeden Track ist der **Bezugsweg** festgelegt und für den geplanten Kanal lizenziert –
      einschließlich Anzeige und Webshop.
   2. Für jeden KI-Track sind **Tool, Tarif, Konto, Datum und Prompt** dokumentiert.
-  3. Kein Prompt enthält **Künstler- oder Songnamen**.
+  3. Kein Prompt enthält **Künstler- oder Songnamen** – lass Copilot danach suchen und prüfe
+     trotzdem selbst.
   4. Die sechs Tracks sind beim Hintereinanderhören **erkennbar eine Serie**.
 
-  **Runde 3 – Die Komplikation.** Zwei Tage vor Start schlägt das Social-Media-Team vor, in
-  zwei Reels doch einen gerade trendenden TikTok-Sound zu nutzen – „sonst gehen wir im Feed
-  unter". Gleichzeitig fällt dir auf, dass einer deiner KI-Tracks im Refrain stark an einen
-  bekannten Song erinnert. Kläre beide Punkte: Was ist auf dem Unternehmensaccount zulässig,
-  was nicht? Ersetze oder überarbeite, wo nötig, und halte fest, wie du die Reichweitensorge
-  anders adressierst.
+  **Runde 3 – Die Komplikation.** Zwei Tage vor Start schlägt das Social-Media-Team in einem
+  Teams-Chat vor, in zwei Reels doch einen gerade trendenden TikTok-Sound zu nutzen – „sonst
+  gehen wir im Feed unter". Gleichzeitig fällt dir auf, dass einer deiner KI-Tracks im Refrain
+  stark an einen bekannten Song erinnert. Lass Copilot (Modus **Web**) die aktuellen Regeln für
+  Sounds auf Unternehmensaccounts mit Quellen zusammenfassen. Kläre beide Punkte: Was ist auf dem
+  Unternehmensaccount zulässig, was nicht? Ersetze oder überarbeite, wo nötig, trage es in die
+  Lizenztabelle ein und halte fest, wie du die Reichweitensorge anders adressierst. Antworte im
+  Teams-Chat mit einem Copilot-Entwurf, den du selbst nachschärfst.
 
-  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung fragt, ob ihr aus einem der
-  Tracks gleich das neue **Sound-Logo** machen könnt. Lass dir von ChatGPT Pro und Contra
-  aufstellen. Die Antwort wird wahrscheinlich Kosten und Geschwindigkeit stark betonen.
+  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung fragt per Mail, ob ihr aus
+  einem der Tracks gleich das neue **Sound-Logo** machen könnt. Lass dir in Copilot Chat Pro und
+  Contra aufstellen. Die Antwort wird wahrscheinlich Kosten und Geschwindigkeit stark betonen.
   **Widersprich** dort, wo Schutzfähigkeit, Rechtslage (GEMA-Urteile nicht rechtskräftig) und
   Langlebigkeit eines Markenzeichens zu kurz kommen, und triff eine begründete Empfehlung.
+  Formuliere die Antwort an die Geschäftsführung in Outlook mit Copilot als Entwurf.
 
   **Deliverable:**
 
-  1. Audio-Leitbild und sechs vollständige Musik-Prompts
-  2. Lizenztabelle mit Bezugsweg, Kanälen und Dokumentation je Track
-  3. Entscheidungsnotiz zu Runde 3 (Trend-Sound und auffälliger Track)
-  4. Empfehlung zum Sound-Logo mit Abwägung aus Runde 4
+  1. Word-Dokument mit Audio-Leitbild und sechs vollständigen Musik-Prompts
+  2. Excel-Lizenztabelle mit Bezugsweg, Kanälen, Dokumentation und Prüfspalte je Track
+  3. Entscheidungsnotiz zu Runde 3 (Trend-Sound und auffälliger Track) mit Quellen
+  4. Empfehlung zum Sound-Logo mit Abwägung aus Runde 4 als Mail an die Geschäftsführung
 
   **Fertig bist du erst, wenn** jeder Track für jeden geplanten Kanal einen nachvollziehbaren
-  Lizenzweg hat, kein Prompt einen Künstlernamen enthält, der auffällige Track ersetzt ist und
-  deine Sound-Logo-Empfehlung mindestens ein rechtliches und ein markenstrategisches Argument
-  enthält.
+  Lizenzweg hat, die Prüfspalte in Excel keine Lücke mehr zeigt, kein Prompt einen
+  Künstlernamen enthält, der auffällige Track ersetzt ist und deine Sound-Logo-Empfehlung
+  mindestens ein rechtliches und ein markenstrategisches Argument enthält.
 tip: |
   Der Lernkern liegt in Runde 2 und 3: Gute Musik ist schnell gefunden, eine Lizenz, die für
-  Reel, Anzeige **und** Webshop gilt, nicht. Beim Sound-Logo verschiebt sich die Frage von „klingt
-  es gut?" zu „gehört es uns dauerhaft?". Rein KI-erzeugte Musik ist in der Regel nicht geschützt –
-  für ein Markenzeichen ist das ein Ausschlusskriterium oder zumindest ein Grund für menschliche
-  Ausarbeitung.
+  Reel, Anzeige **und** Webshop gilt, nicht. Copilot hilft beim Strukturieren und Prüfen der
+  Dokumentation – ob ein Track „zu vertraut" klingt, entscheiden deine Ohren. Beim Sound-Logo
+  verschiebt sich die Frage von „klingt es gut?" zu „gehört es uns dauerhaft?". Rein KI-erzeugte
+  Musik ist in der Regel nicht geschützt – für ein Markenzeichen ist das ein Ausschlusskriterium
+  oder zumindest ein Grund für menschliche Ausarbeitung.
 solution: |
+  Beispiel-Prompt für Copilot in Excel:
+
+  ```text
+  Füge eine Spalte "Dokumentation vollständig" hinzu, die "ja" ausgibt,
+  wenn bei KI-Tracks Tool, Tarif, Konto, Datum und Prompt ausgefüllt sind
+  und bei Stock-Tracks Lizenz und Ablageort der Bedingungen, sonst "nein".
+  Hebe alle Zeilen mit "nein" hervor.
+  ```
+
+  Beispiel-Prompt für die Pro-und-Contra-Abwägung in Copilot Chat:
+
+  ```text
+  Unsere Geschäftsführung möchte einen KI-erzeugten Track als dauerhaftes
+  Sound-Logo nutzen. Stelle Pro und Contra auf. Berücksichtige ausdrücklich:
+  Schutzfähigkeit nach § 2 Abs. 2 UrhG, die nicht rechtskräftigen Urteile des
+  LG München I (GEMA ./. OpenAI, GEMA ./. Suno), Tarifbedingungen des Tools,
+  Langlebigkeit eines Markenzeichens. Gewichte die Punkte und kennzeichne,
+  was rechtlich unsicher ist. Keine Rechtsberatung.
+  ```
+
   Bewertungskriterien: (1) Audio-Leitbild ist konkret genug, um sechs zueinander passende
   Prompts zu erzeugen; alle Prompts enthalten die sechs Bausteine und berücksichtigen
-  Sprechstellen; (2) die Lizenztabelle unterscheidet Plattformbibliothek, Stock und KI korrekt
-  und deckt Anzeige und Webshop ausdrücklich ab; KI-Tracks sind mit Tool, Tarif, Konto, Datum und
-  Prompt dokumentiert; (3) Runde 3 erkennt, dass Trend-Sounds auf Unternehmensaccounts meist
-  nicht nutzbar sind, bietet eine Alternative aus der Commercial Music Library oder eine
-  inhaltliche Lösung für Reichweite an und verwirft den auffälligen Track konsequent;
-  (4) die Sound-Logo-Empfehlung nennt fehlende Schutzfähigkeit nach § 2 Abs. 2 UrhG, die nicht
-  rechtskräftigen GEMA-Urteile als Unsicherheitsfaktor und die Langlebigkeit eines
-  Markenzeichens – typischerweise: KI für Ideen, finale Fassung durch einen Menschen mit
-  vertraglicher Rechteübertragung.
+  Sprechstellen; (2) die Excel-Lizenztabelle unterscheidet Plattformbibliothek, Stock und KI
+  korrekt und deckt Anzeige und Webshop ausdrücklich ab; KI-Tracks sind mit Tool, Tarif, Konto,
+  Datum und Prompt dokumentiert, die Prüfspalte funktioniert; (3) Runde 3 erkennt, dass
+  Trend-Sounds auf Unternehmensaccounts meist nicht nutzbar sind (mit Quelle aus der Websuche),
+  bietet eine Alternative aus der Commercial Music Library oder eine inhaltliche Lösung für
+  Reichweite an und verwirft den auffälligen Track konsequent; (4) die Sound-Logo-Empfehlung
+  nennt fehlende Schutzfähigkeit nach § 2 Abs. 2 UrhG, die nicht rechtskräftigen GEMA-Urteile
+  als Unsicherheitsfaktor und die Langlebigkeit eines Markenzeichens – typischerweise: KI für
+  Ideen, finale Fassung durch einen Menschen mit vertraglicher Rechteübertragung. Gute
+  Bearbeitungen zeigen, wo Copilots erste Abwägung Kosten und Tempo übergewichtet hat.
 
-  Lernziel: KI-Musik gezielt für Konsistenz und Tempo nutzen, ohne Lizenzfragen zu übersehen –
-  und unterscheiden können, wann ein KI-Track reicht und wann eine Marke mehr Rechtssicherheit
-  braucht.
+  Lernziel: KI-Musik gezielt für Konsistenz und Tempo nutzen, die Lizenzdokumentation mit Copilot
+  in Excel sauber führen, ohne Lizenzfragen zu übersehen – und unterscheiden können, wann ein
+  KI-Track reicht und wann eine Marke mehr Rechtssicherheit braucht.

@@ -1,32 +1,39 @@
 title: Claim-Check selbst durchführen
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug. Du simulierst den Prüfmodus des Content-Assistenten ohne eigenen
-  Assistenten.
+  Diese Übung machst du in **Copilot Chat** und **Word**. Du simulierst den Prüfmodus des
+  Content-Assistenten zunächst ohne eigenen Agent.
 
-  1. Öffne einen neuen Chat und füge den Abschnitt `# Modi` (Modus 2, CLAIM-CHECK) und
-     `# Ausgabeformat` aus Abschnitt 26.3 ein.
-  2. Füge diese Claim-Liste ein (fiktiv):
+  1. Lege in Word die Datei **„Claim-Liste.docx"** im Ordner „Fjordlicht-Kurs" an und füge diese
+     (fiktive) Claim-Liste als Tabelle ein – Copilot in Word kann den Text für dich in eine
+     Tabelle umwandeln:
 
-  ```text
-  C-03 | Obermaterial zu 100 % aus recyceltem Polyamid | Sølv
-  C-07 | Imprägnierung ohne PFAS | Sølv, Vidde
-  C-11 | Kostenlose Reparatur in den ersten zwei Jahren | alle Produkte
-  C-14 | Fleece zu 80 % aus recyceltem Polyester | Skog
-  ```
+     ```text
+     C-03 | Obermaterial zu 100 % aus recyceltem Polyamid | Sølv
+     C-07 | Imprägnierung ohne PFAS | Sølv, Vidde
+     C-11 | Kostenlose Reparatur in den ersten zwei Jahren | alle Produkte
+     C-14 | Fleece zu 80 % aus recyceltem Polyester | Skog
+     ```
 
+  2. Öffne einen neuen Chat in Copilot Chat (Modus **Arbeit**). Füge den Abschnitt `# Modi`
+     (Modus 2, CLAIM-CHECK) und `# Ausgabeformat` aus Abschnitt 26.3 ein und verweise mit
+     `/Claim-Liste` auf deine Datei.
   3. Lass diesen Text prüfen:
 
-  ```text
-  Die Vidde ist unsere grünste Hose: komplett PFAS-frei, aus recyceltem Material
-  und mit lebenslanger Reparaturgarantie. So schonst du die Umwelt bei jedem Schritt.
-  ```
+     ```text
+     Die Vidde ist unsere grünste Hose: komplett PFAS-frei, aus recyceltem Material
+     und mit lebenslanger Reparaturgarantie. So schonst du die Umwelt bei jedem Schritt.
+     ```
 
-  4. Prüfe die Tabelle selbst: Hat das Werkzeug jede Aussage gefunden? Stimmen die Bewertungen?
-  5. Formuliere den Text so um, dass er freigabefähig ist.
+  4. Prüfe die Tabelle selbst: Hat Copilot jede Aussage gefunden? Stimmen die Bewertungen? Nennt
+     Copilot die Claim-IDs aus deiner Datei?
+  5. Formuliere den Text so um, dass er freigabefähig ist, und lass deine Fassung in einem
+     **zweiten** neuen Chat noch einmal prüfen.
 tip: |
   Achte besonders auf ausgeweitete Aussagen. „PFAS-frei" und „ohne PFAS imprägniert" sind
-  nicht dasselbe: Das eine betrifft das ganze Produkt, das andere nur die Imprägnierung.
+  nicht dasselbe: Das eine betrifft das ganze Produkt, das andere nur die Imprägnierung. Und achte
+  darauf, ob Copilot wirklich deine Datei nutzt – im Modus **Arbeit** könnte es auch andere Dateien
+  mit ähnlichen Inhalten heranziehen, etwa „Fjordlicht-Basisdaten.docx".
 solution: |
   | Nr. | Textstelle | Bewertung | Begründung |
   |---|---|---|---|
@@ -43,6 +50,9 @@ solution: |
   und geht doch mal etwas kaputt, reparieren wir sie in den ersten zwei Jahren kostenlos.
   ```
 
-  Häufig übersieht das Werkzeug Aussage 3, weil „recyceltes Material" für andere Produkte
-  belegt ist. Wer das nicht bemerkt, hat den eigentlichen Lernpunkt verpasst: Das Modell
-  prüft Ähnlichkeit, du prüfst den **Geltungsbereich**.
+  Im zweiten Prüflauf sollte Copilot beide Aussagen als BELEGT mit C-07 und C-11 ausweisen.
+
+  Häufig übersieht Copilot Aussage 3, weil „recyceltes Material" für andere Produkte belegt ist.
+  Wer das nicht bemerkt, hat den eigentlichen Lernpunkt verpasst: Das Modell prüft Ähnlichkeit, du
+  prüfst den **Geltungsbereich**. Die Datei „Claim-Liste.docx" kannst du im Workshop als
+  Wissensquelle für deinen Agent weiterverwenden.

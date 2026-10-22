@@ -1,8 +1,8 @@
-title: Gezielte Überarbeitung mit Änderungsliste
+title: Gezielte Überarbeitung in einer Copilot Page
 difficulty: 2
 question: |
-  Diese Übung machst du direkt im KI-Werkzeug (ChatGPT mit Schreibblöcken oder eine Alternative
-  wie Claude, Gemini oder Copilot).
+  Diese Übung machst du in **Copilot Chat** und **Copilot Pages** (falls in eurer Umgebung
+  freigegeben; sonst in Word mit Copilot).
 
   Ausgangstext für einen Newsletter-Teaser:
 
@@ -13,24 +13,32 @@ question: |
   aus recyceltem Polyester. Erhältlich in drei Farben.
   ```
 
-  1. Lass den Text als Schreibblock (bzw. Dokument) ausgeben, ohne ihn zu verändern.
-  2. Überarbeite **nur den ersten Satz** gezielt in Fjordlicht-Markenstimme (ruhig, ehrlich,
-     keine Superlative).
+  1. Gib den Text in Copilot Chat ein und bitte darum, ihn **unverändert** zurückzugeben.
+     Übernimm die Antwort in eine **Page** – ab jetzt arbeitest du nur noch dort.
+  2. Markiere in der Page **nur den ersten Satz** und lass ihn in Fjordlicht-Markenstimme
+     überarbeiten (ruhig, ehrlich, keine Superlative). Verweise dafür auf
+     `/Fjordlicht-Basisdaten` (falls nicht vorhanden: Kap. 11, Kurzübung 1, oder die Markenstimme
+     direkt einfügen).
   3. Überarbeite danach **nur den zweiten Satz** so, dass keine unbelegte Nachhaltigkeitsaussage
      übrig bleibt.
   4. Verlange nach jedem Schritt eine Änderungsliste.
   5. Prüfe am Ende selbst: Sind „80 Prozent", „recyceltes Polyester" und „drei Farben" unverändert?
+     Und hat Copilot außerhalb der Markierung etwas angefasst?
+  6. Öffne den Versionsverlauf der Page bzw. des Dokuments und stelle fest, ob du zur
+     Ausgangsfassung zurückspringen könntest.
 tip: |
   Formuliere jede Anweisung mit einer Grenze („Ändere ausschließlich …") und einem Schutz für
-  Zahlen und Produktnamen. Ohne diese Grenze schreibt das Werkzeug oft den ganzen Text neu.
+  Zahlen und Produktnamen. Ohne diese Grenze schreibt Copilot oft den ganzen Absatz neu. Wenn du
+  in Word arbeitest, schalte vorher „Änderungen nachverfolgen" ein: Dann prüfst du übernommene
+  Copilot-Vorschläge wie die Korrektur einer Kollegin.
 solution: |
-  Beispielanweisung für Schritt 2:
+  Beispielanweisung für Schritt 2 (zur markierten Stelle in der Page):
 
   ```text
-  Überarbeite ausschließlich den ersten Satz in dieser Markenstimme:
-  ruhig, ehrlich, leicht nordisch-trocken, Du-Ansprache, keine Superlative,
-  keine Ausrufezeichen. Alles andere bleibt wortgleich.
-  Liste danach auf, was du geändert hast.
+  Überarbeite ausschließlich den markierten Satz in der Markenstimme aus
+  /Fjordlicht-Basisdaten: ruhig, ehrlich, leicht nordisch-trocken,
+  Du-Ansprache, keine Superlative, keine Ausrufezeichen.
+  Alles andere bleibt wortgleich. Liste danach auf, was du geändert hast.
   ```
 
   Mögliches Ergebnis nach Schritt 2 und 3:
@@ -48,5 +56,10 @@ solution: |
   Der dritte Satz („Jetzt zuschlagen …") wurde korrekt **nicht** angefasst, passt aber auch nicht
   zur Marke – ein Kandidat für den nächsten gezielten Schritt.
 
+  Zum Werkzeug: Die Page hält den Text als eigenes Objekt neben dem Chat, du kannst Stellen
+  markieren und weiterbearbeiten und sie später teilen. Ob Copilot wirklich nur die Markierung
+  ändert, musst du trotzdem prüfen – die Änderungsliste ist eine Hilfe, kein Beweis.
+
   Eine gute Bearbeitung zeigt: Zahlen und Produktname unverändert, Änderungslisten vorhanden,
-  und mindestens eine Stelle, an der du die Änderungsliste mit dem Text abgeglichen hast.
+  mindestens eine Stelle, an der du die Änderungsliste mit dem Text abgeglichen hast, und ein
+  Blick in den Versionsverlauf.

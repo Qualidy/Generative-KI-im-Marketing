@@ -1,7 +1,20 @@
-title: Wie Bild-KI arbeitet – Aussagen prüfen
+title: Wie Bild-KI arbeitet – erst ausprobieren, dann prüfen
 difficulty: 1
 question: |
-  Entscheide für jede Aussage, ob sie **stimmt** oder **nicht stimmt**, und begründe in einem Satz.
+  **Teil 1 – kurzer Versuch in Copilot.** Öffne Copilot Chat in der Microsoft-365-Copilot-App
+  (oder die Create-Funktion, falls in eurer Umgebung freigegeben) und erzeuge zwei Bilder:
+
+  ```text
+  Erzeuge ein Foto: die Regenjacke "Sølv" von Fjordlicht, getragen von einer
+  Person auf einem Waldweg im Regen.
+  ```
+
+  Starte danach eine **neue** Unterhaltung und verwende denselben Prompt noch einmal.
+  Notiere: Sieht die Jacke auf beiden Bildern gleich aus? Würdest du eines davon im Webshop
+  als „Sølv" zeigen?
+
+  **Teil 2 – Aussagen prüfen.** Entscheide für jede Aussage, ob sie **stimmt** oder **nicht
+  stimmt**, und begründe in einem Satz – wo möglich mit deiner Beobachtung aus Teil 1.
 
   1. Wenn du „Regenjacke im Wald" eingibst, sucht die Bild-KI ein passendes Foto aus ihrem
      Trainingsbestand heraus.
@@ -16,16 +29,22 @@ question: |
   16:9-Newsletter-Header verbreitern, (c) eine Bleistiftskizze in ein ausgearbeitetes Motiv
   übertragen.
 tip: |
-  Denk an den Kernsatz aus 29.1: Bild-KI erfindet plausibel, sie bildet nicht ab. Damit lassen
-  sich die meisten Aussagen schon entscheiden.
+  Denk an den Kernsatz aus 29.1: Bild-KI erfindet plausibel, sie bildet nicht ab. Teil 1
+  zeigt dir das in zwei Minuten – der Produktname im Prompt ändert nichts daran, dass das
+  Modell das echte Produkt nicht kennt.
 solution: |
+  Typische Beobachtung in Teil 1: Copilot erzeugt zwei ordentliche Bilder einer
+  Regenjacke – mit unterschiedlicher Farbe, anderem Kragen, anderen Taschen. Manchmal steht
+  sogar ein erfundenes Logo oder der Schriftzug „Sølv" auf der Jacke. Keines der Bilder zeigt
+  die echte Jacke; im Webshop wäre es irreführend.
+
   | Nr. | Bewertung | Begründung |
   |---|---|---|
   | 1 | stimmt nicht | Das Modell berechnet ein neues Bild aus gelernten Mustern, es gibt keinen Abruf. |
   | 2 | stimmt | Das ist das Grundprinzip der Diffusion: vom Rauschen zum Bild, gelenkt durch den Text. |
-  | 3 | stimmt nicht | Jede Generierung startet mit neuem Zufall; nur ein fester Seed bringt Nähe. |
-  | 4 | stimmt | Anweisungsbasierte Bearbeitung ist die Stärke von Modellen wie ChatGPT Images. |
-  | 5 | stimmt nicht | Sie kennt Regenjacken allgemein, nicht euer konkretes Produkt. |
+  | 3 | stimmt nicht | Jede Generierung startet mit neuem Zufall – das zeigt Teil 1; nur ein fester Seed bringt Nähe. |
+  | 4 | stimmt | Anweisungsbasierte Bearbeitung ist die Stärke von Chat-Bildmodellen wie ChatGPT Images oder der Bilderzeugung in Copilot. |
+  | 5 | stimmt nicht | Sie kennt Regenjacken allgemein, nicht euer konkretes Produkt – zwei verschiedene „Sølv"-Jacken in Teil 1 belegen es. |
   | 6 | stimmt | Outpainting bzw. „Generatives Erweitern" ergänzt Bildbereiche außerhalb des Rands. |
 
   Zuordnung: (a) Text-zu-Bild, (b) Bearbeitung (Outpainting), (c) Bild-zu-Bild.
