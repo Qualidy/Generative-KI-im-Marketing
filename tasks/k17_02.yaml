@@ -1,8 +1,13 @@
-title: Jobs, Pain Points und Gains aus Bewertungen – mit Excel und Copilot Chat
+title: Jobs, Pain Points und Gains aus Bewertungen – arbeitsteilig mit Excel und Copilot Chat
 difficulty: 2
 question: |
-  Diese Übung machst du in Microsoft 365 Copilot. Die folgenden fiktiven Bewertungen stammen aus
-  dem Webshop von Fjordlicht (Wanderhose „Vidde"), bereits ohne Namen.
+  **Gruppe:** 4 Personen (bei 3 Personen übernimmt die Prüferin zusätzlich die Gains), ca.
+  30 Minuten. **Aufteilung:** Person 1 **Jobs-to-be-done**, Person 2 **Pain Points**, Person 3
+  **Gains**, Person 4 **Prüferin** in Excel. **Am Ende liegt vor:** eine gemeinsame **Copilot
+  Page** mit geprüften Jobs, Pain Points und Gains samt Belegnummern und zwei Newsletter-Botschaften.
+
+  Die folgenden fiktiven Bewertungen stammen aus dem Webshop von Fjordlicht (Wanderhose „Vidde"),
+  bereits ohne Namen.
 
   ```text
   Nr;Sterne;Text
@@ -18,34 +23,41 @@ question: |
   10;4;Für Tagestouren ideal, im Hochsommer zu warm.
   ```
 
-  1. **Daten ablegen.** Lege die Bewertungen als Tabelle in „Bewertungen-Vidde.xlsx" im Ordner
-     „Fjordlicht-Kurs" an.
-  2. **Analyse in Copilot Chat.** Schreibe einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5),
-     der aus der Datei (per `/`-Verweis) **Jobs-to-be-done** („Wenn …, will ich …, damit …"),
-     **Pain Points** und **Gains** erzeugt – jeweils mit den Nummern der belegenden Bewertungen.
-  3. **Prüfen in Excel.** Prüfe jede Zuordnung gegen die Bewertungen. Lass dir dazu von Copilot
-     in Excel die Zeilen hervorheben, die ein bestimmtes Thema enthalten (z. B. Größe oder
-     Nachhaltigkeit), und vergleiche mit den Belegnummern. Markiere alles, was **nicht** belegt ist.
-  4. **Botschaften.** Leite zwei Botschaften für den Newsletter ab, die direkt an einem Pain Point
-     ansetzen, und prüfe sie gegen `/Fjordlicht-Basisdaten`: Gibt es den nötigen Beleg?
+  1. **Daten ablegen.** Die Prüferin legt die Bewertungen als Tabelle in
+     „Bewertungen-Vidde.xlsx" im Ordner „Fjordlicht-Kurs" an und teilt die Datei mit der Gruppe.
+  2. **Analyse in Arbeitsteilung.** Personen 1–3 schreiben je einen Prompt nach dem
+     P.R.O.M.P.T.-Framework (Kap. 5) für **ihren** Teil und führen ihn in Copilot Chat aus – die
+     Datei per `/`-Verweis oder als Upload. Pflicht: hinter jedem Punkt die Nummern der
+     belegenden Bewertungen. Jobs im Format „Wenn …, will ich …, damit …".
+  3. **Prüfen in Excel (parallel).** Die Prüferin lässt sich von Copilot in Excel die Zeilen
+     hervorheben, die bestimmte Themen enthalten (z. B. Größe, Nachhaltigkeit, Kinder), und
+     legt so eine Prüfliste an.
+  4. **Zusammenführen.** Eine Person übernimmt ihre Copilot-Antwort in eine **Copilot Page** und
+     teilt sie; die anderen fügen ihre Ergebnisse ein. Die Prüferin geht jede Zuordnung mit der
+     Gruppe durch: Stimmen die Belegnummern? Markiert alles, was **nicht** belegt ist, und
+     Doppelungen zwischen den Teilen (z. B. derselbe Punkt als Pain Point und als Gain).
+  5. **Botschaften.** Einigt euch auf zwei Botschaften für den Newsletter, die direkt an einem
+     Pain Point ansetzen, und prüft sie gegen `/Fjordlicht-Basisdaten`: Gibt es den nötigen
+     Beleg? Stellt eine Botschaft in einer Minute im Plenum vor.
 tip: |
-  Der wichtigste Modifier ist die Belegpflicht mit Nummern. Ohne ihn ergänzt das Modell gern
-  typische Outdoor-Themen wie „Wetterschutz" oder „Atmungsaktivität", die hier niemand erwähnt.
-  Copilot sieht nur Dateien, auf die du Zugriff hast, und die Daten bleiben im
-  Microsoft-365-Mandanten – anonymisieren musst du echte Bewertungen trotzdem vorher (Kap. 4).
+  Der wichtigste Modifier ist die Belegpflicht mit Nummern. Achtet darauf, ob in einem der drei
+  Teile typische Outdoor-Themen wie „Wetterschutz" oder „Atmungsaktivität" auftauchen, die in
+  keiner Bewertung stehen. Beim Zusammenführen zeigt sich außerdem, ob die drei getrennt
+  geschriebenen Prompts zu einer stimmigen Gesamtsicht führen. Echte Bewertungen müsst ihr vor
+  der Analyse anonymisieren (Kap. 4).
 solution: |
-  Beispielprompt:
+  Beispielprompt (Person 2, Pain Points):
 
   ```text
   Du bist Marktforscherin im Outdoor-Handel.
-  Aufgabe: Werte die Bewertungen in /Bewertungen-Vidde aus.
-  Format: drei Abschnitte - Jobs-to-be-done ("Wenn ..., will ich ..., damit ..."),
-  Pain Points, Gains. Hinter jedem Punkt die Nummern der Bewertungen in Klammern.
+  Aufgabe: Werte die Bewertungen in /Bewertungen-Vidde aus und liste
+  nur die Pain Points auf.
+  Format: Liste, hinter jedem Punkt die Nummern der Bewertungen in Klammern.
   Regeln: Nur, was in den Bewertungen steht. Kein Punkt ohne Nummer.
   Zweck: Ansatzpunkte für Newsletter-Botschaften zur Wanderhose Vidde.
   ```
 
-  Erwartbares Ergebnis:
+  Erwartbares Gesamtergebnis in der Page:
 
   | Typ | Punkt | Belege |
   |---|---|---|
@@ -58,6 +70,11 @@ solution: |
 
   Botschaften, zum Beispiel: „Woraus Vidde besteht – mit Zertifikat zum Nachlesen" (nur, wenn ein
   Beleg in den Basisdaten existiert, sonst `[BELEG FEHLT]`) und „Die richtige Länge finden: unsere
-  neue Größenhilfe". Typischer Fund bei der Prüfung: ein ergänzter Punkt wie „wasserabweisend",
-  der in keiner Bewertung steht, oder eine falsche Belegnummer, die das Hervorheben in Excel
-  sichtbar macht.
+  neue Größenhilfe". Mögliche Funde bei der Prüfung: ein ergänzter Punkt wie „wasserabweisend",
+  der in keiner Bewertung steht, eine falsche Belegnummer, die das Hervorheben in Excel sichtbar
+  macht, oder „Büro und Wald" einmal als Job und einmal als Gain.
+
+  Bewertungskriterien: Alle drei Teilprompts verlangen Belegnummern; die Prüferin hat jede
+  Nummer gegen die hervorgehobenen Zeilen abgeglichen; unbelegte Punkte und Doppelungen
+  zwischen den Teilen sind in der Page markiert und aufgelöst; beide Botschaften sind gegen die
+  Basisdaten geprüft.

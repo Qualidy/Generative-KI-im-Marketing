@@ -1,10 +1,15 @@
 title: Redaktionskalender in Excel mit Prüfmarkierungen
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot Chat** und **Copilot in Excel**.
+  Diese Übung macht ihr in **Copilot Chat** und **Copilot in Excel**.
 
-  Erstelle für Fjordlicht (oder ein Unternehmen deiner Wahl) einen Redaktionskalender für den
-  **Dezember 2026** mit folgenden Vorgaben:
+  **Gruppe:** 3–4 Personen · **Dauer:** ca. 30 Minuten · **Rollen:** Planerin (Kalender in
+  Copilot Chat), Rechercheurin (Anlässe im Web-Modus), Excel-Verantwortliche, Prüferin (zählt
+  von Hand; bei drei Personen übernimmt die Rechercheurin das) · **Am Ende liegt vor:** eine
+  geteilte, geprüfte Datei „Redaktionskalender-Dezember-2026.xlsx".
+
+  Erstellt für Fjordlicht einen Redaktionskalender für den **Dezember 2026** mit folgenden
+  Vorgaben:
 
   ```text
   Kanäle und Kapazität: 2 Newsletter, 1 Blogbeitrag, 8 Instagram-Posts,
@@ -15,23 +20,33 @@ question: |
   Keine Rabattaktionen. Keine Superlative.
   ```
 
-  1. Formuliere den Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5), verweise auf
-     `/Fjordlicht-Basisdaten` und verlange die Spalten Datum, Kanal, Pillar, Arbeitstitel,
-     Anlass, Prüfstatus. Jeder Anlass mit unsicherem Datum bekommt `[PRÜFEN]`.
-  2. Lass Copilot Chat im **Web**-Modus die saisonalen Anlässe recherchieren und mit Quellen
-     belegen. Prüfe **mindestens drei** Anlässe selbst auf der offiziellen Seite.
-  3. Übernimm den Kalender in eine Excel-Datei im Ordner „Fjordlicht-Kurs"
-     („Redaktionskalender-Dezember-2026.xlsx") und formatiere die Daten als Tabelle.
-  4. Lass **Copilot in Excel** prüfen:
-     - Anzahl der Beiträge je Kanal im Vergleich zur Kapazität,
-     - Beiträge ab dem 23.12. hervorheben,
-     - Anteil je Pillar als Tabelle oder Diagramm.
-  5. Korrigiere alle Verstöße – per gezielter Nachbesserung oder von Hand.
+  1. **Planerin:** Formuliert gemeinsam einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5) mit
+     Verweis auf `/Fjordlicht-Basisdaten` und den Spalten Datum, Kanal, Pillar, Arbeitstitel,
+     Anlass, Prüfstatus. Jeder Anlass mit unsicherem Datum bekommt `[PRÜFEN]`. Die Planerin führt
+     ihn in Copilot Chat aus.
+  2. **Rechercheurin (parallel):** Lässt Copilot Chat im **Web**-Modus saisonale Anlässe im
+     Dezember mit Quellen recherchieren und prüft **mindestens drei** davon selbst auf der
+     offiziellen Seite. Ergebnis: eine kurze Liste „bestätigt / nicht bestätigt" im Teams-Chat der
+     Gruppe.
+  3. **Excel-Verantwortliche:** Legt in ihrem Ordner „Fjordlicht-Kurs" die Datei
+     **„Redaktionskalender-Dezember-2026.xlsx"** an, übernimmt den Kalender, formatiert die Daten
+     als Tabelle und teilt die Datei mit der Gruppe.
+  4. **Prüfung mit Copilot in Excel:** Die Excel-Verantwortliche lässt Copilot in Excel
+     - die Beiträge je Kanal zählen und mit der Kapazität vergleichen,
+     - alle Beiträge ab dem 23.12. hervorheben,
+     - den Anteil je Pillar als Diagramm darstellen.
+
+     Gleichzeitig zählt die **Prüferin** die Beiträge je Kanal von Hand über einen Filter auf die
+     Spalte Kanal. Stimmen beide Zählungen überein?
+  5. **Gemeinsam korrigieren:** Tragt die Ergebnisse der Rechercheurin in die Spalte Prüfstatus
+     ein und korrigiert alle Verstöße gegen Kapazität und Termine direkt in der geteilten Datei.
+     Jede Person übernimmt mindestens eine Korrektur. Kopiert die Datei danach in euren eigenen
+     Ordner „Fjordlicht-Kurs", wenn ihr sie später allein weiterverwenden wollt.
 tip: |
-  Copilot in Excel arbeitet am zuverlässigsten mit Daten, die als Tabelle formatiert und in
-  OneDrive oder SharePoint gespeichert sind. Achte besonders auf Aktionstage mit plausiblen Namen
-  und auf Termine in den Betriebsferien. Auch die Zählung durch Copilot in Excel prüfst du einmal
-  von Hand – etwa über einen Filter auf die Spalte Kanal.
+  Copilot in Excel arbeitet mit Daten, die als Tabelle formatiert und in OneDrive oder
+  SharePoint gespeichert sind. Achtet besonders auf Aktionstage mit plausiblen Namen und auf
+  Termine in den Betriebsferien. Die Handzählung der Prüferin ist kein Misstrauensvotum, sondern
+  die Gegenprobe: Achtet darauf, ob Copilot in Excel und Filter zum selben Ergebnis kommen.
 solution: |
   Beispielprompt für Copilot Chat:
 
@@ -43,7 +58,7 @@ solution: |
   Modifier: Kapazität und feste Termine wie unten, keine Beiträge ab 23.12.,
   keine Rabatte, keine Superlative. Markenstimme und Produkte aus
   /Fjordlicht-Basisdaten. Markiere jeden Anlass, dessen Datum du nicht
-  sicher belegen kannst, mit [PRÜFEN] und nenne für belegte Anlässe die Quelle.
+  sicher belegen kannst, mit [PRÜFEN].
   Purpose: Ein ruhiger, hilfreicher Dezember, der die Reparatur-Aktionswoche
   trägt und B2B-Kunden zum Jahresende anspricht.
   Tone: Arbeitstitel in Fjordlicht-Stimme: ruhig, ehrlich, nordisch-trocken.
@@ -61,16 +76,19 @@ solution: |
   Hebe alle Zeilen hervor, deren Datum am oder nach dem 23.12.2026 liegt.
   ```
 
-  Typische Befunde:
+  Mögliche Befunde:
 
-  | Prüfpunkt | Häufiges Ergebnis |
+  | Prüfpunkt | Möglicher Befund |
   |---|---|
   | Menge je Kanal | ein Instagram-Post zu viel oder zu wenig |
   | Betriebsferien | ein Post am 24. oder 31.12. trotz Vorgabe |
   | Aktionstage | mindestens ein Tag, dessen Existenz oder Datum sich auch mit Quelle nicht bestätigen lässt |
   | Quellen im Web-Modus | Blogartikel oder Listen-Seiten statt offizieller Quelle |
   | Pillars | „Draußen sein" überrepräsentiert, „Fjordlicht Business" unterrepräsentiert |
+  | Zählung | Copilot in Excel und Filter weichen voneinander ab, z. B. wegen uneinheitlicher Schreibweise („Insta" und „Instagram") |
 
-  Eine gute Bearbeitung dokumentiert drei geprüfte Anlässe mit offizieller Quelle, nutzt Copilot
-  in Excel für die Zählung und Hervorhebung und korrigiert alle Verstöße gegen Kapazität und
-  Termine. Die Datei wird im Workshop dieses Kapitels und später wiederverwendet.
+  Bewertungskriterien: drei geprüfte Anlässe mit offizieller Quelle, Zählung und Hervorhebung mit
+  Copilot in Excel, Diagramm der Pillar-Anteile, alle Verstöße gegen Kapazität und Termine
+  korrigiert; zur Zusammenarbeit: Recherche und Kalender liefen parallel und wurden
+  zusammengeführt, Abweichungen zwischen Copilot-Zählung und Handzählung wurden benannt und
+  erklärt, und jede Person hat mindestens eine Korrektur in der geteilten Datei vorgenommen.

@@ -1,6 +1,12 @@
-title: Der Segment-Fund
+title: Der Segment-Fund – Verteidigung gegen Gegenprobe
 difficulty: 3
 question: |
+  **Gruppe:** 4 Personen in zwei Untergruppen, ca. 30 Minuten. **Untergruppe Verteidigung**
+  baut das stärkste Argument für die Schlussfolgerung der Kollegin, **Untergruppe Gegenprobe**
+  das stärkste dagegen. **Am Ende liegt vor:** ein neues Blatt in „Fjordlicht-Testlog.xlsx" mit
+  nachgerechneten Raten, ein gemeinsam überarbeiteter Outlook-Entwurf und ein gespeicherter
+  Prompt gegen Segmentfischen.
+
   Ein Test mit zwei Überschriften auf einer Fjordlicht-Landingpage ist abgeschlossen (fiktive
   Daten, Testdauer vorher festgelegt):
 
@@ -16,40 +22,51 @@ question: |
   signifikanter Unterschied, aber auf Mobilgeräten ist B signifikant besser (p = 0,015). Wir
   stellen mobil auf B um."
 
-  1. **Nachrechnen.** Trage die Daten als Tabelle in „Fjordlicht-Testlog.xlsx" ein (neues
-     Blatt) und lass Copilot in Excel mit Python in Excel – oder den Agent **Analyst** mit der
-     hochgeladenen Datei – das Gesamtergebnis und beide Segmente berechnen. Prüfe, ob Copilot
-     für „gesamt" die Segmente korrekt addiert.
-  2. **Bewerten.** Frage Copilot: „Ist die Schlussfolgerung der Kollegin belastbar?" Bewerte
-     danach selbst: Was spricht dafür, was dagegen – und hat Copilot das Problem der
-     nachträglichen Segmentsuche erkannt?
-  3. **Empfehlung.** Lass mit **Copilot in Outlook** eine Mail an die Marketingleitung
-     entwerfen (max. 120 Wörter, nicht senden). Überarbeite sie so, dass Ergebnis und Hypothese
-     klar getrennt sind.
-  4. **Prompt.** Schreibe einen Prompt, mit dem Copilot künftig Segmentauswertungen korrekt
-     einordnet, und speichere ihn in der Prompt Gallery (falls in eurer Umgebung freigegeben).
+  1. **Nachrechnen (alle).** Tragt die Daten in ein neues Blatt der geteilten Mappe
+     „Fjordlicht-Testlog.xlsx" ein (aus Kurzübung 2, sonst neu anlegen) und formatiert sie als
+     Tabelle. Lasst Copilot in Excel eine Formelspalte „Anmelderate" vorschlagen und die Daten
+     zusammenfassen: Besuche, Anmeldungen und Rate je Variante **gesamt**. Prüft selbst, ob die
+     Summen für „gesamt" stimmen.
+  2. **Argumente sammeln (Untergruppen).** Beide Untergruppen fragen Copilot Chat mit denselben
+     Zahlen: „Ist die Schlussfolgerung der Kollegin belastbar?" Die Verteidigung bittet
+     zusätzlich um die besten Gründe **für** die Umstellung, die Gegenprobe um die besten Gründe
+     **dagegen**. Achtet darauf, ob eine Antwort das Problem der nachträglichen Segmentsuche von
+     sich aus anspricht.
+  3. **Schlagabtausch.** Jede Untergruppe trägt ihre Position in zwei Minuten vor. Danach
+     entscheidet die ganze Gruppe: Wird mobil auf B umgestellt?
+  4. **Empfehlung.** Eine Person lässt mit **Copilot in Outlook** eine Mail an die
+     Marketingleitung entwerfen (max. 120 Wörter, nicht senden) und nutzt das **Coaching durch
+     Copilot**. Die Gruppe überarbeitet den Entwurf so, dass Ergebnis und Hypothese klar
+     getrennt sind.
+  5. **Prompt.** Jede Untergruppe schreibt einen Prompt, mit dem Copilot künftig
+     Segmentauswertungen korrekt einordnet. Testet beide mit den Daten oben, wählt den
+     besseren und speichert ihn jeweils in eurer **Prompt Gallery**.
 tip: |
-  Frage dich: War die Analyse nach Gerät **vorher** geplant? Und wie viele Segmente hätte man
+  Fragt euch: War die Analyse nach Gerät **vorher** geplant? Und wie viele Segmente hätte man
   noch prüfen können (Gerät, Uhrzeit, Neukunde/Bestandskunde, Quelle …)? Je mehr man prüft,
-  desto wahrscheinlicher findet man zufällig einen „Treffer". Copilot liefert gern eine
-  Handlungsempfehlung mit – prüfe, ob sie über die Daten hinausgeht.
+  desto wahrscheinlicher findet man zufällig einen „Treffer". Die Verteidigung hat eine
+  wichtige Aufgabe: Ein schwaches Gegenargument überzeugt im echten Meeting niemanden. Achtet
+  bei allen Copilot-Antworten darauf, ob eine Handlungsempfehlung mitgeliefert wird, die über
+  die Daten hinausgeht.
 solution: |
   | Gruppe | A | B | p-Wert (ca.) |
   |---|---|---|---|
-  | gesamt | 7,6 % | 8,6 % | 0,13 |
+  | gesamt | 7,6 % (267/3.500) | 8,6 % (302/3.500) | 0,13 |
   | mobil | 7,0 % | 8,9 % | 0,015 |
   | desktop | 9,0 % | 8,0 % | 0,42 |
 
-  Dafür spricht: Der Mobil-Unterschied ist deutlich, und es gibt eine plausible Begründung
-  (Überschrift B ist kürzer und auf kleinen Bildschirmen vollständig sichtbar).
+  Verteidigung, stärkstes Argument: Der Mobil-Unterschied ist deutlich, und es gibt eine
+  plausible Begründung (Überschrift B ist kürzer und auf kleinen Bildschirmen vollständig
+  sichtbar).
 
-  Dagegen spricht: Die Segmentierung war nicht vorab geplant. Bei mehreren möglichen Segmenten
-  steigt die Wahrscheinlichkeit eines Zufallsfunds deutlich. Auf Desktop zeigt sich sogar die
-  umgekehrte Richtung, wenn auch nicht signifikant. Das Gesamtergebnis ist nicht signifikant.
-  Typisch: Copilot bestätigt den Mobil-Befund zunächst und nennt das Problem der
-  Mehrfachprüfung erst auf Nachfrage.
+  Gegenprobe, stärkstes Argument: Die Segmentierung war nicht vorab geplant. Bei mehreren
+  möglichen Segmenten steigt die Wahrscheinlichkeit eines Zufallsfunds deutlich. Auf Desktop
+  zeigt sich sogar die umgekehrte Richtung, wenn auch nicht signifikant. Das Gesamtergebnis ist
+  nicht signifikant. Mögliche Beobachtung: Eine Copilot-Antwort bestätigt den Mobil-Befund
+  zunächst und nennt das Problem der Mehrfachprüfung erst auf Nachfrage – oder nur in der
+  Untergruppe, die ausdrücklich nach Gegenargumenten gefragt hat.
 
-  Empfehlung (Beispiel für den Mailentwurf): „Der Test zeigt insgesamt keinen belastbaren
+  Gruppenentscheidung und Mailentwurf (Beispiel): „Der Test zeigt insgesamt keinen belastbaren
   Unterschied. Auf Mobilgeräten schneidet B besser ab; dieser Befund wurde aber erst nachträglich
   gesucht und kann Zufall sein. Wir empfehlen einen neuen Test nur für mobile Besuche mit vorab
   festgelegter Hypothese und ca. 3.200 Besuchen pro Variante. Bis dahin bleibt A aktiv, weil
@@ -64,6 +81,8 @@ solution: |
   Leite aus Segmentfunden keine Empfehlung ab, sondern eine neue Hypothese.
   ```
 
-  Bewertungskriterien: Zahlen mit Copilot berechnet und selbst nachgeprüft, Problem der
-  nachträglichen Segmentsuche benannt, Mailentwurf trennt Ergebnis und Hypothese, Prompt
-  verhindert Segmentfischen.
+  Bewertungskriterien: Gesamtsummen in Excel nachgeprüft; beide Untergruppen haben ihre
+  Position mit Daten begründet; Unterschiede zwischen den Copilot-Antworten der beiden
+  Untergruppen sind benannt und auf die unterschiedliche Fragestellung zurückgeführt; das
+  Problem der nachträglichen Segmentsuche ist benannt; der Mailentwurf trennt Ergebnis und
+  Hypothese; der gespeicherte Prompt verhindert Segmentfischen.

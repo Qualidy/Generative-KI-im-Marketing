@@ -1,12 +1,17 @@
-title: Claim-Check selbst durchführen
+title: Claim-Check in der Gruppe durchführen
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot Chat** und **Word**. Du simulierst den Prüfmodus des
-  Content-Assistenten zunächst ohne eigenen Agent.
+  **Gruppe:** 3–4 Personen, ca. 25 Minuten. **Rollen:** **Listen-Verantwortliche** (legt die
+  Claim-Liste an), **Prüferin für Claims** (vergleicht die Copilot-Prüfungen mit der Liste),
+  alle führen den Claim-Check aus; für die Umformulierung bilden sich zwei Untergruppen.
+  **Am Ende liegt vor:** „Claim-Liste.docx" im eigenen Ordner jeder Person, eine gemeinsame
+  Prüftabelle und eine freigabefähige Neufassung.
 
-  1. Lege in Word die Datei **„Claim-Liste.docx"** im Ordner „Fjordlicht-Kurs" an und füge diese
-     (fiktive) Claim-Liste als Tabelle ein – Copilot in Word kann den Text für dich in eine
-     Tabelle umwandeln:
+  Ihr simuliert den Prüfmodus des Content-Assistenten zunächst ohne eigenen Agent.
+
+  1. **Claim-Liste anlegen (5 Minuten).** Die Listen-Verantwortliche legt in Word die Datei
+     **„Claim-Liste.docx"** an und fügt diese (fiktive) Claim-Liste ein. **Copilot in Word** wandelt
+     den Text in eine Tabelle um:
 
      ```text
      C-03 | Obermaterial zu 100 % aus recyceltem Polyamid | Sølv
@@ -15,25 +20,30 @@ question: |
      C-14 | Fleece zu 80 % aus recyceltem Polyester | Skog
      ```
 
-  2. Öffne einen neuen Chat in Copilot Chat (Modus **Arbeit**). Füge den Abschnitt `# Modi`
-     (Modus 2, CLAIM-CHECK) und `# Ausgabeformat` aus Abschnitt 26.3 ein und verweise mit
-     `/Claim-Liste` auf deine Datei.
-  3. Lass diesen Text prüfen:
+     Sie teilt die Datei mit der Gruppe; alle speichern eine Kopie unter demselben Namen im
+     eigenen OneDrive-Ordner „Fjordlicht-Kurs" – der Workshop dieses Kapitels baut darauf auf.
+  2. **Gleicher Prompt, mehrere Ergebnisse (7 Minuten).** Alle öffnen einen neuen Chat in
+     **Copilot Chat** (Umschalter auf **Arbeit**), fügen den Abschnitt `# Modi` (Modus 2,
+     CLAIM-CHECK) und `# Ausgabeformat` aus Abschnitt 26.3 ein, verweisen mit `/Claim-Liste` auf
+     die eigene Kopie und lassen diesen Text prüfen:
 
      ```text
      Die Vidde ist unsere grünste Hose: komplett PFAS-frei, aus recyceltem Material
      und mit lebenslanger Reparaturgarantie. So schonst du die Umwelt bei jedem Schritt.
      ```
 
-  4. Prüfe die Tabelle selbst: Hat Copilot jede Aussage gefunden? Stimmen die Bewertungen? Nennt
-     Copilot die Claim-IDs aus deiner Datei?
-  5. Formuliere den Text so um, dass er freigabefähig ist, und lass deine Fassung in einem
-     **zweiten** neuen Chat noch einmal prüfen.
+  3. **Abgleich (5 Minuten).** Die Prüferin legt die Ergebnisse nebeneinander: Hat jede Prüfung
+     alle Aussagen gefunden? Stimmen die Bewertungen? Werden die Claim-IDs genannt? Wo weichen die
+     Prüfungen voneinander ab? Die Gruppe einigt sich auf eine gemeinsame Prüftabelle.
+  4. **Umformulieren über Kreuz (8 Minuten).** Beide Untergruppen formulieren den Text
+     freigabefähig um. Dann prüft jede Untergruppe die Fassung der **anderen** in einem **neuen**
+     Chat mit demselben Prüfprompt. Die Gruppe wählt eine Fassung und stellt sie im Plenum vor.
 tip: |
-  Achte besonders auf ausgeweitete Aussagen. „PFAS-frei" und „ohne PFAS imprägniert" sind
-  nicht dasselbe: Das eine betrifft das ganze Produkt, das andere nur die Imprägnierung. Und achte
-  darauf, ob Copilot wirklich deine Datei nutzt – im Modus **Arbeit** könnte es auch andere Dateien
-  mit ähnlichen Inhalten heranziehen, etwa „Fjordlicht-Basisdaten.docx".
+  Achtet besonders auf ausgeweitete Aussagen. „PFAS-frei" und „ohne PFAS imprägniert" sind
+  nicht dasselbe: Das eine betrifft das ganze Produkt, das andere nur die Imprägnierung. Achtet
+  auch darauf, ob Copilot wirklich eure Datei nutzt – im Modus **Arbeit** könnte es auch andere
+  Dateien mit ähnlichen Inhalten heranziehen, etwa „Fjordlicht-Basisdaten.docx". Das kann
+  Abweichungen zwischen euren Ergebnissen erklären.
 solution: |
   | Nr. | Textstelle | Bewertung | Begründung |
   |---|---|---|---|
@@ -50,9 +60,15 @@ solution: |
   und geht doch mal etwas kaputt, reparieren wir sie in den ersten zwei Jahren kostenlos.
   ```
 
-  Im zweiten Prüflauf sollte Copilot beide Aussagen als BELEGT mit C-07 und C-11 ausweisen.
+  Im Prüflauf über Kreuz sollten beide Aussagen als BELEGT mit C-07 und C-11 ausgewiesen werden.
 
-  Häufig übersieht Copilot Aussage 3, weil „recyceltes Material" für andere Produkte belegt ist.
-  Wer das nicht bemerkt, hat den eigentlichen Lernpunkt verpasst: Das Modell prüft Ähnlichkeit, du
-  prüfst den **Geltungsbereich**. Die Datei „Claim-Liste.docx" kannst du im Workshop als
-  Wissensquelle für deinen Agent weiterverwenden.
+  Die Stelle, an der Prüfungen am ehesten auseinanderlaufen können, ist Aussage 3: „recyceltes
+  Material" ist für andere Produkte belegt. Wer das nicht bemerkt, hat den eigentlichen Lernpunkt
+  verpasst: Das Modell prüft Ähnlichkeit, ihr prüft den **Geltungsbereich**. Die Datei
+  „Claim-Liste.docx" verwendet ihr im Workshop als Wissen für euren Agent weiter.
+
+  Bewertungskriterien: alle fünf Aussagen erkannt, Geltungsbereich von C-07 und das Fehlen eines
+  Material-Claims für Vidde korrekt bewertet, Neufassung im zweiten Lauf bestätigt. Zur
+  Zusammenarbeit: Abweichungen zwischen den Prüfungen der Gruppenmitglieder wurden benannt und
+  erklärt (z. B. andere Datei herangezogen, Aussage 3 übersehen); jede Neufassung wurde von der
+  anderen Untergruppe geprüft; jede Person hat „Claim-Liste.docx" im eigenen Ordner.

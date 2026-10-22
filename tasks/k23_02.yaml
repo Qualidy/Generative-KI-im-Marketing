@@ -1,17 +1,24 @@
-title: Ein Mini-Agent in zehn Minuten
+title: Ein Mini-Agent für die Gruppe
 difficulty: 2
 question: |
-  Diese Übung machst du direkt in Microsoft 365 Copilot. Ziel ist, den Unterschied zwischen
-  „jedes Mal alles mitgeben" und „einmal hinterlegen" selbst zu erleben – mit einem eigenen Agent
-  aus dem **Agent Builder** (falls in eurer Umgebung freigegeben). Alternativ: ChatGPT-Projekt,
-  Claude Project oder Gemini Gem.
+  **Gruppe:** 3–4 Personen, ca. 25 Minuten. **Rollen:** **Agent-Bauerin** (legt den Agent an
+  und teilt ihn), **Steckbrief-Verantwortliche** (legt das Word-Dokument an und teilt es),
+  alle anderen sind **Testerinnen**. Alle führen die Anfragen in ihrem eigenen Copilot aus.
+  **Am Ende liegt vor:** ein Agent, der mit der Gruppe geteilt ist, und ein gemeinsamer
+  Steckbrief mit Instruktionen und Vergleichstabelle.
 
-  1. **Ohne Agent:** Öffne einen neuen Chat in **Copilot Chat** (Modus **Arbeit**) und bitte um eine
-     Instagram-Caption für den Fleece „Skog" – ohne weitere Angaben. Kopiere das Ergebnis in ein
-     neues Word-Dokument.
-  2. **Steckbrief anlegen:** Speichere dieses Dokument im OneDrive-Ordner „Fjordlicht-Kurs" als
-     **„Assistenten-Steckbrief_Social-Captions.docx"** und füge die folgenden Instruktionen unter
-     der Überschrift „Instruktionen v0.1" ein. Der Steckbrief ist das Original (Abschnitt 23.6).
+  Ziel ist, den Unterschied zwischen „jedes Mal alles mitgeben" und „einmal hinterlegen" selbst zu
+  erleben – und zu sehen, wie stark die Ergebnisse zwischen euch schwanken.
+
+  1. **Ohne Agent – gleicher Prompt, mehrere Ergebnisse (5 Minuten).** Alle öffnen einen neuen
+     Chat in **Copilot Chat** (Umschalter auf **Arbeit**) und bitten mit genau demselben Satz um
+     eine Instagram-Caption für den Fleece „Skog" – ohne weitere Angaben:
+     `Schreib eine Instagram-Caption für unseren Fleece Skog.`
+  2. **Steckbrief anlegen (5 Minuten).** Die Steckbrief-Verantwortliche legt in Word im eigenen
+     OneDrive-Ordner „Fjordlicht-Kurs" die Datei **„Assistenten-Steckbrief_Social-Captions.docx"**
+     an, teilt sie mit der Gruppe zum Bearbeiten und fügt unter der Überschrift
+     „Instruktionen v0.1" den folgenden Text ein. Alle kopieren ihr Ergebnis aus Schritt 1 unter die
+     Überschrift „Ohne Agent". Der Steckbrief ist das Original (Abschnitt 23.6).
 
      ```text
      Du schreibst Social-Media-Entwürfe für Fjordlicht, eine Marke für
@@ -23,34 +30,45 @@ question: |
      Ausgabe: Caption mit maximal 60 Wörtern, danach 3 bis 5 Hashtags.
      ```
 
-  3. **Agent anlegen:** Erstelle im Agent Builder einen Agent „Fjordlicht Social-Captions (Test)".
-     Kopiere die Instruktionen aus dem Steckbrief in das Feld für die Anweisungen. Formuliere sie
-     nicht neu und lass sie auch nicht vom beschreibenden Chat des Agent Builders umschreiben.
-     Websuche und Bilderzeugung bleiben aus. Teile den Agent nicht.
-  4. **Mit Agent:** Stelle im Test- bzw. Vorschaubereich des Agents dieselbe Anfrage wie in Schritt 1.
-  5. **Vergleich:** Halte im Steckbrief in einer Tabelle fest, worin sich die beiden Ergebnisse
-     unterscheiden (Ton, Länge, Behauptungen, Hashtags).
+  3. **Agent anlegen und teilen (5 Minuten).** Die Agent-Bauerin erstellt mit dem
+     **Agent Builder** den Agent **„Fjordlicht Social-Captions (Test)"**, fügt die Instruktionen aus
+     dem Steckbrief unverändert als Anweisungen ein (nicht umformulieren) und gibt keine
+     Wissensdateien an. Sie teilt den Agent **nur mit den Personen der Gruppe**.
+  4. **Mit Agent (3 Minuten).** Alle öffnen den geteilten Agent und stellen denselben Satz wie in
+     Schritt 1. Ergebnis unter „Mit Agent" in den Steckbrief kopieren.
+  5. **Vergleich (7 Minuten).** Haltet im Steckbrief in einer Tabelle fest, worin sich die
+     Ergebnisse unterscheiden (Ton, Länge, Behauptungen, Hashtags) – einmal **zwischen ohne und
+     mit Agent**, einmal **zwischen euch** innerhalb derselben Variante. Einigt euch auf einen Satz
+     für das Plenum: Was hat der Agent verändert, was nicht?
 tip: |
-  Achte besonders auf Nachhaltigkeitsaussagen. Ohne Regel schreibt das Modell gern „umweltfreundlich"
-  oder „nachhaltig produziert" – Aussagen, die Fjordlicht nicht belegen kann und die als
-  Greenwashing gelten würden. Und Achtung: Copilot Chat im Modus **Arbeit** greift womöglich schon
-  auf Dateien aus deinem OneDrive zurück, etwa „Fjordlicht-Basisdaten.docx". Dann fällt der
-  Unterschied kleiner aus – notiere das als Beobachtung.
+  Achtet besonders auf Nachhaltigkeitsaussagen: Taucht ohne Regel „umweltfreundlich" oder
+  „nachhaltig produziert" auf – Aussagen, die Fjordlicht so nicht belegen kann? Achtet auch darauf,
+  ob Copilot Chat im Modus **Arbeit** schon auf Dateien aus eurem OneDrive zurückgreift, etwa
+  „Fjordlicht-Basisdaten.docx". Dann fällt der Unterschied bei dieser Person kleiner aus – notiert
+  das als Beobachtung, es erklärt Abweichungen innerhalb der Gruppe.
 solution: |
-  Typische Beobachtungen:
+  Mögliche Beobachtungen:
 
   | Aspekt | Copilot Chat ohne Agent | Agent mit Anweisungen |
   |---|---|---|
-  | Ton | freundlich-werblich, Superlative („der perfekte Begleiter") | ruhig, sachlich, Du-Ansprache |
-  | Länge | schwankt, oft zu lang | innerhalb der Vorgabe |
+  | Ton | freundlich-werblich, eventuell Superlative („der perfekte Begleiter") | ruhig, sachlich, Du-Ansprache |
+  | Länge | schwankt zwischen den Gruppenmitgliedern | innerhalb der Vorgabe |
   | Behauptungen | pauschal „nachhaltig", „umweltfreundlich" | [FEHLT: Materialangabe] statt Behauptung |
   | Hashtags | viele, generisch, Emojis | 3 bis 5, passend |
+  | Streuung in der Gruppe | groß: jede Person bekommt einen anderen Ansatz | kleiner, aber nicht null: Formulierungen unterscheiden sich, das Format bleibt |
 
-  Entscheidend ist die dritte Zeile: Der Agent hat nicht „besser geschrieben", sondern eine
+  Entscheidend ist die Zeile „Behauptungen": Der Agent hat nicht „besser geschrieben", sondern eine
   Regel befolgt, die im normalen Chat niemand formuliert hatte. Genau das ist der Nutzen –
-  dauerhaft hinterlegte Regeln, die niemand vergessen kann.
+  dauerhaft hinterlegte Regeln, die niemand vergessen kann, auch wenn mehrere Personen den
+  Assistenten bedienen. Die verbleibende Streuung zeigt: Auch ein Agent liefert Wahrscheinliches,
+  kein festes Ergebnis.
 
-  Der Steckbrief enthält jetzt Name, Instruktionen v0.1 und den Vergleich. Wenn du später die
-  Anweisungen im Agent änderst, änderst du sie zuerst im Steckbrief. Wer im Ergebnis mit Agent
-  noch einen Superlativ findet, hat einen ersten Testfall für Kap. 25 gefunden – trag ihn direkt
-  im Steckbrief ein.
+  Der Steckbrief enthält jetzt Name, Instruktionen v0.1 und den Vergleich. Wenn ihr später die
+  Anweisungen im Agent ändert, ändert ihr sie zuerst im Steckbrief. Wer im Ergebnis mit Agent noch
+  einen Superlativ findet, hat einen ersten Testfall für Kap. 25 gefunden – direkt im Steckbrief
+  eintragen.
+
+  Bewertungskriterien: Alle haben denselben Prompt verwendet; Instruktionen wurden wörtlich aus
+  dem Steckbrief übernommen; der Agent ist nur mit der Gruppe geteilt; die Vergleichstabelle
+  benennt Unterschiede zwischen ohne/mit Agent **und** Abweichungen zwischen den
+  Gruppenmitgliedern und erklärt sie (z. B. Zugriff auf eigene Dateien im Modus Arbeit).

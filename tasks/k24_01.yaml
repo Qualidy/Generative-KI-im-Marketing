@@ -1,6 +1,10 @@
-title: Gehört das in die Instruktionen, ins Wissen oder nirgendwohin?
+title: Instruktionen, Wissen oder nirgendwohin? – zu zweit oder zu dritt
 difficulty: 1
 question: |
+  **Gruppe:** Paare oder Dreiergruppen, ca. 15 Minuten. **Rollen:** alle führen den Prompt aus;
+  eine Person übernimmt in Schritt 3 die Rolle **Advocatus Diaboli**. **Am Ende liegt vor:** eine
+  gemeinsame Zuordnungstabelle in einem geteilten Word-Dokument oder im Teams-Chat der Gruppe.
+
   Für den Produkttext-Assistenten von Fjordlicht liegen folgende Inhalte bereit:
 
   1. „Keine Superlative, keine Ausrufezeichen."
@@ -13,16 +17,20 @@ question: |
   8. „Bei Widerspruch zwischen Anfrage und Produktdaten nennst du den Widerspruch."
   9. Styleguide 2023 und Styleguide 2026
 
-  **Erst Copilot, dann du:** Füge die Liste in **Copilot Chat** ein und lass Copilot jeden Punkt einer
-  Stelle zuordnen: **Instruktionen** (im Agent Builder: Anweisungen), **Wissensdatei** (Wissensquelle
-  aus OneDrive/SharePoint) oder **gar nicht hinterlegen**, mit kurzer Begründung. Prüfe die
-  Antwort anschließend Punkt für Punkt: Wo stimmst du nicht zu? Ergänze bei den Punkten 3 und 6,
-  warum es **nicht** reicht, dass im Unternehmen ohnehin nur Berechtigte Zugriff auf diese Dateien
-  haben.
+  1. **Gleicher Prompt, mehrere Ergebnisse (5 Minuten).** Alle fügen die Liste in **Copilot Chat**
+     ein und lassen jeden Punkt einer Stelle zuordnen: **Instruktionen** (im Agent Builder:
+     Anweisungen), **Wissensdatei** (Wissen aus einer Datei in OneDrive/SharePoint) oder **gar
+     nicht hinterlegen**, mit kurzer Begründung.
+  2. **Vergleichen (5 Minuten).** Legt eure Antworten nebeneinander. Bei welchen Punkten
+     unterscheiden sich eure Copilot-Ergebnisse? Einigt euch Punkt für Punkt auf eine Zuordnung.
+  3. **Gegenprobe (5 Minuten).** Der Advocatus Diaboli vertritt für die Punkte 3 und 6: „Bei uns
+     haben doch ohnehin nur Berechtigte Zugriff auf diese Dateien." Die anderen begründen, warum das
+     **nicht** reicht. Haltet das stärkste Gegenargument fest.
 tip: |
   Faustregel: Regeln und Verhalten gehören in die Instruktionen, Fakten und Beispiele ins Wissen.
-  Alles, was nicht jede nutzende Person sehen dürfte, gehört nirgendwohin. Copilot ordnet gern
-  „pragmatisch" zu – etwa beide Styleguides „zur Sicherheit".
+  Alles, was nicht jede nutzende Person sehen dürfte, gehört nirgendwohin. Achtet darauf, ob
+  Copilot „pragmatisch" zuordnet – etwa beide Styleguides „zur Sicherheit" – und ob das bei allen
+  in der Gruppe gleich passiert.
 solution: |
   | Nr. | Ort | Begründung |
   |---|---|---|
@@ -36,12 +44,18 @@ solution: |
   | 8 | Instruktionen | Regel für den Umgang mit Wissen |
   | 9 | nur Styleguide 2026 als Wissensdatei | zwei Versionen erzeugen widersprüchliche Antworten |
 
-  Zu 3 und 6: Microsoft 365 Copilot beachtet zwar Berechtigungen – der Agent sieht nur, worauf die
-  jeweilige Person Zugriff hat. Aber wer Zugriff auf die Datei hat, bekommt ihren Inhalt über den
-  Agent auch in Produkttext-Antworten eingemischt oder kann ihn gezielt abfragen. Berechtigungen
-  schützen vor Fremden, nicht vor unnötiger Verarbeitung (Zweckbindung, Datenminimierung).
+  Zu 3 und 6 (Antwort an den Advocatus Diaboli): Microsoft 365 Copilot beachtet zwar
+  Berechtigungen – der Agent nutzt nur, worauf die jeweilige Person Zugriff hat. Aber wer Zugriff
+  auf die Datei hat, bekommt ihren Inhalt über den Agent womöglich auch in Produkttext-Antworten
+  eingemischt oder kann ihn gezielt abfragen. Berechtigungen schützen vor Fremden, nicht vor
+  unnötiger Verarbeitung (Zweckbindung, Datenminimierung).
 
-  Der häufigste Fehler ist Nr. 9: „Schadet ja nicht, beide als Wissen anzugeben." Doch, schadet –
-  der Agent kann nicht wissen, welche Version gilt, und greift mal auf die eine, mal auf die
-  andere zurück. Das passiert in Microsoft 365 auch unbeabsichtigt, wenn ein ganzer Ordner als
-  Wissensquelle dient und die alte Version noch darin liegt.
+  Der häufigste Denkfehler ist Nr. 9: „Schadet ja nicht, beide als Wissen anzugeben." Doch,
+  schadet – der Agent kann nicht wissen, welche Version gilt. Das kann in Microsoft 365 auch
+  unbeabsichtigt passieren, wenn ein ganzer Ordner als Wissen dient und die alte Version noch
+  darin liegt.
+
+  Bewertungskriterien: alle neun Punkte begründet zugeordnet; Abweichungen zwischen den
+  Copilot-Ergebnissen der Gruppenmitglieder benannt und durch eine gemeinsame Entscheidung
+  aufgelöst; das Gegenargument zu 3 und 6 nennt Zweckbindung bzw. Datenminimierung, nicht nur
+  „ist halt vertraulich".

@@ -4,23 +4,35 @@ question: |
   Fjordlicht Business bietet Firmenbekleidung für Unternehmen an. Wer auf der Website die
   Checkliste „Teamausstattung für Außeneinsätze" herunterlädt, soll eine Nurture-Sequenz erhalten.
 
-  1. Lass in **Copilot Chat** per Prompt-Kette zuerst einen **Plan** für vier Mails erstellen
-     (Abstand, Ziel, Kernbotschaft, CTA), mit Verweis auf `/Fjordlicht-Basisdaten`. Übernimm den
-     Plan in eine **Copilot Page**, damit das Team ihn kommentieren kann.
-  2. Formuliere danach **eine** Mail vollständig aus: als neuen E-Mail-Entwurf in **Outlook** mit
-     Copilot. Passe Ton und Länge mit Copilot an (z. B. formeller, kürzer), bis die Mail zu
-     B2B-Entscheidern passt.
-  3. Bewerte den Plan kritisch: Wird zu früh verkauft? Wiederholen sich Kernbotschaften? Passt der
-     Ton zu Einkauf, Arbeitssicherheit und Geschäftsführung?
-  4. Prüfe die Personalisierung: Welche Platzhalter sind sinnvoll (z. B. [Firmenname],
-     [Branche]), welche Fallbacks brauchst du – und warum gehören echte Kundendaten auch dann
+  **Gruppe:** 4 Personen · **Dauer:** ca. 30 Minuten · **Aufteilung:** eine Person erstellt den
+  Plan, danach schreibt jede Person eine der vier Mails; eine Person ist zusätzlich Advocatus
+  Diaboli · **Am Ende liegt vor:** eine geteilte Copilot Page mit Plan, vier Mail-Entwürfen,
+  Kritikpunkten und den Antworten zu Personalisierung und Recht.
+
+  1. **Plan:** Person 1 lässt in **Copilot Chat** per Prompt-Kette einen **Plan** für vier Mails
+     erstellen (Abstand, Ziel, Kernbotschaft, CTA), mit Verweis auf `/Fjordlicht-Basisdaten`. Sie
+     übernimmt den Plan in eine **Copilot Page** und teilt sie mit der Gruppe.
+  2. **Kritik am Plan:** Der Advocatus Diaboli prüft den Plan zuerst und schreibt seine Einwände
+     direkt in die Page: Wird zu früh verkauft? Wiederholen sich Kernbotschaften? Passt der Ton zu
+     Einkauf, Arbeitssicherheit und Geschäftsführung? Die Gruppe entscheidet, welche Einwände sie
+     in den Plan übernimmt.
+  3. **Arbeitsteilung:** Jede Person schreibt **eine** Mail als neuen E-Mail-Entwurf in
+     **Outlook** mit Copilot und passt Ton und Länge mit Copilot an, bis die Mail zu
+     B2B-Entscheidern passt. Nichts wird gesendet. Den fertigen Text fügt jede Person unter
+     „Mail 1" bis „Mail 4" in die Page ein.
+  4. **Gemeinsames Lesen:** Lest die vier Mails hintereinander. Passt der Ton zusammen, obwohl vier
+     Personen geschrieben haben? Wo wiederholt sich etwas? Gleicht die Unterschiede in der Page an.
+  5. **Personalisierung (gemeinsam):** Welche Platzhalter sind sinnvoll (z. B. [Firmenname],
+     [Branche]), welche Fallbacks braucht ihr – und warum gehören echte Kundendaten auch dann
      **nicht** in den Prompt, wenn Copilot im Arbeitsmodus mit Enterprise Data Protection läuft?
-  5. Nenne die rechtliche Voraussetzung, damit die Sequenz überhaupt verschickt werden darf.
+  6. **Recht:** Nennt die rechtliche Voraussetzung, damit die Sequenz überhaupt verschickt werden
+     darf. Eine Person stellt im Plenum in zwei Minuten Plan und eine Mail vor.
 tip: |
   B2B-Nurturing hat einen längeren Atem als B2C. Die erste Mail liefert, was versprochen wurde
   (die Checkliste), die letzte lädt zu einem Gespräch ein – dazwischen liegt Nutzen, nicht Werbung.
-  Copilot in Outlook sieht im Arbeitsmodus dein Postfach. Das ist praktisch, aber ein Grund mehr,
-  bewusst zu steuern, welche Inhalte in einen Entwurf einfließen.
+  Weil vier Personen mit vier eigenen Copilot-Entwürfen arbeiten, achtet darauf, ob die Mails in
+  Anrede, Länge und Ton auseinanderlaufen – vereinbart vor Schritt 3 kurz eine gemeinsame
+  Vorgabe (z. B. „sachlich, Du-Ansprache, max. 120 Wörter").
 solution: |
   Beispielprompt für den Plan:
 
@@ -43,11 +55,11 @@ solution: |
   | 3 | 7 Tage | Vertrauen | wie ein Handwerksbetrieb seine Teamausstattung umgestellt hat (nur mit Freigabe des Kunden) | Fallbeispiel lesen |
   | 4 | 12 Tage | Gespräch | individuelle Beratung zu Größen, Logo, Nachbestellung | Termin vereinbaren |
 
-  Kritische Punkte, die häufig auftauchen: Copilot setzt schon in Mail 2 einen Kauf-CTA, erfindet
-  ein Kundenbeispiel mit Firmennamen oder verspricht Mengenrabatte. Ein Fallbeispiel darf nur mit
-  echtem, freigegebenem Kunden verwendet werden. Beim Anpassen des Tons in Outlook wird „formeller"
-  gern zu „steif" – hier hilft eine konkrete Anweisung wie „sachlich, Du-Ansprache beibehalten,
-  max. 120 Wörter".
+  Mögliche Einwände des Advocatus Diaboli: ein Kauf-CTA schon in Mail 2, ein erfundenes
+  Kundenbeispiel mit Firmennamen oder versprochene Mengenrabatte. Ein Fallbeispiel darf nur mit
+  echtem, freigegebenem Kunden verwendet werden. Beim Anpassen des Tons in Outlook kann
+  „formeller" zu „steif" werden – hier hilft eine konkrete Anweisung wie „sachlich,
+  Du-Ansprache beibehalten, max. 120 Wörter".
 
   Personalisierung: [Firmenname] und [Branche] sind sinnvoll, Fallback jeweils eine neutrale
   Formulierung („dein Team"). Enterprise Data Protection bedeutet, dass Eingaben im
@@ -61,6 +73,9 @@ solution: |
   keine Einwilligung in Werbung, wenn das nicht klar erkennbar abgefragt wurde. Im Zweifel klärt
   das die Rechtsabteilung.
 
-  Bewertungskriterien: Plan und Mail getrennt erstellt, Plan in einer Page abgelegt, Ton in
+  Bewertungskriterien: Plan und Mails getrennt erstellt, Plan in einer geteilten Page, Ton in
   Outlook gezielt angepasst, mindestens zwei kritische Befunde benannt, Platzhalter mit
-  Fallbacks, Einwilligung korrekt beschrieben.
+  Fallbacks, Einwilligung korrekt beschrieben; zur Zusammenarbeit: jede Person hat eine Mail
+  verantwortet, die Einwände des Advocatus Diaboli sind in der Page sichtbar und begründet
+  angenommen oder verworfen, und Unterschiede in Ton und Länge zwischen den vier Mails wurden
+  benannt und angeglichen.

@@ -1,6 +1,10 @@
-title: Generieren, fotografieren oder Stock?
+title: Generieren, fotografieren oder Stock? – Mensch gegen Copilot
 difficulty: 1
 question: |
+  **Gruppe:** 4 Personen in zwei Paaren (zu dritt: eine Person gegen ein Paar), ca. 20 Minuten.
+  Am Ende liegen eine gemeinsame Entscheidungstabelle für sechs Fälle und ein Testbild mit
+  Kennzeichnungsentscheidung vor.
+
   Fjordlicht hat sechs Bildbedarfe:
 
   1. Hauptbild der Produktseite für den Rucksack „Tind"
@@ -10,21 +14,25 @@ question: |
   5. Neues Maskottchen „Fjordfuchs", das langfristig auf allen Kanälen erscheinen soll
   6. Bild einer Kundin, die die Regenjacke „Sølv" lobt, für ein Testimonial
 
-  **Schritt 1 – Copilot entscheiden lassen.** Gib in Copilot Chat die sechs Fälle und das
-  Entscheidungsraster aus Abschnitt 34.7 ein. Lass für jeden Fall entscheiden: generieren,
+  **Schritt 1 – Gegenprobe.** **Paar A** geht den Entscheidungsbaum aus Abschnitt 34.7 von Hand
+  durch – ohne Copilot. **Paar B** gibt in Copilot Chat die sechs Fälle und das
+  Entscheidungsraster aus 34.7 ein und lässt für jeden Fall entscheiden: generieren,
   fotografieren oder Stock – mit Grund und Hinweis, ob eine Kennzeichnung zu prüfen ist.
 
-  **Schritt 2 – einordnen.** Gehe den Entscheidungsbaum aus 34.7 selbst durch und vergleiche.
-  Wo stimmst du Copilot zu, wo nicht?
+  **Schritt 2 – abgleichen.** Legt beide Ergebnisse nebeneinander, etwa im Teams-Chat eurer
+  Gruppe. Wo stimmen Hand und Copilot überein, wo nicht? Einigt euch bei jeder Abweichung auf
+  eine gemeinsame Entscheidung mit Begründung.
 
-  **Schritt 3 – ausprobieren.** Erzeuge Fall 2 oder Fall 4 in Copilot. Hätte das Bild die
-  Aufgabe erfüllt – und welche Kennzeichnungsentscheidung triffst du dafür?
+  **Schritt 3 – ausprobieren.** Paar A erzeugt Fall 2, Paar B Fall 4 in Copilot Chat. Jedes Paar
+  stellt dem anderen sein Bild vor: Erfüllt es die Aufgabe – und welche Kennzeichnungsentscheidung
+  trefft ihr gemeinsam dafür?
 tip: |
   Bei Nr. 5 hilft die Frage, was passiert, wenn die Konkurrenz das Maskottchen übernimmt. Bei
-  Nr. 6 achte darauf, ob Copilot ein generiertes Bild „mit Kennzeichnung" für vertretbar hält –
-  das ist der häufigste Denkfehler.
+  Nr. 6 achtet darauf, ob Copilot ein generiertes Bild „mit Kennzeichnung" für vertretbar hält –
+  das ist der häufigste Denkfehler. Paar A sollte seine Entscheidungen festhalten, bevor es das
+  Ergebnis von Paar B sieht.
 solution: |
-  Beispielprompt:
+  Beispielprompt für Paar B:
 
   ```text
   Entscheide für diese sechs Bildbedarfe von Fjordlicht, ob das Bild generiert,
@@ -44,9 +52,15 @@ solution: |
   | 5 | menschlich gestalten (Illustrator:in), KI höchstens für Entwürfe | reiner KI-Output ist in der Regel nicht urheberrechtlich geschützt, das Maskottchen soll exklusiv sein |
   | 6 | fotografieren mit echter Kundin und Einwilligung | ein generiertes Testimonial ist irreführend (UWG) |
 
-  Copilot trifft Nr. 1 bis 4 meist richtig. Bei Nr. 5 fehlt oft der Schutzaspekt (Urheberrecht),
-  bei Nr. 6 wird manchmal ein generiertes Bild mit Hinweis vorgeschlagen – beides korrigierst du.
+  Beim Abgleich lohnt der Blick auf Nr. 5 und Nr. 6: Hat Copilot den Schutzaspekt
+  (Urheberrecht) beim Maskottchen genannt? Hat es bei Nr. 6 ein generiertes Bild mit Hinweis
+  vorgeschlagen? Beides wären Punkte, die ihr korrigiert.
 
   Kennzeichnung prüfen: Bei Nr. 2, falls fotorealistisch und auf Plattformen mit Labelpflicht
   veröffentlicht. Bei Nr. 4 ist keine Pflicht gegeben, ein freiwilliger Hinweis aber möglich.
   Nr. 6 lässt sich durch Kennzeichnung nicht „retten" – das Motiv selbst ist das Problem.
+
+  Bewertungskriterien: Beide Paare haben unabhängig entschieden; jede Abweichung zwischen
+  Hand-Entscheidung und Copilot ist benannt und gemeinsam aufgelöst; Nr. 1, 3 und 6 sind als
+  „fotografieren" eingeordnet, Nr. 5 mit dem Schutzargument; für beide Testbilder liegt eine
+  gemeinsame Kennzeichnungsentscheidung mit Begründung vor.

@@ -1,15 +1,28 @@
-title: Monitoring, Listening oder Eskalation?
+title: Monitoring, Listening oder Eskalation? – vier Copilots, eine Entscheidung
 difficulty: 1
 question: |
-  Diese kurze Übung machst du in **Copilot Chat** (Microsoft-365-Copilot-App oder Teams, Umschalter
-  auf **Arbeit**). Die Fälle sind fiktiv.
+  **Gruppe:** 3–4 Personen · **Dauer:** etwa 20 Minuten · **Format:** gleicher Prompt, mehrere
+  Ergebnisse · **Am Ende liegt vor:** eine gemeinsame Zuordnungstabelle und ein strittiger Fall
+  für das Plenum.
 
-  1. Ordne zuerst selbst jede Situation zu: Ist das **Monitoring** oder **Listening** (Abschnitt
-     19.1)? Welche **Eskalationsstufe** aus Abschnitt 19.5 – Grün, Gelb, Orange, Rot – ist
-     angemessen? Notiere deine Einstufung, bevor du Copilot fragst.
-  2. Gib Copilot die sechs Fälle, die Tabelle mit den Eskalationsstufen aus Abschnitt 19.5 und
-     den Auftrag, beides in einer Tabelle mit Begründung zuzuordnen.
-  3. Vergleiche: Wo weicht Copilot von dir ab, und wer hat recht?
+  Ihr arbeitet in **Copilot Chat** (Microsoft-365-Copilot-App, Teams oder Browser, Umschalter auf
+  **Arbeit**). Die Fälle sind fiktiv.
+
+  1. **Allein (3 Minuten):** Jede Person ordnet jede Situation still für sich zu: Ist das
+     **Monitoring** oder **Listening** (Abschnitt 19.1)? Welche **Eskalationsstufe** aus
+     Abschnitt 19.5 – Grün, Gelb, Orange, Rot – ist angemessen? Notiert eure Einstufung, bevor
+     ihr Copilot fragt.
+  2. **Ein Prompt für alle:** Einigt euch auf **einen** Prompt mit den sechs Fällen, der Tabelle
+     der Eskalationsstufen aus Abschnitt 19.5 und dem Auftrag, beides in einer Tabelle mit
+     Begründung zuzuordnen. Jede Person führt genau diesen Prompt in einem **neuen Chat** in
+     ihrem eigenen Copilot aus.
+  3. **Vergleichen:** Legt die Ergebnisse nebeneinander, z. B. als Screenshots oder kopierte
+     Tabellen in eurem Teams-Gruppenchat. Wo weichen die Copilot-Antworten **untereinander** ab,
+     wo weichen sie von **euren** Einstufungen ab? Achtet besonders darauf, ob Fall 3 und Fall 4
+     in allen Antworten gleich eingestuft werden.
+  4. **Gruppenentscheidung:** Legt pro Fall eine Stufe mit einem Satz Begründung fest. Die
+     strittigste Zuordnung stellt eine Person in einer Minute im Plenum vor: Was hat Copilot
+     gesagt, was habt ihr entschieden, und warum?
 
   Die Fälle:
 
@@ -27,8 +40,11 @@ question: |
 tip: |
   Monitoring reagiert auf den einzelnen Beitrag, Listening sucht Muster über Zeit oder Quellen.
   Bei der Eskalation entscheidet nicht die Zahl der Beiträge allein, sondern auch das **Thema**:
-  Sicherheit und Medienanfragen wiegen schwerer als Ärger über Lieferzeiten. Achte beim Vergleich
-  besonders auf Fall 4 – Modelle orientieren sich gern an Mengen („mehrere Eltern" = Gelb).
+  Sicherheit und Medienanfragen wiegen schwerer als Ärger über Lieferzeiten. Achtet beim Vergleich
+  darauf, ob Copilot Fall 4 nach der **Menge** („mehrere Eltern") oder nach dem **Thema**
+  (Kindersicherheit) einstuft. Dass vier Personen mit demselben Prompt unterschiedliche Antworten
+  bekommen können, ist kein Fehler, sondern zeigt, dass Sprachmodelle mit Wahrscheinlichkeiten
+  arbeiten (Kap. 1 und Abschnitt 2.5).
 solution: |
   Beispiel-Prompt für Copilot Chat:
 
@@ -51,9 +67,20 @@ solution: |
   | 5 | Listening | Gelb | deutlicher Ausschlag mit klarem Thema – Leitfaden-Antworten, Teamleitung informieren |
   | 6 | Listening | Grün | Wettbewerbsanalyse, keine akute Reaktion nötig |
 
-  Typische Abweichungen von Copilot: Fall 4 landet auf Gelb oder Orange, weil nur „mehrere"
-  Beiträge genannt sind; Fall 3 wird als Gelb eingestuft, weil die Stimmung nicht beziffert ist.
-  Beides zeigt, warum Schwellenwerte allein nicht genügen: Schon wenige Beiträge reichen für
-  Stufe Rot, wenn es um Sicherheit geht. Die Eskalationslogik braucht deshalb neben Mengen auch
-  **Themen-Auslöser** – und die Einstufung bleibt eine menschliche Entscheidung. Copilot ist hier
-  ein guter Sparringspartner, kein Schiedsrichter.
+  Worauf es beim Vergleich ankommt: Landet Fall 4 in einer der Antworten auf Gelb oder Orange,
+  weil nur „mehrere" Beiträge genannt sind, oder Fall 3 auf Gelb, weil die Stimmung nicht
+  beziffert ist, zeigt das, warum Schwellenwerte allein nicht genügen: Schon wenige Beiträge
+  reichen für Stufe Rot, wenn es um Sicherheit geht. Die Eskalationslogik braucht deshalb neben
+  Mengen auch **Themen-Auslöser** – und die Einstufung bleibt eine menschliche Entscheidung.
+  Copilot ist hier ein guter Sparringspartner, kein Schiedsrichter. Wenn die vier Copilot-Antworten
+  bei einem Fall auseinandergehen, ist das ein deutliches Signal, dass dieser Fall eine klare
+  menschliche Regel braucht.
+
+  Bewertungskriterien:
+
+  - Jede Person hat vor dem Copilot-Lauf eine eigene Einstufung notiert.
+  - Alle haben denselben Prompt in einem neuen Chat ausgeführt; Abweichungen zwischen den
+    Copilot-Antworten sind benannt (welcher Fall, welche Stufen).
+  - Die Gruppenentscheidung stuft Fall 4 auf Rot und Fall 3 mindestens auf Orange ein und
+    begründet das mit dem Thema, nicht mit der Menge.
+  - Die Plenumsvorstellung trennt klar zwischen Copilot-Vorschlag und Gruppenentscheidung.

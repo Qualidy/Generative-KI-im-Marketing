@@ -1,6 +1,10 @@
-title: Was gehört ins Briefing? – Copilot fragt nach
+title: Was gehört ins Briefing? – Copilot fragt nach, die Gruppe vergleicht
 difficulty: 1
 question: |
+  **Gruppe:** 3–4 Personen, ca. 20 Minuten. Jede Person arbeitet in ihrem eigenen Copilot Chat,
+  gesammelt wird in einem gemeinsamen Teams-Chat der Gruppe. **Am Ende liegt vor:** eine Liste der
+  drei wichtigsten Briefing-Lücken und eine Gruppenentscheidung zum Leadmagneten.
+
   Ein Kollege bei Fjordlicht hat folgendes „Briefing" für einen Blogartikel geschrieben:
 
   ```text
@@ -8,20 +12,27 @@ question: |
   unsere Produkte zeigen. So 2.000 Wörter. Locker schreiben.
   ```
 
-  1. **In Copilot.** Öffne Copilot Chat (Modus **Arbeit**), füge das Briefing ein und nutze den
-     Rückfragen-Prompt aus Abschnitt 15.2: „Stelle mir bis zu fünf Rückfragen zu Lücken in diesem
-     Briefing, bevor du schreibst." Lass Copilot **noch keinen** Artikel schreiben.
-  2. Ordne jede Angabe des Briefings einem Baustein des P.R.O.M.P.T.-Frameworks (Kap. 5) zu.
-  3. Vergleiche Copilots Rückfragen mit deiner Zuordnung: Welche Rückfrage zielt auf die
-     **drei** wichtigsten fehlenden Angaben? Was würde ohne sie im Text passieren? Fehlt eine
-     wichtige Lücke in Copilots Fragen?
-  4. Welche der folgenden Leadmagnete passt am besten zu diesem Artikel – und warum?
+  1. **Gleicher Prompt, mehrere Ergebnisse.** Alle öffnen Copilot Chat (Modus **Arbeit**),
+     fügen das Briefing ein und nutzen **wortgleich** den Rückfragen-Prompt aus Abschnitt 15.2:
+     „Stelle mir bis zu fünf Rückfragen zu Lücken in diesem Briefing, bevor du schreibst."
+     Copilot schreibt **noch keinen** Artikel. Kopiert eure Rückfragen in den Teams-Chat der Gruppe.
+  2. **Vergleich.** Welche Rückfragen tauchen bei allen auf, welche nur bei einer Person? Achtet
+     darauf, ob überhaupt jemand Rückfragen zu eigener Erfahrung, Faktenbasis oder No-Gos bekommen hat.
+  3. **Zuordnung in Arbeitsteilung.** Teilt die vier Angaben des Briefings auf und ordnet jede
+     einem Baustein des P.R.O.M.P.T.-Frameworks (Kap. 5) zu. Die Gruppe ergänzt gemeinsam, welche
+     Bausteine ganz fehlen.
+  4. **Gruppenentscheidung.** Einigt euch auf die **drei** wichtigsten fehlenden Angaben und
+     haltet je Lücke einen Satz fest: Was würde ohne sie im Text passieren? Fehlt eine davon in
+     **allen** Copilot-Rückfragen?
+  5. **Leadmagnet.** Welcher Leadmagnet passt am besten zu diesem Artikel – und warum?
      (a) E-Book „Nachhaltigkeit bei Fjordlicht", (b) Checkliste „Packliste Tageswanderung mit
-     Kindern", (c) Gewinnspiel „Gewinne eine Regenjacke"
+     Kindern", (c) Gewinnspiel „Gewinne eine Regenjacke". Stimmt ab und bereitet eine
+     Begründung von höchstens einer Minute für das Plenum vor.
 tip: |
   Frage bei jeder fehlenden Angabe: Was wird die KI an dieser Stelle selbst entscheiden – und
-  wäre das in deinem Sinn? Copilot fragt meist zuverlässig nach Zielgruppe und Länge, seltener
-  nach **eigener Erfahrung** und **No-Gos**. Genau diese Lücken musst du selbst erkennen.
+  wäre das in eurem Sinn? Der Vergleich zeigt zweierlei: Dieselbe Eingabe liefert nicht bei allen
+  dieselben Rückfragen, und manche Lücken fragt womöglich niemandes Copilot ab. Genau diese
+  Lücken muss die Gruppe selbst erkennen.
 solution: |
   Beispiel-Prompt:
 
@@ -32,8 +43,10 @@ solution: |
   Briefing: [Briefing einfügen]
   ```
 
-  Typische Rückfragen von Copilot: Alter der Kinder, Art der Touren, Region, gewünschte
-  Produkte, Ziel des Artikels (Reichweite oder Verkauf?).
+  Mögliche Rückfragen: Alter der Kinder, Art der Touren, Region, gewünschte Produkte, Ziel des
+  Artikels (Reichweite oder Verkauf?). Mögliche Beobachtung beim Vergleich: Kernfragen wie
+  Zielgruppe oder Länge kommen bei mehreren Personen vor, Reihenfolge und Formulierung
+  unterscheiden sich; Fragen nach eigener Erfahrung oder No-Gos tauchen selten oder gar nicht auf.
 
   | Angabe | Baustein |
   |---|---|
@@ -46,13 +59,17 @@ solution: |
 
   1. **Zielgruppe und Kernfrage** (Purpose/Request): Ohne sie wird der Text ein allgemeiner
      Überblick ohne klaren Nutzen – Kleinkind oder Teenager, Tagestour oder Hüttenwanderung?
-     Copilot fragt hier fast immer nach.
   2. **Faktenbasis und No-Gos** (Modifier): Ohne sie erfindet die KI Produkteigenschaften,
-     Sicherheitsangaben und vielleicht Nachhaltigkeitsaussagen. Wird oft **nicht** gefragt –
-     die Antwort wäre ein Verweis auf `/Fjordlicht-Basisdaten`.
+     Sicherheitsangaben und vielleicht Nachhaltigkeitsaussagen. Die Antwort wäre ein Verweis
+     auf `/Fjordlicht-Basisdaten`.
   3. **Erfahrung und Autor:in** (Persona/Modifier): Ohne sie entsteht austauschbarer Text,
-     der E-E-A-T nicht erfüllt. Fehlt in Copilots Rückfragen meistens ganz.
+     der E-E-A-T nicht erfüllt.
 
   Leadmagnet: **(b)**. Er löst das konkrete Problem der Lesenden direkt im Anschluss an den
   Artikel. (a) passt thematisch nicht, (c) sammelt Kontakte, die an einem Gewinn interessiert
   sind, nicht am Thema – und Gewinnspiele bringen zusätzliche rechtliche Anforderungen mit.
+
+  Bewertungskriterien: Alle haben denselben Prompt genutzt und ihre Rückfragen geteilt;
+  Gemeinsamkeiten und Abweichungen zwischen den Ergebnissen der Gruppenmitglieder sind benannt;
+  die Gruppe hat mindestens eine Lücke erkannt, die in keiner Copilot-Antwort vorkam; die
+  Leadmagnet-Entscheidung ist in einer Minute begründet.

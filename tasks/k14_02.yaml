@@ -1,14 +1,19 @@
-title: Vom Allzweck-Post zur Caption in Markenstimme
+title: Prompt-Duell – vom Allzweck-Post zur Caption in Markenstimme
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot Chat** (Arbeitsmodus).
+  Diese Übung macht ihr in **Copilot Chat** (Arbeitsmodus).
 
-  1. **Vorher.** Gib ein: `Schreib einen Instagram-Post über unseren neuen Rucksack Tind.`
-     Speichere das Ergebnis.
-  2. **Nachher.** Baue in einem **neuen Chat** einen vollständigen Prompt nach dem
-     P.R.O.M.P.T.-Framework (Kap. 5). Verweise für Markenstimme und Verbote auf
-     `/Fjordlicht-Basisdaten` (falls nicht vorhanden: Kap. 11, Kurzübung 1) und nutze diese
-     (fiktiven) Produktfakten und keine weiteren:
+  **Gruppe:** 4 Personen in zwei Paaren · **Dauer:** ca. 25 Minuten · **Rollen:** in jedem Paar
+  eine Prompt-Verantwortliche und eine Faktenprüferin, nach dem Duell getauscht · **Am Ende liegt
+  vor:** ein gemeinsamer Siegerprompt, gespeichert in der Prompt Gallery jeder Person, und
+  aktualisierte Basisdaten.
+
+  1. **Vorher (alle):** Jede Person gibt in ihren eigenen Copilot Chat ein:
+     `Schreib einen Instagram-Post über unseren neuen Rucksack Tind.` Legt die vier Ergebnisse
+     nebeneinander: Was haben sie gemeinsam, wo unterscheiden sie sich?
+  2. **Nachher (Duell):** Jedes Paar baut in einem **neuen Chat** unabhängig einen vollständigen
+     Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5), mit Verweis auf `/Fjordlicht-Basisdaten` für
+     Markenstimme und Verbote und mit diesen (fiktiven) Produktfakten und keinen weiteren:
 
      ```text
      Rucksack Tind, 28 Liter
@@ -18,18 +23,21 @@ question: |
      5 Jahre Garantie, Reparaturservice
      ```
 
-  3. **Vergleich.** Markiere in beiden Ergebnissen jede Aussage, die **nicht** aus den Fakten
-     stammt, sowie jeden Superlativ.
-  4. Notiere, welcher Baustein des Prompts die größte Verbesserung bewirkt hat.
-  5. Ergänze die Tind-Fakten im Abschnitt Produkte von „Fjordlicht-Basisdaten.docx" (gezielt mit
-     Copilot in Word an der markierten Stelle oder von Hand) und speichere den Nachher-Prompt in
-     der **Prompt Gallery** (falls in eurer Umgebung freigegeben) bzw. in eurer Prompt-Bibliothek
-     (Kap. 10).
+  3. **Kreuzprüfung:** Die Faktenprüferin von Paar A prüft das Ergebnis von Paar B und umgekehrt.
+     Markiert jede Aussage, die **nicht** aus den Fakten stammt, und jeden Superlativ – auch in
+     den Vorher-Ergebnissen.
+  4. **Gruppenentscheidung:** Welcher Nachher-Prompt hat gewonnen, und welcher Baustein hat den
+     Unterschied gemacht? Führt die stärksten Bausteine beider Prompts zu **einem** Siegerprompt
+     zusammen. Nach dem Rollentausch testet die bisherige Faktenprüferin den Siegerprompt einmal
+     in einem neuen Chat.
+  5. **Ablage:** Jede Person ergänzt die Tind-Fakten im Abschnitt Produkte ihrer eigenen
+     „Fjordlicht-Basisdaten.docx" (an der markierten Stelle mit Copilot in Word umschreiben lassen
+     oder von Hand) und speichert den Siegerprompt in ihrer **Prompt Gallery**.
 tip: |
-  Achte besonders auf das Material: „70 % recycelt" wird von KI gern zu „aus recyceltem
-  Material" oder „nachhaltig" verkürzt. Genau solche Verkürzungen sind bei Umweltaussagen das
-  eigentliche Risiko – schreib deshalb in den Modifier, dass Prozentangaben unverändert bleiben.
-  Im Vorher-Chat kennt Copilot die Basisdaten nicht, wenn du sie nicht referenzierst – genau das
+  Achtet besonders auf das Material: Prüft, ob „70 % recycelt" zu „aus recyceltem Material" oder
+  „nachhaltig" verkürzt wurde. Genau solche Verkürzungen sind bei Umweltaussagen das eigentliche
+  Risiko – schreibt deshalb in den Modifier, dass Prozentangaben unverändert bleiben. Im
+  Vorher-Chat kennt Copilot die Basisdaten nicht, wenn ihr sie nicht referenziert – genau das
   macht den Vergleich aussagekräftig.
 solution: |
   Beispiel für einen vollständigen Prompt:
@@ -47,7 +55,7 @@ solution: |
   Tone: ruhig, ehrlich, nordisch-trocken, Du-Ansprache.
   ```
 
-  | Merkmal | Vorher (typisch) | Nachher (typisch) |
+  | Merkmal | Vorher (möglich) | Nachher (möglich) |
   |---|---|---|
   | Erfundene Aussagen | 2–4 („perfekt für jedes Abenteuer", „umweltfreundlich") | 0–1 |
   | Superlative | mehrere | keine |
@@ -55,9 +63,16 @@ solution: |
   | Länge | 120–200 Wörter | im Rahmen |
 
   Den größten Effekt hat meist der **Modifier** („nur diese Fakten", verbotene Begriffe),
-  gefolgt vom **Tone** mit konkreten Merkmalen. Wer im Nachher-Text noch „nachhaltig" findet,
-  sollte den Modifier schärfen und den Ton mit zwei Beispielposts (Few-Shot) zeigen.
+  gefolgt vom **Tone** mit konkreten Merkmalen. Ein Duell entscheidet sich oft an einer einzigen
+  Zeile, etwa „Prozentangaben unverändert übernehmen". Wer im Siegertext noch „nachhaltig"
+  findet, sollte den Modifier schärfen und den Ton mit zwei Beispielposts (Few-Shot) zeigen.
 
   Zu Schritt 5: Mit den Tind-Fakten in den Basisdaten reicht künftig der Verweis auf die Datei.
-  Ein gespeicherter Prompt in der Prompt Gallery macht den Nachher-Prompt für das Team
-  wiederverwendbar – mit Platzhaltern für Produkt und Fakten statt fester Werte.
+  Speichert den Siegerprompt mit Platzhaltern für Produkt und Fakten statt fester Werte, damit er
+  für andere Produkte wiederverwendbar ist.
+
+  Bewertungskriterien: beide Nachher-Prompts vollständig nach P.R.O.M.P.T., alle erfundenen
+  Aussagen und Superlative markiert, wirksamster Baustein benannt, Basisdaten ergänzt, Prompt
+  gespeichert; zur Zusammenarbeit: die vier Vorher-Ergebnisse wurden verglichen und ihre
+  Unterschiede benannt, die Kreuzprüfung erfolgte durch das jeweils andere Paar, und der
+  Siegerprompt verbindet begründet Bausteine aus beiden Prompts.

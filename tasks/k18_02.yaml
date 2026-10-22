@@ -1,29 +1,39 @@
-title: Der Avatar im Purpose – Vorher und Nachher in Copilot
+title: Der Avatar im Purpose – Blindtest in der Gruppe
 difficulty: 2
 question: |
-  Diese Übung machst du in Microsoft 365 Copilot.
+  **Gruppe:** 4 Personen in zwei Paaren (bei 3 Personen: eine Person „ohne", zwei „mit"),
+  ca. 30 Minuten. **Paar „ohne"** schreibt ohne Avatar, **Paar „mit"** mit Avatar; innerhalb
+  jedes Paares führen beide Personen denselben Prompt aus. **Am Ende liegt vor:** die Datei
+  „Avatar-Jana-Kurzfassung.docx", eine geteilte **Copilot Page** mit vier Teasern und
+  Vergleichstabelle sowie eine Gruppenentscheidung zur Ablage des Avatars.
 
-  1. **Kurzfassung.** Schreibe für den Fjordlicht-Avatar „Jana" (Abschnitt 18.2) oder einen
-     Avatar aus deinem eigenen Arbeitsumfeld eine **Kurzfassung** von 80 bis 120 Wörtern und
-     speichere sie als „Avatar-Jana-Kurzfassung.docx" im Ordner „Fjordlicht-Kurs". Copilot in
-     Word kann dir helfen, einen längeren Entwurf auf die Zielgröße zu kürzen.
-  2. **Ohne Avatar.** Lass in einem neuen Copilot-Chat einen Newsletter-Teaser (max. 60 Wörter)
-     für den Fleece „Skog" schreiben – nur mit „für unsere Zielgruppe" als Purpose.
-  3. **Mit Avatar.** Lass in einem weiteren neuen Chat denselben Teaser mit einem vollständigen
-     P.R.O.M.P.T.-Prompt schreiben. Im Purpose verweist du per `/` auf die Kurzfassung, für
-     Produktfakten auf `/Fjordlicht-Basisdaten` (falls nicht vorhanden: Kap. 11 bzw. Fakten
-     einfügen).
-  4. **Vergleich.** Vergleiche beide Ergebnisse anhand der Prüfpunkte aus Abschnitt 18.5 (Hook,
-     Einwände, Sprache, Belege) in einer Tabelle.
-  5. **Wirkung und Ablage.** Notiere, welcher Satz deiner Kurzfassung die größte Wirkung hatte.
-     Entscheide, wo der Avatar dauerhaft liegen soll: als Datei mit `/`-Verweis, in einem Copilot
-     Notebook oder in den benutzerdefinierten Anweisungen (Kap. 7) – und begründe in einem Satz.
+  1. **Kurzfassung (alle).** Schreibt gemeinsam für den Fjordlicht-Avatar „Jana"
+     (Abschnitt 18.2) eine **Kurzfassung** von 80 bis 120 Wörtern. Eine Person legt sie als
+     „Avatar-Jana-Kurzfassung.docx" im Ordner „Fjordlicht-Kurs" an und teilt sie; ist euer
+     Entwurf zu lang, markiert ihn und lasst ihn von Copilot in Word kürzen. Paar „mit" speichert
+     sich eine Kopie in den eigenen Ordner.
+  2. **Ohne Avatar (Paar „ohne").** Beide lassen in einem neuen Copilot-Chat einen
+     Newsletter-Teaser (max. 60 Wörter) für den Fleece „Skog" schreiben – wortgleicher Prompt,
+     nur mit „für unsere Zielgruppe" als Purpose.
+  3. **Mit Avatar (Paar „mit").** Beide lassen in einem neuen Chat denselben Teaser mit einem
+     vollständigen, wortgleichen P.R.O.M.P.T.-Prompt schreiben. Im Purpose verweist ihr per `/`
+     auf die Kurzfassung, für Produktfakten auf `/Fjordlicht-Basisdaten` (falls die Datei fehlt:
+     Kap. 11 bzw. Fakten einfügen).
+  4. **Blindtest.** Eine Person sammelt alle vier Teaser ohne Kennzeichnung in einer **Copilot
+     Page** und teilt sie. Jede Person tippt, welche Teaser mit Avatar entstanden sind. Löst auf
+     und vergleicht in einer Tabelle anhand der Prüfpunkte aus Abschnitt 18.5 (Hook, Einwände,
+     Sprache, Belege). Achtet darauf, ob sich die beiden Teaser **innerhalb** eines Paares stärker
+     oder schwächer unterscheiden als die Teaser **zwischen** den Paaren.
+  5. **Wirkung und Ablage.** Einigt euch, welcher Satz der Kurzfassung die größte Wirkung hatte.
+     Entscheidet, wo der Avatar dauerhaft für das Team liegen soll: als geteilte Datei mit
+     `/`-Verweis, als gespeicherter Prompt in der Prompt Gallery oder als kleiner Agent mit dem
+     **Agent Builder** – und begründet in einem Satz für das Plenum.
 tip: |
   Die Kurzfassung wirkt am stärksten, wenn sie eine konkrete **Situation**, einen **Einwand** und
   ein, zwei **wörtliche Formulierungen** enthält. Reine Eigenschaften („umweltbewusst, aktiv")
-  verändern das Ergebnis kaum. Achtung beim Vergleich: Wenn Copilot-Memory oder
-  benutzerdefinierte Anweisungen aktiv sind, kann der Avatar auch in den „Ohne"-Chat einfließen.
-  Prüfe deine Personalisierungseinstellungen, damit der Vergleich fair bleibt.
+  verändern das Ergebnis kaum. Der Blindtest ist der eigentliche Prüfstein: Erkennt die Gruppe
+  die Avatar-Teaser nicht sicher, hat die Kurzfassung wenig bewirkt. Startet für jeden Teaser
+  einen neuen Chat, damit kein früherer Verlauf einfließt.
 solution: |
   Beispiel für eine Kurzfassung:
 
@@ -36,7 +46,7 @@ solution: |
   Preis und Passform beim Onlinekauf. Liest den Newsletter am Wochenende.
   ```
 
-  Beispiel-Prompt für Schritt 3:
+  Beispiel-Prompt für Paar „mit":
 
   ```text
   Persona: Du bist Newsletter-Texterin von Fjordlicht.
@@ -49,7 +59,7 @@ solution: |
   Tone: laut Markenstimme in den Basisdaten.
   ```
 
-  Typischer Vergleich:
+  Möglicher Vergleich:
 
   | Prüfpunkt | ohne Avatar | mit Avatar |
   |---|---|---|
@@ -58,10 +68,18 @@ solution: |
   | Sprache | Superlative, Werbefloskeln | ruhig, Kundensprache |
   | Belege | „nachhaltig" ohne Angabe | nur, wenn in den Basisdaten ein Beleg steht – sonst `[BELEG FEHLT]` |
 
+  Wirkt die Kurzfassung, unterscheiden sich die Teaser innerhalb eines Paares im Wortlaut,
+  zwischen den Paaren aber in Hook, Einwänden und Sprache – und der Blindtest gelingt.
   Wirkungsvollster Satz ist meist der Pain Point mit konkreter Erfahrung („pillte nach wenigen
   Wäschen"). Achtung: Eine Aussage wie „Skog pillt nicht" darf nur verwendet werden, wenn
   Fjordlicht sie belegen kann – der Avatar liefert die Frage, nicht die Antwort.
 
-  Ablage: Für mehrere Avatare ist eine Datei pro Avatar mit `/`-Verweis oder ein Notebook meist
-  besser als benutzerdefinierte Anweisungen, weil Letztere in **jeden** Chat einfließen – auch
-  dort, wo ein anderer Avatar gemeint ist.
+  Ablage: Für mehrere Avatare ist eine geteilte Datei pro Avatar mit `/`-Verweis meist die
+  flexibelste Lösung, weil jeder Prompt gezielt den passenden Avatar einbindet. Ein Agent lohnt
+  sich, wenn das Team regelmäßig denselben Avatar-Check braucht (vertieft in Kap. 24); ein
+  gespeicherter Prompt in der Prompt Gallery hilft vor allem der Person, die ihn gespeichert hat.
+
+  Bewertungskriterien: Kurzfassung mit Situation, Einwand und Kundensprache; beide Paare haben
+  innerhalb des Paares wortgleiche Prompts genutzt; Blindtest durchgeführt und aufgelöst;
+  Unterschiede innerhalb und zwischen den Paaren benannt und erklärt; Ablageentscheidung
+  begründet.

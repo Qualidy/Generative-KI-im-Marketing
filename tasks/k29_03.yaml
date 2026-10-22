@@ -1,8 +1,8 @@
-title: Welches Werkzeug für welchen Zweck?
+title: Welches Werkzeug für welchen Zweck? – Gruppenentscheidung
 difficulty: 3
 question: |
-  Das Marketingteam von Fjordlicht hat Microsoft 365 Copilot für alle und drei anstehende
-  Bildaufgaben:
+  **Gruppenarbeit, 3–4 Personen, ca. 30 Minuten.** Das Marketingteam von Fjordlicht hat
+  Microsoft 365 Copilot für alle und drei anstehende Bildaufgaben:
 
   ```text
   A) Moodboard mit 12 Stimmungsbildern für die Frühjahrskampagne "Erste Schritte draußen"
@@ -11,30 +11,43 @@ question: |
   C) Ein Produktbild der neuen Wanderhose "Vidde" vor Fjordkulisse für den Webshop
   ```
 
-  1. **Kurztest in Copilot.** Erzeuge in Copilot Chat je einen ersten Entwurf für A (ein bis
-     zwei Stimmungsbilder) und für B (Infografik mit den fünf Schritten als Text im Bild).
-     Notiere: Wie gut sind Look, Steuerbarkeit und Text im Bild?
-  2. **Bewerten.** Bewerte für jede Aufgabe, welches Werkzeug aus Abschnitt 29.5 – oder die
-     Bilderzeugung in Copilot – am besten geeignet ist, und nutze dafür mindestens **vier**
-     Kriterien aus 29.6. Stütze dich bei A und B auf deinen Kurztest.
-  3. **Risiko.** Benenne für jede Aufgabe das **größte Risiko** und wie du es absicherst.
-  4. **Stellung nehmen.** Eine Kollegin schlägt vor: „Wir nehmen einfach für alles die
-     Bilderzeugung in Copilot, die haben wir sowieso." Nimm Stellung: Wo hat sie recht, wo
-     nicht?
+  Am Ende liegen eine gemeinsame Bewertungstabelle (geteiltes Word-Dokument oder **Copilot
+  Page**) und eine Gruppenentscheidung zur Frage der Kollegin vor.
+
+  **Aufteilung:** je eine Person (oder ein Paar) übernimmt Aufgabe A, B oder C. Eine Person ist
+  zusätzlich **Advocatus Diaboli** und vertritt in Schritt 4 die Kollegin.
+
+  1. **Kurztest in Copilot (10 Minuten).** Die A-Verantwortliche erzeugt in Copilot Chat zwei
+     Stimmungsbilder, die B-Verantwortliche eine Infografik mit den fünf Schritten als Text im
+     Bild. Die C-Verantwortliche erzeugt **kein** Bild, sondern klärt mit dem Kapiteltext, was
+     an Aufgabe C überhaupt eine Aufgabe für Bild-KI ist. Notiert: Wie gut sind Look,
+     Steuerbarkeit und Text im Bild?
+  2. **Bewerten (10 Minuten).** Jede Person bewertet ihre Aufgabe: Welches Werkzeug aus
+     Abschnitt 29.5 – oder die Bilderzeugung in Copilot – ist am besten geeignet? Nutzt
+     mindestens **vier** Kriterien aus 29.6. Stützt euch bei A und B auf den Kurztest.
+  3. **Risiko.** Ergänzt für jede Aufgabe das **größte Risiko** und wie ihr es absichert.
+     Führt alles in der gemeinsamen Tabelle zusammen.
+  4. **Gegenrede (5 Minuten).** Der Advocatus Diaboli vertritt den Vorschlag der Kollegin so
+     überzeugend wie möglich: „Wir nehmen einfach für alles die Bilderzeugung in Copilot, die
+     haben wir sowieso." Die anderen antworten mit den Ergebnissen aus Schritt 1–3. Einigt euch:
+     Wo hat sie recht, wo nicht?
+
+  **Abschluss:** Formuliert die Gruppenentscheidung in zwei Sätzen und stellt sie im Plenum vor.
 tip: |
-  Aufgabe C ist eine Falle. Frage dich zuerst, ob sie überhaupt eine Aufgabe für Bild-KI ist –
-  und welcher Teil davon vielleicht doch. Bei B lohnt ein genauer Blick auf jedes Wort im Bild:
-  Kurze Texte gelingen meist, fünf beschriftete Schritte sind eine andere Liga.
+  Aufgabe C ist eine Falle. Fragt euch zuerst, ob sie überhaupt eine Aufgabe für Bild-KI ist –
+  und welcher Teil davon vielleicht doch. Bei B lohnt ein genauer Blick auf jedes Wort im Bild.
+  Der Advocatus Diaboli hilft am meisten, wenn er die echten Vorteile von Copilot betont –
+  nur dann wird eure Antwort mehr als ein Reflex.
 solution: |
-  Typisches Ergebnis des Kurztests: Die Stimmungsbilder für A sind brauchbar, eher neutral im
-  Look und folgen dem Prompt gut. Die Infografik für B hat eine ordentliche Struktur, aber
-  mindestens ein Schritt enthält Tippfehler, verdrehte Reihenfolge oder erfundene
-  Pflegehinweise.
+  Mögliches Ergebnis des Kurztests – achtet darauf, was bei euch auftritt: Die
+  Stimmungsbilder für A sind brauchbar, eher neutral im Look, und folgen dem Prompt. In der
+  Infografik für B enthält mindestens ein Schritt Tippfehler, eine verdrehte Reihenfolge oder
+  erfundene Pflegehinweise.
 
   | Aufgabe | Geeignet | Kriterien | Größtes Risiko | Absicherung |
   |---|---|---|---|---|
   | A Moodboard | Bilderzeugung in Copilot; für starke Art Direction ggf. Midjourney | Look, Steuerbarkeit, Kosten, Datenschutz | einseitige Bildwelten (Bias); bei Midjourney Bilder je nach Plan öffentlich sichtbar | Vielfalt explizit beschreiben; Plan mit privater Sichtbarkeit wählen |
-  | B Infografik | Copilot oder Ideogram für den Entwurf; Text final im Layout-Tool (z. B. PowerPoint oder Designer) | Text im Bild, Steuerbarkeit, Integration | Schreibfehler, falsche Pflegehinweise | Texte aus geprüfter Vorlage, Schrift im Layout-Tool setzen |
+  | B Infografik | Copilot oder Ideogram für den Entwurf; Text final im Layout-Werkzeug (z. B. PowerPoint oder Canva) | Text im Bild, Steuerbarkeit, Integration | Schreibfehler, falsche Pflegehinweise | Texte aus geprüfter Vorlage, Schrift im Layout-Werkzeug setzen |
   | C Produktbild | keine reine Generierung; echtes Foto, Hintergrund ggf. per Firefly erweitern | Rechte, Bearbeitung, Herkunftskennzeichnung | Produkt sieht anders aus als geliefert (UWG) | echtes Produktfoto, nur Umgebung bearbeiten, Produkt unverändert lassen |
 
   Zur Kollegin:
@@ -48,6 +61,8 @@ solution: |
     Bauchgefühl. Außerdem gilt die Frage aus 29.5: Welches Modell läuft im Hintergrund, und
     welche Nutzungsbedingungen gelten?
 
-  Bewertungskriterien: Kurztest tatsächlich durchgeführt und in die Bewertung eingeflossen,
-  mindestens vier Kriterien je Aufgabe genutzt, C als Fall für echte Fotos erkannt, und die
-  Stellungnahme würdigt das Argument „vorhanden und geklärt", statt es pauschal abzulehnen.
+  Bewertungskriterien: Kurztest tatsächlich durchgeführt und in die Bewertung eingeflossen;
+  mindestens vier Kriterien je Aufgabe genutzt; C als Fall für echte Fotos erkannt; die
+  Teilergebnisse der Gruppenmitglieder in einer Tabelle zusammengeführt; die Gegenrede wurde
+  ernsthaft geführt, und die Gruppenentscheidung würdigt das Argument „vorhanden und
+  geklärt", statt es pauschal abzulehnen.

@@ -1,8 +1,14 @@
-title: Einen Einführungsplan kritisch bewerten
+title: Einen Einführungsplan kritisch bewerten – drei Brillen, ein Gegenvorschlag
 difficulty: 3
 question: |
+  **Gruppenarbeit:** 4 Personen, ca. 30 Minuten, in **Copilot Chat**, **Copilot in Word** und
+  optional **Copilot in PowerPoint**. Rollen in der ersten Runde: drei **Brillen** – **Daten und
+  Recht**, **Qualität und Marke**, **Messbarkeit** – und ein **Advocatus Diaboli**, der den Plan
+  der Agentur verteidigt. Bei drei Personen entfällt der Advocatus Diaboli. Am Ende liegt ein
+  gemeinsamer Gegenvorschlag in einem geteilten Word-Dokument vor.
+
   Die Geschäftsführung von Fjordlicht hat von einer Agentur folgenden Plan zur KI-Einführung im
-  Marketing erhalten und bittet dich um eine kritische Einschätzung:
+  Marketing erhalten und bittet euch um eine kritische Einschätzung:
 
   ```text
   Woche 1: Alle fünf Teammitglieder erhalten Zugang zu fünf verschiedenen KI-Tools
@@ -14,20 +20,41 @@ question: |
   Messung: Zufriedenheitsumfrage im Team nach drei Monaten.
   ```
 
-  1. Benenne mindestens **sechs Probleme** des Plans und ordne sie Kapiteln des Kurses zu.
-  2. Lass **Copilot Chat** denselben Plan bewerten. Vergleiche: Welche Probleme findet Copilot,
-     welche übersieht es, wo ist es zu nachsichtig?
-  3. Stelle Copilot die Nachfrage: „Wäre Woche 2 in Ordnung, wenn wir den CRM-Export statt in
-     ChatGPT in Microsoft 365 Copilot hochladen?" Bewerte die Antwort mit Kap. 4.
-  4. Formuliere einen **Gegenvorschlag** nach den fünf Schritten aus Abschnitt 40.3 auf einer
-     halben Seite. Lass dir dabei von **Copilot in Word** einen Entwurf erstellen und überarbeite
-     ihn. Optional: Lass **Copilot in PowerPoint** aus dem Word-Dokument drei Folien für die
-     Geschäftsführung erstellen.
+  1. **Probleme finden (Rollen):** Jede Brille geht den Plan Zeile für Zeile aus ihrer
+     Perspektive durch und notiert Probleme mit Kapitelverweis. Der Advocatus Diaboli hält bei
+     jedem Problem dagegen. Sammelt gemeinsam mindestens **sechs Probleme**, die dem Widerspruch
+     standhalten.
+  2. **Copilot-Gegenprobe:** Jede Person lässt den Plan mit **demselben** Prompt in ihrem
+     eigenen Copilot Chat bewerten. Vergleicht: Welche Probleme finden die Copilot-Antworten,
+     welche übersehen sie, wo sind sie zu nachsichtig? Unterscheiden sich die Antworten
+     untereinander?
+  3. **Nachfrage:** Die Brille „Daten und Recht" stellt die Nachfrage: „Wäre Woche 2 in
+     Ordnung, wenn wir den CRM-Export statt in ChatGPT in Microsoft 365 Copilot hochladen?" Die
+     Gruppe bewertet die Antwort mit Kap. 4.
+  4. **Gegenvorschlag:** Eine Person legt ein Word-Dokument an, teilt es mit der Gruppe und
+     lässt **Copilot in Word** einen Gegenvorschlag nach den fünf Schritten aus Abschnitt 40.3
+     auf einer halben Seite entwerfen. Jede Person überarbeitet im gemeinsamen Dokument den
+     Teil, der zu ihrer Brille passt; der Advocatus Diaboli prüft, ob der Vorschlag
+     realistisch bleibt. Optional: Lasst **Copilot in PowerPoint** aus dem Word-Dokument eine
+     Präsentation für die Geschäftsführung erstellen und kürzt sie auf drei Folien.
+  5. **Abschluss:** Stellt euren Gegenvorschlag in höchstens zwei Minuten im Plenum vor.
 tip: |
-  Gehe den Plan Zeile für Zeile mit drei Brillen durch: Daten und Recht, Qualität und Marke,
-  Messbarkeit. Fast jede Zeile hat mindestens ein Problem. Bei Schritt 3 hilft die Frage: Was
-  löst Enterprise Data Protection – und was nicht?
+  Fast jede Zeile des Plans hat mindestens ein Problem – mit drei Brillen findet ihr mehr als
+  allein. Der Advocatus Diaboli zwingt euch, jedes Problem zu begründen statt nur zu behaupten.
+  Bei Schritt 3 hilft die Frage: Was löst Enterprise Data Protection – und was nicht? Achtet beim
+  Vergleich in Schritt 2 darauf, ob die Copilot-Antworten auch Ziel und Messung kritisieren oder
+  nur den Datenschutz.
 solution: |
+  Beispiel-Prompt für Schritt 2 (für alle identisch):
+
+  ```text
+  Bewerte den folgenden Plan zur KI-Einführung im Marketing eines
+  Unternehmens mit 45 Beschäftigten (5 im Marketing) kritisch. Gehe jede
+  Zeile durch und nenne Probleme zu Datenschutz und Recht, Qualität und
+  Marke sowie Messbarkeit. Antworte als Tabelle (Zeile | Problem | Warum).
+  [Plan einfügen]
+  ```
+
   | Problem | Warum | Kapitel |
   |---|---|---|
   | fünf Tools ohne Auswahl | keine Werkzeugliste, kein einheitlicher Standard | 4, 40 |
@@ -39,15 +66,16 @@ solution: |
   | Messung nur per Zufriedenheit | misst Gefühl, nicht Wirkung | 16, 20 |
   | keine Richtlinie, keine Freigabe | Verantwortung ungeklärt | 4, 39 |
 
-  Copilot erkennt meist den Datenschutzverstoß, bewertet aber Ziel und Messung oft zu nachsichtig
-  und schlägt selten vor, den Avatar-Schritt zu streichen.
+  Worauf die Gruppe beim Vergleich achten sollte: ob die Copilot-Antworten den
+  Datenschutzverstoß erkennen, Ziel und Messung aber zu nachsichtig bewerten, und ob eine
+  Antwort vorschlägt, den Avatar-Schritt zu streichen.
 
   Zu Schritt 3: Mit Microsoft 365 Copilot bleiben die Daten im Mandanten, Enterprise Data
   Protection gilt, und Berechtigungen werden beachtet – das löst das Problem des
   Consumer-Werkzeugs. Es löst **nicht** die Fragen nach Zweckbindung und Datenminimierung: Für
   eine Zielgruppenanalyse braucht es keinen vollständigen Export mit Namen und Kontaktdaten.
   Besser ist ein anonymisierter oder aggregierter Auszug, abgestimmt mit Datenschutz (Kap. 4, 17).
-  Wenn Copilot die Frage pauschal mit „ja" beantwortet, ist die Antwort zu nachsichtig.
+  Antwortet Copilot pauschal mit „ja", ist die Antwort zu nachsichtig.
 
   Beispiel-Prompt für Copilot in Word:
 
@@ -65,6 +93,12 @@ solution: |
   Datenampel und Kennzeichnungslinie; Messung von Zeit, Korrekturschleifen und Kanal-KPIs gegen
   die Baseline; Entscheidung nach vier Wochen über Ausweitung.
 
-  Bewertungskriterien: mindestens sechs Probleme mit Begründung, Vergleich mit der
-  Copilot-Bewertung konkret, Nachfrage zu Woche 2 differenziert beantwortet (Mandant ja,
-  Datenminimierung trotzdem), Gegenvorschlag enthält alle fünf Schritte und eine Baseline.
+  Bewertungskriterien:
+
+  - Mindestens sechs Probleme mit Begründung und Kapitelverweis; jede Brille hat beigetragen,
+    und die Einwände des Advocatus Diaboli wurden beantwortet.
+  - Der Vergleich mit den Copilot-Bewertungen ist konkret; Abweichungen zwischen den Antworten
+    der Gruppenmitglieder wurden benannt und erklärt.
+  - Die Nachfrage zu Woche 2 ist differenziert beantwortet (Mandant ja, Datenminimierung
+    trotzdem).
+  - Der gemeinsame Gegenvorschlag enthält alle fünf Schritte und eine Baseline.

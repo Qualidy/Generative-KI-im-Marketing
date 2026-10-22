@@ -1,44 +1,53 @@
-title: Page oder Word? Ein Werkzeugvergleich für das Team
+title: Page oder Word? Ein Werkzeugvergleich in zwei Teams
 difficulty: 3
 question: |
   Das Fjordlicht-Marketingteam (fünf Personen) schreibt längere Texte bisher in Copilot Chat und
   kopiert die Antworten dann irgendwohin. Die Teamleitung fragt, wo längere Texte künftig
-  entstehen sollen: in **Copilot Pages** oder in **Word mit Copilot**.
+  entstehen sollen: in **Copilot Pages** oder in **Word mit Copilot**. Ihr testet das als
+  Gruppen-Duell.
 
-  1. Teste dieselbe Aufgabe in **beiden** Werkzeugen: Rohfassung eines Blog-Absatzes zur
-     Wanderhose „Vidde" (ca. 200 Wörter) auf Basis von `/Fjordlicht-Basisdaten` (falls nicht
-     vorhanden: Kap. 11, Kurzübung 1), danach eine gezielte Überarbeitung des Einstiegs und eine
-     Kürzung um ein Drittel.
-     - **Page:** Entwurf in Copilot Chat erzeugen, in eine Page übernehmen, dort markieren und
-       überarbeiten.
-     - **Word:** Entwurf mit Copilot in einem neuen Dokument im Ordner „Fjordlicht-Kurs",
-       „Änderungen nachverfolgen" einschalten, Einstieg markieren und umschreiben lassen.
-  2. Teile beide Ergebnisse testweise mit einer Kollegin (oder dir selbst in einem zweiten
-     Browserfenster) und prüfe, wie Kommentieren und gemeinsames Bearbeiten funktionieren.
-  3. Bewerte beide Werkzeuge in einer Tabelle nach mindestens fünf Kriterien, darunter
-     **Kontrolle über Änderungen**, **Versionen**, **Zusammenarbeit** und **Freigabe/Datenschutz
-     im Team**.
-  4. Formuliere eine Empfehlung in höchstens fünf Sätzen – und begründe, warum die Empfehlung
-     **nicht** an einer einzelnen Funktion hängen sollte.
+  **Gruppe:** 4 Personen in zwei Paaren (Team Page, Team Word) · **Dauer:** ca. 30 Minuten ·
+  **Am Ende liegt vor:** eine gemeinsame Bewertungstabelle in einem geteilten Word-Dokument und
+  eine Empfehlung in höchstens fünf Sätzen.
 
-  Alternativ kannst du ein drittes Werkzeug (z. B. ChatGPT-Schreibblöcke oder Claude Artifacts)
-  einbeziehen, sofern es bei euch freigegeben ist.
+  1. **Gleiche Aufgabe, zwei Werkzeuge:** Beide Paare erstellen die Rohfassung eines
+     Blog-Absatzes zur Wanderhose „Vidde" (ca. 200 Wörter) auf Basis von `/Fjordlicht-Basisdaten`,
+     überarbeiten danach gezielt den Einstieg und kürzen den Text um ein Drittel.
+     - **Team Page:** Entwurf, Überarbeitung des Einstiegs und Kürzung entstehen per Prompt in
+       Copilot Chat; die Ergebnisse übernehmt ihr in eine Copilot Page und bearbeitet sie dort zu
+       zweit weiter.
+     - **Team Word:** Entwurf mit Copilot in einem neuen Dokument im Ordner „Fjordlicht-Kurs",
+       „Änderungen nachverfolgen" einschalten, den Einstieg markieren und mit Copilot umschreiben
+       lassen. Für die Kürzung lasst ihr euch in Copilot Chat mit `/`-Verweis auf das Dokument
+       eine gekürzte Fassung erstellen und setzt sie mit eingeschalteter Änderungsverfolgung ein.
+  2. **Austausch:** Jedes Paar teilt sein Ergebnis mit dem anderen Paar. Das andere Paar
+     bearbeitet zwei Stellen im fremden Ergebnis und prüft, wie gut sich nachvollziehen lässt,
+     **wer** **was** geändert hat.
+  3. **Bewertung:** Legt ein geteiltes Word-Dokument an und bewertet beide Werkzeuge in einer
+     Tabelle nach mindestens fünf Kriterien, darunter **Kontrolle über Änderungen**,
+     **Nachvollziehbarkeit**, **Zusammenarbeit** und **Freigabe/Datenschutz im Team**. Jedes Paar
+     füllt zuerst die Spalte des eigenen Werkzeugs, dann ergänzt das andere Paar Widerspruch per
+     Kommentar.
+  4. **Gruppenentscheidung:** Formuliert eine Empfehlung in höchstens fünf Sätzen – und begründet,
+     warum die Empfehlung **nicht** an einer einzelnen Funktion hängen sollte. Ein Paar stellt sie
+     im Plenum in zwei Minuten vor.
 tip: |
-  Komfort ist schnell beurteilt, Kontrolle nicht. Achte bei der Kürzung darauf, ob Copilot
-  Inhalte stillschweigend streicht, die du behalten wolltest. Beim Datenschutz unterscheiden sich
-  Page und Word kaum: Beide liegen im Microsoft-365-Mandanten, Copilot arbeitet mit Enterprise
-  Data Protection und sieht nur, worauf du Zugriff hast (Kap. 4). Der Unterschied liegt eher darin,
-  **wo** die Datei liegt und **wer** sie sieht, wenn du sie teilst.
+  Komfort ist schnell beurteilt, Kontrolle nicht. Achtet bei der Kürzung darauf, ob Inhalte
+  wegfallen, die ihr behalten wolltet – in Word zeigt die Änderungsverfolgung das, in der Page
+  müsst ihr selbst vergleichen. Beim Datenschutz unterscheiden sich Page und Word kaum: Beide
+  liegen im Microsoft-365-Mandanten, Copilot arbeitet mit Enterprise Data Protection und sieht nur,
+  worauf die jeweilige Person Zugriff hat (Kap. 4). Der Unterschied liegt eher darin, **wo** die
+  Datei liegt und **wer** sie sieht, wenn ihr sie teilt.
 solution: |
-  Beispielhafte Bewertung (Ergebnisse variieren je nach Stand und Test):
+  Beispielhafte Bewertung (Ergebnisse variieren je nach Test):
 
   | Kriterium | Copilot Page | Word mit Copilot |
   |---|---|---|
-  | Gezielte Überarbeitung markierter Stellen | gut, Chat und Text nebeneinander | gut, Vorschlag wird vor der Übernahme angezeigt |
-  | Nachvollziehbarkeit von Änderungen | Versionsverlauf, keine Einzeländerungen | „Änderungen nachverfolgen" zeigt jede Ersetzung |
-  | Kürzung ohne Inhaltsverlust | Pflegehinweis gestrichen | Kerninhalte erhalten |
-  | Zusammenarbeit | schnell geteilt, gemeinsames Bearbeiten | Kommentare, Freigabe-Workflow vertraut |
-  | Weiterverwendung | Inhalt für Teams/Loop gedacht | Datei per `/` in späteren Prompts referenzierbar, Grundlage für PowerPoint |
+  | Gezielte Überarbeitung | über Folgeprompts im Chat, Ergebnis wird übernommen | markierte Stelle direkt mit Copilot umschreiben |
+  | Nachvollziehbarkeit von Änderungen | Unterschiede muss man selbst vergleichen | „Änderungen nachverfolgen" zeigt jede Ersetzung mit Person |
+  | Kürzung ohne Inhaltsverlust | Pflegehinweis unbemerkt gestrichen | Streichung als Änderung sichtbar, zurückgenommen |
+  | Zusammenarbeit | schnell geteilt, gemeinsames Bearbeiten | gemeinsames Bearbeiten, Kommentare, vertrauter Freigabeweg |
+  | Weiterverwendung | Inhalt bleibt neben dem Chat, lässt sich teilen | Datei per `/` in späteren Prompts referenzierbar, Grundlage für PowerPoint |
   | Freigabe und Datenschutz | im Mandanten, Teilen bewusst steuern | im Mandanten, Ordnerberechtigungen gelten |
 
   Mögliche Empfehlung: „Ideen, Gliederungen und frühe Entwürfe sammeln wir in Copilot Pages, weil
@@ -49,6 +58,9 @@ solution: |
   Jahren entfernt. Deshalb verankern wir das Vorgehen in unserer Prompt-Bibliothek (Kap. 10), nicht
   in einer Bedienanleitung."
 
-  Bewertungskriterien: echte Tests mit derselben Aufgabe in beiden Werkzeugen, mindestens fünf
+  Bewertungskriterien: beide Paare haben dieselbe Aufgabe tatsächlich getestet, mindestens fünf
   Kriterien inklusive Datenschutz und Zusammenarbeit, eine Empfehlung, die den Einsatzzweck
-  unterscheidet und das Arbeitsprinzip statt einer Funktion festschreibt.
+  unterscheidet und das Arbeitsprinzip statt einer Funktion festschreibt; zur Zusammenarbeit:
+  jedes Paar hat im Ergebnis des anderen gearbeitet, Widersprüche zur Bewertung sind als
+  Kommentare sichtbar und in der Empfehlung aufgelöst, und Unterschiede zwischen den beiden
+  Rohfassungen wurden benannt.

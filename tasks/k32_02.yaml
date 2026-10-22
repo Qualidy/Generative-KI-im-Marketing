@@ -1,52 +1,66 @@
-title: Einen Bildsprache-Baustein in Copilot ableiten und testen
+title: Einen Bildsprache-Baustein gemeinsam ableiten und testen
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot Chat** (Microsoft-365-Copilot-App). Alternativ geht sie
-  mit ChatGPT, Gemini oder Firefly.
+  **Gruppe:** 4 Personen (bei drei Personen übernimmt eine zwei Testbilder), ca. 30 Minuten. Am
+  Ende liegen ein gemeinsam geschärfter Bildsprache-Baustein als **„Fjordlicht-Bildsprache.docx"**
+  und eine Vergleichsfolie mit vier Testbildern vor.
 
-  1. **Ableiten.** Wähle drei Bilder mit einheitlicher Bildsprache – eigene Fotos, freigegebene
-     Bilder deines Unternehmens oder drei Bilder, die du in Copilot für Fjordlicht erzeugst.
-     Lade sie in Copilot Chat hoch und lass sie mit dem Analyse-Prompt aus Abschnitt 32.5
-     beschreiben.
-  2. **Schärfen.** Prüfe den Baustein gegen die sieben Dimensionen aus Abschnitt 32.2. Ersetze
-     jedes Adjektiv, das man im Bild nicht sehen kann, durch eine sichtbare Beschreibung. Bitte
-     Copilot dabei um Gegenvorschläge, entscheide aber selbst.
-  3. **Testen.** Erzeuge in Copilot zwei verschiedene Motive (zum Beispiel „Familie beim
-     Picknick im Nieselregen" und „Rucksack auf einem Steg") – einmal **ohne** und einmal
-     **mit** Bildsprache-Baustein. Starte für jede Fassung einen neuen Chat, damit der Verlauf
-     nicht mitwirkt.
-  4. **Vergleichen.** Lege die vier Bilder auf einer PowerPoint-Folie nebeneinander und notiere,
-     in welchen Dimensionen der Baustein wirkt und wo nicht.
-  5. **Ablegen.** Speichere den geschärften Baustein als **„Fjordlicht-Bildsprache.docx"** im
-     Ordner „Fjordlicht-Kurs" – die Kapitel 33 und 34 greifen per `/Fjordlicht-Bildsprache`
-     darauf zurück. Optional: als Prompt in der Prompt Gallery speichern.
+  1. **Ableiten.** Wählt gemeinsam drei Bilder mit einheitlicher Bildsprache – eigene Fotos,
+     freigegebene Bilder eures Unternehmens oder drei Bilder, die ihr in Copilot für Fjordlicht
+     erzeugt. Eine Person lädt sie in Copilot Chat hoch und lässt sie mit dem Analyse-Prompt aus
+     Abschnitt 32.5 beschreiben. Den entstandenen Baustein legt sie in einem neuen Word-Dokument
+     **„Fjordlicht-Bildsprache.docx"** im Ordner „Fjordlicht-Kurs" ab und teilt es mit der Gruppe.
+  2. **Schärfen (arbeitsteilig).** Verteilt die sieben Dimensionen aus Abschnitt 32.2 auf die
+     Gruppe. Jede Person prüft im geteilten Dokument „ihre" Dimensionen und ersetzt jedes
+     Adjektiv, das man im Bild nicht sehen kann, durch eine sichtbare Beschreibung – Änderungen
+     nachverfolgen ist eingeschaltet, Begründungen als Kommentar. Für Gegenvorschläge könnt ihr
+     einzelne Passagen markieren und mit Copilot in Word umschreiben lassen; die Entscheidung
+     trefft ihr selbst. Klärt offene Kommentare gemeinsam.
+  3. **Testen (Arbeitsteilung).** Zwei Motive, je ohne und mit Baustein – jede Person erzeugt
+     **ein** Bild in einem eigenen, neuen Chat:
+     - Person 1: „Familie beim Picknick im Nieselregen" **ohne** Baustein
+     - Person 2: „Familie beim Picknick im Nieselregen" **mit** Baustein
+     - Person 3: „Rucksack auf einem Steg" **ohne** Baustein
+     - Person 4: „Rucksack auf einem Steg" **mit** Baustein
+  4. **Vergleichen.** Legt die vier Bilder auf eine gemeinsame PowerPoint-Folie. Notiert
+     zusammen, in welchen Dimensionen der Baustein wirkt und wo nicht – und schärft den Baustein
+     im Dokument ein letztes Mal nach.
+  5. **Ablegen.** Jede Person speichert eine Kopie von **„Fjordlicht-Bildsprache.docx"** in ihrem
+     **eigenen** Ordner „Fjordlicht-Kurs" – die Kapitel 33 und 34 greifen per
+     `/Fjordlicht-Bildsprache` darauf zurück. Wer mag, speichert den Baustein zusätzlich als
+     Prompt in der Prompt Gallery.
 tip: |
-  Ein guter Baustein macht zwei inhaltlich verschiedene Motive erkennbar „verwandt". Wenn beide
-  Bilder mit Baustein immer noch wie aus zwei verschiedenen Kampagnen aussehen, ist er zu vage –
-  meist fehlen Licht und Bearbeitung.
+  Ein guter Baustein macht zwei inhaltlich verschiedene Motive erkennbar „verwandt". Wenn die
+  beiden Bilder mit Baustein immer noch wie aus zwei verschiedenen Kampagnen aussehen, ist er zu
+  vage – meist fehlen Licht und Bearbeitung. Dass in Schritt 3 vier verschiedene Personen
+  erzeugen, ist ein strengerer Test als ein Einzelversuch: Der Baustein muss wirken, egal wer ihn
+  benutzt.
 solution: |
-  Beispielprompt zum Schärfen:
+  Beispielprompt zum Umschreiben einer markierten Passage in Word:
 
   ```text
-  Hier ist mein Bildsprache-Baustein: [Baustein]. Prüfe ihn gegen diese
-  Dimensionen: Motivwelt, Menschen, Licht, Farbe, Perspektive, Bearbeitung,
-  Tabus. Markiere jedes Wort, das man im Bild nicht sehen kann, und schlage
-  eine sichtbare Beschreibung vor. Der Baustein darf höchstens 80 Wörter haben.
+  Schreibe diese Passage so um, dass jedes Wort im Bild sichtbar ist.
+  Ersetze Adjektive wie "authentisch" oder "hochwertig" durch konkrete
+  Beschreibungen von Licht, Farbe, Haltung oder Bearbeitung. Höchstens 30 Wörter.
   ```
 
-  Typische Beobachtungen:
+  Worauf ihr beim Vergleich achten könnt:
 
-  | Dimension | ohne Baustein | mit Baustein |
+  | Dimension | ohne Baustein – prüft, ob … | mit Baustein – prüft, ob … |
   |---|---|---|
-  | Licht | strahlender Sonnenschein, Goldene Stunde | diffus, Nebel, gedämpft |
-  | Farbe | gesättigt, viel Grün und Blau | entsättigt, ein Farbakzent |
-  | Menschen | lächeln in die Kamera | unbeobachtet, seitlich |
-  | Bearbeitung | Hochglanz, HDR-ähnlich | natürlicher Kontrast, Körnung |
+  | Licht | strahlender Sonnenschein oder Goldene Stunde auftauchen | diffuses Licht, Nebel, gedämpfte Stimmung entstehen |
+  | Farbe | die Farben stark gesättigt sind | die Farben entsättigt sind und ein Farbakzent bleibt |
+  | Menschen | Personen in die Kamera lächeln | Personen unbeobachtet, seitlich wirken |
+  | Bearbeitung | ein Hochglanz- oder HDR-Look entsteht | natürlicher Kontrast und Körnung sichtbar sind |
+  | Perspektive | Augenhöhe und Weite zufällig sind | die Perspektive dem Baustein folgt – oder einzeln im Prompt stehen muss |
 
   Beispiel für eine Schärfung: Aus „natürliche, authentische Stimmung" wird „unbeobachteter
   Moment, Personen schauen nicht in die Kamera, Alltagskleidung, leicht unperfekte Haltung".
+  Wirkt der Baustein bei euch schwächer auf die Perspektive, gebt sie in jedem Prompt einzeln an.
 
-  Meist wirkt der Baustein stark auf Licht und Farbe, schwächer auf Perspektive. Hilfe: die
-  Perspektive in jedem Prompt einzeln angeben. Eine gute Bearbeitung enthält den geschärften
-  Baustein (gespeichert als Word-Datei), die Vergleichsfolie mit vier Bildern und mindestens
-  drei konkrete Beobachtungen zum Unterschied.
+  Bewertungskriterien: „Fjordlicht-Bildsprache.docx" enthält den geschärften Baustein
+  (höchstens 80 Wörter, alle sieben Dimensionen sichtbar beschrieben) und liegt bei jeder Person
+  im Ordner „Fjordlicht-Kurs"; die Änderungen sind nachverfolgt und begründet; die
+  Vergleichsfolie zeigt vier Bilder mit mindestens drei konkreten Beobachtungen; Abweichungen
+  zwischen den beiden „mit Baustein"-Bildern sind benannt und erklärt (Baustein-Lücke oder
+  Zufall der Generierung).

@@ -1,6 +1,10 @@
-title: Einen missratenen Bildauftrag reparieren
+title: Einen missratenen Bildauftrag im Team reparieren
 difficulty: 3
 question: |
+  **Gruppe:** 3–4 Personen, ca. 30 Minuten. Am Ende liegt ein gemeinsames
+  **Reparaturprotokoll** (Word-Datei in OneDrive, gemeinsam bearbeitet) vor: Diagnose, zwei
+  verbesserte Prompts, zwei Testbilder und eine Empfehlung für Serie und Organisation.
+
   Ein Praktikant hat für die Fjordlicht-Frühjahrskampagne in Midjourney gearbeitet. Ziel waren
   **vier zusammengehörige**, ruhige, dokumentarische Motive für Instagram. Er hat diesen Prompt
   viermal mit jeweils anderem Motiv verwendet:
@@ -14,21 +18,33 @@ question: |
   Das Ergebnis: vier Bilder, die nicht zusammenpassen, bonbonbunt, im falschen Format. Außerdem
   stellt sich heraus, dass er mit seinem privaten Basis-Abo gearbeitet hat.
 
-  1. **Diagnose.** Benenne selbst **jede** Ursache für die Probleme – Prompttext und Parameter.
-     Lass danach Copilot Chat denselben Prompt analysieren (Prompt einfügen, Ziel nennen) und
-     vergleiche: Welche Ursachen findet Copilot, welche nicht?
-  2. **Midjourney-Fassung.** Schreibe einen verbesserten Prompt inklusive Parametern.
-  3. **Copilot-Fassung.** Übersetze den Prompt in natürliche Sprache für die Bilderzeugung in
-     Copilot und erzeuge das erste der vier Motive. Erzeuge ein zweites Motiv, indem du das erste
-     Bild hochlädst und nur Motiv und Ort änderst. Passen die beiden zusammen?
-  4. **Serie sichern.** Was schlägst du vor, damit die vier Motive zusammengehören – in
-     Midjourney und in Copilot?
-  5. **Organisation.** Welche Probleme entstehen durch das private Basis-Abo, und was ändert
-     sich, wenn das Team in Copilot im Unternehmensmandanten arbeitet?
+  **Rollen:** **Diagnose** (führt Schritt 1 an), **Midjourney-Fassung**, **Copilot-Fassung**,
+  **Organisation und Risiko** (bei drei Personen übernimmt die Diagnose-Person auch diese Rolle).
+
+  1. **Diagnose (alle, dann Abgleich).** Jede Person notiert zwei Minuten lang still alle
+     Ursachen, die sie findet – Prompttext und Parameter. Führt die Listen im Protokoll zusammen.
+     Die Diagnose-Person lässt danach Copilot Chat denselben Prompt analysieren (Prompt einfügen,
+     Ziel nennen). Vergleicht: Welche Ursachen hat die Gruppe gefunden, welche Copilot, welche
+     niemand?
+  2. **Midjourney-Fassung.** Schreibt einen verbesserten Prompt inklusive Parametern.
+  3. **Copilot-Fassung.** Übersetzt den Prompt in natürliche Sprache und erzeugt in Copilot Chat
+     das erste der vier Motive. Für das zweite Motiv probiert ihr zwei Wege parallel aus:
+     - **Weg 1:** im selben Chat weiterarbeiten und nur Motiv und Ort ändern.
+     - **Weg 2:** in einem neuen Chat Bild 1 hochladen, Copilot Licht, Farbwelt und Look
+       beschreiben lassen und diese Beschreibung wortgleich in den Prompt für Motiv 2 übernehmen.
+
+     Welches zweite Motiv passt besser zu Motiv 1?
+  4. **Serie sichern.** Einigt euch: Was schlagt ihr vor, damit die vier Motive zusammengehören –
+     in Midjourney und in Copilot?
+  5. **Organisation.** Die Rolle „Organisation und Risiko" bereitet vor: Welche Probleme
+     entstehen durch das private Basis-Abo, und was ändert sich, wenn das Team in Copilot im
+     Unternehmensmandanten arbeitet? Die Gruppe ergänzt und stellt die Empfehlung im Plenum in
+     zwei Minuten vor.
 tip: |
-  Gehe die Parameter einzeln durch und frage dich bei jedem: Wirkt er für das Ziel „ruhig,
-  dokumentarisch, zusammengehörig" in die richtige oder in die falsche Richtung? In Copilot
-  gibt es keine Parameter – dieselben Entscheidungen müssen dort ausformuliert im Prompt stehen.
+  Geht die Parameter einzeln durch und fragt bei jedem: Wirkt er für das Ziel „ruhig,
+  dokumentarisch, zusammengehörig" in die richtige oder in die falsche Richtung? In Copilot gibt
+  es keine Parameter – dieselben Entscheidungen müssen dort ausformuliert im Prompt stehen. Die
+  stille Einzeldiagnose vor dem Abgleich verhindert, dass die erste Meinung die Gruppe prägt.
 solution: |
   | Element | Problem |
   |---|---|
@@ -39,9 +55,9 @@ solution: |
   | `--s 1000` | maximale Midjourney-Eigenästhetik statt Nähe zum Prompt |
   | `--chaos 100` | maximale Streuung, Gift für eine Serie |
 
-  Copilot findet die Füllwörter, die Farbangaben und meist auch das Format zuverlässig; die
-  Wirkung einzelner Parameterwerte und das Problem „im Stil einer lebenden Fotografin" benennt
-  es nicht immer von selbst.
+  Beim Abgleich mit Copilot lohnt der Blick darauf, ob es auch die Wirkung der einzelnen
+  Parameterwerte und das Problem „im Stil einer lebenden Fotografin" von selbst benennt – oder
+  nur die offensichtlichen Füllwörter und Farben.
 
   Verbesserter Midjourney-Prompt:
 
@@ -63,21 +79,34 @@ solution: |
   Kein Text, keine Logos.
   ```
 
-  Für Zusammengehörigkeit: dieselbe Basisformulierung für Licht, Farbe und Kamera in allen
-  Prompts; in Midjourney ein freigegebenes erstes Motiv per `--sref` als Stilreferenz, in
-  Copilot das erste Bild hochladen mit „Übernimm Licht, Farbwelt und Look, nicht das Motiv";
-  Werkzeug und Datum notieren (Kap. 33 vertieft das). Typisch: Look und Farbe halten gut,
-  Details wie Jacke oder Weg weichen ab.
+  Beschreibungsprompt für Weg 2:
+
+  ```text
+  Beschreibe Licht, Farbwelt, Kontrast, Körnung und Bildaufbau dieses Bilds
+  in höchstens 60 Wörtern so, dass ich die Beschreibung an einen Bildprompt
+  anhängen kann. Beschreibe nicht das Motiv.
+  ```
+
+  Beim Vergleich der Wege achtet ihr auf Licht, Farbe, Körnung und Details wie Jacke oder Weg.
+  Haltet fest, welcher Weg bei euch näher an Motiv 1 lag – und ob beide Wege ohne exakte
+  Übereinstimmung auskommen müssen.
+
+  Für Zusammengehörigkeit: dieselbe Basisformulierung für Licht, Farbe und Kamera wortgleich in
+  allen Prompts; in Midjourney ein freigegebenes erstes Motiv per `--sref` als Stilreferenz; in
+  Copilot die aus Bild 1 gewonnene Look-Beschreibung als fester Baustein; Werkzeug und Datum
+  notieren (Kap. 33 vertieft das).
 
   Organisatorisch: Bilder aus kleineren Midjourney-Plänen können in der öffentlichen Galerie
-  sichtbar sein – unveröffentlichte Kampagne ist damit potenziell öffentlich; Nutzungsbedingungen
-  des privaten Kontos und die Frage, wem die Ergebnisse gehören, sind ungeklärt; kein
-  Teamzugriff, keine Nachvollziehbarkeit. In Copilot gilt Enterprise Data Protection: Eingaben
-  und Ergebnisse bleiben im Microsoft-365-Mandanten, Bilder lassen sich in OneDrive bzw.
-  SharePoint ablegen und teilen. Konsequenz: Arbeit nur in freigegebenen Teamkonten;
-  Spezialwerkzeuge nur mit geprüfter Sichtbarkeit.
+  sichtbar sein – eine unveröffentlichte Kampagne ist damit potenziell öffentlich;
+  Nutzungsbedingungen des privaten Kontos und die Frage, wem die Ergebnisse gehören, sind
+  ungeklärt; kein Teamzugriff, keine Nachvollziehbarkeit. In Copilot gilt Enterprise Data
+  Protection: Eingaben und Ergebnisse bleiben im Microsoft-365-Mandanten, Bilder lassen sich in
+  OneDrive bzw. SharePoint ablegen und mit dem Team teilen. Konsequenz: Arbeit nur in
+  freigegebenen Teamkonten; Spezialwerkzeuge nur mit geprüfter Sichtbarkeit.
 
-  Bewertungskriterien: alle sechs Ursachen erkannt und mit der Copilot-Analyse abgeglichen,
-  Parameter begründet gewählt, Copilot-Fassung enthält dieselben Entscheidungen ausformuliert,
-  Seriensicherung über Referenzbild statt nur über Wortwiederholung, organisatorisches Risiko
-  konkret benannt.
+  Bewertungskriterien: alle sechs Ursachen erkannt und die Funde der Gruppe mit der
+  Copilot-Analyse abgeglichen (wer hat was gefunden, was hat niemand gefunden); Parameter
+  begründet gewählt; die Copilot-Fassung enthält dieselben Entscheidungen ausformuliert; beide
+  Wege für Motiv 2 ausprobiert und der Unterschied an konkreten Bilddetails beschrieben;
+  organisatorisches Risiko konkret benannt; das Reparaturprotokoll wurde von allen Rollen
+  ergänzt und die Empfehlung im Plenum vorgestellt.

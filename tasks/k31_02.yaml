@@ -1,13 +1,12 @@
-title: Text im Bild – Copilot gegen ein Spezialwerkzeug
+title: Prompt-Duell – Text im Bild
 difficulty: 2
 question: |
-  Diese Übung machst du in der **Microsoft-365-Copilot-App** (Copilot Chat bzw. die
-  Create-Funktion, falls in eurer Umgebung freigegeben) und in **Ideogram** als Vergleich.
-  Ohne Ideogram-Zugang vergleichst du Copilot Chat mit Create – oder nimmst ChatGPT Images,
-  Gemini oder Adobe Express als Vergleichspartner.
+  **Gruppe:** 4 Personen in zwei Paaren, ca. 30 Minuten. Am Ende liegen ein gemeinsames
+  Prüfprotokoll (Word-Tabelle in OneDrive), eine neu gesetzte PowerPoint-Folie und eine
+  Entscheidung vor, welcher Entwurf als Layoutidee dient.
 
-  Erzeuge in beiden Werkzeugen eine Pinterest-Grafik (Hochformat 2:3) für den Fjordlicht-Blog
-  „Draußen-Notizen" mit genau diesen Texten:
+  Ihr erzeugt eine Pinterest-Grafik im Hochformat für den Fjordlicht-Blog „Draußen-Notizen" mit
+  genau diesen Texten:
 
   ```text
   Überschrift: "5 Dinge für die erste Herbstwanderung"
@@ -15,26 +14,36 @@ question: |
   Fußzeile: "Draußen-Notizen"
   ```
 
-  1. Schreibe den Prompt nach den Regeln aus 31.4: Text in Anführungszeichen, Rolle, Typografie,
-     Position.
-  2. Erzeuge pro Werkzeug **zwei** Durchläufe.
-  3. Prüfe jedes Bild selbst Zeichen für Zeichen: Rechtschreibung, Umlaute, fehlende oder
-     doppelte Einträge, Reihenfolge, Lesbarkeit.
-  4. Lade danach das beste Bild in Copilot Chat hoch und lass den Text im Bild auslesen und mit
-     der Vorgabe abgleichen. Findet Copilot dieselben Fehler wie du?
-  5. Setze die Grafik mit dem besten Entwurf als Layoutidee in **PowerPoint** neu auf
-     (benutzerdefinierte Foliengröße im Hochformat, echte Textfelder). Entscheide: Was übernimmst
-     du aus dem Entwurf, was muss neu gesetzt werden?
+  **Aufteilung:** **Paar A** arbeitet in Copilot Chat. **Paar B** arbeitet in Ideogram – oder,
+  ohne Ideogram-Zugang, ebenfalls in Copilot Chat, dann aber mit einem bewusst anderen
+  Prompt-Ansatz (z. B. A: ausführlich mit Typografie und Position, B: knapp nur mit den Texten).
+  In jedem Paar gibt es eine **Prompt-Verantwortliche** und eine **Korrektorin**; nach dem
+  ersten Durchlauf tauscht ihr die Rollen.
+
+  1. **Prompt schreiben.** Jedes Paar schreibt seinen Prompt nach den Regeln aus 31.4: Text in
+     Anführungszeichen, Rolle, Typografie, Position.
+  2. **Erzeugen.** Jedes Paar erzeugt **zwei** Durchläufe (einen pro Rollenverteilung).
+  3. **Kreuzprüfung.** Die Paare tauschen die Bilder: Die Korrektorinnen prüfen die Bilder des
+     **anderen** Paares Zeichen für Zeichen – Rechtschreibung, Umlaute, fehlende oder doppelte
+     Einträge, Reihenfolge, Lesbarkeit – und tragen jeden Fund ins gemeinsame Prüfprotokoll ein.
+  4. **Copilot als Gegenprobe.** Ladet die beiden besten Bilder in Copilot Chat hoch und lasst
+     den Text im Bild auslesen und mit der Vorgabe abgleichen. Findet Copilot dieselben Fehler
+     wie eure Korrektorinnen?
+  5. **Neu setzen und entscheiden.** Einigt euch auf den besten Entwurf als Layoutidee. Eine
+     Person setzt ihn in **PowerPoint** neu auf (benutzerdefinierte Foliengröße im Hochformat,
+     echte Textfelder), die anderen kommentieren die Folie. Haltet fest: Was übernehmt ihr aus dem
+     Entwurf, was muss neu gesetzt werden?
 tip: |
-  Gib die Umlaute im Prompt so an, wie sie im Bild erscheinen sollen (also „für", „Draußen"),
-  und beobachte, ob das Werkzeug sie korrekt übernimmt. Umlaute und ß sind ein guter
-  Härtetest. Verlass dich bei Schritt 4 nicht auf Copilot: Bildmodelle übersehen beim Prüfen
-  gern genau die Fehler, die sie beim Erzeugen machen.
+  Gebt die Umlaute im Prompt so an, wie sie im Bild erscheinen sollen (also „für", „Draußen").
+  Umlaute und ß sind ein guter Härtetest. Die Kreuzprüfung ist Absicht: Wer einen Prompt selbst
+  geschrieben hat, liest im Bild oft, was dort stehen sollte, statt was dort steht. Verlasst euch
+  bei Schritt 4 nicht auf Copilot – achtet darauf, ob es beim Prüfen genau die Fehler übersieht,
+  die beim Erzeugen entstanden sind.
 solution: |
-  Beispielprompt für Copilot:
+  Beispielprompt für Copilot (Paar A):
 
   ```text
-  Erstelle ein Bild: Pinterest-Grafik im Hochformat 2:3, schlichte Infografik.
+  Erstelle ein Bild: Pinterest-Grafik im Hochformat, schlichte Infografik.
   Hintergrund: helles Sandbeige. Oben die Überschrift
   "5 Dinge für die erste Herbstwanderung" in fetter serifenloser Schrift,
   dunkelgrün. Darunter eine nummerierte Liste mit kleinen Linien-Icons:
@@ -51,17 +60,24 @@ solution: |
   Reihenfolge). Schreibe "unsicher", wo du etwas nicht sicher lesen kannst.
   ```
 
-  | Prüfpunkt | Typische Beobachtung |
-  |---|---|
-  | Überschrift | in beiden Werkzeugen meist korrekt |
-  | Umlaute, ß | gelegentlich vertauscht oder durch ähnliche Zeichen ersetzt |
-  | Liste | Einträge fehlen, doppeln sich oder werden um eigene Ideen ergänzt |
-  | Icons | passen nicht immer zum Begriff (z. B. Taschenlampe statt Stirnlampe) |
-  | Layout | Ideogram oft geordneter bei Hierarchie und Abständen, Copilot gut bei kurzen Texten |
-  | Prüfung durch Copilot | findet grobe Fehler, übersieht kleine Buchstabendreher manchmal |
+  Mögliches Prüfprotokoll:
 
-  Entscheidung: Der beste Entwurf dient als **Layoutidee** (Anordnung, Farben, Icon-Stil). Für
-  die Veröffentlichung werden alle Texte im Layout neu gesetzt – in PowerPoint, Create, Canva
-  oder Express –, weil Pixeltext nicht korrigierbar ist und die Hausschrift fehlt. Eine gute
-  Bearbeitung dokumentiert mindestens einen konkreten Textfehler (oder begründet, warum keiner
-  auftrat), vergleicht die eigene Prüfung mit der von Copilot und zeigt die neu gesetzte Folie.
+  | Prüfpunkt | Worauf ihr achten könnt |
+  |---|---|
+  | Überschrift | vollständig und korrekt geschrieben? |
+  | Umlaute, ß | richtig gesetzt oder durch ähnliche Zeichen ersetzt? |
+  | Liste | alle fünf Einträge, keine doppelten, keine zusätzlichen eigenen Ideen? |
+  | Icons | passen sie zum Begriff (Stirnlampe oder Taschenlampe)? |
+  | Layout | Hierarchie und Abstände geordnet? Format wie gewünscht? |
+  | Prüfung durch Copilot | dieselben Funde wie die Korrektorinnen – oder weniger, mehr, andere? |
+
+  Entscheidung: Der beste Entwurf dient als **Layoutidee** (Anordnung, Farben, Icon-Stil). Für die
+  Veröffentlichung werden alle Texte im Layout neu gesetzt – in PowerPoint, Canva oder Express –,
+  weil Pixeltext nicht korrigierbar ist und die Hausschrift fehlt.
+
+  Bewertungskriterien: Beide Paare haben je zwei Durchläufe mit eigenem Prompt erzeugt; die
+  Kreuzprüfung dokumentiert mindestens einen konkreten Textfehler (oder begründet, warum keiner
+  auftrat); Abweichungen zwischen den Funden der Korrektorinnen und denen von Copilot sind
+  benannt; der Unterschied zwischen den beiden Prompt-Ansätzen bzw. Werkzeugen ist mit Beispielen
+  beschrieben; die Gruppe hat sich begründet auf eine Layoutidee geeinigt und die Folie mit
+  echten Textfeldern liegt vor.

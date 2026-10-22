@@ -1,8 +1,12 @@
-title: Welche Kennzahl misst welchen Text?
+title: Welche Kennzahl misst welchen Text? – ein Prompt-Duell
 difficulty: 1
 question: |
-  Das Fjordlicht-Team möchte wissen, ob seine Texte funktionieren. Ordne jeder Frage die
-  **passende Hauptkennzahl** zu und begründe kurz, warum andere Kennzahlen hier weniger taugen.
+  **Gruppe:** 4 Personen in zwei Paaren (bei 3 Personen: ein Paar und eine Einzelperson) ·
+  **Dauer:** etwa 20 Minuten · **Format:** Prompt-Duell · **Am Ende liegt vor:** eine
+  gemeinsame Zuordnungstabelle in einer geteilten **Copilot Page**.
+
+  Das Fjordlicht-Team möchte wissen, ob seine Texte funktionieren. Zu jeder Frage gehört eine
+  **passende Hauptkennzahl** (Abschnitt 20.2):
 
   1. Funktionieren unsere neuen Newsletter-Betreffzeilen besser als die alten?
   2. Bringt der neue Aufbau des Newsletters (Kurzintro, drei Kacheln, ein Button) mehr Besuche
@@ -14,18 +18,28 @@ question: |
   Zur Auswahl: Öffnungsrate · Klickrate · Engagement-Zeit (GA4) · Conversion-Rate der
   Produktseite · Saves · Likes · Seitenaufrufe
 
-  So gehst du vor:
+  So geht ihr vor:
 
-  1. Ordne zuerst selbst zu.
-  2. Gib die Fragen und die Auswahlliste in **Copilot Chat** ein und bitte um eine Tabelle
-     „Frage | Hauptkennzahl | Begründung | Vorsicht bei der Deutung".
-  3. Vergleiche: Wo wählt Copilot anders? Nennt es von sich aus die Einschränkung der Öffnungsrate
-     durch Apple Mail Privacy Protection? Frag bei Abweichungen nach: „Welches Textelement
+  1. **Allein (3 Minuten):** Jede Person ordnet für sich zu.
+  2. **Duell in Copilot Chat:**
+     - **Paar A** stellt die Fragen und die Auswahlliste mit dem schlichten Auftrag „Ordne jeder
+       Frage die passende Kennzahl zu."
+     - **Paar B** bittet um eine Tabelle „Frage | Hauptkennzahl | Begründung | Vorsicht bei der
+       Deutung".
+  3. **Vergleich:** Legt beide Antworten nebeneinander. Achtet darauf: Wählt eine der Antworten
+     bei Frage 2 die Öffnungsrate? Nennt eine von beiden die Einschränkung der Öffnungsrate durch
+     Apple Mail Privacy Protection? Fragt bei Abweichungen nach: „Welches Textelement
      beeinflusst diese Kennzahl, und was beeinflusst sie außer dem Text?"
+  4. **Gemeinsame Page:** Paar B übernimmt seine Copilot-Antwort in eine **Copilot Page** und
+     teilt sie mit der Gruppe. Alle bearbeiten die Page gemeinsam, bis dort eure
+     Gruppenentscheidung steht – inklusive einer Zeile „Was der bessere Prompt anders gemacht
+     hat".
 tip: |
-  Frage dich jeweils: Welches Textelement wird verändert – und welche Kennzahl reagiert **nur**
-  oder **vor allem** auf dieses Element? Zwei der Kennzahlen in der Liste sind Eitelkeitskennzahlen.
-  Die Spalte „Vorsicht" im Prompt zwingt Copilot, auch die Grenzen jeder Kennzahl zu nennen.
+  Fragt euch jeweils: Welches Textelement wird verändert – und welche Kennzahl reagiert **nur**
+  oder **vor allem** auf dieses Element? Zwei der Kennzahlen in der Liste sind
+  Eitelkeitskennzahlen. Die Spalte „Vorsicht" im Prompt von Paar B fordert Copilot ausdrücklich
+  auf, auch die Grenzen jeder Kennzahl zu nennen – ob das einen Unterschied macht, zeigt euer
+  Vergleich.
 solution: |
   | Nr. | Hauptkennzahl | Begründung |
   |---|---|---|
@@ -39,7 +53,25 @@ solution: |
   Aufmerksamkeit, aber nicht, ob der Text seinen Zweck erreicht hat. Sie dürfen als
   Nebenkennzahl mitlaufen, sollten aber keine Textentscheidung allein begründen.
 
-  Typisch für den Copilot-Abgleich: Die Zuordnung stimmt meist, bei Frage 2 wird aber gern die
-  Öffnungsrate mitgenannt, und die Einschränkung durch Apple Mail Privacy Protection fehlt, wenn du
-  nicht nach „Vorsicht" fragst. Die Übung zeigt: Die richtige Frage im Prompt entscheidet, ob du
-  eine brauchbare Einordnung bekommst.
+  Beispiel-Prompt für Paar B:
+
+  ```text
+  Ordne jeder der fünf Fragen genau eine Hauptkennzahl aus der Liste zu.
+  Ausgabe als Tabelle: Frage | Hauptkennzahl | Begründung | Vorsicht bei
+  der Deutung. Nenne am Ende, welche Kennzahlen aus der Liste du nicht
+  verwendet hast und warum.
+  Fragen: [1 bis 5] Liste: [Kennzahlen]
+  ```
+
+  Worauf es beim Vergleich ankommt: Fehlen in der Antwort von Paar A die Einschränkungen (z. B.
+  Apple Mail Privacy Protection) oder wird bei Frage 2 zusätzlich die Öffnungsrate genannt,
+  während die Antwort von Paar B die Grenzen benennt, ist der Lerneffekt sichtbar: Die richtige
+  Frage im Prompt entscheidet, ob ihr eine brauchbare Einordnung bekommt.
+
+  Bewertungskriterien:
+
+  - Alle haben vor dem Duell eine eigene Zuordnung notiert.
+  - Die Page enthält die Gruppenentscheidung für alle fünf Fragen, die beiden
+    Eitelkeitskennzahlen und eine Zeile, was der bessere Prompt bewirkt hat.
+  - Unterschiede zwischen den Antworten von Paar A und Paar B sind konkret benannt (welche
+    Frage, welche Kennzahl, welcher Hinweis fehlte).

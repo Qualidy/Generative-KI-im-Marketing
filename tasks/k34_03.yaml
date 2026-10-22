@@ -1,6 +1,10 @@
-title: Kennzeichnen oder nicht? Fünf Grenzfälle bewerten
+title: Kennzeichnen oder nicht? Fünf Grenzfälle im Team bewerten
 difficulty: 3
 question: |
+  **Gruppe:** 4 Personen (zu dritt übernimmt eine Person zwei Plattformen), ca. 30 Minuten. Am
+  Ende liegen eine gemeinsame **Copilot Page** mit geprüfter Plattformrecherche und
+  Fallbewertung sowie drei Freigaberegeln in Word vor.
+
   Fjordlicht plant diese Veröffentlichungen:
 
   1. Instagram-Post: Echtes Produktfoto der Jacke „Sølv", Hintergrund mit Generative Fill zu
@@ -13,35 +17,42 @@ question: |
      Schneedecke mit Schlittschuhläufern – „Winter ist zurück".
   5. Pinterest: Stilisierte, erkennbar gemalte Illustration einer Wanderin mit Fleece „Skog".
 
-  **Schritt 1 – Plattformregeln recherchieren.** Lass Copilot Chat im Modus **Web** (oder den
-  Agent **Researcher**, falls freigegeben) die aktuellen Regeln von Instagram/Meta, TikTok,
-  LinkedIn und Pinterest zur Kennzeichnung KI-generierter Bilder zusammenfassen – mit Quellen.
-  Öffne mindestens zwei Quellen und prüfe, ob die Zusammenfassung stimmt.
+  **Schritt 1 – Plattformregeln recherchieren (Arbeitsteilung).** Jede Person übernimmt eine
+  Plattform: Instagram/Meta, TikTok, LinkedIn oder Pinterest. Lasst Copilot Chat im Modus **Web**
+  die aktuellen Regeln dieser Plattform zur Kennzeichnung KI-generierter Bilder zusammenfassen –
+  mit Quellen. Jede Person öffnet mindestens zwei Quellen und prüft, ob die Zusammenfassung
+  stimmt. Eine Person übernimmt ihre Antwort in eine Copilot Page und teilt sie; die anderen
+  ergänzen ihre geprüften Ergebnisse dort mit Quelle und Datum.
 
-  **Schritt 2 – bewerten.** Bestimme für jeden Fall, ob Art. 50 Abs. 4 AI Act (Deepfake)
-  betroffen sein kann, welche Plattformregel oder welches weitere Risiko (UWG, KUG,
-  Markenrecht) zu beachten ist und wie du entscheidest: veröffentlichen, kennzeichnen, ändern
-  oder verzichten.
+  **Schritt 2 – bewerten mit Rollen.** Verteilt die Rollen **AI Act**, **Plattformregeln**,
+  **UWG/KUG/Markenrecht** und **Marketing** (vertritt, was die Kampagne erreichen will). Geht die
+  Fälle gemeinsam durch: Jede Rolle bringt ihren Blick ein – kann Art. 50 Abs. 4 AI Act
+  (Deepfake) betroffen sein, welche Plattformregel gilt, welches weitere Risiko besteht? Die
+  Gruppe entscheidet je Fall: veröffentlichen, kennzeichnen, ändern oder verzichten. Haltet
+  Entscheidung und Begründung in der Page fest.
 
-  **Schritt 3 – Regeln festhalten.** Leite drei Regeln für die Freigabe-Checkliste des Teams ab
-  und lass sie dir von Copilot in Word knapp und ohne Rückfragebedarf formulieren. Prüfe, ob
-  Copilot dabei etwas abgeschwächt oder verschärft hat.
+  **Schritt 3 – Regeln festhalten.** Leitet drei Regeln für die Freigabe-Checkliste des Teams ab.
+  Eine Person lässt sie sich von Copilot in Word knapp und ohne Rückfragebedarf formulieren
+  (Entwurf mit Copilot, eure Fallbewertung aus der Page als Text in den Prompt eingefügt) und
+  teilt das Dokument.
+  Die anderen prüfen per Kommentar, ob Copilot dabei etwas abgeschwächt oder verschärft hat.
 
-  Fall 2 erzeugst du nicht – die Übung bewertet ihn nur.
+  Fall 2 erzeugt ihr nicht – die Übung bewertet ihn nur.
 tip: |
-  Trenne drei Fragen: Wirkt das Bild fälschlich echt und ähnelt es realen Personen, Orten oder
+  Trennt drei Fragen: Wirkt das Bild fälschlich echt und ähnelt es realen Personen, Orten oder
   Ereignissen (AI Act)? Was verlangt die Plattform? Und unabhängig davon: Täuscht das Bild über
-  das Produkt oder über Tatsachen (UWG)? Plattformregeln ändern sich häufig – deshalb die
-  Recherche mit Quellen und Datum.
+  das Produkt oder über Tatsachen (UWG)? Die Rollen in Schritt 2 sorgen dafür, dass keine der drei
+  Fragen untergeht. Plattformregeln ändern sich häufig – deshalb die Recherche mit Quellen und
+  Datum.
 solution: |
-  Rechercheprompt (Modus Web):
+  Rechercheprompt (Modus Web), je Plattform angepasst:
 
   ```text
-  Fasse die aktuellen Regeln von Instagram/Meta, TikTok, LinkedIn und Pinterest
-  zur Kennzeichnung KI-generierter oder KI-bearbeiteter Bilder zusammen. Je
-  Plattform: Wann ist ein Label Pflicht, wird es automatisch gesetzt (z. B. über
-  C2PA-Daten), was gilt für nur teilweise bearbeitete Fotos? Nenne zu jeder
-  Aussage die Quelle mit Datum. Kennzeichne, wo die Quellen unklar sind.
+  Fasse die aktuellen Regeln von [Plattform] zur Kennzeichnung KI-generierter
+  oder KI-bearbeiteter Bilder zusammen: Wann ist ein Label Pflicht, wird es
+  automatisch gesetzt (z. B. über C2PA-Daten), was gilt für nur teilweise
+  bearbeitete Fotos? Nenne zu jeder Aussage die Quelle mit Datum. Kennzeichne,
+  wo die Quellen unklar sind.
   ```
 
   | Nr. | Art. 50 Abs. 4 | weiteres Risiko | Entscheidung |
@@ -64,7 +75,11 @@ solution: |
      wenn die Plattform sie verlangt.
   ```
 
-  Bewertungskriterien: Recherche mit geprüften Quellen und Datum; AI Act, Plattformregeln und
-  UWG/KUG werden getrennt geprüft; Nr. 2 und Nr. 3 werden als Hauptrisiken erkannt; die Regeln
-  sind so formuliert, dass sie ohne Rückfrage anwendbar sind; Hinweis, dass Copilot keine
-  Rechtsberatung ersetzt und im Zweifel die Rechtsabteilung entscheidet.
+  Bewertungskriterien: Recherche für alle vier Plattformen mit geprüften Quellen und Datum in der
+  Page; Stellen, an denen Copilots Zusammenfassung von den Quellen abwich, sind benannt; AI Act,
+  Plattformregeln und UWG/KUG werden getrennt geprüft, jede Rolle hat ihren Blick eingebracht;
+  Nr. 2 und Nr. 3 werden als Hauptrisiken erkannt; Meinungsverschiedenheiten zwischen den Rollen
+  (etwa Marketing gegen UWG bei Nr. 3) sind festgehalten und begründet entschieden; die Regeln sind
+  ohne Rückfrage anwendbar, Abschwächungen oder Verschärfungen durch Copilot sind kommentiert;
+  Hinweis, dass Copilot keine Rechtsberatung ersetzt und im Zweifel die Rechtsabteilung
+  entscheidet.

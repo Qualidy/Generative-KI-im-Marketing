@@ -1,33 +1,40 @@
-title: Die Instruktionen des Content-Assistenten kritisch prüfen
+title: Die Instruktionen des Content-Assistenten im Team reviewen
 difficulty: 3
 question: |
-  Die Instruktionen des Content-Assistenten sind Version 3 – nicht die letzte. Bewerte sie wie ein
-  Reviewer, der sie für ein anderes Unternehmen übernehmen und als Copilot Agent einsetzen soll.
-  Kopiere die Instruktionen aus Abschnitt 26.3 dafür in ein Word-Dokument im Ordner
-  „Fjordlicht-Kurs".
+  **Gruppe:** 4 Personen in zwei Paaren (bei drei Personen: Einzelperson und Paar), ca. 30 Minuten.
+  **Aufteilung:** erst Review in Arbeitsteilung, dann Regel-Duell der Paare. **Am Ende liegt
+  vor:** ein gemeinsames Word-Dokument mit Stärken, Lücken, zwei Ergänzungsregeln und dem
+  Vorher-nachher-Test.
 
-  1. **Stärken.** Benenne drei Regeln, die du für besonders wirksam hältst, und begründe mit
-     einem Fehlerbild, das sie verhindern.
-  2. **Lücken.** Finde mindestens drei Situationen, für die die Instruktionen keine klare
-     Antwort geben. Denk an: Texte auf Englisch, Anfragen zu Wettbewerbsvergleichen in
-     Blogartikeln, Widersprüche zwischen Styleguide und Beispieltexten, Nutzer, die eine
-     Regel ausdrücklich aufheben wollen („Schreib ruhig ‚die beste Jacke'"). Erst danach:
-     Frage **Copilot in Word**, welche Situationen die Instruktionen nicht regeln, und vergleiche
-     mit deiner Liste.
-  3. **Ergänzung.** Formuliere für zwei der Lücken je eine Regel, die zur Struktur der
-     Instruktionen passt.
-  4. **Gegenprobe im Agent.** Lege einen Test-Agent mit dem Agent Builder an (falls in eurer
-     Umgebung freigegeben; sonst ein neuer Chat in Copilot Chat mit den Instruktionen als erster
-     Nachricht). Teste eine deiner Lücken vor und nach der Ergänzung. Begründe anhand des
-     Ergebnisses, warum die Ergänzung nicht schadet – etwa indem sie keine bestehende Regel
-     aufweicht oder den Assistenten zu übervorsichtig macht.
+  Die Instruktionen des Content-Assistenten sind Version 3 – nicht die letzte. Bewertet sie wie
+  Reviewer, die sie für ein anderes Unternehmen übernehmen und als Copilot Agent einsetzen sollen.
+
+  1. **Vorbereitung (3 Minuten).** Eine Person kopiert die Instruktionen aus Abschnitt 26.3 in ein
+     Word-Dokument im eigenen Ordner „Fjordlicht-Kurs" und teilt es mit der Gruppe zum Bearbeiten.
+  2. **Review in Arbeitsteilung (8 Minuten).** Paar 1 sucht **Stärken**: drei Regeln, die besonders
+     wirksam sind, je mit dem Fehlerbild, das sie verhindern. Paar 2 sucht **Lücken**: mindestens
+     drei Situationen, für die die Instruktionen keine klare Antwort geben. Denkt an: Texte auf
+     Englisch, Anfragen zu Wettbewerbsvergleichen in Blogartikeln, Widersprüche zwischen
+     Styleguide und Beispieltexten, Nutzer, die eine Regel ausdrücklich aufheben wollen („Schreib
+     ruhig ‚die beste Jacke'"). Beide tragen ihre Ergebnisse als Kommentare im Dokument ein.
+  3. **Copilot als Gegenprobe (4 Minuten).** Erst danach stellt eine Person **Copilot in Word** die
+     Frage zum Dokument: „Welche Situationen regeln diese Instruktionen nicht?" Die Gruppe
+     vergleicht mit der Liste von Paar 2 und markiert, was echte Fälle sind und was nur
+     Formulierungskritik.
+  4. **Regel-Duell (8 Minuten).** Jedes Paar wählt eine andere Lücke und formuliert dafür eine
+     Regel, die zur Struktur der Instruktionen passt.
+  5. **Vorher-nachher-Test (7 Minuten).** Jedes Paar öffnet zwei neue Chats in **Copilot Chat**:
+     im ersten die Instruktionen aus dem Dokument als erste Nachricht, im zweiten die Instruktionen
+     **plus** die Regel des **anderen** Paars. In beiden Chats testet es dieselbe Anfrage zur Lücke
+     und zusätzlich eine normale Anfrage („Newsletter-Teaser zum Fleece Skog"). Hält die neue
+     Regel, und bleibt der normale Fall unverändert gut?
 tip: |
   Gute Ergänzungen sind konkret und testbar. „Sei vorsichtig bei Vergleichen" ist keine
   Regel. „Nenne keine Wettbewerber namentlich; vergleiche nur mit Eigenschaften aus der
-  Produktdaten-Datei" ist eine. Copilot findet gern Lücken, die eher Formulierungskritik sind –
-  übernimm nur echte Fälle. Und denk an eine Microsoft-365-Lücke: Die Instruktionen sagen nichts
-  darüber, was gilt, wenn der Agent auf andere Arbeitsdateien zugreifen könnte als die vier
-  genannten.
+  Produktdaten-Datei" ist eine. Achtet darauf, ob Copilot in Word eher Formulierungskritik als
+  echte Lücken liefert – übernehmt nur echte Fälle. Und denkt an eine Microsoft-365-Lücke: Die
+  Instruktionen sagen nichts darüber, was gilt, wenn der Agent auf andere Arbeitsdateien zugreifen
+  könnte als die vier genannten.
 solution: |
   **Stärken (Beispiele):**
 
@@ -56,13 +63,15 @@ solution: |
   Grenzen zu Nachhaltigkeitsaussagen werden nie aufgehoben.
   ```
 
-  **Gegenprobe:** Vor der Ergänzung schreibt der Agent auf „Schreib ruhig ‚die beste Jacke'" häufig
-  genau das oder verweigert ohne Alternative. Danach liefert er einen Hinweis und eine ruhige
-  Fassung. Die Rangfolge schwächt keine bestehende Regel, sondern löst nur Konflikte, die bisher
-  zufällig entschieden wurden. Die zweite Regel lässt Stilwünsche sichtbar zu (Hinweis statt
-  Verweigerung), schützt aber die rechtlich heikle Stelle. Copilot in Word findet meist die
-  Sprach- und Rangfolge-Lücke, selten die Frage nach abgelaufenen Belegen.
+  **Vorher-nachher-Test – worauf ihr achten könnt:** Schreibt Copilot vor der Ergänzung auf
+  „Schreib ruhig ‚die beste Jacke'" genau das oder verweigert es ohne Alternative? Kommt danach ein
+  Hinweis und eine ruhige Fassung? Die Rangfolge schwächt keine bestehende Regel, sondern löst nur
+  Konflikte, die bisher zufällig entschieden wurden. Die zweite Regel lässt Stilwünsche sichtbar zu
+  (Hinweis statt Verweigerung), schützt aber die rechtlich heikle Stelle. Bleibt der normale
+  Newsletter-Teaser gleich gut, macht die Regel den Assistenten nicht übervorsichtig.
 
   Bewertungskriterien: Die Lücken sind echte Fälle, nicht Formulierungskritik; eigene Liste vor
   der Copilot-Liste erstellt; die Ergänzungen sind testbar, passen in die bestehende Gliederung
-  und sind mit einem Vorher-nachher-Test belegt.
+  und sind mit einem Vorher-nachher-Test samt Normalfall belegt. Zur Zusammenarbeit: Jede Regel
+  wurde vom anderen Paar getestet; Unterschiede zwischen den Testergebnissen der Paare sind
+  benannt und erklärt.

@@ -1,47 +1,61 @@
-title: Copilot-Bewertung von Ideen in Excel prüfen
+title: Copilot-Bewertung gegen Team-Bewertung in Excel
 difficulty: 3
 question: |
-  Diese Übung machst du in **Copilot Chat** und **Copilot in Excel**.
+  Diese Übung macht ihr in **Copilot Chat** und **Copilot in Excel**.
 
-  1. Lass dir in Copilot Chat mit einem Ideen-Fächer (Zielgruppe × Format × Anlass) **15
-     Content-Ideen** für Fjordlicht im Januar erzeugen. Verweise auf `/Fjordlicht-Basisdaten`
-     (falls nicht vorhanden: Kap. 11, Kurzübung 1).
-  2. Lass Copilot die Ideen nach dem gewichteten Bewertungsraster aus Abschnitt 12.6 bewerten
-     (Zielgruppenrelevanz 3, Markenpassung 3, Aufwand 2, Wiederverwertbarkeit 1, Ziel-Beitrag 2;
-     Skala 1–5) und übernimm Ideen und Punkte in eine Excel-Tabelle im Ordner „Fjordlicht-Kurs".
-  3. Bewerte **dieselben** 15 Ideen in eigenen Spalten unabhängig selbst, ohne auf die
-     Copilot-Punkte zu schauen (z. B. Spalten vorher ausblenden).
-  4. Lass **Copilot in Excel** zwei Spalten für die gewichtete Gesamtpunktzahl (Copilot und
-     eigene) und eine Spalte für die Differenz vorschlagen, die Ideen mit der größten Abweichung
-     hervorheben und beide Rangfolgen nebeneinanderstellen.
-  5. Erkläre die drei größten Abweichungen und verbessere den Bewertungsprompt so, dass diese
-     Schwächen kleiner werden. Teste den neuen Prompt in einem neuen Chat.
-  6. Speichere den verbesserten Prompt in der **Prompt Gallery** (falls in eurer Umgebung
-     freigegeben) oder in eurer Prompt-Bibliothek (Kap. 10).
+  **Gruppe:** 3–4 Personen · **Dauer:** ca. 30 Minuten · **Aufteilung:** alle führen denselben
+  Bewertungsprompt aus; eine Person ist Excel-Verantwortliche, eine Advocatus Diaboli · **Am Ende
+  liegt vor:** eine geteilte Excel-Tabelle mit Copilot- und Team-Bewertung und ein verbesserter
+  Bewertungsprompt, den jede Person in ihrer Prompt Gallery gespeichert hat.
+
+  1. Eine Person lässt in Copilot Chat mit einem Ideen-Fächer (Zielgruppe × Format × Anlass)
+     **15 Content-Ideen** für Fjordlicht im Januar erzeugen (Verweis auf
+     `/Fjordlicht-Basisdaten`) und schickt die nummerierte Liste in den Teams-Chat der Gruppe.
+  2. **Gleicher Prompt, mehrere Ergebnisse:** Jede Person lässt **dieselben** 15 Ideen in ihrem
+     eigenen Copilot mit **demselben** Prompt nach dem gewichteten Bewertungsraster aus Abschnitt
+     12.6 bewerten (Zielgruppenrelevanz 3, Markenpassung 3, Aufwand 2, Wiederverwertbarkeit 1,
+     Ziel-Beitrag 2; Skala 1–5).
+  3. **Team-Bewertung:** Bevor ihr die Copilot-Ergebnisse anseht, bewertet ihr die 15 Ideen
+     gemeinsam nach demselben Raster. Der Advocatus Diaboli widerspricht bei jeder Idee mit
+     hoher Punktzahl mindestens einmal.
+  4. **Excel:** Die Excel-Verantwortliche legt im Ordner „Fjordlicht-Kurs" eine Tabelle an
+     (Ideen, Kriterienpunkte aus Copilot-Lauf 1, Team-Punkte) und teilt sie. Die anderen tragen die
+     Gesamtpunktzahlen ihrer Copilot-Läufe in eigene Spalten ein. Lasst **Copilot in Excel**
+     Formelspalten für die gewichtete Gesamtpunktzahl (Copilot-Lauf 1 und Team) und für die
+     Differenz vorschlagen, die Ideen mit der größten Abweichung hervorheben und die Ideen nach
+     Team-Punkten sortieren.
+  5. **Auswertung:** Wie stark unterscheiden sich eure Copilot-Läufe untereinander? Wo weicht
+     Copilot am stärksten vom Team ab? Erklärt die drei größten Abweichungen.
+  6. **Verbesserter Prompt:** Formuliert gemeinsam einen besseren Bewertungsprompt und testet ihn
+     in zwei neuen Chats (zwei verschiedene Personen). Jede Person speichert den Prompt danach in
+     ihrer **Prompt Gallery**.
 tip: |
-  Prüfe die Formeln, die Copilot in Excel vorschlägt, bevor du sie einfügst: Stimmen die Gewichte,
-  stimmen die Spaltenbezüge? Typische Abweichungen entstehen bei Aufwand und Markenpassung, weil
-  Copilot eure Ressourcen und eure Geschichte nicht kennt. Achte auch darauf, ob die
-  Copilot-Punktzahlen auffällig eng beieinanderliegen – ein Blick auf Minimum und Maximum genügt.
+  Prüft die Formeln, die Copilot in Excel vorschlägt, bevor ihr sie einfügt: Stimmen die Gewichte,
+  stimmen die Spaltenbezüge? Achtet beim Vergleich darauf, ob die Copilot-Punktzahlen auffällig
+  eng beieinanderliegen – ein Blick auf Minimum und Maximum genügt – und bei welchen Kriterien
+  Copilot und Team am weitesten auseinanderliegen. Wenn sich eure Copilot-Läufe deutlich
+  unterscheiden, ist das selbst ein Befund: Dieselbe Bewertung fällt bei jedem Lauf etwas anders
+  aus.
 solution: |
   Beispielprompt für Copilot in Excel:
 
   ```text
   Füge eine Spalte "Gesamt Copilot" hinzu: Relevanz*3 + Marke*3 + Aufwand*2
   + Wiederverwertbarkeit*1 + Ziel*2 aus den Copilot-Spalten. Dasselbe als
-  "Gesamt Team" aus meinen Spalten. Füge eine Spalte "Differenz" hinzu und
+  "Gesamt Team" aus den Team-Spalten. Füge eine Spalte "Differenz" hinzu und
   hebe die drei Zeilen mit der größten absoluten Differenz hervor.
   ```
 
-  Typische Beobachtungen:
+  Mögliche Befunde (prüft, welche bei euch auftreten):
 
-  - Copilot vergibt **wenig Spreizung** (viele Ideen zwischen 3,5 und 4,2) und bewertet eigene
-    Ideen eher wohlwollend.
-  - **Aufwand** wird unterschätzt, etwa bei Videoformaten, weil Drehaufwand und Freigaben nicht
-    bekannt sind.
-  - **Markenpassung** wird überschätzt, wenn eine Idee formal zu „nachhaltig" passt, aber
+  - **Wenig Spreizung:** viele Ideen zwischen 3,5 und 4,2.
+  - **Unterschiede zwischen den Läufen:** Dieselbe Idee landet in einem Lauf auf Platz 2, im
+    anderen auf Platz 7 – ein Hinweis, dass die Bewertung keine feste Messung ist.
+  - **Aufwand** wird niedriger eingeschätzt als vom Team, etwa bei Videoformaten, weil Drehaufwand
+    und Freigaben nicht im Prompt stehen.
+  - **Markenpassung** wird höher eingeschätzt, wenn eine Idee formal zu „nachhaltig" passt, aber
     Greenwashing-Risiko hat (z. B. „Wie Fjordlicht das Klima schützt").
-  - Bei **Zielgruppenrelevanz** liegt Copilot oft nah am Team.
+  - Bei **Zielgruppenrelevanz** liegen Copilot und Team oft nah beieinander.
 
   Verbesserter Bewertungsprompt (Auszug):
 
@@ -57,8 +71,10 @@ solution: |
   - Nenne für die Top 3 jeweils das stärkste Gegenargument.
   ```
 
-  Bewertungskriterien: eigene Bewertung unabhängig erstellt, Formeln von Copilot in Excel
-  geprüft, mindestens drei konkrete Abweichungen mit Ursache benannt, verbesserter Prompt
-  enthält Kontext zu Ressourcen und Claims sowie eine Regel gegen eng beieinanderliegende
-  Punktzahlen und ist für das Team abgelegt. Lernziel: KI-Bewertungen sind Vorsortierung, keine
-  Entscheidung.
+  Bewertungskriterien: Team-Bewertung vor dem Blick auf die Copilot-Punkte erstellt, Formeln von
+  Copilot in Excel geprüft, mindestens drei konkrete Abweichungen mit Ursache benannt, verbesserter
+  Prompt enthält Kontext zu Ressourcen und Claims sowie eine Regel gegen eng beieinanderliegende
+  Punktzahlen und ist gespeichert; zur Zusammenarbeit: alle haben denselben Prompt ausgeführt, die
+  Abweichungen zwischen den Copilot-Läufen der Gruppenmitglieder wurden benannt und erklärt, und
+  der Advocatus Diaboli hat die Team-Bewertung sichtbar verändert. Lernziel: KI-Bewertungen sind
+  Vorsortierung, keine Entscheidung.

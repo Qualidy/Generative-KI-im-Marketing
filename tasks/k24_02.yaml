@@ -1,8 +1,13 @@
-title: Instruktionen nach Struktur schreiben
+title: Instruktionen nach Struktur schreiben – Gruppen-Duell
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot Chat** und **Word**. Eine Kollegin hat für einen
-  Social-Media-Assistenten folgende Instruktionen geschrieben:
+  **Gruppe:** 4 Personen in zwei Paaren (bei drei Personen: eine Einzelperson gegen ein Paar),
+  ca. 30 Minuten. **Aufteilung:** **Paar A** schreibt die Instruktionen von Hand neu, **Paar B**
+  lässt Copilot neu schreiben und überarbeitet dann. **Am Ende liegt vor:** ein gemeinsamer
+  Steckbrief „Assistenten-Steckbrief_Instagram.docx" mit der Siegerfassung und einem kurzen
+  Testvergleich.
+
+  Eine Kollegin hat für einen Social-Media-Assistenten folgende Instruktionen geschrieben:
 
   ```text
   Du bist ein super kreativer Social-Media-Experte und schreibst die
@@ -13,23 +18,31 @@ question: |
   TikTok und LinkedIn.
   ```
 
-  1. Benenne mindestens **fünf** Probleme dieser Instruktionen.
-  2. Schreibe sie neu nach der Struktur aus Abschnitt 24.3 (Rolle und Ziel, Nutzende, Arbeitsablauf,
-     Regeln, Umgang mit Wissen, Ausgabeformat, Grenzen). Beschränke dich auf **Instagram**. Lege
-     dafür in Word die Datei **„Assistenten-Steckbrief_Instagram.docx"** im Ordner „Fjordlicht-Kurs"
-     an und nutze für jeden Abschnitt eine Überschrift.
-  3. **Gegenprobe mit Copilot in Word:** Stelle Copilot eine Frage zum Dokument, etwa: „Welche
-     Regeln in diesen Instruktionen widersprechen sich oder lassen Spielraum?" Übernimm nur, was
-     du selbst nachvollziehen kannst.
-  4. **Test in Copilot Chat:** Öffne zwei neue Chats. Füge im ersten die alte, im zweiten deine neue
-     Fassung als erste Nachricht ein, ergänze jeweils `/Fjordlicht-Basisdaten` als Faktenquelle
-     (falls nicht vorhanden, Kap. 11 bzw. die Produktfakten aus dem Kurs einfügen) und stelle die
-     Anfrage „Post zum Herbststart, Fokus Fleece Skog".
+  1. **Gemeinsam (5 Minuten).** Sammelt mindestens **fünf** Probleme dieser Instruktionen.
+     Eine Person legt in Word im eigenen Ordner „Fjordlicht-Kurs" die Datei
+     **„Assistenten-Steckbrief_Instagram.docx"** an und teilt sie mit der Gruppe zum Bearbeiten.
+  2. **Duell (12 Minuten).** Beide Paare schreiben eine Neufassung nach der Struktur aus Abschnitt
+     24.3 (Rolle und Ziel, Nutzende, Arbeitsablauf, Regeln, Umgang mit Wissen, Ausgabeformat,
+     Grenzen), beschränkt auf **Instagram**, je Abschnitt eine Überschrift im Steckbrief.
+     - **Paar A** schreibt selbst, ohne Copilot.
+     - **Paar B** lässt in **Copilot Chat** eine Neufassung erstellen (Problemliste und Struktur
+       mitgeben) und überarbeitet sie dann.
+  3. **Gegenprobe mit Copilot in Word (3 Minuten).** Jedes Paar stellt Copilot im Steckbrief eine
+     Frage zum Dokument: „Welche Regeln in den Instruktionen von Paar [A/B] widersprechen sich oder
+     lassen Spielraum?" Übernehmt nur, was ihr selbst nachvollziehen könnt.
+  4. **Test über Kreuz (5 Minuten).** Jede Person öffnet einen neuen Chat in Copilot Chat, fügt
+     **eine** Fassung als erste Nachricht ein (verteilt: alte Fassung, Fassung A, Fassung B),
+     ergänzt `/Fjordlicht-Basisdaten` als Faktenquelle und stellt die Anfrage „Post zum
+     Herbststart, Fokus Fleece Skog". Testet dabei jeweils die Fassung des **anderen** Paars.
+  5. **Entscheidung (5 Minuten).** Die Gruppe wählt eine Siegerfassung oder führt beide zusammen
+     und hält in zwei Sätzen fest, welche Regel den Unterschied gemacht hat.
 tip: |
-  Suche nach Widersprüchen, nach Wissen, das in den Instruktionen nichts verloren hat, und nach
+  Sucht nach Widersprüchen, nach Wissen, das in den Instruktionen nichts verloren hat, und nach
   Regeln, die Greenwashing geradezu herausfordern. Die Basisdaten-Datei ersetzt hier die spätere
-  Wissensdatei – so testest du, ob deine Instruktionen Fakten aus dem Wissen holen statt sie selbst
-  zu enthalten.
+  Wissensdatei – so testet ihr, ob eure Instruktionen Fakten aus dem Wissen holen, statt sie selbst
+  zu enthalten. Achtet bei Paar B darauf, ob Copilot Preise oder Produktfakten wieder in die
+  Instruktionen schreibt. Wer `/Fjordlicht-Basisdaten` nicht hat: Datei aus Kap. 11 oder die
+  Produktfakten aus dem Kurs einfügen.
 solution: |
   Probleme: (1) Superlativ-Rolle ohne Maßstab; (2) Widersprüche „witzig aber seriös", „kurz aber
   ausführlich" ohne Priorität; (3) „Nachhaltigkeit immer betonen" ohne Belegpflicht führt zu
@@ -61,10 +74,14 @@ solution: |
   Andere Plattformen: Hinweis auf die passenden Assistenten.
   ```
 
-  Copilot in Word findet bei der alten Fassung meist die Widersprüche, übersieht aber häufig die
-  Preise als Problem – sie wirken „hilfreich". Im Test liefert die alte Fassung typischerweise
-  Emojis, Ausrufezeichen und pauschale „nachhaltig"-Aussagen, die neue Fassung einen ruhigen Text
-  mit belegtem Fakt aus den Basisdaten (z. B. Reparaturservice) oder einer markierten Claim-Lücke.
+  Worauf ihr im Vergleich achten könnt: Findet Copilot in Word die Widersprüche, aber nicht die
+  Preise als Problem (sie wirken „hilfreich")? Liefert die alte Fassung im Test Emojis,
+  Ausrufezeichen und pauschale „nachhaltig"-Aussagen, die neuen Fassungen einen ruhigen Text mit
+  belegtem Fakt aus den Basisdaten (z. B. Reparaturservice) oder einer markierten Claim-Lücke?
+  Unterscheiden sich Fassung A und B vor allem in der Prioritätenregel?
 
-  Bewertungskriterien: mindestens fünf echte Probleme, Neufassung in allen sieben Abschnitten,
-  Prioritätenregel vorhanden, kein Faktenwissen in den Instruktionen, Testergebnis dokumentiert.
+  Bewertungskriterien: mindestens fünf echte Probleme; beide Neufassungen in allen sieben
+  Abschnitten; Siegerfassung mit Prioritätenregel und ohne Faktenwissen; Testergebnisse aller drei
+  Fassungen im Steckbrief dokumentiert. Zur Zusammenarbeit: Jede Fassung wurde vom jeweils
+  anderen Paar getestet; die Entscheidung für die Siegerfassung ist mit einem konkreten
+  Testergebnis begründet, nicht mit Geschmack.

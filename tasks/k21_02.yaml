@@ -1,37 +1,56 @@
-title: Keyword-Cluster für die Wanderhose
+title: Keyword-Cluster für die Wanderhose im Team
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot Chat** und **Excel mit Copilot**. Fjordlicht will die
-  Wanderhose „Vidde" und das Thema Wandern im Blog besser sichtbar machen.
+  **Gruppe:** 3–4 Personen · **Dauer:** etwa 30 Minuten · **Format:** Arbeitsteilung nach
+  Zielgruppe, danach Zusammenführung in einer geteilten Excel-Datei · **Am Ende liegen vor:**
+  „Keywords-Wanderhose.xlsx" mit bereinigten Clustern und ein Cluster-Plan (eine Pillar Page,
+  drei Detailartikel) zum Vorstellen.
 
-  1. Formuliere in Copilot Chat einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5), der
-     mindestens 40 Suchbegriffe rund um „Wanderhose" sammelt und in 5 bis 8 Cluster ordnet – mit
-     Spalten für Suchintention und passenden Seitentyp. Arbeite als **Prompt-Kette** (Kap. 6):
-     erst sammeln, dann Kunstbegriffe streichen lassen, dann clustern.
-  2. Übernimm die Tabelle in „Keywords-Wanderhose.xlsx" im Ordner „Fjordlicht-Kurs" und lass
-     **Copilot in Excel** Dubletten hervorheben und die Begriffe je Cluster und Intention zählen.
-  3. Prüfe das Ergebnis: Hat Copilot trotz Verbot Suchvolumina oder Schwierigkeitswerte genannt?
-     Gibt es unrealistische Begriffe oder Wettbewerbermarken?
-  4. Wähle **ein** Cluster aus und bestimme dafür eine Pillar Page und drei Detailartikel.
-  5. Ergänze in Excel eine leere Spalte „Suchvolumen (Quelle)" und notiere, welche Werte du im
-     nächsten Schritt in welchem Tool nachschlagen würdest.
+  Fjordlicht will die Wanderhose „Vidde" und das Thema Wandern im Blog besser sichtbar machen.
+
+  1. **Gemeinsamer Prompt (5 Minuten):** Einigt euch auf einen Prompt nach dem
+     P.R.O.M.P.T.-Framework (Kap. 5), der Suchbegriffe rund um „Wanderhose" sammelt – mit Spalten
+     für Cluster, Suchintention und passenden Seitentyp. Verbietet ausdrücklich Suchvolumina,
+     Schwierigkeitswerte und Wettbewerbermarken.
+  2. **Arbeitsteilung (10 Minuten):** Jede Person führt den Prompt in ihrem **Copilot Chat** aus,
+     aber für eine andere Perspektive im Purpose:
+     - **Person 1:** naturverbundene Stadtmenschen 25 bis 45, Wochenendwanderungen
+     - **Person 2:** Familien mit Kindern
+     - **Person 3:** Pflege, Reparatur und Nachhaltigkeit
+     - **Person 4** (falls vorhanden): Wandern bei Regen und Kälte
+
+     Arbeitet als **Prompt-Kette** (Kap. 6): erst mindestens 15 Begriffe sammeln, dann
+     Kunstbegriffe streichen lassen („Welche dieser Begriffe würde ein Mensch tatsächlich so
+     eintippen?"), dann clustern.
+  3. **Zusammenführen:** Eine Person legt „Keywords-Wanderhose.xlsx" in ihrem Ordner
+     „Fjordlicht-Kurs" an, formatiert die Daten als Tabelle (Spalten: Perspektive, Cluster,
+     Suchbegriff, Intention, Seitentyp) und teilt die Datei. Alle fügen ihre Begriffe ein.
+     Lasst **Copilot in Excel** doppelte oder fast gleiche Begriffe hervorheben und die Begriffe
+     je Cluster und Intention zählen.
+  4. **Prüfen:** Jede Person prüft die Zeilen einer **anderen** Perspektive: Hat Copilot trotz
+     Verbot Suchvolumina oder Schwierigkeitswerte genannt? Gibt es unrealistische Begriffe oder
+     Wettbewerbermarken? Markiert Streichkandidaten mit einem Kommentar.
+  5. **Gruppenentscheidung:** Wählt **ein** Cluster aus und legt eine Pillar Page und drei
+     Detailartikel fest. Ergänzt in Excel eine leere Spalte „Suchvolumen (Quelle)" und notiert,
+     welche Werte ihr in welchem Tool nachschlagen würdet. Eine Person stellt den Cluster-Plan in
+     zwei Minuten im Plenum vor.
 tip: |
-  Gib im Purpose die Zielgruppen von Fjordlicht mit – Familien suchen anders als
-  Stadtmenschen, die am Wochenende wandern. Und frag am Ende nach: „Welche dieser Begriffe
-  würde ein Mensch tatsächlich so eintippen?" Das sortiert Kunstbegriffe aus. Die leere
-  Volumen-Spalte erinnert daran, dass diese Zahlen aus einem SEO-Tool kommen, nicht aus Copilot.
+  Die Aufteilung nach Perspektive zeigt, wie stark der Purpose die Begriffe verändert: Familien
+  suchen anders als Stadtmenschen, die am Wochenende wandern. Achtet beim Zusammenführen darauf,
+  wo sich die Listen überschneiden – das sind oft die Kernbegriffe. Die leere Volumen-Spalte
+  erinnert daran, dass diese Zahlen aus einem SEO-Tool kommen, nicht aus Copilot (Abschnitt 21.4).
 solution: |
-  Beispiel-Prompt (Copilot Chat, erster Schritt der Kette):
+  Beispiel-Prompt (Copilot Chat, erster Schritt der Kette, Person 2):
 
   ```text
   Persona: Du bist SEO-Spezialistin für Outdoor-E-Commerce.
   Request: Sammle Suchbegriffe rund um "Wanderhose" und ordne sie in Cluster.
   Output: Tabelle Cluster | Suchbegriff | Intention | Seitentyp, mindestens
-  40 Begriffe, 5 bis 8 Cluster.
+  15 Begriffe.
   Modifier: keine Suchvolumina, keine Schwierigkeitswerte, keine
   Wettbewerbermarken, Alltagssprache und Fragen einbeziehen.
   Purpose: Content-Planung für Fjordlicht (nachhaltige Outdoor-Marke);
-  Zielgruppen: Stadtmenschen 25 bis 45, Familien.
+  Zielgruppe: Familien mit Kindern, die gemeinsam wandern.
   Tone: sachlich, ohne Einleitung.
   ```
 
@@ -43,13 +62,13 @@ solution: |
   je Cluster und je Intention in einer Übersicht.
   ```
 
-  Mögliche Cluster: Kaufberatung (Material, Passform), Wanderhose Damen/Herren/Kinder,
-  Zip-Off und Funktion, Pflege, Wandern bei Regen/Kälte, Nachhaltigkeit.
+  Mögliche Cluster nach dem Zusammenführen: Kaufberatung (Material, Passform), Wanderhose
+  Damen/Herren/Kinder, Zip-Off und Funktion, Pflege, Wandern bei Regen/Kälte, Nachhaltigkeit.
 
-  Typische Prüfbefunde: vereinzelt doch Zahlen („hohes Volumen") → streichen; Dubletten wie
-  „wanderhose damen" und „damen wanderhose"; Kunstbegriffe wie „Wanderhose
-  Performance-Lösung"; ein Cluster mit fast nur transaktionalen Begriffen, der eher zur
-  Kategorieseite als zum Blog passt.
+  Mögliche Prüfbefunde: vereinzelt doch Zahlen („hohes Volumen") → streichen; Dubletten über
+  Perspektiven hinweg wie „wanderhose damen" und „damen wanderhose"; Kunstbegriffe wie
+  „Wanderhose Performance-Lösung"; ein Cluster mit fast nur transaktionalen Begriffen, der eher
+  zur Kategorieseite als zum Blog passt.
 
   Beispiel Cluster „Pflege": Pillar Page „Outdoor-Hosen richtig pflegen"; Detailartikel
   „Wanderhose waschen ohne Funktion zu verlieren", „Grasflecken aus Wanderhose entfernen",
@@ -58,3 +77,13 @@ solution: |
   Nachschlagen: Suchvolumen und Saison im Keyword Planner bzw. Google Trends, bestehende
   Sichtbarkeit in der Search Console, Wettbewerb in Sistrix oder Semrush. Die Werte landen mit
   Quellenangabe in der vorbereiteten Spalte.
+
+  Bewertungskriterien:
+
+  - Ein gemeinsamer Prompt mit Verbot von Zahlen und Wettbewerbermarken; jede Perspektive hat
+    die Prompt-Kette durchlaufen.
+  - Dubletten sind hervorgehoben und bereinigt, die Zählung stammt aus Excel.
+  - Die Kreuzprüfung hat Streichkandidaten gefunden und begründet.
+  - Die Gruppe hat benannt, welche Begriffe nur aus einer Perspektive kamen – und was das über
+    den Einfluss des Purpose sagt.
+  - Der Cluster-Plan passt inhaltlich zusammen und nennt keine Zahl ohne Quelle.

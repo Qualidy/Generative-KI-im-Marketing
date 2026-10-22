@@ -1,6 +1,10 @@
-title: Hypothese, Variable, Zielmetrik – Copilot urteilt, du prüfst
+title: Hypothese, Variable, Zielmetrik – vier Ideen, vier Prüfende
 difficulty: 1
 question: |
+  **Gruppe:** 4 Personen (bei 3 Personen übernimmt eine Person zwei Ideen), ca. 20 Minuten.
+  **Am Ende liegt vor:** eine gemeinsame Bewertungstabelle der vier Ideen und eine umformulierte
+  Testidee mit geprüften Varianten A und B.
+
   Das Fjordlicht-Team hat vier Testideen gesammelt:
 
   1. Betreff A: `Neu: Fleece Skog` – Betreff B: `Endlich da: Unser neues Fleece Skog für
@@ -11,19 +15,25 @@ question: |
   4. Produkttext Wanderhose „Vidde": A beginnt mit Material, B mit Anwendungsfall, sonst
      identisch – Ziel: Warenkorbrate. Keine Hypothese notiert.
 
-  1. **Erst urteilen, dann Copilot.** Beurteile jede Idee selbst in Stichworten: Ist eine
-     Hypothese erkennbar? Unterscheiden sich die Varianten in **genau einer** Variable? Ist die
-     Zielmetrik sinnvoll?
-  2. **In Copilot Chat.** Gib Copilot die vier Ideen mit genau diesen drei Prüffragen und lass
-     das Ergebnis als Tabelle ausgeben. Vergleiche mit deinem Urteil: Wo weicht Copilot ab, und
-     wer hat recht?
-  3. **Umformulieren.** Formuliere die schwächste Idee zu einer Hypothese im Format
-     „Wenn …, dann …, weil …". Lass Copilot dazu Variante B erzeugen, die sich nur in **einem**
-     Punkt von A unterscheidet, und prüfe Wort für Wort selbst, ob das stimmt.
+  1. **Arbeitsteilung: erst urteilen.** Jede Person übernimmt eine Idee und beurteilt sie in
+     Stichworten: Ist eine Hypothese erkennbar? Unterscheiden sich die Varianten in **genau
+     einer** Variable (zählt die Unterschiede einzeln auf)? Ist die Zielmetrik sinnvoll? Stellt
+     eure Urteile reihum in zwei Minuten vor.
+  2. **Gleicher Prompt, mehrere Ergebnisse.** Alle geben Copilot Chat denselben Prompt mit allen
+     vier Ideen und den drei Prüffragen und lassen das Ergebnis als Tabelle ausgeben. Legt die
+     Tabellen nebeneinander (Teams-Chat der Gruppe): Wo sind sich die Copilot-Antworten
+     untereinander einig, wo nicht? Wo weichen sie von eurem eigenen Urteil ab – und wer hat recht?
+  3. **Gruppenentscheidung.** Einigt euch auf die schwächste Idee und formuliert sie gemeinsam
+     als Hypothese im Format „Wenn …, dann …, weil …".
+  4. **Gegenprobe.** Eine Person lässt Copilot dazu Variante B erzeugen, die sich nur in
+     **einem** Punkt von A unterscheidet. Eine andere Person, die den Prompt nicht geschrieben
+     hat, prüft Wort für Wort, ob das stimmt. Stellt Hypothese und Varianten in einer Minute im
+     Plenum vor.
 tip: |
-  Prüfe zuerst die Variablen: Zähle, wie viele Dinge sich zwischen A und B unterscheiden. Dann
-  die Metrik: Misst sie wirklich das, was das Marketing erreichen will? Achte bei Copilots Urteil
-  besonders auf die Öffnungsrate – Modelle akzeptieren sie oft unkritisch als Zielmetrik.
+  Prüft zuerst die Variablen: Zählt, wie viele Dinge sich zwischen A und B unterscheiden. Dann
+  die Metrik: Misst sie wirklich das, was das Marketing erreichen will? Achtet beim Vergleich der
+  Copilot-Tabellen besonders auf Idee 1: Wird die Öffnungsrate in allen Antworten kritisch
+  eingeordnet – und zählen alle Antworten gleich viele Unterschiede?
 solution: |
   Beispiel-Prompt:
 
@@ -41,14 +51,20 @@ solution: |
   | 3 | fehlt | nein (Emojis und Hook) | Likes sind ein schwaches Ziel | schwach |
   | 4 | fehlt | ja | passend | Setup gut, Hypothese ergänzen |
 
-  Typische Abweichung: Copilot zählt bei Idee 1 nur zwei Unterschiede oder hält die
-  Öffnungsrate für unproblematisch. Hier hat die Prüfung aus Abschnitt 16.1 recht.
+  Mögliche Abweichungen beim Vergleich: Eine Copilot-Antwort zählt bei Idee 1 nur zwei
+  Unterschiede, eine andere vier; eine hält die Öffnungsrate für unproblematisch, eine andere
+  nicht. Maßstab ist die Prüfung aus Abschnitt 16.1, nicht die Mehrheit der Antworten.
 
   Umformulierung von Idee 1 (Beispiel): „Wenn der Betreff einen konkreten Einsatzzweck nennt
   (‚für kalte Tage') statt nur die Neuheit, steigt die **Klickrate**, weil unsere Leser:innen
   Produkte nach Situation auswählen." Dazu Variante A: `Neu: Fleece Skog`, Variante B:
-  `Neu: Fleece Skog für kalte Tage` – nur der Zusatz unterscheidet sich. Schlägt Copilot etwa
-  `Neu: Fleece Skog – endlich warm durch kalte Tage` vor, testet das wieder zwei Dinge.
+  `Neu: Fleece Skog für kalte Tage` – nur der Zusatz unterscheidet sich. Lautet der Vorschlag
+  etwa `Neu: Fleece Skog – endlich warm durch kalte Tage`, testet er wieder zwei Dinge.
 
   Idee 3 lässt sich retten, indem nur die Emoji-Anzahl variiert wird. Likes als Ziel bleiben
   aber fragwürdig; besser sind Speicherungen oder Profilklicks, wenn es um Interesse geht.
+
+  Bewertungskriterien: Jede Idee wurde zuerst ohne Copilot beurteilt; Abweichungen zwischen den
+  Copilot-Tabellen der Gruppenmitglieder wurden benannt und gegen Abschnitt 16.1 entschieden;
+  die Hypothese folgt dem Format; Variante B wurde von einer zweiten Person nachweislich auf
+  genau eine Variable geprüft.

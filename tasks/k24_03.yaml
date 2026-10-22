@@ -1,6 +1,12 @@
-title: Eine Wissensdatei aufbereiten
+title: Eine Wissensdatei aufbereiten – Mensch gegen Copilot
 difficulty: 3
 question: |
+  **Gruppe:** 3–4 Personen, ca. 30 Minuten. **Rollen:** **Redaktion** (bereitet von Hand auf),
+  **Copilot-Fassung** (lässt Copilot in Word umschreiben), **Prüferin** (vergleicht beide Fassungen
+  mit dem Original), bei vier Personen zusätzlich **Protokoll**. Den Auffindbarkeitstest machen alle.
+  **Am Ende liegt vor:** die Wissensdatei „Fjordlicht_Markenstimme_2026-10.docx" in jedem eigenen
+  Ordner „Fjordlicht-Kurs" und eine Liste der abgelehnten Copilot-Ergänzungen.
+
   Der Fjordlicht-Styleguide liegt als Fließtext vor (Auszug):
 
   ```text
@@ -15,22 +21,35 @@ question: |
   lieber "draußen sein". Unsere Schrift ist die Fjord Sans.
   ```
 
-  1. **Selbst aufbereiten:** Lege in Word die Datei **„Fjordlicht_Markenstimme_2026-10.docx"** im
-     Ordner „Fjordlicht-Kurs" an – als Wissensdatei für einen **Text**-Assistenten: sinnvolle
-     Abschnitte mit Word-Überschriftenformaten (keine Textfelder), nur relevante Inhalte, eindeutige
-     Regeln, mindestens ein Beispiel vorher/nachher.
-  2. Begründe, welche Inhalte du entfernt hast und warum.
-  3. **Copilot-Fassung:** Füge den Auszug in ein zweites, leeres Word-Dokument ein und lass ihn mit
-     **Copilot in Word** zur Wissensdatei umschreiben. Vergleiche mit deiner Fassung: Wo hat Copilot
-     etwas hinzugefügt, das nicht im Original steht?
-  4. **Auffindbarkeit testen:** Stelle in **Copilot Chat** zwei Fragen an deine Datei (per `/` einbinden):
-     „Welches Wort verwenden wir statt ‚Abenteuer'?" und „Dürfen wir ‚grün' schreiben?" Findet
-     Copilot die Antworten eindeutig?
+  1. **Parallel aufbereiten (12 Minuten).**
+     - **Redaktion:** Lege in Word die Datei **„Fjordlicht_Markenstimme_2026-10.docx"** im Ordner
+       „Fjordlicht-Kurs" an und teile sie mit der Gruppe zum Bearbeiten – als Wissensdatei für einen
+       **Text**-Assistenten: sinnvolle Abschnitte mit Word-Überschriftenformaten (keine
+       Textfelder), nur relevante Inhalte, eindeutige Regeln, mindestens ein Beispiel
+       vorher/nachher.
+     - **Copilot-Fassung:** Füge den Auszug in ein zweites, leeres Word-Dokument ein, markiere ihn
+       und lass ihn mit **Copilot in Word** zu einer gegliederten Wissensdatei für einen
+       Text-Assistenten umschreiben.
+     - **Prüferin:** Markiere im Original jeden Satz: Hilft er einem Text-Assistenten – ja oder
+       nein?
+  2. **Vergleich (8 Minuten).** Die Prüferin vergleicht beide Fassungen mit ihren Markierungen:
+     Wo hat Copilot etwas hinzugefügt, das nicht im Original steht? Wo hat die Redaktion etwas
+     entfernt, das die Prüferin behalten würde? Ergänzungen und Streichungen als **Kommentare** in
+     der Datei der Redaktion festhalten; die Gruppe entscheidet jeden Kommentar.
+  3. **Auffindbarkeit testen (7 Minuten).** Alle speichern eine Kopie der fertigen Datei unter
+     demselben Namen im eigenen Ordner „Fjordlicht-Kurs". Dann stellen alle in **Copilot Chat**
+     dieselben zwei Fragen an die Datei (per `/` einbinden): „Welches Wort verwenden wir statt
+     ‚Abenteuer'?" und „Dürfen wir ‚grün' schreiben?" Vergleicht: Finden alle die Antworten
+     eindeutig, und nennen alle Antworten dieselbe Regel?
+  4. **Abschluss (3 Minuten).** Begründet in zwei Sätzen, welche Inhalte ihr entfernt habt und
+     warum.
 tip: |
-  Eine Wissensdatei ist kein Markenbuch. Frage bei jedem Satz: Hilft das dem Assistenten, einen
-  Text zu schreiben oder zu prüfen? Achte im Copilot-Vergleich auf „hilfreiche" Ergänzungen – sie
-  sind genau das Problem. Der Auffindbarkeitstest zeigt dir, was ein Agent später aus der Datei
-  herausholt: nur das, was klar gegliedert dasteht.
+  Eine Wissensdatei ist kein Markenbuch. Fragt bei jedem Satz: Hilft das dem Assistenten, einen
+  Text zu schreiben oder zu prüfen? Achtet im Copilot-Vergleich auf „hilfreiche" Ergänzungen – sie
+  sind genau das Problem. Der Auffindbarkeitstest zeigt euch, was ein Agent später aus der Datei
+  herausholt: nur das, was klar gegliedert dasteht. Weichen die Antworten zwischen euch ab, liegt
+  das womöglich an einer unklar formulierten Regel – oder daran, dass jemand eine andere Datei
+  eingebunden hat.
 solution: |
   Mögliche Wissensdatei (Überschriften als Word-Formatvorlagen):
 
@@ -57,15 +76,18 @@ solution: |
   „Über uns" wandern), Farbcodes, Schrift, Fotohinweis (gehören in einen Bildsprache-Guide,
   Kap. 32), „mehr als eine Marke – ein Gefühl" (keine Regel).
 
-  Typische Copilot-Zusätze im Vergleich: zusätzliche Tabu-Wörter, eine erfundene Zielgruppe, eine
-  Regel zu Emojis oder Hashtags, eine „Tonalität: inspirierend". Jede dieser Ergänzungen wäre ab
-  dann verbindlich für den Assistenten – ohne dass das Team sie je beschlossen hat. Deshalb gilt:
-  Copilot darf beim Aufbereiten helfen, aber jede Regel braucht eine Quelle im Original.
+  Ergänzungen, auf die die Prüferin achten kann: zusätzliche Tabu-Wörter, eine erfundene
+  Zielgruppe, eine Regel zu Emojis oder Hashtags, eine „Tonalität: inspirierend". Jede dieser
+  Ergänzungen wäre ab dann verbindlich für den Assistenten – ohne dass das Team sie je beschlossen
+  hat. Deshalb gilt: Copilot darf beim Aufbereiten helfen, aber jede Regel braucht eine Quelle im
+  Original.
 
-  Im Auffindbarkeitstest beantwortet Copilot beide Fragen bei der gegliederten Datei meist direkt
-  und mit Verweis auf die Datei. Wer denselben Test mit dem unbearbeiteten Fließtext macht, bekommt
-  oft eine korrekte, aber vermischte Antwort – etwa Farbcodes neben der Wortwahl.
+  Im Auffindbarkeitstest sollten beide Fragen bei der gegliederten Datei direkt und mit Verweis
+  auf die Datei beantwortet werden. Wer zum Vergleich den unbearbeiteten Fließtext einbindet, kann
+  beobachten, ob die Antwort vermischter ausfällt – etwa Farbcodes neben der Wortwahl.
 
   Bewertungskriterien: Gliederung mit echten Überschriftenformaten, nur textrelevante Inhalte,
   Beispiel vorhanden, mindestens eine Copilot-Ergänzung erkannt und begründet abgelehnt,
-  Auffindbarkeitstest dokumentiert.
+  Auffindbarkeitstest von allen durchgeführt. Zur Zusammenarbeit: Jeder Kommentar der Prüferin ist
+  entschieden; Abweichungen zwischen den Testantworten der Gruppenmitglieder sind benannt und
+  erklärt; jede Person hat die Datei im eigenen Ordner.

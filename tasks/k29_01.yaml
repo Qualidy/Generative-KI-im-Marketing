@@ -1,20 +1,26 @@
-title: Wie Bild-KI arbeitet – erst ausprobieren, dann prüfen
+title: Wie Bild-KI arbeitet – ein Prompt, viele Jacken
 difficulty: 1
 question: |
-  **Teil 1 – kurzer Versuch in Copilot.** Öffne Copilot Chat in der Microsoft-365-Copilot-App
-  (oder die Create-Funktion, falls in eurer Umgebung freigegeben) und erzeuge zwei Bilder:
+  **Gruppenarbeit, 3–4 Personen, ca. 20 Minuten.** Am Ende liegen eine Bildersammlung im
+  Teams-Chat eurer Gruppe und eine gemeinsame Bewertung von sechs Aussagen vor.
+
+  **Teil 1 – gleicher Prompt, mehrere Ergebnisse.** Alle öffnen Copilot Chat in der
+  Microsoft-365-Copilot-App, starten eine neue Unterhaltung und erzeugen ein Bild mit genau
+  diesem Prompt:
 
   ```text
   Erzeuge ein Foto: die Regenjacke "Sølv" von Fjordlicht, getragen von einer
   Person auf einem Waldweg im Regen.
   ```
 
-  Starte danach eine **neue** Unterhaltung und verwende denselben Prompt noch einmal.
-  Notiere: Sieht die Jacke auf beiden Bildern gleich aus? Würdest du eines davon im Webshop
+  Postet eure Bilder in den Teams-Chat der Gruppe. Vergleicht: Sieht die Jacke auf allen
+  Bildern gleich aus (Farbe, Kragen, Taschen, Schriftzug)? Würdet ihr eines davon im Webshop
   als „Sølv" zeigen?
 
-  **Teil 2 – Aussagen prüfen.** Entscheide für jede Aussage, ob sie **stimmt** oder **nicht
-  stimmt**, und begründe in einem Satz – wo möglich mit deiner Beobachtung aus Teil 1.
+  **Teil 2 – Aussagen prüfen in Paaren.** Teilt euch auf: Ein Paar bewertet die Aussagen 1–3,
+  das andere 4–6 (zu dritt: jede Person zwei). Entscheidet jeweils, ob die Aussage **stimmt**
+  oder **nicht stimmt**, und begründet in einem Satz – wo möglich mit eurer Beobachtung aus
+  Teil 1.
 
   1. Wenn du „Regenjacke im Wald" eingibst, sucht die Bild-KI ein passendes Foto aus ihrem
      Trainingsbestand heraus.
@@ -24,30 +30,39 @@ question: |
   5. Die Bild-KI kennt die Fjordlicht-Regenjacke „Sølv" und kann sie detailgetreu zeigen.
   6. Outpainting erweitert ein Bild über seinen ursprünglichen Rand hinaus.
 
-  Ordne anschließend zu, welcher **Arbeitsmodus** (Text-zu-Bild, Bild-zu-Bild, Bearbeitung) zu
-  diesen Aufgaben passt: (a) Moodboard für eine neue Kampagne, (b) Hochformat-Foto für einen
-  16:9-Newsletter-Header verbreitern, (c) eine Bleistiftskizze in ein ausgearbeitetes Motiv
-  übertragen.
+  Stellt euch die Ergebnisse gegenseitig vor und ordnet gemeinsam zu, welcher
+  **Arbeitsmodus** (Text-zu-Bild, Bild-zu-Bild, Bearbeitung) zu diesen Aufgaben passt: (a)
+  Moodboard für eine neue Kampagne, (b) Hochformat-Foto für einen breiten Newsletter-Header
+  verbreitern, (c) eine Bleistiftskizze in ein ausgearbeitetes Motiv übertragen.
+
+  **Abschluss:** Einigt euch auf einen Satz für das Plenum: Was zeigen eure Bilder über
+  Aussage 5?
 tip: |
-  Denk an den Kernsatz aus 29.1: Bild-KI erfindet plausibel, sie bildet nicht ab. Teil 1
-  zeigt dir das in zwei Minuten – der Produktname im Prompt ändert nichts daran, dass das
-  Modell das echte Produkt nicht kennt.
+  Denkt an den Kernsatz aus 29.1: Bild-KI erfindet plausibel, sie bildet nicht ab. Teil 1
+  zeigt euch das in zwei Minuten – und mit drei oder vier Bildern nebeneinander noch
+  deutlicher als mit einem. Der Produktname im Prompt ändert nichts daran, dass das Modell
+  das echte Produkt nicht kennt.
 solution: |
-  Typische Beobachtung in Teil 1: Copilot erzeugt zwei ordentliche Bilder einer
-  Regenjacke – mit unterschiedlicher Farbe, anderem Kragen, anderen Taschen. Manchmal steht
-  sogar ein erfundenes Logo oder der Schriftzug „Sølv" auf der Jacke. Keines der Bilder zeigt
-  die echte Jacke; im Webshop wäre es irreführend.
+  Mögliche Beobachtungen in Teil 1 – achtet darauf, welche bei euch auftreten: Jede Person
+  bekommt eine ordentliche Regenjacke, aber mit unterschiedlicher Farbe, anderem Kragen,
+  anderen Taschen. Auf manchen Bildern steht ein erfundenes Logo oder der Schriftzug „Sølv".
+  Keines der Bilder zeigt die echte Jacke; im Webshop wäre jedes davon irreführend.
 
   | Nr. | Bewertung | Begründung |
   |---|---|---|
   | 1 | stimmt nicht | Das Modell berechnet ein neues Bild aus gelernten Mustern, es gibt keinen Abruf. |
   | 2 | stimmt | Das ist das Grundprinzip der Diffusion: vom Rauschen zum Bild, gelenkt durch den Text. |
-  | 3 | stimmt nicht | Jede Generierung startet mit neuem Zufall – das zeigt Teil 1; nur ein fester Seed bringt Nähe. |
-  | 4 | stimmt | Anweisungsbasierte Bearbeitung ist die Stärke von Chat-Bildmodellen wie ChatGPT Images oder der Bilderzeugung in Copilot. |
-  | 5 | stimmt nicht | Sie kennt Regenjacken allgemein, nicht euer konkretes Produkt – zwei verschiedene „Sølv"-Jacken in Teil 1 belegen es. |
+  | 3 | stimmt nicht | Jede Generierung startet mit neuem Zufall – das zeigen die unterschiedlichen Bilder aus Teil 1; nur ein fester Seed bringt Nähe. |
+  | 4 | stimmt | Anweisungsbasierte Bearbeitung ist eine Stärke von Chat-Bildmodellen wie ChatGPT Images oder Gemini (Abschnitt 29.3). |
+  | 5 | stimmt nicht | Sie kennt Regenjacken allgemein, nicht euer konkretes Produkt – mehrere verschiedene „Sølv"-Jacken aus Teil 1 belegen es. |
   | 6 | stimmt | Outpainting bzw. „Generatives Erweitern" ergänzt Bildbereiche außerhalb des Rands. |
 
   Zuordnung: (a) Text-zu-Bild, (b) Bearbeitung (Outpainting), (c) Bild-zu-Bild.
 
   Aussage 5 ist die wichtigste für den Marketing-Alltag: Wer echte Produkte zeigen will,
   braucht echte Fotos oder bearbeitet echte Fotos, ohne das Produkt zu verändern.
+
+  Bewertungskriterien: alle Bilder der Gruppe gesammelt und verglichen; die Unterschiede
+  zwischen den Jacken konkret benannt (nicht nur „sehen anders aus") und mit Aussage 3 und 5
+  verbunden; alle sechs Aussagen richtig bewertet und begründet; Arbeitsmodi korrekt
+  zugeordnet.

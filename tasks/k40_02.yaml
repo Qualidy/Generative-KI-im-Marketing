@@ -1,39 +1,53 @@
-title: Dein 90-Tage-Plan mit Copilot
+title: Dein 90-Tage-Plan mit Copilot – im Tandem geprüft
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot Chat**. Dein Plan soll Copilot dort einsetzen, wo es im
-  Arbeitsalltag am meisten bringt: Outlook, Teams-Recap, Excel, Notebooks und Prompt Gallery.
+  **Paararbeit (Tandem):** 2 Personen, bei ungerader Zahl eine Dreiergruppe mit Ringtausch,
+  ca. 30 Minuten, in **Copilot Chat** und **Copilot Pages**. Jede Person erstellt ihren eigenen
+  Plan, die Partnerin oder der Partner prüft ihn. Am Ende hat jede Person einen geprüften Plan
+  in einer geteilten Page und einen Rückblicktermin im Kalender.
 
-  1. Nutze den Prompt aus Abschnitt 40.4 und fülle alle Platzhalter mit deiner realen Ausgangslage:
-     angestrebte oder aktuelle Rolle, Zeit pro Woche, Stärken und Unsicherheiten aus dem Kurs. Gib
-     als verfügbare Werkzeuge **Microsoft 365 Copilot** mit den Funktionen an, die bei dir
-     freigegeben sind.
-  2. Prüfe den Vorschlag mit diesen fünf Fragen:
+  Euer Plan soll Copilot dort einsetzen, wo es im Arbeitsalltag am meisten bringt: Outlook,
+  Teams, Word, Excel, Pages und Prompt Gallery.
+
+  1. **Plan erstellen (jede Person für sich):** Nutzt den Prompt aus Abschnitt 40.4 und füllt
+     alle Platzhalter mit eurer realen Ausgangslage: angestrebte oder aktuelle Rolle, Zeit pro
+     Woche, Stärken und Unsicherheiten aus dem Kurs. Gebt als verfügbares Werkzeug **Microsoft
+     365 Copilot** an.
+  2. **Plan teilen:** Übernehmt euren Plan in eine **Copilot Page** und teilt sie mit eurem
+     Tandem.
+  3. **Gegenseitig prüfen:** Ihr lest den Plan der anderen Person und prüft ihn mit diesen fünf
+     Fragen. Notiert eure Antworten direkt in ihrer Page:
      - Ist jede Phase mit der angegebenen Zeit realistisch?
-     - Setzt der Plan Werkzeuge, Funktionen oder Daten voraus, die du nicht hast?
-     - Ist jedes Ergebnis prüfbar, also ja oder nein beantwortbar?
+     - Setzt der Plan Werkzeuge, Funktionen oder Daten voraus, die die Person nicht hat?
+     - Ist jedes Ergebnis prüfbar, also mit Ja oder Nein beantwortbar?
      - Enthält der Plan mindestens einen Schritt zu Datenschutz, Recht oder Kennzeichnung?
-     - Nutzt der Plan mindestens drei Alltagsfunktionen (z. B. Outlook-Entwürfe, Teams-Recap,
-       Excel-Auswertung, Notebook, Prompt Gallery)?
-  3. Überarbeite den Plan im Dialog, bis alle fünf Fragen mit Ja beantwortet sind.
-  4. Übernimm den fertigen Plan in eine **Copilot Page** und speichere den Prompt aus Schritt 1
-     in der **Prompt Gallery**, damit du ihn nach 30 Tagen wiederverwenden kannst.
-  5. Trage die drei Phasenziele in deinen Outlook-Kalender ein – mit einem Termin für den
-     Rückblick nach 30 Tagen.
+     - Nutzt der Plan mindestens drei Alltagsfunktionen (z. B. Entwürfe in Outlook,
+       Besprechungszusammenfassung in Teams, Auswertung in Excel, Copilot Pages, Prompt Gallery)?
+  4. **Überarbeiten:** Jede Person überarbeitet ihren Plan im Dialog mit Copilot, bis alle fünf
+     Fragen mit Ja beantwortet sind, und aktualisiert die Page. Das Tandem bestätigt die
+     Überarbeitung.
+  5. **Sichern und terminieren:** Speichert den Prompt aus Schritt 1 in eurer **Prompt
+     Gallery**, damit ihr ihn nach 30 Tagen wiederverwenden könnt, und tragt die drei
+     Phasenziele in euren Outlook-Kalender ein – mit einem gemeinsamen Termin für den Rückblick
+     im Tandem nach 30 Tagen.
+  6. **Abschluss:** Nennt im Plenum je eine Änderung, die erst durch das Feedback eures Tandems
+     in den Plan gekommen ist.
 tip: |
-  KI-Pläne sind fast immer zu voll. Ein guter Plan hat lieber drei Aufgaben pro Phase, die du
-  wirklich erledigst, als acht, von denen du zwei schaffst. „Mehr mit KI arbeiten" ist kein Ergebnis,
-  „10 getestete Prompts in der Prompt Gallery" schon. Wenn Copilot Funktionen vorschlägt, die bei
-  dir nicht freigegeben sind, streiche sie oder plane die Klärung mit der IT als eigene Aufgabe.
+  KI-Pläne sind oft zu voll – achtet beim Prüfen besonders darauf. Ein guter Plan hat lieber drei
+  Aufgaben pro Phase, die man wirklich erledigt, als acht, von denen man zwei schafft. „Mehr mit
+  KI arbeiten" ist kein Ergebnis, „10 getestete Prompts in der Prompt Gallery" schon. Wenn
+  Copilot Werkzeuge oder Funktionen vorschlägt, die ihr im Kurs nicht genutzt habt, streicht sie.
+  Als Prüferin oder Prüfer seid ihr ehrlich, aber konkret: Statt „zu viel" lieber „Phase 2 hat
+  sechs Aufgaben bei zwei Stunden pro Woche".
 solution: |
-  Typische Schwächen des ersten Copilot-Vorschlags und passende Korrekturen:
+  Häufige Schwächen eines ersten Copilot-Vorschlags und passende Korrekturen:
 
   | Schwäche | Korrektur |
   |---|---|
   | 10–15 Aufgaben pro Phase | auf drei konzentrieren |
   | Ergebnis „Kenntnisse vertiefen" | messbar machen: „ein Agent mit fünf Testfällen" |
-  | setzt Funktionen voraus, die nicht freigegeben sind (z. B. Copilot Studio) | auf verfügbare Funktionen beschränken oder Freigabe als Aufgabe |
-  | nur Copilot Chat, keine Office-Apps | Alltagsfunktionen einplanen: Outlook-Entwürfe, Teams-Recap, Excel |
+  | setzt Werkzeuge voraus, die nicht vorhanden sind | auf Microsoft 365 Copilot und bekannte Funktionen beschränken |
+  | nur Copilot Chat, keine Office-Apps | Alltagsfunktionen einplanen: Entwürfe in Outlook, Besprechungszusammenfassung in Teams, Excel |
   | kein Bezug zu Recht oder Datenschutz | eine Aufgabe ergänzen, etwa Datenampel für die eigene Arbeit |
   | Phase 3 ohne Vergleich | Vorher/Nachher-Messung einer Aufgabe einplanen |
 
@@ -41,18 +55,25 @@ solution: |
 
   ```text
   Tage 1-30 – Ziel: Copilot täglich in Routineaufgaben nutzen
-  1. jede Teams-Besprechung mit Recap nachbereiten, Aufgaben übernehmen
+  1. transkribierte Teams-Besprechungen mit der Copilot-Zusammenfassung
+     nachbereiten, Aufgaben übernehmen
   2. Newsletter- und Abstimmungsmails mit Copilot in Outlook entwerfen
   3. 10 getestete Prompts in der Prompt Gallery speichern
-  Ergebnis: 10 Prompts gespeichert, 4 Wochen Recap-Nutzung im Kalender belegt
+  Ergebnis: 10 Prompts gespeichert, 4 Wochen Nachbereitung im Kalender belegt
 
   Tage 31-60 – Ziel: eine wiederkehrende Aufgabe an einen Agent übergeben
   1. Aufgabe auswählen und Zeitaufwand heute messen (Excel-Liste)
   2. Agent mit dem Agent Builder anlegen: Anweisungen, zwei Wissensdateien
-     aus dem Ordner „Fjordlicht-Kurs", Notebook als Arbeitsbereich
-  3. fünf Testfälle durchlaufen und dokumentieren
+     aus dem Ordner „Fjordlicht-Kurs", drei Startprompts
+  3. fünf Testfälle durchlaufen und in einer Copilot Page dokumentieren
   Ergebnis: Agent besteht vier von fünf Testfällen
   ```
 
-  Bewertungskriterien: alle Platzhalter real gefüllt, alle fünf Prüffragen mit Ja beantwortet,
-  Plan als Page gespeichert, Prompt in der Prompt Gallery, Rückblicktermin gesetzt.
+  Bewertungskriterien:
+
+  - Alle Platzhalter sind real gefüllt; alle fünf Prüffragen sind nach der Überarbeitung mit Ja
+    beantwortet.
+  - Das Feedback des Tandems steht konkret in der Page und hat zu mindestens einer sichtbaren
+    Änderung geführt.
+  - Der Plan ist als Page gespeichert und geteilt, der Prompt liegt in der Prompt Gallery, und
+    der Rückblicktermin ist gesetzt.

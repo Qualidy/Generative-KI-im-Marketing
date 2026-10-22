@@ -1,6 +1,12 @@
-title: Ein Zielgruppenprofil auf dem Prüfstand
+title: Ein Zielgruppenprofil auf dem Prüfstand – mit verteilten Rollen
 difficulty: 3
 question: |
+  **Gruppe:** 3–4 Personen, ca. 30 Minuten. **Rollen ab Schritt 2:** **Faktenprüferin**
+  (Copilot Chat, Modus Web), **Prompt-Prüfer** (P.R.O.M.P.T.-Diagnose), **Planerin** (führt
+  das gemeinsame Word-Dokument „Analyseplan-Business.docx"), bei 4 Personen zusätzlich
+  **Advocatus Diaboli**. **Am Ende liegt vor:** ein geteiltes Word-Dokument mit Bewertung des
+  Profils, Analyseplan und erstem Prompt.
+
   Eine Kollegin hat für „Fjordlicht Business" (Firmenbekleidung) in fünf Minuten folgendes Profil
   mit Copilot erstellt – ohne Daten, nur mit dem Prompt „Beschreibe die Zielgruppe für nachhaltige
   Firmenbekleidung":
@@ -14,25 +20,36 @@ question: |
   auf LinkedIn und erwarten innovative Lösungen.
   ```
 
-  1. **Nachstellen.** Gib denselben Prompt in Copilot Chat ein (Modus **Arbeit**, ohne Dateien).
-     Vergleiche dein Ergebnis mit dem Profil oben: Welche Muster wiederholen sich?
-  2. **Bewerten.** Bewerte das Profil Satz für Satz: Was ist Vermutung, was eine ungeprüfte Zahl,
-     was ist zu allgemein, um nutzbar zu sein? Prüfe die 78-%-Zahl in Copilot Chat im Modus
-     **Web** und öffne jede genannte Quelle selbst.
-  3. **Ursache.** Erkläre, welche Bausteine des P.R.O.M.P.T.-Frameworks im Ausgangsprompt fehlten
-     und warum das zu genau diesem Ergebnis führt.
-  4. **Analyseplan.** Entwirf einen Plan: Welche drei Quellen nutzt Fjordlicht, mit welchen
-     Copilot-Funktionen wertet ihr sie aus (z. B. Copilot in Excel, Copilot Chat mit `/`-Verweis
-     auf Dateien, Agent **Researcher**), und wie validiert ihr die Ergebnisse?
-  5. **Erster Schritt.** Schreibe den Prompt für den ersten Copilot-Schritt deines Plans.
+  1. **Gleicher Prompt, mehrere Ergebnisse.** Alle geben denselben Prompt in Copilot Chat ein
+     (Modus **Arbeit**, ohne Dateien) und kopieren das Ergebnis in den Teams-Chat der Gruppe.
+     Vergleicht eure Ergebnisse untereinander und mit dem Profil oben: Welche Muster wiederholen
+     sich, was variiert?
+  2. **Bewerten in Rollen.** Die Faktenprüferin prüft die 78-%-Zahl in Copilot Chat im Modus
+     **Web** und öffnet jede genannte Quelle selbst. Die übrigen bewerten das Profil Satz für
+     Satz: Was ist Vermutung, was eine ungeprüfte Zahl, was ist zu allgemein, um nutzbar zu sein?
+     Der Advocatus Diaboli verteidigt das Profil („Das klingt doch plausibel!") und zwingt die
+     Gruppe, jede Kritik zu begründen.
+  3. **Ursache.** Der Prompt-Prüfer erklärt der Gruppe, welche Bausteine des
+     P.R.O.M.P.T.-Frameworks im Ausgangsprompt fehlten und warum das zu genau diesem Ergebnis
+     führt.
+  4. **Analyseplan.** Die Planerin legt „Analyseplan-Business.docx" im Ordner „Fjordlicht-Kurs"
+     an und teilt es. Gemeinsam entwerft ihr den Plan: Welche drei Quellen nutzt Fjordlicht, mit
+     welchen Copilot-Funktionen wertet ihr sie aus (z. B. Copilot in Excel, Copilot Chat mit
+     `/`-Verweis auf Dateien, Modus Web), und wie validiert ihr die Ergebnisse?
+  5. **Erster Schritt.** Jede Person schreibt einen eigenen Prompt für den ersten Copilot-Schritt
+     des Plans. Wählt gemeinsam den besten aus, übernehmt ihn ins Dokument und stellt ihn in
+     zwei Minuten im Plenum vor.
 tip: |
-  Achte besonders auf die Zahl. Sie ist präzise, hat keine Quelle und passt verdächtig gut zur
-  Botschaft, die man gern hören möchte. Genau so sehen Halluzinationen in Zielgruppenprofilen aus.
-  Im Modus Arbeit kann Copilot zudem auf interne Dateien und Mails zugreifen, für die du
-  berechtigt bist – im Plan solltest du festlegen, **welche** Dateien als Quelle gelten.
+  Achtet besonders auf die Zahl. Sie ist präzise, hat keine Quelle und passt verdächtig gut zur
+  Botschaft, die man gern hören möchte. Genau so sehen Halluzinationen in Zielgruppenprofilen
+  aus. Prüft beim Vergleich in Schritt 1, ob in euren Ergebnissen ebenfalls Prozentzahlen
+  auftauchen – und ob es bei allen dieselben sind. Legt im Plan fest, **welche** Dateien als
+  Quelle gelten, statt Copilot im Modus Arbeit frei suchen zu lassen.
 solution: |
-  1. Typisch beim Nachstellen: wieder „nachhaltigkeitsorientierte Unternehmen", HR/Marketing als
-  Entscheider, LinkedIn – das Modell liefert den Durchschnitt, nur anders formuliert.
+  1. Mögliche Beobachtung beim Nachstellen: wieder „nachhaltigkeitsorientierte Unternehmen",
+  HR/Marketing als Entscheider, LinkedIn – das Modell liefert den Durchschnitt, nur anders
+  formuliert. Unterscheiden sich die Ergebnisse der Gruppenmitglieder, dann meist im Wortlaut
+  und in Details wie Altersspannen oder Zahlen, kaum in der Grundaussage.
 
   2. Bewertung:
 
@@ -40,7 +57,7 @@ solution: |
   |---|---|
   | Entscheider in „modernen, nachhaltigkeitsorientierten" Firmen | Zirkelschluss: beschreibt die gewünschte, nicht die tatsächliche Kundschaft |
   | HR- oder Marketingleitung, 35–55 | Vermutung; im Handwerk entscheidet oft Inhaber oder Einkauf |
-  | „78 % … bis 2027" | ungeprüfte, vermutlich erfundene Zahl – die Websuche findet keine passende Quelle oder eine mit anderem Bezug; nicht verwenden |
+  | „78 % … bis 2027" | ungeprüfte, vermutlich erfundene Zahl – ohne geöffnete passende Quelle nicht verwenden |
   | Kriterien Nachhaltigkeit, Design, Preis | plausibel, aber zu allgemein; Haltbarkeit, Nachbestellbarkeit, Größenspektrum fehlen |
   | LinkedIn, „innovative Lösungen" | Floskel ohne Handlungswert |
 
@@ -50,10 +67,10 @@ solution: |
 
   4. Analyseplan, zum Beispiel: (a) Anfragen und Angebote der letzten zwölf Monate aus dem CRM,
   pseudonymisiert als Excel-Tabelle mit Branche, Größe, Anfrageanlass – Auswertung mit Copilot in
-  Excel (Gruppieren, Zählen, Diagramm); (b) Gesprächsnotizen des Vertriebs als Word-Datei –
-  Jobs-to-be-done mit Copilot Chat per `/`-Verweis; (c) Desk Research zu Firmenbekleidung mit
-  dem Agent Researcher (falls in eurer Umgebung freigegeben) oder dem Modus Web, jede Zahl an der
-  Quelle geprüft. Validierung: fünf Gespräche mit Bestandskunden, Abgleich mit dem Vertrieb.
+  Excel (zusammenfassen, sortieren/filtern, Diagramm); (b) Gesprächsnotizen des Vertriebs als
+  Word-Datei – Jobs-to-be-done mit Copilot Chat per `/`-Verweis; (c) Desk Research zu
+  Firmenbekleidung mit Copilot Chat im Modus Web, jede Zahl an der geöffneten Quelle geprüft.
+  Validierung: fünf Gespräche mit Bestandskunden, Abgleich mit dem Vertrieb.
 
   5. Erster Prompt:
 
@@ -66,5 +83,11 @@ solution: |
   Zielgruppenbriefing Fjordlicht Business.
   ```
 
-  Die Anzahl je Cluster prüfst du anschließend in Excel nach – beim Zählen ist ein Sprachmodell
+  Die Anzahl je Cluster prüft ihr anschließend in Excel nach – beim Zählen ist ein Sprachmodell
   unzuverlässig.
+
+  Bewertungskriterien: Gemeinsamkeiten und Abweichungen zwischen den Ergebnissen der
+  Gruppenmitglieder sind benannt; die 78-%-Zahl ist mit geöffneten Quellen geprüft oder
+  verworfen; jede Kritik am Profil hat dem Advocatus Diaboli standgehalten; der Plan nennt drei
+  Quellen, passende Copilot-Funktionen und einen Validierungsweg; die Auswahl des ersten Prompts
+  ist begründet.

@@ -1,36 +1,54 @@
-title: Sichtbarkeit in KI-Antworten prüfen
+title: Sichtbarkeit in KI-Antworten im Team prüfen
 difficulty: 3
 question: |
+  **Gruppe:** 3–4 Personen · **Dauer:** etwa 30 Minuten · **Format:** Arbeitsteilung nach
+  Antwortmaschine, danach Rollen für die Bewertung · **Am Ende liegen vor:** eine gemeinsam
+  befüllte „KI-Sichtbarkeit.xlsx" und ein geprüfter Outlook-Entwurf an die Geschäftsführung
+  (nicht gesendet).
+
   Die Fjordlicht-Geschäftsführung hat gelesen, dass „Kunden jetzt in ChatGPT statt bei Google
   suchen", und fragt: „Werden wir dort überhaupt genannt – und was können wir tun?" Eine
-  Agentur bietet außerdem ein Paket „Garantierte Platzierung in ChatGPT und AI Overviews" an.
+  Agentur bietet außerdem ein Paket „Garantierte Platzierung in ChatGPT und AI Overviews" an
+  (Abschnitt 22.5).
 
-  1. Entwickle ein kleines **Monitoring** als Excel-Datei „KI-Sichtbarkeit.xlsx" im Ordner
-     „Fjordlicht-Kurs": zehn typische Fragen der Zielgruppe (z. B. „Welche Regenjacke eignet sich
-     zum Radfahren in der Stadt?"), mindestens drei Antwortmaschinen und Spalten für Datum,
-     genannt ja/nein, verlinkt ja/nein und Quellen, die stattdessen erscheinen. Lass dir die
-     Fragen von Copilot Chat vorschlagen und prüfe, ob echte Menschen sie so stellen würden.
-  2. Führe den Test mit mindestens drei Fragen durch. Eine der Antwortmaschinen ist **Copilot Chat
-     mit Web**; dazu kommen z. B. die Google-Suche mit AI Overview, ChatGPT mit Websuche,
-     Perplexity oder Gemini. Teste für Fjordlicht oder ein real existierendes Unternehmen deiner
-     Wahl.
-  3. Lass **Copilot in Excel** zusammenfassen, welche Quellentypen am häufigsten erscheinen, und
-     leite daraus ab, **welche Art Inhalte** KI-Antworten offenbar bevorzugen.
-  4. Bewerte das Agenturangebot kritisch und lass **Copilot in Outlook** eine kurze Antwort an die
-     Geschäftsführung entwerfen (maximal 120 Wörter). Überarbeite den Entwurf selbst; nicht senden.
+  1. **Monitoring anlegen (alle, 5 Minuten):** Eine Person legt „KI-Sichtbarkeit.xlsx" in ihrem
+     Ordner „Fjordlicht-Kurs" an und teilt die Datei. Spalten: Frage, Werkzeug, Datum, Durchlauf,
+     genannt ja/nein, verlinkt ja/nein, Quellen, die stattdessen erscheinen. Lasst euch in
+     Copilot Chat zehn typische Fragen der Zielgruppe vorschlagen (z. B. „Welche Regenjacke
+     eignet sich zum Radfahren in der Stadt?") und streicht gemeinsam alle, die echte Menschen so
+     nicht stellen würden. Wählt drei Fragen für den Test aus.
+  2. **Arbeitsteilung nach Antwortmaschine (10 Minuten):** Jede Person testet dieselben drei
+     Fragen in **einem** Werkzeug und trägt die Ergebnisse in die geteilte Datei ein:
+     - **Person 1:** **Copilot Chat** mit dem Umschalter auf **Web**
+     - **Person 2:** Google-Suche mit AI Overview
+     - **Person 3:** ChatGPT mit Websuche, Perplexity oder Gemini
+     - **Person 4** (falls vorhanden): wiederholt die Fragen von Person 1 in einem neuen Chat und
+       trägt sie als zweiten Durchlauf ein.
+
+     Testet für Fjordlicht oder ein real existierendes Unternehmen eurer Wahl.
+  3. **Auswerten:** Lasst **Copilot in Excel** zusammenfassen, welche Quellentypen je Werkzeug am
+     häufigsten erscheinen und bei wie vielen Fragen das Unternehmen genannt wurde. Leitet
+     gemeinsam ab, **welche Art Inhalte** in den Antworten offenbar bevorzugt zitiert wird.
+  4. **Agenturangebot bewerten – mit Rollen:** Eine Person ist **Advocatus Diaboli** und vertritt
+     das Agenturangebot, die anderen prüfen es kritisch. Danach lässt eine Person **Copilot in
+     Outlook** eine kurze Antwort an die Geschäftsführung entwerfen (maximal 120 Wörter) und
+     nutzt das **Coaching durch Copilot**. Die Gruppe überarbeitet den Entwurf gemeinsam. Nicht
+     senden.
 tip: |
-  KI-Antworten schwanken: Dieselbe Frage kann morgen andere Quellen liefern. Plane daher
-  Wiederholungen ein und werte Muster aus, keine Einzelergebnisse. Copilot Chat im Arbeitsmodus
-  ist für diesen Test ungeeignet – er antwortet aus deinen Unternehmensdaten, nicht aus dem Web.
-  Bei der Agentur hilft die Frage: Wer könnte eine solche Garantie überhaupt geben?
+  KI-Antworten schwanken: Dieselbe Frage kann morgen andere Quellen liefern. Deshalb gibt es die
+  Spalte „Durchlauf" – vergleicht, ob ein zweiter Durchlauf andere Quellen bringt, und wertet
+  Muster aus, keine Einzelergebnisse. Für den Test nutzt ihr in Copilot Chat den Umschalter
+  **Web**, denn es geht um das, was im Netz gefunden wird. Beim Agenturangebot hilft die Frage:
+  Wer könnte eine solche Garantie überhaupt geben?
 solution: |
   Beispiel-Monitoring:
 
-  | Frage | Werkzeug | Fjordlicht genannt? | Häufigste Quellen | Datum |
-  |---|---|---|---|---|
-  | Regenjacke für Radfahren in der Stadt? | Perplexity | nein | Testmagazine, Händler-Ratgeber, Foren | [Datum] |
-  | Regenjacke für Radfahren in der Stadt? | Copilot Chat (Web) | nein | Testmagazine, Herstellerseiten | [Datum] |
-  | Fleece fusselt, was tun? | Google AI Overview | ja, Blogartikel verlinkt | Ratgeber, Herstellerseiten | [Datum] |
+  | Frage | Werkzeug | Durchlauf | Fjordlicht genannt? | Häufigste Quellen | Datum |
+  |---|---|---|---|---|---|
+  | Regenjacke für Radfahren in der Stadt? | Perplexity | 1 | nein | Testmagazine, Händler-Ratgeber, Foren | [Datum] |
+  | Regenjacke für Radfahren in der Stadt? | Copilot Chat (Web) | 1 | nein | Testmagazine, Herstellerseiten | [Datum] |
+  | Regenjacke für Radfahren in der Stadt? | Copilot Chat (Web) | 2 | nein | Händler-Ratgeber, Foren | [Datum] |
+  | Fleece fusselt, was tun? | Google AI Overview | 1 | ja, Blogartikel verlinkt | Ratgeber, Herstellerseiten | [Datum] |
 
   Beispiel-Prompt für Copilot in Excel:
 
@@ -40,9 +58,10 @@ solution: |
   Fjordlicht genannt wurde. Keine Vermutungen über Gründe.
   ```
 
-  Typische Muster der zitierten Quellen: klare Antwort direkt unter einer Frage-Überschrift,
+  Mögliche Muster der zitierten Quellen: klare Antwort direkt unter einer Frage-Überschrift,
   Tabellen und Listen, eigene Testergebnisse oder Daten, unabhängige Vergleichsseiten und
-  Foren mit echten Erfahrungen, aktuelle Datumsangaben.
+  Foren mit echten Erfahrungen, aktuelle Datumsangaben – das deckt sich mit den GEO-Prinzipien
+  aus Abschnitt 22.5.
 
   Antwort an die Geschäftsführung (überarbeiteter Outlook-Entwurf):
 
@@ -56,6 +75,14 @@ solution: |
   Monitoring monatlich. Das Agenturangebot lehnen wir ab.
   ```
 
-  Bewertungskriterien: wiederholbares Monitoring mit Datum in Excel, Copilot Chat im Web-Modus als
-  eine von mindestens drei Antwortmaschinen, Ableitungen aus beobachteten Mustern statt
-  Vermutungen, nüchterne Einordnung der „Garantie" und ein selbst geprüfter Mail-Entwurf.
+  Bewertungskriterien:
+
+  - Wiederholbares Monitoring mit Datum und Durchlauf in einer gemeinsam befüllten Excel-Datei;
+    Copilot Chat im Web-Modus als eine von mindestens drei Antwortmaschinen.
+  - Unterschiede zwischen den Werkzeugen und zwischen zwei Durchläufen sind benannt, statt
+    Einzelergebnisse zu verallgemeinern.
+  - Ableitungen beruhen auf beobachteten Mustern, nicht auf Vermutungen.
+  - Die Argumente des Advocatus Diaboli wurden geprüft und begründet zurückgewiesen oder
+    aufgenommen; die „Garantie" ist nüchtern eingeordnet.
+  - Der Mail-Entwurf ist von der Gruppe überarbeitet, die Übernahme von Coaching-Hinweisen bewusst
+    entschieden, und die Mail wurde nicht versendet.

@@ -1,29 +1,38 @@
-title: Eine Dreierserie in Copilot mit festem Prompt-Gerüst
+title: Eine Dreierserie im Team mit festem Prompt-Gerüst
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot Chat** bzw. in der Create-Funktion der
-  Microsoft-365-Copilot-App (falls freigegeben). Alternativ: ChatGPT Images oder Gemini.
+  **Gruppe:** 3–4 Personen, ca. 30 Minuten. Am Ende liegen ein gemeinsames Word-Dokument
+  „Serie-Skog-Gerüst.docx" (Steckbrief und Gerüst) im Ordner „Fjordlicht-Kurs", eine
+  Vergleichsfolie mit zwei Fassungen der Serie und eine Gruppenentscheidung vor, welche Fassung
+  weiterverfolgt wird.
 
-  Fjordlicht braucht für Instagram (4:5) eine Serie aus drei Posts zum Fleece „Skog" unter dem
-  Motto „Die ersten kalten Morgen". Eine fiktive, wiederkehrende Figur soll alle drei Bilder
-  tragen. Du kannst auch ein Produkt und eine Figur für ein Unternehmen deiner Wahl verwenden.
+  Fjordlicht braucht für Instagram eine Serie aus drei Hochformat-Posts zum Fleece „Skog" unter
+  dem Motto „Die ersten kalten Morgen". Eine fiktive, wiederkehrende Figur soll alle drei Bilder
+  tragen. Ihr könnt auch ein Produkt und eine Figur für ein Unternehmen eurer Wahl verwenden.
 
-  1. **Steckbrief.** Lege einen Figuren-Steckbrief mit mindestens fünf sichtbaren Merkmalen an.
-  2. **Gerüst.** Schreibe ein Prompt-Gerüst nach dem Muster aus Abschnitt 33.2 mit festen
-     Teilen und höchstens drei variablen Platzhaltern in eckigen Klammern. Nutze den Baustein
-     aus `/Fjordlicht-Bildsprache` (falls nicht vorhanden, den Baustein aus 32.2).
-  3. **Serie.** Erzeuge drei Motive (zum Beispiel Kaffee am Zelt, Radweg zur Arbeit, Hund
-     ausführen). Lade ab Bild 2 das erste gelungene Bild als Referenz hoch.
-  4. **Prüfen.** Lege die drei Bilder in PowerPoint nebeneinander und bewerte die Serie: Wo hält
-     die Konsistenz, wo nicht? Korrigiere mindestens eine Abweichung in Copilot durch
-     Bearbeitung statt durch Neugenerierung.
-  5. **Sichern.** Speichere Steckbrief und Gerüst als Prompt in der Prompt Gallery oder in einer
-     Word-Datei im Ordner „Fjordlicht-Kurs", damit die Serie später fortgesetzt werden kann.
+  1. **Steckbrief und Gerüst (gemeinsam).** Legt das geteilte Word-Dokument an. Schreibt einen
+     Figuren-Steckbrief mit mindestens fünf sichtbaren Merkmalen und ein Prompt-Gerüst nach dem
+     Muster aus Abschnitt 33.2 mit festen Teilen und höchstens drei variablen Platzhaltern in
+     eckigen Klammern. Nutzt den Baustein aus `/Fjordlicht-Bildsprache` (falls nicht vorhanden,
+     den Baustein aus 32.2).
+  2. **Fassung A – verteilt.** Drei Personen erzeugen je **ein** Motiv mit dem Gerüst, jede in
+     ihrem eigenen Chat (zum Beispiel Kaffee am Zelt, Radweg zur Arbeit, Hund ausführen).
+  3. **Fassung B – ein Chat.** Die vierte Person (bei drei Personen: die mit dem gelungensten
+     Bild aus Fassung A) erzeugt alle drei Motive nacheinander **im selben Chat** und ändert ab
+     Bild 2 nur Handlung und Ort.
+  4. **Prüfen.** Legt beide Fassungen in PowerPoint untereinander auf eine Folie. Wo hält die
+     Konsistenz, wo nicht – in Fassung A, in Fassung B? Ladet das beste Bild in Copilot Chat hoch
+     und lasst die Figur beschreiben. Gleicht die Beschreibung mit eurem Steckbrief ab und
+     schärft ihn nach, wo Merkmale fehlten oder unklar waren.
+  5. **Entscheiden und sichern.** Einigt euch, mit welcher Arbeitsweise die Serie fortgesetzt
+     wird, und haltet die Entscheidung mit dem geschärften Steckbrief im Word-Dokument fest. Jede
+     Person kann das Gerüst zusätzlich als Prompt in der Prompt Gallery speichern.
 tip: |
-  Je mehr variable Teile dein Gerüst hat, desto mehr driftet die Serie auseinander. Wenn die
-  Figur trotz Referenz wechselt, prüfe zuerst, ob der Steckbrief wirklich wortgleich in jedem
-  Prompt steht. Seeds lassen sich in Copilot nicht steuern – umso wichtiger sind Gerüst und
-  Referenzbild.
+  Je mehr variable Teile euer Gerüst hat, desto mehr driftet die Serie auseinander. Wenn die
+  Figur wechselt, prüft zuerst, ob der Steckbrief wirklich wortgleich in jedem Prompt steht. Der
+  Vergleich von Fassung A und B zeigt, was ein Gerüst allein leistet – und was der
+  Gesprächsverlauf im selben Chat zusätzlich beitragen kann. In Copilot steuert ihr alles über
+  den Prompt-Text; umso wichtiger sind Gerüst und Steckbrief.
 solution: |
   Beispiel-Steckbrief und Gerüst:
 
@@ -35,24 +44,34 @@ solution: |
   Erstelle ein Bild: [Figur] [Handlung] in [Ort] an einem kalten Oktobermorgen,
   Atem sichtbar, weiches diffuses Licht, leichter Bodennebel. Person auf der
   linken Drittellinie, nicht in die Kamera blickend, obere 30 Prozent ruhige
-  Fläche. Hochformat 4:5. Gedämpfte, entsättigte Naturtöne, dokumentarischer
+  Fläche. Hochformat. Gedämpfte, entsättigte Naturtöne, dokumentarischer
   Fotolook, leichte Filmkörnung. Vermeide: Hochglanz, Posen, Siegergesten.
   Kein Text, keine Logos.
   ```
 
-  Referenzprompt ab Bild 2:
+  Folgeprompt für Fassung B:
 
   ```text
-  Das hochgeladene Bild zeigt unsere Kampagnenfigur. Erstelle ein neues Bild mit
-  derselben Person (Gesicht, Bart, Brille, Kleidung) und demselben Look (Licht,
-  Farbwelt, Körnung). Neu ist nur: [Handlung] in [Ort]. [Rest des Gerüsts]
+  Erstelle ein neues Bild mit derselben Person (Gesicht, Bart, Brille, Kleidung)
+  und demselben Look (Licht, Farbwelt, Körnung) wie im vorherigen Bild.
+  Neu ist nur: [Handlung] in [Ort]. [Rest des Gerüsts]
   ```
 
-  Typische Beobachtungen: Stil und Licht bleiben mit Gerüst sehr stabil; die Figur weicht
-  in Details ab (Bartlänge, Brillenform, Mütze), auch mit Referenz. Das Fleece verändert
-  Kragen und Reißverschluss – ein Hinweis, dass für die Veröffentlichung ein echtes
-  Produktfoto oder eine Prüfung gegen das Produkt nötig ist.
+  Beschreibungsprompt für Schritt 4:
 
-  Eine gute Bearbeitung enthält Steckbrief, Gerüst, drei Bilder auf einer Vergleichsfolie, eine
-  Liste der Abweichungen und eine dokumentierte Korrektur per Bearbeitung mit der Anweisung,
-  was gleich bleiben soll.
+  ```text
+  Beschreibe die Person auf diesem Bild so genau, dass jemand sie ohne das Bild
+  wiedererkennen könnte: Alter, Haare, Bart, Brille, Statur, Kleidung mit Farben
+  und Details. Nur sichtbare Merkmale, keine Vermutungen.
+  ```
+
+  Worauf ihr beim Vergleich achten könnt: Bleiben Stil und Licht über die Bilder stabil? Weicht
+  die Figur in Details ab (Bartlänge, Brillenform, Mütze) – stärker in Fassung A als in B? Verändert
+  das Fleece Kragen oder Reißverschluss? Letzteres zeigt, dass für die Veröffentlichung ein echtes
+  Produktfoto oder eine Prüfung gegen das Produkt nötig ist (33.5).
+
+  Bewertungskriterien: Steckbrief, Gerüst und Entscheidung liegen im gemeinsamen Word-Dokument;
+  beide Fassungen sind auf der Vergleichsfolie; die Abweichungen zwischen den Bildern der
+  Gruppenmitglieder (Fassung A) sind konkret benannt und gegen die Abweichungen in Fassung B
+  abgewogen; der Steckbrief wurde nach dem Abgleich mit Copilots Figurenbeschreibung
+  nachweislich geschärft; die Gruppe hat sich begründet für eine Arbeitsweise entschieden.

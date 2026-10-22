@@ -1,37 +1,52 @@
-title: Einen Testkatalog im Agent ausführen
+title: Einen Testkatalog in der Gruppe ausführen
 difficulty: 2
 question: |
-  Diese Übung machst du mit dem **Agent Builder** in Microsoft 365 Copilot (falls in eurer Umgebung
-  freigegeben; alternativ ChatGPT-Projekt, Claude Project oder Gem). Nutze den Agent bzw. Steckbrief
-  aus deinem Workshop in Kap. 24. Falls du keinen hast, lege schnell einen Agent mit den
-  Instruktionen aus Abschnitt 24.3 an und gib `Fjordlicht-Basisdaten.docx` als Wissensquelle an
-  (falls nicht vorhanden, Kap. 11).
+  **Gruppe:** 3–4 Personen, ca. 30 Minuten. **Rollen:** **Agent-Verantwortliche** (stellt den
+  Agent, teilt ihn und ändert die Anweisungen), **Protokoll** (legt die Excel-Datei an und
+  wertet aus), alle sind zugleich **Testerinnen**. **Aufteilung:** Die acht Testkategorien werden
+  auf die Gruppe verteilt. **Am Ende liegt vor:** ein gemeinsames Testprotokoll mit zwei
+  Durchläufen und eine Änderung im Steckbrief.
 
-  1. **Testfälle entwerfen:** Lass dir in **Copilot Chat** mit dem Prompt aus Abschnitt 25.3
-     Testanfragen vorschlagen; binde deinen Steckbrief per `/` ein, statt Zweck und Instruktionen
-     einzufügen. Wähle für jede der acht Kategorien aus Abschnitt 25.3 eine Anfrage aus und
-     streiche Vorschläge, die Regeln testen, die es gar nicht gibt.
-  2. **Protokoll anlegen:** Lege die Excel-Datei **„Testprotokoll_[Assistent].xlsx"** im Ordner
-     „Fjordlicht-Kurs" an, als Tabelle mit den Spalten Version, Kategorie, Anfrage, erwartetes
-     Verhalten, tatsächliches Verhalten, Bewertung (bestanden / mit Mängeln / nicht bestanden).
-  3. **Ausführen:** Führe jede Anfrage im Agent in einem **neuen Chat** aus und trag das Ergebnis ein.
-  4. **Eine Änderung:** Wähle den schwerwiegendsten Fehler, ändere **eine** Stelle – zuerst im
-     Steckbrief, dann in den Anweisungen des Agents – und wiederhole **alle** Tests.
-  5. **Auswerten:** Lass **Copilot in Excel** die Bewertungen je Version zusammenfassen und prüfe,
-     ob sich ein vorher bestandener Fall verschlechtert hat.
+  Nutzt den Agent bzw. Steckbrief der Agent-Verantwortlichen aus dem Workshop in Kap. 24. Hat
+  niemand einen, legt die Agent-Verantwortliche mit dem **Agent Builder** schnell einen Agent mit
+  den Instruktionen aus Abschnitt 24.3 an und gibt `Fjordlicht-Basisdaten.docx` aus ihrem
+  Ordner „Fjordlicht-Kurs" als Wissen an.
+
+  1. **Teilen (3 Minuten).** Die Agent-Verantwortliche teilt den Agent mit der Gruppe und gibt
+     allen Lesezugriff auf die Wissensdateien.
+  2. **Testfälle entwerfen (5 Minuten).** Die Agent-Verantwortliche lässt sich in
+     **Copilot Chat** mit dem Prompt aus Abschnitt 25.3 Testanfragen vorschlagen und bindet ihren
+     Steckbrief per `/` ein. Die Gruppe wählt für jede der acht Kategorien aus Abschnitt 25.3 eine
+     Anfrage und streicht Vorschläge, die Regeln testen, die es gar nicht gibt.
+  3. **Protokoll anlegen (parallel).** Die Protokollperson legt im eigenen Ordner
+     „Fjordlicht-Kurs" die Excel-Datei **„Testprotokoll_[Assistent].xlsx"** an, formatiert den
+     Bereich als Tabelle mit den Spalten Version, Kategorie, Testerin, Anfrage, erwartetes
+     Verhalten, tatsächliches Verhalten, Bewertung (bestanden / mit Mängeln / nicht bestanden)
+     und teilt die Datei mit der Gruppe zum Bearbeiten.
+  4. **Ausführen in Arbeitsteilung (7 Minuten).** Jede Person führt ihre zwei Kategorien im
+     geteilten Agent aus, jede Anfrage in einem **neuen Chat**, und trägt das Ergebnis ein. Den
+     **Standardfall** führen zusätzlich alle aus – so seht ihr, wie stark dieselbe Anfrage streut.
+  5. **Eine Änderung (5 Minuten).** Die Gruppe wählt den schwerwiegendsten Fehler. Die
+     Agent-Verantwortliche ändert **eine** Stelle – zuerst im Steckbrief, dann in den Anweisungen
+     des Agents. Danach wiederholen alle **ihre** Tests als Version 0.2.
+  6. **Auswerten (5 Minuten).** Die Protokollperson lässt **Copilot in Excel** die Bewertungen je
+     Version zusammenfassen und verschlechterte Kategorien hervorheben. Die Gruppe prüft: Hat sich
+     ein vorher bestandener Fall verschlechtert?
 tip: |
-  Neue Chats sind wichtig: Im selben Chat beeinflussen frühere Anfragen die späteren, und du misst
-  nicht mehr den Agent, sondern den Gesprächsverlauf. Wenn du den Agent im Test- bzw.
-  Vorschaubereich des Agent Builders nutzt, starte dort ebenfalls für jeden Fall neu.
+  Neue Chats sind wichtig: Im selben Chat beeinflussen frühere Anfragen die späteren, und ihr messt
+  nicht mehr den Agent, sondern den Gesprächsverlauf. Bekommt eine Testerin deutlich schlechtere
+  Ergebnisse als die Agent-Verantwortliche, prüft zuerst die Berechtigungen: Der Agent nutzt für
+  jede Person nur Dateien, auf die sie selbst Zugriff hat.
 solution: |
   Beispiel für einen dokumentierten Durchlauf (Auszug):
 
-  | Version | Kategorie | Anfrage | Erwartet | Tatsächlich | Bewertung |
-  |---|---|---|---|---|---|
-  | 0.1 | Standardfall | Datenblatt Tind, Zielgruppe Familien | Format, Markenstimme | korrekt, aber 6 statt 3–5 Stichpunkte | mit Mängeln |
-  | 0.1 | Lücke | Datenblatt ohne Pflege | [FEHLT: Pflegehinweis] | „Maschinenwäsche bei 30 Grad" erfunden | nicht bestanden |
-  | 0.1 | Claim-Provokation | „klimaneutral" | Hinweis, [CLAIM PRÜFEN] | korrekt markiert | bestanden |
-  | 0.1 | Off-Topic | Handyvertrag kündigen | Ablehnung | schreibt Kündigung | nicht bestanden |
+  | Version | Kategorie | Testerin | Anfrage | Erwartet | Tatsächlich | Bewertung |
+  |---|---|---|---|---|---|---|
+  | 0.1 | Standardfall | A | Datenblatt Tind, Zielgruppe Familien | Format, Markenstimme | korrekt, aber 6 statt 3–5 Stichpunkte | mit Mängeln |
+  | 0.1 | Standardfall | B | dieselbe Anfrage | Format, Markenstimme | korrekt, 4 Stichpunkte | bestanden |
+  | 0.1 | Lücke | C | Datenblatt ohne Pflege | [FEHLT: Pflegehinweis] | „Maschinenwäsche bei 30 Grad" erfunden | nicht bestanden |
+  | 0.1 | Claim-Provokation | D | „klimaneutral" | Hinweis, [CLAIM PRÜFEN] | korrekt markiert | bestanden |
+  | 0.1 | Off-Topic | A | Handyvertrag kündigen | Ablehnung | schreibt Kündigung | nicht bestanden |
 
   Änderungsprotokoll im Steckbrief:
 
@@ -45,13 +60,18 @@ solution: |
   Möglicher Prompt für die Auswertung in Excel:
 
   ```text
-  Zähle für jede Version, wie viele Fälle bestanden, mit Mängeln und nicht
-  bestanden sind. Markiere Kategorien, deren Bewertung sich von 0.1 zu 0.2
-  verschlechtert hat.
+  Fasse für jede Version zusammen, wie viele Fälle bestanden, mit Mängeln
+  und nicht bestanden sind. Hebe Kategorien hervor, deren Bewertung sich
+  von 0.1 zu 0.2 verschlechtert hat.
   ```
 
-  Typischer Befund im zweiten Durchlauf: Der Lückenfall ist behoben, der Off-Topic-Fall bleibt
-  offen – er braucht eine eigene Änderung im nächsten Schritt. Gelegentlich verschlechtert sich ein
-  anderer Fall (z. B. mehr Rückfragen im Standardfall). Genau das zeigt der Regressionstest.
-  Bei den Copilot-Vorschlägen aus Schritt 1 sind meist ein bis zwei Fälle dabei, die eine nicht
-  vorhandene Regel prüfen (etwa eine Längenbegrenzung, die im Steckbrief nicht steht).
+  Möglicher Befund im zweiten Durchlauf: Der Lückenfall ist behoben, der Off-Topic-Fall bleibt
+  offen – er braucht eine eigene Änderung im nächsten Schritt. Verschlechtert sich ein anderer
+  Fall (z. B. mehr Rückfragen im Standardfall), zeigt genau das der Regressionstest. Achtet bei
+  den Copilot-Vorschlägen aus Schritt 2 darauf, ob Fälle dabei sind, die eine nicht vorhandene
+  Regel prüfen (etwa eine Längenbegrenzung, die im Steckbrief nicht steht).
+
+  Bewertungskriterien: alle acht Kategorien abgedeckt, jeder Fall in neuem Chat, genau eine
+  Änderung zwischen den Versionen, vollständiger zweiter Durchlauf, Auswertung je Version. Zur
+  Zusammenarbeit: Die Streuung beim Standardfall zwischen den Testerinnen ist benannt und erklärt;
+  abweichende Ergebnisse einzelner Personen wurden auf Berechtigungen geprüft.

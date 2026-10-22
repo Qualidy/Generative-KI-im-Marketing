@@ -1,10 +1,12 @@
-title: Bot oder Mensch? – Schnelltest in Copilot
+title: Bot oder Mensch? – Schnelltest in der Gruppe
 difficulty: 1
 question: |
-  Diese Übung machst du in **Copilot Chat** (Microsoft-365-Copilot-App, Modus **Arbeit**), in
-  einer neuen Unterhaltung.
+  **Gruppenarbeit, 3–4 Personen, ca. 20 Minuten.** Ihr arbeitet in **Copilot Chat**
+  (Microsoft-365-Copilot-App, Modus **Arbeit**). Jede Person nutzt ihren eigenen Copilot in einer
+  neuen Unterhaltung. Am Ende liegt eine gemeinsame Tabelle mit eurer Soll-Reaktion für sechs
+  Kundennachrichten vor – plus die Liste der Fehler, die Copilot gemacht hat.
 
-  1. Gib Copilot diese Kurzanweisung:
+  1. **Gleicher Prompt, mehrere Ergebnisse.** Alle geben Copilot dieselbe Kurzanweisung:
 
   ```text
   Du spielst den digitalen Assistenten von Fjordlicht Business (Firmenbekleidung
@@ -15,7 +17,8 @@ question: |
   qualifizierst oder übergibst.
   ```
 
-  2. Schicke danach die sechs Kundennachrichten einzeln:
+  2. **Nachrichten schicken.** Danach schicken alle die sechs Kundennachrichten einzeln, in
+     derselben Reihenfolge:
 
      1. „Ab wie vielen Teilen macht ihr Logo-Stick?"
      2. „Wir sind ein Kita-Träger mit vier Standorten und brauchen Regenjacken für das Team."
@@ -24,18 +27,25 @@ question: |
      5. „Kann ich bitte mit jemandem sprechen?"
      6. „Habt ihr auch Arbeitsschuhe?" (steht nicht in den Wissensdateien)
 
-  3. **Einordnen.** Lege für jede Nachricht fest, ob der Bot **selbst antwortet**,
-     **qualifiziert** oder **an den Vertrieb übergibt** – und vergleiche mit Copilots
-     Einschätzung. Wo lag Copilot falsch oder zu nachgiebig (z. B. eine Preisspanne, eine
-     erfundene Mindestmenge, ein Lösungsversprechen bei der Reklamation)?
+  3. **Vergleichen.** Legt die Antworten nebeneinander (Teams-Chat der Gruppe oder
+     Bildschirm teilen). Achtet darauf, wo sich eure Copilot-Antworten unterscheiden: Nennt
+     ein Copilot eine Preisspanne, ein anderer nicht? Erfindet einer eine Mindestmenge?
+     Verspricht einer bei der Reklamation eine Lösung?
+  4. **Gemeinsam festlegen.** Entscheidet als Gruppe für jede Nachricht, ob der Bot **selbst
+     antwortet**, **qualifiziert** oder **an den Vertrieb übergibt**. Haltet die Tabelle
+     (Nr., Soll-Reaktion, Begründung, beobachteter Copilot-Fehler) in einer geteilten
+     **Copilot Page** oder einem geteilten Word-Dokument fest.
 
-  Welche Angabe muss der Bot in jedem Gespräch ganz am Anfang machen, und warum? Hat Copilot
-  sie von sich aus gemacht?
+  **Abschluss:** Welche Angabe muss der Bot in jedem Gespräch ganz am Anfang machen, und
+  warum? Hat einer eurer Copilots sie von sich aus gemacht? Eine Person stellt die Antwort und
+  den auffälligsten Copilot-Fehler in einer Minute im Plenum vor.
 tip: |
   Der Bot darf alles, was in den Wissensdateien steht und nichts zusagt. Sobald es um
-  Geld, Ärger oder Unbekanntes geht, gehört der Fall zu einem Menschen. Achte bei Nr. 1:
-  Copilot hat hier **keine** FAQ-Datei – erfindet er trotzdem eine Mindestmenge, ist das
-  genau der Fehler, den Wissensdateien und die Regel „nicht raten" verhindern sollen.
+  Geld, Ärger oder Unbekanntes geht, gehört der Fall zu einem Menschen. Achtet bei Nr. 1:
+  Copilot hat hier **keine** FAQ-Datei – erfindet einer eurer Copilots trotzdem eine
+  Mindestmenge, ist das genau der Fehler, den Wissensdateien und die Regel „nicht raten"
+  verhindern sollen. Dass vier Copilots auf dieselbe Nachricht unterschiedlich antworten, ist
+  kein Zufall der Übung, sondern der Grund, warum ein Bot feste Regeln braucht.
 solution: |
   | Nr. | Reaktion | Begründung |
   |---|---|---|
@@ -50,14 +60,19 @@ solution: |
   erfragen, damit der Vertrieb direkt ein Angebot erstellen kann – er nennt aber keinen
   Preis.
 
-  Typische Beobachtungen im Schnelltest: Bei Nr. 1 nennt Copilot ohne Wissensdatei oft eine
-  plausibel klingende Mindestmenge („meist ab 10 Stück") – im echten Bot wäre das eine
-  erfundene Auskunft. Bei Nr. 4 bietet er gern eine Lösung an („Wir tauschen die Jacken
-  selbstverständlich um"), was eine Zusage im Namen von Fjordlicht wäre. Bei Nr. 6 rät er
-  manchmal statt ehrlich zu sagen, dass er es nicht weiß. Jede dieser Abweichungen ist eine
-  Regel, die später in die Instruktionen gehört.
+  Mögliche Beobachtungen im Gruppenvergleich: Bei Nr. 1 nennt mindestens ein Copilot eine
+  plausibel klingende Mindestmenge („meist ab 10 Stück"), ein anderer eine andere Zahl – im
+  echten Bot wäre das eine erfundene Auskunft. Bei Nr. 4 bietet einer eine Lösung an („Wir
+  tauschen die Jacken selbstverständlich um"), was eine Zusage im Namen von Fjordlicht wäre.
+  Bei Nr. 6 rät einer, während ein anderer ehrlich sagt, dass er es nicht weiß. Jede dieser
+  Abweichungen ist eine Regel, die später in die Instruktionen gehört.
 
   Am Anfang jedes Gesprächs steht der **Hinweis, dass es sich um eine KI handelt**
   (Art. 50 Abs. 1 AI Act, seit 02.08.2026), plus der Hinweis, wie man einen Menschen
-  erreicht, und ein Verweis auf die Datenschutzerklärung. Ohne ausdrückliche Anweisung
-  lässt Copilot den KI-Hinweis meist weg – er gehört deshalb fest in die Begrüßung.
+  erreicht, und ein Verweis auf die Datenschutzerklärung. Fehlt er in euren Antworten, gehört
+  er fest in die Begrüßung – ohne ausdrückliche Anweisung darf man sich nicht darauf verlassen.
+
+  Bewertungskriterien: alle sechs Nachrichten eindeutig eingeordnet und begründet;
+  Abweichungen zwischen den Copilot-Antworten der Gruppenmitglieder benannt und als Regel
+  formuliert (z. B. „keine Mengenangaben ohne FAQ-Datei"); KI-Hinweis mit Rechtsgrundlage
+  genannt; gemeinsame Tabelle liegt vor.

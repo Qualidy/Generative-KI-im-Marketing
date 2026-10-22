@@ -1,6 +1,11 @@
-title: Ein KI-Briefing kritisch prüfen und neu aufsetzen
+title: Ein KI-Briefing aus vier Blickwinkeln prüfen und neu aufsetzen
 difficulty: 3
 question: |
+  **Gruppe:** 4 Personen (bei 3 Personen übernimmt eine Person zwei Blickwinkel) · **Dauer:**
+  etwa 30 Minuten · **Format:** Rollen nach Prüfblickwinkel, danach gemeinsames Word-Dokument ·
+  **Am Ende liegt vor:** ein neues SEO-Briefing „SEO-Briefing-Regenjacke.docx", das die Gruppe
+  gemeinsam geprüft und freigegeben hat.
+
   Eine Kollegin hat Copilot ohne weitere Vorarbeit gebeten: „Erstelle ein SEO-Briefing für
   einen Blogartikel über nachhaltige Regenjacken." Das Ergebnis enthält unter anderem:
 
@@ -17,21 +22,39 @@ question: |
   Kernaussage: Fjordlicht ist die nachhaltigste Marke am Markt.
   ```
 
-  1. Finde mindestens **sechs Probleme** und ordne sie ein: erfundene Daten, falsche Intention,
-     fehlende Felder, Konflikt mit der Markenstimme, rechtliches Risiko.
-  2. Frag in **Copilot Chat** nach: „Woher stammen die Suchvolumina in diesem Briefing?" und
-     notiere, wie Copilot antwortet.
-  3. Beschreibe den Ablauf, wie das Briefing **richtig** entstanden wäre (Kap. 21.3–21.6).
-  4. Lege in **Word** ein neues Dokument „Briefing-Regenjacke.docx" an und lass **Copilot in Word**
-     ein Briefing entwerfen, das auf Dateien verweist: `/Fjordlicht-Basisdaten` (Markenstimme,
-     belegte Claims; falls nicht vorhanden, Kap. 11 bzw. die Fjordlicht-Fakten selbst einfügen) und,
-     falls du eine hast, eine Keyword-Tabelle mit Tool-Werten (Aufbau wie in Übung 2). Felder
-     ohne Grundlage müssen mit `[OFFEN]` markiert sein.
+  **Teil 1 – Prüfen aus vier Blickwinkeln (10 Minuten).** Jede Person übernimmt eine Rolle und
+  sucht nur nach ihrer Art von Problemen:
+
+  - **Datenprüferin:** Welche Zahlen könnten erfunden sein? Sie fragt in **Copilot Chat** nach:
+    „Woher stammen die Suchvolumina in diesem Briefing?" und notiert die Antwort wörtlich.
+  - **SEO-Prüferin:** Passen Intention, Gliederung und Umfang zusammen (Abschnitt 21.2 und 21.6)?
+    Welche Felder fehlen?
+  - **Markenstimme:** Passen Tonalität und Kernaussage zur Fjordlicht-Markenstimme?
+  - **Rechtsblick:** Welche Aussagen bergen ein rechtliches Risiko (Greenwashing, UWG,
+    Vergleichsaussagen)?
+
+  Tragt die Funde zusammen. Ziel: mindestens **sechs Probleme**, jeweils eingeordnet.
+
+  **Teil 2 – Neu aufsetzen (15 Minuten).**
+
+  1. Beschreibt gemeinsam in wenigen Stichpunkten, wie das Briefing **richtig** entstanden wäre
+     (Abschnitt 21.3–21.6).
+  2. Die SEO-Prüferin legt in ihrem Ordner „Fjordlicht-Kurs" das Word-Dokument
+     „SEO-Briefing-Regenjacke.docx" an, lässt **Copilot in Word** einen Entwurf erstellen, der auf
+     `/Fjordlicht-Basisdaten` verweist (Markenstimme, belegte Claims; Kap. 11), und teilt das
+     Dokument. Felder ohne Grundlage – etwa alle Suchvolumina – müssen mit `[OFFEN]` markiert sein.
+  3. Die anderen drei prüfen den Entwurf aus ihrem Blickwinkel und setzen **Kommentare** im
+     Dokument. Die SEO-Prüferin markiert beanstandete Stellen und lässt sie mit Copilot in Word
+     umschreiben oder korrigiert sie selbst.
+
+  **Abschluss:** Die Gruppe gibt das Briefing frei, wenn alle Kommentare erledigt sind. Eine
+  Person nennt im Plenum das Problem, das nur aus einem einzigen Blickwinkel entdeckt wurde.
 tip: |
-  Lies jede Zeile mit der Frage: „Woher weiß die KI das?" – und gleiche Tonalität und
+  Lest jede Zeile mit der Frage: „Woher weiß die KI das?" – und gleicht Tonalität und
   Kernaussage mit der Markenstimme von Fjordlicht ab (ruhig, keine Superlative, kein
-  Greenwashing). Copilot kann nur auf Dateien zugreifen, auf die du Zugriff hast, und nur die
-  Zahlen verwenden, die darin stehen – genau das nutzt du in Schritt 4.
+  Greenwashing). Copilot kann nur auf Dateien zugreifen, auf die ihr Zugriff habt, und für den
+  Entwurf nur die Fakten verwenden, die darin stehen – genau das nutzt ihr in Teil 2. Achtet
+  beim neuen Entwurf darauf, ob Copilot trotzdem Zahlen oder Superlative einbaut.
 solution: |
   | Problem | Einordnung |
   |---|---|
@@ -43,8 +66,8 @@ solution: |
   | „nachhaltigste Marke am Markt" | unbelegter Superlativ, Greenwashing-Risiko (UWG) |
   | fehlende Felder: Zielgruppe, Alleinstellung, interne Links, No-Gos | Briefing nicht umsetzbar |
 
-  Auf die Nachfrage nach der Herkunft räumt Copilot meist ein, dass es sich um Schätzungen
-  handelt – oder verweist auf allgemeine Webquellen. Beides heißt: streichen.
+  Zur Herkunftsfrage: Räumt Copilot ein, dass es sich um Schätzungen handelt, oder verweist es
+  auf allgemeine Webquellen statt auf ein SEO-Tool, heißt beides: streichen.
 
   Richtiger Ablauf: Seed-Keywords → KI-Cluster ohne Zahlen → Volumina aus Keyword Planner/
   Sistrix → SERP-Analyse mit Intention und Lücken → Alleinstellung aus eigener Erfahrung
@@ -56,17 +79,23 @@ solution: |
   ```text
   Persona: Du bist SEO-Redakteurin.
   Request: Erstelle ein SEO-Briefing für einen Ratgeber "Woran erkenne ich
-  eine nachhaltige Regenjacke?" auf Basis von /Fjordlicht-Basisdaten und
-  [/Keyword-Tabelle, falls vorhanden].
+  eine nachhaltige Regenjacke?" auf Basis von /Fjordlicht-Basisdaten.
   Output: Felder Hauptkeyword, Nebenkeywords, Intention, Zielgruppe, Ziel,
   Kernfragen, Alleinstellung, Gliederung (H2), interne Links, No-Gos.
-  Modifier: Nutze nur Zahlen aus der Keyword-Datei. Felder ohne Grundlage
-  markierst du mit [OFFEN]. Keine Superlative, keine Nachhaltigkeitsaussage,
-  die nicht in den Basisdaten als belegt steht.
+  Modifier: Nenne keine Suchvolumina oder Schwierigkeitswerte, markiere
+  diese Felder mit [OFFEN]. Felder ohne Grundlage markierst du ebenfalls mit
+  [OFFEN]. Keine Superlative, keine Nachhaltigkeitsaussage, die nicht in den
+  Basisdaten als belegt steht.
   Purpose: Briefing für einen Ratgeber im Blog "Draußen-Notizen".
   Tone: sachlich.
   ```
 
-  Bewertungskriterien: alle sieben Problemtypen erkannt; Herkunftsfrage gestellt und
-  dokumentiert; das neue Briefing enthält keine Zahl ohne Quelle, mindestens ein ehrliches
-  `[OFFEN]` und nur Claims aus den Basisdaten.
+  Bewertungskriterien:
+
+  - Alle sieben Problemtypen erkannt und eingeordnet; die Copilot-Antwort zur Herkunft der Zahlen
+    ist dokumentiert.
+  - Das neue Briefing enthält keine Zahl ohne Quelle, mindestens ein ehrliches `[OFFEN]` und nur
+    Claims aus den Basisdaten.
+  - Zusammenarbeit: Jede Rolle hat im Dokument mindestens einen Kommentar hinterlassen; alle
+    Kommentare sind erledigt oder begründet abgelehnt; die Gruppe kann benennen, welches Problem
+    nur aus einem Blickwinkel sichtbar war.

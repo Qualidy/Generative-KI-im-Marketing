@@ -1,6 +1,10 @@
 title: Welche Plattform, welcher Hook?
 difficulty: 1
 question: |
+  **Gruppe:** 3 Personen · **Dauer:** ca. 20 Minuten · **Aufteilung:** erst allein zuordnen, dann
+  gemeinsam; Hooks werden aufgeteilt und gegenseitig geprüft · **Am Ende liegt vor:** eine
+  gemeinsame Zuordnungstabelle und ein ausgewählter Skog-Hook für das Plenum.
+
   Fjordlicht hat fünf Textentwürfe vorliegen:
 
   1. `Packliste Herbstwanderung mit Kindern: 12 Dinge, die du wirklich brauchst`
@@ -10,21 +14,26 @@ question: |
   4. `6:40 Uhr, Nebel über dem Aasee, 8 Grad. Und du?`
   5. `Unser Fleece Skog ist nicht klimaneutral. Hier steht, was es stattdessen ist.`
 
-  1. Ordne jeden Entwurf **selbst** der passenden Plattform zu (Instagram, TikTok, LinkedIn,
-     Pinterest) und bestimme den **Hook-Typ** der ersten Zeile (Frage, Fehler/Irrtum, Zahl/Liste,
-     Kontrast, Szene, ehrliches Eingeständnis). Nenne für Entwurf 2 die passende Textformel –
-     **AIDA** oder **PAS** – mit einem Satz Begründung.
-  2. Lass **Copilot Chat** dieselbe Zuordnung vornehmen und vergleiche. Wo Copilot abweicht:
-     Ist seine Begründung über die Nutzungssituation vertretbar?
-  3. Lass Copilot anschließend für das Fleece „Skog" je **einen** Hook pro Hook-Typ formulieren
-     (sechs Hooks, max. 10 Wörter), mit Verweis auf `/Fjordlicht-Basisdaten` (falls nicht
-     vorhanden: Kap. 11, Kurzübung 1). Prüfe, ob jeder Hook wirklich zu seinem Typ gehört und ob
-     einer gegen die Markenstimme verstößt.
+  1. **Allein, dann gemeinsam:** Jede Person ordnet jeden Entwurf **für sich** der passenden
+     Plattform zu (Instagram, TikTok, LinkedIn, Pinterest) und bestimmt den **Hook-Typ** der
+     ersten Zeile (Frage, Fehler/Irrtum, Zahl/Liste, Kontrast, Szene, ehrliches Eingeständnis).
+     Vergleicht danach und einigt euch auf eine Tabelle. Klärt gemeinsam, ob Entwurf 2 eher
+     **AIDA** oder **PAS** folgt.
+  2. **Gleicher Prompt, drei Ergebnisse:** Alle drei lassen **Copilot Chat** mit demselben Prompt
+     dieselbe Zuordnung vornehmen. Ordnet Copilot in allen drei Chats gleich zu? Wo Copilot von
+     eurer Tabelle abweicht: Ist seine Begründung über die Nutzungssituation vertretbar?
+  3. **Arbeitsteilung:** Jede Person lässt Copilot für das Fleece „Skog" je einen Hook für **zwei**
+     Hook-Typen formulieren (max. 10 Wörter, Verweis auf `/Fjordlicht-Basisdaten`): Person 1
+     Frage und Fehler/Irrtum, Person 2 Zahl/Liste und Kontrast, Person 3 Szene und ehrliches
+     Eingeständnis.
+  4. **Gegenseitige Prüfung:** Gebt eure Hooks im Kreis weiter. Die nächste Person prüft: Gehört
+     jeder Hook wirklich zu seinem Typ? Verstößt einer gegen die Markenstimme oder enthält eine
+     Angabe, die nicht in den Basisdaten steht? Wählt zum Schluss gemeinsam den stärksten Hook.
 tip: |
-  Frage dich bei der Zuordnung zuerst, was die Person gerade tut: scrollen, suchen, lesen oder
-  sammeln. Mehrere Lösungen sind vertretbar, wenn du sie mit der Nutzungssituation begründest.
-  Bei den Skog-Hooks lohnt der Blick auf das „ehrliche Eingeständnis": Copilot formuliert es gern
-  so, dass am Ende doch ein Versprechen herauskommt.
+  Fragt euch bei der Zuordnung zuerst, was die Person gerade tut: scrollen, suchen, lesen oder
+  sammeln. Mehrere Lösungen sind vertretbar, wenn ihr sie mit der Nutzungssituation begründet.
+  Achtet beim „ehrlichen Eingeständnis" darauf, ob am Ende doch ein Versprechen herauskommt, und
+  beim Zahl-Hook darauf, ob eine Zahl auftaucht, die nicht in den Basisdaten steht.
 solution: |
   | Nr. | Plattform | Hook-Typ | Begründung |
   |---|---|---|---|
@@ -37,16 +46,24 @@ solution: |
   Entwurf 2 folgt **PAS**: Ein konkretes Problem (Weichspüler) wird zugespitzt („ruiniert"),
   das Video liefert anschließend die Lösung. AIDA würde eher bei einem Produktlaunch passen.
 
-  Beispielprompt für Schritt 3:
+  Beispielprompt für Schritt 3 (Person 2):
 
   ```text
-  Formuliere für das Fleece Skog je einen Hook pro Typ: Frage, Fehler/Irrtum,
-  Zahl/Liste, Kontrast, Szene, ehrliches Eingeständnis. Max. 10 Wörter.
-  Fakten und Markenstimme: /Fjordlicht-Basisdaten. Keine Superlative,
-  keine Ausrufezeichen. Nenne zu jedem Hook den Typ.
+  Formuliere für das Fleece Skog je einen Hook für die Typen Zahl/Liste
+  und Kontrast. Max. 10 Wörter. Fakten und Markenstimme:
+  /Fjordlicht-Basisdaten. Keine Superlative, keine Ausrufezeichen.
+  Nenne zu jedem Hook den Typ.
   ```
 
-  Typische Befunde: Der Kontrast-Hook gerät zum Superlativ („Das wärmste Fleece, das du nie
-  wieder ausziehst"), oder der Zahl-Hook erfindet eine Zahl, die nicht in den Basisdaten steht.
-  Entwurf 5 bleibt der heikelste Typ: Er funktioniert nur, wenn der folgende Text belegbare
-  Aussagen enthält – etwa die 80 Prozent recyceltes Polyester.
+  Mögliche Befunde der gegenseitigen Prüfung: Der Kontrast-Hook gerät zum Superlativ („Das
+  wärmste Fleece, das du nie wieder ausziehst"), oder der Zahl-Hook enthält eine Zahl, die nicht
+  in den Basisdaten steht. In Schritt 2 kann Copilot Entwurf 5 in einem Chat Instagram, im anderen
+  LinkedIn zuordnen – beides ist vertretbar. Entwurf 5 bleibt der heikelste Typ: Er funktioniert
+  nur, wenn der folgende Text belegbare Aussagen enthält – etwa die 80 Prozent recyceltes
+  Polyester.
+
+  Bewertungskriterien: Zuordnung mit Nutzungssituation begründet, PAS erkannt, sechs Hooks mit
+  passendem Typ und ohne Verstoß gegen die Markenstimme; zur Zusammenarbeit: Einzelzuordnungen vor
+  der Diskussion, Unterschiede zwischen den drei Copilot-Antworten benannt und erklärt, jeder Hook
+  wurde von einer anderen Person geprüft als der, die ihn erzeugt hat, und die Auswahl des
+  stärksten Hooks ist begründet.

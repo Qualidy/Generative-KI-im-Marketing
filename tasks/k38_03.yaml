@@ -1,6 +1,13 @@
-title: Der Anruf um 16:40 Uhr
+title: Der Anruf um 16:40 Uhr – Fallanalyse mit verteilten Rollen
 difficulty: 3
 question: |
+  **Gruppenarbeit:** 4 Personen, ca. 30 Minuten, in **Copilot Chat** und **Copilot in Outlook**.
+  Verteilt für die erste Runde die Rollen **Assistenz** (liest den Anruf laut vor und schildert,
+  was sie spontan tun würde), **Prüferin** (achtet auf Warnsignale und Prozesse),
+  **Advocatus Diaboli** (verteidigt die Anruferin: „Vielleicht ist sie es wirklich?") und
+  **Protokoll**. Nach Schritt 2 tauscht ihr die Rollen. Am Ende liegen drei gemeinsam
+  beschlossene Regeln und ein Mail-Entwurf vor.
+
   Freitag, 16:40 Uhr. Die Marketing-Assistenz bei Fjordlicht erhält diesen Anruf, die Stimme
   klingt eindeutig nach der Geschäftsführerin, die gerade auf einer Messe ist:
 
@@ -15,28 +22,48 @@ question: |
   Die Geschäftsführerin spricht regelmäßig in einem Branchenpodcast und veröffentlicht
   LinkedIn-Videos.
 
-  1. Benenne **zuerst selbst** alle Warnsignale im Anruf. Gib danach das Transkript in
-     **Copilot Chat** und lass die Warnsignale auflisten. Vergleiche: Was hat Copilot gefunden,
-     was du übersehen hast – und umgekehrt?
-  2. Beschreibe, wie die Assistenz in den nächsten zehn Minuten richtig reagiert.
-  3. Bewerte: Welche Rolle spielen die öffentlichen Auftritte der Geschäftsführerin? Sollte sie
-     deshalb auf Podcasts und Videos verzichten?
-  4. Entwirf drei verbindliche Regeln für Fjordlicht, die diesen Fall künftig verhindern, und
-     begründe, warum eine reine Schulung nicht reicht.
-  5. Lass **Copilot in Outlook** aus deinen Regeln eine kurze Info-Mail an das Marketingteam
-     entwerfen. Nutze das **Coaching** für Entwürfe, um Ton und Klarheit zu prüfen: ruhig,
-     ohne Alarmismus, mit klarer Handlungsanweisung. Nicht absenden – Entwurf speichern.
+  1. **Warnsignale sammeln:** Jede Person notiert **zuerst allein** alle Warnsignale, die sie
+     findet. Das Protokoll führt sie zu einer Liste zusammen. Danach geben **alle** das
+     Transkript mit demselben Prompt in ihren eigenen Copilot Chat ein. Vergleicht: Was haben
+     die Copilot-Antworten gefunden, was ihr übersehen habt – und umgekehrt? Unterscheiden sich
+     die Antworten untereinander?
+  2. **Die nächsten zehn Minuten:** Die Assistenz beschreibt, wie sie reagieren würde. Der
+     Advocatus Diaboli hält mit Einwänden dagegen („Und wenn es wirklich dringend ist?"). Die
+     Gruppe einigt sich auf die richtige Reaktion. Bewertet gemeinsam: Welche Rolle spielen die
+     öffentlichen Auftritte der Geschäftsführerin? Sollte sie deshalb auf Podcasts und Videos
+     verzichten? **Rollen tauschen.**
+  3. **Gegenprobe in zwei Paaren:** Jedes Paar entwirft unabhängig drei verbindliche Regeln, die
+     diesen Fall künftig verhindern. Vergleicht beide Vorschläge und wählt die drei stärksten
+     Regeln aus. Begründet, warum eine reine Schulung nicht reicht.
+  4. **Info-Mail:** Eine Person lässt **Copilot in Outlook** aus den drei Regeln eine kurze
+     Info-Mail an das Marketingteam entwerfen und nutzt das **Coaching durch Copilot**, um Ton
+     und Klarheit zu prüfen: ruhig, ohne Alarmismus, mit klarer Handlungsanweisung. Die anderen
+     lesen mit und entscheiden, welche Coaching-Hinweise übernommen werden. Nicht absenden –
+     Entwurf speichern.
+  5. **Abschluss:** Stellt eure drei Regeln in höchstens zwei Minuten im Plenum vor.
 tip: |
   Gute Betrugsanrufe arbeiten mit **Zeitdruck, Autorität und Umgehung des normalen Wegs**. Die
   Stimme selbst ist kein Beweis mehr. Schutz entsteht nicht durch besseres Hinhören, sondern
-  durch Prozesse, die unabhängig von der Stimme greifen. Beim Vergleich in Schritt 1 lohnt sich
-  der Blick auf leise Signale wie die Begründung für schlechte Erreichbarkeit.
+  durch Prozesse, die unabhängig von der Stimme greifen. Achtet beim Vergleich in Schritt 1
+  darauf, ob die Copilot-Antworten auch die leisen Signale nennen, etwa die Begründung für
+  schlechte Erreichbarkeit oder den Appell an Loyalität. Der Advocatus Diaboli macht den
+  Druck spürbar, unter dem die echte Assistenz stünde – genau deshalb braucht es Regeln.
 solution: |
+  Beispiel-Prompt für Schritt 1 (für alle identisch):
+
+  ```text
+  Eine Marketing-Assistenz hat diesen Anruf erhalten, scheinbar von der
+  Geschäftsführerin. Liste alle Warnsignale für einen Betrugsversuch mit
+  geklonter Stimme auf, jeweils mit einer kurzen Begründung. Achte auch auf
+  unauffällige Signale in Formulierung und Situation.
+  [Transkript einfügen]
+  ```
+
   Warnsignale: Zeitdruck („heute noch"), neue Kontonummer, Wechsel auf einen anderen Kanal
   (WhatsApp), ausdrückliche Umgehung der Buchhaltung, Appell an Loyalität, Erklärung für
-  schlechte Erreichbarkeit („hier ist es laut"), Uhrzeit kurz vor Wochenende. Copilot findet die
-  offensichtlichen Signale meist zuverlässig; Loyalitätsappell und „hier ist es laut" fehlen in
-  der ersten Antwort häufiger.
+  schlechte Erreichbarkeit („hier ist es laut"), Uhrzeit kurz vor Wochenende. Beim Vergleich
+  lohnt der Blick darauf, welche dieser Signale in einzelnen Copilot-Antworten fehlen – das
+  unterscheidet sich oft zwischen den Gruppenmitgliedern.
 
   Richtige Reaktion: nichts zusagen, auflegen, Rückruf über die im System hinterlegte Nummer
   der Geschäftsführerin, parallel Buchhaltung oder Stellvertretung informieren, keine
@@ -57,7 +84,7 @@ solution: |
   Schulung allein reicht nicht, weil Menschen unter Zeitdruck und bei vertrauter Stimme
   zuverlässig Fehler machen. Regeln, die unabhängig vom Gefühl gelten, wirken auch dann.
 
-  Beispiel-Prompt für Copilot in Outlook (Schritt 5):
+  Beispiel-Prompt für Copilot in Outlook (Schritt 4):
 
   ```text
   Entwirf eine kurze interne Mail an das Marketingteam (5 Personen) mit
@@ -67,5 +94,14 @@ solution: |
   gegenüber der Geschäftsführung. Höchstens 120 Wörter.
   ```
 
-  Bewertungskriterien: mindestens sechs Warnsignale, Vergleich mit Copilot konkret, drei
-  prozessbasierte Regeln, Mail-Entwurf mit klarer Handlungsanweisung und ohne Alarmton.
+  Bewertungskriterien:
+
+  - Die gemeinsame Liste enthält mindestens sechs Warnsignale; der Vergleich mit den
+    Copilot-Antworten ist konkret, und Unterschiede zwischen den Antworten der
+    Gruppenmitglieder wurden benannt.
+  - Die Einwände des Advocatus Diaboli wurden aufgegriffen und mit Prozessargumenten
+    beantwortet.
+  - Beide Paare haben Regeln entworfen; die Auswahl der drei prozessbasierten Regeln ist
+    begründet.
+  - Der Mail-Entwurf enthält eine klare Handlungsanweisung, ist ohne Alarmton formuliert, und
+    die Gruppe kann sagen, welche Coaching-Hinweise sie übernommen hat und warum.

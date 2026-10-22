@@ -1,6 +1,10 @@
-title: Bildaufgabe und Kanal zuordnen – mit Copilot als Sparringspartner
+title: Bildaufgabe und Kanal zuordnen – arbeitsteilig mit Copilot
 difficulty: 1
 question: |
+  **Gruppe:** 3–4 Personen (auch als Paar machbar), ca. 20 Minuten. Am Ende liegt eine
+  gemeinsame **Copilot Page** mit der Zuordnungstabelle für alle fünf Bilder vor, dazu ein
+  Testbild und eine Gruppenentscheidung zu Bild Nr. 4.
+
   Fjordlicht plant fünf Bilder:
 
   1. Reel-Titelbild für ein Video „Drei Wege, deine Regenjacke zu imprägnieren"
@@ -9,19 +13,25 @@ question: |
   4. Newsletter-Header zum Herbstauftakt „Draußen-Notizen im Oktober"
   5. Landingpage-Banner „Jetzt Fleece Skog entdecken" mit Button
 
-  **Schritt 1 – Copilot zuordnen lassen.** Gib die fünf Bilder in Copilot Chat ein und lass für
-  jedes die **Bildaufgabe** (Aufmerksamkeit, Gefühl, Information, Vertrauen, Handlung), das
-  **Format** und **eine** Kompositionsentscheidung bestimmen. Frage außerdem, welche Bilder sich
-  für Bild-KI eignen und bei welchen ein echtes Foto Pflicht ist.
+  **Schritt 1 – Gemeinsame Tabelle anlegen.** Eine Person gibt die fünf Bilder in Copilot Chat
+  ein und lässt für jedes die **Bildaufgabe** (Aufmerksamkeit, Gefühl, Information, Vertrauen,
+  Handlung), das **Format** und **eine** Kompositionsentscheidung bestimmen – außerdem, ob sich
+  das Bild für Bild-KI eignet oder ein echtes Foto Pflicht ist. Sie übernimmt die Antwort in eine
+  Copilot Page und teilt sie mit der Gruppe.
 
-  **Schritt 2 – einordnen.** Prüfe die Tabelle gegen die Abschnitte 32.1 und 32.6. Markiere,
-  wo du Copilot zustimmst, wo du korrigierst – und warum.
+  **Schritt 2 – arbeitsteilig prüfen.** Verteilt die fünf Bilder (je Person ein bis zwei). Jede
+  Person prüft „ihre" Zeilen in der Page gegen die Abschnitte 32.1 und 32.6 und markiert direkt
+  in der Page, wo sie Copilot zustimmt und wo sie korrigiert – mit einem Satz Begründung.
+  Besprecht danach jede Korrektur kurz in der Gruppe.
 
-  **Schritt 3 – ausprobieren.** Erzeuge Bild Nr. 4 in Copilot mit der Kompositionsentscheidung
-  aus deiner Tabelle. Funktioniert das Motiv auch, wenn du es auf Smartphone-Breite verkleinerst?
+  **Schritt 3 – gleicher Prompt, mehrere Ergebnisse.** Formuliert gemeinsam **einen** Prompt für
+  Bild Nr. 4 mit der Kompositionsentscheidung aus eurer Tabelle. Alle führen ihn in ihrem eigenen
+  Copilot Chat aus. Schaut euch die Bilder auf dem Smartphone in kleiner Größe an: Funktioniert das
+  Motiv auch auf Smartphone-Breite? Entscheidet euch für eine Variante und haltet in der Page fest,
+  warum.
 tip: |
-  Frage dich zuerst, was die betrachtende Person **nach** dem Bild tun oder wissen soll. Die
-  Kompositionsentscheidung folgt dann fast von selbst. Achte bei Copilots Antwort besonders auf
+  Fragt euch zuerst, was die betrachtende Person **nach** dem Bild tun oder wissen soll. Die
+  Kompositionsentscheidung folgt dann fast von selbst. Achtet bei Copilots Antwort besonders auf
   Nr. 2 und Nr. 3 – dort zeigt sich, ob die Frage „echtes Foto oder KI" ernst genommen wird.
 solution: |
   Beispielprompt:
@@ -46,10 +56,15 @@ solution: |
   **Echtes Foto Pflicht:** Nr. 2, weil das echte Produktdetail gezeigt werden muss – eine
   KI-Variante würde Nähte und Material frei erfinden. Nr. 3 ebenfalls: Wer echte Kundschaft
   zeigt, muss echte Menschen zeigen; ein generiertes „Kundenteam" wäre irreführend (Kap. 34).
-  Copilot ordnet Aufgaben und Formate meist plausibel zu, schlägt bei Nr. 3 aber gelegentlich
-  ein generiertes Teambild vor – das ist die wichtigste Korrektur.
+  Prüft besonders, ob Copilot bei Nr. 3 ein generiertes Teambild für vertretbar hält – das wäre
+  die wichtigste Korrektur.
 
   **Bild-KI geeignet:** Nr. 4 als Stimmungsbild ohne Produktaussage. Nr. 1 und 5 nur, wenn das
-  Produkt echt ist – etwa ein echtes Produktfoto, dessen Umgebung mit KI erweitert wird (Kap. 33).
-  Beim Test von Nr. 4 zeigt sich oft: Eine kleine Person in weiter Landschaft verschwindet auf
-  Smartphone-Breite – dann Motiv größer oder klarer Farbakzent.
+  Produkt echt ist – etwa ein echtes Produktfoto in einer generierten Umgebung (Kap. 33). Beim
+  Smartphone-Test von Nr. 4 lohnt der Blick darauf, ob eine kleine Person in weiter Landschaft auf
+  Smartphone-Breite noch erkennbar ist – sonst Motiv größer oder klarer Farbakzent.
+
+  Bewertungskriterien: Die Page enthält alle fünf Zeilen mit Zustimmung oder Korrektur und
+  Begründung; Nr. 2 und Nr. 3 sind als „echtes Foto" eingeordnet; die Gruppe hat die
+  Unterschiede zwischen den Bildern zu Nr. 4 benannt (etwa Größe der Person, Farbakzent,
+  Horizontlinie) und ihre Wahl mit dem Smartphone-Test begründet.

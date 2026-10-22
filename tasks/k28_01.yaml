@@ -1,10 +1,13 @@
-title: Was geht bei der Migration mit – und wohin?
+title: Was geht bei der Migration mit – und wohin? (Gruppenrecherche)
 difficulty: 1
 question: |
-  Fjordlicht migriert drei Custom GPTs zu Plugins. Parallel fragt die Geschäftsführung, ob man
-  sie nicht gleich als Copilot-Agents nachbauen könnte, weil alle Microsoft 365 Copilot haben.
+  **Gruppenarbeit, 3–4 Personen, ca. 20 Minuten.** Fjordlicht migriert drei Custom GPTs zu
+  Plugins. Parallel fragt die Geschäftsführung, ob man sie nicht gleich als Copilot-Agents
+  nachbauen könnte, weil alle Microsoft 365 Copilot haben. Am Ende liegt eine gemeinsame
+  Tabelle in einem geteilten Word-Dokument oder einer geteilten **Copilot Page** vor.
 
-  1. **Stand prüfen in Copilot Chat.** Schalte auf **Web** und frage:
+  1. **Gleicher Prompt, mehrere Quellenlagen.** Alle schalten in Copilot Chat auf **Web** und
+     stellen dieselbe Frage:
 
   ```text
   Was ist der aktuelle Stand der Ablösung von Custom GPTs durch Plugins bei
@@ -12,10 +15,12 @@ question: |
   wird. Gib zu jeder Aussage die Quelle mit Datum an.
   ```
 
-     Vergleiche die Antwort mit der Tabelle in Abschnitt 28.6: Stimmen Termine und Inhalte
-     überein? Welche Quelle ist eine Herstellerangabe, welche eine Fachmeldung?
-  2. **Einordnen.** Gib für jedes Element an, ob es bei „Migrate to plugin" **übertragen** wird
-     (und als was) oder **nicht übertragen** wird – und was das Team dann tun muss.
+     Vergleicht eure Antworten: Nennen alle dieselben Termine? Dieselben Quellen? Welche
+     Quelle ist eine Herstellerangabe, welche eine Fachmeldung? Gleicht das Ergebnis mit der
+     Tabelle in Abschnitt 28.6 ab.
+  2. **Arbeitsteilung beim Einordnen.** Verteilt die sieben Elemente auf die Personen. Jede
+     Person gibt für ihre Elemente an, ob sie bei „Migrate to plugin" **übertragen** werden
+     (und als was) oder **nicht übertragen** werden – und was das Team dann tun muss.
 
      1. die Instruktionen des Content-Assistenten
      2. die Datei `claim-liste.md` des Content-Assistenten
@@ -25,37 +30,45 @@ question: |
      6. das als Standard gewählte Modell
      7. eine verbundene App
 
-  3. **Gegenprobe Copilot-Agent.** Öffne den Agent Builder und sieh dir an, welche Felder ein
-     Agent hat. Ergänze in deiner Tabelle eine Spalte: Wohin käme jedes Element bei einem
+  3. **Gegenprobe Copilot-Agent.** Eine Person öffnet den Agent Builder und zeigt der Gruppe
+     (Bildschirm teilen), was man beim Erstellen eines Agents festlegt: Anweisungen, Wissen,
+     Startprompts, Teilen. Ergänzt gemeinsam eine Spalte: Wohin käme jedes Element bei einem
      Nachbau als Copilot-Agent – oder geht es auch dort nicht mit?
 
-  Bis wann sollte Fjordlicht spätestens migriert haben, wenn das Unternehmen kein
-  Enterprise-Kunde ist, und warum sind die Termine nur unter Vorbehalt zu verstehen?
+  **Abschluss:** Einigt euch auf eine Antwort: Bis wann sollte Fjordlicht spätestens
+  migriert haben, wenn das Unternehmen kein Enterprise-Kunde ist, und warum sind die Termine
+  nur unter Vorbehalt zu verstehen?
 tip: |
-  Merke dir die Grundregel: Was den Assistenten **ausmacht** (Instruktionen, Wissen), geht
+  Merkt euch die Grundregel: Was den Assistenten **ausmacht** (Instruktionen, Wissen), geht
   mit – zum Plugin genauso wie per Copy-and-paste zu einem Copilot-Agent. Was an
-  **Einstellungen und Verbindungen** hängt, muss geprüft oder neu gesetzt werden. Prüfe bei
-  der Websuche, ob Copilot ein Datum wirklich aus einer Quelle hat oder es nur glatt
-  formuliert.
+  **Einstellungen und Verbindungen** hängt, muss geprüft oder neu gesetzt werden. Achtet bei
+  der Websuche darauf, ob ein Datum wirklich aus einer genannten Quelle stammt. Wenn eure
+  Antworten verschiedene Daten nennen, ist das kein Fehler der Übung, sondern der Anlass,
+  die Quelle selbst zu öffnen.
 solution: |
   | Nr. | Plugin-Migration | To-do | bei Nachbau als Copilot-Agent |
   |---|---|---|---|
   | 1 | übertragen, wird zum **Skill** | Testfälle erneut laufen lassen | in die Anweisungen kopieren, ggf. kürzen |
   | 2 | übertragen, wird zur **Referenzdatei** | prüfen, ob Fundstellen weiter zitiert werden | als Wissen hinzufügen (Datei aus OneDrive/SharePoint oder Upload) |
-  | 3 | **nicht** übertragen | mit IT neu bauen, etwa als App oder MCP-Server | nicht im Agent Builder; Aktion/Konnektor in Copilot Studio oder Automatisierung über Power Automate bzw. eine andere Plattform |
+  | 3 | **nicht** übertragen | mit IT neu bauen, etwa als App oder MCP-Server | nicht im Agent Builder; eigene technische Anbindung mit der IT klären |
   | 4 | **nicht** übertragen; Plugins starten privat | Freigabe fürs Team neu einrichten | Teilen neu festlegen |
   | 5 | **nicht** übertragen | bei Bedarf vorher wichtige Ergebnisse sichern | geht nicht mit |
-  | 6 | **nicht** übertragen | Ergebnisse mit aktuellen Modellen prüfen | Modell legt Microsoft fest; mit Testsatz prüfen |
-  | 7 | kann übernommen werden | Verbindung und Berechtigungen kontrollieren | nur, wenn es einen passenden Konnektor gibt – mit IT klären |
+  | 6 | **nicht** übertragen | Ergebnisse mit aktuellen Modellen prüfen | Modell wählt ihr nicht selbst; mit Testsatz prüfen |
+  | 7 | kann übernommen werden | Verbindung und Berechtigungen kontrollieren | mit IT klären, ob es eine passende Anbindung gibt |
 
   Das geplante Ende für Custom GPTs ist der **11.12.2026**; nicht migrierte GPTs sind
   spätestens ab **11.02.2027** nicht mehr nutzbar. Sinnvoll ist eine Migration deutlich vor
   dem 11.12.2026. Die Termine stammen aus der Ankündigung vom 11.09.2026 und Fachmeldungen,
   können je Konto variieren und sich ändern – deshalb im eigenen Konto prüfen.
 
-  Typische Beobachtung beim Websuche-Schritt: Copilot findet die Ankündigung und einige
-  Fachmeldungen; einzelne Termine (etwa die Übergangsphase) tauchen nur in Sekundärquellen
-  auf oder fehlen. Genau dafür ist der Abgleich mit Quelle und Datum da.
+  Mögliche Beobachtung im Gruppenvergleich: Die Copilots finden unterschiedliche Quellen;
+  einzelne Termine (etwa die Übergangsphase) tauchen nur in Sekundärquellen auf oder fehlen
+  in einer der Antworten. Genau dafür ist der Abgleich mit Quelle und Datum da.
 
   Die Gegenprobe zeigt die Lehre aus Abschnitt 28.6: Die Bausteine Instruktionen und Wissen
   ziehen überall hin um, Verbindungen und Freigaben müssen überall neu gebaut werden.
+
+  Bewertungskriterien: alle sieben Elemente korrekt eingeordnet; Unterschiede zwischen den
+  Websuche-Ergebnissen der Gruppenmitglieder (Termine, Quellen) benannt und mit Abschnitt 28.6
+  aufgelöst; Herstellerangabe und Fachmeldung unterschieden; Agent-Spalte vollständig;
+  Termine mit Vorbehalt formuliert.

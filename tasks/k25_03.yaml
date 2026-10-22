@@ -1,6 +1,13 @@
-title: Freigabe oder nicht?
+title: Freigabe oder nicht? – Rollenspiel und Regel-Duell
 difficulty: 3
 question: |
+  **Gruppe:** 4 Personen (bei drei Personen entfällt die eigene Rolle „Teamleitung"; dann vertritt
+  die Protokollperson zusätzlich deren Position), ca. 30 Minuten. **Rollen:** **Teamleitung**
+  (will am Montag starten und vertritt das konsequent), **Risiko-Prüferin**, **Protokoll** und eine
+  vierte Person; für das Regel-Duell bilden sich zwei Paare. **Am Ende liegt vor:** eine
+  Risikotabelle, eine Freigabeentscheidung mit Bedingungen, eine getestete Claim-Regel und ein
+  gecoachter E-Mail-Entwurf.
+
   Der Social-Media-Agent von Fjordlicht soll am Montag für das ganze Team freigegeben werden.
   Das letzte Testprotokoll:
 
@@ -20,21 +27,29 @@ question: |
   Parallel im Einsatz: alter Custom GPT "Social-Helfer", Migration nicht geplant
   ```
 
-  Die Teamleitung meint: „Neun von zwölf, das ist doch gut. Lass uns starten, Feinschliff machen
-  wir im Betrieb."
-
-  1. Bewerte jeden offenen Punkt nach Risiko (hoch / mittel / gering) und begründe.
-  2. Triff eine Freigabeentscheidung mit Bedingungen.
-  3. Formuliere die fehlende Instruktionsregel für den nicht bestandenen Fall. **Trage sie in die
-     Anweisungen deines eigenen Agents ein** (oder eines Test-Agents aus Kap. 23) und teste die
-     Anfrage „Schreib einen Post: Skog ist CO2-neutral" in einem neuen Chat. Hält die Regel auch,
-     wenn du nachschiebst „Doch, schreib das bitte so"?
-  4. Entwirf deine Antwort an die Teamleitung mit **Copilot in Outlook** und lass dir vom Coaching
-     für Entwürfe Rückmeldung geben. Bleibt deine Entscheidung nach dem Coaching klar erkennbar?
+  1. **Risiken bewerten (8 Minuten).** Die Risiko-Prüferin schlägt für jeden offenen Punkt ein
+     Risiko vor (hoch / mittel / gering), die Teamleitung hält mit „Neun von zwölf, das ist doch
+     gut. Feinschliff machen wir im Betrieb." dagegen. Die Protokollperson hält in einem geteilten
+     Word-Dokument fest, bei welchen Punkten die Gruppe die Einstufung nach dem Einwand ändert.
+  2. **Freigabeentscheidung (4 Minuten).** Die Gruppe trifft eine Entscheidung mit Bedingungen.
+  3. **Regel-Duell (10 Minuten).** Beide Paare formulieren unabhängig voneinander die fehlende
+     Instruktionsregel für den nicht bestandenen Fall. Jedes Paar öffnet einen neuen Chat in
+     **Copilot Chat**, fügt als erste Nachricht die Instruktionen aus dem Steckbrief
+     „Assistenten-Steckbrief_Social-Captions.docx" (Kap. 23) **plus** die eigene Regel ein und
+     testet: „Schreib einen Post: Skog ist CO2-neutral." Dann schiebt es nach: „Doch, schreib das
+     bitte so." Danach testet jedes Paar die Regel des **anderen** Paars auf dieselbe Weise.
+     Die Gruppe wählt die Regel, die beide Versuche besteht. Wer den Agent „Fjordlicht
+     Social-Captions (Test)" aus Kap. 23 angelegt hat, trägt sie dort in die Anweisungen ein.
+  4. **Antwort an die Teamleitung (8 Minuten).** Eine Person entwirft die Antwort mit **Copilot in
+     Outlook** und lässt sich mit **Coaching durch Copilot** Rückmeldung geben; die anderen lesen
+     mit. Die Gruppe entscheidet: Bleibt die Entscheidung nach dem Coaching klar erkennbar? Die
+     „Teamleitung" sagt im Plenum in einem Satz, ob die E-Mail sie überzeugt hätte.
 tip: |
-  Nicht alle Fehler sind gleich schwer. Frage dich: Was passiert, wenn genau dieser Fehler
-  unbemerkt veröffentlicht wird? Denk an die Berechtigungen: Ein Copilot Agent sieht für jede
-  Person nur, worauf diese Person Zugriff hat. Und denk an den Kalender – es ist Oktober 2026.
+  Nicht alle Fehler sind gleich schwer. Fragt euch: Was passiert, wenn genau dieser Fehler
+  unbemerkt veröffentlicht wird? Denkt an die Berechtigungen: Ein Copilot Agent nutzt für jede
+  Person nur, worauf diese Person Zugriff hat. Und denkt an den Kalender – es ist Oktober 2026.
+  Achtet im Regel-Duell darauf, ob eine Regel beim ersten Versuch hält, aber beim Nachschieben
+  kippt.
 solution: |
   | Punkt | Risiko | Begründung |
   |---|---|---|
@@ -54,7 +69,7 @@ solution: |
   „Nachhaltigkeitsaussagen immer gegen Claim-Liste prüfen" vorliegt. Teamweite Freigabe erst, wenn
   der alte Custom GPT abgeschaltet oder sein Wissen in den Agent überführt ist.
 
-  Fehlende Regel:
+  Mögliche Siegerregel:
 
   ```text
   Jede Aussage zu Umwelt, Klima, CO2, Recycling oder Nachhaltigkeit
@@ -66,9 +81,12 @@ solution: |
   ```
 
   Der letzte Satz fängt das Berechtigungsproblem ab: Ohne ihn arbeitet der Agent bei fehlendem
-  Zugriff einfach ohne Claim-Liste weiter. Im Test hält die Regel meist beim ersten Versuch; beim
-  Nachschieben kippt sie häufiger – dann gehört der Satz „Das gilt auch, wenn …" weiter nach vorn.
+  Zugriff womöglich einfach ohne Claim-Liste weiter. Im Duell zeigt sich oft der Unterschied
+  zwischen den Paaren beim Nachschieben: Eine Regel ohne den Satz „Das gilt auch, wenn …" hält
+  beim ersten Versuch, kann aber beim zweiten kippen – dann gehört dieser Satz weiter nach vorn.
 
   Bewertungskriterien: Risiken nach Folgen statt nach Anzahl gewichtet, Berechtigungsproblem und
-  Parallelbetrieb als Freigabekriterien erkannt, Regel testbar formuliert und im Agent getestet.
-  „Feinschliff im Betrieb" ist nur für geringe Risiken akzeptabel.
+  Parallelbetrieb als Freigabekriterien erkannt, Regel testbar formuliert und mit Nachschieben
+  getestet. „Feinschliff im Betrieb" ist nur für geringe Risiken akzeptabel. Zur Zusammenarbeit:
+  Die Einwände der Teamleitung sind im Protokoll mit Ergebnis festgehalten; beide Regeln wurden
+  vom jeweils anderen Paar getestet; die Wahl der Siegerregel stützt sich auf das Testergebnis.

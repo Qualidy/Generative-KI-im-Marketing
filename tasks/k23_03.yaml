@@ -1,6 +1,11 @@
-title: Die Migration bewerten
+title: Die Migration bewerten – in Arbeitsteilung
 difficulty: 3
 question: |
+  **Gruppe:** 4 Personen (bei drei Personen übernimmt eine zwei Teile), ca. 30 Minuten.
+  **Aufteilung:** jede Person bearbeitet einen Teil, danach Zusammenführung in einer geteilten
+  **Copilot Page**. **Am Ende liegt vor:** eine gemeinsame Tabelle, eine Liste „ohnehin
+  überarbeiten" und ein abgestimmter E-Mail-Entwurf an die Teamleitung.
+
   Das Fjordlicht-Team nutzt seit einem Jahr den Custom GPT „Produkttext-Helfer". Er hat:
 
   ```text
@@ -18,35 +23,42 @@ question: |
   bisher, oder?" Gleichzeitig steht die Frage im Raum, ob der Assistent nicht gleich als
   **Copilot Agent** neu entstehen soll – Microsoft 365 Copilot haben alle im Team.
 
-  1. Lass dir in **Copilot Chat** eine erste Fassung der Tabelle erstellen: Füge die Liste oben und
-     die Migrationstabelle aus Abschnitt 23.4 ein und bitte um die Spalten „Bestandteil – wird ins
-     Plugin übertragen ja/nein – was ist zu tun". Prüfe jede Zeile gegen Abschnitt 23.4 und
-     korrigiere, wo Copilot rät.
-  2. Ergänze eine Spalte **„bei Neubau als Copilot Agent"**: Wohin wandert jeder Bestandteil im
-     Agent Builder, und was fehlt dort?
-  3. Nenne zwei Dinge, die bei dieser Gelegenheit **ohnehin** überarbeitet werden sollten,
-     unabhängig vom Format.
-  4. Entwirf die Antwort an die Teamleitung mit **Copilot in Outlook** (maximal 120 Wörter). Lass
-     dir vom Coaching für Entwürfe Rückmeldung zu Ton und Klarheit geben und entscheide selbst,
-     welche Hinweise du übernimmst.
+  1. **Person A – Plugin-Spalte (10 Minuten).** Lass dir in **Copilot Chat** eine erste Fassung
+     der Tabelle erstellen: Füge die Liste oben und die Migrationstabelle aus Abschnitt 23.4 ein
+     und bitte um die Spalten „Bestandteil – wird ins Plugin übertragen ja/nein – was ist zu tun".
+     Übernimm die Antwort in eine **Copilot Page** und teile sie mit der Gruppe.
+  2. **Person B – Faktenprüfung (parallel).** Prüfe jede Zeile der Page gegen Abschnitt 23.4 und
+     markiere, wo Copilot geraten oder sich geirrt hat.
+  3. **Person C – Agent-Spalte (parallel).** Ergänze in der Page die Spalte **„bei Neubau als
+     Copilot Agent"**: Wohin wandert jeder Bestandteil (Anweisungen, Wissen aus Dateien,
+     Startprompts, Teilen), und was lässt sich im Agent Builder nicht abbilden?
+  4. **Person D – Frühjahrsputz und Antwort (parallel).** Sammle zwei Dinge, die **ohnehin**
+     überarbeitet werden sollten, unabhängig vom Format. Entwirf dann mit **Copilot in Outlook**
+     die Antwort an die Teamleitung (maximal 120 Wörter) und lass dir mit **Coaching durch
+     Copilot** Rückmeldung zu Ton und Klarheit geben.
+  5. **Zusammenführung (8 Minuten).** Die Gruppe liest die Page gemeinsam, gleicht die
+     E-Mail mit der Tabelle ab und entscheidet, welche Coaching-Hinweise übernommen werden.
+     Eine Person stellt die Kernaussage der E-Mail im Plenum vor (1 Minute).
 tip: |
-  Halte dich an die Fakten aus Abschnitt 23.4 – Copilot kennt die Plugin-Umstellung womöglich
-  nicht oder nur ungenau. Schau genau auf die Dateinamen: Eine Migration ist ein guter Anlass für
-  einen Frühjahrsputz. Beim Copilot Agent hilft der Gedanke aus Abschnitt 23.6: Die vier Bausteine
-  sind dieselben, nur die Felder heißen anders.
+  Haltet euch an die Fakten aus Abschnitt 23.4 – achtet darauf, ob Copilot die Plugin-Umstellung
+  überhaupt korrekt kennt oder Lücken mit plausibel klingenden Annahmen füllt. Schaut genau auf
+  die Dateinamen: Eine Migration ist ein guter Anlass für einen Frühjahrsputz. Beim Copilot Agent
+  hilft der Gedanke aus Abschnitt 23.6: Die vier Bausteine sind dieselben, nur die Felder heißen
+  anders. Die E-Mail muss zur Tabelle passen – ein Widerspruch zwischen beiden fällt in der
+  Zusammenführung auf.
 solution: |
   | Bestandteil | ins Plugin? | Zu tun | bei Neubau als Copilot Agent |
   |---|---|---|---|
   | Instruktionen | ja, als Skill | gegenlesen, ob alles korrekt übernommen ist | Anweisungen, aus dem Steckbrief kopieren |
-  | Wissensdateien | ja, als Referenzdateien | auf Aktualität prüfen | Dateien in OneDrive/SharePoint als Wissensquelle; Nutzende brauchen Zugriff darauf |
-  | Custom Action Lagerbestand | nein | Bedarf klären, ggf. Neubau als App bzw. MCP-Server | nicht im Agent Builder; ggf. Copilot Studio mit IT |
+  | Wissensdateien | ja, als Referenzdateien | auf Aktualität prüfen | Dateien in OneDrive/SharePoint als Wissen; Nutzende brauchen Zugriff darauf |
+  | Custom Action Lagerbestand | nein | Bedarf klären, ggf. Neubau als App bzw. MCP-Server | im Agent Builder nicht abbildbar; mit der IT klären |
   | Konversationsstarter | nicht sicher | im Plugin prüfen, sonst Kurzanleitung | Startprompts |
-  | Freigabe Arbeitsbereich | nein, Plugin startet privat | Freigabe bewusst neu setzen | Agent gezielt teilen, falls freigegeben |
-  | Modell | nein | im Plugin prüfen und testen | Modellwahl je nach Umgebung eingeschränkt; Verhalten testen |
+  | Freigabe Arbeitsbereich | nein, Plugin startet privat | Freigabe bewusst neu setzen | Agent gezielt mit den Personen teilen, die ihn brauchen |
+  | Modell | nein | im Plugin prüfen und testen | kein Baustein des Steckbriefs; Verhalten nach dem Neubau mit Testfällen prüfen |
   | Gesprächsverläufe | nein | gelungene Formulierungen vorher sichern, als Beispieltexte aufnehmen | ebenso – nichts wird übernommen |
 
-  Typische Copilot-Fehler in Schritt 1: „Modell wird übernommen" oder „Freigabe bleibt erhalten" –
-  beides falsch laut Abschnitt 23.4.
+  Mögliche Copilot-Fehler, die Person B finden kann: „Modell wird übernommen" oder „Freigabe
+  bleibt erhalten" – beides falsch laut Abschnitt 23.4.
 
   Ohnehin überarbeiten: (1) **Produktdaten_2025.xlsx** ist veraltet – neue Kollektion fehlt.
   (2) **Styleguide.pdf** als gegliederte Word-Datei neu anlegen (Kap. 24). (3) Die Instruktionen
@@ -64,6 +76,8 @@ solution: |
   der Copilot Agent liegt bei unseren übrigen Daten. Die Lagerabfrage klären wir separat. Aufwand:
   etwa einen halben Tag."
 
-  Bewertungskriterien: Fakten korrekt, Copilot-Fehler in der Tabelle erkannt, keine Annahme
-  „läuft weiter wie bisher", Agent-Spalte benennt die Lücke bei der Custom Action und die
-  Dateiberechtigungen, Migration als Anlass zur Qualitätsprüfung genutzt.
+  Bewertungskriterien: Fakten korrekt, Copilot-Fehler in der Tabelle erkannt und markiert, keine
+  Annahme „läuft weiter wie bisher", Agent-Spalte benennt die Lücke bei der Custom Action und die
+  Dateiberechtigungen, Migration als Anlass zur Qualitätsprüfung genutzt. Zur Zusammenarbeit:
+  E-Mail und Tabelle widersprechen sich nicht; die Gruppe hat begründet festgehalten, welche
+  Coaching-Hinweise sie übernommen und welche sie verworfen hat.

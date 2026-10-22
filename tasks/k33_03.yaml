@@ -1,59 +1,69 @@
-title: Ein Motiv – vier Formate
+title: Ein Motiv – vier Formate im Gruppenduell
 difficulty: 3
 question: |
-  Diese Übung machst du in **Copilot** (Bilderzeugung) und in **PowerPoint** als
-  Layout-Werkzeug. Alternativ für das Layout: Create, Canva, Adobe Express oder Figma.
+  **Gruppe:** 4 Personen in zwei Paaren, ca. 30 Minuten. Am Ende liegen acht Layouts (vier je
+  Weg) in PowerPoint, eine gemeinsame Bewertung beider Wege und eine Teamregel vor, die ihr im
+  Plenum in zwei Minuten vorstellt.
 
   Das Schlüsselmotiv der Fjordlicht-Herbstkampagne soll in vier Formaten erscheinen:
   Instagram-Post 4:5, Story 9:16, Newsletter-Header ca. 3:1 und Webshop-Banner 16:9. Alle
   Formate tragen die Headline „Der Herbst kann kommen." und das Fjordlicht-Logo als Platzhalter.
+  Einigt euch zuerst gemeinsam auf **ein** Prompt-Gerüst für das Motiv.
 
-  1. **Weg A:** Generiere das Motiv in Copilot mit demselben Prompt-Gerüst je Format neu.
-  2. **Weg B:** Erzeuge einen Master mit großzügigem Rand und leite die vier Formate per
-     Zuschnitt ab. Wo der Rand nicht reicht, lass das Bild erweitern – per Anweisung in
-     Copilot oder mit Generativem Erweitern in Photoshop/Firefly, falls verfügbar.
-  3. **Overlay.** Lege in PowerPoint je Format eine Datei mit passender benutzerdefinierter
-     Foliengröße an, setze Bild, Headline (echtes Textfeld) und Logo-Platzhalter. Markiere bei
-     9:16 die Bereiche oben und unten, in denen die Plattform Bedienelemente einblendet.
-  4. **Vergleich.** Bewerte beide Wege nach Motivgleichheit, Komposition je Format, Aufwand
-     und Fehlern in erweiterten Bereichen.
-  5. **Empfehlung.** Formuliere eine Regel für das Team: Wann welcher Weg?
+  1. **Paar A – Weg A: je Format neu.** Erzeugt das Motiv in Copilot Chat mit dem gemeinsamen
+     Gerüst viermal neu und gebt im Prompt jeweils das gewünschte Format an (je Person zwei
+     Formate). Achtet darauf, ob Copilot das Format umsetzt; wo nicht, schneidet ihr im Layout zu.
+  2. **Paar B – Weg B: ein Master.** Erzeugt ein Master-Motiv mit dem Gerüst und der Ergänzung
+     „Motiv klein in der Bildmitte, viel ruhige Fläche zu allen Seiten". Leitet die vier Formate
+     per Zuschnitt in PowerPoint ab (je Person zwei Formate). Wo der Rand nicht reicht, haltet ihr
+     das als Befund fest – wer Photoshop hat, kann dort mit Generativem Erweitern ergänzen.
+  3. **Overlay.** Jede Person legt für ihre beiden Formate eine PowerPoint-Datei mit passender
+     benutzerdefinierter Foliengröße an und setzt Bild, Headline (echtes Textfeld) und
+     Logo-Platzhalter. Bei 9:16 markiert ihr die Bereiche oben und unten, in denen die Plattform
+     Bedienelemente einblendet. Ablage: gemeinsamer OneDrive-Ordner.
+  4. **Kreuzbewertung.** Jedes Paar bewertet die vier Layouts des **anderen** Paares nach
+     Motivgleichheit, Komposition je Format, Aufwand und Fehlern (etwa abgeschnittene Köpfe,
+     zu wenig Fläche für die Headline, Abweichungen zwischen den Formaten).
+  5. **Teamregel.** Formuliert gemeinsam eine Regel: Wann welcher Weg?
 tip: |
-  Schau dir bei Weg B die erweiterten Ränder in voller Auflösung an. Erweiterungen erzeugen dort
-  gern Wiederholungen, unlogische Perspektiven oder Gegenstände, die im Original nicht
-  angelegt waren. Bei Erweiterung per Chat-Anweisung prüfe zusätzlich, ob sich auch das
-  Motiv in der Mitte verändert hat.
+  Die Kreuzbewertung ist Absicht: Wer ein Layout gebaut hat, sieht eher, was es leisten soll, als
+  was es tatsächlich zeigt. Schaut euch bei Weg B die zugeschnittenen Formate in voller Größe an –
+  besonders 9:16 und 3:1 verlangen dem Master viel ab. Bei Weg A lohnt der Blick darauf, wie stark
+  Figur, Ort und Licht zwischen den vier Bildern wechseln, obwohl das Gerüst gleich ist.
 solution: |
-  Beispiel für die Erweiterung per Anweisung:
+  Beispiel für die Master-Ergänzung im Gerüst:
 
   ```text
-  Erweitere dieses Bild zu einem breiten Querformat 16:9. Ergänze links und
-  rechts passende Landschaft im selben Licht und Stil. Person, Weg und
-  Bildmitte bleiben exakt gleich. Kein Text, keine Logos.
+  Querformat. Das Motiv steht klein in der Bildmitte, rundherum viel
+  ruhige Fläche (Nebel, Himmel, Heide) ohne wichtige Details, damit das
+  Bild später in mehrere Formate zugeschnitten werden kann. Kein Text,
+  keine Logos.
   ```
 
-  Typischer Vergleich:
+  Möglicher Vergleich:
 
-  | Kriterium | Weg A: je Format neu | Weg B: Master erweitern |
+  | Kriterium | Weg A: je Format neu | Weg B: ein Master, zugeschnitten |
   |---|---|---|
-  | Motivgleichheit | gering – Figur, Ort, Licht weichen ab | hoch, solange die Mitte nicht neu erzeugt wird |
-  | Komposition je Format | gut, jedes Format eigens angelegt | Kompromiss, vor allem 3:1 und 9:16 |
-  | Aufwand | mehr Generierungen, mehr Auswahl | weniger Generierung, mehr Prüfung |
-  | Fehlerquellen | Inkonsistenz zwischen Formaten | Artefakte in erweiterten Rändern; in Copilot teils veränderte Bildmitte |
+  | Motivgleichheit | prüft, wie stark Figur, Ort, Licht abweichen | identisches Motiv in allen Formaten |
+  | Komposition je Format | jedes Format eigens angelegt – sofern das Format getroffen wurde | Kompromiss, vor allem bei 3:1 und 9:16 |
+  | Aufwand | mehr Generierungen, mehr Auswahl | eine Generierung, mehr Arbeit im Zuschnitt |
+  | Fehlerquellen | Inkonsistenz zwischen Formaten, Formate nur grob umgesetzt | Motiv zu klein oder Rand zu knapp; Erweiterung nur mit Zusatzwerkzeug |
 
   Eine begründete Teamregel könnte lauten:
 
   ```text
   Für Kampagnen mit wiedererkennbarem Schlüsselmotiv: Weg B. Master mit
-  Motiv in der Mitte und mindestens 25 Prozent Rand anlegen, Ränder
-  nach Erweiterung in voller Auflösung prüfen; wenn die Bildmitte exakt
-  gleich bleiben muss, in Photoshop erweitern statt per Chat.
+  Motiv in der Mitte und viel ruhiger Fläche anlegen, Formate im Layout
+  zuschneiden; reicht der Rand nicht, in Photoshop erweitern und die
+  erweiterten Bereiche in voller Größe prüfen.
   Für lose Serien ohne festes Motiv (z. B. Pinterest-Inspiration): Weg A
   mit festem Prompt-Gerüst.
   Text und Logo immer im Layout (PowerPoint-Vorlage je Format), nie im Bildprompt.
   ```
 
-  Bewertungskriterien: beide Wege tatsächlich umgesetzt, Vergleich mit mindestens vier
-  Kriterien, mindestens ein konkret benannter Fehler aus Erweiterung oder Neugenerierung,
-  Headline in allen Formaten lesbar und außerhalb der Story-Bedienbereiche platziert,
-  Empfehlung als anwendbare Regel formuliert.
+  Bewertungskriterien: beide Wege tatsächlich umgesetzt, alle acht Layouts liegen im
+  gemeinsamen Ordner; die Kreuzbewertung nutzt mindestens vier Kriterien und benennt mindestens
+  einen konkreten Fehler je Weg; Unterschiede zwischen den Bildern, die die Mitglieder von Paar A
+  mit demselben Gerüst erzeugt haben, sind benannt und erklärt; die Headline ist in allen Formaten
+  lesbar und außerhalb der Story-Bedienbereiche platziert; die Teamregel ist als anwendbare Regel
+  formuliert und wurde im Plenum vorgestellt.

@@ -1,17 +1,24 @@
-title: Prototyp als Copilot-Agent bauen und im Rollenspiel testen
+title: Prototyp als Copilot-Agent – bauen und im Rollenspiel testen
 difficulty: 2
 question: |
-  Diese Übung machst du mit dem **Agent Builder** in Microsoft 365 Copilot (falls in eurer
-  Umgebung freigegeben). Du baust einen Prototyp – nur intern, nur mit fiktiven Daten.
+  **Gruppenarbeit, 3–4 Personen, ca. 30 Minuten.** Ihr baut gemeinsam einen Prototyp mit dem
+  **Agent Builder** in Microsoft 365 Copilot – nur intern, nur mit fiktiven Daten. Am Ende
+  liegen ein geteilter Agent „Fjordlicht Business Assistent (Prototyp)", drei Wissensdateien
+  im Ordner „Fjordlicht-Kurs/CRM-Bot" und ein kurzes Testprotokoll vor.
 
-  1. **Wissensdateien anlegen.** Erstelle im OneDrive-Ordner „Fjordlicht-Kurs" einen
-     Unterordner „CRM-Bot" mit drei kurzen Word-Dateien: `FAQ` (drei bis fünf Fragen mit
-     fiktiven Antworten, z. B. Mindestmenge, Veredelungsarten, Lieferzeit), `Lead-Kriterien`
-     (Stufen A/B/C aus Abschnitt 27.2) und `Steckbrief-Vorlage` (Feldnamen aus 27.3).
-     Du kannst dir die FAQ mit Copilot in Word entwerfen lassen – prüfe dann, dass keine
-     Preise darin stehen.
-  2. **Agent erstellen.** Lege im Agent Builder einen Agent „Fjordlicht Business Assistent
-     (Prototyp)" an. Trage als Anweisungen ein:
+  **Rollen:** **Agent-Verantwortliche** (baut und teilt den Agent), **Kundin** (spielt die
+  Anfragende), **Prüferin** (achtet auf Regeln und Steckbrief), **Protokoll** (hält Fehler und
+  Änderungen fest). Zu dritt übernimmt die Agent-Verantwortliche auch das Protokoll.
+
+  1. **Wissensdateien in Arbeitsteilung.** Die Agent-Verantwortliche legt in ihrem
+     OneDrive-Ordner „Fjordlicht-Kurs" den Unterordner „CRM-Bot" an und teilt ihn mit der
+     Gruppe. Je eine Person erstellt darin eine kurze Word-Datei: `FAQ` (drei bis fünf Fragen
+     mit fiktiven Antworten, z. B. Mindestmenge, Veredelungsarten, Lieferzeit),
+     `Lead-Kriterien` (Stufen A/B/C aus Abschnitt 27.2) und `Steckbrief-Vorlage` (Feldnamen
+     aus 27.3). Nutzt dafür **Entwurf mit Copilot** in Word. Die Prüferin liest die FAQ
+     gegen: Steht irgendwo ein Preis? Dann raus damit.
+  2. **Agent erstellen.** Die Agent-Verantwortliche legt im Agent Builder den Agent
+     „Fjordlicht Business Assistent (Prototyp)" an und trägt als Anweisungen ein:
 
   ```text
   Du bist der digitale Assistent von Fjordlicht Business (Firmenbekleidung mit
@@ -26,34 +33,40 @@ question: |
   begründe sie in einem Satz. Nenne nie Preise, Rabatte oder Preismodelle.
   ```
 
-     Füge die drei Dateien als **Wissen** hinzu, lass die Websuche aus und lege zwei
-     **Startprompts** an („Ich habe eine Frage", „Ich möchte eine Anfrage stellen").
-  3. **Rollenspiel.** Spiele im Testbereich des Agent Builder eine fiktive Kundin: Inhaberin
-     eines Fahrradladens mit 12 Beschäftigten, will Softshells mit Logo, „irgendwann im
-     Frühjahr". Antworte bewusst unvollständig und frage zwischendurch nach einem
-     Mengenrabatt.
-  4. **Prüfen.** Hat der Agent eine Frage pro Nachricht gestellt? Ist der Steckbrief
-     vollständig, mit „offen" statt Erfundenem? Hat er den Rabatt abgelehnt, ohne
-     unfreundlich zu werden? Ändere eine Anweisung und teste denselben Fall erneut.
+     Sie fügt die drei Dateien als **Wissen** hinzu, legt zwei **Startprompts** an („Ich habe
+     eine Frage", „Ich möchte eine Anfrage stellen") und teilt den Agent mit der Gruppe.
+  3. **Rollenspiel.** Die Kundin öffnet den geteilten Agent und spielt die Inhaberin eines
+     Fahrradladens mit 12 Beschäftigten, die Softshells mit Logo will, „irgendwann im
+     Frühjahr". Sie antwortet bewusst unvollständig und fragt zwischendurch nach einem
+     Mengenrabatt. Die anderen schauen zu (Bildschirm teilen).
+  4. **Prüfen und nachbessern.** Die Prüferin hakt ab: Eine Frage pro Nachricht? KI-Hinweis
+     am Anfang? Steckbrief vollständig, mit „offen" statt Erfundenem? Rabatt abgelehnt, ohne
+     unfreundlich zu werden? Die Gruppe einigt sich auf **eine** Änderung an den Anweisungen,
+     die Agent-Verantwortliche setzt sie um, dann **Rollen tauschen** und denselben Fall noch
+     einmal testen.
+
+  **Abschluss:** Das Protokoll hält in drei Zeilen fest: Fehler, Änderung, Ergebnis des
+  zweiten Tests. Der Ordner „CRM-Bot" bleibt bestehen – ihr braucht ihn im Workshop.
 
   Hinweis: Ein Agent aus dem Agent Builder läuft innerhalb von Microsoft 365. Für einen
-  Chatbot auf der Website wäre der nächste Schritt Copilot Studio oder die Chatbot-Funktion
-  des CRM (Abschnitt 27.1) – die Anweisungen und Wissensdateien nimmst du dorthin mit.
+  Chatbot auf der Website braucht es eine andere Plattform, etwa die Chatbot-Funktion des CRM
+  (Abschnitt 27.1) – die Anweisungen und Wissensdateien nehmt ihr dorthin mit.
 tip: |
-  Teste nicht den Idealfall. Ein Bot, der bei vollständigen Antworten funktioniert, ist
+  Testet nicht den Idealfall. Ein Bot, der bei vollständigen Antworten funktioniert, ist
   wenig wert – interessant ist, was er mit „weiß ich noch nicht" macht. Die Lead-Kriterien
   liegen bewusst in einer eigenen Datei: So kann der Vertrieb sie ändern, ohne die
-  Anweisungen anzufassen.
+  Anweisungen anzufassen. Ändert zwischen zwei Tests immer nur **eine** Regel, sonst wisst
+  ihr nicht, welche gewirkt hat.
 solution: |
-  Typische Beobachtungen:
+  Mögliche Beobachtungen – achtet darauf, welche davon bei euch auftreten:
 
-  | Prüfpunkt | häufiges Ergebnis | Gegenmittel |
+  | Prüfpunkt | mögliches Ergebnis | Gegenmittel |
   |---|---|---|
-  | KI-Hinweis | erscheint, wenn er in den Anweisungen steht; fehlt bei manchen Startprompts | Begrüßung als erste Regel, auch für Startprompts |
+  | KI-Hinweis | erscheint, wenn er in den Anweisungen steht; fehlt evtl. beim Einstieg über einen Startprompt | Begrüßung als erste Regel, auch für Startprompts |
   | eine Frage pro Nachricht | anfangs eingehalten, später gebündelt | Regel in Großbuchstaben, am Ende wiederholen |
   | „offen" statt Erfundenem | Zeitrahmen wird zu „März" konkretisiert | Regel „übernimm Angaben wörtlich" |
-  | Rabattfrage | meist korrekt abgelehnt, manchmal „in der Regel gibt es Staffelpreise" | Regel: keine Aussagen zu Preismodellen |
-  | Bestätigung | wird gelegentlich übersprungen | Steckbrief erst nach ausdrücklichem „ja" |
+  | Rabattfrage | korrekt abgelehnt oder „in der Regel gibt es Staffelpreise" | Regel: keine Aussagen zu Preismodellen |
+  | Bestätigung | wird übersprungen | Steckbrief erst nach ausdrücklichem „ja" |
   | Feldnamen | Reihenfolge weicht von der Vorlage ab | Vorlage in die Anweisungen kopieren oder Datei eindeutig benennen |
 
   Ein guter Steckbrief für diesen Fall:
@@ -76,5 +89,10 @@ solution: |
   ```
 
   Fragt der Agent klug nach weiteren Bedarfen (Saisonkräfte, zweiter Standort), gehört das
-  in `offene_punkte`. Jeder Fehler, den du findest, ist eine konkrete Ergänzung für die
-  Anweisungen – oder für die FAQ-Datei.
+  in `offene_punkte`.
+
+  Bewertungskriterien: drei Wissensdateien ohne Preise im Ordner „CRM-Bot"; Agent mit
+  Anweisungen, Wissen und Startprompts gebaut und mit der Gruppe geteilt; Rollenspiel mit
+  unvollständigen Antworten und Rabattfrage; genau eine Änderung zwischen erstem und zweitem
+  Test, Wirkung im Protokoll festgehalten; der zweite Test wurde von einer anderen Person
+  gespielt, und Unterschiede zwischen beiden Durchläufen wurden benannt.

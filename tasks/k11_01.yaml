@@ -1,29 +1,45 @@
-title: Die Fjordlicht-Basisdaten als Dokument anlegen
+title: Die Fjordlicht-Basisdaten gemeinsam als Dokument anlegen
 difficulty: 1
 question: |
-  In dieser Übung legst du in **Copilot in Word** das Dokument an, das dich durch den restlichen
-  Kurs begleitet – und erlebst dabei das Arbeitsprinzip dieses Kapitels: Der Text liegt in einem
-  Dokument, nicht im Chatverlauf.
+  In dieser Übung legt ihr in **Copilot in Word** das Dokument an, das euch durch den restlichen
+  Kurs begleitet – und erlebt dabei das Arbeitsprinzip dieses Kapitels: Der Text liegt in einem
+  Dokument, an dem alle arbeiten, nicht in einem Chatverlauf.
 
-  1. Lege in OneDrive im Ordner **„Fjordlicht-Kurs"** ein neues Word-Dokument an und speichere es
-     als **„Fjordlicht-Basisdaten.docx"**.
-  2. Lass Copilot in Word mit dem Prompt aus dem Tipp einen Entwurf erstellen. Übernimm ihn erst,
-     wenn die vier Abschnitte **Markenstimme**, **Produkte**, **Belegte Claims** und **Verbote**
-     vorhanden sind.
-  3. Prüfe den Entwurf Zeile für Zeile gegen die Fakten im Prompt. Streiche alles, was Copilot
-     ergänzt hat (z. B. „atmungsaktiv", „langlebig", „klimafreundlich").
-  4. Markiere nur den Abschnitt **Produkte** und lass Copilot ihn in eine Tabelle umwandeln
-     (Produkt, Kategorie, Preis, belegte Fakten). Die übrigen Abschnitte bleiben unverändert.
-  5. Ordne danach die folgenden Aufgaben zu: Reicht **Copilot Chat**, oder lohnt sich die Arbeit
-     im **Dokument** (Copilot Page oder Word mit Copilot)? Begründe jeweils in einem Satz.
+  **Gruppe:** 3–4 Personen · **Dauer:** ca. 25 Minuten · **Rollen:** Prompt-Verantwortliche
+  (bedient Copilot im Dokument), zwei Faktenprüferinnen, Protokoll (bei drei Personen übernimmt
+  eine Faktenprüferin zusätzlich das Protokoll) · **Am Ende liegt vor:** eine geprüfte
+  „Fjordlicht-Basisdaten.docx" im Ordner „Fjordlicht-Kurs" **jeder** Person und eine gemeinsame
+  Zuordnungstabelle.
+
+  1. Die Prompt-Verantwortliche legt in ihrem OneDrive im Ordner **„Fjordlicht-Kurs"** ein neues
+     Word-Dokument an, speichert es als **„Fjordlicht-Basisdaten.docx"** und teilt es mit
+     Bearbeitungsrechten mit der Gruppe. Alle öffnen das Dokument.
+  2. Sie lässt Copilot in Word mit dem Prompt aus dem Tipp einen Entwurf erstellen. Übernommen
+     wird erst, wenn die fünf Abschnitte **Unternehmen**, **Markenstimme**, **Produkte**,
+     **Belegte Claims** und **Verbote** vorhanden sind.
+  3. **Faktenprüfung mit Arbeitsteilung:** Faktenprüferin 1 prüft Unternehmen und Markenstimme,
+     Faktenprüferin 2 prüft Produkte, Belegte Claims und Verbote – Zeile für Zeile gegen den
+     Prompt. Jede Angabe, die Copilot ergänzt hat (z. B. „atmungsaktiv", „langlebig",
+     „klimafreundlich"), bekommt einen Word-Kommentar und wird danach gestrichen. Das Protokoll
+     hält jede Streichung in einer Zeile fest.
+  4. **Rollentausch:** Faktenprüferin 2 markiert nur den Abschnitt **Produkte** und lässt Copilot
+     ihn in eine Tabelle umwandeln (Produkt, Kategorie, Preis, belegte Fakten). Die anderen prüfen:
+     Sind die übrigen Abschnitte unverändert? Ist in der Tabelle eine neue Angabe aufgetaucht?
+  5. **Kopien für alle:** Jede Person speichert eine Kopie der fertigen Datei unter demselben
+     Namen in ihrem eigenen OneDrive-Ordner „Fjordlicht-Kurs" (z. B. herunterladen und dort
+     hochladen). Spätere Übungen greifen mit `/Fjordlicht-Basisdaten` auf **deine** Kopie zu.
+  6. **Gruppenentscheidung:** Ordnet die folgenden Aufgaben zu – reicht **Copilot Chat**, oder
+     lohnt sich die Arbeit im **Dokument** (Copilot Page oder Word mit Copilot)? Jede Person
+     entscheidet zuerst still für sich, danach einigt ihr euch und begründet jeweils in einem Satz.
      - Fünf Varianten für eine Betreffzeile zum Herbst-Newsletter
      - Ein Blogbeitrag „Zwiebelprinzip beim Wandern" mit ca. 1.000 Wörtern
      - Eine kurze Antwort auf einen Instagram-Kommentar
      - Die Produktseite für den Rucksack „Tind" mit sechs Abschnitten, die mehrfach abgestimmt wird
-     - Die Fjordlicht-Basisdaten, die du gerade angelegt hast
+     - Die Fjordlicht-Basisdaten, die ihr gerade angelegt habt
 
-  Nenne zum Schluss in zwei Sätzen, was sich am 28.05.2026 bei ChatGPT geändert hat und was davon
-  für deine Arbeit in Copilot **nicht** gilt.
+  **Abschluss:** Formuliert gemeinsam in zwei Sätzen, was sich am 28.05.2026 bei ChatGPT geändert
+  hat und was davon für eure Arbeit in Copilot **nicht** gilt. Das Protokoll stellt im Plenum in
+  einer Minute vor, welche Ergänzung von Copilot ihr gestrichen habt.
 tip: |
   Prompt für den Entwurf in Word (Fakten nicht verändern):
 
@@ -51,31 +67,48 @@ tip: |
   als Kommunikationsthema.
   ```
 
-  Für die Zuordnung zählt nicht die Länge allein, sondern ob du denselben Text **mehrfach gezielt
-  überarbeiten** oder **wiederverwenden** willst.
+  Für die Zuordnung zählt nicht die Länge allein, sondern ob ihr denselben Text **mehrfach gezielt
+  überarbeiten** oder **wiederverwenden** wollt. Wenn ihr euch nicht einig werdet, ist das ein
+  gutes Zeichen: Haltet beide Begründungen fest.
 solution: |
-  **Zum Dokument:** Typische Abweichungen im ersten Entwurf sind ergänzte Eigenschaften
-  („atmungsaktiv", „robust"), ein Satz wie „Fjordlicht steht für Nachhaltigkeit" im Abschnitt
-  Unternehmen oder ein Claim, der auf alle Produkte ausgeweitet wird („Unsere Kollektion besteht
-  aus recycelten Materialien"). Genau diese Stellen streichst du. Bei Vidde und Tind sollte
-  `[FEHLT]` beim Material stehen – das ist richtig so und wird später ergänzt.
+  **Zum Dokument:** Achtet besonders auf ergänzte Eigenschaften („atmungsaktiv", „robust"), einen
+  Satz wie „Fjordlicht steht für Nachhaltigkeit" im Abschnitt Unternehmen oder einen Claim, der
+  auf alle Produkte ausgeweitet wird („Unsere Kollektion besteht aus recycelten Materialien").
+  Solche Stellen streicht ihr. Bei Vidde und Tind sollte `[FEHLT]` beim Material stehen – das ist
+  richtig so und wird später ergänzt.
 
-  Die Umwandlung in eine Tabelle zeigt das Arbeitsprinzip im Kleinen: Du markierst einen
-  Abschnitt, gibst eine enge Anweisung, der Rest bleibt stehen.
+  Die Umwandlung in eine Tabelle zeigt das Arbeitsprinzip im Kleinen: Ihr markiert einen
+  Abschnitt, gebt eine enge Anweisung, der Rest bleibt stehen – und die anderen in der Gruppe
+  sehen sofort, ob das stimmt.
+
+  Beispiel für das Protokoll:
+
+  ```text
+  Unternehmen: "Fjordlicht steht für Nachhaltigkeit" gestrichen (kein Beleg)
+  Produkte: "atmungsaktiv" bei Sølv gestrichen (nicht im Prompt)
+  Belegte Claims: "recycelte Materialien" ohne Produktbezug gestrichen
+  Tabelle: keine neuen Angaben, übrige Abschnitte unverändert
+  ```
 
   | Aufgabe | Ort | Begründung |
   |---|---|---|
-  | Betreffzeilen | Copilot Chat | kurze Varianten, du wählst aus, nichts wird überarbeitet |
+  | Betreffzeilen | Copilot Chat | kurze Varianten, ihr wählt aus, nichts wird überarbeitet |
   | Blogbeitrag | Dokument (Word) | langer Text, mehrere Durchgänge (Rohfassung, Struktur, Feinschliff) |
   | Instagram-Antwort | Copilot Chat | einmaliger Kurztext |
-  | Produktseite Tind | Dokument (Page oder Word) | mehrere Abschnitte und Abstimmungsrunden; eine Page lässt sich direkt mit dem Team teilen |
-  | Basisdaten | Dokument (Word) | wird gepflegt, versioniert und in späteren Prompts per `/Fjordlicht-Basisdaten` wiederverwendet |
+  | Produktseite Tind | Dokument (Page oder Word) | mehrere Abschnitte und Abstimmungsrunden; Page und Word lassen sich mit dem Team teilen und gemeinsam bearbeiten |
+  | Basisdaten | Dokument (Word) | wird gepflegt und in späteren Prompts per `/Fjordlicht-Basisdaten` wiederverwendet |
 
   Zur Änderung: Am 28.05.2026 wurde Canvas aus den aktuellen ChatGPT-Modellen entfernt; Ersatz
-  sind Schreibblöcke direkt in der Antwort. Unverändert bleibt das Arbeitsprinzip, das du in
+  sind Schreibblöcke direkt in der Antwort. Unverändert bleibt das Arbeitsprinzip, das ihr in
   Copilot mit Pages und Word umsetzt: ein gemeinsames Dokument statt verstreuter Chatversionen
   und gezielte Überarbeitung markierter Stellen.
 
-  Ab jetzt referenzierst du die Datei in Copilot mit `/Fjordlicht-Basisdaten`, statt die Fakten
-  jedes Mal einzufügen. Optional legst du ein Copilot Notebook „Fjordlicht-Kurs" an (falls in
-  eurer Umgebung freigegeben) und fügst die Datei dort hinzu.
+  Ab jetzt referenziert jede Person die Datei in Copilot mit `/Fjordlicht-Basisdaten`, statt die
+  Fakten jedes Mal einzufügen. Weil jede Person eine eigene Kopie hat, können spätere Ergänzungen
+  (z. B. Tind-Fakten in Kap. 14) auseinanderlaufen – das ist für den Kurs in Ordnung.
+
+  Bewertungskriterien: alle fünf Abschnitte vorhanden, keine Angabe über den Prompt hinaus,
+  `[FEHLT]` bei fehlenden Materialangaben, nur der Abschnitt Produkte als Tabelle; zur
+  Zusammenarbeit: Streichungen sind kommentiert und protokolliert, beide Prüfbereiche wurden
+  von unterschiedlichen Personen geprüft, jede Person hat die Datei im eigenen Ordner, und
+  abweichende Zuordnungen wurden benannt und begründet entschieden.

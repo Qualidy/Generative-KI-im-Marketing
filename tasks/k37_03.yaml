@@ -1,8 +1,8 @@
-title: Lizenz-Check für einen KI-Track
+title: Lizenz-Check für einen KI-Track – Rollen im Prüfteam
 difficulty: 3
 question: |
   Eine Werkstudentin hat für Fjordlicht einen KI-Track erzeugt und unter ein Reel gelegt, das
-  morgen auch als bezahlte Anzeige laufen soll. Sie schickt dir diese Notiz per Teams:
+  morgen auch als bezahlte Anzeige laufen soll. Sie schickt euch diese Notiz per Teams:
 
   ```text
   Track: "Morgennebel", erzeugt mit Suno
@@ -14,23 +14,34 @@ question: |
   Sie meint: "Ist ja KI, gehört also niemandem."
   ```
 
-  1. **Probleme finden.** Benenne zuerst selbst **alle** Probleme in der Notiz. Lass dann Copilot
-     Chat (Modus **Arbeit**) dieselbe Notiz prüfen und die Probleme nach Gewicht ordnen.
-     Vergleiche: Was hat Copilot übersehen, was hast du übersehen?
-  2. **Aktuelle Bedingungen prüfen.** Wechsle in den Modus **Web** (oder nutze den Agent
-     **Researcher**, falls freigegeben) und lass dir die aktuellen Suno-Bedingungen zur
-     kommerziellen Nutzung mit Quellen zusammenfassen. Prüfe Datum und Herkunft der Quellen.
-  3. **Einordnen.** Bewerte die Aussage „Ist ja KI, gehört also niemandem" – was daran stimmt,
-     was nicht? Ordne die Urteile des LG München I (GEMA ./. OpenAI, GEMA ./. Suno) ein: Was
-     bedeuten sie für diesen Fall, was nicht?
-  4. **Entscheiden und antworten.** Darf der Track morgen laufen? Wenn nein, was ist der
-     schnellste saubere Ersatz? Lass Copilot eine Antwort an die Werkstudentin entwerfen, die
-     klar entscheidet, kurz erklärt und nicht belehrend klingt. Überarbeite sie selbst.
+  **Gruppenarbeit:** 3–4 Personen, etwa 30 Minuten. **Am Ende liegt vor:** eine gemeinsame
+  Problemliste nach Gewicht, eine Gruppenentscheidung („läuft morgen" oder „läuft nicht" plus
+  Ersatz) und eine Antwort an die Werkstudentin; die Entscheidung stellt ihr im Plenum in einer
+  Minute vor.
+
+  1. **Probleme finden.** Jede Person listet zuerst allein **alle** Probleme in der Notiz
+     (drei Minuten). Führt die Listen zusammen. Eine Person lässt dann Copilot Chat (Modus
+     **Arbeit**) dieselbe Notiz prüfen und die Probleme nach Gewicht ordnen. Vergleicht: Was hat
+     Copilot übersehen, was hat eure Gruppe übersehen?
+  2. **Rollen.**
+     - **Bedingungen** wechselt in den Modus **Web** und lässt sich die aktuellen
+       Suno-Bedingungen zur kommerziellen Nutzung mit Quellen zusammenfassen; prüft Datum und
+       Herkunft der Quellen.
+     - **Einordnung** bewertet mit dem Kapitel die Aussage „Ist ja KI, gehört also niemandem" und
+       ordnet die Urteile des LG München I (GEMA ./. OpenAI, GEMA ./. Suno) ein: Was bedeuten sie
+       für diesen Fall, was nicht?
+     - **Kommunikation** lässt Copilot Chat eine Antwort an die Werkstudentin entwerfen, die klar
+       entscheidet, kurz erklärt und nicht belehrend klingt.
+     - **Werkstudentin** (bei vier Personen) liest den Entwurf in ihrer Rolle und sagt, wie er
+       ankommt.
+  3. **Entscheiden.** Darf der Track morgen laufen? Wenn nein, was ist der schnellste saubere
+     Ersatz? Trefft die Entscheidung gemeinsam, überarbeitet die Antwort danach selbst und
+     postet sie in eurem Teams-Gruppenchat.
 tip: |
-  Achte auf den Zeitpunkt: Bei Suno zählt der Tarif zum Zeitpunkt der **Erzeugung**, nicht zum
+  Achtet auf den Zeitpunkt: Bei Suno zählt der Tarif zum Zeitpunkt der **Erzeugung**, nicht zum
   Zeitpunkt der Veröffentlichung. Und „gehört niemandem" ist halb richtig – genau die falsche
-  Hälfte macht den Fehler aus. Copilot übersieht das Zeitpunktproblem häufig, wenn du es nicht
-  ausdrücklich nach dem Tarif bei Erzeugung fragst.
+  Hälfte macht den Fehler aus. Prüft, ob Copilot das Zeitpunktproblem von sich aus erkennt oder
+  erst, wenn ihr ausdrücklich nach dem Tarif bei Erzeugung fragt.
 solution: |
   Beispiel-Prompt für die Prüfung in Copilot Chat:
 
@@ -78,6 +89,8 @@ solution: |
   ```
 
   Bewertungskriterien: Das Zeitpunktproblem und das private Konto sind als schwerwiegend
-  erkannt, Copilots Prüfung wird nachweisbar ergänzt oder korrigiert, die Websuche ist mit
-  Quellen und Datum belegt, und die Antwort entscheidet klar, ohne die Werkstudentin
+  erkannt. Die Gruppe hat benannt, welche Probleme nur in ihrer gemeinsamen Liste und welche nur
+  in Copilots Prüfung standen, und Copilots Ergebnis nachweisbar ergänzt oder korrigiert. Die
+  Websuche ist mit Quellen und Datum belegt. Die Rückmeldung aus der Rolle der Werkstudentin ist
+  in die Antwort eingeflossen; die Antwort entscheidet klar, ohne die Werkstudentin
   bloßzustellen.

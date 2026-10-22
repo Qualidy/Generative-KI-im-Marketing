@@ -1,9 +1,12 @@
-title: Kommentare klassifizieren, zählen und Stichprobe prüfen
+title: Kommentare im Team klassifizieren, zählen und Stichprobe prüfen
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot Chat** und **Excel mit Copilot**. Die folgenden fiktiven
-  Kommentare stammen aus Fjordlichts Instagram und TikTok, Nutzernamen sind bereits durch IDs
-  ersetzt.
+  **Gruppe:** 3–4 Personen · **Dauer:** etwa 30 Minuten · **Format:** Rollen mit Wechsel ·
+  **Am Ende liegt vor:** eine gemeinsame Excel-Datei „Listening-Test.xlsx" mit Klassifizierung,
+  Auszählung und Übereinstimmungsquote sowie ein verbesserter Prompt.
+
+  Die folgenden fiktiven Kommentare stammen aus Fjordlichts Instagram und TikTok, Nutzernamen sind
+  bereits durch IDs ersetzt.
 
   ```text
   ID;Kanal;Text
@@ -21,22 +24,38 @@ question: |
   12;IG;Passt perfekt über den Fleece, danke für die Größenhilfe.
   ```
 
-  1. **Klassifizieren in Copilot Chat:** Füge die Kommentare ein und nutze den Prompt aus
-     Abschnitt 19.3 mit dem Fjordlicht-Schema (Sentiment, Thema, Bezug, Handlungsbedarf). Lass
-     das Ergebnis als Tabelle ausgeben.
-  2. **Zählen in Excel:** Übernimm die Tabelle in eine Excel-Datei
-     „Listening-Test.xlsx" im OneDrive-Ordner „Fjordlicht-Kurs", formatiere sie als Tabelle und
-     lass **Copilot in Excel** die Beiträge nach Sentiment und nach Thema auszählen.
-  3. **Stichprobe:** Prüfe **alle zwölf** Einstufungen von Hand in einer zusätzlichen Spalte
-     „geprüft" und lass dir von Copilot in Excel die Übereinstimmungsquote berechnen.
-  4. Benenne die Fehlertypen, ergänze den Prompt um zwei Few-Shot-Beispiele, die genau diese
-     Fehler verhindern, und teste in einem neuen Chat erneut.
+  **Rollen in Runde 1:** **Prompt-Verantwortliche** (Copilot Chat), **Tabellen-Verantwortliche**
+  (Excel), **Prüferinnen** (eine oder zwei Personen, Einstufungen von Hand prüfen).
+
+  1. **Klassifizieren in Copilot Chat:** Die Prompt-Verantwortliche fügt die Kommentare ein und
+     nutzt den Prompt aus Abschnitt 19.3 mit dem Fjordlicht-Schema (Sentiment, Thema, Bezug,
+     Handlungsbedarf). Das Ergebnis kommt als Tabelle. Den Teil des Prompts, der das Zählen mit
+     Python verlangt, lasst ihr weg – gezählt wird in Excel.
+  2. **Gemeinsame Datei:** Die Tabellen-Verantwortliche legt im eigenen OneDrive-Ordner
+     „Fjordlicht-Kurs" die Datei „Listening-Test.xlsx" an, übernimmt die Tabelle, formatiert sie
+     als Tabelle und teilt die Datei mit der Gruppe.
+  3. **Stichprobe aufteilen:** Die Prüferinnen teilen die zwölf Kommentare unter sich auf und
+     tragen in der geteilten Datei in einer Spalte „geprüft" ein: „ok" oder die korrekte
+     Einstufung. Jede Abweichung bekommt einen Excel-Kommentar mit kurzer Begründung.
+  4. **Zählen in Excel:** Die Tabellen-Verantwortliche lässt **Copilot in Excel** die Beiträge
+     nach Sentiment und nach Thema auszählen und eine Formelspalte für die Übereinstimmung
+     vorschlagen. Prüft die vorgeschlagene Formel, bevor ihr sie einfügt, und berechnet die
+     Übereinstimmungsquote.
+
+  **Rollentausch für Runde 2:** Eine Prüferin wird Prompt-Verantwortliche.
+
+  5. Benennt gemeinsam die Fehlertypen. Die neue Prompt-Verantwortliche ergänzt den Prompt um
+     zwei Few-Shot-Beispiele (Kap. 6), die genau diese Fehler verhindern, und testet ihn in einem
+     **neuen Chat**. Die übrigen prüfen nur noch die Kommentare, die in Runde 1 falsch waren.
+  6. **Abschluss:** Ihr entscheidet gemeinsam, ob der verbesserte Prompt gut genug für den
+     Monatsbericht ist. Die Prompt-Verantwortliche speichert ihn in ihrer **Prompt Gallery**.
 tip: |
   Das ist die Arbeitsteilung aus Abschnitt 19.3: Das Sprachmodell klassifiziert, gezählt wird in
   der Tabelle – nicht „im Kopf" des Chats. Kommentar 02, 04 und 11 sind die Prüfsteine: Ironie und
-  Sarkasmus. Achte außerdem auf 10 – der Kommentar handelt vom Wettbewerber, ist für Fjordlicht
-  aber eher positiv. Copilot in Excel arbeitet zuverlässiger, wenn die Daten als Tabelle formatiert
-  sind und die Datei in OneDrive liegt.
+  Sarkasmus. Achtet außerdem auf 10 – der Kommentar handelt vom Wettbewerber, ist für Fjordlicht
+  aber eher positiv. Copilot in Excel braucht Daten, die als Tabelle formatiert sind, in einer
+  Datei in OneDrive oder SharePoint. Wenn die Prüferinnen bei einem Kommentar selbst uneins
+  sind, ist das ein Hinweis, dass das Schema an dieser Stelle unscharf ist.
 solution: |
   Erwartete Einstufung (Auszug der schwierigen Fälle):
 
@@ -52,13 +71,16 @@ solution: |
 
   ```text
   Zähle die Beiträge in dieser Tabelle nach Sentiment und nach Thema und
-  zeige das Ergebnis als zwei kleine Übersichtstabellen. Berechne außerdem
-  den Anteil der Zeilen, in denen die Spalte "geprüft" den Wert "ok" hat.
+  zeige das Ergebnis als zwei kleine Übersichtstabellen. Schlage außerdem
+  eine Formelspalte vor, die 1 ausgibt, wenn die Spalte "geprüft" den Wert
+  "ok" hat, sonst 0.
   ```
 
-  Typische Fehler im ersten Durchlauf: 04 und 11 werden wegen „Toll"/„toll" als positiv
-  eingestuft, 10 wird dem Bezug Fjordlicht zugeordnet. Übereinstimmung meist 9 bis 10 von 12 –
-  bei zwölf Beiträgen gut, bei 3.000 wären das Hunderte Fehleinstufungen.
+  Die Quote ergibt sich dann als Mittelwert dieser Spalte, z. B. 10 von 12 = 83 %.
+
+  Mögliche Fehler im ersten Durchlauf, auf die die Prüferinnen achten: 04 und 11 als positiv
+  eingestuft wegen „Toll"/„toll", 10 dem Bezug Fjordlicht zugeordnet. Eine Übereinstimmung von 9
+  oder 10 von 12 klingt gut – bei 3.000 Beiträgen wären das aber Hunderte Fehleinstufungen.
 
   Ergänzung im Prompt:
 
@@ -71,5 +93,13 @@ solution: |
 
   Wichtig sind außerdem die Kommentare 02 und 09: Beide betreffen die Recycling-Frage. Zwei Treffer in
   zwölf Kommentaren sind noch kein Trend, aber ein Thema, das das Team im Blick behält (Abschnitt
-  19.5). Den verbesserten Prompt kannst du in der **Prompt Gallery** speichern, damit das Team
-  jeden Monat mit demselben Schema arbeitet.
+  19.5).
+
+  Bewertungskriterien:
+
+  - Die Zählung stammt aus Excel, nicht aus dem Chat; die Formel wurde vor dem Einfügen geprüft.
+  - Alle zwölf Einstufungen sind von Hand geprüft, Abweichungen mit Kommentar begründet.
+  - Die Fehlertypen sind benannt, die Few-Shot-Beispiele zielen genau darauf, und der zweite
+    Durchlauf ist mit dem ersten verglichen.
+  - Zusammenarbeit: Rollen wurden getauscht; Meinungsverschiedenheiten zwischen den Prüferinnen
+    sind festgehalten und führten zu einer Schärfung von Schema oder Prompt.

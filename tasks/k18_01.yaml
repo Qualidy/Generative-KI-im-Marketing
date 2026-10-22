@@ -1,6 +1,12 @@
-title: Was gehört in den Steckbrief?
+title: Was gehört in den Steckbrief? – gemeinsam in Word
 difficulty: 1
 question: |
+  **Gruppe:** 3 Personen (oder Paare), ca. 20 Minuten. **Rollen:** **Prompt-Verantwortliche**
+  (Copilot in Word), **Prüferin** (sucht Erfundenes im Entwurf), **Protokoll** (hält die
+  Entscheidungen als Kommentare fest). **Am Ende liegt vor:** ein gemeinsam bearbeitetes
+  Dokument „Avatar-Tobias.docx", das jede Person in ihrem eigenen Ordner „Fjordlicht-Kurs"
+  gespeichert hat.
+
   Ein Teammitglied hat für den Fjordlicht-Avatar „Tobias" (Familien-Segment) folgende Angaben
   gesammelt:
 
@@ -13,21 +19,26 @@ question: |
   7. Fährt einen Kombi
   8. Hält „klimaneutral" für eine Werbelüge
 
-  1. **Selbst entscheiden.** Entscheide für jede Angabe, ob sie in den **Avatar-Steckbrief**
-     gehört, und begründe in einem Halbsatz.
-  2. **Copilot in Word.** Lege im Ordner „Fjordlicht-Kurs" das Dokument „Avatar-Tobias.docx" an.
-     Lass mit **Entwurf mit Copilot** aus den Angaben eine Steckbrief-Tabelle mit den Feldern aus
-     Abschnitt 18.2 erstellen – mit einer Spalte **Evidenz**, in der Unbelegtes als
-     `[HYPOTHESE]` markiert ist.
-  3. **Vergleichen.** Hat Copilot irrelevante Angaben (Band, Sternzeichen, Kombi) übernommen oder
-     Felder mit erfundenen Inhalten gefüllt? Korrigiere die Tabelle direkt im Dokument.
-  4. Entscheide außerdem: Ist „Tobias" eher eine Persona oder ein Avatar, wenn das Team ihn nutzt,
-     um Newsletter-Entwürfe zu prüfen?
+  1. **Erst allein, dann gemeinsam.** Jede Person entscheidet für sich, ob jede Angabe in den
+     **Avatar-Steckbrief** gehört (ja/nein, Halbsatz Begründung). Vergleicht dann: Wo seid ihr
+     uneinig? Klärt diese Punkte mit der Prüffrage aus dem Tipp.
+  2. **Copilot in Word.** Die Prompt-Verantwortliche legt im Ordner „Fjordlicht-Kurs" das
+     Dokument „Avatar-Tobias.docx" an, teilt es mit der Gruppe und lässt mit **Entwurf mit
+     Copilot** aus den Angaben eine Steckbrief-Tabelle mit den Feldern aus Abschnitt 18.2
+     erstellen – mit einer Spalte **Evidenz**, in der Unbelegtes als `[HYPOTHESE]` markiert ist.
+  3. **Prüfen und korrigieren.** Die Prüferin vergleicht den Entwurf mit eurer
+     Gruppenentscheidung: Wurden irrelevante Angaben (Band, Sternzeichen, Kombi) übernommen oder
+     Felder mit Inhalten gefüllt, die in keiner Angabe stehen? Alle korrigieren die Tabelle
+     direkt im geteilten Dokument; das Protokoll begründet jede Streichung in einem Kommentar.
+  4. **Entscheiden und ablegen.** Einigt euch: Ist „Tobias" eher eine Persona oder ein Avatar,
+     wenn das Team ihn nutzt, um Newsletter-Entwürfe zu prüfen? Speichert danach jede Person
+     eine Kopie von „Avatar-Tobias.docx" in ihrem eigenen Ordner „Fjordlicht-Kurs" – Kurzübung 3
+     greift per `/Avatar-Tobias` darauf zu.
 tip: |
   Prüffrage für jedes Feld: Würde sich ein Text an Tobias **anders** schreiben, wenn diese Angabe
-  anders wäre? Wenn nein, gehört sie nicht hinein. Copilot füllt leere Felder gern auf
-  („Informationsverhalten: nutzt Pinterest für Ausflugsideen") – solche Ergänzungen sind
-  Erfindungen, solange keine Quelle sie stützt.
+  anders wäre? Wenn nein, gehört sie nicht hinein. Achtet beim Entwurf darauf, ob leere Felder
+  aufgefüllt werden (etwa „Informationsverhalten: nutzt Pinterest für Ausflugsideen") – solche
+  Ergänzungen sind Erfindungen, solange keine Quelle sie stützt.
 solution: |
   | Nr. | Aufnehmen? | Feld / Begründung |
   |---|---|---|
@@ -40,6 +51,10 @@ solution: |
   | 7 | eher nein | nur relevant, wenn Kofferraum oder Packmaß ein Kaufthema wären |
   | 8 | ja | Was abschreckt – zentral für Nachhaltigkeitsaussagen |
 
+  Häufige Uneinigkeit in der Gruppe: Angabe 7 („Kombi = Familie, also relevant?") und Angabe 6
+  („ist doch nur eine Vermutung"). Beide lassen sich mit der Prüffrage klären; Angabe 6 bleibt
+  drin, aber als Hypothese.
+
   Beispiel-Prompt für Word:
 
   ```text
@@ -51,9 +66,13 @@ solution: |
   Markiere in der Spalte Evidenz jede Angabe ohne Quelle als [HYPOTHESE].
   ```
 
-  Typischer Fund beim Vergleich: Copilot füllt leere Felder wie „Einwände" mit plausiblen, aber
-  unbelegten Inhalten oder übernimmt den Kombi als „praktisch veranlagt". Angabe 3 ist belegt
+  Mögliche Funde der Prüferin: leere Felder wie „Einwände" mit plausiblen, aber unbelegten
+  Inhalten gefüllt, oder der Kombi als „praktisch veranlagt" übernommen. Angabe 3 ist belegt
   (Kundenmail), Angabe 6 vermutlich Hypothese, bis Newsletter-Daten sie stützen.
 
   Da das Team Tobias nutzt, um konkrete Texte zu prüfen, ist er im Sinne dieses Kurses ein
   **Avatar**. Als Persona würde er breiter das Familien-Segment für die Strategie beschreiben.
+
+  Bewertungskriterien: Einzelurteile vor dem Copilot-Entwurf; Uneinigkeiten mit der Prüffrage
+  entschieden; erfundene Ergänzungen im Entwurf gefunden und mit Kommentar gestrichen;
+  „Avatar-Tobias.docx" liegt bei jeder Person im Ordner „Fjordlicht-Kurs".

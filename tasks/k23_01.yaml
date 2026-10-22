@@ -1,12 +1,18 @@
-title: Prompt-Vorlage, Notebook oder Agent?
+title: Prompt-Vorlage, Projekt oder Agent? – Gruppenentscheidung
 difficulty: 1
 question: |
-  Diese Übung beginnst du in **Copilot Chat** (Microsoft-365-Copilot-App, Umschalter auf **Arbeit**).
-  In Microsoft 365 entsprechen die drei Lösungen aus Abschnitt 23.5 grob diesen Funktionen:
-  **Prompt-Vorlage** → gespeicherter Prompt in der Prompt Gallery, **Projekt** → Copilot Notebook,
+  **Gruppe:** 3–4 Personen, ca. 20 Minuten. **Rollen:** eine Person führt Protokoll in einer
+  geteilten Copilot Page, eine Person ist **Advocatus Diaboli** und widerspricht jeder Zuordnung
+  mindestens einmal, alle anderen arbeiten in ihrem eigenen Copilot. **Am Ende liegt vor:** eine
+  gemeinsame Zuordnungstabelle mit Begründung und eine Liste offener `[FRAGE: …]`-Punkte.
+
+  In Microsoft 365 lassen sich die drei Lösungen aus Abschnitt 23.5 grob so abbilden:
+  **Prompt-Vorlage** → gespeicherter Prompt in der Prompt Gallery, **Projekt** → gemeinsamer
+  OneDrive- bzw. SharePoint-Ordner für das Vorhaben, in dem das Material wächst,
   **Assistent** → eigener Agent aus dem Agent Builder.
 
-  1. Lass Copilot eine erste Zuordnung vorschlagen:
+  1. **Gleicher Prompt, mehrere Ergebnisse (5 Minuten).** Alle außer der Protokollperson öffnen
+     **Copilot Chat** (Umschalter auf **Arbeit**) und führen denselben Prompt aus:
 
      ```text
      Ich arbeite im Marketing von Fjordlicht, einer Marke für nachhaltige
@@ -27,37 +33,50 @@ question: |
         Woche angehen will.
      ```
 
-  2. **Prüfe die Tabelle selbst.** Wo stimmst du nicht zu? Korrigiere mindestens eine Bewertung
-     und begründe mit den Kriterien aus Abschnitt 23.5. Welche `[FRAGE: …]`-Stellen müsste das
-     Team klären?
-  3. Benenne die vier Bausteine, die der Agent aus Fall 1 braucht, mit je einem konkreten Inhalt –
-     und ordne jedem Baustein zu, wo er im Agent Builder landen würde.
+  2. **Vergleichen (5 Minuten).** Eine Person übernimmt ihre Copilot-Antwort in eine
+     **Copilot Page** und teilt sie mit der Gruppe. Tragt dort zusammen: Bei welchen Fällen
+     unterscheiden sich die Vorschläge zwischen euren Ergebnissen? Welche `[FRAGE: …]`-Stellen
+     tauchen bei mehreren auf?
+  3. **Gruppenentscheidung (7 Minuten).** Legt für jeden Fall eine gemeinsame Lösung fest und
+     begründet sie mit den Kriterien aus Abschnitt 23.5. Der Advocatus Diaboli widerspricht bei
+     jedem Fall einmal; die Gruppe hält fest, ob das Gegenargument die Zuordnung ändert.
+  4. **Bausteine (3 Minuten).** Benennt gemeinsam die vier Bausteine, die der Agent aus Fall 1
+     braucht, mit je einem konkreten Inhalt – und wo er im Agent Builder landen würde
+     (Anweisungen, Wissen aus Dateien, Startprompts) bzw. was ihr im Steckbrief festhaltet.
 tip: |
-  Ein Notebook sammelt Material für ein Vorhaben, ein Agent standardisiert eine wiederkehrende
-  Aufgabe. Frage dich: Wächst hier etwas über Wochen, oder wiederholt sich dieselbe Tätigkeit?
-  Copilot kennt weder eure Häufigkeiten noch euer Risiko – genau deshalb bewertest du am Ende selbst.
+  Ein Projekt sammelt Material für ein Vorhaben, ein Agent standardisiert eine wiederkehrende
+  Aufgabe. Fragt euch: Wächst hier etwas über Wochen, oder wiederholt sich dieselbe Tätigkeit?
+  Achtet beim Vergleich darauf, ob dieselbe Aufgabe bei verschiedenen Personen in
+  unterschiedlichen Kategorien landet – das zeigt, wie wenig eine einzelne Copilot-Antwort als
+  Entscheidung taugt. Copilot kennt weder eure Häufigkeiten noch euer Risiko; deshalb entscheidet
+  die Gruppe.
 solution: |
   | Nr. | Lösung | in Microsoft 365 | Begründung |
   |---|---|---|---|
   | 1 | Assistent | Agent | wöchentlich, gleiches Schema, mehrere Personen, stabile Produktdaten, Außenwirkung |
   | 2 | Prompt-Vorlage | Prompt Gallery | einmalig, eine Person, Spezialwissen |
-  | 3 | Projekt | Copilot Notebook | viele unterschiedliche Aufgaben, wachsende Unterlagen, begrenzte Laufzeit |
+  | 3 | Projekt | gemeinsamer Kampagnenordner (OneDrive/SharePoint), Abstimmung im Teams-Kanal | viele unterschiedliche Aufgaben, wachsende Unterlagen, begrenzte Laufzeit |
   | 4 | Assistent | Agent | täglich, gleichartig, zwei Nutzerinnen, Markenstimme mit hohem Risiko |
   | 5 | Prompt (oder gar keine KI) | normaler Chat | einmalig, nur du, keine Außenwirkung |
 
-  Typische Abweichungen bei Copilot: Fall 4 landet als „Prompt-Vorlage", weil Copilot den
-  Nutzerkreis unterschätzt, oder Fall 3 als „Assistent", weil „sechs Wochen" nach Wiederholung
-  klingt. Sinnvolle `[FRAGE: …]`-Stellen sind etwa: Wie oft ändern sich die Produktdaten? Wer gibt
-  Instagram-Antworten frei?
+  Stellen, an denen sich die Ergebnisse der Gruppenmitglieder unterscheiden können: Fall 4 als
+  „Prompt-Vorlage" (Nutzerkreis unterschätzt) oder Fall 3 als „Assistent" („sechs Wochen" klingt
+  nach Wiederholung). Sinnvolle `[FRAGE: …]`-Stellen sind etwa: Wie oft ändern sich die
+  Produktdaten? Wer gibt Instagram-Antworten frei?
 
   Bausteine für Fall 1:
 
   | Baustein | Inhalt | im Agent Builder |
   |---|---|---|
   | Instruktionen | Rolle „Produkttexter:in in Fjordlicht-Markenstimme", Aufbau, keine Superlative, nur belegbare Nachhaltigkeitsaussagen, Lücken als [FEHLT] | Anweisungen |
-  | Wissen | Styleguide, Produktdaten, Claim-Liste, zwei bis drei freigegebene Beispieltexte | Wissensquellen aus OneDrive/SharePoint |
-  | Werkzeuge | keine Websuche (Gefahr fremder Produktangaben), keine Bilderzeugung | Funktionen bzw. Websuche bewusst aus |
+  | Wissen | Styleguide, Produktdaten, Claim-Liste, zwei bis drei freigegebene Beispieltexte | Wissen aus Dateien in OneDrive/SharePoint |
+  | Werkzeuge | keine Websuche (Gefahr fremder Produktangaben), keine Bilderzeugung | als Entscheidung im Steckbrief festhalten |
   | Gesprächseinstieg | „Produkttext aus Datenblatt erstellen", „Bestehenden Text kürzen" | Beschreibung und Startprompts |
 
   Fall 4 ist ein Grenzfall: Sobald der Assistent selbst antwortet statt Entwürfe zu liefern,
   gelten zusätzlich Transparenzpflichten (Kap. 27).
+
+  Bewertungskriterien: Jede Zuordnung ist mit mindestens zwei Kriterien begründet; Abweichungen
+  zwischen den Copilot-Ergebnissen der Gruppenmitglieder wurden in der Page benannt; die
+  Einwände des Advocatus Diaboli sind dokumentiert, mit Entscheidung „ändert / ändert nicht";
+  die offenen `[FRAGE: …]`-Punkte sind als Aufgaben fürs Team formuliert.

@@ -1,8 +1,12 @@
-title: Gezielte Überarbeitung in einer Copilot Page
+title: Gezielte Überarbeitung – dreimal derselbe Prompt
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot Chat** und **Copilot Pages** (falls in eurer Umgebung
-  freigegeben; sonst in Word mit Copilot).
+  Diese Übung macht ihr in **Copilot Chat** und einer geteilten **Copilot Page**.
+
+  **Gruppe:** 3 Personen · **Dauer:** ca. 25 Minuten · **Rollen:** Prompt-Verantwortliche,
+  Faktenprüferin, Protokoll – nach Schritt 2 wird getauscht · **Am Ende liegt vor:** eine
+  gemeinsame Page mit dem überarbeiteten Teaser und einer kurzen Liste der Abweichungen zwischen
+  euren Copilot-Ergebnissen.
 
   Ausgangstext für einen Newsletter-Teaser:
 
@@ -13,35 +17,56 @@ question: |
   aus recyceltem Polyester. Erhältlich in drei Farben.
   ```
 
-  1. Gib den Text in Copilot Chat ein und bitte darum, ihn **unverändert** zurückzugeben.
-     Übernimm die Antwort in eine **Page** – ab jetzt arbeitest du nur noch dort.
-  2. Markiere in der Page **nur den ersten Satz** und lass ihn in Fjordlicht-Markenstimme
-     überarbeiten (ruhig, ehrlich, keine Superlative). Verweise dafür auf
-     `/Fjordlicht-Basisdaten` (falls nicht vorhanden: Kap. 11, Kurzübung 1, oder die Markenstimme
-     direkt einfügen).
-  3. Überarbeite danach **nur den zweiten Satz** so, dass keine unbelegte Nachhaltigkeitsaussage
-     übrig bleibt.
-  4. Verlange nach jedem Schritt eine Änderungsliste.
-  5. Prüfe am Ende selbst: Sind „80 Prozent", „recyceltes Polyester" und „drei Farben" unverändert?
-     Und hat Copilot außerhalb der Markierung etwas angefasst?
-  6. Öffne den Versionsverlauf der Page bzw. des Dokuments und stelle fest, ob du zur
-     Ausgangsfassung zurückspringen könntest.
+  1. **Gleicher Prompt, drei Ergebnisse:** Alle drei geben den Ausgangstext in ihren eigenen
+     Copilot Chat ein, zusammen mit **derselben** Anweisung: Nur der erste Satz wird in
+     Fjordlicht-Markenstimme überarbeitet (Verweis auf `/Fjordlicht-Basisdaten`), alles andere
+     bleibt wortgleich, danach folgt eine Änderungsliste. Die Prompt-Verantwortliche formuliert
+     die Anweisung und schickt sie per Teams-Chat an die anderen.
+  2. **Vergleich:** Legt die drei Antworten nebeneinander. Die Faktenprüferin prüft in jeder
+     Fassung: Sind „80 Prozent", „recyceltes Polyester" und „drei Farben" unverändert? Wurde
+     außerhalb des ersten Satzes etwas geändert? Stimmt die Änderungsliste mit dem Text überein?
+     Das Protokoll notiert jede Abweichung zwischen den drei Ergebnissen.
+  3. **Gemeinsame Page:** Ihr wählt die beste Fassung. Wer sie erzeugt hat, übernimmt diese
+     Antwort in eine Copilot Page und teilt sie mit den anderen beiden.
+  4. **Rollentausch und zweiter Satz:** Die bisherige Faktenprüferin ist jetzt
+     Prompt-Verantwortliche. Sie lässt in Copilot Chat **nur den zweiten Satz** so überarbeiten,
+     dass keine unbelegte Nachhaltigkeitsaussage übrig bleibt – wieder mit Grenze und
+     Änderungsliste. Das Ergebnis wird in der Page von Hand an der richtigen Stelle eingesetzt.
+  5. **Gemeinsamer Feinschliff in der Page:** Lest den ganzen Teaser zusammen. Passt er noch als
+     Ganzes? Entscheidet, was mit dem dritten Satz („Jetzt zuschlagen …") passiert, und haltet
+     unter dem Text in drei Zeilen fest, worin sich eure drei Copilot-Ergebnisse aus Schritt 1
+     unterschieden haben.
 tip: |
-  Formuliere jede Anweisung mit einer Grenze („Ändere ausschließlich …") und einem Schutz für
-  Zahlen und Produktnamen. Ohne diese Grenze schreibt Copilot oft den ganzen Absatz neu. Wenn du
-  in Word arbeitest, schalte vorher „Änderungen nachverfolgen" ein: Dann prüfst du übernommene
-  Copilot-Vorschläge wie die Korrektur einer Kollegin.
+  Formuliert jede Anweisung mit einer Grenze („Ändere ausschließlich …") und einem Schutz für
+  Zahlen und Produktnamen. Achtet beim Vergleich darauf, ob Copilot trotz Grenze in einer der drei
+  Fassungen mehr als den ersten Satz verändert hat. Dass drei Personen mit demselben Prompt drei
+  unterschiedliche Sätze bekommen, ist kein Fehler: Sprachmodelle wählen ihre Formulierungen nach
+  Wahrscheinlichkeit, nicht nach einer festen Regel.
 solution: |
-  Beispielanweisung für Schritt 2 (zur markierten Stelle in der Page):
+  Beispielanweisung für Schritt 1:
 
   ```text
-  Überarbeite ausschließlich den markierten Satz in der Markenstimme aus
-  /Fjordlicht-Basisdaten: ruhig, ehrlich, leicht nordisch-trocken,
-  Du-Ansprache, keine Superlative, keine Ausrufezeichen.
-  Alles andere bleibt wortgleich. Liste danach auf, was du geändert hast.
+  Überarbeite im folgenden Text ausschließlich den ersten Satz in der
+  Markenstimme aus /Fjordlicht-Basisdaten: ruhig, ehrlich, leicht
+  nordisch-trocken, Du-Ansprache, keine Superlative, keine Ausrufezeichen.
+  Alle anderen Sätze bleiben wortgleich. Gib den vollständigen Text zurück
+  und liste danach auf, was du geändert hast.
+  [Ausgangstext]
   ```
 
-  Mögliches Ergebnis nach Schritt 2 und 3:
+  Mögliche drei Ergebnisse für den ersten Satz:
+
+  ```text
+  Person 1: Das neue Fleece Skog hält warm, ohne aufzutragen.
+  Person 2: Skog ist da – ein Fleece für kühle Morgen.
+  Person 3: Unser Fleece Skog: warm, leicht und einfach gut.
+  ```
+
+  Mögliche Befunde aus dem Vergleich: Fassung 3 enthält mit „leicht" eine Eigenschaft, die nicht
+  belegt ist; in einer Fassung fehlen die Ausrufezeichen auch im dritten Satz, obwohl er
+  wortgleich bleiben sollte; eine Änderungsliste nennt nur einen Teil der Änderungen.
+
+  Mögliches Ergebnis nach Schritt 4:
 
   ```text
   Das neue Fleece Skog hält warm, ohne aufzutragen.
@@ -52,14 +77,12 @@ solution: |
 
   Beobachtung: Der zweite Satz wiederholt jetzt die Materialangabe – ein typischer Effekt, wenn
   man eine unbelegte Aussage durch die einzige belegte ersetzt. Das ist kein Fehler der
-  Anweisung, sondern ein Strukturproblem, das du erst beim Lesen des Ganzen erkennst (Phase 2).
-  Der dritte Satz („Jetzt zuschlagen …") wurde korrekt **nicht** angefasst, passt aber auch nicht
-  zur Marke – ein Kandidat für den nächsten gezielten Schritt.
+  Anweisung, sondern ein Strukturproblem, das erst beim Lesen des Ganzen auffällt (Schritt 5).
+  Der dritte Satz wurde korrekt **nicht** angefasst, passt aber nicht zur Marke – ein Kandidat
+  für den nächsten gezielten Schritt.
 
-  Zum Werkzeug: Die Page hält den Text als eigenes Objekt neben dem Chat, du kannst Stellen
-  markieren und weiterbearbeiten und sie später teilen. Ob Copilot wirklich nur die Markierung
-  ändert, musst du trotzdem prüfen – die Änderungsliste ist eine Hilfe, kein Beweis.
-
-  Eine gute Bearbeitung zeigt: Zahlen und Produktname unverändert, Änderungslisten vorhanden,
-  mindestens eine Stelle, an der du die Änderungsliste mit dem Text abgeglichen hast, und ein
-  Blick in den Versionsverlauf.
+  Bewertungskriterien: Zahlen und Produktname in der finalen Fassung unverändert, Änderungslisten
+  vorhanden und mindestens einmal mit dem Text abgeglichen, Wiederholung oder dritter Satz im
+  Feinschliff bearbeitet; zur Zusammenarbeit: alle drei haben denselben Prompt ausgeführt, die
+  Unterschiede zwischen den Ergebnissen sind in der Page benannt und erklärt, die Rollen wurden
+  getauscht, und die Auswahl der besten Fassung ist begründet.

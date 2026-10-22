@@ -1,6 +1,10 @@
-title: Scheinbefunde entlarven
+title: Scheinbefunde entlarven – mit Advocatus Diaboli
 difficulty: 3
 question: |
+  **Gruppe:** 3–4 Personen · **Dauer:** etwa 30 Minuten · **Format:** Rollen mit Wechsel pro
+  Regel, danach Gegenprobe in Copilot · **Am Ende liegen vor:** eine Bewertung aller vier Regeln,
+  ein getesteter Prompt-Baustein und ein Vergleich zweier Copilot-Antworten.
+
   Eine Kollegin hat die Blog- und Social-Daten von Fjordlicht mit Copilot ausgewertet und schlägt
   auf Basis der Ergebnisse vier neue Regeln für alle Texte vor:
 
@@ -13,26 +17,37 @@ question: |
   4. „Seit wir die Produkttexte mit KI überarbeitet haben, ist die Conversion-Rate im Oktober um
      18 Prozent gestiegen. Die KI-Texte wirken."
 
-  Bewerte jede Regel zuerst selbst:
+  **Teil 1 – Streitgespräch ohne KI (15 Minuten).** Ihr arbeitet die Regeln nacheinander ab,
+  jeweils etwa drei Minuten. Pro Regel gibt es drei Rollen, die nach jeder Regel reihum wechseln:
 
-  - Welche **alternative Erklärung** (Störfaktor) ist plausibel?
-  - Welche **Zusatzdaten** würdest du anfordern, um sie zu prüfen?
-  - Wie müsste ein **Test** aussehen, der die Frage klärt (Kap. 16)?
+  - **Kollegin:** verteidigt die Regel so überzeugend wie möglich.
+  - **Advocatus Diaboli:** sucht die **alternative Erklärung** (Störfaktor) und fragt nach den
+    **Zusatzdaten**, die die Regel prüfen würden.
+  - **Testplanerin:** skizziert einen **Test**, der die Frage klärt (Kap. 16).
+  - Bei vier Personen: **Protokoll** – hält Ergebnisse im Teams-Gruppenchat fest.
 
-  Dann in **Copilot Chat**:
+  Führt die Diskussion schriftlich in eurem **Teams-Gruppenchat** oder haltet die Kernpunkte dort
+  fest. Lasst am Ende **Copilot in Teams** den Chat zusammenfassen und prüft, ob die Zusammenfassung
+  alle vier Regeln korrekt wiedergibt.
 
-  1. Gib Copilot die vier Regeln mit der naiven Frage „Sollen wir diese Regeln einführen?" und
-     notiere, wie kritisch die Antwort ausfällt.
-  2. Formuliere einen Prompt-Baustein, mit dem Copilot solche Scheinbefunde selbst kennzeichnet,
-     bevor es Empfehlungen ausspricht. Teste ihn in einem neuen Chat mit denselben vier Regeln und
-     vergleiche beide Antworten.
-  3. Speichere den Baustein in der **Prompt Gallery**, damit das Team ihn an jede Analyse anhängen
-     kann (Kap. 10).
+  **Teil 2 – Gegenprobe in Copilot Chat (15 Minuten).**
+
+  1. Die Hälfte der Gruppe gibt Copilot die vier Regeln mit der naiven Frage „Sollen wir diese
+     Regeln einführen?".
+  2. Die andere Hälfte formuliert einen **Prompt-Baustein**, mit dem Copilot solche
+     Scheinbefunde selbst kennzeichnet, bevor es Empfehlungen ausspricht, und stellt damit
+     dieselbe Frage in einem neuen Chat.
+  3. Vergleicht beide Antworten mit eurem Ergebnis aus Teil 1: Wie kritisch fällt die naive
+     Antwort aus? Findet Copilot mit dem Baustein Störfaktoren, die ihr übersehen habt – oder
+     umgekehrt?
+  4. Jede Person speichert den Baustein in ihrer **Prompt Gallery**, damit sie ihn an künftige
+     Analysen anhängen kann (Kap. 10).
 tip: |
-  Suche bei jeder Regel nach dem, was **gleichzeitig** mit dem Merkmal auftritt: Thema,
-  Zeitraum, Absender, Saison, Zielgruppe. Und prüfe die Formulierung: Wo steckt ein „also"
-  oder „wirken", das die Daten nicht hergeben? Auf die naive Frage antworten Sprachmodelle oft
-  zustimmend mit kleinen Vorbehalten – genau das ist der Unterschied, den du sichtbar machen sollst.
+  Sucht bei jeder Regel nach dem, was **gleichzeitig** mit dem Merkmal auftritt: Thema,
+  Zeitraum, Absender, Saison, Zielgruppe. Und prüft die Formulierung: Wo steckt ein „also"
+  oder „wirken", das die Daten nicht hergeben? Die Rolle der Kollegin ist wichtig: Wer eine Regel
+  ernsthaft verteidigt, merkt, wie überzeugend Scheinbefunde klingen. Achtet in Teil 2 darauf, ob
+  die naive Antwort eher zustimmt oder widerspricht.
 solution: |
   | Nr. | Alternative Erklärung | Zusatzdaten | Test |
   |---|---|---|---|
@@ -55,10 +70,15 @@ solution: |
   Variable vor. Gib keine allgemeinen Regeln aus.
   ```
 
-  Typischer Vergleich: Auf die naive Frage nennt Copilot meist einzelne Vorbehalte, empfiehlt die
-  Regeln aber „mit Anpassungen". Mit dem Baustein entsteht pro Regel eine Gegenerklärung und ein
-  Testvorschlag.
+  Worauf es beim Vergleich ankommt: Empfiehlt die naive Antwort die Regeln „mit Anpassungen" oder
+  nennt sie nur einzelne Vorbehalte, während die Antwort mit Baustein pro Regel eine
+  Gegenerklärung und einen Testvorschlag liefert, ist der Unterschied sichtbar, um den es geht.
 
-  Bewertungskriterien: plausible, konkrete Störfaktoren statt allgemeiner Skepsis;
-  Zusatzdaten, die die Frage tatsächlich entscheiden; Tests mit genau einer Variable; ein
-  dokumentierter Vergleich der beiden Copilot-Antworten.
+  Bewertungskriterien:
+
+  - Plausible, konkrete Störfaktoren statt allgemeiner Skepsis; Zusatzdaten, die die Frage
+    tatsächlich entscheiden; Tests mit genau einer Variable.
+  - Jede Person hatte mindestens einmal die Rolle Advocatus Diaboli; die Chat-Zusammenfassung
+    von Copilot wurde gegen die eigene Diskussion geprüft und, wo nötig, korrigiert.
+  - Der Vergleich der beiden Copilot-Antworten ist dokumentiert, inklusive mindestens eines
+    Punktes, an dem Gruppe und Copilot unterschiedlich lagen.

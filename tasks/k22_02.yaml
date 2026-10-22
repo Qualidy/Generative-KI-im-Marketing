@@ -1,9 +1,13 @@
-title: Einen Bestandsartikel mit Copilot optimieren
+title: Einen Bestandsartikel arbeitsteilig mit Copilot optimieren
 difficulty: 2
 question: |
-  Diese Übung machst du in **Excel mit Copilot**, **Copilot Chat** und **Word mit Copilot**. Der
-  Fjordlicht-Artikel „Fleece richtig waschen" bekommt laut Search Console viele Impressionen,
-  aber wenige Klicks. Hier der fiktive Export:
+  **Gruppe:** 3–4 Personen · **Dauer:** etwa 30 Minuten · **Format:** Arbeitsteilung mit
+  Prompt-Duell bei den Titles · **Am Ende liegen vor:** „Search-Console-Fleece.xlsx" mit
+  Auswertung und gezählten Title-Varianten, ein ergänzter Artikelentwurf in Word und eine
+  gemeinsam gewählte Title-Variante.
+
+  Der Fjordlicht-Artikel „Fleece richtig waschen" bekommt laut Search Console viele Impressionen,
+  aber wenige Klicks (Abschnitt 22.3). Hier der fiktive Export:
 
   ```text
   suchanfrage;impressionen;klicks;position
@@ -17,28 +21,41 @@ question: |
   Aktueller Title: `Pflegetipps | Fjordlicht Blog`
   Aktuelle Description: `Hier findest du Tipps zur Pflege.`
 
-  1. Lege den Export als Tabelle in „Search-Console-Fleece.xlsx" an. Lass **Copilot in Excel** eine
-     Spalte Klickrate (Klicks ÷ Impressionen) ergänzen und die Anfragen hervorheben, die viele
-     Impressionen, aber eine niedrige Klickrate oder eine Position über 10 haben.
-  2. Lass in Copilot Chat mit einem P.R.O.M.P.T.-Prompt (Kap. 5) **fünf neue Title-/Description-
-     Varianten** erstellen. Übernimm sie in Excel und lass die Zeichen mit `LÄNGE` zählen – nicht
-     schätzen.
-  3. Füge einen kurzen Artikelentwurf (oder einen eigenen Pflegetext) in Word ein und frag
-     **Copilot in Word**, welche der Suchanfragen der Text nicht oder nur am Rand beantwortet.
-     Lass für zwei neue H2-Abschnitte je eine zitierfähige Kurzantwort entwerfen, ohne den
-     übrigen Text umzuschreiben.
-  4. Wähle die beste Title-Variante aus und begründe die Wahl.
+  **Aufteilung:**
+
+  - **Person 1 – Daten (Excel):** Lege den Export als Tabelle in „Search-Console-Fleece.xlsx" in
+    deinem Ordner „Fjordlicht-Kurs" an und teile die Datei. Lass **Copilot in Excel** eine
+    Formelspalte Klickrate (Klicks ÷ Impressionen) vorschlagen und die Anfragen hervorheben, die
+    viele Impressionen, aber eine niedrige Klickrate oder eine Position über 10 haben. Gib das
+    Ergebnis an die anderen weiter.
+  - **Person 2 und Person 3 – Title-Duell (Copilot Chat):** Beide lassen **fünf Title-/
+    Description-Varianten** erstellen. Person 2 nutzt einen vollständigen P.R.O.M.P.T.-Prompt
+    (Kap. 5) mit den Suchanfragen aus dem Export, Person 3 nur den Satz „Schreibe fünf bessere
+    Titles und Descriptions für einen Ratgeber ‚Fleece richtig waschen'." Beide tragen ihre
+    Varianten in ein eigenes Blatt der geteilten Excel-Datei ein und lassen die Zeichen mit
+    `LÄNGE` zählen – nicht schätzen.
+  - **Person 4 – Text (Word)** (bei drei Personen übernimmt Person 1 diese Aufgabe nach der
+    Excel-Auswertung): Füge einen kurzen Artikelentwurf (oder einen eigenen Pflegetext) in ein
+    Word-Dokument ein und frag **Copilot in Word**, welche der Suchanfragen der Text nicht oder
+    nur am Rand beantwortet. Lass für zwei neue H2-Abschnitte je eine zitierfähige Kurzantwort
+    mit Copilot entwerfen, ohne den übrigen Text umzuschreiben.
+
+  **Zusammenführen (10 Minuten):** Vergleicht die Varianten aus dem Duell: Welche Prompt-Variante
+  hat die Suchanfragen aus dem Export besser getroffen, welche hält die Zeichengrenzen ein? Wählt
+  gemeinsam die beste Title-Variante und begründet die Wahl mit der Excel-Auswertung. Prüft, ob
+  Title und neue H2-Abschnitte zueinander passen.
 tip: |
-  Schau auf die Suchanfragen mit hoher Position-Zahl: Sie zeigen, wonach Menschen suchen, was
+  Schaut auf die Suchanfragen mit hoher Position-Zahl: Sie zeigen, wonach Menschen suchen, was
   der Artikel offenbar nur am Rand behandelt. Die beste Variante greift die wichtigste
-  Suchanfrage auf, ohne alle Begriffe in den Title zu pressen. Beim Zählen gilt: Copilot Chat
-  schätzt Zeichenzahlen oft, eine Excel-Formel zählt sie.
+  Suchanfrage auf, ohne alle Begriffe in den Title zu pressen. Beim Zählen gilt: Achtet darauf, ob
+  Zeichenangaben im Chat mit dem Ergebnis von `LÄNGE` übereinstimmen – zählen soll die Formel,
+  nicht das Sprachmodell.
 solution: |
-  Ergebnis Schritt 1 (gerundet): Klickrate „fleece waschen" 0,9 %, „temperatur" 0,6 %,
+  Ergebnis Person 1 (gerundet): Klickrate „fleece waschen" 0,9 %, „temperatur" 0,6 %,
   „trockner" 0,3 %, „fusselt" 0,2 %, „weichspüler" 1,5 %. Hervorgehoben werden vor allem
   Trockner (Position 14,8) und Fusseln (17,1).
 
-  Beispiel-Prompt (Copilot Chat):
+  Beispiel-Prompt für Person 2 (Copilot Chat):
 
   ```text
   Persona: Du bist SEO-Redakteurin im E-Commerce.
@@ -59,7 +76,11 @@ solution: |
   | Fleece waschen: Temperatur, Trockner, Fusseln \| Fjordlicht | 58 | Bei wie viel Grad, ob Trockner erlaubt ist und was gegen Fusseln hilft … |
   | Fleece richtig waschen – so bleibt es weich \| Fjordlicht | 56 | Temperatur, Waschmittel, Trockner: Was dein Fleece braucht … |
 
-  Neue Abschnitte:
+  Worauf es beim Duell ankommt: Greifen die Varianten von Person 3 die Teilfragen Trockner und
+  Fusseln nicht auf oder überschreiten sie die Zeichengrenze, während die Varianten von Person 2
+  beides berücksichtigen, zeigt das den Wert von Daten und Modifiern im Prompt.
+
+  Neue Abschnitte (Person 4):
 
   - **„Darf Fleece in den Trockner?"** Kurzantwort: „Besser nicht. Wärme und Reibung lassen die
     Fasern verfilzen; lass Fleece liegend an der Luft trocknen." (Aussage gegen Pflegeetikett
@@ -70,3 +91,13 @@ solution: |
   Begründung der Wahl: Variante 1 greift die drei Teilfragen mit den meisten Impressionen auf,
   bleibt unter 60 Zeichen und verspricht nichts, was der Artikel nicht hält. Weichspüler wird
   im Artikel behandelt, muss aber nicht in den Title.
+
+  Bewertungskriterien:
+
+  - Klickrate per Formel berechnet, Problemanfragen hervorgehoben.
+  - Alle Title-Varianten mit `LÄNGE` gezählt; der Vergleich der beiden Prompts ist konkret
+    (welche Suchanfragen aufgegriffen, welche Grenzen eingehalten).
+  - Die neuen H2-Abschnitte beantworten genau die Anfragen, die die Excel-Auswertung als Lücke
+    zeigt; Pflegeaussagen sind als zu prüfen markiert.
+  - Die gemeinsame Wahl verbindet die Ergebnisse aller Teilaufgaben: Title, Daten und Text
+    passen zueinander.

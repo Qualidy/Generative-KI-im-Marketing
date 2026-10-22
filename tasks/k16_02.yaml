@@ -1,9 +1,15 @@
-title: Landingpage-Test mit Copilot in Excel auswerten
+title: Landingpage-Test im geteilten Testlog auswerten
 difficulty: 2
 question: |
-  Diese Übung machst du in **Excel mit Copilot**. Fjordlicht hat auf der Landingpage für den
-  Pflege-Kalender zwei Button-Texte getestet. Die Testdauer (14 Tage) war vorher festgelegt.
-  Fiktive Daten:
+  **Gruppe:** 3–4 Personen, ca. 30 Minuten. **Rollen:** **Excel-Verantwortliche** (legt die Mappe
+  an und bedient Copilot in Excel), **Nachrechner** (prüft jede Zahl selbst),
+  **Statistik-Fragende** (eine oder zwei Personen, Copilot Chat), **Protokoll** (Blatt
+  „Testlog"; bei 3 Personen übernimmt das der Nachrechner). **Am Ende liegt vor:** die geteilte
+  Arbeitsmappe „Fjordlicht-Testlog.xlsx" mit ausgewerteter Tabelle, Diagramm und erstem
+  Testlog-Eintrag.
+
+  Fjordlicht hat auf der Landingpage für den Pflege-Kalender zwei Button-Texte getestet. Die
+  Testdauer (14 Tage) war vorher festgelegt. Fiktive Daten:
 
   ```text
   Variante;Button;Besuche;Anmeldungen
@@ -11,39 +17,46 @@ question: |
   B;Kalender holen;3180;270
   ```
 
-  1. **Daten anlegen.** Lege im Ordner „Fjordlicht-Kurs" die Arbeitsmappe
-     „Fjordlicht-Testlog.xlsx" an, trage die Daten ein und formatiere den Bereich als Tabelle.
-  2. **Copilot in Excel.** Lass Copilot eine Spalte Anmelderate und den relativen Unterschied
-     ergänzen (Formelvorschlag prüfen, dann einfügen). Lass anschließend einen Chi-Quadrat-Test
-     rechnen – über die erweiterte Analyse mit **Python in Excel** oder den Agent **Analyst**
-     (falls in eurer Umgebung freigegeben) – und fordere eine Erklärung in vier Sätzen für das
-     Team.
-  3. **Selbst prüfen.** Rechne die Anmelderaten selbst nach (Anmeldungen geteilt durch Besuche)
-     und sieh dir den Python-Code bzw. die Formeln an. Stimmen die Ausgangszahlen?
-  4. **Stichprobe.** Frage Copilot (Analyst oder Python), wie viele Besuche pro Variante nötig
-     gewesen wären, um einen Unterschied von 7,0 % zu 8,4 % sicher zu erkennen (5 % Signifikanz,
-     80 % Teststärke).
-  5. **Testlog.** Lege in derselben Mappe ein Blatt „Testlog" mit den Feldern aus Abschnitt 16.6
-     an und trage das Ergebnis ein. Die Mappe brauchst du im Workshop und in Kap. 20 wieder.
-
-  Alternativ: Datenanalyse in ChatGPT, Claude oder Gemini.
+  1. **Daten anlegen.** Die Excel-Verantwortliche legt im Ordner „Fjordlicht-Kurs" (OneDrive)
+     die Arbeitsmappe „Fjordlicht-Testlog.xlsx" an, trägt die Daten ein, formatiert den Bereich
+     als Tabelle und teilt die Mappe mit der Gruppe.
+  2. **Copilot in Excel.** Lasst Copilot eine Formelspalte „Anmelderate" und eine Spalte
+     „Unterschied zu A" (relativ) vorschlagen, prüft die Formel und fügt sie ein. Lasst die
+     höhere Anmelderate hervorheben und ein Säulendiagramm der beiden Raten erstellen.
+  3. **Nachrechnen.** Der Nachrechner rechnet beide Raten und den relativen Unterschied selbst
+     nach (Anmeldungen geteilt durch Besuche) und prüft, ob die Formeln auf die richtigen Zellen
+     zeigen.
+  4. **Gleicher Prompt, mehrere Ergebnisse.** Die Statistik-Fragenden geben – jede Person in
+     ihrem eigenen Copilot Chat – denselben Prompt ein: Chi-Quadrat-Test für die beiden Raten
+     (5 % Signifikanz), Erklärung in vier Sätzen fürs Team, und wie viele Besuche pro Variante
+     nötig gewesen wären, um 7,0 % zu 8,4 % sicher zu erkennen (80 % Teststärke). Achtet darauf,
+     ob p-Wert und Stichprobengröße in den Antworten übereinstimmen und ob ein Rechenweg genannt
+     wird. Vergleicht eure Werte erst danach mit den Referenzwerten in der Lösung.
+  5. **Testlog.** Das Protokoll legt in derselben Mappe ein Blatt „Testlog" mit den Feldern aus
+     Abschnitt 16.6 an und trägt das Ergebnis ein, das die Gruppe nach dem Vergleich für
+     belastbar hält. Danach speichert jede Person eine Kopie der Mappe in ihrem eigenen Ordner
+     „Fjordlicht-Kurs" – ihr braucht sie im Workshop und in Kap. 20 wieder.
 tip: |
-  Achte darauf, ob Copilot den Unterschied als „Beweis" bezeichnet oder Ursachen behauptet
+  Achtet darauf, ob eine Antwort den Unterschied als „Beweis" bezeichnet oder Ursachen behauptet
   („weil Nutzer konkrete Vorteile bevorzugen"). Signifikanz sagt nur, dass der Unterschied
-  wahrscheinlich nicht zufällig ist – nicht, warum er entsteht. Auch mit Enterprise Data
-  Protection gilt: nur aggregierte Zahlen, keine Empfängerlisten (Kap. 4).
+  wahrscheinlich nicht zufällig ist – nicht, warum er entsteht. Weichen die Zahlen der
+  Statistik-Fragenden voneinander ab, ist das kein Detail: Eine Rechnung, die bei zwei Personen
+  verschieden ausfällt, darf ohne Prüfung nicht ins Testlog. In die Mappe gehören nur
+  aggregierte Zahlen, keine Empfängerlisten (Kap. 4).
 solution: |
-  Beispiel-Prompt in Copilot in Excel:
+  Beispiel-Prompt für Copilot Chat:
 
   ```text
-  Führe für die Tabelle einen Chi-Quadrat-Test durch: Unterscheiden sich
-  die Anmelderaten von A und B bei 5 % Signifikanzniveau? Nutze Python.
-  Gib Anmelderate je Variante, relativen Unterschied und p-Wert aus und
-  erkläre das Ergebnis in 4 Sätzen für das Marketingteam. Nenne, was
-  der Test NICHT zeigt.
+  Ein A/B-Test auf einer Landingpage: A 3200 Besuche, 224 Anmeldungen;
+  B 3180 Besuche, 270 Anmeldungen. Prüfe mit einem Chi-Quadrat-Test,
+  ob der Unterschied bei 5 % Signifikanzniveau signifikant ist. Zeige
+  den Rechenweg. Erkläre das Ergebnis in 4 Sätzen für das Marketingteam
+  und nenne, was der Test NICHT zeigt. Berechne außerdem, wie viele
+  Besuche pro Variante nötig gewesen wären, um 7,0 % gegenüber 8,4 %
+  zu erkennen (5 % Signifikanz zweiseitig, 80 % Teststärke).
   ```
 
-  Erwartbare Werte:
+  Referenzwerte:
 
   | Kennzahl | Wert |
   |---|---|
@@ -54,12 +67,19 @@ solution: |
   | Ergebnis | signifikant bei 5 % |
   | nötige Besuche für 7,0 % → 8,4 % | ca. 5.700 pro Variante |
 
-  Je nach Einstellung (z. B. Yates-Korrektur) weicht der p-Wert leicht ab; das ist kein Fehler.
-  Prüfe im Python-Code, ob 3200/224 und 3180/270 korrekt übernommen wurden. Bemerkenswert ist
-  Punkt 4: Der Test war für diesen Effekt eigentlich zu klein geplant. Dass er trotzdem
-  signifikant wurde, liegt daran, dass der beobachtete Unterschied etwas größer war. Eine
-  Wiederholung oder Weiterführung stärkt das Ergebnis.
+  Je nach Rechenweg (z. B. mit Yates-Korrektur) weicht der p-Wert leicht ab; das ist kein Fehler.
+  Größere Abweichungen zwischen den Antworten der Gruppenmitglieder – etwa ein p-Wert von 0,26
+  oder eine Stichprobe von wenigen Hundert – zeigen, warum Rechenergebnisse aus dem Chat geprüft
+  werden müssen. Bemerkenswert ist die Stichprobenfrage: Der Test war für diesen Effekt
+  eigentlich zu klein geplant. Dass er trotzdem signifikant wurde, liegt daran, dass der
+  beobachtete Unterschied etwas größer war. Eine Wiederholung oder Weiterführung stärkt das
+  Ergebnis.
 
   Testlog-Eintrag (Kurzform): Hypothese „Nutzen im Button erhöht Anmelderate"; Ergebnis A 7,0 %,
   B 8,5 %, p ≈ 0,03; Erkenntnis: Nutzenformulierung bei diesem Leadmagneten wirksam; nächster
   Schritt: Prinzip bei der nächsten Landingpage erneut testen.
+
+  Bewertungskriterien: Tabelle mit geprüften Formelspalten und Diagramm in der geteilten Mappe;
+  Raten vom Nachrechner unabhängig bestätigt; Abweichungen zwischen den Copilot-Antworten der
+  Gruppenmitglieder benannt und erklärt; Testlog-Eintrag enthält alle Felder aus Abschnitt 16.6;
+  jede Person hat „Fjordlicht-Testlog.xlsx" in ihrem eigenen Ordner.

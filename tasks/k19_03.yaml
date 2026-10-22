@@ -1,6 +1,11 @@
-title: Einen Listening-Bericht kritisch lesen
+title: Einen Listening-Bericht in der Gegenprobe prüfen
 difficulty: 3
 question: |
+  **Gruppe:** 4 Personen in zwei Paaren · **Dauer:** etwa 30 Minuten · **Format:** Gegenprobe
+  Mensch gegen Copilot, danach gemeinsames Dokument · **Am Ende liegen vor:** eine überarbeitete
+  Management Summary in „Agenturbericht-Q3.docx" und ein gemeinsam geprüfter Outlook-Entwurf
+  (nicht gesendet).
+
   Eine Agentur legt Fjordlicht folgenden KI-erstellten Kurzbericht vor:
 
   ```text
@@ -16,20 +21,32 @@ question: |
   Im Anhang steht: Datenbasis 212 Beiträge, davon 180 von Instagram, 32 von TikTok; Stichprobe
   zur Prüfung der KI-Einstufung: keine.
 
-  1. Notiere zuerst selbst alle Schwächen des Berichts – methodisch, inhaltlich und rechtlich.
-  2. Lege den Bericht samt Anhang als Word-Datei „Agenturbericht-Q3.docx" im Ordner
-     „Fjordlicht-Kurs" an und stelle **Copilot in Word** Fragen ans Dokument, etwa: „Welche
-     Aussagen sind durch die genannte Datenbasis nicht gedeckt?" Vergleiche mit deiner Liste: Was
-     hat Copilot gefunden, was übersehen?
-  3. Markiere die Management Summary und lass sie von Copilot in Word so umschreiben, dass sie nur
-     aussagt, was die Daten tragen. Prüfe das Ergebnis Satz für Satz.
-  4. Lass **Copilot in Outlook** eine E-Mail an die Agentur mit drei Rückfragen entwerfen, bevor der
-     Bericht in die Geschäftsführung geht. Nicht senden – nur Entwurf und Prüfung.
+  1. **Vorbereitung:** Eine Person legt den Bericht samt Anhang als Word-Datei
+     „Agenturbericht-Q3.docx" in ihrem Ordner „Fjordlicht-Kurs" an und teilt sie mit der Gruppe.
+  2. **Gegenprobe (10 Minuten):**
+     - **Paar A (ohne KI)** notiert alle Schwächen des Berichts – methodisch, inhaltlich und
+       rechtlich.
+     - **Paar B (mit Copilot)** stellt **Copilot in Word** Fragen zum Dokument, etwa: „Welche
+       Aussagen sind durch die genannte Datenbasis nicht gedeckt?" und „Welche Aussagen sind
+       datenschutzrechtlich problematisch?"
+     - Danach vergleicht ihr: Was hat nur Paar A gefunden, was nur Copilot? Haltet die Lücken auf
+       beiden Seiten fest.
+  3. **Gemeinsam überarbeiten:** Paar B markiert die Management Summary und lässt sie von
+     Copilot in Word so umschreiben, dass sie nur aussagt, was die Daten tragen. Paar A prüft das
+     Ergebnis Satz für Satz mit **Änderungen nachverfolgen** und Kommentaren im geteilten
+     Dokument. Einigt euch auf eine Endfassung.
+  4. **Rückfragen an die Agentur:** Rollenwechsel – eine Person aus Paar A lässt **Copilot in
+     Outlook** eine E-Mail an die Agentur mit drei Rückfragen entwerfen und nutzt danach das
+     **Coaching durch Copilot**, um Ton und Klarheit zu prüfen. Die Gruppe entscheidet, welche
+     Hinweise aus dem Coaching übernommen werden. Nicht senden – nur Entwurf und Prüfung.
+  5. **Abschluss:** Eine Person stellt im Plenum in zwei Minuten vor: die wichtigste Schwäche des
+     Berichts und eine Lücke, die Copilot übersehen hat – oder die nur Copilot gefunden hat.
 tip: |
-  Lies jeden Satz mit der Frage: Welche Daten würden diese Aussage stützen – und liegen sie vor?
-  Achte besonders auf Nachkommastellen, auf Ursachenbehauptungen und auf den Umgang mit einzelnen
-  Personen. Copilot erkennt methodische Schwächen meist gut, den Datenschutzpunkt aber nicht
-  immer von selbst – frag gezielt nach (Kap. 4).
+  Lest jeden Satz mit der Frage: Welche Daten würden diese Aussage stützen – und liegen sie vor?
+  Achtet besonders auf Nachkommastellen, auf Ursachenbehauptungen und auf den Umgang mit
+  einzelnen Personen. Paar B sollte beobachten, ob Copilot den Datenschutzpunkt von sich aus
+  nennt oder erst auf die gezielte Nachfrage (Kap. 4). Paar A sollte sich nicht vorab ansehen,
+  was Copilot findet – sonst ist die Gegenprobe wertlos.
 solution: |
   | Aussage | Schwäche |
   |---|---|
@@ -67,6 +84,16 @@ solution: |
   welcher Rechtsgrundlage und mit welchem Werkzeug (AVV) werden die Daten verarbeitet?
 
   Die Empfehlung zur Beobachtung einer Einzelperson gehört ersatzlos gestrichen; kritische Beiträge
-  werden inhaltlich beantwortet, nicht personenbezogen ausgewertet. Bewertungskriterien: eigene
-  Liste vor dem Copilot-Abgleich, dokumentierte Lücken in Copilots Prüfung, eine Summary ohne
-  Kausalbehauptung und ohne Personenbezug, ein sachlicher Mail-Entwurf, der nicht versendet wurde.
+  werden inhaltlich beantwortet, nicht personenbezogen ausgewertet.
+
+  Bewertungskriterien:
+
+  - Paar A hat seine Liste ohne KI erstellt; der Vergleich benennt konkret, was nur Menschen und
+    was nur Copilot gefunden haben.
+  - Die Endfassung der Summary enthält keine Kausalbehauptung, keinen Personenbezug und nennt
+    die Fallzahlen; die Prüfung ist im Dokument als nachverfolgte Änderungen und Kommentare
+    sichtbar.
+  - Der Mail-Entwurf ist sachlich, enthält die drei Rückfragen, die Übernahme von
+    Coaching-Hinweisen ist bewusst entschieden, und die Mail wurde nicht versendet.
+  - Die Plenumsvorstellung nennt eine konkrete Lücke statt einer allgemeinen Aussage wie
+    „Copilot war ganz gut".

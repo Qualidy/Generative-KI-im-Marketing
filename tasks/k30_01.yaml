@@ -1,7 +1,9 @@
-title: Bausteine eines Bildprompts erkennen
+title: Bausteine eines Bildprompts erkennen – Prompt-Duell zu zweit
 difficulty: 1
 question: |
-  Untersuche den folgenden Bildprompt für einen Instagram-Post von Fjordlicht.
+  **Paararbeit (oder Dreiergruppe), ca. 15 Minuten.** Untersucht gemeinsam den folgenden
+  Bildprompt für einen Instagram-Post von Fjordlicht. Am Ende liegt ein gemeinsam verbesserter
+  Prompt vor, den ihr im Plenum mit Vorher/Nachher-Bild zeigen könnt.
 
   ```text
   Foto von einer Familie mit zwei Kindern beim Picknick im Wald, Herbst,
@@ -9,23 +11,29 @@ question: |
   ultra-detailed, masterpiece, 8K
   ```
 
-  1. **Ausprobieren.** Erzeuge mit genau diesem Prompt ein Bild in Copilot Chat. Notiere in
-     einem Satz, was dir am Ergebnis auffällt (Format, Bildaufbau, Look).
-  2. Welche der acht Bausteine (Motiv, Umgebung, Stil, Licht, Komposition, Kamera,
-     Farbstimmung, Format) sind enthalten, welche fehlen?
-  3. Welche Angaben sind **Füllwörter**, die kaum etwas beitragen?
-  4. Formuliere die negative Angabe „keine Handys" positiv um.
-  5. Ergänze die beiden fehlenden Bausteine, die für einen Instagram-Post am wichtigsten sind,
-     streiche die Füllwörter und erzeuge das Bild in einer **neuen** Unterhaltung erneut.
-     Was hat sich sichtbar verändert?
+  1. **Ausprobieren.** Beide erzeugen mit genau diesem Prompt ein Bild in Copilot Chat.
+     Legt die Bilder nebeneinander und notiert in einem Satz, was euch an beiden auffällt
+     (Format, Bildaufbau, Look).
+  2. **Analysieren.** Klärt gemeinsam: Welche der acht Bausteine (Motiv, Umgebung, Stil, Licht,
+     Komposition, Kamera, Farbstimmung, Format) sind enthalten, welche fehlen? Welche Angaben
+     sind **Füllwörter**, die kaum etwas beitragen?
+  3. **Duell.** Jede Person überarbeitet den Prompt für sich: Füllwörter streichen, „keine
+     Handys" positiv umformulieren und die **zwei** fehlenden Bausteine ergänzen, die sie für
+     einen Instagram-Post für am wichtigsten hält. Erzeugt beide Fassungen jeweils in einer
+     **neuen** Unterhaltung.
+  4. **Vergleichen und entscheiden.** Welche Fassung hat mehr verändert? Habt ihr dieselben
+     Bausteine gewählt? Einigt euch auf einen gemeinsamen Prompt. Achtet darauf, ob Copilot ein
+     im Prompt verlangtes Format umsetzt.
 tip: |
-  Überlege bei Frage 5, was ein Instagram-Post technisch zwingend braucht und was bei einem
-  Familienbild am häufigsten „irgendwie falsch" wirkt. Ein Blick auf das erste Bild aus
-  Schritt 1 verrät es dir meist.
+  Überlegt bei Schritt 3, was ein Instagram-Post technisch zwingend braucht und was bei einem
+  Familienbild am häufigsten „irgendwie falsch" wirkt. Ein Blick auf die beiden ersten Bilder
+  aus Schritt 1 verrät es euch meist – und wenn beide Bilder denselben Fehler zeigen, liegt er
+  am Prompt, nicht am Zufall.
 solution: |
-  Typische Beobachtung in Schritt 1: Das Bild ist quadratisch oder im Querformat, die Familie
-  sitzt mittig und frontal, alle lächeln in die Kamera, der Look ist glatt und sehr gesättigt –
-  ein Werbefamilien-Bild.
+  Mögliche Beobachtung in Schritt 1 – achtet darauf, ob sie bei euch zutrifft: Beide Bilder
+  sind nicht hochformatig, die Familie sitzt mittig und frontal, alle lächeln in die Kamera,
+  der Look ist glatt und sehr gesättigt – ein Werbefamilien-Bild. Die Details unterscheiden
+  sich, das Grundproblem ist auf beiden Bildern gleich.
 
   | Baustein | enthalten? | Fundstelle |
   |---|---|---|
@@ -53,7 +61,12 @@ solution: |
   ```
 
   Das Format ist zwingend für den Kanal, die Komposition verhindert das typische frontale
-  „Werbefamilien"-Bild. Im zweiten Durchgang wirkt das Bild meist ruhiger und
-  dokumentarischer, die Familie ist kleiner im Bild, und es gibt Umgebung. Falls Copilot das
-  Hochformat nicht exakt umsetzt, ist das ein Hinweis, das Format später beim Zuschnitt zu
-  sichern – der Prompt bleibt trotzdem richtig.
+  „Werbefamilien"-Bild. Hat eine Person „Kamera" statt „Komposition" gewählt, ist das
+  vertretbar – im Vergleich zeigt sich meist, dass die Komposition mehr verändert. Wird das
+  Hochformat nicht exakt umgesetzt, sichert ihr das Format später beim Zuschnitt; der Prompt
+  bleibt trotzdem richtig.
+
+  Bewertungskriterien: fehlende Bausteine und Füllwörter korrekt erkannt; positive
+  Umformulierung beschreibt, was zu sehen sein soll; beide Fassungen erzeugt und verglichen;
+  Unterschiede zwischen den beiden überarbeiteten Prompts benannt und begründet; gemeinsamer
+  Prompt enthält Format und Komposition.

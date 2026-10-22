@@ -1,34 +1,42 @@
-title: Vom vagen zum präzisen Musik-Prompt
+title: Vom vagen zum präzisen Musik-Prompt – im Team verglichen
 difficulty: 2
 question: |
   Copilot erzeugt keine Musik – aber es ist ein guter **Music Supervisor**: Es übersetzt Szene
   und Markenstimme in musikalisches Vokabular. Die Prompts entstehen deshalb in Copilot Chat,
-  die Tracks – falls verfügbar – in einem KI-Musikwerkzeug wie Suno, ElevenLabs Music oder
-  Google Flow Music. Ohne Musikwerkzeug bearbeitest du die Schritte 1 bis 4 und bewertest die
-  Prompts nur schriftlich. Alternativ funktionieren die Schritte 2 und 3 auch in ChatGPT, Claude
-  oder Gemini.
+  die Tracks im optionalen letzten Schritt in einem KI-Musikwerkzeug wie Suno, ElevenLabs Music
+  oder Google Flow Music. Ohne Musikwerkzeug bearbeitet ihr die Schritte 1 bis 4.
 
   Ausgangslage: Fjordlicht zeigt in einem 20-Sekunden-Reel, wie das Fleece „Skog" an einem
   kalten Morgen am See angezogen wird. Ab Sekunde 12 spricht eine Stimme einen kurzen Satz.
 
-  1. Schreibe den Prompt, den du spontan tippen würdest.
-  2. Lass dir in Copilot Chat mit dem Music-Supervisor-Prompt aus Abschnitt 37.3 **drei** Prompts
-     in unterschiedliche Richtungen formulieren. Verweise für die Markenstimme auf
-     `/Fjordlicht-Basisdaten` (falls nicht vorhanden: Kap. 11 bzw. Markenstimme einfügen).
-  3. Lass Copilot im selben Chat alle drei Prompts gegen die sechs Bausteine prüfen (Genre,
-     Stimmung, Tempo, Instrumente, Gesang, Struktur und Länge) und als Tabelle ausgeben. Prüfe
-     die Tabelle selbst nach und ergänze, was fehlt – insbesondere: Was passiert ab Sekunde 12?
-  4. Speichere den Music-Supervisor-Prompt in der **Prompt Gallery** (bzw. in deinen
-     gespeicherten Prompts), damit du ihn im Workshop wiederverwenden kannst.
-  5. Erzeuge mit deinem spontanen und dem besten überarbeiteten Prompt je einen Track im
-     Musikwerkzeug und vergleiche.
+  **Gruppenarbeit:** 3–4 Personen, etwa 25 Minuten. Eine Person ist **Sekunde-12-Wächterin**:
+  Sie prüft bei jedem Prompt nur, was ab Sekunde 12 passiert. **Am Ende liegt vor:** eine geteilte
+  Copilot Page mit den spontanen Prompts, dem besten überarbeiteten Prompt und der Bausteinprüfung;
+  außerdem hat jede Person den Music-Supervisor-Prompt in ihrer Prompt Gallery gespeichert.
+
+  1. **Spontan.** Jede Person schreibt allein den Prompt, den sie spontan tippen würde.
+  2. **Gleicher Prompt, mehrere Ergebnisse.** Jede Person führt **denselben** Music-Supervisor-Prompt
+     aus Abschnitt 37.3 in ihrem eigenen Copilot Chat aus und lässt sich drei Prompts in
+     unterschiedliche Richtungen formulieren, mit Verweis auf `/Fjordlicht-Basisdaten` (aus
+     Kap. 11). Vergleicht: Wie stark unterscheiden sich die Vorschläge zwischen euch? Taucht
+     irgendwo ein Künstler- oder Songname auf?
+  3. **Auswählen und prüfen.** Wählt gemeinsam die zwei stärksten Vorschläge. Eine Person lässt
+     Copilot im Chat beide gegen die sechs Bausteine prüfen (Genre, Stimmung, Tempo, Instrumente,
+     Gesang, Struktur und Länge) und als Tabelle ausgeben, übernimmt die Antwort in eine Copilot
+     Page und teilt sie. Die Sekunde-12-Wächterin und die anderen ergänzen dort, was fehlt, und
+     überarbeiten den besseren Prompt. Tragt auch eure spontanen Prompts ein.
+  4. **Speichern.** Jede Person speichert den Music-Supervisor-Prompt in ihrer **Prompt Gallery**,
+     damit sie ihn im Workshop wiederverwenden kann.
+  5. **Hören (optional).** Eine Person erzeugt im Musikwerkzeug einen Track mit einem spontanen
+     Prompt, eine andere mit dem überarbeiteten. Hört beide gemeinsam an der Sprechstelle an und
+     notiert das Ergebnis in der Page.
 tip: |
   Die Sprechstelle ab Sekunde 12 ist der Prüfstein. Ein Track, der genau dort lauter wird oder
-  Gesang einsetzt, ist unbrauchbar, auch wenn er schön klingt. Schreib so etwas ausdrücklich in
-  den Prompt. Und achte darauf, dass Copilot keine Künstler- oder Songnamen als Orientierung
-  vorschlägt.
+  Gesang einsetzt, ist unbrauchbar, auch wenn er schön klingt. Schreibt so etwas ausdrücklich in
+  den Prompt. Achtet beim Vergleich darauf, ob jede Copilot-Antwort die Sprechstelle überhaupt
+  berücksichtigt – und ob der Baustein „Gesang" in allen Vorschlägen vorkommt.
 solution: |
-  Beispiel-Prompt für Copilot Chat:
+  Beispiel-Prompt für Copilot Chat (alle Gruppenmitglieder identisch):
 
   ```text
   Du bist Music Supervisor für Social-Media-Werbung.
@@ -60,10 +68,17 @@ solution: |
   |---|---|---|
   | Genre, Stimmung | meist vage („ruhig") | konkret, mit Entwicklung |
   | Tempo, Instrumente | fehlen | BPM, Besetzung, Ausschlüsse |
+  | Gesang | fehlt | ausdrücklich instrumental |
   | Struktur | fehlt | Sprechstelle berücksichtigt |
 
-  Typische Beobachtung in Copilot: Die drei Prompts sind solide, aber die Sprechstelle wird nur
-  in einem berücksichtigt, und der Baustein „Gesang" fehlt oft ganz. Copilots eigene
-  Bausteinprüfung übersieht das gelegentlich – deshalb die zweite Prüfung durch dich.
-  Im Musikwerkzeug liefert der spontane Prompt typischerweise Gesang oder eine Steigerung genau
-  unter der Sprechstelle; der Strukturbaustein behebt das.
+  Worauf ihr beim Vergleich achten solltet: ob die Sprechstelle in allen drei Vorschlägen einer
+  Antwort vorkommt oder nur in einem, ob der Baustein „Gesang" fehlt und ob Copilots eigene
+  Bausteinprüfung das bemerkt – deshalb die zweite Prüfung durch die Gruppe. Im Musikwerkzeug
+  lohnt der Blick darauf, ob der spontane Prompt Gesang oder eine Steigerung unter der
+  Sprechstelle liefert und ob der Strukturbaustein das behebt.
+
+  Bewertungskriterien: Der überarbeitete Prompt enthält alle sechs Bausteine, berücksichtigt die
+  Sprechstelle ausdrücklich und nennt keine Künstler- oder Songnamen. Die Gruppe hat benannt, wie
+  stark die Vorschläge aus demselben Prompt zwischen den Mitgliedern voneinander abwichen und was
+  daraus für die Auswahl folgt. Copilots Bausteinprüfung wurde in der Page nachweisbar ergänzt.
+  Jede Person hat den Music-Supervisor-Prompt in ihrer Prompt Gallery gespeichert.

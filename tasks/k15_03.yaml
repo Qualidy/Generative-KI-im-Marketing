@@ -1,6 +1,10 @@
-title: Faktencheck eines KI-Entwurfs mit Copilot in Word
+title: Faktencheck im Team – Rollen am geteilten Word-Dokument
 difficulty: 3
 question: |
+  **Gruppe:** 4 Personen (bei 3 Personen entfällt das Protokoll, die Prompt-Verantwortliche
+  übernimmt es), ca. 30 Minuten. **Am Ende liegt vor:** ein geteiltes Word-Dokument mit
+  Behauptungstabelle, Rechercheprotokoll, geprüfter Neufassung und einem vorbeugenden Prompt.
+
   Ein KI-Entwurf für den Blog „Draußen-Notizen" enthält folgenden Absatz:
 
   ```text
@@ -15,24 +19,37 @@ question: |
   Faktenbasis: Pflegeetikett „30 Grad Feinwäsche, kein Weichspüler, Trockner schonend erlaubt";
   Claim-Liste: „klimaneutral" ist **nicht** freigegeben (siehe auch `/Fjordlicht-Basisdaten`).
 
-  1. **Behauptungen auflisten lassen.** Füge den Absatz in ein Word-Dokument ein und lass
-     **Copilot in Word** mit dem Prompt aus Abschnitt 15.5 alle prüfbaren Behauptungen als
-     Tabelle auflisten. Ergänze die Tabelle selbst um die Spalten Risiko, Prüfweg und
-     Entscheidung (behalten / ändern / streichen).
-  2. **Quelle suchen.** Prüfe in Copilot Chat im Modus **Web**, ob es die genannte Studie gibt.
-     Öffne jeden Link, den Copilot nennt, selbst. Notiere, was du gefunden hast.
-  3. **Neu formulieren.** Markiere den Absatz in Word und lass ihn von Copilot umschreiben – nur
-     mit belegbaren oder deutlich als Empfehlung gekennzeichneten Aussagen. Prüfe die Neufassung
-     erneut: Hat Copilot dabei **neue** Behauptungen eingeführt?
-  4. **Vorbeugen.** Schreibe einen Prompt, mit dem du solche Absätze schon beim Schreiben
-     verhinderst, und speichere ihn in der **Prompt Gallery** (falls in eurer Umgebung
-     freigegeben), damit das Team ihn wiederverwenden kann.
+  **Rollen:** **Prompt-Verantwortliche** (bedient Copilot in Word), **Quellenprüferin**
+  (Copilot Chat, Modus Web), **Claim-Prüfer** (gleicht mit Etikett und Claim-Liste ab),
+  **Protokoll** (führt die Tabelle). Nach Schritt 2 tauschen Prompt-Verantwortliche und
+  Claim-Prüfer die Rollen.
+
+  1. **Behauptungen auflisten.** Die Prompt-Verantwortliche legt ein Word-Dokument im Ordner
+     „Fjordlicht-Kurs" an, fügt den Absatz ein und teilt es mit der Gruppe. Sie fragt
+     **Copilot in Word** mit dem Prompt aus Abschnitt 15.5 nach allen prüfbaren Behauptungen und
+     übernimmt die Liste als Tabelle ins Dokument. Das Protokoll ergänzt die Spalten Risiko,
+     Prüfweg und Entscheidung (behalten / ändern / streichen); der Claim-Prüfer trägt seine
+     Einschätzungen als Kommentare ein.
+  2. **Quelle suchen (parallel).** Die Quellenprüferin prüft in Copilot Chat im Modus **Web**,
+     ob es die genannte Studie gibt, öffnet jeden genannten Link selbst und notiert im Dokument,
+     was sie gefunden hat.
+  3. **Neu formulieren (nach dem Rollentausch).** Die neue Prompt-Verantwortliche markiert den
+     Absatz und lässt ihn von Copilot umschreiben – nur mit belegbaren oder deutlich als
+     Empfehlung gekennzeichneten Aussagen. Schaltet **Änderungen nachverfolgen** ein, bevor ihr
+     die Neufassung einfügt. Der neue Claim-Prüfer sucht gezielt nach **neuen** Behauptungen, die
+     beim Umschreiben hinzugekommen sind.
+  4. **Prompt-Duell.** Teilt euch in zwei Paare. Jedes Paar schreibt einen Prompt, der solche
+     Absätze schon beim Schreiben verhindert, und lässt damit in Copilot Chat einen kurzen
+     Pflegeabsatz schreiben. Vergleicht beide Ergebnisse: Welcher Prompt hat weniger unbelegte
+     Aussagen erzeugt? Den Siegerprompt speichert jede Person in ihrer **Prompt Gallery** und fügt
+     ihn ins Dokument ein.
 tip: |
-  Unterscheide zwischen Aussagen, die falsch sein **können** (Studie), und Aussagen, die
-  nachweislich gegen deine Faktenbasis verstoßen (60 Grad, klimaneutral). Beide sind ein
-  Problem, aber das zweite ist ein sicherer Fehler mit Folgen für Produkt und Recht. Dass Copilot
-  im Web-Modus nichts findet, beweist nicht, dass die Studie nicht existiert – aber ohne geöffnete
-  Quelle bleibt sie draußen.
+  Unterscheidet zwischen Aussagen, die falsch sein **können** (Studie), und Aussagen, die
+  nachweislich gegen die Faktenbasis verstoßen (60 Grad, klimaneutral). Beide sind ein Problem,
+  aber das zweite ist ein sicherer Fehler mit Folgen für Produkt und Recht. Findet die
+  Quellenprüferin im Modus Web nichts, beweist das nicht, dass die Studie nicht existiert – aber
+  ohne geöffnete Quelle bleibt sie draußen. Achtet in Schritt 3 darauf, ob ein gestrichenes Wort
+  durch eine weichere, aber ebenso unbelegte Formulierung ersetzt wird.
 solution: |
   | Behauptung | Risiko | Prüfweg | Entscheidung |
   |---|---|---|---|
@@ -42,10 +59,9 @@ solution: |
   | Trockner aktiviert Imprägnierung | teilweise richtig, aber verallgemeinert | Produktmanagement, Etikett | ändern, auf „schonend" begrenzen |
   | 100 % klimaneutral produziert | nicht freigegeben, Greenwashing, UWG-Risiko | Claim-Liste | streichen |
 
-  Typisch bei Schritt 2: Copilot findet kein „Outdoor-Institut München" oder verweist auf
-  Seiten, die die Zahl nicht enthalten. Typisch bei Schritt 3: Die Umschreibung ersetzt
-  „klimaneutral" durch eine weichere, aber ebenfalls unbelegte Formulierung („umweltschonend
-  hergestellt") – auch die muss raus.
+  Mögliche Beobachtung in Schritt 2: Die Suche findet kein „Outdoor-Institut München" oder nur
+  Seiten, die die Zahl nicht enthalten. Mögliche Beobachtung in Schritt 3: „klimaneutral" wird
+  durch „umweltschonend hergestellt" ersetzt – auch das ist unbelegt und muss raus.
 
   Neufassung (Beispiel):
 
@@ -56,7 +72,7 @@ solution: |
   Imprägnierungen hilft die Wärme, den Abperleffekt aufzufrischen.
   ```
 
-  Präventiver Prompt (für die Prompt Gallery):
+  Vorbeugender Prompt (Beispiel für den Siegerprompt):
 
   ```text
   Nutze für Pflegehinweise ausschließlich dieses Etikett: [Etikett].
@@ -67,5 +83,8 @@ solution: |
   ```
 
   Bewertungskriterien: alle fünf Behauptungen erkannt, Etikett und Claim-Liste als Prüfmaßstab
-  genutzt, Websuche mit selbst geöffneten Links dokumentiert, Neufassung ohne neue Behauptungen,
-  Prompt mit Platzhalter für fehlende Quellen.
+  genutzt, Websuche mit selbst geöffneten Links im Dokument dokumentiert, Neufassung mit
+  nachverfolgten Änderungen und ohne neue Behauptungen; Rollen wurden getauscht, und der neue
+  Claim-Prüfer hat die Neufassung unabhängig geprüft; im Prompt-Duell ist der Unterschied
+  zwischen beiden Ergebnissen benannt und die Wahl des Siegerprompts begründet; der Prompt
+  enthält einen Platzhalter für fehlende Quellen.

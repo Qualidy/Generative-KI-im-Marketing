@@ -1,6 +1,10 @@
-title: Mensch, Copilot oder beides?
+title: Mensch, Copilot oder beides? – Aufgaben gemeinsam sortieren
 difficulty: 1
 question: |
+  **Gruppenarbeit:** 3–4 Personen, ca. 20 Minuten, in **Copilot Chat**. Am Ende liegt eine
+  gemeinsame Zuordnung aller sieben Aufgaben vor, die ihr im Plenum in einer Minute erklären
+  könnt.
+
   Im Marketingteam von Fjordlicht fallen die folgenden Aufgaben an:
 
   ```text
@@ -13,21 +17,37 @@ question: |
   7. Festlegen der Markenstimme für die neue B2B-Linie
   ```
 
-  1. Probiere zwei Aufgaben direkt aus: Lass **Copilot in Outlook** für einen
-     Newsletter-Entwurf 20 Betreffzeilen vorschlagen (Aufgabe 1) und **Copilot Chat** einen
-     kurzen Blogabschnitt in drei Captions umwandeln (Aufgabe 4). Wie viel musst du noch
-     nacharbeiten?
-  2. Ordne jede Aufgabe zu: **KI übernimmt den Entwurf, Mensch prüft**, **Mensch und KI im
-     Wechsel** oder **bleibt beim Menschen**. Begründe jeweils in einem Satz.
-  3. Nenne für jede Aufgabe, bei der KI beteiligt ist, die passende Copilot-Funktion – etwa
-     Outlook, Teams-Recap, Excel, Word oder Copilot Chat.
+  1. **Ausprobieren mit Arbeitsteilung:** Zwei Personen führen **denselben** Prompt für
+     Aufgabe 1 (20 Betreffzeilen für einen Newsletter zur Regenjacke „Sølv") in ihrem eigenen
+     Copilot Chat aus und vergleichen: Wie viele Vorschläge überschneiden sich, wie viele passen
+     zur Markenstimme? Die anderen lassen Copilot Chat einen kurzen Blogabschnitt in drei
+     Captions umwandeln (Aufgabe 4). Alle schätzen: Wie viel muss noch nachgearbeitet werden?
+  2. **Erst allein, dann gemeinsam:** Jede Person ordnet alle sieben Aufgaben still für sich zu:
+     **KI übernimmt den Entwurf, Mensch prüft**, **Mensch und KI im Wechsel** oder **bleibt beim
+     Menschen**. Vergleicht danach und diskutiert nur die Aufgaben, bei denen ihr unterschiedlich
+     entschieden habt.
+  3. **Funktion zuordnen:** Nennt für jede Aufgabe, bei der KI beteiligt ist, die passende
+     Copilot-Funktion – etwa Copilot Chat, Copilot in Outlook, Word oder Excel oder die
+     Besprechungszusammenfassung von Copilot in Teams.
+  4. **Abschluss:** Einigt euch auf die Aufgabe, bei der eure Meinungen am weitesten
+     auseinanderlagen, und stellt im Plenum kurz vor, wie ihr entschieden habt.
 tip: |
-  Frage dich bei jeder Aufgabe: Wie teuer ist ein Fehler, und wer muss ihn verantworten? Je höher
+  Fragt euch bei jeder Aufgabe: Wie teuer ist ein Fehler, und wer muss ihn verantworten? Je höher
   das Risiko und je stärker es um Urteil statt um Varianten geht, desto mehr bleibt beim Menschen.
-  Dein Eindruck aus Schritt 1 ist ein guter Prüfstein: Wo du viel nacharbeiten musstest, gehört
-  mehr Urteil dazu.
+  Euer Eindruck aus Schritt 1 ist ein guter Prüfstein: Wo ihr viel nacharbeiten musstet, gehört
+  mehr Urteil dazu. Achtet beim Vergleich der Betreffzeilen darauf, ob Superlative oder
+  Ausrufezeichen auftauchen, die nicht zur Markenstimme passen.
 solution: |
-  Beispiel-Prompt für Aufgabe 4 in Copilot Chat:
+  Beispiel-Prompt für Aufgabe 1 (für beide Personen identisch):
+
+  ```text
+  Schlage 20 Betreffzeilen für einen Newsletter zur Regenjacke „Sølv" vor
+  (100 % recyceltes Polyamid, 20.000 mm Wassersäule, 249 €). Halte dich an die
+  Markenstimme aus /Fjordlicht-Basisdaten: ruhig, ehrlich, Du-Ansprache,
+  keine Superlative. Höchstens 50 Zeichen pro Zeile.
+  ```
+
+  Beispiel-Prompt für Aufgabe 4:
 
   ```text
   Mache aus diesem Blogabschnitt drei Captions: LinkedIn (sachlich, 3 Sätze),
@@ -39,18 +59,27 @@ solution: |
 
   | Nr. | Zuordnung | Begründung | Passende Copilot-Funktion |
   |---|---|---|---|
-  | 1 | KI-Entwurf, Mensch prüft | Varianten sind die Stärke der KI, Auswahl und Test bleiben menschlich | Copilot in Outlook |
-  | 2 | bleibt beim Menschen | strategische Entscheidung mit Verantwortung; KI kann Argumente sammeln | ggf. Teams-Recap der Abstimmung, Copilot Chat für Pro und Contra |
+  | 1 | KI-Entwurf, Mensch prüft | Varianten sind die Stärke der KI, Auswahl und Test bleiben menschlich | Copilot Chat oder Copilot in Outlook |
+  | 2 | bleibt beim Menschen | strategische Entscheidung mit Verantwortung; KI kann Argumente sammeln | Copilot in Teams (Zusammenfassung der transkribierten Abstimmung), Copilot Chat für Pro und Contra |
   | 3 | Mensch und KI im Wechsel | KI kann Entwürfe liefern, Ton und Freigabe in der Krise entscheidet ein Mensch | Copilot Chat |
   | 4 | KI-Entwurf, Mensch prüft | klassische Content-Adaption (Kap. 14) | Copilot Chat oder Word |
-  | 5 | bleibt beim Menschen | Rechte, Kennzeichnung, Markenwirkung (Kap. 34, 39) | – (Copilot höchstens für die Bildbeschreibung als zweite Meinung) |
-  | 6 | KI-Entwurf, Mensch prüft | Themenanalyse geht schnell, Stichproben gegenlesen (Kap. 19) | Copilot in Excel oder Analyst |
+  | 5 | bleibt beim Menschen | Rechte, Kennzeichnung, Markenwirkung (Kap. 34, 39) | – (Copilot Chat höchstens für die Bildbeschreibung als zweite Meinung) |
+  | 6 | KI-Entwurf, Mensch prüft | Themenanalyse geht schnell, Stichproben gegenlesen (Kap. 19) | Copilot in Excel |
   | 7 | Mensch und KI im Wechsel | KI hilft beim Extrahieren und Variieren, die Festlegung ist Markenarbeit | Copilot in Word |
 
-  Typischer Befund aus Schritt 1: Die Betreffzeilen sind brauchbar, enthalten aber oft
-  Superlative oder Ausrufezeichen, die nicht zur Markenstimme passen; bei den Captions stimmen
-  Länge und Kanalton meist, Fakten müssen trotzdem gegengelesen werden.
+  Mögliche Beobachtungen aus Schritt 1: Die beiden Betreffzeilen-Listen überschneiden sich nur
+  teilweise – derselbe Prompt liefert unterschiedliche Varianten. Prüft, ob einzelne Zeilen
+  Superlative oder Ausrufezeichen enthalten. Bei den Captions müssen Fakten in jedem Fall
+  gegengelesen werden.
 
   Das Muster: KI übernimmt Masse und Varianten, Menschen übernehmen Urteil, Freigabe und alles,
-  wofür jemand geradestehen muss. Ganz ohne KI-Unterstützung bleibt fast nichts – ganz ohne Menschen
-  aber auch nicht.
+  wofür jemand geradestehen muss. Ganz ohne KI-Unterstützung bleibt fast nichts – ganz ohne
+  Menschen aber auch nicht.
+
+  Bewertungskriterien:
+
+  - Beide Mini-Tests wurden durchgeführt; Unterschiede zwischen den Betreffzeilen-Listen der
+    zwei Personen sind benannt.
+  - Alle sieben Aufgaben sind begründet zugeordnet; abweichende Einzelzuordnungen wurden
+    diskutiert und aufgelöst.
+  - Die genannten Copilot-Funktionen passen zur Aufgabe.

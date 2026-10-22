@@ -1,14 +1,19 @@
-title: Hypothese oder Erkenntnis?
+title: Hypothese oder Erkenntnis? – Arbeit gegen Web, Einzelurteil gegen Gruppe
 difficulty: 1
 question: |
-  **Kurz ausprobieren.** Stelle in Copilot Chat zweimal dieselbe Frage: „Wer kauft nachhaltige
-  Outdoor-Jacken in Deutschland, und wie stark wächst dieser Markt?" – einmal im Modus **Arbeit**
-  ohne Dateien, einmal im Modus **Web**. Notiere, welche Aussagen jeweils eine Quelle haben, und
-  öffne bei der Web-Antwort eine Quelle selbst: Steht die Zahl wirklich dort?
+  **Gruppe:** 4 Personen (bei 3 Personen: zwei im Modus Arbeit, eine im Modus Web), ca.
+  20 Minuten. **Am Ende liegt vor:** eine gemeinsame Einordnung aller Aussagen in Evidenzstufen
+  und ein Vorschlag, wie Aussage 2 eine Stufe höher kommt.
+
+  **Kurz ausprobieren.** Alle stellen in Copilot Chat dieselbe Frage: „Wer kauft nachhaltige
+  Outdoor-Jacken in Deutschland, und wie stark wächst dieser Markt?" Zwei Personen nutzen den
+  Modus **Arbeit** ohne Dateien, zwei den Modus **Web**. Notiert, welche Aussagen jeweils eine
+  Quelle haben. Die Web-Gruppe öffnet je eine Quelle selbst: Steht die Zahl wirklich dort?
+  Vergleicht auch innerhalb der Paare: Nennen beide Antworten dieselbe Wachstumszahl?
 
   **Einordnen.** Das Marketingteam von Fjordlicht hat eine erste Zielgruppenanalyse für die
-  Regenjacke „Sølv" gemacht. Ordne jede Aussage einer **Evidenzstufe** aus Abschnitt 17.6 zu –
-  Vermutung, Hypothese, gestützt, bestätigt – und begründe kurz.
+  Regenjacke „Sølv" gemacht. Ordnet jede Aussage einer **Evidenzstufe** aus Abschnitt 17.6 zu –
+  Vermutung, Hypothese, gestützt, bestätigt.
 
   1. „Unsere Kundinnen sind überwiegend umweltbewusste Akademikerinnen." (Copilot ohne Daten
      auf die Frage „Wer kauft nachhaltige Outdoor-Jacken?")
@@ -17,20 +22,26 @@ question: |
      des letzten Quartals)
   4. „Eine Betreffzeile mit dem Wort ‚Pendeln' erzielt mehr Klicks als eine mit ‚Wandern'."
      (A/B-Test im Newsletter, deutlicher Unterschied, ausreichend große Gruppen)
-  5. „Der Markt für nachhaltige Outdoor-Bekleidung wächst jährlich um 12 Prozent." (Bericht des
-     Agents Researcher, Quelle nicht geöffnet)
+  5. „Der Markt für nachhaltige Outdoor-Bekleidung wächst jährlich um 12 Prozent." (aus einem
+     ausführlichen KI-Recherchebericht, Quelle nicht geöffnet)
 
-  Ordne zum Schluss auch die Aussagen aus deinem eigenen Copilot-Versuch ein und nenne für
-  Aussage 2 einen Weg, wie das Team sie mit wenig Aufwand auf die nächste Stufe bringt.
+  So geht ihr vor: Jede Person ordnet zuerst **still für sich** ein (drei Minuten). Dann legt
+  ihr die Ergebnisse offen. Bei jeder Aussage mit unterschiedlichen Stufen argumentiert eine
+  Person als **Advocatus Diaboli** für die höhere Stufe, die anderen müssen sie widerlegen. Ordnet
+  zum Schluss auch die Aussagen aus euren eigenen Copilot-Versuchen ein und nennt gemeinsam einen
+  Weg, wie das Team Aussage 2 mit wenig Aufwand auf die nächste Stufe bringt.
 tip: |
   Entscheidend ist nicht, wie überzeugend eine Aussage klingt, sondern **wie viele unabhängige
   Quellen** sie tragen und ob jemand die Quelle tatsächlich geprüft hat. Eine Quellenangabe in
-  der Web-Antwort ist ein Hinweis, kein Beleg – erst der geöffnete Link zählt.
+  der Web-Antwort ist ein Hinweis, kein Beleg – erst der geöffnete Link zählt. Nennen zwei
+  Antworten auf dieselbe Frage unterschiedliche Zahlen, ist das bereits ein Hinweis auf die
+  Evidenzstufe.
 solution: |
-  Typische Beobachtung beim Ausprobieren: Im Modus Arbeit ohne Dateien liefert Copilot ein
-  plausibles Profil aus allgemeinem Wissen, ohne Quellen (Stufe Vermutung). Im Modus Web kommen
-  Quellen dazu; beim Öffnen zeigt sich oft, dass die Zahl sich auf einen anderen Markt (global,
-  Sportbekleidung allgemein) oder ein anderes Jahr bezieht.
+  Mögliche Beobachtungen beim Ausprobieren: Im Modus Arbeit ohne Dateien entsteht ein plausibles
+  Profil aus allgemeinem Wissen, ohne Quellen (Stufe Vermutung); die beiden Antworten können
+  unterschiedliche oder gar keine Wachstumszahlen nennen. Im Modus Web kommen Quellen dazu; beim
+  Öffnen kann sich zeigen, dass die Zahl sich auf einen anderen Markt (global, Sportbekleidung
+  allgemein) oder ein anderes Jahr bezieht.
 
   | Nr. | Stufe | Begründung |
   |---|---|---|
@@ -42,7 +53,14 @@ solution: |
 
   Aussage 5 ist die gefährlichste: Sie wirkt durch die präzise Zahl und den ausführlichen Bericht
   belastbar, obwohl niemand weiß, ob sie stimmt, woher sie stammt und worauf sie sich bezieht.
+  Typischer Streitpunkt in der Gruppe: Aussage 2 („9 von 70 sind doch viel") – der Advocatus
+  Diaboli verliert, weil es nur **eine** Quelle ist.
 
   Weg für Aussage 2: Den Kundenservice fragen, ob Pendeln in Gesprächen vorkommt, oder eine
   Story-Umfrage auf Instagram („Wofür trägst du deine Regenjacke am häufigsten?"). Bestätigt
   eine zweite Quelle das Muster, wird es „gestützt" und darf ins Zielgruppenbriefing.
+
+  Bewertungskriterien: Unterschiede zwischen Arbeit- und Web-Antworten und innerhalb der Paare
+  sind benannt; mindestens eine Quelle wurde selbst geöffnet und geprüft; abweichende
+  Einzelurteile wurden diskutiert und mit dem Kriterium „unabhängige Quellen" entschieden; der
+  Weg für Aussage 2 nennt eine konkrete zweite Quelle.

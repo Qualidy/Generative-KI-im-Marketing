@@ -1,10 +1,15 @@
-title: Newsletter nach Raster in Word erstellen
+title: Newsletter nach Raster – Arbeitsteilung in Word und Outlook
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot in Word**, **Copilot Chat** und **Copilot in Outlook**.
+  Diese Übung macht ihr in **Copilot in Word**, **Copilot Chat** und **Copilot in Outlook**.
 
-  Erstelle einen Newsletter-Entwurf für Fjordlicht (oder ein Unternehmen deiner Wahl) zum Thema
-  „Erster Frost". Nutze dieses Material:
+  **Gruppe:** 3–4 Personen · **Dauer:** ca. 30 Minuten · **Aufteilung:** Entwurf (Word),
+  Betreff/Preheader (Chat), Faktenprüfung (Word), Coaching (Outlook); bei drei Personen übernimmt
+  die Faktenprüferin auch das Coaching · **Am Ende liegt vor:** ein geteiltes Word-Dokument mit
+  geprüftem Newsletter-Entwurf, einem ausgewählten Betreff/Preheader-Paar und kommentierten
+  Prüfbefunden.
+
+  Thema des Newsletters: „Erster Frost". Material:
 
   ```text
   Blogbeitrag-Kernaussagen: Schichtenprinzip (Basisschicht, Isolation,
@@ -14,23 +19,29 @@ question: |
   Hauptziel der Mail: Blogbeitrag lesen.
   ```
 
-  1. Schreibe einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5) mit dem festen Raster aus
-     Abschnitt 13.3 und lass damit in einem neuen Word-Dokument im Ordner „Fjordlicht-Kurs" einen
-     Entwurf mit Copilot erstellen. Verweise auf `/Fjordlicht-Basisdaten` (falls nicht vorhanden:
-     Kap. 11, Kurzübung 1).
-  2. Lass in Copilot Chat zusätzlich drei Paare aus Betreff und Preheader mit unterschiedlichen
-     Ansätzen erstellen.
-  3. Prüfe den Entwurf: Wurden Fakten erfunden (Preise, Termine, weitere Materialangaben)?
-     Gibt es mehr als ein Hauptziel? Sind die Längenvorgaben eingehalten? Frag Copilot in Word
-     ergänzend, welche Aussagen im Dokument **nicht** im Material stehen – und prüfe die Antwort.
-  4. Kopiere das Modul „Hauptthema" in einen E-Mail-Entwurf an dich selbst in Outlook und hol dir
-     mit dem **Coaching durch Copilot** Rückmeldung zu Ton und Klarheit. Übernimm nur Hinweise,
-     die zur Markenstimme passen.
+  1. **Gemeinsam (5 Minuten):** Schreibt zusammen einen Prompt nach dem P.R.O.M.P.T.-Framework
+     (Kap. 5) mit dem festen Raster aus Abschnitt 13.3 und Verweis auf `/Fjordlicht-Basisdaten`.
+  2. **Entwurf:** Person 1 legt im Ordner „Fjordlicht-Kurs" ein neues Word-Dokument an, lässt
+     damit einen Entwurf mit Copilot erstellen und teilt das Dokument mit der Gruppe.
+  3. **Parallel – Betreff und Preheader:** Person 2 lässt in Copilot Chat drei Paare aus Betreff
+     und Preheader mit unterschiedlichen Ansätzen erstellen und fügt sie am Ende des Dokuments ein.
+  4. **Parallel – Faktenprüfung:** Person 3 prüft den Entwurf: Wurden Fakten erfunden (Preise,
+     Termine, weitere Materialangaben)? Gibt es mehr als ein Hauptziel? Sind die Längenvorgaben
+     eingehalten? Sie fragt Copilot in Word zusätzlich, welche Aussagen im Dokument **nicht** im
+     Material stehen, und vergleicht die Antwort mit dem eigenen Befund. Jeder Befund wird als
+     Word-Kommentar an der Stelle markiert.
+  5. **Parallel – Coaching:** Person 4 kopiert das Modul „Hauptthema" in einen E-Mail-Entwurf an
+     sich selbst in Outlook und holt sich mit dem **Coaching durch Copilot** Rückmeldung zu Ton
+     und Klarheit. Sie trägt die Hinweise als Kommentar ins Dokument ein – mit Vermerk, ob sie
+     zur Markenstimme passen.
+  6. **Zusammenführung:** Geht die Kommentare gemeinsam durch, korrigiert die Befunde gezielt an
+     der markierten Stelle und entscheidet euch für ein Betreff/Preheader-Paar. Eine Person stellt
+     im Plenum in einer Minute den wichtigsten Befund vor.
 tip: |
-  Gib das Hauptziel ausdrücklich im Purpose an. Ohne diese Angabe stellt Copilot das Produktmodul
-  gern in den Vordergrund, weil Newsletter in den Trainingsdaten oft verkaufsorientiert sind.
-  Outlook dient hier nur als Prüfumgebung: Versendet wird der Newsletter über euer
-  Newsletter-Tool mit Vorlage, Footer und Abmeldelink.
+  Gebt das Hauptziel ausdrücklich im Purpose an. Achtet beim Prüfen darauf, ob das Produktmodul
+  trotzdem den stärksten CTA bekommen hat. Outlook dient hier nur als Prüfumgebung: Versendet
+  wird der Newsletter über euer Newsletter-Tool mit Vorlage, Footer und Abmeldelink. Vergleicht in
+  Schritt 6, ob die Frage ans Dokument dieselben Stellen gefunden hat wie die Faktenprüferin.
 solution: |
   Beispielprompt für den Entwurf in Word (Auszug):
 
@@ -47,18 +58,24 @@ solution: |
   Material: [Material einfügen]
   ```
 
-  Typische Prüfbefunde:
+  Mögliche Prüfbefunde:
 
-  | Prüfpunkt | Häufiger Befund |
+  | Prüfpunkt | Möglicher Befund |
   |---|---|
   | Erfundene Fakten | „atmungsaktiv" oder „besonders leicht" beim Fleece, obwohl nicht im Material |
   | Preis aus den Basisdaten | 89 € taucht im Produktmodul auf, obwohl „keine Preise" verlangt war |
   | Hauptziel | Produktmodul hat den stärksten CTA („Jetzt kaufen") |
   | Länge | Hauptthema überschreitet 120 Wörter |
   | Markenstimme | „kuschelig warm durch den Winter" – eher Allerweltston |
-  | Coaching | schlägt mehr Begeisterung oder Ausrufezeichen vor – nicht übernehmen |
+  | Coaching | Vorschlag für mehr Begeisterung oder Ausrufezeichen – nicht übernehmen |
 
-  Die Frage ans Dokument findet erfundene Aussagen oft, aber nicht immer: Copilot hält eigene
-  Ergänzungen manchmal für belegt. Eine gute Bearbeitung benennt mindestens zwei Befunde,
-  korrigiert sie gezielt an der markierten Stelle und begründet, welche Coaching-Hinweise
-  übernommen oder verworfen wurden.
+  Die Frage ans Dokument und die Prüfung von Hand finden nicht unbedingt dieselben Stellen.
+  Wenn Copilot eine eigene Ergänzung als belegt einstuft, ist das ein wichtiger Befund für das
+  Plenum.
+
+  Bewertungskriterien: mindestens zwei Befunde benannt und gezielt an der markierten Stelle
+  korrigiert, Begründung, welche Coaching-Hinweise übernommen oder verworfen wurden, ein Paar aus
+  Betreff und Preheader ausgewählt; zur Zusammenarbeit: alle vier Teilaufgaben wurden parallel
+  bearbeitet und im gemeinsamen Dokument zusammengeführt, Befunde sind als Kommentare sichtbar,
+  und Abweichungen zwischen der Antwort von Copilot und der eigenen Faktenprüfung wurden benannt
+  und erklärt.

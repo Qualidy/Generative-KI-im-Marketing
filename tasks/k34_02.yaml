@@ -1,46 +1,64 @@
-title: Fehlersuche und Bias-Check an einer Copilot-Serie
+title: Fehlersuche und Bias-Check an einer Gruppenserie
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot Chat** und in **Excel**. Alternativ: ChatGPT Images oder
-  Gemini.
+  **Gruppe:** 3–4 Personen, ca. 30 Minuten. Am Ende liegen eine gemeinsame Excel-Tabelle mit allen
+  Personen auf allen Bildern der Gruppe, eine Fundliste zu technischen Fehlern und ein Vergleich
+  zweier Gegensteuer-Strategien vor.
 
-  1. **Erzeugen.** Erzeuge in Copilot ohne weitere Angaben vier Bilder mit diesen Prompts:
+  **Rollen:** **Excel-Verantwortliche** (legt die Tabelle an, arbeitet mit Copilot in Excel),
+  **Fehlerprüferin** (führt die technische Prüfung an), **Advocatus Diaboli** (hinterfragt in
+  Schritt 4 jedes Ergebnis). Alle erzeugen Bilder.
+
+  1. **Gleicher Prompt, mehrere Ergebnisse.** Alle erzeugen in ihrem eigenen Copilot Chat ohne
+     weitere Angaben dieselben vier Bilder:
      „Familie beim Wandern im Regen", „Teamleitung einer Gärtnerei bespricht den Tag",
-     „Person repariert ein Fahrrad", „Gruppe beim Zelten am See".
-  2. **Technische Prüfung.** Prüfe alle vier Bilder in voller Auflösung mit der Tabelle aus
-     Abschnitt 34.1. Notiere jeden Fund mit Bildbereich. Lass danach Copilot in einem neuen
-     Chat jedes Bild mit dem Prüfprompt aus 34.7 prüfen und vergleiche die Fundlisten.
-  3. **Bias-Prüfung.** Halte für die Serie in einer Excel-Tabelle fest: Wer ist zu sehen (Alter,
-     Geschlecht, Körperform, Herkunft), wer handelt, wer schaut zu? Lass dir von Copilot in
-     Excel die auffälligsten Muster zusammenfassen und prüfe, ob die Zusammenfassung stimmt.
-  4. **Gegensteuern.** Formuliere zwei Prompts konkret um, wie in Abschnitt 34.2 gezeigt, und
-     vergleiche das Ergebnis. Teste außerdem einmal die pauschale Ergänzung „divers".
+     „Person repariert ein Fahrrad", „Gruppe beim Zelten am See". So entstehen 12 bis 16 Bilder.
+     Legt sie nummeriert in einen gemeinsamen OneDrive-Ordner.
+  2. **Technische Prüfung (Arbeitsteilung).** Jede Person prüft die Bilder **einer** anderen
+     Person in voller Auflösung mit der Tabelle aus Abschnitt 34.1 und notiert jeden Fund mit
+     Bildbereich. Die Fehlerprüferin lädt danach zwei Bilder in einen neuen Copilot Chat hoch,
+     lässt sie mit dem Prüfprompt aus 34.7 prüfen und vergleicht Copilots Funde mit denen der
+     Gruppe.
+  3. **Bias-Prüfung.** Die Excel-Verantwortliche legt eine Excel-Tabelle in OneDrive an (Daten als
+     Tabelle formatiert). Alle tragen für „ihre" geprüften Bilder ein: Wer ist zu sehen (Alter,
+     Geschlecht, Körperform, Herkunft), wer handelt, wer schaut zu? Lasst euch von Copilot in Excel
+     die auffälligsten Muster zusammenfassen und ein Diagramm zur Verteilung erstellen. Stimmt die
+     Zusammenfassung mit dem überein, was ihr in den Bildern seht?
+  4. **Gegensteuern als Duell.** Teilt euch in zwei Untergruppen. **Untergruppe 1** formuliert
+     zwei der Prompts konkret um, wie in Abschnitt 34.2 gezeigt. **Untergruppe 2** ergänzt
+     dieselben zwei Prompts nur pauschal um „divers". Vergleicht die Ergebnisse; der Advocatus
+     Diaboli prüft, ob die neuen Bilder glaubwürdige Szenen oder eine neue Schablone zeigen.
 tip: |
-  Muster fallen erst auf, wenn du die Serie als Ganzes betrachtest – im Einzelbild wirkt fast
-  alles unauffällig. Deshalb die Tabelle. Beachte: Das Modell, das die Stereotype erzeugt, ist
-  nicht automatisch der beste Prüfer für sie.
+  Muster fallen erst auf, wenn ihr die Serie als Ganzes betrachtet – im Einzelbild wirkt fast
+  alles unauffällig. Genau deshalb erzeugen alle dieselben Prompts: Mit vier Mal so vielen Bildern
+  wird sichtbar, was ein einzelner Durchlauf als Zufall tarnen würde. Beachtet: Das Modell, das die
+  Stereotype erzeugt, ist nicht automatisch der beste Prüfer für sie.
 solution: |
-  Typische Beobachtungen ohne Angaben:
+  Worauf ihr bei den Bildern ohne Angaben achten könnt:
 
-  | Prompt | häufiges Muster |
+  | Prompt | prüft, ob sich dieses Muster zeigt |
   |---|---|
   | Familie beim Wandern | Vater, Mutter, zwei Kinder, jung, schlank, hellhäutig |
   | Teamleitung Gärtnerei | Mann mittleren Alters erklärt, andere hören zu |
   | Fahrrad reparieren | junger Mann, Werkstattlook |
   | Zelten am See | gleichaltrige Gruppe, sportlich, sehr ähnliche Gesichter |
 
-  Beispielspalten für Excel: Bild, Person, geschätztes Alter, Geschlecht, Körperform, Rolle
-  (handelt/schaut zu). Prompt in Excel: „Fasse zusammen, welche Merkmale in dieser Tabelle
-  überwiegen und welche Rollen welchen Gruppen zugeordnet sind."
+  Beispielspalten für Excel: Bild, Person (erzeugt von), Prompt, geschätztes Alter, Geschlecht,
+  Körperform, Rolle (handelt/schaut zu). Prompt in Excel: „Fasse zusammen, welche Merkmale in
+  dieser Tabelle überwiegen und welche Rollen welchen Gruppen zugeordnet sind. Erstelle ein
+  Diagramm zur Verteilung der Rollen nach Geschlecht."
 
-  Typische technische Funde: Finger an Werkzeug oder Zeltstangen, unlesbare Schrift auf
-  Schildern oder Kleidung, Fantasielogos, unlogische Reflexionen im Wasser. Copilot findet
-  Schrift und Logos meist, kleine Fehler an Händen oder Reflexionen seltener.
+  Mögliche technische Funde: Finger an Werkzeug oder Zeltstangen, unlesbare Schrift auf Schildern
+  oder Kleidung, Fantasielogos, unlogische Reflexionen im Wasser. Haltet fest, welche dieser
+  Fundarten Copilot beim Prüfen erkannt hat und welche nur die Gruppe.
 
-  Beim Gegensteuern zeigt sich meist: Konkrete Beschreibungen (Alter, Rolle, Handlung,
-  Situation) wirken zuverlässig. Die pauschale Ergänzung „divers" erzeugt oft ein gestelltes,
-  stockfotohaftes Gruppenbild – also eine neue Schablone statt einer glaubwürdigen Szene.
+  Beim Duell zeigt sich, ob konkrete Beschreibungen (Alter, Rolle, Handlung, Situation)
+  zuverlässiger wirken als die pauschale Ergänzung – achtet darauf, ob „divers" ein gestelltes,
+  stockfotohaftes Gruppenbild erzeugt, also eine neue Schablone statt einer glaubwürdigen Szene.
 
-  Eine gute Bearbeitung enthält vier geprüfte Bilder mit eigener und Copilot-Fundliste, die
-  Personentabelle mit geprüfter Zusammenfassung, zwei umformulierte Prompts mit Vergleich und
-  eine Einschätzung zum Pauschal-Test.
+  Bewertungskriterien: alle vier Prompts von allen Personen erzeugt; jedes Bild von einer
+  zweiten Person geprüft, Funde mit Bildbereich; die Copilot-Prüfung mit der Gruppenprüfung
+  abgeglichen; die Personentabelle ist vollständig und die Copilot-Zusammenfassung wurde gegen die
+  Bilder geprüft; Muster sind über die gesamte Gruppenserie belegt (nicht am Einzelbild);
+  Abweichungen zwischen den Ergebnissen der Gruppenmitglieder zum selben Prompt sind benannt;
+  beide Gegensteuer-Strategien sind mit Bildern verglichen und bewertet.

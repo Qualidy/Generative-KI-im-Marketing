@@ -1,8 +1,13 @@
-title: Suchintention erkennen
+title: Suchintention erkennen – drei Quellen, eine Entscheidung
 difficulty: 1
 question: |
-  Ordne jeder Suchanfrage die **Suchintention** zu (informational, navigational, kommerziell,
-  transaktional) und nenne den **Seitentyp**, mit dem Fjordlicht sie am besten bedient.
+  **Gruppe:** 3–4 Personen · **Dauer:** etwa 20 Minuten · **Format:** Arbeitsteilung nach Quelle
+  · **Am Ende liegt vor:** eine gemeinsame Zuordnungstabelle und eine Gruppenentscheidung zur
+  uneindeutigen Anfrage.
+
+  Ordnet jeder Suchanfrage die **Suchintention** zu (informational, navigational, kommerziell,
+  transaktional) und nennt den **Seitentyp**, mit dem Fjordlicht sie am besten bedient
+  (Abschnitt 21.2).
 
   1. `fleece pilling entfernen`
   2. `fjordlicht gutschein einlösen`
@@ -11,20 +16,30 @@ question: |
   5. `beste nachhaltige outdoormarken`
   6. `rucksack 30 liter tagestour`
 
-  So gehst du vor:
+  So geht ihr vor:
 
-  1. Ordne zuerst selbst zu.
-  2. Lass **Copilot Chat** dieselbe Zuordnung machen, einmal mit dem Umschalter auf **Arbeit**
-     (ohne Websuche) und einmal auf **Web**. Bitte im Web-Modus darum, für Nr. 6 zu beschreiben,
-     welche Art von Ergebnissen aktuell erscheint, mit Quellen.
-  3. Gib Nr. 6 anschließend selbst in die Google-Suche ein und vergleiche.
-
-  Bei einer der Anfragen ist die Intention nicht eindeutig. Welche ist es, und wie klärst du es?
+  1. **Allein (3 Minuten):** Jede Person ordnet zuerst selbst zu.
+  2. **Aufteilung nach Quelle:**
+     - **Person 1** lässt **Copilot Chat** mit dem Umschalter auf **Arbeit** zuordnen.
+     - **Person 2** lässt **Copilot Chat** mit dem Umschalter auf **Web** zuordnen und bittet
+       darum, für Nr. 5 und Nr. 6 zu beschreiben, welche Art von Ergebnissen aktuell erscheint –
+       mit Quellen.
+     - **Person 3** gibt Nr. 5 und Nr. 6 selbst in die Google-Suche ein und notiert, welche
+       Seitentypen oben stehen (Shops, Ratgeber, Testberichte, Listen).
+     - **Person 4** (falls vorhanden) öffnet zwei der Quellen, die Copilot im Web-Modus nennt, und
+       prüft, ob sie das Behauptete tatsächlich zeigen.
+  3. **Zusammenführen:** Vergleicht die Ergebnisse. Wo unterscheiden sich Arbeit- und Web-Modus?
+     Wo widerspricht die eigene Google-Suche der Copilot-Beschreibung?
+  4. **Gruppenentscheidung:** Bei einer der Anfragen ist die Intention nicht eindeutig. Welche
+     ist es, und welchen Seitentyp würdet ihr dafür bauen? Eine Person begründet die
+     Entscheidung in einer Minute im Plenum.
 tip: |
-  Achte auf Signalwörter: „kaufen" und „bestellen" deuten auf Transaktion, „beste", „Test"
+  Achtet auf Signalwörter: „kaufen" und „bestellen" deuten auf Transaktion, „beste", „Test"
   oder „Vergleich" auf kommerzielle Recherche, Markennamen auf Navigation, „wie" oder
-  „Unterschied" auf Information. Beachte beim Vergleich: Copilot sucht über Bing, nicht über
-  Google – die Ergebnisseite deiner Kundinnen kann anders aussehen.
+  „Unterschied" auf Information. Beachtet beim Vergleich: Die Websuche von Copilot nutzt Bing,
+  nicht Google – die Ergebnisseite eurer Kundinnen kann anders aussehen. Achtet beim Vergleich
+  darauf, ob die Antwort im Arbeitsmodus Quellen nennt oder die Intention nur aus dem Wortlaut
+  ableitet – und ob sie trotzdem so klingt, als hätte Copilot nachgesehen.
 solution: |
   | Nr. | Intention | Seitentyp |
   |---|---|---|
@@ -39,7 +54,26 @@ solution: |
   Klären lässt es sich nur an der aktuellen **Suchergebnisseite**: Erscheinen dort vor allem
   Shops, ist die Intention transaktional; erscheinen Ratgeber und Tests, kommerziell.
 
-  Typische Beobachtung im Vergleich: Ohne Websuche schätzt Copilot die Intention aus dem
-  Wortlaut – meist plausibel, aber ohne Beleg. Mit **Web** beschreibt es tatsächliche Ergebnisse
-  und nennt Quellen, allerdings aus Bing. Für die Entscheidung über den Seitentyp zählt der eigene
-  Blick auf die Google-Ergebnisseite.
+  Beispiel-Prompt für Person 2 (Web):
+
+  ```text
+  Ordne die sechs Suchanfragen einer Suchintention zu (informational,
+  navigational, kommerziell, transaktional) und nenne einen passenden
+  Seitentyp für einen Outdoor-Onlineshop. Beschreibe für Nr. 5 und Nr. 6,
+  welche Arten von Seiten aktuell in den Suchergebnissen erscheinen, und
+  nenne die Quellen.
+  ```
+
+  Worauf es beim Zusammenführen ankommt: Nennt die Antwort im Arbeitsmodus keine Quellen, ist
+  die Zuordnung aus dem Wortlaut geschätzt – meist plausibel, aber ohne Beleg. Die Antwort im
+  Web-Modus stützt sich auf Bing-Ergebnisse mit Quellen, die eigene Suche auf Google. Für die
+  Entscheidung über den Seitentyp zählt der eigene Blick auf die Google-Ergebnisseite.
+
+  Bewertungskriterien:
+
+  - Alle haben vor der Aufteilung selbst zugeordnet.
+  - Die Unterschiede zwischen Arbeitsmodus, Web-Modus und Google-Suche sind benannt und
+    erklärt (mit oder ohne Quellen, Bing, Google).
+  - Mindestens eine Copilot-Quelle wurde geöffnet und geprüft.
+  - Die Gruppenentscheidung zu Nr. 6 stützt sich auf die beobachtete Ergebnisseite, nicht auf
+    eine Vermutung.

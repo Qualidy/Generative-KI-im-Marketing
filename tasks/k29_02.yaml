@@ -1,11 +1,16 @@
-title: Zufall, Nachbessern und Bearbeiten im Selbstversuch
+title: Zufall, Nachbessern und Beschreiben im Gruppenversuch
 difficulty: 2
 question: |
-  Diese Übung machst du mit der **Bilderzeugung in Copilot Chat** (Microsoft-365-Copilot-App;
-  alternativ in der Create-Funktion, falls in eurer Umgebung freigegeben). Alternativ geht
-  sie auch in ChatGPT Images oder Gemini.
+  **Gruppenarbeit, 3–4 Personen, ca. 25 Minuten.** Ihr arbeitet mit der Bilderzeugung in
+  **Copilot Chat** (Microsoft-365-Copilot-App). Am Ende liegt ein geteiltes Word-Dokument
+  „Bildversuch" im Ordner „Fjordlicht-Kurs" einer Person vor: mit allen Bildern, den
+  Bildbeschreibungen und euren Notizen zu Nebenwirkungen.
 
-  1. **Basisbild.** Erzeuge mit diesem Prompt ein Bild:
+  **Rollen:** Alle erzeugen Bilder. Zusätzlich gibt es eine **Prüferin** (lässt Bilder
+  beschreiben und vergleicht) und eine **Protokollführerin** (führt das Word-Dokument).
+
+  1. **Zufallstest – gleicher Prompt für alle.** Jede Person erzeugt in einer neuen
+     Unterhaltung ein Bild mit diesem Prompt:
 
      ```text
      Erzeuge ein Foto im Querformat: Eine Person Mitte dreißig in einer
@@ -13,44 +18,57 @@ question: |
      eines Sees. Ruhige Stimmung, natürliches Licht, viel Himmel links im Bild.
      ```
 
-  2. **Zufallstest.** Starte zwei **neue** Unterhaltungen und verwende denselben Prompt. Halte
-     fest, was gleich bleibt und was sich ändert (Person, Komposition, Farben, Licht).
-  3. **Nachbessern im Gespräch.** Gehe zurück in die erste Unterhaltung und gib drei
-     Änderungen nacheinander: Himmel dunkler und bewölkt; Person blickt auf den See statt in
-     die Kamera; Format 4:5 für Instagram.
-  4. **Bild beschreiben lassen.** Lade das letzte Bild in einer neuen Unterhaltung hoch und
-     frage: „Beschreibe Licht, Perspektive, Bildausschnitt, Farbstimmung und die Details der
-     Jacke in Stichworten." Vergleiche die Beschreibung mit dem Basisbild.
-  5. **Bewerten.** Notiere bei jeder Änderung, ob nur das Gewünschte geändert wurde oder ob sich
-     auch anderes verschoben hat (Gesicht, Jacke, Hintergrund). Sammle die Bilder mit deinen
-     Notizen in einer **Copilot Page** oder einem Word-Dokument im Ordner „Fjordlicht-Kurs".
+     Postet die Bilder in den Teams-Chat der Gruppe. Haltet fest, was über alle Bilder gleich
+     bleibt und was sich ändert (Person, Komposition, Farben, Licht).
+  2. **Nachbessern in Arbeitsteilung.** Jede Person bittet Copilot in **ihrer** Unterhaltung um
+     genau **eine** Änderung – verteilt sie so:
+     - Person 1: „Mach den Himmel dunkler und bewölkt."
+     - Person 2: „Die Person blickt auf den See statt in die Kamera."
+     - Person 3: „Die Jacke soll dunkelblau sein, sonst bleibt alles gleich."
+     - Person 4 (falls vorhanden): „Füge am Ufer ein kleines Ruderboot hinzu."
+
+     Achtet darauf, ob nur das Gewünschte geändert wurde oder ob sich auch anderes verschoben
+     hat (Gesicht, Jacke, Hintergrund, Bildaufteilung). Postet Vorher und Nachher.
+  3. **Bild beschreiben lassen.** Die Prüferin lädt zwei Bilder (ein Ausgangsbild und das
+     zugehörige geänderte Bild) in einer neuen Unterhaltung hoch und fragt: „Beschreibe für
+     beide Bilder Licht, Perspektive, Bildausschnitt, Farbstimmung und die Details der Jacke in
+     Stichworten. Nenne dann alle Unterschiede." Die Gruppe prüft: Stimmt die Beschreibung mit
+     dem überein, was ihr seht? Was hat Copilot übersehen?
+  4. **Zusammenführen.** Die Protokollführerin trägt alles ins Word-Dokument ein; die anderen
+     ergänzen ihre Notizen direkt im geteilten Dokument.
+
+  **Abschluss:** Einigt euch auf eine Regel für die Arbeit mit Bild-KI, die ihr aus dem
+  Versuch ableitet, und stellt sie im Plenum vor.
 tip: |
-  Achte in Schritt 5 besonders auf die Jacke. Genau dort zeigt sich, warum echte Produkte nicht
-  zuverlässig über mehrere Bearbeitungsschritte stabil bleiben. Die Bildbeschreibung aus
-  Schritt 4 hilft dir, Unterschiede in Worte zu fassen, die du sonst nur „irgendwie" siehst.
-  Falls Copilot das gewünschte Format nicht exakt erzeugt, notiere auch das – es ist ein
-  Kriterium für die Werkzeugauswahl (29.6).
+  Achtet in Schritt 2 besonders auf die Jacke. Genau dort zeigt sich, warum echte Produkte
+  nicht zuverlässig über mehrere Bearbeitungsschritte stabil bleiben. Weil alle mit demselben
+  Ausgangsprompt starten, seht ihr in Schritt 1 den reinen Zufall – und könnt in Schritt 2
+  besser unterscheiden, was die Änderung bewirkt hat und was Zufall ist. Die Bildbeschreibung
+  aus Schritt 3 hilft, Unterschiede in Worte zu fassen, die man sonst nur „irgendwie" sieht.
 solution: |
-  Typische Beobachtungen:
+  Mögliche Beobachtungen – achtet darauf, welche bei euch auftreten:
 
   | Schritt | Beobachtung |
   |---|---|
-  | Zufallstest | Grundidee bleibt (Person, See, Nebel), aber Gesicht, Jackenschnitt, Bildaufteilung und Farbtöne variieren deutlich. |
-  | Himmel dunkler | gelingt meist sauber; manchmal wird das ganze Bild dunkler oder kühler. |
-  | Blickrichtung | Pose ändert sich, oft auch Gesicht oder Haltung – die Person wirkt wie eine andere. |
-  | Format 4:5 | Bild wird neu aufgebaut oder beschnitten; Details der Jacke ändern sich häufig mit. Nicht jedes Seitenverhältnis wird exakt umgesetzt. |
-  | Bildbeschreibung | nennt z. B. „Stehkragen, zwei Brusttaschen" – beim Basisbild waren es Kapuze und Seitentaschen. |
+  | Zufallstest | Grundidee bleibt (Person, See, Nebel), aber Gesicht, Jackenschnitt, Bildaufteilung und Farbtöne variieren deutlich zwischen den Gruppenmitgliedern. |
+  | Himmel dunkler | gelingt sauber, oder das ganze Bild wird dunkler und kühler. |
+  | Blickrichtung | Pose ändert sich, dabei auch Gesicht oder Haltung – die Person wirkt wie eine andere. |
+  | Jackenfarbe | Farbe wechselt, dabei ändern sich Kragen, Taschen oder Reißverschluss mit. |
+  | Ruderboot | Boot erscheint, Komposition verschiebt sich, Himmel links wird kleiner. |
+  | Bildbeschreibung | nennt z. B. „Stehkragen, zwei Brusttaschen" beim einen und „Kapuze, Seitentaschen" beim anderen Bild – oder übersieht genau diesen Unterschied. |
 
   Lehren daraus:
 
   - Jede neue Unterhaltung ist ein neuer Zufallsstart. Wer Serien braucht, muss mit Referenzen
     arbeiten (Kap. 33).
-  - Bearbeitung im Gespräch ist bequem, aber nicht verlustfrei: Mit jeder Runde kann sich
+  - Nachbessern im Gespräch ist bequem, aber nicht verlustfrei: Mit jeder Runde kann sich
     Ungewolltes verschieben. Ändere deshalb **eine Sache pro Schritt** und vergleiche.
   - Kleidungsdetails (Kragen, Reißverschluss, Taschen) wandern. Für Produktdarstellungen ist das
     ein Ausschlusskriterium.
   - Die Bildbeschreibung im Chat ist ein nützliches Prüfwerkzeug – aber auch sie kann Details
-    übersehen. Der letzte Blick bleibt deiner.
+    übersehen. Der letzte Blick bleibt eurer.
 
-  Eine gute Bearbeitung enthält drei Bilder aus dem Zufallstest, die drei Bearbeitungsschritte,
-  die Bildbeschreibung und je eine Notiz zu unerwünschten Nebenwirkungen.
+  Bewertungskriterien: Zufallstest mit den Bildern aller Gruppenmitglieder durchgeführt und
+  Unterschiede konkret benannt; jede Änderung mit Vorher/Nachher und einer Notiz zu
+  unerwünschten Nebenwirkungen dokumentiert; Zufall und gewollte Änderung auseinandergehalten;
+  Copilot-Bildbeschreibung mit dem eigenen Eindruck abgeglichen; gemeinsame Regel formuliert.

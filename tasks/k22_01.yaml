@@ -1,9 +1,13 @@
-title: Unproblematisch oder Spam?
+title: Unproblematisch oder Spam? – Bewertung im Paar
 difficulty: 1
 question: |
-  Bewerte die folgenden Vorhaben aus Sicht von Googles Haltung zu KI-Inhalten: **eher
-  unproblematisch** oder **eher problematisch** (scaled content abuse, Täuschung)? Begründe
-  jeweils in einem Satz.
+  **Gruppe:** Paare · **Dauer:** etwa 15–20 Minuten · **Format:** Rollen mit Wechsel
+  (Fragende und Quellenprüferin) · **Am Ende liegt vor:** eine gemeinsame Bewertung der sechs
+  Fälle mit geprüfter Primärquelle und ein Streitfall für das Plenum.
+
+  Bewertet die folgenden Vorhaben aus Sicht von Googles Haltung zu KI-Inhalten (Abschnitt 22.4):
+  **eher unproblematisch** oder **eher problematisch** (scaled content abuse, Täuschung)?
+  Begründet jeweils in einem Satz.
 
   1. Fjordlicht lässt von der KI 300 Seiten „Regenjacke kaufen in [Stadt]" erzeugen, die sich
      nur im Ortsnamen unterscheiden.
@@ -18,20 +22,25 @@ question: |
   6. Englische Blogartikel werden mit KI ins Deutsche übersetzt und von einer Muttersprachlerin
      redigiert.
 
-  So gehst du vor:
+  So geht ihr vor:
 
-  1. Bewerte zuerst selbst.
-  2. Stelle in **Copilot Chat** mit dem Umschalter auf **Web** die Frage: „Was versteht Google
-     unter scaled content abuse, und wie steht Google zu KI-erzeugten Inhalten? Antworte mit
-     Quellen." Öffne mindestens eine genannte Quelle und prüfe, ob sie von Google Search Central
-     stammt.
-  3. Lass Copilot anschließend die sechs Fälle anhand dieser Quellen bewerten und vergleiche mit
-     deiner Einschätzung.
+  1. **Allein (3 Minuten):** Jede Person bewertet zuerst selbst.
+  2. **Runde 1:** Person A stellt in **Copilot Chat** mit dem Umschalter auf **Web** die Frage:
+     „Was versteht Google unter scaled content abuse, und wie steht Google zu KI-erzeugten
+     Inhalten? Antworte mit Quellen." Person B ist **Quellenprüferin**: Sie öffnet mindestens eine
+     genannte Quelle und prüft, ob sie von Google Search Central stammt und das Behauptete
+     tatsächlich sagt.
+  3. **Runde 2 (Rollentausch):** Person B lässt Copilot die sechs Fälle anhand dieser Quellen
+     bewerten. Person A prüft, ob die Begründungen zur Primärquelle passen.
+  4. **Abgleich:** Vergleicht eure beiden Einzelbewertungen und die Copilot-Bewertung. Einigt
+     euch auf eine gemeinsame Bewertung. Den Fall, bei dem ihr am längsten diskutiert habt,
+     stellt ihr in einer Minute im Plenum vor.
 tip: |
   Der Maßstab ist nicht, ob KI beteiligt war, sondern ob die Seite Menschen hilft und ehrlich
-  ist. Prüfe außerdem: Entspricht das, was die Suchmaschine sieht, dem, was auf der Seite steht?
+  ist. Prüft außerdem: Entspricht das, was die Suchmaschine sieht, dem, was auf der Seite steht?
   Bei der Quellenprüfung zählt die Primärquelle von Google, nicht ein SEO-Blog, der sie
-  zusammenfasst.
+  zusammenfasst. Achtet darauf, ob Copilot die Fälle 4 und 6 vorsichtiger bewertet, nur weil KI
+  beteiligt ist.
 solution: |
   | Nr. | Bewertung | Begründung |
   |---|---|---|
@@ -47,7 +56,16 @@ solution: |
   Mensch die Texte geschrieben.
 
   Zum Copilot-Schritt: Eine gute Antwort verweist auf die Spam-Richtlinien und die Hinweise zu
-  KI-Inhalten in Google Search Central. Nennt Copilot nur Sekundärquellen, frag gezielt nach der
-  Originalseite. Bei Fall 4 und 6 bewertet Copilot manchmal vorsichtiger („kann problematisch
-  sein"), weil KI beteiligt ist – hier hilft die Rückfrage: „Was ist laut Google das
-  entscheidende Kriterium?"
+  KI-Inhalten in Google Search Central. Nennt Copilot nur Sekundärquellen, fragt gezielt nach der
+  Originalseite. Bewertet Copilot Fall 4 oder 6 vorsichtiger („kann problematisch sein"), hilft die
+  Rückfrage: „Was ist laut Google das entscheidende Kriterium?"
+
+  Bewertungskriterien:
+
+  - Beide haben vor dem Copilot-Schritt selbst bewertet.
+  - Mindestens eine Primärquelle von Google Search Central wurde geöffnet und mit der
+    Copilot-Aussage abgeglichen.
+  - Die gemeinsame Bewertung begründet jeden Fall mit Hilfreichkeit und Ehrlichkeit, nicht mit
+    der Frage, ob KI beteiligt war.
+  - Abweichungen zwischen den beiden Personen und Copilot sind benannt; der Plenumsfall erklärt,
+    woran sich die Diskussion entzündet hat.

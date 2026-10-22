@@ -1,27 +1,39 @@
-title: Synthetische Interviews kritisch prüfen
+title: Synthetische Interviews kritisch prüfen – vier Durchläufe, ein Befund
 difficulty: 3
 question: |
+  **Gruppe:** 3–4 Personen, ca. 30 Minuten. Alle führen dasselbe Interview, danach gibt es
+  **Rollen:** **Zählerin** (wertet die Antworten aus), **Advocatus Diaboli** (verteidigt den
+  Kollegen), **Leitfaden-Verantwortliche** (echte Gespräche), bei 4 Personen **Protokoll**.
+  **Am Ende liegt vor:** eine geteilte **Copilot Page** mit allen Interviewverläufen,
+  Auszählung, Bewertung und einem überarbeiteten Gesprächsleitfaden.
+
   Ein Kollege präsentiert im Teammeeting: „Ich habe in Copilot zehn synthetische Personas aus
   unserem Familien-Avatar erzeugt und sie zur neuen Mietoption für Kinderjacken befragt. **8 von
   10 würden sie nutzen.** Wir können das Angebot starten."
 
-  1. **Interview 1.** Führe in Copilot Chat ein simuliertes Interview durch: Lass Copilot den
-     Avatar „Tobias" spielen – Steckbrief per `/Avatar-Tobias` (aus k18_01, sonst selbst
-     erstellen und einfügen) – mit der Rückfall-Regel aus Abschnitt 18.4. Stelle fünf Fragen zur
-     Mietoption.
-  2. **Interview 2.** Wiederhole dasselbe Interview in einem neuen Chat. Übernimm beide Verläufe
-     in eine gemeinsame **Copilot Page** und vergleiche dort: Wie stark unterscheiden sich die
-     Antworten, wo antwortet Copilot über den Steckbrief hinaus? Zähle, wie oft zugestimmt,
-     abgewogen oder abgelehnt wird.
-  3. **Bewerten.** Bewerte die Aussage des Kollegen. Nenne mindestens **drei** methodische Probleme.
-  4. **Nutzen und echte Prüfung.** Formuliere, wofür die Interviews trotzdem nützlich waren. Lass
-     Copilot aus den gesammelten Einwänden einen Leitfaden für fünf echte Gespräche entwerfen und
-     überarbeite ihn: Stehen dort Verhaltensfragen statt Absichtsfragen?
+  1. **Fragen festlegen.** Einigt euch auf fünf Fragen zur Mietoption, die alle wortgleich
+     stellen.
+  2. **Gleicher Prompt, mehrere Durchläufe.** Jede Person führt in ihrem eigenen Copilot Chat
+     ein simuliertes Interview: Copilot spielt den Avatar „Tobias" – Steckbrief per
+     `/Avatar-Tobias` (aus Kurzübung 1, sonst selbst erstellen und einfügen) – mit der
+     Rückfall-Regel aus Abschnitt 18.4. Eine Person übernimmt ihren Verlauf in eine **Copilot
+     Page** und teilt sie, die anderen fügen ihre Verläufe ein.
+  3. **Auszählen.** Die Zählerin zählt in der Page je Durchlauf, wie oft zugestimmt, abgewogen
+     oder abgelehnt wird, und markiert Stellen, an denen über den Steckbrief hinaus geantwortet
+     wird. Wie stark unterscheiden sich die Durchläufe – in der Haltung oder nur im Wortlaut?
+  4. **Bewerten.** Der Advocatus Diaboli vertritt zwei Minuten lang die Position des Kollegen.
+     Die Gruppe widerlegt sie mit mindestens **drei** methodischen Problemen und hält diese in
+     der Page fest.
+  5. **Nutzen und echte Prüfung.** Haltet fest, wofür die Interviews trotzdem nützlich waren.
+     Die Leitfaden-Verantwortliche lässt Copilot aus den gesammelten Einwänden einen Leitfaden
+     für fünf echte Gespräche entwerfen; die Gruppe überarbeitet ihn gemeinsam in der Page: Stehen
+     dort Verhaltensfragen statt Absichtsfragen? Formuliert zum Schluss einen Satz, den ihr dem
+     Kollegen im Meeting sagen würdet, und tragt ihn im Plenum vor.
 tip: |
-  Achte im zweiten Durchlauf darauf, ob sich die **Haltung** ändert oder nur der Wortlaut. Die
-  Neigung zur Zustimmung ist eines der stabilsten Muster synthetischer Befragungen. Die Page hat
-  den Vorteil, dass du beide Verläufe nebeneinander markieren und mit dem Team teilen kannst –
-  so wird der Befund im Meeting sichtbar statt behauptet.
+  Ihr habt mit drei oder vier Durchläufen selbst eine kleine „synthetische Stichprobe" erzeugt.
+  Achtet darauf, ob sich zwischen den Durchläufen die **Haltung** ändert oder nur der Wortlaut,
+  und ob die Zustimmung überwiegt. Die Page macht den Befund im Meeting sichtbar, statt ihn
+  nur zu behaupten.
 solution: |
   Beispiel-Prompt für das Interview:
 
@@ -34,15 +46,16 @@ solution: |
   Kinderjacken.
   ```
 
-  Typische Beobachtungen: Beide Durchläufe ähneln sich in der Haltung (vorsichtig positiv, „klingt
-  interessant, wenn der Preis stimmt"), unterscheiden sich im Wortlaut. Ohne Rückfall-Regel erfindet
-  das Modell Details wie konkrete Preisgrenzen oder Erfahrungen mit anderen Mietangeboten.
+  Mögliche Beobachtungen: Die Durchläufe ähneln sich in der Haltung (vorsichtig positiv, „klingt
+  interessant, wenn der Preis stimmt") und unterscheiden sich vor allem im Wortlaut. Wo die
+  Rückfall-Regel nicht greift, tauchen Details auf, die nicht im Steckbrief stehen, etwa konkrete
+  Preisgrenzen oder Erfahrungen mit anderen Mietangeboten.
 
   Methodische Probleme der Aussage „8 von 10":
 
   | Problem | Erklärung |
   |---|---|
-  | keine unabhängige Stichprobe | zehn Personas aus einem Avatar sind Variationen desselben Musters |
+  | keine unabhängige Stichprobe | zehn Personas aus einem Avatar sind Variationen desselben Musters – das zeigt eure eigene Auszählung |
   | Gefälligkeit | Modelle neigen zu Zustimmung, besonders bei positiv formulierten Fragen |
   | Absicht ist nicht Verhalten | selbst echte Befragte überschätzen ihre Nutzung; synthetische erst recht |
   | fehlende Datenbasis | der Avatar enthält nichts zu Mieten – die Antworten sind Erfindung |
@@ -56,3 +69,11 @@ solution: |
   eine kurze Umfrage und ein **Fake-Door-Test**: eine Landingpage mit Vormerk-Button, die echtes
   Interesse misst, bevor das Angebot existiert (transparent kommunizieren, dass es sich um eine
   Vormerkung handelt).
+
+  Satz an den Kollegen (Beispiel): „Die Interviews haben uns gute Einwände geliefert – ob Eltern
+  wirklich mieten, wissen wir erst nach fünf echten Gesprächen und einem Vormerk-Test."
+
+  Bewertungskriterien: Alle Durchläufe mit denselben Fragen und demselben Prompt; Auszählung je
+  Durchlauf in der Page; Abweichungen zwischen den Durchläufen der Gruppenmitglieder benannt und
+  als Variation im Wortlaut statt unabhängige Meinungen erklärt; mindestens drei methodische
+  Probleme gegen den Advocatus Diaboli begründet; Leitfaden enthält Verhaltensfragen.

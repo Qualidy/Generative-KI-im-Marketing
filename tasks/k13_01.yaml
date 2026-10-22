@@ -1,7 +1,11 @@
-title: Betreff und Preheader beurteilen und verbessern
+title: Betreff und Preheader im Paar beurteilen und verbessern
 difficulty: 1
 question: |
-  Beurteile die folgenden Paare aus Betreffzeile und Preheader für den Fjordlicht-Newsletter.
+  **Gruppe:** Paare oder 3 Personen · **Dauer:** ca. 15 Minuten · **Aufteilung:** erst allein
+  urteilen, dann vergleichen; alle führen denselben Prompt aus · **Am Ende liegt vor:** eine
+  gemeinsame Bewertung der fünf Paare und ein ausgewähltes Ersatzpaar für Paar 4.
+
+  Beurteilt die folgenden Paare aus Betreffzeile und Preheader für den Fjordlicht-Newsletter.
 
   1. Betreff: `MEGA-DEAL!!! Nur heute!` – Preheader: `Nur heute!`
   2. Betreff: `Re: Deine Bestellung` – Preheader: `Neue Herbstkollektion entdecken`
@@ -9,18 +13,22 @@ question: |
   4. Betreff: `Die nachhaltigste Jacke der Welt` – Preheader: `Mail im Browser ansehen`
   5. Betreff: `Hallo [Vorname], dein Pflegeplan` – Preheader: (leer)
 
-  1. Nenne **zuerst selbst** für jedes Paar das Hauptproblem (oder „passt") und ob ein
+  1. **Allein:** Jede Person nennt für jedes Paar das Hauptproblem (oder „passt") und ob ein
      Spam-Signal oder ein Verstoß gegen die Markenstimme (ruhig, ehrlich, keine Superlative)
-     vorliegt.
-  2. Gib die Paare in **Copilot Chat** ein und lass sie nach denselben Kriterien beurteilen.
-     Verweise für die Markenstimme auf `/Fjordlicht-Basisdaten` (falls nicht vorhanden: Kap. 11,
-     Kurzübung 1). Vergleiche: Was hat Copilot übersehen, was hast du übersehen?
-  3. Lass Copilot drei bessere Fassungen für Paar 4 vorschlagen – mit unterschiedlichen
-     Ansätzen (Nutzen, Frage, Konkretheit). Prüfe jede gegen die belegten Claims und wähle eine aus.
+     vorliegt. Danach vergleicht ihr und einigt euch auf eine gemeinsame Bewertung.
+  2. **Gleicher Prompt, mehrere Ergebnisse:** Jede Person gibt die Paare in ihren eigenen
+     **Copilot Chat** ein und lässt sie nach denselben Kriterien beurteilen, mit Verweis auf
+     `/Fjordlicht-Basisdaten`. Vergleicht: Kommen eure Copilot-Antworten zum selben Urteil? Was
+     hat Copilot übersehen, was habt ihr übersehen?
+  3. **Ersatz für Paar 4:** Jede Person lässt Copilot drei bessere Fassungen mit unterschiedlichen
+     Ansätzen (Nutzen, Frage, Konkretheit) vorschlagen. Die jeweils andere Person prüft die
+     Vorschläge gegen die belegten Claims. Aus allen geprüften Fassungen wählt ihr gemeinsam
+     **eine** aus und begründet die Wahl in einem Satz.
 tip: |
-  Prüfe drei Dinge: Ergänzt der Preheader den Betreff? Ist der Betreff ehrlich zum Inhalt? Gibt
-  es Platzhalter, die ohne Fallback zu einem Fehler führen können? Copilot übersieht gern das
-  Fallback-Problem in Paar 5 – frag notfalls ausdrücklich nach.
+  Prüft drei Dinge: Ergänzt der Preheader den Betreff? Ist der Betreff ehrlich zum Inhalt? Gibt
+  es Platzhalter, die ohne Fallback zu einem Fehler führen können? Achtet darauf, ob Copilot das
+  Fallback-Problem in Paar 5 von sich aus erwähnt – und ob das in allen eurer Antworten gleich ist.
+  Wenn nicht, fragt ausdrücklich nach.
 solution: |
   | Nr. | Hauptproblem | Spam-Signal / Markenstimme |
   |---|---|---|
@@ -47,6 +55,13 @@ solution: |
   Preheader: Was das Material kann und wie du es lange nutzt.
   ```
 
-  Achte darauf, dass Copilot „Obermaterial zu 100 % aus recyceltem Polyamid" nicht zu „komplett
-  recycelt" oder „nachhaltig" verkürzt. Merke: Der Preheader ist ein eigener Baustein. Bleibt er
-  leer, entscheidet das Postfach, was angezeigt wird.
+  Achtet darauf, ob in einer der Fassungen „Obermaterial zu 100 % aus recyceltem Polyamid" zu
+  „komplett recycelt" oder „nachhaltig" verkürzt wurde – solche Vorschläge fallen bei der
+  gegenseitigen Prüfung heraus. Merke: Der Preheader ist ein eigener Baustein. Bleibt er leer,
+  entscheidet das Postfach, was angezeigt wird.
+
+  Bewertungskriterien: alle fünf Paare mit Hauptproblem bewertet, Fallback-Problem erkannt,
+  ausgewähltes Ersatzpaar ohne Superlativ und ohne verkürzten Claim; zur Zusammenarbeit:
+  Einzelurteile entstanden vor dem Vergleich, Unterschiede zwischen den Copilot-Antworten der
+  Gruppenmitglieder wurden benannt, die Vorschläge wurden gegenseitig geprüft, und die Auswahl ist
+  eine begründete Gruppenentscheidung.

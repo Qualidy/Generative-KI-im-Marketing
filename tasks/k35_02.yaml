@@ -1,33 +1,44 @@
-title: Vom Storyboard zum Videoprompt in Word
+title: Storyboard und Videoprompts im geteilten Word-Dokument
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot in Word**. Für den optionalen Generierungsschritt brauchst
-  du ein Videowerkzeug mit Testkontingent (Veo, Runway, Kling, Luma, Firefly Video) oder die
-  Videofunktion der Create-Funktion in der Microsoft-365-Copilot-App, falls in eurer Umgebung
-  freigegeben. Alternativ funktionieren die Schritte 1 bis 3 auch in ChatGPT, Claude oder Gemini.
+  **Gruppenarbeit:** 3–4 Personen, etwa 30 Minuten, in **Copilot in Word**. **Rollen:**
+  Storyboard-Verantwortliche (legt das Dokument an und promptet), Prüferin (prüft Handlung und
+  Hook), die übrigen schreiben mit. Für Schritt 3 teilt ihr die Einstellungen untereinander auf.
+  **Am Ende liegt vor:** ein gemeinsames Word-Dokument „Storyboard-Tind" mit Storyboard-Tabelle
+  und einem Videoprompt je Einstellung. Für den optionalen Generierungsschritt braucht ihr ein
+  Videowerkzeug mit Testkontingent (Veo, Runway, Kling, Luma, Firefly Video).
 
-  1. **Storyboard.** Lege im OneDrive-Ordner „Fjordlicht-Kurs" ein neues Word-Dokument
-     „Storyboard-Tind" an und lass Copilot einen Entwurf erstellen. Nutze den Storyboard-Prompt
-     aus Abschnitt 35.5, angepasst auf ein **10-Sekunden-Reel** für den Rucksack „Tind"
-     (Ziel: Herbstwanderung am Wochenende), und verweise auf `/Fjordlicht-Basisdaten`
-     (falls nicht vorhanden: Kap. 11 bzw. Markenstimme und Produktfakten einfügen). Nutze für
-     Nachhaltigkeit nur die Platzhalterzeile, keine eigene Aussage.
-  2. **Prüfen und gezielt überarbeiten.** Kontrolliere das Storyboard: Hat jede Einstellung genau
-     eine Handlung? Sind die ersten zwei Sekunden ohne Ton verständlich? Markiere jede
-     problematische Zeile und lass nur diese Stelle von Copilot umschreiben – nicht das ganze
-     Dokument neu erzeugen. Liegt das Storyboard noch als Fließtext vor, lass es in eine Tabelle
-     umwandeln.
-  3. **Videoprompt.** Wähle die stärkste Einstellung und lass Copilot im selben Dokument einen
-     vollständigen Videoprompt mit allen sieben Bausteinen aus Abschnitt 35.3 schreiben. Stelle
-     danach eine Frage ans Dokument: „Welcher der sieben Bausteine fehlt oder ist zu vage?"
-  4. **Generieren (optional).** Erzeuge den Clip zweimal: einmal mit deinem Prompt, einmal mit
-     einer verkürzten Fassung von höchstens 15 Wörtern. Vergleiche und notiere das Ergebnis
-     unter dem Prompt im Word-Dokument.
+  1. **Storyboard (Storyboard-Verantwortliche).** Lege im OneDrive-Ordner „Fjordlicht-Kurs" ein
+     neues Word-Dokument „Storyboard-Tind" an und teile es mit der Gruppe. Lass Copilot einen
+     Entwurf erstellen: den Storyboard-Prompt aus Abschnitt 35.5, angepasst auf ein
+     **10-Sekunden-Reel** für den Rucksack „Tind" (Ziel: Herbstwanderung am Wochenende), mit
+     Verweis auf `/Fjordlicht-Basisdaten` (aus Kap. 11). Für Nachhaltigkeit nur die
+     Platzhalterzeile, keine eigene Aussage. Liegt das Storyboard als Fließtext vor, lass es in
+     eine Tabelle umwandeln.
+  2. **Prüfen und gezielt überarbeiten (Prüferin, alle lesen mit).** Hat jede Einstellung genau
+     eine Handlung? Sind die ersten zwei Sekunden ohne Ton verständlich? Setzt an jede
+     problematische Zeile einen Word-Kommentar. Die Storyboard-Verantwortliche markiert dann nur
+     diese Zeilen und lässt sie von Copilot umschreiben – nicht das ganze Dokument neu erzeugen.
+  3. **Videoprompts (Arbeitsteilung).** Jede Person übernimmt eine Einstellung, setzt den Cursor
+     unter die Tabelle und lässt Copilot im gemeinsamen Dokument einen vollständigen Videoprompt
+     mit allen sieben Bausteinen aus Abschnitt 35.3 schreiben, überschrieben mit der Nummer der
+     Einstellung.
+  4. **Gegenprüfung.** Tauscht die Prompts reihum: Jede Person prüft den Prompt der nächsten und
+     stellt Copilot eine Frage zum Dokument: „Welcher der sieben Bausteine fehlt im Prompt zu
+     Einstellung [Nr.] oder ist zu vage?" Vergleicht Copilots Antwort mit eurem eigenen Urteil
+     und bessert nach.
+  5. **Generieren (optional).** Wählt gemeinsam den stärksten Prompt. Eine Person erzeugt den
+     Clip im Videowerkzeug mit dem vollständigen Prompt, eine andere mit einer Kurzfassung von
+     höchstens 15 Wörtern. Notiert den Vergleich unter dem Prompt im Word-Dokument.
+
+  Zum Abschluss: Entscheidet, welche Einstellung ihr als einzige wirklich produzieren würdet, und
+  begründet das in zwei Sätzen.
 tip: |
-  Der häufigste Fehler im Storyboard ist eine Einstellung mit zwei oder drei Handlungen. Streiche
-  lieber, als zu verdichten – zehn Sekunden sind kürzer, als sie sich beim Planen anfühlen. In
-  Word hilft das gezielte Umschreiben einer markierten Zeile: So bleiben die guten Einstellungen
-  unangetastet.
+  Der häufigste Fehler im Storyboard ist eine Einstellung mit zwei oder drei Handlungen. Streicht
+  lieber, als zu verdichten – zehn Sekunden sind kürzer, als sie sich beim Planen anfühlen. Das
+  gezielte Umschreiben einer markierten Zeile hält die guten Einstellungen unangetastet. Achtet
+  bei der Gegenprüfung darauf, ob Copilots Antwort und euer Urteil zum selben Baustein kommen –
+  und wenn nicht, wer recht hat.
 solution: |
   Beispiel-Prompt für den Entwurf mit Copilot in Word:
 
@@ -45,7 +56,7 @@ solution: |
   Ton: ruhig, ehrlich, leicht nordisch-trocken, keine Superlative.
   ```
 
-  Ein brauchbares Storyboard hat drei bis vier Einstellungen, zum Beispiel:
+  Ein brauchbares Storyboard hat drei bis vier Einstellungen – passend zur Gruppengröße:
 
   | Nr. | Dauer | Bild/Handlung | Kamera | Text |
   |---|---|---|---|---|
@@ -66,11 +77,18 @@ solution: |
   Format: 9:16, 3 Sekunden. Kein Text, keine Logos.
   ```
 
-  Typische Copilot-Fehler im ersten Entwurf: Einstellung 1 enthält zwei Handlungen („Nebel
-  lichtet sich, Person tritt ins Bild"), oder die Texteinblendung enthält einen Superlativ bzw.
-  eine Nachhaltigkeitsaussage, die nicht in den Basisdaten steht. Beides löst du über das
-  Umschreiben der markierten Zeile.
+  Worauf die Prüferin im ersten Entwurf achten sollte: ob eine Einstellung zwei Handlungen
+  enthält („Nebel lichtet sich, Person tritt ins Bild") und ob eine Texteinblendung einen
+  Superlativ oder eine Nachhaltigkeitsaussage enthält, die nicht in den Basisdaten steht. Beides
+  wird über das Umschreiben der markierten Zeile gelöst.
 
-  Typische Beobachtung im Vergleich: Die Kurzfassung liefert oft eine schöne, aber beliebige
-  Szene (falsche Kamerabewegung, Hochglanz-Look, mitunter Text im Bild). Die vollständige
-  Fassung trifft Stimmung und Bewegung deutlich zuverlässiger.
+  Bei Einstellung 2 und 4 ist das Produkt im Bild: Gute Gruppen halten im Prompt fest, dass
+  hierfür Bild-zu-Video mit dem echten Produktfoto genutzt wird, weil ein reiner Textprompt den
+  Rucksack erfindet. Beim optionalen Vergleich lohnt der Blick darauf, ob die Kurzfassung
+  Kamerabewegung, Look oder Text im Bild anders trifft als die vollständige Fassung.
+
+  Bewertungskriterien: Das Storyboard hat je Einstellung genau eine Handlung und einen stummen
+  Hook; Änderungen wurden gezielt an markierten Zeilen vorgenommen. Jede Einstellung hat einen
+  Videoprompt mit allen sieben Bausteinen. Die Gegenprüfung ist im Dokument sichtbar
+  (Kommentare oder Nachbesserungen), und die Gruppe hat benannt, wo Copilots Antwort auf die
+  Dokumentfrage von ihrem eigenen Urteil abwich. Die Schlussentscheidung ist begründet.

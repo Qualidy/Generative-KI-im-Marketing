@@ -1,10 +1,11 @@
-title: Vom Produkttext zum Sprechskript in Word
+title: Vom Produkttext zum Sprechskript – drei Fassungen, eine Ausspracheliste
 difficulty: 2
 question: |
-  Diese Übung machst du in **Copilot in Word**. Für den Stimmtest in Schritt 4 reicht die
-  Word-Funktion **Vorlesen**; besser ist ein TTS-Werkzeug (z. B. ElevenLabs), eine
-  Avatar-Plattform mit Testkontingent oder die Text-zu-Sprache-Funktion in Clipchamp, falls in
-  eurer Umgebung verfügbar. Alternativ: ChatGPT, Claude oder Gemini für die Schritte 1 bis 3.
+  **Gruppenarbeit:** 3–4 Personen, etwa 30 Minuten, in **Copilot in Word**. Für den Hörtest in
+  Schritt 4 reicht die Word-Funktion **Vorlesen**; besser ist ein TTS-Werkzeug (z. B. ElevenLabs)
+  oder eine Avatar-Plattform mit Testkontingent. **Am Ende liegt vor:** ein gemeinsames
+  Sprechskript mit gemessener Dauer und einer **Ausspracheliste**, die jede Person in ihrem
+  eigenen Dokument „Sprechskript-Vidde" sichert – ihr braucht sie im Workshop wieder.
 
   Ausgangstext (fiktiv, Produktseite Wanderhose „Vidde"):
 
@@ -14,27 +15,37 @@ question: |
   Reißverschlusstaschen u. 1 Oberschenkeltasche. Pflege: 30 Grad, nicht in den Trockner.
   ```
 
-  1. **Umschreiben.** Füge den Ausgangstext in ein neues Word-Dokument „Sprechskript-Vidde" im
-     Ordner „Fjordlicht-Kurs" ein, markiere ihn und lass Copilot ihn mit dem Prompt aus
-     Abschnitt 36.3 in ein **30-Sekunden-Sprechskript** (höchstens 70 Wörter) umschreiben.
-     Verweise für Markenstimme und Fakten auf `/Fjordlicht-Basisdaten` (falls nicht vorhanden:
-     Kap. 11 bzw. Markenstimme einfügen).
-  2. **Prüfen.** Stelle Copilot eine Frage ans Dokument: „Vergleiche Ausgangstext und
-     Sprechskript: Welche Aussage ist im Skript stärker als im Original, welche Angabe fehlt?"
-     Prüfe zusätzlich selbst gegen die Tabelle „Lesetext – Sprechtext": Sind Abkürzungen, Zahlen
-     und Prozentangaben ausgeschrieben? Steht die Kernbotschaft vorn und hinten?
-  3. **Laut lesen.** Lies das Skript laut mit Stoppuhr. Markiere die Stellen, an denen du
-     stolperst, und lass nur diese von Copilot kürzer oder sprechbarer umschreiben.
-  4. **Hören und Ausspracheliste.** Lass das Skript vorlesen bzw. von einer KI-Stimme sprechen.
-     Lege unter dem Skript eine **Ausspracheliste** als Tabelle an (Wort, Problem, Lösung) für
-     alle Wörter, die falsch klingen. Du brauchst sie im Workshop wieder.
+  1. **Gleicher Prompt, mehrere Fassungen.** Jede Person legt im eigenen Ordner „Fjordlicht-Kurs"
+     ein Word-Dokument „Sprechskript-Vidde" an, fügt den Ausgangstext ein, markiert ihn und lässt
+     Copilot ihn mit **demselben** Prompt (Abschnitt 36.3, Vorlage in der Lösung) in ein
+     **30-Sekunden-Sprechskript** (höchstens 70 Wörter) umschreiben, mit Verweis auf
+     `/Fjordlicht-Basisdaten` (aus Kap. 11).
+  2. **Vergleichen und auswählen.** Legt die Fassungen nebeneinander: Wie unterscheiden sich
+     Wortzahl, Satzbau und Wortwahl? Hat eine Fassung eine Aussage gesteigert (z. B. aus „PFC-frei"
+     mehr gemacht)? Wählt die beste Fassung als Grundlage; ihre Autorin teilt das Dokument mit der
+     Gruppe.
+  3. **Rollen im geteilten Dokument.**
+     - **Faktenprüferin** stellt Copilot eine Frage zum Dokument: „Vergleiche Ausgangstext und
+       Sprechskript: Welche Aussage ist im Skript stärker als im Original, welche Angabe fehlt?"
+       und prüft selbst gegen die Tabelle „Lesetext – Sprechtext".
+     - **Sprecher** liest das Skript laut mit Stoppuhr.
+     - **Ohr** hört zu und markiert jede Stelle, an der der Sprecher stolpert, mit einem Kommentar.
+     - **Skript-Verantwortliche** markiert nur diese Stellen und lässt sie von Copilot kürzer oder
+       sprechbarer umschreiben.
+
+     Danach tauschen Sprecher und Ohr, und das überarbeitete Skript wird noch einmal gelesen.
+  4. **Hören und Ausspracheliste.** Lasst das Skript vorlesen bzw. von einer KI-Stimme sprechen.
+     Legt unter dem Skript eine **Ausspracheliste** als Tabelle an (Wort, Problem, Lösung) für alle
+     Wörter, die falsch klingen. Jede Person kopiert das fertige Skript mit der Ausspracheliste in
+     ihr eigenes Dokument „Sprechskript-Vidde".
 tip: |
-  Achte darauf, dass Copilot aus „PFC-frei" keine stärkere Nachhaltigkeitsaussage macht, als
-  im Ausgangstext steht. Umformulieren heißt nicht, Aussagen zu steigern. Die Vorlesefunktion
-  in Word ist kein Ersatz für die spätere Werbestimme – aber sie zeigt schnell, wo Abkürzungen
-  und Markennamen stolpern.
+  Achtet darauf, ob Copilot aus „PFC-frei" eine stärkere Nachhaltigkeitsaussage macht, als im
+  Ausgangstext steht. Umformulieren heißt nicht, Aussagen zu steigern. Der Vergleich der Fassungen
+  zeigt, dass derselbe Prompt nicht dasselbe Skript liefert – umso wichtiger ist die Prüfung. Die
+  Vorlesefunktion in Word ist kein Ersatz für die spätere Werbestimme, aber sie zeigt schnell, wo
+  Abkürzungen und Markennamen stolpern.
 solution: |
-  Beispiel-Prompt für das Umschreiben der markierten Passage:
+  Beispiel-Prompt für das Umschreiben der markierten Passage (alle identisch):
 
   ```text
   Schreibe den markierten Text in ein Sprechskript für ein Avatar-Video um.
@@ -58,8 +69,8 @@ solution: |
 
   Prüfpunkte: Abkürzungen („rec.", „u.", „DWR") sind aufgelöst oder weggelassen,
   Materialprozente stehen nicht im Sprechtext (gehören in die Einblendung), die Kernbotschaft
-  steht vorn und am Schluss, kein Superlativ. Typischer Copilot-Fehler im ersten Durchgang:
-  „umweltfreundlich imprägniert" statt „ohne PFC" – das ist eine Steigerung und muss zurück.
+  steht vorn und am Schluss, kein Superlativ. Achtet beim Fassungsvergleich auf Formulierungen
+  wie „umweltfreundlich imprägniert" statt „ohne PFC" – das ist eine Steigerung und muss zurück.
 
   Typische Ausspracheliste:
 
@@ -69,4 +80,9 @@ solution: |
   | PFC | als Wort gesprochen | „P-F-C" schreiben |
   | Fjordlicht | falsche Betonung | „Fjord-licht" mit Bindestrich testen |
 
-  Wer nach dem lauten Lesen nichts ändert, hat meist nicht laut gelesen.
+  Bewertungskriterien: Die Gruppe hat benannt, wie sich die Fassungen aus demselben Prompt
+  unterscheiden, und die Auswahl begründet. Steigerungen gegenüber dem Ausgangstext sind gefunden
+  und zurückgenommen. Das Skript wurde von mindestens zwei Personen laut gelesen, die gemessene
+  Dauer liegt bei etwa 30 Sekunden, Änderungen erfolgten gezielt an markierten Stellen. Die
+  Ausspracheliste liegt in jedem persönlichen Dokument „Sprechskript-Vidde". Wer nach dem lauten
+  Lesen nichts ändert, hat meist nicht laut gelesen.

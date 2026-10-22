@@ -1,9 +1,9 @@
-title: Avatar ja oder nein?
+title: Avatar ja oder nein? – Arbeitsteilung mit Advocatus Diaboli
 difficulty: 1
 question: |
-  Fjordlicht überlegt, für folgende Vorhaben Avatar-Videos einzusetzen. Entscheide jeweils
-  **geeignet**, **eingeschränkt geeignet** oder **ungeeignet** und begründe in einem Satz.
-  Nenne bei „eingeschränkt" die Bedingung, unter der es funktioniert.
+  Fjordlicht überlegt, für folgende Vorhaben Avatar-Videos einzusetzen. Entscheidet jeweils
+  **geeignet**, **eingeschränkt geeignet** oder **ungeeignet** und begründet in einem Satz.
+  Nennt bei „eingeschränkt" die Bedingung, unter der es funktioniert.
 
   1. Onboarding-Video für neue Fjordlicht-Business-Kunden: Wie bestelle ich nach?
   2. Entschuldigung der Geschäftsführung nach einem Lieferausfall vor Weihnachten
@@ -12,19 +12,28 @@ question: |
   5. Monatliches internes Update des Marketingteams an alle 45 Beschäftigten
   6. Instagram-Reel zur neuen Wanderhose „Vidde"
 
-  So gehst du vor:
+  **Gruppenarbeit:** 3–4 Personen, etwa 20 Minuten. Drei Personen teilen sich die Fälle (je zwei),
+  die vierte ist **Advocatus Diaboli** – bei drei Personen übernimmt diese Rolle reihum, wer gerade
+  nicht vorstellt. **Am Ende liegt vor:** eine gemeinsame Tabelle in einer Copilot Page und ein
+  Satz, der euer Muster zusammenfasst.
 
-  1. Entscheide zuerst selbst, in Stichworten.
-  2. Gib die sechs Vorhaben in Copilot Chat (Modus **Arbeit**) ein und lass Copilot dieselbe
-     Einordnung vornehmen – mit der Leitfrage „Information oder Vertrauen?" und der Tabelle
-     „Einsatzfeld – Eignung" aus Abschnitt 36.6 als Rahmen.
-  3. Vergleiche: Wo seid ihr euch einig, wo nicht? Prüfe vor allem Fall 4 und 6: Erkennt Copilot
-     das Fake-Testimonial als Täuschung oder nur als „Kennzeichnungsfrage"?
+  1. **Allein entscheiden.** Jede Person entscheidet ihre zwei Fälle zuerst selbst, in Stichworten.
+  2. **Copilot befragen.** Jede Person gibt ihre zwei Fälle in Copilot Chat (Modus **Arbeit**) ein –
+     mit der Leitfrage „Information oder Vertrauen?" und der Tabelle „Einsatzfeld – Eignung" aus
+     Abschnitt 36.6 als Rahmen – und vergleicht mit der eigenen Einschätzung.
+  3. **Zusammenführen.** Eine Person übernimmt ihre Copilot-Antwort in eine Copilot Page und teilt
+     sie mit der Gruppe; die anderen tragen ihre Fälle dort ein. Wer vorstellt, nennt die eigene
+     Entscheidung und ob Copilot abwich.
+  4. **Gegenrede.** Der Advocatus Diaboli argumentiert bei jedem Fall **für** den Avatar („spart
+     Zeit", „ist doch gekennzeichnet"). Haltet in der Page fest, welche Entscheidung ihr danach
+     ändert und welche ihr begründet beibehaltet. Prüft besonders Fall 4 und 6: Hat Copilot das
+     Fake-Testimonial als Täuschung erkannt oder nur als „Kennzeichnungsfrage"?
 tip: |
-  Frage dich bei jedem Fall: Geht es um Information oder um Vertrauen? Und würde sich jemand
-  getäuscht fühlen, wenn er später erfährt, dass die Person nicht echt war?
+  Fragt bei jedem Fall: Geht es um Information oder um Vertrauen? Und würde sich jemand getäuscht
+  fühlen, wenn er später erfährt, dass die Person nicht echt war? Das stärkste Argument des
+  Advocatus Diaboli ist meist die Kennzeichnung – überlegt, was ein Label klärt und was nicht.
 solution: |
-  Beispiel-Prompt für Copilot Chat:
+  Beispiel-Prompt für Copilot Chat (je Person mit den eigenen zwei Fällen):
 
   ```text
   Bewerte für die Outdoor-Marke Fjordlicht, ob sich die folgenden Vorhaben
@@ -33,8 +42,10 @@ solution: |
   Würde sich jemand getäuscht fühlen, wenn er erfährt, dass die Person nicht
   echt war? Nenne bei "eingeschränkt" die Bedingung.
   Ausgabe: Tabelle mit Nr., Bewertung, Begründung (1 Satz).
-  [Vorhaben 1 bis 6 einfügen]
+  [Eigene zwei Vorhaben einfügen]
   ```
+
+  Beispiel für die gemeinsame Tabelle in der Copilot Page:
 
   | Nr. | Bewertung | Begründung |
   |---|---|---|
@@ -45,9 +56,17 @@ solution: |
   | 5 | eingeschränkt | funktioniert, wenn das Team zustimmt und es nicht das persönliche Gespräch ersetzt |
   | 6 | eingeschränkt | im Feed wirken Avatare oft austauschbar; besser Produkt in Bewegung (Kap. 35), Avatar höchstens als kurzer Erklärteil mit Kennzeichnung |
 
-  Typische Abweichung: Copilot stuft Fall 4 gelegentlich als „eingeschränkt – mit Kennzeichnung"
-  ein. Das greift zu kurz: Ein Label ändert nichts daran, dass die Erfahrung erfunden ist. Auch
-  Fall 5 wird oft ohne Bedingung als „geeignet" bewertet – die Zustimmung des Teams fehlt dann.
+  Worauf ihr beim Vergleich achten solltet: ob Copilot Fall 4 als „eingeschränkt – mit
+  Kennzeichnung" einstuft. Das greift zu kurz: Ein Label ändert nichts daran, dass die Erfahrung
+  erfunden ist – genau das ist auch die Antwort auf den Advocatus Diaboli. Und ob Fall 5 ohne
+  Bedingung als „geeignet" bewertet wird; dann fehlt die Zustimmung des Teams. Beim Argument
+  „spart Zeit" hält Fall 2 nicht stand: Bei einer Entschuldigung ist der Aufwand der echten Person
+  Teil der Botschaft.
 
-  Muster: Avatare überzeugen bei **Information**, scheitern bei **Vertrauen** und sind bei
+  Muster-Satz: Avatare überzeugen bei **Information**, scheitern bei **Vertrauen** und sind bei
   erfundenen Erfahrungen nie vertretbar.
+
+  Bewertungskriterien: Alle sechs Fälle sind bewertet und begründet, Bedingungen bei
+  „eingeschränkt" sind konkret. Jede Person hat benannt, wo Copilot von ihrer eigenen Einschätzung
+  abwich. Die Einwände des Advocatus Diaboli sind in der Page festgehalten und entweder mit einer
+  Änderung oder mit einer Begründung beantwortet.

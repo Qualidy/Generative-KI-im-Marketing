@@ -1,45 +1,68 @@
-title: Plattformstrategie mit Portabilitätstest
+title: Plattformstrategie mit Portabilitätstest im Team
 difficulty: 3
 question: |
-  Die Geschäftsführung von Fjordlicht ist nach der Ankündigung vom 11.09.2026 verunsichert:
-  „Wenn OpenAI jetzt GPTs abschafft, sollten wir dann überhaupt noch Assistenten in ChatGPT
-  bauen?" Drei Positionen stehen im Raum:
+  **Gruppenarbeit, 4 Personen in zwei Paaren, ca. 30 Minuten.** Die Geschäftsführung von
+  Fjordlicht ist nach der Ankündigung vom 11.09.2026 verunsichert: „Wenn OpenAI jetzt GPTs
+  abschafft, sollten wir dann überhaupt noch Assistenten in ChatGPT bauen?" Drei Positionen
+  stehen im Raum:
 
   - **A:** Alles sofort zu Plugins migrieren und weiter ausschließlich auf ChatGPT setzen.
   - **B:** Alles als Copilot-Agents neu bauen, weil das Team Microsoft 365 Copilot ohnehin hat
     und dort „mehr Stabilität" herrsche.
   - **C:** Keine Assistenten mehr bauen, nur noch Prompt-Bibliothek (Kap. 10) – etwa
-    gespeicherte und geteilte Prompts in der Prompt Gallery von Copilot.
+    gespeicherte Prompts in der Prompt Gallery von Copilot.
 
-  1. **Portabilitätstest (20 Minuten).** Nimm die Anweisungen und eine Wissensdatei eines
-     Assistenten, den du gebaut hast (Kap. 25 oder 26), und baue ihn als Copilot-Agent im
-     Agent Builder nach – bzw. umgekehrt, falls er schon ein Copilot-Agent ist, als Claude
-     Project oder Gemini Gem. Lass drei Testfälle aus deinem Testsatz in beiden Fassungen
-     laufen. Notiere: Was ließ sich 1:1 übernehmen, was musste angepasst werden, wie lange
-     hat es gedauert?
-  2. **Bewerten.** Bewerte die drei Positionen nach **Aufwand**, **Risiko** und **Nutzen für
-     das Team** – und nutze dabei deine Erfahrung aus Schritt 1.
-  3. **Empfehlung.** Entwirf in **Copilot in Word** eine Empfehlung in höchstens zehn Sätzen,
-     die konkrete Maßnahmen gegen Plattformabhängigkeit enthält. Begründe, warum ein Wechsel
-     des Anbieters das Grundproblem nicht löst – auch nicht zu Copilot.
+  Am Ende liegen ein gemeinsames Testprotokoll und eine abgestimmte Empfehlung in einem
+  geteilten Word-Dokument vor.
+
+  1. **Portabilitätstest in zwei Paaren (15 Minuten).** Nehmt die Anweisungen und eine
+     Wissensdatei eines Assistenten, den ein Gruppenmitglied gebaut hat (Kap. 25 oder 26).
+     Arbeitet nur mit der gespeicherten Kopie der Anweisungen – nicht mit dem Original im
+     Agent Builder. Stoppt die Zeit.
+     - **Paar 1** baut ihn als neuen Copilot-Agent im Agent Builder nach (Anweisungen, Wissen,
+       Startprompts).
+     - **Paar 2** baut ihn als Prompt nach: Die Anweisungen werden zu einem Prompt, der die
+       Wissensdatei per `/`-Verweis einbezieht; diesen Prompt speichert ihr in der **Prompt
+       Gallery**. So testet ihr Position C direkt.
+
+     Lasst dann beide Paare dieselben drei Testfälle aus dem Testsatz laufen. Notiert: Was
+     ließ sich 1:1 übernehmen, was musste angepasst werden, wie lange hat es gedauert, wie
+     gut sind die Ergebnisse im Vergleich?
+  2. **Bewerten (5 Minuten).** Bewertet die drei Positionen gemeinsam nach **Aufwand**,
+     **Risiko** und **Nutzen für das Team** – gestützt auf die Erfahrung beider Paare.
+  3. **Empfehlung (10 Minuten).** Eine Person erstellt mit **Entwurf mit Copilot** in Word
+     eine Empfehlung in höchstens zehn Sätzen, die konkrete Maßnahmen gegen
+     Plattformabhängigkeit enthält. Die anderen bearbeiten das geteilte Dokument mit
+     Kommentaren. Begründet, warum ein Wechsel des Anbieters das Grundproblem nicht löst –
+     auch nicht zu Copilot.
+
+  **Abschluss:** Eine Person stellt im Plenum in einer Minute die gemessene Umzugszeit und
+  die wichtigste Maßnahme vor.
 tip: |
   Die Frage ist nicht, welcher Anbieter stabil bleibt – das weiß niemand. Die Frage ist,
-  wie teuer der nächste Umzug wird. Der Portabilitätstest liefert dir dafür eine echte Zahl
-  statt einer Vermutung. Und: Das Argument „haben wir ohnehin, Daten bleiben im Mandanten"
-  ist ein gutes Argument für Copilot – nur kein Argument gegen Abhängigkeit.
+  wie teuer der nächste Umzug wird. Der Portabilitätstest liefert dafür eine echte Zahl statt
+  einer Vermutung. Und: Das Argument „haben wir ohnehin, Daten bleiben im Mandanten" ist ein
+  gutes Argument für Copilot – nur kein Argument gegen Abhängigkeit. Achtet beim Vergleich der
+  Paare darauf, was die Prompt-Fassung schlechter kann: Muss man jedes Mal an den
+  `/`-Verweis denken?
 solution: |
-  Typisches Ergebnis des Portabilitätstests: Anweisungen und Wissensdatei sind in 10 bis 20
-  Minuten übertragen. Anpassungen betreffen Verweise auf Dateinamen, Formatregeln (Copilot
-  formatiert Tabellen und Überschriften etwas anders) und Funktionen, die es nicht gleich gibt.
-  Zwei von drei Testfällen laufen ohne Änderung, einer braucht eine Nachschärfung.
+  Mögliches Ergebnis des Portabilitätstests:
+
+  | | Paar 1: Copilot-Agent | Paar 2: gespeicherter Prompt |
+  |---|---|---|
+  | Zeit | 10 bis 20 Minuten | 5 bis 10 Minuten |
+  | 1:1 übernommen | Anweisungen, Wissensdatei | Anweisungen als Prompt-Text |
+  | angepasst | Dateinamen in den Anweisungen, Formatregeln | Verweis auf die Datei muss bei jeder Nutzung gesetzt werden; lange Anweisungen gekürzt |
+  | Testfälle | zwei von drei ohne Änderung | vergleichbar, aber abhängig davon, ob die Datei eingebunden wurde |
+
   Wer keine eigene Kopie der Anweisungen hatte, musste sie erst aus der Plattform
   heraussuchen – das ist der eigentliche Zeitfresser.
 
   | Position | Aufwand | Risiko | Nutzen |
   |---|---|---|---|
   | A | gering bis mittel (Actions neu) | Abhängigkeit bleibt unverändert | hoch, Team arbeitet weiter |
-  | B | mittel: Neuaufbau, Tests, Aktionen in Copilot Studio neu, Schulung | gleiches Grundrisiko bei anderem Anbieter; Vorteil: vorhandene Lizenz, Daten im Mandanten | mittel bis hoch, wenn das Team ohnehin in Microsoft 365 arbeitet |
-  | C | gering | Qualitätsverlust, Wildwuchs zurück | gering bis mittel |
+  | B | mittel: Neuaufbau, Tests, Anbindungen neu, Schulung | gleiches Grundrisiko bei anderem Anbieter; Vorteil: vorhandene Lizenz, Daten im Mandanten | mittel bis hoch, wenn das Team ohnehin in Microsoft 365 arbeitet |
+  | C | gering | Qualitätsverlust, Wildwuchs zurück; Wissen muss jedes Mal eingebunden werden | gering bis mittel |
 
   Beispielempfehlung:
 
@@ -61,8 +84,9 @@ solution: |
   Abhängigkeit gegen eine andere und kostet dabei den Umstellungsaufwand. Unabhängigkeit
   entsteht durch **eigene, portable Bausteine**.
 
-  Bewertungskriterien: Portabilitätstest tatsächlich durchgeführt und mit Zeit und
-  Anpassungen dokumentiert; alle drei Positionen in drei Dimensionen bewertet; Position B
-  fair gewürdigt (vorhandene Lizenz, Datenschutz im Mandanten) und trotzdem vom Grundproblem
-  getrennt; Empfehlung mit mindestens drei konkreten Maßnahmen; korrekte Bezugnahme auf die
-  Migrationsfakten.
+  Bewertungskriterien: Portabilitätstest von beiden Paaren tatsächlich durchgeführt und mit
+  Zeit und Anpassungen dokumentiert; Unterschiede zwischen Agent- und Prompt-Fassung benannt
+  und erklärt; alle drei Positionen in drei Dimensionen bewertet; Position B fair gewürdigt
+  (vorhandene Lizenz, Daten im Mandanten) und trotzdem vom Grundproblem getrennt; Empfehlung
+  mit mindestens drei konkreten Maßnahmen, gemeinsam überarbeitet; korrekte Bezugnahme auf
+  die Migrationsfakten.

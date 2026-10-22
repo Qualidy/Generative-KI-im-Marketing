@@ -1,13 +1,18 @@
-title: Fehlerbild, Ursache, Gegenmittel
+title: Fehlerbild, Ursache, Gegenmittel – Fälle verteilen
 difficulty: 1
 question: |
+  **Gruppe:** 3–4 Personen (oder Paare), ca. 20 Minuten. **Aufteilung:** Die fünf Fälle werden
+  verteilt, jede Person diagnostiziert ihre Fälle zuerst **ohne** Copilot. **Am Ende liegt vor:**
+  eine gemeinsame Tabelle in einem geteilten Word-Dokument mit Ursache, Gegenmittel und Ort des
+  Eingriffs – und eine Spalte, wo eure Diagnose von der Copilot-Diagnose abwich.
+
   Beim Test des Fjordlicht-Produkttext-Agents (gebaut mit dem Agent Builder) treten folgende
   Probleme auf:
 
   1. Der Text zur Wanderhose „Vidde" nennt ein Gewicht von 380 g. Im Datenblatt steht keine
-     Gewichtsangabe. Die Websuche des Agents ist eingeschaltet.
+     Gewichtsangabe. Für den Agent war Websuche vorgesehen.
   2. In einem Text taucht „wasserdicht bis 10.000 mm" auf, obwohl die aktuelle Regenjacke Sølv
-     20.000 mm hat. Als Wissensquelle ist der OneDrive-Ordner „Produktdaten" angegeben; darin liegen
+     20.000 mm hat. Als Wissen ist der OneDrive-Ordner „Produktdaten" angegeben; darin liegen
      Produktdaten_2024.xlsx und Produktdaten_2026.xlsx.
   3. Nach etwa 25 Nachrichten im selben Chat schreibt der Agent wieder Ausrufezeichen.
   4. Zwei Produkttexte beginnen wortgleich mit dem Einstiegssatz eines Beispieltexts aus der
@@ -15,28 +20,40 @@ question: |
   5. Auf die Bitte „Schreib mir ein Gedicht zum Geburtstag meiner Mutter" liefert der Agent
      ein Gedicht.
 
-  **Erst Copilot, dann du:** Füge die fünf Fälle und die Tabelle der Fehlerbilder aus Abschnitt 25.4
-  in **Copilot Chat** ein und lass für jeden Fall **Ursache** und **Gegenmittel** bestimmen. Prüfe das
-  Ergebnis: Ist jedes Gegenmittel konkret genug, dass du es im Agent Builder umsetzen könntest?
-  Ergänze für jeden Fall, **wo** du eingreifst: Anweisungen, Wissensquellen, Websuche/Funktionen oder
-  Kurzanleitung für Nutzende.
+  1. **Allein (5 Minuten).** Jede Person bestimmt für ihre Fälle mit der Tabelle der Fehlerbilder
+     aus Abschnitt 25.4 **Ursache**, **Gegenmittel** und **Ort des Eingriffs**: Anweisungen,
+     Wissen, Werkzeuge oder Kurzanleitung für Nutzende. Eintrag in die geteilte Tabelle.
+  2. **Copilot als Zweitmeinung (5 Minuten).** Eine Person fügt die fünf Fälle und die Tabelle aus
+     Abschnitt 25.4 in **Copilot Chat** ein und lässt für jeden Fall Ursache und Gegenmittel
+     bestimmen. Die Antwort kommt neben eure Spalte.
+  3. **Abgleich (8 Minuten).** Wer einen Fall bearbeitet hat, prüft die Copilot-Diagnose dazu: Ist
+     das Gegenmittel konkret genug, um es im Agent bzw. in den Dateien umzusetzen? Wo hatte die
+     Person recht, wo Copilot? Die Gruppe einigt sich je Fall auf eine Fassung.
+  4. **Plenum (2 Minuten).** Stellt den Fall vor, bei dem eure Diagnose und die von Copilot am
+     weitesten auseinanderlagen.
 tip: |
-  Unterscheide: Liegt das Problem in den Instruktionen, im Wissen, in den Werkzeugeinstellungen
-  oder in der Art, wie der Agent genutzt wird? Bei Fall 2 lohnt ein zweiter Blick: Was genau ist
-  hier die Wissensquelle – die Datei oder der Ordner?
+  Unterscheidet: Liegt das Problem in den Instruktionen, im Wissen, in den Werkzeugen oder in der
+  Art, wie der Agent genutzt wird? Bei Fall 2 lohnt ein zweiter Blick: Was genau ist hier das
+  Wissen – die Datei oder der Ordner? Achtet beim Abgleich darauf, ob Copilot bei Fall 2 nur
+  vorschlägt, „die neue Datei zu priorisieren" – und ob das reicht.
 solution: |
-  | Nr. | Ursache | Gegenmittel | Wo im Agent Builder |
+  | Nr. | Ursache | Gegenmittel | Ort des Eingriffs |
   |---|---|---|---|
-  | 1 | Lückenregel fehlt, Websuche liefert fremde Angaben | Websuche aus, Regel „fehlende Angaben als [FEHLT: …]" | Websuche bzw. Webinhalte deaktivieren; Anweisungen |
-  | 2 | veraltete Datei im Wissen | Produktdaten_2024 aus dem Ordner entfernen (archivieren), nicht nur neue ergänzen | Wissensquelle: Ordner aufräumen oder nur die aktuelle Datei angeben |
+  | 1 | Lückenregel fehlt, Websuche liefert fremde Angaben | keine Websuche für diesen Agent, Regel „fehlende Angaben als [FEHLT: …]" | Werkzeuge (Entscheidung im Steckbrief); Anweisungen |
+  | 2 | veraltete Datei im Wissen | Produktdaten_2024 aus dem Ordner entfernen (archivieren), nicht nur neue ergänzen | Wissen: Ordner aufräumen oder nur die aktuelle Datei angeben |
   | 3 | Kontextverlust in langen Chats | Kernregel weit vorn in den Anweisungen; neuer Chat pro Produkt | Anweisungen; Kurzanleitung |
-  | 4 | Beispiele nicht als Stilvorbild gekennzeichnet | Regel „Beispiele nur als Stilvorbild, keine Sätze übernehmen"; Beispiele in der Datei kennzeichnen | Anweisungen; Wissensdatei |
+  | 4 | Beispiele nicht als Stilvorbild gekennzeichnet | Regel „Beispiele nur als Stilvorbild, keine Sätze übernehmen"; Beispiele in der Datei kennzeichnen | Anweisungen; Wissen |
   | 5 | keine Grenzen formuliert | Abschnitt „Grenzen" mit freundlicher Ablehnung und Hinweis auf den Zweck | Anweisungen |
 
-  Copilot schlägt bei Fall 2 oft nur vor, „die neue Datei zu priorisieren". Das reicht nicht: Solange
-  die alte Datei im angegebenen Ordner liegt, kann der Agent sie finden. Fall 2 ist damit ein
-  Microsoft-365-typischer Fehler – der Ordner ist die Wissensquelle, nicht die Datei.
+  „Die neue Datei priorisieren" reicht bei Fall 2 nicht: Solange die alte Datei im angegebenen
+  Ordner liegt, kann der Agent sie finden. Fall 2 ist damit ein Microsoft-365-typischer Fehler –
+  der Ordner ist das Wissen, nicht die Datei.
 
   Nach jeder einzelnen Korrektur läuft der gesamte Testkatalog erneut – sonst bleibt unbemerkt,
   ob zum Beispiel die neue Grenzregel auch legitime Anfragen wie „Kürze diesen Text" ablehnt.
   Und jede Änderung landet zuerst im Assistenten-Steckbrief, dann im Agent.
+
+  Bewertungskriterien: jeder Fall mit Ursache, konkretem Gegenmittel und Ort des Eingriffs; eigene
+  Diagnose vor der Copilot-Diagnose eingetragen; Abweichungen zwischen eigener und
+  Copilot-Diagnose sind je Fall benannt und begründet entschieden; Fall 2 als Ordner-Problem
+  erkannt.

@@ -1,10 +1,14 @@
-title: Kennzeichnen – ja, nein oder freiwillig?
+title: Kennzeichnen – ja, nein oder freiwillig? – Prompt-Duell in der Gruppe
 difficulty: 1
 question: |
-  Diese Übung machst du in **Copilot Chat** (Modus **Arbeit**). Ordne die folgenden Inhalte von
-  Fjordlicht ein: Ist nach **Art. 50 AI Act** eine Offenlegung **Pflicht**, **eingeschränkte
-  Pflicht**, **keine Pflicht** oder eine **Grauzone**? Spielen zusätzlich **Plattformregeln** oder
-  das **UWG** eine Rolle?
+  **Gruppenarbeit:** 4 Personen in zwei Paaren (bei 3 Personen: ein Paar und eine Einzelperson),
+  ca. 20 Minuten, in **Copilot Chat** (Modus **Arbeit**). Am Ende liegt eine gemeinsame
+  Einordnung aller sechs Fälle vor, und ihr wisst, welcher der beiden Prompts die bessere
+  Vorprüfung geliefert hat.
+
+  Ordnet die folgenden Inhalte von Fjordlicht ein: Ist nach **Art. 50 AI Act** eine Offenlegung
+  **Pflicht**, **eingeschränkte Pflicht**, **keine Pflicht** oder eine **Grauzone**? Spielen
+  zusätzlich **Plattformregeln** oder das **UWG** eine Rolle?
 
   ```text
   1. Instagram-Caption zum Fleece „Skog", mit Copilot entworfen und redigiert
@@ -17,16 +21,25 @@ question: |
   6. Chatbot im Webshop, der Größenfragen beantwortet
   ```
 
-  1. Ordne alle sechs Fälle **zuerst selbst** ein – mit dem Entscheidungsbaum aus Abschnitt 39.5.
-  2. Wähle die zwei Fälle, bei denen du am unsichersten bist. Lass Copilot sie mit dem Prompt
-     **„Kennzeichnungs-Vorprüfung"** aus Abschnitt 39.5 prüfen.
-  3. Vergleiche: Wo stimmt Copilot mit dir überein, wo nicht? Wo markiert Copilot zu Recht
-     [UNKLAR], wo ist die Antwort zu sicher?
+  1. **Arbeitsteilung:** Jedes Paar ordnet drei Fälle mit dem Entscheidungsbaum aus Abschnitt
+     39.5 ein (Paar A: Fälle 1–3, Paar B: Fälle 4–6) und erklärt dem anderen Paar danach in je
+     einem Satz pro Fall seine Entscheidung. Das andere Paar darf widersprechen.
+  2. **Unsichere Fälle wählen:** Einigt euch auf die zwei Fälle, bei denen die Gruppe am
+     unsichersten ist.
+  3. **Prompt-Duell:** Beide Paare prüfen dieselben zwei Fälle in Copilot Chat, aber mit
+     unterschiedlichen Prompts. **Paar A** nutzt den Prompt **„Kennzeichnungs-Vorprüfung"** aus
+     Abschnitt 39.5. **Paar B** fragt kurz: „Muss dieser Inhalt nach dem AI Act gekennzeichnet
+     werden?"
+  4. **Vergleich und Entscheidung:** Legt die Antworten nebeneinander. Wo stimmen sie mit eurer
+     Einordnung überein, wo nicht? Welche Antwort markiert Unsicherheiten zu Recht mit
+     [UNKLAR], welche ist zu sicher? Entscheidet gemeinsam, welcher Prompt sich für den Alltag
+     eignet, und speichert ihn jeweils in eurer eigenen **Prompt Gallery**.
 tip: |
-  Frage zuerst: Ist es Bild, Audio oder Video, das fälschlich echt wirkt? Dann: Ist es Text zu einem
-  Thema von öffentlichem Interesse? Und erst danach: Was verlangen Plattform und UWG? Wenn du den
-  Prompt aus 39.5 in die **Prompt Gallery** speicherst, hast du ihn für den Workshop und den Alltag
-  griffbereit.
+  Fragt zuerst: Ist es Bild, Audio oder Video, das fälschlich echt wirkt? Dann: Ist es Text zu
+  einem Thema von öffentlichem Interesse? Und erst danach: Was verlangen Plattform und UWG? Achtet
+  im Prompt-Duell darauf, ob die Kurzfrage von Paar B die Plattformregeln und das UWG überhaupt
+  anspricht. Wenn ihr den Prompt aus 39.5 in die Prompt Gallery speichert, habt ihr ihn für den
+  Workshop und den Alltag griffbereit.
 solution: |
   | Nr. | AI Act | Weitere Regeln |
   |---|---|---|
@@ -43,10 +56,18 @@ solution: |
   Fragen. Bei Nr. 4 würde eine fachliche Prüfung mit benannter Verantwortung die Pflicht entfallen
   lassen – und den Beitrag nebenbei besser machen.
 
-  Zum Vergleich mit Copilot: Häufig unsicher sind Nr. 4 und Nr. 5. Eine gute Copilot-Antwort
-  nennt bei Nr. 4 die Ausnahme der redaktionellen Verantwortung und markiert bei Nr. 5 die
-  AI-Act-Einordnung als [UNKLAR], verweist aber klar auf das Plattformlabel. Wenn Copilot bei
-  Nr. 5 pauschal „keine Pflicht" antwortet, fehlt der Blick auf die Plattformregeln.
+  Zum Prompt-Duell: Häufig unsicher sind Nr. 4 und Nr. 5. Eine gute Antwort nennt bei Nr. 4 die
+  Ausnahme der redaktionellen Verantwortung und markiert bei Nr. 5 die AI-Act-Einordnung als
+  [UNKLAR], verweist aber klar auf das Plattformlabel. Prüft, ob die Antwort auf die Kurzfrage
+  bei Nr. 5 pauschal „keine Pflicht" sagt – dann fehlt der Blick auf die Plattformregeln. Der
+  strukturierte Prompt aus 39.5 fragt diese Punkte ausdrücklich ab und ist deshalb für den
+  Alltag die bessere Wahl.
 
-  Bewertungskriterien: alle sechs Fälle selbst richtig eingeordnet, Copilot-Vorprüfung für zwei
-  Fälle durchgeführt, mindestens eine Stärke oder Schwäche der Antwort konkret benannt.
+  Bewertungskriterien:
+
+  - Alle sechs Fälle sind in der Gruppe richtig eingeordnet; Widersprüche zwischen den Paaren
+    wurden geklärt.
+  - Beide Prompts wurden an denselben zwei Fällen getestet.
+  - Die Unterschiede zwischen den Antworten der beiden Paare sind benannt und mit dem
+    Prompt-Aufbau erklärt.
+  - Die Gruppe hat begründet entschieden, welchen Prompt sie speichert.

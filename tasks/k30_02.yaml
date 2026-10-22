@@ -1,26 +1,45 @@
-title: Ein Baustein nach dem anderen
+title: Ein Baustein nach dem anderen – Stufentest in Arbeitsteilung
 difficulty: 2
 question: |
-  Diese Übung machst du mit der **Bilderzeugung in Copilot Chat** (alternativ in der
-  Create-Funktion, falls in eurer Umgebung freigegeben, oder in ChatGPT Images, Gemini bzw.
-  Firefly). Ziel ist ein Pinterest-Pin für den Blogartikel „Herbstwanderung mit Kindern:
-  7 Tipps" im Blog „Draußen-Notizen" von Fjordlicht – oder für ein Thema deiner Wahl.
+  **Gruppenarbeit, 3–4 Personen, ca. 25 Minuten.** Ihr arbeitet mit der Bilderzeugung in
+  **Copilot Chat**. Ziel ist ein Pinterest-Pin für den Blogartikel „Herbstwanderung mit
+  Kindern: 7 Tipps" im Blog „Draußen-Notizen" von Fjordlicht. Am Ende liegt ein geteiltes
+  Word-Dokument mit allen Prompts, Bildern und Beobachtungen vor – und der beste Prompt ist
+  gespeichert.
 
-  1. **Stufe 0:** Schreibe den Prompt so knapp, wie du ihn spontan tippen würdest.
-  2. **Stufe 1:** Ergänze Motiv, Umgebung und Stil.
-  3. **Stufe 2:** Ergänze Licht, Komposition, Kamera, Farbstimmung und Format (Pinterest:
-     Hochformat 2:3, oben Platz für den Titel).
-  4. **Variablentest:** Ändere in Stufe 2 nur **einen** Baustein – zuerst das Licht (z. B. von
-     „diffus, bedeckt" zu „goldene Stunde"), danach in einem zweiten Durchgang nur die
-     Perspektive.
-  5. **Dokumentieren.** Sammle Prompts und Bilder in einer Tabelle (Word oder Copilot Page)
-     und halte fest, was sich bei jeder Stufe und jeder Variation geändert hat. Speichere den
-     besten Prompt in der **Prompt Gallery**, damit du ihn in Kap. 32 wiederfindest.
+  1. **Prompts gemeinsam schreiben (8 Minuten).** Legt ein Word-Dokument im Ordner
+     „Fjordlicht-Kurs" einer Person an, teilt es und schreibt darin gemeinsam drei Stufen:
+     - **Stufe 0:** so knapp, wie ihr ihn spontan tippen würdet
+     - **Stufe 1:** plus Motiv, Umgebung und Stil
+     - **Stufe 2:** plus Licht, Komposition, Kamera, Farbstimmung und Format (Pinterest:
+       Hochformat 2:3, oben Platz für den Titel)
+
+     Leitet aus Stufe 2 zwei Varianten ab, in denen sich nur **ein** Baustein ändert:
+     **Licht** (z. B. von „diffus, bedeckt" zu „goldene Stunde") und **Perspektive**.
+  2. **Arbeitsteilung beim Erzeugen (10 Minuten).** Jede Prompt-Fassung läuft in einer neuen
+     Unterhaltung:
+     - Person 1: Stufe 0 und Stufe 1
+     - Person 2: Stufe 2
+     - Person 3: Variante Licht
+     - Person 4 (zu dritt: Person 1 zusätzlich): Variante Perspektive
+
+     **Zusätzlich** erzeugt Person 3 auch Stufe 2 noch einmal. So seht ihr, wie viel Variation
+     schon vom Zufall kommt.
+  3. **Vergleichen (5 Minuten).** Fügt alle Bilder ins Word-Dokument ein und notiert neben
+     jedem, was sich gegenüber der vorherigen Stufe geändert hat. Klärt: Ist der Unterschied
+     zwischen Stufe 2 und der Lichtvariante größer als der zwischen den beiden
+     Stufe-2-Bildern? Wer unsicher ist, lädt zwei Bilder in Copilot Chat hoch und lässt Licht,
+     Perspektive und Farbstimmung vergleichen.
+  4. **Sichern.** Einigt euch auf den besten Prompt. Jede Person speichert ihn in ihrer
+     **Prompt Gallery**, damit ihr ihn in Kap. 32 wiederfindet.
+
+  **Abschluss:** Eine Person zeigt im Plenum Stufe 0 neben dem besten Bild und nennt den
+  Baustein, der am meisten bewirkt hat.
 tip: |
-  Starte jede Stufe in einer neuen Unterhaltung. Sonst übernimmt Copilot Informationen aus
-  den vorherigen Bildern, und du misst nicht mehr die Wirkung deines Prompts. Wenn du dir
-  beim Unterschied unsicher bist, lade zwei Bilder hoch und lass Copilot Licht, Perspektive
-  und Farbstimmung beider Bilder vergleichen.
+  Startet jede Fassung in einer neuen Unterhaltung. Sonst können Informationen aus den
+  vorherigen Bildern einfließen, und ihr messt nicht mehr die Wirkung des Prompts. Der doppelte
+  Durchlauf von Stufe 2 ist euer Maßstab: Nur was deutlich über diesen Zufallsunterschied
+  hinausgeht, könnt ihr dem geänderten Baustein zuschreiben.
 solution: |
   Beispiel für Stufe 2:
 
@@ -34,16 +53,21 @@ solution: |
   Das Bild wird ein Pinterest-Pin, der Titel steht später oben.
   ```
 
-  | Variante | Typische Beobachtung |
+  Mögliche Beobachtungen – achtet darauf, welche bei euch auftreten:
+
+  | Variante | Beobachtung |
   |---|---|
-  | Stufe 0 | Durchschnittsbild, oft frontal und gestellt, kein Platz für Text |
+  | Stufe 0 | Durchschnittsbild, frontal und gestellt, kein Platz für Text |
   | Stufe 1 | Situation stimmt, Ausschnitt und Format zufällig |
-  | Stufe 2 | kanaltauglich, oben ruhige Fläche, markengerechte Farben; Hochformat wird umgesetzt oder angenähert |
-  | Licht geändert | Stimmung deutlich wärmer, oft auch kontrastreicher; Gesichter teils im Schatten |
+  | Stufe 2 | kanaltauglicher, oben ruhige Fläche, markengerechte Farben; Hochformat umgesetzt oder nur angenähert |
+  | Stufe 2, zweiter Durchlauf | andere Gesichter und Details, aber gleicher Bildaufbau und gleiche Stimmung |
+  | Licht geändert | Stimmung deutlich wärmer, kontrastreicher; Gesichter teils im Schatten |
   | Perspektive geändert | Wirkung verschiebt sich stark (z. B. Froschperspektive: Kinder wirken größer, abenteuerlicher) |
 
-  Der Satz zum Zweck am Ende hilft Chat-Bildmodellen wie Copilot, die ruhige Fläche wirklich
-  oben zu lassen (Abschnitt 30.2).
+  Der Satz zum Zweck am Ende hilft Chat-Bildmodellen, die ruhige Fläche oben zu lassen
+  (Abschnitt 30.2) – prüft an euren Bildern, ob das gelungen ist.
 
-  Eine gute Bearbeitung zeigt, dass **ein** geänderter Baustein sichtbar wirkt – und dass Licht
-  und Perspektive die Stimmung oft stärker verändern als zusätzliche Adjektive.
+  Bewertungskriterien: alle Stufen und beide Varianten erzeugt und im gemeinsamen Dokument
+  dokumentiert; Zufallsunterschied (zwei Stufe-2-Bilder) von der Wirkung eines geänderten
+  Bausteins unterschieden und benannt; Licht und Perspektive zeigen erkennbar mehr Wirkung
+  als zusätzliche Adjektive; bester Prompt in der Prompt Gallery gespeichert.

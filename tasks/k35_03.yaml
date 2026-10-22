@@ -1,4 +1,4 @@
-title: Das Agenturangebot kritisch prüfen
+title: Das Agenturangebot kritisch prüfen – Prompt-Duell und Rollen
 difficulty: 3
 question: |
   Eine Agentur schlägt Fjordlicht vor, die Frühjahrskampagne für die Regenjacke „Sølv"
@@ -13,24 +13,41 @@ question: |
   - Kosten: 40 Prozent unter einem klassischen Dreh
   ```
 
-  1. **Erstbewertung mit Copilot.** Gib das Angebot in Copilot Chat (Modus **Arbeit**) ein,
-     verweise auf `/Fjordlicht-Basisdaten` (falls nicht vorhanden: Markenstimme und Claims
-     einfügen) und lass jeden Punkt bewerten: realistisch umsetzbar, nur mit Einschränkungen
-     oder nicht vertretbar – getrennt nach Technik (Abschnitt 35.6), Marke und Recht.
-  2. **Gegenprüfen.** Prüfe Copilots Tabelle gegen das Kapitel. Wo ist die Bewertung zu
-     wohlwollend, wo fehlt eine Begründung? Wechsle für die Plattformlabels kurz in den Modus
-     **Web** und lass dir die aktuellen Regeln von Meta, TikTok und YouTube für realistische
-     KI-Inhalte mit Quellen nennen. Korrigiere die Tabelle (rechtlich genügen Verweise auf
+  **Gruppenarbeit:** 4 Personen (bei 3 entfällt der Advocatus Diaboli), etwa 30 Minuten.
+  **Am Ende liegt vor:** eine gemeinsame Bewertungstabelle, ein Gegenvorschlag und ein
+  Antwortentwurf an die Agentur in Outlook; im Plenum stellt ihr eure Entscheidung in zwei
+  Minuten vor.
+
+  1. **Prompt-Duell.** Teilt euch in zwei Paare. **Paar A** gibt das Angebot in Copilot Chat
+     (Modus **Arbeit**) mit einer kurzen, offenen Bitte ein: „Bewerte dieses Angebot." **Paar B**
+     schreibt einen strukturierten Prompt: Verweis auf `/Fjordlicht-Basisdaten` (aus Kap. 11),
+     Bewertung je Punkt als realistisch, nur mit Einschränkungen oder nicht vertretbar, getrennt
+     nach Technik (Abschnitt 35.6), Marke und Recht. Vergleicht beide Antworten: Welche ist zu
+     wohlwollend, wo fehlt eine Begründung?
+  2. **Rollen für die Gegenprüfung.** Verteilt nun die Rollen:
+     - **Technik** prüft die Bewertung gegen Abschnitt 35.6 (Länge, Konsistenz, Produkttreue).
+     - **Marke und Claims** prüft gegen Markenstimme und Claim-Liste aus den Basisdaten.
+     - **Plattformen** lässt sich in Copilot Chat im Modus **Web** die aktuellen Regeln von Meta,
+       TikTok und YouTube für realistische KI-Inhalte mit Quellen nennen und prüft Datum und
+       Herkunft der Quellen.
+     - **Advocatus Diaboli** verteidigt das Angebot, vor allem den Kostenpunkt, und zwingt die
+       Gruppe, jede Ablehnung zu begründen.
+
+     Führt die Ergebnisse in einer gemeinsamen Tabelle zusammen (rechtlich genügen Verweise auf
      Kap. 34 und 39).
-  3. **Gegenvorschlag und Antwort.** Formuliere einen **Gegenvorschlag**, der KI-Video sinnvoll
-     einsetzt, und lass in Outlook von Copilot einen Antwortentwurf an die Agentur erstellen.
-     Nutze das Coaching für den Entwurf, damit die Antwort klar, aber nicht abweisend ist.
+  3. **Gegenvorschlag und Antwort.** Formuliert gemeinsam einen **Gegenvorschlag**, der KI-Video
+     sinnvoll einsetzt. Eine Person lässt in Outlook von Copilot einen Antwortentwurf an die
+     Agentur erstellen und nutzt das **Coaching durch Copilot**. Die anderen lesen mit und prüfen:
+     Ist die Antwort klar, aber nicht abweisend? Steht die Ablehnung der KI-„Kundinnen" noch
+     unmissverständlich drin?
 tip: |
-  Trenne zwei Fragen: „Geht das technisch?" und „Dürfen und wollen wir das?". Manche Punkte
+  Trennt zwei Fragen: „Geht das technisch?" und „Dürfen und wollen wir das?". Manche Punkte
   scheitern an der Technik, andere an Täuschung oder an der Markenstimme – und einer an beidem.
-  Copilot bewertet Kostenargumente oft zu freundlich; frag ausdrücklich nach versteckten Kosten.
+  Achtet im Prompt-Duell darauf, ob die offene Anfrage den Kostenpunkt ungeprüft übernimmt und
+  ob der strukturierte Prompt das ändert. Der Advocatus Diaboli macht seinen Job gut, wenn die
+  Gruppe danach bessere Begründungen hat, nicht wenn sie nachgibt.
 solution: |
-  Beispiel-Prompt für die Erstbewertung:
+  Beispiel-Prompt für Paar B:
 
   ```text
   Prüfe das folgende Agenturangebot für Fjordlicht kritisch.
@@ -53,10 +70,12 @@ solution: |
   | Superlativ-Claim | nicht vertretbar | widerspricht Markenstimme (keine Superlative, kein Greenwashing), nicht belegbar, UWG-Risiko |
   | 40 % günstiger | offen | Iterationen, Credits, Prüfaufwand und Nachbearbeitung fehlen in der Rechnung |
 
-  Typische Schwächen der Copilot-Erstbewertung: Die Hauptfigur wird als „realistisch" eingestuft,
-  der Kostenpunkt ungeprüft übernommen oder die KI-Kundinnen werden nur als
-  „kennzeichnungspflichtig" statt als Täuschung bewertet. Wer das korrigiert, hat die Übung
-  verstanden.
+  Worauf ihr beim Vergleich der beiden Paare achten solltet: ob eine Antwort die Hauptfigur als
+  „realistisch" einstuft, den Kostenpunkt ungeprüft übernimmt oder die KI-Kundinnen nur als
+  „kennzeichnungspflichtig" statt als Täuschung bewertet. Wer das in der Gruppentabelle
+  korrigiert, hat die Übung verstanden. Typische Einwände des Advocatus Diaboli („Die Kundinnen
+  sind doch gekennzeichnet", „40 Prozent sind 40 Prozent") lassen sich mit Täuschung und
+  versteckten Kosten (Iterationen, Prüfaufwand) beantworten.
 
   Gegenvorschlag:
 
@@ -78,5 +97,8 @@ solution: |
   ```
 
   Bewertungskriterien: Jeder Punkt wird bewertet, technische und rechtliche Gründe werden
-  getrennt, Copilots Erstbewertung wird nachweisbar korrigiert, die Labelregeln sind mit Quelle
-  belegt, und der Gegenvorschlag nutzt KI dort, wo Konsistenz und Produkttreue unkritisch sind.
+  getrennt. Die Gruppe hat die Unterschiede zwischen offener und strukturierter Anfrage benannt
+  und erklärt, woran sie liegen. Copilots Erstbewertung wird nachweisbar korrigiert, die
+  Labelregeln sind mit Quelle und Datum belegt, jeder Einwand des Advocatus Diaboli ist
+  beantwortet. Der Gegenvorschlag nutzt KI dort, wo Konsistenz und Produkttreue unkritisch sind,
+  und der Outlook-Entwurf bleibt nach dem Coaching in der Sache klar.

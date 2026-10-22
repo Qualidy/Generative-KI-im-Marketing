@@ -1,10 +1,14 @@
-title: Newsletter-Betreffzeilen mit Copilot in Excel auswerten
+title: Newsletter-Betreffzeilen arbeitsteilig mit Copilot in Excel auswerten
 difficulty: 2
 question: |
-  Diese Übung machst du in **Excel mit Copilot**. Speichere den folgenden fiktiven
-  Fjordlicht-Export als Textdatei `newsletter.csv`, öffne sie in Excel und speichere sie als
-  „Newsletter-Analyse.xlsx" im OneDrive-Ordner „Fjordlicht-Kurs". Formatiere den Bereich als
-  Tabelle.
+  **Gruppe:** 3–4 Personen · **Dauer:** etwa 30 Minuten · **Format:** Arbeitsteilung in einer
+  geteilten Excel-Datei · **Am Ende liegen vor:** „Newsletter-Analyse.xlsx" mit Ergebnistabelle,
+  Diagramm und nachgerechnetem Wert sowie zwei gemeinsam formulierte Testhypothesen.
+
+  **Vorbereitung (eine Person):** Speichere den folgenden fiktiven Fjordlicht-Export als
+  Textdatei `newsletter.csv`, öffne sie in Excel und speichere sie als „Newsletter-Analyse.xlsx"
+  in deinem OneDrive-Ordner „Fjordlicht-Kurs". Formatiere den Bereich als Tabelle, prüfe, ob die
+  Zahlen als Zahlen erkannt wurden, und teile die Datei mit der Gruppe.
 
   ```text
   datum;betreff;thema;öffnungsrate;klickrate
@@ -20,28 +24,37 @@ question: |
   2026-05-14;Tind Rucksack: 20 Prozent leichter;Produkt;35,1;4,6
   ```
 
-  1. Lass **Copilot in Excel** eine Spalte „frage" ergänzen (ja, wenn der Betreff mit „?" endet)
-     und prüfen, ob Frageform und **Thema** mit Öffnungs- und Klickrate zusammenhängen. Nutze
-     einen Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5) und fordere Fallzahlen an.
-  2. Lass dir die **Formeln** zeigen, mit denen Copilot gerechnet hat, und rechne einen
-     Mittelwert selbst mit `MITTELWERTWENN` nach.
-  3. Lass Copilot ein Diagramm zu Öffnungs- und Klickrate nach Thema erstellen.
-  4. Formuliere zwei **Hypothesen** für einen A/B-Test – inklusive der Einschränkung, warum die
-     Daten allein nicht reichen.
+  **Aufteilung (alle arbeiten gleichzeitig in der geteilten Datei mit Copilot in Excel):**
+
+  - **Person 1 – Frageform:** Lass Copilot eine Formelspalte „frage" vorschlagen (ja, wenn der
+    Betreff mit „?" endet), prüfe die Formel vor dem Einfügen und lass Copilot Öffnungs- und
+    Klickrate nach „frage" vergleichen, mit Fallzahlen.
+  - **Person 2 – Thema:** Lass Copilot Öffnungs- und Klickrate nach Thema zusammenfassen
+    (Produkt gegen alle übrigen Themen), mit Fallzahlen. Nutze einen Prompt nach dem
+    P.R.O.M.P.T.-Framework (Kap. 5).
+  - **Person 3 – Diagramm:** Lass Copilot ein Diagramm zu Öffnungs- und Klickrate nach Thema
+    erstellen und prüfe, ob Achsen und Beschriftungen stimmen.
+  - **Person 4 – Prüferin** (bei drei Personen übernimmt Person 3 diese Rolle zusätzlich):
+    Rechne einen Mittelwert aus Person 1 und einen aus Person 2 selbst mit `MITTELWERTWENN`
+    nach und trage beide Werte samt Formel in ein Blatt „Prüfung" ein.
+
+  **Zusammenführen (10 Minuten):** Stellt euch die Ergebnisse gegenseitig vor. Formuliert
+  gemeinsam zwei **Hypothesen** für einen A/B-Test (Kap. 16) – jeweils mit der Einschränkung,
+  warum die Daten allein nicht reichen. Wer das „Fjordlicht-Testlog.xlsx" aus Kap. 16 angelegt
+  hat, trägt die Hypothesen dort als geplante Tests ein.
 tip: |
-  Prüfe nach dem Öffnen, ob Excel die Zahlen als Zahlen erkannt hat (Dezimalkomma, Semikolon) –
-  eine falsch eingelesene Spalte ist die häufigste Fehlerquelle (Abschnitt 20.4). Alternativ kannst
-  du die Datei in Copilot Chat hochladen oder den Agenten **Analyst** nutzen, falls freigegeben;
-  dann lass dir den Rechenweg ebenfalls zeigen. Und schau genau hin, was mit der Klickrate
-  passiert: Was öffnet, ist nicht unbedingt das, was klickt.
+  Prüft nach dem Öffnen, ob Excel die Zahlen als Zahlen erkannt hat (Dezimalkomma, Semikolon) –
+  eine falsch eingelesene Spalte ist die häufigste Fehlerquelle (Abschnitt 20.4). Copilot in Excel
+  braucht eine als Tabelle formatierte Datei in OneDrive oder SharePoint. Achtet beim
+  Zusammenführen darauf, ob die Befunde von Person 1 und Person 2 zusammenpassen – und schaut
+  genau hin, was mit der Klickrate passiert: Was öffnet, ist nicht unbedingt das, was klickt.
 solution: |
-  Beispiel-Prompt für Copilot in Excel:
+  Beispiel-Prompt für Person 2 (Copilot in Excel):
 
   ```text
   Persona: Du bist Datenanalystin im Content-Marketing.
-  Request: Ergänze eine Spalte "frage" (ja, wenn der Betreff mit ? endet).
-  Vergleiche Öffnungs- und Klickrate nach "frage" und nach "thema"
-  (Produkt gegen alle übrigen Themen).
+  Request: Vergleiche Öffnungs- und Klickrate nach "thema" (Produkt gegen
+  alle übrigen Themen).
   Output: Übersichtstabelle mit Mittelwert und Anzahl je Gruppe, danach
   drei Befunde in Stichpunkten.
   Modifier: Nenne immer die Fallzahl, kennzeichne Gruppen unter 10 Fällen als
@@ -63,12 +76,21 @@ solution: |
   (Tabellen- und Spaltennamen ggf. anpassen).
 
   Befund: Produkt-Betreffzeilen werden seltener geöffnet, aber häufiger geklickt – wer öffnet,
-  hat Kaufinteresse. Alle Gruppen haben unter 10 Fällen, also **unsicher**.
+  hat Kaufinteresse. Alle Gruppen haben unter 10 Fällen, also **unsicher**. Beim Zusammenführen
+  sollte auffallen: Beide Frage-Betreffzeilen gehören zu Themen außer Produkt – Frageform und
+  Thema sind vermischt.
 
   Hypothesen: (1) „Ein Produkt-Newsletter mit Frage-Betreff erzielt eine höhere Öffnungsrate
   als mit Produktnamen-Betreff, ohne Klickrate zu verlieren." (2) „Ein Wissens-Newsletter mit
   einem Produkt-Kasten am Ende erzielt mehr Klicks als ohne." Die Daten reichen nicht als
   Beleg, weil Thema und Betreffform vermischt sind und die Fallzahl klein ist.
 
-  Bewertungskriterien: Daten korrekt eingelesen, Fallzahlen in der Ergebnistabelle, ein selbst
-  nachgerechneter Wert, Hypothesen statt Regeln.
+  Bewertungskriterien:
+
+  - Daten korrekt eingelesen, Fallzahlen in jeder Ergebnistabelle, Formel für „frage" vor dem
+    Einfügen geprüft.
+  - Zwei selbst nachgerechnete Werte im Blatt „Prüfung"; Abweichungen zu Copilot sind benannt
+    und erklärt.
+  - Die Teilergebnisse wurden zusammengeführt; die Gruppe hat erkannt, dass Frageform und Thema
+    sich überschneiden.
+  - Hypothesen statt Regeln, jeweils mit genau einer veränderten Variable.

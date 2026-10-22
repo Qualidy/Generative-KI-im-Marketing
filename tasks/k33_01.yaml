@@ -1,6 +1,10 @@
-title: Konsistenzproblem erkennen und gezielt bearbeiten
+title: Konsistenzproblem erkennen – und gezielt nachbessern
 difficulty: 1
 question: |
+  **Gruppe:** 3–4 Personen (auch als Paar machbar), ca. 20 Minuten. Am Ende liegen eine
+  gemeinsame Zuordnungstabelle (Teams-Kanal oder geteiltes Word-Dokument) und ein
+  Vorher-Nachher-Vergleich mit einer gemeinsamen Schlussfolgerung vor.
+
   Das Fjordlicht-Team hat für die Herbstkampagne fünf Bilder erzeugt und meldet diese Probleme:
 
   1. Die Wanderin hat auf Bild 3 plötzlich blonde statt dunkle Haare.
@@ -10,38 +14,56 @@ question: |
      in einer Schrift, die nicht zur Marke gehört.
   5. Auf Bild 2 ist alles gut, nur ein Ast ragt der Person vor das Gesicht.
 
-  **Schritt 1 – zuordnen.** Ordne jedem Problem die **Konsistenzebene** aus Abschnitt 33.1 zu
-  und nenne das passende **Mittel** – generieren, bearbeiten, Referenz, Layout oder echtes Foto.
+  **Schritt 1 – zuordnen (erst einzeln, dann gemeinsam).** Jede Person ordnet still allen fünf
+  Problemen die **Konsistenzebene** aus Abschnitt 33.1 und das passende **Mittel** zu –
+  generieren, bearbeiten, Referenz, Layout oder echtes Foto. Danach vergleicht ihr: Wo seid ihr
+  euch einig, wo nicht? Einigt euch auf eine gemeinsame Tabelle.
 
-  **Schritt 2 – ausprobieren.** Stelle Problem 5 in Copilot nach: Erzeuge ein Bild einer
-  Wanderin im Wald, bei der ein Ast vor dem Gesicht hängt. Bitte Copilot dann im selben Chat,
-  **nur** den Ast zu entfernen, und sag ausdrücklich, was gleich bleiben soll. Vergleiche
-  Vorher und Nachher: Hat Copilot nur den Ast geändert – oder das Bild teilweise neu erzeugt?
+  **Schritt 2 – ausprobieren.** Stellt Problem 5 in Copilot Chat nach: Eine Person erzeugt ein
+  Bild einer Wanderin im Wald, bei der ein Ast vor dem Gesicht hängt, und teilt den Chat-Prompt
+  mit der Gruppe. Jede Person erzeugt das Ausgangsbild in ihrem eigenen Chat und bittet Copilot
+  dann im selben Chat, den Ast zu entfernen – mit verteilten Formulierungen:
+
+  - Person 1 und 3: nur „Entferne den Ast vor dem Gesicht."
+  - Person 2 und 4: zusätzlich ausdrücklich, was gleich bleiben soll (Gesicht, Jacke, Haltung,
+    Hintergrund, Ausschnitt, Farbwelt).
+
+  Legt Vorher und Nachher nebeneinander. Achtet darauf: Hat Copilot nur den Ast geändert – oder
+  hat sich auch anderes verändert? Macht die zusätzliche Anweisung einen sichtbaren Unterschied?
 tip: |
-  Frage dich bei jedem Problem: Lässt es sich durch eine bessere Generierung überhaupt lösen –
-  oder gehört es in einen anderen Arbeitsschritt? Lege die beiden Bilder aus Schritt 2 zum
-  Vergleich nebeneinander und schau auf Gesicht, Jacke und Hintergrund.
+  Fragt euch bei jedem Problem: Lässt es sich durch eine bessere Generierung überhaupt lösen –
+  oder gehört es in einen anderen Arbeitsschritt? Schaut beim Vergleich in Schritt 2 gezielt auf
+  Gesicht, Jacke und Hintergrund. Weil mehrere Personen dieselbe Anweisung geben, seht ihr, ob ein
+  Ergebnis Zufall war oder ein Muster.
 solution: |
   | Nr. | Ebene | Mittel |
   |---|---|---|
-  | 1 | Figur | Steckbrief wortgleich im Prompt, Referenzbild aus dem ersten gelungenen Bild, ggf. Haare per Bearbeitung angleichen |
+  | 1 | Figur | Steckbrief wortgleich im Prompt, erstes gelungenes Bild als Referenz, ggf. Haare per Bearbeitung angleichen |
   | 2 | Produkt | echtes Produktfoto verwenden; generierte Produkte sind nie zuverlässig |
   | 3 | Stil | Bildsprache-Baustein wortgleich verwenden, Stilreferenz, ggf. Himmel und Farbe per Bearbeitung anpassen |
-  | 4 | Layout | Text aus dem Bild entfernen, Headline im Layout-Werkzeug in Hausschrift setzen |
-  | 5 | Szene (lokaler Fehler) | Bearbeitung bzw. Inpainting: nur den Ast entfernen, Rest bleibt gleich |
+  | 4 | Layout | Text aus dem Bild nehmen, Headline im Layout-Werkzeug in Hausschrift setzen |
+  | 5 | Szene (lokaler Fehler) | gezielt bearbeiten: nur den Ast entfernen, Rest bleibt gleich |
 
-  Bearbeitungsprompt für Schritt 2:
+  Anweisung mit Festlegung für Schritt 2:
 
   ```text
   Entferne nur den Ast vor dem Gesicht der Person. Person, Gesicht, Jacke,
   Haltung, Hintergrund, Bildausschnitt und Farbwelt bleiben exakt gleich.
   ```
 
-  Typische Beobachtung: Der Ast verschwindet, aber Gesicht, Jackendetails oder Bäume im
-  Hintergrund verändern sich leicht mit – Chat-Werkzeuge erzeugen das Bild je nach Funktion
-  teilweise neu (33.3). Für pixelgenaue Korrekturen ist ein Werkzeug mit markiertem Bereich
-  (z. B. Generatives Füllen in Photoshop) verlässlicher.
+  Worauf ihr beim Vergleich achten könnt: Verschwindet der Ast? Verändern sich Gesicht,
+  Jackendetails oder Bäume im Hintergrund leicht mit? Fällt das bei den Bildern mit
+  ausdrücklicher Festlegung geringer aus? Wenn sich mehr verändert als verlangt, ist das ein
+  Hinweis darauf, dass das Bild teilweise neu erzeugt wurde (33.3). Für pixelgenaue Korrekturen
+  nennt das Kapitel Werkzeuge mit markiertem Bereich, etwa Generatives Füllen in Photoshop.
 
   Kern der Übung: Nur Nr. 1 und 3 sind echte Generierungsprobleme. Nr. 2 und 4 lassen sich mit
   Bild-KI grundsätzlich nicht verlässlich lösen, Nr. 5 wäre durch Neugenerierung sogar
   verschlimmert worden, weil das gute Bild verloren ginge.
+
+  Bewertungskriterien: Die gemeinsame Tabelle ordnet alle fünf Probleme richtig zu, und
+  Meinungsverschiedenheiten aus der Einzelzuordnung sind besprochen; alle Vorher-Nachher-Paare
+  liegen nebeneinander; Unterschiede zwischen den Ergebnissen der Gruppenmitglieder sind benannt
+  und darauf geprüft, ob sie an der Formulierung oder am Zufall liegen; die Gruppe formuliert
+  eine gemeinsame Regel, z. B. „Bei Nachbesserung immer sagen, was gleich bleibt, und Vorher mit
+  Nachher vergleichen".

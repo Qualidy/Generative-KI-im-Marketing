@@ -1,4 +1,4 @@
-title: Die Geschäftsführerin als digitaler Zwilling
+title: Die Geschäftsführerin als digitaler Zwilling – Vorlage im Team
 difficulty: 3
 question: |
   Die Geschäftsführerin von Fjordlicht, Frau Brink (fiktiv), ist von einer HeyGen-Demo
@@ -12,33 +12,43 @@ question: |
   - Kennzeichnung "nicht nötig, ich bin es ja selbst"
   ```
 
-  1. **Analyse mit Copilot.** Lass Copilot Chat (Modus **Arbeit**) die **Chancen** und die
-     **Risiken** in vier Dimensionen aufstellen: Recht (Einwilligung, Art. 50 AI Act,
-     Plattformregeln), Sicherheit (Missbrauch der Stimme, Verweis Kap. 38), Qualität/Freigabe,
-     Markenwirkung. Hake nach, wenn Copilot Einwilligung und Transparenz vermischt.
-  2. **Entscheidungsvorlage in Word.** Lass Copilot in Word aus dem Chat-Ergebnis eine
-     einseitige Entscheidungsvorlage entwerfen (Ausgangslage, Chancen, Risiken, Empfehlung) und
-     ergänze selbst eine **Empfehlung** mit mindestens fünf konkreten, prüfbaren Regeln, unter
-     denen das Vorhaben vertretbar ist – oder begründe, warum du abrätst.
-  3. **Antwort an die Geschäftsführerin.** Lass in Outlook von Copilot eine kurze Antwort auf
-     ihre Mail entwerfen, die die Vorlage anhängt und den Punkt Kennzeichnung klar, aber
-     respektvoll widerspricht. Nutze das Coaching für den Entwurf und passe den Ton selbst an.
+  **Gruppenarbeit:** 4 Personen (bei 3 übernimmt eine Person zwei Dimensionen), etwa 30 Minuten.
+  **Am Ende liegt vor:** eine einseitige Entscheidungsvorlage in einem geteilten Word-Dokument und
+  ein Antwortentwurf in Outlook; im Plenum nennt ihr eure Empfehlung in einer Minute.
+
+  1. **Arbeitsteilung nach Dimensionen.** Jede Person übernimmt eine Dimension und lässt Copilot
+     Chat (Modus **Arbeit**) Chancen und Risiken dafür aufstellen: **Recht** (Einwilligung,
+     Art. 50 AI Act, Plattformregeln), **Sicherheit** (Missbrauch der Stimme, Verweis Kap. 38),
+     **Qualität/Freigabe**, **Markenwirkung**. Hakt nach, wenn Copilot Einwilligung und
+     Transparenz vermischt.
+  2. **Entscheidungsvorlage in Word.** Eine Person legt im Ordner „Fjordlicht-Kurs" ein
+     Word-Dokument „Entscheidung-Avatar-GF" an und teilt es; alle fügen ihre Ergebnisse unter
+     ihrer Dimension ein. Markiert die gesammelten Ergebnisse und lasst Copilot in Word sie zu
+     einer einseitigen Vorlage umschreiben (Ausgangslage, Chancen, Risiken, Empfehlung). Ergänzt gemeinsam eine **Empfehlung** mit
+     mindestens fünf konkreten, prüfbaren Regeln, unter denen das Vorhaben vertretbar ist – oder
+     begründet, warum ihr abratet. Jede Person prüft mit „Änderungen nachverfolgen", ob ihre
+     Dimension in der Kurzfassung noch korrekt steht.
+  3. **Antwort und Rollenspiel.** Eine Person lässt in Outlook von Copilot eine kurze Antwort an
+     Frau Brink entwerfen, die die Vorlage anhängt und beim Punkt Kennzeichnung klar, aber
+     respektvoll widerspricht, und nutzt das **Coaching durch Copilot**. Eine zweite Person liest
+     den Entwurf in der Rolle von Frau Brink und reagiert spontan. Die Gruppe prüft: Ist die
+     Kernaussage noch erkennbar? Passt den Ton danach selbst an.
 tip: |
   Der Kern liegt im letzten Punkt: Dass die Geschäftsführerin selbst zustimmt, klärt die
-  Einwilligung – nicht die Frage, ob das Publikum weiß, dass sie gar nicht gesprochen hat.
-  Copilot formuliert Widerspruch gegenüber Vorgesetzten gern sehr weich; prüfe, ob deine
-  Kernaussage im Entwurf noch erkennbar ist.
+  Einwilligung – nicht die Frage, ob das Publikum weiß, dass sie gar nicht gesprochen hat. Achtet
+  darauf, ob Copilots Entwurf den Widerspruch gegenüber der Vorgesetzten so weich formuliert, dass
+  er verschwindet. Das Rollenspiel zeigt schnell, ob die Mail ihr Ziel erreicht.
 solution: |
-  Beispiel-Prompt für die Analyse in Copilot Chat:
+  Beispiel-Prompt für die Dimension Recht in Copilot Chat (für die anderen Dimensionen
+  entsprechend anpassen):
 
   ```text
   Unsere Geschäftsführerin möchte einen KI-Avatar mit geklonter Stimme von
   sich für wöchentliche Social-Videos (Vorschlag unten). Stelle Chancen und
-  Risiken in vier Dimensionen auf: Recht (Einwilligung, Art. 50 Abs. 4 AI Act,
-  Plattformlabels), Sicherheit (Missbrauch der Stimme), Qualität/Freigabe,
-  Markenwirkung. Trenne ausdrücklich Einwilligung (stimmt die Person zu?) und
-  Transparenz (weiß das Publikum, dass es ein Avatar ist?).
-  Ausgabe: Tabelle, danach fünf prüfbare Regeln. Keine Rechtsberatung,
+  Risiken nur für die Dimension Recht auf: Einwilligung, Art. 50 Abs. 4
+  AI Act, Plattformlabels. Trenne ausdrücklich Einwilligung (stimmt die
+  Person zu?) und Transparenz (weiß das Publikum, dass es ein Avatar ist?).
+  Ausgabe: Tabelle, danach zwei prüfbare Regeln. Keine Rechtsberatung,
   kennzeichne unsichere Punkte.
   [Vorschlag einfügen]
   ```
@@ -71,6 +81,13 @@ solution: |
   gegenüber dem Publikum. Schlage einen 20-minütigen Termin zur Abstimmung vor.
   ```
 
-  Bewertungskriterien: Die Antwort trennt Einwilligung und Transparenz, benennt die
-  Deepfake-Konstellation korrekt, macht prüfbare Regeln statt allgemeiner Mahnungen und
-  enthält im Mail-Entwurf einen erkennbaren, begründeten Widerspruch zur fehlenden Kennzeichnung.
+  Typische Reaktion im Rollenspiel: „Aber ich bin es doch wirklich." Eine gute Mail beantwortet
+  das schon vorab: Das Gesicht ist echt, das Sprechen nicht – und genau das muss das Publikum
+  wissen.
+
+  Bewertungskriterien: Alle vier Dimensionen sind bearbeitet und in der Vorlage korrekt
+  wiedergegeben; die Gruppe hat geprüft, ob die Copilot-Kurzfassung Aussagen einzelner
+  Dimensionen verkürzt oder verfälscht hat. Die Vorlage trennt Einwilligung und Transparenz,
+  benennt die Deepfake-Konstellation korrekt und enthält prüfbare Regeln statt allgemeiner
+  Mahnungen. Der Mail-Entwurf enthält nach Coaching und Rollenspiel einen erkennbaren,
+  begründeten Widerspruch zur fehlenden Kennzeichnung.

@@ -1,8 +1,10 @@
-title: TTS, Klon oder Deepfake?
+title: TTS, Klon oder Deepfake? – Einordnung in der Gruppe
 difficulty: 1
 question: |
-  Diese Übung machst du in **Copilot Chat** (Microsoft-365-Copilot-App, Modus **Arbeit**). Copilot
-  selbst klont keine Stimmen – du nutzt es hier als Sparringspartner für die Einordnung.
+  **Gruppenarbeit:** 3–4 Personen, ca. 20 Minuten. Jede Person arbeitet in ihrem eigenen
+  **Copilot Chat** (Microsoft-365-Copilot-App, Modus **Arbeit**). Copilot selbst klont keine
+  Stimmen – ihr nutzt es hier als Sparringspartner für die Einordnung. Am Ende liegt eine
+  gemeinsame Einordnungstabelle in einer geteilten **Copilot Page** vor.
 
   ```text
   1. Eine Katalogstimme von ElevenLabs liest die Pflegehinweise zum Fleece „Skog" vor.
@@ -14,20 +16,30 @@ question: |
      über „zu warme Jacken" schimpft – ohne dessen Wissen.
   ```
 
-  1. Gib Copilot die vier Fälle und lass jeden einordnen: **Standard-TTS** oder **Voice
-     Cloning**? Voraussichtlich **Deepfake** im Sinne von Art. 50 Abs. 4 AI Act, der offengelegt
-     werden muss? Verlange eine Tabelle mit Begründung.
-  2. Ordne die Fälle **selbst** mit der Tabelle aus Abschnitt 38.5 ein und vergleiche mit der
-     Copilot-Antwort. Markiere jede Abweichung.
-  3. Stelle Copilot eine Nachfrage: „Bei welchem Fall reicht eine Kennzeichnung nicht aus, und
-     warum?" Prüfe, ob die Antwort Kennzeichnung und Zulässigkeit sauber trennt.
+  1. **Allein (3 Minuten):** Jede Person ordnet die vier Fälle mit der Tabelle aus Abschnitt
+     38.5 ein: **Standard-TTS** oder **Voice Cloning**? Voraussichtlich **Deepfake** im Sinne von
+     Art. 50 Abs. 4 AI Act? Noch nicht austauschen.
+  2. **Gruppenkonsens:** Legt eure Einordnungen nebeneinander. Wo ihr euch uneinig seid,
+     diskutiert, bis ihr eine gemeinsame Antwort habt – oder haltet den Dissens fest.
+  3. **Gleicher Prompt, mehrere Ergebnisse:** Alle führen **denselben** Prompt (siehe Tipp bzw.
+     Lösung) in ihrem eigenen Copilot Chat aus. Vergleicht die Antworten: Stimmen sie
+     untereinander überein? Wo weichen sie von eurem Gruppenkonsens ab?
+  4. **Nachfrage:** Eine Person stellt in ihrem Chat die Frage „Bei welchem Fall reicht eine
+     Kennzeichnung nicht aus, und warum?" Die anderen prüfen, ob die Antwort Kennzeichnung und
+     Zulässigkeit sauber trennt.
+  5. **Abschluss:** Die Person mit der überzeugendsten Antwort übernimmt sie in eine **Copilot
+     Page** und teilt sie mit der Gruppe. Ergänzt dort gemeinsam eine Spalte „Unsere
+     Einordnung" und markiert jede Abweichung. Bereitet für das Plenum einen Satz vor: Bei
+     welchem Fall lagen Copilot oder eure Gruppe am weitesten auseinander?
 tip: |
   Entscheidend für Art. 50 Abs. 4 ist, ob eine **reale Person** nachgebildet wird und der Inhalt
   fälschlich als echt erscheinen würde. Die Freigabe des Textes ändert nichts daran, dass die
-  Stimme synthetisch ist. Achte bei der Copilot-Antwort darauf, ob sie Satire als „ausgenommen"
-  behandelt – das wäre zu großzügig.
+  Stimme synthetisch ist. Achtet beim Vergleich darauf, ob eine der Copilot-Antworten Satire als
+  „ausgenommen" behandelt – das wäre zu großzügig. Dass vier Personen mit demselben Prompt
+  unterschiedliche Antworten bekommen können, ist kein Fehler, sondern zeigt, warum ihr eine
+  KI-Einordnung nie ungeprüft übernehmt.
 solution: |
-  Beispiel-Prompt für Schritt 1:
+  Beispiel-Prompt für Schritt 3 (für alle identisch):
 
   ```text
   Ordne die folgenden vier Fälle ein. Antworte als Tabelle mit den Spalten
@@ -48,11 +60,18 @@ solution: |
   | 3 | Voice Cloning | ja | Textfreigabe ersetzt keine Kennzeichnung; zudem Missbrauchsvorlage für CEO-Fraud |
   | 4 | Voice Cloning | ja, in eingeschränkter Form wegen Satire | ohne Einwilligung Verletzung des Persönlichkeitsrechts – so nicht veröffentlichen |
 
-  Typische Schwächen der Copilot-Antwort: Fall 3 wird wegen der schriftlichen Freigabe als
-  unproblematisch eingestuft, oder Fall 4 gilt als „Satire, daher keine Pflicht". Auf die
-  Nachfrage in Schritt 3 sollte Fall 4 genannt werden: Die eingeschränkte Kennzeichnung bei
+  Worauf die Gruppe beim Vergleich achten sollte: ob eine Antwort Fall 3 wegen der schriftlichen
+  Freigabe als unproblematisch einstuft oder Fall 4 als „Satire, daher keine Pflicht". Auf die
+  Nachfrage in Schritt 4 sollte Fall 4 genannt werden: Die eingeschränkte Kennzeichnung bei
   Satire löst nur die AI-Act-Frage. Das Persönlichkeitsrecht des Bergsteigers ist davon
   unabhängig verletzt.
 
-  Bewertungskriterien: alle vier Fälle selbst korrekt eingeordnet, mindestens eine Abweichung
-  oder Ungenauigkeit der Copilot-Antwort benannt, Kennzeichnung und Zulässigkeit getrennt.
+  Bewertungskriterien:
+
+  - Alle vier Fälle sind in der Gruppe korrekt eingeordnet; ein verbleibender Dissens ist
+    begründet festgehalten.
+  - Abweichungen zwischen den Copilot-Antworten der Gruppenmitglieder wurden benannt (z. B.
+    unterschiedliche Einstufung von Fall 2 oder 4) und erklärt.
+  - Mindestens eine Ungenauigkeit einer Copilot-Antwort ist in der Page markiert.
+  - Kennzeichnung und Zulässigkeit sind getrennt; die Gruppe kann ihr Ergebnis in einem Satz
+    im Plenum vorstellen.

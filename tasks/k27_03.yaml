@@ -1,8 +1,8 @@
-title: Ausbauvorschläge bewerten und beantworten
+title: Ausbauvorschläge im Gruppen-Duell bewerten
 difficulty: 3
 question: |
-  Die Geschäftsführung von Fjordlicht will den CRM-Chatbot ausbauen. Drei Vorschläge liegen
-  auf dem Tisch:
+  **Gruppenarbeit, 4 Personen in zwei Paaren, ca. 30 Minuten.** Die Geschäftsführung von
+  Fjordlicht will den CRM-Chatbot ausbauen. Drei Vorschläge liegen auf dem Tisch:
 
   - **A:** Der Bot soll bei Lead-Stufe A automatisch einen Termin im Kalender des Vertriebs
     buchen und eine Auftragsbestätigung mit Richtpreis per Mail senden.
@@ -10,12 +10,12 @@ question: |
     Mitarbeiterin der anfragenden Firma erfassen, „damit wir schneller liefern können".
   - **C:** Der KI-Hinweis am Anfang soll entfallen, „weil er Leute abschreckt".
 
-  1. **Eigene Bewertung zuerst.** Bewerte jeden Vorschlag in drei Dimensionen: **Nutzen**,
-     **rechtliches bzw. Datenschutzrisiko**, **Haftungs- oder Reputationsrisiko**. Formuliere
-     eine Empfehlung: umsetzen, abgewandelt umsetzen oder ablehnen. Beschreibe bei
-     „abgewandelt" die konkrete Abwandlung.
-  2. **Gegenprobe in Copilot Chat.** Lass Copilot die Position der Geschäftsführung so stark
-     wie möglich vertreten:
+  Am Ende liegen eine gemeinsame Bewertungstabelle und ein abgestimmter Mailentwurf an die
+  Geschäftsführung vor.
+
+  1. **Zwei Paare, zwei Aufträge (10 Minuten).**
+     - **Paar „Geschäftsführung"** lässt Copilot Chat die Position der Geschäftsführung so
+       stark wie möglich vertreten:
 
   ```text
   Du bist Geschäftsführer eines Textilunternehmens und willst die drei folgenden
@@ -24,16 +24,28 @@ question: |
   [Vorschläge A bis C einfügen]
   ```
 
-     Prüfe: Welches Argument ändert deine Bewertung, welches hält deinem Bezug auf
-     Art. 50 Abs. 1 AI Act und die Datenminimierung (Kap. 4) nicht stand?
-  3. **Antwort schreiben.** Entwirf mit **Copilot in Outlook** eine kurze Antwortmail an die
-     Geschäftsführung (höchstens 150 Wörter) mit deinen drei Empfehlungen. Nutze das
-     Coaching für Entwürfe, um Ton und Klarheit zu prüfen. Nicht senden.
+     - **Paar „Prüfung"** bewertet jeden Vorschlag ohne Copilot in drei Dimensionen:
+       **Nutzen**, **rechtliches bzw. Datenschutzrisiko**, **Haftungs- oder
+       Reputationsrisiko**, und formuliert je eine Empfehlung: umsetzen, abgewandelt
+       umsetzen oder ablehnen.
+  2. **Duell (10 Minuten).** Das Paar „Geschäftsführung" trägt die Copilot-Argumente vor, als
+     wären es die eigenen. Das Paar „Prüfung" antwortet. Haltet fest: Welches Argument ändert
+     eure Bewertung, welches hält Art. 50 Abs. 1 AI Act und der Datenminimierung (Kap. 4)
+     nicht stand? Einigt euch auf eine gemeinsame Tabelle mit Empfehlung pro Vorschlag – bei
+     „abgewandelt" mit der konkreten Abwandlung.
+  3. **Antwort schreiben (10 Minuten).** Eine Person entwirft mit **Entwurf mit Copilot** in
+     Outlook eine Antwortmail an die Geschäftsführung (höchstens 150 Wörter) mit den drei
+     Empfehlungen. Prüft den Entwurf gemeinsam mit **Coaching durch Copilot** auf Ton und
+     Klarheit und passt ihn an. Nicht senden.
+
+  **Abschluss:** Eine Person aus dem Paar „Geschäftsführung" stellt im Plenum in einer Minute
+  vor, welches Argument am schwersten zu entkräften war.
 tip: |
-  Trenne, was automatisiert werden **kann**, von dem, was automatisiert werden **sollte**.
-  Ein Termin ist eine Einladung, ein Richtpreis kann eine Zusage sein. Und: Eine Antwort an
-  die Geschäftsführung, die nur „nein" sagt, verliert – biete bei jedem Vorschlag einen Weg
-  an, den Nutzen ohne das Risiko zu bekommen.
+  Trennt, was automatisiert werden **kann**, von dem, was automatisiert werden **sollte**.
+  Ein Termin ist eine Einladung, ein Richtpreis kann eine Zusage sein. Das Paar
+  „Geschäftsführung" sollte seine Rolle ernst nehmen – je besser die Gegenargumente, desto
+  belastbarer eure Empfehlung. Und: Eine Antwort, die nur „nein" sagt, verliert. Bietet bei
+  jedem Vorschlag einen Weg an, den Nutzen ohne das Risiko zu bekommen.
 solution: |
   | Vorschlag | Nutzen | Recht/Datenschutz | Haftung/Reputation | Empfehlung |
   |---|---|---|---|---|
@@ -45,21 +57,20 @@ solution: |
   Begründungen im Kern:
 
   - **A:** Die Terminbuchung ist sinnvoll, sollte aber als Angebot an die Kundin laufen
-    (Buchungslink), nicht als automatische Belegung. Technisch bräuchte eine echte Buchung
-    eine Aktion bzw. einen Konnektor (etwa in Copilot Studio oder über eine
-    Automatisierungsplattform) – das ist ein IT-Projekt, kein Anweisungssatz. Ein Richtpreis
-    ist eine Aussage im Namen des Unternehmens; bei Fehlern haftet Fjordlicht. Preise
-    bleiben im Angebot.
+    (Buchungslink), nicht als automatische Belegung. Eine echte Buchung bräuchte eine
+    technische Anbindung an den Kalender – das ist ein IT-Projekt, kein Anweisungssatz. Ein
+    Richtpreis ist eine Aussage im Namen des Unternehmens; bei Fehlern haftet Fjordlicht.
+    Preise bleiben im Angebot.
   - **B:** Geburtsdaten sind für ein Angebot nicht nötig, die Daten betreffen Dritte, die
     nicht eingewilligt haben. Größenverteilungen ohne Namen kann der Vertrieb später
     abfragen.
   - **C:** Der Hinweis ist seit 02.08.2026 Pflicht, wenn nicht offensichtlich ist, dass eine
     KI antwortet. Statt ihn zu streichen, kann man ihn freundlicher formulieren.
 
-  Typisches Ergebnis der Gegenprobe: Copilot liefert brauchbare Argumente für A
-  („Reaktionszeit ist im B2B ein Wettbewerbsvorteil") und für C („Hinweis senkt die
-  Abschlussquote"). Das erste stützt die Abwandlung per Buchungslink, das zweite ändert
-  nichts an der Pflicht – es ist ein Argument für eine bessere Formulierung.
+  Mögliche Copilot-Argumente im Duell: für A „Reaktionszeit ist im B2B ein
+  Wettbewerbsvorteil", für C „der Hinweis senkt die Abschlussquote". Das erste stützt die
+  Abwandlung per Buchungslink, das zweite ändert nichts an der Pflicht – es ist ein Argument
+  für eine bessere Formulierung.
 
   Beispiel für den Outlook-Entwurf (Kern):
 
@@ -72,7 +83,8 @@ solution: |
   freundlichere Formulierung vor und teste sie zwei Wochen.
   ```
 
-  Bewertungskriterien: alle drei Dimensionen pro Vorschlag bewertet, mindestens eine
-  sinnvolle Abwandlung statt reiner Ablehnung, korrekter Bezug zu Art. 50 Abs. 1 und zur
-  Datenminimierung, Gegenargumente aus Copilot geprüft statt übernommen, Mail kurz und
-  entscheidungsfähig.
+  Bewertungskriterien: alle drei Dimensionen pro Vorschlag bewertet; mindestens eine
+  sinnvolle Abwandlung statt reiner Ablehnung; korrekter Bezug zu Art. 50 Abs. 1 und zur
+  Datenminimierung; die Copilot-Argumente wurden im Duell geprüft statt übernommen, und die
+  Gruppe hat benannt, welches Argument ihre Bewertung verändert hat; Mail kurz,
+  entscheidungsfähig und nach dem Coaching sichtbar überarbeitet.

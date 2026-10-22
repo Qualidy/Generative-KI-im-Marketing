@@ -1,8 +1,12 @@
-title: Copilot-Bilderzeugung, Midjourney-Parameter und Werkzeugwahl
+title: Ein Prompt, vier Bilder – Copilot-Bilderzeugung und Midjourney-Parameter
 difficulty: 1
 question: |
-  **Teil A – in Copilot ausprobieren:** Öffne Copilot Chat in der Microsoft-365-Copilot-App und
-  erzeuge ein schnelles Stimmungsbild für den Fjordlicht-Newsletter:
+  **Gruppe:** 3–4 Personen, ca. 20 Minuten. Am Ende liegen eine gemeinsame Bildersammlung im
+  Teams-Chat eurer Gruppe, eine gemeinsame Zuordnungstabelle (Word in OneDrive) und eine
+  Gruppenentscheidung zur Werkzeugwahl vor.
+
+  **Teil A – gleicher Prompt, mehrere Ergebnisse.** Alle führen gleichzeitig denselben Prompt in
+  ihrem eigenen Copilot Chat aus und stellen das Ergebnis in den Gruppenchat:
 
   ```text
   Erstelle ein Bild: Thermobecher und gefaltete Wollmütze auf einem
@@ -11,50 +15,65 @@ question: |
   Querformat, linke Hälfte ruhig für eine Headline. Kein Text, keine Logos.
   ```
 
-  Verfeinere das Bild danach in **zwei** Runden im Gespräch (z. B. „mehr Nebel", „Becher weiter
-  nach rechts"). Notiere: Was ließ sich per Zuruf steuern, was nicht (Format, Varianten,
-  Wiederholbarkeit eines Ergebnisses)?
+  Legt die Bilder nebeneinander: Was ist bei allen gleich, was unterscheidet sich? Danach
+  verfeinert jede Person ihr Bild in **zwei** Runden im selben Chat – mit verteilten Aufträgen:
 
-  **Teil B – Parameter zuordnen:** In Copilot steuerst du alles über natürliche Sprache.
-  Midjourney nutzt dafür Parameter. Ordne jedem Ziel den passenden Midjourney-Parameter zu
-  (`--ar`, `--stylize`, `--chaos`, `--no`, `--seed`, `--sref`) und notiere, wie du dasselbe
-  Ziel in Copilot formulieren würdest – oder ob es dort nicht geht.
+  - Person 1: nur das **Format** ändern („Hochformat für Instagram")
+  - Person 2: nur ein **Detail** ändern („Becher weiter nach rechts", „mehr Nebel")
+  - Person 3: **neuen Chat** starten und den Ausgangsprompt wortgleich noch einmal ausführen
+  - Person 4 (falls vorhanden): den **Stil** ändern („wie ein Aquarell")
+
+  Achtet darauf, was sich per Zuruf steuern ließ und was nicht: Wurde das Format umgesetzt?
+  Blieb der Rest des Bildes gleich? Ließ sich ein bestimmtes Ergebnis wiederholen?
+
+  **Teil B – Parameter zuordnen (Arbeitsteilung).** In Copilot steuert ihr alles über natürliche
+  Sprache, Midjourney nutzt dafür Parameter. Teilt die sechs Ziele auf (je Person 1–2), ordnet
+  jedem Ziel den passenden Midjourney-Parameter zu (`--ar`, `--stylize`, `--chaos`, `--no`,
+  `--seed`, `--sref`) und notiert, wie ihr dasselbe Ziel in Copilot formulieren würdet – oder ob
+  es dort nicht geht. Tragt alles in eine gemeinsame Word-Tabelle ein und nutzt dabei eure
+  Beobachtungen aus Teil A.
 
   1. Das Bild soll im Hochformat für Instagram (4:5) erscheinen.
   2. Die Varianten eines Durchlaufs sollen sich für ein Moodboard stark unterscheiden.
   3. Es soll kein Text im Bild auftauchen.
   4. Der Look soll sich an einem freigegebenen Kampagnenbild orientieren.
   5. Das Bild soll sachlicher und näher am Prompt sein, weniger „künstlerisch".
-  6. Du willst möglichst nah an ein früheres Ergebnis herankommen.
+  6. Ihr wollt möglichst nah an ein früheres Ergebnis herankommen.
 
-  **Teil C – Werkzeugwahl:** Copilot ist euer Ausgangswerkzeug. Wann reicht es, wann
-  greifst du zu einem Werkzeug aus Kapitel 31 – und warum?
+  **Teil C – Werkzeugwahl als Gruppenentscheidung.** Copilot ist euer Ausgangswerkzeug. Einigt
+  euch für jeden Fall: Reicht Copilot, oder greift ihr zu einem Werkzeug aus Kapitel 31 – und
+  warum? Stellt einen Fall, bei dem ihr uneinig wart, im Plenum in einer Minute vor.
 
   - (a) Hintergrund eines echten Produktfotos für ein Banner verbreitern
   - (b) Plakatentwurf mit Überschrift, Unterzeile und Datum
-  - (c) schnelles Stimmungsbild, das du danach im Gespräch mehrfach anpasst
+  - (c) schnelles Stimmungsbild, das ihr danach im Gespräch mehrfach anpasst
   - (d) stimmungsvolles Kampagnenmotiv mit starkem eigenem Look
 tip: |
-  Bei Teil C gibt es manchmal zwei vertretbare Antworten. Entscheidend ist die Begründung über
-  die Stärke des Werkzeugs. Halte deine Beobachtungen aus Teil A fest – sie sind die erste Zeile
-  der Vergleichsmatrix im Workshop.
+  Teil A lebt vom Vergleich: Ein einzelnes Bild sagt wenig darüber, wie zuverlässig ein Prompt
+  ist – vier Bilder desselben Prompts zeigen, was der Prompt festlegt und was dem Zufall
+  überlassen bleibt. Bei Teil C gibt es manchmal zwei vertretbare Antworten; entscheidend ist die
+  Begründung über die Stärke des Werkzeugs. Haltet eure Beobachtungen aus Teil A fest – sie sind
+  die erste Zeile der Vergleichsmatrix im Workshop.
 solution: |
-  **Teil A – typische Beobachtungen:** Motiv, Licht, Farben und Bildaufbau lassen sich per Zuruf
-  gut steuern; Copilot kennt das vorherige Bild im Gespräch. Das Seitenverhältnis wird oft nur
-  grob umgesetzt (quer, hoch, quadratisch) – exakte Formate entstehen dann per Zuschnitt im
-  Layout. Ein bestimmtes Ergebnis lässt sich nicht gezielt wiederholen, und nach mehreren Runden
-  „wandern" Details mit (31.2: dann neuen Chat starten und bestes Bild hochladen).
+  **Teil A – mögliche Beobachtungen:** Was im Prompt genau beschrieben ist (Becher, Mütze, Tisch,
+  Nebel, Farbtöne), taucht meist in allen Bildern auf; Perspektive, Anordnung, Holzstruktur und
+  Lichtstimmung unterscheiden sich von Person zu Person. Das zeigt: Ein Bildmodell zieht bei
+  jedem Durchlauf neu – was der Prompt offenlässt, entscheidet der Zufall. Prüft bei den
+  Verfeinerungen: Wurde das gewünschte Format getroffen oder nur grob umgesetzt (dann im Layout
+  zuschneiden)? Hat sich beim Detailwunsch auch der Rest verändert? Hat der wortgleiche Prompt
+  im neuen Chat dasselbe Bild ergeben? Wenn Details nach mehreren Runden „wandern", hilft ein
+  neuer Chat mit einem präzisierten Prompt (31.2).
 
   **Teil B:**
 
   | Nr. | Midjourney | in Copilot |
   |---|---|---|
-  | 1 | `--ar 4:5` | „Hochformat 4:5" in den Prompt; ggf. im Layout zuschneiden |
-  | 2 | `--chaos` (z. B. 30 bis 50) | um „vier deutlich unterschiedliche Varianten" bitten, Unterschiede benennen |
+  | 1 | `--ar 4:5` | „Hochformat 4:5" in den Prompt; prüfen, ob es umgesetzt wird, sonst im Layout zuschneiden |
+  | 2 | `--chaos` (z. B. 30 bis 50) | ausdrücklich um deutlich unterschiedliche Varianten bitten – oder wie in Teil A mehrere Personen bzw. Chats nutzen |
   | 3 | `--no text` | „Kein Text, keine Schrift, keine Logos im Bild" |
-  | 4 | `--sref` | freigegebenes Bild hochladen: „Übernimm Licht, Farbwelt und Look, nicht das Motiv" |
+  | 4 | `--sref` | Look des freigegebenen Bilds in Worten beschreiben (Licht, Farbwelt, Körnung) – etwa indem Copilot das hochgeladene Bild beschreibt – und diese Beschreibung in den Prompt übernehmen |
   | 5 | `--stylize` niedrig, ggf. `--style raw` | „sachliches, dokumentarisches Foto, kein Hochglanz, keine Effekte" |
-  | 6 | `--seed` | nicht steuerbar; im selben Chat weiterarbeiten oder Bild hochladen und nur die Änderung beschreiben |
+  | 6 | `--seed` | kein Parameter; im selben Chat weiterarbeiten und nur die Änderung beschreiben, Prompt wortgleich wiederverwenden |
 
   **Teil C:**
 
@@ -62,8 +81,15 @@ solution: |
   |---|---|---|
   | (a) | Firefly in Photoshop (Generatives Erweitern) | bearbeitet das echte Foto, Produkt bleibt unverändert |
   | (b) | Copilot oder Ideogram für den Entwurf, finale Texte im Layout (z. B. PowerPoint, Express) | Ideogram stärker bei mehreren Textelementen; Pixeltext ist nicht korrigierbar |
-  | (c) | Copilot Chat (alternativ ChatGPT Images) | Bearbeitung auf Zuruf im Gespräch, läuft im Mandanten |
+  | (c) | Copilot Chat (alternativ ChatGPT Images) | Anpassung auf Zuruf im Gespräch, läuft im Mandanten |
   | (d) | Midjourney, Copilot als Entwurfswerkzeug | starke Ästhetik und Art Direction |
+
+  Bewertungskriterien: Alle Bilder aus Teil A liegen im Gruppenchat; Gemeinsamkeiten und
+  Abweichungen zwischen den Ergebnissen der Gruppenmitglieder wurden benannt und mit der
+  Wahrscheinlichkeitslogik der Bildmodelle erklärt; jede Person hat ihren Verfeinerungsauftrag
+  ausgeführt und das Ergebnis berichtet; die Tabelle aus Teil B ist vollständig und stützt sich
+  auf eigene Beobachtungen; die Gruppe hat sich in Teil C auf eine Entscheidung je Fall geeinigt
+  und kann sie begründen.
 
   Parameternamen und Funktionsumfang ändern sich bei allen Anbietern – im Zweifel die aktuelle
   Dokumentation prüfen.

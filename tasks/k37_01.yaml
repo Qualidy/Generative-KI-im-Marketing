@@ -1,9 +1,9 @@
-title: Welcher Musikweg passt?
+title: Welcher Musikweg passt? – Gegenprobe mit und ohne Rahmen
 difficulty: 1
 question: |
-  Fjordlicht braucht in den nächsten Wochen Musik für fünf Vorhaben. Ordne jedem den passenden
+  Fjordlicht braucht in den nächsten Wochen Musik für fünf Vorhaben. Ordnet jedem den passenden
   **Bezugsweg** zu – Plattformbibliothek, Stock-Musik, Auftragskomposition oder KI-Musik – und
-  begründe in einem Satz.
+  begründet in einem Satz.
 
   1. Eine spontane Instagram-Story vom Teamausflug, nur 24 Stunden sichtbar.
   2. Ein neues **Sound-Logo**, das künftig am Ende jedes Videos und im Podcast läuft.
@@ -14,20 +14,29 @@ question: |
   5. Ein Kollege möchte einen aktuellen Charthit unter ein TikTok des Unternehmensaccounts legen,
      „weil der Song gerade trendet".
 
-  So gehst du vor:
+  **Gruppenarbeit:** 3–4 Personen in zwei Untergruppen (bei drei Personen: ein Paar und eine
+  Einzelperson), etwa 20 Minuten. **Am Ende liegt vor:** eine
+  gemeinsame Zuordnungstabelle im Teams-Chat der Gruppe und eine Aussage dazu, was der Rahmen im
+  Prompt verändert hat.
 
-  1. Ordne zuerst selbst zu, in Stichworten.
-  2. Lass Copilot Chat (Modus **Arbeit**) dieselbe Zuordnung vornehmen. Gib die Tabelle der
-     Bezugswege aus Abschnitt 37.1 als Rahmen mit.
-  3. Wechsle für Fall 5 in den Modus **Web** und frag nach den aktuellen Regeln von TikTok und
-     Instagram für Musik auf Unternehmensaccounts – mit Quellen. Prüfe, ob die genannten Quellen
-     die Aussage wirklich tragen, und vergleiche mit deiner Zuordnung.
+  1. **Erst selbst.** Jede Untergruppe ordnet zuerst ohne KI zu, in Stichworten.
+  2. **Gegenprobe.** **Untergruppe A** lässt Copilot Chat (Modus **Arbeit**) die fünf Fälle **ohne**
+     weiteren Rahmen zuordnen. **Untergruppe B** gibt die Tabelle der Bezugswege aus Abschnitt 37.1 und
+     den Hinweis auf Unternehmensaccounts als Rahmen mit. Vergleicht beide Antworten: Wo
+     unterscheiden sie sich? Achtet darauf, ob eine Antwort KI-Musik pauschal als „lizenzfrei"
+     bezeichnet.
+  3. **Fall 5 mit Websuche.** Eine Person aus Untergruppe A wechselt in den Modus **Web** und fragt nach
+     den aktuellen Regeln von TikTok und Instagram für Musik auf Unternehmensaccounts – mit
+     Quellen. Eine Person aus Untergruppe B prüft als **Quellenprüferin**, ob die genannten Quellen die
+     Aussage wirklich tragen, und notiert Datum und Herkunft.
+  4. **Einigen.** Führt eure Zuordnung in einer Tabelle im Teams-Chat der Gruppe zusammen und
+     haltet in einem Satz fest, welchen Unterschied der Rahmen im Prompt gemacht hat.
 tip: |
-  Frage bei jedem Fall zuerst: Wie lange und wo läuft die Musik? Je länger und je breiter der
-  Einsatz, desto wichtiger ist eine eindeutige, dokumentierte Lizenz. Ohne Rahmen neigt Copilot
-  dazu, KI-Musik pauschal als „lizenzfrei" zu bezeichnen – genau das sollst du erkennen.
+  Fragt bei jedem Fall zuerst: Wie lange und wo läuft die Musik? Je länger und je breiter der
+  Einsatz, desto wichtiger ist eine eindeutige, dokumentierte Lizenz. Die Gegenprobe zeigt, wie
+  viel ein Rahmen im Prompt ausmacht – achtet besonders auf Fall 2 und 4.
 solution: |
-  Beispiel-Prompt für Copilot Chat:
+  Beispiel-Prompt für Untergruppe B (mit Rahmen):
 
   ```text
   Ordne jedem der fünf Vorhaben einen Bezugsweg für Musik zu:
@@ -35,9 +44,12 @@ solution: |
   Fjordlicht postet über Unternehmensaccounts. Berücksichtige Laufzeit,
   Kanäle (nur App oder auch Webshop/Newsletter) und ob das Ergebnis der
   Marke dauerhaft gehören muss.
+  Rahmen: [Tabelle der Bezugswege aus Abschnitt 37.1 einfügen]
   Ausgabe: Tabelle mit Nr., Bezugsweg, Begründung (1 Satz).
   [Vorhaben 1 bis 5 einfügen]
   ```
+
+  Untergruppe A gibt nur die fünf Vorhaben mit der Bitte um Zuordnung ein.
 
   | Nr. | Bezugsweg | Begründung |
   |---|---|---|
@@ -47,11 +59,16 @@ solution: |
   | 4 | Stock-Musik mit kanalübergreifender Lizenz | Plattformsound gilt nur in der App, nicht im Webshop oder Newsletter |
   | 5 | nicht so umsetzbar | Charthits sind für Unternehmensaccounts meist nicht freigegeben; Alternative aus der Commercial Music Library wählen |
 
-  Typische Abweichungen bei Copilot: Fall 2 wird als KI-Musik vorgeschlagen („schnell und
-  günstig"), ohne die fehlende Schutzfähigkeit zu nennen; Fall 4 bleibt bei der
-  Plattformbibliothek, obwohl das Video den Kanal verlässt. Die Websuche zu Fall 5 bestätigt in
-  der Regel die Einschränkung auf die Commercial Music Library – prüfe aber Datum und Herkunft
-  der Quellen, die Regeln ändern sich.
+  Worauf ihr beim Vergleich achten solltet: ob eine Antwort Fall 2 als KI-Musik vorschlägt
+  („schnell und günstig"), ohne die fehlende Schutzfähigkeit zu nennen, und ob Fall 4 bei der
+  Plattformbibliothek bleibt, obwohl das Video den Kanal verlässt. Prüft, ob diese Punkte in der
+  Antwort ohne Rahmen häufiger auftreten als in der mit Rahmen. Bei der Websuche zu Fall 5 gilt:
+  Datum und Herkunft der Quellen prüfen, die Regeln ändern sich.
 
   Fall 5 ist der wichtigste: Dass die App einen Song anbietet, heißt nicht, dass eine Marke ihn
   nutzen darf.
+
+  Bewertungskriterien: Alle fünf Fälle sind zugeordnet und begründet, Laufzeit und Kanäle sind
+  berücksichtigt. Die Gruppe hat die Unterschiede zwischen den Antworten mit und ohne Rahmen
+  benannt und erklärt. Die Aussage zu Fall 5 ist mit mindestens einer geprüften Quelle samt Datum
+  belegt.
