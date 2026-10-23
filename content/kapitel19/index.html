@@ -1,0 +1,2240 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel18/">
+      
+      
+        <link rel="next" href="../kapitel20/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 19 – Social Listening mit KI - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-19-social-listening-mit-ki" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 19 – Social Listening mit KI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Block 4 · Content-Optimierung mit KI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 17 – Zielgruppenanalyse mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Kundenavatar entwickeln und nutzen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Social Listening mit KI
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Social Listening mit KI
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#191-zuhoren-statt-nur-zahlen" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.1 Zuhören statt nur zählen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#192-quellen-und-werkzeuge" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.2 Quellen und Werkzeuge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#193-sentiment-und-themenanalyse-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.3 Sentiment- und Themenanalyse mit KI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#194-vom-befund-zur-handlung" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.4 Vom Befund zur Handlung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#195-krisenfruherkennung" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.5 Krisenfrüherkennung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#196-datenschutz-und-grenzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      19.6 Datenschutz und Grenzen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Datenbasierte Optimierung von Textinhalten
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-19-social-listening-mit-ki">Kapitel 19 – Social Listening mit KI<a class="headerlink" href="#kapitel-19-social-listening-mit-ki" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was <strong>Social Listening</strong> ist und wie es sich vom reinen <strong>Monitoring</strong> unterscheidet</li>
+<li>Welche <strong>Quellen</strong> und <strong>Werkzeuge</strong> es gibt – von Brandwatch bis zur Bordfunktion der Plattformen</li>
+<li>Wie du <strong>Sentiment- und Themenanalysen</strong> mit ChatGPT auf exportierten Daten durchführst</li>
+<li>Wie du mit Schwellenwerten und Eskalationsstufen eine <strong>Krisenfrüherkennung</strong> aufbaust</li>
+<li>Was beim <strong>Datenschutz</strong> zu beachten ist, wenn Beiträge echter Menschen ausgewertet werden</li>
+<li>Wo die <strong>Grenzen</strong> liegen: Ironie, Kontext, Stichprobenverzerrung und Scheingenauigkeit</li>
+</ul>
+</div>
+<hr />
+<h2 id="191-zuhoren-statt-nur-zahlen">19.1 Zuhören statt nur zählen<a class="headerlink" href="#191-zuhoren-statt-nur-zahlen" title="Permanent link">&para;</a></h2>
+<p><strong>Social Monitoring</strong> beantwortet die Frage „Was wird über uns gesagt?": Erwähnungen zählen, Reichweite messen, auf einzelne Beiträge reagieren. <strong>Social Listening</strong> geht einen Schritt weiter und fragt „Was bedeutet das?": Welche Themen bewegen die Zielgruppe, wie verändert sich die Stimmung, welche Begriffe tauchen neu auf, was sagen die Leute über Wettbewerber und über die Kategorie insgesamt?</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Monitoring</th>
+<th>Listening</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blick</td>
+<td>einzelne Erwähnungen, jetzt</td>
+<td>Muster und Entwicklungen über Zeit</td>
+</tr>
+<tr>
+<td>typische Frage</td>
+<td>„Wer hat uns markiert?"</td>
+<td>„Warum kippt die Stimmung zu unseren Nachhaltigkeitsaussagen?"</td>
+</tr>
+<tr>
+<td>Ergebnis</td>
+<td>Reaktion, Antwort, Ticket</td>
+<td>Erkenntnis für Content, Produkt, Avatar</td>
+</tr>
+<tr>
+<td>Rolle der KI</td>
+<td>Vorsortieren, Antwortentwürfe (Kap. 14)</td>
+<td>Kategorisieren, Verdichten, Trends benennen</td>
+</tr>
+</tbody>
+</table>
+<p>Für das Marketing ist Listening eine laufende Zielgruppenanalyse (Kap. 17): Es liefert Kundensprache, Pain Points und neue Themen – ungefragt und in Echtzeit. Gleichzeitig ist es ein Frühwarnsystem für Krisen.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Monitoring sagt dir, <strong>dass</strong> etwas passiert. Listening sagt dir, <strong>was es bedeutet</strong> – und KI hilft vor allem beim zweiten Schritt, nicht beim Sammeln.</p>
+</div>
+<hr />
+<h2 id="192-quellen-und-werkzeuge">19.2 Quellen und Werkzeuge<a class="headerlink" href="#192-quellen-und-werkzeuge" title="Permanent link">&para;</a></h2>
+<p>Gehört wird dort, wo die Zielgruppe spricht: Instagram, TikTok, LinkedIn, YouTube-Kommentare, Reddit und Fachforen, Bewertungsportale, Blogs, Nachrichtenseiten. Dazu kommen die eigenen Kanäle: Kommentare, Direktnachrichten, Antworten auf den Newsletter.</p>
+<p>Wichtig für die Erwartungshaltung: Nicht alles ist abrufbar. Viele Plattformen haben den Datenzugang für Dritte in den letzten Jahren eingeschränkt oder verteuert, private Profile und geschlossene Gruppen sind tabu, und was ein Tool „sieht", hängt von seinen Verträgen mit den Plattformen ab. Jedes Listening-Ergebnis ist deshalb ein <strong>Ausschnitt</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Werkzeugtyp</th>
+<th>Beispiele</th>
+<th>Eignung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enterprise-Plattformen</td>
+<td>Brandwatch, Talkwalker, Meltwater</td>
+<td>große Marken, viele Quellen, KI-Funktionen eingebaut, entsprechend teuer</td>
+</tr>
+<tr>
+<td>Werkzeuge für kleinere Teams</td>
+<td>Brand24 und vergleichbare Anbieter</td>
+<td>Erwähnungen und Grundstimmung zu überschaubaren Kosten</td>
+</tr>
+<tr>
+<td>Bordmittel der Plattformen</td>
+<td>Meta Business Suite, TikTok- und LinkedIn-Statistiken</td>
+<td>eigene Kanäle, kostenlos, keine Fremdbeiträge</td>
+</tr>
+<tr>
+<td>einfache Alarme</td>
+<td>Google Alerts, gespeicherte Suchen auf Plattformen</td>
+<td>Startpunkt, lückenhaft</td>
+</tr>
+<tr>
+<td>KI auf Exporten</td>
+<td>ChatGPT-Datenanalyse, Claude, Gemini, Copilot</td>
+<td>Auswertung von CSV-Exporten aus den oben genannten Quellen</td>
+</tr>
+</tbody>
+</table>
+<p>Die Enterprise-Plattformen bringen heute eigene KI-Funktionen mit: automatische Zusammenfassungen, Themencluster, Sentiment-Erkennung. Für ein Unternehmen wie Fjordlicht ist der realistische Weg oft ein kleineres Tool oder die Bordmittel – plus eine eigene KI-Auswertung der Exporte. Funktionsumfang und Preise ändern sich schnell; prüfe sie vor einer Entscheidung aktuell (Stand: Oktober 2026).</p>
+<div class="admonition tip">
+<p class="admonition-title">Suchbegriffe sind die halbe Miete</p>
+<p>Ein Listening-Tool findet nur, wonach du suchst. Lass dir von der KI eine Suchbegriffsliste erstellen: Markenname mit Tippfehlern („Fjordlich", „Fjord Licht"), Produktnamen ohne Sonderzeichen („Solv" statt „Sølv"), Kategoriebegriffe („Regenjacke recycelt"), Wettbewerber, typische Beschwerdeformulierungen. Und eine Ausschlussliste: „Fjordlicht" ist vielleicht auch ein Café oder ein Romantitel.</p>
+</div>
+<hr />
+<h2 id="193-sentiment-und-themenanalyse-mit-ki">19.3 Sentiment- und Themenanalyse mit KI<a class="headerlink" href="#193-sentiment-und-themenanalyse-mit-ki" title="Permanent link">&para;</a></h2>
+<p>Der Kern der KI-Arbeit im Listening ist die Auswertung exportierter Beiträge. Der Ablauf:</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Export als CSV]) --&gt; B(["Bereinigen: Nutzernamen entfernen"])
+    B --&gt; C([Kategorienschema festlegen])
+    C --&gt; D([KI klassifiziert])
+    D --&gt; E([Stichprobe von Hand prüfen])
+    E --&gt; F([Auswertung und Bericht])
+    E --&gt;|zu viele Fehler| C</code></pre>
+<p>Das <strong>Kategorienschema</strong> legst du fest, nicht die KI. Sonst erfindet sie bei jeder Auswertung andere Kategorien, und du kannst Monate nicht vergleichen. Für Fjordlicht könnte es so aussehen:</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Ausprägungen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sentiment</td>
+<td>positiv / neutral / negativ / gemischt / unklar</td>
+</tr>
+<tr>
+<td>Thema</td>
+<td>Qualität, Passform, Nachhaltigkeit, Preis, Lieferung, Kundenservice, Design, Sonstiges</td>
+</tr>
+<tr>
+<td>Bezug</td>
+<td>Fjordlicht / Wettbewerber / Kategorie allgemein</td>
+</tr>
+<tr>
+<td>Handlungsbedarf</td>
+<td>keiner / Antwort / Weiterleitung Kundenservice / Eskalation</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist Analystin für Social Listening.
+Request: Klassifiziere jeden Beitrag in der angehängten CSV-Datei
+nach dem Schema unten. Ergänze dafür Spalten in der Tabelle.
+Output: 1. Tabelle mit allen Beiträgen und neuen Spalten,
+2. Auszählung nach Thema und Sentiment, berechnet mit Python,
+3. drei Kernaussagen mit je zwei Beispiel-IDs.
+Modifier:
+- Nutze ausschließlich die vorgegebenen Kategorien.
+- Wenn Ironie möglich ist oder der Beitrag unklar ist: Sentiment &quot;unklar&quot;.
+- Begründe jede Einstufung &quot;negativ&quot; in höchstens 10 Wörtern.
+- Keine Aussagen über einzelne Personen.
+Purpose: Monatsbericht für das Marketingteam von Fjordlicht.
+Schema: [Schema einfügen]
+</code></pre></div></td></tr></table></div>
+<p>Tone fehlt hier bewusst – bei einer Analyse zählt Genauigkeit, nicht Stimme. Wichtig ist die Arbeitsteilung: Die <strong>Klassifizierung</strong> übernimmt das Sprachmodell, das <strong>Zählen</strong> übernimmt die Datenanalyse mit Python (Kap. 20). Ein Sprachmodell, das 300 Zeilen „im Kopf" zählt, liegt schnell daneben.</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Die Auswertung meldet „72 % positiv" und das Team freut sich. Niemand hat geprüft, ob die Einstufungen stimmen. Ziehe nach jeder Klassifizierung eine <strong>Stichprobe von 20 bis 30 Beiträgen</strong> und prüfe sie von Hand. Liegt die Übereinstimmung deutlich unter neun von zehn, schärfst du Schema oder Prompt nach, bevor du Zahlen weitergibst.</p>
+</div>
+<hr />
+<h2 id="194-vom-befund-zur-handlung">19.4 Vom Befund zur Handlung<a class="headerlink" href="#194-vom-befund-zur-handlung" title="Permanent link">&para;</a></h2>
+<p>Eine Auswertung, die nur Prozentwerte liefert, verändert nichts. Der Wert von Social Listening entsteht erst, wenn Befunde bei den Menschen ankommen, die etwas daraus machen können. Im Fjordlicht-Team heißt das: Content-Planung, Produktabteilung, Kundenservice und die Pflege der Avatare.</p>
+<table>
+<thead>
+<tr>
+<th>Befund (Beispiel)</th>
+<th>Wer damit arbeitet</th>
+<th>Mögliche Handlung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Viele Fragen, wie man die Sølv richtig wäscht</td>
+<td>Content, Kundenservice</td>
+<td>Pflege-Video, FAQ-Eintrag, Newsletter-Tipp (Kap. 13, Kap. 14)</td>
+</tr>
+<tr>
+<td>Wiederkehrende Kritik an der Passform der Vidde</td>
+<td>Produktabteilung</td>
+<td>Größentabelle prüfen, Rückmeldung an Hersteller</td>
+</tr>
+<tr>
+<td>Neuer Begriff in der Community: „Buy it for life"</td>
+<td>Content, Avatar-Pflege</td>
+<td>Formulierung in Kundensprache aufnehmen (Kap. 18)</td>
+</tr>
+<tr>
+<td>Wettbewerber wird für fehlende Reparaturangebote kritisiert</td>
+<td>Marketingleitung</td>
+<td>eigenen kostenlosen Reparaturservice (erste zwei Jahre nach Kauf) sichtbarer machen</td>
+</tr>
+<tr>
+<td>Lob für den ruhigen Ton im Newsletter</td>
+<td>Content</td>
+<td>Bestätigung der Markenstimme, im Styleguide festhalten</td>
+</tr>
+</tbody>
+</table>
+<p>Für den regelmäßigen Bericht genügt eine feste Struktur, die die KI aus der klassifizierten Tabelle befüllt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle aus der klassifizierten Tabelle einen Monatsbericht Social Listening.
+Gliederung:
+1. Datenbasis: Zeitraum, Quellen, Anzahl Beiträge (ohne diese Angabe kein Bericht)
+2. Stimmung im Vergleich zum Vormonat (Vormonatswerte unten)
+3. Top-3-Themen mit je zwei wörtlichen Beispielzitaten (IDs angeben)
+4. Neue Begriffe oder Themen, die im Vormonat nicht vorkamen
+5. Empfohlene Handlungen, je eine Zeile, mit zuständigem Bereich
+Regeln: Keine Ursachen behaupten, die die Daten nicht zeigen.
+Formuliere Vermutungen ausdrücklich als Vermutung.
+Vormonat: [Werte einfügen]
+</code></pre></div></td></tr></table></div>
+<p>Die Regel gegen behauptete Ursachen ist wichtig: Wenn die Stimmung sinkt, liefert das Modell sonst gern eine plausible Erklärung mit („vermutlich wegen der Preiserhöhung"), die niemand geprüft hat. Korrelation ist keine Kausalität (Kap. 20).</p>
+<hr />
+<h2 id="195-krisenfruherkennung">19.5 Krisenfrüherkennung<a class="headerlink" href="#195-krisenfruherkennung" title="Permanent link">&para;</a></h2>
+<p>Eine Krise kündigt sich selten mit einem Paukenschlag an. Typischer ist ein Muster: Ein kritischer Beitrag wird geteilt, in den Kommentaren greifen andere das Thema auf, ein reichweitenstarker Account kommentiert, die Stimmung kippt binnen Stunden. Wer erst im Monatsbericht davon erfährt, ist zu spät.</p>
+<p>Frühwarnung braucht drei Dinge: <strong>Schwellenwerte</strong>, <strong>Zuständigkeiten</strong> und eine <strong>Eskalationslogik</strong>. KI hilft dabei, Ausschläge schnell einzuordnen und Antwortentwürfe vorzubereiten – die Entscheidung bleibt beim Menschen.</p>
+<table>
+<thead>
+<tr>
+<th>Stufe</th>
+<th>Auslöser (Beispiele)</th>
+<th>Reaktion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Grün</strong></td>
+<td>normales Volumen, Sentiment im üblichen Rahmen</td>
+<td>Routine, Wochenbericht</td>
+</tr>
+<tr>
+<td><strong>Gelb</strong></td>
+<td>negatives Sentiment deutlich über dem Durchschnitt der letzten Wochen, ein Thema häuft sich</td>
+<td>Social-Media-Team prüft, informiert Teamleitung, Antworten nach Leitfaden</td>
+</tr>
+<tr>
+<td><strong>Orange</strong></td>
+<td>Beitrag mit hoher Reichweite, Medienanfrage, Vorwurf mit Rechts- oder Sicherheitsbezug</td>
+<td>Teamleitung und Geschäftsführung, abgestimmte Stellungnahme, keine Einzelantworten aus dem Bauch</td>
+</tr>
+<tr>
+<td><strong>Rot</strong></td>
+<td>breite Berichterstattung, Produktsicherheit, Verdacht auf Rechtsverstoß</td>
+<td>Krisenteam, Rechtsabteilung, festgelegte Sprecherrolle</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Fjordlicht: Der Greenwashing-Vorwurf</p>
+<p>Dienstagmorgen: Ein Nutzer postet auf TikTok, die Regenjacke Sølv sei „gar nicht recycelt, nur das Futter". Bis Mittag gibt es 40 Kommentare, Stimmung negativ, mehrere fragen nach Belegen. Stufe Gelb.</p>
+<p>Die KI fasst die Kommentare zusammen und sortiert sie: Wer fragt sachlich, wer wiederholt den Vorwurf, wer verteidigt die Marke? Ergebnis: Die meisten wollen schlicht wissen, welcher Anteil recycelt ist. Das Team prüft mit der Produktabteilung die Fakten – das Obermaterial ist recycelt, das Futter tatsächlich nicht. Die Produktseite war ungenau.</p>
+<p>Antwort nach Freigabe: Fakten offenlegen, Ungenauigkeit einräumen, Produktseite korrigieren. Die KI liefert Entwürfe, die Zahlen kommen ausschließlich aus der Produktdokumentation. Der Fall zeigt, warum die Markenstimme von Fjordlicht nur belegbare Nachhaltigkeitsaussagen erlaubt.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Antworten vorbereiten, nicht automatisieren</p>
+<p>Lass die KI zu wiederkehrenden kritischen Themen Antwortbausteine vorbereiten, die vorab freigegeben werden. Im Ernstfall passt das Team sie an. Vollautomatische Antworten auf Kritik sind in Krisen ein Brandbeschleuniger.</p>
+</div>
+<hr />
+<h2 id="196-datenschutz-und-grenzen">19.6 Datenschutz und Grenzen<a class="headerlink" href="#196-datenschutz-und-grenzen" title="Permanent link">&para;</a></h2>
+<p>Auch öffentliche Beiträge enthalten <strong>personenbezogene Daten</strong>: Nutzernamen, Profilbilder, manchmal Ortsangaben. Die DSGVO gilt trotzdem. Für die Praxis bedeutet das (Kap. 4):</p>
+<ul>
+<li>Werte <strong>Themen und Muster</strong> aus, nicht Personen. Profile Einzelner anzulegen ist tabu.</li>
+<li>Entferne Nutzernamen und Profil-Links vor dem Hochladen in ein KI-Werkzeug oder ersetze sie durch IDs.</li>
+<li>Nutze für Exporte nur freigegebene Werkzeuge mit Auftragsverarbeitungsvertrag.</li>
+<li>Kein eigenes Abgreifen (Scraping) von Plattformen ohne Prüfung der Nutzungsbedingungen und der Rechtslage – dafür gibt es lizenzierte Tools.</li>
+<li>Lösche Rohdaten, wenn die Auswertung abgeschlossen ist.</li>
+</ul>
+<p>Dieses Kapitel gibt Orientierung, keine Rechtsberatung. Wenn du ein Listening-Tool einführst oder Daten in größerem Umfang auswertest, beziehe Datenschutzbeauftragte oder Rechtsabteilung ein.</p>
+<p>Die fachlichen Grenzen sind mindestens ebenso wichtig:</p>
+<table>
+<thead>
+<tr>
+<th>Grenze</th>
+<th>Beispiel</th>
+<th>Gegenmittel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ironie und Sarkasmus</td>
+<td>„Super, Jacke nach zwei Wochen undicht. Danke, Fjordlicht!"</td>
+<td>Kategorie „unklar", Stichprobe prüfen</td>
+</tr>
+<tr>
+<td>fehlender Kontext</td>
+<td>Antwort ohne den Beitrag, auf den sie sich bezieht</td>
+<td>Gesprächsverläufe mitexportieren</td>
+</tr>
+<tr>
+<td>Emojis, Slang, Dialekt</td>
+<td>ein Totenkopf-Emoji kann Lachen oder Entsetzen bedeuten</td>
+<td>Beispiele im Prompt (Few-Shot, Kap. 6)</td>
+</tr>
+<tr>
+<td>Stichprobenverzerrung</td>
+<td>laute Minderheit, nur bestimmte Plattformen erfasst</td>
+<td>Ergebnis immer mit Quellenbasis angeben</td>
+</tr>
+<tr>
+<td>Bots und Kampagnen</td>
+<td>viele gleichlautende Beiträge in kurzer Zeit</td>
+<td>Duplikate und Kontoalter prüfen</td>
+</tr>
+<tr>
+<td>Scheingenauigkeit</td>
+<td>„Sentiment 63,4 %" bei 80 Beiträgen</td>
+<td>gerundete Werte, Fallzahl nennen</td>
+</tr>
+</tbody>
+</table>
+<p>Die Stichprobenverzerrung wird am häufigsten unterschätzt. Wer auf TikTok listet, hört eine andere Zielgruppe als im Newsletter-Postfach. Zufriedene Kundinnen posten selten, enttäuschte häufiger. Social Listening zeigt also nicht, was „die Kundschaft" denkt, sondern was <strong>die Lautesten auf den erfassten Kanälen</strong> sagen. Für Avatare (Kap. 18) und Zielgruppenbriefings (Kap. 17) ist es eine wertvolle Quelle – aber eine unter mehreren.</p>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Monitoring</strong> erfasst Erwähnungen, <strong>Listening</strong> erkennt Muster und Bedeutung – KI hilft vor allem beim Verdichten.</li>
+<li>Jedes Werkzeug sieht nur einen <strong>Ausschnitt</strong>; Suchbegriffe, Ausschlüsse und Quellenauswahl bestimmen das Ergebnis.</li>
+<li>Für Sentiment- und Themenanalysen gibst du das <strong>Kategorienschema</strong> vor, lässt die KI klassifizieren, Python zählen – und prüfst eine <strong>Stichprobe</strong> von Hand.</li>
+<li>Krisenfrüherkennung braucht <strong>Schwellenwerte, Zuständigkeiten und Eskalationsstufen</strong>; KI bereitet vor, Menschen entscheiden.</li>
+<li>Auch öffentliche Beiträge sind <strong>personenbezogene Daten</strong>: Muster auswerten, Namen entfernen, freigegebene Werkzeuge nutzen.</li>
+<li>Ironie, fehlender Kontext, Bots und <strong>Stichprobenverzerrung</strong> begrenzen die Aussagekraft; Fallzahl und Quellenbasis gehören in jeden Bericht.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Monitoring, Listening oder Eskalation? – vier Copilots, eine Entscheidung</summary>
+<p><strong>Gruppe:</strong> 3–4 Personen · <strong>Dauer:</strong> etwa 20 Minuten · <strong>Format:</strong> gleicher Prompt, mehrere
+Ergebnisse · <strong>Am Ende liegt vor:</strong> eine gemeinsame Zuordnungstabelle und ein strittiger Fall
+für das Plenum.</p>
+<p>Ihr arbeitet in <strong>Copilot Chat</strong> (Microsoft-365-Copilot-App, Teams oder Browser, Umschalter auf
+<strong>Arbeit</strong>). Die Fälle sind fiktiv.</p>
+<ol>
+<li><strong>Allein (3 Minuten):</strong> Jede Person ordnet jede Situation still für sich zu: Ist das
+   <strong>Monitoring</strong> oder <strong>Listening</strong> (Abschnitt 19.1)? Welche <strong>Eskalationsstufe</strong> aus
+   Abschnitt 19.5 – Grün, Gelb, Orange, Rot – ist angemessen? Notiert eure Einstufung, bevor
+   ihr Copilot fragt.</li>
+<li><strong>Ein Prompt für alle:</strong> Einigt euch auf <strong>einen</strong> Prompt mit den sechs Fällen, der Tabelle
+   der Eskalationsstufen aus Abschnitt 19.5 und dem Auftrag, beides in einer Tabelle mit
+   Begründung zuzuordnen. Jede Person führt genau diesen Prompt in einem <strong>neuen Chat</strong> in
+   ihrem eigenen Copilot aus.</li>
+<li><strong>Vergleichen:</strong> Legt die Ergebnisse nebeneinander, z. B. als Screenshots oder kopierte
+   Tabellen in eurem Teams-Gruppenchat. Wo weichen die Copilot-Antworten <strong>untereinander</strong> ab,
+   wo weichen sie von <strong>euren</strong> Einstufungen ab? Achtet besonders darauf, ob Fall 3 und Fall 4
+   in allen Antworten gleich eingestuft werden.</li>
+<li><strong>Gruppenentscheidung:</strong> Legt pro Fall eine Stufe mit einem Satz Begründung fest. Die
+   strittigste Zuordnung stellt eine Person in einer Minute im Plenum vor: Was hat Copilot
+   gesagt, was habt ihr entschieden, und warum?</li>
+</ol>
+<p>Die Fälle:</p>
+<ol>
+<li>Eine Kundin markiert Fjordlicht auf Instagram mit einem Foto ihrer neuen Wanderhose.</li>
+<li>Über drei Monate taucht in Kommentaren immer häufiger die Frage auf, ob Fjordlicht Reparaturen
+   anbietet.</li>
+<li>Eine Lokalzeitung fragt per E-Mail nach, ob an dem TikTok-Vorwurf zu recycelten Materialien
+   etwas dran ist.</li>
+<li>Mehrere Eltern berichten, dass sich bei einer Kinderjacke ein Kordelstopper gelöst hat und von
+   Kleinkindern verschluckt werden könnte.</li>
+<li>Das negative Sentiment liegt diese Woche deutlich über dem Schnitt; fast alle Beiträge betreffen
+   Lieferverzögerungen nach einer Rabattaktion.</li>
+<li>Das Team vergleicht, worüber auf Reddit bei Fjordlicht und bei zwei Wettbewerbern gesprochen
+   wird.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Monitoring reagiert auf den einzelnen Beitrag, Listening sucht Muster über Zeit oder Quellen.
+Bei der Eskalation entscheidet nicht die Zahl der Beiträge allein, sondern auch das <strong>Thema</strong>:
+Sicherheit und Medienanfragen wiegen schwerer als Ärger über Lieferzeiten. Achtet beim Vergleich
+darauf, ob Copilot Fall 4 nach der <strong>Menge</strong> („mehrere Eltern") oder nach dem <strong>Thema</strong>
+(Kindersicherheit) einstuft. Dass vier Personen mit demselben Prompt unterschiedliche Antworten
+bekommen können, ist kein Fehler, sondern zeigt, dass Sprachmodelle mit Wahrscheinlichkeiten
+arbeiten (Kap. 1 und Abschnitt 2.5).</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt für Copilot Chat:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Ordne die sechs Fälle unten zu. Spalten: Nr. | Monitoring oder Listening |
+Eskalationsstufe (Grün, Gelb, Orange, Rot) | Begründung in einem Satz.
+Nutze ausschließlich diese Stufen-Definitionen: [Tabelle aus Abschnitt 19.5]
+Wenn ein Fall zwischen zwei Stufen liegt, nenne beide und begründe.
+Fälle: [1 bis 6 einfügen]
+</code></pre></div></td></tr></table></div>
+<p>Erwartete Zuordnung:</p>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Art</th>
+<th>Stufe</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Monitoring</td>
+<td>Grün</td>
+<td>einzelne positive Erwähnung, Reaktion: Danke, ggf. teilen (mit Erlaubnis)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Listening</td>
+<td>Grün</td>
+<td>Muster über Zeit: Der kostenlose Reparaturservice (erste zwei Jahre) ist offenbar zu wenig bekannt – Erkenntnis für Content</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Monitoring</td>
+<td>Orange</td>
+<td>Medienanfrage – abgestimmte Stellungnahme, keine Einzelantwort</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Monitoring</td>
+<td>Rot</td>
+<td>Produktsicherheit, Kinder betroffen – Krisenteam, Prüfung, ggf. Rückruf</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Listening</td>
+<td>Gelb</td>
+<td>deutlicher Ausschlag mit klarem Thema – Leitfaden-Antworten, Teamleitung informieren</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Listening</td>
+<td>Grün</td>
+<td>Wettbewerbsanalyse, keine akute Reaktion nötig</td>
+</tr>
+</tbody>
+</table>
+<p>Worauf es beim Vergleich ankommt: Landet Fall 4 in einer der Antworten auf Gelb oder Orange,
+weil nur „mehrere" Beiträge genannt sind, oder Fall 3 auf Gelb, weil die Stimmung nicht
+beziffert ist, zeigt das, warum Schwellenwerte allein nicht genügen: Schon wenige Beiträge
+reichen für Stufe Rot, wenn es um Sicherheit geht. Die Eskalationslogik braucht deshalb neben
+Mengen auch <strong>Themen-Auslöser</strong> – und die Einstufung bleibt eine menschliche Entscheidung.
+Copilot ist hier ein guter Sparringspartner, kein Schiedsrichter. Wenn die vier Copilot-Antworten
+bei einem Fall auseinandergehen, ist das ein deutliches Signal, dass dieser Fall eine klare
+menschliche Regel braucht.</p>
+<p>Bewertungskriterien:</p>
+<ul>
+<li>Jede Person hat vor dem Copilot-Lauf eine eigene Einstufung notiert.</li>
+<li>Alle haben denselben Prompt in einem neuen Chat ausgeführt; Abweichungen zwischen den
+  Copilot-Antworten sind benannt (welcher Fall, welche Stufen).</li>
+<li>Die Gruppenentscheidung stuft Fall 4 auf Rot und Fall 3 mindestens auf Orange ein und
+  begründet das mit dem Thema, nicht mit der Menge.</li>
+<li>Die Plenumsvorstellung trennt klar zwischen Copilot-Vorschlag und Gruppenentscheidung.</li>
+</ul>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Kommentare im Team klassifizieren, zählen und Stichprobe prüfen</summary>
+<p><strong>Gruppe:</strong> 3–4 Personen · <strong>Dauer:</strong> etwa 30 Minuten · <strong>Format:</strong> Rollen mit Wechsel ·
+<strong>Am Ende liegt vor:</strong> eine gemeinsame Excel-Datei „Listening-Test.xlsx" mit Klassifizierung,
+Auszählung und Übereinstimmungsquote sowie ein verbesserter Prompt.</p>
+<p>Die folgenden fiktiven Kommentare stammen aus Fjordlichts Instagram und TikTok, Nutzernamen sind
+bereits durch IDs ersetzt.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>ID;Kanal;Text
+01;IG;Seit zwei Wintern im Einsatz, die Sølv hält wie am ersten Tag.
+02;TT;Recycelt, ja klar. Und ich bin der Weihnachtsmann.
+03;IG;Wann kommt die Vidde wieder in 34 kurz?
+04;IG;Bestellt am Montag, immer noch nicht da. Toll.
+05;TT;Endlich mal eine Marke, die nicht rumschreit.
+06;IG;Farbe ist im echten Leben viel blasser als auf dem Foto.
+07;TT;Gibt es die Skog auch für Kinder?
+08;IG;Super Service, Umtausch lief problemlos!
+09;TT;Ist das Futter auch recycelt oder nur außen?
+10;IG;Die Jacke von [Wettbewerber] war billiger, aber nach einem Jahr hin.
+11;TT;Schon wieder Werbung für Funktionsjacken, toll, genau was ich brauche.
+12;IG;Passt perfekt über den Fleece, danke für die Größenhilfe.
+</code></pre></div></td></tr></table></div>
+<p><strong>Rollen in Runde 1:</strong> <strong>Prompt-Verantwortliche</strong> (Copilot Chat), <strong>Tabellen-Verantwortliche</strong>
+(Excel), <strong>Prüferinnen</strong> (eine oder zwei Personen, Einstufungen von Hand prüfen).</p>
+<ol>
+<li><strong>Klassifizieren in Copilot Chat:</strong> Die Prompt-Verantwortliche fügt die Kommentare ein und
+   nutzt den Prompt aus Abschnitt 19.3 mit dem Fjordlicht-Schema (Sentiment, Thema, Bezug,
+   Handlungsbedarf). Das Ergebnis kommt als Tabelle. Den Teil des Prompts, der das Zählen mit
+   Python verlangt, lasst ihr weg – gezählt wird in Excel.</li>
+<li><strong>Gemeinsame Datei:</strong> Die Tabellen-Verantwortliche legt im eigenen OneDrive-Ordner
+   „Fjordlicht-Kurs" die Datei „Listening-Test.xlsx" an, übernimmt die Tabelle, formatiert sie
+   als Tabelle und teilt die Datei mit der Gruppe.</li>
+<li><strong>Stichprobe aufteilen:</strong> Die Prüferinnen teilen die zwölf Kommentare unter sich auf und
+   tragen in der geteilten Datei in einer Spalte „geprüft" ein: „ok" oder die korrekte
+   Einstufung. Jede Abweichung bekommt einen Excel-Kommentar mit kurzer Begründung.</li>
+<li><strong>Zählen in Excel:</strong> Die Tabellen-Verantwortliche lässt <strong>Copilot in Excel</strong> die Beiträge
+   nach Sentiment und nach Thema auszählen und eine Formelspalte für die Übereinstimmung
+   vorschlagen. Prüft die vorgeschlagene Formel, bevor ihr sie einfügt, und berechnet die
+   Übereinstimmungsquote.</li>
+</ol>
+<p><strong>Rollentausch für Runde 2:</strong> Eine Prüferin wird Prompt-Verantwortliche.</p>
+<ol>
+<li>Benennt gemeinsam die Fehlertypen. Die neue Prompt-Verantwortliche ergänzt den Prompt um
+   zwei Few-Shot-Beispiele (Kap. 6), die genau diese Fehler verhindern, und testet ihn in einem
+   <strong>neuen Chat</strong>. Die übrigen prüfen nur noch die Kommentare, die in Runde 1 falsch waren.</li>
+<li><strong>Abschluss:</strong> Ihr entscheidet gemeinsam, ob der verbesserte Prompt gut genug für den
+   Monatsbericht ist. Die Prompt-Verantwortliche speichert ihn in ihrer <strong>Prompt Gallery</strong>.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Das ist die Arbeitsteilung aus Abschnitt 19.3: Das Sprachmodell klassifiziert, gezählt wird in
+der Tabelle – nicht „im Kopf" des Chats. Kommentar 02, 04 und 11 sind die Prüfsteine: Ironie und
+Sarkasmus. Achtet außerdem auf 10 – der Kommentar handelt vom Wettbewerber, ist für Fjordlicht
+aber eher positiv. Copilot in Excel braucht Daten, die als Tabelle formatiert sind, in einer
+Datei in OneDrive oder SharePoint. Wenn die Prüferinnen bei einem Kommentar selbst uneins
+sind, ist das ein Hinweis, dass das Schema an dieser Stelle unscharf ist.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartete Einstufung (Auszug der schwierigen Fälle):</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Sentiment</th>
+<th>Thema</th>
+<th>Bezug</th>
+<th>Handlungsbedarf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>02</td>
+<td>negativ</td>
+<td>Nachhaltigkeit</td>
+<td>Fjordlicht</td>
+<td>Antwort mit Beleg, Teamleitung informieren</td>
+</tr>
+<tr>
+<td>04</td>
+<td>negativ</td>
+<td>Lieferung</td>
+<td>Fjordlicht</td>
+<td>Weiterleitung Kundenservice</td>
+</tr>
+<tr>
+<td>09</td>
+<td>neutral</td>
+<td>Nachhaltigkeit</td>
+<td>Fjordlicht</td>
+<td>Antwort mit Fakten</td>
+</tr>
+<tr>
+<td>10</td>
+<td>gemischt</td>
+<td>Qualität</td>
+<td>Wettbewerber</td>
+<td>keiner (nicht öffentlich kommentieren)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>negativ oder unklar</td>
+<td>Sonstiges</td>
+<td>Kategorie allgemein</td>
+<td>keiner</td>
+</tr>
+</tbody>
+</table>
+<p>Beispiel-Prompt für Copilot in Excel:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Zähle die Beiträge in dieser Tabelle nach Sentiment und nach Thema und
+zeige das Ergebnis als zwei kleine Übersichtstabellen. Schlage außerdem
+eine Formelspalte vor, die 1 ausgibt, wenn die Spalte &quot;geprüft&quot; den Wert
+&quot;ok&quot; hat, sonst 0.
+</code></pre></div></td></tr></table></div>
+<p>Die Quote ergibt sich dann als Mittelwert dieser Spalte, z. B. 10 von 12 = 83 %.</p>
+<p>Mögliche Fehler im ersten Durchlauf, auf die die Prüferinnen achten: 04 und 11 als positiv
+eingestuft wegen „Toll"/„toll", 10 dem Bezug Fjordlicht zugeordnet. Eine Übereinstimmung von 9
+oder 10 von 12 klingt gut – bei 3.000 Beiträgen wären das aber Hunderte Fehleinstufungen.</p>
+<p>Ergänzung im Prompt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Beispiele:
+&quot;Bestellt am Montag, immer noch nicht da. Super.&quot; -&gt; negativ, Lieferung
+(Ironie: positives Wort, negativer Inhalt)
+&quot;Die Jacke von X ist nach einem Jahr hin.&quot; -&gt; Bezug: Wettbewerber
+</code></pre></div></td></tr></table></div>
+<p>Wichtig sind außerdem die Kommentare 02 und 09: Beide betreffen die Recycling-Frage. Zwei Treffer in
+zwölf Kommentaren sind noch kein Trend, aber ein Thema, das das Team im Blick behält (Abschnitt
+19.5).</p>
+<p>Bewertungskriterien:</p>
+<ul>
+<li>Die Zählung stammt aus Excel, nicht aus dem Chat; die Formel wurde vor dem Einfügen geprüft.</li>
+<li>Alle zwölf Einstufungen sind von Hand geprüft, Abweichungen mit Kommentar begründet.</li>
+<li>Die Fehlertypen sind benannt, die Few-Shot-Beispiele zielen genau darauf, und der zweite
+  Durchlauf ist mit dem ersten verglichen.</li>
+<li>Zusammenarbeit: Rollen wurden getauscht; Meinungsverschiedenheiten zwischen den Prüferinnen
+  sind festgehalten und führten zu einer Schärfung von Schema oder Prompt.</li>
+</ul>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Einen Listening-Bericht in der Gegenprobe prüfen</summary>
+<p><strong>Gruppe:</strong> 4 Personen in zwei Paaren · <strong>Dauer:</strong> etwa 30 Minuten · <strong>Format:</strong> Gegenprobe
+Mensch gegen Copilot, danach gemeinsames Dokument · <strong>Am Ende liegen vor:</strong> eine überarbeitete
+Management Summary in „Agenturbericht-Q3.docx" und ein gemeinsam geprüfter Outlook-Entwurf
+(nicht gesendet).</p>
+<p>Eine Agentur legt Fjordlicht folgenden KI-erstellten Kurzbericht vor:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Social Listening Q3 - Management Summary
+Sentiment gesamt: 64,7 % positiv (+8,3 Prozentpunkte zum Vorquartal)
+Ursache: Die neue Herbstkampagne hat die Markenwahrnehmung deutlich verbessert.
+Top-Thema: Nachhaltigkeit (41 %), überwiegend positiv.
+Auffällig: Nutzerin @wanderherz_ms (12 Beiträge) äußert sich wiederholt
+kritisch; wir empfehlen, ihr Profil und ihr Umfeld genauer zu beobachten.
+Empfehlung: Budget für TikTok verdoppeln, dort ist die Stimmung am besten.
+</code></pre></div></td></tr></table></div>
+<p>Im Anhang steht: Datenbasis 212 Beiträge, davon 180 von Instagram, 32 von TikTok; Stichprobe
+zur Prüfung der KI-Einstufung: keine.</p>
+<ol>
+<li><strong>Vorbereitung:</strong> Eine Person legt den Bericht samt Anhang als Word-Datei
+   „Agenturbericht-Q3.docx" in ihrem Ordner „Fjordlicht-Kurs" an und teilt sie mit der Gruppe.</li>
+<li><strong>Gegenprobe (10 Minuten):</strong></li>
+<li><strong>Paar A (ohne KI)</strong> notiert alle Schwächen des Berichts – methodisch, inhaltlich und
+     rechtlich.</li>
+<li><strong>Paar B (mit Copilot)</strong> stellt <strong>Copilot in Word</strong> Fragen zum Dokument, etwa: „Welche
+     Aussagen sind durch die genannte Datenbasis nicht gedeckt?" und „Welche Aussagen sind
+     datenschutzrechtlich problematisch?"</li>
+<li>Danach vergleicht ihr: Was hat nur Paar A gefunden, was nur Copilot? Haltet die Lücken auf
+     beiden Seiten fest.</li>
+<li><strong>Gemeinsam überarbeiten:</strong> Paar B markiert die Management Summary und lässt sie von
+   Copilot in Word so umschreiben, dass sie nur aussagt, was die Daten tragen. Paar A prüft das
+   Ergebnis Satz für Satz mit <strong>Änderungen nachverfolgen</strong> und Kommentaren im geteilten
+   Dokument. Einigt euch auf eine Endfassung.</li>
+<li><strong>Rückfragen an die Agentur:</strong> Rollenwechsel – eine Person aus Paar A lässt <strong>Copilot in
+   Outlook</strong> eine E-Mail an die Agentur mit drei Rückfragen entwerfen und nutzt danach das
+   <strong>Coaching durch Copilot</strong>, um Ton und Klarheit zu prüfen. Die Gruppe entscheidet, welche
+   Hinweise aus dem Coaching übernommen werden. Nicht senden – nur Entwurf und Prüfung.</li>
+<li><strong>Abschluss:</strong> Eine Person stellt im Plenum in zwei Minuten vor: die wichtigste Schwäche des
+   Berichts und eine Lücke, die Copilot übersehen hat – oder die nur Copilot gefunden hat.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Lest jeden Satz mit der Frage: Welche Daten würden diese Aussage stützen – und liegen sie vor?
+Achtet besonders auf Nachkommastellen, auf Ursachenbehauptungen und auf den Umgang mit
+einzelnen Personen. Paar B sollte beobachten, ob Copilot den Datenschutzpunkt von sich aus
+nennt oder erst auf die gezielte Nachfrage (Kap. 4). Paar A sollte sich nicht vorab ansehen,
+was Copilot findet – sonst ist die Gegenprobe wertlos.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Aussage</th>
+<th>Schwäche</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>64,7 %, +8,3 Punkte</td>
+<td>Scheingenauigkeit; ohne Stichprobenprüfung ist unklar, ob die Einstufung stimmt</td>
+</tr>
+<tr>
+<td>Ursache Herbstkampagne</td>
+<td>Kausalbehauptung ohne Beleg; Korrelation ist keine Kausalität</td>
+</tr>
+<tr>
+<td>Nachhaltigkeit 41 %, positiv</td>
+<td>keine Beispiele, keine Fallzahl; gerade hier ist Ironie häufig</td>
+</tr>
+<tr>
+<td>Beobachtung von @wanderherz_ms</td>
+<td>datenschutzrechtlich problematisch: Profilbildung über eine Einzelperson, Nutzername ungeschwärzt</td>
+</tr>
+<tr>
+<td>TikTok-Budget verdoppeln</td>
+<td>32 Beiträge sind keine Grundlage; Stimmung im Listening sagt nichts über Werbewirkung</td>
+</tr>
+<tr>
+<td>Datenbasis</td>
+<td>stark verzerrt Richtung Instagram; Quellenauswahl nicht begründet</td>
+</tr>
+</tbody>
+</table>
+<p>Beispiel-Prompt für das Umschreiben in Word (Summary markiert):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Schreibe diese Zusammenfassung so um, dass sie nur Aussagen enthält, die
+durch die Datenbasis im Anhang gedeckt sind. Nenne Fallzahlen, runde Werte,
+kennzeichne vorläufige Ergebnisse, streiche Ursachenbehauptungen und jeden
+Bezug auf einzelne Personen.
+</code></pre></div></td></tr></table></div>
+<p>Überarbeitete Summary (Zielbild):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Datenbasis: 212 öffentliche Beiträge Q3 (180 Instagram, 32 TikTok).
+Stimmung: überwiegend positiv, Tendenz besser als Q2 - Einstufung noch
+nicht stichprobenartig geprüft, Werte daher vorläufig.
+Häufigstes Thema: Nachhaltigkeit; darunter wiederkehrende kritische
+Nachfragen zu Recycling-Anteilen (Beispiele: IDs ...).
+Ursachen für die Veränderung sind aus den Daten nicht ableitbar.
+TikTok: Fallzahl zu gering für eigene Aussagen.
+</code></pre></div></td></tr></table></div>
+<p>Rückfragen für den Outlook-Entwurf: (1) Wie wurde die KI-Einstufung geprüft, und wie hoch war
+die Übereinstimmung? (2) Welche Suchbegriffe und Quellen wurden genutzt, warum fehlen
+Bewertungsportale und Foren? (3) Werden Nutzernamen vor der KI-Verarbeitung entfernt, und auf
+welcher Rechtsgrundlage und mit welchem Werkzeug (AVV) werden die Daten verarbeitet?</p>
+<p>Die Empfehlung zur Beobachtung einer Einzelperson gehört ersatzlos gestrichen; kritische Beiträge
+werden inhaltlich beantwortet, nicht personenbezogen ausgewertet.</p>
+<p>Bewertungskriterien:</p>
+<ul>
+<li>Paar A hat seine Liste ohne KI erstellt; der Vergleich benennt konkret, was nur Menschen und
+  was nur Copilot gefunden haben.</li>
+<li>Die Endfassung der Summary enthält keine Kausalbehauptung, keinen Personenbezug und nennt
+  die Fallzahlen; die Prüfung ist im Dokument als nachverfolgte Änderungen und Kommentare
+  sichtbar.</li>
+<li>Der Mail-Entwurf ist sachlich, enthält die drei Rückfragen, die Übernahme von
+  Coaching-Hinweisen ist bewusst entschieden, und die Mail wurde nicht versendet.</li>
+<li>Die Plenumsvorstellung nennt eine konkrete Lücke statt einer allgemeinen Aussage wie
+  „Copilot war ganz gut".</li>
+</ul>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Listening-Konzept mit Krisenprobe in Microsoft 365</summary>
+<p><strong>Szenario:</strong> Fjordlicht hat bisher nur auf Kommentare reagiert, wenn jemand sie zufällig gesehen
+hat. Die Marketingleitung möchte ein schlankes <strong>Social-Listening-Konzept</strong>: ohne Enterprise-
+Budget, mit KI-Auswertung in Microsoft 365 Copilot, Monatsbericht und klarer Eskalation. Du
+kannst statt Fjordlicht auch ein Unternehmen deiner Wahl nutzen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Budget: kleines Listening-Tool oder Bordmittel, kein Enterprise-Vertrag.
+Team: 5 Personen Marketing, 1 Person Social Media hauptverantwortlich.
+Kanäle: Instagram, TikTok, LinkedIn, Pinterest, Shop-Bewertungen.
+Daten: nur fiktive Beiträge, selbst erstellt, ohne echte Nutzernamen.
+Werkzeug: Microsoft 365 Copilot (Chat, Word, Excel, Outlook, Pages);
+Markenstimme per /Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11).
+Ablage: OneDrive-Ordner &quot;Fjordlicht-Kurs&quot;.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Konzept in Word.</strong> Lass dir in Copilot Chat eine Suchbegriffs- und Ausschlussliste
+erstellen (Tippfehler, Produktnamen ohne „ø", Wettbewerber, Beschwerdeformulierungen) und prüfe
+sie. Erstelle dann mit <strong>Copilot in Word</strong> einen Entwurf „Listening-Konzept.docx": Ziele (drei
+Fragen, die Listening beantworten soll), Quellen, Suchbegriffe, Werkzeugtyp, Kategorienschema,
+Rhythmus. Halte Datenschutzregeln für das Team in höchstens fünf Punkten fest – inklusive der
+Frage, was es bedeutet, dass Copilot mit Enterprise Data Protection im eigenen Mandanten arbeitet,
+und was das <strong>nicht</strong> ersetzt (Kap. 4).</p>
+<p><strong>Runde 2 – Testauswertung in Excel.</strong> Lass Copilot Chat 30 fiktive Beiträge mit realistischer
+Mischung erzeugen, darunter Ironie, Wettbewerbsbezüge und mindestens ein Sicherheitsthema.
+Klassifiziere sie mit einem Prompt nach dem P.R.O.M.P.T.-Framework, übernimm das Ergebnis in
+„Listening-Test.xlsx" und lass <strong>Copilot in Excel</strong> auszählen und ein Diagramm erstellen
+(alternativ der Agent <strong>Analyst</strong>, falls freigegeben). Prüfe eine Stichprobe von zehn Beiträgen
+von Hand. Erstelle danach mit Copilot in Word den Monatsbericht nach der Gliederung aus Abschnitt
+19.4 und verweise dabei auf die Excel-Datei.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Freitagabend, 18 Uhr: Ein Video mit 200.000 Aufrufen behauptet,
+Fjordlichts Rucksack „Tind" werde unter schlechten Arbeitsbedingungen gefertigt. Die Fakten sind
+unklar, die zuständige Kollegin aus dem Einkauf ist bis Montag nicht erreichbar, die Kommentare
+nehmen stündlich zu. Spiele den Fall mit deiner Eskalationslogik durch: Lass Copilot 20 fiktive
+Kommentare sortieren (sachliche Frage, Vorwurf, Verteidigung), lege ein gemeinsames
+Krisenprotokoll als <strong>Copilot Page</strong> an und lass <strong>Copilot in Outlook</strong> die interne Alarmierung an
+Teamleitung und Geschäftsführung entwerfen. Halte fest: Stufe, Zuständige, erste Reaktion in den
+nächsten zwei Stunden, was gesagt wird und was ausdrücklich nicht.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Geschäftsführung fragt, ob ein Copilot-Agent
+kritische Kommentare künftig automatisch beantworten könne, „damit am Wochenende niemand arbeiten
+muss". Lass dir von Copilot ein Konzept dafür vorschlagen, etwa einen Agenten mit dem <strong>Agent
+Builder</strong>, der auf freigegebene Antwortbausteine zugreift. <strong>Widersprich</strong> dort, wo
+Automatisierung Risiken erzeugt, und entscheide, was automatisiert werden darf und was nicht.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>„Listening-Konzept.docx" mit Zielen, Quellen, Suchbegriffen, Schema, Rhythmus und
+   Datenschutzregeln</li>
+<li>„Listening-Test.xlsx" mit Testdatensatz, Klassifizierung, Auszählung und Stichprobenprüfung
+   samt Übereinstimmungsquote; Klassifizierungsprompt in der Prompt Gallery gespeichert</li>
+<li>Monatsbericht in Word mit Datenbasis und Handlungsempfehlungen</li>
+<li>Krisenprotokoll (Page) zu Runde 3, Outlook-Entwurf der Alarmierung und Entwurf einer ersten
+   öffentlichen Reaktion</li>
+<li>Entscheidungsvorlage zu Runde 4</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jeder Bericht seine Datenbasis nennt, die Stichprobenprüfung
+dokumentiert ist, die Zählung aus Excel stammt und nicht aus dem Chat, deine erste Reaktion in
+Runde 3 nichts behauptet, was du nicht weißt, und die Entscheidung in Runde 4 eine klare Grenze
+zwischen automatisierbaren und menschlichen Aufgaben zieht.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernwert liegt in Runde 3. In der Krise ist die Versuchung groß, schnell etwas zu
+dementieren. Eine gute erste Reaktion bestätigt, dass man den Vorwurf ernst nimmt, sagt, was man
+prüft und wann man sich meldet – und behauptet nichts, was noch nicht geprüft ist. Copilot kann
+Kommentare sortieren und Entwürfe liefern, aber keine Fakten über Lieferketten herbeischreiben;
+auch nicht aus Dateien im Mandanten, die es zu diesem Thema gar nicht gibt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt für Runde 3 (Copilot Chat, Arbeit):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Unten stehen 20 Kommentare unter einem kritischen TikTok-Video zu unserem
+Rucksack Tind. Sortiere sie in drei Gruppen: sachliche Frage, Vorwurf,
+Verteidigung der Marke. Nenne je Gruppe die Anzahl und zwei typische
+Formulierungen. Entwirf danach eine erste öffentliche Reaktion in der
+Markenstimme aus /Fjordlicht-Basisdaten, höchstens 60 Wörter.
+Regeln: Behaupte nichts über Lieferkette oder Fertigung. Sag, dass wir
+prüfen, und nenne einen Zeitpunkt für das nächste Update.
+Kommentare: [einfügen]
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: (1) das Konzept ist mit dem Rahmen umsetzbar, Suchbegriffe enthalten
+Schreibvarianten und Ausschlüsse, die Datenschutzregeln sind konkret (IDs statt Namen,
+freigegebene Werkzeuge mit AVV für das Listening-Tool, keine Personenprofile, Löschfristen) und
+trennen sauber: Enterprise Data Protection schützt die Verarbeitung in Copilot, ersetzt aber
+weder die Rechtsgrundlage noch das Entfernen von Nutzernamen; (2) die Testauswertung trennt
+Klassifizierung (Sprachmodell) und Zählung (Excel bzw. Analyst) und dokumentiert die Stichprobe
+ehrlich, inklusive Fehlertypen; (3) der Bericht nennt Datenbasis und Fallzahlen und behauptet
+keine Ursachen; (4) der Krisenablauf ordnet den Fall mindestens Stufe Orange zu, benennt
+Zuständige und Erreichbarkeit, die Page hält Zeitpunkte und Entscheidungen fest, und die erste
+Reaktion ist faktisch zurückhaltend mit Zusage einer Prüfung und eines Zeitpunkts; (5) die
+Entscheidung in Runde 4 erlaubt etwa Vorsortierung, Alarmierung und Antwortentwürfe durch einen
+Agenten, schließt aber automatische Antworten auf Kritik, Vorwürfe und Sicherheitsthemen aus und
+berücksichtigt die Transparenzpflicht bei KI-Interaktion (Kap. 27).</p>
+<p>Lernziel: Social Listening als datenschutzkonformen, überprüfbaren Prozess aufsetzen und Copilot
+dort einsetzen, wo es Menschen entlastet, ohne Verantwortung und Urteil an die KI abzugeben.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel18/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 18 – Kundenavatar entwickeln und nutzen">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 18 – Kundenavatar entwickeln und nutzen
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel20/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 20 – Datenbasierte Optimierung von Textinhalten">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 20 – Datenbasierte Optimierung von Textinhalten
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

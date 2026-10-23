@@ -1,0 +1,2161 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel36/">
+      
+      
+        <link rel="next" href="../kapitel38/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 37 – KI-Musik & Audio für Social Media - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-37-ki-musik-audio-fur-social-media" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 37 – KI-Musik & Audio für Social Media
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Block 7 · Multimediale Content Creation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel35/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 35 – KI-Videos: Text-to-Video und Animation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel36/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 36 – Avatar-Videos und KI-Sprecher
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 37 – KI-Musik & Audio für Social Media
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 37 – KI-Musik & Audio für Social Media
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#371-wo-musik-im-social-media-marketing-gebraucht-wird" class="md-nav__link">
+    <span class="md-ellipsis">
+      37.1 Wo Musik im Social-Media-Marketing gebraucht wird
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#372-die-werkzeuglandschaft-stand-oktober-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      37.2 Die Werkzeuglandschaft (Stand: Oktober 2026)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#373-musik-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      37.3 Musik-Prompting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#374-sound-branding-wie-eine-marke-klingt" class="md-nav__link">
+    <span class="md-ellipsis">
+      37.4 Sound-Branding: wie eine Marke klingt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#375-podcasts-und-audiogramme" class="md-nav__link">
+    <span class="md-ellipsis">
+      37.5 Podcasts und Audiogramme
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#376-lizenzlage-plattformregeln-und-die-gema-urteile" class="md-nav__link">
+    <span class="md-ellipsis">
+      37.6 Lizenzlage, Plattformregeln und die GEMA-Urteile
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel38/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 38 – Voice Cloning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-37-ki-musik-audio-fur-social-media">Kapitel 37 – KI-Musik &amp; Audio für Social Media<a class="headerlink" href="#kapitel-37-ki-musik-audio-fur-social-media" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Wo <strong>Musik und Audio</strong> im Social-Media-Marketing gebraucht werden und welche Bezugswege es gibt</li>
+<li>Welche <strong>KI-Musikwerkzeuge</strong> es gibt (Suno, Udio, ElevenLabs Music, Google Flow Music) und worin sie sich bei Lizenz und Nutzung unterscheiden</li>
+<li>Wie du <strong>Musik promptest</strong>: Genre, Stimmung, Tempo, Instrumente, Struktur und Länge</li>
+<li>Was <strong>Sound-Branding</strong> ist und wie KI beim Entwurf eines Sound-Logos helfen kann – und wo nicht</li>
+<li>Wie KI bei <strong>Podcasts und Audiogrammen</strong> Arbeit abnimmt</li>
+<li>Wie die <strong>Lizenzlage</strong> aussieht: Plattformbibliotheken, Nutzungsbedingungen der Tools, Schutzfähigkeit und die <strong>GEMA-Urteile</strong> des LG München I</li>
+</ul>
+</div>
+<hr />
+<h2 id="371-wo-musik-im-social-media-marketing-gebraucht-wird">37.1 Wo Musik im Social-Media-Marketing gebraucht wird<a class="headerlink" href="#371-wo-musik-im-social-media-marketing-gebraucht-wird" title="Permanent link">&para;</a></h2>
+<p>Ein Reel ohne Ton wirkt leer, ein TikTok-Clip lebt oft vom Sound. Dazu kommen Produktvideos im Webshop, Podcast-Intros, Hintergrundmusik für Erklärvideos (Kap. 36) und kurze Audiogramme für LinkedIn. Bisher gab es für Unternehmen vier Wege, an Musik zu kommen – KI ist der fünfte, nicht der einzige.</p>
+<table>
+<thead>
+<tr>
+<th>Bezugsweg</th>
+<th>Vorteil</th>
+<th>Nachteil</th>
+<th>Typischer Einsatz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plattformbibliothek</strong> (Instagram, TikTok)</td>
+<td>direkt in der App, Trends nutzbar</td>
+<td>für Unternehmensaccounts oft nur die „Commercial Music Library"; nur auf dieser Plattform</td>
+<td>spontane Reels und Stories</td>
+</tr>
+<tr>
+<td><strong>Stock-Musik</strong> (z. B. Epidemic Sound, Loudly)</td>
+<td>klare Lizenz, große Auswahl</td>
+<td>Abo-Kosten; andere Marken nutzen dieselben Tracks</td>
+<td>Produktvideos, Werbeclips</td>
+</tr>
+<tr>
+<td><strong>Auftragskomposition</strong></td>
+<td>einzigartig, Rechte vertraglich geregelt</td>
+<td>teuer, dauert</td>
+<td>Sound-Logo, Kampagnen-Hauptmotiv</td>
+</tr>
+<tr>
+<td><strong>Gemeinfreie Musik</strong></td>
+<td>kostenlos</td>
+<td>kleine Auswahl, Aufnahme kann trotzdem geschützt sein</td>
+<td>Nischeneinsatz</td>
+</tr>
+<tr>
+<td><strong>KI-Musik</strong></td>
+<td>schnell, günstig, passgenau beschreibbar</td>
+<td>Lizenz je Tool und Tarif verschieden, Rechtslage im Fluss</td>
+<td>Hintergrundmusik, Varianten, Entwürfe</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>„Der Song ist doch in der Instagram-App verfügbar, also darf ich ihn nutzen." Für <strong>private</strong> Accounts ist das Angebot größer als für <strong>Unternehmensaccounts</strong>. Wer als Marke einen bekannten Charthit unter ein Reel legt, bewegt sich meist außerhalb der Lizenz – auch wenn die App es technisch zulässt. Und: Ein so lizenzierter Sound gilt nur dort. Exportierst du das Video für Webshop oder Newsletter, ist die Musik nicht mehr abgedeckt.</p>
+</div>
+<hr />
+<h2 id="372-die-werkzeuglandschaft-stand-oktober-2026">37.2 Die Werkzeuglandschaft (Stand: Oktober 2026)<a class="headerlink" href="#372-die-werkzeuglandschaft-stand-oktober-2026" title="Permanent link">&para;</a></h2>
+<p>KI-Musik ist der Bereich, in dem sich Geschäftsmodelle und Lizenzbedingungen 2025 und 2026 am stärksten verändert haben. Die folgende Übersicht ist eine Momentaufnahme – prüfe vor jeder kommerziellen Nutzung die aktuellen Bedingungen deines Tarifs.</p>
+<table>
+<thead>
+<tr>
+<th>Werkzeug</th>
+<th>Was es kann</th>
+<th>Kommerzielle Nutzung</th>
+<th>Besonderheit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Suno</strong></td>
+<td>komplette Songs mit Gesang und Text oder instrumental aus einem Textprompt</td>
+<td>nur in Bezahlplänen, und zwar für Songs, die <strong>während des Abos</strong> erzeugt wurden</td>
+<td>Verfahren GEMA ./. Suno (siehe 37.6)</td>
+</tr>
+<tr>
+<td><strong>Udio</strong></td>
+<td>Songs mit Gesang, feine Bearbeitung einzelner Abschnitte</td>
+<td>nach Vergleichen mit Musiklabels im Umbau zur lizenzierten Plattform; Downloads zeitweise deaktiviert</td>
+<td>aktuelle Bedingungen unbedingt prüfen</td>
+</tr>
+<tr>
+<td><strong>ElevenLabs Music</strong></td>
+<td>Musik aus Textprompt, auch für Werbung gedacht</td>
+<td>in Bezahlplänen; Anbieter betont lizenzierte Trainingsgrundlage</td>
+<td>gleicher Anbieter wie Sprecherstimmen (Kap. 36, 38)</td>
+</tr>
+<tr>
+<td><strong>Google Flow Music</strong> (Modellfamilie Lyria)</td>
+<td>Musik und Klangflächen, Einbindung in Googles Kreativwerkzeuge</td>
+<td>nach Google-Bedingungen</td>
+<td>unsichtbares <strong>SynthID-Wasserzeichen</strong></td>
+</tr>
+<tr>
+<td><strong>Stock mit KI-Funktionen</strong> (Loudly, Epidemic Sound)</td>
+<td>Katalogmusik, teils KI-gestützt anpassbar (Länge, Stimmung)</td>
+<td>im Abo geregelt</td>
+<td>Lizenzlage am klarsten</td>
+</tr>
+</tbody>
+</table>
+<p>Für Hintergrundmusik in Social-Clips ist ein Stock-Abo oft die unspektakulärste und sicherste Lösung. KI-Musik spielt ihre Stärke aus, wenn du etwas <strong>Passgenaues</strong> brauchst: exakt 15 Sekunden, ein bestimmter Stimmungswechsel nach Sekunde 8, sechs Varianten desselben Motivs für eine Serie.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Bei KI-Musik entscheidet nicht das Tool über die Nutzbarkeit, sondern der <strong>Tarif zum Zeitpunkt der Erzeugung</strong>. Dokumentiere deshalb für jeden verwendeten Track: Tool, Tarif, Datum, Prompt.</p>
+</div>
+<hr />
+<h2 id="373-musik-prompting">37.3 Musik-Prompting<a class="headerlink" href="#373-musik-prompting" title="Permanent link">&para;</a></h2>
+<p>Musik-Prompts folgen derselben Logik wie Text- und Bildprompts (Kap. 5, 30): Alles, was du nicht festlegst, entscheidet das Modell nach Wahrscheinlichkeit – und das Wahrscheinlichste ist austauschbarer Pop mit Gesang. Sechs Bausteine machen den Unterschied.</p>
+<table>
+<thead>
+<tr>
+<th>Baustein</th>
+<th>Was du festlegst</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Genre</strong></td>
+<td>Stilrichtung, gern kombiniert</td>
+<td>„Nordic Folk mit leichtem Ambient"</td>
+</tr>
+<tr>
+<td><strong>Stimmung</strong></td>
+<td>Gefühl und Entwicklung</td>
+<td>„ruhig, weit, am Ende leicht aufbrechend"</td>
+</tr>
+<tr>
+<td><strong>Tempo</strong></td>
+<td>BPM oder Umschreibung</td>
+<td>„ca. 85 BPM, gleichmäßiger Gehrhythmus"</td>
+</tr>
+<tr>
+<td><strong>Instrumente</strong></td>
+<td>Besetzung, auch was fehlen soll</td>
+<td>„Akustikgitarre, Kontrabass, gestrichene Saiten, kein Schlagzeug"</td>
+</tr>
+<tr>
+<td><strong>Gesang</strong></td>
+<td>instrumental oder Stimme, Sprache, Text</td>
+<td>„instrumental" oder „weibliche Stimme, Englisch, eigener Text"</td>
+</tr>
+<tr>
+<td><strong>Struktur und Länge</strong></td>
+<td>Aufbau, Dauer, Ende</td>
+<td>„Intro 3 s, Steigerung, klares Ende bei 15 s, kein Fade-out"</td>
+</tr>
+</tbody>
+</table>
+<p>Ein Beispiel für Fjordlicht, Reel zur Regenjacke „Sølv" – zuerst der übliche Anfang, dann die präzise Fassung:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Mach ruhige Musik für ein Outdoor-Video.
+</code></pre></div></td></tr></table></div>
+<p>Ergebnis: eine generische Piano-Ballade oder ein Lagerfeuer-Pop-Song mit Fantasietext über Freiheit. Brauchbar ist das selten.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>Instrumental, keine Stimme.
+Genre: Nordic Folk mit Ambient-Elementen.
+Stimmung: ruhig, regnerisch, nachdenklich; ab der Mitte heller,
+als ob die Wolken aufreißen.
+Tempo: ca. 80 BPM.
+Instrumente: Fingerpicking-Akustikgitarre, Kontrabass, leise
+gestrichene Saiten, dezente Regengeräusche im Intro.
+Kein Schlagzeug, keine Synthesizer-Flächen, kein Pathos.
+Struktur: 2 s Regen, dann Gitarre; Steigerung ab Sekunde 8;
+klares Ende bei 15 s ohne Fade-out.
+Verwendung: Instagram-Reel, Sprache im Video wird darüber gelegt.
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Lass dir den Musik-Prompt von ChatGPT schreiben</p>
+<p>Musikalisches Vokabular fehlt vielen. Beschreibe ChatGPT (oder Claude, Gemini) die Szene, die Zielgruppe und die Markenstimme und lass dir drei Musik-Prompts in unterschiedlichen Richtungen formulieren. Du entscheidest danach mit den Ohren, nicht mit dem Fachbegriff.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist Music Supervisor für Social-Media-Werbung.
+Szene: [Beschreibung des Videos, Länge, Schnittpunkte]
+Marke: [Markenstimme in drei Adjektiven]
+Zielgruppe: [Zielgruppe]
+Schreibe drei unterschiedliche Prompts für ein KI-Musikwerkzeug,
+je mit Genre, Stimmung, Tempo in BPM, Instrumenten, Struktur mit
+Sekundenangaben und dem, was ausdrücklich NICHT vorkommen soll.
+Nenne keine Künstler- oder Songnamen.
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>„Klingt wie [bekannte Band]" oder „im Stil von [Songtitel]" ist der schnellste Weg zu einem Track, der einem geschützten Werk zu nahe kommt. Viele Tools blockieren Künstlernamen ohnehin. Beschreibe stattdessen die <strong>Merkmale</strong>, die dir gefallen: Tempo, Besetzung, Gesangsstil, Produktionsweise. Stil-Imitation ist nicht per se verboten, die Nachbildung konkreter Werke schon.</p>
+</div>
+<hr />
+<h2 id="374-sound-branding-wie-eine-marke-klingt">37.4 Sound-Branding: wie eine Marke klingt<a class="headerlink" href="#374-sound-branding-wie-eine-marke-klingt" title="Permanent link">&para;</a></h2>
+<p><strong>Sound-Branding</strong> (auch Audio-Branding) heißt, einer Marke einen wiedererkennbaren Klang zu geben: ein <strong>Sound-Logo</strong> von zwei bis drei Sekunden, ein Klangcharakter für Hintergrundmusik, eine Sprecherstimme (Kap. 36, 38). Wer sechs Monate lang jedes Reel mit zufällig gewählter Musik unterlegt, hat am Ende keinen Klang, sondern Rauschen.</p>
+<p>KI hilft dabei vor allem in der <strong>Exploration</strong>: Du kannst in einer Stunde dreißig Richtungen hören, wofür eine Agentur früher Tage brauchte. Für das endgültige Sound-Logo, das jahrelang auf allen Kanälen läuft, ist sie dagegen problematisch – rein KI-erzeugte Musik ist in Deutschland ohne menschliche schöpferische Leistung in der Regel <strong>nicht urheberrechtlich geschützt</strong> (§ 2 Abs. 2 UrhG). Ein Mitbewerber könnte die Tonfolge also übernehmen. Für ein Markenzeichen ist das ein ernstes Argument, das Ergebnis von einem Menschen ausarbeiten zu lassen und die Rechte vertraglich zu sichern.</p>
+<div class="admonition example">
+<p class="admonition-title">Audio-Leitbild für Fjordlicht</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>AUDIO-LEITBILD FJORDLICHT (Entwurf)
+Klangcharakter: akustisch, warm, luftig, nordisch-ruhig
+Instrumente:    Akustikgitarre, Holzbläser, Streicher, Naturklänge
+Tempo:          60 bis 95 BPM, nie hektisch
+Vermeiden:      EDM-Drops, Trailer-Pathos, Ukulele-Fröhlichkeit
+Sound-Logo:     drei aufsteigende Töne, Gitarre plus Holz-Percussion,
+                max. 2,5 s, endet offen
+Sprache:        ruhige Stimme, kein Werbeton (siehe Kap. 38)
+</code></pre></div></td></tr></table></div>
+<p>Dieses Leitbild ist zugleich ein Prompt-Baustein: Du hängst es an jeden Musik-Prompt an und bekommst Varianten, die zueinander passen.</p>
+</div>
+<hr />
+<h2 id="375-podcasts-und-audiogramme">37.5 Podcasts und Audiogramme<a class="headerlink" href="#375-podcasts-und-audiogramme" title="Permanent link">&para;</a></h2>
+<p>Audio ist nicht nur Musik. Viele Marketingteams betreiben einen Podcast oder schneiden Interviews zu kurzen <strong>Audiogrammen</strong> – Audioausschnitt mit Wellenform und Untertiteln, gut für LinkedIn und Instagram. Hier nimmt KI an vielen Stellen Arbeit ab, ohne dass rechtlich Neuland betreten wird.</p>
+<table>
+<thead>
+<tr>
+<th>Arbeitsschritt</th>
+<th>Was KI übernimmt</th>
+<th>Werkzeugbeispiele</th>
+<th>Was du prüfst</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vorbereitung</td>
+<td>Themenideen, Fragenkatalog, Gliederung</td>
+<td>ChatGPT, Claude</td>
+<td>Relevanz, Faktenlage</td>
+</tr>
+<tr>
+<td>Aufnahme-Nachbearbeitung</td>
+<td>Rauschen entfernen, Pegel angleichen, Füllwörter schneiden</td>
+<td>Descript, Adobe Podcast</td>
+<td>Natürlichkeit, Sinnentstellung</td>
+</tr>
+<tr>
+<td>Transkript</td>
+<td>Sprache zu Text, Sprecher trennen</td>
+<td>ChatGPT, Descript</td>
+<td>Namen, Fachbegriffe</td>
+</tr>
+<tr>
+<td>Shownotes und Kapitel</td>
+<td>Zusammenfassung, Zeitmarken, Links</td>
+<td>ChatGPT</td>
+<td>Zitate wörtlich korrekt?</td>
+</tr>
+<tr>
+<td>Audiogramme</td>
+<td>stärkste 30–60 s finden, Untertitel</td>
+<td>ChatGPT plus Schnittwerkzeug</td>
+<td>Kontext des Zitats erhalten</td>
+</tr>
+<tr>
+<td>Intro, Jingle</td>
+<td>Musik nach Audio-Leitbild</td>
+<td>KI-Musik oder Stock</td>
+<td>Lizenz, Markenpassung</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier das Transkript unserer Podcastfolge: [Transkript]
+Finde die drei Passagen, die sich am besten als Audiogramm
+(30 bis 60 Sekunden) für LinkedIn eignen. Kriterien: eine klare
+Aussage, ohne Vorwissen verständlich, kein Zitat aus dem Kontext
+gerissen. Gib je Passage Zeitmarke, wörtliches Zitat und einen
+Vorschlag für eine Caption mit max. 200 Zeichen aus.
+</code></pre></div></td></tr></table></div>
+<p>Wichtig: Wer Gäste schneidet, kürzt oder Passagen mit KI-Stimme „repariert", verändert deren Aussage. Das gehört abgesprochen – mehr dazu im nächsten Kapitel zum Voice Cloning.</p>
+<hr />
+<h2 id="376-lizenzlage-plattformregeln-und-die-gema-urteile">37.6 Lizenzlage, Plattformregeln und die GEMA-Urteile<a class="headerlink" href="#376-lizenzlage-plattformregeln-und-die-gema-urteile" title="Permanent link">&para;</a></h2>
+<p>Rund um KI-Musik laufen in Deutschland mehrere wichtige Verfahren. Die beiden für den Kurs zentralen hat die <strong>GEMA</strong> vor dem <strong>Landgericht München I</strong> geführt:</p>
+<table>
+<thead>
+<tr>
+<th>Verfahren</th>
+<th>Datum</th>
+<th>Kern</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GEMA ./. OpenAI</strong></td>
+<td>11.11.2025</td>
+<td>Liedtexte, die im Modell <strong>memorisiert</strong> sind und wiedergegeben werden können, gelten als Vervielfältigung</td>
+<td><strong>nicht rechtskräftig</strong></td>
+</tr>
+<tr>
+<td><strong>GEMA ./. Suno</strong></td>
+<td>31.07.2026</td>
+<td>GEMA erhält gegen den Musikgenerator <strong>weitgehend Recht</strong></td>
+<td><strong>nicht rechtskräftig</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Beide Urteile betreffen zunächst die <strong>Anbieter</strong> der Modelle, nicht dich als Nutzerin. Sie sind aber ein deutliches Signal: Die Frage, ob KI-Musik auf rechtlich sauberer Grundlage entsteht, ist nicht geklärt, und höhere Instanzen können anders entscheiden. Für dich als Betreiber folgen daraus drei praktische Regeln.</p>
+<ol>
+<li><strong>Tarif und Bedingungen dokumentieren.</strong> Kommerzielle Nutzung nur im passenden Bezahlplan, Screenshot oder Kopie der Bedingungen mit Datum ablegen.</li>
+<li><strong>Nichts erzeugen, was wie ein bekanntes Werk klingt.</strong> Keine Künstler- oder Songnamen im Prompt, keine bekannten Liedtexte als Vorlage. Klingt ein Ergebnis auffällig vertraut, verwirfst du es.</li>
+<li><strong>Für Langläufer auf sichere Wege setzen.</strong> Sound-Logo, Kampagnen-Hymne, TV- oder Funkspot: Stock mit klarer Lizenz oder Auftragskomposition mit Rechteübertragung.</li>
+</ol>
+<p>Auch die <strong>Plattformregeln</strong> gelten weiter: Für Unternehmensaccounts sind auf Instagram und TikTok oft nur Titel aus der Commercial Music Library freigegeben. Meta, TikTok und YouTube verlangen außerdem Labels für <strong>realistische</strong> KI-Inhalte – bei Instrumentalmusik im Hintergrund meist nicht relevant, bei einer KI-Stimme, die wie eine reale Person klingt, sehr wohl (Kap. 38). Nach dem EU AI Act ist reine KI-Hintergrundmusik in einem Werbeclip in der Regel nicht kennzeichnungspflichtig; die Pflicht zur maschinenlesbaren Markierung nach Art. 50 Abs. 2 trifft die <strong>Anbieter</strong> – SynthID bei Google ist ein Beispiel dafür. Die Details zur Kennzeichnung vertieft Kapitel 39.</p>
+<div class="admonition warning">
+<p class="admonition-title">Keine Rechtsberatung</p>
+<p>Dieses Kapitel gibt Orientierung, keine Rechtsberatung. Die Rechtslage zu KI-Musik ist 2026 ausdrücklich im Fluss. Bei Kampagnen mit Reichweite oder Budget klärst du die Musiknutzung mit eurer Rechtsabteilung oder einer Anwältin für Medien- und Urheberrecht.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Musik für Social Media kommt aus Plattformbibliotheken, Stock, Auftragskomposition oder KI – <strong>Unternehmensaccounts</strong> haben in den Apps oft nur die Commercial Music Library.</li>
+<li>Suno, Udio, ElevenLabs Music und Google Flow Music unterscheiden sich vor allem bei <strong>Lizenz und Tarif</strong>; kommerziell nutzbar ist KI-Musik meist nur im Bezahlplan.</li>
+<li>Gute Musik-Prompts legen <strong>Genre, Stimmung, Tempo, Instrumente, Gesang und Struktur</strong> fest – und nennen keine Künstler- oder Songnamen.</li>
+<li><strong>Sound-Branding</strong> braucht Konsistenz; KI eignet sich für die Exploration, das finale Sound-Logo gehört wegen fehlender Schutzfähigkeit in menschliche Hand.</li>
+<li>Bei <strong>Podcasts und Audiogrammen</strong> spart KI viel Zeit bei Transkript, Schnitt und Shownotes, ohne rechtliches Neuland.</li>
+<li>Die Urteile des LG München I in <strong>GEMA ./. OpenAI</strong> (11.11.2025) und <strong>GEMA ./. Suno</strong> (31.07.2026) sind <strong>nicht rechtskräftig</strong>, zeigen aber: Dokumentation und Vorsicht sind Pflicht.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Welcher Musikweg passt? – Gegenprobe mit und ohne Rahmen</summary>
+<p>Fjordlicht braucht in den nächsten Wochen Musik für fünf Vorhaben. Ordnet jedem den passenden
+<strong>Bezugsweg</strong> zu – Plattformbibliothek, Stock-Musik, Auftragskomposition oder KI-Musik – und
+begründet in einem Satz.</p>
+<ol>
+<li>Eine spontane Instagram-Story vom Teamausflug, nur 24 Stunden sichtbar.</li>
+<li>Ein neues <strong>Sound-Logo</strong>, das künftig am Ende jedes Videos und im Podcast läuft.</li>
+<li>Sechs Reels einer Serie zum Rucksack „Tind", die exakt 12 Sekunden lang sind und alle
+   dasselbe musikalische Motiv in leicht anderer Stimmung brauchen.</li>
+<li>Ein Produktvideo zur Wanderhose „Vidde", das auf Instagram, im Webshop und im Newsletter
+   laufen soll.</li>
+<li>Ein Kollege möchte einen aktuellen Charthit unter ein TikTok des Unternehmensaccounts legen,
+   „weil der Song gerade trendet".</li>
+</ol>
+<p><strong>Gruppenarbeit:</strong> 3–4 Personen in zwei Untergruppen (bei drei Personen: ein Paar und eine
+Einzelperson), etwa 20 Minuten. <strong>Am Ende liegt vor:</strong> eine
+gemeinsame Zuordnungstabelle im Teams-Chat der Gruppe und eine Aussage dazu, was der Rahmen im
+Prompt verändert hat.</p>
+<ol>
+<li><strong>Erst selbst.</strong> Jede Untergruppe ordnet zuerst ohne KI zu, in Stichworten.</li>
+<li><strong>Gegenprobe.</strong> <strong>Untergruppe A</strong> lässt Copilot Chat (Modus <strong>Arbeit</strong>) die fünf Fälle <strong>ohne</strong>
+   weiteren Rahmen zuordnen. <strong>Untergruppe B</strong> gibt die Tabelle der Bezugswege aus Abschnitt 37.1 und
+   den Hinweis auf Unternehmensaccounts als Rahmen mit. Vergleicht beide Antworten: Wo
+   unterscheiden sie sich? Achtet darauf, ob eine Antwort KI-Musik pauschal als „lizenzfrei"
+   bezeichnet.</li>
+<li><strong>Fall 5 mit Websuche.</strong> Eine Person aus Untergruppe A wechselt in den Modus <strong>Web</strong> und fragt nach
+   den aktuellen Regeln von TikTok und Instagram für Musik auf Unternehmensaccounts – mit
+   Quellen. Eine Person aus Untergruppe B prüft als <strong>Quellenprüferin</strong>, ob die genannten Quellen die
+   Aussage wirklich tragen, und notiert Datum und Herkunft.</li>
+<li><strong>Einigen.</strong> Führt eure Zuordnung in einer Tabelle im Teams-Chat der Gruppe zusammen und
+   haltet in einem Satz fest, welchen Unterschied der Rahmen im Prompt gemacht hat.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Fragt bei jedem Fall zuerst: Wie lange und wo läuft die Musik? Je länger und je breiter der
+Einsatz, desto wichtiger ist eine eindeutige, dokumentierte Lizenz. Die Gegenprobe zeigt, wie
+viel ein Rahmen im Prompt ausmacht – achtet besonders auf Fall 2 und 4.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt für Untergruppe B (mit Rahmen):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Ordne jedem der fünf Vorhaben einen Bezugsweg für Musik zu:
+Plattformbibliothek, Stock-Musik, Auftragskomposition oder KI-Musik.
+Fjordlicht postet über Unternehmensaccounts. Berücksichtige Laufzeit,
+Kanäle (nur App oder auch Webshop/Newsletter) und ob das Ergebnis der
+Marke dauerhaft gehören muss.
+Rahmen: [Tabelle der Bezugswege aus Abschnitt 37.1 einfügen]
+Ausgabe: Tabelle mit Nr., Bezugsweg, Begründung (1 Satz).
+[Vorhaben 1 bis 5 einfügen]
+</code></pre></div></td></tr></table></div>
+<p>Untergruppe A gibt nur die fünf Vorhaben mit der Bitte um Zuordnung ein.</p>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Bezugsweg</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Plattformbibliothek (Commercial Music Library)</td>
+<td>kurzlebig, nur auf Instagram, direkt in der App</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Auftragskomposition (KI höchstens zur Ideensuche)</td>
+<td>Markenzeichen braucht Schutzfähigkeit und vertraglich gesicherte Rechte</td>
+</tr>
+<tr>
+<td>3</td>
+<td>KI-Musik im Bezahlplan, alternativ Stock</td>
+<td>passgenaue Länge und Varianten sind die Stärke von KI; Tarif dokumentieren</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Stock-Musik mit kanalübergreifender Lizenz</td>
+<td>Plattformsound gilt nur in der App, nicht im Webshop oder Newsletter</td>
+</tr>
+<tr>
+<td>5</td>
+<td>nicht so umsetzbar</td>
+<td>Charthits sind für Unternehmensaccounts meist nicht freigegeben; Alternative aus der Commercial Music Library wählen</td>
+</tr>
+</tbody>
+</table>
+<p>Worauf ihr beim Vergleich achten solltet: ob eine Antwort Fall 2 als KI-Musik vorschlägt
+(„schnell und günstig"), ohne die fehlende Schutzfähigkeit zu nennen, und ob Fall 4 bei der
+Plattformbibliothek bleibt, obwohl das Video den Kanal verlässt. Prüft, ob diese Punkte in der
+Antwort ohne Rahmen häufiger auftreten als in der mit Rahmen. Bei der Websuche zu Fall 5 gilt:
+Datum und Herkunft der Quellen prüfen, die Regeln ändern sich.</p>
+<p>Fall 5 ist der wichtigste: Dass die App einen Song anbietet, heißt nicht, dass eine Marke ihn
+nutzen darf.</p>
+<p>Bewertungskriterien: Alle fünf Fälle sind zugeordnet und begründet, Laufzeit und Kanäle sind
+berücksichtigt. Die Gruppe hat die Unterschiede zwischen den Antworten mit und ohne Rahmen
+benannt und erklärt. Die Aussage zu Fall 5 ist mit mindestens einer geprüften Quelle samt Datum
+belegt.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Vom vagen zum präzisen Musik-Prompt – im Team verglichen</summary>
+<p>Copilot erzeugt keine Musik – aber es ist ein guter <strong>Music Supervisor</strong>: Es übersetzt Szene
+und Markenstimme in musikalisches Vokabular. Die Prompts entstehen deshalb in Copilot Chat,
+die Tracks im optionalen letzten Schritt in einem KI-Musikwerkzeug wie Suno, ElevenLabs Music
+oder Google Flow Music. Ohne Musikwerkzeug bearbeitet ihr die Schritte 1 bis 4.</p>
+<p>Ausgangslage: Fjordlicht zeigt in einem 20-Sekunden-Reel, wie das Fleece „Skog" an einem
+kalten Morgen am See angezogen wird. Ab Sekunde 12 spricht eine Stimme einen kurzen Satz.</p>
+<p><strong>Gruppenarbeit:</strong> 3–4 Personen, etwa 25 Minuten. Eine Person ist <strong>Sekunde-12-Wächterin</strong>:
+Sie prüft bei jedem Prompt nur, was ab Sekunde 12 passiert. <strong>Am Ende liegt vor:</strong> eine geteilte
+Copilot Page mit den spontanen Prompts, dem besten überarbeiteten Prompt und der Bausteinprüfung;
+außerdem hat jede Person den Music-Supervisor-Prompt in ihrer Prompt Gallery gespeichert.</p>
+<ol>
+<li><strong>Spontan.</strong> Jede Person schreibt allein den Prompt, den sie spontan tippen würde.</li>
+<li><strong>Gleicher Prompt, mehrere Ergebnisse.</strong> Jede Person führt <strong>denselben</strong> Music-Supervisor-Prompt
+   aus Abschnitt 37.3 in ihrem eigenen Copilot Chat aus und lässt sich drei Prompts in
+   unterschiedliche Richtungen formulieren, mit Verweis auf <code>/Fjordlicht-Basisdaten</code> (aus
+   Kap. 11). Vergleicht: Wie stark unterscheiden sich die Vorschläge zwischen euch? Taucht
+   irgendwo ein Künstler- oder Songname auf?</li>
+<li><strong>Auswählen und prüfen.</strong> Wählt gemeinsam die zwei stärksten Vorschläge. Eine Person lässt
+   Copilot im Chat beide gegen die sechs Bausteine prüfen (Genre, Stimmung, Tempo, Instrumente,
+   Gesang, Struktur und Länge) und als Tabelle ausgeben, übernimmt die Antwort in eine Copilot
+   Page und teilt sie. Die Sekunde-12-Wächterin und die anderen ergänzen dort, was fehlt, und
+   überarbeiten den besseren Prompt. Tragt auch eure spontanen Prompts ein.</li>
+<li><strong>Speichern.</strong> Jede Person speichert den Music-Supervisor-Prompt in ihrer <strong>Prompt Gallery</strong>,
+   damit sie ihn im Workshop wiederverwenden kann.</li>
+<li><strong>Hören (optional).</strong> Eine Person erzeugt im Musikwerkzeug einen Track mit einem spontanen
+   Prompt, eine andere mit dem überarbeiteten. Hört beide gemeinsam an der Sprechstelle an und
+   notiert das Ergebnis in der Page.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Die Sprechstelle ab Sekunde 12 ist der Prüfstein. Ein Track, der genau dort lauter wird oder
+Gesang einsetzt, ist unbrauchbar, auch wenn er schön klingt. Schreibt so etwas ausdrücklich in
+den Prompt. Achtet beim Vergleich darauf, ob jede Copilot-Antwort die Sprechstelle überhaupt
+berücksichtigt – und ob der Baustein „Gesang" in allen Vorschlägen vorkommt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt für Copilot Chat (alle Gruppenmitglieder identisch):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist Music Supervisor für Social-Media-Werbung.
+Szene: 20-Sekunden-Reel, kalter Morgen am See, jemand zieht das Fleece
+&quot;Skog&quot; an; ab Sekunde 12 spricht eine Stimme einen kurzen Satz.
+Marke: Markenstimme aus /Fjordlicht-Basisdaten (ruhig, ehrlich, nordisch-trocken).
+Zielgruppe: naturverbundene Stadtmenschen 25-45.
+Schreibe drei unterschiedliche Prompts für ein KI-Musikwerkzeug, je mit
+Genre, Stimmung, Tempo in BPM, Instrumenten, Gesang, Struktur mit
+Sekundenangaben und dem, was ausdrücklich NICHT vorkommen soll.
+Nenne keine Künstler- oder Songnamen.
+</code></pre></div></td></tr></table></div>
+<p>Beispiel für einen überarbeiteten Prompt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Instrumental, keine Stimme.
+Genre: akustischer Nordic Folk, minimalistisch.
+Stimmung: kühl, klar, still; langsam wärmer werdend.
+Tempo: ca. 70 BPM.
+Instrumente: Akustikgitarre, Klavier gedämpft, leise Streicher.
+Kein Schlagzeug, keine Synthesizer, kein Gesang.
+Struktur: 0-12 s Thema mit Gitarre; ab 12 s deutlich leiser,
+nur noch Streicherfläche unter gesprochenem Text; Ende bei 20 s,
+letzter Ton klingt kurz aus.
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Baustein</th>
+<th>Spontaner Prompt</th>
+<th>Überarbeitet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Genre, Stimmung</td>
+<td>meist vage („ruhig")</td>
+<td>konkret, mit Entwicklung</td>
+</tr>
+<tr>
+<td>Tempo, Instrumente</td>
+<td>fehlen</td>
+<td>BPM, Besetzung, Ausschlüsse</td>
+</tr>
+<tr>
+<td>Gesang</td>
+<td>fehlt</td>
+<td>ausdrücklich instrumental</td>
+</tr>
+<tr>
+<td>Struktur</td>
+<td>fehlt</td>
+<td>Sprechstelle berücksichtigt</td>
+</tr>
+</tbody>
+</table>
+<p>Worauf ihr beim Vergleich achten solltet: ob die Sprechstelle in allen drei Vorschlägen einer
+Antwort vorkommt oder nur in einem, ob der Baustein „Gesang" fehlt und ob Copilots eigene
+Bausteinprüfung das bemerkt – deshalb die zweite Prüfung durch die Gruppe. Im Musikwerkzeug
+lohnt der Blick darauf, ob der spontane Prompt Gesang oder eine Steigerung unter der
+Sprechstelle liefert und ob der Strukturbaustein das behebt.</p>
+<p>Bewertungskriterien: Der überarbeitete Prompt enthält alle sechs Bausteine, berücksichtigt die
+Sprechstelle ausdrücklich und nennt keine Künstler- oder Songnamen. Die Gruppe hat benannt, wie
+stark die Vorschläge aus demselben Prompt zwischen den Mitgliedern voneinander abwichen und was
+daraus für die Auswahl folgt. Copilots Bausteinprüfung wurde in der Page nachweisbar ergänzt.
+Jede Person hat den Music-Supervisor-Prompt in ihrer Prompt Gallery gespeichert.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Lizenz-Check für einen KI-Track – Rollen im Prüfteam</summary>
+<p>Eine Werkstudentin hat für Fjordlicht einen KI-Track erzeugt und unter ein Reel gelegt, das
+morgen auch als bezahlte Anzeige laufen soll. Sie schickt euch diese Notiz per Teams:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Track: &quot;Morgennebel&quot;, erzeugt mit Suno
+Prompt: &quot;Indie Folk wie [bekannte Band], ruhig, männliche Stimme,
+Text über Wandern im Regen&quot;
+Konto: mein privates Konto, Free-Plan; habe aber gestern
+ein Abo abgeschlossen
+Verwendung: Reel + Paid Ad auf Instagram, später Webshop
+Sie meint: &quot;Ist ja KI, gehört also niemandem.&quot;
+</code></pre></div></td></tr></table></div>
+<p><strong>Gruppenarbeit:</strong> 3–4 Personen, etwa 30 Minuten. <strong>Am Ende liegt vor:</strong> eine gemeinsame
+Problemliste nach Gewicht, eine Gruppenentscheidung („läuft morgen" oder „läuft nicht" plus
+Ersatz) und eine Antwort an die Werkstudentin; die Entscheidung stellt ihr im Plenum in einer
+Minute vor.</p>
+<ol>
+<li><strong>Probleme finden.</strong> Jede Person listet zuerst allein <strong>alle</strong> Probleme in der Notiz
+   (drei Minuten). Führt die Listen zusammen. Eine Person lässt dann Copilot Chat (Modus
+   <strong>Arbeit</strong>) dieselbe Notiz prüfen und die Probleme nach Gewicht ordnen. Vergleicht: Was hat
+   Copilot übersehen, was hat eure Gruppe übersehen?</li>
+<li><strong>Rollen.</strong></li>
+<li><strong>Bedingungen</strong> wechselt in den Modus <strong>Web</strong> und lässt sich die aktuellen
+     Suno-Bedingungen zur kommerziellen Nutzung mit Quellen zusammenfassen; prüft Datum und
+     Herkunft der Quellen.</li>
+<li><strong>Einordnung</strong> bewertet mit dem Kapitel die Aussage „Ist ja KI, gehört also niemandem" und
+     ordnet die Urteile des LG München I (GEMA ./. OpenAI, GEMA ./. Suno) ein: Was bedeuten sie
+     für diesen Fall, was nicht?</li>
+<li><strong>Kommunikation</strong> lässt Copilot Chat eine Antwort an die Werkstudentin entwerfen, die klar
+     entscheidet, kurz erklärt und nicht belehrend klingt.</li>
+<li><strong>Werkstudentin</strong> (bei vier Personen) liest den Entwurf in ihrer Rolle und sagt, wie er
+     ankommt.</li>
+<li><strong>Entscheiden.</strong> Darf der Track morgen laufen? Wenn nein, was ist der schnellste saubere
+   Ersatz? Trefft die Entscheidung gemeinsam, überarbeitet die Antwort danach selbst und
+   postet sie in eurem Teams-Gruppenchat.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achtet auf den Zeitpunkt: Bei Suno zählt der Tarif zum Zeitpunkt der <strong>Erzeugung</strong>, nicht zum
+Zeitpunkt der Veröffentlichung. Und „gehört niemandem" ist halb richtig – genau die falsche
+Hälfte macht den Fehler aus. Prüft, ob Copilot das Zeitpunktproblem von sich aus erkennt oder
+erst, wenn ihr ausdrücklich nach dem Tarif bei Erzeugung fragt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt für die Prüfung in Copilot Chat:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Prüfe die folgende Notiz zu einem KI-Musiktrack, der morgen als Reel und
+bezahlte Instagram-Anzeige laufen und später im Webshop genutzt werden soll.
+Benenne alle Probleme und ordne sie nach Gewicht (hoch, mittel, gering).
+Berücksichtige: Tarif zum Zeitpunkt der Erzeugung, Konto (privat oder
+Unternehmen), Künstlernamen im Prompt, Kanäle, KI-Gesang.
+Ausgabe: Tabelle mit Problem, Gewicht, Begründung. Keine Rechtsberatung,
+kennzeichne Unsicherheiten.
+[Notiz einfügen]
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Gewicht</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Erzeugt im Free-Plan</td>
+<td>hoch</td>
+<td>kommerzielle Nutzung nur für Songs, die während eines Bezahl-Abos erzeugt wurden; nachträgliches Abo heilt das nicht</td>
+</tr>
+<tr>
+<td>Privates Konto</td>
+<td>hoch</td>
+<td>Nutzungsrechte liegen bei der Person, nicht beim Unternehmen; nicht dokumentiert</td>
+</tr>
+<tr>
+<td>Künstlername im Prompt</td>
+<td>mittel bis hoch</td>
+<td>Risiko, einem geschützten Werk zu nahe zu kommen</td>
+</tr>
+<tr>
+<td>Paid Ad und Webshop</td>
+<td>mittel</td>
+<td>breiter, bezahlter Einsatz erhöht das Risiko</td>
+</tr>
+<tr>
+<td>KI-Stimme mit Gesang</td>
+<td>gering bis mittel</td>
+<td>prüfen, ob sie einer realen Person ähnelt</td>
+</tr>
+</tbody>
+</table>
+<p>Zur Aussage: Richtig ist, dass rein KI-erzeugte Musik in Deutschland in der Regel <strong>nicht
+urheberrechtlich geschützt</strong> ist (§ 2 Abs. 2 UrhG) – Fjordlicht könnte sie also nicht gegen
+Nachahmer verteidigen. Falsch ist der Schluss, sie sei frei nutzbar: Die Nutzungsbedingungen
+des Tools gelten, und der Output kann Rechte Dritter verletzen.</p>
+<p>Zu den Urteilen: Beide sind <strong>nicht rechtskräftig</strong> und richten sich gegen die Anbieter.
+Sie machen die Werkstudentin nicht haftbar, zeigen aber, dass die Grundlage solcher Modelle
+rechtlich umstritten ist – ein Grund mehr, bei bezahlten Anzeigen vorsichtig zu sein.</p>
+<p>Entscheidung: Der Track läuft morgen nicht. Schnellster Ersatz: ein Stock-Track mit
+kanalübergreifender Lizenz oder ein neu erzeugter Track im Unternehmenskonto mit Bezahlplan,
+ohne Künstlernamen, mit dokumentiertem Prompt, Datum und Tarif.</p>
+<p>Beispiel für eine gute Antwort an die Werkstudentin (nach Überarbeitung):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Danke für den schnellen Track – klanglich passt er gut. Laufen lassen
+können wir ihn morgen leider nicht: Er ist im Free-Plan auf deinem
+privaten Konto entstanden, und das Abo gilt nicht rückwirkend. Dazu kommt
+der Bandname im Prompt. Ich nehme für morgen einen Stock-Track. Wenn du
+magst, bauen wir den Prompt nächste Woche ohne Bandnamen im Firmenkonto
+neu und dokumentieren Tarif und Datum.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: Das Zeitpunktproblem und das private Konto sind als schwerwiegend
+erkannt. Die Gruppe hat benannt, welche Probleme nur in ihrer gemeinsamen Liste und welche nur
+in Copilots Prüfung standen, und Copilots Ergebnis nachweisbar ergänzt oder korrigiert. Die
+Websuche ist mit Quellen und Datum belegt. Die Rückmeldung aus der Rolle der Werkstudentin ist
+in die Antwort eingeflossen; die Antwort entscheidet klar, ohne die Werkstudentin
+bloßzustellen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Klangkonzept für eine Reel-Serie</summary>
+<p><strong>Szenario:</strong> Fjordlicht startet im November eine Reel-Serie „Draußen bei jedem Wetter" mit
+sechs Clips zur Regenjacke „Sølv", zum Fleece „Skog" und zur Wanderhose „Vidde". Bisher wurde
+Musik für jedes Reel spontan in der App ausgesucht – die Clips klingen jedes Mal anders. Du
+sollst ein <strong>Klangkonzept</strong> liefern, das die Serie hörbar zusammenhält und rechtlich sauber
+ist. Leitbild, Prompts, Lizenzdokumentation und Abstimmung laufen in Microsoft 365 Copilot; die
+Musik selbst kommt aus einem KI-Musikwerkzeug oder einem Stock-Katalog, denn Copilot erzeugt
+keine Musik. Du kannst statt Fjordlicht auch ein Unternehmen deiner Wahl nutzen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+6 Reels, je 15 bis 20 Sekunden, Instagram und TikTok (Unternehmensaccounts).
+Zwei Clips laufen zusätzlich als bezahlte Anzeige und im Webshop.
+Budget für Musik: max. 300 Euro für die gesamte Serie.
+Markenstimme: ruhig, ehrlich, naturverbunden, nordisch-trocken
+(/Fjordlicht-Basisdaten, falls nicht vorhanden: Kap. 11).
+Planung: Copilot in Word und Excel, Copilot Chat (Arbeit/Web), Teams/Outlook
+Musik: ein KI-Musikwerkzeug (Suno, ElevenLabs Music, Google Flow Music)
+oder ein Stock-Katalog
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Audio-Leitbild und Prompts in Word.</strong> Lass Copilot in Word im Dokument
+„Klangkonzept-Draussen" (Ordner „Fjordlicht-Kurs") ein Audio-Leitbild nach dem Muster aus
+Abschnitt 37.4 entwerfen (Klangcharakter, Instrumente, Tempo, Vermeiden), mit Verweis auf
+<code>/Fjordlicht-Basisdaten</code>. Leite daraus mit dem Music-Supervisor-Prompt aus Kurzübung 37.2
+(Prompt Gallery) <strong>sechs</strong> Musik-Prompts ab – einen pro Reel – mit allen sechs Bausteinen aus
+Abschnitt 37.3 und Sekundenangaben für Sprechstellen. Erzeuge mindestens zwei Tracks zur Probe
+im Musikwerkzeug oder suche zwei passende Stock-Titel.</p>
+<p><strong>Runde 2 – Lizenztabelle in Excel.</strong> Lege die Excel-Tabelle „Lizenzen-Draussen" an: eine Zeile
+je Track mit Reel, Bezugsweg, Kanälen, Tool, Tarif, Konto, Datum, Prompt und Ablageort der
+Bedingungen. Lass Copilot in Excel eine Prüfspalte vorschlagen, die markiert, wo Angaben fehlen,
+und alle Zeilen hervorheben, in denen „Anzeige" oder „Webshop" als Kanal steht. Das Konzept
+muss <strong>alle vier</strong> Kriterien erfüllen:</p>
+<ol>
+<li>Für jeden Track ist der <strong>Bezugsweg</strong> festgelegt und für den geplanten Kanal lizenziert –
+   einschließlich Anzeige und Webshop.</li>
+<li>Für jeden KI-Track sind <strong>Tool, Tarif, Konto, Datum und Prompt</strong> dokumentiert.</li>
+<li>Kein Prompt enthält <strong>Künstler- oder Songnamen</strong> – lass Copilot danach suchen und prüfe
+   trotzdem selbst.</li>
+<li>Die sechs Tracks sind beim Hintereinanderhören <strong>erkennbar eine Serie</strong>.</li>
+</ol>
+<p><strong>Runde 3 – Die Komplikation.</strong> Zwei Tage vor Start schlägt das Social-Media-Team in einem
+Teams-Chat vor, in zwei Reels doch einen gerade trendenden TikTok-Sound zu nutzen – „sonst
+gehen wir im Feed unter". Gleichzeitig fällt dir auf, dass einer deiner KI-Tracks im Refrain
+stark an einen bekannten Song erinnert. Lass Copilot (Modus <strong>Web</strong>) die aktuellen Regeln für
+Sounds auf Unternehmensaccounts mit Quellen zusammenfassen. Kläre beide Punkte: Was ist auf dem
+Unternehmensaccount zulässig, was nicht? Ersetze oder überarbeite, wo nötig, trage es in die
+Lizenztabelle ein und halte fest, wie du die Reichweitensorge anders adressierst. Antworte im
+Teams-Chat mit einem Copilot-Entwurf, den du selbst nachschärfst.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Geschäftsführung fragt per Mail, ob ihr aus
+einem der Tracks gleich das neue <strong>Sound-Logo</strong> machen könnt. Lass dir in Copilot Chat Pro und
+Contra aufstellen. Die Antwort wird wahrscheinlich Kosten und Geschwindigkeit stark betonen.
+<strong>Widersprich</strong> dort, wo Schutzfähigkeit, Rechtslage (GEMA-Urteile nicht rechtskräftig) und
+Langlebigkeit eines Markenzeichens zu kurz kommen, und triff eine begründete Empfehlung.
+Formuliere die Antwort an die Geschäftsführung in Outlook mit Copilot als Entwurf.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Word-Dokument mit Audio-Leitbild und sechs vollständigen Musik-Prompts</li>
+<li>Excel-Lizenztabelle mit Bezugsweg, Kanälen, Dokumentation und Prüfspalte je Track</li>
+<li>Entscheidungsnotiz zu Runde 3 (Trend-Sound und auffälliger Track) mit Quellen</li>
+<li>Empfehlung zum Sound-Logo mit Abwägung aus Runde 4 als Mail an die Geschäftsführung</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jeder Track für jeden geplanten Kanal einen nachvollziehbaren
+Lizenzweg hat, die Prüfspalte in Excel keine Lücke mehr zeigt, kein Prompt einen
+Künstlernamen enthält, der auffällige Track ersetzt ist und deine Sound-Logo-Empfehlung
+mindestens ein rechtliches und ein markenstrategisches Argument enthält.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 2 und 3: Gute Musik ist schnell gefunden, eine Lizenz, die für
+Reel, Anzeige <strong>und</strong> Webshop gilt, nicht. Copilot hilft beim Strukturieren und Prüfen der
+Dokumentation – ob ein Track „zu vertraut" klingt, entscheiden deine Ohren. Beim Sound-Logo
+verschiebt sich die Frage von „klingt es gut?" zu „gehört es uns dauerhaft?". Rein KI-erzeugte
+Musik ist in der Regel nicht geschützt – für ein Markenzeichen ist das ein Ausschlusskriterium
+oder zumindest ein Grund für menschliche Ausarbeitung.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt für Copilot in Excel:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Füge eine Spalte &quot;Dokumentation vollständig&quot; hinzu, die &quot;ja&quot; ausgibt,
+wenn bei KI-Tracks Tool, Tarif, Konto, Datum und Prompt ausgefüllt sind
+und bei Stock-Tracks Lizenz und Ablageort der Bedingungen, sonst &quot;nein&quot;.
+Hebe alle Zeilen mit &quot;nein&quot; hervor.
+</code></pre></div></td></tr></table></div>
+<p>Beispiel-Prompt für die Pro-und-Contra-Abwägung in Copilot Chat:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Unsere Geschäftsführung möchte einen KI-erzeugten Track als dauerhaftes
+Sound-Logo nutzen. Stelle Pro und Contra auf. Berücksichtige ausdrücklich:
+Schutzfähigkeit nach § 2 Abs. 2 UrhG, die nicht rechtskräftigen Urteile des
+LG München I (GEMA ./. OpenAI, GEMA ./. Suno), Tarifbedingungen des Tools,
+Langlebigkeit eines Markenzeichens. Gewichte die Punkte und kennzeichne,
+was rechtlich unsicher ist. Keine Rechtsberatung.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: (1) Audio-Leitbild ist konkret genug, um sechs zueinander passende
+Prompts zu erzeugen; alle Prompts enthalten die sechs Bausteine und berücksichtigen
+Sprechstellen; (2) die Excel-Lizenztabelle unterscheidet Plattformbibliothek, Stock und KI
+korrekt und deckt Anzeige und Webshop ausdrücklich ab; KI-Tracks sind mit Tool, Tarif, Konto,
+Datum und Prompt dokumentiert, die Prüfspalte funktioniert; (3) Runde 3 erkennt, dass
+Trend-Sounds auf Unternehmensaccounts meist nicht nutzbar sind (mit Quelle aus der Websuche),
+bietet eine Alternative aus der Commercial Music Library oder eine inhaltliche Lösung für
+Reichweite an und verwirft den auffälligen Track konsequent; (4) die Sound-Logo-Empfehlung
+nennt fehlende Schutzfähigkeit nach § 2 Abs. 2 UrhG, die nicht rechtskräftigen GEMA-Urteile
+als Unsicherheitsfaktor und die Langlebigkeit eines Markenzeichens – typischerweise: KI für
+Ideen, finale Fassung durch einen Menschen mit vertraglicher Rechteübertragung. Gute
+Bearbeitungen zeigen, wo Copilots erste Abwägung Kosten und Tempo übergewichtet hat.</p>
+<p>Lernziel: KI-Musik gezielt für Konsistenz und Tempo nutzen, die Lizenzdokumentation mit Copilot
+in Excel sauber führen, ohne Lizenzfragen zu übersehen – und unterscheiden können, wann ein
+KI-Track reicht und wann eine Marke mehr Rechtssicherheit braucht.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel36/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 36 – Avatar-Videos und KI-Sprecher">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 36 – Avatar-Videos und KI-Sprecher
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel38/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 38 – Voice Cloning">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 38 – Voice Cloning
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

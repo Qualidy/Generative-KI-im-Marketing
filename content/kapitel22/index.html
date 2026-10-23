@@ -1,0 +1,2159 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel21/">
+      
+      
+        <link rel="next" href="../kapitel23/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-22-seo-mit-ki-ii-on-page-optimierung-und-ki-suche" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Block 4 · Content-Optimierung mit KI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 17 – Zielgruppenanalyse mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Kundenavatar entwickeln und nutzen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Social Listening mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Datenbasierte Optimierung von Textinhalten
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#221-on-page-optimierung-die-seite-selbst-verstandlich-machen" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.1 On-Page-Optimierung: Die Seite selbst verständlich machen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#222-interne-links-faq-und-strukturierte-daten" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.2 Interne Links, FAQ und strukturierte Daten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#223-bestandsoptimierung-alte-inhalte-besser-machen" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.3 Bestandsoptimierung: Alte Inhalte besser machen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#224-googles-haltung-zu-ki-inhalten" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.4 Googles Haltung zu KI-Inhalten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#225-ki-suche-ai-overviews-ai-mode-und-generative-engine-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.5 KI-Suche: AI Overviews, AI Mode und Generative Engine Optimization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-22-seo-mit-ki-ii-on-page-optimierung-und-ki-suche">Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche<a class="headerlink" href="#kapitel-22-seo-mit-ki-ii-on-page-optimierung-und-ki-suche" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Wie du mit KI <strong>Title, Meta-Description und Überschriften</strong> optimierst, ohne in Keyword-Stopfen zu verfallen</li>
+<li>Wie <strong>interne Links</strong> und <strong>FAQ-Abschnitte</strong> Nutzerinnen und Suchmaschinen gleichermaßen helfen</li>
+<li>Was <strong>strukturierte Daten</strong> (Schema.org) sind und wie KI beim Erstellen hilft</li>
+<li>Wie du <strong>bestehende Inhalte</strong> systematisch überarbeitest, statt immer neue zu schreiben</li>
+<li>Wie <strong>Google zu KI-Inhalten</strong> steht und wo „scaled content abuse" beginnt</li>
+<li>Was <strong>AI Overviews</strong>, AI Mode und <strong>Generative Engine Optimization</strong> für deine Texte bedeuten</li>
+</ul>
+</div>
+<hr />
+<h2 id="221-on-page-optimierung-die-seite-selbst-verstandlich-machen">22.1 On-Page-Optimierung: Die Seite selbst verständlich machen<a class="headerlink" href="#221-on-page-optimierung-die-seite-selbst-verstandlich-machen" title="Permanent link">&para;</a></h2>
+<p>On-Page-Optimierung umfasst alles, was du <strong>auf der eigenen Seite</strong> veränderst, damit Suchmaschinen sie verstehen und Menschen sie in den Ergebnissen anklicken. Grundlage ist das SEO-Briefing aus Kap. 21: Hauptkeyword, Intention und Ziel stehen fest, jetzt geht es um die Umsetzung im Text und in den Seitenelementen.</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Aufgabe</th>
+<th>Richtwert</th>
+<th>Was KI gut kann</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title-Tag</td>
+<td>Überschrift im Suchergebnis</td>
+<td>etwa 50–60 Zeichen, Hauptkeyword vorn</td>
+<td>Varianten erzeugen und Zeichen zählen lassen</td>
+</tr>
+<tr>
+<td>Meta-Description</td>
+<td>Teaser im Suchergebnis</td>
+<td>etwa 140–160 Zeichen, mit Nutzenversprechen</td>
+<td>Varianten mit klarem Nutzen formulieren</td>
+</tr>
+<tr>
+<td>H1</td>
+<td>Hauptüberschrift auf der Seite</td>
+<td>genau eine, Thema klar benannt</td>
+<td>Abgleich mit Title, Alternativen</td>
+</tr>
+<tr>
+<td>H2/H3</td>
+<td>Gliederung</td>
+<td>beantworten die Kernfragen aus dem Briefing</td>
+<td>Gliederung prüfen, Lücken finden</td>
+</tr>
+<tr>
+<td>Einleitung</td>
+<td>Antwort und Einordnung</td>
+<td>Kernaussage in den ersten zwei, drei Sätzen</td>
+<td>kürzen, auf den Punkt bringen</td>
+</tr>
+<tr>
+<td>Bild-Alt-Texte</td>
+<td>Bildbeschreibung für Screenreader und Suche</td>
+<td>beschreibend, nicht keywordgestopft</td>
+<td>Entwürfe aus Bildbeschreibung</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>Adresse der Seite</td>
+<td>kurz, sprechend</td>
+<td>Vorschläge</td>
+</tr>
+</tbody>
+</table>
+<p>Google schreibt Titles und Descriptions häufig selbst um, wenn sie nicht zur Suchanfrage passen. Ein guter Title ist deshalb kein Trick, sondern eine <strong>präzise Zusammenfassung</strong> dessen, was auf der Seite steht.</p>
+<div class="admonition example">
+<p class="admonition-title">Vorher/Nachher bei Fjordlicht</p>
+<p>Vorher: „Pflege – Fjordlicht" (kein Inhalt erkennbar).
+Nachher: „Regenjacke imprägnieren: So perlt sie wieder ab | Fjordlicht" (60 Zeichen).
+Meta-Description: „Wann eine Regenjacke neue Imprägnierung braucht, wie du sie aufträgst und woran du einen Membranschaden erkennst – aus unserer Reparaturwerkstatt."</p>
+</div>
+<p>Ein Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist SEO-Redakteurin mit Erfahrung im E-Commerce.
+Request: Formuliere für den angehängten Artikel fünf Varianten für
+Title-Tag und Meta-Description.
+Output: Tabelle mit Title, Zeichenzahl Title, Description, Zeichenzahl
+Description. Zähle die Zeichen mit der Datenanalyse, nicht geschätzt.
+Modifier: Hauptkeyword &quot;[Keyword]&quot; im Title möglichst vorn. Title maximal
+60 Zeichen, Description maximal 155. Keine Superlative, keine Versprechen,
+die der Artikel nicht einlöst. Markenname am Ende des Titles.
+Purpose: Mehr Klicks aus der Google-Suche für einen Ratgeber im Blog.
+Tone: ruhig, konkret, Du-Ansprache.
+Artikel: [Text einfügen]
+</code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>KI neigt dazu, das Keyword in jede Überschrift und jeden zweiten Satz zu setzen, wenn du es als „wichtig" markierst. Das liest sich holprig und bringt seit vielen Jahren keinen Vorteil mehr. Formuliere im Modifier: „Verwende das Keyword natürlich, höchstens dort, wo es inhaltlich passt."</p>
+</div>
+<hr />
+<h2 id="222-interne-links-faq-und-strukturierte-daten">22.2 Interne Links, FAQ und strukturierte Daten<a class="headerlink" href="#222-interne-links-faq-und-strukturierte-daten" title="Permanent link">&para;</a></h2>
+<p><strong>Interne Links</strong> verbinden Seiten deiner eigenen Website. Sie zeigen Suchmaschinen, welche Seiten zusammengehören und welche wichtig sind – und sie führen Leserinnen zum nächsten Schritt. Im Themencluster aus Kap. 21 verlinkt die Pillar Page auf alle Detailartikel und umgekehrt. KI hilft, wenn du ihr eine Liste deiner URLs mit Titeln gibst: „Schlage für diesen Artikel fünf interne Links vor, mit Ankertext und der Stelle im Text, an der der Link sinnvoll ist." Ankertexte sollen beschreiben, wohin der Link führt – „hier klicken" verschenkt den Kontext.</p>
+<p><strong>FAQ-Abschnitte</strong> beantworten konkrete Anschlussfragen in kurzer Form. Sie sind nützlich, wenn die Fragen echt sind: aus Kundenservice, Social Listening (Kap. 19) oder den „Ähnlichen Fragen" der Suche. Von der KI erfundene Fragen, die niemand stellt, blähen die Seite nur auf.</p>
+<p><strong>Strukturierte Daten</strong> sind maschinenlesbare Zusatzangaben im Quelltext einer Seite, meist im Format JSON-LD nach dem Vokabular von <strong>Schema.org</strong>. Sie sagen der Suchmaschine ausdrücklich: Das ist ein Produkt mit Preis und Verfügbarkeit, das ist ein Artikel mit Autorin und Datum, das ist eine Organisation mit Adresse.</p>
+<table>
+<thead>
+<tr>
+<th>Schema-Typ</th>
+<th>Einsatz bei Fjordlicht</th>
+<th>Möglicher Effekt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product (mit Offer, AggregateRating)</td>
+<td>Produktseiten Sølv, Skog, Vidde, Tind</td>
+<td>Preis, Verfügbarkeit, Bewertungssterne im Ergebnis</td>
+</tr>
+<tr>
+<td>Article / BlogPosting</td>
+<td>Artikel in „Draußen-Notizen"</td>
+<td>Autorin, Datum, bessere Einordnung</td>
+</tr>
+<tr>
+<td>Organization</td>
+<td>Startseite, Impressum</td>
+<td>Logo, Kontaktdaten, Verknüpfung der Profile</td>
+</tr>
+<tr>
+<td>BreadcrumbList</td>
+<td>gesamter Shop</td>
+<td>Pfadanzeige im Suchergebnis</td>
+</tr>
+<tr>
+<td>FAQPage</td>
+<td>FAQ-Abschnitte</td>
+<td>Verständnis der Fragen; erweiterte FAQ-Darstellung zeigt Google seit 2023 nur noch für wenige Websites</td>
+</tr>
+</tbody>
+</table>
+<p>Eine KI kann solche Auszeichnungen aus einem Produkttext erstellen. Ein Ausschnitt sieht so aus:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;script type=&quot;application/ld+json&quot;&gt;
+{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;Product&quot;,
+  &quot;name&quot;: &quot;Regenjacke Sølv&quot;,
+  &quot;brand&quot;: &quot;Fjordlicht&quot;,
+  &quot;offers&quot;: {
+    &quot;@type&quot;: &quot;Offer&quot;,
+    &quot;price&quot;: &quot;[Preis]&quot;,
+    &quot;priceCurrency&quot;: &quot;EUR&quot;,
+    &quot;availability&quot;: &quot;https://schema.org/InStock&quot;
+  }
+}
+&lt;/script&gt;
+</code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Strukturierte Daten müssen dem <strong>sichtbaren Inhalt</strong> entsprechen. Erfindet die KI Bewertungen, Preise oder Eigenschaften, verstößt das gegen Googles Richtlinien und kann zu manuellen Maßnahmen führen. Prüfe jede generierte Auszeichnung mit dem <strong>Test für Rich-Suchergebnisse</strong> von Google und gleiche die Werte mit dem Shop ab. Meist erzeugt das Shopsystem diese Daten ohnehin automatisch – dann prüfst du nur, ob sie vollständig sind.</p>
+</div>
+<hr />
+<h2 id="223-bestandsoptimierung-alte-inhalte-besser-machen">22.3 Bestandsoptimierung: Alte Inhalte besser machen<a class="headerlink" href="#223-bestandsoptimierung-alte-inhalte-besser-machen" title="Permanent link">&para;</a></h2>
+<p>Viele Websites haben Hunderte Artikel, von denen ein Großteil kaum Besuche bekommt. Neue Texte zu schreiben, ist verlockend – oft lohnt die Überarbeitung bestehender Inhalte mehr. Ausgangspunkt sind die Daten der <strong>Google Search Console</strong> (Kap. 21): Seiten mit vielen Impressionen, aber wenigen Klicks, oder Seiten auf Position 8 bis 20.</p>
+<table>
+<thead>
+<tr>
+<th>Befund in der Search Console</th>
+<th>Wahrscheinliche Ursache</th>
+<th>Maßnahme mit KI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>viele Impressionen, niedrige Klickrate</td>
+<td>Title/Description passen nicht zur Suchanfrage</td>
+<td>neue Varianten auf Basis der tatsächlichen Suchanfragen</td>
+</tr>
+<tr>
+<td>Position 8–20 für wichtiges Keyword</td>
+<td>Inhalt beantwortet die Frage unvollständig</td>
+<td>Lückenanalyse gegen Top-Ergebnisse, Abschnitte ergänzen</td>
+</tr>
+<tr>
+<td>Ranking für unpassende Suchanfragen</td>
+<td>Thema unscharf</td>
+<td>Fokus schärfen, Abschnitte auslagern</td>
+</tr>
+<tr>
+<td>sinkende Klicks über Monate</td>
+<td>Inhalt veraltet oder Suchverhalten verändert</td>
+<td>Aktualität prüfen, Daten und Beispiele erneuern</td>
+</tr>
+<tr>
+<td>zwei Artikel zum selben Thema</td>
+<td>Kannibalisierung</td>
+<td>zusammenführen, Weiterleitung einrichten</td>
+</tr>
+</tbody>
+</table>
+<p>Die KI arbeitet hier am besten mit beiden Quellen: dem bestehenden Artikel und dem Search-Console-Export der Suchanfragen für diese URL. Der Prompt lautet dann sinngemäß: „Welche dieser Suchanfragen beantwortet der Artikel nicht oder nur am Rand? Schlage Ergänzungen vor, ohne den Artikel insgesamt umzuschreiben." Das Ziel ist gezielte Verbesserung, nicht ein komplett neuer Text, der die bisherigen Stärken verliert. Mit Schreibblöcken in ChatGPT oder vergleichbaren Editoren (Kap. 11) kannst du einzelne Abschnitte markieren und gezielt überarbeiten lassen.</p>
+<div class="admonition tip">
+<p class="admonition-title">Datum ehrlich führen</p>
+<p>Aktualisiere das Datum eines Artikels nur, wenn sich der Inhalt wirklich geändert hat. Ein neues Datum ohne neue Inhalte ist eine kleine Täuschung – für Leserinnen wie für Suchmaschinen.</p>
+</div>
+<hr />
+<h2 id="224-googles-haltung-zu-ki-inhalten">22.4 Googles Haltung zu KI-Inhalten<a class="headerlink" href="#224-googles-haltung-zu-ki-inhalten" title="Permanent link">&para;</a></h2>
+<p>Google bewertet Inhalte nach <strong>Qualität und Hilfreichkeit</strong>, nicht danach, wie sie entstanden sind. KI-Unterstützung ist also kein Problem an sich. Problematisch ist, Inhalte <strong>massenhaft</strong> zu erzeugen, um Rankings zu manipulieren, ohne Nutzerinnen echten Mehrwert zu bieten. Google führt das in seinen Spam-Richtlinien als <strong>„scaled content abuse"</strong> – unabhängig davon, ob Menschen oder Maschinen die Texte schreiben.</p>
+<table>
+<thead>
+<tr>
+<th>Eher unproblematisch</th>
+<th>Eher problematisch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KI entwirft, Fachperson prüft, ergänzt Erfahrung, gibt frei</td>
+<td>hunderte Seiten nach Schablone, nur Ortsname oder Produkt ausgetauscht</td>
+</tr>
+<tr>
+<td>KI überarbeitet Title, Gliederung, Lesbarkeit</td>
+<td>Texte, die Konkurrenzartikel umformulieren, ohne Neues zu bieten</td>
+</tr>
+<tr>
+<td>KI hilft bei strukturierten Daten und FAQ aus echten Fragen</td>
+<td>erfundene Erfahrungsberichte, Tests oder Bewertungen</td>
+</tr>
+<tr>
+<td>Übersetzung mit menschlicher Prüfung</td>
+<td>ungeprüfte Massenübersetzung</td>
+</tr>
+</tbody>
+</table>
+<p>Maßstab ist <strong>E-E-A-T</strong>: Experience, Expertise, Authoritativeness, Trustworthiness (Kap. 15). Gerade die Erfahrung kann KI nicht liefern. Ein Artikel, in dem die Fjordlicht-Werkstatt beschreibt, welche Reißverschlüsse am häufigsten reißen, hat etwas, das kein Modell erzeugen kann. Offizielle Hinweise findest du in <a href="https://developers.google.com/search">Google Search Central</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Google fragt nicht „Wer hat das geschrieben?", sondern „Hilft das der Person, die gesucht hat?". KI-Texte ohne eigene Erfahrung und Prüfung beantworten diese Frage selten mit Ja.</p>
+</div>
+<hr />
+<h2 id="225-ki-suche-ai-overviews-ai-mode-und-generative-engine-optimization">22.5 KI-Suche: AI Overviews, AI Mode und Generative Engine Optimization<a class="headerlink" href="#225-ki-suche-ai-overviews-ai-mode-und-generative-engine-optimization" title="Permanent link">&para;</a></h2>
+<p>Die Suche verändert sich. <strong>AI Overviews</strong> fassen bei vielen Anfragen die Antwort oberhalb der klassischen Ergebnisse zusammen und verlinken einige Quellen. Der <strong>AI Mode</strong> führt die Suche als Dialog fort. Daneben nutzen viele Menschen ChatGPT mit Websuche, Perplexity oder Gemini als Antwortmaschine. Die Folge: Bei einfachen Wissensfragen klicken weniger Menschen auf eine Website, weil die Antwort schon dasteht. Wer genannt wird, gewinnt Sichtbarkeit; wer nicht genannt wird, verliert Klicks.</p>
+<p>Für dieses Umfeld hat sich der Begriff <strong>Generative Engine Optimization (GEO)</strong> etabliert – die Optimierung dafür, in KI-Antworten als Quelle aufgegriffen zu werden. Vieles davon ist gutes SEO mit anderer Gewichtung:</p>
+<table>
+<thead>
+<tr>
+<th>GEO-Prinzip</th>
+<th>Umsetzung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Klare, zitierfähige Antworten</td>
+<td>Kernaussage in ein, zwei Sätzen direkt unter der Frage-Überschrift</td>
+</tr>
+<tr>
+<td>Eigene Fakten und Daten</td>
+<td>Messwerte, Erfahrungen, Zahlen aus dem eigenen Haus mit Kontext</td>
+</tr>
+<tr>
+<td>Struktur</td>
+<td>eindeutige Überschriften, Listen, Tabellen, strukturierte Daten</td>
+</tr>
+<tr>
+<td>Glaubwürdigkeit</td>
+<td>Autorin mit Expertise, Quellen, Datum, Impressum</td>
+</tr>
+<tr>
+<td>Erwähnungen außerhalb der eigenen Seite</td>
+<td>Fachartikel, Bewertungen, Kooperationen, Pressearbeit</td>
+</tr>
+<tr>
+<td>Technische Erreichbarkeit</td>
+<td>Seite indexierbar, Inhalte als Text, nicht nur im Bild</td>
+</tr>
+</tbody>
+</table>
+<p>Für Fjordlicht heißt das konkret: Ein Ratgeber „Welche Regenjacke für Radfahren in der Stadt?" beginnt mit einer klaren Zwei-Satz-Antwort, nennt danach die Kriterien in einer Tabelle (Länge, Kapuze, Reflektoren, Belüftung) und belegt sie mit Erfahrungen aus Tests des eigenen Teams. Genau solche Passagen lassen sich von einer Antwortmaschine sauber übernehmen und mit Quelle verlinken.</p>
+<p>Wie KI-Systeme ihre Quellen genau auswählen, legen die Anbieter nicht offen. Vorsicht deshalb bei Diensten, die „garantierte Nennung in ChatGPT" versprechen, und bei Rezepten, die als Standard verkauft werden, aber unbelegt sind. Prüfen kannst du die eigene Sichtbarkeit, indem du typische Fragen deiner Zielgruppe regelmäßig in mehrere Antwortmaschinen eingibst und dokumentierst, ob und wie Fjordlicht vorkommt.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Frage der Zielgruppe]) --&gt; B([KI-Suche wählt Quellen])
+    B --&gt; C([Antwort mit Quellenlinks])
+    C --&gt; D([Klick nur bei Bedarf an Tiefe])
+    E([Klare Antwort, eigene Daten, Struktur]) --&gt; B</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">Den Klick wert sein</p>
+<p>Wenn die Kurzantwort schon in der Suche steht, muss deine Seite mehr bieten: Tiefe, eigene Erfahrung, Entscheidungshilfe, Werkzeuge wie eine Größentabelle oder einen Pflegeplaner. Das ist gleichzeitig die beste Antwort auf Googles Qualitätsmaßstab.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>On-Page-Elemente</strong> wie Title, Meta-Description und Überschriften fassen präzise zusammen, was auf der Seite steht – KI liefert Varianten, Zeichen werden gezählt, nicht geschätzt.</li>
+<li><strong>Interne Links</strong> und <strong>FAQ</strong> aus echten Fragen verbinden Cluster und führen zum nächsten Schritt.</li>
+<li><strong>Strukturierte Daten</strong> nach Schema.org müssen dem sichtbaren Inhalt entsprechen und werden mit Googles Testwerkzeug geprüft.</li>
+<li><strong>Bestandsoptimierung</strong> auf Basis der Search Console lohnt oft mehr als neue Artikel.</li>
+<li>Google bewertet <strong>Hilfreichkeit, nicht Herkunft</strong>; massenhaft erzeugte Inhalte ohne Mehrwert gelten als <strong>scaled content abuse</strong>.</li>
+<li><strong>AI Overviews</strong>, AI Mode und Antwortmaschinen verändern das Klickverhalten; <strong>GEO</strong> setzt auf klare Antworten, eigene Daten, Struktur und Glaubwürdigkeit.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Unproblematisch oder Spam? – Bewertung im Paar</summary>
+<p><strong>Gruppe:</strong> Paare · <strong>Dauer:</strong> etwa 15–20 Minuten · <strong>Format:</strong> Rollen mit Wechsel
+(Fragende und Quellenprüferin) · <strong>Am Ende liegt vor:</strong> eine gemeinsame Bewertung der sechs
+Fälle mit geprüfter Primärquelle und ein Streitfall für das Plenum.</p>
+<p>Bewertet die folgenden Vorhaben aus Sicht von Googles Haltung zu KI-Inhalten (Abschnitt 22.4):
+<strong>eher unproblematisch</strong> oder <strong>eher problematisch</strong> (scaled content abuse, Täuschung)?
+Begründet jeweils in einem Satz.</p>
+<ol>
+<li>Fjordlicht lässt von der KI 300 Seiten „Regenjacke kaufen in [Stadt]" erzeugen, die sich
+   nur im Ortsnamen unterscheiden.</li>
+<li>Die KI überarbeitet Titles und Meta-Descriptions von 40 Blogartikeln, eine Redakteurin
+   prüft jede Variante.</li>
+<li>Die KI schreibt „Erfahrungsberichte" von Kundinnen, die es nicht gibt, für die Produktseite
+   der Wanderhose „Vidde".</li>
+<li>Die Werkstattleiterin diktiert ihre Erfahrungen zu Reißverschlussschäden, die KI macht
+   daraus einen gegliederten Ratgeber, den sie prüft.</li>
+<li>Die KI erzeugt Schema.org-Daten mit 4,8 Sternen für den Rucksack „Tind", obwohl im Shop
+   noch keine Bewertungen stehen.</li>
+<li>Englische Blogartikel werden mit KI ins Deutsche übersetzt und von einer Muttersprachlerin
+   redigiert.</li>
+</ol>
+<p>So geht ihr vor:</p>
+<ol>
+<li><strong>Allein (3 Minuten):</strong> Jede Person bewertet zuerst selbst.</li>
+<li><strong>Runde 1:</strong> Person A stellt in <strong>Copilot Chat</strong> mit dem Umschalter auf <strong>Web</strong> die Frage:
+   „Was versteht Google unter scaled content abuse, und wie steht Google zu KI-erzeugten
+   Inhalten? Antworte mit Quellen." Person B ist <strong>Quellenprüferin</strong>: Sie öffnet mindestens eine
+   genannte Quelle und prüft, ob sie von Google Search Central stammt und das Behauptete
+   tatsächlich sagt.</li>
+<li><strong>Runde 2 (Rollentausch):</strong> Person B lässt Copilot die sechs Fälle anhand dieser Quellen
+   bewerten. Person A prüft, ob die Begründungen zur Primärquelle passen.</li>
+<li><strong>Abgleich:</strong> Vergleicht eure beiden Einzelbewertungen und die Copilot-Bewertung. Einigt
+   euch auf eine gemeinsame Bewertung. Den Fall, bei dem ihr am längsten diskutiert habt,
+   stellt ihr in einer Minute im Plenum vor.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Maßstab ist nicht, ob KI beteiligt war, sondern ob die Seite Menschen hilft und ehrlich
+ist. Prüft außerdem: Entspricht das, was die Suchmaschine sieht, dem, was auf der Seite steht?
+Bei der Quellenprüfung zählt die Primärquelle von Google, nicht ein SEO-Blog, der sie
+zusammenfasst. Achtet darauf, ob Copilot die Fälle 4 und 6 vorsichtiger bewertet, nur weil KI
+beteiligt ist.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Bewertung</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>problematisch</td>
+<td>Schablonenseiten ohne Mehrwert, klassischer Fall von scaled content abuse</td>
+</tr>
+<tr>
+<td>2</td>
+<td>unproblematisch</td>
+<td>KI unterstützt, Mensch prüft, Inhalt wird präziser zusammengefasst</td>
+</tr>
+<tr>
+<td>3</td>
+<td>problematisch</td>
+<td>erfundene Erfahrungen täuschen Kundinnen; zudem Irreführung nach UWG</td>
+</tr>
+<tr>
+<td>4</td>
+<td>unproblematisch</td>
+<td>echte Erfahrung (E-E-A-T), KI übernimmt nur die Struktur</td>
+</tr>
+<tr>
+<td>5</td>
+<td>problematisch</td>
+<td>strukturierte Daten widersprechen dem sichtbaren Inhalt, Verstoß gegen Richtlinien</td>
+</tr>
+<tr>
+<td>6</td>
+<td>unproblematisch</td>
+<td>Übersetzung mit menschlicher Prüfung schafft Mehrwert für deutschsprachige Leserinnen</td>
+</tr>
+</tbody>
+</table>
+<p>Gemeinsamer Nenner der problematischen Fälle: Masse ohne Mehrwert oder Aussagen, die nicht
+stimmen. In beiden Fällen ist die KI nur das Werkzeug – das Problem wäre dasselbe, hätte ein
+Mensch die Texte geschrieben.</p>
+<p>Zum Copilot-Schritt: Eine gute Antwort verweist auf die Spam-Richtlinien und die Hinweise zu
+KI-Inhalten in Google Search Central. Nennt Copilot nur Sekundärquellen, fragt gezielt nach der
+Originalseite. Bewertet Copilot Fall 4 oder 6 vorsichtiger („kann problematisch sein"), hilft die
+Rückfrage: „Was ist laut Google das entscheidende Kriterium?"</p>
+<p>Bewertungskriterien:</p>
+<ul>
+<li>Beide haben vor dem Copilot-Schritt selbst bewertet.</li>
+<li>Mindestens eine Primärquelle von Google Search Central wurde geöffnet und mit der
+  Copilot-Aussage abgeglichen.</li>
+<li>Die gemeinsame Bewertung begründet jeden Fall mit Hilfreichkeit und Ehrlichkeit, nicht mit
+  der Frage, ob KI beteiligt war.</li>
+<li>Abweichungen zwischen den beiden Personen und Copilot sind benannt; der Plenumsfall erklärt,
+  woran sich die Diskussion entzündet hat.</li>
+</ul>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Einen Bestandsartikel arbeitsteilig mit Copilot optimieren</summary>
+<p><strong>Gruppe:</strong> 3–4 Personen · <strong>Dauer:</strong> etwa 30 Minuten · <strong>Format:</strong> Arbeitsteilung mit
+Prompt-Duell bei den Titles · <strong>Am Ende liegen vor:</strong> „Search-Console-Fleece.xlsx" mit
+Auswertung und gezählten Title-Varianten, ein ergänzter Artikelentwurf in Word und eine
+gemeinsam gewählte Title-Variante.</p>
+<p>Der Fjordlicht-Artikel „Fleece richtig waschen" bekommt laut Search Console viele Impressionen,
+aber wenige Klicks (Abschnitt 22.3). Hier der fiktive Export:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>suchanfrage;impressionen;klicks;position
+fleece waschen;4200;38;9,4
+fleece waschen temperatur;1900;12;11,2
+fleecejacke waschen trockner;1300;4;14,8
+fleece fusselt was tun;880;2;17,1
+fleece weichspüler;610;9;8,7
+</code></pre></div></td></tr></table></div>
+<p>Aktueller Title: <code>Pflegetipps | Fjordlicht Blog</code>
+Aktuelle Description: <code>Hier findest du Tipps zur Pflege.</code></p>
+<p><strong>Aufteilung:</strong></p>
+<ul>
+<li><strong>Person 1 – Daten (Excel):</strong> Lege den Export als Tabelle in „Search-Console-Fleece.xlsx" in
+  deinem Ordner „Fjordlicht-Kurs" an und teile die Datei. Lass <strong>Copilot in Excel</strong> eine
+  Formelspalte Klickrate (Klicks ÷ Impressionen) vorschlagen und die Anfragen hervorheben, die
+  viele Impressionen, aber eine niedrige Klickrate oder eine Position über 10 haben. Gib das
+  Ergebnis an die anderen weiter.</li>
+<li><strong>Person 2 und Person 3 – Title-Duell (Copilot Chat):</strong> Beide lassen <strong>fünf Title-/
+  Description-Varianten</strong> erstellen. Person 2 nutzt einen vollständigen P.R.O.M.P.T.-Prompt
+  (Kap. 5) mit den Suchanfragen aus dem Export, Person 3 nur den Satz „Schreibe fünf bessere
+  Titles und Descriptions für einen Ratgeber ‚Fleece richtig waschen'." Beide tragen ihre
+  Varianten in ein eigenes Blatt der geteilten Excel-Datei ein und lassen die Zeichen mit
+  <code>LÄNGE</code> zählen – nicht schätzen.</li>
+<li><strong>Person 4 – Text (Word)</strong> (bei drei Personen übernimmt Person 1 diese Aufgabe nach der
+  Excel-Auswertung): Füge einen kurzen Artikelentwurf (oder einen eigenen Pflegetext) in ein
+  Word-Dokument ein und frag <strong>Copilot in Word</strong>, welche der Suchanfragen der Text nicht oder
+  nur am Rand beantwortet. Lass für zwei neue H2-Abschnitte je eine zitierfähige Kurzantwort
+  mit Copilot entwerfen, ohne den übrigen Text umzuschreiben.</li>
+</ul>
+<p><strong>Zusammenführen (10 Minuten):</strong> Vergleicht die Varianten aus dem Duell: Welche Prompt-Variante
+hat die Suchanfragen aus dem Export besser getroffen, welche hält die Zeichengrenzen ein? Wählt
+gemeinsam die beste Title-Variante und begründet die Wahl mit der Excel-Auswertung. Prüft, ob
+Title und neue H2-Abschnitte zueinander passen.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Schaut auf die Suchanfragen mit hoher Position-Zahl: Sie zeigen, wonach Menschen suchen, was
+der Artikel offenbar nur am Rand behandelt. Die beste Variante greift die wichtigste
+Suchanfrage auf, ohne alle Begriffe in den Title zu pressen. Beim Zählen gilt: Achtet darauf, ob
+Zeichenangaben im Chat mit dem Ergebnis von <code>LÄNGE</code> übereinstimmen – zählen soll die Formel,
+nicht das Sprachmodell.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Ergebnis Person 1 (gerundet): Klickrate „fleece waschen" 0,9 %, „temperatur" 0,6 %,
+„trockner" 0,3 %, „fusselt" 0,2 %, „weichspüler" 1,5 %. Hervorgehoben werden vor allem
+Trockner (Position 14,8) und Fusseln (17,1).</p>
+<p>Beispiel-Prompt für Person 2 (Copilot Chat):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist SEO-Redakteurin im E-Commerce.
+Request: Formuliere fünf Varianten für Title und Meta-Description eines
+Ratgebers &quot;Fleece richtig waschen&quot;.
+Output: Tabelle Title | Description.
+Modifier: Hauptkeyword &quot;fleece waschen&quot; im Title möglichst vorn, Title
+höchstens 60 Zeichen, Description höchstens 155. Markenname am Ende des
+Titles. Keine Superlative, keine Versprechen, die der Artikel nicht hält.
+Purpose: mehr Klicks aus der Google-Suche; wichtigste Suchanfragen: [Export].
+Tone: ruhig, konkret, Du-Ansprache.
+</code></pre></div></td></tr></table></div>
+<p>Beispielvarianten (Zeichen per <code>=LÄNGE(A2)</code> gezählt):</p>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Zeichen</th>
+<th>Description (Auszug)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fleece waschen: Temperatur, Trockner, Fusseln | Fjordlicht</td>
+<td>58</td>
+<td>Bei wie viel Grad, ob Trockner erlaubt ist und was gegen Fusseln hilft …</td>
+</tr>
+<tr>
+<td>Fleece richtig waschen – so bleibt es weich | Fjordlicht</td>
+<td>56</td>
+<td>Temperatur, Waschmittel, Trockner: Was dein Fleece braucht …</td>
+</tr>
+</tbody>
+</table>
+<p>Worauf es beim Duell ankommt: Greifen die Varianten von Person 3 die Teilfragen Trockner und
+Fusseln nicht auf oder überschreiten sie die Zeichengrenze, während die Varianten von Person 2
+beides berücksichtigen, zeigt das den Wert von Daten und Modifiern im Prompt.</p>
+<p>Neue Abschnitte (Person 4):</p>
+<ul>
+<li><strong>„Darf Fleece in den Trockner?"</strong> Kurzantwort: „Besser nicht. Wärme und Reibung lassen die
+  Fasern verfilzen; lass Fleece liegend an der Luft trocknen." (Aussage gegen Pflegeetikett
+  prüfen.)</li>
+<li><strong>„Was tun, wenn Fleece fusselt?"</strong> Kurzantwort mit Hinweis auf Fusselrasierer und
+  Waschen auf links, ergänzt um Erfahrungen aus der Fjordlicht-Werkstatt.</li>
+</ul>
+<p>Begründung der Wahl: Variante 1 greift die drei Teilfragen mit den meisten Impressionen auf,
+bleibt unter 60 Zeichen und verspricht nichts, was der Artikel nicht hält. Weichspüler wird
+im Artikel behandelt, muss aber nicht in den Title.</p>
+<p>Bewertungskriterien:</p>
+<ul>
+<li>Klickrate per Formel berechnet, Problemanfragen hervorgehoben.</li>
+<li>Alle Title-Varianten mit <code>LÄNGE</code> gezählt; der Vergleich der beiden Prompts ist konkret
+  (welche Suchanfragen aufgegriffen, welche Grenzen eingehalten).</li>
+<li>Die neuen H2-Abschnitte beantworten genau die Anfragen, die die Excel-Auswertung als Lücke
+  zeigt; Pflegeaussagen sind als zu prüfen markiert.</li>
+<li>Die gemeinsame Wahl verbindet die Ergebnisse aller Teilaufgaben: Title, Daten und Text
+  passen zueinander.</li>
+</ul>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Sichtbarkeit in KI-Antworten im Team prüfen</summary>
+<p><strong>Gruppe:</strong> 3–4 Personen · <strong>Dauer:</strong> etwa 30 Minuten · <strong>Format:</strong> Arbeitsteilung nach
+Antwortmaschine, danach Rollen für die Bewertung · <strong>Am Ende liegen vor:</strong> eine gemeinsam
+befüllte „KI-Sichtbarkeit.xlsx" und ein geprüfter Outlook-Entwurf an die Geschäftsführung
+(nicht gesendet).</p>
+<p>Die Fjordlicht-Geschäftsführung hat gelesen, dass „Kunden jetzt in ChatGPT statt bei Google
+suchen", und fragt: „Werden wir dort überhaupt genannt – und was können wir tun?" Eine
+Agentur bietet außerdem ein Paket „Garantierte Platzierung in ChatGPT und AI Overviews" an
+(Abschnitt 22.5).</p>
+<ol>
+<li><strong>Monitoring anlegen (alle, 5 Minuten):</strong> Eine Person legt „KI-Sichtbarkeit.xlsx" in ihrem
+   Ordner „Fjordlicht-Kurs" an und teilt die Datei. Spalten: Frage, Werkzeug, Datum, Durchlauf,
+   genannt ja/nein, verlinkt ja/nein, Quellen, die stattdessen erscheinen. Lasst euch in
+   Copilot Chat zehn typische Fragen der Zielgruppe vorschlagen (z. B. „Welche Regenjacke
+   eignet sich zum Radfahren in der Stadt?") und streicht gemeinsam alle, die echte Menschen so
+   nicht stellen würden. Wählt drei Fragen für den Test aus.</li>
+<li><strong>Arbeitsteilung nach Antwortmaschine (10 Minuten):</strong> Jede Person testet dieselben drei
+   Fragen in <strong>einem</strong> Werkzeug und trägt die Ergebnisse in die geteilte Datei ein:</li>
+<li><strong>Person 1:</strong> <strong>Copilot Chat</strong> mit dem Umschalter auf <strong>Web</strong></li>
+<li><strong>Person 2:</strong> Google-Suche mit AI Overview</li>
+<li><strong>Person 3:</strong> ChatGPT mit Websuche, Perplexity oder Gemini</li>
+<li><strong>Person 4</strong> (falls vorhanden): wiederholt die Fragen von Person 1 in einem neuen Chat und
+     trägt sie als zweiten Durchlauf ein.</li>
+</ol>
+<p>Testet für Fjordlicht oder ein real existierendes Unternehmen eurer Wahl.
+3. <strong>Auswerten:</strong> Lasst <strong>Copilot in Excel</strong> zusammenfassen, welche Quellentypen je Werkzeug am
+   häufigsten erscheinen und bei wie vielen Fragen das Unternehmen genannt wurde. Leitet
+   gemeinsam ab, <strong>welche Art Inhalte</strong> in den Antworten offenbar bevorzugt zitiert wird.
+4. <strong>Agenturangebot bewerten – mit Rollen:</strong> Eine Person ist <strong>Advocatus Diaboli</strong> und vertritt
+   das Agenturangebot, die anderen prüfen es kritisch. Danach lässt eine Person <strong>Copilot in
+   Outlook</strong> eine kurze Antwort an die Geschäftsführung entwerfen (maximal 120 Wörter) und
+   nutzt das <strong>Coaching durch Copilot</strong>. Die Gruppe überarbeitet den Entwurf gemeinsam. Nicht
+   senden.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>KI-Antworten schwanken: Dieselbe Frage kann morgen andere Quellen liefern. Deshalb gibt es die
+Spalte „Durchlauf" – vergleicht, ob ein zweiter Durchlauf andere Quellen bringt, und wertet
+Muster aus, keine Einzelergebnisse. Für den Test nutzt ihr in Copilot Chat den Umschalter
+<strong>Web</strong>, denn es geht um das, was im Netz gefunden wird. Beim Agenturangebot hilft die Frage:
+Wer könnte eine solche Garantie überhaupt geben?</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Monitoring:</p>
+<table>
+<thead>
+<tr>
+<th>Frage</th>
+<th>Werkzeug</th>
+<th>Durchlauf</th>
+<th>Fjordlicht genannt?</th>
+<th>Häufigste Quellen</th>
+<th>Datum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regenjacke für Radfahren in der Stadt?</td>
+<td>Perplexity</td>
+<td>1</td>
+<td>nein</td>
+<td>Testmagazine, Händler-Ratgeber, Foren</td>
+<td>[Datum]</td>
+</tr>
+<tr>
+<td>Regenjacke für Radfahren in der Stadt?</td>
+<td>Copilot Chat (Web)</td>
+<td>1</td>
+<td>nein</td>
+<td>Testmagazine, Herstellerseiten</td>
+<td>[Datum]</td>
+</tr>
+<tr>
+<td>Regenjacke für Radfahren in der Stadt?</td>
+<td>Copilot Chat (Web)</td>
+<td>2</td>
+<td>nein</td>
+<td>Händler-Ratgeber, Foren</td>
+<td>[Datum]</td>
+</tr>
+<tr>
+<td>Fleece fusselt, was tun?</td>
+<td>Google AI Overview</td>
+<td>1</td>
+<td>ja, Blogartikel verlinkt</td>
+<td>Ratgeber, Herstellerseiten</td>
+<td>[Datum]</td>
+</tr>
+</tbody>
+</table>
+<p>Beispiel-Prompt für Copilot in Excel:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Fasse die Spalte &quot;Häufigste Quellen&quot; zusammen: Welche Quellentypen kommen
+wie oft vor, getrennt nach Werkzeug? Zeige außerdem, bei wie vielen Fragen
+Fjordlicht genannt wurde. Keine Vermutungen über Gründe.
+</code></pre></div></td></tr></table></div>
+<p>Mögliche Muster der zitierten Quellen: klare Antwort direkt unter einer Frage-Überschrift,
+Tabellen und Listen, eigene Testergebnisse oder Daten, unabhängige Vergleichsseiten und
+Foren mit echten Erfahrungen, aktuelle Datumsangaben – das deckt sich mit den GEO-Prinzipien
+aus Abschnitt 22.5.</p>
+<p>Antwort an die Geschäftsführung (überarbeiteter Outlook-Entwurf):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Wir werden bei Pflegefragen bereits teilweise genannt, bei Kaufberatung kaum.
+Die KI-Suche greift vor allem Seiten mit klaren Antworten, eigenen Daten und
+unabhängigen Erwähnungen auf. Eine Garantie auf Nennung kann niemand geben,
+da die Anbieter ihre Quellenauswahl nicht offenlegen und Antworten schwanken.
+Vorschlag: Wir bauen Kaufberatungsseiten mit Erfahrungen aus Werkstatt und
+Materialtests aus, ergänzen strukturierte Daten und wiederholen dieses
+Monitoring monatlich. Das Agenturangebot lehnen wir ab.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien:</p>
+<ul>
+<li>Wiederholbares Monitoring mit Datum und Durchlauf in einer gemeinsam befüllten Excel-Datei;
+  Copilot Chat im Web-Modus als eine von mindestens drei Antwortmaschinen.</li>
+<li>Unterschiede zwischen den Werkzeugen und zwischen zwei Durchläufen sind benannt, statt
+  Einzelergebnisse zu verallgemeinern.</li>
+<li>Ableitungen beruhen auf beobachteten Mustern, nicht auf Vermutungen.</li>
+<li>Die Argumente des Advocatus Diaboli wurden geprüft und begründet zurückgewiesen oder
+  aufgenommen; die „Garantie" ist nüchtern eingeordnet.</li>
+<li>Der Mail-Entwurf ist von der Gruppe überarbeitet, die Übernahme von Coaching-Hinweisen bewusst
+  entschieden, und die Mail wurde nicht versendet.</li>
+</ul>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Produktseite für Suche und KI-Suche optimieren</summary>
+<p><strong>Szenario:</strong> Die Produktseite der Regenjacke „Sølv" ist die umsatzstärkste Seite im
+Fjordlicht-Shop, rankt aber für „nachhaltige Regenjacke" nur auf Seite zwei und taucht in
+KI-Antworten kaum auf. Du sollst die Seite überarbeiten – für klassische Suche und für
+Antwortmaschinen. Du kannst statt Fjordlicht auch ein Unternehmen deiner Wahl nutzen und
+dessen Produkt- oder Leistungsseite verwenden.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen (fiktiv):
+Aktueller Title: Sølv | Fjordlicht
+Aktuelle Description: Unsere Regenjacke Sølv. Jetzt kaufen!
+Produkttext: 90 Wörter, Werbesprache, keine Materialangaben.
+Belegte Fakten: 3-Lagen-Membran, Wassersäule 20.000 mm,
+Obermaterial aus 100 Prozent recyceltem Polyamid, Gewicht 390 g,
+Größen XS-XXL, Preis 249 Euro, kostenloser Reparaturservice in den ersten
+zwei Jahren nach Kauf.
+Nicht belegt: &quot;klimaneutral&quot;, &quot;die nachhaltigste Jacke&quot;.
+Bewertungen im Shop: 27, Durchschnitt 4,6.
+Werkzeug: Microsoft 365 Copilot (Word, Excel, Chat, Agent Researcher
+falls freigegeben); Markenstimme und Claims per /Fjordlicht-Basisdaten
+(falls nicht vorhanden: Kap. 11 bzw. die Fakten oben).
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Diagnose.</strong> Lege „Produktseite-Soelv.docx" im Ordner „Fjordlicht-Kurs" an, füge
+Title, Description und einen 90-Wörter-Werbetext ein und lass <strong>Copilot in Word</strong> die
+Ausgangslage anhand der On-Page-Elemente aus Abschnitt 22.1 bewerten (Fragen ans Dokument).
+Ergänze eine kleine Recherche: Was zeigen die Google-Suchergebnisse, und was antworten
+mindestens zwei Antwortmaschinen auf „nachhaltige Regenjacke"? Eine davon kann der Agent
+<strong>Researcher</strong> oder Copilot Chat mit <strong>Web</strong> sein.</p>
+<p><strong>Runde 2 – Überarbeitung in Word und Excel.</strong> Erstelle mit P.R.O.M.P.T.-Prompts (Kap. 5) und
+<strong>Copilot in Word</strong>: einen Produkttext mit zitierfähiger Kurzbeschreibung (Entwurf auf Basis von
+<code>/Fjordlicht-Basisdaten</code>), eine Faktentabelle (Copilot kann die Faktenliste in eine Tabelle
+umwandeln) und einen FAQ-Abschnitt mit fünf realistischen Fragen. Lass Title- und
+Description-Varianten in Copilot Chat entwerfen und die Zeichen in Excel mit <code>LÄNGE</code> zählen.
+Lass zum Schluss in Copilot Chat ein Schema.org-Product-Markup in JSON-LD erstellen, das
+ausschließlich belegte Werte enthält.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Copilot hat in deinen Entwürfen vermutlich mindestens eine
+Formulierung wie „besonders umweltfreundlich" oder „klimafreundlich" eingebaut, und im Markup
+steht womöglich ein Wert, den es im Shop nicht gibt. Lass Copilot in Word alle
+Nachhaltigkeits- und Faktenaussagen des Dokuments auflisten, übertrage sie in ein
+Prüfprotokoll in Excel (Aussage, Fundstelle, belegt ja/nein, Korrektur) und prüfe Zeile für
+Zeile selbst gegen die belegten Fakten. Verlass dich nicht darauf, dass Copilot jede Aussage
+findet – lies den Text zusätzlich selbst.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Das Team diskutiert: Soll die Seite für bessere
+Sichtbarkeit in KI-Antworten um einen langen Ratgeberteil (1.500 Wörter) ergänzt werden?
+Copilot wird das vermutlich befürworten. <strong>Widersprich</strong>, wo es die Produktseite für
+kaufbereite Besucher verschlechtert, und entscheide: Ratgeber auf der Produktseite, eigener
+verlinkter Artikel oder beides in kurzer Form?</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Diagnose mit Recherchebefunden aus Google-Suche und Antwortmaschinen (mit Datum)</li>
+<li>überarbeitete Seitenelemente in Word: Title, Description, Produkttext, Faktentabelle, FAQ</li>
+<li>JSON-LD-Markup und Prüfprotokoll in Excel mit allen Aussagen gegen die belegten Fakten</li>
+<li>begründete Entscheidung zu Runde 4 mit Vorschlag für interne Links</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jede Nachhaltigkeitsaussage durch die Faktenliste gedeckt ist,
+das Markup nur Werte enthält, die auch sichtbar auf der Seite stehen, die Kurzbeschreibung in
+zwei Sätzen erklärt, für wen die Jacke ist, und deine Entscheidung zu Runde 4 die Intention
+der Seite berücksichtigt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Die Produktseite bedient eine transaktionale Intention. Was Antwortmaschinen zitieren, sind
+klare Fakten – genau die fehlen der Ausgangsseite. Gute Optimierung heißt hier vor allem:
+belegte Fakten sichtbar machen, nicht mehr Text. Runde 3 zeigt, warum jede KI-Aussage über
+Nachhaltigkeit gegen eine Claim-Liste geprüft werden muss – auch wenn Copilot die Basisdaten
+als Quelle hatte. Das Markup prüfst du zusätzlich mit Googles Test für Rich-Suchergebnisse.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt für den Produkttext (Copilot in Word, Entwurf):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist Produkttexterin für eine ruhige, ehrliche Outdoor-Marke.
+Request: Schreibe den Produkttext für die Regenjacke Sølv auf Basis von
+/Fjordlicht-Basisdaten.
+Output: 1. Kurzbeschreibung in zwei Sätzen (für wen, wofür),
+2. Fließtext mit höchstens 150 Wörtern, 3. Faktentabelle.
+Modifier: Nur Fakten aus den Basisdaten. Keine Superlative, keine
+Umweltaussage, die dort nicht als belegt steht. Du-Ansprache.
+Purpose: Produktseite, die in Suche und KI-Antworten klar zitierbar ist.
+Tone: ruhig, konkret, leicht nordisch-trocken.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: (1) Diagnose benennt konkrete Mängel (nichtssagender Title, fehlende
+Fakten, Werbesprache, keine strukturierten Daten) und vergleicht mit tatsächlich sichtbaren
+Ergebnissen; (2) Title mit höchstens 60 Zeichen, per Formel gezählt, etwa „Regenjacke Sølv:
+20.000 mm, recyceltes Polyamid | Fjordlicht" (60 Zeichen), Faktentabelle mit allen belegten
+Werten, FAQ mit realistischen Fragen wie „Wie lange hält die Imprägnierung?"; (3)
+Prüfprotokoll entfernt unbelegte Aussagen wie „klimaneutral" und Superlative, dokumentiert auch
+Aussagen, die Copilot beim Auflisten übersehen hat, Markup enthält 27 Bewertungen mit 4,6 und
+keine erfundenen Werte; (4) Entscheidung trennt sinnvoll: kurze Pflege- und Material-FAQ auf
+der Produktseite, ausführlicher Ratgeber als eigener Artikel mit gegenseitiger Verlinkung.</p>
+<p>Lernziel: On-Page-Optimierung, strukturierte Daten und GEO an einer echten Seite umsetzen,
+dabei jede KI-Aussage gegen belegte Fakten prüfen und die Suchintention der Seite schützen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel21/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel23/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 23 – Vom Prompt zum KI-Assistenten">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 23 – Vom Prompt zum KI-Assistenten
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

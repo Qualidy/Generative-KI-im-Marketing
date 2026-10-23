@@ -1,0 +1,2084 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel20/">
+      
+      
+        <link rel="next" href="../kapitel22/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-21-seo-mit-ki-i-keyword-recherche-und-content-briefing" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Block 4 · Content-Optimierung mit KI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 17 – Zielgruppenanalyse mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Kundenavatar entwickeln und nutzen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Social Listening mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Datenbasierte Optimierung von Textinhalten
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#211-seo-im-jahr-2026-was-sich-geandert-hat-und-was-nicht" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.1 SEO im Jahr 2026: Was sich geändert hat und was nicht
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#212-suchintention-was-will-die-person-eigentlich" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.2 Suchintention: Was will die Person eigentlich?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#213-keyword-ideen-sammeln-und-clustern" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.3 Keyword-Ideen sammeln und clustern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#214-die-grenze-ki-kennt-keine-suchvolumina" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.4 Die Grenze: KI kennt keine Suchvolumina
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#215-themenrecherche-ergebnisseite-konkurrenz-lucken" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.5 Themenrecherche: Ergebnisseite, Konkurrenz, Lücken
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#216-das-seo-briefing" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.6 Das SEO-Briefing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-21-seo-mit-ki-i-keyword-recherche-und-content-briefing">Kapitel 21 – SEO mit KI I: Keyword-Recherche und Content-Briefing<a class="headerlink" href="#kapitel-21-seo-mit-ki-i-keyword-recherche-und-content-briefing" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Warum die <strong>Suchintention</strong> wichtiger ist als das einzelne Keyword</li>
+<li>Wie du mit KI <strong>Keyword-Ideen</strong> sammelst und zu <strong>Themenclustern</strong> ordnest</li>
+<li>Wo die <strong>Grenze</strong> liegt: Warum KI keine Suchvolumina kennt und welche <strong>Tools</strong> diese Lücke schließen</li>
+<li>Wie du eine <strong>Themenrecherche</strong> mit Suchergebnisseite, Konkurrenz und Kundenfragen aufbaust</li>
+<li>Wie du aus allem ein <strong>SEO-Briefing</strong> erstellst, mit dem Mensch oder KI einen Text schreiben kann</li>
+</ul>
+</div>
+<hr />
+<h2 id="211-seo-im-jahr-2026-was-sich-geandert-hat-und-was-nicht">21.1 SEO im Jahr 2026: Was sich geändert hat und was nicht<a class="headerlink" href="#211-seo-im-jahr-2026-was-sich-geandert-hat-und-was-nicht" title="Permanent link">&para;</a></h2>
+<p>Suchmaschinenoptimierung (SEO) heißt: Inhalte so gestalten, dass Menschen sie über Suchmaschinen finden – und dass sie dort die Antwort bekommen, die sie suchen. Daran hat sich im Kern nichts geändert. Geändert hat sich die Umgebung: Google zeigt bei vielen Suchanfragen <strong>AI Overviews</strong>, also KI-Zusammenfassungen über den klassischen Ergebnissen, und bietet mit dem <strong>AI Mode</strong> einen dialogischen Suchmodus an. Gleichzeitig suchen viele Menschen direkt in ChatGPT, Perplexity oder Gemini. Was das für die Optimierung bedeutet, behandelt Kap. 22.</p>
+<p>Für die Recherche gilt: KI ist ein hervorragender <strong>Ideengeber und Ordner</strong>, aber eine schlechte <strong>Datenquelle</strong>. Sie kann in Minuten hundert Suchbegriffe rund um „Regenjacke" vorschlagen, nach Absicht sortieren und zu Clustern bündeln. Sie kann dir aber nicht verlässlich sagen, wie oft „Regenjacke Damen nachhaltig" im Monat gesucht wird. Dieses Kapitel trennt beides sauber.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>KI liefert <strong>Ideen und Struktur</strong>, SEO-Tools liefern <strong>Zahlen</strong>. Wer Suchvolumina von einem Chatbot übernimmt, plant auf Sand.</p>
+</div>
+<hr />
+<h2 id="212-suchintention-was-will-die-person-eigentlich">21.2 Suchintention: Was will die Person eigentlich?<a class="headerlink" href="#212-suchintention-was-will-die-person-eigentlich" title="Permanent link">&para;</a></h2>
+<p>Hinter jeder Suchanfrage steckt eine Absicht. Google versucht, genau diese Absicht zu bedienen – ein Text, der die falsche Absicht trifft, rankt kaum, egal wie gut er geschrieben ist. Man unterscheidet üblicherweise vier Typen:</p>
+<table>
+<thead>
+<tr>
+<th>Suchintention</th>
+<th>Was die Person will</th>
+<th>Beispiel Fjordlicht</th>
+<th>Passender Inhalt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Informational</td>
+<td>etwas wissen oder verstehen</td>
+<td>„Wassersäule Regenjacke erklärt"</td>
+<td>Ratgeber im Blog „Draußen-Notizen"</td>
+</tr>
+<tr>
+<td>Navigational</td>
+<td>eine bestimmte Seite finden</td>
+<td>„Fjordlicht Sølv"</td>
+<td>Produktseite, Startseite</td>
+</tr>
+<tr>
+<td>Kommerziell (Commercial)</td>
+<td>Optionen vergleichen vor dem Kauf</td>
+<td>„nachhaltige Regenjacke Test"</td>
+<td>Kaufberatung, Vergleich, Materialerklärung</td>
+</tr>
+<tr>
+<td>Transaktional</td>
+<td>jetzt kaufen oder handeln</td>
+<td>„Regenjacke Damen kaufen"</td>
+<td>Kategorieseite im Shop</td>
+</tr>
+</tbody>
+</table>
+<p>Die einfachste Prüfung der Intention: <strong>Schau dir die Suchergebnisseite an.</strong> Wenn bei „Regenjacke waschen" nur Ratgeber und Videos erscheinen, wird eine Produktseite dort nicht ranken. KI kann die Intention gut einschätzen, aber sie sieht die aktuelle Ergebnisseite nur, wenn du die Websuche aktivierst oder die Ergebnisse selbst einfügst.</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Ein Keyword, ein Text – und alle vier Intentionen sollen bedient werden. Ein Blogartikel, der gleichzeitig erklärt, vergleicht und verkauft, wirkt wie eine Werbebroschüre mit Ratgeber-Überschrift. Entscheide dich pro Seite für <strong>eine</strong> Hauptintention und verlinke für den nächsten Schritt auf die passende andere Seite.</p>
+</div>
+<hr />
+<h2 id="213-keyword-ideen-sammeln-und-clustern">21.3 Keyword-Ideen sammeln und clustern<a class="headerlink" href="#213-keyword-ideen-sammeln-und-clustern" title="Permanent link">&para;</a></h2>
+<p>Im ersten Schritt nutzt du die Stärke der KI: Breite. Ausgangspunkt sind <strong>Seed-Keywords</strong>, also die Grundbegriffe deines Themas („Regenjacke", „Outdoorjacke", „Wanderjacke"). Daraus lässt du Varianten ableiten: <strong>Long-Tail-Keywords</strong> (längere, spezifische Suchanfragen wie „Regenjacke für Radfahren in der Stadt"), W-Fragen, Synonyme und die Sprache der Zielgruppe.</p>
+<p>Ein Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5) sieht so aus:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist SEO-Spezialistin für E-Commerce im Bereich Outdoor-Bekleidung.
+Request: Sammle Suchbegriffe rund um das Thema &quot;Regenjacke&quot;, die Menschen
+in Deutschland bei Google eingeben könnten. Ordne sie anschließend in
+Themencluster.
+Output: Tabelle mit den Spalten Cluster, Suchbegriff, vermutete Suchintention
+(informational, navigational, kommerziell, transaktional), passender Seitentyp.
+Mindestens 40 Begriffe, 5 bis 8 Cluster.
+Modifier: Nenne KEINE Suchvolumina oder Schwierigkeitswerte, du kennst sie
+nicht. Berücksichtige Alltagssprache und Fragen (&quot;wie&quot;, &quot;was&quot;, &quot;welche&quot;).
+Keine Markennamen von Wettbewerbern.
+Purpose: Grundlage für die Content-Planung des Blogs und der Kategorieseiten
+von Fjordlicht, einer nachhaltigen Outdoor-Marke; Zielgruppe naturverbundene
+Stadtmenschen 25 bis 45 und Familien.
+Tone: sachlich, keine Kommentare zwischen den Tabellen.
+</code></pre></div></td></tr></table></div>
+<p>Das Ergebnis ist eine geordnete Rohliste. Typische Cluster wären „Pflege und Imprägnierung", „Material und Technik", „Kaufberatung", „Regenjacke für Kinder", „Nachhaltigkeit". Jedes Cluster kann zu einer <strong>Pillar Page</strong> (umfassende Übersichtsseite) mit mehreren verlinkten Detailartikeln werden – dieselbe Logik wie bei den Content-Pillars im Redaktionsplan (Kap. 12).</p>
+<p>Bewährt hat sich, die Sammlung als <strong>Prompt-Kette</strong> (Kap. 6) in mehreren Schritten anzulegen statt in einem einzigen Riesenprompt: erst breit sammeln, dann Dubletten und Kunstbegriffe streichen lassen, dann clustern, zuletzt jedem Cluster einen Seitentyp zuordnen. Nach jedem Schritt prüfst du kurz selbst. So bemerkst du früh, wenn die KI in eine Richtung abdriftet – etwa nur noch Fachbegriffe wie „Laminat" und „Membrantechnologie" liefert, die eine Familie bei der Suche nach einer Kinderregenjacke nie eintippen würde. Frag zur Kontrolle ausdrücklich: „Welche dieser Begriffe würde ein Mensch ohne Fachwissen tatsächlich so in die Suche eingeben?"</p>
+<div class="admonition tip">
+<p class="admonition-title">Die Sprache der Kundschaft einbauen</p>
+<p>Die besten Long-Tail-Ideen kommen nicht aus dem Modell, sondern aus echten Fragen: Kundenservice-Mails, Produktbewertungen, Kommentare unter Posts, Ergebnisse aus dem Social Listening (Kap. 19). Gib der KI eine anonymisierte Liste solcher Fragen und lass sie daraus Suchbegriffe ableiten. Das Ergebnis ist deutlich näher an der Wirklichkeit als ein reines Brainstorming.</p>
+</div>
+<hr />
+<h2 id="214-die-grenze-ki-kennt-keine-suchvolumina">21.4 Die Grenze: KI kennt keine Suchvolumina<a class="headerlink" href="#214-die-grenze-ki-kennt-keine-suchvolumina" title="Permanent link">&para;</a></h2>
+<p>Sprachmodelle haben keinen Zugriff auf die Suchdaten von Google. Fragst du nach Suchvolumen oder Keyword-Schwierigkeit, bekommst du trotzdem oft Zahlen – plausibel klingend, sauber formatiert und <strong>erfunden</strong> (Kap. 2). Auch mit aktivierter Websuche findet das Modell höchstens veraltete Werte aus Blogartikeln. Für die Priorisierung brauchst du deshalb Daten aus Werkzeugen, die auf echten Suchdaten oder großen Panels beruhen:</p>
+<table>
+<thead>
+<tr>
+<th>Werkzeug</th>
+<th>Was es liefert</th>
+<th>Hinweis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google Keyword Planner</td>
+<td>Suchvolumen-Schätzungen, verwandte Begriffe</td>
+<td>Teil von Google Ads; ohne laufende Kampagnen oft nur Spannen</td>
+</tr>
+<tr>
+<td>Google Search Console</td>
+<td>echte Impressionen, Klicks, Position für deine eigene Website</td>
+<td>nur für Begriffe, bei denen du schon sichtbar bist</td>
+</tr>
+<tr>
+<td>Google Trends</td>
+<td>relative Entwicklung und Saisonalität</td>
+<td>keine absoluten Zahlen</td>
+</tr>
+<tr>
+<td>Sistrix, Semrush, Ahrefs u. ä.</td>
+<td>Suchvolumen, Schwierigkeit, Wettbewerber-Keywords</td>
+<td>kostenpflichtig, Werte sind Schätzungen und weichen voneinander ab</td>
+</tr>
+<tr>
+<td>„Ähnliche Fragen" in der Google-Suche</td>
+<td>echte Anschlussfragen</td>
+<td>manuell auswerten oder per Tool exportieren</td>
+</tr>
+</tbody>
+</table>
+<p>Der sinnvolle Ablauf ist ein Wechselspiel: Die KI erzeugt und ordnet Ideen, das Tool liefert Zahlen, die KI hilft beim Priorisieren. Dazu exportierst du die Tool-Daten als Tabelle und lädst sie mit deinen Clustern hoch – ab dann arbeitet die KI mit echten Werten.</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Die Frage „Wie hoch ist das Suchvolumen?" wird oft beiläufig gestellt, und die KI antwortet beiläufig mit einer Zahl. Schreibe deshalb in jeden Keyword-Prompt den Modifier „Nenne keine Suchvolumina" und prüfe jede Zahl in einer Tabelle auf ihre Herkunft. Eine Zahl ohne Quelle gehört gestrichen.</p>
+</div>
+<p>Für Fjordlicht ist die <strong>Search Console</strong> der wertvollste Startpunkt: Sie zeigt Suchbegriffe, für die der Blog schon auf Position 8 bis 20 erscheint. Diese „Fast-Treffer" lassen sich mit überschaubarem Aufwand verbessern – Thema der Bestandsoptimierung in Kap. 22.</p>
+<hr />
+<h2 id="215-themenrecherche-ergebnisseite-konkurrenz-lucken">21.5 Themenrecherche: Ergebnisseite, Konkurrenz, Lücken<a class="headerlink" href="#215-themenrecherche-ergebnisseite-konkurrenz-lucken" title="Permanent link">&para;</a></h2>
+<p>Steht das Keyword, prüfst du, was zum Thema bereits gut rankt. Diese <strong>SERP-Analyse</strong> (Search Engine Results Page) beantwortet drei Fragen: Welche Inhaltsformen erscheinen (Ratgeber, Video, Shop, Forum)? Welche Unterthemen behandeln die vorderen Ergebnisse? Was fehlt überall?</p>
+<p>Hier ist KI ein guter Analysepartner, wenn du ihr Material gibst. Mit aktivierter Websuche oder Deep Research kann sie aktuelle Seiten selbst lesen; zuverlässiger ist es, die Gliederungen der fünf besten Ergebnisse zu kopieren und einzufügen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier sind die Zwischenüberschriften der fünf bestplatzierten Artikel zu
+&quot;Regenjacke imprägnieren&quot; (getrennt durch ###).
+###
+[Gliederungen einfügen]
+###
+1. Welche Unterthemen kommen in mindestens drei Artikeln vor?
+2. Welche Fragen bleiben in allen Artikeln unbeantwortet?
+3. Wo könnte Fjordlicht mit eigener Erfahrung (Reparaturservice,
+   Materialtests) etwas bieten, das die anderen nicht haben?
+Antworte in drei kurzen Listen.
+</code></pre></div></td></tr></table></div>
+<p>Bei Deep Research gilt dieselbe Vorsicht wie bei jeder Websuche (Kap. 9): Das Werkzeug fasst gefundene Seiten zusammen, sieht aber nicht unbedingt dieselbe Ergebnisseite wie deine Kundin, und es kann Inhalte falsch zuordnen. Öffne die zwei, drei wichtigsten Quellen deshalb selbst.</p>
+<p>Frage 3 ist die wichtigste. Inhalte, die nur zusammenfassen, was schon rankt, haben wenig Chance – und sind genau die Art Text, die KI ohnehin massenhaft erzeugen kann. Der Vorsprung entsteht durch <strong>Erfahrung</strong> und eigene Daten: Fjordlicht weiß aus dem Reparaturservice, welche Imprägnierfehler am häufigsten vorkommen. Das ist die „Experience" in E-E-A-T (Kap. 15).</p>
+<div class="admonition example">
+<p class="admonition-title">Content-Gap bei Fjordlicht</p>
+<p>Die Analyse zeigt: Alle Top-Artikel erklären Sprühimprägnierung und Waschimprägnierung, keiner beantwortet, wie man erkennt, ob die Membran oder nur die Außenimprägnierung nachlässt. Fjordlicht kann das mit Fotos aus der eigenen Werkstatt erklären – ein echtes Alleinstellungsmerkmal.</p>
+</div>
+<hr />
+<h2 id="216-das-seo-briefing">21.6 Das SEO-Briefing<a class="headerlink" href="#216-das-seo-briefing" title="Permanent link">&para;</a></h2>
+<p>Das <strong>SEO-Briefing</strong> bündelt die Recherche in einem Dokument, mit dem ein Mensch, eine Agentur oder die KI einen Text schreiben kann. Es ist die Brücke zur Texterstellung in Kap. 15 und zur On-Page-Optimierung in Kap. 22.</p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Inhalt am Beispiel „Regenjacke imprägnieren"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hauptkeyword</td>
+<td>Regenjacke imprägnieren</td>
+</tr>
+<tr>
+<td>Nebenkeywords</td>
+<td>Regenjacke waschen, Imprägnierung erneuern, Jacke perlt nicht mehr ab</td>
+</tr>
+<tr>
+<td>Suchintention</td>
+<td>informational</td>
+</tr>
+<tr>
+<td>Zielgruppe</td>
+<td>Besitzer:innen einer Funktionsjacke, die nicht mehr dicht wirkt</td>
+</tr>
+<tr>
+<td>Ziel der Seite</td>
+<td>Pflegeanleitung, danach Link zum Reparaturservice und zur Sølv</td>
+</tr>
+<tr>
+<td>Kernfragen</td>
+<td>Wann imprägnieren? Wie? Welches Mittel? Membran oder Imprägnierung?</td>
+</tr>
+<tr>
+<td>Alleinstellung</td>
+<td>Erfahrungen aus der Fjordlicht-Werkstatt, Fehlerbilder mit Fotos</td>
+</tr>
+<tr>
+<td>Gliederungsvorschlag</td>
+<td>H2-Struktur aus der SERP-Analyse plus Lücke</td>
+</tr>
+<tr>
+<td>Umfang</td>
+<td>Richtwert aus Konkurrenzanalyse, kein Selbstzweck</td>
+</tr>
+<tr>
+<td>Interne Links</td>
+<td>Pflege-Pillar, Produktseite Sølv, Reparaturservice</td>
+</tr>
+<tr>
+<td>Markenstimme und No-Gos</td>
+<td>ruhig, ehrlich, keine Superlative, nur belegbare Umweltaussagen</td>
+</tr>
+</tbody>
+</table>
+<p>Die KI kann dieses Briefing aus deinen Rechercheergebnissen entwerfen. Gib ihr dazu Keyword-Tabelle mit Tool-Daten, SERP-Analyse und Styleguide und fordere ausdrücklich, Felder ohne Grundlage mit <code>[OFFEN]</code> zu markieren. Der Mensch ergänzt dann Alleinstellung und Ziel – die beiden Felder, die keine KI kennen kann.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Seed-Keywords]) --&gt; B([KI: Ideen und Cluster])
+    B --&gt; C([Tool: Volumen und Daten])
+    C --&gt; D([SERP-Analyse und Lücken])
+    D --&gt; E([SEO-Briefing])
+    E --&gt; F([Text erstellen Kap. 15])</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">Briefing als Bibliotheksvorlage</p>
+<p>Lege die Briefing-Felder als Vorlage in eurer Prompt-Bibliothek ab (Kap. 10). So entsteht jedes Briefing in derselben Struktur, und Texte aus verschiedenen Händen bleiben vergleichbar.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>SEO bleibt das Bedienen von <strong>Suchabsichten</strong>; neu ist die Umgebung mit AI Overviews und KI-Suche (Kap. 22).</li>
+<li>Die <strong>Suchintention</strong> (informational, navigational, kommerziell, transaktional) entscheidet über den Seitentyp – prüfe sie an der Ergebnisseite.</li>
+<li>KI eignet sich hervorragend zum <strong>Sammeln und Clustern</strong> von Keywords, besonders mit echten Kundenfragen als Input.</li>
+<li>KI kennt <strong>keine Suchvolumina</strong>: Zahlen kommen aus Keyword Planner, Search Console, Trends oder Sistrix/Semrush.</li>
+<li>Die <strong>SERP-Analyse</strong> zeigt, was schon rankt; der Vorsprung entsteht durch eigene Erfahrung und Lücken.</li>
+<li>Das <strong>SEO-Briefing</strong> bündelt Keyword, Intention, Ziel, Gliederung und Alleinstellung als Grundlage für jeden Text.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Suchintention erkennen – drei Quellen, eine Entscheidung</summary>
+<p><strong>Gruppe:</strong> 3–4 Personen · <strong>Dauer:</strong> etwa 20 Minuten · <strong>Format:</strong> Arbeitsteilung nach Quelle
+· <strong>Am Ende liegt vor:</strong> eine gemeinsame Zuordnungstabelle und eine Gruppenentscheidung zur
+uneindeutigen Anfrage.</p>
+<p>Ordnet jeder Suchanfrage die <strong>Suchintention</strong> zu (informational, navigational, kommerziell,
+transaktional) und nennt den <strong>Seitentyp</strong>, mit dem Fjordlicht sie am besten bedient
+(Abschnitt 21.2).</p>
+<ol>
+<li><code>fleece pilling entfernen</code></li>
+<li><code>fjordlicht gutschein einlösen</code></li>
+<li><code>wanderhose damen kaufen</code></li>
+<li><code>softshell oder hardshell unterschied</code></li>
+<li><code>beste nachhaltige outdoormarken</code></li>
+<li><code>rucksack 30 liter tagestour</code></li>
+</ol>
+<p>So geht ihr vor:</p>
+<ol>
+<li><strong>Allein (3 Minuten):</strong> Jede Person ordnet zuerst selbst zu.</li>
+<li><strong>Aufteilung nach Quelle:</strong></li>
+<li><strong>Person 1</strong> lässt <strong>Copilot Chat</strong> mit dem Umschalter auf <strong>Arbeit</strong> zuordnen.</li>
+<li><strong>Person 2</strong> lässt <strong>Copilot Chat</strong> mit dem Umschalter auf <strong>Web</strong> zuordnen und bittet
+     darum, für Nr. 5 und Nr. 6 zu beschreiben, welche Art von Ergebnissen aktuell erscheint –
+     mit Quellen.</li>
+<li><strong>Person 3</strong> gibt Nr. 5 und Nr. 6 selbst in die Google-Suche ein und notiert, welche
+     Seitentypen oben stehen (Shops, Ratgeber, Testberichte, Listen).</li>
+<li><strong>Person 4</strong> (falls vorhanden) öffnet zwei der Quellen, die Copilot im Web-Modus nennt, und
+     prüft, ob sie das Behauptete tatsächlich zeigen.</li>
+<li><strong>Zusammenführen:</strong> Vergleicht die Ergebnisse. Wo unterscheiden sich Arbeit- und Web-Modus?
+   Wo widerspricht die eigene Google-Suche der Copilot-Beschreibung?</li>
+<li><strong>Gruppenentscheidung:</strong> Bei einer der Anfragen ist die Intention nicht eindeutig. Welche
+   ist es, und welchen Seitentyp würdet ihr dafür bauen? Eine Person begründet die
+   Entscheidung in einer Minute im Plenum.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achtet auf Signalwörter: „kaufen" und „bestellen" deuten auf Transaktion, „beste", „Test"
+oder „Vergleich" auf kommerzielle Recherche, Markennamen auf Navigation, „wie" oder
+„Unterschied" auf Information. Beachtet beim Vergleich: Die Websuche von Copilot nutzt Bing,
+nicht Google – die Ergebnisseite eurer Kundinnen kann anders aussehen. Achtet beim Vergleich
+darauf, ob die Antwort im Arbeitsmodus Quellen nennt oder die Intention nur aus dem Wortlaut
+ableitet – und ob sie trotzdem so klingt, als hätte Copilot nachgesehen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Intention</th>
+<th>Seitentyp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>informational</td>
+<td>Pflegeratgeber im Blog „Draußen-Notizen"</td>
+</tr>
+<tr>
+<td>2</td>
+<td>navigational</td>
+<td>Hilfeseite/FAQ zum Gutschein</td>
+</tr>
+<tr>
+<td>3</td>
+<td>transaktional</td>
+<td>Kategorieseite „Wanderhosen Damen"</td>
+</tr>
+<tr>
+<td>4</td>
+<td>informational (mit kommerziellem Anteil)</td>
+<td>Ratgeber mit Verlinkung auf passende Jacken</td>
+</tr>
+<tr>
+<td>5</td>
+<td>kommerziell</td>
+<td>Haltungs- oder Über-uns-Seite, eher schwer zu gewinnen, weil die Ergebnisse meist unabhängige Listen sind</td>
+</tr>
+<tr>
+<td>6</td>
+<td>uneindeutig: kommerziell oder transaktional</td>
+<td>Kaufberatung oder Kategorieseite mit Filter</td>
+</tr>
+</tbody>
+</table>
+<p>Nr. 6 ist uneindeutig: Die Person kann schon kaufen wollen oder erst Orientierung suchen.
+Klären lässt es sich nur an der aktuellen <strong>Suchergebnisseite</strong>: Erscheinen dort vor allem
+Shops, ist die Intention transaktional; erscheinen Ratgeber und Tests, kommerziell.</p>
+<p>Beispiel-Prompt für Person 2 (Web):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Ordne die sechs Suchanfragen einer Suchintention zu (informational,
+navigational, kommerziell, transaktional) und nenne einen passenden
+Seitentyp für einen Outdoor-Onlineshop. Beschreibe für Nr. 5 und Nr. 6,
+welche Arten von Seiten aktuell in den Suchergebnissen erscheinen, und
+nenne die Quellen.
+</code></pre></div></td></tr></table></div>
+<p>Worauf es beim Zusammenführen ankommt: Nennt die Antwort im Arbeitsmodus keine Quellen, ist
+die Zuordnung aus dem Wortlaut geschätzt – meist plausibel, aber ohne Beleg. Die Antwort im
+Web-Modus stützt sich auf Bing-Ergebnisse mit Quellen, die eigene Suche auf Google. Für die
+Entscheidung über den Seitentyp zählt der eigene Blick auf die Google-Ergebnisseite.</p>
+<p>Bewertungskriterien:</p>
+<ul>
+<li>Alle haben vor der Aufteilung selbst zugeordnet.</li>
+<li>Die Unterschiede zwischen Arbeitsmodus, Web-Modus und Google-Suche sind benannt und
+  erklärt (mit oder ohne Quellen, Bing, Google).</li>
+<li>Mindestens eine Copilot-Quelle wurde geöffnet und geprüft.</li>
+<li>Die Gruppenentscheidung zu Nr. 6 stützt sich auf die beobachtete Ergebnisseite, nicht auf
+  eine Vermutung.</li>
+</ul>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Keyword-Cluster für die Wanderhose im Team</summary>
+<p><strong>Gruppe:</strong> 3–4 Personen · <strong>Dauer:</strong> etwa 30 Minuten · <strong>Format:</strong> Arbeitsteilung nach
+Zielgruppe, danach Zusammenführung in einer geteilten Excel-Datei · <strong>Am Ende liegen vor:</strong>
+„Keywords-Wanderhose.xlsx" mit bereinigten Clustern und ein Cluster-Plan (eine Pillar Page,
+drei Detailartikel) zum Vorstellen.</p>
+<p>Fjordlicht will die Wanderhose „Vidde" und das Thema Wandern im Blog besser sichtbar machen.</p>
+<ol>
+<li><strong>Gemeinsamer Prompt (5 Minuten):</strong> Einigt euch auf einen Prompt nach dem
+   P.R.O.M.P.T.-Framework (Kap. 5), der Suchbegriffe rund um „Wanderhose" sammelt – mit Spalten
+   für Cluster, Suchintention und passenden Seitentyp. Verbietet ausdrücklich Suchvolumina,
+   Schwierigkeitswerte und Wettbewerbermarken.</li>
+<li><strong>Arbeitsteilung (10 Minuten):</strong> Jede Person führt den Prompt in ihrem <strong>Copilot Chat</strong> aus,
+   aber für eine andere Perspektive im Purpose:</li>
+<li><strong>Person 1:</strong> naturverbundene Stadtmenschen 25 bis 45, Wochenendwanderungen</li>
+<li><strong>Person 2:</strong> Familien mit Kindern</li>
+<li><strong>Person 3:</strong> Pflege, Reparatur und Nachhaltigkeit</li>
+<li><strong>Person 4</strong> (falls vorhanden): Wandern bei Regen und Kälte</li>
+</ol>
+<p>Arbeitet als <strong>Prompt-Kette</strong> (Kap. 6): erst mindestens 15 Begriffe sammeln, dann
+   Kunstbegriffe streichen lassen („Welche dieser Begriffe würde ein Mensch tatsächlich so
+   eintippen?"), dann clustern.
+3. <strong>Zusammenführen:</strong> Eine Person legt „Keywords-Wanderhose.xlsx" in ihrem Ordner
+   „Fjordlicht-Kurs" an, formatiert die Daten als Tabelle (Spalten: Perspektive, Cluster,
+   Suchbegriff, Intention, Seitentyp) und teilt die Datei. Alle fügen ihre Begriffe ein.
+   Lasst <strong>Copilot in Excel</strong> doppelte oder fast gleiche Begriffe hervorheben und die Begriffe
+   je Cluster und Intention zählen.
+4. <strong>Prüfen:</strong> Jede Person prüft die Zeilen einer <strong>anderen</strong> Perspektive: Hat Copilot trotz
+   Verbot Suchvolumina oder Schwierigkeitswerte genannt? Gibt es unrealistische Begriffe oder
+   Wettbewerbermarken? Markiert Streichkandidaten mit einem Kommentar.
+5. <strong>Gruppenentscheidung:</strong> Wählt <strong>ein</strong> Cluster aus und legt eine Pillar Page und drei
+   Detailartikel fest. Ergänzt in Excel eine leere Spalte „Suchvolumen (Quelle)" und notiert,
+   welche Werte ihr in welchem Tool nachschlagen würdet. Eine Person stellt den Cluster-Plan in
+   zwei Minuten im Plenum vor.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Die Aufteilung nach Perspektive zeigt, wie stark der Purpose die Begriffe verändert: Familien
+suchen anders als Stadtmenschen, die am Wochenende wandern. Achtet beim Zusammenführen darauf,
+wo sich die Listen überschneiden – das sind oft die Kernbegriffe. Die leere Volumen-Spalte
+erinnert daran, dass diese Zahlen aus einem SEO-Tool kommen, nicht aus Copilot (Abschnitt 21.4).</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt (Copilot Chat, erster Schritt der Kette, Person 2):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist SEO-Spezialistin für Outdoor-E-Commerce.
+Request: Sammle Suchbegriffe rund um &quot;Wanderhose&quot; und ordne sie in Cluster.
+Output: Tabelle Cluster | Suchbegriff | Intention | Seitentyp, mindestens
+15 Begriffe.
+Modifier: keine Suchvolumina, keine Schwierigkeitswerte, keine
+Wettbewerbermarken, Alltagssprache und Fragen einbeziehen.
+Purpose: Content-Planung für Fjordlicht (nachhaltige Outdoor-Marke);
+Zielgruppe: Familien mit Kindern, die gemeinsam wandern.
+Tone: sachlich, ohne Einleitung.
+</code></pre></div></td></tr></table></div>
+<p>Beispiel-Prompt für Copilot in Excel:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Hebe doppelte oder fast gleiche Suchbegriffe farbig hervor (z. B.
+&quot;wanderhose damen&quot; und &quot;damen wanderhose&quot;). Zähle danach die Begriffe
+je Cluster und je Intention in einer Übersicht.
+</code></pre></div></td></tr></table></div>
+<p>Mögliche Cluster nach dem Zusammenführen: Kaufberatung (Material, Passform), Wanderhose
+Damen/Herren/Kinder, Zip-Off und Funktion, Pflege, Wandern bei Regen/Kälte, Nachhaltigkeit.</p>
+<p>Mögliche Prüfbefunde: vereinzelt doch Zahlen („hohes Volumen") → streichen; Dubletten über
+Perspektiven hinweg wie „wanderhose damen" und „damen wanderhose"; Kunstbegriffe wie
+„Wanderhose Performance-Lösung"; ein Cluster mit fast nur transaktionalen Begriffen, der eher
+zur Kategorieseite als zum Blog passt.</p>
+<p>Beispiel Cluster „Pflege": Pillar Page „Outdoor-Hosen richtig pflegen"; Detailartikel
+„Wanderhose waschen ohne Funktion zu verlieren", „Grasflecken aus Wanderhose entfernen",
+„Wanderhose reparieren statt neu kaufen".</p>
+<p>Nachschlagen: Suchvolumen und Saison im Keyword Planner bzw. Google Trends, bestehende
+Sichtbarkeit in der Search Console, Wettbewerb in Sistrix oder Semrush. Die Werte landen mit
+Quellenangabe in der vorbereiteten Spalte.</p>
+<p>Bewertungskriterien:</p>
+<ul>
+<li>Ein gemeinsamer Prompt mit Verbot von Zahlen und Wettbewerbermarken; jede Perspektive hat
+  die Prompt-Kette durchlaufen.</li>
+<li>Dubletten sind hervorgehoben und bereinigt, die Zählung stammt aus Excel.</li>
+<li>Die Kreuzprüfung hat Streichkandidaten gefunden und begründet.</li>
+<li>Die Gruppe hat benannt, welche Begriffe nur aus einer Perspektive kamen – und was das über
+  den Einfluss des Purpose sagt.</li>
+<li>Der Cluster-Plan passt inhaltlich zusammen und nennt keine Zahl ohne Quelle.</li>
+</ul>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Ein KI-Briefing aus vier Blickwinkeln prüfen und neu aufsetzen</summary>
+<p><strong>Gruppe:</strong> 4 Personen (bei 3 Personen übernimmt eine Person zwei Blickwinkel) · <strong>Dauer:</strong>
+etwa 30 Minuten · <strong>Format:</strong> Rollen nach Prüfblickwinkel, danach gemeinsames Word-Dokument ·
+<strong>Am Ende liegt vor:</strong> ein neues SEO-Briefing „SEO-Briefing-Regenjacke.docx", das die Gruppe
+gemeinsam geprüft und freigegeben hat.</p>
+<p>Eine Kollegin hat Copilot ohne weitere Vorarbeit gebeten: „Erstelle ein SEO-Briefing für
+einen Blogartikel über nachhaltige Regenjacken." Das Ergebnis enthält unter anderem:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Hauptkeyword: nachhaltige Regenjacke (Suchvolumen: 6.600/Monat, KD 34)
+Nebenkeywords: ökologische Regenjacke (2.900), PFC-freie Regenjacke (1.300),
+beste nachhaltige Regenjacke 2026 (880)
+Suchintention: informational
+Ziel: Leser über nachhaltige Materialien informieren
+Gliederung: 1. Was ist eine nachhaltige Regenjacke? 2. Die 10 besten
+nachhaltigen Regenjacken 2026 3. Fazit
+Umfang: mindestens 3.000 Wörter für bestes Ranking
+Tonalität: begeisternd, überzeugend
+Kernaussage: Fjordlicht ist die nachhaltigste Marke am Markt.
+</code></pre></div></td></tr></table></div>
+<p><strong>Teil 1 – Prüfen aus vier Blickwinkeln (10 Minuten).</strong> Jede Person übernimmt eine Rolle und
+sucht nur nach ihrer Art von Problemen:</p>
+<ul>
+<li><strong>Datenprüferin:</strong> Welche Zahlen könnten erfunden sein? Sie fragt in <strong>Copilot Chat</strong> nach:
+  „Woher stammen die Suchvolumina in diesem Briefing?" und notiert die Antwort wörtlich.</li>
+<li><strong>SEO-Prüferin:</strong> Passen Intention, Gliederung und Umfang zusammen (Abschnitt 21.2 und 21.6)?
+  Welche Felder fehlen?</li>
+<li><strong>Markenstimme:</strong> Passen Tonalität und Kernaussage zur Fjordlicht-Markenstimme?</li>
+<li><strong>Rechtsblick:</strong> Welche Aussagen bergen ein rechtliches Risiko (Greenwashing, UWG,
+  Vergleichsaussagen)?</li>
+</ul>
+<p>Tragt die Funde zusammen. Ziel: mindestens <strong>sechs Probleme</strong>, jeweils eingeordnet.</p>
+<p><strong>Teil 2 – Neu aufsetzen (15 Minuten).</strong></p>
+<ol>
+<li>Beschreibt gemeinsam in wenigen Stichpunkten, wie das Briefing <strong>richtig</strong> entstanden wäre
+   (Abschnitt 21.3–21.6).</li>
+<li>Die SEO-Prüferin legt in ihrem Ordner „Fjordlicht-Kurs" das Word-Dokument
+   „SEO-Briefing-Regenjacke.docx" an, lässt <strong>Copilot in Word</strong> einen Entwurf erstellen, der auf
+   <code>/Fjordlicht-Basisdaten</code> verweist (Markenstimme, belegte Claims; Kap. 11), und teilt das
+   Dokument. Felder ohne Grundlage – etwa alle Suchvolumina – müssen mit <code>[OFFEN]</code> markiert sein.</li>
+<li>Die anderen drei prüfen den Entwurf aus ihrem Blickwinkel und setzen <strong>Kommentare</strong> im
+   Dokument. Die SEO-Prüferin markiert beanstandete Stellen und lässt sie mit Copilot in Word
+   umschreiben oder korrigiert sie selbst.</li>
+</ol>
+<p><strong>Abschluss:</strong> Die Gruppe gibt das Briefing frei, wenn alle Kommentare erledigt sind. Eine
+Person nennt im Plenum das Problem, das nur aus einem einzigen Blickwinkel entdeckt wurde.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Lest jede Zeile mit der Frage: „Woher weiß die KI das?" – und gleicht Tonalität und
+Kernaussage mit der Markenstimme von Fjordlicht ab (ruhig, keine Superlative, kein
+Greenwashing). Copilot kann nur auf Dateien zugreifen, auf die ihr Zugriff habt, und für den
+Entwurf nur die Fakten verwenden, die darin stehen – genau das nutzt ihr in Teil 2. Achtet
+beim neuen Entwurf darauf, ob Copilot trotzdem Zahlen oder Superlative einbaut.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Einordnung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Suchvolumina und KD-Werte ohne Quelle</td>
+<td>erfundene Daten, KI hat keinen Zugriff auf Suchdaten</td>
+</tr>
+<tr>
+<td>„beste … 2026" plus Top-10-Liste, aber Intention „informational"</td>
+<td>Widerspruch: kommerzielle Intention</td>
+</tr>
+<tr>
+<td>Top-10-Liste würde Wettbewerber empfehlen und bewerten</td>
+<td>passt nicht zum Ziel der Seite, Vergleichsaussagen rechtlich heikel</td>
+</tr>
+<tr>
+<td>„mindestens 3.000 Wörter für bestes Ranking"</td>
+<td>Mythos, Umfang folgt der Frage, nicht umgekehrt</td>
+</tr>
+<tr>
+<td>„begeisternd, überzeugend"</td>
+<td>widerspricht der ruhigen, nordisch-trockenen Markenstimme</td>
+</tr>
+<tr>
+<td>„nachhaltigste Marke am Markt"</td>
+<td>unbelegter Superlativ, Greenwashing-Risiko (UWG)</td>
+</tr>
+<tr>
+<td>fehlende Felder: Zielgruppe, Alleinstellung, interne Links, No-Gos</td>
+<td>Briefing nicht umsetzbar</td>
+</tr>
+</tbody>
+</table>
+<p>Zur Herkunftsfrage: Räumt Copilot ein, dass es sich um Schätzungen handelt, oder verweist es
+auf allgemeine Webquellen statt auf ein SEO-Tool, heißt beides: streichen.</p>
+<p>Richtiger Ablauf: Seed-Keywords → KI-Cluster ohne Zahlen → Volumina aus Keyword Planner/
+Sistrix → SERP-Analyse mit Intention und Lücken → Alleinstellung aus eigener Erfahrung
+(z. B. belegbare Materialangaben wie 100 % recyceltes Polyamid, kostenloser Reparaturservice in
+den ersten zwei Jahren) → Briefing mit allen Feldern.</p>
+<p>Beispiel-Prompt für Copilot in Word:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist SEO-Redakteurin.
+Request: Erstelle ein SEO-Briefing für einen Ratgeber &quot;Woran erkenne ich
+eine nachhaltige Regenjacke?&quot; auf Basis von /Fjordlicht-Basisdaten.
+Output: Felder Hauptkeyword, Nebenkeywords, Intention, Zielgruppe, Ziel,
+Kernfragen, Alleinstellung, Gliederung (H2), interne Links, No-Gos.
+Modifier: Nenne keine Suchvolumina oder Schwierigkeitswerte, markiere
+diese Felder mit [OFFEN]. Felder ohne Grundlage markierst du ebenfalls mit
+[OFFEN]. Keine Superlative, keine Nachhaltigkeitsaussage, die nicht in den
+Basisdaten als belegt steht.
+Purpose: Briefing für einen Ratgeber im Blog &quot;Draußen-Notizen&quot;.
+Tone: sachlich.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien:</p>
+<ul>
+<li>Alle sieben Problemtypen erkannt und eingeordnet; die Copilot-Antwort zur Herkunft der Zahlen
+  ist dokumentiert.</li>
+<li>Das neue Briefing enthält keine Zahl ohne Quelle, mindestens ein ehrliches <code>[OFFEN]</code> und nur
+  Claims aus den Basisdaten.</li>
+<li>Zusammenarbeit: Jede Rolle hat im Dokument mindestens einen Kommentar hinterlassen; alle
+  Kommentare sind erledigt oder begründet abgelehnt; die Gruppe kann benennen, welches Problem
+  nur aus einem Blickwinkel sichtbar war.</li>
+</ul>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Themencluster und Briefing für den Herbst</summary>
+<p><strong>Szenario:</strong> Fjordlicht will im Blog „Draußen-Notizen" ein neues Themencluster für die
+Herbst- und Wintersaison aufbauen. Die Marketingleitung erwartet einen Plan mit Pillar Page,
+Detailartikeln und einem fertigen SEO-Briefing für den ersten Artikel. Du kannst statt
+Fjordlicht auch ein Unternehmen deiner Wahl nutzen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Thema: Draußen unterwegs bei Kälte und Nässe (Fleece Skog, Regenjacke Sølv).
+Zielgruppen: naturverbundene Stadtmenschen 25 bis 45, Familien.
+Werkzeuge: Microsoft 365 Copilot (Chat mit Arbeit/Web, Excel, Word,
+Agent Researcher falls freigegeben); für Zahlen Google Keyword Planner,
+Google Trends oder ein vorhandenes SEO-Tool.
+Ohne Tool-Zugang: Zahlenfelder mit [Tool-Wert] kennzeichnen.
+Markenstimme und belegte Fakten: /Fjordlicht-Basisdaten
+(falls nicht vorhanden: Kap. 11). Ablage: OneDrive &quot;Fjordlicht-Kurs&quot;.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Ideen und Cluster.</strong> Erstelle in Copilot Chat mit einem P.R.O.M.P.T.-Prompt
+(Kap. 5) eine Keyword-Sammlung mit mindestens 50 Begriffen, geordnet in Cluster mit Intention
+und Seitentyp. Ergänze mindestens zehn Begriffe aus „echten" Fragen – etwa aus den „Ähnlichen
+Fragen" in der Google-Suche, aus deinem Listening-Test (Kap. 19) oder aus selbst ausgedachten
+Kundenservice-Mails. Übernimm alles in „Keywords-Herbst.xlsx".</p>
+<p><strong>Runde 2 – Zahlen und Auswahl.</strong> Ergänze in Excel für die 15 vielversprechendsten Begriffe
+Werte aus einem Tool (oder Platzhalter) mit Quellenspalte. Lass <strong>Copilot in Excel</strong> die Begriffe
+nach Volumen und Saison sortieren und je Cluster zusammenfassen. Lege dann fest: eine Pillar
+Page und vier Detailartikel. Begründe die Auswahl mit Intention, Saison und Fjordlichts
+Alleinstellung.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Die SERP-Analyse für deinen ersten Detailartikel zeigt: Die
+vorderen Plätze belegen große Outdoor-Händler mit umfangreichen Ratgebern, und Google zeigt
+eine AI Overview, die die Kernfrage bereits beantwortet. Lass den Agenten <strong>Researcher</strong>
+(alternativ Copilot Chat mit <strong>Web</strong>) die führenden Ratgeber zum Thema zusammenfassen – mit
+Quellen – und füge zusätzlich die Zwischenüberschriften der Google-Top-5 selbst ein. Finde mit
+Copilot die Lücke und passe Thema oder Zuschnitt des Artikels so an, dass Fjordlicht etwas
+Eigenes bieten kann. Öffne die zwei, drei wichtigsten Quellen selbst (Kap. 9).</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Lass <strong>Copilot in Word</strong> das SEO-Briefing für den
+angepassten Artikel entwerfen, mit Verweis auf <code>/Keywords-Herbst</code> und <code>/Fjordlicht-Basisdaten</code>.
+Copilot wird wahrscheinlich viele Nebenkeywords, eine lange Gliederung und eine hohe Wortzahl
+vorschlagen. <strong>Widersprich</strong> überall dort, wo das Briefing auf Keyword-Abdeckung statt auf
+Nutzen für die Leserin zielt, und entscheide, was drinbleibt. Speichere die Briefing-Felder als
+Prompt in der <strong>Prompt Gallery</strong> (Kap. 10).</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>„Keywords-Herbst.xlsx" mit Clustern, Intention, Seitentyp und Quellenspalte für alle Zahlen</li>
+<li>Cluster-Plan: Pillar Page plus vier Detailartikel mit Begründung</li>
+<li>SERP-Analyse des ersten Artikels mit identifizierter Lücke und geprüften Quellen</li>
+<li>finales SEO-Briefing in Word mit allen Feldern aus Abschnitt 21.6 und Liste deiner
+   Streichungen; Briefing-Prompt in der Prompt Gallery</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> keine Zahl ohne Quellenangabe in deinen Unterlagen steht, jede
+Seite genau eine Hauptintention hat, das Briefing ein Alleinstellungsmerkmal enthält, das nur
+Fjordlicht bieten kann, und eine fremde Person den Artikel allein mit dem Briefing schreiben
+könnte.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Runde 3 ist die realistische Lage 2026: Einfache Wissensfragen beantwortet die Suche oft
+selbst. Wer dort mitspielen will, braucht Erfahrung, eigene Daten oder einen spitzeren
+Zuschnitt – nicht mehr Wörter. Das gute Briefing ist deshalb oft kürzer als der erste
+KI-Entwurf. Denk daran: Researcher und Copilot-Websuche arbeiten mit Bing-Ergebnissen, nicht
+mit Googles Ergebnisseite – deshalb ergänzt du die Google-Gliederungen selbst.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt für Runde 3 (Researcher):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Recherchiere die führenden deutschsprachigen Ratgeber zum Thema
+&quot;Fleece bei Nässe richtig schichten&quot;. Fasse je Quelle die Unterthemen
+zusammen und nenne die URL. Liste danach: 1. Unterthemen, die in mindestens
+drei Quellen vorkommen, 2. Fragen, die keine Quelle beantwortet,
+3. wo eine Marke mit Reparaturwerkstatt und eigenen Materialtests etwas
+Eigenes beitragen könnte. Ergänze die Gliederungen unten (Google-Top-5).
+[Gliederungen einfügen]
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: (1) Keyword-Tabelle mit sinnvollen Clustern, korrekter Intention und
+sauber gekennzeichneter Herkunft aller Zahlen, ergänzt um echte Fragen; (2) Cluster-Plan, in
+dem Pillar Page und Detailartikel inhaltlich zusammenhängen und intern verlinkt werden
+können, begründet mit Saison (Google Trends) und Alleinstellung; (3) SERP-Analyse, die eine
+konkrete Lücke benennt, etwa „Fleece richtig schichten bei Nässe – Erfahrungen aus Tests in
+Nordeuropa" statt eines allgemeinen „Was ist Fleece", mit selbst geöffneten Quellen; (4)
+Briefing mit allen Feldern, begründeten Streichungen überflüssiger Nebenkeywords und
+Umfangsvorgaben sowie einer Markenstimme ohne Superlative; keine Zahl, die Copilot ohne Quelle
+ergänzt hat.</p>
+<p>Lernziel: Copilot für Ideen und Struktur, Tools für Zahlen und eigene Erfahrung für die
+Alleinstellung kombinieren – und ein Briefing erstellen, das auf Nutzen statt auf
+Keyword-Dichte zielt.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel20/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 20 – Datenbasierte Optimierung von Textinhalten">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 20 – Datenbasierte Optimierung von Textinhalten
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel22/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

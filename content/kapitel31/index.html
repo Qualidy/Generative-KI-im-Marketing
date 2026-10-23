@@ -1,0 +1,2229 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel30/">
+      
+      
+        <link rel="next" href="../kapitel32/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 31 – Werkzeuge in der Praxis: ChatGPT Images, Midjourney, Ideogram, Adobe Firefly - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-31-werkzeuge-in-der-praxis-chatgpt-images-midjourney-ideogram-adobe-firefly" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 31 – Werkzeuge in der Praxis: ChatGPT Images, Midjourney, Ideogram, Adobe Firefly
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Block 6 · Bildgenerierung mit KI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – Wie Bild-KI funktioniert
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 31 – Werkzeuge in der Praxis: ChatGPT Images, Midjourney, Ideogram, Adobe Firefly
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 31 – Werkzeuge in der Praxis: ChatGPT Images, Midjourney, Ideogram, Adobe Firefly
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#311-vier-werkzeuge-ein-briefing" class="md-nav__link">
+    <span class="md-ellipsis">
+      31.1 Vier Werkzeuge, ein Briefing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#312-chatgpt-images-ehem-dalle" class="md-nav__link">
+    <span class="md-ellipsis">
+      31.2 ChatGPT Images (ehem. DALL·E)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#313-midjourney" class="md-nav__link">
+    <span class="md-ellipsis">
+      31.3 Midjourney
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#314-ideogram" class="md-nav__link">
+    <span class="md-ellipsis">
+      31.4 Ideogram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#315-adobe-firefly" class="md-nav__link">
+    <span class="md-ellipsis">
+      31.5 Adobe Firefly
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#316-der-vergleichstest-dasselbe-briefing-vier-werkzeuge" class="md-nav__link">
+    <span class="md-ellipsis">
+      31.6 Der Vergleichstest: dasselbe Briefing, vier Werkzeuge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel32/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 32 – Visuelle Wirkung: Bildsprache, Komposition und Markenkonsistenz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel33/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 33 – Bildserien und Kampagnenmotive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel34/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 34 – Anwendungsgrenzen der Bild-KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-31-werkzeuge-in-der-praxis-chatgpt-images-midjourney-ideogram-adobe-firefly">Kapitel 31 – Werkzeuge in der Praxis: ChatGPT Images, Midjourney, Ideogram, Adobe Firefly<a class="headerlink" href="#kapitel-31-werkzeuge-in-der-praxis-chatgpt-images-midjourney-ideogram-adobe-firefly" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Wie du in <strong>ChatGPT Images</strong> (ehem. DALL·E) Bilder erzeugst, im Gespräch verfeinerst und vorhandene Bilder bearbeitest</li>
+<li>Wie <strong>Midjourney</strong> bedient wird und was die wichtigsten <strong>Parameter</strong> wie <code>--ar</code>, <code>--stylize</code>, <code>--chaos</code>, <code>--no</code> und <code>--sref</code> bewirken</li>
+<li>Warum <strong>Ideogram</strong> bei Typografie und Text im Bild punktet und wie du Text sauber vorgibst</li>
+<li>Was <strong>Adobe Firefly</strong> für Unternehmen interessant macht und wie es in <strong>Photoshop</strong> und <strong>Express</strong> arbeitet</li>
+<li>Wie du einen fairen <strong>Vergleichstest</strong> mit demselben Briefing aufsetzt und auswertest</li>
+<li>Welche <strong>Bedienungsdetails</strong> sich schnell ändern und wie du damit umgehst</li>
+</ul>
+</div>
+<hr />
+<h2 id="311-vier-werkzeuge-ein-briefing">31.1 Vier Werkzeuge, ein Briefing<a class="headerlink" href="#311-vier-werkzeuge-ein-briefing" title="Permanent link">&para;</a></h2>
+<p>In Kap. 29 hast du die Werkzeuglandschaft kennengelernt, in Kap. 30 die Bildprompt-Anatomie. Jetzt geht es an die Bedienung. Vier Werkzeuge stehen im Mittelpunkt, weil sie im Marketing am verbreitetsten sind und vier unterschiedliche Stärken verkörpern:</p>
+<table>
+<thead>
+<tr>
+<th>Werkzeug</th>
+<th>Rolle im Werkzeugkasten</th>
+<th>Zugang</th>
+<th>Prompt-Stil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ChatGPT Images</strong></td>
+<td>Allrounder im Gespräch, Bearbeitung auf Zuruf</td>
+<td>im ChatGPT-Chat, für alle Nutzer</td>
+<td>natürliche Sprache</td>
+</tr>
+<tr>
+<td><strong>Midjourney</strong></td>
+<td>Art Direction, Ästhetik, Stilreferenzen</td>
+<td>Web-App und Discord, Abo</td>
+<td>knappe Beschreibung plus Parameter</td>
+</tr>
+<tr>
+<td><strong>Ideogram</strong></td>
+<td>Typografie, Plakate, Grafiken mit Text</td>
+<td>Web-App, Abo bzw. Credits</td>
+<td>natürliche Sprache, Text in Anführungszeichen</td>
+</tr>
+<tr>
+<td><strong>Adobe Firefly</strong></td>
+<td>kommerziell abgesicherte Erzeugung, Retusche, Integration in Adobe-Programme</td>
+<td>Firefly-Web-App, Photoshop, Express</td>
+<td>natürliche Sprache plus Referenzen</td>
+</tr>
+</tbody>
+</table>
+<p>Alle Angaben beschreiben den <strong>Stand Oktober 2026</strong>. Menüs, Tarife, Parameternamen und Modellversionen ändern sich bei allen vier Anbietern mehrmals im Jahr. Lerne deshalb die <strong>Funktionsprinzipien</strong> – und schlage Bedienungsdetails in der aktuellen Hilfe des Anbieters nach.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Kein Werkzeug ist in allem am besten. Ein Marketingteam braucht meist <strong>ein Allround-Werkzeug</strong> für den Alltag und höchstens ein bis zwei <strong>Spezialwerkzeuge</strong> für das, was der Allrounder nicht kann.</p>
+</div>
+<hr />
+<h2 id="312-chatgpt-images-ehem-dalle">31.2 ChatGPT Images (ehem. DALL·E)<a class="headerlink" href="#312-chatgpt-images-ehem-dalle" title="Permanent link">&para;</a></h2>
+<p>Die Bildgenerierung in ChatGPT hieß lange DALL·E. Der offizielle DALL·E-GPT wurde am 30.08.2026 eingestellt; heute heißt die Funktion <strong>ChatGPT Images</strong> und basiert auf der Modellfamilie <strong>GPT Image</strong> (aktuell Images 2.5 seit 08.09.2026). Sie steht allen Nutzerinnen und Nutzern zur Verfügung, der Umfang hängt vom Plan ab.</p>
+<p><strong>Bedienung im Kern:</strong></p>
+<ul>
+<li><strong>Erzeugen:</strong> Du beschreibst im Chat, was du brauchst – „Erstelle ein Bild …". Über das Werkzeugmenü lässt sich die Bilderstellung auch ausdrücklich auswählen.</li>
+<li><strong>Verfeinern im Gespräch:</strong> „Mach den Himmel bewölkter", „Die Person soll eine Mütze tragen", „Format 4:5". Das Modell kennt das vorherige Bild und den Verlauf.</li>
+<li><strong>Bearbeiten:</strong> Du lädst ein eigenes Bild hoch und beschreibst die Änderung. Je nach Oberfläche kannst du einen Bereich markieren, der geändert werden soll.</li>
+<li><strong>Referenzen:</strong> Mehrere hochgeladene Bilder lassen sich kombinieren – etwa ein Hintergrund und eine Farbpalette.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle ein Bild für den Header unseres Oktober-Newsletters.
+Motiv: Thermobecher und eine gefaltete Wollmütze auf einem
+verwitterten Holztisch auf einer Terrasse, im Hintergrund unscharf ein
+nebliger Garten. Stil: ruhiges, natürliches Foto, kein Hochglanz.
+Licht: bedeckter Morgen, weiches Licht von links. Farben: gedeckte
+Grün- und Brauntöne. Format: Querformat 3:1, die linke Hälfte bleibt
+ruhig für die Headline. Kein Text und keine Logos im Bild.
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Lange Bildgespräche neu starten</p>
+<p>Nach vielen Bearbeitungsrunden in einem Chat beginnen Bilder zu „wandern": Gesichter, Kleidung oder Hintergrund verändern sich unbeabsichtigt mit. Wenn das passiert, starte einen <strong>neuen Chat</strong>, lade das beste bisherige Bild hoch und beschreibe nur noch die gewünschte Änderung. Das ist dieselbe Logik wie beim Kontextverlust in langen Text-Chats (Kap. 9).</p>
+</div>
+<p><strong>Stärken:</strong> präzise Umsetzung komplexer Anweisungen, Bearbeitung auf Zuruf, kurze Texte im Bild meist korrekt, kein zusätzliches Werkzeug nötig. <strong>Grenzen:</strong> eher neutraler Look, der ohne genaue Stilvorgaben schnell nach „KI-Standard" aussieht; Bildserien mit identischen Figuren bleiben anspruchsvoll (Kap. 33). OpenAI versieht erzeugte Bilder nach eigenen Angaben mit <strong>C2PA-Metadaten</strong>, die die KI-Herkunft dokumentieren (Kap. 34). Für den Datenschutz gilt dasselbe wie beim Text: Unveröffentlichtes gehört nur in einen freigegebenen Business- oder Enterprise-Zugang (Kap. 4).</p>
+<hr />
+<h2 id="313-midjourney">31.3 Midjourney<a class="headerlink" href="#313-midjourney" title="Permanent link">&para;</a></h2>
+<p>Midjourney gilt seit Jahren als das Werkzeug mit der stärksten eigenen <strong>Ästhetik</strong>. Bedient wird es über die <strong>Web-App</strong> oder über <strong>Discord</strong>; eine offizielle API gibt es nicht. Ein Prompt liefert in der Regel mehrere Varianten, die du anschließend hochskalieren, variieren oder im Editor bearbeiten kannst (Bereich neu erzeugen, Bild erweitern, Ausschnitt verschieben).</p>
+<p>Gesteuert wird Midjourney neben dem Text über <strong>Parameter</strong>, die mit zwei Bindestrichen an den Prompt angehängt werden:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Wirkung</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--ar</code></td>
+<td>Seitenverhältnis</td>
+<td><code>--ar 4:5</code> (Instagram), <code>--ar 16:9</code>, <code>--ar 2:3</code> (Pinterest)</td>
+</tr>
+<tr>
+<td><code>--stylize</code> / <code>--s</code></td>
+<td>wie stark Midjourneys eigene Ästhetik einfließt; niedrig = näher am Prompt, hoch = künstlerischer</td>
+<td><code>--s 50</code> für sachliche Bilder</td>
+</tr>
+<tr>
+<td><code>--chaos</code></td>
+<td>wie unterschiedlich die Varianten eines Durchlaufs ausfallen</td>
+<td><code>--chaos 30</code> für ein Moodboard</td>
+</tr>
+<tr>
+<td><code>--no</code></td>
+<td>was nicht im Bild sein soll</td>
+<td><code>--no text, logo</code></td>
+</tr>
+<tr>
+<td><code>--seed</code></td>
+<td>Startwert für den Zufall; hilft, nah an einem Ergebnis zu bleiben</td>
+<td><code>--seed 1234</code></td>
+</tr>
+<tr>
+<td><code>--sref</code></td>
+<td>Stilreferenz: übernimmt Look und Farbwelt eines Referenzbilds oder eines Stilcodes</td>
+<td><code>--sref [Bild-URL]</code></td>
+</tr>
+<tr>
+<td>Charakter-/Objektreferenz</td>
+<td>hält eine Figur oder ein Objekt über Bilder hinweg ähnlich; früher <code>--cref</code>, ab Version 7 als „Omni-Reference"</td>
+<td>siehe aktuelle Doku</td>
+</tr>
+<tr>
+<td><code>--style raw</code></td>
+<td>reduziert die automatische Verschönerung, wirkt fotografischer</td>
+<td><code>--style raw</code></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>documentary photo, woman in her forties holding a thermos cup with both
+hands, wooden jetty on a misty lake, early October morning, soft diffuse
+light, subject in right third, muted greens and greys, desaturated
+--ar 3:1 --s 50 --style raw --no text, logo
+</code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Wer bei Midjourney mit kleinem Plan arbeitet, übersieht leicht, dass erzeugte Bilder standardmäßig in der <strong>öffentlichen Galerie</strong> sichtbar sein können; ein privater Modus („Stealth") war bislang höheren Plänen vorbehalten. Prüfe vor dem ersten Kampagnenmotiv, welche Sichtbarkeit dein Plan hat – unveröffentlichte Kampagnen gehören nicht in eine öffentliche Galerie.</p>
+</div>
+<p>Parameternamen, Wertebereiche und Standardwerte unterscheiden sich zwischen Versionen (aktuell V8.x). Mit <code>--v</code> wählst du bei Bedarf eine bestimmte Version. Notiere in deiner Prompt-Bibliothek (Kap. 10) immer, <strong>mit welcher Version</strong> ein Prompt getestet wurde – sonst lassen sich gute Ergebnisse später nicht reproduzieren. Die Stil- und Charakterreferenzen vertieft Kap. 33.</p>
+<hr />
+<h2 id="314-ideogram">31.4 Ideogram<a class="headerlink" href="#314-ideogram" title="Permanent link">&para;</a></h2>
+<p>Ideogram hat sich von Anfang an auf <strong>Text im Bild</strong> spezialisiert und ist dort weiterhin besonders stark (aktuell Version 4). Kurze Wörter schreiben 2026 alle großen Modelle meist korrekt; die Unterschiede zeigen sich bei <strong>mehreren Textelementen, Hierarchien und Layouts</strong> – genau dem, was Plakate, Infografiken, Thumbnails und Pinterest-Pins brauchen.</p>
+<p><strong>So gibst du Text sauber vor:</strong></p>
+<ul>
+<li>Setze den gewünschten Text in <strong>Anführungszeichen</strong> und benenne seine Rolle: Überschrift, Unterzeile, Button.</li>
+<li>Beschreibe die <strong>Typografie</strong>: „schlichte serifenlose Schrift, fett, weiß", „handschriftlich", „kleine Versalien".</li>
+<li>Lege die <strong>Position</strong> fest: „Überschrift oben mittig, Unterzeile darunter, unten rechts Platz frei".</li>
+<li>Prüfe die automatische <strong>Prompt-Erweiterung</strong> (bei Ideogram „Magic Prompt"): Sie ergänzt deinen Prompt um eigene Details. Für schnelle Ideen hilfreich, für präzise Vorgaben besser ausschalten.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Pinterest-Grafik im Hochformat 2:3 im Stil einer schlichten Infografik.
+Hintergrund: helles Sandbeige mit dezenter Papierstruktur.
+Oben die Überschrift &quot;Regenjacke richtig pflegen&quot; in fetter
+serifenloser Schrift, dunkelgrün.
+Darunter drei Zeilen mit einfachen Linien-Icons:
+&quot;1 Lauwarm waschen&quot;, &quot;2 Kein Weichspüler&quot;, &quot;3 Trocknen und neu imprägnieren&quot;.
+Viel Weißraum, ruhig, keine Fotos, keine Logos.
+</code></pre></div></td></tr></table></div>
+<div class="admonition example">
+<p class="admonition-title">Text im Bild: Entwurf ja, Endfassung im Layout</p>
+<p>Selbst wenn Ideogram den Text fehlerfrei setzt, ist das Bild am Ende ein Pixelbild: Tippfehler, Pflegehinweise oder Preise lassen sich nicht nachträglich korrigieren, und Schriften entsprechen selten exakt dem Corporate Design. Nutze Ideogram für <strong>Layoutideen und Entwürfe</strong>. Die finale Grafik mit geprüften Texten setzt du in Canva, Adobe Express oder InDesign (Kap. 33). Pflegehinweise und Nachhaltigkeitsaussagen prüfst du vorher gegen die Claim-Liste – wie beim Content-Assistenten (Kap. 26).</p>
+</div>
+<hr />
+<h2 id="315-adobe-firefly">31.5 Adobe Firefly<a class="headerlink" href="#315-adobe-firefly" title="Permanent link">&para;</a></h2>
+<p>Adobe Firefly (aktuell Image Model 5) ist weniger ein einzelnes Werkzeug als eine Modellfamilie, die in der <strong>Firefly-Web-App</strong>, in <strong>Photoshop</strong>, in <strong>Adobe Express</strong> und weiteren Adobe-Programmen steckt. Für Unternehmen ist vor allem ein Argument entscheidend: Adobe gibt an, die eigenen Firefly-Modelle auf <strong>lizenzierten Inhalten</strong> (unter anderem Adobe Stock) und <strong>gemeinfreien Inhalten</strong> trainiert zu haben, und bewirbt sie als <strong>kommerziell abgesichert</strong>. Erzeugte Bilder erhalten <strong>Content Credentials</strong> nach dem C2PA-Standard, also maschinenlesbare Herkunftsangaben.</p>
+<table>
+<thead>
+<tr>
+<th>Ort</th>
+<th>Typischer Einsatz</th>
+<th>Funktion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Firefly-Web-App</strong></td>
+<td>Motive erzeugen, Varianten, Referenzen</td>
+<td>Text-zu-Bild mit Stil- und Strukturreferenz, Seitenverhältnisse, Effekte</td>
+</tr>
+<tr>
+<td><strong>Photoshop</strong></td>
+<td>echte Fotos bearbeiten</td>
+<td>„Generatives Füllen" (Generative Fill) für markierte Bereiche, „Generatives Erweitern" für neue Formate, Objekte entfernen</td>
+</tr>
+<tr>
+<td><strong>Adobe Express</strong></td>
+<td>Social-Posts, Flyer, schnelle Layouts</td>
+<td>Vorlagen, Texteffekte, Bildgenerierung direkt im Layout</td>
+</tr>
+</tbody>
+</table>
+<p>Für Fjordlicht ist Photoshop der häufigste Einsatzort: Ein echtes Produktfoto der Jacke „Sølv" wird für einen 16:9-Header <strong>nach links und rechts erweitert</strong>, ein störendes Verkehrsschild im Hintergrund entfernt. Das Produkt selbst bleibt unangetastet – genau so, wie es Kap. 29 und Kap. 34 verlangen.</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Die Firefly-App bietet inzwischen auch <strong>Partnermodelle</strong> anderer Anbieter zur Auswahl an. Für diese gelten Adobes Aussagen zu Trainingsdaten und kommerzieller Absicherung <strong>nicht automatisch</strong>. Prüfe vor dem Generieren, welches Modell ausgewählt ist, wenn die rechtliche Absicherung dein Grund für Firefly war.</p>
+</div>
+<p>Abgerechnet wird über <strong>generative Credits</strong>, die je nach Abo und Funktion unterschiedlich schnell verbraucht werden. <strong>Stärken:</strong> Integration in vorhandene Arbeitsabläufe, Retusche und Formaterweiterung echter Fotos, Herkunftsnachweis, Rechtsposition. <strong>Grenzen:</strong> bei freien, künstlerischen Motiven oft weniger eigenständig als Midjourney.</p>
+<hr />
+<h2 id="316-der-vergleichstest-dasselbe-briefing-vier-werkzeuge">31.6 Der Vergleichstest: dasselbe Briefing, vier Werkzeuge<a class="headerlink" href="#316-der-vergleichstest-dasselbe-briefing-vier-werkzeuge" title="Permanent link">&para;</a></h2>
+<p>Welches Werkzeug für euch passt, entscheidet kein Testbericht, sondern ein <strong>eigener Vergleich mit euren Aufgaben</strong>. Damit der Vergleich fair ist, gelten vier Regeln:</p>
+<ol>
+<li><strong>Dasselbe Briefing</strong> für alle Werkzeuge – inhaltlich identisch, nur im jeweils passenden Prompt-Stil (Satz oder Stichworte, Parameter).</li>
+<li><strong>Mehrere Durchläufe</strong>: mindestens zwei Generierungen pro Werkzeug, damit kein Zufallstreffer entscheidet.</li>
+<li><strong>Feste Kriterien vorab</strong>, gewichtet nach euren Prioritäten (Kap. 29).</li>
+<li><strong>Gleicher Aufwand</strong>: höchstens drei Nachbesserungsrunden pro Werkzeug, Zeit notieren.</li>
+</ol>
+<pre class="mermaid"><code>flowchart LR
+    A([Briefing festlegen]) --&gt; B([Prompt je Werkzeug anpassen])
+    B --&gt; C([je 2 Durchläufe, max. 3 Nachbesserungen])
+    C --&gt; D([nach Kriterien bewerten])
+    D --&gt; E([Empfehlung mit Begründung])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Kriterium</th>
+<th>Gewicht</th>
+<th>ChatGPT Images</th>
+<th>Midjourney</th>
+<th>Ideogram</th>
+<th>Firefly</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Briefingtreue (Motiv, Komposition)</td>
+<td>25 %</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+</tr>
+<tr>
+<td>Passung zur Markenbildsprache</td>
+<td>25 %</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+</tr>
+<tr>
+<td>Text im Bild (falls gefordert)</td>
+<td>10 %</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+</tr>
+<tr>
+<td>Aufwand bis zum brauchbaren Bild</td>
+<td>15 %</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+</tr>
+<tr>
+<td>Rechte, Datenschutz, Sichtbarkeit</td>
+<td>15 %</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+</tr>
+<tr>
+<td>Integration in den Arbeitsablauf</td>
+<td>10 %</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+<td>[1–5]</td>
+</tr>
+</tbody>
+</table>
+<p>Ein typisches Ergebnis für ein Stimmungsbild: Midjourney liefert den schönsten Look, ChatGPT Images trifft die Komposition am genauesten, Firefly punktet bei Rechten und Integration, Ideogram fällt ohne Textanteil ab. Bei einer Infografik dreht sich das Bild. <strong>Deshalb testest du mit mindestens zwei unterschiedlichen Aufgaben.</strong></p>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>ChatGPT Images</strong> (ehem. DALL·E; GPT Image, aktuell Images 2.5) ist der Allrounder: Erzeugen und Bearbeiten im Gespräch, präzise bei komplexen Anweisungen, bei langen Bildgesprächen neu starten.</li>
+<li><strong>Midjourney</strong> steht für Ästhetik und Art Direction; gesteuert wird es über Parameter wie <code>--ar</code>, <code>--stylize</code>, <code>--chaos</code>, <code>--no</code>, <code>--seed</code>, <code>--sref</code> – Version und Sichtbarkeit der Bilder immer prüfen.</li>
+<li><strong>Ideogram</strong> ist stark bei Typografie: Text in Anführungszeichen, Rolle und Position benennen; finale Texte trotzdem im Layout-Werkzeug setzen.</li>
+<li><strong>Adobe Firefly</strong> punktet mit lizenzierten Trainingsdaten, Content Credentials und der Integration in Photoshop (Generatives Füllen, Generatives Erweitern) und Express – Partnermodelle gesondert prüfen.</li>
+<li>Ein fairer <strong>Vergleichstest</strong> nutzt dasselbe Briefing, mehrere Durchläufe, vorab gewichtete Kriterien und gleichen Aufwand.</li>
+<li>Bedienungsdetails ändern sich schnell: <strong>Prinzipien lernen</strong>, Version und Datum in der Prompt-Bibliothek festhalten.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Ein Prompt, vier Bilder – Copilot-Bilderzeugung und Midjourney-Parameter</summary>
+<p><strong>Gruppe:</strong> 3–4 Personen, ca. 20 Minuten. Am Ende liegen eine gemeinsame Bildersammlung im
+Teams-Chat eurer Gruppe, eine gemeinsame Zuordnungstabelle (Word in OneDrive) und eine
+Gruppenentscheidung zur Werkzeugwahl vor.</p>
+<p><strong>Teil A – gleicher Prompt, mehrere Ergebnisse.</strong> Alle führen gleichzeitig denselben Prompt in
+ihrem eigenen Copilot Chat aus und stellen das Ergebnis in den Gruppenchat:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle ein Bild: Thermobecher und gefaltete Wollmütze auf einem
+verwitterten Holztisch, im Hintergrund unscharf ein nebliger Garten.
+Ruhiges, natürliches Foto, bedeckter Morgen, gedämpfte Grün- und Brauntöne.
+Querformat, linke Hälfte ruhig für eine Headline. Kein Text, keine Logos.
+</code></pre></div></td></tr></table></div>
+<p>Legt die Bilder nebeneinander: Was ist bei allen gleich, was unterscheidet sich? Danach
+verfeinert jede Person ihr Bild in <strong>zwei</strong> Runden im selben Chat – mit verteilten Aufträgen:</p>
+<ul>
+<li>Person 1: nur das <strong>Format</strong> ändern („Hochformat für Instagram")</li>
+<li>Person 2: nur ein <strong>Detail</strong> ändern („Becher weiter nach rechts", „mehr Nebel")</li>
+<li>Person 3: <strong>neuen Chat</strong> starten und den Ausgangsprompt wortgleich noch einmal ausführen</li>
+<li>Person 4 (falls vorhanden): den <strong>Stil</strong> ändern („wie ein Aquarell")</li>
+</ul>
+<p>Achtet darauf, was sich per Zuruf steuern ließ und was nicht: Wurde das Format umgesetzt?
+Blieb der Rest des Bildes gleich? Ließ sich ein bestimmtes Ergebnis wiederholen?</p>
+<p><strong>Teil B – Parameter zuordnen (Arbeitsteilung).</strong> In Copilot steuert ihr alles über natürliche
+Sprache, Midjourney nutzt dafür Parameter. Teilt die sechs Ziele auf (je Person 1–2), ordnet
+jedem Ziel den passenden Midjourney-Parameter zu (<code>--ar</code>, <code>--stylize</code>, <code>--chaos</code>, <code>--no</code>,
+<code>--seed</code>, <code>--sref</code>) und notiert, wie ihr dasselbe Ziel in Copilot formulieren würdet – oder ob
+es dort nicht geht. Tragt alles in eine gemeinsame Word-Tabelle ein und nutzt dabei eure
+Beobachtungen aus Teil A.</p>
+<ol>
+<li>Das Bild soll im Hochformat für Instagram (4:5) erscheinen.</li>
+<li>Die Varianten eines Durchlaufs sollen sich für ein Moodboard stark unterscheiden.</li>
+<li>Es soll kein Text im Bild auftauchen.</li>
+<li>Der Look soll sich an einem freigegebenen Kampagnenbild orientieren.</li>
+<li>Das Bild soll sachlicher und näher am Prompt sein, weniger „künstlerisch".</li>
+<li>Ihr wollt möglichst nah an ein früheres Ergebnis herankommen.</li>
+</ol>
+<p><strong>Teil C – Werkzeugwahl als Gruppenentscheidung.</strong> Copilot ist euer Ausgangswerkzeug. Einigt
+euch für jeden Fall: Reicht Copilot, oder greift ihr zu einem Werkzeug aus Kapitel 31 – und
+warum? Stellt einen Fall, bei dem ihr uneinig wart, im Plenum in einer Minute vor.</p>
+<ul>
+<li>(a) Hintergrund eines echten Produktfotos für ein Banner verbreitern</li>
+<li>(b) Plakatentwurf mit Überschrift, Unterzeile und Datum</li>
+<li>(c) schnelles Stimmungsbild, das ihr danach im Gespräch mehrfach anpasst</li>
+<li>(d) stimmungsvolles Kampagnenmotiv mit starkem eigenem Look</li>
+</ul>
+<details class="info">
+<summary>Tipp</summary>
+<p>Teil A lebt vom Vergleich: Ein einzelnes Bild sagt wenig darüber, wie zuverlässig ein Prompt
+ist – vier Bilder desselben Prompts zeigen, was der Prompt festlegt und was dem Zufall
+überlassen bleibt. Bei Teil C gibt es manchmal zwei vertretbare Antworten; entscheidend ist die
+Begründung über die Stärke des Werkzeugs. Haltet eure Beobachtungen aus Teil A fest – sie sind
+die erste Zeile der Vergleichsmatrix im Workshop.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p><strong>Teil A – mögliche Beobachtungen:</strong> Was im Prompt genau beschrieben ist (Becher, Mütze, Tisch,
+Nebel, Farbtöne), taucht meist in allen Bildern auf; Perspektive, Anordnung, Holzstruktur und
+Lichtstimmung unterscheiden sich von Person zu Person. Das zeigt: Ein Bildmodell zieht bei
+jedem Durchlauf neu – was der Prompt offenlässt, entscheidet der Zufall. Prüft bei den
+Verfeinerungen: Wurde das gewünschte Format getroffen oder nur grob umgesetzt (dann im Layout
+zuschneiden)? Hat sich beim Detailwunsch auch der Rest verändert? Hat der wortgleiche Prompt
+im neuen Chat dasselbe Bild ergeben? Wenn Details nach mehreren Runden „wandern", hilft ein
+neuer Chat mit einem präzisierten Prompt (31.2).</p>
+<p><strong>Teil B:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Midjourney</th>
+<th>in Copilot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>--ar 4:5</code></td>
+<td>„Hochformat 4:5" in den Prompt; prüfen, ob es umgesetzt wird, sonst im Layout zuschneiden</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>--chaos</code> (z. B. 30 bis 50)</td>
+<td>ausdrücklich um deutlich unterschiedliche Varianten bitten – oder wie in Teil A mehrere Personen bzw. Chats nutzen</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>--no text</code></td>
+<td>„Kein Text, keine Schrift, keine Logos im Bild"</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>--sref</code></td>
+<td>Look des freigegebenen Bilds in Worten beschreiben (Licht, Farbwelt, Körnung) – etwa indem Copilot das hochgeladene Bild beschreibt – und diese Beschreibung in den Prompt übernehmen</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>--stylize</code> niedrig, ggf. <code>--style raw</code></td>
+<td>„sachliches, dokumentarisches Foto, kein Hochglanz, keine Effekte"</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>--seed</code></td>
+<td>kein Parameter; im selben Chat weiterarbeiten und nur die Änderung beschreiben, Prompt wortgleich wiederverwenden</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Teil C:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Werkzeug</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(a)</td>
+<td>Firefly in Photoshop (Generatives Erweitern)</td>
+<td>bearbeitet das echte Foto, Produkt bleibt unverändert</td>
+</tr>
+<tr>
+<td>(b)</td>
+<td>Copilot oder Ideogram für den Entwurf, finale Texte im Layout (z. B. PowerPoint, Express)</td>
+<td>Ideogram stärker bei mehreren Textelementen; Pixeltext ist nicht korrigierbar</td>
+</tr>
+<tr>
+<td>(c)</td>
+<td>Copilot Chat (alternativ ChatGPT Images)</td>
+<td>Anpassung auf Zuruf im Gespräch, läuft im Mandanten</td>
+</tr>
+<tr>
+<td>(d)</td>
+<td>Midjourney, Copilot als Entwurfswerkzeug</td>
+<td>starke Ästhetik und Art Direction</td>
+</tr>
+</tbody>
+</table>
+<p>Bewertungskriterien: Alle Bilder aus Teil A liegen im Gruppenchat; Gemeinsamkeiten und
+Abweichungen zwischen den Ergebnissen der Gruppenmitglieder wurden benannt und mit der
+Wahrscheinlichkeitslogik der Bildmodelle erklärt; jede Person hat ihren Verfeinerungsauftrag
+ausgeführt und das Ergebnis berichtet; die Tabelle aus Teil B ist vollständig und stützt sich
+auf eigene Beobachtungen; die Gruppe hat sich in Teil C auf eine Entscheidung je Fall geeinigt
+und kann sie begründen.</p>
+<p>Parameternamen und Funktionsumfang ändern sich bei allen Anbietern – im Zweifel die aktuelle
+Dokumentation prüfen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Prompt-Duell – Text im Bild</summary>
+<p><strong>Gruppe:</strong> 4 Personen in zwei Paaren, ca. 30 Minuten. Am Ende liegen ein gemeinsames
+Prüfprotokoll (Word-Tabelle in OneDrive), eine neu gesetzte PowerPoint-Folie und eine
+Entscheidung vor, welcher Entwurf als Layoutidee dient.</p>
+<p>Ihr erzeugt eine Pinterest-Grafik im Hochformat für den Fjordlicht-Blog „Draußen-Notizen" mit
+genau diesen Texten:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Überschrift: &quot;5 Dinge für die erste Herbstwanderung&quot;
+Liste: &quot;Regenjacke&quot;, &quot;Warme Schicht&quot;, &quot;Thermobecher&quot;, &quot;Stirnlampe&quot;, &quot;Pflaster&quot;
+Fußzeile: &quot;Draußen-Notizen&quot;
+</code></pre></div></td></tr></table></div>
+<p><strong>Aufteilung:</strong> <strong>Paar A</strong> arbeitet in Copilot Chat. <strong>Paar B</strong> arbeitet in Ideogram – oder,
+ohne Ideogram-Zugang, ebenfalls in Copilot Chat, dann aber mit einem bewusst anderen
+Prompt-Ansatz (z. B. A: ausführlich mit Typografie und Position, B: knapp nur mit den Texten).
+In jedem Paar gibt es eine <strong>Prompt-Verantwortliche</strong> und eine <strong>Korrektorin</strong>; nach dem
+ersten Durchlauf tauscht ihr die Rollen.</p>
+<ol>
+<li><strong>Prompt schreiben.</strong> Jedes Paar schreibt seinen Prompt nach den Regeln aus 31.4: Text in
+   Anführungszeichen, Rolle, Typografie, Position.</li>
+<li><strong>Erzeugen.</strong> Jedes Paar erzeugt <strong>zwei</strong> Durchläufe (einen pro Rollenverteilung).</li>
+<li><strong>Kreuzprüfung.</strong> Die Paare tauschen die Bilder: Die Korrektorinnen prüfen die Bilder des
+   <strong>anderen</strong> Paares Zeichen für Zeichen – Rechtschreibung, Umlaute, fehlende oder doppelte
+   Einträge, Reihenfolge, Lesbarkeit – und tragen jeden Fund ins gemeinsame Prüfprotokoll ein.</li>
+<li><strong>Copilot als Gegenprobe.</strong> Ladet die beiden besten Bilder in Copilot Chat hoch und lasst
+   den Text im Bild auslesen und mit der Vorgabe abgleichen. Findet Copilot dieselben Fehler
+   wie eure Korrektorinnen?</li>
+<li><strong>Neu setzen und entscheiden.</strong> Einigt euch auf den besten Entwurf als Layoutidee. Eine
+   Person setzt ihn in <strong>PowerPoint</strong> neu auf (benutzerdefinierte Foliengröße im Hochformat,
+   echte Textfelder), die anderen kommentieren die Folie. Haltet fest: Was übernehmt ihr aus dem
+   Entwurf, was muss neu gesetzt werden?</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Gebt die Umlaute im Prompt so an, wie sie im Bild erscheinen sollen (also „für", „Draußen").
+Umlaute und ß sind ein guter Härtetest. Die Kreuzprüfung ist Absicht: Wer einen Prompt selbst
+geschrieben hat, liest im Bild oft, was dort stehen sollte, statt was dort steht. Verlasst euch
+bei Schritt 4 nicht auf Copilot – achtet darauf, ob es beim Prüfen genau die Fehler übersieht,
+die beim Erzeugen entstanden sind.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispielprompt für Copilot (Paar A):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle ein Bild: Pinterest-Grafik im Hochformat, schlichte Infografik.
+Hintergrund: helles Sandbeige. Oben die Überschrift
+&quot;5 Dinge für die erste Herbstwanderung&quot; in fetter serifenloser Schrift,
+dunkelgrün. Darunter eine nummerierte Liste mit kleinen Linien-Icons:
+&quot;Regenjacke&quot;, &quot;Warme Schicht&quot;, &quot;Thermobecher&quot;, &quot;Stirnlampe&quot;, &quot;Pflaster&quot;.
+Unten mittig klein: &quot;Draußen-Notizen&quot;. Viel Weißraum, keine Fotos.
+</code></pre></div></td></tr></table></div>
+<p>Prüfprompt für Schritt 4:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Lies den gesamten Text in diesem Bild Zeichen für Zeichen aus und vergleiche
+ihn mit dieser Vorgabe: [Texte einfügen]. Nenne jede Abweichung einzeln
+(Rechtschreibung, Umlaute, fehlende, doppelte oder zusätzliche Einträge,
+Reihenfolge). Schreibe &quot;unsicher&quot;, wo du etwas nicht sicher lesen kannst.
+</code></pre></div></td></tr></table></div>
+<p>Mögliches Prüfprotokoll:</p>
+<table>
+<thead>
+<tr>
+<th>Prüfpunkt</th>
+<th>Worauf ihr achten könnt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Überschrift</td>
+<td>vollständig und korrekt geschrieben?</td>
+</tr>
+<tr>
+<td>Umlaute, ß</td>
+<td>richtig gesetzt oder durch ähnliche Zeichen ersetzt?</td>
+</tr>
+<tr>
+<td>Liste</td>
+<td>alle fünf Einträge, keine doppelten, keine zusätzlichen eigenen Ideen?</td>
+</tr>
+<tr>
+<td>Icons</td>
+<td>passen sie zum Begriff (Stirnlampe oder Taschenlampe)?</td>
+</tr>
+<tr>
+<td>Layout</td>
+<td>Hierarchie und Abstände geordnet? Format wie gewünscht?</td>
+</tr>
+<tr>
+<td>Prüfung durch Copilot</td>
+<td>dieselben Funde wie die Korrektorinnen – oder weniger, mehr, andere?</td>
+</tr>
+</tbody>
+</table>
+<p>Entscheidung: Der beste Entwurf dient als <strong>Layoutidee</strong> (Anordnung, Farben, Icon-Stil). Für die
+Veröffentlichung werden alle Texte im Layout neu gesetzt – in PowerPoint, Canva oder Express –,
+weil Pixeltext nicht korrigierbar ist und die Hausschrift fehlt.</p>
+<p>Bewertungskriterien: Beide Paare haben je zwei Durchläufe mit eigenem Prompt erzeugt; die
+Kreuzprüfung dokumentiert mindestens einen konkreten Textfehler (oder begründet, warum keiner
+auftrat); Abweichungen zwischen den Funden der Korrektorinnen und denen von Copilot sind
+benannt; der Unterschied zwischen den beiden Prompt-Ansätzen bzw. Werkzeugen ist mit Beispielen
+beschrieben; die Gruppe hat sich begründet auf eine Layoutidee geeinigt und die Folie mit
+echten Textfeldern liegt vor.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Einen missratenen Bildauftrag im Team reparieren</summary>
+<p><strong>Gruppe:</strong> 3–4 Personen, ca. 30 Minuten. Am Ende liegt ein gemeinsames
+<strong>Reparaturprotokoll</strong> (Word-Datei in OneDrive, gemeinsam bearbeitet) vor: Diagnose, zwei
+verbesserte Prompts, zwei Testbilder und eine Empfehlung für Serie und Organisation.</p>
+<p>Ein Praktikant hat für die Fjordlicht-Frühjahrskampagne in Midjourney gearbeitet. Ziel waren
+<strong>vier zusammengehörige</strong>, ruhige, dokumentarische Motive für Instagram. Er hat diesen Prompt
+viermal mit jeweils anderem Motiv verwendet:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>epic cinematic hyperrealistic masterpiece, happy hiker on mountain top,
+sunset, vibrant colors, in the style of [bekannte lebende Fotografin],
+8K, award-winning --ar 16:9 --s 1000 --chaos 100
+</code></pre></div></td></tr></table></div>
+<p>Das Ergebnis: vier Bilder, die nicht zusammenpassen, bonbonbunt, im falschen Format. Außerdem
+stellt sich heraus, dass er mit seinem privaten Basis-Abo gearbeitet hat.</p>
+<p><strong>Rollen:</strong> <strong>Diagnose</strong> (führt Schritt 1 an), <strong>Midjourney-Fassung</strong>, <strong>Copilot-Fassung</strong>,
+<strong>Organisation und Risiko</strong> (bei drei Personen übernimmt die Diagnose-Person auch diese Rolle).</p>
+<ol>
+<li><strong>Diagnose (alle, dann Abgleich).</strong> Jede Person notiert zwei Minuten lang still alle
+   Ursachen, die sie findet – Prompttext und Parameter. Führt die Listen im Protokoll zusammen.
+   Die Diagnose-Person lässt danach Copilot Chat denselben Prompt analysieren (Prompt einfügen,
+   Ziel nennen). Vergleicht: Welche Ursachen hat die Gruppe gefunden, welche Copilot, welche
+   niemand?</li>
+<li><strong>Midjourney-Fassung.</strong> Schreibt einen verbesserten Prompt inklusive Parametern.</li>
+<li><strong>Copilot-Fassung.</strong> Übersetzt den Prompt in natürliche Sprache und erzeugt in Copilot Chat
+   das erste der vier Motive. Für das zweite Motiv probiert ihr zwei Wege parallel aus:</li>
+<li><strong>Weg 1:</strong> im selben Chat weiterarbeiten und nur Motiv und Ort ändern.</li>
+<li><strong>Weg 2:</strong> in einem neuen Chat Bild 1 hochladen, Copilot Licht, Farbwelt und Look
+     beschreiben lassen und diese Beschreibung wortgleich in den Prompt für Motiv 2 übernehmen.</li>
+</ol>
+<p>Welches zweite Motiv passt besser zu Motiv 1?
+4. <strong>Serie sichern.</strong> Einigt euch: Was schlagt ihr vor, damit die vier Motive zusammengehören –
+   in Midjourney und in Copilot?
+5. <strong>Organisation.</strong> Die Rolle „Organisation und Risiko" bereitet vor: Welche Probleme
+   entstehen durch das private Basis-Abo, und was ändert sich, wenn das Team in Copilot im
+   Unternehmensmandanten arbeitet? Die Gruppe ergänzt und stellt die Empfehlung im Plenum in
+   zwei Minuten vor.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Geht die Parameter einzeln durch und fragt bei jedem: Wirkt er für das Ziel „ruhig,
+dokumentarisch, zusammengehörig" in die richtige oder in die falsche Richtung? In Copilot gibt
+es keine Parameter – dieselben Entscheidungen müssen dort ausformuliert im Prompt stehen. Die
+stille Einzeldiagnose vor dem Abgleich verhindert, dass die erste Meinung die Gruppe prägt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Problem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>„epic, cinematic, hyperrealistic, masterpiece, 8K, award-winning"</td>
+<td>Füllwörter, schieben in Hochglanz statt dokumentarisch</td>
+</tr>
+<tr>
+<td>„vibrant colors", „sunset"</td>
+<td>widerspricht gedeckter, ruhiger Bildsprache</td>
+</tr>
+<tr>
+<td>„in the style of [Fotografin]"</td>
+<td>fremde Handschrift, rechtlich und ethisch heikel</td>
+</tr>
+<tr>
+<td><code>--ar 16:9</code></td>
+<td>falsches Format für Instagram, besser 4:5</td>
+</tr>
+<tr>
+<td><code>--s 1000</code></td>
+<td>maximale Midjourney-Eigenästhetik statt Nähe zum Prompt</td>
+</tr>
+<tr>
+<td><code>--chaos 100</code></td>
+<td>maximale Streuung, Gift für eine Serie</td>
+</tr>
+</tbody>
+</table>
+<p>Beim Abgleich mit Copilot lohnt der Blick darauf, ob es auch die Wirkung der einzelnen
+Parameterwerte und das Problem „im Stil einer lebenden Fotografin" von selbst benennt – oder
+nur die offensichtlichen Füllwörter und Farben.</p>
+<p>Verbesserter Midjourney-Prompt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>documentary photo, woman in her thirties pausing on a forest trail in
+early spring, light rain jacket, looking at the path ahead, overcast
+soft light, subject in lower third, muted greens and greys,
+desaturated --ar 4:5 --s 75 --chaos 0 --style raw --no text, logo
+</code></pre></div></td></tr></table></div>
+<p>Copilot-Fassung:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle ein Bild im Hochformat 4:5: dokumentarisches Foto einer Frau
+Anfang 30, die auf einem Waldweg im frühen Frühling kurz innehält und
+auf den Weg vor sich schaut. Leichte Regenjacke, bedeckter Himmel,
+weiches Licht, Person im unteren Drittel. Gedämpfte Grün- und Grautöne,
+leicht entsättigt, natürlicher Kontrast, kein Hochglanz.
+Kein Text, keine Logos.
+</code></pre></div></td></tr></table></div>
+<p>Beschreibungsprompt für Weg 2:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Beschreibe Licht, Farbwelt, Kontrast, Körnung und Bildaufbau dieses Bilds
+in höchstens 60 Wörtern so, dass ich die Beschreibung an einen Bildprompt
+anhängen kann. Beschreibe nicht das Motiv.
+</code></pre></div></td></tr></table></div>
+<p>Beim Vergleich der Wege achtet ihr auf Licht, Farbe, Körnung und Details wie Jacke oder Weg.
+Haltet fest, welcher Weg bei euch näher an Motiv 1 lag – und ob beide Wege ohne exakte
+Übereinstimmung auskommen müssen.</p>
+<p>Für Zusammengehörigkeit: dieselbe Basisformulierung für Licht, Farbe und Kamera wortgleich in
+allen Prompts; in Midjourney ein freigegebenes erstes Motiv per <code>--sref</code> als Stilreferenz; in
+Copilot die aus Bild 1 gewonnene Look-Beschreibung als fester Baustein; Werkzeug und Datum
+notieren (Kap. 33 vertieft das).</p>
+<p>Organisatorisch: Bilder aus kleineren Midjourney-Plänen können in der öffentlichen Galerie
+sichtbar sein – eine unveröffentlichte Kampagne ist damit potenziell öffentlich;
+Nutzungsbedingungen des privaten Kontos und die Frage, wem die Ergebnisse gehören, sind
+ungeklärt; kein Teamzugriff, keine Nachvollziehbarkeit. In Copilot gilt Enterprise Data
+Protection: Eingaben und Ergebnisse bleiben im Microsoft-365-Mandanten, Bilder lassen sich in
+OneDrive bzw. SharePoint ablegen und mit dem Team teilen. Konsequenz: Arbeit nur in
+freigegebenen Teamkonten; Spezialwerkzeuge nur mit geprüfter Sichtbarkeit.</p>
+<p>Bewertungskriterien: alle sechs Ursachen erkannt und die Funde der Gruppe mit der
+Copilot-Analyse abgeglichen (wer hat was gefunden, was hat niemand gefunden); Parameter
+begründet gewählt; die Copilot-Fassung enthält dieselben Entscheidungen ausformuliert; beide
+Wege für Motiv 2 ausprobiert und der Unterschied an konkreten Bilddetails beschrieben;
+organisatorisches Risiko konkret benannt; das Reparaturprotokoll wurde von allen Rollen
+ergänzt und die Empfehlung im Plenum vorgestellt.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Vergleichstest mit demselben Briefing</summary>
+<p><strong>Szenario:</strong> Die Marketingleitung von Fjordlicht will vor der Herbstkampagne wissen, ob die
+Bilderzeugung in <strong>Microsoft 365 Copilot</strong>, die das Team ohnehin lizenziert hat, für den
+Alltag reicht – und für welche Aufgaben ein zusätzliches Bildwerkzeug nötig ist. Statt
+Meinungen soll ein <strong>dokumentierter Vergleichstest</strong> entscheiden. Du führst ihn durch.
+Alternativ testest du für <strong>ein Unternehmen deiner Wahl</strong>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Kampagne: &quot;Draußen bleiben&quot; (Herbst), Kanäle Instagram (4:5) und Newsletter (3:1).
+Aufgabe 1: Stimmungsbild, Mensch in herbstlicher Natur, ruhig, dokumentarisch.
+Aufgabe 2: Infografik für Pinterest (2:3) mit Überschrift und drei Listenpunkten.
+Ausgangswerkzeug: Copilot (Copilot Chat bzw. Create, falls freigegeben).
+Vergleich mit mindestens zwei weiteren Werkzeugen, z. B. ChatGPT Images,
+Midjourney, Ideogram, Firefly.
+Pro Werkzeug: 2 Durchläufe, höchstens 3 Nachbesserungsrunden je Aufgabe.
+Keine echten Produkte generieren.
+Ablage: Ordner &quot;Fjordlicht-Kurs&quot; in OneDrive.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Briefing und Kriterien.</strong> Lass dir in <strong>Word</strong> mit Copilot einen Entwurf für zwei
+Bildbriefings mit den acht Bausteinen aus Kap. 30 erstellen – auf Basis von
+<code>/Fjordlicht-Basisdaten</code> (falls nicht vorhanden, Kap. 11 bzw. die Fakten aus dem Rahmen
+einfügen). Prüfe und schärfe den Entwurf selbst. Lege <strong>vor</strong> dem Test die
+Bewertungskriterien und ihre Gewichtung fest (Vorlage in 31.6) und begründe sie in je einem
+Satz. Baue die Matrix in <strong>Excel</strong> als Tabelle an und lass dir von Copilot in Excel eine
+Spalte mit der gewichteten Summe vorschlagen; prüfe die Formel.</p>
+<p><strong>Runde 2 – Testen.</strong> Passe das Briefing an den Prompt-Stil jedes Werkzeugs an (ausformulierter
+Satz in Copilot und ChatGPT, Stichworte und Parameter in Midjourney). Führe die Durchläufe
+aus, notiere Zeitaufwand und Nachbesserungen und trage jedes Ergebnis in die Excel-Matrix ein.
+Halte bei Copilot zusätzlich fest, wie gut Format und Text im Bild umgesetzt wurden.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Das beste Stimmungsbild stammt aus einem externen Werkzeug,
+bei dem sich herausstellt: Es wurde in einem Plan erzeugt, dessen Bilder öffentlich sichtbar
+sind, und auf der Jacke der Person ist ein Emblem zu sehen, das dem Logo eines bekannten
+Outdoor-Herstellers ähnelt. Bewerte das Ergebnis neu. Ändert sich deine Matrix? Was muss
+passieren, bevor ein solches Bild genutzt werden kann – und lässt sich das Motiv mit Copilot
+ohne diese Probleme nachbauen?</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Art Direktorin will Midjourney wegen des Looks.
+Die Datenschutzbeauftragte will ausschließlich Werkzeuge, die bereits über bestehende Verträge
+laufen (Microsoft 365 mit Copilot, Adobe). Triff eine Entscheidung auf Basis deiner Matrix.
+<strong>Widersprich</strong> mindestens einer der beiden Positionen ausdrücklich und benenne, unter welchen
+Bedingungen du deine Entscheidung ändern würdest. Lass dir die Empfehlung von Copilot in Word
+aus Matrix und Notizen entwerfen (<code>/</code>-Verweis auf die Excel-Datei) und überarbeite sie selbst.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>zwei Bildbriefings (Word) und angepasste Prompts je Werkzeug</li>
+<li>gewichtete Bewertungsmatrix (Excel) mit allen Ergebnissen und Zeitaufwand</li>
+<li>Neubewertung aus Runde 3 mit konkreten Maßnahmen</li>
+<li>Empfehlung an die Leitung (Word, höchstens eine Seite) mit Begründung und Bedingungen</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jedes Werkzeug – Copilot eingeschlossen – mit identischem
+Briefing und gleichem Aufwand getestet wurde, die Gewichtung vor dem Test feststand, Runde 3
+zu einer nachvollziehbaren Konsequenz in der Matrix oder im Prozess führt und die Empfehlung
+beide Aufgaben berücksichtigt statt nur das schönste Bild.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 1 und 3. Wer die Kriterien erst nach dem Test festlegt, gewichtet
+unbewusst so, dass der Favorit gewinnt. Und Runde 3 zeigt: Das schönste Bild ist wertlos, wenn
+es rechtlich oder organisatorisch nicht nutzbar ist – Logo-Ähnlichkeiten und Sichtbarkeit
+gehören deshalb in die Bewertung, nicht in die Nachbetrachtung. Copilot ist nicht automatisch
+Sieger, weil es schon da ist: Integration und Datenschutz sind zwei Kriterien von sechs.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispielprompt für den Briefing-Entwurf in Word:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle zwei Bildbriefings für die Fjordlicht-Herbstkampagne &quot;Draußen bleiben&quot;
+auf Basis von /Fjordlicht-Basisdaten. Briefing 1: Stimmungsbild für Instagram
+(4:5) und Newsletter (3:1). Briefing 2: Pinterest-Infografik (2:3) mit
+Überschrift und drei Listenpunkten. Gliedere jedes Briefing nach Motiv, Stil,
+Licht, Farbe, Perspektive, Komposition, Format und Ausschlüssen. Keine echten
+Produkte im Bild. Markiere fehlende Angaben mit [FEHLT].
+</code></pre></div></td></tr></table></div>
+<p>Ausschnitt einer Matrix (Gewichtung vorab, Werte 1–5, Stimmungsbild):</p>
+<table>
+<thead>
+<tr>
+<th>Kriterium</th>
+<th>Gewicht</th>
+<th>Copilot</th>
+<th>Midjourney</th>
+<th>Firefly</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Briefingtreue</td>
+<td>25 %</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Markenbildsprache</td>
+<td>25 %</td>
+<td>3</td>
+<td>5</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Aufwand</td>
+<td>15 %</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Rechte, Datenschutz, Sichtbarkeit</td>
+<td>15 %</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Integration</td>
+<td>10 %</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>Bewertungskriterien: (1) die Briefings decken die acht Bausteine ab, und die Gewichtung ist
+vor dem Test dokumentiert und begründet; (2) die Tests sind fair (identisches Briefing,
+gleiche Anzahl Durchläufe und Nachbesserungen, Zeit notiert), Copilot ist als
+Ausgangswerkzeug vollständig in der Matrix, die Summenformel ist geprüft; (3) Runde 3 führt
+zu konkreten Maßnahmen, etwa Emblem per Inpainting entfernen oder Motiv neu erzeugen, Bild
+nicht aus öffentlicher Galerie verwenden, Werkzeug nur mit privater Sichtbarkeit zulassen,
+Markenrechtsprüfung (Kap. 34); (4) die Empfehlung unterscheidet nach Aufgaben – etwa Copilot
+für Alltag und Entwürfe, Firefly/Photoshop für die Bearbeitung echter Fotos, ein Spezialwerkzeug
+nur, wo die Matrix einen klaren Vorsprung zeigt –, widerspricht einer Position mit Argumenten
+aus der Matrix und nennt Bedingungen für eine Revision (z. B. Midjourney nur mit Teamkonto und
+privater Sichtbarkeit).</p>
+<p>Lernziel: Bildwerkzeuge mit einem fairen, dokumentierten Test vergleichen und eine
+Entscheidung treffen, die Bildqualität, Rechte, Datenschutz und Arbeitsablauf gemeinsam
+abwägt – ausgehend von dem Werkzeug, das im Unternehmen bereits verfügbar ist.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel30/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel32/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 32 – Visuelle Wirkung: Bildsprache, Komposition und Markenkonsistenz">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 32 – Visuelle Wirkung: Bildsprache, Komposition und Markenkonsistenz
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

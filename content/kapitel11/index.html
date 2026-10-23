@@ -1,0 +1,2156 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel10/">
+      
+      
+        <link rel="next" href="../kapitel12/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 11 – Kollaboratives Schreiben: vom ChatGPT Canvas zu Schreibblöcken - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-11-kollaboratives-schreiben-vom-chatgpt-canvas-zu-schreibblocken" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 11 – Kollaboratives Schreiben: vom ChatGPT Canvas zu Schreibblöcken
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Block 3 · KI-Copywriting & Content-Erstellung
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 11 – Kollaboratives Schreiben: vom ChatGPT Canvas zu Schreibblöcken
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 11 – Kollaboratives Schreiben: vom ChatGPT Canvas zu Schreibblöcken
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#111-das-problem-schreiben-im-chatverlauf" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.1 Das Problem: Schreiben im Chatverlauf
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#112-das-arbeitsprinzip-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.2 Das Arbeitsprinzip Canvas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#113-stand-oktober-2026-canvas-entfernt-schreibblocke-da" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3 Stand Oktober 2026: Canvas entfernt, Schreibblöcke da
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#114-dasselbe-prinzip-in-anderen-werkzeugen" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.4 Dasselbe Prinzip in anderen Werkzeugen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#115-der-dreischritt-rohfassung-struktur-feinschliff" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.5 Der Dreischritt: Rohfassung → Struktur → Feinschliff
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#116-gezielt-uberarbeiten-statt-glattbugeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6 Gezielt überarbeiten statt glattbügeln
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 12 – Redaktionsplanung & Brainstorming mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 13 – E-Mail-Marketing mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 14 – Social-Media-Texte mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 15 – Blogartikel & Leadmagnete
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 16 – ChatGPT für A/B-Tests von Textvarianten
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-11-kollaboratives-schreiben-vom-chatgpt-canvas-zu-schreibblocken">Kapitel 11 – Kollaboratives Schreiben: vom ChatGPT Canvas zu Schreibblöcken<a class="headerlink" href="#kapitel-11-kollaboratives-schreiben-vom-chatgpt-canvas-zu-schreibblocken" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Warum der <strong>Chatverlauf</strong> für längere Texte ein schlechter Arbeitsort ist</li>
+<li>Das <strong>Arbeitsprinzip Canvas</strong>: ein gemeinsames Dokument neben dem Chat, gezielte Überarbeitung markierter Stellen</li>
+<li>Was sich im <strong>Mai 2026</strong> geändert hat: Canvas entfernt, <strong>Schreibblöcke</strong> direkt in der Antwort</li>
+<li>Welche <strong>Alternativen</strong> dasselbe Prinzip bieten: Claude Artifacts, Gemini Canvas, Microsoft Copilot Pages</li>
+<li>Den Dreischritt <strong>Rohfassung → Struktur → Feinschliff</strong> mit passenden Prompts für jede Phase</li>
+<li>Wie du <strong>gezielt</strong> überarbeiten lässt, ohne dass die KI den ganzen Text glattbügelt</li>
+</ul>
+</div>
+<hr />
+<h2 id="111-das-problem-schreiben-im-chatverlauf">11.1 Das Problem: Schreiben im Chatverlauf<a class="headerlink" href="#111-das-problem-schreiben-im-chatverlauf" title="Permanent link">&para;</a></h2>
+<p>Bis hierher hast du Prompts geschrieben, Ergebnisse gelesen und nachgeschärft (Kap. 5–9). Für eine Betreffzeile oder einen Instagram-Text reicht das. Bei einem Blogartikel mit 1.200 Wörtern oder einem Newsletter mit fünf Modulen zeigt der normale Chat seine Schwächen:</p>
+<ul>
+<li><strong>Jede Korrektur erzeugt eine komplette Neufassung.</strong> Du bittest um einen anderen Einstieg und bekommst den ganzen Text neu – mit Änderungen an Stellen, die du nicht angefasst haben wolltest.</li>
+<li><strong>Versionen verteilen sich über den Verlauf.</strong> Nach zwanzig Runden weißt du nicht mehr, in welcher Antwort der gute zweite Absatz stand.</li>
+<li><strong>Unbemerkte Drift.</strong> Ein Produktname wird umgeschrieben, ein belegter Fakt wird „schöner" formuliert und dabei falsch, ein Superlativ schleicht sich ein.</li>
+<li><strong>Kontextverlust.</strong> In langen Chats geraten frühe Vorgaben aus dem Blick (Kap. 9).</li>
+</ul>
+<p>Der Kern des Problems: Im Chat ist der <strong>Gesprächsverlauf</strong> das Arbeitsobjekt. Beim Schreiben willst du aber an einem <strong>Dokument</strong> arbeiten, das schrittweise besser wird.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Ein Chat ist ein Gespräch über einen Text. Für ernsthafte Textarbeit brauchst du einen Ort, an dem der Text selbst liegt – und an dem du einzelne Stellen ändern kannst, ohne den Rest neu würfeln zu lassen.</p>
+</div>
+<hr />
+<h2 id="112-das-arbeitsprinzip-canvas">11.2 Das Arbeitsprinzip Canvas<a class="headerlink" href="#112-das-arbeitsprinzip-canvas" title="Permanent link">&para;</a></h2>
+<p>OpenAI hat 2024 mit <strong>Canvas</strong> eine Antwort auf dieses Problem eingeführt: einen <strong>Seitenleisten-Editor</strong> neben dem Chat. Der Text stand dort als Dokument, das du selbst bearbeiten oder von der KI bearbeiten lassen konntest. Die wichtigsten Arbeitsweisen:</p>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Was sie tat</th>
+<th>Wozu sie im Marketing taugte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dokument neben dem Chat</td>
+<td>Text liegt getrennt vom Gesprächsverlauf</td>
+<td>eine Fassung, an der alle Änderungen landen</td>
+</tr>
+<tr>
+<td>Markieren und überarbeiten</td>
+<td>nur die markierte Passage wird geändert</td>
+<td>Einstieg schärfen, ohne den Rest anzufassen</td>
+</tr>
+<tr>
+<td>Länge anpassen</td>
+<td>Text schrittweise kürzen oder erweitern</td>
+<td>Newsletter-Modul auf feste Zeichenzahl bringen</td>
+</tr>
+<tr>
+<td>Lesestufe anpassen</td>
+<td>einfacher oder fachlicher formulieren</td>
+<td>B2C-Fassung und B2B-Fassung desselben Inhalts</td>
+</tr>
+<tr>
+<td>Feinschliff</td>
+<td>Grammatik, Klarheit, Konsistenz prüfen</td>
+<td>letzter Durchgang vor der Freigabe</td>
+</tr>
+<tr>
+<td>Versionen</td>
+<td>zu früheren Ständen zurückspringen</td>
+<td>missglückte Überarbeitung rückgängig machen</td>
+</tr>
+</tbody>
+</table>
+<p>Das eigentliche Lernziel dieses Kapitels ist nicht die Bedienung eines bestimmten Knopfes, sondern dieses <strong>Arbeitsprinzip</strong>: Du und die KI arbeitet an <strong>einem gemeinsamen Dokument</strong>, Änderungen erfolgen <strong>gezielt an markierten Stellen</strong>, und du behältst die Kontrolle über jede Version.</p>
+<hr />
+<h2 id="113-stand-oktober-2026-canvas-entfernt-schreibblocke-da">11.3 Stand Oktober 2026: Canvas entfernt, Schreibblöcke da<a class="headerlink" href="#113-stand-oktober-2026-canvas-entfernt-schreibblocke-da" title="Permanent link">&para;</a></h2>
+<p>Werkzeuge ändern sich schnell, und Canvas ist ein gutes Beispiel dafür. Am <strong>28. Mai 2026</strong> hat OpenAI Canvas aus den aktuellen Modellen in ChatGPT entfernt. Bezahlnutzer konnten Canvas übergangsweise noch über Legacy-Modelle aufrufen. Ersatz sind <strong>Schreibblöcke</strong> (englisch <em>writing blocks</em>) und Code-Blöcke, die direkt in der Antwort erscheinen.</p>
+<table>
+<thead>
+<tr>
+<th>Arbeitsprinzip</th>
+<th>Früher in Canvas</th>
+<th>Heute mit Schreibblöcken</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Text als eigenes Objekt</td>
+<td>Dokument in der Seitenleiste</td>
+<td>abgesetzter Schreibblock in der Antwort</td>
+</tr>
+<tr>
+<td>Gezielte Überarbeitung</td>
+<td>Passage markieren, Anweisung geben</td>
+<td>Passage im Schreibblock markieren, Anweisung geben</td>
+</tr>
+<tr>
+<td>Konzentriertes Arbeiten</td>
+<td>breite Seitenleiste</td>
+<td>Vollbild-Editor</td>
+</tr>
+<tr>
+<td>Überblick bei langen Texten</td>
+<td>Scrollen im Dokument</td>
+<td>Gliederung für lange Texte</td>
+</tr>
+<tr>
+<td>Weitergabe</td>
+<td>Kopieren</td>
+<td>Speichern und Download</td>
+</tr>
+</tbody>
+</table>
+<p>Ob und wie die Schreibblöcke in deinem Konto erscheinen, kann je nach Tarif und Modell variieren; manchmal entsteht ein Schreibblock automatisch, manchmal hilft eine ausdrückliche Bitte im Prompt. Für dich heißt das: Die Oberfläche ist eine andere, das Vorgehen bleibt gleich. Wenn du in Anleitungen oder älteren Schulungsunterlagen noch „öffne Canvas" liest, übersetzt du das in „lass den Text als Schreibblock ausgeben und arbeite dort weiter".</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Schreibe den folgenden Newsletter-Text als eigenen Schreibblock,
+damit ich einzelne Absätze markieren und gezielt überarbeiten kann.
+Ändere zunächst nichts am Inhalt.
+Text: [Rohfassung einfügen]
+</code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Anleitungen, Videos und auch KI-Antworten selbst (Trainingsstichtag, Kap. 1) beschreiben oft noch den alten Stand. Wenn ein Knopf nicht da ist, liegt das selten an dir. Prüfe den aktuellen Stand in der Hilfe des Anbieters und hänge dein Vorgehen nicht an eine einzelne Funktion – sondern an das Prinzip.</p>
+</div>
+<hr />
+<h2 id="114-dasselbe-prinzip-in-anderen-werkzeugen">11.4 Dasselbe Prinzip in anderen Werkzeugen<a class="headerlink" href="#114-dasselbe-prinzip-in-anderen-werkzeugen" title="Permanent link">&para;</a></h2>
+<p>Das Prinzip „Dokument neben dem Gespräch" gibt es in allen großen Werkzeugen, jeweils unter eigenem Namen. Die genaue Bedienung ändert sich laufend; die folgende Übersicht nennt den Kern (Stand: Oktober 2026).</p>
+<table>
+<thead>
+<tr>
+<th>Werkzeug</th>
+<th>Funktion</th>
+<th>Kern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ChatGPT</td>
+<td>Schreibblöcke</td>
+<td>Text als bearbeitbarer Block in der Antwort, Vollbild, Gliederung, Download</td>
+</tr>
+<tr>
+<td>Claude</td>
+<td>Artifacts</td>
+<td>längere Inhalte erscheinen als eigenes Objekt neben dem Chat und werden dort fortgeschrieben</td>
+</tr>
+<tr>
+<td>Gemini</td>
+<td>Canvas</td>
+<td>Arbeitsfläche für Texte (und Code), Passagen lassen sich gezielt überarbeiten</td>
+</tr>
+<tr>
+<td>Microsoft Copilot</td>
+<td>Pages</td>
+<td>Antworten in eine Seite übernehmen, gemeinsam weiterbearbeiten und teilen</td>
+</tr>
+</tbody>
+</table>
+<p>Für die Werkzeugwahl im Team zählen dabei weniger die Komfortfunktionen als die Fragen aus Kapitel 4: Welcher Tarif ist freigegeben, welche Daten dürfen hinein, wo landen die Dokumente? Ein Newsletter-Entwurf mit Produktneuheiten vor dem Launch ist vertraulich – auch wenn er „nur Text" ist.</p>
+<div class="admonition tip">
+<p class="admonition-title">Unabhängig vom Werkzeug arbeiten</p>
+<p>Wenn dein Werkzeug gar keine Dokumentfunktion hat, kannst du das Prinzip nachbauen: Halte die aktuelle Fassung in einem eigenen Dokument (Word, Google Docs), kopiere nur die Passage in den Chat, die geändert werden soll, und übernimm das Ergebnis von Hand. Das ist umständlicher, aber genauso kontrolliert.</p>
+</div>
+<hr />
+<h2 id="115-der-dreischritt-rohfassung-struktur-feinschliff">11.5 Der Dreischritt: Rohfassung → Struktur → Feinschliff<a class="headerlink" href="#115-der-dreischritt-rohfassung-struktur-feinschliff" title="Permanent link">&para;</a></h2>
+<p>Gute Texte entstehen auch mit KI nicht in einem Durchgang. Bewährt hat sich ein Dreischritt, in dem jede Phase eine eigene Aufgabe und einen eigenen Prompt hat.</p>
+<pre class="mermaid"><code>flowchart LR
+    A(["Briefing nach P.R.O.M.P.T."]) --&gt; B([Rohfassung])
+    B --&gt; C([Struktur prüfen und umbauen])
+    C --&gt; D([Feinschliff an markierten Stellen])
+    D --&gt; E([Faktencheck und Freigabe durch Mensch])</code></pre>
+<p><strong>Phase 1 – Rohfassung.</strong> Grundlage ist ein vollständiges Briefing nach dem P.R.O.M.P.T.-Framework (Kap. 5): <strong>P</strong>ersona, <strong>R</strong>equest, <strong>O</strong>utput, <strong>M</strong>odifier, <strong>P</strong>urpose, <strong>T</strong>one. In dieser Phase geht es um Inhalt und Vollständigkeit, nicht um schöne Sätze.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist Texterin im Marketingteam der Fjordlicht GmbH,
+einer Marke für nachhaltige Outdoor-Bekleidung aus Münster.
+Request: Schreibe eine Rohfassung für einen Blogbeitrag im Blog
+&quot;Draußen-Notizen&quot; zum Thema &quot;Regenjacke richtig pflegen&quot;.
+Output: ca. 700 Wörter, Zwischenüberschriften, als Schreibblock.
+Modifier: Nutze nur die Pflegehinweise unten. Keine Superlative,
+keine Nachhaltigkeitsaussagen außer den belegten. Fehlende Angaben
+als [FEHLT] markieren.
+Purpose: Kundinnen und Kunden sollen ihre Jacke &quot;Sølv&quot; länger nutzen;
+Zielgruppe naturverbundene Stadtmenschen 25-45.
+Tone: ruhig, ehrlich, leicht nordisch-trocken, Du-Ansprache.
+Pflegehinweise: [Hinweise aus dem Produktdatenblatt einfügen]
+</code></pre></div></td></tr></table></div>
+<p><strong>Phase 2 – Struktur.</strong> Jetzt schaust du auf das Ganze: Stimmt die Reihenfolge? Fehlt ein Abschnitt? Ist der Einstieg zu lang? Lass die KI zuerst <strong>analysieren</strong>, bevor sie umbaut.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Prüfe die Struktur des Textes im Schreibblock. Gib mir zuerst nur
+eine Gliederung mit einem Satz pro Abschnitt und markiere, wo sich
+Inhalte doppeln oder die Reihenfolge für Leser unlogisch ist.
+Ändere den Text noch nicht.
+</code></pre></div></td></tr></table></div>
+<p><strong>Phase 3 – Feinschliff.</strong> Erst wenn Inhalt und Aufbau stehen, geht es an einzelne Formulierungen – und zwar Passage für Passage, nicht für den ganzen Text auf einmal.</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Leitfrage</th>
+<th>Was du von der KI willst</th>
+<th>Was du selbst tust</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rohfassung</td>
+<td>Ist alles drin?</td>
+<td>vollständigen Entwurf auf Basis deines Materials</td>
+<td>Material und Briefing liefern, Lücken schließen</td>
+</tr>
+<tr>
+<td>Struktur</td>
+<td>Trägt der Aufbau?</td>
+<td>Analyse, Umbauvorschläge, Gliederung</td>
+<td>entscheiden, was bleibt und was fliegt</td>
+</tr>
+<tr>
+<td>Feinschliff</td>
+<td>Sitzt jeder Satz?</td>
+<td>gezielte Varianten für markierte Stellen</td>
+<td>auswählen, Markenstimme prüfen</td>
+</tr>
+<tr>
+<td>Freigabe</td>
+<td>Stimmt alles?</td>
+<td>allenfalls Prüfliste abarbeiten</td>
+<td>Fakten, Claims und Produktnamen prüfen</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Wer schon in der Rohfassung an Formulierungen feilt, poliert Sätze, die in Phase 2 gestrichen werden. Umgekehrt zerstört ein später Strukturumbau den Feinschliff. Halte die Reihenfolge ein – sie spart mehr Zeit, als sie kostet.</p>
+</div>
+<hr />
+<h2 id="116-gezielt-uberarbeiten-statt-glattbugeln">11.6 Gezielt überarbeiten statt glattbügeln<a class="headerlink" href="#116-gezielt-uberarbeiten-statt-glattbugeln" title="Permanent link">&para;</a></h2>
+<p>Die größte Stärke des Arbeitens im Dokument ist zugleich die häufigste Fehlerquelle: Eine allgemeine Anweisung wie „mach den Text besser" lädt die KI ein, <strong>alles</strong> zu verändern. Das Ergebnis klingt flüssiger, aber austauschbarer – und oft sind dabei Fakten, Produktnamen oder die Markenstimme verloren gegangen.</p>
+<p>Die Lösung: Markiere die Stelle, benenne die Abweichung und setze eine klare Grenze.</p>
+<table>
+<thead>
+<tr>
+<th>Statt …</th>
+<th>… besser</th>
+<th>Warum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>„Mach den Text besser."</td>
+<td>„Der Einstieg ist zu allgemein. Beginne mit einer konkreten Situation im Regen."</td>
+<td>benennt das Problem statt einer Wertung</td>
+</tr>
+<tr>
+<td>„Kürzer bitte."</td>
+<td>„Kürze diesen Absatz auf maximal 60 Wörter. Die Pflegetemperatur bleibt erhalten."</td>
+<td>Zielgröße und Schutz für den Kerninhalt</td>
+</tr>
+<tr>
+<td>„Klingt zu werblich."</td>
+<td>„Streiche alle Superlative und Ausrufezeichen in dieser Passage. Sonst nichts ändern."</td>
+<td>eindeutig prüfbar</td>
+</tr>
+<tr>
+<td>„Schreib das um."</td>
+<td>„Gib mir drei Varianten für diesen Satz, jeweils mit anderem Bild."</td>
+<td>du wählst aus, statt zu übernehmen</td>
+</tr>
+</tbody>
+</table>
+<p>Bewährte Schutzformeln, die du an fast jede Überarbeitung anhängen kannst:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Ändere ausschließlich die markierte Passage.
+Produktnamen, Zahlen und Nachhaltigkeitsaussagen bleiben wortgleich.
+Liste nach der Überarbeitung in Stichpunkten auf, was du geändert hast.
+</code></pre></div></td></tr></table></div>
+<p>Die letzte Zeile ist besonders wertvoll: Eine <strong>Änderungsliste</strong> macht sichtbar, was die KI angefasst hat, und du musst nicht Satz für Satz vergleichen. Prüfen musst du trotzdem – die Liste ist eine Hilfe, kein Beweis.</p>
+<div class="admonition example">
+<p class="admonition-title">Vorher/Nachher bei Fjordlicht</p>
+<p><strong>Vorher (Rohfassung):</strong> „Die Sølv ist die perfekte Jacke für jedes Wetter und schützt die Umwelt wie keine andere."</p>
+<p><strong>Anweisung:</strong> „Überarbeite diesen Satz in Fjordlicht-Markenstimme: keine Superlative, keine unbelegten Umweltaussagen. Belegt ist nur: Obermaterial zu 100 Prozent aus recyceltem Polyamid."</p>
+<p><strong>Nachher:</strong> „Die Sølv hält dich trocken, wenn es ernst wird. Ihr Obermaterial besteht zu 100 Prozent aus recyceltem Polyamid."</p>
+<p>Der zweite Satz ist weniger laut, aber prüfbar – und damit genau das, was eine Marke ohne Greenwashing braucht. Mehr zur Markenstimme in Kapitel 7, zu belegbaren Claims im Praxisbeispiel Content-Assistent (Kap. 26).</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Je enger die Anweisung, desto kontrollierbarer das Ergebnis. Markieren, Problem benennen, Grenze setzen, Änderungsliste verlangen – das ist kollaboratives Schreiben, unabhängig davon, wie die Funktion gerade heißt.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Im <strong>Chatverlauf</strong> verteilen sich Versionen, jede Korrektur schreibt den ganzen Text neu, und Fakten driften unbemerkt.</li>
+<li>Das <strong>Arbeitsprinzip Canvas</strong> – ein Dokument neben dem Chat, gezielte Überarbeitung markierter Stellen, Versionen – ist das eigentliche Lernziel.</li>
+<li>Seit dem <strong>28.05.2026</strong> ist Canvas aus den aktuellen ChatGPT-Modellen entfernt; Ersatz sind <strong>Schreibblöcke</strong> mit Markieren, Vollbild-Editor, Gliederung und Download.</li>
+<li>Vergleichbar arbeiten <strong>Claude Artifacts</strong>, <strong>Gemini Canvas</strong> und <strong>Microsoft Copilot Pages</strong>; entscheidend für die Wahl sind Freigabe und Datenschutz (Kap. 4).</li>
+<li>Der Dreischritt <strong>Rohfassung → Struktur → Feinschliff</strong> trennt Inhalt, Aufbau und Formulierung; die Rohfassung startet mit einem Briefing nach <strong>P.R.O.M.P.T.</strong> (Kap. 5).</li>
+<li>Überarbeite <strong>gezielt</strong>: Stelle markieren, Problem benennen, Grenze setzen, Änderungsliste verlangen – und Fakten immer selbst prüfen.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Die Fjordlicht-Basisdaten gemeinsam als Dokument anlegen</summary>
+<p>In dieser Übung legt ihr in <strong>Copilot in Word</strong> das Dokument an, das euch durch den restlichen
+Kurs begleitet – und erlebt dabei das Arbeitsprinzip dieses Kapitels: Der Text liegt in einem
+Dokument, an dem alle arbeiten, nicht in einem Chatverlauf.</p>
+<p><strong>Gruppe:</strong> 3–4 Personen · <strong>Dauer:</strong> ca. 25 Minuten · <strong>Rollen:</strong> Prompt-Verantwortliche
+(bedient Copilot im Dokument), zwei Faktenprüferinnen, Protokoll (bei drei Personen übernimmt
+eine Faktenprüferin zusätzlich das Protokoll) · <strong>Am Ende liegt vor:</strong> eine geprüfte
+„Fjordlicht-Basisdaten.docx" im Ordner „Fjordlicht-Kurs" <strong>jeder</strong> Person und eine gemeinsame
+Zuordnungstabelle.</p>
+<ol>
+<li>Die Prompt-Verantwortliche legt in ihrem OneDrive im Ordner <strong>„Fjordlicht-Kurs"</strong> ein neues
+   Word-Dokument an, speichert es als <strong>„Fjordlicht-Basisdaten.docx"</strong> und teilt es mit
+   Bearbeitungsrechten mit der Gruppe. Alle öffnen das Dokument.</li>
+<li>Sie lässt Copilot in Word mit dem Prompt aus dem Tipp einen Entwurf erstellen. Übernommen
+   wird erst, wenn die fünf Abschnitte <strong>Unternehmen</strong>, <strong>Markenstimme</strong>, <strong>Produkte</strong>,
+   <strong>Belegte Claims</strong> und <strong>Verbote</strong> vorhanden sind.</li>
+<li><strong>Faktenprüfung mit Arbeitsteilung:</strong> Faktenprüferin 1 prüft Unternehmen und Markenstimme,
+   Faktenprüferin 2 prüft Produkte, Belegte Claims und Verbote – Zeile für Zeile gegen den
+   Prompt. Jede Angabe, die Copilot ergänzt hat (z. B. „atmungsaktiv", „langlebig",
+   „klimafreundlich"), bekommt einen Word-Kommentar und wird danach gestrichen. Das Protokoll
+   hält jede Streichung in einer Zeile fest.</li>
+<li><strong>Rollentausch:</strong> Faktenprüferin 2 markiert nur den Abschnitt <strong>Produkte</strong> und lässt Copilot
+   ihn in eine Tabelle umwandeln (Produkt, Kategorie, Preis, belegte Fakten). Die anderen prüfen:
+   Sind die übrigen Abschnitte unverändert? Ist in der Tabelle eine neue Angabe aufgetaucht?</li>
+<li><strong>Kopien für alle:</strong> Jede Person speichert eine Kopie der fertigen Datei unter demselben
+   Namen in ihrem eigenen OneDrive-Ordner „Fjordlicht-Kurs" (z. B. herunterladen und dort
+   hochladen). Spätere Übungen greifen mit <code>/Fjordlicht-Basisdaten</code> auf <strong>deine</strong> Kopie zu.</li>
+<li><strong>Gruppenentscheidung:</strong> Ordnet die folgenden Aufgaben zu – reicht <strong>Copilot Chat</strong>, oder
+   lohnt sich die Arbeit im <strong>Dokument</strong> (Copilot Page oder Word mit Copilot)? Jede Person
+   entscheidet zuerst still für sich, danach einigt ihr euch und begründet jeweils in einem Satz.</li>
+<li>Fünf Varianten für eine Betreffzeile zum Herbst-Newsletter</li>
+<li>Ein Blogbeitrag „Zwiebelprinzip beim Wandern" mit ca. 1.000 Wörtern</li>
+<li>Eine kurze Antwort auf einen Instagram-Kommentar</li>
+<li>Die Produktseite für den Rucksack „Tind" mit sechs Abschnitten, die mehrfach abgestimmt wird</li>
+<li>Die Fjordlicht-Basisdaten, die ihr gerade angelegt habt</li>
+</ol>
+<p><strong>Abschluss:</strong> Formuliert gemeinsam in zwei Sätzen, was sich am 28.05.2026 bei ChatGPT geändert
+hat und was davon für eure Arbeit in Copilot <strong>nicht</strong> gilt. Das Protokoll stellt im Plenum in
+einer Minute vor, welche Ergänzung von Copilot ihr gestrichen habt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Prompt für den Entwurf in Word (Fakten nicht verändern):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle ein Stammdaten-Dokument für die Fjordlicht GmbH mit den
+Abschnitten Unternehmen, Markenstimme, Produkte, Belegte Claims, Verbote.
+Nutze ausschließlich diese Angaben, ergänze nichts. Fehlende Angaben
+als [FEHLT] markieren.
+Unternehmen: Fjordlicht GmbH, Münster, nachhaltige Outdoor-Bekleidung,
+45 Beschäftigte, davon 5 im Marketing. Kanäle: Blog &quot;Draußen-Notizen&quot;,
+Newsletter (ca. 38.000 Abonnenten), Instagram, TikTok, LinkedIn,
+Pinterest. Zielgruppe: naturverbundene Stadtmenschen 25-45;
+B2B-Angebot &quot;Fjordlicht Business&quot; (Firmenbekleidung).
+Markenstimme: ruhig, ehrlich, naturverbunden, leicht nordisch-trocken,
+Du-Ansprache, keine Superlative.
+Produkte: Regenjacke Sølv, 249 Euro, Obermaterial 100 % recyceltes
+Polyamid, Wassersäule 20.000 mm. Fleece Skog, 89 Euro, 80 % recyceltes
+Polyester, 3 Farben, Größen XS-XXL. Wanderhose Vidde, 119 Euro.
+Rucksack Tind, 149 Euro.
+Service: kostenloser Reparaturservice in den ersten zwei Jahren.
+Belegte Claims: nur die Materialangaben zu Sølv und Skog und der
+Reparaturservice, jeweils wörtlich und nur für das genannte Produkt.
+Verbote: Superlative; &quot;nachhaltig&quot;, &quot;umweltfreundlich&quot;, &quot;klimaneutral&quot;
+ohne Beleg; Ausweitung eines Claims auf andere Produkte; Rabattaktionen
+als Kommunikationsthema.
+</code></pre></div></td></tr></table></div>
+<p>Für die Zuordnung zählt nicht die Länge allein, sondern ob ihr denselben Text <strong>mehrfach gezielt
+überarbeiten</strong> oder <strong>wiederverwenden</strong> wollt. Wenn ihr euch nicht einig werdet, ist das ein
+gutes Zeichen: Haltet beide Begründungen fest.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p><strong>Zum Dokument:</strong> Achtet besonders auf ergänzte Eigenschaften („atmungsaktiv", „robust"), einen
+Satz wie „Fjordlicht steht für Nachhaltigkeit" im Abschnitt Unternehmen oder einen Claim, der
+auf alle Produkte ausgeweitet wird („Unsere Kollektion besteht aus recycelten Materialien").
+Solche Stellen streicht ihr. Bei Vidde und Tind sollte <code>[FEHLT]</code> beim Material stehen – das ist
+richtig so und wird später ergänzt.</p>
+<p>Die Umwandlung in eine Tabelle zeigt das Arbeitsprinzip im Kleinen: Ihr markiert einen
+Abschnitt, gebt eine enge Anweisung, der Rest bleibt stehen – und die anderen in der Gruppe
+sehen sofort, ob das stimmt.</p>
+<p>Beispiel für das Protokoll:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Unternehmen: &quot;Fjordlicht steht für Nachhaltigkeit&quot; gestrichen (kein Beleg)
+Produkte: &quot;atmungsaktiv&quot; bei Sølv gestrichen (nicht im Prompt)
+Belegte Claims: &quot;recycelte Materialien&quot; ohne Produktbezug gestrichen
+Tabelle: keine neuen Angaben, übrige Abschnitte unverändert
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Ort</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Betreffzeilen</td>
+<td>Copilot Chat</td>
+<td>kurze Varianten, ihr wählt aus, nichts wird überarbeitet</td>
+</tr>
+<tr>
+<td>Blogbeitrag</td>
+<td>Dokument (Word)</td>
+<td>langer Text, mehrere Durchgänge (Rohfassung, Struktur, Feinschliff)</td>
+</tr>
+<tr>
+<td>Instagram-Antwort</td>
+<td>Copilot Chat</td>
+<td>einmaliger Kurztext</td>
+</tr>
+<tr>
+<td>Produktseite Tind</td>
+<td>Dokument (Page oder Word)</td>
+<td>mehrere Abschnitte und Abstimmungsrunden; Page und Word lassen sich mit dem Team teilen und gemeinsam bearbeiten</td>
+</tr>
+<tr>
+<td>Basisdaten</td>
+<td>Dokument (Word)</td>
+<td>wird gepflegt und in späteren Prompts per <code>/Fjordlicht-Basisdaten</code> wiederverwendet</td>
+</tr>
+</tbody>
+</table>
+<p>Zur Änderung: Am 28.05.2026 wurde Canvas aus den aktuellen ChatGPT-Modellen entfernt; Ersatz
+sind Schreibblöcke direkt in der Antwort. Unverändert bleibt das Arbeitsprinzip, das ihr in
+Copilot mit Pages und Word umsetzt: ein gemeinsames Dokument statt verstreuter Chatversionen
+und gezielte Überarbeitung markierter Stellen.</p>
+<p>Ab jetzt referenziert jede Person die Datei in Copilot mit <code>/Fjordlicht-Basisdaten</code>, statt die
+Fakten jedes Mal einzufügen. Weil jede Person eine eigene Kopie hat, können spätere Ergänzungen
+(z. B. Tind-Fakten in Kap. 14) auseinanderlaufen – das ist für den Kurs in Ordnung.</p>
+<p>Bewertungskriterien: alle fünf Abschnitte vorhanden, keine Angabe über den Prompt hinaus,
+<code>[FEHLT]</code> bei fehlenden Materialangaben, nur der Abschnitt Produkte als Tabelle; zur
+Zusammenarbeit: Streichungen sind kommentiert und protokolliert, beide Prüfbereiche wurden
+von unterschiedlichen Personen geprüft, jede Person hat die Datei im eigenen Ordner, und
+abweichende Zuordnungen wurden benannt und begründet entschieden.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Gezielte Überarbeitung – dreimal derselbe Prompt</summary>
+<p>Diese Übung macht ihr in <strong>Copilot Chat</strong> und einer geteilten <strong>Copilot Page</strong>.</p>
+<p><strong>Gruppe:</strong> 3 Personen · <strong>Dauer:</strong> ca. 25 Minuten · <strong>Rollen:</strong> Prompt-Verantwortliche,
+Faktenprüferin, Protokoll – nach Schritt 2 wird getauscht · <strong>Am Ende liegt vor:</strong> eine
+gemeinsame Page mit dem überarbeiteten Teaser und einer kurzen Liste der Abweichungen zwischen
+euren Copilot-Ergebnissen.</p>
+<p>Ausgangstext für einen Newsletter-Teaser:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Unser neues Fleece Skog ist einfach das beste Fleece, das es gibt!!!
+Es ist super warm, mega nachhaltig und rettet quasi den Planeten.
+Jetzt zuschlagen, bevor es weg ist! Das Material besteht zu 80 Prozent
+aus recyceltem Polyester. Erhältlich in drei Farben.
+</code></pre></div></td></tr></table></div>
+<ol>
+<li><strong>Gleicher Prompt, drei Ergebnisse:</strong> Alle drei geben den Ausgangstext in ihren eigenen
+   Copilot Chat ein, zusammen mit <strong>derselben</strong> Anweisung: Nur der erste Satz wird in
+   Fjordlicht-Markenstimme überarbeitet (Verweis auf <code>/Fjordlicht-Basisdaten</code>), alles andere
+   bleibt wortgleich, danach folgt eine Änderungsliste. Die Prompt-Verantwortliche formuliert
+   die Anweisung und schickt sie per Teams-Chat an die anderen.</li>
+<li><strong>Vergleich:</strong> Legt die drei Antworten nebeneinander. Die Faktenprüferin prüft in jeder
+   Fassung: Sind „80 Prozent", „recyceltes Polyester" und „drei Farben" unverändert? Wurde
+   außerhalb des ersten Satzes etwas geändert? Stimmt die Änderungsliste mit dem Text überein?
+   Das Protokoll notiert jede Abweichung zwischen den drei Ergebnissen.</li>
+<li><strong>Gemeinsame Page:</strong> Ihr wählt die beste Fassung. Wer sie erzeugt hat, übernimmt diese
+   Antwort in eine Copilot Page und teilt sie mit den anderen beiden.</li>
+<li><strong>Rollentausch und zweiter Satz:</strong> Die bisherige Faktenprüferin ist jetzt
+   Prompt-Verantwortliche. Sie lässt in Copilot Chat <strong>nur den zweiten Satz</strong> so überarbeiten,
+   dass keine unbelegte Nachhaltigkeitsaussage übrig bleibt – wieder mit Grenze und
+   Änderungsliste. Das Ergebnis wird in der Page von Hand an der richtigen Stelle eingesetzt.</li>
+<li><strong>Gemeinsamer Feinschliff in der Page:</strong> Lest den ganzen Teaser zusammen. Passt er noch als
+   Ganzes? Entscheidet, was mit dem dritten Satz („Jetzt zuschlagen …") passiert, und haltet
+   unter dem Text in drei Zeilen fest, worin sich eure drei Copilot-Ergebnisse aus Schritt 1
+   unterschieden haben.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Formuliert jede Anweisung mit einer Grenze („Ändere ausschließlich …") und einem Schutz für
+Zahlen und Produktnamen. Achtet beim Vergleich darauf, ob Copilot trotz Grenze in einer der drei
+Fassungen mehr als den ersten Satz verändert hat. Dass drei Personen mit demselben Prompt drei
+unterschiedliche Sätze bekommen, ist kein Fehler: Sprachmodelle wählen ihre Formulierungen nach
+Wahrscheinlichkeit, nicht nach einer festen Regel.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispielanweisung für Schritt 1:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Überarbeite im folgenden Text ausschließlich den ersten Satz in der
+Markenstimme aus /Fjordlicht-Basisdaten: ruhig, ehrlich, leicht
+nordisch-trocken, Du-Ansprache, keine Superlative, keine Ausrufezeichen.
+Alle anderen Sätze bleiben wortgleich. Gib den vollständigen Text zurück
+und liste danach auf, was du geändert hast.
+[Ausgangstext]
+</code></pre></div></td></tr></table></div>
+<p>Mögliche drei Ergebnisse für den ersten Satz:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Person 1: Das neue Fleece Skog hält warm, ohne aufzutragen.
+Person 2: Skog ist da – ein Fleece für kühle Morgen.
+Person 3: Unser Fleece Skog: warm, leicht und einfach gut.
+</code></pre></div></td></tr></table></div>
+<p>Mögliche Befunde aus dem Vergleich: Fassung 3 enthält mit „leicht" eine Eigenschaft, die nicht
+belegt ist; in einer Fassung fehlen die Ausrufezeichen auch im dritten Satz, obwohl er
+wortgleich bleiben sollte; eine Änderungsliste nennt nur einen Teil der Änderungen.</p>
+<p>Mögliches Ergebnis nach Schritt 4:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Das neue Fleece Skog hält warm, ohne aufzutragen.
+Sein Material besteht zu 80 Prozent aus recyceltem Polyester.
+Jetzt zuschlagen, bevor es weg ist! Das Material besteht zu 80 Prozent
+aus recyceltem Polyester. Erhältlich in drei Farben.
+</code></pre></div></td></tr></table></div>
+<p>Beobachtung: Der zweite Satz wiederholt jetzt die Materialangabe – ein typischer Effekt, wenn
+man eine unbelegte Aussage durch die einzige belegte ersetzt. Das ist kein Fehler der
+Anweisung, sondern ein Strukturproblem, das erst beim Lesen des Ganzen auffällt (Schritt 5).
+Der dritte Satz wurde korrekt <strong>nicht</strong> angefasst, passt aber nicht zur Marke – ein Kandidat
+für den nächsten gezielten Schritt.</p>
+<p>Bewertungskriterien: Zahlen und Produktname in der finalen Fassung unverändert, Änderungslisten
+vorhanden und mindestens einmal mit dem Text abgeglichen, Wiederholung oder dritter Satz im
+Feinschliff bearbeitet; zur Zusammenarbeit: alle drei haben denselben Prompt ausgeführt, die
+Unterschiede zwischen den Ergebnissen sind in der Page benannt und erklärt, die Rollen wurden
+getauscht, und die Auswahl der besten Fassung ist begründet.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Page oder Word? Ein Werkzeugvergleich in zwei Teams</summary>
+<p>Das Fjordlicht-Marketingteam (fünf Personen) schreibt längere Texte bisher in Copilot Chat und
+kopiert die Antworten dann irgendwohin. Die Teamleitung fragt, wo längere Texte künftig
+entstehen sollen: in <strong>Copilot Pages</strong> oder in <strong>Word mit Copilot</strong>. Ihr testet das als
+Gruppen-Duell.</p>
+<p><strong>Gruppe:</strong> 4 Personen in zwei Paaren (Team Page, Team Word) · <strong>Dauer:</strong> ca. 30 Minuten ·
+<strong>Am Ende liegt vor:</strong> eine gemeinsame Bewertungstabelle in einem geteilten Word-Dokument und
+eine Empfehlung in höchstens fünf Sätzen.</p>
+<ol>
+<li><strong>Gleiche Aufgabe, zwei Werkzeuge:</strong> Beide Paare erstellen die Rohfassung eines
+   Blog-Absatzes zur Wanderhose „Vidde" (ca. 200 Wörter) auf Basis von <code>/Fjordlicht-Basisdaten</code>,
+   überarbeiten danach gezielt den Einstieg und kürzen den Text um ein Drittel.</li>
+<li><strong>Team Page:</strong> Entwurf, Überarbeitung des Einstiegs und Kürzung entstehen per Prompt in
+     Copilot Chat; die Ergebnisse übernehmt ihr in eine Copilot Page und bearbeitet sie dort zu
+     zweit weiter.</li>
+<li><strong>Team Word:</strong> Entwurf mit Copilot in einem neuen Dokument im Ordner „Fjordlicht-Kurs",
+     „Änderungen nachverfolgen" einschalten, den Einstieg markieren und mit Copilot umschreiben
+     lassen. Für die Kürzung lasst ihr euch in Copilot Chat mit <code>/</code>-Verweis auf das Dokument
+     eine gekürzte Fassung erstellen und setzt sie mit eingeschalteter Änderungsverfolgung ein.</li>
+<li><strong>Austausch:</strong> Jedes Paar teilt sein Ergebnis mit dem anderen Paar. Das andere Paar
+   bearbeitet zwei Stellen im fremden Ergebnis und prüft, wie gut sich nachvollziehen lässt,
+   <strong>wer</strong> <strong>was</strong> geändert hat.</li>
+<li><strong>Bewertung:</strong> Legt ein geteiltes Word-Dokument an und bewertet beide Werkzeuge in einer
+   Tabelle nach mindestens fünf Kriterien, darunter <strong>Kontrolle über Änderungen</strong>,
+   <strong>Nachvollziehbarkeit</strong>, <strong>Zusammenarbeit</strong> und <strong>Freigabe/Datenschutz im Team</strong>. Jedes Paar
+   füllt zuerst die Spalte des eigenen Werkzeugs, dann ergänzt das andere Paar Widerspruch per
+   Kommentar.</li>
+<li><strong>Gruppenentscheidung:</strong> Formuliert eine Empfehlung in höchstens fünf Sätzen – und begründet,
+   warum die Empfehlung <strong>nicht</strong> an einer einzelnen Funktion hängen sollte. Ein Paar stellt sie
+   im Plenum in zwei Minuten vor.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Komfort ist schnell beurteilt, Kontrolle nicht. Achtet bei der Kürzung darauf, ob Inhalte
+wegfallen, die ihr behalten wolltet – in Word zeigt die Änderungsverfolgung das, in der Page
+müsst ihr selbst vergleichen. Beim Datenschutz unterscheiden sich Page und Word kaum: Beide
+liegen im Microsoft-365-Mandanten, Copilot arbeitet mit Enterprise Data Protection und sieht nur,
+worauf die jeweilige Person Zugriff hat (Kap. 4). Der Unterschied liegt eher darin, <strong>wo</strong> die
+Datei liegt und <strong>wer</strong> sie sieht, wenn ihr sie teilt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispielhafte Bewertung (Ergebnisse variieren je nach Test):</p>
+<table>
+<thead>
+<tr>
+<th>Kriterium</th>
+<th>Copilot Page</th>
+<th>Word mit Copilot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gezielte Überarbeitung</td>
+<td>über Folgeprompts im Chat, Ergebnis wird übernommen</td>
+<td>markierte Stelle direkt mit Copilot umschreiben</td>
+</tr>
+<tr>
+<td>Nachvollziehbarkeit von Änderungen</td>
+<td>Unterschiede muss man selbst vergleichen</td>
+<td>„Änderungen nachverfolgen" zeigt jede Ersetzung mit Person</td>
+</tr>
+<tr>
+<td>Kürzung ohne Inhaltsverlust</td>
+<td>Pflegehinweis unbemerkt gestrichen</td>
+<td>Streichung als Änderung sichtbar, zurückgenommen</td>
+</tr>
+<tr>
+<td>Zusammenarbeit</td>
+<td>schnell geteilt, gemeinsames Bearbeiten</td>
+<td>gemeinsames Bearbeiten, Kommentare, vertrauter Freigabeweg</td>
+</tr>
+<tr>
+<td>Weiterverwendung</td>
+<td>Inhalt bleibt neben dem Chat, lässt sich teilen</td>
+<td>Datei per <code>/</code> in späteren Prompts referenzierbar, Grundlage für PowerPoint</td>
+</tr>
+<tr>
+<td>Freigabe und Datenschutz</td>
+<td>im Mandanten, Teilen bewusst steuern</td>
+<td>im Mandanten, Ordnerberechtigungen gelten</td>
+</tr>
+</tbody>
+</table>
+<p>Mögliche Empfehlung: „Ideen, Gliederungen und frühe Entwürfe sammeln wir in Copilot Pages, weil
+das Team dort schnell gemeinsam weiterarbeitet. Texte, die in die Freigabe gehen, landen in Word
+mit eingeschalteter Änderungsverfolgung. Verbindlich für alle werden der Dreischritt Rohfassung,
+Struktur, Feinschliff und die Regel, jede Überarbeitung auf markierte Stellen zu begrenzen und
+eine Änderungsliste zu verlangen. Funktionen ändern sich – Canvas wurde nach weniger als zwei
+Jahren entfernt. Deshalb verankern wir das Vorgehen in unserer Prompt-Bibliothek (Kap. 10), nicht
+in einer Bedienanleitung."</p>
+<p>Bewertungskriterien: beide Paare haben dieselbe Aufgabe tatsächlich getestet, mindestens fünf
+Kriterien inklusive Datenschutz und Zusammenarbeit, eine Empfehlung, die den Einsatzzweck
+unterscheidet und das Arbeitsprinzip statt einer Funktion festschreibt; zur Zusammenarbeit:
+jedes Paar hat im Ergebnis des anderen gearbeitet, Widersprüche zur Bewertung sind als
+Kommentare sichtbar und in der Empfehlung aufgelöst, und Unterschiede zwischen den beiden
+Rohfassungen wurden benannt.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Ein Blogartikel im Dreischritt mit Word und Copilot</summary>
+<p><strong>Szenario:</strong> Fjordlicht möchte im Blog „Draußen-Notizen" einen Beitrag zum Thema „Mit Kindern
+im Herbst wandern – was wirklich in den Rucksack gehört" veröffentlichen. Bisher entstanden
+solche Texte im Chat: viele Runden, verstreute Versionen, am Ende stand im Text eine
+Nachhaltigkeitsaussage, die niemand belegen konnte. Diesmal soll der Beitrag nachvollziehbar
+in einem Word-Dokument mit Copilot entstehen. Du kannst statt Fjordlicht auch <strong>ein Unternehmen
+deiner Wahl</strong> nutzen und ein passendes Blogthema wählen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Zielgruppe: Familien, naturverbunden, wenig Outdoor-Erfahrung.
+Länge: 900 bis 1.100 Wörter.
+Produkte dürfen genannt werden: Rucksack Tind, Fleece Skog, Regenjacke Sølv.
+Faktenbasis: /Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11, Kurzübung 1).
+Belegte Aussage: Obermaterial der Sølv zu 100 Prozent recyceltes Polyamid.
+Keine weiteren Nachhaltigkeitsaussagen, keine Superlative.
+Werkzeuge: Copilot in Word (Hauptdokument), Copilot Chat und Copilot Pages.
+Ablage: OneDrive-Ordner &quot;Fjordlicht-Kurs&quot;, Datei &quot;Blog-Herbstwandern-Kinder.docx&quot;.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Briefing und Rohfassung.</strong> Schreibe ein vollständiges Briefing nach dem
+P.R.O.M.P.T.-Framework (Kap. 5) und lass damit in einem neuen Word-Dokument einen Entwurf mit
+Copilot erstellen. Verweise im Prompt auf <code>/Fjordlicht-Basisdaten</code>. Verlange, dass fehlende
+Angaben als <code>[FEHLT]</code> markiert werden. Speichere die Rohfassung; über den Versionsverlauf kannst
+du später darauf zurückgreifen. Schalte ab jetzt „Änderungen nachverfolgen" ein.</p>
+<p><strong>Runde 2 – Struktur.</strong> Frag Copilot in Word nach einer Strukturanalyse des Dokuments
+(Gliederung mit einem Satz pro Abschnitt, Dopplungen, Lücken) – ohne den Text zu ändern.
+Übernimm die Analyse in eine <strong>Copilot Page</strong> und teile sie (oder simuliere die Abstimmung),
+falls in eurer Umgebung freigegeben. Entscheide selbst, welche Vorschläge du umsetzt, und lass
+danach gezielt umbauen. Halte fest, welche zwei Vorschläge du <strong>abgelehnt</strong> hast und warum.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Die Produktmanagerin meldet sich: Der Rucksack „Tind" ist im
+Herbst nur in einer Größe lieferbar, und die Kinderversion wird nicht erwähnt, weil es sie noch
+nicht gibt. Außerdem soll der Text 20 Prozent kürzer werden. Setze beides <strong>gezielt</strong> um:
+markiere die betroffenen Passagen in Word und lass nur diese von Copilot umschreiben oder
+kürzen. Verlange nach jeder Änderung eine Änderungsliste und gleiche sie mit den nachverfolgten
+Änderungen ab.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Speichere eine Kopie und bitte Copilot dort, den
+gesamten Text „noch einmal stilistisch zu verbessern". Vergleiche die Fassung vorher und
+nachher Absatz für Absatz (z. B. mit der Vergleichsfunktion von Word). <strong>Widersprich</strong> der
+Überarbeitung überall dort, wo sie die Markenstimme verwässert, Fakten verändert oder
+Formulierungen austauschbarer macht. Entscheide begründet, welche Fassung du zur Freigabe gibst
+– oder welche Mischung.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Briefing nach P.R.O.M.P.T. und gesicherte Rohfassung in Word</li>
+<li>Strukturanalyse (als Page oder im Dokument) mit zwei begründet abgelehnten Vorschlägen</li>
+<li>Fassung nach Runde 3 mit nachverfolgten Änderungen und Änderungslisten</li>
+<li>Vergleich aus Runde 4 mit mindestens drei kommentierten Stellen (als Word-Kommentare) und
+   deiner Entscheidung</li>
+<li>eine kurze Prüfliste für die Freigabe (Fakten, Produktnamen, Claims, Länge) am Ende des
+   Dokuments</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> der Text keine unbelegte Nachhaltigkeitsaussage und keinen
+Superlativ enthält, die Informationen der Produktmanagerin korrekt umgesetzt sind, keine
+<code>[FEHLT]</code>-Markierung offen ist und du für Runde 4 mindestens drei Stellen konkret begründet hast.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 3 und 4. In Runde 3 zeigt sich, ob deine Anweisungen eng genug sind:
+Eine Korrektur an einer Stelle darf nicht den halben Text verändern – die nachverfolgten
+Änderungen machen das sofort sichtbar. In Runde 4 erlebst du, was eine pauschale
+Verbesserungsanweisung anrichtet: flüssigere, aber austauschbarere Sätze. Für Fragen zum Text
+(„Wo nenne ich Produkte?", „Welche Aussagen betreffen Nachhaltigkeit?") kannst du Copilot in
+Word direkt zum Dokument befragen – das ersetzt nicht dein eigenes Lesen, beschleunigt es aber.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel für den Entwurfs-Prompt in Word (Auszug):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist Texterin im Marketingteam der Fjordlicht GmbH.
+Request: Schreibe die Rohfassung eines Blogbeitrags für &quot;Draußen-Notizen&quot;:
+&quot;Mit Kindern im Herbst wandern - was wirklich in den Rucksack gehört&quot;.
+Output: 900-1.100 Wörter, Zwischenüberschriften, eine Packliste als Aufzählung.
+Modifier: Fakten nur aus /Fjordlicht-Basisdaten. Einzige Nachhaltigkeits-
+aussage: Obermaterial der Sølv zu 100 % recyceltes Polyamid. Keine
+Superlative. Fehlende Angaben als [FEHLT].
+Purpose: Familien mit wenig Outdoor-Erfahrung sollen sich gut vorbereitet
+fühlen; Produkte erscheinen nur, wo sie zur Packliste gehören.
+Tone: ruhig, ehrlich, leicht nordisch-trocken, Du-Ansprache.
+</code></pre></div></td></tr></table></div>
+<p>Beispiel für eine gezielte Anweisung in Runde 3 (Passage markiert):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Passe nur die markierte Passage an: Der Rucksack Tind ist im Herbst nur in
+einer Größe lieferbar; eine Kinderversion wird nicht erwähnt. Kürze die
+Passage dabei um etwa 20 Prozent. Produktnamen und Zahlen bleiben
+wortgleich. Liste danach auf, was du geändert hast.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: (1) das Briefing enthält alle sechs P.R.O.M.P.T.-Bausteine, insbesondere
+Modifier mit Claim-Regel, Verweis auf die Basisdaten und <code>[FEHLT]</code>-Regel; (2) Struktur wurde
+vor dem Feinschliff bearbeitet, und die Ablehnung von Vorschlägen ist inhaltlich begründet
+(z. B. „Abschnitt zur Ausrüstungsliste bleibt vorn, weil Familien ihn suchen"); (3) die
+Änderungen aus Runde 3 sind passagenweise umgesetzt, die Änderungslisten wurden mit den
+nachverfolgten Änderungen abgeglichen, und die Kürzung hat keine Kerninformation entfernt;
+(4) der Vergleich in Runde 4 benennt konkrete Verluste (z. B. nordisch-trockener Ton ersetzt
+durch Allerweltsformulierungen, „robust" wird zu „unverwüstlich") und trifft eine
+nachvollziehbare Entscheidung; (5) die Prüfliste ist so formuliert, dass eine Kollegin sie ohne
+Rückfrage anwenden kann.</p>
+<p>Lernziel: Das Arbeitsprinzip „gemeinsames Dokument, gezielte Überarbeitung" mit Copilot in Word
+und Copilot Pages sicher anwenden – unabhängig von einer bestimmten Funktion – und die Steuerung
+über Inhalt, Struktur und Markenstimme beim Menschen behalten.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel10/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 10 – Prompt-Bibliothek aufbauen und pflegen">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 10 – Prompt-Bibliothek aufbauen und pflegen
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel12/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 12 – Redaktionsplanung &amp; Brainstorming mit KI">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 12 – Redaktionsplanung & Brainstorming mit KI
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

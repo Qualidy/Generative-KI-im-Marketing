@@ -1,0 +1,1976 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel4/">
+      
+      
+        <link rel="next" href="../kapitel6/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 5 – Das P.R.O.M.P.T.-Framework - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-5-das-prompt-framework" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 5 – Das P.R.O.M.P.T.-Framework
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Block 2 · Prompt Engineering in der Praxis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 5 – Das P.R.O.M.P.T.-Framework
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 5 – Das P.R.O.M.P.T.-Framework
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#51-warum-ein-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Warum ein Framework?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-die-sechs-bausteine-im-uberblick" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Die sechs Bausteine im Überblick
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-baustein-fur-baustein" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Baustein für Baustein
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-ein-marketing-prompt-entsteht-schritt-fur-schritt" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 Ein Marketing-Prompt entsteht – Schritt für Schritt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#55-typische-fehler-und-woran-du-sie-erkennst" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.5 Typische Fehler – und woran du sie erkennst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#56-der-prompt-canvas-das-framework-zum-ausfullen" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6 Der Prompt-Canvas: das Framework zum Ausfüllen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 6 – Prompting Guide: Techniken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 7 – Prompt-Hacks für den Marketing-Alltag
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 8 – Optimierung eigener Prompts mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 9 – Fehleranalyse & Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 10 – Prompt-Bibliothek aufbauen und pflegen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-5-das-prompt-framework">Kapitel 5 – Das P.R.O.M.P.T.-Framework<a class="headerlink" href="#kapitel-5-das-prompt-framework" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Warum ein <strong>Prompt</strong> ein Arbeitsauftrag ist – und weshalb ein festes Raster dabei hilft</li>
+<li>Die sechs Bausteine des <strong>P.R.O.M.P.T.-Frameworks</strong>: Persona, Request, Output, Modifier, Purpose, Tone</li>
+<li>Was eine <strong>gute Angabe</strong> je Baustein ausmacht und wo die häufigsten Missverständnisse liegen</li>
+<li>Wie aus einem Ein-Satz-Prompt in drei Stufen ein <strong>belastbarer Marketing-Prompt</strong> wird</li>
+<li>Die <strong>typischen Fehler</strong> beim Prompten und woran du sie am Ergebnis erkennst</li>
+<li>Wie du mit dem <strong>Prompt-Canvas</strong> wiederkehrende Aufträge schnell und vollständig formulierst</li>
+</ul>
+</div>
+<hr />
+<h2 id="51-warum-ein-framework">5.1 Warum ein Framework?<a class="headerlink" href="#51-warum-ein-framework" title="Permanent link">&para;</a></h2>
+<p>Ein Sprachmodell setzt deine Eingabe mit der wahrscheinlichsten Fortsetzung fort (Kap. 1). Je unbestimmter die Eingabe, desto durchschnittlicher das Ergebnis. „Schreib einen Instagram-Post über unsere neue Jacke" liefert deshalb fast immer denselben Text: drei Ausrufezeichen, „perfekt für jedes Abenteuer", fünf Emojis, zehn Hashtags. Nicht, weil das Werkzeug schlecht ist, sondern weil es nichts über deine Marke, deine Zielgruppe und dein Ziel weiß.</p>
+<p>Ein <strong>Prompt</strong> ist kein Suchbegriff, sondern ein <strong>Arbeitsauftrag</strong>. Der hilfreichste Vergleich: eine neue Freelancerin, sprachlich stark, schnell, aber ohne jede Kenntnis eures Hauses – und ohne die Möglichkeit, nachzufragen. Alles, was sie wissen muss, steht im Briefing oder fehlt.</p>
+<p>Ein <strong>Framework</strong> ist nichts anderes als eine Checkliste für dieses Briefing. Es sorgt dafür, dass du nichts Wesentliches vergisst, und es gibt dem Team eine gemeinsame Sprache: „Dem Prompt fehlt der Purpose" ist ein präziserer Hinweis als „Das Ergebnis ist irgendwie generisch".</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Alles, was du <strong>nicht</strong> sagst, entscheidet das Modell selbst – nach Wahrscheinlichkeit, nicht nach deinem Bedarf. Ein Framework hilft dir, <strong>vollständig genug</strong> zu sein.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Varianten im Netz</p>
+<p>Im Netz kursieren zahlreiche Prompt-Formeln – RTF, CO-STAR, CRISPE, RISEN und mehrere Varianten mit dem Kürzel P.R.O.M.P.T., jeweils mit leicht anderen Begriffen. Keine davon ist „die richtige". In diesem Kurs nutzen wir die unten beschriebene Variante. Entscheidend ist das Prinzip dahinter: Wer, was, in welcher Form, unter welchen Regeln, wozu und in welchem Ton.</p>
+</div>
+<hr />
+<h2 id="52-die-sechs-bausteine-im-uberblick">5.2 Die sechs Bausteine im Überblick<a class="headerlink" href="#52-die-sechs-bausteine-im-uberblick" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Buchstabe</th>
+<th>Baustein</th>
+<th>Frage, die er beantwortet</th>
+<th>Beispielformulierung (Fjordlicht)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P</strong></td>
+<td><strong>Persona</strong></td>
+<td>Aus welcher Rolle und mit welcher Expertise?</td>
+<td>„Du bist Texterin für eine nachhaltige Outdoor-Marke."</td>
+</tr>
+<tr>
+<td><strong>R</strong></td>
+<td><strong>Request</strong></td>
+<td>Was genau ist zu tun?</td>
+<td>„Schreibe einen Newsletter-Teaser für das Fleece Skog."</td>
+</tr>
+<tr>
+<td><strong>O</strong></td>
+<td><strong>Output</strong></td>
+<td>Welche Form, Länge, Struktur?</td>
+<td>„Betreffzeile, Preheader, 80 Wörter Fließtext, ein Call-to-Action."</td>
+</tr>
+<tr>
+<td><strong>M</strong></td>
+<td><strong>Modifier</strong></td>
+<td>Welche Regeln, Beispiele, No-Gos?</td>
+<td>„Keine Superlative. Nachhaltigkeitsaussagen nur aus dem Produktblatt."</td>
+</tr>
+<tr>
+<td><strong>P</strong></td>
+<td><strong>Purpose</strong></td>
+<td>Wozu und für wen?</td>
+<td>„Ziel: Klicks auf die Produktseite. Leser: Bestandskunden 25–45."</td>
+</tr>
+<tr>
+<td><strong>T</strong></td>
+<td><strong>Tone</strong></td>
+<td>Wie soll es klingen?</td>
+<td>„Ruhig, ehrlich, leicht trocken, Du-Ansprache."</td>
+</tr>
+</tbody>
+</table>
+<p>Nicht jeder Prompt braucht alle sechs. Für „Fasse diese Kundenbewertungen in fünf Stichpunkten zusammen" genügen Request und Output. Aber wenn ein Ergebnis nicht passt, findest du die Ursache fast immer in einem <strong>fehlenden Baustein</strong> – im Marketing meist Purpose oder Modifier.</p>
+<hr />
+<h2 id="53-baustein-fur-baustein">5.3 Baustein für Baustein<a class="headerlink" href="#53-baustein-fur-baustein" title="Permanent link">&para;</a></h2>
+<p><strong>Persona.</strong> Die Rolle lenkt Perspektive, Fachvokabular und Schwerpunkte. „Du bist Social-Media-Managerin für eine B2B-Marke" erzeugt andere Texte als „Du bist Werbetexter". Aber: Eine Rolle verleiht dem Modell <strong>kein Wissen</strong>, das es nicht hat. „Du bist Rechtsanwalt für Wettbewerbsrecht" macht eine Antwort nicht rechtssicher – sie klingt nur so. Wirksamer als Titel ist eine kurze Beschreibung der Arbeitsweise: „…die konkrete Produktvorteile statt Werbefloskeln schreibt".</p>
+<p><strong>Request.</strong> Ein Verb, ein Gegenstand, ein Anlass. „Schreibe", „überarbeite", „vergleiche", „entwickle fünf Ideen für" – je präziser das Verb, desto präziser die Arbeit. Pack nicht mehrere Aufträge in einen Request; zerlege lieber (Kap. 6).</p>
+<p><strong>Output.</strong> Hier legst du fest, was am Ende auf dem Bildschirm steht: Textsorte, Länge in Wörtern oder Zeichen, Gliederung, Bestandteile, Anzahl der Varianten, ggf. Tabelle. Ohne Output-Vorgabe bekommst du mal drei Zeilen, mal eine Seite.</p>
+<p><strong>Modifier.</strong> Der unscheinbarste und wichtigste Baustein. Er enthält alles, was das Ergebnis <strong>eingrenzt</strong>: Fakten, die verwendet werden dürfen, Wörter, die tabu sind, rechtliche Grenzen, Beispiele für den gewünschten Stil (Kap. 6) und die Regel für Lücken: „Wenn dir eine Angabe fehlt, schreibe [FEHLT] statt zu raten." Diese Zeile macht das Halluzinationsrisiko sichtbar (Kap. 2).</p>
+<p><strong>Purpose.</strong> Wozu dient der Text, und wer liest ihn? Ein Post, der Reichweite bringen soll, ist anders gebaut als einer, der Bestandskunden zum Kauf bewegt. Purpose ist der Baustein, den Marketingprofis im Kopf haben und deshalb am häufigsten <strong>nicht aufschreiben</strong>.</p>
+<p><strong>Tone.</strong> Beschreibe die Tonalität nicht mit einem einzigen Adjektiv. „Locker" versteht jedes Modell anders. Besser sind <strong>Gegensatzpaare</strong> und ein Beispiel: „ehrlich statt euphorisch, konkret statt blumig, trocken statt witzig-bemüht". Gibt es einen Styleguide, gehört der Kern hinein – die systematische Stil-Extraktion aus Beispieltexten zeigt Kapitel 7.</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>„Du bist der beste Marketingexperte der Welt mit 30 Jahren Erfahrung" bringt keinen messbaren Gewinn. Die Rolle wirkt über <strong>inhaltliche</strong> Hinweise (Branche, Zielgruppe, Arbeitsweise), nicht über Superlative. Mehr zu solchen Mythen in Kapitel 7.</p>
+</div>
+<hr />
+<h2 id="54-ein-marketing-prompt-entsteht-schritt-fur-schritt">5.4 Ein Marketing-Prompt entsteht – Schritt für Schritt<a class="headerlink" href="#54-ein-marketing-prompt-entsteht-schritt-fur-schritt" title="Permanent link">&para;</a></h2>
+<p>Die Aufgabe: Fjordlicht bringt das Fleece <strong>Skog</strong> in einer neuen Farbe. Für den Newsletter (rund 38.000 Abonnenten) brauchst du einen Teaser.</p>
+<p><strong>Stufe 0 – der übliche Anfang</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Schreib einen Newslettertext für unser neues Fleece.
+</code></pre></div></td></tr></table></div>
+<p>Ergebnis: „Entdecke jetzt unser brandneues, unglaublich kuscheliges Fleece – der perfekte Begleiter für jedes Abenteuer!" Dazu erfundene Materialangaben, ein Rabattcode, den es nicht gibt, und ein Ton, der zu jeder Marke passt – also zu keiner.</p>
+<p><strong>Stufe 1 – Request und Purpose ergänzen</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Schreibe einen Newsletter-Teaser für das Fleece Skog von Fjordlicht,
+das es ab sofort in der neuen Farbe Moosgrün gibt.
+Ziel: Bestandskunden sollen auf die Produktseite klicken.
+Leser: naturverbundene Stadtmenschen zwischen 25 und 45, die
+Fjordlicht bereits kennen.
+</code></pre></div></td></tr></table></div>
+<p>Besser: Der Text hat ein Ziel und spricht jemanden an. Länge, Aufbau und Ton schwanken aber stark, und die Materialangaben sind weiter frei erfunden.</p>
+<p><strong>Stufe 2 – Output und Tone festlegen</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>[Stufe 1 wie oben]
+Output: Betreffzeile (max. 45 Zeichen), Preheader (max. 80 Zeichen),
+Fließtext mit höchstens 80 Wörtern, ein Call-to-Action-Button-Text.
+Ton: ruhig, ehrlich, leicht nordisch-trocken, Du-Ansprache.
+Ehrlich statt euphorisch, konkret statt blumig.
+</code></pre></div></td></tr></table></div>
+<p>Jetzt ist das Ergebnis direkt verwendbar und hat eine verlässliche Form. Das eigentliche Risiko bleibt: Das Modell füllt Lücken – etwa mit „aus 100 % recycelten Materialien".</p>
+<p><strong>Stufe 3 – Persona und Modifier setzen</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist Texterin für eine nachhaltige Outdoor-Marke und schreibst
+konkrete Produkttexte ohne Werbefloskeln.
+[Request, Purpose, Output und Ton wie oben]
+Regeln:
+- Verwende nur diese Produktfakten: Fleece aus 80 % recyceltem
+  Polyester laut Produktblatt, Gewicht 320 g, zwei Reißverschlusstaschen,
+  Preis 89 Euro.
+- Keine Superlative, keine Ausrufezeichen, keine Emojis.
+- Keine Nachhaltigkeitsaussagen außer der oben genannten.
+- Keine Rabatte oder Aktionen erwähnen.
+- Wenn dir eine Angabe fehlt, schreibe [FEHLT] statt zu raten.
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Stufe</th>
+<th>Ergänzt</th>
+<th>Was besser wird</th>
+<th>Was noch fehlt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>–</td>
+<td>nichts, aber schnell getippt</td>
+<td>fast alles</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Request, Purpose</td>
+<td>Text hat Ziel und Adressaten</td>
+<td>Form, Ton, Faktentreue</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Output, Tone</td>
+<td>direkt verwendbar, markengerechter Klang</td>
+<td>Schutz vor Erfundenem</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Persona, Modifier</td>
+<td>keine erfundenen Fakten, keine Greenwashing-Falle</td>
+<td>nur noch die menschliche Freigabe</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Viele hören nach Stufe 2 auf, weil der Text „gut klingt". Genau dort entstehen die teuren Fehler: eine erfundene Nachhaltigkeitsaussage (irreführende Werbung, Kap. 4), ein nicht existierender Rabatt, ein falscher Preis. <strong>Modifier sind kein Feinschliff, sondern der Kern.</strong></p>
+</div>
+<hr />
+<h2 id="55-typische-fehler-und-woran-du-sie-erkennst">5.5 Typische Fehler – und woran du sie erkennst<a class="headerlink" href="#55-typische-fehler-und-woran-du-sie-erkennst" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Fehler</th>
+<th>Symptom im Ergebnis</th>
+<th>Gegenmittel (Baustein)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vager Auftrag</td>
+<td>austauschbarer Text, passt zu jeder Marke</td>
+<td>Request präzisieren, Anlass nennen</td>
+</tr>
+<tr>
+<td>Ziel und Zielgruppe nur im Kopf</td>
+<td>Text spricht „alle" an, kein klarer Call-to-Action</td>
+<td>Purpose ausschreiben</td>
+</tr>
+<tr>
+<td>Keine Form vorgegeben</td>
+<td>mal drei Sätze, mal eine Seite</td>
+<td>Output mit Länge und Bestandteilen</td>
+</tr>
+<tr>
+<td>Ton mit einem Adjektiv beschrieben</td>
+<td>„locker" wird zu Jugendsprache</td>
+<td>Gegensatzpaare, Beispiel (Tone)</td>
+</tr>
+<tr>
+<td>Nur Verbote</td>
+<td>das Verbotene taucht trotzdem auf</td>
+<td>positiv formulieren, was stattdessen gilt</td>
+</tr>
+<tr>
+<td>Fakten nicht mitgegeben</td>
+<td>erfundene Materialien, Preise, Siegel</td>
+<td>Fakten im Modifier, Regel für [FEHLT]</td>
+</tr>
+<tr>
+<td>Mehrere Aufträge in einem Prompt</td>
+<td>ein Teil gut, der Rest halbherzig</td>
+<td>zerlegen in eine Prompt-Kette (Kap. 6)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Ein Satz, der oft viel rettet</p>
+<p>Hänge an einen komplexen Auftrag an:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Bevor du beginnst: Stelle mir bis zu drei Rückfragen zu Angaben,
+die dir für ein gutes Ergebnis fehlen. Beginne erst nach meiner Antwort.
+</code></pre></div></td></tr></table></div>
+<p>Das dreht die Arbeitsrichtung um: Statt dass du raten musst, was fehlt, sagt es dir das Werkzeug. Dieser Rückfragen-Prompt ist der erste der Prompt-Hacks in Kapitel 7.</p>
+</div>
+<hr />
+<h2 id="56-der-prompt-canvas-das-framework-zum-ausfullen">5.6 Der Prompt-Canvas: das Framework zum Ausfüllen<a class="headerlink" href="#56-der-prompt-canvas-das-framework-zum-ausfullen" title="Permanent link">&para;</a></h2>
+<p>Für wiederkehrende Aufgaben lohnt sich ein <strong>Prompt-Canvas</strong> – eine Vorlage, die du ausfüllst wie ein Briefingformular. Kopiere sie in deine Notizen, ersetze die Platzhalter in eckigen Klammern und lösche Zeilen, die für den Fall nichts beitragen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>PERSONA:  Du bist [Rolle] mit Erfahrung in [Branche/Thema].
+          Du arbeitest [Arbeitsweise, z. B. faktenbasiert, ohne Floskeln].
+REQUEST:  [Verb] [Gegenstand] für [Anlass/Kanal].
+OUTPUT:   [Textsorte], [Länge], [Bestandteile/Struktur],
+          [Anzahl Varianten], [Format, z. B. Tabelle].
+MODIFIER: Fakten: [nur diese Angaben verwenden]
+          No-Gos: [verbotene Wörter, Aussagen, Themen]
+          Beispiel für den Stil: [optional, kurzer Beispieltext]
+          Fehlt eine Angabe, schreibe [FEHLT].
+PURPOSE:  Ziel: [gewünschte Handlung oder Wirkung].
+          Zielgruppe: [wer liest, was weiß sie, was braucht sie].
+TONE:     [Ton] - [Gegensatzpaar] statt [Gegensatzpaar]. [Du/Sie].
+</code></pre></div></td></tr></table></div>
+<p>Die Reihenfolge im fertigen Prompt muss nicht der Reihenfolge der Buchstaben folgen. Bewährt hat sich: Persona und Request nach vorn, längeres Material (Produktblatt, Beispieltexte) ans Ende und klar markiert, etwa mit <code>Produktblatt:</code> oder Trennlinien (Kap. 6).</p>
+<pre class="mermaid"><code>flowchart LR
+    A(["Canvas ausfüllen"]) --&gt; B(["Prompt absenden"])
+    B --&gt; C(["Ergebnis prüfen"])
+    C --&gt; D(["Fehlenden Baustein benennen"])
+    D --&gt; A
+    C --&gt; E(["Prompt in Bibliothek sichern"])</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">Erst Canvas, dann Chat</p>
+<p>Fülle den Canvas für einen neuen Aufgabentyp einmal sorgfältig aus. Wenn das Ergebnis passt, übertrage Nachbesserungen aus dem Chat <strong>zurück in den Canvas</strong> – sonst beginnst du beim nächsten Mal wieder bei Stufe 0. Wie du daraus eine geteilte Prompt-Bibliothek machst, zeigt Kapitel 10; wie du Prompts mit KI-Hilfe weiter verbesserst, Kapitel 8.</p>
+</div>
+<p>Der Canvas ist ein <strong>Denkwerkzeug</strong>, kein Formular, das vollständig ausgefüllt werden muss. Er stellt sicher, dass du über alle sechs Fragen nachgedacht hast – auch wenn am Ende nur vier davon im Prompt landen. Ein kurzer Prompt, bei dem du bewusst auf Persona und Tone verzichtest, ist kein Fehler. Ein langer Prompt, in dem der Purpose fehlt, schon.</p>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ein Prompt ist ein <strong>Arbeitsauftrag</strong>: Alles Ungesagte entscheidet das Modell nach Wahrscheinlichkeit.</li>
+<li>Das <strong>P.R.O.M.P.T.-Framework</strong> umfasst Persona, Request, Output, Modifier, Purpose und Tone; andere Formeln im Netz folgen demselben Prinzip.</li>
+<li>Die <strong>Persona</strong> lenkt Perspektive, verleiht aber kein Fachwissen; <strong>Purpose</strong> ist im Marketing der am häufigsten vergessene Baustein.</li>
+<li><strong>Modifier</strong> sorgen für Verlässlichkeit: Fakten vorgeben, No-Gos benennen, Lücken mit <strong>[FEHLT]</strong> markieren lassen.</li>
+<li><strong>Tone</strong> beschreibst du besser mit Gegensatzpaaren und Beispielen als mit einem einzelnen Adjektiv.</li>
+<li>Der <strong>Prompt-Canvas</strong> macht das Framework für wiederkehrende Aufgaben nutzbar; Verbesserungen gehören zurück in die Vorlage.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Bausteine erkennen und zuordnen</summary>
+<p>Ordne die Satzteile des folgenden Prompts den sechs Bausteinen des P.R.O.M.P.T.-Frameworks zu –
+Persona, Request, Output, Modifier, Purpose, Tone. Bestimme anschließend, welcher Baustein
+<strong>fehlt</strong> und was das für das Ergebnis bedeutet.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>(a) Du bist Social-Media-Redakteur für eine Outdoor-Marke.
+(b) Schreibe eine Instagram-Caption zum Rucksack Tind.
+(c) Maximal 60 Wörter, danach höchstens fünf Hashtags.
+(d) Keine Superlative, keine Preisangabe, keine Emojis.
+(e) Ruhig und ehrlich, Du-Ansprache, trocken statt witzig-bemüht.
+</code></pre></div></td></tr></table></div>
+<details class="info">
+<summary>Tipp</summary>
+<p>Frage dich bei jedem Satzteil: Beantwortet er „wer", „was", „in welcher Form", „unter welchen
+Regeln", „wozu und für wen" oder „wie klingt es"? Der fehlende Baustein ist derjenige, den
+Marketingleute am häufigsten nur im Kopf haben.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Satzteil</th>
+<th>Baustein</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(a) Social-Media-Redakteur</td>
+<td>Persona</td>
+</tr>
+<tr>
+<td>(b) Instagram-Caption zum Rucksack Tind</td>
+<td>Request</td>
+</tr>
+<tr>
+<td>(c) 60 Wörter, fünf Hashtags</td>
+<td>Output</td>
+</tr>
+<tr>
+<td>(d) keine Superlative, kein Preis, keine Emojis</td>
+<td>Modifier</td>
+</tr>
+<tr>
+<td>(e) ruhig, ehrlich, Du-Ansprache</td>
+<td>Tone</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Es fehlt der Purpose.</strong> Das Modell weiß nicht, ob der Post Reichweite bringen, Bestandskunden
+zum Kauf bewegen oder auf eine Veranstaltung hinweisen soll, und nicht, wer ihn liest
+(Tagesausflügler, Familien, Mehrtageswanderer). Folge: eine sprachlich saubere, aber beliebige
+Caption ohne klaren Handlungsimpuls. Eine mögliche Ergänzung:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Ziel: Follower sollen den Rucksack für Tagestouren mit Kindern
+in Betracht ziehen und auf den Link in der Bio klicken.
+Zielgruppe: Familien aus der Stadt, die am Wochenende wandern.
+</code></pre></div></td></tr></table></div>
+<p>Auch im Modifier fehlt etwas: Ohne Produktfakten wird das Modell Volumen, Gewicht oder Material
+erfinden. Eine Zeile mit den belegten Fakten und die Regel „fehlende Angaben als [FEHLT]" würden
+das verhindern.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Ein Prompt in drei Stufen</summary>
+<p>Diese Übung machst du direkt im KI-Werkzeug (ChatGPT oder eine Alternative). Aufgabe: ein
+LinkedIn-Post für <strong>Fjordlicht Business</strong>, der Personalverantwortliche auf Firmenbekleidung aus
+recycelten Materialien aufmerksam macht – oder ein vergleichbarer Post für ein Unternehmen deiner
+Wahl.</p>
+<ol>
+<li><strong>Stufe 0:</strong> Formuliere den Auftrag in einem Satz, so wie du ihn im Alltag tippen würdest.</li>
+<li><strong>Stufe 1:</strong> Ergänze Request und Purpose.</li>
+<li><strong>Stufe 2:</strong> Ergänze Output und Tone.</li>
+<li><strong>Stufe 3:</strong> Ergänze Persona und mindestens drei Modifier, darunter die erlaubten Fakten und
+   die Regel, dass fehlende Angaben mit <code>[FEHLT]</code> markiert werden.</li>
+</ol>
+<p>Speichere jede Ausgabe. Halte zu jeder Stufe in einem Satz fest, was sich verbessert hat, und
+markiere in den Ausgaben der Stufen 0 bis 2 jede erfundene Angabe.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Starte jede Stufe in einem <strong>neuen Chat</strong>. Im selben Gespräch sieht das Werkzeug deine vorherigen
+Ergänzungen, und du misst nicht mehr die Wirkung des einzelnen Bausteins. Erfundenes versteckt
+sich gern in Zahlen, Zertifikaten und Formulierungen wie „klimaneutral".</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Typisches Muster:</p>
+<table>
+<thead>
+<tr>
+<th>Stufe</th>
+<th>Beobachtung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>generischer Post mit Emojis und Hashtag-Block, oft erfundene Zahlen („spart 40 % CO₂")</td>
+</tr>
+<tr>
+<td>1</td>
+<td>spricht HR-Verantwortliche an, hat einen Handlungsimpuls, Länge schwankt</td>
+</tr>
+<tr>
+<td>2</td>
+<td>LinkedIn-tauglich in Länge und Aufbau, Ton passt zur Marke</td>
+</tr>
+<tr>
+<td>3</td>
+<td>keine erfundenen Nachhaltigkeitsaussagen mehr; Lücken wie Mindestbestellmenge als [FEHLT] markiert</td>
+</tr>
+</tbody>
+</table>
+<p>Beispiel für Stufe 3 (gekürzt):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist B2B-Texterin für eine nachhaltige Outdoor-Marke.
+Schreibe einen LinkedIn-Post für Fjordlicht Business.
+Ziel: Personalverantwortliche in Unternehmen mit 50 bis 500
+Beschäftigten fordern ein Musterpaket an.
+Output: 120 bis 160 Wörter, kurzer erster Satz als Hook,
+drei Absätze, am Ende eine Handlungsaufforderung, max. 3 Hashtags.
+Ton: sachlich, ruhig, ehrlich, kein Werbesprech, Du-Ansprache.
+Fakten: [Liste der belegten Produktfakten]
+Keine Nachhaltigkeitsaussagen außer den genannten Fakten.
+Fehlt eine Angabe, schreibe [FEHLT].
+</code></pre></div></td></tr></table></div>
+<p>Eine gute Bearbeitung enthält vier gespeicherte Ausgaben, vier Sätze zur Verbesserung und
+mindestens eine markierte Erfindung aus den frühen Stufen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Framework-Vergleich und Grenzen der Persona</summary>
+<p>Im Netz findest du viele Prompt-Formeln. Eine Kollegin schwört auf <strong>RTF</strong> (Role, Task, Format),
+ein Kollege auf <strong>CO-STAR</strong> (Context, Objective, Style, Tone, Audience, Response).</p>
+<ol>
+<li><strong>Abgleich.</strong> Ordne die Bausteine beider Formeln den sechs Bausteinen von P.R.O.M.P.T. zu.
+   Welche Lücken hat RTF, welche Bausteine von CO-STAR stecken bei uns in Modifier oder Purpose?</li>
+<li><strong>Persona-Test im Werkzeug.</strong> Lass denselben Auftrag – „Erkläre in 100 Wörtern, ob Fjordlicht
+   ein Fleece als klimaneutral bewerben darf" – zweimal bearbeiten: einmal ohne Persona, einmal
+   mit „Du bist Fachanwalt für Wettbewerbsrecht mit 20 Jahren Erfahrung". Vergleiche Inhalt,
+   Sicherheit des Tons und Belege.</li>
+<li><strong>Bewertung.</strong> Formuliere drei Sätze für eure Team-Richtlinie: Wann ist eine Persona
+   nützlich, wann irreführend, und welches Framework soll das Team verwenden?</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achte in Schritt 2 darauf, ob die Persona-Fassung <strong>mehr belegte Inhalte</strong> liefert oder nur
+<strong>sicherer klingt</strong>. Genau hier liegt das Risiko: Ein selbstbewusster Ton verleitet dazu, auf
+Prüfung zu verzichten.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>P.R.O.M.P.T.</th>
+<th>RTF</th>
+<th>CO-STAR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Persona</td>
+<td>Role</td>
+<td>– (teils Style)</td>
+</tr>
+<tr>
+<td>Request</td>
+<td>Task</td>
+<td>Objective</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Format</td>
+<td>Response</td>
+</tr>
+<tr>
+<td>Modifier</td>
+<td>–</td>
+<td>Context (teilweise)</td>
+</tr>
+<tr>
+<td>Purpose</td>
+<td>–</td>
+<td>Objective, Audience, Context</td>
+</tr>
+<tr>
+<td>Tone</td>
+<td>–</td>
+<td>Style, Tone</td>
+</tr>
+</tbody>
+</table>
+<p>RTF ist schnell, lässt aber Ziel, Zielgruppe, Regeln und Ton offen – für Marketingtexte zu
+dünn. CO-STAR ist ähnlich vollständig wie P.R.O.M.P.T., hat aber keinen eigenen Platz für
+No-Gos und Faktengrenzen.</p>
+<p>Typisches Ergebnis des Persona-Tests: Beide Antworten nennen ähnliche Punkte (Irreführungsverbot,
+Belegpflicht, strenge Rechtsprechung zu „klimaneutral"). Die Persona-Fassung klingt bestimmter,
+enthält aber nicht mehr geprüfte Inhalte und oft erfundene Details wie konkrete Aktenzeichen.
+Die Rolle ändert Ton und Perspektive, nicht den Wissensstand.</p>
+<p>Mögliche Richtlinie:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>1. Wir nutzen P.R.O.M.P.T. als gemeinsame Checkliste; kürzere Prompts
+   sind erlaubt, wenn der Purpose klar ist.
+2. Eine Persona setzen wir für Perspektive und Fachsprache ein, nie
+   als Ersatz für Prüfung.
+3. Rechtliche oder fachliche Aussagen aus KI-Texten werden vor
+   Veröffentlichung von einer zuständigen Person geprüft.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: korrekte Zuordnung, nachvollziehbar dokumentierter Vergleich, Richtlinie,
+die zwischen Wirkung auf Ton und Wirkung auf Wahrheitsgehalt unterscheidet.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Prompt-Canvas-Set für eine Produkteinführung</summary>
+<p><strong>Szenario:</strong> Fjordlicht bringt im Frühjahr die Wanderhose <strong>Vidde</strong> in einer überarbeiteten
+Version heraus. Das Marketingteam (5 Personen) soll Texte für Newsletter, Instagram, LinkedIn
+(Fjordlicht Business) und die Produktseite liefern. Bisher tippt jede Person ihre eigenen Prompts,
+die Ergebnisse klingen nach fünf verschiedenen Marken, und zweimal stand schon eine
+Nachhaltigkeitsaussage im Entwurf, die niemand belegen konnte. Du sollst ein Set aus
+ausgefüllten Prompt-Canvases liefern, das jede Person im Team ohne Erklärung nutzen kann. Du
+kannst alternativ <strong>ein Unternehmen deiner Wahl</strong> und ein eigenes Produkt verwenden.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Produktfakten (fiktiv): Wanderhose Vidde, Material laut Produktblatt
+zu 64 % aus recyceltem Polyamid, 4 Taschen, abnehmbare Beine,
+Preis 119 Euro, Größen 36 bis 56.
+Markenstimme: ruhig, ehrlich, naturverbunden, leicht nordisch-trocken,
+Du-Ansprache, keine Superlative, kein Greenwashing.
+Werkzeug: ChatGPT oder eine Alternative. Keine Kundendaten im Prompt.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Canvases ausfüllen.</strong> Erstelle für <strong>vier</strong> Kanäle (Newsletter-Teaser, Instagram-
+Caption, LinkedIn-Post, Produktseiten-Text) je einen vollständigen Prompt-Canvas nach Abschnitt
+5.6. Jeder Canvas enthält alle sechs Bausteine, mindestens zwei Platzhalter in eckigen Klammern
+und mindestens drei Modifier, darunter die erlaubten Fakten und die [FEHLT]-Regel. Teste jeden
+Canvas einmal im Werkzeug.</p>
+<p><strong>Runde 2 – Prüfung gegen Pflichtkriterien.</strong> Das Set muss <strong>alle vier</strong> Kriterien erfüllen:</p>
+<ol>
+<li>Der <strong>Purpose</strong> unterscheidet sich je Kanal erkennbar (Ziel und Zielgruppe).</li>
+<li>Der <strong>Tone</strong> ist in allen vier Canvases identisch beschrieben – mit Gegensatzpaaren.</li>
+<li>Kein Ergebnis enthält eine Nachhaltigkeitsaussage, die über die Produktfakten hinausgeht.</li>
+<li>Jeder Canvas hat einen Output mit konkreter Länge und Bestandteilen.</li>
+</ol>
+<p><strong>Runde 3 – Die Komplikation.</strong> Die Produktentwicklung meldet kurz vor dem Start: Der Anteil
+recycelten Materials ist noch nicht final bestätigt. Bis zur Freigabe darf <strong>keine</strong>
+Recycling-Aussage veröffentlicht werden – die Texte sollen aber schon heute fertig sein. Passe
+alle vier Canvases so an, dass die Aussage als Platzhalter vorbereitet ist und sich ohne
+Neuschreiben ergänzen oder streichen lässt. Teste, ob das Modell die Aussage trotzdem „von
+selbst" einbaut.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Teamleitung schlägt vor, statt vier Canvases nur
+<strong>einen Universal-Prompt</strong> zu nutzen („Schreibe für [Kanal] …"). Teste den Universal-Prompt gegen
+zwei deiner Kanal-Canvases und entscheide begründet. <strong>Widersprich</strong> dem Vorschlag dort, wo er
+Qualität kostet – oder stimme zu, wo er Pflegeaufwand spart, ohne zu schaden.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>vier ausgefüllte und getestete Prompt-Canvases</li>
+<li>Checkliste der vier Pflichtkriterien mit Ergebnis je Canvas</li>
+<li>angepasste Fassung aus Runde 3 mit Testergebnis</li>
+<li>Vergleich Universal-Prompt gegen Kanal-Canvas mit begründeter Entscheidung</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> alle vier Canvases ohne mündliche Erklärung nutzbar sind, kein
+Testergebnis eine unbelegte Nachhaltigkeitsaussage enthält und deine Entscheidung aus Runde 4
+mindestens zwei konkrete Beobachtungen aus dem Test nennt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 3: Ein Modifier, der eine Aussage <strong>verbietet</strong>, reicht oft nicht –
+Modelle ergänzen „recycelt" oder „nachhaltig" gern aus Gewohnheit, weil es zur Marke passt.
+Wirksamer ist, die Aussage als eigenes Feld zu führen (<code>Recycling-Aussage: [FREIGABE AUSSTEHEND –
+nicht erwähnen]</code>) und im Modifier ausdrücklich zu sagen, was stattdessen betont werden soll.
+In Runde 4 gilt: Ein gemeinsamer Tone-Block ist sinnvoll, ein gemeinsamer Purpose fast nie.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) vier vollständige Canvases mit allen sechs Bausteinen, Platzhaltern und
+mindestens drei Modifiern, getestet; (2) Purpose je Kanal klar unterschieden, Tone einheitlich
+mit Gegensatzpaaren beschrieben, Output konkret; (3) Runde 3 löst das Freigabeproblem über ein
+eigenes Platzhalterfeld und positive Anweisung, und der Test zeigt, dass keine Recycling-Aussage
+mehr erscheint; (4) der Vergleich in Runde 4 nutzt dieselben Fakten für beide Varianten und
+begründet die Entscheidung mit Beobachtungen – typischerweise: gemeinsamer Tone- und
+Modifier-Block als Baustein, kanalspezifischer Purpose und Output.</p>
+<p>Lernziel: Das P.R.O.M.P.T.-Framework als Teamwerkzeug einsetzen, das Markenstimme und
+Faktentreue über Kanäle hinweg sichert – und erkennen, dass Verbote allein schwächer wirken als
+klar geführte Fakten und positive Anweisungen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel4/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 4 – Regulatorischer Rahmen und Best Practices">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 4 – Regulatorischer Rahmen und Best Practices
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel6/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 6 – Prompting Guide: Techniken">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 6 – Prompting Guide: Techniken
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1954 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel2/">
+      
+      
+        <link rel="next" href="../kapitel4/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 3 – Generative KI im Marketing - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-3-generative-ki-im-marketing" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 3 – Generative KI im Marketing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Block 1 · Einführung in KI und Marketing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 1 – Was ist Künstliche Intelligenz?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 2 – Generative KI: Chancen und Grenzen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 3 – Generative KI im Marketing
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 3 – Generative KI im Marketing
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-von-der-aufgabe-her-denken-nicht-vom-werkzeug" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Von der Aufgabe her denken, nicht vom Werkzeug
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-einsatzfelder-entlang-der-customer-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Einsatzfelder entlang der Customer Journey
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-die-werkzeuglandschaft-im-uberblick" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Die Werkzeuglandschaft im Überblick
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-rollenverteilung-was-macht-der-mensch-was-die-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Rollenverteilung: Was macht der Mensch, was die KI?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-realistischer-nutzen-rechnen-statt-schwarmen" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Realistischer Nutzen: rechnen statt schwärmen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-womit-anfangen-ein-einfaches-bewertungsraster" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Womit anfangen? Ein einfaches Bewertungsraster
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 4 – Regulatorischer Rahmen und Best Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-3-generative-ki-im-marketing">Kapitel 3 – Generative KI im Marketing<a class="headerlink" href="#kapitel-3-generative-ki-im-marketing" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Warum du KI-Einsatz von der <strong>Aufgabe</strong> her denkst und nicht vom Werkzeug</li>
+<li>Wo generative KI entlang der <strong>Customer Journey</strong> konkret ansetzt – von der Aufmerksamkeit bis zur Kundenbindung</li>
+<li>Wie die <strong>Werkzeuglandschaft</strong> für Text, Bild, Video, Audio und Assistenten aufgebaut ist (Stand: Oktober 2026)</li>
+<li>Wie eine sinnvolle <strong>Rollenverteilung zwischen Mensch und KI</strong> in einem Content-Prozess aussieht</li>
+<li>Wie du den <strong>realistischen Nutzen</strong> einschätzt – mit Zeitrechnung statt Bauchgefühl</li>
+<li>Wie du mit einem einfachen <strong>Bewertungsraster</strong> entscheidest, womit dein Team anfängt</li>
+</ul>
+</div>
+<hr />
+<h2 id="31-von-der-aufgabe-her-denken-nicht-vom-werkzeug">3.1 Von der Aufgabe her denken, nicht vom Werkzeug<a class="headerlink" href="#31-von-der-aufgabe-her-denken-nicht-vom-werkzeug" title="Permanent link">&para;</a></h2>
+<p>Die meisten Marketingteams steigen über ein Werkzeug ein: Jemand probiert ChatGPT aus, ist begeistert, und plötzlich soll „alles mit KI" laufen. Ein paar Wochen später ist die Bilanz gemischt – einige sparen viel Zeit, andere haben mehr Korrekturarbeit als vorher. Der Grund ist fast immer derselbe: Es wurde gefragt „Was kann das Werkzeug?" statt „Welche Aufgabe haben wir, und welcher Teil davon passt zu dem, was generative KI gut kann?"</p>
+<p>In Kapitel 2 hast du gesehen, wo generative KI stark ist (Entwürfe, Varianten, Umformulieren, Strukturieren, Zusammenfassen) und wo sie schwach ist (Fakten, aktuelle Zahlen, Verlässlichkeit ohne Prüfung). Für das Marketing heißt das: KI ist ein hervorragender <strong>Entwurfs- und Variantengenerator</strong>, aber kein Ersatz für Strategie, Markenkenntnis und Verantwortung.</p>
+<table>
+<thead>
+<tr>
+<th>Frage vom Werkzeug her</th>
+<th>Frage von der Aufgabe her</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>„Was kann ChatGPT alles?"</td>
+<td>„Wofür brauchen wir jede Woche am meisten Zeit?"</td>
+</tr>
+<tr>
+<td>„Sollen wir Midjourney kaufen?"</td>
+<td>„Welche Bilder fehlen uns, und dürfen sie generiert sein?"</td>
+</tr>
+<tr>
+<td>„Machen wir jetzt KI-Videos?"</td>
+<td>„Welches Video-Format bringt unserer Zielgruppe etwas?"</td>
+</tr>
+<tr>
+<td>„Welches Tool ist das beste?"</td>
+<td>„Welches Tool passt zu Aufgabe, Daten und Budget?"</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Werkzeuge wechseln im Monatstakt, Aufgaben bleiben. Wer seinen KI-Einsatz an <strong>Aufgaben</strong> festmacht, kann das Werkzeug austauschen, ohne von vorn anzufangen.</p>
+</div>
+<hr />
+<h2 id="32-einsatzfelder-entlang-der-customer-journey">3.2 Einsatzfelder entlang der Customer Journey<a class="headerlink" href="#32-einsatzfelder-entlang-der-customer-journey" title="Permanent link">&para;</a></h2>
+<p>Ein nützliches Raster, um Einsatzfelder zu sortieren, ist die <strong>Customer Journey</strong> – der Weg, den eine Person von der ersten Wahrnehmung einer Marke bis zur wiederholten Kaufentscheidung zurücklegt. Im Marketing wird sie oft als <strong>Funnel</strong> (Trichter) dargestellt: Oben sind viele Menschen, die eine Marke gerade erst wahrnehmen, unten wenige, die kaufen und wiederkommen.</p>
+<pre class="mermaid"><code>flowchart LR
+    A(["Aufmerksamkeit"]) --&gt; B(["Interesse und Erwägung"])
+    B --&gt; C(["Kauf"])
+    C --&gt; D(["Bindung"])
+    D --&gt; E(["Empfehlung"])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Typische Marketingaufgabe</th>
+<th>Was generative KI beiträgt</th>
+<th>Vertiefung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aufmerksamkeit</td>
+<td>Social-Media-Posts, Kampagnenmotive, kurze Clips</td>
+<td>Ideen, Hooks, Textvarianten, Bildentwürfe, Storyboards</td>
+<td>Kap. 12, 14, 30–35</td>
+</tr>
+<tr>
+<td>Interesse und Erwägung</td>
+<td>Blogartikel, Ratgeber, Leadmagnete, SEO-Inhalte</td>
+<td>Gliederungen, Rohfassungen, FAQ, Briefings</td>
+<td>Kap. 15, 21, 22</td>
+</tr>
+<tr>
+<td>Kauf</td>
+<td>Produkttexte, Landingpages, Werbeanzeigen</td>
+<td>Varianten für A/B-Tests, Kürzen, Zielgruppenadaption</td>
+<td>Kap. 16</td>
+</tr>
+<tr>
+<td>Bindung</td>
+<td>Newsletter, Willkommensstrecken, Kundenservice</td>
+<td>Betreffzeilen, Sequenzen, Antwortentwürfe, Assistenten</td>
+<td>Kap. 13, 27</td>
+</tr>
+<tr>
+<td>Empfehlung</td>
+<td>Bewertungen auswerten, Community pflegen</td>
+<td>Sentiment- und Themenanalyse, Antwortvorschläge</td>
+<td>Kap. 19, 20</td>
+</tr>
+</tbody>
+</table>
+<p>Quer zu allen Phasen liegen Aufgaben, die keinen Kanal haben, aber viel Zeit kosten: <strong>Zielgruppenanalyse</strong> (Kap. 17, 18), <strong>Redaktionsplanung</strong> (Kap. 12) und <strong>Auswertung</strong> von Kampagnendaten (Kap. 20).</p>
+<div class="admonition example">
+<p class="admonition-title">Fjordlicht: ein Thema, fünf Phasen</p>
+<p>Fjordlicht bringt im Herbst die überarbeitete Regenjacke „Sølv" heraus. Entlang der Journey entstehen daraus: ein TikTok-Clip „Münsteraner Nieselregen-Test" (Aufmerksamkeit), ein Blogartikel „Woran du eine gute Regenjacke erkennst" in den „Draußen-Notizen" (Erwägung), eine Produktseite mit zwei Textvarianten für einen Test (Kauf), eine Pflegeanleitung als Newsletter-Strecke nach dem Kauf (Bindung) und eine Auswertung der ersten 200 Bewertungen (Empfehlung). KI hilft bei jedem Schritt – aber bei keinem ohne Briefing und Prüfung.</p>
+</div>
+<hr />
+<h2 id="33-die-werkzeuglandschaft-im-uberblick">3.3 Die Werkzeuglandschaft im Überblick<a class="headerlink" href="#33-die-werkzeuglandschaft-im-uberblick" title="Permanent link">&para;</a></h2>
+<p>Die Zahl der KI-Werkzeuge ist unüberschaubar und ändert sich ständig. Für den Kurs genügt eine Landkarte in fünf Kategorien. Die genannten Werkzeuge sind Beispiele, keine Empfehlungen; Funktionsumfang und Preise ändern sich schnell (Stand: Oktober 2026).</p>
+<table>
+<thead>
+<tr>
+<th>Kategorie</th>
+<th>Beispiele</th>
+<th>Typischer Marketing-Einsatz</th>
+<th>Vertiefung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Text und Chat</strong></td>
+<td>ChatGPT, Claude, Gemini, Microsoft Copilot, Perplexity (mit Quellen)</td>
+<td>Entwürfe, Varianten, Recherche, Auswertung, Ideen</td>
+<td>Block 2–4</td>
+</tr>
+<tr>
+<td><strong>Bild</strong></td>
+<td>ChatGPT Images (früher DALL·E), Midjourney, Ideogram, Adobe Firefly, Gemini-Bildmodelle, FLUX</td>
+<td>Moodboards, Kampagnenmotive, Hintergründe, Bildvarianten</td>
+<td>Block 6</td>
+</tr>
+<tr>
+<td><strong>Video</strong></td>
+<td>Google Veo, Runway, Kling, Luma, Adobe Firefly Video</td>
+<td>kurze Social-Clips, Animationen, Storyboards</td>
+<td>Kap. 35</td>
+</tr>
+<tr>
+<td><strong>Audio und Avatare</strong></td>
+<td>ElevenLabs, Suno, HeyGen, Synthesia</td>
+<td>Sprecherstimmen, Hintergrundmusik, Erklärvideos</td>
+<td>Kap. 36–38</td>
+</tr>
+<tr>
+<td><strong>Assistenten</strong></td>
+<td>Custom GPTs bzw. ChatGPT-Plugins, Projekte, Claude Projects, Gemini Gems, Copilot Agents</td>
+<td>wiederkehrende Aufgaben mit festen Regeln und Wissen</td>
+<td>Block 5</td>
+</tr>
+</tbody>
+</table>
+<p>Zwei Entwicklungen solltest du kennen, weil sie zeigen, wie schnell sich die Landschaft dreht. Erstens hat ChatGPT im Mai 2026 den Seitenleisten-Editor <strong>Canvas</strong> aus den aktuellen Modellen entfernt; an seine Stelle sind <strong>Schreibblöcke</strong> direkt in der Antwort getreten (Kap. 11). Zweitens löst OpenAI die <strong>Custom GPTs</strong> durch <strong>Plugins</strong> ab (angekündigt im September 2026, Migrationsfunktion seit Oktober 2026) (Kap. 23, 28). Das Arbeitsprinzip bleibt in beiden Fällen gleich – deshalb lernst du in diesem Kurs Prinzipien, die du auf das jeweils aktuelle Werkzeug überträgst.</p>
+<p>Für die Praxis ist außerdem eine Grundsatzfrage wichtig: <strong>Generalist oder Spezialist?</strong> Die großen Chat-Werkzeuge können inzwischen Text, Bild, Datenanalyse und Websuche in einem Fenster. Für viele Teams ist das der beste Einstieg, weil nur ein Werkzeug gelernt, lizenziert und datenschutzrechtlich geprüft werden muss. Spezialwerkzeuge lohnen sich, wenn eine Aufgabe häufig vorkommt und der Generalist dort sichtbar schwächer ist – etwa Typografie im Bild, Art Direction für Kampagnenmotive oder Sprecherstimmen. Welche Kriterien bei der Auswahl zählen, vertieft Kapitel 4.</p>
+<div class="admonition tip">
+<p class="admonition-title">Hauptwerkzeug und Alternativen</p>
+<p>Im Kurs arbeitest du vor allem mit <strong>ChatGPT</strong>. Alle Prompts sind so formuliert, dass sie auch in Claude, Gemini oder Copilot funktionieren. Wenn dein Unternehmen ein anderes Werkzeug lizenziert hat, nutze dieses – entscheidend ist, dass es für berufliche Daten freigegeben ist (Kap. 4).</p>
+</div>
+<hr />
+<h2 id="34-rollenverteilung-was-macht-der-mensch-was-die-ki">3.4 Rollenverteilung: Was macht der Mensch, was die KI?<a class="headerlink" href="#34-rollenverteilung-was-macht-der-mensch-was-die-ki" title="Permanent link">&para;</a></h2>
+<p>Die produktivste Form der Zusammenarbeit ist keine Arbeitsteilung „KI schreibt, Mensch liest drüber". Sie ist ein Prozess, in dem der Mensch <strong>Anfang und Ende</strong> verantwortet und die KI den arbeitsintensiven Mittelteil beschleunigt.</p>
+<table>
+<thead>
+<tr>
+<th>Schritt</th>
+<th>Mensch</th>
+<th>KI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ziel und Strategie</td>
+<td>legt Ziel, Zielgruppe, Botschaft fest</td>
+<td>kann Optionen vorschlagen, entscheidet nicht</td>
+</tr>
+<tr>
+<td>Briefing</td>
+<td>liefert Fakten, Markenstimme, No-Gos</td>
+<td>stellt Rückfragen, ergänzt Struktur</td>
+</tr>
+<tr>
+<td>Entwurf und Varianten</td>
+<td>wählt aus, kombiniert</td>
+<td>erzeugt schnell viele Fassungen</td>
+</tr>
+<tr>
+<td>Überarbeitung</td>
+<td>gibt gezielte Änderungsaufträge</td>
+<td>kürzt, schärft, passt an Kanäle an</td>
+</tr>
+<tr>
+<td>Prüfung</td>
+<td>prüft Fakten, Claims, Recht, Ton</td>
+<td>kann Checklisten abarbeiten, ersetzt aber keine Prüfung</td>
+</tr>
+<tr>
+<td>Freigabe und Veröffentlichung</td>
+<td>trägt die Verantwortung</td>
+<td>–</td>
+</tr>
+</tbody>
+</table>
+<p>Ein Prompt, der diese Rollenverteilung abbildet, sieht für Fjordlicht etwa so aus:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code>Du unterstützt das Marketingteam der Fjordlicht GmbH, einer Marke für
+nachhaltige Outdoor-Bekleidung aus Münster.
+
+Aufgabe: Schreibe drei Varianten für einen Instagram-Post zur neuen
+Regenjacke „Sølv&quot;.
+
+Fakten (nur diese verwenden):
+- Obermaterial 100 % recyceltes Polyamid
+- Wassersäule 20.000 mm
+- Gewicht 390 g
+
+Markenstimme: ruhig, ehrlich, leicht nordisch-trocken, Du-Ansprache,
+keine Superlative, keine Nachhaltigkeitsaussagen über die Fakten hinaus.
+
+Format: je Variante maximal 60 Wörter, ein Hook in der ersten Zeile,
+höchstens drei Hashtags.
+
+Wenn dir für eine Aussage ein Fakt fehlt, schreibe [FEHLT] statt zu raten.
+</code></pre></div></td></tr></table></div>
+<p>Ohne diese Angaben würde dieselbe Aufgabe – „Schreib einen Instagram-Post zur Regenjacke Sølv" – drei austauschbare Texte voller „perfekter Begleiter" und „umweltfreundlicher Innovation" liefern. Das ist kein Versagen des Werkzeugs, sondern die wahrscheinlichste Fortsetzung eines unbestimmten Auftrags (Kap. 1).</p>
+<p>Beachte, was in diesem Prompt steht: die <strong>Faktenliste</strong> (die KI soll nichts erfinden), die <strong>Markenstimme</strong> (die sie nicht kennen kann) und die Regel für <strong>fehlende Angaben</strong>. Wie du solche Prompts systematisch aufbaust, lernst du in Kapitel 5.</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>„Die KI hat das so geschrieben" ist keine Entschuldigung. Behauptet ein Post „klimaneutral", obwohl das nicht belegbar ist, haftet Fjordlicht – nicht das Werkzeug. Gerade bei <strong>Nachhaltigkeitsaussagen</strong> erfindet KI gern plausible Formulierungen, die rechtlich als Irreführung gelten können. Prüfung und Freigabe bleiben immer beim Menschen.</p>
+</div>
+<hr />
+<h2 id="35-realistischer-nutzen-rechnen-statt-schwarmen">3.5 Realistischer Nutzen: rechnen statt schwärmen<a class="headerlink" href="#35-realistischer-nutzen-rechnen-statt-schwarmen" title="Permanent link">&para;</a></h2>
+<p>Aussagen wie „KI spart 70 Prozent der Zeit" sind wertlos, solange niemand sagt, welche Aufgabe gemeint ist und was mitgerechnet wurde. Ehrlich wird die Rechnung erst, wenn du <strong>Prüf- und Korrekturzeit</strong> einbeziehst.</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe bei Fjordlicht</th>
+<th>ohne KI</th>
+<th>mit KI (inkl. Prüfung)</th>
+<th>Einschätzung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 Betreffzeilen für den Newsletter</td>
+<td>30 Min.</td>
+<td>10 Min.</td>
+<td>großer Gewinn – Varianten sind die Stärke der KI</td>
+</tr>
+<tr>
+<td>Produkttext „Vidde" auf drei Kanäle anpassen</td>
+<td>60 Min.</td>
+<td>25 Min.</td>
+<td>deutlicher Gewinn, Fakten vorher sammeln</td>
+</tr>
+<tr>
+<td>Blogartikel mit 1.200 Wörtern</td>
+<td>4 Std.</td>
+<td>2,5 Std.</td>
+<td>Gewinn, aber Faktencheck und eigene Erfahrung kosten Zeit</td>
+</tr>
+<tr>
+<td>Antwort auf eine heikle Kundenbeschwerde</td>
+<td>20 Min.</td>
+<td>20 Min.</td>
+<td>kaum Gewinn – Fingerspitzengefühl zählt</td>
+</tr>
+<tr>
+<td>Kampagnenstrategie für Fjordlicht Business</td>
+<td>2 Tage</td>
+<td>2 Tage</td>
+<td>KI liefert Anregungen, Entscheidung bleibt Kopfarbeit</td>
+</tr>
+</tbody>
+</table>
+<p>Die Zahlen sind Schätzungen für ein geübtes Team. Am Anfang dauert alles länger, weil Prompts, Vorlagen und Prüfroutinen erst entstehen müssen (Kap. 10). Das Muster ist aber typisch: Der Nutzen ist dort am größten, wo <strong>viele Varianten</strong> gebraucht werden und <strong>Fakten bekannt</strong> sind. Er ist gering, wo Urteilsvermögen, Beziehung oder Strategie gefragt sind.</p>
+<p>Es gibt außerdem Nutzen, der sich nicht in Minuten misst: mehr getestete Varianten, schnellere Reaktion auf Anlässe, weniger „leeres Blatt". Und es gibt Kosten, die oft vergessen werden: Lizenzen, Einarbeitung, Prüfaufwand und das Risiko eines peinlichen Fehlers.</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle: die Content-Flut</p>
+<p>Wenn ein Post nur noch fünf Minuten kostet, liegt es nahe, dreimal so viele zu veröffentlichen. Mehr Inhalt ist aber nicht automatisch mehr Wirkung – im Gegenteil: Austauschbare Masseninhalte schwächen die Marke, und Google wertet massenhaft erzeugte Inhalte zur Rankingmanipulation als Spam (Kap. 22). Nutze gewonnene Zeit lieber für <strong>bessere</strong> Inhalte, eigene Erfahrungen und Tests.</p>
+</div>
+<hr />
+<h2 id="36-womit-anfangen-ein-einfaches-bewertungsraster">3.6 Womit anfangen? Ein einfaches Bewertungsraster<a class="headerlink" href="#36-womit-anfangen-ein-einfaches-bewertungsraster" title="Permanent link">&para;</a></h2>
+<p>Statt KI überall gleichzeitig einzuführen, wählst du zwei bis drei Einsatzfelder, die sich lohnen und wenig Risiko tragen. Ein Raster mit vier Kriterien reicht dafür, jeweils mit 1 (gering) bis 3 (hoch) bewertet:</p>
+<table>
+<thead>
+<tr>
+<th>Kriterium</th>
+<th>Leitfrage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Häufigkeit</strong></td>
+<td>Wie oft fällt die Aufgabe an? Wöchentlich schlägt jährlich.</td>
+</tr>
+<tr>
+<td><strong>Zeitersparnis</strong></td>
+<td>Wie viel spart KI realistisch, inklusive Prüfung?</td>
+</tr>
+<tr>
+<td><strong>Risiko</strong> (umgekehrt werten)</td>
+<td>Was passiert bei einem Fehler? Interner Entwurf oder öffentliche Aussage?</td>
+</tr>
+<tr>
+<td><strong>Datenlage</strong></td>
+<td>Sind die nötigen Fakten vorhanden und dürfen sie ins Werkzeug?</td>
+</tr>
+</tbody>
+</table>
+<p>Für Fjordlicht landen „Newsletter-Betreffzeilen", „Social-Media-Varianten aus einem Blogartikel" und „Bewertungen auswerten" oben. „Antworten auf Presseanfragen" landet unten – selten, heikel, wenig Zeitgewinn.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier ist eine Liste von Marketingaufgaben unseres Teams:
+[Liste der Aufgaben]
+
+Bewerte jede Aufgabe von 1 bis 3 nach Häufigkeit, Zeitersparnis durch
+generative KI, Risiko bei Fehlern und Datenlage. Stelle das Ergebnis
+als Tabelle dar und begründe jede Bewertung in einem Satz.
+Kennzeichne Bewertungen, bei denen dir Informationen fehlen, mit [UNSICHER].
+</code></pre></div></td></tr></table></div>
+<p>Die KI-Bewertung ist ein <strong>Diskussionsanstoß</strong>, keine Entscheidung. Sie kennt euren Alltag nicht – aber sie zwingt dich, die Kriterien für jede Aufgabe einmal durchzudenken.</p>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KI-Einsatz beginnt bei der <strong>Aufgabe</strong>, nicht beim Werkzeug – Werkzeuge wechseln, Aufgaben bleiben.</li>
+<li>Entlang der <strong>Customer Journey</strong> gibt es in jeder Phase Einsatzfelder, vom Hook bis zur Bewertungsanalyse.</li>
+<li>Die <strong>Werkzeuglandschaft</strong> gliedert sich in Text, Bild, Video, Audio/Avatare und Assistenten; sie ändert sich schnell, die Prinzipien bleiben.</li>
+<li>Der Mensch verantwortet <strong>Ziel, Briefing, Prüfung und Freigabe</strong>, die KI beschleunigt Entwurf, Varianten und Überarbeitung.</li>
+<li>Realistischer Nutzen ergibt sich erst <strong>inklusive Prüfzeit</strong>; er ist groß bei Varianten mit bekannten Fakten und klein bei Urteils- und Beziehungsarbeit.</li>
+<li>Mehr Inhalt ist nicht mehr Wirkung: gewonnene Zeit in <strong>Qualität</strong> investieren.</li>
+<li>Ein Raster aus <strong>Häufigkeit, Zeitersparnis, Risiko und Datenlage</strong> zeigt, womit ein Team sinnvoll anfängt.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Einsatzfelder der Customer Journey zuordnen</summary>
+<p>Ordne die folgenden Marketingaufgaben von Fjordlicht der passenden Phase der Customer Journey
+zu – Aufmerksamkeit, Interesse und Erwägung, Kauf, Bindung, Empfehlung – und nenne jeweils
+einen konkreten Beitrag, den generative KI leisten kann.</p>
+<ol>
+<li>Willkommensstrecke für neue Newsletter-Abonnenten</li>
+<li>TikTok-Clip zum Wandern im Münsterland</li>
+<li>Zwei Varianten der Produktseite für den Rucksack „Tind"</li>
+<li>Auswertung von 300 Kundenbewertungen zur Fleecejacke „Skog"</li>
+<li>Ratgeberartikel „Zwiebelprinzip im Herbst" im Blog „Draußen-Notizen"</li>
+</ol>
+<p>Nenne anschließend eine Aufgabe aus der Liste, bei der der Nutzen von KI am größten ist, und
+begründe in zwei Sätzen.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Frage dich bei jeder Aufgabe: In welchem Moment begegnet die Person dem Inhalt – kennt sie die
+Marke noch nicht, vergleicht sie gerade, kauft sie oder ist sie schon Kundin?</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Phase</th>
+<th>Beitrag der KI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Bindung</td>
+<td>Aufbau der Sequenz, Betreffzeilen, Textentwürfe je Mail</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Aufmerksamkeit</td>
+<td>Hook-Ideen, Skript, Storyboard, Untertitel</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Kauf</td>
+<td>Textvarianten mit genau einer veränderten Variable für den Test</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Empfehlung</td>
+<td>Themen- und Stimmungsanalyse, häufige Kritikpunkte bündeln</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Interesse und Erwägung</td>
+<td>Gliederung, Rohfassung, FAQ-Block</td>
+</tr>
+</tbody>
+</table>
+<p>Größter Nutzen: meist Nr. 4 oder Nr. 3. Bei der Bewertungsauswertung erledigt KI in Minuten,
+was von Hand Stunden dauert, und die Datengrundlage liegt vollständig vor. Bei den Varianten
+spielt KI ihre Kernstärke aus – viele Fassungen auf Basis bekannter Fakten.</p>
+<p>Auch Nr. 5 ist vertretbar, wenn die Begründung die Prüfzeit mitdenkt. Wer „Blogartikel" ohne
+Hinweis auf Faktencheck und eigene Erfahrung nennt, hat den realistischen Nutzen überschätzt.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Zeitrechnung für eine echte Aufgabe</summary>
+<p>Diese Übung machst du direkt im KI-Werkzeug. Wähle eine Aufgabe für Fjordlicht oder ein
+Unternehmen deiner Wahl, zum Beispiel: fünf Instagram-Captions zur Wanderhose „Vidde" oder
+einen Newsletter-Teaser zum Herbstsortiment.</p>
+<ol>
+<li><strong>Schätzen.</strong> Notiere, wie lange du ohne KI bräuchtest.</li>
+<li><strong>Faktenliste.</strong> Schreibe zuerst die Fakten auf, die im Text vorkommen dürfen (bei
+   Fjordlicht fiktive Angaben, z. B. Material, Gewicht, Preis). Stoppe die Zeit.</li>
+<li><strong>Erstellen.</strong> Lass die Texte mit einem Prompt nach dem Muster aus Abschnitt 3.4 erzeugen.
+   Stoppe die Zeit.</li>
+<li><strong>Prüfen.</strong> Prüfe jeden Text auf erfundene Angaben, Markenstimme und Länge, und korrigiere.
+   Stoppe die Zeit.</li>
+<li><strong>Bilanz.</strong> Vergleiche die Summe aus Schritt 2 bis 4 mit deiner Schätzung aus Schritt 1.</li>
+</ol>
+<p>Halte fest: Wie viel Prozent der Zeit mit KI entfielen auf Vorbereitung und Prüfung?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Die Faktenliste fühlt sich wie Zusatzaufwand an. Sie ist aber der Grund, warum die Prüfung
+schnell geht: Du vergleichst nur noch mit der Liste, statt jede Aussage einzeln zu recherchieren.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Typisches Ergebnis bei kurzen Social-Media-Texten:</p>
+<table>
+<thead>
+<tr>
+<th>Schritt</th>
+<th>Zeit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schätzung ohne KI</td>
+<td>30–40 Min.</td>
+</tr>
+<tr>
+<td>Faktenliste</td>
+<td>5–8 Min.</td>
+</tr>
+<tr>
+<td>Erstellung mit KI</td>
+<td>2–5 Min.</td>
+</tr>
+<tr>
+<td>Prüfung und Korrektur</td>
+<td>8–12 Min.</td>
+</tr>
+<tr>
+<td>Summe mit KI</td>
+<td>15–25 Min.</td>
+</tr>
+</tbody>
+</table>
+<p>Meist entfallen <strong>mehr als die Hälfte</strong> der Zeit mit KI auf Vorbereitung und Prüfung. Das ist
+kein Fehler, sondern der Normalfall – und genau der Teil, den Werbeversprechen weglassen.</p>
+<p>Häufige Prüffunde: ein erfundenes Material- oder Nachhaltigkeitsdetail, Superlative gegen die
+Markenstimme, zu viele Hashtags, ein Hook, der in allen Varianten fast gleich ist. Wer keinen
+einzigen Fund hat, sollte die Texte noch einmal Satz für Satz gegen die Faktenliste lesen.</p>
+<p>Eine gute Bearbeitung enthält alle fünf Zeitwerte, die Prozentangabe und mindestens einen
+konkreten Prüffund.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Einen Werbeversprechen-Check durchführen</summary>
+<p>Die Geschäftsführung von Fjordlicht hat auf einer Messe folgende Aussagen eines Anbieters
+gehört und möchte sie als Grundlage für die KI-Einführung übernehmen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>1. „Mit unserer Plattform erstellt ein Marketingteam zehnmal so viel Content.&quot;
+2. „Die KI kennt eure Marke nach dem ersten Prompt.&quot;
+3. „Prüfung ist nicht mehr nötig – unser Modell halluziniert nicht.&quot;
+4. „KI-Texte ranken bei Google genauso gut wie menschliche.&quot;
+5. „Ihr spart 70 Prozent eurer Marketingkosten.&quot;
+</code></pre></div></td></tr></table></div>
+<p>Bewerte jede Aussage kritisch: Was ist daran richtig, was irreführend, und welche Frage
+würdest du dem Anbieter stellen? Formuliere zum Schluss in höchstens fünf Sätzen eine
+realistische Erwartung, die du der Geschäftsführung stattdessen vorschlägst.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Fast jede Aussage hat einen wahren Kern. Die Kunst ist, die fehlende Bedingung zu finden:
+unter welchen Voraussetzungen, für welche Aufgabe, inklusive welcher Kosten?</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Wahrer Kern</th>
+<th>Problem</th>
+<th>Frage an den Anbieter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Entwürfe entstehen viel schneller</td>
+<td>Menge ist kein Ziel; Prüfung skaliert nicht mit</td>
+<td>Mehr Wirkung oder nur mehr Output?</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Mit Styleguide im Kontext wird die Stimme besser</td>
+<td>Ohne Beispiele und Regeln kennt das Modell die Marke nicht</td>
+<td>Wie wird Markenwissen hinterlegt und gepflegt?</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Mit Quellenbindung sinkt das Risiko</td>
+<td>Kein Sprachmodell ist frei von Halluzinationen (Kap. 2)</td>
+<td>Welche Fehlerquote wurde wie gemessen?</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Google bewertet Qualität, nicht Entstehungsweise</td>
+<td>Massenhaft erzeugter Inhalt zur Rankingmanipulation gilt als Spam (Kap. 22)</td>
+<td>Wie sichert ihr Qualität und eigene Erfahrung?</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Einzelne Aufgaben werden deutlich günstiger</td>
+<td>Pauschalwert ohne Aufgabenbezug, Lizenz- und Prüfkosten fehlen</td>
+<td>Für welche Aufgaben, inklusive welcher Kosten?</td>
+</tr>
+</tbody>
+</table>
+<p>Beispiel für eine realistische Erwartung:</p>
+<p>„Wir erwarten deutliche Zeitersparnis bei wiederkehrenden Texten mit bekannten Fakten, etwa
+Betreffzeilen, Varianten und Kanaladaptionen. Strategie, Prüfung und Freigabe bleiben beim
+Team. Wir starten mit drei Einsatzfeldern und messen die Zeit inklusive Prüfung. Nach acht
+Wochen entscheiden wir auf Basis dieser Zahlen über den Ausbau. Mehr Inhalt ist kein Ziel,
+bessere Inhalte schon."</p>
+<p>Bewertungskriterien: Jede Aussage wird differenziert statt pauschal verworfen, die
+Prüfkosten werden mitgedacht, und die Erwartung ist messbar formuliert.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> KI-Landkarte für ein Marketingteam</summary>
+<p><strong>Szenario:</strong> Das fünfköpfige Marketingteam von Fjordlicht nutzt KI bisher unkoordiniert:
+Eine Person schreibt Captions mit ChatGPT, eine andere testet Midjourney privat, der Rest
+wartet ab. Die Marketingleitung möchte bis zum Monatsende wissen, wo KI im Team sinnvoll
+eingesetzt wird, womit ihr anfangt und was ausdrücklich nicht passieren soll. Du kannst
+alternativ ein Unternehmen deiner Wahl verwenden.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Unternehmen: Fjordlicht GmbH oder ein Unternehmen deiner Wahl
+Team: 5 Personen, sehr unterschiedliche KI-Erfahrung
+Kanäle: Webshop, Blog, Newsletter, Instagram, TikTok, LinkedIn, Pinterest
+Budget für Werkzeuge: begrenzt, maximal zwei neue Lizenzen
+Keine echten Kundendaten in den Übungen, nur fiktive Angaben
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Landkarte erstellen.</strong> Sammle mindestens zwölf wiederkehrende Marketingaufgaben
+und ordne sie den Phasen der Customer Journey aus Abschnitt 3.2 zu. Notiere zu jeder Aufgabe,
+welche Werkzeugkategorie aus Abschnitt 3.3 passen würde. Nutze dein KI-Werkzeug als
+Ideengeber, aber streiche Aufgaben, die es bei euch gar nicht gibt.</p>
+<p><strong>Runde 2 – Bewerten und auswählen.</strong> Bewerte alle Aufgaben mit dem Raster aus Abschnitt 3.6
+(Häufigkeit, Zeitersparnis, Risiko, Datenlage). Wähle die <strong>drei</strong> Aufgaben, mit denen das
+Team startet, und lege für jede die Rollenverteilung nach Abschnitt 3.4 fest: Was macht der
+Mensch, was die KI, wer gibt frei?</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Die Social-Media-Verantwortliche hat einen KI-Post zur
+Regenjacke „Sølv" veröffentlicht, in dem „100 Prozent klimaneutral produziert" steht. Das ist
+nicht belegbar, eine Kundin fragt öffentlich nach. Überprüfe deine Auswahl aus Runde 2:
+Welche Prüfschritte fehlten? Ergänze für jede deiner drei Aufgaben einen verbindlichen
+Prüfpunkt und formuliere eine kurze, ehrliche Antwort an die Kundin.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Geschäftsführung schlägt vor, statt drei
+Aufgaben sofort alle zwölf mit KI umzustellen und die Posting-Frequenz zu verdreifachen, „weil
+es ja jetzt schnell geht". Lass dir von deinem KI-Werkzeug Argumente für diesen Vorschlag
+liefern. <strong>Widersprich</strong> den Argumenten, die nicht tragen, und entscheide begründet, ob und
+wie weit du dem Vorschlag folgst.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Landkarte mit mindestens zwölf Aufgaben, Journey-Phase und Werkzeugkategorie</li>
+<li>Bewertungstabelle nach dem Raster mit den drei ausgewählten Startaufgaben</li>
+<li>Rollenverteilung und Prüfpunkte für die drei Startaufgaben, ergänzt nach Runde 3</li>
+<li>Antwort an die Kundin aus Runde 3</li>
+<li>Stellungnahme zu Runde 4 mit begründeter Entscheidung</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jede der drei Startaufgaben einen benannten Menschen für die
+Freigabe und mindestens einen überprüfbaren Prüfpunkt hat, die Antwort an die Kundin keine
+neue unbelegte Aussage enthält und deine Entscheidung in Runde 4 mindestens zwei Argumente
+einzeln widerlegt oder bestätigt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 3 und 4: Der Nutzen von KI im Marketing hängt weniger an der
+Generierung als an Prüfung und Auswahl. Eine Landkarte ohne Prüfpunkte ist ein Wunschzettel.
+Und mehr Output ist nur dann ein Gewinn, wenn Qualität und Markenstimme mitwachsen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) Die Landkarte enthält realistische, wiederkehrende Aufgaben und
+ordnet sie plausibel Phasen und Werkzeugkategorien zu; (2) die Bewertung nutzt alle vier
+Kriterien und die Auswahl folgt nachvollziehbar daraus, bevorzugt häufige Aufgaben mit
+bekannten Fakten und geringem Risiko; (3) die Rollenverteilung legt Briefing, Prüfung und
+Freigabe eindeutig beim Menschen fest, und die Prüfpunkte nach Runde 3 sind konkret (etwa
+Abgleich mit einer Claim-Liste belegbarer Nachhaltigkeitsaussagen); (4) die Antwort an die
+Kundin korrigiert ehrlich, ohne neue Behauptungen; (5) die Stellungnahme zu Runde 4 trennt
+Zeitersparnis von Wirkung, berücksichtigt Prüfaufwand, Markenwirkung und Spam-Risiko und
+kommt zu einer abgestuften Entscheidung statt zu einem pauschalen Ja oder Nein.</p>
+<p>Lernziel: KI-Einsatz im Marketing an Aufgaben, Risiken und Verantwortlichkeiten festmachen –
+und verstehen, dass Prüfung und Freigabe den realistischen Nutzen bestimmen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 2 – Generative KI: Chancen und Grenzen">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 2 – Generative KI: Chancen und Grenzen
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel4/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 4 – Regulatorischer Rahmen und Best Practices">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 4 – Regulatorischer Rahmen und Best Practices
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

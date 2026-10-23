@@ -1,0 +1,2234 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel34/">
+      
+      
+        <link rel="next" href="../kapitel36/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 35 – KI-Videos: Text-to-Video und Animation - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-35-ki-videos-text-to-video-und-animation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 35 – KI-Videos: Text-to-Video und Animation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Block 7 · Multimediale Content Creation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 35 – KI-Videos: Text-to-Video und Animation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 35 – KI-Videos: Text-to-Video und Animation
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#351-was-videomodelle-konnen-und-was-nicht" class="md-nav__link">
+    <span class="md-ellipsis">
+      35.1 Was Videomodelle können – und was nicht
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#352-die-werkzeuglandschaft-stand-oktober-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      35.2 Die Werkzeuglandschaft (Stand: Oktober 2026)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#353-der-videoprompt-bildprompt-plus-bewegung" class="md-nav__link">
+    <span class="md-ellipsis">
+      35.3 Der Videoprompt: Bildprompt plus Bewegung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#354-bild-zu-video-der-kontrollierte-weg" class="md-nav__link">
+    <span class="md-ellipsis">
+      35.4 Bild-zu-Video: der kontrollierte Weg
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#355-vom-storyboard-zum-social-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      35.5 Vom Storyboard zum Social-Clip
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#356-grenzen-und-schnitt-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      35.6 Grenzen und Schnitt-Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel36/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 36 – Avatar-Videos und KI-Sprecher
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel37/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 37 – KI-Musik & Audio für Social Media
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel38/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 38 – Voice Cloning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-35-ki-videos-text-to-video-und-animation">Kapitel 35 – KI-Videos: Text-to-Video und Animation<a class="headerlink" href="#kapitel-35-ki-videos-text-to-video-und-animation" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was <strong>Videomodelle</strong> heute leisten – Text-zu-Video, Bild-zu-Video, Bearbeitung – und wo sie verlässlich scheitern</li>
+<li>Welche <strong>Werkzeuge</strong> es im Herbst 2026 gibt (Veo, Runway, Kling, Luma, Firefly Video, Sora) und wie du auswählst</li>
+<li>Wie ein <strong>Videoprompt</strong> aufgebaut ist: Szene, Handlung, <strong>Kamerabewegung</strong>, Licht, Stil, Ton</li>
+<li>Warum <strong>Bild-zu-Video</strong> im Marketing meist der kontrolliertere Weg ist</li>
+<li>Wie du mit ChatGPT ein <strong>Storyboard</strong> und daraus kurze <strong>Social-Clips</strong> planst</li>
+<li>Wie der <strong>Schnitt-Workflow</strong> aussieht und welche Grenzen du einplanen musst</li>
+</ul>
+</div>
+<hr />
+<h2 id="351-was-videomodelle-konnen-und-was-nicht">35.1 Was Videomodelle können – und was nicht<a class="headerlink" href="#351-was-videomodelle-konnen-und-was-nicht" title="Permanent link">&para;</a></h2>
+<p>Videomodelle funktionieren im Kern wie die Bildmodelle aus Kapitel 29 – mit einer zusätzlichen Dimension: der <strong>Zeit</strong>. Das Modell erzeugt nicht ein Bild, sondern eine Folge von Bildern, die zueinander passen müssen. Genau dort liegen Stärke und Schwäche zugleich: Licht, Stimmung und Bewegung wirken oft verblüffend echt, aber über mehrere Sekunden hinweg müssen Gesichter, Hände, Logos und Produktdetails stabil bleiben. Das gelingt nicht immer.</p>
+<p>Drei Arbeitsweisen solltest du unterscheiden:</p>
+<table>
+<thead>
+<tr>
+<th>Arbeitsweise</th>
+<th>Was du eingibst</th>
+<th>Typischer Einsatz</th>
+<th>Kontrolle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Text-zu-Video</strong></td>
+<td>nur einen Prompt</td>
+<td>Stimmungsbilder, Hintergründe, Ideenskizzen</td>
+<td>gering</td>
+</tr>
+<tr>
+<td><strong>Bild-zu-Video</strong></td>
+<td>ein Startbild (ggf. Endbild) plus Prompt</td>
+<td>Produktszene animieren, Kampagnenmotiv bewegen</td>
+<td>hoch</td>
+</tr>
+<tr>
+<td><strong>Video-zu-Video / Bearbeitung</strong></td>
+<td>ein vorhandenes Video plus Anweisung</td>
+<td>Stil ändern, Objekte entfernen, Szene verlängern</td>
+<td>mittel bis hoch</td>
+</tr>
+</tbody>
+</table>
+<p>Ein generierter Clip ist <strong>kurz</strong>: typischerweise einige Sekunden pro Durchgang. Längere Sequenzen entstehen durch Verlängern, Aneinanderreihen und Schnitt. Wer „einen zweiminütigen Imagefilm per Prompt" erwartet, wird enttäuscht – wer 6 bis 15 Sekunden für einen Reel-Einstieg, einen Hintergrund oder eine Produktanimation braucht, bekommt oft sehr Brauchbares.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>KI-Video liefert <strong>Einstellungen</strong>, keine fertigen Filme. Den Film machst du im Schnitt – mit Dramaturgie, Text, Ton und Prüfung.</p>
+</div>
+<hr />
+<h2 id="352-die-werkzeuglandschaft-stand-oktober-2026">35.2 Die Werkzeuglandschaft (Stand: Oktober 2026)<a class="headerlink" href="#352-die-werkzeuglandschaft-stand-oktober-2026" title="Permanent link">&para;</a></h2>
+<p>Der Markt bewegt sich schneller als bei Text und Bild. Versionsnummern veralten in Wochen; entscheidend sind Fähigkeiten, Nutzungsbedingungen und Integration. Die folgende Übersicht ist eine Momentaufnahme.</p>
+<table>
+<thead>
+<tr>
+<th>Werkzeug</th>
+<th>Anbieter</th>
+<th>Besonderheiten</th>
+<th>Hinweise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Veo</strong> (3.x)</td>
+<td>Google</td>
+<td>erzeugt Video <strong>mit Ton</strong> (Geräusche, Atmosphäre, auch Sprache), u. a. über Gemini und Google Flow</td>
+<td>Wasserzeichen SynthID</td>
+</tr>
+<tr>
+<td><strong>Runway</strong> (Gen-4.5)</td>
+<td>Runway</td>
+<td>starke Bearbeitungs- und Editing-Funktionen, Referenzbilder, Kamerasteuerung</td>
+<td>eher Profi-Werkzeug</td>
+</tr>
+<tr>
+<td><strong>Kling</strong> (3.0)</td>
+<td>Kuaishou</td>
+<td>realistische Bewegungen, Bild-zu-Video, Start-/Endbild</td>
+<td>Datenschutz und Nutzungsbedingungen prüfen</td>
+</tr>
+<tr>
+<td><strong>Luma</strong></td>
+<td>Luma AI</td>
+<td>flüssige Kamerafahrten, schnelle Iteration</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Adobe Firefly Video</strong></td>
+<td>Adobe</td>
+<td>Integration in Adobe-Umgebung, kommerziell abgesichert beworben, Content Credentials</td>
+<td>naheliegend, wenn das Team ohnehin mit Adobe arbeitet</td>
+</tr>
+<tr>
+<td><strong>Sora</strong> (2)</td>
+<td>OpenAI</td>
+<td>App-basiert, hohe Qualität</td>
+<td>Sora-2-API wurde am 24.09.2026 eingestellt – Zukunft unklar, nicht als Kernwerkzeug einplanen</td>
+</tr>
+</tbody>
+</table>
+<p>Für die Auswahl helfen dieselben Kriterien wie bei Bildwerkzeugen (Kap. 29): Qualität für deinen Anwendungsfall, Rechte und kommerzielle Nutzung, Datenschutz (wo werden hochgeladene Produktfotos verarbeitet?), Integration in eure Werkzeuge und Kosten. Fast alle Anbieter rechnen über <strong>Credits</strong> ab – ein Clip kostet je nach Länge und Qualität unterschiedlich viel, und verworfene Versuche zählen mit.</p>
+<div class="admonition tip">
+<p class="admonition-title">Kosten realistisch planen</p>
+<p>Rechne für einen brauchbaren Clip mit <strong>fünf bis zehn Versuchen</strong>. Wer das Credit-Budget für einen Monat an einem Nachmittag verbraucht, hat meist ohne Storyboard drauflosgeneriert.</p>
+</div>
+<hr />
+<h2 id="353-der-videoprompt-bildprompt-plus-bewegung">35.3 Der Videoprompt: Bildprompt plus Bewegung<a class="headerlink" href="#353-der-videoprompt-bildprompt-plus-bewegung" title="Permanent link">&para;</a></h2>
+<p>Ein Videoprompt enthält alles, was du in Kapitel 30 für Bildprompts gelernt hast – Motiv, Umgebung, Stil, Licht, Farbstimmung, Format. Hinzu kommen drei Bausteine, die es im Standbild nicht gibt: <strong>Handlung</strong>, <strong>Kamerabewegung</strong> und <strong>Ton</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Baustein</th>
+<th>Leitfrage</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Szene</td>
+<td>Wo und wann?</td>
+<td>„Küstenpfad an der Nordsee, später Nachmittag, leichter Nieselregen"</td>
+</tr>
+<tr>
+<td>Motiv</td>
+<td>Wer oder was?</td>
+<td>„Frau Mitte 30 in einer salbeigrünen Regenjacke"</td>
+</tr>
+<tr>
+<td><strong>Handlung</strong></td>
+<td>Was passiert in diesen Sekunden?</td>
+<td>„sie zieht die Kapuze hoch und geht gegen den Wind weiter"</td>
+</tr>
+<tr>
+<td><strong>Kamera</strong></td>
+<td>Wie bewegt sich der Blick?</td>
+<td>„langsame Kamerafahrt seitlich mit, auf Schulterhöhe"</td>
+</tr>
+<tr>
+<td>Licht &amp; Stil</td>
+<td>Wie sieht es aus?</td>
+<td>„gedämpftes Tageslicht, natürliche Farben, dokumentarischer Look"</td>
+</tr>
+<tr>
+<td><strong>Ton</strong></td>
+<td>Was hört man? (falls das Modell Ton erzeugt)</td>
+<td>„Wind, Regen auf Stoff, entfernte Möwen, keine Musik"</td>
+</tr>
+<tr>
+<td>Format &amp; Dauer</td>
+<td>Wofür?</td>
+<td>„9:16, 8 Sekunden"</td>
+</tr>
+</tbody>
+</table>
+<p>Die wichtigsten <strong>Kamerabewegungen</strong> solltest du benennen können – die Modelle verstehen die englischen Fachbegriffe meist besser als die deutschen:</p>
+<table>
+<thead>
+<tr>
+<th>Begriff</th>
+<th>Bedeutung</th>
+<th>Wirkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Static shot</td>
+<td>Kamera steht still</td>
+<td>ruhig, sachlich</td>
+</tr>
+<tr>
+<td>Pan</td>
+<td>Schwenk nach links/rechts</td>
+<td>Überblick, Umgebung zeigen</td>
+</tr>
+<tr>
+<td>Tilt</td>
+<td>Neigung nach oben/unten</td>
+<td>Größe, Enthüllung</td>
+</tr>
+<tr>
+<td>Dolly in / out</td>
+<td>Kamera fährt heran / weg</td>
+<td>Nähe aufbauen / Kontext öffnen</td>
+</tr>
+<tr>
+<td>Tracking shot</td>
+<td>Kamera begleitet das Motiv</td>
+<td>Dynamik, Mitgehen</td>
+</tr>
+<tr>
+<td>Orbit</td>
+<td>Kamera kreist um das Motiv</td>
+<td>Produkt von allen Seiten</td>
+</tr>
+<tr>
+<td>Drone / aerial shot</td>
+<td>Luftaufnahme</td>
+<td>Landschaft, Weite</td>
+</tr>
+<tr>
+<td>Handheld</td>
+<td>leicht wackelnd</td>
+<td>authentisch, dokumentarisch</td>
+</tr>
+</tbody>
+</table>
+<p>Ein vollständiger Videoprompt für Fjordlicht sieht so aus:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>Szene: Küstenpfad an der Nordsee, später Nachmittag, leichter Nieselregen,
+graue Wolken mit hellem Streifen am Horizont.
+Motiv und Handlung: Eine Frau Mitte 30 in einer schlichten salbeigrünen
+Regenjacke ohne sichtbares Logo zieht die Kapuze hoch und geht ruhig
+gegen den Wind weiter. Regentropfen perlen auf dem Stoff ab.
+Kamera: langsamer Tracking Shot seitlich auf Schulterhöhe, dann leichter
+Dolly in auf die Schulterpartie der Jacke.
+Licht und Stil: gedämpftes Tageslicht, natürliche, leicht kühle Farben,
+dokumentarischer Look, keine Hochglanzwerbung.
+Ton: Wind, Regen auf Stoff, entfernte Möwen, keine Musik, keine Sprache.
+Format: 9:16, etwa 8 Sekunden.
+Vermeide: Text im Bild, Logos, übertriebene Zeitlupe.
+</code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Zu viel Handlung in einem Clip. „Sie geht los, trinkt Kaffee, packt den Rucksack, steigt auf den Gipfel und lacht in die Kamera" überfordert jedes Modell – das Ergebnis springt oder verformt sich. <strong>Eine Einstellung, eine Handlung.</strong> Mehrere Handlungen werden mehrere Clips.</p>
+</div>
+<hr />
+<h2 id="354-bild-zu-video-der-kontrollierte-weg">35.4 Bild-zu-Video: der kontrollierte Weg<a class="headerlink" href="#354-bild-zu-video-der-kontrollierte-weg" title="Permanent link">&para;</a></h2>
+<p>Im Marketing ist Text-zu-Video vor allem für Stimmungen, Landschaften und Hintergründe geeignet. Sobald ein <strong>konkretes Produkt</strong> im Bild ist, wird Bild-zu-Video meist zur besseren Wahl: Du startest mit einem Bild, das du geprüft hast, und das Modell bewegt es nur noch.</p>
+<p>Typische Startbilder:</p>
+<ul>
+<li>ein <strong>echtes Produktfoto</strong> (z. B. Rucksack „Tind" auf einem Felsen) – das Modell ergänzt Bewegung von Nebel, Licht, Gräsern</li>
+<li>ein in Kapitel 33 erstelltes <strong>Kampagnenmotiv</strong>, das als Reel-Variante leicht animiert wird</li>
+<li>ein <strong>Start- und ein Endbild</strong>, zwischen denen das Modell den Übergang erzeugt</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Animiere dieses Bild dezent. Die Kamera fährt sehr langsam heran
+(slow dolly in). Nebel zieht von links nach rechts durch das Tal,
+die Gräser im Vordergrund bewegen sich leicht im Wind.
+Der Rucksack selbst bleibt unverändert: keine Verformung,
+keine zusätzlichen Riemen, keine neuen Details, kein Text.
+Dauer etwa 6 Sekunden, ruhige Stimmung.
+</code></pre></div></td></tr></table></div>
+<p>Auch beim Animieren eines echten Fotos kann das Modell das Produkt verändern: Nähte verschwinden, Reißverschlüsse wandern, Farben kippen. Ein Video, das ein Produkt anders zeigt, als es ist, ist dasselbe Täuschungsrisiko wie beim Bild (Kap. 34) – nur schwerer zu bemerken, weil es sich bewegt.</p>
+<div class="admonition tip">
+<p class="admonition-title">Prüfen in Einzelbildern</p>
+<p>Schau dir jeden Clip vor der Freigabe <strong>Bild für Bild</strong> an oder zumindest in halber Geschwindigkeit. Verformungen dauern oft nur wenige Frames und fallen bei normaler Wiedergabe erst beim dritten Ansehen auf – dann aber auch der Kundschaft.</p>
+</div>
+<hr />
+<h2 id="355-vom-storyboard-zum-social-clip">35.5 Vom Storyboard zum Social-Clip<a class="headerlink" href="#355-vom-storyboard-zum-social-clip" title="Permanent link">&para;</a></h2>
+<p>Das Videomodell ist der letzte Schritt, nicht der erste. Davor steht die Frage, was der Clip erreichen soll – und dabei hilft ChatGPT (oder Claude, Gemini, Copilot) als Planungswerkzeug.</p>
+<pre class="mermaid"><code>flowchart LR
+    A(["Ziel und Kanal klären"]) --&gt; B(["Storyboard mit ChatGPT"])
+    B --&gt; C(["Videoprompts je Einstellung"])
+    C --&gt; D(["Generieren und auswählen"])
+    D --&gt; E(["Schnitt, Text, Ton"])
+    E --&gt; F(["Prüfen und freigeben"])</code></pre>
+<p>Ein Storyboard-Prompt nach dem P.R.O.M.P.T.-Prinzip (Kap. 5):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist Art Director für kurze Social-Media-Videos.
+Erstelle ein Storyboard für ein Instagram-Reel (9:16, 15 Sekunden)
+zum Fleece &quot;Skog&quot; von Fjordlicht.
+Ziel: Aufmerksamkeit bei naturverbundenen Stadtmenschen 25-45,
+Botschaft: warm, leicht, für kühle Herbstmorgen draußen.
+Format: Tabelle mit den Spalten Nr., Dauer, Bildinhalt, Handlung,
+Kamerabewegung, Ton, Texteinblendung.
+Regeln: 4 bis 5 Einstellungen, jede mit genau einer Handlung.
+Die ersten 2 Sekunden müssen ohne Ton verständlich sein.
+Keine Nachhaltigkeitsaussagen außer: [belegte Aussage aus Claim-Liste].
+Ton: ruhig, ehrlich, leicht nordisch-trocken, keine Superlative.
+Schreibe danach für jede Einstellung einen eigenen Videoprompt.
+</code></pre></div></td></tr></table></div>
+<p>Für kurze Social-Clips gelten die Plattformlogiken aus Kapitel 14: Der <strong>Hook</strong> muss in den ersten ein bis zwei Sekunden sitzen, viele schauen <strong>ohne Ton</strong> (also Untertitel und Texteinblendungen), das Format ist meist <strong>9:16</strong>. Für LinkedIn (Fjordlicht Business) funktionieren ruhigere, sachlichere Clips oft besser als schnelle Schnitte.</p>
+<table>
+<thead>
+<tr>
+<th>Clip-Typ</th>
+<th>Eignung für KI-Video</th>
+<th>Bemerkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stimmungs-Intro (Landschaft, Wetter)</td>
+<td>sehr gut</td>
+<td>kaum Konsistenzprobleme</td>
+</tr>
+<tr>
+<td>Produkt in Bewegung (Bild-zu-Video)</td>
+<td>gut, mit Prüfung</td>
+<td>echtes Produktfoto als Basis</td>
+</tr>
+<tr>
+<td>Hintergrund für Texteinblendung</td>
+<td>sehr gut</td>
+<td>Text kommt im Schnitt dazu</td>
+</tr>
+<tr>
+<td>Person mit Gesicht über mehrere Einstellungen</td>
+<td>eingeschränkt</td>
+<td>Gesicht verändert sich zwischen Clips</td>
+</tr>
+<tr>
+<td>Anleitung (z. B. Imprägnieren)</td>
+<td>schlecht</td>
+<td>echte Handgriffe filmen</td>
+</tr>
+<tr>
+<td>Testimonial</td>
+<td>ungeeignet</td>
+<td>erfundene Kundenstimme = Täuschung</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="356-grenzen-und-schnitt-workflow">35.6 Grenzen und Schnitt-Workflow<a class="headerlink" href="#356-grenzen-und-schnitt-workflow" title="Permanent link">&para;</a></h2>
+<p>Die typischen Fehlerbilder kennst du teilweise aus der Bild-KI, im Video kommen eigene hinzu:</p>
+<ul>
+<li><strong>Physik:</strong> Wasser fließt bergauf, Schritte passen nicht zum Untergrund, Gegenstände durchdringen sich.</li>
+<li><strong>Konsistenz:</strong> Dieselbe Person sieht in Einstellung 2 anders aus als in Einstellung 1; Jackenfarbe und Details wandern. Referenzbilder und Charakter-Funktionen helfen, lösen es aber nicht vollständig.</li>
+<li><strong>Hände, Text, Logos:</strong> Schrift im Video ist noch unzuverlässiger als im Bild. Text gehört in den Schnitt.</li>
+<li><strong>Länge:</strong> Lange Sequenzen driften. Lieber kurze Clips sauber schneiden.</li>
+<li><strong>Ton:</strong> Erzeugter Ton (z. B. bei Veo) ist praktisch für Atmosphäre, aber Sprache und Lippen passen nicht immer zusammen.</li>
+</ul>
+<p>Der <strong>Schnitt</strong> macht aus Clips ein Video. Gängige Werkzeuge: <strong>CapCut</strong> (schnell, mobil, viele Social-Vorlagen – Nutzungsbedingungen für Unternehmen prüfen), <strong>Adobe Premiere Pro</strong> (professionell, mit KI-Funktionen wie Szenenverlängerung) und <strong>Descript</strong> (Schnitt über das Transkript, praktisch für Videos mit Sprache). Dort ergänzt du Untertitel, Texteinblendungen in Markenschrift, Logo, Musik (Kap. 37) und Sprecher (Kap. 36).</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Realistische KI-Szenen mit Menschen ohne Hinweis posten. Meta, TikTok und YouTube verlangen <strong>Labels für realistische KI-Inhalte</strong>. Zeigt ein Clip reale Personen, Orte oder Ereignisse so, dass er fälschlich echt wirkt, greift zudem die Offenlegungspflicht für Deepfakes nach <strong>Art. 50 Abs. 4 AI Act</strong>. Für erkennbar inszenierte Stimmungsbilder ist das meist kein Deepfake – die Plattformregeln gelten trotzdem. Details und Entscheidungsbaum in Kapitel 39.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Generieren ist schnell, Prüfen ist Arbeit. Plane für jeden KI-Clip ein: <strong>Einzelbildprüfung, Produktabgleich, Kennzeichnung, Freigabe.</strong></p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Videomodelle erzeugen <strong>kurze Einstellungen</strong> von wenigen Sekunden; der Film entsteht erst im Schnitt.</li>
+<li>Werkzeuge im Herbst 2026: <strong>Veo</strong> (mit Ton), <strong>Runway</strong>, <strong>Kling</strong>, <strong>Luma</strong>, <strong>Firefly Video</strong>; Sora nur mit Vorbehalt, da die API eingestellt wurde.</li>
+<li>Ein Videoprompt ergänzt den Bildprompt um <strong>Handlung, Kamerabewegung und Ton</strong> – eine Einstellung, eine Handlung.</li>
+<li><strong>Bild-zu-Video</strong> mit echtem Produktfoto ist im Marketing meist der kontrolliertere Weg; Produktdetails trotzdem Bild für Bild prüfen.</li>
+<li>ChatGPT plant das <strong>Storyboard</strong> und schreibt die Prompts je Einstellung; Hook, Untertitel und 9:16 gehören von Anfang an dazu.</li>
+<li>Grenzen sind Physik, Konsistenz, Text und Länge; <strong>Plattformlabels</strong> und ggf. Art. 50 Abs. 4 AI Act sind einzuplanen.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Kamerabewegung und Arbeitsweise zuordnen – gleicher Prompt, mehrere Antworten</summary>
+<p><strong>Gruppenarbeit:</strong> 3–4 Personen, etwa 20 Minuten. Eine Person führt das <strong>Protokoll</strong> in einer
+geteilten Copilot Page. <strong>Am Ende liegt vor:</strong> eine gemeinsame Zuordnungstabelle und ein
+strittiger Fall, den ihr im Plenum in einer Minute vorstellt.</p>
+<p>Ordnet jeder Anforderung aus dem Fjordlicht-Marketing <strong>eine Kamerabewegung</strong> aus Abschnitt
+35.3 und <strong>eine Arbeitsweise</strong> zu (Text-zu-Video, Bild-zu-Video oder Video-zu-Video/Bearbeitung).</p>
+<ol>
+<li>Der Rucksack „Tind" soll von allen Seiten gezeigt werden – auf Basis eines vorhandenen
+   Produktfotos.</li>
+<li>Ein Reel soll mit einer weiten Fjordlandschaft beginnen, die Ruhe und Weite vermittelt.</li>
+<li>Eine Wanderin in der Hose „Vidde" soll beim Aufstieg begleitet werden, dynamisch, aber
+   nicht hektisch.</li>
+<li>In einem selbst gedrehten Clip aus dem Fotoshooting stört ein Mülleimer im Hintergrund.</li>
+<li>Ein Detail der Regenjacke „Sølv" (abperlende Tropfen) soll langsam näher rücken.</li>
+</ol>
+<p>So geht ihr vor:</p>
+<ol>
+<li><strong>Erst jede Person allein.</strong> Notiert eure Zuordnung in Stichworten, ohne KI (drei Minuten).</li>
+<li><strong>Gleicher Prompt, mehrere Ergebnisse.</strong> Einigt euch auf <strong>einen</strong> Prompt (Vorlage in der
+   Lösung) mit den fünf Anforderungen und den beiden Tabellen aus Abschnitt 35.1 und 35.3. Jede
+   Person führt diesen Prompt in ihrem eigenen Copilot Chat (Modus <strong>Arbeit</strong>) aus.</li>
+<li><strong>Vergleichen.</strong> Legt die Antworten nebeneinander: Bei welchen Nummern sind sich alle
+   Copilot-Antworten einig, wo weichen sie voneinander ab? Wo weichen sie von euren eigenen
+   Notizen ab? Achtet besonders darauf, ob eine der Antworten bei vorhandenem Material trotzdem
+   Text-zu-Video vorschlägt.</li>
+<li><strong>Gemeinsam entscheiden.</strong> Die Protokollperson übernimmt eine der Copilot-Antworten in eine
+   Copilot Page und teilt sie mit der Gruppe. Korrigiert die Tabelle dort gemeinsam, bis ihr
+   euch je Nummer einig seid, und ergänzt bei jeder Korrektur einen Satz Begründung.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Fragt bei der Arbeitsweise zuerst: Gibt es schon echtes Material, das wir kontrollieren wollen?
+Wenn ja, ist reines Text-zu-Video fast nie die erste Wahl. Dass dieselbe Anfrage bei euch
+unterschiedlich beantwortet wird, ist kein Fehler, sondern genau der Punkt: Copilot wählt nach
+Wahrscheinlichkeit. Wo die Antworten auseinandergehen, liegt meist die Stelle, an der ihr selbst
+entscheiden müsst.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt für Copilot Chat (alle Gruppenmitglieder identisch):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist Videoproducer für kurze Social-Clips.
+Ordne jeder der fünf Anforderungen unten genau eine Kamerabewegung und
+genau eine Arbeitsweise zu. Nutze nur diese Begriffe:
+Kamerabewegungen: Static shot, Pan, Tilt, Dolly in/out, Tracking shot,
+Orbit, Drone/aerial shot, Handheld.
+Arbeitsweisen: Text-zu-Video, Bild-zu-Video, Video-zu-Video/Bearbeitung.
+Regel: Wenn echtes Material vorhanden ist, begründe ausdrücklich, warum
+du es nutzt oder nicht nutzt.
+Ausgabe: Tabelle mit Nr., Kamerabewegung, Arbeitsweise, Begründung (1 Satz).
+[Anforderungen 1 bis 5 einfügen]
+</code></pre></div></td></tr></table></div>
+<p>Beispiel für die gemeinsame Tabelle in der Copilot Page:</p>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Kamerabewegung</th>
+<th>Arbeitsweise</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Orbit</td>
+<td>Bild-zu-Video</td>
+<td>Das echte Produktfoto sichert die Details, der Orbit zeigt das Produkt rundum.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Drone/aerial shot, ggf. langsamer Pan</td>
+<td>Text-zu-Video</td>
+<td>Landschaft ohne Produkt – hier spielt Text-zu-Video seine Stärke aus.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Tracking shot</td>
+<td>Bild-zu-Video (Startbild aus Shooting) oder echter Dreh</td>
+<td>Die Kamera geht mit; das Startbild hält Hose und Person konsistent.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>– (bleibt wie gedreht)</td>
+<td>Video-zu-Video/Bearbeitung</td>
+<td>Vorhandenes Material wird nur retuschiert, nicht neu erzeugt.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Dolly in</td>
+<td>Bild-zu-Video</td>
+<td>Langsames Heranfahren an ein geprüftes Detailfoto ist kontrollierbar.</td>
+</tr>
+</tbody>
+</table>
+<p>Abweichungen, auf die ihr beim Vergleich achten solltet: Schlägt eine Antwort bei Nr. 3
+Text-zu-Video vor („eine Wanderin in einer Wanderhose"), würde die Hose erfunden. Nennt eine
+Antwort bei Nr. 4 eine Kamerabewegung, obwohl nichts neu gefilmt wird, passt das nicht zur
+Aufgabe. Bei Nr. 2 und 5 gehen die Kamerabewegungen zwischen den Antworten oft auseinander
+(Pan oder Drone, Dolly in oder Static shot mit Zoom) – das sind Geschmacksfragen, keine Fehler.
+Ein guter strittiger Fall fürs Plenum ist Nr. 3: Bild-zu-Video oder doch ein echter Dreh, wenn
+die Person in mehreren Einstellungen vorkommen soll?</p>
+<p>Achtet bei Nr. 1 und 5 darauf, dass das Produkt im Ergebnis Bild für Bild geprüft wird:
+Auch beim Animieren können Nähte, Riemen oder Farben verändert werden.</p>
+<p>Bewertungskriterien: Alle fünf Nummern sind eindeutig zugeordnet und begründet; die
+Arbeitsweise folgt aus dem vorhandenen Material. Die Gruppe hat benannt, bei welchen Nummern
+die Copilot-Antworten der Mitglieder voneinander abwichen, und erklärt, ob es sich um
+Geschmack oder um einen sachlichen Fehler handelt. Die Copilot Page enthält die korrigierte
+Tabelle mit Begründung je Korrektur.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Storyboard und Videoprompts im geteilten Word-Dokument</summary>
+<p><strong>Gruppenarbeit:</strong> 3–4 Personen, etwa 30 Minuten, in <strong>Copilot in Word</strong>. <strong>Rollen:</strong>
+Storyboard-Verantwortliche (legt das Dokument an und promptet), Prüferin (prüft Handlung und
+Hook), die übrigen schreiben mit. Für Schritt 3 teilt ihr die Einstellungen untereinander auf.
+<strong>Am Ende liegt vor:</strong> ein gemeinsames Word-Dokument „Storyboard-Tind" mit Storyboard-Tabelle
+und einem Videoprompt je Einstellung. Für den optionalen Generierungsschritt braucht ihr ein
+Videowerkzeug mit Testkontingent (Veo, Runway, Kling, Luma, Firefly Video).</p>
+<ol>
+<li><strong>Storyboard (Storyboard-Verantwortliche).</strong> Lege im OneDrive-Ordner „Fjordlicht-Kurs" ein
+   neues Word-Dokument „Storyboard-Tind" an und teile es mit der Gruppe. Lass Copilot einen
+   Entwurf erstellen: den Storyboard-Prompt aus Abschnitt 35.5, angepasst auf ein
+   <strong>10-Sekunden-Reel</strong> für den Rucksack „Tind" (Ziel: Herbstwanderung am Wochenende), mit
+   Verweis auf <code>/Fjordlicht-Basisdaten</code> (aus Kap. 11). Für Nachhaltigkeit nur die
+   Platzhalterzeile, keine eigene Aussage. Liegt das Storyboard als Fließtext vor, lass es in
+   eine Tabelle umwandeln.</li>
+<li><strong>Prüfen und gezielt überarbeiten (Prüferin, alle lesen mit).</strong> Hat jede Einstellung genau
+   eine Handlung? Sind die ersten zwei Sekunden ohne Ton verständlich? Setzt an jede
+   problematische Zeile einen Word-Kommentar. Die Storyboard-Verantwortliche markiert dann nur
+   diese Zeilen und lässt sie von Copilot umschreiben – nicht das ganze Dokument neu erzeugen.</li>
+<li><strong>Videoprompts (Arbeitsteilung).</strong> Jede Person übernimmt eine Einstellung, setzt den Cursor
+   unter die Tabelle und lässt Copilot im gemeinsamen Dokument einen vollständigen Videoprompt
+   mit allen sieben Bausteinen aus Abschnitt 35.3 schreiben, überschrieben mit der Nummer der
+   Einstellung.</li>
+<li><strong>Gegenprüfung.</strong> Tauscht die Prompts reihum: Jede Person prüft den Prompt der nächsten und
+   stellt Copilot eine Frage zum Dokument: „Welcher der sieben Bausteine fehlt im Prompt zu
+   Einstellung [Nr.] oder ist zu vage?" Vergleicht Copilots Antwort mit eurem eigenen Urteil
+   und bessert nach.</li>
+<li><strong>Generieren (optional).</strong> Wählt gemeinsam den stärksten Prompt. Eine Person erzeugt den
+   Clip im Videowerkzeug mit dem vollständigen Prompt, eine andere mit einer Kurzfassung von
+   höchstens 15 Wörtern. Notiert den Vergleich unter dem Prompt im Word-Dokument.</li>
+</ol>
+<p>Zum Abschluss: Entscheidet, welche Einstellung ihr als einzige wirklich produzieren würdet, und
+begründet das in zwei Sätzen.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der häufigste Fehler im Storyboard ist eine Einstellung mit zwei oder drei Handlungen. Streicht
+lieber, als zu verdichten – zehn Sekunden sind kürzer, als sie sich beim Planen anfühlen. Das
+gezielte Umschreiben einer markierten Zeile hält die guten Einstellungen unangetastet. Achtet
+bei der Gegenprüfung darauf, ob Copilots Antwort und euer Urteil zum selben Baustein kommen –
+und wenn nicht, wer recht hat.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt für den Entwurf mit Copilot in Word:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist Art Director für kurze Social-Media-Videos.
+Erstelle ein Storyboard für ein Instagram-Reel (9:16, 10 Sekunden) zum
+Rucksack &quot;Tind&quot; von Fjordlicht. Nutze Markenstimme und Produktfakten aus
+/Fjordlicht-Basisdaten.
+Ziel: Lust auf eine Herbstwanderung am Wochenende.
+Format: Tabelle mit den Spalten Nr., Dauer, Bildinhalt, Handlung,
+Kamerabewegung, Ton, Texteinblendung.
+Regeln: 3 bis 4 Einstellungen, jede mit genau einer Handlung.
+Die ersten 2 Sekunden müssen ohne Ton verständlich sein.
+Keine Nachhaltigkeitsaussagen außer: [belegte Aussage aus Claim-Liste].
+Ton: ruhig, ehrlich, leicht nordisch-trocken, keine Superlative.
+</code></pre></div></td></tr></table></div>
+<p>Ein brauchbares Storyboard hat drei bis vier Einstellungen – passend zur Gruppengröße:</p>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Dauer</th>
+<th>Bild/Handlung</th>
+<th>Kamera</th>
+<th>Text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>2 s</td>
+<td>Nebel über Waldweg, Morgenlicht</td>
+<td>static shot</td>
+<td>„Samstag, 7:40 Uhr"</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3 s</td>
+<td>Hand schließt Deckel des Rucksacks</td>
+<td>dolly in</td>
+<td>–</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3 s</td>
+<td>Person geht mit Rucksack den Weg hinauf</td>
+<td>tracking shot</td>
+<td>–</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2 s</td>
+<td>Rucksack am Gipfelkreuz, Weite</td>
+<td>slow pan</td>
+<td>„Tind. Für den Weg nach oben."</td>
+</tr>
+</tbody>
+</table>
+<p>Beispiel-Videoprompt für Einstellung 3:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Szene: schmaler Waldweg im Herbst, Morgennebel, feuchtes Laub.
+Motiv und Handlung: eine Person von hinten mit einem schlichten dunkelgrünen
+Wanderrucksack geht ruhig den Weg hinauf.
+Kamera: Tracking Shot von hinten auf Hüftenhöhe, gleichmäßig.
+Licht und Stil: weiches Morgenlicht, natürliche Farben, dokumentarisch.
+Ton: Schritte auf Laub, Vögel, keine Musik.
+Format: 9:16, 3 Sekunden. Kein Text, keine Logos.
+</code></pre></div></td></tr></table></div>
+<p>Worauf die Prüferin im ersten Entwurf achten sollte: ob eine Einstellung zwei Handlungen
+enthält („Nebel lichtet sich, Person tritt ins Bild") und ob eine Texteinblendung einen
+Superlativ oder eine Nachhaltigkeitsaussage enthält, die nicht in den Basisdaten steht. Beides
+wird über das Umschreiben der markierten Zeile gelöst.</p>
+<p>Bei Einstellung 2 und 4 ist das Produkt im Bild: Gute Gruppen halten im Prompt fest, dass
+hierfür Bild-zu-Video mit dem echten Produktfoto genutzt wird, weil ein reiner Textprompt den
+Rucksack erfindet. Beim optionalen Vergleich lohnt der Blick darauf, ob die Kurzfassung
+Kamerabewegung, Look oder Text im Bild anders trifft als die vollständige Fassung.</p>
+<p>Bewertungskriterien: Das Storyboard hat je Einstellung genau eine Handlung und einen stummen
+Hook; Änderungen wurden gezielt an markierten Zeilen vorgenommen. Jede Einstellung hat einen
+Videoprompt mit allen sieben Bausteinen. Die Gegenprüfung ist im Dokument sichtbar
+(Kommentare oder Nachbesserungen), und die Gruppe hat benannt, wo Copilots Antwort auf die
+Dokumentfrage von ihrem eigenen Urteil abwich. Die Schlussentscheidung ist begründet.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Das Agenturangebot kritisch prüfen – Prompt-Duell und Rollen</summary>
+<p>Eine Agentur schlägt Fjordlicht vor, die Frühjahrskampagne für die Regenjacke „Sølv"
+<strong>vollständig mit KI-Video</strong> umzusetzen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>- 45-Sekunden-Spot, komplett per Text-zu-Video, ohne Dreh
+- wiederkehrende Hauptfigur in sechs Einstellungen
+- Jacke im Detail: Reißverschluss, Kapuzenverstellung, Logo auf der Brust
+- Schluss: drei &quot;Kundinnen&quot; sagen in die Kamera, wie dicht die Jacke ist
+- Claim im Bild: &quot;Die nachhaltigste Regenjacke Deutschlands&quot;
+- Kosten: 40 Prozent unter einem klassischen Dreh
+</code></pre></div></td></tr></table></div>
+<p><strong>Gruppenarbeit:</strong> 4 Personen (bei 3 entfällt der Advocatus Diaboli), etwa 30 Minuten.
+<strong>Am Ende liegt vor:</strong> eine gemeinsame Bewertungstabelle, ein Gegenvorschlag und ein
+Antwortentwurf an die Agentur in Outlook; im Plenum stellt ihr eure Entscheidung in zwei
+Minuten vor.</p>
+<ol>
+<li><strong>Prompt-Duell.</strong> Teilt euch in zwei Paare. <strong>Paar A</strong> gibt das Angebot in Copilot Chat
+   (Modus <strong>Arbeit</strong>) mit einer kurzen, offenen Bitte ein: „Bewerte dieses Angebot." <strong>Paar B</strong>
+   schreibt einen strukturierten Prompt: Verweis auf <code>/Fjordlicht-Basisdaten</code> (aus Kap. 11),
+   Bewertung je Punkt als realistisch, nur mit Einschränkungen oder nicht vertretbar, getrennt
+   nach Technik (Abschnitt 35.6), Marke und Recht. Vergleicht beide Antworten: Welche ist zu
+   wohlwollend, wo fehlt eine Begründung?</li>
+<li><strong>Rollen für die Gegenprüfung.</strong> Verteilt nun die Rollen:</li>
+<li><strong>Technik</strong> prüft die Bewertung gegen Abschnitt 35.6 (Länge, Konsistenz, Produkttreue).</li>
+<li><strong>Marke und Claims</strong> prüft gegen Markenstimme und Claim-Liste aus den Basisdaten.</li>
+<li><strong>Plattformen</strong> lässt sich in Copilot Chat im Modus <strong>Web</strong> die aktuellen Regeln von Meta,
+     TikTok und YouTube für realistische KI-Inhalte mit Quellen nennen und prüft Datum und
+     Herkunft der Quellen.</li>
+<li><strong>Advocatus Diaboli</strong> verteidigt das Angebot, vor allem den Kostenpunkt, und zwingt die
+     Gruppe, jede Ablehnung zu begründen.</li>
+</ol>
+<p>Führt die Ergebnisse in einer gemeinsamen Tabelle zusammen (rechtlich genügen Verweise auf
+   Kap. 34 und 39).
+3. <strong>Gegenvorschlag und Antwort.</strong> Formuliert gemeinsam einen <strong>Gegenvorschlag</strong>, der KI-Video
+   sinnvoll einsetzt. Eine Person lässt in Outlook von Copilot einen Antwortentwurf an die
+   Agentur erstellen und nutzt das <strong>Coaching durch Copilot</strong>. Die anderen lesen mit und prüfen:
+   Ist die Antwort klar, aber nicht abweisend? Steht die Ablehnung der KI-„Kundinnen" noch
+   unmissverständlich drin?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Trennt zwei Fragen: „Geht das technisch?" und „Dürfen und wollen wir das?". Manche Punkte
+scheitern an der Technik, andere an Täuschung oder an der Markenstimme – und einer an beidem.
+Achtet im Prompt-Duell darauf, ob die offene Anfrage den Kostenpunkt ungeprüft übernimmt und
+ob der strukturierte Prompt das ändert. Der Advocatus Diaboli macht seinen Job gut, wenn die
+Gruppe danach bessere Begründungen hat, nicht wenn sie nachgibt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt für Paar B:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Prüfe das folgende Agenturangebot für Fjordlicht kritisch.
+Nutze Markenstimme und belegte Claims aus /Fjordlicht-Basisdaten.
+Bewerte jeden Punkt als &quot;realistisch&quot;, &quot;nur mit Einschränkungen&quot; oder
+&quot;nicht vertretbar&quot; und begründe getrennt nach Technik (kurze Clips,
+Konsistenz, Produkttreue), Marke und Recht (Täuschung, Testimonials,
+Superlative, Kennzeichnung). Nenne beim Kostenpunkt ausdrücklich, welche
+Kosten in der Rechnung fehlen könnten.
+Ausgabe: Tabelle mit Punkt, Bewertung, Begründung.
+[Angebot einfügen]
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Punkt</th>
+<th>Bewertung</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>45 s ohne Dreh</td>
+<td>nur mit Einschränkungen</td>
+<td>Clips sind kurz, 45 s heißt viele Einzelclips und viel Schnitt</td>
+</tr>
+<tr>
+<td>wiederkehrende Hauptfigur</td>
+<td>nur mit Einschränkungen</td>
+<td>Gesicht und Kleidung driften zwischen Einstellungen; Referenzbilder helfen nur teilweise</td>
+</tr>
+<tr>
+<td>Jacke im Detail per Text-zu-Video</td>
+<td>nicht vertretbar</td>
+<td>Modell kennt die Jacke nicht; Details und Logo werden erfunden – irreführende Produktdarstellung (Kap. 34)</td>
+</tr>
+<tr>
+<td>KI-„Kundinnen" mit Aussagen</td>
+<td>nicht vertretbar</td>
+<td>erfundene Testimonials täuschen, realistisch wirkende Personen erfordern Plattformlabels; Vertrauensschaden</td>
+</tr>
+<tr>
+<td>Superlativ-Claim</td>
+<td>nicht vertretbar</td>
+<td>widerspricht Markenstimme (keine Superlative, kein Greenwashing), nicht belegbar, UWG-Risiko</td>
+</tr>
+<tr>
+<td>40 % günstiger</td>
+<td>offen</td>
+<td>Iterationen, Credits, Prüfaufwand und Nachbearbeitung fehlen in der Rechnung</td>
+</tr>
+</tbody>
+</table>
+<p>Worauf ihr beim Vergleich der beiden Paare achten solltet: ob eine Antwort die Hauptfigur als
+„realistisch" einstuft, den Kostenpunkt ungeprüft übernimmt oder die KI-Kundinnen nur als
+„kennzeichnungspflichtig" statt als Täuschung bewertet. Wer das in der Gruppentabelle
+korrigiert, hat die Übung verstanden. Typische Einwände des Advocatus Diaboli („Die Kundinnen
+sind doch gekennzeichnet", „40 Prozent sind 40 Prozent") lassen sich mit Täuschung und
+versteckten Kosten (Iterationen, Prüfaufwand) beantworten.</p>
+<p>Gegenvorschlag:</p>
+<ul>
+<li>echter, kurzer Produktdreh (Details, Handgriffe, echte Menschen)</li>
+<li>KI-Video für Stimmung: Nordsee-Wetter, Regen, Landschaft als Intros und Übergänge</li>
+<li>Bild-zu-Video aus freigegebenen Produktfotos für Social-Varianten (9:16, 4:5)</li>
+<li>Kundenstimmen nur echt und mit Einwilligung, Claim aus der Claim-Liste</li>
+<li>Plattformlabels, wo realistische KI-Szenen enthalten sind; Einzelbildprüfung vor Freigabe</li>
+</ul>
+<p>Beispiel-Prompt für den Outlook-Entwurf:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Antworte der Agentur freundlich und klar: Wir möchten KI-Video einsetzen,
+aber nicht für Produktdetails, Kundenstimmen und den Superlativ-Claim.
+Schlage den Gegenvorschlag (Stichpunkte unten) vor und bitte um ein
+überarbeitetes Angebot mit realistischer Kostenaufstellung inklusive
+Iterationen und Prüfaufwand. Ton: ruhig, ehrlich, Du/Sie wie bisher im Thread.
+[Gegenvorschlag einfügen]
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: Jeder Punkt wird bewertet, technische und rechtliche Gründe werden
+getrennt. Die Gruppe hat die Unterschiede zwischen offener und strukturierter Anfrage benannt
+und erklärt, woran sie liegen. Copilots Erstbewertung wird nachweisbar korrigiert, die
+Labelregeln sind mit Quelle und Datum belegt, jeder Einwand des Advocatus Diaboli ist
+beantwortet. Der Gegenvorschlag nutzt KI dort, wo Konsistenz und Produkttreue unkritisch sind,
+und der Outlook-Entwurf bleibt nach dem Coaching in der Sache klar.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Herbst-Reel für den Fleece Skog</summary>
+<p><strong>Szenario:</strong> Fjordlicht bringt die neue Farbe des Fleece „Skog" heraus. Das Marketingteam
+hat kein Budget für einen Dreh, aber gute Produktfotos aus dem Studio und einem
+Outdoor-Shooting. Du sollst ein <strong>15-Sekunden-Reel</strong> für Instagram und TikTok sowie eine
+ruhigere Variante für LinkedIn (Fjordlicht Business) planen und – soweit Zugang besteht –
+umsetzen. Planung, Prompts, Protokoll und Abstimmung laufen in Microsoft 365 Copilot; das
+Videowerkzeug brauchst du nur für den eigentlichen Generierungsschritt. Du kannst statt
+Fjordlicht auch ein Unternehmen deiner Wahl nutzen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Kanäle: Instagram/TikTok (9:16, 15 s), LinkedIn (1:1 oder 4:5, 15-20 s)
+Material: 3 freigegebene Produktfotos, Markenschrift, Logo,
+/Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11)
+Planung: Copilot in Word, PowerPoint, Excel; Abstimmung in Teams/Outlook
+Generierung: ein Videowerkzeug mit Testkontingent (Veo, Runway, Kling,
+Luma, Firefly Video) oder die Create-Funktion, falls freigegeben
+Schnitt: Clipchamp oder CapCut, Premiere, Descript o. Ä.
+Markenstimme: ruhig, ehrlich, leicht nordisch-trocken, keine Superlative
+Nachhaltigkeit: nur Aussagen aus der Claim-Liste, sonst keine
+Budget: maximal 30 Generierungen
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Storyboard in Word und PowerPoint.</strong> Lass Copilot in Word im Dokument
+„Storyboard-Skog" (Ordner „Fjordlicht-Kurs") ein Storyboard für die 9:16-Fassung entwerfen
+(4–5 Einstellungen, Spalten wie in Abschnitt 35.5, Basisdaten per <code>/Fjordlicht-Basisdaten</code>).
+Lege für jede Einstellung fest, ob sie per Text-zu-Video, Bild-zu-Video oder als Standbild mit
+Bewegung im Schnitt entsteht, und begründe das. Lass anschließend Copilot in PowerPoint aus
+dem Word-Dokument eine Präsentation erstellen – eine Folie pro Einstellung – und füge auf den
+Produktfolien das jeweilige echte Produktfoto ein. Leite daraus die LinkedIn-Fassung ab.</p>
+<p><strong>Runde 2 – Prompts und Protokoll in Excel.</strong> Schreibe für jede KI-Einstellung einen
+vollständigen Videoprompt (im Word-Dokument, mit Copilot als Entwurfshilfe). Generiere im
+Videowerkzeug, wähle aus und führe das Protokoll in einer Excel-Tabelle „Generierungsprotokoll-
+Skog" mit den Spalten Einstellung, Versuch, Prompt-Änderung, Ergebnis, verworfen weil …
+Lass Copilot in Excel eine Spalte bzw. Formel für das verbleibende Budget vorschlagen und alle
+Versuche hervorheben, bei denen das Produkt verändert wurde. Halte das Budget von 30
+Generierungen ein. Ohne Zugang zu einem Videowerkzeug lässt du die Prompts von Copilot gegen
+die sieben Bausteine aus Abschnitt 35.3 prüfen und füllst das Protokoll mit der Prüfung.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Bei der Einzelbildprüfung fällt auf: In der besten
+Einstellung verändert sich der Reißverschluss des Fleece für etwa eine halbe Sekunde, und
+die Farbe kippt ins Graue – also genau die neue Farbe, um die es geht. Neu generieren kostet
+Budget, das fast aufgebraucht ist. Lade ein Standbild der fehlerhaften Stelle und das
+Produktfoto in Copilot Chat hoch und lass die Unterschiede beschreiben – prüfe aber selbst,
+ob Copilot alles findet. Entscheide, wie du vorgehst (kürzen, ersetzen, Standbild, neu
+generieren mit anderem Prompt), und begründe.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Teamleitung schreibt dir in Teams: Am Ende
+soll eine KI-generierte Person auftauchen, die realistisch wirkt und sagt: „Ich trage ihn jeden
+Tag." Außerdem soll das Reel ohne KI-Hinweis laufen, „weil das die Reichweite drückt".
+Lass dir von Copilot (Modus <strong>Web</strong>) die aktuellen Labelregeln von Meta, TikTok und LinkedIn
+mit Quellen zusammenfassen. <strong>Widersprich</strong> begründet, wo es nötig ist, und mache einen
+Vorschlag, der das Ziel der Teamleitung trotzdem ernst nimmt. Formuliere die Antwort mit
+Copilot als Entwurf und überarbeite sie selbst, bevor du sie sendest.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Word-Storyboard für 9:16 und eine angepasste Fassung für LinkedIn, dazu die
+   PowerPoint-Storyboard-Präsentation</li>
+<li>Videoprompts je KI-Einstellung und das Excel-Generierungsprotokoll mit Budgetstand</li>
+<li>Entscheidung aus Runde 3 mit Begründung</li>
+<li>Stellungnahme an die Teamleitung zu Runde 4 inklusive Kennzeichnungsentscheidung je Kanal</li>
+<li>(falls umgesetzt) das geschnittene Reel mit Untertiteln, z. B. in Clipchamp mit
+   automatischen Untertiteln, die du korrigiert hast</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jede Einstellung genau eine Handlung hat, die
+Produktdarstellung der Wirklichkeit entspricht, das Budget im Excel-Protokoll nachweisbar
+eingehalten ist und deine Kennzeichnungsentscheidung Plattformregeln und Art. 50 AI Act
+ausdrücklich berücksichtigt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 3 und 4: Ein Clip, der fast perfekt ist, aber das Produkt falsch
+zeigt, ist unbrauchbar – gerade wenn die Farbe das Thema ist. Und eine erfundene Person mit
+erfundener Erfahrung ist kein Gestaltungsmittel, sondern ein Testimonial, das es nicht gibt.
+Copilot entlastet bei Planung, Protokoll und Formulierung; die Einzelbildprüfung und die
+Entscheidung über Kennzeichnung bleiben bei dir. KI-Video spart Drehzeit, nicht die
+Verantwortung für das, was es zeigt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel-Prompt für Copilot in PowerPoint (Präsentation aus dem Word-Storyboard):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle aus /Storyboard-Skog eine Präsentation mit einer Folie pro
+Einstellung. Je Folie: Nummer und Dauer als Titel, Bildinhalt und Handlung
+als ein Satz, Kamerabewegung, Arbeitsweise (Text-zu-Video, Bild-zu-Video
+oder Standbild) und Texteinblendung. Keine zusätzlichen Inhalte erfinden.
+</code></pre></div></td></tr></table></div>
+<p>Beispiel-Prompt für Copilot in Excel:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Füge eine Spalte &quot;Budget übrig&quot; hinzu, die ausgehend von 30 Generierungen
+nach jedem Versuch den Rest berechnet. Hebe alle Zeilen hervor, in denen in
+der Spalte &quot;verworfen weil&quot; das Wort &quot;Produkt&quot;, &quot;Farbe&quot; oder
+&quot;Reißverschluss&quot; vorkommt.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: (1) Das Storyboard hat einen Hook in den ersten zwei Sekunden, je
+Einstellung eine Handlung und eine begründete Wahl der Arbeitsweise; Produktdetails kommen aus
+Bild-zu-Video oder Standbild, nicht aus Text-zu-Video. Die PowerPoint-Fassung zeigt auf den
+Produktfolien echte Fotos, keine generierten Produktbilder. (2) Die Prompts enthalten Szene,
+Handlung, Kamera, Licht/Stil, Ton, Format und Ausschlüsse; das Excel-Protokoll zeigt gezielte
+Änderungen statt Zufallsversuchen und einen nachvollziehbaren Budgetstand. (3) In Runde 3 wird
+die fehlerhafte Passage nicht veröffentlicht; gute Lösungen kürzen den Clip vor der
+Verformung, ersetzen die Einstellung durch das echte Produktfoto mit Bewegung im Schnitt oder
+nutzen das Restbudget mit einem Prompt, der Produkt und Farbe ausdrücklich fixiert. Gute
+Bearbeitungen halten fest, ob Copilots Bildbeschreibung den Farbstich erkannt hat – und
+verlassen sich nicht darauf. (4) Runde 4 lehnt die erfundene Kundenaussage ab (Täuschung,
+UWG-Risiko, Markenstimme), bietet eine Alternative an (echte Mitarbeitende oder Kundin mit
+Einwilligung, oder Produkt ohne Person mit ehrlichem Text) und entscheidet die Kennzeichnung
+nach Plattformregeln für realistische KI-Inhalte mit Quellenangabe; bei realistisch wirkenden
+Personen wird zusätzlich Art. 50 Abs. 4 AI Act geprüft. Die Antwort an die Teamleitung ist
+sachlich und nimmt die Reichweitensorge ernst (z. B. stärkerer Hook statt Täuschung).</p>
+<p>Lernziel: KI-Video als Werkzeug für einzelne Einstellungen einsetzen, Planung und Protokoll mit
+Copilot in den Office-Apps organisieren, den Produktions- und Prüfaufwand realistisch planen
+und Täuschung auch unter Reichweitendruck vermeiden.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel34/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 34 – Anwendungsgrenzen der Bild-KI">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 34 – Anwendungsgrenzen der Bild-KI
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel36/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 36 – Avatar-Videos und KI-Sprecher">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 36 – Avatar-Videos und KI-Sprecher
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

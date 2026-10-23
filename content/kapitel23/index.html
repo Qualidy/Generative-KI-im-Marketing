@@ -1,0 +1,2142 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel22/">
+      
+      
+        <link rel="next" href="../kapitel24/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 23 – Vom Prompt zum KI-Assistenten - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-23-vom-prompt-zum-ki-assistenten" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 23 – Vom Prompt zum KI-Assistenten
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Block 5 · KI-Assistenten & CustomGPT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 23 – Vom Prompt zum KI-Assistenten
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 23 – Vom Prompt zum KI-Assistenten
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#231-das-problem-mit-dem-zwanzigsten-copy-and-paste" class="md-nav__link">
+    <span class="md-ellipsis">
+      23.1 Das Problem mit dem zwanzigsten Copy-and-paste
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#232-die-vier-bausteine-eines-assistenten" class="md-nav__link">
+    <span class="md-ellipsis">
+      23.2 Die vier Bausteine eines Assistenten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#233-varianten-dieselbe-idee-verschiedene-namen" class="md-nav__link">
+    <span class="md-ellipsis">
+      23.3 Varianten: dieselbe Idee, verschiedene Namen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#234-stand-oktober-2026-von-custom-gpts-zu-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      23.4 Stand Oktober 2026: von Custom GPTs zu Plugins
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#235-wann-lohnt-sich-ein-assistent" class="md-nav__link">
+    <span class="md-ellipsis">
+      23.5 Wann lohnt sich ein Assistent?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#236-grenzen-und-warum-du-auerhalb-des-werkzeugs-dokumentierst" class="md-nav__link">
+    <span class="md-ellipsis">
+      23.6 Grenzen – und warum du außerhalb des Werkzeugs dokumentierst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 24 – Aufbau eines KI-Marketingassistenten I: Konzeption
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 25 – Aufbau eines KI-Marketingassistenten II: Umsetzung und Test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 26 – Praxisbeispiel Content-Assistent
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 27 – Praxisbeispiel CRM-Chatbot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 28 – Konfiguration & Grenzen von CustomGPT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-23-vom-prompt-zum-ki-assistenten">Kapitel 23 – Vom Prompt zum KI-Assistenten<a class="headerlink" href="#kapitel-23-vom-prompt-zum-ki-assistenten" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was einen <strong>KI-Assistenten</strong> von einem gespeicherten Prompt unterscheidet</li>
+<li>Die vier Bausteine jedes Assistenten: <strong>Instruktionen, Wissen, Werkzeuge, Gesprächseinstieg</strong></li>
+<li>Welche <strong>Varianten</strong> es gibt – vom Custom GPT bzw. ChatGPT-Plugin über Projekte bis zu Claude Projects, Gemini Gems und Copilot Agents</li>
+<li>Was die <strong>Ablösung der Custom GPTs durch Plugins</strong> (Stand Oktober 2026) für dich bedeutet</li>
+<li>Nach welchen <strong>Kriterien</strong> du entscheidest, ob sich ein Assistent lohnt – oder ob eine Prompt-Vorlage reicht</li>
+<li>Warum du einen Assistenten <strong>werkzeugunabhängig dokumentierst</strong>, bevor du ihn irgendwo anklickst</li>
+</ul>
+</div>
+<hr />
+<h2 id="231-das-problem-mit-dem-zwanzigsten-copy-and-paste">23.1 Das Problem mit dem zwanzigsten Copy-and-paste<a class="headerlink" href="#231-das-problem-mit-dem-zwanzigsten-copy-and-paste" title="Permanent link">&para;</a></h2>
+<p>In Block 2 hast du gelernt, gute Prompts zu bauen (Kap. 5) und sie in einer Bibliothek abzulegen (Kap. 10). Im Alltag des Fjordlicht-Marketingteams sieht das so aus: Jeden Montag kopiert jemand den Newsletter-Prompt aus dem Teamordner, hängt den Styleguide als PDF an, ergänzt die Claim-Liste, fügt drei Beispieltexte ein – und schreibt dann erst den eigentlichen Auftrag. Fünf Minuten Vorbereitung, bevor die Arbeit beginnt. Und wer den Styleguide vergisst, bekommt Superlative, die Fjordlicht nie verwenden würde.</p>
+<p>Ein <strong>KI-Assistent</strong> löst genau dieses Problem. Er ist ein dauerhaft eingerichteter Arbeitsrahmen, in dem Rolle, Regeln, Hintergrundwissen und erlaubte Werkzeuge <strong>bereits hinterlegt</strong> sind. Du öffnest ihn und schreibst nur noch das, was sich von Mal zu Mal ändert: „Newsletter-Intro zur neuen Regenjacke Sølv, Fokus Herbstwanderungen".</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Ein Assistent ist ein <strong>gespeicherter Arbeitskontext</strong>, kein neues Wesen. Er kann nichts, was das zugrunde liegende Modell nicht kann – aber er sorgt dafür, dass es <strong>jedes Mal mit denselben Voraussetzungen</strong> arbeitet.</p>
+</div>
+<p>Das klingt unspektakulär, verändert aber zwei Dinge grundlegend: Erstens hängt die Qualität nicht mehr davon ab, wer gerade am Rechner sitzt. Zweitens kannst du Wissen, das sonst in Köpfen oder PDFs steckt, einem ganzen Team zugänglich machen.</p>
+<hr />
+<h2 id="232-die-vier-bausteine-eines-assistenten">23.2 Die vier Bausteine eines Assistenten<a class="headerlink" href="#232-die-vier-bausteine-eines-assistenten" title="Permanent link">&para;</a></h2>
+<p>Egal, wie das Werkzeug heißt: Jeder Assistent besteht aus denselben vier Bausteinen. Wer sie kennt, kann jeden Anbieter bedienen – und muss bei der nächsten Produktumstellung nichts Neues lernen.</p>
+<table>
+<thead>
+<tr>
+<th>Baustein</th>
+<th>Was er leistet</th>
+<th>Beispiel Fjordlicht</th>
+<th>Typische Falle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Instruktionen</strong></td>
+<td>dauerhafte Rolle, Ziel, Regeln, Arbeitsablauf, Ausgabeformat</td>
+<td>„Du schreibst Entwürfe in der Fjordlicht-Markenstimme. Keine Superlative."</td>
+<td>zu allgemein oder widersprüchlich</td>
+</tr>
+<tr>
+<td><strong>Wissen</strong></td>
+<td>hinterlegte Dateien, auf die der Assistent zugreift</td>
+<td>Styleguide, Produktdatenblatt, Claim-Liste, Beispieltexte</td>
+<td>veraltete oder unaufgeräumte Dateien</td>
+</tr>
+<tr>
+<td><strong>Werkzeuge</strong></td>
+<td>Fähigkeiten über das Schreiben hinaus</td>
+<td>Websuche, Datenanalyse, Bildgenerierung, Anbindung an Apps</td>
+<td>alles einschalten „für alle Fälle"</td>
+</tr>
+<tr>
+<td><strong>Gesprächseinstieg</strong></td>
+<td>Konversationsstarter, Beschreibung, Kurzanleitung</td>
+<td>„Newsletter-Intro schreiben", „Text gegen Claim-Liste prüfen"</td>
+<td>fehlt – Kolleg:innen wissen nicht, was der Assistent kann</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart LR
+    I(["Instruktionen: Rolle, Regeln, Ablauf"]) --&gt; A(["KI-Assistent"])
+    W(["Wissen: Dateien"]) --&gt; A
+    T(["Werkzeuge: Suche, Analyse, Apps"]) --&gt; A
+    G(["Gesprächseinstieg"]) --&gt; A
+    N(["Deine Anfrage"]) --&gt; A
+    A --&gt; E(["Entwurf"])
+    E --&gt; M(["Mensch prüft und gibt frei"])</code></pre>
+<p>Die Instruktionen sind im Grunde ein sehr gründlicher Prompt nach dem P.R.O.M.P.T.-Framework (Kap. 5), der nicht bei jeder Anfrage neu eingegeben wird. Das Wissen ersetzt das ständige Anhängen von Dateien. Die Werkzeuge entscheiden, ob der Assistent zum Beispiel im Web recherchieren oder eine CSV-Datei auswerten darf. Der Gesprächseinstieg wird am häufigsten unterschätzt: Ein Assistent, den niemand bedienen kann, wird nicht genutzt.</p>
+<div class="admonition tip">
+<p class="admonition-title">Benutzerdefinierte Anweisungen sind kein Assistent</p>
+<p>Die benutzerdefinierten Anweisungen und das Memory in ChatGPT (Kap. 7) wirken auf <strong>alle</strong> deine Chats. Ein Assistent wirkt nur dort, wo du ihn bewusst öffnest. Für persönliche Vorlieben („antworte knapp") taugen Anweisungen, für eine konkrete Aufgabe mit eigenem Regelwerk braucht es einen Assistenten.</p>
+</div>
+<hr />
+<h2 id="233-varianten-dieselbe-idee-verschiedene-namen">23.3 Varianten: dieselbe Idee, verschiedene Namen<a class="headerlink" href="#233-varianten-dieselbe-idee-verschiedene-namen" title="Permanent link">&para;</a></h2>
+<p>Alle großen Anbieter haben eine Form von Assistent im Angebot. Die Bezeichnungen und Oberflächen ändern sich häufig, die vier Bausteine bleiben. Die folgende Übersicht gibt den Stand Oktober 2026 wieder; Funktionsumfang und Verfügbarkeit hängen vom Tarif ab.</p>
+<table>
+<thead>
+<tr>
+<th>Variante</th>
+<th>Anbieter</th>
+<th>Typischer Einsatz</th>
+<th>Teilen im Team</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Custom GPT</strong> (wird abgelöst) bzw. <strong>ChatGPT-Plugin</strong></td>
+<td>OpenAI</td>
+<td>wiederkehrende Aufgabe mit festem Regelwerk, Wissensdateien, optional Anbindung an Apps</td>
+<td>je nach Plan im Arbeitsbereich oder per Link</td>
+</tr>
+<tr>
+<td><strong>Projekt</strong> in ChatGPT</td>
+<td>OpenAI</td>
+<td>Arbeitsraum für ein Vorhaben: Chats, Dateien, Anweisungen, projektbezogenes Gedächtnis</td>
+<td>in Team-/Business-Plänen möglich</td>
+</tr>
+<tr>
+<td><strong>Claude Projects</strong></td>
+<td>Anthropic</td>
+<td>Projektanweisungen plus Projektwissen für Claude</td>
+<td>in Team-/Enterprise-Plänen</td>
+</tr>
+<tr>
+<td><strong>Gemini Gems</strong></td>
+<td>Google</td>
+<td>eigene Gemini-Varianten mit Anweisungen und Dateien</td>
+<td>je nach Konto teilbar</td>
+</tr>
+<tr>
+<td><strong>Copilot Agents</strong></td>
+<td>Microsoft</td>
+<td>Agenten im Microsoft-365-Umfeld, Zugriff auf SharePoint- und Teams-Inhalte</td>
+<td>über die Microsoft-365-Umgebung des Unternehmens</td>
+</tr>
+</tbody>
+</table>
+<p>Der wichtigste Unterschied liegt zwischen <strong>Projekt</strong> und <strong>Assistent</strong>. Ein Projekt ist ein Arbeitsraum für ein Vorhaben – etwa „Herbstkampagne 2026" – mit wachsenden Unterlagen und Gesprächen. Ein Assistent ist ein <strong>Werkzeug für eine wiederkehrende Aufgabe</strong> – etwa „Produkttexte für den Webshop" – das viele Menschen auf dieselbe Weise nutzen. Projekte sammeln, Assistenten standardisieren.</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Die Werkzeugwahl wird oft nach Gewohnheit getroffen: „Wir nutzen ChatGPT, also bauen wir einen GPT." Entscheidend ist aber, <strong>wo eure Daten liegen dürfen</strong>. Arbeitet euer Unternehmen mit Microsoft 365 und hat nur dafür eine Auftragsverarbeitungsvereinbarung, ist ein Copilot Agent die realistische Wahl – auch wenn ChatGPT im Kurs das Hauptwerkzeug ist (Kap. 4).</p>
+</div>
+<hr />
+<h2 id="234-stand-oktober-2026-von-custom-gpts-zu-plugins">23.4 Stand Oktober 2026: von Custom GPTs zu Plugins<a class="headerlink" href="#234-stand-oktober-2026-von-custom-gpts-zu-plugins" title="Permanent link">&para;</a></h2>
+<p>Seit 2023 waren <strong>Custom GPTs</strong> der Standardweg, in ChatGPT eigene Assistenten zu bauen. Am <strong>11.09.2026</strong> hat OpenAI angekündigt, Custom GPTs abzulösen und durch <strong>Plugins</strong> zu ersetzen. Für diesen Kurs fällt die Umstellung genau in den Block zu KI-Assistenten – du lernst also an einem Produkt, das sich gerade verändert. Das ist kein Nachteil, sondern ein realistischer Testfall: Genau so wird es dir im Berufsalltag immer wieder gehen.</p>
+<p><strong>Die Eckdaten</strong> (laut Ankündigung und Hochschul- bzw. Fachmeldungen; Termine können je Konto variieren):</p>
+<ul>
+<li>seit <strong>01.10.2026</strong>: Funktion „Migrate to plugin" zum Überführen bestehender GPTs</li>
+<li>ab ca. <strong>25./26.10.2026</strong>: Übergangsphase; in Enterprise-Konten ab 26.10. keine neuen GPTs mehr</li>
+<li><strong>11.12.2026</strong>: geplantes Ende für Custom GPTs</li>
+<li>spätestens ab <strong>11.02.2027</strong>: nicht migrierte GPTs nicht mehr nutzbar (Enterprise mit Aufschub)</li>
+</ul>
+<p><strong>Was bei der Migration passiert:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Bestandteil des Custom GPT</th>
+<th>Nach der Migration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instruktionen</td>
+<td>werden zu einem <strong>Skill</strong></td>
+</tr>
+<tr>
+<td>Wissensdateien</td>
+<td>werden zu <strong>Referenzdateien</strong></td>
+</tr>
+<tr>
+<td>verbundene Apps</td>
+<td>können übernommen werden</td>
+</tr>
+<tr>
+<td>Gesprächsverläufe</td>
+<td>werden <strong>nicht</strong> übertragen</td>
+</tr>
+<tr>
+<td>gewähltes Modell</td>
+<td>wird <strong>nicht</strong> übertragen</td>
+</tr>
+<tr>
+<td>Custom Actions (eigene Schnittstellen)</td>
+<td>werden <strong>nicht</strong> übertragen – ggf. Neubau als App bzw. MCP-Server</td>
+</tr>
+<tr>
+<td>Freigabe-Einstellungen</td>
+<td>werden <strong>nicht</strong> übertragen – Plugins starten <strong>privat</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Die gute Nachricht steckt in der linken Spalte: Instruktionen, Wissen, Werkzeuge und Teilen gibt es weiterhin. Was sich ändert, sind Namen, Menüs und einige technische Details. Wer verstanden hat, <strong>wozu</strong> Instruktionen und Wissensdateien da sind, überträgt sie in jedes neue Format. Die Konfigurationsdetails und Grenzen vertiefst du in Kap. 28, die Umsetzung Schritt für Schritt in Kap. 25.</p>
+<div class="admonition example">
+<p class="admonition-title">Was das für Fjordlicht konkret heißt</p>
+<p>Das Team hat einen Custom GPT für Produkttexte, eine eigene Aktion für den Abruf von Lagerbeständen und ihn im Arbeitsbereich geteilt. Nach der Migration ist der Skill mit den Instruktionen da, die Wissensdateien auch. Die Lagerbestand-Aktion fehlt, und niemand außer der Erstellerin sieht das Plugin. Zwei Aufgaben also: Freigabe neu setzen, Anbindung neu planen (Kap. 27 zeigt, wie man so etwas konzeptionell angeht).</p>
+</div>
+<hr />
+<h2 id="235-wann-lohnt-sich-ein-assistent">23.5 Wann lohnt sich ein Assistent?<a class="headerlink" href="#235-wann-lohnt-sich-ein-assistent" title="Permanent link">&para;</a></h2>
+<p>Nicht jede Aufgabe braucht einen Assistenten. Ein schlecht gepflegter Assistent ist schlimmer als ein guter Prompt, weil er Vertrauen erzeugt, das er nicht verdient. Prüfe deshalb fünf Kriterien:</p>
+<table>
+<thead>
+<tr>
+<th>Kriterium</th>
+<th>Spricht für einen Assistenten</th>
+<th>Spricht dagegen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Häufigkeit</strong></td>
+<td>mindestens wöchentlich</td>
+<td>einmal im Quartal</td>
+</tr>
+<tr>
+<td><strong>Gleichartigkeit</strong></td>
+<td>ähnliche Anfragen, gleiche Regeln</td>
+<td>jedes Mal ein anderes Thema</td>
+</tr>
+<tr>
+<td><strong>Nutzerkreis</strong></td>
+<td>mehrere Personen, auch Neue</td>
+<td>nur du selbst</td>
+</tr>
+<tr>
+<td><strong>Wissen</strong></td>
+<td>stabile Unterlagen (Styleguide, Produktdaten)</td>
+<td>Wissen ändert sich täglich</td>
+</tr>
+<tr>
+<td><strong>Qualitätsrisiko</strong></td>
+<td>Fehler fallen auf die Marke zurück</td>
+<td>interne Notiz ohne Außenwirkung</td>
+</tr>
+</tbody>
+</table>
+<p>Faustregel: Treffen <strong>drei oder mehr</strong> Kriterien zu, lohnt sich der Aufbau. Bei ein bis zwei reicht eine gute Vorlage in der Prompt-Bibliothek (Kap. 10) oder ein Projekt.</p>
+<p>Du kannst dir die Vorauswahl von der KI vorbereiten lassen – die Bewertung triffst du aber selbst, denn nur du kennst Häufigkeit und Risiko im eigenen Team:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich arbeite im Marketing eines Online-Shops für Outdoor-Bekleidung.
+Hier ist eine Liste wiederkehrender Aufgaben aus unserem Team:
+[Aufgabenliste]
+Erstelle eine Tabelle mit den Spalten: Aufgabe | Häufigkeit | Gleichartigkeit |
+Nutzerkreis | Wissen | Qualitätsrisiko | Vorschlag (Prompt-Vorlage, Projekt
+oder Assistent). Bewerte jede Spalte mit 0, 1 oder 2.
+Wenn dir für eine Bewertung Angaben fehlen, schreibe [FRAGE: ...] statt
+zu schätzen. Begründe jeden Vorschlag in einem Satz.
+</code></pre></div></td></tr></table></div>
+<p>Die <code>[FRAGE: …]</code>-Markierungen sind der eigentliche Gewinn: Sie zeigen dir, welche Informationen das Team erst klären muss, bevor jemand einen Assistenten baut.</p>
+<div class="admonition example">
+<p class="admonition-title">Drei Fälle aus dem Fjordlicht-Team</p>
+<ul>
+<li><strong>Produkttexte für neue Artikel im Webshop:</strong> jede Woche, immer gleiches Schema, drei Personen, Produktdaten und Styleguide stabil, Außenwirkung hoch – klarer Fall für einen Assistenten.</li>
+<li><strong>Pressemitteilung zum Firmenjubiläum:</strong> einmalig, Spezialwissen, eine Person – Prompt-Vorlage reicht.</li>
+<li><strong>Herbstkampagne:</strong> viele unterschiedliche Aufgaben über acht Wochen, wachsende Unterlagen – ein <strong>Projekt</strong> ist passender als ein Assistent.</li>
+</ul>
+</div>
+<p>Ein häufiger Wunsch ist der „Marketing-Assistent für alles". Er scheitert fast immer: Je mehr Aufgaben in einem Assistenten stecken, desto länger und widersprüchlicher werden die Instruktionen, desto häufiger greift er auf die falsche Wissensdatei zurück. Besser sind mehrere schmale Assistenten mit klarem Zweck (Kap. 24).</p>
+<hr />
+<h2 id="236-grenzen-und-warum-du-auerhalb-des-werkzeugs-dokumentierst">23.6 Grenzen – und warum du außerhalb des Werkzeugs dokumentierst<a class="headerlink" href="#236-grenzen-und-warum-du-auerhalb-des-werkzeugs-dokumentierst" title="Permanent link">&para;</a></h2>
+<p>Ein Assistent macht ein Sprachmodell nicht verlässlicher, als es ist. Er kann weiterhin halluzinieren (Kap. 2), er liest Wissensdateien nicht vollständig, sondern sucht passende Abschnitte heraus (Kap. 28), und er vergisst in langen Gesprächen auch hinterlegte Regeln (Kap. 9). Hinzu kommen drei organisatorische Grenzen:</p>
+<ul>
+<li><strong>Datenschutz:</strong> Was in den Wissensdateien liegt, ist für alle Nutzenden des Assistenten zugänglich – und lässt sich unter Umständen auslesen. Kundendaten, Preise im Einkauf oder interne Strategiepapiere gehören nicht hinein (Kap. 4, Kap. 28).</li>
+<li><strong>Transparenz:</strong> Sobald ein Assistent direkt mit Kundinnen und Kunden spricht, greift die Transparenzpflicht nach Art. 50 Abs. 1 AI Act – Menschen müssen erkennen, dass sie mit KI interagieren. Das vertiefst du am CRM-Chatbot in Kap. 27.</li>
+<li><strong>Plattformabhängigkeit:</strong> Die Umstellung von GPTs auf Plugins zeigt, wie schnell sich ein Werkzeug ändert. Wer seine Instruktionen nur im Editor eines Anbieters pflegt, verliert sie im schlimmsten Fall.</li>
+</ul>
+<p>Die Konsequenz daraus ist einfach und gilt für alle folgenden Kapitel: Lege für jeden Assistenten einen <strong>Assistenten-Steckbrief</strong> als eigene Datei an – Zweck, Instruktionen im Volltext, Liste der Wissensdateien mit Stand, eingeschaltete Werkzeuge, Konversationsstarter, verantwortliche Person, Testfälle. Diese Datei ist das Original; was im Werkzeug steht, ist eine Kopie. Damit kannst du einen Assistenten jederzeit in ein anderes Format übertragen, ob Plugin, Gem oder Copilot Agent.</p>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p><strong>Das Konzept gehört dir, die Oberfläche dem Anbieter.</strong> Dokumentiere Instruktionen, Wissen und Tests werkzeugunabhängig – dann überlebt dein Assistent jede Produktumstellung.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ein <strong>KI-Assistent</strong> ist ein gespeicherter Arbeitskontext: Er spart wiederholtes Vorbereiten und macht die Qualität unabhängig davon, wer ihn bedient.</li>
+<li>Jeder Assistent besteht aus vier Bausteinen: <strong>Instruktionen, Wissen, Werkzeuge, Gesprächseinstieg</strong>.</li>
+<li>Varianten sind Custom GPT bzw. <strong>ChatGPT-Plugin</strong>, ChatGPT-Projekte, <strong>Claude Projects</strong>, <strong>Gemini Gems</strong> und <strong>Copilot Agents</strong>; Projekte sammeln, Assistenten standardisieren.</li>
+<li>OpenAI löst Custom GPTs durch <strong>Plugins</strong> ab (Ankündigung 11.09.2026, Migration seit 01.10.2026, geplantes Ende 11.12.2026). Instruktionen werden zum <strong>Skill</strong>, Wissensdateien zu <strong>Referenzdateien</strong>; Verläufe, Modell, Custom Actions und Freigaben werden nicht übertragen.</li>
+<li>Ein Assistent lohnt sich bei <strong>häufigen, gleichartigen</strong> Aufgaben mit <strong>mehreren Nutzenden</strong>, stabilem Wissen und hohem Qualitätsrisiko – schmale Assistenten schlagen den „Assistenten für alles".</li>
+<li>Halte jeden Assistenten in einem <strong>werkzeugunabhängigen Steckbrief</strong> fest; die Kopie im Werkzeug ist austauschbar.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Prompt-Vorlage, Projekt oder Agent? – Gruppenentscheidung</summary>
+<p><strong>Gruppe:</strong> 3–4 Personen, ca. 20 Minuten. <strong>Rollen:</strong> eine Person führt Protokoll in einer
+geteilten Copilot Page, eine Person ist <strong>Advocatus Diaboli</strong> und widerspricht jeder Zuordnung
+mindestens einmal, alle anderen arbeiten in ihrem eigenen Copilot. <strong>Am Ende liegt vor:</strong> eine
+gemeinsame Zuordnungstabelle mit Begründung und eine Liste offener <code>[FRAGE: …]</code>-Punkte.</p>
+<p>In Microsoft 365 lassen sich die drei Lösungen aus Abschnitt 23.5 grob so abbilden:
+<strong>Prompt-Vorlage</strong> → gespeicherter Prompt in der Prompt Gallery, <strong>Projekt</strong> → gemeinsamer
+OneDrive- bzw. SharePoint-Ordner für das Vorhaben, in dem das Material wächst,
+<strong>Assistent</strong> → eigener Agent aus dem Agent Builder.</p>
+<ol>
+<li><strong>Gleicher Prompt, mehrere Ergebnisse (5 Minuten).</strong> Alle außer der Protokollperson öffnen
+   <strong>Copilot Chat</strong> (Umschalter auf <strong>Arbeit</strong>) und führen denselben Prompt aus:</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich arbeite im Marketing von Fjordlicht, einer Marke für nachhaltige
+Outdoor-Bekleidung (5 Personen im Team). Ordne jede Aufgabe einer Lösung zu:
+Prompt-Vorlage, Projekt oder Assistent. Erstelle eine Tabelle mit den Spalten
+Aufgabe | Häufigkeit | Gleichartigkeit | Nutzerkreis | Wissen |
+Qualitätsrisiko | Vorschlag. Bewerte jede Spalte mit 0, 1 oder 2.
+Wenn dir für eine Bewertung Angaben fehlen, schreibe [FRAGE: ...] statt
+zu schätzen.
+1. Jede Woche drei bis fünf Produkttexte für neue Webshop-Artikel,
+   geschrieben von wechselnden Personen.
+2. Eine einmalige Rede der Geschäftsführung zum zehnjährigen Jubiläum.
+3. Die Planung der Frühjahrskampagne über sechs Wochen mit Briefings,
+   Moodboards, Texten und Abstimmungsnotizen.
+4. Täglich Antworten auf Instagram-Kommentare in Markenstimme, erledigt
+   von zwei Community-Managerinnen im Schichtwechsel.
+5. Eine interne Notiz an mich selbst, welche Blogthemen ich nächste
+   Woche angehen will.
+</code></pre></div></td></tr></table></div>
+<ol>
+<li><strong>Vergleichen (5 Minuten).</strong> Eine Person übernimmt ihre Copilot-Antwort in eine
+   <strong>Copilot Page</strong> und teilt sie mit der Gruppe. Tragt dort zusammen: Bei welchen Fällen
+   unterscheiden sich die Vorschläge zwischen euren Ergebnissen? Welche <code>[FRAGE: …]</code>-Stellen
+   tauchen bei mehreren auf?</li>
+<li><strong>Gruppenentscheidung (7 Minuten).</strong> Legt für jeden Fall eine gemeinsame Lösung fest und
+   begründet sie mit den Kriterien aus Abschnitt 23.5. Der Advocatus Diaboli widerspricht bei
+   jedem Fall einmal; die Gruppe hält fest, ob das Gegenargument die Zuordnung ändert.</li>
+<li><strong>Bausteine (3 Minuten).</strong> Benennt gemeinsam die vier Bausteine, die der Agent aus Fall 1
+   braucht, mit je einem konkreten Inhalt – und wo er im Agent Builder landen würde
+   (Anweisungen, Wissen aus Dateien, Startprompts) bzw. was ihr im Steckbrief festhaltet.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ein Projekt sammelt Material für ein Vorhaben, ein Agent standardisiert eine wiederkehrende
+Aufgabe. Fragt euch: Wächst hier etwas über Wochen, oder wiederholt sich dieselbe Tätigkeit?
+Achtet beim Vergleich darauf, ob dieselbe Aufgabe bei verschiedenen Personen in
+unterschiedlichen Kategorien landet – das zeigt, wie wenig eine einzelne Copilot-Antwort als
+Entscheidung taugt. Copilot kennt weder eure Häufigkeiten noch euer Risiko; deshalb entscheidet
+die Gruppe.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Lösung</th>
+<th>in Microsoft 365</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Assistent</td>
+<td>Agent</td>
+<td>wöchentlich, gleiches Schema, mehrere Personen, stabile Produktdaten, Außenwirkung</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Prompt-Vorlage</td>
+<td>Prompt Gallery</td>
+<td>einmalig, eine Person, Spezialwissen</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Projekt</td>
+<td>gemeinsamer Kampagnenordner (OneDrive/SharePoint), Abstimmung im Teams-Kanal</td>
+<td>viele unterschiedliche Aufgaben, wachsende Unterlagen, begrenzte Laufzeit</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Assistent</td>
+<td>Agent</td>
+<td>täglich, gleichartig, zwei Nutzerinnen, Markenstimme mit hohem Risiko</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Prompt (oder gar keine KI)</td>
+<td>normaler Chat</td>
+<td>einmalig, nur du, keine Außenwirkung</td>
+</tr>
+</tbody>
+</table>
+<p>Stellen, an denen sich die Ergebnisse der Gruppenmitglieder unterscheiden können: Fall 4 als
+„Prompt-Vorlage" (Nutzerkreis unterschätzt) oder Fall 3 als „Assistent" („sechs Wochen" klingt
+nach Wiederholung). Sinnvolle <code>[FRAGE: …]</code>-Stellen sind etwa: Wie oft ändern sich die
+Produktdaten? Wer gibt Instagram-Antworten frei?</p>
+<p>Bausteine für Fall 1:</p>
+<table>
+<thead>
+<tr>
+<th>Baustein</th>
+<th>Inhalt</th>
+<th>im Agent Builder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instruktionen</td>
+<td>Rolle „Produkttexter:in in Fjordlicht-Markenstimme", Aufbau, keine Superlative, nur belegbare Nachhaltigkeitsaussagen, Lücken als [FEHLT]</td>
+<td>Anweisungen</td>
+</tr>
+<tr>
+<td>Wissen</td>
+<td>Styleguide, Produktdaten, Claim-Liste, zwei bis drei freigegebene Beispieltexte</td>
+<td>Wissen aus Dateien in OneDrive/SharePoint</td>
+</tr>
+<tr>
+<td>Werkzeuge</td>
+<td>keine Websuche (Gefahr fremder Produktangaben), keine Bilderzeugung</td>
+<td>als Entscheidung im Steckbrief festhalten</td>
+</tr>
+<tr>
+<td>Gesprächseinstieg</td>
+<td>„Produkttext aus Datenblatt erstellen", „Bestehenden Text kürzen"</td>
+<td>Beschreibung und Startprompts</td>
+</tr>
+</tbody>
+</table>
+<p>Fall 4 ist ein Grenzfall: Sobald der Assistent selbst antwortet statt Entwürfe zu liefern,
+gelten zusätzlich Transparenzpflichten (Kap. 27).</p>
+<p>Bewertungskriterien: Jede Zuordnung ist mit mindestens zwei Kriterien begründet; Abweichungen
+zwischen den Copilot-Ergebnissen der Gruppenmitglieder wurden in der Page benannt; die
+Einwände des Advocatus Diaboli sind dokumentiert, mit Entscheidung „ändert / ändert nicht";
+die offenen <code>[FRAGE: …]</code>-Punkte sind als Aufgaben fürs Team formuliert.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Ein Mini-Agent für die Gruppe</summary>
+<p><strong>Gruppe:</strong> 3–4 Personen, ca. 25 Minuten. <strong>Rollen:</strong> <strong>Agent-Bauerin</strong> (legt den Agent an
+und teilt ihn), <strong>Steckbrief-Verantwortliche</strong> (legt das Word-Dokument an und teilt es),
+alle anderen sind <strong>Testerinnen</strong>. Alle führen die Anfragen in ihrem eigenen Copilot aus.
+<strong>Am Ende liegt vor:</strong> ein Agent, der mit der Gruppe geteilt ist, und ein gemeinsamer
+Steckbrief mit Instruktionen und Vergleichstabelle.</p>
+<p>Ziel ist, den Unterschied zwischen „jedes Mal alles mitgeben" und „einmal hinterlegen" selbst zu
+erleben – und zu sehen, wie stark die Ergebnisse zwischen euch schwanken.</p>
+<ol>
+<li><strong>Ohne Agent – gleicher Prompt, mehrere Ergebnisse (5 Minuten).</strong> Alle öffnen einen neuen
+   Chat in <strong>Copilot Chat</strong> (Umschalter auf <strong>Arbeit</strong>) und bitten mit genau demselben Satz um
+   eine Instagram-Caption für den Fleece „Skog" – ohne weitere Angaben:
+   <code>Schreib eine Instagram-Caption für unseren Fleece Skog.</code></li>
+<li><strong>Steckbrief anlegen (5 Minuten).</strong> Die Steckbrief-Verantwortliche legt in Word im eigenen
+   OneDrive-Ordner „Fjordlicht-Kurs" die Datei <strong>„Assistenten-Steckbrief_Social-Captions.docx"</strong>
+   an, teilt sie mit der Gruppe zum Bearbeiten und fügt unter der Überschrift
+   „Instruktionen v0.1" den folgenden Text ein. Alle kopieren ihr Ergebnis aus Schritt 1 unter die
+   Überschrift „Ohne Agent". Der Steckbrief ist das Original (Abschnitt 23.6).</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Du schreibst Social-Media-Entwürfe für Fjordlicht, eine Marke für
+nachhaltige Outdoor-Bekleidung aus Münster.
+Markenstimme: ruhig, ehrlich, naturverbunden, leicht nordisch-trocken,
+Du-Ansprache. Keine Superlative, keine Ausrufezeichen-Ketten.
+Nachhaltigkeit nur mit konkretem, belegbarem Fakt aus der Anfrage.
+Fehlt ein Fakt, schreibe [FEHLT: ...] statt zu raten.
+Ausgabe: Caption mit maximal 60 Wörtern, danach 3 bis 5 Hashtags.
+</code></pre></div></td></tr></table></div>
+<ol>
+<li><strong>Agent anlegen und teilen (5 Minuten).</strong> Die Agent-Bauerin erstellt mit dem
+   <strong>Agent Builder</strong> den Agent <strong>„Fjordlicht Social-Captions (Test)"</strong>, fügt die Instruktionen aus
+   dem Steckbrief unverändert als Anweisungen ein (nicht umformulieren) und gibt keine
+   Wissensdateien an. Sie teilt den Agent <strong>nur mit den Personen der Gruppe</strong>.</li>
+<li><strong>Mit Agent (3 Minuten).</strong> Alle öffnen den geteilten Agent und stellen denselben Satz wie in
+   Schritt 1. Ergebnis unter „Mit Agent" in den Steckbrief kopieren.</li>
+<li><strong>Vergleich (7 Minuten).</strong> Haltet im Steckbrief in einer Tabelle fest, worin sich die
+   Ergebnisse unterscheiden (Ton, Länge, Behauptungen, Hashtags) – einmal <strong>zwischen ohne und
+   mit Agent</strong>, einmal <strong>zwischen euch</strong> innerhalb derselben Variante. Einigt euch auf einen Satz
+   für das Plenum: Was hat der Agent verändert, was nicht?</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achtet besonders auf Nachhaltigkeitsaussagen: Taucht ohne Regel „umweltfreundlich" oder
+„nachhaltig produziert" auf – Aussagen, die Fjordlicht so nicht belegen kann? Achtet auch darauf,
+ob Copilot Chat im Modus <strong>Arbeit</strong> schon auf Dateien aus eurem OneDrive zurückgreift, etwa
+„Fjordlicht-Basisdaten.docx". Dann fällt der Unterschied bei dieser Person kleiner aus – notiert
+das als Beobachtung, es erklärt Abweichungen innerhalb der Gruppe.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Mögliche Beobachtungen:</p>
+<table>
+<thead>
+<tr>
+<th>Aspekt</th>
+<th>Copilot Chat ohne Agent</th>
+<th>Agent mit Anweisungen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ton</td>
+<td>freundlich-werblich, eventuell Superlative („der perfekte Begleiter")</td>
+<td>ruhig, sachlich, Du-Ansprache</td>
+</tr>
+<tr>
+<td>Länge</td>
+<td>schwankt zwischen den Gruppenmitgliedern</td>
+<td>innerhalb der Vorgabe</td>
+</tr>
+<tr>
+<td>Behauptungen</td>
+<td>pauschal „nachhaltig", „umweltfreundlich"</td>
+<td>[FEHLT: Materialangabe] statt Behauptung</td>
+</tr>
+<tr>
+<td>Hashtags</td>
+<td>viele, generisch, Emojis</td>
+<td>3 bis 5, passend</td>
+</tr>
+<tr>
+<td>Streuung in der Gruppe</td>
+<td>groß: jede Person bekommt einen anderen Ansatz</td>
+<td>kleiner, aber nicht null: Formulierungen unterscheiden sich, das Format bleibt</td>
+</tr>
+</tbody>
+</table>
+<p>Entscheidend ist die Zeile „Behauptungen": Der Agent hat nicht „besser geschrieben", sondern eine
+Regel befolgt, die im normalen Chat niemand formuliert hatte. Genau das ist der Nutzen –
+dauerhaft hinterlegte Regeln, die niemand vergessen kann, auch wenn mehrere Personen den
+Assistenten bedienen. Die verbleibende Streuung zeigt: Auch ein Agent liefert Wahrscheinliches,
+kein festes Ergebnis.</p>
+<p>Der Steckbrief enthält jetzt Name, Instruktionen v0.1 und den Vergleich. Wenn ihr später die
+Anweisungen im Agent ändert, ändert ihr sie zuerst im Steckbrief. Wer im Ergebnis mit Agent noch
+einen Superlativ findet, hat einen ersten Testfall für Kap. 25 gefunden – direkt im Steckbrief
+eintragen.</p>
+<p>Bewertungskriterien: Alle haben denselben Prompt verwendet; Instruktionen wurden wörtlich aus
+dem Steckbrief übernommen; der Agent ist nur mit der Gruppe geteilt; die Vergleichstabelle
+benennt Unterschiede zwischen ohne/mit Agent <strong>und</strong> Abweichungen zwischen den
+Gruppenmitgliedern und erklärt sie (z. B. Zugriff auf eigene Dateien im Modus Arbeit).</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Die Migration bewerten – in Arbeitsteilung</summary>
+<p><strong>Gruppe:</strong> 4 Personen (bei drei Personen übernimmt eine zwei Teile), ca. 30 Minuten.
+<strong>Aufteilung:</strong> jede Person bearbeitet einen Teil, danach Zusammenführung in einer geteilten
+<strong>Copilot Page</strong>. <strong>Am Ende liegt vor:</strong> eine gemeinsame Tabelle, eine Liste „ohnehin
+überarbeiten" und ein abgestimmter E-Mail-Entwurf an die Teamleitung.</p>
+<p>Das Fjordlicht-Team nutzt seit einem Jahr den Custom GPT „Produkttext-Helfer". Er hat:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>- ausführliche Instruktionen (Rolle, Ablauf, Regeln, Ausgabeformat)
+- 4 Wissensdateien: Styleguide.pdf, Produktdaten_2025.xlsx,
+  Claim-Liste.docx, Beispieltexte.docx
+- eine Custom Action, die Lagerbestände aus dem Shopsystem abruft
+- Konversationsstarter
+- Freigabe: im gesamten Arbeitsbereich sichtbar
+- eingestelltes Modell: ein schnelles Standardmodell
+- viele gespeicherte Gespräche mit gelungenen Formulierungen
+</code></pre></div></td></tr></table></div>
+<p>Die Teamleitung fragt: „Wir klicken einfach auf ‚Migrate to plugin', dann läuft alles weiter wie
+bisher, oder?" Gleichzeitig steht die Frage im Raum, ob der Assistent nicht gleich als
+<strong>Copilot Agent</strong> neu entstehen soll – Microsoft 365 Copilot haben alle im Team.</p>
+<ol>
+<li><strong>Person A – Plugin-Spalte (10 Minuten).</strong> Lass dir in <strong>Copilot Chat</strong> eine erste Fassung
+   der Tabelle erstellen: Füge die Liste oben und die Migrationstabelle aus Abschnitt 23.4 ein
+   und bitte um die Spalten „Bestandteil – wird ins Plugin übertragen ja/nein – was ist zu tun".
+   Übernimm die Antwort in eine <strong>Copilot Page</strong> und teile sie mit der Gruppe.</li>
+<li><strong>Person B – Faktenprüfung (parallel).</strong> Prüfe jede Zeile der Page gegen Abschnitt 23.4 und
+   markiere, wo Copilot geraten oder sich geirrt hat.</li>
+<li><strong>Person C – Agent-Spalte (parallel).</strong> Ergänze in der Page die Spalte <strong>„bei Neubau als
+   Copilot Agent"</strong>: Wohin wandert jeder Bestandteil (Anweisungen, Wissen aus Dateien,
+   Startprompts, Teilen), und was lässt sich im Agent Builder nicht abbilden?</li>
+<li><strong>Person D – Frühjahrsputz und Antwort (parallel).</strong> Sammle zwei Dinge, die <strong>ohnehin</strong>
+   überarbeitet werden sollten, unabhängig vom Format. Entwirf dann mit <strong>Copilot in Outlook</strong>
+   die Antwort an die Teamleitung (maximal 120 Wörter) und lass dir mit <strong>Coaching durch
+   Copilot</strong> Rückmeldung zu Ton und Klarheit geben.</li>
+<li><strong>Zusammenführung (8 Minuten).</strong> Die Gruppe liest die Page gemeinsam, gleicht die
+   E-Mail mit der Tabelle ab und entscheidet, welche Coaching-Hinweise übernommen werden.
+   Eine Person stellt die Kernaussage der E-Mail im Plenum vor (1 Minute).</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Haltet euch an die Fakten aus Abschnitt 23.4 – achtet darauf, ob Copilot die Plugin-Umstellung
+überhaupt korrekt kennt oder Lücken mit plausibel klingenden Annahmen füllt. Schaut genau auf
+die Dateinamen: Eine Migration ist ein guter Anlass für einen Frühjahrsputz. Beim Copilot Agent
+hilft der Gedanke aus Abschnitt 23.6: Die vier Bausteine sind dieselben, nur die Felder heißen
+anders. Die E-Mail muss zur Tabelle passen – ein Widerspruch zwischen beiden fällt in der
+Zusammenführung auf.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Bestandteil</th>
+<th>ins Plugin?</th>
+<th>Zu tun</th>
+<th>bei Neubau als Copilot Agent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instruktionen</td>
+<td>ja, als Skill</td>
+<td>gegenlesen, ob alles korrekt übernommen ist</td>
+<td>Anweisungen, aus dem Steckbrief kopieren</td>
+</tr>
+<tr>
+<td>Wissensdateien</td>
+<td>ja, als Referenzdateien</td>
+<td>auf Aktualität prüfen</td>
+<td>Dateien in OneDrive/SharePoint als Wissen; Nutzende brauchen Zugriff darauf</td>
+</tr>
+<tr>
+<td>Custom Action Lagerbestand</td>
+<td>nein</td>
+<td>Bedarf klären, ggf. Neubau als App bzw. MCP-Server</td>
+<td>im Agent Builder nicht abbildbar; mit der IT klären</td>
+</tr>
+<tr>
+<td>Konversationsstarter</td>
+<td>nicht sicher</td>
+<td>im Plugin prüfen, sonst Kurzanleitung</td>
+<td>Startprompts</td>
+</tr>
+<tr>
+<td>Freigabe Arbeitsbereich</td>
+<td>nein, Plugin startet privat</td>
+<td>Freigabe bewusst neu setzen</td>
+<td>Agent gezielt mit den Personen teilen, die ihn brauchen</td>
+</tr>
+<tr>
+<td>Modell</td>
+<td>nein</td>
+<td>im Plugin prüfen und testen</td>
+<td>kein Baustein des Steckbriefs; Verhalten nach dem Neubau mit Testfällen prüfen</td>
+</tr>
+<tr>
+<td>Gesprächsverläufe</td>
+<td>nein</td>
+<td>gelungene Formulierungen vorher sichern, als Beispieltexte aufnehmen</td>
+<td>ebenso – nichts wird übernommen</td>
+</tr>
+</tbody>
+</table>
+<p>Mögliche Copilot-Fehler, die Person B finden kann: „Modell wird übernommen" oder „Freigabe
+bleibt erhalten" – beides falsch laut Abschnitt 23.4.</p>
+<p>Ohnehin überarbeiten: (1) <strong>Produktdaten_2025.xlsx</strong> ist veraltet – neue Kollektion fehlt.
+(2) <strong>Styleguide.pdf</strong> als gegliederte Word-Datei neu anlegen (Kap. 24). (3) Die Instruktionen
+werkzeugunabhängig in einem Assistenten-Steckbrief (Word, Ordner „Fjordlicht-Kurs") ablegen,
+damit die nächste Umstellung einfacher wird. Sinnvoll auch: Testfälle definieren und vor und
+nach dem Umzug laufen lassen (Kap. 25).</p>
+<p>Antwort an die Teamleitung:</p>
+<p>„Nicht ganz. Instruktionen und Wissensdateien werden übernommen, aber die Lagerbestand-Abfrage,
+das eingestellte Modell, die Freigabe und alle bisherigen Gespräche nicht. Das Plugin ist nach
+der Migration nur für die Erstellerin sichtbar. Ich schlage vor: gute Formulierungen sichern,
+Produktdaten aktualisieren, Instruktionen in einen Steckbrief übernehmen. Danach können wir
+entscheiden, ob wir als Plugin oder als Copilot Agent weitermachen – der Aufwand ist ähnlich,
+der Copilot Agent liegt bei unseren übrigen Daten. Die Lagerabfrage klären wir separat. Aufwand:
+etwa einen halben Tag."</p>
+<p>Bewertungskriterien: Fakten korrekt, Copilot-Fehler in der Tabelle erkannt und markiert, keine
+Annahme „läuft weiter wie bisher", Agent-Spalte benennt die Lücke bei der Custom Action und die
+Dateiberechtigungen, Migration als Anlass zur Qualitätsprüfung genutzt. Zur Zusammenarbeit:
+E-Mail und Tabelle widersprechen sich nicht; die Gruppe hat begründet festgehalten, welche
+Coaching-Hinweise sie übernommen und welche sie verworfen hat.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Assistenten-Landkarte für ein Marketingteam</summary>
+<p><strong>Szenario:</strong> Das Marketingteam von Fjordlicht (oder ein Unternehmen deiner Wahl) nutzt
+KI-Werkzeuge seit einem Jahr – aber jede Person auf ihre Weise. Die Teamleitung will nun
+„ein paar KI-Assistenten" einführen und bittet dich um eine Entscheidungsgrundlage: Welche
+Aufgaben bekommen einen Agent, welche bleiben bei Prompt-Vorlagen, welche laufen in Notebooks
+bzw. Projekten? Und in welchem Werkzeug? Du arbeitest durchgehend in Microsoft 365 Copilot.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Team: 5 Personen (Content, Social Media, Newsletter, B2B/LinkedIn, Teamleitung).
+Kanäle: Webshop, Blog, Newsletter, Instagram, TikTok, LinkedIn, Pinterest.
+Werkzeuge: Microsoft 365 Copilot (volle Lizenz) für alle, Agent Builder
+freigegeben; zusätzlich ChatGPT Business mit einem bestehenden Custom GPT.
+Stand: Oktober 2026 - Custom GPTs werden durch Plugins abgelöst.
+Ablage: OneDrive-Ordner &quot;Fjordlicht-Kurs&quot;.
+Keine Kundendaten in Assistenten.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Aufgaben sammeln (Copilot in Excel).</strong> Lass dir in Copilot Chat helfen, mindestens
+<strong>zehn</strong> wiederkehrende Aufgaben des Teams zu finden – aber bewerte selbst. Lege die Aufgaben in
+einer Excel-Datei <strong>„Assistenten-Landkarte.xlsx"</strong> im Ordner „Fjordlicht-Kurs" als Tabelle an,
+mit je einer Spalte für die fünf Kriterien aus Abschnitt 23.5 (0 bis 2 Punkte). Lass <strong>Copilot in
+Excel</strong> eine Summenspalte ergänzen und alle Aufgaben mit sechs oder mehr Punkten hervorheben.</p>
+<p><strong>Runde 2 – Zuordnen und skizzieren (Copilot in Word).</strong> Ordne jede Aufgabe einer Lösung zu:
+Prompt-Vorlage (Prompt Gallery), Projekt (Copilot Notebook) oder Assistent (Agent). Für jeden
+geplanten Agent (mindestens zwei, höchstens vier) legst du in Word einen
+<strong>Assistenten-Steckbrief</strong> an, z. B. „Assistenten-Steckbrief_Produkttexte.docx", mit den vier
+Bausteinen in Stichpunkten: Instruktionen, Wissen, Werkzeuge, Gesprächseinstieg. Den ersten
+Entwurf darf Copilot in Word aus deiner Excel-Datei erstellen (Datei per <code>/</code> referenzieren);
+Bausteine und Begründung prüfst du selbst.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Die IT meldet: Wegen der Plugin-Umstellung sollen bis Jahresende
+keine neuen Custom GPTs mehr gebaut werden; neue Assistenten entstehen als Copilot Agents.
+Gleichzeitig weist die Datenschutzbeauftragte darauf hin: Produktdaten sind unkritisch, die
+Excel-Liste mit B2B-Ansprechpartnern aus LinkedIn-Recherchen ist personenbezogen – und sie liegt
+im selben SharePoint-Ordner wie der Styleguide, den du als Wissensquelle nutzen willst. Passe
+deine Planung an: Welche Agents baust du, welche Wissensquellen verweisen auf welche Dateien,
+und was passiert mit dem bestehenden Custom GPT?</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Teamleitung schlägt vor, statt mehrerer Agents
+einen einzigen „Fjordlicht-Marketing-Agent für alles" zu bauen – das sei übersichtlicher. Lass
+dir von Copilot die Vorteile dieser Lösung zusammenstellen. <strong>Widersprich</strong> begründet oder stimme
+begründet zu – mit mindestens drei konkreten Folgen für Instruktionen, Wissensbasis und
+Testaufwand. Formuliere deine Stellungnahme als E-Mail an die Teamleitung mit <strong>Copilot in
+Outlook</strong> und überarbeite den Entwurf selbst, bevor du ihn als fertig betrachtest.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>„Assistenten-Landkarte.xlsx" mit mindestens zehn Aufgaben, Punkten, Summe und Zuordnung</li>
+<li>ein Word-Steckbrief je geplantem Agent mit allen vier Bausteinen</li>
+<li>angepasste Planung nach Runde 3 mit Werkzeugwahl, Wissensquellen und Datenschutzhinweis</li>
+<li>Stellungnahme zu Runde 4 als E-Mail-Entwurf (maximal eine halbe Seite)</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jede Aufgabe eine begründete Zuordnung hat, jeder Steckbrief alle
+vier Bausteine enthält, deine Werkzeugwahl die Plugin-Umstellung und den Datenschutz
+berücksichtigt, keine Wissensquelle auf einen Ordner mit personenbezogenen Daten zeigt und deine
+Stellungnahme aus Runde 4 mindestens drei konkrete Folgen benennt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in der Unterscheidung „sammeln oder standardisieren". In Runde 3 lernst du,
+dass Konzepte werkzeugunabhängig sind: Ein Assistent, der nicht als GPT gebaut werden darf,
+entsteht als Copilot Agent – die vier Bausteine bleiben, deshalb ist der Steckbrief in Word das
+Original. Neu ist eine Microsoft-365-Eigenheit: Ein Agent darf nur auf Inhalte zugreifen, auf die
+die jeweilige Person Zugriff hat – wer einen ganzen Ordner als Wissen angibt, holt alles hinein,
+was darin liegt. Verweise deshalb auf einzelne Dateien oder einen eigenen, aufgeräumten Ordner.
+In Runde 4 gilt: Breite kostet Präzision.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) mindestens zehn realistische Aufgaben, nachvollziehbar nach den fünf
+Kriterien bewertet, Summenspalte und Hervorhebung in Excel korrekt; (2) zwei bis vier Agents mit
+vollständigem Word-Steckbrief, Werkzeuge bewusst begrenzt (z. B. Websuche aus beim
+Produkttext-Agent); (3) Runde 3 führt zu einer begründeten Werkzeugwahl (Copilot Agents für neue
+Assistenten, bestehender Custom GPT wird mit Steckbrief dokumentiert und entweder migriert oder
+als Agent neu gebaut) und trennt die Wissensquellen sauber: eigener Ordner, z. B.
+„Fjordlicht-Kurs/Wissen-Produkttexte", ohne die Ansprechpartner-Liste; (4) die Stellungnahme
+benennt konkrete Folgen, etwa widersprüchliche Tonregeln für LinkedIn und TikTok, falsche
+Wissensdatei bei der Antwort, vervielfachter Testaufwand bei jeder Änderung.</p>
+<p>Ein möglicher Prompt für Runde 1:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Du kennst das Marketingteam von Fjordlicht aus /Fjordlicht-Basisdaten
+(falls nicht vorhanden: 5 Personen, Kanäle Blog, Newsletter, Instagram,
+TikTok, LinkedIn, Pinterest, Webshop). Nenne 15 wiederkehrende Aufgaben,
+die in so einem Team typischerweise anfallen, je mit einem Satz zur
+Häufigkeit. Bewerte NICHT, ob ein Assistent sinnvoll ist.
+</code></pre></div></td></tr></table></div>
+<p>Ein mögliches Ergebnis: Agent „Produkttexte", Agent „Social-Captions", Agent
+„Newsletter-Entwürfe"; Kampagnenplanung als Copilot Notebook; Pressearbeit über Prompt-Vorlagen
+in der Prompt Gallery. Ein einziger Agent für alles wird abgelehnt, mit dem Kompromiss einer
+gemeinsamen Styleguide-Datei, auf die alle Agents verweisen.</p>
+<p>Lernziel: Assistenten-Bedarf systematisch begründen, Werkzeuge nach Rahmenbedingungen statt nach
+Gewohnheit wählen, Wissensquellen datenschutzgerecht zuschneiden und erkennen, dass schmale
+Assistenten verlässlicher sind als breite.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel22/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 22 – SEO mit KI II: On-Page-Optimierung und KI-Suche
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel24/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 24 – Aufbau eines KI-Marketingassistenten I: Konzeption">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 24 – Aufbau eines KI-Marketingassistenten I: Konzeption
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

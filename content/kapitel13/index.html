@@ -1,0 +1,2135 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel12/">
+      
+      
+        <link rel="next" href="../kapitel14/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 13 – E-Mail-Marketing mit KI - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-13-e-mail-marketing-mit-ki" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 13 – E-Mail-Marketing mit KI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Block 3 · KI-Copywriting & Content-Erstellung
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 11 – Kollaboratives Schreiben: vom ChatGPT Canvas zu Schreibblöcken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 12 – Redaktionsplanung & Brainstorming mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 13 – E-Mail-Marketing mit KI
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 13 – E-Mail-Marketing mit KI
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#131-die-anatomie-einer-marketing-e-mail" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.1 Die Anatomie einer Marketing-E-Mail
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#132-betreffzeilen-und-preheader" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.2 Betreffzeilen und Preheader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#133-den-newsletter-modular-aufbauen" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.3 Den Newsletter modular aufbauen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134-willkommens-und-nurture-sequenzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.4 Willkommens- und Nurture-Sequenzen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135-personalisierung-mit-platzhaltern" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.5 Personalisierung mit Platzhaltern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#136-spam-trigger-und-rechtliche-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.6 Spam-Trigger und rechtliche Basics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 14 – Social-Media-Texte mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 15 – Blogartikel & Leadmagnete
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 16 – ChatGPT für A/B-Tests von Textvarianten
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-13-e-mail-marketing-mit-ki">Kapitel 13 – E-Mail-Marketing mit KI<a class="headerlink" href="#kapitel-13-e-mail-marketing-mit-ki" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Aus welchen <strong>Bausteinen</strong> eine Marketing-E-Mail besteht und bei welchen KI am meisten hilft</li>
+<li>Wie du <strong>Betreffzeilen</strong> und <strong>Preheader</strong> als Paar entwickelst und gezielt Varianten erzeugst</li>
+<li>Wie du einen <strong>Newsletter</strong> modular aufbaust und per Briefing erstellen lässt</li>
+<li>Wie <strong>Willkommens-</strong> und <strong>Nurture-Sequenzen</strong> geplant und geschrieben werden</li>
+<li>Wie <strong>Personalisierung mit Platzhaltern</strong> funktioniert – ohne echte Kundendaten im Prompt</li>
+<li>Was hinter <strong>Spam-Triggern</strong> steckt und welche <strong>rechtlichen Basics</strong> du kennen musst</li>
+</ul>
+</div>
+<hr />
+<h2 id="131-die-anatomie-einer-marketing-e-mail">13.1 Die Anatomie einer Marketing-E-Mail<a class="headerlink" href="#131-die-anatomie-einer-marketing-e-mail" title="Permanent link">&para;</a></h2>
+<p>E-Mail ist für viele Unternehmen der Kanal mit dem direktesten Draht zur Kundschaft: Die Adressen gehören euch, kein Algorithmus entscheidet über die Reichweite, und Abonnenten haben sich bewusst angemeldet. Fjordlicht erreicht so rund 38.000 Menschen. Umso wichtiger ist, dass jede Mail ihren Platz im Postfach verdient.</p>
+<table>
+<thead>
+<tr>
+<th>Baustein</th>
+<th>Funktion</th>
+<th>Wie KI hilft</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Absendername</td>
+<td>Vertrauen, Wiedererkennung</td>
+<td>kaum – das ist eine feste Entscheidung</td>
+</tr>
+<tr>
+<td>Betreffzeile</td>
+<td>Öffnung auslösen</td>
+<td>Varianten erzeugen, nach Muster formulieren</td>
+</tr>
+<tr>
+<td>Preheader</td>
+<td>Betreff ergänzen, Neugier verstärken</td>
+<td>passend zum Betreff formulieren</td>
+</tr>
+<tr>
+<td>Einstieg / Header</td>
+<td>Thema setzen</td>
+<td>Einstiegsvarianten, Bildidee</td>
+</tr>
+<tr>
+<td>Inhaltsmodule</td>
+<td>informieren, inspirieren, verkaufen</td>
+<td>Texte aus Briefing oder Blogbeitrag ableiten</td>
+</tr>
+<tr>
+<td>Call-to-Action (CTA)</td>
+<td>Klick auslösen</td>
+<td>Formulierungen testen, auf Ziel zuspitzen</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td>Pflichtangaben, Abmeldelink</td>
+<td>keine Hilfe nötig, aus Vorlage übernehmen</td>
+</tr>
+</tbody>
+</table>
+<p>Die Arbeitsteilung ist klar: KI schreibt Entwürfe für die <strong>Textbausteine</strong>, du entscheidest über <strong>Ziel, Struktur und Freigabe</strong>. Alles, was rechtlich oder technisch festgelegt ist – Absender, Footer, Abmeldelink –, kommt aus der Vorlage eures Newsletter-Tools und wird nicht von der KI erzeugt.</p>
+<hr />
+<h2 id="132-betreffzeilen-und-preheader">13.2 Betreffzeilen und Preheader<a class="headerlink" href="#132-betreffzeilen-und-preheader" title="Permanent link">&para;</a></h2>
+<p>Betreffzeile und <strong>Preheader</strong> (die Vorschauzeile, die im Postfach neben oder unter dem Betreff erscheint) sind ein Paar. Der Preheader wiederholt den Betreff nicht, sondern <strong>ergänzt</strong> ihn. Wird kein Preheader gesetzt, zeigen viele Postfächer den ersten Text der Mail an – oft „Mail im Browser ansehen".</p>
+<p>Wie viele Zeichen sichtbar sind, hängt von Postfach und Gerät ab; auf dem Smartphone wird oft schon nach wenigen Dutzend Zeichen abgeschnitten. Faustregel: Das Wichtigste gehört an den Anfang.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist E-Mail-Marketing-Spezialistin bei Fjordlicht.
+Request: Formuliere 8 Paare aus Betreffzeile und Preheader für den
+Newsletter &quot;Regenzeit: So bleibt deine Jacke dicht&quot;.
+Output: Tabelle mit den Spalten Betreff, Preheader, Ansatz.
+Betreff max. 45 Zeichen, Preheader max. 90 Zeichen.
+Modifier: Je 2 Paare mit den Ansätzen Nutzen, Frage, Neugier, Konkretheit.
+Keine Superlative, keine Ausrufezeichen, keine Emojis, kein Rabatt.
+Der Preheader wiederholt den Betreff nicht.
+Purpose: Abonnenten sollen den Pflegeleitfaden lesen und ihre Jacke länger nutzen.
+Tone: ruhig, ehrlich, nordisch-trocken, Du-Ansprache.
+</code></pre></div></td></tr></table></div>
+<p>Der Prompt folgt dem P.R.O.M.P.T.-Framework (Kap. 5). Besonders wirkungsvoll ist der Modifier mit <strong>unterschiedlichen Ansätzen</strong>: Er verhindert, dass du acht Varianten desselben Gedankens bekommst – und liefert dir zugleich Material für einen sauberen A/B-Test (Kap. 16).</p>
+<table>
+<thead>
+<tr>
+<th>Ansatz</th>
+<th>Betreff</th>
+<th>Preheader</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nutzen</td>
+<td>Deine Jacke hält länger, als du denkst</td>
+<td>Zehn Minuten Pflege im Herbst reichen. So geht's.</td>
+</tr>
+<tr>
+<td>Frage</td>
+<td>Perlt der Regen noch ab?</td>
+<td>Wenn nicht, liegt es selten an der Jacke.</td>
+</tr>
+<tr>
+<td>Konkretheit</td>
+<td>Imprägnieren in 3 Schritten</td>
+<td>Was du brauchst, was du lassen kannst.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>KI-Betreffzeilen tendieren zu Clickbait: „Das hast du garantiert noch nicht gewusst", „Letzte Chance". Das bringt kurzfristig Öffnungen, kostet aber Vertrauen – und passt nicht zu einer Marke, die ehrlich und ruhig klingen will. Verbiete solche Muster ausdrücklich im Modifier.</p>
+</div>
+<hr />
+<h2 id="133-den-newsletter-modular-aufbauen">13.3 Den Newsletter modular aufbauen<a class="headerlink" href="#133-den-newsletter-modular-aufbauen" title="Permanent link">&para;</a></h2>
+<p>Ein Newsletter ist kein langer Text, sondern eine <strong>Abfolge von Modulen</strong>. Fjordlichts Monatsnewsletter hat ein festes Raster: Einstieg mit Jahreszeit, ein Hauptthema (meist aus dem Blog), ein Produktmodul, ein Modul „Länger nutzen", ein kurzer Ausblick. Wer dieses Raster im Prompt vorgibt, bekommt einen Entwurf, der ins Template passt.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle einen Newsletter-Entwurf nach diesem festen Raster:
+1. Einstieg (max. 50 Wörter, Bezug zur Jahreszeit)
+2. Hauptthema (max. 120 Wörter, Teaser für diesen Blogbeitrag: [Text])
+3. Produktmodul (max. 60 Wörter, Produkt: [Name], Fakten: [Datenblatt])
+4. Länger nutzen (max. 60 Wörter, Pflege- oder Reparaturtipp)
+5. Ausblick (1 Satz)
+Jedes Modul bekommt eine Zwischenüberschrift und einen CTA-Text
+(max. 4 Wörter). Übernimm nur Fakten aus dem mitgelieferten Material.
+Fehlende Angaben als [FEHLT].
+</code></pre></div></td></tr></table></div>
+<p>Für längere Newsletter lohnt sich das Arbeiten im Dokument mit gezielter Überarbeitung einzelner Module (Kap. 11). Den Hauptinhalt leitest du am besten aus einem bestehenden Blogbeitrag ab (Content-Recycling, Kap. 12) – so muss nur eine Quelle geprüft werden.</p>
+<div class="admonition tip">
+<p class="admonition-title">Ein Ziel pro Mail</p>
+<p>Lege für jede Mail ein <strong>Hauptziel</strong> fest und nenne es im Purpose: Blogbeitrag lesen, Produkt ansehen, Reparaturservice buchen. Fünf gleichrangige CTAs führen dazu, dass keiner geklickt wird. Die KI ordnet Module sinnvoller, wenn sie weiß, worauf alles hinauslaufen soll.</p>
+</div>
+<hr />
+<h2 id="134-willkommens-und-nurture-sequenzen">13.4 Willkommens- und Nurture-Sequenzen<a class="headerlink" href="#134-willkommens-und-nurture-sequenzen" title="Permanent link">&para;</a></h2>
+<p>Eine <strong>Sequenz</strong> ist eine Reihe automatisierter Mails, die durch ein Ereignis ausgelöst wird – etwa die Anmeldung zum Newsletter oder den Download eines Leadmagneten (Kap. 15). Die <strong>Willkommenssequenz</strong> begrüßt neue Abonnenten und stellt die Marke vor. Eine <strong>Nurture-Sequenz</strong> („nähren") begleitet Interessenten über Wochen mit hilfreichen Inhalten, bis sie bereit für einen Kauf oder ein Gespräch sind – typisch im B2B-Bereich, etwa für Fjordlicht Business.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Anmeldung bestätigt]) --&gt; B([Mail 1 sofort: Willkommen])
+    B --&gt; C([Mail 2 nach 2 Tagen: Markengeschichte])
+    C --&gt; D([Mail 3 nach 5 Tagen: Ausrüstung verstehen])
+    D --&gt; E([Mail 4 nach 9 Tagen: Länger nutzen])
+    E --&gt; F([Mail 5 nach 14 Tagen: Produktempfehlung])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mail</th>
+<th>Ziel</th>
+<th>Inhalt</th>
+<th>CTA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 – Willkommen</td>
+<td>Erwartung setzen</td>
+<td>was kommt, wie oft, wer schreibt</td>
+<td>Blog entdecken</td>
+</tr>
+<tr>
+<td>2 – Markengeschichte</td>
+<td>Vertrauen</td>
+<td>warum es Fjordlicht gibt, Münster, Team</td>
+<td>Über uns</td>
+</tr>
+<tr>
+<td>3 – Ausrüstung verstehen</td>
+<td>Kompetenz</td>
+<td>Schichtenprinzip in drei Sätzen</td>
+<td>Ratgeber lesen</td>
+</tr>
+<tr>
+<td>4 – Länger nutzen</td>
+<td>Werte belegen</td>
+<td>Pflege und Reparaturservice</td>
+<td>Service ansehen</td>
+</tr>
+<tr>
+<td>5 – Empfehlung</td>
+<td>erster Kauf</td>
+<td>passendes Einstiegsprodukt</td>
+<td>Produkt ansehen</td>
+</tr>
+</tbody>
+</table>
+<p>KI ist bei Sequenzen besonders hilfreich, weil sie <strong>Zusammenhang</strong> über mehrere Mails halten kann – vorausgesetzt, du lässt zuerst die Struktur und dann die einzelnen Mails erstellen (Prompt-Ketten, Kap. 6). Schreibe nicht alle fünf Mails in einem einzigen Prompt: Die späteren Mails werden dann oft kürzer und schwächer.</p>
+<div class="admonition example">
+<p class="admonition-title">Prompt-Kette für eine Sequenz</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Schritt 1: Entwirf den Plan einer Willkommenssequenz mit 5 Mails für
+Fjordlicht als Tabelle: Mail, Abstand in Tagen, Ziel, Kernbotschaft, CTA.
+Jede Kernbotschaft kommt nur einmal vor.
+
+Schritt 2 (je Mail einzeln): Schreibe Mail [Nummer] gemäß Plan.
+Betreff, Preheader, Text max. 150 Wörter, ein CTA.
+Greife höchstens einen Gedanken aus der vorherigen Mail auf.
+</code></pre></div></td></tr></table></div>
+</div>
+<hr />
+<h2 id="135-personalisierung-mit-platzhaltern">13.5 Personalisierung mit Platzhaltern<a class="headerlink" href="#135-personalisierung-mit-platzhaltern" title="Permanent link">&para;</a></h2>
+<p>Personalisierung reicht von der Anrede mit Vornamen bis zu Inhalten, die sich nach Interessen oder Kaufhistorie unterscheiden. Technisch erledigt das euer Newsletter-Tool über <strong>Platzhalter</strong> (auch Merge-Tags), die beim Versand durch Daten aus der Abonnentenliste ersetzt werden. Die Schreibweise unterscheidet sich je Tool – Mailchimp etwa nutzt <code>*|FNAME|*</code>, andere Tools eigene Formate.</p>
+<p>Für die Arbeit mit KI gilt eine klare Regel: <strong>Die KI schreibt die Vorlage, das Tool personalisiert.</strong> Echte Namen, E-Mail-Adressen oder Kaufhistorien gehören nicht in den Prompt eines Consumer-KI-Werkzeugs (DSGVO, Kap. 4). Im Prompt arbeitest du mit neutralen Platzhaltern in eckigen Klammern und ersetzt sie danach durch die Syntax deines Tools.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Schreibe einen Newsletter-Einstieg mit diesen Platzhaltern:
+[Vorname], [zuletzt gekaufte Produktkategorie].
+Liefere zwei Fassungen:
+A) für Abonnenten mit bekanntem Vornamen und Kaufhistorie,
+B) Fallback ohne Vornamen und ohne Kaufhistorie.
+Beide Fassungen müssen ohne die Platzhalter natürlich klingen.
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Stufe</th>
+<th>Beispiel</th>
+<th>Risiko</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anrede</td>
+<td>„Hallo [Vorname],"</td>
+<td>leeres Feld ergibt „Hallo ," – Fallback nötig</td>
+</tr>
+<tr>
+<td>Segment</td>
+<td>eigene Fassung für Familien und für B2B</td>
+<td>Segmente müssen sauber gepflegt sein</td>
+</tr>
+<tr>
+<td>Verhalten</td>
+<td>Pflegetipp passend zur gekauften Jacke</td>
+<td>wirkt schnell überwachend, sparsam einsetzen</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Der häufigste Personalisierungsfehler ist kein KI-Fehler, sondern ein Datenfehler: fehlende Vornamen, Vornamen in Großbuchstaben, „Herr Familie Müller". Lege für jeden Platzhalter einen <strong>Fallback</strong> fest und sende vor jedem Versand eine Testmail mit leeren und auffälligen Datensätzen.</p>
+</div>
+<hr />
+<h2 id="136-spam-trigger-und-rechtliche-basics">13.6 Spam-Trigger und rechtliche Basics<a class="headerlink" href="#136-spam-trigger-und-rechtliche-basics" title="Permanent link">&para;</a></h2>
+<p>Ob eine Mail im Posteingang landet, entscheiden Spamfilter heute vor allem anhand der <strong>Absenderreputation</strong>, der technischen <strong>Authentifizierung</strong> (SPF, DKIM, DMARC) und des <strong>Verhaltens der Empfänger</strong> (Öffnungen, Beschwerden, Abmeldungen). Große Postfachanbieter wie Gmail und Yahoo verlangen von Massenversendern seit 2024 unter anderem Authentifizierung und eine einfache Abmeldung mit einem Klick. Einzelne „Spam-Wörter" spielen eine kleinere Rolle als oft behauptet – trotzdem gibt es Muster, die du vermeiden solltest.</p>
+<table>
+<thead>
+<tr>
+<th>Spam-Signal</th>
+<th>Beispiel</th>
+<th>Besser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Großbuchstaben, viele Satzzeichen</td>
+<td>„GRATIS!!!"</td>
+<td>sachlicher Betreff</td>
+</tr>
+<tr>
+<td>Übertriebene Versprechen</td>
+<td>„Garantiert 100 % wasserdicht für immer"</td>
+<td>belegbare Aussage</td>
+</tr>
+<tr>
+<td>Nur ein großes Bild, kaum Text</td>
+<td>Grafik-Newsletter</td>
+<td>ausgewogenes Verhältnis von Text und Bild</td>
+</tr>
+<tr>
+<td>Linkverkürzer, viele Links</td>
+<td>fünf bit.ly-Links</td>
+<td>wenige, klare Links auf die eigene Domain</td>
+</tr>
+<tr>
+<td>Irreführender Betreff</td>
+<td>„Re: Deine Bestellung" ohne Bestellung</td>
+<td>Betreff, der zum Inhalt passt</td>
+</tr>
+</tbody>
+</table>
+<p>Du kannst die KI bitten, einen Entwurf auf solche Muster zu prüfen. Die technische Zustellbarkeit prüft sie nicht – das erledigen euer Newsletter-Tool und die IT.</p>
+<p><strong>Rechtliche Basics in Kürze:</strong> Werbe-Mails dürfen in Deutschland grundsätzlich nur mit <strong>vorheriger ausdrücklicher Einwilligung</strong> verschickt werden (§ 7 UWG, DSGVO). Das <strong>Double-Opt-in-Verfahren</strong> – Anmeldung plus Bestätigungsklick – ist der übliche Weg, die Einwilligung nachzuweisen. Für Bestandskunden gibt es eine eng begrenzte Ausnahme für ähnliche Produkte (§ 7 Abs. 3 UWG). Jede Mail braucht ein <strong>Impressum</strong> und einen funktionierenden <strong>Abmeldelink</strong>. Und: Auch ein KI-geschriebener Text darf nicht irreführen (UWG) – eine erfundene Nachhaltigkeitsaussage ist ein Rechtsrisiko, nicht nur ein Stilproblem.</p>
+<div class="admonition info">
+<p class="admonition-title">Hinweis</p>
+<p>Dieser Abschnitt gibt eine Orientierung und ersetzt keine Rechtsberatung. Bei Unsicherheiten, etwa zur Bestandskundenausnahme oder zu Gewinnspielen, frag eure Rechtsabteilung oder eine Anwältin. Den rechtlichen Rahmen für KI-Inhalte vertieft Kapitel 39.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Die KI schreibt die Texte, das Newsletter-Tool personalisiert und versendet, der Mensch verantwortet Ziel, Daten und Freigabe. Wer diese drei Rollen sauber trennt, gewinnt Tempo, ohne Datenschutz und Vertrauen zu riskieren.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Eine Marketing-E-Mail besteht aus festen Bausteinen; KI hilft vor allem bei <strong>Betreff, Preheader, Modulen und CTAs</strong>, nicht bei Absender und Pflichtangaben.</li>
+<li><strong>Betreff und Preheader</strong> sind ein Paar; Varianten mit unterschiedlichen Ansätzen liefern Material für A/B-Tests (Kap. 16).</li>
+<li>Ein <strong>modularer Newsletter</strong> mit festem Raster und einem Hauptziel pro Mail lässt sich per P.R.O.M.P.T.-Briefing (Kap. 5) zuverlässig erstellen.</li>
+<li><strong>Sequenzen</strong> entstehen per Prompt-Kette: erst der Plan, dann jede Mail einzeln.</li>
+<li><strong>Personalisierung</strong> übernimmt das Tool; im Prompt stehen nur Platzhalter in eckigen Klammern, keine echten Kundendaten, und jeder Platzhalter braucht einen Fallback.</li>
+<li>Zustellbarkeit hängt vor allem an Reputation, Authentifizierung und Empfängerverhalten; rechtlich gelten <strong>Einwilligung</strong>, <strong>Double-Opt-in</strong>, Impressum und Abmeldelink.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Betreff und Preheader im Paar beurteilen und verbessern</summary>
+<p><strong>Gruppe:</strong> Paare oder 3 Personen · <strong>Dauer:</strong> ca. 15 Minuten · <strong>Aufteilung:</strong> erst allein
+urteilen, dann vergleichen; alle führen denselben Prompt aus · <strong>Am Ende liegt vor:</strong> eine
+gemeinsame Bewertung der fünf Paare und ein ausgewähltes Ersatzpaar für Paar 4.</p>
+<p>Beurteilt die folgenden Paare aus Betreffzeile und Preheader für den Fjordlicht-Newsletter.</p>
+<ol>
+<li>Betreff: <code>MEGA-DEAL!!! Nur heute!</code> – Preheader: <code>Nur heute!</code></li>
+<li>Betreff: <code>Re: Deine Bestellung</code> – Preheader: <code>Neue Herbstkollektion entdecken</code></li>
+<li>Betreff: <code>Perlt der Regen noch ab?</code> – Preheader: <code>Wenn nicht, liegt es selten an der Jacke.</code></li>
+<li>Betreff: <code>Die nachhaltigste Jacke der Welt</code> – Preheader: <code>Mail im Browser ansehen</code></li>
+<li>
+<p>Betreff: <code>Hallo [Vorname], dein Pflegeplan</code> – Preheader: (leer)</p>
+</li>
+<li>
+<p><strong>Allein:</strong> Jede Person nennt für jedes Paar das Hauptproblem (oder „passt") und ob ein
+   Spam-Signal oder ein Verstoß gegen die Markenstimme (ruhig, ehrlich, keine Superlative)
+   vorliegt. Danach vergleicht ihr und einigt euch auf eine gemeinsame Bewertung.</p>
+</li>
+<li><strong>Gleicher Prompt, mehrere Ergebnisse:</strong> Jede Person gibt die Paare in ihren eigenen
+   <strong>Copilot Chat</strong> ein und lässt sie nach denselben Kriterien beurteilen, mit Verweis auf
+   <code>/Fjordlicht-Basisdaten</code>. Vergleicht: Kommen eure Copilot-Antworten zum selben Urteil? Was
+   hat Copilot übersehen, was habt ihr übersehen?</li>
+<li><strong>Ersatz für Paar 4:</strong> Jede Person lässt Copilot drei bessere Fassungen mit unterschiedlichen
+   Ansätzen (Nutzen, Frage, Konkretheit) vorschlagen. Die jeweils andere Person prüft die
+   Vorschläge gegen die belegten Claims. Aus allen geprüften Fassungen wählt ihr gemeinsam
+   <strong>eine</strong> aus und begründet die Wahl in einem Satz.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Prüft drei Dinge: Ergänzt der Preheader den Betreff? Ist der Betreff ehrlich zum Inhalt? Gibt
+es Platzhalter, die ohne Fallback zu einem Fehler führen können? Achtet darauf, ob Copilot das
+Fallback-Problem in Paar 5 von sich aus erwähnt – und ob das in allen eurer Antworten gleich ist.
+Wenn nicht, fragt ausdrücklich nach.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Hauptproblem</th>
+<th>Spam-Signal / Markenstimme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Großbuchstaben, Ausrufezeichen, Preheader wiederholt Betreff</td>
+<td>beides: Spam-Signal und gegen die Markenstimme</td>
+</tr>
+<tr>
+<td>2</td>
+<td>irreführender Betreff, es gibt keine Bestellung</td>
+<td>Spam-Signal und rechtlich riskant (Irreführung)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>passt</td>
+<td>keins; Preheader ergänzt den Betreff</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Superlativ und unbelegte Nachhaltigkeitsaussage; Preheader nicht gesetzt</td>
+<td>gegen Markenstimme, Greenwashing-Risiko</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Platzhalter ohne Fallback, leerer Preheader zeigt beliebigen Text</td>
+<td>Datenrisiko („Hallo ,")</td>
+</tr>
+</tbody>
+</table>
+<p>Beispielprompt für Schritt 3:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Formuliere 3 Paare aus Betreff (max. 45 Zeichen) und Preheader
+(max. 90 Zeichen) für einen Newsletter zur Regenjacke Sølv.
+Ansätze: Nutzen, Frage, Konkretheit. Nutze nur die belegten Claims aus
+/Fjordlicht-Basisdaten. Keine Superlative, keine Ausrufezeichen.
+Der Preheader wiederholt den Betreff nicht.
+</code></pre></div></td></tr></table></div>
+<p>Mögliche Auswahl:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Betreff: Die Sølv: Regenjacke aus recyceltem Polyamid
+Preheader: Was das Material kann und wie du es lange nutzt.
+</code></pre></div></td></tr></table></div>
+<p>Achtet darauf, ob in einer der Fassungen „Obermaterial zu 100 % aus recyceltem Polyamid" zu
+„komplett recycelt" oder „nachhaltig" verkürzt wurde – solche Vorschläge fallen bei der
+gegenseitigen Prüfung heraus. Merke: Der Preheader ist ein eigener Baustein. Bleibt er leer,
+entscheidet das Postfach, was angezeigt wird.</p>
+<p>Bewertungskriterien: alle fünf Paare mit Hauptproblem bewertet, Fallback-Problem erkannt,
+ausgewähltes Ersatzpaar ohne Superlativ und ohne verkürzten Claim; zur Zusammenarbeit:
+Einzelurteile entstanden vor dem Vergleich, Unterschiede zwischen den Copilot-Antworten der
+Gruppenmitglieder wurden benannt, die Vorschläge wurden gegenseitig geprüft, und die Auswahl ist
+eine begründete Gruppenentscheidung.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Newsletter nach Raster – Arbeitsteilung in Word und Outlook</summary>
+<p>Diese Übung macht ihr in <strong>Copilot in Word</strong>, <strong>Copilot Chat</strong> und <strong>Copilot in Outlook</strong>.</p>
+<p><strong>Gruppe:</strong> 3–4 Personen · <strong>Dauer:</strong> ca. 30 Minuten · <strong>Aufteilung:</strong> Entwurf (Word),
+Betreff/Preheader (Chat), Faktenprüfung (Word), Coaching (Outlook); bei drei Personen übernimmt
+die Faktenprüferin auch das Coaching · <strong>Am Ende liegt vor:</strong> ein geteiltes Word-Dokument mit
+geprüftem Newsletter-Entwurf, einem ausgewählten Betreff/Preheader-Paar und kommentierten
+Prüfbefunden.</p>
+<p>Thema des Newsletters: „Erster Frost". Material:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Blogbeitrag-Kernaussagen: Schichtenprinzip (Basisschicht, Isolation,
+Wetterschutz); Baumwolle trocknet langsam; Füße und Kopf zuerst warm halten.
+Produkt: Fleece Skog, 80 Prozent recyceltes Polyester, 3 Farben, Größen XS-XXL.
+Service: Reparaturservice für Fjordlicht-Produkte, Anmeldung im Webshop.
+Hauptziel der Mail: Blogbeitrag lesen.
+</code></pre></div></td></tr></table></div>
+<ol>
+<li><strong>Gemeinsam (5 Minuten):</strong> Schreibt zusammen einen Prompt nach dem P.R.O.M.P.T.-Framework
+   (Kap. 5) mit dem festen Raster aus Abschnitt 13.3 und Verweis auf <code>/Fjordlicht-Basisdaten</code>.</li>
+<li><strong>Entwurf:</strong> Person 1 legt im Ordner „Fjordlicht-Kurs" ein neues Word-Dokument an, lässt
+   damit einen Entwurf mit Copilot erstellen und teilt das Dokument mit der Gruppe.</li>
+<li><strong>Parallel – Betreff und Preheader:</strong> Person 2 lässt in Copilot Chat drei Paare aus Betreff
+   und Preheader mit unterschiedlichen Ansätzen erstellen und fügt sie am Ende des Dokuments ein.</li>
+<li><strong>Parallel – Faktenprüfung:</strong> Person 3 prüft den Entwurf: Wurden Fakten erfunden (Preise,
+   Termine, weitere Materialangaben)? Gibt es mehr als ein Hauptziel? Sind die Längenvorgaben
+   eingehalten? Sie fragt Copilot in Word zusätzlich, welche Aussagen im Dokument <strong>nicht</strong> im
+   Material stehen, und vergleicht die Antwort mit dem eigenen Befund. Jeder Befund wird als
+   Word-Kommentar an der Stelle markiert.</li>
+<li><strong>Parallel – Coaching:</strong> Person 4 kopiert das Modul „Hauptthema" in einen E-Mail-Entwurf an
+   sich selbst in Outlook und holt sich mit dem <strong>Coaching durch Copilot</strong> Rückmeldung zu Ton
+   und Klarheit. Sie trägt die Hinweise als Kommentar ins Dokument ein – mit Vermerk, ob sie
+   zur Markenstimme passen.</li>
+<li><strong>Zusammenführung:</strong> Geht die Kommentare gemeinsam durch, korrigiert die Befunde gezielt an
+   der markierten Stelle und entscheidet euch für ein Betreff/Preheader-Paar. Eine Person stellt
+   im Plenum in einer Minute den wichtigsten Befund vor.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Gebt das Hauptziel ausdrücklich im Purpose an. Achtet beim Prüfen darauf, ob das Produktmodul
+trotzdem den stärksten CTA bekommen hat. Outlook dient hier nur als Prüfumgebung: Versendet
+wird der Newsletter über euer Newsletter-Tool mit Vorlage, Footer und Abmeldelink. Vergleicht in
+Schritt 6, ob die Frage ans Dokument dieselben Stellen gefunden hat wie die Faktenprüferin.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispielprompt für den Entwurf in Word (Auszug):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Persona: Du bist E-Mail-Marketing-Spezialistin bei Fjordlicht.
+Request: Erstelle einen Newsletter-Entwurf zum Thema &quot;Erster Frost&quot;.
+Output: festes Raster mit 5 Modulen [Raster aus 13.3], je Zwischenüberschrift
+und CTA-Text (max. 4 Wörter).
+Modifier: Nur Fakten aus dem Material unten und aus /Fjordlicht-Basisdaten.
+Keine Preise, keine Termine. Keine Superlative. Fehlende Angaben als [FEHLT].
+Purpose: Hauptziel ist, dass Abonnenten den Blogbeitrag lesen. Produkt und
+Service sind Nebenmodule. Zielgruppe: naturverbundene Stadtmenschen 25-45.
+Tone: ruhig, ehrlich, nordisch-trocken, Du-Ansprache.
+Material: [Material einfügen]
+</code></pre></div></td></tr></table></div>
+<p>Mögliche Prüfbefunde:</p>
+<table>
+<thead>
+<tr>
+<th>Prüfpunkt</th>
+<th>Möglicher Befund</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Erfundene Fakten</td>
+<td>„atmungsaktiv" oder „besonders leicht" beim Fleece, obwohl nicht im Material</td>
+</tr>
+<tr>
+<td>Preis aus den Basisdaten</td>
+<td>89 € taucht im Produktmodul auf, obwohl „keine Preise" verlangt war</td>
+</tr>
+<tr>
+<td>Hauptziel</td>
+<td>Produktmodul hat den stärksten CTA („Jetzt kaufen")</td>
+</tr>
+<tr>
+<td>Länge</td>
+<td>Hauptthema überschreitet 120 Wörter</td>
+</tr>
+<tr>
+<td>Markenstimme</td>
+<td>„kuschelig warm durch den Winter" – eher Allerweltston</td>
+</tr>
+<tr>
+<td>Coaching</td>
+<td>Vorschlag für mehr Begeisterung oder Ausrufezeichen – nicht übernehmen</td>
+</tr>
+</tbody>
+</table>
+<p>Die Frage ans Dokument und die Prüfung von Hand finden nicht unbedingt dieselben Stellen.
+Wenn Copilot eine eigene Ergänzung als belegt einstuft, ist das ein wichtiger Befund für das
+Plenum.</p>
+<p>Bewertungskriterien: mindestens zwei Befunde benannt und gezielt an der markierten Stelle
+korrigiert, Begründung, welche Coaching-Hinweise übernommen oder verworfen wurden, ein Paar aus
+Betreff und Preheader ausgewählt; zur Zusammenarbeit: alle vier Teilaufgaben wurden parallel
+bearbeitet und im gemeinsamen Dokument zusammengeführt, Befunde sind als Kommentare sichtbar,
+und Abweichungen zwischen der Antwort von Copilot und der eigenen Faktenprüfung wurden benannt
+und erklärt.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Nurture-Sequenz für Fjordlicht Business mit Page und Outlook</summary>
+<p>Fjordlicht Business bietet Firmenbekleidung für Unternehmen an. Wer auf der Website die
+Checkliste „Teamausstattung für Außeneinsätze" herunterlädt, soll eine Nurture-Sequenz erhalten.</p>
+<p><strong>Gruppe:</strong> 4 Personen · <strong>Dauer:</strong> ca. 30 Minuten · <strong>Aufteilung:</strong> eine Person erstellt den
+Plan, danach schreibt jede Person eine der vier Mails; eine Person ist zusätzlich Advocatus
+Diaboli · <strong>Am Ende liegt vor:</strong> eine geteilte Copilot Page mit Plan, vier Mail-Entwürfen,
+Kritikpunkten und den Antworten zu Personalisierung und Recht.</p>
+<ol>
+<li><strong>Plan:</strong> Person 1 lässt in <strong>Copilot Chat</strong> per Prompt-Kette einen <strong>Plan</strong> für vier Mails
+   erstellen (Abstand, Ziel, Kernbotschaft, CTA), mit Verweis auf <code>/Fjordlicht-Basisdaten</code>. Sie
+   übernimmt den Plan in eine <strong>Copilot Page</strong> und teilt sie mit der Gruppe.</li>
+<li><strong>Kritik am Plan:</strong> Der Advocatus Diaboli prüft den Plan zuerst und schreibt seine Einwände
+   direkt in die Page: Wird zu früh verkauft? Wiederholen sich Kernbotschaften? Passt der Ton zu
+   Einkauf, Arbeitssicherheit und Geschäftsführung? Die Gruppe entscheidet, welche Einwände sie
+   in den Plan übernimmt.</li>
+<li><strong>Arbeitsteilung:</strong> Jede Person schreibt <strong>eine</strong> Mail als neuen E-Mail-Entwurf in
+   <strong>Outlook</strong> mit Copilot und passt Ton und Länge mit Copilot an, bis die Mail zu
+   B2B-Entscheidern passt. Nichts wird gesendet. Den fertigen Text fügt jede Person unter
+   „Mail 1" bis „Mail 4" in die Page ein.</li>
+<li><strong>Gemeinsames Lesen:</strong> Lest die vier Mails hintereinander. Passt der Ton zusammen, obwohl vier
+   Personen geschrieben haben? Wo wiederholt sich etwas? Gleicht die Unterschiede in der Page an.</li>
+<li><strong>Personalisierung (gemeinsam):</strong> Welche Platzhalter sind sinnvoll (z. B. [Firmenname],
+   [Branche]), welche Fallbacks braucht ihr – und warum gehören echte Kundendaten auch dann
+   <strong>nicht</strong> in den Prompt, wenn Copilot im Arbeitsmodus mit Enterprise Data Protection läuft?</li>
+<li><strong>Recht:</strong> Nennt die rechtliche Voraussetzung, damit die Sequenz überhaupt verschickt werden
+   darf. Eine Person stellt im Plenum in zwei Minuten Plan und eine Mail vor.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>B2B-Nurturing hat einen längeren Atem als B2C. Die erste Mail liefert, was versprochen wurde
+(die Checkliste), die letzte lädt zu einem Gespräch ein – dazwischen liegt Nutzen, nicht Werbung.
+Weil vier Personen mit vier eigenen Copilot-Entwürfen arbeiten, achtet darauf, ob die Mails in
+Anrede, Länge und Ton auseinanderlaufen – vereinbart vor Schritt 3 kurz eine gemeinsame
+Vorgabe (z. B. „sachlich, Du-Ansprache, max. 120 Wörter").</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispielprompt für den Plan:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Entwirf den Plan einer Nurture-Sequenz mit 4 Mails für Fjordlicht Business.
+Auslöser: Download der Checkliste &quot;Teamausstattung für Außeneinsätze&quot;.
+Zielgruppe: Einkauf, Arbeitssicherheit, Geschäftsführung kleiner und
+mittlerer Betriebe. Fakten und Markenstimme: /Fjordlicht-Basisdaten.
+Tabelle: Mail, Abstand in Tagen, Ziel, Kernbotschaft, CTA.
+Jede Kernbotschaft nur einmal. Kauf-CTA frühestens in der letzten Mail.
+Keine erfundenen Kundenbeispiele, keine Rabatte.
+</code></pre></div></td></tr></table></div>
+<p>Möglicher Plan:</p>
+<table>
+<thead>
+<tr>
+<th>Mail</th>
+<th>Abstand</th>
+<th>Ziel</th>
+<th>Kernbotschaft</th>
+<th>CTA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>sofort</td>
+<td>Versprechen einlösen</td>
+<td>hier ist die Checkliste, so nutzt du sie</td>
+<td>Checkliste öffnen</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3 Tage</td>
+<td>Kompetenz</td>
+<td>worauf es bei Wetterschutz im Arbeitsalltag ankommt</td>
+<td>Ratgeber lesen</td>
+</tr>
+<tr>
+<td>3</td>
+<td>7 Tage</td>
+<td>Vertrauen</td>
+<td>wie ein Handwerksbetrieb seine Teamausstattung umgestellt hat (nur mit Freigabe des Kunden)</td>
+<td>Fallbeispiel lesen</td>
+</tr>
+<tr>
+<td>4</td>
+<td>12 Tage</td>
+<td>Gespräch</td>
+<td>individuelle Beratung zu Größen, Logo, Nachbestellung</td>
+<td>Termin vereinbaren</td>
+</tr>
+</tbody>
+</table>
+<p>Mögliche Einwände des Advocatus Diaboli: ein Kauf-CTA schon in Mail 2, ein erfundenes
+Kundenbeispiel mit Firmennamen oder versprochene Mengenrabatte. Ein Fallbeispiel darf nur mit
+echtem, freigegebenem Kunden verwendet werden. Beim Anpassen des Tons in Outlook kann
+„formeller" zu „steif" werden – hier hilft eine konkrete Anweisung wie „sachlich,
+Du-Ansprache beibehalten, max. 120 Wörter".</p>
+<p>Personalisierung: [Firmenname] und [Branche] sind sinnvoll, Fallback jeweils eine neutrale
+Formulierung („dein Team"). Enterprise Data Protection bedeutet, dass Eingaben im
+Microsoft-365-Mandanten bleiben und nicht zum Training genutzt werden – es ändert nichts an
+Datenminimierung und Zweckbindung (Kap. 4). Copilot schreibt die Vorlage, das Newsletter- oder
+Marketing-Automation-Tool setzt die Daten ein. Echte Firmen- und Personennamen, E-Mail-Adressen
+oder CRM-Exporte gehören nicht in den Prompt.</p>
+<p>Rechtlich: Eine vorherige ausdrückliche Einwilligung in den Erhalt der Mails ist nötig,
+üblicherweise per Double-Opt-in beim Download – auch im B2B-Bereich. Der Download allein ist
+keine Einwilligung in Werbung, wenn das nicht klar erkennbar abgefragt wurde. Im Zweifel klärt
+das die Rechtsabteilung.</p>
+<p>Bewertungskriterien: Plan und Mails getrennt erstellt, Plan in einer geteilten Page, Ton in
+Outlook gezielt angepasst, mindestens zwei kritische Befunde benannt, Platzhalter mit
+Fallbacks, Einwilligung korrekt beschrieben; zur Zusammenarbeit: jede Person hat eine Mail
+verantwortet, die Einwände des Advocatus Diaboli sind in der Page sichtbar und begründet
+angenommen oder verworfen, und Unterschiede in Ton und Länge zwischen den vier Mails wurden
+benannt und angeglichen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Willkommenssequenz für neue Abonnenten mit Word und Outlook</summary>
+<p><strong>Szenario:</strong> Fjordlicht gewinnt jeden Monat rund 1.200 neue Newsletter-Abonnenten. Bisher
+bekommen sie nach der Bestätigung nur eine kurze Standardmail und landen dann im normalen
+Monatsnewsletter. Viele melden sich nach wenigen Wochen wieder ab. Das Team möchte eine
+Willkommenssequenz, die die Marke vorstellt, Vertrauen aufbaut und erst am Ende ein Produkt
+empfiehlt. Du kannst statt Fjordlicht auch <strong>ein Unternehmen deiner Wahl</strong> nutzen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Auslöser: bestätigte Anmeldung (Double-Opt-in).
+Umfang: 4 bis 6 Mails in höchstens 21 Tagen.
+Platzhalter verfügbar: [Vorname], [Interesse] (Wandern, Familie, Alltag).
+Keine Rabatte, keine Superlative, nur belegte Nachhaltigkeitsaussagen:
+Sølv-Obermaterial 100 Prozent recyceltes Polyamid; Reparaturservice vorhanden.
+Faktenbasis: /Fjordlicht-Basisdaten (falls nicht vorhanden: Kap. 11, Kurzübung 1).
+Keine echten Kundendaten im Prompt.
+Werkzeuge: Copilot Chat, Copilot in Word, Copilot in Outlook.
+Ablage: OneDrive-Ordner &quot;Fjordlicht-Kurs&quot;, Datei &quot;Willkommenssequenz.docx&quot;.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Plan und Texte.</strong> Erstelle per Prompt-Kette in Copilot Chat zuerst den Plan der
+Sequenz (Mail, Abstand, Ziel, Kernbotschaft, CTA) und speichere ihn als Tabelle in
+„Willkommenssequenz.docx". Lass dann in Word mit Copilot jede Mail <strong>einzeln</strong> entwerfen, mit
+Betreff, Preheader, Text und genau einem CTA – jeweils mit Verweis auf die Basisdaten und den
+Plan. Nutze für die Prompts das P.R.O.M.P.T.-Framework (Kap. 5).</p>
+<p><strong>Runde 2 – Prüfung gegen Pflichtkriterien.</strong> Die Sequenz muss <strong>alle vier</strong> Kriterien erfüllen:</p>
+<ol>
+<li>Jede Mail hat genau <strong>ein Hauptziel</strong> und einen CTA.</li>
+<li>Jeder Platzhalter hat einen <strong>Fallback</strong>, und jede Mail liest sich auch mit Fallback natürlich.</li>
+<li>Kein Betreff enthält Spam-Signale oder Clickbait-Muster; Betreff und Preheader ergänzen sich.</li>
+<li>Keine Aussage geht über die belegten Fakten hinaus.</li>
+</ol>
+<p>Frag Copilot in Word, welche Aussagen im Dokument Nachhaltigkeit betreffen und wo CTAs stehen,
+und prüfe die Antwort selbst. Lege für zwei Mails einen Testentwurf an dich selbst in <strong>Outlook</strong>
+an – einmal mit Platzhaltern, einmal mit Fallback – und nutze das <strong>Coaching durch Copilot</strong> als
+zweite Meinung zu Ton und Klarheit.</p>
+<p><strong>Runde 3 – Die Komplikation.</strong> Die Auswertung der Anmeldungen zeigt: Rund 40 Prozent der neuen
+Abonnenten haben beim [Interesse] „Familie" angegeben. Die Teamleitung möchte für sie ab Mail 3
+eine eigene Variante. Passe die Sequenz an, ohne alles neu schreiben zu lassen: Welche Mails
+bleiben gleich, welche bekommen eine Familienfassung? Arbeite in Word mit eingeschalteter
+Änderungsverfolgung und gezielter Überarbeitung markierter Passagen (Kap. 11).</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Copilot schlägt vor, in Mail 1 einen
+„Willkommensrabatt von 10 Prozent" anzubieten, weil das „branchenüblich die Konversion
+steigert". Lass dir diese Behauptung im <strong>Web</strong>-Modus mit Quellen belegen und prüfe die Quellen.
+<strong>Widersprich</strong> dem Vorschlag oder stimme begründet zu. Wäge ab: kurzfristige Käufe gegen
+Markenstimme, Erwartungshaltung der Abonnenten und Fjordlichts Haltung zu Rabatten. Halte fest,
+wie du die Wirkung deiner Entscheidung später messen würdest (Kap. 16, Kap. 20).</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Plan der Sequenz als Tabelle in „Willkommenssequenz.docx"</li>
+<li>alle Mails mit Betreff, Preheader, Text und CTA im selben Dokument</li>
+<li>ausgefüllte Checkliste der vier Pflichtkriterien, ergänzt um die Outlook-Tests</li>
+<li>Familienvarianten aus Runde 3 mit nachverfolgten Änderungen und Begründung, welche Mails
+   gleich bleiben</li>
+<li>begründete Entscheidung zu Runde 4 mit Bewertung der Quellen und Messidee</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> jede Mail alle vier Pflichtkriterien erfüllt, die Familienvarianten
+sich inhaltlich (nicht nur in der Anrede) unterscheiden, keine echten Kundendaten verwendet
+wurden und deine Entscheidung aus Runde 4 mindestens ein Argument dafür und eines dagegen
+benennt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt in Runde 2 und 4. Eine Sequenz wirkt nur, wenn jede Mail einen klaren Zweck
+hat und die Reihenfolge Vertrauen vor Verkauf stellt. In Runde 4 zeigt sich, dass „branchenüblich"
+kein Argument für eine bestimmte Marke ist: Copilot kennt den Durchschnitt, nicht eure Strategie –
+und Quellen zu Konversionsraten stammen oft von Anbietern, die Rabatt-Tools verkaufen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispielprompt für eine einzelne Mail in Word:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Schreibe Mail 3 der Willkommenssequenz gemäß dem Plan in der Tabelle oben.
+Betreff (max. 45 Zeichen), Preheader (max. 90 Zeichen), Text max. 150 Wörter,
+genau ein CTA. Platzhalter: [Vorname] mit Fallback &quot;Hallo,&quot;.
+Fakten nur aus /Fjordlicht-Basisdaten. Greife höchstens einen Gedanken
+aus Mail 2 auf. Keine Superlative, keine Rabatte.
+Tone: ruhig, ehrlich, nordisch-trocken, Du-Ansprache.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: (1) Plan vor den Texten erstellt, Mails einzeln formuliert, Prompts mit
+vollständigen P.R.O.M.P.T.-Bausteinen und Verweis auf die Basisdaten; (2) alle vier
+Pflichtkriterien nachweisbar geprüft, insbesondere Fallbacks für [Vorname] und [Interesse] und
+keine erfundenen Nachhaltigkeitsaussagen; Copilot-Antworten und Coaching-Hinweise wurden selbst
+bewertet, nicht übernommen; (3) Familienvarianten unterscheiden sich im Inhalt (z. B. Packliste
+für Kinder statt Schichtenprinzip für Pendler), unveränderte Mails sind begründet; Überarbeitung
+erfolgte gezielt und ist nachverfolgbar; (4) die Entscheidung in Runde 4 wägt konkret ab (Rabatt
+erzeugt Erwartung an weitere Rabatte, widerspricht der ruhigen Markenstimme, kann aber Erstkäufe
+beschleunigen), bewertet die Quellen kritisch und schlägt eine Messung vor, etwa Kaufquote und
+Abmelderate nach 30 Tagen im A/B-Vergleich.</p>
+<p>Lernziel: Eine automatisierte E-Mail-Sequenz mit Copilot planen und texten, Personalisierung
+datensparsam umsetzen und strategische Entscheidungen nicht an den Branchendurchschnitt
+delegieren.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel12/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 12 – Redaktionsplanung &amp; Brainstorming mit KI">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 12 – Redaktionsplanung & Brainstorming mit KI
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel14/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 14 – Social-Media-Texte mit KI">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 14 – Social-Media-Texte mit KI
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

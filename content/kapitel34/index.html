@@ -1,0 +1,2100 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel33/">
+      
+      
+        <link rel="next" href="../kapitel35/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 34 – Anwendungsgrenzen der Bild-KI - Prompt Engineering: Generative KI im Marketing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-34-anwendungsgrenzen-der-bild-ki" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-header__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: Generative KI im Marketing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 34 – Anwendungsgrenzen der Bild-KI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · Einführung in KI und Marketing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel5/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Prompt Engineering in der Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel11/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · KI-Copywriting & Content-Erstellung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel17/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Content-Optimierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel23/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · KI-Assistenten & CustomGPT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel29/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 6 · Bildgenerierung mit KI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel35/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 7 · Multimediale Content Creation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel39/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 8 · Recht, Ethik & Ausblick
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: Generative KI im Marketing" class="md-nav__button md-logo" aria-label="Prompt Engineering: Generative KI im Marketing" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: Generative KI im Marketing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · Einführung in KI und Marketing
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel5/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Prompt Engineering in der Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel11/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · KI-Copywriting & Content-Erstellung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel17/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Content-Optimierung mit KI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel23/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · KI-Assistenten & CustomGPT
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 6 · Bildgenerierung mit KI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Block 6 · Bildgenerierung mit KI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – Wie Bild-KI funktioniert
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 30 – Prompting für Bild-KI: die Bildprompt-Anatomie
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 31 – Werkzeuge in der Praxis: ChatGPT Images, Midjourney, Ideogram, Adobe Firefly
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel32/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 32 – Visuelle Wirkung: Bildsprache, Komposition und Markenkonsistenz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel33/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 33 – Bildserien und Kampagnenmotive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 34 – Anwendungsgrenzen der Bild-KI
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 34 – Anwendungsgrenzen der Bild-KI
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#341-technische-fehler-wo-bild-ki-danebenliegt" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.1 Technische Fehler: wo Bild-KI danebenliegt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#342-bias-und-stereotype" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.2 Bias und Stereotype
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#343-echte-personen-fremde-marken-bekannte-figuren" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.3 Echte Personen, fremde Marken, bekannte Figuren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#344-urheber-und-nutzungsrechte" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.4 Urheber- und Nutzungsrechte
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#345-kennzeichnung" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.5 Kennzeichnung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#346-tauschungsrisiko-wenn-das-bild-mehr-verspricht-als-das-produkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.6 Täuschungsrisiko: wenn das Bild mehr verspricht als das Produkt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#347-entscheidungsraster-generieren-fotografieren-oder-stock" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.7 Entscheidungsraster: generieren, fotografieren oder Stock?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel35/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 7 · Multimediale Content Creation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel39/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 8 · Recht, Ethik & Ausblick
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-34-anwendungsgrenzen-der-bild-ki">Kapitel 34 – Anwendungsgrenzen der Bild-KI<a class="headerlink" href="#kapitel-34-anwendungsgrenzen-der-bild-ki" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Welche <strong>technischen Fehler</strong> Bild-KI typischerweise macht und wie du sie systematisch findest</li>
+<li>Wie <strong>Bias und Stereotype</strong> in generierten Bildern entstehen und wie du gegensteuerst</li>
+<li>Warum <strong>echte Personen, fremde Marken und bekannte Figuren</strong> tabu sind – auch wenn das Werkzeug sie erzeugt</li>
+<li>Was für <strong>Urheber- und Nutzungsrechte</strong> an KI-Bildern gilt und worauf du in den Bedingungen der Werkzeuge achtest</li>
+<li>Wann eine <strong>Kennzeichnung</strong> nötig ist: Plattformlabels, Art. 50 AI Act bei Deepfakes, C2PA</li>
+<li>Wie du mit einem <strong>Entscheidungsraster</strong> zwischen Generieren, Fotografieren und Stock wählst</li>
+</ul>
+</div>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Hinweis</p>
+<p>Dieses Kapitel gibt Orientierung für die Praxis, keine Rechtsberatung. Im Zweifel – insbesondere vor größeren Kampagnen – fragst du die Rechtsabteilung oder eine Anwältin bzw. einen Anwalt. Die Vertiefung zu Urheberrecht, Transparenzpflichten und Ethik folgt in Kap. 39.</p>
+</div>
+<h2 id="341-technische-fehler-wo-bild-ki-danebenliegt">34.1 Technische Fehler: wo Bild-KI danebenliegt<a class="headerlink" href="#341-technische-fehler-wo-bild-ki-danebenliegt" title="Permanent link">&para;</a></h2>
+<p>Bildmodelle erzeugen statistisch plausible Pixel, kein Wissen über die Welt (Kap. 29). Deshalb scheitern sie dort, wo Details einer Logik folgen müssen: Anatomie, Schrift, Mechanik, Physik. Die Modelle sind 2026 deutlich besser als noch vor zwei Jahren – aber die Fehler sind nicht verschwunden, sondern <strong>subtiler</strong> geworden. Gerade das macht sie gefährlich: Sie fallen beim schnellen Hinsehen nicht auf.</p>
+<table>
+<thead>
+<tr>
+<th>Fehlerbild</th>
+<th>Woran du es erkennst</th>
+<th>Gegenmittel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hände und Gliedmaßen</td>
+<td>Fingerzahl, verschmolzene Finger, unmögliche Gelenke</td>
+<td>heranzoomen, Inpainting, Hände aus dem Bild nehmen</td>
+</tr>
+<tr>
+<td>Text im Bild</td>
+<td>Buchstabendreher, Fantasiewörter in Hintergrundschildern</td>
+<td>Text im Layout setzen (Kap. 33), Hintergrundschrift entfernen</td>
+</tr>
+<tr>
+<td>Logos</td>
+<td>verzerrtes eigenes Logo, Fantasielogos auf Kleidung</td>
+<td>Logo nie generieren, nachträglich einsetzen</td>
+</tr>
+<tr>
+<td>Produktdetails</td>
+<td>Reißverschlüsse ohne Ende, falsche Taschen, Nähte im Nichts</td>
+<td>echtes Produktfoto, Prüfung durch Produktmanagement</td>
+</tr>
+<tr>
+<td>Physik und Logik</td>
+<td>Schatten in verschiedene Richtungen, Spiegelbild passt nicht, Regen ohne nasse Flächen</td>
+<td>Bild in Ruhe „von Ecke zu Ecke" lesen</td>
+</tr>
+<tr>
+<td>Wiederholungen</td>
+<td>gleiche Gesichter in Gruppen, kopierte Bäume, Muster in erweiterten Rändern</td>
+<td>besonders nach Outpainting prüfen</td>
+</tr>
+<tr>
+<td>Kontext</td>
+<td>falsche Jahreszeit, Ausrüstung für die Situation ungeeignet</td>
+<td>Fachperson draufschauen lassen</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Die 100-Prozent-Prüfung</p>
+<p>Prüfe jedes Bild vor der Freigabe in voller Auflösung, Quadrant für Quadrant. Schau dabei bewusst auf Hände, Schrift, Kanten, Spiegelungen und Produkt. Für Outdoor-Marken kommt die fachliche Prüfung dazu: Trägt jemand bei Starkregen eine offene Jacke? Steht ein Zelt im Bachbett? Solche Fehler erkennt nur, wer sich auskennt – und genau diese Fehler fallen auch der Kundschaft auf.</p>
+</div>
+<hr />
+<h2 id="342-bias-und-stereotype">34.2 Bias und Stereotype<a class="headerlink" href="#342-bias-und-stereotype" title="Permanent link">&para;</a></h2>
+<p>Bildmodelle lernen aus riesigen Bildmengen und übernehmen deren Schieflagen. Ohne nähere Angaben erzeugen sie den <strong>statistischen Durchschnitt</strong> – und der ist selten neutral: „Eine Führungskraft" ist dann meist ein Mann mittleren Alters, „eine Familie beim Wandern" weiß, schlank, Vater, Mutter, zwei Kinder, „eine Pflegekraft" eine junge Frau. Für Fjordlicht hieße das: eine Kampagne, in der sich große Teile der Zielgruppe nicht wiederfinden.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Vorher:
+Familie beim Wandern im Herbstregen, Fotostil.
+
+Nachher:
+Familie beim Wandern im Herbstregen: eine Mutter Anfang 40 mit kurzem grauem
+Haar, ihr Sohn etwa 10 Jahre alt, Großvater mit Wanderstock. Alle tragen
+Regenkleidung, lachen über eine Pfütze. Natürliche Körperformen, Alltagslook.
+[Bildsprache-Baustein]
+</code></pre></div></td></tr></table></div>
+<p>Gegensteuern heißt <strong>konkret beschreiben</strong>, nicht pauschal „divers" ergänzen. Pauschale Anweisungen führen oft zu einer anderen Klischee-Variante – etwa dem immer gleichen „gemischten Team", das wie aus der Stockfoto-Bibliothek wirkt. Prüfe außerdem die ganze <strong>Serie</strong>, nicht das Einzelbild: Wer kommt vor, in welcher Rolle, wer handelt, wer schaut zu?</p>
+<div class="admonition warning">
+<p class="admonition-title">Typische Falle</p>
+<p>Vielfalt als Dekoration: Eine Person im Rollstuhl im Hintergrund eines Wanderbildes, ohne dass Weg oder Situation dazu passen, wirkt nicht inklusiv, sondern gestellt. Repräsentation ist dann glaubwürdig, wenn die Situation für die gezeigten Menschen realistisch ist – im Zweifel ist hier ein echtes Shooting mit echten Menschen die bessere Wahl.</p>
+</div>
+<hr />
+<h2 id="343-echte-personen-fremde-marken-bekannte-figuren">34.3 Echte Personen, fremde Marken, bekannte Figuren<a class="headerlink" href="#343-echte-personen-fremde-marken-bekannte-figuren" title="Permanent link">&para;</a></h2>
+<p>Dass ein Werkzeug etwas erzeugt, heißt nicht, dass du es verwenden darfst. Die Filter der Anbieter sind keine rechtliche Prüfung.</p>
+<ul>
+<li><strong>Echte Personen:</strong> Bilder, die erkennbar eine reale Person zeigen – Prominente, Influencer, Mitarbeitende, Kundschaft –, berühren das <strong>Recht am eigenen Bild</strong> (§§ 22 f. KUG) und das allgemeine Persönlichkeitsrecht. Ohne Einwilligung ist eine werbliche Nutzung praktisch immer unzulässig. Auch „Lookalikes", die erkennbar an eine bekannte Person erinnern sollen, sind riskant.</li>
+<li><strong>Fremde Marken:</strong> Logos, Produktdesigns und Markennamen anderer Unternehmen gehören nicht in eure Werbung. Bild-KI setzt gern bekannte Logos auf Kleidung, Autos oder Getränkedosen – das kann Markenrechte verletzen und eine Verbindung suggerieren, die es nicht gibt.</li>
+<li><strong>Figuren und Werke:</strong> Bekannte Comic-, Film- oder Spielfiguren sind urheber- und oft markenrechtlich geschützt. Ein Bild „im Stil von" ist nicht per se verboten, die <strong>Nachbildung konkreter Werke oder Figuren</strong> schon.</li>
+<li><strong>Reale Orte und Ereignisse:</strong> Ein generiertes Bild vom Prinzipalmarkt in Münster bei Schnee, das echt wirkt, kann ein Deepfake im Sinne des AI Act sein (34.5).</li>
+</ul>
+<hr />
+<h2 id="344-urheber-und-nutzungsrechte">34.4 Urheber- und Nutzungsrechte<a class="headerlink" href="#344-urheber-und-nutzungsrechte" title="Permanent link">&para;</a></h2>
+<p>Zwei Fragen musst du auseinanderhalten: <strong>Wem gehört das Bild?</strong> und <strong>Was darfst du laut Werkzeug damit tun?</strong></p>
+<p>Zur ersten: Nach deutschem Recht schützt das Urheberrecht nur <strong>persönliche geistige Schöpfungen</strong> (§ 2 Abs. 2 UrhG). Ein Bild, das im Wesentlichen die KI erzeugt hat, ist in der Regel <strong>nicht geschützt</strong> – auch nicht durch einen langen Prompt. Die Konsequenz für das Marketing: Die Konkurrenz kann euer KI-Kampagnenmotiv grundsätzlich übernehmen. Schutz entsteht eher dort, wo ein Mensch schöpferisch gestaltet – etwa im Composing mit eigenem Foto, im Layout, in der Gesamtgestaltung. Für Motive, die exklusiv bleiben sollen, etwa ein Markenzeichen oder eine Maskottchen-Figur, ist reine Bild-KI deshalb eine schwache Grundlage.</p>
+<p>Zur zweiten: Die Nutzungsbedingungen der Werkzeuge regeln, ob und wie du Ergebnisse kommerziell nutzen darfst. Stand Oktober 2026 im Überblick – Bedingungen ändern sich, prüfe vor dem Einsatz die aktuelle Fassung:</p>
+<table>
+<thead>
+<tr>
+<th>Werkzeug</th>
+<th>Worauf achten</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ChatGPT Images</td>
+<td>Nutzungsrechte am Output laut Bedingungen bei den Nutzenden; C2PA-Metadaten werden eingebettet; Datenschutz und Tarif beachten (Kap. 4)</td>
+</tr>
+<tr>
+<td>Midjourney</td>
+<td>kommerzielle Nutzung nur in Bezahlplänen, für größere Unternehmen höhere Pläne vorgeschrieben; Bilder je nach Plan öffentlich sichtbar</td>
+</tr>
+<tr>
+<td>Adobe Firefly</td>
+<td>trainiert auf lizenzierten Adobe-Stock- und gemeinfreien Inhalten, für kommerzielle Nutzung ausgelegt; Content Credentials; in Unternehmensverträgen teils zusätzliche Absicherung</td>
+</tr>
+<tr>
+<td>Ideogram</td>
+<td>kommerzielle Nutzung möglich; Sichtbarkeit und Rechte je nach Plan prüfen</td>
+</tr>
+<tr>
+<td>Gemini / Nano Banana</td>
+<td>Google-Bedingungen; Bilder tragen ein unsichtbares SynthID-Wasserzeichen</td>
+</tr>
+</tbody>
+</table>
+<p>Unabhängig davon kann ein Output <strong>Rechte Dritter</strong> verletzen, wenn er einem geschützten Werk, einer Marke oder einer Person zu nahe kommt. Die Frage, ob das Training der Modelle selbst rechtmäßig war, ist Gegenstand laufender Verfahren (Kap. 39) – sie ändert nichts an deiner Pflicht, den eigenen Output zu prüfen.</p>
+<hr />
+<h2 id="345-kennzeichnung">34.5 Kennzeichnung<a class="headerlink" href="#345-kennzeichnung" title="Permanent link">&para;</a></h2>
+<p>Für die Kennzeichnung gibt es drei Ebenen, die oft verwechselt werden:</p>
+<ol>
+<li><strong>Anbieterpflicht (Art. 50 Abs. 2 AI Act):</strong> Anbieter generativer Systeme müssen synthetische Inhalte maschinenlesbar markieren – über Metadaten wie <strong>C2PA/Content Credentials</strong> oder Wasserzeichen wie SynthID. Das ist Aufgabe von OpenAI, Adobe, Google &amp; Co. Deine Aufgabe: diese Markierungen nicht absichtlich entfernen.</li>
+<li><strong>Betreiberpflicht bei Deepfakes (Art. 50 Abs. 4, seit 02.08.2026):</strong> Wer Bild-, Audio- oder Videoinhalte veröffentlicht, die realen Personen, Orten, Gegenständen oder Ereignissen ähneln und fälschlich echt wirken, muss offenlegen, dass sie künstlich erzeugt oder manipuliert sind. Bei erkennbar künstlerischen, satirischen oder fiktionalen Werken gilt das in eingeschränkter Form.</li>
+<li><strong>Plattformregeln:</strong> Meta, TikTok und YouTube verlangen Labels für realistische KI-Inhalte und erkennen C2PA-Daten teils automatisch – unabhängig vom AI Act.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Fall bei Fjordlicht</th>
+<th>AI Act Art. 50 Abs. 4</th>
+<th>Empfehlung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Echtes Produktfoto, KI-generierte Nebellandschaft als Hintergrund</td>
+<td>i. d. R. kein Deepfake</td>
+<td>Plattformregeln prüfen, KI-Label bei fotorealistischer Wirkung setzen</td>
+</tr>
+<tr>
+<td>Illustration im Aquarellstil für den Blog</td>
+<td>keine Pflicht</td>
+<td>freiwilliger Hinweis möglich</td>
+</tr>
+<tr>
+<td>Fotorealistischer, echter Ort mit erfundenem Ereignis (Schneechaos am Prinzipalmarkt)</td>
+<td>Deepfake möglich</td>
+<td>offenlegen oder auf das Motiv verzichten</td>
+</tr>
+<tr>
+<td>Erkennbare reale Person im Fjordlicht-Look</td>
+<td>Deepfake</td>
+<td>ohne Einwilligung nicht verwenden; mit Einwilligung offenlegen</td>
+</tr>
+<tr>
+<td>Generiertes „Kundinnenfoto" mit Zitat</td>
+<td>Täuschung</td>
+<td>nicht verwenden (34.6)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Merksatz</p>
+<p>Kennzeichnung ist mehr als eine Rechtspflicht: Fjordlichts Markenwert ist Ehrlichkeit. Wenn du überlegst, ob ein Label „nötig" ist, frage zusätzlich, ob sich Kundinnen getäuscht fühlen würden, wenn sie später erfahren, dass das Bild generiert war.</p>
+</div>
+<hr />
+<h2 id="346-tauschungsrisiko-wenn-das-bild-mehr-verspricht-als-das-produkt">34.6 Täuschungsrisiko: wenn das Bild mehr verspricht als das Produkt<a class="headerlink" href="#346-tauschungsrisiko-wenn-das-bild-mehr-verspricht-als-das-produkt" title="Permanent link">&para;</a></h2>
+<p>Unabhängig vom AI Act verbietet das <strong>UWG</strong> irreführende geschäftliche Handlungen. Ein Werbebild ist eine Aussage über das Produkt. Riskant sind vor allem:</p>
+<ul>
+<li><strong>Produktabbildungen, die nicht dem Produkt entsprechen:</strong> andere Farbe, andere Details, bessere Verarbeitung (Kap. 33).</li>
+<li><strong>Erfundene Nutzungssituationen mit Wirkungsversprechen:</strong> die Jacke trocken im Wolkenbruch am Gipfel, obwohl sie nur für leichten Regen ausgelegt ist.</li>
+<li><strong>Vermeintlich echte Menschen:</strong> generierte „Kundschaft", „Mitarbeitende" oder „Testimonials".</li>
+<li><strong>Visuelles Greenwashing:</strong> Natursymbolik, die Umweltvorteile suggeriert, die nicht belegt sind (Kap. 32).</li>
+<li><strong>Vorher/Nachher-Bilder</strong>, die nicht auf echten Aufnahmen beruhen.</li>
+</ul>
+<hr />
+<h2 id="347-entscheidungsraster-generieren-fotografieren-oder-stock">34.7 Entscheidungsraster: generieren, fotografieren oder Stock?<a class="headerlink" href="#347-entscheidungsraster-generieren-fotografieren-oder-stock" title="Permanent link">&para;</a></h2>
+<p>Bild-KI ist ein Werkzeug unter dreien. Die Wahl hängt von der Bildaufgabe ab, nicht von der Neugier auf das Werkzeug.</p>
+<table>
+<thead>
+<tr>
+<th>Kriterium</th>
+<th>Generieren</th>
+<th>Fotografieren</th>
+<th>Stock</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Produkt im Bild</td>
+<td>nur als Composing mit echtem Foto</td>
+<td>erste Wahl</td>
+<td>ungeeignet für eigene Produkte</td>
+</tr>
+<tr>
+<td>Echte Menschen, Team, Kundschaft</td>
+<td>nein</td>
+<td>erste Wahl</td>
+<td>nur als erkennbar allgemeine Szene</td>
+</tr>
+<tr>
+<td>Stimmung, Hintergrund, Illustration</td>
+<td>stark</td>
+<td>aufwendig</td>
+<td>gut, aber austauschbar</td>
+</tr>
+<tr>
+<td>Exklusivität und Schutz</td>
+<td>schwach (kein Urheberrecht)</td>
+<td>stark</td>
+<td>schwach (andere nutzen dasselbe Bild)</td>
+</tr>
+<tr>
+<td>Tempo und Varianten</td>
+<td>sehr hoch</td>
+<td>gering</td>
+<td>hoch</td>
+</tr>
+<tr>
+<td>Rechtssicherheit</td>
+<td>Bedingungen und Output prüfen</td>
+<td>mit Verträgen und Einwilligungen hoch</td>
+<td>Lizenz prüfen</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart TD
+    A(["Bildbedarf"]) --&gt; B{"Zeigt das Bild ein konkretes Produkt?"}
+    B --&gt;|"ja"| C(["Echtes Produktfoto, ggf. KI-Umgebung"])
+    B --&gt;|"nein"| D{"Zeigt es echte Personen, Team oder Kundschaft?"}
+    D --&gt;|"ja"| E(["Fotografieren mit Einwilligung"])
+    D --&gt;|"nein"| F{"Soll das Motiv exklusiv und geschützt sein?"}
+    F --&gt;|"ja"| G(["Fotografieren oder menschlich gestalten"])
+    F --&gt;|"nein"| H(["Generieren oder Stock, danach Prüfung und Kennzeichnung"])</code></pre>
+<div class="admonition example">
+<p class="admonition-title">Prüffrage vor jeder Freigabe</p>
+<p>Bitte ChatGPT, Claude oder Gemini um eine kritische Zweitmeinung – als Ergänzung, nicht als Ersatz für deine Prüfung:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Prüfe dieses Werbebild für Fjordlicht vor der Veröffentlichung auf:
+1. technische Fehler (Hände, Text, Logos, Produktdetails, Physik),
+2. Stereotype in der Darstellung von Menschen,
+3. erkennbare reale Personen, Orte, fremde Marken oder Figuren,
+4. Bildaussagen, die über das Produkt hinausgehen könnten:
+   [Produktbeschreibung mit belegten Eigenschaften].
+Nenne jeden Fund mit Bildbereich. Schreibe &quot;unsicher&quot;, wo du es nicht
+beurteilen kannst. Keine rechtliche Bewertung, nur Hinweise zur Prüfung.
+</code></pre></div></td></tr></table></div>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Technische Fehler sind 2026 <strong>subtiler</strong>, nicht verschwunden: Hände, Text, Logos, Produktdetails und Physik prüfst du in voller Auflösung.</li>
+<li>Bild-KI reproduziert <strong>Stereotype</strong>; gegensteuern heißt konkret beschreiben und die ganze Serie prüfen.</li>
+<li><strong>Echte Personen, fremde Marken und geschützte Figuren</strong> sind tabu – Werkzeugfilter ersetzen keine rechtliche Prüfung.</li>
+<li>Reiner KI-Output ist in der Regel <strong>nicht urheberrechtlich geschützt</strong>; die Nutzungsbedingungen der Werkzeuge regeln die kommerzielle Nutzung.</li>
+<li>Kennzeichnung hat drei Ebenen: Anbietermarkierung (C2PA, SynthID), <strong>Deepfake-Offenlegung nach Art. 50 Abs. 4</strong> und Plattformlabels.</li>
+<li>Bilder sind Produktaussagen: Abweichungen, erfundene Kundschaft und visuelles Greenwashing sind ein <strong>UWG-Risiko</strong>.</li>
+<li>Das <strong>Entscheidungsraster</strong> führt zur passenden Quelle: Produkt und echte Menschen fotografieren, Stimmung generieren oder aus Stock.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Generieren, fotografieren oder Stock? – Mensch gegen Copilot</summary>
+<p><strong>Gruppe:</strong> 4 Personen in zwei Paaren (zu dritt: eine Person gegen ein Paar), ca. 20 Minuten.
+Am Ende liegen eine gemeinsame Entscheidungstabelle für sechs Fälle und ein Testbild mit
+Kennzeichnungsentscheidung vor.</p>
+<p>Fjordlicht hat sechs Bildbedarfe:</p>
+<ol>
+<li>Hauptbild der Produktseite für den Rucksack „Tind"</li>
+<li>Abstrakter Hintergrund für eine Webinar-Einladung von Fjordlicht Business</li>
+<li>„Unser Team"-Foto für die Karriereseite</li>
+<li>Illustration im Aquarellstil für einen Blogartikel über Wanderwege im Münsterland</li>
+<li>Neues Maskottchen „Fjordfuchs", das langfristig auf allen Kanälen erscheinen soll</li>
+<li>Bild einer Kundin, die die Regenjacke „Sølv" lobt, für ein Testimonial</li>
+</ol>
+<p><strong>Schritt 1 – Gegenprobe.</strong> <strong>Paar A</strong> geht den Entscheidungsbaum aus Abschnitt 34.7 von Hand
+durch – ohne Copilot. <strong>Paar B</strong> gibt in Copilot Chat die sechs Fälle und das
+Entscheidungsraster aus 34.7 ein und lässt für jeden Fall entscheiden: generieren,
+fotografieren oder Stock – mit Grund und Hinweis, ob eine Kennzeichnung zu prüfen ist.</p>
+<p><strong>Schritt 2 – abgleichen.</strong> Legt beide Ergebnisse nebeneinander, etwa im Teams-Chat eurer
+Gruppe. Wo stimmen Hand und Copilot überein, wo nicht? Einigt euch bei jeder Abweichung auf
+eine gemeinsame Entscheidung mit Begründung.</p>
+<p><strong>Schritt 3 – ausprobieren.</strong> Paar A erzeugt Fall 2, Paar B Fall 4 in Copilot Chat. Jedes Paar
+stellt dem anderen sein Bild vor: Erfüllt es die Aufgabe – und welche Kennzeichnungsentscheidung
+trefft ihr gemeinsam dafür?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Bei Nr. 5 hilft die Frage, was passiert, wenn die Konkurrenz das Maskottchen übernimmt. Bei
+Nr. 6 achtet darauf, ob Copilot ein generiertes Bild „mit Kennzeichnung" für vertretbar hält –
+das ist der häufigste Denkfehler. Paar A sollte seine Entscheidungen festhalten, bevor es das
+Ergebnis von Paar B sieht.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispielprompt für Paar B:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Entscheide für diese sechs Bildbedarfe von Fjordlicht, ob das Bild generiert,
+fotografiert oder aus Stock genommen werden sollte. Nutze dieses Raster:
+[Entscheidungsbaum aus 34.7 einfügen]. Antworte als Tabelle mit Entscheidung,
+entscheidendem Grund und ob eine Kennzeichnung zu prüfen ist.
+Keine Rechtsberatung, nur Einordnung.
+[Liste der sechs Fälle]
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Entscheidung</th>
+<th>Grund</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>fotografieren</td>
+<td>konkretes Produkt – jede Abweichung ist eine falsche Produktaussage</td>
+</tr>
+<tr>
+<td>2</td>
+<td>generieren oder Stock</td>
+<td>reine Stimmung, kein Produkt, keine Person</td>
+</tr>
+<tr>
+<td>3</td>
+<td>fotografieren</td>
+<td>echte Menschen; ein generiertes „Team" wäre Täuschung</td>
+</tr>
+<tr>
+<td>4</td>
+<td>generieren</td>
+<td>Illustration, erkennbar künstlerisch, kein Täuschungsrisiko</td>
+</tr>
+<tr>
+<td>5</td>
+<td>menschlich gestalten (Illustrator:in), KI höchstens für Entwürfe</td>
+<td>reiner KI-Output ist in der Regel nicht urheberrechtlich geschützt, das Maskottchen soll exklusiv sein</td>
+</tr>
+<tr>
+<td>6</td>
+<td>fotografieren mit echter Kundin und Einwilligung</td>
+<td>ein generiertes Testimonial ist irreführend (UWG)</td>
+</tr>
+</tbody>
+</table>
+<p>Beim Abgleich lohnt der Blick auf Nr. 5 und Nr. 6: Hat Copilot den Schutzaspekt
+(Urheberrecht) beim Maskottchen genannt? Hat es bei Nr. 6 ein generiertes Bild mit Hinweis
+vorgeschlagen? Beides wären Punkte, die ihr korrigiert.</p>
+<p>Kennzeichnung prüfen: Bei Nr. 2, falls fotorealistisch und auf Plattformen mit Labelpflicht
+veröffentlicht. Bei Nr. 4 ist keine Pflicht gegeben, ein freiwilliger Hinweis aber möglich.
+Nr. 6 lässt sich durch Kennzeichnung nicht „retten" – das Motiv selbst ist das Problem.</p>
+<p>Bewertungskriterien: Beide Paare haben unabhängig entschieden; jede Abweichung zwischen
+Hand-Entscheidung und Copilot ist benannt und gemeinsam aufgelöst; Nr. 1, 3 und 6 sind als
+„fotografieren" eingeordnet, Nr. 5 mit dem Schutzargument; für beide Testbilder liegt eine
+gemeinsame Kennzeichnungsentscheidung mit Begründung vor.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Fehlersuche und Bias-Check an einer Gruppenserie</summary>
+<p><strong>Gruppe:</strong> 3–4 Personen, ca. 30 Minuten. Am Ende liegen eine gemeinsame Excel-Tabelle mit allen
+Personen auf allen Bildern der Gruppe, eine Fundliste zu technischen Fehlern und ein Vergleich
+zweier Gegensteuer-Strategien vor.</p>
+<p><strong>Rollen:</strong> <strong>Excel-Verantwortliche</strong> (legt die Tabelle an, arbeitet mit Copilot in Excel),
+<strong>Fehlerprüferin</strong> (führt die technische Prüfung an), <strong>Advocatus Diaboli</strong> (hinterfragt in
+Schritt 4 jedes Ergebnis). Alle erzeugen Bilder.</p>
+<ol>
+<li><strong>Gleicher Prompt, mehrere Ergebnisse.</strong> Alle erzeugen in ihrem eigenen Copilot Chat ohne
+   weitere Angaben dieselben vier Bilder:
+   „Familie beim Wandern im Regen", „Teamleitung einer Gärtnerei bespricht den Tag",
+   „Person repariert ein Fahrrad", „Gruppe beim Zelten am See". So entstehen 12 bis 16 Bilder.
+   Legt sie nummeriert in einen gemeinsamen OneDrive-Ordner.</li>
+<li><strong>Technische Prüfung (Arbeitsteilung).</strong> Jede Person prüft die Bilder <strong>einer</strong> anderen
+   Person in voller Auflösung mit der Tabelle aus Abschnitt 34.1 und notiert jeden Fund mit
+   Bildbereich. Die Fehlerprüferin lädt danach zwei Bilder in einen neuen Copilot Chat hoch,
+   lässt sie mit dem Prüfprompt aus 34.7 prüfen und vergleicht Copilots Funde mit denen der
+   Gruppe.</li>
+<li><strong>Bias-Prüfung.</strong> Die Excel-Verantwortliche legt eine Excel-Tabelle in OneDrive an (Daten als
+   Tabelle formatiert). Alle tragen für „ihre" geprüften Bilder ein: Wer ist zu sehen (Alter,
+   Geschlecht, Körperform, Herkunft), wer handelt, wer schaut zu? Lasst euch von Copilot in Excel
+   die auffälligsten Muster zusammenfassen und ein Diagramm zur Verteilung erstellen. Stimmt die
+   Zusammenfassung mit dem überein, was ihr in den Bildern seht?</li>
+<li><strong>Gegensteuern als Duell.</strong> Teilt euch in zwei Untergruppen. <strong>Untergruppe 1</strong> formuliert
+   zwei der Prompts konkret um, wie in Abschnitt 34.2 gezeigt. <strong>Untergruppe 2</strong> ergänzt
+   dieselben zwei Prompts nur pauschal um „divers". Vergleicht die Ergebnisse; der Advocatus
+   Diaboli prüft, ob die neuen Bilder glaubwürdige Szenen oder eine neue Schablone zeigen.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Muster fallen erst auf, wenn ihr die Serie als Ganzes betrachtet – im Einzelbild wirkt fast
+alles unauffällig. Genau deshalb erzeugen alle dieselben Prompts: Mit vier Mal so vielen Bildern
+wird sichtbar, was ein einzelner Durchlauf als Zufall tarnen würde. Beachtet: Das Modell, das die
+Stereotype erzeugt, ist nicht automatisch der beste Prüfer für sie.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Worauf ihr bei den Bildern ohne Angaben achten könnt:</p>
+<table>
+<thead>
+<tr>
+<th>Prompt</th>
+<th>prüft, ob sich dieses Muster zeigt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Familie beim Wandern</td>
+<td>Vater, Mutter, zwei Kinder, jung, schlank, hellhäutig</td>
+</tr>
+<tr>
+<td>Teamleitung Gärtnerei</td>
+<td>Mann mittleren Alters erklärt, andere hören zu</td>
+</tr>
+<tr>
+<td>Fahrrad reparieren</td>
+<td>junger Mann, Werkstattlook</td>
+</tr>
+<tr>
+<td>Zelten am See</td>
+<td>gleichaltrige Gruppe, sportlich, sehr ähnliche Gesichter</td>
+</tr>
+</tbody>
+</table>
+<p>Beispielspalten für Excel: Bild, Person (erzeugt von), Prompt, geschätztes Alter, Geschlecht,
+Körperform, Rolle (handelt/schaut zu). Prompt in Excel: „Fasse zusammen, welche Merkmale in
+dieser Tabelle überwiegen und welche Rollen welchen Gruppen zugeordnet sind. Erstelle ein
+Diagramm zur Verteilung der Rollen nach Geschlecht."</p>
+<p>Mögliche technische Funde: Finger an Werkzeug oder Zeltstangen, unlesbare Schrift auf Schildern
+oder Kleidung, Fantasielogos, unlogische Reflexionen im Wasser. Haltet fest, welche dieser
+Fundarten Copilot beim Prüfen erkannt hat und welche nur die Gruppe.</p>
+<p>Beim Duell zeigt sich, ob konkrete Beschreibungen (Alter, Rolle, Handlung, Situation)
+zuverlässiger wirken als die pauschale Ergänzung – achtet darauf, ob „divers" ein gestelltes,
+stockfotohaftes Gruppenbild erzeugt, also eine neue Schablone statt einer glaubwürdigen Szene.</p>
+<p>Bewertungskriterien: alle vier Prompts von allen Personen erzeugt; jedes Bild von einer
+zweiten Person geprüft, Funde mit Bildbereich; die Copilot-Prüfung mit der Gruppenprüfung
+abgeglichen; die Personentabelle ist vollständig und die Copilot-Zusammenfassung wurde gegen die
+Bilder geprüft; Muster sind über die gesamte Gruppenserie belegt (nicht am Einzelbild);
+Abweichungen zwischen den Ergebnissen der Gruppenmitglieder zum selben Prompt sind benannt;
+beide Gegensteuer-Strategien sind mit Bildern verglichen und bewertet.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Kennzeichnen oder nicht? Fünf Grenzfälle im Team bewerten</summary>
+<p><strong>Gruppe:</strong> 4 Personen (zu dritt übernimmt eine Person zwei Plattformen), ca. 30 Minuten. Am
+Ende liegen eine gemeinsame <strong>Copilot Page</strong> mit geprüfter Plattformrecherche und
+Fallbewertung sowie drei Freigaberegeln in Word vor.</p>
+<p>Fjordlicht plant diese Veröffentlichungen:</p>
+<ol>
+<li>Instagram-Post: Echtes Produktfoto der Jacke „Sølv", Hintergrund mit Generative Fill zu
+   einer fotorealistischen Moorlandschaft erweitert.</li>
+<li>TikTok-Video-Thumbnail: Fotorealistisches Bild eines bekannten Münsteraner
+   Fußballspielers in Fjordlicht-Jacke, generiert „als Gag".</li>
+<li>LinkedIn: Generiertes Bild einer Werkstatthalle mit Personen in Fjordlicht-Business-
+   Kleidung, ohne Hinweis auf KI, Text „So arbeiten unsere Kunden".</li>
+<li>Newsletter: Fotorealistisches Bild des Aasees in Münster unter einer geschlossenen
+   Schneedecke mit Schlittschuhläufern – „Winter ist zurück".</li>
+<li>Pinterest: Stilisierte, erkennbar gemalte Illustration einer Wanderin mit Fleece „Skog".</li>
+</ol>
+<p><strong>Schritt 1 – Plattformregeln recherchieren (Arbeitsteilung).</strong> Jede Person übernimmt eine
+Plattform: Instagram/Meta, TikTok, LinkedIn oder Pinterest. Lasst Copilot Chat im Modus <strong>Web</strong>
+die aktuellen Regeln dieser Plattform zur Kennzeichnung KI-generierter Bilder zusammenfassen –
+mit Quellen. Jede Person öffnet mindestens zwei Quellen und prüft, ob die Zusammenfassung
+stimmt. Eine Person übernimmt ihre Antwort in eine Copilot Page und teilt sie; die anderen
+ergänzen ihre geprüften Ergebnisse dort mit Quelle und Datum.</p>
+<p><strong>Schritt 2 – bewerten mit Rollen.</strong> Verteilt die Rollen <strong>AI Act</strong>, <strong>Plattformregeln</strong>,
+<strong>UWG/KUG/Markenrecht</strong> und <strong>Marketing</strong> (vertritt, was die Kampagne erreichen will). Geht die
+Fälle gemeinsam durch: Jede Rolle bringt ihren Blick ein – kann Art. 50 Abs. 4 AI Act
+(Deepfake) betroffen sein, welche Plattformregel gilt, welches weitere Risiko besteht? Die
+Gruppe entscheidet je Fall: veröffentlichen, kennzeichnen, ändern oder verzichten. Haltet
+Entscheidung und Begründung in der Page fest.</p>
+<p><strong>Schritt 3 – Regeln festhalten.</strong> Leitet drei Regeln für die Freigabe-Checkliste des Teams ab.
+Eine Person lässt sie sich von Copilot in Word knapp und ohne Rückfragebedarf formulieren
+(Entwurf mit Copilot, eure Fallbewertung aus der Page als Text in den Prompt eingefügt) und
+teilt das Dokument.
+Die anderen prüfen per Kommentar, ob Copilot dabei etwas abgeschwächt oder verschärft hat.</p>
+<p>Fall 2 erzeugt ihr nicht – die Übung bewertet ihn nur.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Trennt drei Fragen: Wirkt das Bild fälschlich echt und ähnelt es realen Personen, Orten oder
+Ereignissen (AI Act)? Was verlangt die Plattform? Und unabhängig davon: Täuscht das Bild über
+das Produkt oder über Tatsachen (UWG)? Die Rollen in Schritt 2 sorgen dafür, dass keine der drei
+Fragen untergeht. Plattformregeln ändern sich häufig – deshalb die Recherche mit Quellen und
+Datum.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Rechercheprompt (Modus Web), je Plattform angepasst:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Fasse die aktuellen Regeln von [Plattform] zur Kennzeichnung KI-generierter
+oder KI-bearbeiteter Bilder zusammen: Wann ist ein Label Pflicht, wird es
+automatisch gesetzt (z. B. über C2PA-Daten), was gilt für nur teilweise
+bearbeitete Fotos? Nenne zu jeder Aussage die Quelle mit Datum. Kennzeichne,
+wo die Quellen unklar sind.
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Art. 50 Abs. 4</th>
+<th>weiteres Risiko</th>
+<th>Entscheidung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>i. d. R. kein Deepfake, sofern keine reale Landschaft vorgetäuscht wird</td>
+<td>Plattformlabel bei fotorealistischer KI prüfen; Produkt echt</td>
+<td>veröffentlichen, Plattformregel befolgen, ggf. Label</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Deepfake einer realen Person</td>
+<td>Recht am eigenen Bild, Persönlichkeitsrecht, Irreführung über Werbepartnerschaft</td>
+<td>verzichten</td>
+</tr>
+<tr>
+<td>3</td>
+<td>wohl kein Deepfake, wenn keine realen Personen erkennbar</td>
+<td>UWG: suggeriert echte Kundschaft</td>
+<td>ändern: echtes Foto oder Text und Label ehrlich anpassen</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Deepfake möglich: realer Ort, Ereignis wirkt echt</td>
+<td>Irreführung, falls es so nicht war</td>
+<td>kennzeichnen oder als Illustration gestalten</td>
+</tr>
+<tr>
+<td>5</td>
+<td>keine Pflicht, erkennbar künstlerisch</td>
+<td>gering</td>
+<td>veröffentlichen, freiwilliger Hinweis möglich</td>
+</tr>
+</tbody>
+</table>
+<p>Mögliche Regeln für die Checkliste:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>1. Keine erkennbaren realen Personen ohne schriftliche Einwilligung –
+   auch nicht als Gag.
+2. Fotorealistische Bilder realer Orte oder Ereignisse, die so nicht
+   stattgefunden haben, werden gekennzeichnet oder nicht verwendet.
+3. Kein generiertes Bild darf echte Kundschaft, echte Mitarbeitende oder
+   echte Produktdetails vortäuschen. Plattformlabels werden immer gesetzt,
+   wenn die Plattform sie verlangt.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: Recherche für alle vier Plattformen mit geprüften Quellen und Datum in der
+Page; Stellen, an denen Copilots Zusammenfassung von den Quellen abwich, sind benannt; AI Act,
+Plattformregeln und UWG/KUG werden getrennt geprüft, jede Rolle hat ihren Blick eingebracht;
+Nr. 2 und Nr. 3 werden als Hauptrisiken erkannt; Meinungsverschiedenheiten zwischen den Rollen
+(etwa Marketing gegen UWG bei Nr. 3) sind festgehalten und begründet entschieden; die Regeln sind
+ohne Rückfrage anwendbar, Abschwächungen oder Verschärfungen durch Copilot sind kommentiert;
+Hinweis, dass Copilot keine Rechtsberatung ersetzt und im Zweifel die Rechtsabteilung
+entscheidet.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Freigabeprozess für KI-Bilder</summary>
+<p><strong>Szenario:</strong> Fjordlicht hat in den letzten Wochen viele KI-Bilder veröffentlicht. Nun häufen
+sich Probleme: Eine Kundin hat die Jacke „Sølv" retourniert, weil die Kapuze anders aussieht
+als auf dem Instagram-Bild. Ein Follower fragt öffentlich, ob die „Wandergruppe" im letzten
+Post echt sei. Und Meta hat einen Post automatisch mit einem KI-Hinweis versehen, den das Team
+nicht erwartet hatte. Die Geschäftsführung beauftragt dich mit einem <strong>Freigabeprozess für
+KI-Bilder</strong>, der Fehler, Rechtsrisiken und Vertrauensverluste verhindert, ohne die Arbeit zu
+lähmen. Du kannst stattdessen auch ein Unternehmen deiner Wahl verwenden.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Rahmen:
+Team: 5 Personen im Marketing, 1 Person Produktmanagement, keine eigene Rechtsabteilung
+(externe Kanzlei bei Bedarf).
+Bildvolumen: ca. 40 KI-Bilder pro Monat über alle Kanäle.
+Werkzeuge: Bilderzeugung in Microsoft 365 Copilot (Hauptwerkzeug), Adobe Firefly
+für Bearbeitung echter Fotos, Midjourney für einzelne Kampagnenmotive.
+Markenwert: Ehrlichkeit, kein Greenwashing.
+Freigabe soll pro Bild höchstens 10 Minuten dauern.
+</code></pre></div></td></tr></table></div>
+<hr />
+<p><strong>Runde 1 – Checkliste entwerfen.</strong> Lass dir von Copilot in <strong>Word</strong> einen Entwurf der
+Freigabe-Checkliste erstellen – auf Basis der Kapitel-34-Inhalte, <code>/Fjordlicht-Basisdaten</code>
+und <code>/Fjordlicht-Bildsprache</code> (falls nicht vorhanden, Kap. 11 bzw. 32 einfügen). Bereiche:
+technische Fehler, Bias, Rechte Dritter, Nutzungsbedingungen, Kennzeichnung und
+Produktwahrheit. Jeder Punkt ist eine Ja/Nein-Frage. Lege selbst fest, welche Punkte
+K.-o.-Kriterien sind und wer welchen Punkt prüft. Für „Nutzungsbedingungen" recherchierst du
+die aktuellen Bedingungen der drei Werkzeuge mit Copilot im Modus <strong>Web</strong> und prüfst die
+Quellen – für Copilot auch, was Microsofts Zusagen zu Urheberrechtsansprüchen für
+Unternehmenskunden abdecken und was nicht.</p>
+<p><strong>Runde 2 – Checkliste testen.</strong> Erzeuge oder sammle sechs Bilder, darunter mindestens ein
+Produktbild (Composing), ein Bild mit Menschen, eines mit einem realen Ort und eine
+Illustration. Prüfe alle sechs mit deiner Checkliste, protokolliere in <strong>Excel</strong> und stoppe
+die Zeit. Nutze Copilot Chat mit dem Prüfprompt aus 34.7 als Zweitmeinung – optional als
+kleinen <strong>Agent „Fjordlicht-Bildprüfung"</strong> mit Checkliste und Bildsprache als Wissen (Agent
+Builder, falls in eurer Umgebung freigegeben). Pflichtkriterien:</p>
+<ol>
+<li>Jede Prüfung ist dokumentiert, mit Ergebnis je Punkt.</li>
+<li>Mindestens ein Bild wird abgelehnt oder geändert – mit Begründung.</li>
+<li>Die Kennzeichnungsentscheidung ist für jedes Bild festgehalten.</li>
+<li>Die durchschnittliche Prüfdauer liegt bei höchstens 10 Minuten (Copilot in Excel
+   berechnet sie dir).</li>
+</ol>
+<p><strong>Runde 3 – Die Komplikation.</strong> Die Social-Media-Managerin hält die Checkliste für zu
+aufwendig: Bei 40 Bildern im Monat gehe ein ganzer Arbeitstag nur für Prüfungen drauf. Sie
+schlägt vor, Illustrationen und reine Hintergründe von der Prüfung auszunehmen – und die
+Prüfung ansonsten ganz dem Copilot-Agent zu überlassen. Entwickle eine <strong>risikobasierte
+Abstufung</strong> (zum Beispiel drei Prüfstufen nach Bildtyp), die den Aufwand senkt, ohne die
+K.-o.-Kriterien aufzuweichen, und lege fest, welche Prüfungen ein Mensch machen muss.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Geschäftsführung fragt, ob Fjordlicht nicht
+einfach <strong>alle</strong> KI-Bilder pauschal kennzeichnen sollte – „dann sind wir auf der sicheren
+Seite". Wäge ab: Vertrauen und Markenwert, Aufwand, Wirkung eines Labels auf die Wahrnehmung,
+Plattformregeln, Unterschied zwischen Composing und vollständig generierten Bildern.
+<strong>Widersprich</strong> dem Vorschlag dort, wo er zu kurz greift, oder begründe, warum du ihm folgst,
+und formuliere eine einheitliche Kennzeichnungsregel für Fjordlicht. Schicke die Regel als
+E-Mail an die Geschäftsführung – Entwurf mit Copilot in Outlook, Ton und Länge selbst geprüft.</p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>Freigabe-Checkliste (Word) mit K.-o.-Kriterien und Zuständigkeiten</li>
+<li>Prüfprotokoll der sechs Bilder (Excel) mit Zeitmessung und Abgleich mit der Copilot-Zweitmeinung</li>
+<li>risikobasierte Abstufung mit Begründung</li>
+<li>Kennzeichnungsregel mit Abwägung aus Runde 4 (E-Mail-Entwurf)</li>
+<li>kurze Antwort an den Follower aus dem Szenario in Fjordlicht-Markenstimme</li>
+</ol>
+<p><strong>Fertig bist du erst, wenn</strong> die Checkliste die drei Vorfälle aus dem Szenario nachweislich
+verhindert hätte, die Abstufung keine K.-o.-Prüfung streicht und keine K.-o.-Prüfung allein
+der KI überlässt, deine Kennzeichnungsregel in einem Satz erklärbar ist und der Prozess einen
+Punkt enthält, wann die externe Kanzlei eingebunden wird.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Lernkern liegt im Zusammenspiel von Runde 3 und 4: Ein Prozess, der zu aufwendig ist, wird
+umgangen – einer, der zu lax ist, schützt nicht. Risikobasiert heißt: Produktbilder, Bilder mit
+Menschen und realistische Bilder realer Orte prüfst du gründlich, Illustrationen schlanker.
+Copilot kann Vorarbeit leisten (Fehlerhinweise, Dokumentation), aber nicht beurteilen, ob die
+Kapuze dem echten Produkt entspricht. Bei der Kennzeichnung gilt: Die rechtliche Mindestpflicht
+ist schmal, der Markenwert Ehrlichkeit kann mehr verlangen. Diese Entscheidung ist
+Markenführung, nicht nur Recht.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispielanweisungen für den Agent (falls freigegeben):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Du prüfst Werbebilder für Fjordlicht vor der Freigabe. Nutze die Checkliste
+und den Bildsprache-Guide aus deinem Wissen. Gehe jeden Punkt der Checkliste
+durch und antworte je Punkt mit Ja, Nein oder unsicher plus Bildbereich.
+Produktwahrheit, reale Personen und fremde Marken markierst du immer als
+&quot;Prüfung durch Mensch nötig&quot;. Keine rechtliche Bewertung, nur Hinweise.
+</code></pre></div></td></tr></table></div>
+<p>Beispielantwort an den Follower:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Gute Frage – und eine ehrliche Antwort: Das Bild der Wandergruppe ist mit KI
+erzeugt. Wir hätten das dazuschreiben sollen. Ab jetzt kennzeichnen wir solche
+Bilder, und echte Menschen zeigen wir nur, wenn sie wirklich dabei waren.
+</code></pre></div></td></tr></table></div>
+<p>Bewertungskriterien: (1) die Checkliste deckt alle sechs Bereiche mit Ja/Nein-Fragen ab,
+Produktwahrheit und reale Personen sind K.-o.-Kriterien, Zuständigkeiten sind benannt, die
+Produktprüfung liegt beim Produktmanagement, die Nutzungsbedingungen sind mit Quelle und
+Datum belegt; (2) das Prüfprotokoll ist vollständig, mindestens eine begründete Ablehnung oder
+Änderung, Kennzeichnung je Bild entschieden, Zeit gemessen, Copilot-Zweitmeinung mit eigenem
+Urteil abgeglichen; (3) die Abstufung senkt den Aufwand nachvollziehbar, lässt
+K.-o.-Kriterien unangetastet und weist sie einem Menschen zu; (4) die Kennzeichnungsregel
+trennt rechtliche Pflicht (Art. 50 Abs. 4, Plattformregeln) von freiwilliger Transparenz und
+berücksichtigt den Unterschied zwischen Composing und vollständig generierten Bildern;
+(5) die Antwort an den Follower ist ehrlich, ruhig und ohne Ausflüchte; (6) der Prozess
+benennt Auslöser für die Einbindung der Kanzlei, etwa reale Personen, fremde Marken oder
+Zweifel an Deepfake-Einstufung.</p>
+<p>Lernziel: Die Grenzen der Bild-KI in einen alltagstauglichen Freigabeprozess übersetzen, der
+Qualität, Recht und Markenvertrauen sichert – und Kennzeichnung als bewusste Entscheidung der
+Marke verstehen, nicht nur als Pflichtübung. Die Vertiefung der Rechtsfragen folgt in Kap. 39.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel33/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 33 – Bildserien und Kampagnenmotive">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 33 – Bildserien und Kampagnenmotive
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel35/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 35 – KI-Videos: Text-to-Video und Animation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 35 – KI-Videos: Text-to-Video und Animation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
