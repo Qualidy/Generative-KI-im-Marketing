@@ -15,7 +15,6 @@ question: |
 
      ```text
      C-03 | Obermaterial zu 100 % aus recyceltem Polyamid | Sølv
-     C-07 | Imprägnierung ohne PFAS | Sølv, Vidde
      C-11 | Kostenlose Reparatur in den ersten zwei Jahren | alle Produkte
      C-14 | Fleece zu 80 % aus recyceltem Polyester | Skog
      ```
@@ -39,8 +38,8 @@ question: |
      freigabefähig um. Dann prüft jede Untergruppe die Fassung der **anderen** in einem **neuen**
      Chat mit demselben Prüfprompt. Die Gruppe wählt eine Fassung und stellt sie im Plenum vor.
 tip: |
-  Achtet besonders auf ausgeweitete Aussagen. „PFAS-frei" und „ohne PFAS imprägniert" sind
-  nicht dasselbe: Das eine betrifft das ganze Produkt, das andere nur die Imprägnierung. Achtet
+  Achtet besonders auf Aussagen, die plausibel klingen, aber keinen Eintrag in der Claim-Liste
+  haben – etwa „PFAS-frei". Was nicht in der Liste steht, ist nicht freigegeben. Achtet
   auch darauf, ob Copilot wirklich eure Datei nutzt – im Modus **Arbeit** könnte es auch andere
   Dateien mit ähnlichen Inhalten heranziehen, etwa „Fjordlicht-Basisdaten.docx". Das kann
   Abweichungen zwischen euren Ergebnissen erklären.
@@ -48,7 +47,7 @@ solution: |
   | Nr. | Textstelle | Bewertung | Begründung |
   |---|---|---|---|
   | 1 | „unsere grünste Hose" | STREICHEN | Superlativ und allgemeine Umweltaussage |
-  | 2 | „komplett PFAS-frei" | ANPASSEN | C-07 belegt nur die Imprägnierung |
+  | 2 | „komplett PFAS-frei" | STREICHEN | kein Eintrag in der Claim-Liste |
   | 3 | „aus recyceltem Material" | STREICHEN | in der Claim-Liste kein Material-Claim für Vidde |
   | 4 | „lebenslange Reparaturgarantie" | ANPASSEN | C-11 nennt zwei Jahre |
   | 5 | „schonst du die Umwelt" | STREICHEN | allgemeine Umweltaussage |
@@ -56,19 +55,19 @@ solution: |
   Gesamturteil: nicht freigabefähig. Mögliche Neufassung:
 
   ```text
-  Die Vidde ist für lange Tage draußen gemacht. Ihre Imprägnierung kommt ohne PFAS aus,
-  und geht doch mal etwas kaputt, reparieren wir sie in den ersten zwei Jahren kostenlos.
+  Die Vidde ist für lange Tage draußen gemacht. Und geht doch mal etwas kaputt,
+  reparieren wir sie in den ersten zwei Jahren kostenlos.
   ```
 
-  Im Prüflauf über Kreuz sollten beide Aussagen als BELEGT mit C-07 und C-11 ausgewiesen werden.
+  Im Prüflauf über Kreuz sollte die Reparaturaussage als BELEGT mit C-11 ausgewiesen werden.
 
   Die Stelle, an der Prüfungen am ehesten auseinanderlaufen können, ist Aussage 3: „recyceltes
   Material" ist für andere Produkte belegt. Wer das nicht bemerkt, hat den eigentlichen Lernpunkt
   verpasst: Das Modell prüft Ähnlichkeit, ihr prüft den **Geltungsbereich**. Die Datei
   „Claim-Liste.docx" verwendet ihr im Workshop als Wissen für euren Agent weiter.
 
-  Bewertungskriterien: alle fünf Aussagen erkannt, Geltungsbereich von C-07 und das Fehlen eines
-  Material-Claims für Vidde korrekt bewertet, Neufassung im zweiten Lauf bestätigt. Zur
+  Bewertungskriterien: alle fünf Aussagen erkannt, „PFAS-frei" ohne Listeneintrag und das Fehlen
+  eines Material-Claims für Vidde korrekt bewertet, Neufassung im zweiten Lauf bestätigt. Zur
   Zusammenarbeit: Abweichungen zwischen den Prüfungen der Gruppenmitglieder wurden benannt und
   erklärt (z. B. andere Datei herangezogen, Aussage 3 übersehen); jede Neufassung wurde von der
   anderen Untergruppe geprüft; jede Person hat „Claim-Liste.docx" im eigenen Ordner.

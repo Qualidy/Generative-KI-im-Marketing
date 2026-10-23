@@ -88,7 +88,7 @@ Output: Erste Zeile als Hook (max. 10 Wörter), danach 2 kurze Absätze,
 insgesamt max. 80 Wörter. Am Ende eine Frage an die Community.
 Maximal 1 Emoji. Hashtags separat darunter, 5 Stück.
 Modifier: Nutze nur diese Fakten: Obermaterial aus 100 % recyceltem
-Polyamid, PFAS-freie Imprägnierung, Wassersäule 20.000 mm,
+Polyamid, Wassersäule 20.000 mm,
 kostenloser Reparaturservice in den ersten zwei Jahren. Keine Superlative, keine Wörter wie
 "klimaneutral" oder "umweltfreundlich". Fehlt dir etwas, schreibe [FEHLT].
 Purpose: Ziel ist Aufmerksamkeit für den Launch bei naturverbundenen
@@ -161,7 +161,7 @@ Artikel: [Text einfügen]
 
 **Schritt 2 – je Kanal adaptieren**, jeweils in einem eigenen Auftrag mit Kanal-Purpose und Kanal-Output. Für LinkedIn wechselt sogar die Zielgruppe: Dort spricht Fjordlicht Business Einkäufer von Firmenbekleidung an, also geht es um Lebensdauer und Pflegekosten, nicht um Morgennebel am Aasee.
 
-Punkt 3 aus Schritt 1 ist der eigentliche Gewinn. Beim Kürzen entstehen die meisten Fehler: Aus „PFAS-frei imprägniert" wird „chemiefrei", aus „recyceltes Polyamid" wird „nachhaltig produziert". Wenn die KI dir vorher sagt, was nicht verkürzt werden darf, kannst du genau das in die Kanal-Prompts als Modifier übernehmen. Wie du solche Inhalte über Wochen planst und recycelst, steht in Kapitel 12.
+Punkt 3 aus Schritt 1 ist der eigentliche Gewinn. Beim Kürzen entstehen die meisten Fehler: Aus „20.000 mm Wassersäule" wird „absolut wasserdicht", aus „recyceltes Polyamid" wird „nachhaltig produziert". Wenn die KI dir vorher sagt, was nicht verkürzt werden darf, kannst du genau das in die Kanal-Prompts als Modifier übernehmen. Wie du solche Inhalte über Wochen planst und recycelst, steht in Kapitel 12.
 
 !!! example "Woran du gute Adaption erkennst"
     Lies die vier Texte nebeneinander. Wenn du sie untereinander austauschen könntest, ohne dass es auffällt, ist es keine Adaption, sondern Kürzung. Gute Adaption ändert **Einstieg, Perspektive und Handlungsaufforderung** – nicht nur die Länge.

@@ -12,8 +12,8 @@ question: |
   Aktueller Title: Sølv | Fjordlicht
   Aktuelle Description: Unsere Regenjacke Sølv. Jetzt kaufen!
   Produkttext: 90 Wörter, Werbesprache, keine Materialangaben.
-  Belegte Fakten: 3-Lagen-Membran, Wassersäule 20.000 mm, PFAS-freie
-  Imprägnierung, Obermaterial aus 100 Prozent recyceltem Polyamid, Gewicht 390 g,
+  Belegte Fakten: 3-Lagen-Membran, Wassersäule 20.000 mm,
+  Obermaterial aus 100 Prozent recyceltem Polyamid, Gewicht 390 g,
   Größen XS-XXL, Preis 249 Euro, kostenloser Reparaturservice in den ersten
   zwei Jahren nach Kauf.
   Nicht belegt: "klimaneutral", "die nachhaltigste Jacke".
@@ -89,7 +89,7 @@ solution: |
   Bewertungskriterien: (1) Diagnose benennt konkrete Mängel (nichtssagender Title, fehlende
   Fakten, Werbesprache, keine strukturierten Daten) und vergleicht mit tatsächlich sichtbaren
   Ergebnissen; (2) Title mit höchstens 60 Zeichen, per Formel gezählt, etwa „Regenjacke Sølv:
-  PFAS-frei, recyceltes Polyamid | Fjordlicht" (60 Zeichen), Faktentabelle mit allen belegten
+  20.000 mm, recyceltes Polyamid | Fjordlicht" (60 Zeichen), Faktentabelle mit allen belegten
   Werten, FAQ mit realistischen Fragen wie „Wie lange hält die Imprägnierung?"; (3)
   Prüfprotokoll entfernt unbelegte Aussagen wie „klimaneutral" und Superlative, dokumentiert auch
   Aussagen, die Copilot beim Auflisten übersehen hat, Markup enthält 27 Bewertungen mit 4,6 und

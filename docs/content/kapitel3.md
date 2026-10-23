@@ -105,7 +105,6 @@ Regenjacke „Sølv".
 
 Fakten (nur diese verwenden):
 - Obermaterial 100 % recyceltes Polyamid
-- PFAS-freie Imprägnierung
 - Wassersäule 20.000 mm
 - Gewicht 390 g
 

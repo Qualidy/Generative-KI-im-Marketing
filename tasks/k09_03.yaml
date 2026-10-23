@@ -8,7 +8,6 @@ question: |
   Material (Produktdatenblatt und Claim-Liste Regenjacke Sølv):
   - Obermaterial: 100 Prozent recyceltes Polyamid (Zertifikat liegt vor)
   - Wassersäule: 20.000 mm
-  - PFAS-freie Imprägnierung (Herstellernachweis liegt vor)
   - Gewicht: 390 g
   - Reparaturservice: kostenlos in den ersten zwei Jahren
 
@@ -33,7 +32,7 @@ solution: |
   |---|---|
   | „nachhaltigste Jacke aller Zeiten" | weiche Behauptung, Superlativ, nicht belegbar |
   | „komplett aus recyceltem Material" | nicht belegt – belegt ist nur das Obermaterial (100 Prozent recyceltes Polyamid), nicht die ganze Jacke |
-  | „PFAS-frei" | belegt |
+  | „PFAS-frei" | nicht belegt – im Material steht nichts zur Imprägnierung |
   | „Wassersäule 30.000 mm" | falsch – 20.000 mm |
   | „nur 350 g" | falsch – 390 g |
   | „federleicht" | weiche Behauptung |
@@ -46,8 +45,8 @@ solution: |
   Korrigierte Fassung:
 
   ```text
-  Das Obermaterial der Sølv besteht zu 100 Prozent aus recyceltem Polyamid,
-  die Imprägnierung ist PFAS-frei. Mit 20.000 mm Wassersäule hält sie auch
+  Das Obermaterial der Sølv besteht zu 100 Prozent aus recyceltem Polyamid.
+  Mit 20.000 mm Wassersäule hält sie auch
   langem Regen stand, und sie wiegt 390 g. Geht doch einmal etwas kaputt, reparieren wir
   sie in den ersten zwei Jahren kostenlos.
   ```

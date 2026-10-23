@@ -153,11 +153,10 @@ Herzstück des Content-Assistenten ist die Datei `claim-liste.md`. Jede Zeile en
 | ID | Freigegebene Aussage | Gilt für | Beleg |
 |---|---|---|---|
 | C-03 | „Obermaterial zu 100 % aus recyceltem Polyamid" | Sølv | Materialzertifikat Lieferant, 2026 |
-| C-07 | „Imprägnierung ohne PFAS" | Sølv, Vidde | Prüfbericht Labor, 03/2026 |
 | C-11 | „Kostenlose Reparatur in den ersten zwei Jahren" | alle Produkte | Garantiebedingungen |
 | C-14 | „Fleece zu 80 % aus recyceltem Polyester" | Skog | Materialzertifikat Lieferant, 2025 |
 
-Die Spalte „Gilt für" ist entscheidend. Die häufigste Fehlformulierung ist nicht die frei erfundene Aussage, sondern die **ausgeweitete**: Aus „Sølv ist ohne PFAS imprägniert" wird „unsere Kollektion ist PFAS-frei".
+Die Spalte „Gilt für" ist entscheidend. Die häufigste Fehlformulierung ist nicht die frei erfundene Aussage, sondern die **ausgeweitete**: Aus „Obermaterial der Sølv zu 100 % aus recyceltem Polyamid" wird „unsere Kollektion besteht aus recyceltem Material". Genauso wichtig ist, was **nicht** in der Liste steht: Eine Aussage wie „PFAS-frei" ist ohne Eintrag und Beleg nicht freigegeben, auch wenn sie intern oft genannt wird.
 
 !!! example "Claim-Check an einem echten Fall"
     Eingabe: *„Unsere neue Kollektion ist komplett umweltfreundlich und klimaneutral produziert. Die Skog-Fleecejacke besteht aus 100 % Recyclingmaterial."*
@@ -194,18 +193,17 @@ Das ist gewolltes Verhalten (Rückfragen-Prompt, Kap. 7). In Version 1 hatte der
 
 ```text
 Herbst heißt bei uns: Regen ist kein Grund, drinnen zu bleiben.
-Die Sølv hält dicht – Obermaterial zu 100 % aus recyceltem Polyamid,
-imprägniert ohne PFAS. Für lange Runden durch nasses Laub.
+Die Sølv hält dicht – 20.000 mm Wassersäule, Obermaterial zu 100 %
+aus recyceltem Polyamid. Für lange Runden durch nasses Laub.
 [FEHLT: Link oder Verweis auf Shop-Kategorie]
 
 PRÜFHINWEISE:
-(a) Nachhaltigkeitsaussagen: "100 % recyceltes Polyamid" = C-03,
-    "ohne PFAS" = C-07
+(a) Nachhaltigkeitsaussagen: "100 % recyceltes Polyamid" = C-03
 (b) [FEHLT]: Shop-Verweis
 (c) Menschlich prüfen: keine
 ```
 
-Die Social-Media-Managerin prüft die beiden Fundstellen, ergänzt den Link und gibt frei. Der Aufwand für die Freigabe sinkt, weil sie nicht mehr suchen muss, **ob** etwas geprüft werden muss, sondern nur noch **was**.
+Die Social-Media-Managerin prüft die Fundstelle, ergänzt den Link und gibt frei. Der Aufwand für die Freigabe sinkt, weil sie nicht mehr suchen muss, **ob** etwas geprüft werden muss, sondern nur noch **was**.
 
 ---
 
